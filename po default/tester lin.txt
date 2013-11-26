@@ -1,0 +1,89 @@
+----------------------- commands -----------------------
+alt + f2 <=> win key + R
+
+
+g++ src -o out -O2 -Wall
+./ out
+
+diff file1 file2  <=> cmp file1 file2 <=> fc 
+cat file <=> type
+
+time ./sol < in
+
+
+
+
+
+
+--------------- exod tester-------------------
+
+
+g++ generator.cpp -o generator.o -O2 -W -Wall
+
+while [ 1 ]
+do
+
+./generator.o > gen.in
+./slow.o < gen.in > ans1
+./tower.o < gen.in > ans2
+
+if [ "$(cmp ans1 ans2)x" != "x" ]
+then
+	break
+fi
+
+cat ans1
+
+done
+
+
+
+
+chmod 777 alabala.sh
+[22:05:13] exod40 says: ./alabala.sh
+
+
+
+
+
+
+
+
+
+--------- jo tester ---------------
+
+cat < /dev/null > out1
+cat < /dev/null > out2
+i=0
+while `diff out1 out2`
+do
+    #i=`expr $i + 1`
+    i=$(($i+1))
+    ./p3.gen > in
+    ./p3 < in > out1 2>/dev/null
+    ./p3.n3 < in > out2 2>/dev/null
+echo -n $i
+echo " test cases passed"
+done
+
+
+
+
+
+----------- ctrl + f9 compile & run -----------
+
+
+settings -> external tools -> configure kate
+
+cd "%directory" && konsole -e sh -c 'g++ "%filename" -o "%filename".exe -Wall -O2
+./"%filename".exe
+echo "Press any key to continue"
+read $dummy \;'
+
+executable : konsole
+save current document
+
++
+
+settings -> ... -> configure shortcuts
+

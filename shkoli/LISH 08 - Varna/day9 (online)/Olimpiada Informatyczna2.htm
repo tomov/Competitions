@@ -1,0 +1,100 @@
+		     <html>
+<head><title>Olimpiada Informatyczna</title>
+<meta name="Author" content="Piotr Stańczyk (piotr@econews.pl)">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-2">
+<link rel="stylesheet" href="Olimpiada Informatyczna2_files/stylep00.css" type="text/css">
+</head>
+<body text=black marginheight=0 topmargin=0 marginwidth=0 leftmargin=0>
+<h1>Task: Hollows</h1><hr><p> <!-- w zasadzie: hollow scooped out in a tree trunk - krotszej nazwy chyba nie ma! -->
+	There are two extremely high trees in Byteotia, and each of them has many hollows scooped out in its trunk,
+	one under another.
+    Once upon a time <span class="MATH"><i>n</i></span> very fast birds decided to inhabit the hollows.
+    Some of them know each other and therefore would like to be able to pay one another visits in their hollows.
+    The birds fly very fast and always along a straight line.
+    In order to avoid the danger of collision <!-- clash? crash? --> they decided to quarter in a way that:
+
+</p><ul>
+<li>each two birds that would like to pay themselves visits live in different trees, and
+</li>
+<li>for each two pairs of familiar birds, the segments connecting the hollows of the familiar birds
+do not intersect (they may, however, have a common endpoint).
+
+</li>
+</ul>
+    In addition, the birds would like to live as low as possible.
+    So in each tree they inhabit a certain number of lower hollows.
+    There are more hollows in each tree than there are birds in whole.
+
+<p>
+It is well-known that birds have very small brains.
+    That's why they have asked you -- a respected ornithologist -- to help them find out in how many
+    ways they can quarter in the hollows.
+
+</p><p>
+
+</p><h1>Task</h1>
+      Write a programme that:
+
+<ul>
+<li>reads from the standard input the description of acquaintanceship between the birds,
+</li>
+<li>calculates in how many ways can the birds be quartered in the trees, satisfying the above constraints,
+</li>
+<li>writes the result to the standard output.
+
+</li>
+</ul>
+
+<p>
+
+</p><h1>Input</h1>
+      In the first line of the standard input there are three integers written
+      <span class="MATH"><i>n</i></span>, <span class="MATH"><i>m</i></span> and <span class="MATH"><i>k</i></span>, denoting respectively:
+      the number of birds, the number of distinct pairs of birds knowing each other
+      and the number that is to be used when giving result
+      (see: Output),
+      <!-- MATH
+ $2 \le n \le 1\,000\,000$
+ -->
+<span class="MATH">2<i> &lt;= n &lt;= </i>1&nbsp;000&nbsp;000</span>,
+      <!-- MATH
+ $1 \le m \le 10\,000\,000$
+ -->
+<span class="MATH">1<i> &lt;= m &lt;= </i>10&nbsp;000&nbsp;000</span>,
+      <!-- MATH
+ $2 \le k \le 2\,000\,000$
+ -->
+<span class="MATH">2<i> &lt;= k &lt;= </i>2&nbsp;000&nbsp;000</span>.
+      The birds are numbered from 1 to <span class="MATH"><i>n</i></span>.
+      In the following <span class="MATH"><i>m</i></span> lines the pairs of birds knowing each other are given,
+      one per line.
+      In the line no. <span class="MATH"><i>i</i> + 1</span> two integers <span class="MATH"><i>a</i><sub>i</sub></span> and <span class="MATH"><i>b</i><sub>i</sub></span>,
+      separated by a single space, are written
+      <!-- MATH
+ $1 \le a_i, b_i \le n$
+ -->
+<span class="MATH">(1<i> &lt;= a</i><sub>i</sub>, <i>b</i><sub>i</sub> &lt;= <i>n</i></span>, <!-- MATH
+ $\;a_i \neq b_i$
+ -->
+<span class="MATH">&nbsp;<i>a</i><sub>i</sub> &lt;&gt; <i>b</i><sub>i</sub>)</span>.
+      These are the numbers of the familiar birds.
+      Each (unordered) pair of familiar birds is given exactly once.
+
+<p>
+
+</p><h1>Output</h1>
+      Let <span class="MATH"><i>r</i></span> denote the number of distinct quarterings of birds satysfying the given constraints.
+      Your programme should write one integer in the first line of the standard output:
+      the remainder of division of <span class="MATH"><i>r</i></span> by <span class="MATH"><i>k</i></span>.
+      If no quartering exists the correst result is 0.
+
+<p>
+    <img src="Olimpiada Informatyczna2_files/dzi10000.jpg">
+    </p><h1>Example</h1>For the following input data:<pre>3 2 10
+1 2
+1 3
+</pre>the correct answer is:<pre>4
+</pre>
+<br>
+
+<!-- This document saved from http://www.oi.edu.pl/php/show.php?ac=e180702&module=show&file=zadania/oi12/dzi&print=yes -->

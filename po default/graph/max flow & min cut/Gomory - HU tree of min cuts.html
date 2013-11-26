@@ -1,0 +1,126 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Gomory - HU</title>
+</head>
+
+<body background="bgLogo.jpg" bgcolor="#FFFFFF">
+
+<p align="center"><font color="#FF00FF" size="6"><em><strong>Gomory
+- HU Tree of minimum cuts</strong></em></font></p>
+
+<p align="left"><font color="#000080" size="5"><sup><em><strong>Program
+written by:</strong></em></sup></font><font color="#008000"
+size="4" face="Comic Sans MS"><sup> Eran Sagi. ( 1999 on SunOS)</sup></font></p>
+
+<p align="left"><font color="#000080" size="5"><sup><em><strong>Supervisor
+: </strong></em></sup></font><font color="#008000" size="4"
+face="Comic Sans MS"><sup>Prof. Yefim Dinitz.</sup></font></p>
+
+<p dir="ltr"><font color="#000080" size="5"><em><strong>Describtion</strong></em></font></p>
+
+<p dir="ltr"><font color="#008000" size="3" face="Comic Sans MS">The
+algorithm finds the minimal cuts betweem any pairs in graph. At
+the start The algorithm chooses two nodes and calculates the
+minimal cut between them and the min cut groups. These groupes
+are beeing separating into two graphs and the algorithm remembers
+the minimal cut between them. Now in every iteration the
+algorithm chooses two nodes from the same group and calculates
+the minimal cut between them, taking in acount the other groups
+as a single dot (node), which the maximal flow to and from it (dot)
+is the maximal flow that was found in one of the previous
+iterations. At the end of the algorithm The Gomory - HU tree is
+built. That tree represent the maximal flow between all two pairs
+in the graph, which is the minimal edge capacity of the path
+between those to edges.</font></p>
+
+<hr size="6" color="#000080">
+
+<p><font color="#000080" size="6"><sup><em><strong>Few figures
+and explanations:</strong></em></sup></font></p>
+
+<p align="left"><font color="#000080" size="5"><sup><em><strong>Figure
+1: </strong></em></sup></font><font color="#008000" size="4"
+face="Comic Sans MS"><sup>The max flow is 6 and the min cut is
+marked as the red edges.</sup></font></p>
+
+<p align="left"><img src="e2.gif" width="350" height="200"> </p>
+
+<p align="left"><font color="#000080" size="5"><sup><em><strong>Figure
+2: </strong></em></sup></font><font color="#008000" size="4"
+face="Comic Sans MS"><sup>The graph has been separated into two
+parts by the new blue edge that represents the min cut. The next
+step is the next iteration.</sup></font></p>
+
+<p align="left"><img src="e3.gif" width="297" height="190"></p>
+
+<p align="left"><font color="#000080" size="5"><sup><em><strong>Figure
+3: </strong></em></sup></font><font color="#008000" size="4"
+face="Comic Sans MS"><sup>This is few steps forward. It's
+equivalent to figue 2. After few more iterations we will get the
+graph with 5 minimum cuts.</sup></font></p>
+
+<p align="left"><font color="#008000" size="3"
+face="Comic Sans MS"><img src="e5.gif" width="328" height="184"> </font></p>
+
+<p align="left"><font color="#000080" size="5"><sup><em><strong>Figure
+4: </strong></em></sup></font><font color="#008000" size="4"
+face="Comic Sans MS"><sup>This is few steps forward. The final
+tree is represented by the green edges.</sup></font></p>
+
+<p align="left"><font color="#008000" size="3"
+face="Comic Sans MS"><img src="e6.gif" width="329" height="197"></font></p>
+
+<p align="left"><font color="#000080" size="5"><sup><em><strong>Figure
+5: </strong></em></sup></font><font color="#008000" size="4"
+face="Comic Sans MS"><sup>By selecting nodes 0 and 5 we see that
+the red edges are the minimal edges in the blue-red path between
+those nodes. The red edge between nodes 3 and 4 separates the
+Vertexes into two groups: {3,5} and {0,1,2,4}. The min weight of
+the red cuts is 6 (This is the reason why the minimum cut between
+the nodes is 6, check this in figure 1 above).</sup></font></p>
+
+<p align="left"><font color="#008000" size="3"
+face="Comic Sans MS"><img src="e8.gif" width="391" height="191"> </font></p>
+
+<p align="left">&nbsp;</p>
+
+<hr size="6" color="#000080">
+
+<p align="left"><font color="#800080" size="5"
+face="Comic Sans MS"><img src="icodownl.gif" width="20"
+height="20"> </font><a
+href="http://www.cs.bgu.ac.il/~visproj/download/eransagi.tar.gz"><font
+color="#000080" size="5"><em><strong>Download</strong></em></font></a></p>
+
+<blockquote>
+    <p align="left"><font color="#008000" size="3"
+    face="Comic Sans MS">* After download the filename.tar.gz ,
+    you need to extract it by:</font></p>
+</blockquote>
+
+<blockquote>
+    <blockquote>
+        <p dir="ltr"><font color="#008000" size="3"
+        face="Comic Sans MS">1. gunzip filename.tar.gz</font></p>
+    </blockquote>
+    <blockquote>
+        <p align="left"><font color="#008000" size="3"
+        face="Comic Sans MS">2. tar xvf filename.tar</font></p>
+        <p align="left"><font color="#008000" size="3"
+        face="Comic Sans MS">3. now you have an executable
+        filename and examples.</font></p>
+    </blockquote>
+</blockquote>
+
+<blockquote>
+    <p align="left"><font color="#008000" size="3"
+    face="Comic Sans MS">* For your knowledge: while executing
+    the program, at certain steps you must press 3 times on the
+    space, to proceed to the next iteration. </font></p>
+</blockquote>
+</body>
+</html>

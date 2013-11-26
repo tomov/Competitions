@@ -1,0 +1,84 @@
+#include <cstdio>
+#include <cstdlib>
+#include <algorithm>
+
+using namespace std;
+
+int tree[131072*2];
+
+/*int h(int v) {
+	int h = 0;
+	while(v > 1) {
+		++h;
+		v >>= 1;
+	}
+	return h;
+}*/
+
+#define LEFT(v) ((v)<<1)
+#define RIGHT(v) (((v)<<1)+1)
+#define ROOT 1
+
+inline int min(int a, int b) {
+	return a < b ? a : b;
+}
+
+int query(int v, int h, int n) {
+	if(tree[v] == 0) {
+		return h*n;
+	} else if(tree[v] == -1) {
+		return min(query(LEFT(v), h+1, n), query(RIGHT(v), h+1, n));
+	} else {
+		return query(LEFT(v), h+1, tree[v]) + query(RIGHT(v), h+1, n);
+	}
+}
+
+void insert(int v, int h, int n) {
+	if(tree[v] == 0) {
+		//printf("empty insert %d at %d\n", n, v);
+		tree[v] = n;
+	} else if(tree[v] == -1) {
+		if(query(LEFT(v), h+1, n) <= query(RIGHT(v), h+1, n)) {
+			insert(LEFT(v), h+1, n);
+		} else {
+			insert(RIGHT(v), h+1, n);
+		}
+	} else {
+		/*printf("push down at %d\n", v);
+		printf("push down %d to %d\n", tree[v], LEFT(v));
+		printf("insert %d at %d\n", n, RIGHT(v));*/
+		tree[LEFT(v)] = tree[v];
+		tree[RIGHT(v)] = n;
+		tree[v] = -1;
+	}
+}
+
+int eval(int v, int h) {
+	if(tree[v] == 0) {
+		return 0;
+	}
+	if(tree[v] == -1) {
+		return eval(LEFT(v), h+1) + eval(RIGHT(v), h+1);
+	}
+	return h * tree[v];
+}
+
+int data[131072];
+
+bool cmp(int a, int b) {
+	return a > b;
+}
+
+int main() {
+	int n, k;
+	scanf("%d", &n);
+	for(int i = 0; i < n; ++i) {
+		scanf("%d", data+i);
+	}
+	sort(data, data+n, cmp);
+	for(int i = 0; i < n; ++i) {
+		insert(ROOT, 0, data[i]);
+	}
+	printf("%d\n", eval(ROOT, 0));
+	return 0;
+}

@@ -1,0 +1,92 @@
+struct costflowedge
+{
+	int u,v,cap,cost;
+	costflowedge(){}
+	costflowedge(int _u,int _v,int _cap,int _cost)
+	 {  u=_u,v=_v,cap=_cap,cost=_cost; }
+};
+
+struct costflownetwork
+{
+	
+	int N;
+	vector<costflowedge> edges,res;
+	void init(int _N){ edges.clear(); N=_N; };
+	void addedge(int u,int v,int cap=1,int cost=0)
+	 {
+			edges.PB(costflowedge(u,v,cap,cost));
+			edges.PB(costflowedge(v,u,0,-cost));
+	 }
+	
+	VI d,prev;
+	void mcmf(int src,int tar,int &flow,int &cost)
+	 {
+			cost=flow=0;
+			res=edges;
+			
+			while(1)
+			 {
+					d.assign(N,0);
+					prev.assign(N,-2);
+					prev[src]=-1;
+					
+					bool cycle=0;
+					int u,v,cap,c;
+					Repk(N)
+					 {
+							for (int m=0;m<res.SZ;m++)
+							 {
+								u=res[m].u;
+							    if (prev[u]>-2)
+							     {
+										v=res[m].v,cap=res[m].cap,c=res[m].cost;
+										if ((prev[v]==-2 || d[v]>d[u]+c) && cap)
+										 {
+												d[v]=d[u]+c;
+												prev[v]=m;
+												if (k==N-1) cycle=1;
+										 }
+								 }
+							 }
+					 }
+					if (cycle) { flow=cost=-1; return; }
+					if (prev[tar]==-2) return;
+					
+					v=tar;
+					VI path;
+					int mincap=-1;
+					while (prev[v]>-1)
+					 {
+							int e=prev[v];
+							path.PB(e);
+							if (mincap==-1 || res[e].cap<mincap) mincap=res[e].cap;
+							int a=res[e].u,b=res[e].v;
+							if (a==v) v=b; else v=a;
+					 }
+					flow+=mincap;
+					
+					Repi(path.SZ)
+					 {
+							int e=path[i];
+							res[e].cap-=mincap;
+							res[e^1].cap+=mincap;
+							cost+=res[e].cost*mincap;
+					 }
+			 }
+	 }
+	 
+	 
+};
+
+
+
+
+
+
+
+
+
+
+
+
+

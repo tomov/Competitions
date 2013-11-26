@@ -1,0 +1,314 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>ANSI String Class</title>
+</head>
+
+<body>
+
+<h2 align="center">ANSI String Class</h2>
+
+<h3 align="center">Dr. Mark J. Sebern</h3>
+
+<h3 align="center">Version 1.6 <img src="../../images/update.gif" WIDTH="60" HEIGHT="12"> <font size="1">(11/17/97)</font></h3>
+
+<hr>
+<div align="center"><center>
+
+<table border="0" cellpadding="10">
+  <tr>
+    <td><a href="index.htm#WhatIs">What is the STL?</a></td>
+    <td><a href="vector.htm">vector</a></td>
+    <td><a href="list.htm">list</a></td>
+  </tr>
+</table>
+</center></div>
+
+<hr>
+
+<p>The ANSI string class implements a first-class character string data type that avoids
+many problems associated with simple character arrays (&quot;C-style strings&quot;). You
+can define a string object very simply, as shown in the following example:</p>
+<div align="center"><center>
+
+<table border="2" cellpadding="3">
+  <tr>
+    <td><pre>#include &lt;string&gt;
+using namespace std;
+...
+string first_name = &quot;Bjarne&quot;;
+string last_name;
+
+last_name = &quot;Stroustrup&quot;;
+
+string names = first_name + &quot; &quot; + last_name;
+cout &lt;&lt; names &lt;&lt; endl;
+
+names = last_name + &quot;, &quot; + first_name;
+cout &lt;&lt; names &lt;&lt; endl; </pre>
+    </td>
+  </tr>
+</table>
+</center></div>
+
+<h4>Member functions</h4>
+
+<p>The string class defines many member functions. A few of the basic ones are described
+below:</p>
+
+<p align="center"><font size="2"><strong>Note</strong>: The string class is based on a
+template class named <strong>basic_string</strong>.<br>
+Some of the member function declarations below may be a little confusing<br>
+to those new to C++, even though they have been simplified somewhat.<br>
+Fortunately, these functions are quite easy to use in practice.</font></p>
+<div align="center"><center>
+
+<table border="2" cellpadding="3">
+  <tr>
+    <td align="center">Initialization (constructor)</td>
+    <td>A <tt>string</tt> object may defined without an initializing value, in which case its
+    initial value is an empty string (zero length, no characters):<pre>string str1; </pre>
+    <p>A <tt>string</tt> object may also be initialized with <ul>
+      <li>a <tt>string</tt> expression:<pre>string str2 = str1;
+string str3 = str1 + str2;
+string str4 (str2);  // Alternate form </pre>
+      </li>
+      <li>a character string literal:<pre>string str4 = &quot;Hello there&quot;;
+string str5 (&quot;Goodbye&quot;);  // Alternate form </pre>
+      </li>
+      <li>a single character<br>
+        Unfortunately, the expected methods don't work:<pre>string str6 = 'A';  // Incorrect
+string str7 ('A');  // Also incorrect</pre>
+        <p>Instead, we must use a special form with two values:</p>
+        <pre>string str7 (1,'A'); // Correct</pre>
+        <p>The two values are the desired length of the string and a character to fill the string
+        with. In this case, we are asking for a string of length one, filled with the character <strong>A</strong>.</p>
+      </li>
+      <li>a substring of another <tt>string</tt> object:<pre>string str8 = &quot;ABCDEFGHIJKL&quot;;
+// Initialize str9 as &quot;CDEFG&quot;
+// Starts at character 2 ('C')
+// with a length of 5
+// (or the rest of the string, if shorter)
+string str9 (str8,2,5); </pre>
+      </li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>length</strong><p><strong>size</strong></td>
+    <td><tt>size_type length() const;</tt><br>
+    <tt>size_type size() const;</tt><br>
+    Both of these functions return the length (number of characters) of the string. The <font size="2" face="Courier New">size_type</font> return type is an unsigned integral type.
+    (The type name usually must be scoped, as in <font size="2" face="Courier New">string::size_type</font>.)<pre>string str = &quot;Hello&quot;;
+string::size_type len;
+len = str.length(); // len == 5 
+len = str.size();   // len == 5 </pre>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>c_str</strong></td>
+    <td><tt>const char* c_str() const;</tt><br>
+    For compatibility with &quot;older&quot; code, including some C++ library routines, it is
+    sometimes necessary to convert a <tt>string</tt> object into a character array
+    (&quot;C-style string&quot;). This function does the conversion. For example, you might
+    open a file stream with a user-specified file name:<pre>string filename;
+cout &lt;&lt; &quot;Enter file name: &quot;;
+cin &gt;&gt; filename;
+ofstream outfile (filename.c_str());
+outfile &lt;&lt; &quot;Data&quot; &lt;&lt; endl; </pre>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>insert</strong></td>
+    <td><tt>string&amp; insert(size_type pos, const string&amp; str);</tt><br>
+    Inserts a string into the current string, starting at the specified position.<pre>string str11 = &quot;abcdefghi&quot;;
+string str12 = &quot;0123&quot;;
+str11.insert (3,str12);
+cout &lt;&lt; str11 &lt;&lt; endl; // &quot;abc0123defghi&quot;
+str12.insert (1,&quot;XYZ&quot;);
+cout &lt;&lt; str12 &lt;&lt; endl; // &quot;0XYZ123&quot; </pre>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>erase</strong></td>
+    <td><tt>string&amp; erase(size_type pos, size_type n);</tt><br>
+    Delete a substring from the current string.<pre>string str13 = &quot;abcdefghi&quot;;
+str12.erase (5,3);
+cout &lt;&lt; str12 &lt;&lt; endl; // &quot;abcdei&quot; </pre>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>replace</strong></td>
+    <td><tt>string&amp; replace(size_type pos, size_type n, const string&amp; str);</tt><br>
+    Delete a substring from the current string, and replace it with another string.<pre>string str14 = &quot;abcdefghi&quot;;
+string str15 = &quot;XYZ&quot;;
+str14.replace (4,2,str15);
+cout &lt;&lt; str14 &lt;&lt; endl; // &quot;abcdXYZghi&quot; </pre>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>find</strong><p><strong>rfind</strong> </td>
+    <td><tt>size_type find (const string&amp; str, size_type pos);</tt><br>
+    Search for the <strong>first</strong> occurrence of the substring <tt>str</tt> in the
+    current string, starting at position <tt>pos</tt>. If found, return the position of the
+    first character. If not, return a special value (called <tt>string::npos</tt>). The member
+    function rfind does the same thing, but returns the position of the <strong>last</strong>
+    occurrence of the specified string.<pre>string str16 = &quot;abcdefghi&quot;;
+string str17 = &quot;def&quot;;
+string::size_type pos = str16.find (str17,0);
+cout &lt;&lt; pos &lt;&lt; endl; // 3
+pos = str16.find (&quot;AB&quot;,0);
+if (pos == string::npos) cout &lt;&lt; &quot;Not found&quot; &lt;&lt; endl;</pre>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>substr</strong></td>
+    <td><tt>string substr (size_type pos, size_type n);</tt><br>
+    Returns a substring of the current string, starting at position <tt>pos</tt> and of length
+    <tt>n</tt>:<pre>string str18 = &quot;abcdefghi&quot;
+string str19 = str18.substr (6,2);
+cout &lt;&lt; str19 &lt;&lt; endl; // &quot;gh&quot; </pre>
+    </td>
+  </tr>
+</table>
+</center></div>
+
+<h4>Non-member functions</h4>
+
+<p>In addition to member functions of the <strong>string</strong> class, some non-member
+functions are designed to work with strings; the most common of these is:</p>
+<div align="center"><center>
+
+<table border="2" cellpadding="3">
+  <tr>
+    <td align="center"><a name="getline"><strong>getline</strong></a></td>
+    <td><tt>istream&amp; getline (istream&amp; is, string&amp; str, char delim = '\n');</tt><br>
+    Reads characters from an input stream into a string, stopping when one of the following
+    things happens:<ul>
+      <li>An end-of-file condition occurs on the input stream</li>
+      <li>When the maximum number of characters that can fit into a string have been read</li>
+      <li>When a character read in from the string is equal to the specified delimiter (<strong>newline</strong>
+        is the default delimiter); the delimiter character is removed from the input stream, but
+        not appended to the string.</li>
+    </ul>
+    <p>The return value is a reference to the input stream. If the stream is tested as a
+    logical value (as in an <strong>if</strong> or <strong>while</strong>), it is equivalent
+    to <strong>true</strong> if the read was successful and <strong>false</strong> otherwise
+    (e.g., end of file).</p>
+    <p>The most common use of this function is to do &quot;line by line&quot; reads from a
+    file. Remember that the normal <a href="#StringExtractionOp">extraction operator</a>
+    (&gt;&gt;) stops on white space, not necessarily the end of an input line. The <strong>getline</strong>
+    function can read lines of text with embedded spaces.</p>
+    <pre>vector&lt;string&gt; vec1;
+string line;
+vec1.clear();
+ifstream infile (&quot;stl2in.txt&quot;);
+while (getline(infile,line,'\n'))
+{
+  vec1.push_back (line);
+}</pre>
+    </td>
+  </tr>
+</table>
+</center></div>
+
+<h4>Operators</h4>
+
+<p>A number of C++ operators also work with <tt>string</tt> objects:</p>
+<div align="center"><center>
+
+<table border="2" cellpadding="3">
+  <tr>
+    <td align="center"><strong><tt>=</tt></strong></td>
+    <td>The assignment operator may be used in several ways:<ul>
+      <li>Assigning one <tt>string</tt> object's value to another <tt>string</tt> object<pre>string string_one = &quot;Hello&quot;;
+string string_two;
+string_two = string_one; </pre>
+      </li>
+      <li>Assigning a C++ string literal to a <tt>string</tt> object<pre>string string_three;
+string_three = &quot;Goodbye&quot;; </pre>
+      </li>
+      <li>Assigning a single character (<tt>char</tt>) to a <tt>string</tt> object<pre>string string_four;
+char ch = 'A';
+string_four = ch;
+string_four = 'Z'; </pre>
+      </li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong><tt>+</tt></strong></td>
+    <td>The &quot;plus&quot; operator concatenates:<ul>
+      <li>two <tt>string</tt> objects<pre>string str1 = &quot;Hello &quot;;
+string str2 = &quot;there&quot;;
+string str3 = str1 + str2; // &quot;Hello there&quot; </pre>
+      </li>
+      <li>a <tt>string</tt> object and a character string literal<pre>string str1 = &quot;Hello &quot;;
+string str4 = str1 + &quot;there&quot;; </pre>
+      </li>
+      <li>a <tt>string</tt> object and a single character<pre>string str5 = &quot;The End&quot;;
+string str6 = str5 + '!'; </pre>
+      </li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong><tt>+=</tt></strong></td>
+    <td>The &quot;+=&quot; operator combines the above assignment and concatenation operations
+    in the way that you would expect, with a <tt>string</tt> object, a string literal, or a
+    single character as the value on the right-hand side of the operator.<font face="Courier New"><br>
+    </font><font size="2" face="Courier New"><br>
+    string str1 = &quot;Hello &quot;;<br>
+    str1 += &quot;there&quot;; </font></td>
+  </tr>
+  <tr>
+    <td align="center"><strong><tt>==<br>
+    !=<br>
+    &lt;<br>
+    &gt;<br>
+    &lt;=<br>
+    &gt;=</tt></strong></td>
+    <td>The comparison operators return a Boolean (true/false) value indicating whether the
+    specified relationship exists between the two operands. The operands may be:<ul>
+      <li>two <tt>string</tt> objects</li>
+      <li>a <tt>string</tt> object and a character string literal</li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong><tt>&lt;&lt;</tt></strong></td>
+    <td>The insertion operator writes the value of a <tt>string</tt> object to an output
+    stream (e.g., <tt>cout</tt>).<font face="Courier New"><br>
+    </font><font size="2" face="Courier New"><br>
+    string str1 = &quot;Hello there&quot;;<br>
+    cout &lt;&lt; str1 &lt;&lt; endl; </font></td>
+  </tr>
+  <tr>
+    <td align="center"><a name="StringExtractionOp"><strong><tt>&gt;&gt;</tt></strong></a></td>
+    <td>The extraction operator reads a character string from an input stream and assigns the
+    value to a <tt>string</tt> object.<br>
+    <font size="2"><br>
+    </font><font size="2" face="Courier New">string str1;<br>
+    cin &gt;&gt; str1;</font><font size="2"> </font></td>
+  </tr>
+  <tr>
+    <td align="center"><strong><tt>[]</tt></strong> <p><tt>(subscript)</tt> </td>
+    <td>The subscript operator accesses one character in a string:<font face="Courier New"><br>
+    </font><font size="2" face="Courier New"><br>
+    string str10 = &quot;abcdefghi&quot;;<br>
+    char ch = str10[3];<br>
+    cout &lt;&lt; ch &lt;&lt; endl; // 'd'<br>
+    str10[5] = 'X';<br>
+    cout &lt;&lt; str10 &lt;&lt; endl; // &quot;abcdeXghi&quot; </font></td>
+  </tr>
+</table>
+</center></div>
+
+<hr>
+
+<p><font size="2"><em>This page was last updated on <!--webbot bot="TimeStamp" s-type="REGENERATED" s-format="%B %d, %Y" startspan -->April 16, 1999<!--webbot bot="TimeStamp" endspan i-checksum="17881" -->; send comments to <a href="mailto:sebern@msoe.edu">Mark Sebern</a>.</em></font></p>
+</body>
+</html>

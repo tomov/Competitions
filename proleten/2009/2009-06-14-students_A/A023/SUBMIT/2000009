@@ -1,0 +1,103 @@
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+
+const int MAXN = 1 << 20;
+
+int n , k;
+int a[MAXN];
+
+long long sum;
+long long it1[MAXN];
+int it2[MAXN];
+
+void read() {
+	int i;
+	
+	scanf ( "%d%d" , &n , &k );
+	for (i = 1; i <= n; i++) {
+		scanf ( "%d" , &a[i] );
+		++ a[i];
+	}
+}
+
+void ins ( int x , long long a , int b ) {
+	for (; x < MAXN; x += (x & (-x))) {
+		it1[x] += a;
+		it2[x] += b;
+	}
+}
+
+long long ask1 ( int a ) {
+	if ( a >= MAXN ) a = MAXN - 1;
+	long long ans = 0;
+	 
+	for (; a > 0; a -= (a & (-a)))
+		ans += it1[a];
+	
+	return ans;
+}
+
+long long ask2 ( int a ) {
+	if ( a >= MAXN ) a = MAXN - 1;
+	long long ans = 0;
+	 
+	for (; a > 0; a -= (a & (-a)))
+		ans += it2[a];
+	
+	return ans;
+}
+
+long long calc ( long long a ) {
+	long long x , y;
+	
+	x = ask1 ( a );
+	y = ask2 ( a );
+	
+	return a * y - x + (sum - x - a * ((long long)k - y));
+}
+
+long long doit ( long long a ) { 
+	long long v1 , v2;
+	
+	v1 = a / k;
+	v2 = a / k + 1;
+	
+	return min ( calc ( v1 ) , calc ( v2 ) );
+}
+
+void solve() {
+	long long ans , cur;
+	int idx;
+	int i;
+	
+	for (i = 1; i <= k; i++) {
+		sum += (long long)a[i];
+		ins ( a[i] , a[i] , 1 );
+	}
+	ans = doit ( sum );
+	idx = 1;
+	
+	for (i = k + 1; i <= n; i++) {
+		sum -= (long long)a[i - k];
+		ins ( a[i - k] , -a[i - k] , -1 );
+		
+		sum += (long long)a[i];
+		ins ( a[i] , a[i] , 1 );
+		
+		cur = doit ( sum );
+		if ( cur < ans ) {
+			ans = cur;
+			idx = i - k + 1;
+		}
+	}
+	
+	printf ( "%lld\n%d\n" , ans , idx );
+}
+
+int main() {
+	read();
+	solve();
+	
+	return 0;
+}

@@ -1,0 +1,168 @@
+#include <iostream>
+#include <vector>
+#include <set>
+#include <queue>
+#include <time.h>
+using namespace std;
+int L,N,M,C,T;
+int sum;
+vector<int> times;
+clock_t bgn;
+struct vertex
+{
+	char col[51];
+	int lvl;
+};
+vector<int> compList;
+queue<vertex> q;
+int sq[1024],tq[1024];
+bool su[1024],tu[1024];
+vector<int> gr[64];
+set<unsigned long long> used;
+
+
+unsigned long long encode(vertex v)
+{
+	unsigned long long ret=0;
+	for(int i=0;i<N;i++)
+	{
+		ret*=2;
+		ret+=v.col[i]-'0';
+	}
+	return ret;
+}
+
+
+void getComponentList(vertex v)
+{
+	memset(su,0,sizeof(su));
+		compList.clear();
+		for(int i=0;i<N;i++)
+			if(!su[i])
+			{
+				compList.push_back(i);
+				
+				int fst=1,lst=1;
+				sq[fst]=i;
+				while(fst<=lst)
+				{
+					for(int j=0;j<gr[sq[fst]].size();j++)
+						if(!su[gr[sq[fst]][j]] && v.col[sq[fst]] == v.col[gr[sq[fst]][j]])
+						{
+								sq[++lst]=gr[sq[fst]][j];
+								su[gr[sq[fst]][j]]=1;
+						}
+					fst++;
+				}
+			}	
+}
+
+
+bool isEnding(vertex v)
+{
+	char c;
+	if(C==1) c ='1';
+	else c = '0';
+	
+	for(int i=0;i<N;i++)
+		if(v.col[i]!=c) return false;
+	return true;	
+}
+
+vertex shiftComponent(vertex v,int st)
+{
+	memset(tu,0,sizeof(tu));
+	v.lvl++;
+	int fst=1,lst=1;
+	tq[fst]=st;
+				while(fst<=lst)
+				{
+					for(int i=0;i<gr[tq[fst]].size();i++)
+						if(!tu[gr[tq[fst]][i]] && v.col[tq[fst]] == v.col[gr[tq[fst]][i]])
+						{
+								tq[++lst]=gr[tq[fst]][i];
+								tu[gr[tq[fst]][i]]=1;
+						}
+					
+					if(v.col[tq[fst]]=='0' ) v.col[tq[fst]]='1';
+					else v.col[tq[fst]]='0';
+					
+					fst++;
+				}
+	return v;
+}
+
+int uberBfs(vertex st)
+{
+	q.push(st);	
+	used.insert(encode(st));
+	vertex next;
+	while(!q.empty())
+	{
+		getComponentList(q.front());
+		for(int i=0;i<compList.size();i++)
+		{
+				next = shiftComponent(q.front(),compList[i]);
+				if(used.find(encode(next))==used.end())
+				{
+					q.push(next);
+					used.insert(encode(next));
+					if(isEnding(next)) return next.lvl;
+				}
+		}
+		q.pop();
+	}
+}
+int tmps;
+int minTime;
+void turboTrack(int p)
+{
+	if(p>=times.size() || tmps>sum/2) return;
+
+	minTime= min(minTime,max(tmps,sum-tmps));
+	if( (double)(clock()-bgn)/(double)CLOCKS_PER_SEC >0.45) {cout<<minTime<<endl;exit(0);}
+	turboTrack(p+1);
+	
+	tmps+=times[p];
+	turboTrack(p+1);
+	tmps-=times[p];
+		
+}
+int main()
+{
+	bgn=clock();
+    scanf("%d",&L);
+    for(int i=1;i<=L;i++)
+    {
+            scanf("%d %d %d %d",&N,&M,&C,&T);
+        //    cout<<N<<" "<<M<<" "<<C<<" "<<T<<endl;
+            used.clear();
+            while(!q.empty()) q.pop();
+            vertex start;
+            int x,y;
+            for(int j=0;j<N;j++)
+            {
+            	cin>>start.col[j];
+  //          	cout<<start.col[j]<<" ";
+            	gr[j].clear();
+			}
+		//	cout<<endl;
+            start.lvl=0;
+            for(int j=1;j<=M;j++)
+            {
+				scanf("%d %d",&x,&y);
+				gr[x].push_back(y);
+				gr[y].push_back(x);
+			}
+			
+            int k=uberBfs(start);
+        //    cout<<k<<endl;
+            sum+=k*T;     
+			times.push_back(k*T);      
+    }
+    //cout<<sum<<endl;
+    minTime=sum;
+    turboTrack(0);
+    cout<<minTime<<endl;
+  //cout<<(double)(clock()-bgn)/(double)CLOCKS_PER_SEC;
+}

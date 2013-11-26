@@ -1,0 +1,155 @@
+#include<iostream>
+#include<queue>
+#include<vector>
+#include<set>
+
+using namespace std;
+
+const int shema = 1<<12;
+
+    int n;
+    int need;
+    int m;
+    int G[30][30];
+    int used[shema], cost;
+    int ini[30];
+   int reach[30];
+   int col[30];
+   queue<int> q;
+   int alls;
+   int RES;
+   
+   vector<int> G2[shema];
+   vector<int> have;
+   
+   set<int> allwehave;
+   
+   int tmas[10000000];
+   int mn = 0;
+   
+void dp()
+{
+   int i, cyk;
+   allwehave.insert(0);
+   
+   for(i = 0; i < (int)have.size(); ++i)
+   {
+    //printf("za %d\n",have[i]);
+    alls += have[i];
+    mn = 0;
+    for(set<int> :: iterator p1 = allwehave.begin() ;p1!= allwehave.end(); p1++)
+    {
+     cyk = have[i] + *p1;
+     //printf("%d\n",cyk);
+     if(allwehave.find(cyk)==allwehave.end())
+     {
+      tmas[mn++] = cyk;
+     }
+    }
+    mn--;
+    for(;mn>=0;mn--)allwehave.insert(tmas[mn]);
+   }
+   
+   for(set<int> :: iterator p1 = allwehave.begin() ;p1!= allwehave.end(); p1++)
+    {
+    // cout<<alls<<" "<<*p1<<"\n";
+     RES = min(RES, max(alls - *p1, *p1));
+    }
+    cout<<RES<<"\n";
+}   
+void touch(int v)
+{
+    reach[v] = 1;
+    int i;
+    for(i = 0; i < n; ++i)
+    if(!reach[i] && G[v][i])
+    if(ini[v] == ini[i])
+    {
+     touch(i);
+    }
+}
+int bfs(int num)
+{
+   while(q.size() > 0)q.pop();
+   memset(used, 0, sizeof(used));
+   
+   int u;
+   
+   q.push(num); used[num] = 1;
+   while((int)q.size() > 0)
+   {
+    u = q.front();
+    q.pop();
+    for(int i = 0; i < (int)G2[u].size(); ++i)
+    if(!used[G2[u][i]])
+    {
+     used[G2[u][i]] = used[u] + 1;
+     q.push(G2[u][i]);
+    }
+   }
+return used[need];
+}
+void solve()
+{
+     int i, j, l, q, p, u, v, lookat, initial = 0;
+     
+    scanf("%d%d%d%d",&n,&m,&need,&cost);
+    
+    for(i = 0; i < n; ++i)
+    {
+     scanf( "%d",&col[i]);
+     if(col[i])initial += (1<<i);
+    }
+    memset(G, 0, sizeof(G));
+    
+    for(i = 0; i < m; ++i)
+    {
+     scanf("%d%d",&u,&v);
+     G[u][v] = G[v][u] = 1;
+    }
+   // printf("initial %d\n",initial);
+    
+    for(i = 0; i < (1<<n); ++i)
+    {
+     G2[i].clear();
+     memset(ini, 0, sizeof(ini));
+     
+     j = i; lookat = j;
+     
+     for(l = 0; l < n; ++l)
+     {
+      if(j&1)ini[l] = 1;
+      j>>=1;
+     }
+     
+     for(l = 0; l < n; ++l)
+     {
+      memset(reach, 0, sizeof(reach));
+      touch(l);
+      
+      p = 0;
+      for(q = 0; q < n; ++q)
+      {
+       int c1 = ini[q];
+       if(reach[q])c1^=1;
+       
+       if(c1)p+=(1<<q);
+      }
+      G2[lookat].push_back(p);
+      //printf("%d can reach %d by touching %d\n",lookat, p, l);
+     }
+    }
+    
+    if(need == 1)need = (1<<n) - 1;
+    //printf("need %d\n",need);
+    have.push_back((bfs(initial) - 1) * cost);
+}
+int main()
+{
+    int t;
+    scanf( "%d", &t);
+    for(;t;t--)solve();
+    RES = INT_MAX;
+    dp();
+return 0;
+}

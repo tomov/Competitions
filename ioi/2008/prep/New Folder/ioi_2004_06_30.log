@@ -1,0 +1,631 @@
+
+Session Start: Tue Jun 29 21:42:59 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+* latigation was kicked by VelinTzanov (VelinTzanov)
+* VelinTzanov sets mode: +o rangel__
+* Prince_of_Dawn has joined #ioi
+* CS sets mode: +v Prince_of_Dawn
+<Prince_of_Dawn> hahah
+<Prince_of_Dawn> az si misleh che sam posleden
+* VelinTzanov sets mode: +o Prince_of_Dawn
+<Prince_of_Dawn> da se obajdam li na swetko?
+<Prince_of_Dawn> ne mi obrashtate nikakwo wnimanie ;(
+* Swetko has joined #ioi
+* CS sets mode: +v Swetko
+<rangel__> mislq, che ne se nalaga da mu zvynish :-)
+<Swetko> dnes dylgo li ste e
+<Prince_of_Dawn> Vellin ni e podgotwil iznenada
+<Prince_of_Dawn> Kupon!!!!
+* sssa88[away] has joined #ioi
+<Prince_of_Dawn> po sluchai zawarshwaneto
+* sssa88[away] is now known as sssa88
+<sssa88> off, pak se uspah
+<Swetko> az dneska po rano ste izliaza
+<Swetko> az sum spal ot 6 chasa vchera :)
+<VelinTzanov> Sekunda...
+<sssa88> bravo
+<Swetko> mnogo sum zle - samo spa
+<Prince_of_Dawn> wetko
+<Prince_of_Dawn> swetko 
+<Prince_of_Dawn> w takawa sluchai w sofiq mi wikame 
+<Prince_of_Dawn> che si spqshtata krasawitsa ;)
+<Swetko> am che sigurno sum :)
+<Prince_of_Dawn> na men shte mi dawat belejnitsi ot kam 10
+<Swetko> na men otkum 11
+<Swetko> ama 
+<Swetko> az ste hodia za 8
+<Swetko> taka che 7:45 triabva da trugna
+<VelinTzanov> OK
+<VelinTzanov> Sled 10-tina minuti pochvame...
+<VelinTzanov> Shtoto kato zakysniahte i pochnah edna druga rabota...
+<VelinTzanov> Pishete ako imate vyprosi po materiala.
+* VelinTzanov sets mode: +oo Swetko sssa88
+<Prince_of_Dawn> toi wcherashniq ne beshe mnogo truden
+<Prince_of_Dawn> me me e strah ot sg chisla i igri swarzani s tqh
+<VelinTzanov> Smelo, Borisov. :)
+<Swetko> eh, puk men tiah mi haresvat
+<Swetko> strah me e ot nesto det niama da go izmislia :)
+<Prince_of_Dawn> swetko ot towa wseki go e strah
+<Prince_of_Dawn> ne che imam waprso prosto si kazwam
+<Prince_of_Dawn> grugo kakwo mi beshe trudno ?
+<sssa88> az oshte ne moga da razbera kak da zabyrzam pdrm - i anton vika che za mnogo a-ta primerno mu 
+  rabotilo strashno bavno
+<Prince_of_Dawn> nedev kolko chesto prawish operatsiqta %
+<sssa88> vyobshte ne pravq
+<Prince_of_Dawn> !!! kak taka?
+<sssa88> ami vse edno pod modul 2^32-1
+<sssa88> no ne e tam problema
+<Prince_of_Dawn> aha
+<Prince_of_Dawn> mi zashto ne probwash s %-ta
+<sssa88> Borisov, ti tvojto testval li si go za takyv test s a-ta?
+<Prince_of_Dawn> i prosto chislo
+<sssa88> predi s %-ta beshe
+<Swetko> moito
+<Swetko> ne sum
+<Prince_of_Dawn> mi ne sam
+<sssa88> ama pak beshe bavn
+<Swetko> ama to si se vishda che e lineino
+<sssa88> probvaj go i ako e byrzo neshto protiv da mi pratish sorsa si?
+<Swetko> iskash da kashesh che mnogo chesto ti proveriava dali nizovete syvpadata li
+<sssa88> to e linejno ako hash-funkciqta raboti perfektno ama pri men ne raboti taka
+<Prince_of_Dawn> mi moga da ti kaja kak da se sprawish s testa s a-tata
+<Swetko> ami az da ti kasha ne pravia takava proverka - razchitam na tova che testovete ste da hubavi
+<Prince_of_Dawn> ;) swetkoo...
+<sssa88> e do primerno togava "abba" povtorena mnogo pyti
+<Prince_of_Dawn> az iskah da ti predloja da pochwash tarseneto ot tsentaa na masiwa
+<Prince_of_Dawn> i taka ako e aaaaaaaaaaaa
+<Prince_of_Dawn> wednaga shte se razshirish li neino be ni edin strcmp
+<sssa88> mda tova e dobra ideq
+<Prince_of_Dawn> obache!!!
+<sssa88> ama ne mi se pravi taka
+<Prince_of_Dawn> trqbwa da go naprawish  da moje da dwiji na obratno   
+<Prince_of_Dawn> vajno e da si se oprajnil
+<VelinTzanov> Ia da vidia sega kakvo ste mi izpisali... :)
+<Swetko> nisto osobeno
+<Swetko> aide po byrzo da svarshim dneska
+<VelinTzanov> OK
+<VelinTzanov> Otchet. Swetko?
+<VelinTzanov> Hehe, posledniat vi otchet... :)
+<Swetko> spah 12 chasa 
+<Swetko> i nisto ne napravih, a misleh da resha 1-2 zadachi
+<VelinTzanov> Dobre de, pochivkata ne e tolkova losho neshto.
+<VelinTzanov> Vlado?
+<VelinTzanov> Swetko, a domashnoto pone?
+<sssa88> domashnoto i tree ot kontrolnoto
+<VelinTzanov> Idealno.
+<VelinTzanov> Borisov?
+<Prince_of_Dawn> az bqh zaet mnogo wchere Sestra i Bashta imaha imen den i samoleten bilek kupuwahme
+<Prince_of_Dawn> ma wecherta ospqh da napisha domashnoto
+<VelinTzanov> Dobre, dobre...
+<VelinTzanov> Rangel?
+<VelinTzanov> Swetko, pitah te za domashnoto.
+<Swetko> ne, nisto 
+<rangel__> domashnoto, i convex veche mi hvashta 9/11 testa :-)
+<rangel__> sega cheta log-a da vidq kakvo pravq ne kakto trqbva, zashtoto opredeleno byrkam nqkyde
+<VelinTzanov> Btw, domashnite triabva da mi se predadat predi BOI. Ako syvsem ne mojete, shte gi priema i 
+  sled BOI, no ne e preporychitelno v nikakyv sluchai.
+<Swetko> az ste go predam dneska sigurno
+<rangel__> zashtoto i reshenieto mi N^4 ne gi hvashta, koeto e mnogo stranno
+<VelinTzanov> Rangele, niakoi den shte nauchish che 4-te bytes "9/11" karat horata v US da nastryhvat 
+  lekichko... :)
+<Prince_of_Dawn> e veline ne e li po dobre da si po chiwame weche ?
+<Swetko> e, ne che imash reshka a bug
+<VelinTzanov> Mislia che ot CRU-to i FBR-to veche ni slediat sesiata... :)
+<Swetko> zasto
+<Prince_of_Dawn> swetko pomisli
+<rangel__> e tiq hora za racionalni chisla ne sa li chuvali? :-)
+<Swetko> te ne znaiat bulgarrski
+<VelinTzanov> :)
+<VelinTzanov> Borisov sega kak shte go proveriavat po samoletite... :):):):)
+<Prince_of_Dawn> znachi shte go obarkat s arabski
+<VelinTzanov> Borisov, dobre e da si pochivate, no samo ako ste si svyrshili rabotata.
+<VelinTzanov> KOito ne si ia e svyrshil - shte triabva da si ia svyrshi.
+<VelinTzanov> OK. Ami shet pochvame mai...
+<sssa88> ami az pdrm ne uspqh da go opravq po-byrzo da raboti ama vse pak mislq che veche e vqrno pone
+<Swetko> az puk niama da pochivam stot to goliama pochivka beshe dosega
+<Swetko> ok
+<VelinTzanov> Vlado, tova bit-ovo neshto neshto ne mi haresva...
+<VelinTzanov> T.e. tova deto prosto otsichash bitovete.
+<sssa88> amo to predi po drugiq nachin beshe
+<sssa88> i pak syshtata rabota
+<VelinTzanov> Ne mojesh li da izmerish vremeto i da vidish kyde tochno e bottleneck-a?
+<sssa88> ami
+<VelinTzanov> Triabva ili da imash mnogo false alarms ili % da e bavno.
+<sssa88> primerno za test s mnogo a-ta predpolagam che prosto seskysva da pravi sravneniq
+<VelinTzanov> Ne moje da niamash nito ednoto, nito drugoto i pak da si tvyrde baven.
+<sssa88> po-skoro pyrvoto e
+<VelinTzanov> ZAshto be Vlado? Uspeshnite sravnenia ne triabav da te zabaviat!
+<VelinTzanov> Ahaaa, zacepih zashto!
+<VelinTzanov> Zashtoto ti gledash samo poslednite niakolko znaka.
+<rangel__> pri vhod samo a-ta stava kvadratno
+<VelinTzanov> E, tova e kofti... pone azbukata ti vzaimnoprosto chislo li e s 2^32?
+<VelinTzanov> Sloji edin broiach za false alarms - tova e lesno.
+<sssa88> ami maj ne
+<VelinTzanov> Chakaite malko, reshenieto koeto pravihme e lineino.
+<sssa88> ama to pri a-ta to ne sa false alarms
+<VelinTzanov> Ako na niakoi mu stava kvadratno na aaaaaaa znachi ne e razbral algorityma! >:0[
+<VelinTzanov> Hmm... dali pyk az ne byrkam neshto.
+<rangel__> ponezhe za vsqka poziciq pravq cqlata proverka po dylzhinata
+<VelinTzanov> Iskash da kajesh che vsiako razshiriavane e true alarm?
+<VelinTzanov> I imash lineen broi razshiriavania?
+<rangel__> da
+<Prince_of_Dawn> misle che sme wsichki sme go razbrali
+<Prince_of_Dawn> az predlojih na nedev da pochwa ot sredata
+<VelinTzanov> Ne moje li da proverite samo za nai-dylgia polinom dali ne e false alarm, a ostanalite da gi 
+  vzimate na doverie?
+<VelinTzanov> Veroiatnostta nai-dylgia da e false alarm e mnoooogo malka.
+<Swetko> az vzimam vsichko na doverie
+<VelinTzanov> Borisov, bez takiva mrysni hach-cheta.
+<Swetko> ama pri modul ot 1 000 000
+<VelinTzanov> I byrzo li ti e, Swetko?
+<Swetko> trudno da se zaseche
+<VelinTzanov> Da, veroiatnostta e kym 1 / 1 000 000
+<Swetko> ami to prosto e naistina LINEINO
+<Swetko> ne sum testval
+<Swetko> ama niama prichina da e bavno
+<VelinTzanov> OK. Az shte go test-vam i shte vi pisha.
+<Prince_of_Dawn> trqbwa da go testwash s aaaaaaaaaaaa
+<sssa88> toest iskate da mahna proverkata za nizovete izobshto?
+<Swetko> t.e. s goliam test ne sum testval
+<VelinTzanov> Vlado, moje ako iskash da ia slojish samo na otgovora.
+<VelinTzanov> A moje i da ia mahnesh izobshto.
+<Prince_of_Dawn> weline toi swetko waobshte ne preowerqwa dali ima false alarm
+<Prince_of_Dawn> ;)
+<Prince_of_Dawn> toi towa go preskacha
+<VelinTzanov> No ako iskash da si 100% siguren, che algorithm-a e veren sloji proverka - no samo nai-nakraia.
+<VelinTzanov> Ami Borisov, mislia che pravilno pravi. :)
+<Swetko> nikoi ne mi znae modula
+<VelinTzanov> Stiga da mu e dostatychno dobyr hash-a niama problem.
+<Swetko> az i bez tova proveriavam samo 100 000*2 string-a
+<Prince_of_Dawn> mi pri golemi whodowe nqma li da stane kupon?
+<Swetko> nito puk niakoi mi znae azbukata 
+<Prince_of_Dawn> da...
+<Prince_of_Dawn> wetoqrno ste prawi
+<VelinTzanov> Borisov, niama da stane kupon... veroiatnostta za false alarm e nishtojna.
+<VelinTzanov> Osven tova niama nikakyv problem da si proverish otgovora i da si siguren che e veren.
+<VelinTzanov> Ako se okaje che e greshen - puskash nanovo algorithm-a.
+<Swetko> ami ako ne e:)
+<VelinTzanov> Prosto markirash tazi dvoika kato greshna i ne ia proveriavash sledvashtia pyt.
+<Prince_of_Dawn> a kato go pusnesh nanowo towq nqma da pomogne
+<rangel__> mozhe da si pazish edin spisyk s potencialni otgovori i da gi proverqvash po dylzhina :-)
+<VelinTzanov> Ako i vtoria e greshen, znachi iavno ti e kalpav hash-a i triabav da si opravish algorithm-a. 
+  :)
+<VelinTzanov> Mai ne stava tochno taka, Rangele...
+<VelinTzanov> ... no da puskash algorithm-a nanovo niama problem.
+<sssa88> na men taka bez sravnenie na stringovete greshni otgovori mi dava
+<VelinTzanov> Kalpav ti e modula, Vlado.
+<sssa88> e za mnogo a-ta e byrzo veche
+<VelinTzanov> Napravi statistika kolko false alarms ima ot obshto kolko proverki.
+<Prince_of_Dawn> ;)
+<Swetko> da, tova e hitro
+<VelinTzanov> Ako imash tvyrde mnogo false alarms, znachi neshto ne e nared.
+<VelinTzanov> Ako sa malko i pak dava greshni otgovori go napravi da proveriava krainia otgovor. I ako e 
+  greshen da go markira greshen i da puska algorithm-a nanovo, kato proveriava mark-ovete.
+<VelinTzanov> I ako pak izkara greshen - pak markirash i pak puskash
+<VelinTzanov> Nakraia vse shte izkara... ako se bavi tvyrde mnogo, znachi imash tvyrde mnogo false alarms, 
+  znachi neshto drugo ne e nared.
+<VelinTzanov> Iasno?
+<sssa88> aha
+<VelinTzanov> Drugi problemi s domashnite?
+<Swetko> ne
+<VelinTzanov> Rangel, Vlado, Borisov?
+<Prince_of_Dawn> mi az imam mnogo
+<sssa88> ne
+<VelinTzanov> :)
+<Prince_of_Dawn> ma ne sa konkretizirani
+<VelinTzanov> Shte gi konkretizirash ti, niama kyde da hodish... :)
+<rangel__> qvno mi e greshna prestavata za convex :-) no trqbva da se opravq i s log-a
+<VelinTzanov> Opravi se, Rangele. Ako imash vyprosi - az sym na linia.
+<VelinTzanov> Imash mi i source-a, btw.
+<Swetko> ne moshe da e greshna i da hvastash 1/11
+<VelinTzanov> Ako ti triabva da ti definiram neshto v nego - kazvai.
+<Swetko> ne moshe da e greshna i da hvastash 9/11
+<VelinTzanov> OK.
+<VelinTzanov> Pochvame za dnes.
+<rangel__> e ne mozhe da q vqrna i da ne raboti :_)
+<Swetko> ok
+<VelinTzanov> Za dnes imame dva uroka:
+<VelinTzanov> Pyrviat e da uprajnim oshte poslednia ni metod.
+<VelinTzanov> I vtoriat e da se nauchite kak da podhojdate kym 2-D zadachi.
+<VelinTzanov> A imenno - zadyljitelno da poglejdate 1-D varianta na zadachata.
+<VelinTzanov> Ne vinagi tova vyrshi rabota, no mnogo chesto e mnogo polezno.
+<VelinTzanov> Na Mobiles naprimer se okazva mnogo polezno.
+<VelinTzanov> Drugata zadacha za koiato se seshtam i koiato shte pravim sega e Utopia ot IOI 2002
+<VelinTzanov> http://infoman.musala.com/contests/ioi/2002/utopia.doc
+<VelinTzanov> Kajete kato ste gotovi.
+<VelinTzanov> I kajete dali me razbrahte za 2-D zadachite.
+<sssa88> gotovo
+<sssa88> za 2D zadachite mislq che razbrah
+<Swetko> az se opitvam da se setia niakoia druga 2D zadacha ma ne moga
+<Prince_of_Dawn> gotowo
+<VelinTzanov> Shte ti dadem shans da se setish na BOI, swetko... :)
+<VelinTzanov> Ostana samo Rangel.
+<rangel__> gotov
+<VelinTzanov> N! a?
+<VelinTzanov> :)
+<VelinTzanov> Veche vi e iasno che shte intervalizirame tuka...
+<Prince_of_Dawn> mai da
+<VelinTzanov> Samo che imame problem.
+<VelinTzanov> Namirame se v 2-D
+<VelinTzanov> Kak da go reshim?
+<VelinTzanov> Idei?
+<Prince_of_Dawn> mi da se provwame za 1-D
+<VelinTzanov> Dobra ideia.
+<VelinTzanov> Na Mobiles ni pomogna.
+<VelinTzanov> Znachi i tuk moje bi shte ni pomogne.
+<VelinTzanov> "Prevedohte" li si veche zadachata v 1-D?
+<Prince_of_Dawn> da
+<VelinTzanov> Kato ste gotovi s "prevoda" - kajete mi. :)
+<sssa88> da
+<rangel__> da
+<Swetko> da
+<VelinTzanov> OK
+<VelinTzanov> Sega kakvo pravim? :)
+<VelinTzanov> Kak da vkarame intevali v tazi zadacha?
+<VelinTzanov> Koi znae reshenieto, btw?
+<rangel__> az ne
+<sssa88> az sym q pisal ama po-skoro ne go znam
+<Prince_of_Dawn> az sam go znael ma ne si spomnqma nishto
+<VelinTzanov> Aide da pomislim togava.
+<VelinTzanov> Iskame da boravim s interval ot chislata - tova e iasno - znaem ot vchera che taka se podhojda 
+  kym takiva zadachi.
+<Prince_of_Dawn> az ne rabrah chislata s koito razpolagam posledowatelni li sa
+<Prince_of_Dawn> (1..2n0
+<Prince_of_Dawn> 1..2n
+<sssa88> ne
+<VelinTzanov> Dadeni sa ti vyv vhoda, Borisov. Znachi ochevidno ne sa.
+<Prince_of_Dawn> poneje w i dwata primera e taka
+<VelinTzanov> No mai ti e kazano che niamash ednakvi.
+<VelinTzanov> E kakyv e smisylyt da ti gi davat vyv vhoda ako beshe taka?! :)
+<Prince_of_Dawn> ;( nqam
+<Swetko> za zabluda na protivnika
+<VelinTzanov> A i imash otdelno ogranichenie za tiah (100 000)
+<VelinTzanov> Tova che chislata ne sa posledovatelni da ne vi razseiva!
+<VelinTzanov> Pak mojem da rabotim s intervali.
+<VelinTzanov> Prosto mojete da si gi predstavite sortirani chislata i da si vzimate interval ot sortirania 
+  masiv.
+<Prince_of_Dawn> mi az wikam da izbroim kolko pati shte ni se nalga da preskachame granitsata
+<VelinTzanov> Zashto pyk ti e tova?
+<VelinTzanov> Dai da mislim za intervali sega.
+<VelinTzanov> Kak da vkarame intervali v zadachata?
+<Prince_of_Dawn> mi iska mi se da imam edin interwal ot chisla ot koito kato wzema i winagi preskacham 
+  granitsa s edin hod
+<VelinTzanov> Vyobshte - nie iskame svoboda da ostavame v nashata polovina i da svoboda da smeniame 
+  polovinata.
+<VelinTzanov> Ne te razbrah, Borisov.
+<Prince_of_Dawn> zashto 
+<VelinTzanov> Aha, gore-dolu te razbrah.
+<Prince_of_Dawn> aaaaaaa
+<VelinTzanov> Poniakoga iskash da ne preskachash.
+<Prince_of_Dawn> az prochetoh che shte me biesh
+<Prince_of_Dawn> e da
+<VelinTzanov> Neka pyrvo razgledame krainostite.
+<Prince_of_Dawn> iskam i edin drug iterwal ot chisla s koito da moga da si sedq doma
+<VelinTzanov> Kak da napravim vinagi da si stoim v nashata polovina e iasno, nali. :)
+<VelinTzanov> No i syshto tolkova bezpolezno.
+<Prince_of_Dawn> ne men mi e
+<VelinTzanov> Oho, dva intervala... stava opasno. :)
+<rangel__> tova vinagi da preskachame syshto e lesno :-)
+<VelinTzanov> Kak?
+<VelinTzanov> Kaji kak, Rangele.
+<rangel__> vinagi skachame s naj-malkoto chislo
+<rangel__> taka sledvashtoto kato go pribavim s obraten znak shte smeni polovinata
+<VelinTzanov> Aha... dobre, dobre.
+<VelinTzanov> T.e. ako pravia taka:
+<VelinTzanov> 1 -3 +5 -6 +7 -10 +12 -20 +24 ...
+<VelinTzanov> I vinagi shte smeniam znaka? :)
+<VelinTzanov> A zashto?
+<Prince_of_Dawn> da
+<rangel__> pyrviq hod e qsno zashto smenq znaka (ot 0)
+<rangel__> vtoroto chislo e po-golqmo ot pyrvoto sledovatelno kato go vzema s obraten znak, shte mina 
+  granicata
+<rangel__> i mi ostava tqhnata razlika, koqto e po-malka ot 3-toto chislo (zadylzhitelno)
+<rangel__> i taka po indukciq
+<VelinTzanov> Hubavo
+<VelinTzanov> Aide neka pomislim za interval sega.
+<VelinTzanov> Neka ne pochva otnachalo. Neka e naprimer:
+<VelinTzanov> +7 -10 +12 -20 +24
+<rangel__> no tova ne mi pomaga ako iskam da si sedq na syshtoto mqsto :-)
+<VelinTzanov> Zashtoto si se ogranichil.
+<VelinTzanov> Ogranichil si se da pochvash otnachalo.
+<VelinTzanov> Ako si nalagash izlishni ogranichenia niama da uspeesh, razbira se.
+<VelinTzanov> Neka mislim za interval.
+<VelinTzanov> Intervala ni dava poveche svoboda.
+<VelinTzanov> Sega kakvo mojem da pravim?
+<VelinTzanov> Mojem da slojim -28 otdiasno i taka da smenim znaka.
+<VelinTzanov> Drugo mojem li? :)
+<Prince_of_Dawn> moje da pochenm ot sredata
+<Prince_of_Dawn> ne tochno sredata
+<VelinTzanov> Borisov, ne pitam tova!
+<VelinTzanov> Izprevarvash me.
+<VelinTzanov> Hubavo, imam interval.
+<VelinTzanov> Moga da go razshiria otdiasno i da smenia znaka na sumata.
+<VelinTzanov> Drugo moga li da go pravia tozi interval?
+<VelinTzanov> Ne pitam dali moga da go pochna otniakyde. Priemam che go imam.
+<VelinTzanov> Niakoi da ima ideia?
+<VelinTzanov> Kakvo drugo bi bilo polezno.
+<VelinTzanov> Vlado?
+<rangel__> mozhe da go razshirish otlqvo i da ne smenqsh znaka
+<sssa88> neshto nqmam ideq
+<VelinTzanov> Dobre, dobre... a kak tochno razshiriavam otliavo?
+<VelinTzanov> Izpolzvai gornia primer:
+<rangel__> po syshtiq nachin po kojto i otdqsno, znaka se promenq na vsqko razshirqvane
+<VelinTzanov> Dobaviam +6 otliavo li?
+<rangel__> primerno s -5
+<VelinTzanov> Aha - dobaviam -6 znachi.
+<VelinTzanov> Zashto taka?
+<VelinTzanov> E, v gornia primer e 6, a ne 5, shtoto sledvashtoto chislo otliavo e 6.
+<VelinTzanov> ZAshto da alterniram znacite?
+<rangel__> po syshtaka logika (indukciq) kakto gore
+<rangel__> vsyshtnost oshte ne sym go dokazal de :-)
+<VelinTzanov> Dobre de, zashto da ne sloja +6?
+<VelinTzanov> Taka shte sym po-siguren che niama da smenia polovinata.
+<Prince_of_Dawn> zahtoto s takaw znak shte si ostanesh w polowinata i nqma da nadwishish razstoqnirto ot 0 
+  sled koeto ne moje da se warnesh w drugata polowina s edin hod
+<rangel__> da no mozhe da ne mozhesh da q smenish na sledvashtiq hod
+<VelinTzanov> Ahaaa. Dobre. :)
+<VelinTzanov> Prosto shte si ogranicha svobodata.
+<rangel__> t.e. hoda trqbva da zapazva svobodata za dvizhenie i dvete posoki
+<VelinTzanov> Tochno taka.
+<VelinTzanov> Osven tova e dobre da rabotia vinagi s edni i syshti intervali.
+<VelinTzanov> Inache imam 2^n razlichni intervali.
+<rangel__> pak e po-dobre ot N! :-)
+<VelinTzanov> No ne e dobre za N = 1000 :)
+<VelinTzanov> Znachi reshihme da rabotim samo s alternirani intervali.
+<Prince_of_Dawn> kak taka alternatiwnni interwali?
+<VelinTzanov> Ne alternativni.
+<VelinTzanov> A alternirani.
+<VelinTzanov> T.e. + - + - + -....
+<VelinTzanov> Zancite alternirat.
+<VelinTzanov> t.e. smeniat se, reduvat se.
+<Prince_of_Dawn> aha
+<VelinTzanov> Rangel tvyrdi che s takyv interval ot chisla mojem svobodno da si izbirame dali da se 
+  prehvyrliame prez osta ili ne. Syglasni li ste s nego?
+<Swetko> da
+<rangel__> ako imah kolkoto si iskam chisla nalqvo i nadqsno da
+<VelinTzanov> Neshto poveche - toi tvyrdi, che sled hod ot takyv interval toi moje da zapazi vida na 
+  intervala.
+<VelinTzanov> Tochno taka - ako imashe kolko si iskash chisla.
+<VelinTzanov> No s tova shte se opravim niakak posle.
+<VelinTzanov> Vlado, Borisov, na vas iasno li vi e tvyrdenieto na Rangel?
+<VelinTzanov> I otdelno - viarvate li mu i ako da - zashto?
+<Prince_of_Dawn> da
+<sssa88> da
+<Prince_of_Dawn> zashtoto mi e priqtel ;)
+<sssa88> ami vqrvam mu bez da znam zashto
+<Prince_of_Dawn> w sashnost toi go dokaza
+<Prince_of_Dawn> ili pone me ubedi
+<VelinTzanov> Vlado, dobre e da razberesh zashto.
+<VelinTzanov> Rangel tvyrdi che ako dobavim sledvashtoto chislo otdiasno (s obraten znak) shte smenim znaka 
+  na sumata.
+<VelinTzanov> Tvyrdi i che ako dobavim otliavo sledvashtoto chislo (pak s obraten znak) shte zapazim znaka.
+<VelinTzanov> Dokazatelstvoto e prosto:
+<VelinTzanov> Ako imame takyv interval s alternirani znaci, to sumata ima syshtia znak kato nai-goliamoto 
+  chislo.
+<VelinTzanov> Prosto zashtoto na vsiako chislo ot drugia znak mojete da sypostavite po-goliamo chislo ot 
+  vyprosnia znak (znaka na nai-goliamoto chislo)
+<VelinTzanov> +7 (-10 +12) (-20 +24)
+* Logging #ioi to 'logs\ioi_2004_06_30.log'
+<VelinTzanov> Vijdate li kak vsiako otricatelno chislo se neutralizira ot po-goliamo polojitelno chislo.
+<VelinTzanov> Ne e trudno.
+<VelinTzanov> Taka che ako Rangel iska da zapazi znaka, prosto razshiriava otliavo - taka nai-goliamoto chislo si ostava syshtoto.
+<VelinTzanov> Ako iska da smeni znaka - prosto razshiriava otdiasno.
+<VelinTzanov> Iasno?
+<sssa88> da
+<rangel__> da
+<Prince_of_Dawn> da
+<Prince_of_Dawn> Blagodarq ti mili Veline za hubawata podgotowka koqto ni naprawi i usiliqta koito wloji da ni nauchish neshto
+<sssa88> Mnogo ti Blagodarq mili Veline za hubavata podgotovka koqto ni napravi. Dano ne se izlojim!
+<Swetko> mnogo ti blagodarim Veline za hubavata podgotovka koiato ni napravi. Niama da se izlozhim.
+<rangel__> I ponezhe e grupovo i az mnogo ti blagodarq.
+<Prince_of_Dawn> (kazwame go sega po neje swetko otiwa na school)
+<VelinTzanov> :)
+<VelinTzanov> Nali znaete kakyv e nai-hubaviat nachin da mi blagodarite. :)
+<rangel__> Tova poslednoto prozvucha gadno... Podgotovkata naistina beshe mnogo dobra i nqma da se izlagame na BOI.
+<VelinTzanov> Na men ne mi prozvucha gadno. Az razbiram ot polovin duma. ;)
+<Prince_of_Dawn> shte se postaraem
+<VelinTzanov> Aide da dovyrshim zadachata.
+<Swetko> pone 8 ot 12 medala da vzemem
+<Prince_of_Dawn> aide
+<VelinTzanov> Znachi veche mojem da si hodim kydeto si poiskame - idealno.
+<Swetko> aide chao - az otivam na school
+<VelinTzanov> Ostava samo edno ogranichenie.
+* Swetko is now known as Swetko_AG
+<VelinTzanov> OK, Swetko.
+<VelinTzanov> Chao
+<Prince_of_Dawn> chao
+<VelinTzanov> Procheti log-a posle.
+<Swetko_AG> ok
+<VelinTzanov> Kakvo ogranichenie ni "spira"?
+<sssa88> chao
+<Prince_of_Dawn> krainite chisla
+<rangel__> che intervala e kraen
+<Prince_of_Dawn> che moje da izlezem po nqkoe wreme q ot dolu q ot gore
+<Prince_of_Dawn> na nashite DC
+<rangel__> no pyk nie znaem kolko pyti shte trqbva da presechem granicata, znachi znaem kolko po-golemi chisla ot nachalnoto trqbva da imame
+<VelinTzanov> Mda.
+<VelinTzanov> Kakvo oznachava tova?
+<VelinTzanov> Kak mojem da si reshim problema?
+<Prince_of_Dawn> mi che ot tam shte pochnem ;)
+<VelinTzanov> Ot kdye shte pochnem, Borisov, tova e vyprosyt. :)
+<rangel__> problema shte si go reshim s broene :-)
+<Prince_of_Dawn> mi da
+<Prince_of_Dawn> rangel kaza che znaem kolko golemi chisla shte ni trqbwat 
+<VelinTzanov> Aaa, sega vidiah kakvo e kazal Rangel. :)
+<VelinTzanov> Da.
+<Prince_of_Dawn> znachi pochwame ot tam che da ni stignat otchno
+<VelinTzanov> Ami prosto pochvame ot pravilnoto miasto, da.
+<Prince_of_Dawn> mi ok
+<VelinTzanov> OK - znachi reshihme 1-D zadachata.
+<VelinTzanov> Iasna li e na vsichki tia?
+<Prince_of_Dawn> da
+<rangel__> da
+<sssa88> da
+<VelinTzanov> OK
+<VelinTzanov> Samo deto tova ne e vsichko.
+<Prince_of_Dawn> da i za swetko
+<VelinTzanov> Imame si 2-D zadacha.
+<VelinTzanov> Kakvo shte pravim sega?
+<VelinTzanov> Kak da reshim 2-D zadachata
+<VelinTzanov> ?
+<Prince_of_Dawn> moje li az
+<rangel__> mi te dvete izmereniq ne zavisqt edno ot drugo
+<Prince_of_Dawn> imenno
+<Prince_of_Dawn> taka da se kaje shte si razdelim chislata na dwe
+<VelinTzanov> Mdaaa. :)
+<Prince_of_Dawn> shte si reshim dwete zadachi po otdelno i nakraq shte printnem izhoda zaedno
+<VelinTzanov> Prosto nikoga ne moje da imate otgovor 0. T.e. zadachata vinagi ima reshenie.
+<VelinTzanov> Shtom 1-D zadachata vinagi ima reshenie, znachi i 2-D zadachata syshto ima, nezavisimo kak delim chislata.
+<VelinTzanov> Kakto s povecheto 2-D zadachi, sled otnositelno trudno reshavane na 1-D zadachata sledva trivialno razshiriavane do 2-D.
+<VelinTzanov> Gotovi li ste da napishete zadachata i da mi ia predadete kato posledno domashno?
+<Prince_of_Dawn> da
+<rangel__> da
+<sssa88> da
+<Prince_of_Dawn> mai minahme bez pochiwen den
+<VelinTzanov> Utre. :)
+<VelinTzanov> Taka.
+<VelinTzanov> Urocite:
+<VelinTzanov> Vidite li 2-D zadacha, zadyljitelno pomislete za 1-D variant na syshtata.
+<VelinTzanov> Otkajete se ot tova, edva kogato se ubedite che e napylno bezsmisleno.
+<VelinTzanov> Primerno izpyknalata obvivka ne moje da se kaje che ima 1-D variant... :)
+<Prince_of_Dawn> ;)))
+<VelinTzanov> I drugiat urok e vcherashniat: Vidite li niakakva takava plasheshta zadacha s N! vyzmojnosti, pomislete si za intervali.
+<Prince_of_Dawn> towa naistina e napalno bezmisleno ;)
+<VelinTzanov> Pochti sigurno e che intervalite sa reshenieto i che zadachata se svejda do N^2 dinamichno ili niakakvo greedy s intervali.
+<VelinTzanov> Prosto niama kak inache.
+<VelinTzanov> Vij izpyknala obvivka v 3-D si e seriozna rabota... :)
+<VelinTzanov> Ne e kato Utopia v 3-D... :0
+<VelinTzanov> :)
+<Prince_of_Dawn> )
+<VelinTzanov> Gotovi li sme za dnes (t.e. razbrahme li se? Nauchihte li si urocite?)
+<rangel__> dori kato mobiles v 3-D ne e :-)
+<VelinTzanov> Vsyshtnost ima oshte neshto drebno za dnes (ne, ne e zadacha)
+<Prince_of_Dawn> |:-)
+<VelinTzanov> No kajete pyrvo razbrahme li se za 2-D-to i za N!-a?
+<Prince_of_Dawn> da
+<sssa88> da
+<rangel__> da
+<VelinTzanov> Hehe, Borisov, taka izglejdash kato tezi deto se diplomirat - s togite i shapchicite s ploskoto otgore. :)
+<Prince_of_Dawn> imenno
+<Prince_of_Dawn> |-|:-)
+<VelinTzanov> Taka, momcheta predi BOI e dobre da si podredite neshtata v glavata.
+<VelinTzanov> Da si dadete smetka kakvo ste nauchili i da si "defragmentirate" neshtata.
+<VelinTzanov> Syshto da si sistematizirate malkite syvetcheta koito sme kazvali mejdu drugoto.
+<VelinTzanov> Na pyrvo miasto - tova che triabva da ima red i definicii.
+<VelinTzanov> Triabva vsichko da e iasno kak shte se kazva, kak shte byde organizirano i kakvi shte mu bydat stypkite, zadyljitelno PREDI da se pishe.
+<VelinTzanov> V chastnost tova oznachava che triabva da otdeliate 5-te minutki na Velin.
+<VelinTzanov> Prosto kato e reshena zadachata i kato e chist algorithm-a triabva da otdeliate 5 minutki bez da pishete.
+<VelinTzanov> Samo mislete kakvi masivi shte ima i kakvi promenlivi. Koia promenliva (masiv) kakvo shte znachi.
+<VelinTzanov> Na vsiaka stypka kakvo shte se pravi.
+<VelinTzanov> I chak togava pochvaite.
+<VelinTzanov> Ne iskam nervni systezateli.
+<VelinTzanov> Tova ne e ACM-sko systezanie.
+<VelinTzanov> Imate 5 chasa.
+<VelinTzanov> Po 2 chasa i polovina na zadacha.
+<VelinTzanov> Ili aide, da kajem po 2 chasa (polovin chas za uslovia i vyprosi i polovin za gluposti po tretata zadacha)
+<Prince_of_Dawn> ( towa znachi che ima edna nereshima )
+<VelinTzanov> Hvashtate tretata zadacha samo ako ste testvali mnogo dobre drugite dve.
+<VelinTzanov> Ne, shte se postaraem vsichki da sa reshimi... no moje da sa kato na Proletnia - vsichki zadachi da gi reshat, no nikoi da ne gi reshi i trite.
+<VelinTzanov> Testvali mnogo dobre znachi:
+<VelinTzanov> - Malki testove, koito proveriavate na ryka (ili s baven, no siguren algorithm) dali sa verni.
+<VelinTzanov> - Golemi stress-testove, s koito da proverite dali se vpisvate vyv vremevite limiti i v ogranichenieto za pametta.
+<VelinTzanov> Kakto i da vidite dali ne ste zabravili da set-nete memoryzation bit-a na dinamichnoto s rekursia. :)
+<Prince_of_Dawn> ;)))
+<VelinTzanov> Kazah vi veche za tozi moi gorchiv opit.
+<VelinTzanov> Taka vmesto s 3 zadachi ostanah s 1.
+<VelinTzanov> I ne mi beshe za pyrvi pyt.
+<VelinTzanov> Zatova gledaite da ne povtariate moite greshki.
+<VelinTzanov> Ako imate edin chas ili chas i polovina i dve dobre resheni zadachi, edva togava se hvyrliaite seriozno na tretata.
+<VelinTzanov> Ako imate samo edna i dve po koito niamate nishto mojete da otdelite vreme i po dvete zadachi, za da si izberete edna ot tiah.
+<VelinTzanov> No pri vsichki polojenia e dobre do poloivin-edin chas veche da ste reshili po koia ot dvete shte rabotite.
+<Prince_of_Dawn> kakwo prawim kato na nqkoq zadacha ne ni idwat idei
+<VelinTzanov> Chetete uslovieto, Borisov.
+<VelinTzanov> Kazval sym go i predi.
+<VelinTzanov> Uslovieto se chete v tri (ili chetiri) sluchaia:
+<VelinTzanov> 1) V nachaloto
+<VelinTzanov> 2) Kato se zakuchite i niamate idei.
+<VelinTzanov> ( 3) Eventualno sled izmislianeto i predi napisvaneto NO V NIKAKYV SLUCHAI NE NAMESTO MOITE 5 MINUTKI! )
+<VelinTzanov> 4) Sled napisvaneto
+<VelinTzanov> 1 i 4 sa zadyljitelni. 2 syshto, ako popadnete v takava situacia.
+<Prince_of_Dawn> mi ako propusnem edno kakwo mazalo shte stane ;_
+<VelinTzanov> Ne zabraviaite i kakvo sym vi kazal za procesa na mislene.
+<VelinTzanov> Imate dadeno.
+<VelinTzanov> Imate i tova koeto se tyrsi.
+<VelinTzanov> Mojete da razshiriavate i dvete kolkoto si iskate.
+<VelinTzanov> Bezplatno e.
+<VelinTzanov> Celta e da gi sreshtnete.
+<VelinTzanov> No vinagi si davaite smetkata kakvo mojete da napravite ot vhoda. I vinagi si davaite smetka kakvo bi vi bilo dostatychno za da namerite izhoda.
+<VelinTzanov> Nakraia, kato sreshtnete dvete, nepremenno si daite smetka koi tochno neshta ste izpolzvali.
+<VelinTzanov> A imenno - nedeite da implementirate neshta koito ne izpolzvate. :)
+<VelinTzanov> Tova ne e bezplatno. :)
+<VelinTzanov> Koda triabva da e maximalno prost i kratyk, no ne izlishno prost ili izlishno kratyk.
+<VelinTzanov> ako shte vi kostva vreme i usilia da go sykrashtavate i oprostiavate ne si gubete vremeto.
+<Prince_of_Dawn> Swetko: slagai enter
+<VelinTzanov> No v 5-te minutki se postaraite da go izchistite maximalno.
+<VelinTzanov> Ne zabraviaite Two Rods. Tam bez funkcia za dvoichno tyrsene e smyrt.
+<VelinTzanov> Mislete za tezi neshta.
+<VelinTzanov> Syshto e dobre da izbiagvate specialnite sluchai.
+<VelinTzanov> Dobre e ako moje da imate edno reshenie koeto raboti za vsiakakvi sluchai, a ne da pravite razlichni neshta s if-ove za razlichni specialni sluchai (3 tochki na edna prava, dve ravni chisla i t.n. i t.n.)
+<VelinTzanov> Poniakoga se nalaga de, no obiknoveno ne - zatova go izbiagvaite.
+<VelinTzanov> I nakraia, no ne na posledno miasto, ne zabraviaite vsichki metodi i podhodi koito sme uchili.
+<VelinTzanov> Ne se symniavam che ako ne polovinata, to pone 40% ot zadachite koito shte sreshtnete na BOI, kontrolnoto i IOI vlizat v niakoia ot ramkite koito sme pravili.
+<VelinTzanov> ... a zashto ne i mnogo po-goliam procent.
+<VelinTzanov> Vsyshtnost predvid che pone 20-33% shte sa neshta po nivoto na podgotovkata...
+<VelinTzanov> ... ostavat vi samo mejdu 17 i 40 procenta neshta otvyd podgotovkata.
+<Prince_of_Dawn>  spored men protsentite moje da sa 0, 33, 66 ili 100
+<VelinTzanov> Za niakoi ot tiah shte triabva da proiavite originalnost i um... za drugi - prosto shte triabva da se nadiavate i drugite da ne gi napraviat. :)
+<VelinTzanov> Vse pak imash 15 zadachi, Borisov. :)
+<Prince_of_Dawn> a da
+<VelinTzanov> Osven tova niakoi zadachi se reshavat i ne za 100 tochki s niakoi metodi.
+<Prince_of_Dawn> praw si
+<VelinTzanov> Naprimer na IOI 2003 nashite momcheta s edin ot metodite ot podgotovkata udariha po 85 na nereshena zadacha. :)
+<VelinTzanov> Batch na IOI 2002 se praveshe za 70 s elementarna tehnika.
+<VelinTzanov> A imenno - da se zamislish kakvo ima znachenie i kakvo ne.
+<VelinTzanov> VINAGI se zamisliaite za tova. Na vsiaka zadacha.
+<VelinTzanov> Ne zabraviaite desetkite zadachi koito pravihme, kydeto tova zamisliane beshe osnovno.
+<VelinTzanov> Davaite si smetka za tezi neshta. Obeshtavam vi, che shte vi svyrshat rabota. Pone na moite zadachi. :)
+<VelinTzanov> Predi BOI pregledaite vsiaka ot temite na podgotovkata i si ia pregovorete otnositelno nabyrzo.
+<VelinTzanov> Zamislete se ima li neiasni neshta (naprimer ako ima nepredadeno ili neprieto ot men domashno v temata, znachi sys sigurnost ima niakakyv problem)
+<VelinTzanov> Izchistete tezi neiasnoti.
+<VelinTzanov> Shte gledam da vi pratia pylen arhiv s logovete i pylnata programa na podgotovkata, kakto i vsichkite vi source-ove.
+<VelinTzanov> No pyrvo shte izchakam da mi predadete vsichki domashni.
+<VelinTzanov> Inache programata i log-ovete moga da vi gi pratia oshte sega.
+<Prince_of_Dawn> az iskam programta
+<VelinTzanov> I taka momcheta, triabva da ste naiasno: znaete mnogo, mojete mnogo, vsiaka ot zadachite pred vas e reshima. Pone tezi za koito znam az.
+<Prince_of_Dawn> programata
+<VelinTzanov> Vseki ot vas ima potenciala za zlaten medal.
+<VelinTzanov> I tova ne e prosto niakakyv dylboko skrit vytre vyv vas potencial.
+<VelinTzanov> Postarali sme se da razviem tozi potencial.
+<VelinTzanov> Pyrvo sys sytezaniata prez godinata i posle s intenzivnata podgotovka.
+<VelinTzanov> Moje bi tvyrde intenzivna... :)  No shte imate vyzmojnost da si izleete dushata po vyprosa oshte dnes.
+<VelinTzanov> Po niakoe vreme shte vi pratia link kym anonimnata feedback blanka.
+<VelinTzanov> Kazano s dve dumi:
+<VelinTzanov> Smiatam che ako vseki ot vas se predstavi na nivoto si, srebyrnia medal mu e v kyrpa vyrzan. Ako se izlojite leko (no ne zverski) hvashtate bronze bez problemi.
+<VelinTzanov> Ako napravite vsichko po pravilnia nachin (red, disciplina, definicii, 5 mintuki na Velin, pravilnia metod na pravilnoto miasto i t.n. i t.n.) moje da ste sigurni, che shte se vyrnete sys zlato. Ne e nujno da nadskachate sebe si za tova. Imate veche dosatychno.
+<VelinTzanov> Mojete dostatychno, taka da se kaje.
+<VelinTzanov> Razbrahme li se?
+<Prince_of_Dawn> da
+<sssa88> da
+<rangel__> da
+<VelinTzanov> Aide - vyrvete, pobejdavaite! :)
+<Prince_of_Dawn> nadqwam se da se widim sled BOI
+<Prince_of_Dawn> ;)
+<VelinTzanov> A az otivam da vi test-vam domashnite... :)
+<VelinTzanov> Da, i az se nadiavam.
+<VelinTzanov> Ivovci sa mnogo silno, shtoto i nego si go biva, no vie mojete poveche <WINK> ;)
+<VelinTzanov> silno = silni
+<Prince_of_Dawn> haide chao
+<sssa88> chao
+<VelinTzanov> I ne zabraviaite - edna molitvichka predi systezanie niama da vi e izlishna. Bez pomosht Svishe niama da vi byde. :)
+<VelinTzanov> Ako imate niakakvi vyrposi po neshto ot podgotovkata - e-mail-a mi e otvoren.
+<VelinTzanov> Osobeno sega kato shte debug-vate domashno i shte pregovariate.
+<VelinTzanov> Aide, niama da vi zadyrjam poveche.
+<VelinTzanov> Uspeh i chao!
+<sssa88> chao
+<rangel__> chao
+<Prince_of_Dawn> chao
+* Prince_of_Dawn has left #ioi
+* Disconnected
+Session Close: Tue Jun 29 22:27:16 2004

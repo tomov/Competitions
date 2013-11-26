@@ -1,0 +1,22 @@
+: min cut = max flow
+
+run bfs from source along edges with cap>0 - used[v]==0 is one set, used[v]==1 is the other (for one possible min cut)
+
+: lexicographically first min cut
+
+cap[i][j] = cap[i][j] * MAXM + label[i][j]
+
+: matching
+
+supersource -> A ; A[i] -> B[j] if can be matched ; B[j] -> sink
+
+: lower bounds on cap's
+
+
+
+
+
+
+oneq s cenite i parite
+
+mcmf

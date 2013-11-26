@@ -1,0 +1,1345 @@
+
+Session Start: Tue Jul 15 11:28:24 2008
+Session Ident: #ioi08
+02[11:28] * Disconnected
+Session Close: Tue Jul 15 11:28:38 2008
+
+Session Start: Tue Jul 15 11:28:54 2008
+Session Ident: #ioi08
+03[11:28] * Now talking in #ioi08
+01[11:29] <stef_lp> evalq
+01[11:29] <stef_lp> daite OP ;D
+03[11:30] * eagaeoppooaaa sets mode: +o stef_lp
+06[11:30] * @mom pozdravqva vsi4ki sus Mercyful Fate - Egypt
+01[11:31] <@stef_lp> :D
+[11:31] <@mom> http://www.youtube.com/watch?v=Zev7nHUo4iU
+[11:31] <@mom> :)))
+[11:37] <@eagaeoppooaaa> bolen tip..
+[11:37] <@eagaeoppooaaa> http://www.youtube.com/watch?v=fDOV3b-iAso
+03[11:37] * exod40 (~exod40@87-126-64-166.btc-net.bg) has joined #ioi08
+[11:37] <exod40> basi gadniq irc klient:)
+[11:37] <exod40> nadqvam se da se spravq:)
+[11:38] <exod40> tuk li ste?
+[11:39] <@eagaeoppooaaa> da
+[11:39] <exod40> kak da si zapazq nicka?
+[11:39] <@eagaeoppooaaa> nqmam ideq...
+03[11:40] * eagaeoppooaaa sets mode: +o exod40
+[11:40] <@exod40> mom4ile, tuk li si?
+[11:40] <@exod40> stefane?
+01[11:40] <@stef_lp> mda
+[11:41] <@mom> aa qko
+[11:41] <@eagaeoppooaaa> da
+01[11:42] <@stef_lp> ae seki da si kazva v 1 abzac kak pishe obvivkata
+01[11:42] <@stef_lp> da ne sa omotavame
+[11:42] <@mom> graham
+01[11:42] <@stef_lp> az q pisha: sortiram po X praq dolna 4ast i posle gorna na vrashtane
+[11:42] <@exod40> tova shte go obqsnish:)
+[11:42] <@exod40> i az pravq graham
+[11:43] <@exod40> eagaeoppooaaa ?
+[11:43] <@eagaeoppooaaa> i az taka go pisha -> sweepline
+[11:43] <@exod40> vijte si mailite
+[11:43] <@exod40> stef_lp q go obqsni tova po-razshireno
+01[11:43] <@stef_lp> mersi
+01[11:44] <@stef_lp> ami
+01[11:44] <@stef_lp> sortirash po X
+01[11:44] <@stef_lp> tragvash ot nai lqvata i pravish dolnata 4ast na obvivkata
+01[11:44] <@stef_lp> kato graham e
+01[11:44] <@stef_lp> zemash sledvashtata to4ka
+01[11:44] <@stef_lp> i triesh zadnite dokato pravqt obraten zavoi
+[11:44] <@exod40> da
+01[11:44] <@stef_lp> kato stignesh nai dqsnata pravish sashtoto ama na lqvo
+01[11:44] <@stef_lp> i taka stava gornata 4ast
+[11:44] <@exod40> e tova ne si li e 4ist graham?
+01[11:45] <@stef_lp> e nemash agli
+[11:45] <@mom> ne sortirani sa po X
+[11:45] <@mom> a ne po angle
+[11:45] <@exod40> axym
+[11:45] <@mom> i go prai6 na 2 fazi
+01[11:45] <@stef_lp> da
+[11:45] <@eagaeoppooaaa> da
+01[11:45] <@stef_lp> s 2 fora edin sled drug
+01[11:45] <@stef_lp> na 6 reda e
+[11:46] <@exod40> e, samo sortiraneto e drugo?
+01[11:46] <@stef_lp> mai da
+[11:46] <@exod40> sys stek li go pravish
+01[11:46] <@stef_lp> da
+[11:46] <@exod40> nqkoi da go pravi po razli4en na4in?
+[11:47] <@mom> ne
+01[11:47] <@stef_lp> ima li drug na4in?
+01[11:47] <@stef_lp> osven tiq 2ta
+01[11:47] <@stef_lp> i N^2 est..
+[11:47] <@mom> da
+[11:47] <@mom> ne
+[11:47] <@mom> :))
+01[11:47] <@stef_lp> :D
+[11:47] <@mom> aide sq da si govorim za
+[11:47] <@mom> 3D convex hull...
+[11:47] <@mom> :)))
+[11:47] <@eagaeoppooaaa> .... :)
+[11:47] <@exod40> ...
+01[11:47] <@stef_lp> mai da prodaljim po programata
+[11:47] <@mom> mn qsno
+[11:47] <@exod40> nqkoi da znae za po hityr na4in?
+[11:47] <@mom> btw pls nqkoi da set-ne topic
+[11:47] <@mom> koi zada4i
+[11:48] <@mom> obsujdame
+[11:48] <@mom> 4e nz kak se setva topic...
+03[11:48] * Retrieving #ioi08 modes...
+[11:48] <@mom> da kvo iska6 na 1n red
+03[11:48] * exod40 changes topic to '"Convex Hull, Double, Mirrors"'
+03[11:48] * stef_lp changes topic to 'Garden, Mirrors, Double'
+01[11:48] <@stef_lp> :D
+03[11:48] * exod40 changes topic to '"Convex Hull, Double, Mirrors"'
+[11:48] <@exod40> ;P
+[11:48] <@mom> e kak go praite we :))
+[11:48] <@exod40> ./topic:)
+01[11:48] <@stef_lp> m/u drugoto teq 2te zada4i sa izvrateni
+01[11:48] <@stef_lp> az cakam 2 pati na ekrana
+[11:49] <@mom> ne stava
+[11:49] <@exod40> ae ve mom, znaesh li drug na4in za pisane na convex hull?
+[11:49] <@mom> ne
+[11:49] <@mom> ne mislq 4e mi i trqbva
+[11:49] <@mom> az line sweep daje
+[11:49] <@mom> ne sum go pisal nikoga
+[11:49] <@mom> ;))
+[11:49] <@exod40> koe e line sweep?
+[11:49] <@exod40> tova sys sortiraneto po x
+[11:49] <@mom> marto i stef
+[11:49] <@eagaeoppooaaa> da
+[11:49] <@exod40> em, shte go napishesh sledobqd:)
+01[11:49] <@stef_lp> next: Double
+[11:49] <@exod40> vidqxhte li si mailite?
+[11:49] <@mom> omgWTF.....
+01[11:49] <@stef_lp> nqkvi idei?
+01[11:49] <@stef_lp> az i uslovieto ne razbrah
+01[11:49] <@stef_lp> kakav e toq S
+[11:50] <@exod40> az sym q reshaval uj
+[11:50] <@exod40> w8
+[11:50] <@exod40> hte obqsnq:)
+[11:50] <@exod40> shte obqsnq:)
+[11:50] <@eagaeoppooaaa> daite 2 - 3 min da si pripomnq uslovieto
+01[11:50] <@stef_lp> se pak si bog
+[11:50] <@exod40> http://infoman.musala.com/contests/ioi/2001/double-bg.rtf
+[11:50] <@exod40> 5 mins 4etene:)
+[11:51] <@mom> ae daite pls testove za
+[11:51] <@mom> garden
+01[11:51] <@stef_lp> :DD
+[11:51] <@exod40> nqma
+[11:51] <@exod40> nikyde:)
+[11:51] <@exod40> shte go izmislim
+[11:51] <@mom> qsno...
+[11:52] <@exod40> 4eti double sega
+[11:52] <@mom> e nqkoi acm-ski site
+01[11:52] <@stef_lp> v usaco imashe
+[11:52] <@mom> tiho we 6efe...
+01[11:52] <@stef_lp> v traininga ima 4ista obvivka mislq
+01[11:53] <@stef_lp> ne shvashtam smisala na S
+[11:54] <@mom> klu4ovete sa ti po 4*s bita duljina
+[11:54] <@eagaeoppooaaa> nai mnogo 5.4 simvola te interesuvat
+01[11:54] <@stef_lp> 5.4 li
+[11:54] <@eagaeoppooaaa> da
+01[11:54] <@stef_lp> aa 5*4
+[11:54] <@mom> s*4 ne e li?
+01[11:54] <@stef_lp> ama shto poslednite sa 0?
+[11:54] <@eagaeoppooaaa> procheti ogranicheniq
+[11:54] <@eagaeoppooaaa> s <= 5
+[11:54] <@mom> aa da
+01[11:55] <@stef_lp> kav e smisala ot tez nuli
+[11:55] <@exod40> zabluda:)
+[11:55] <@mom> da se pridarjame kum double AES standarta
+[11:55] <@mom> :)
+[11:55] <@eagaeoppooaaa> :)
+01[11:55] <@stef_lp> abe tva nqkvo blaskane li e
+[11:56] <@exod40> aaaa, setih se kak se reshava:)
+[11:56] <@exod40> hitra e:)
+[11:56] <@exod40> samo ne razbiram
+[11:56] <@exod40> zashto ima tolkova ne nuli vyv vhoda
+[11:56] <@exod40> ili to za kodovete e tova s 4 * s
+[11:56] <@eagaeoppooaaa> za kluchevete e
+[11:56] <@exod40> da
+[11:56] <@exod40> qsno
+[11:57] <@exod40> razbrahme li q vsi4ki?
+[11:57] <@mom> tvardo ne...
+[11:57] <@exod40> az da:)
+[11:57] <@eagaeoppooaaa> az razbrah uslovieto, no nqmam ideq za reshenie osven BF
+[11:57] <@mom> kak samo parvite
+[11:57] <@mom> 4*s bita ni interesuvat ot klu4ovete
+01[11:57] <@stef_lp> ne znam kak moje da sa reshi kato ne znaem kak raboti algoritama..
+[11:57] <@exod40> 4akai da obqsnim uslovieto
+[11:57] <@mom> a posle ni pleskat kluv 00112233445566778899AABBCCDDEEFF
+[11:57] <@exod40> sled tova reshenieto
+[11:57] <@mom> a posle ni pleskat klu4 00112233445566778899AABBCCDDEEFF
+[11:58] <@eagaeoppooaaa> tova ne e klich.....
+[11:58] <@exod40> tova ne e klu4
+[11:58] <@exod40> tova e na4alniq tekst
+[11:58] <@exod40> a na tretiq red ot vhoda e krainiq tekst sled 2 encrypt-a
+[11:58] <@eagaeoppooaaa> da a dolnoto e text - a koito iskash da poluchish
+[11:58] <@exod40> i ti trqbva da kajesh dvata klu4a
+[11:59] <@mom> 4akai 4e go gledam s wordpad i malko srano izliza...
+[11:59] <@mom> na4i
+[11:59] <@mom> A0000000000000000000000000000000
+[11:59] <@mom> 70000000000000000000000000000000
+[11:59] <@mom> output
+[11:59] <@eagaeoppooaaa> da
+[11:59] <@mom> 1
+[11:59] <@mom> 00112233445566778899AABBCCDDEEFF
+[11:59] <@mom> 6323B4A5BC16C479ED6D94F5B58FF0C2
+[11:59] <@mom> in
+[11:59] <@mom> qsno....
+[11:59] <@eagaeoppooaaa> tes
+[11:59] <@mom> STOP
+[11:59] <@mom> minuti za mislene.........
+[11:59] <@exod40> :)
+[12:00] <@exod40> a, da
+[12:00] <@exod40> razpolagata s encrypt funciqta i s decrypt funckiqta
+01[12:00] <@stef_lp> dobre
+01[12:00] <@stef_lp> sled kato s=1
+01[12:00] <@stef_lp> zashto ima 1 simvol
+01[12:00] <@stef_lp> nali 4*s
+[12:01] <@exod40> e
+[12:01] <@exod40> te moje da sa i nuli
+[12:01] <@exod40> nishto ne pre4i
+01[12:01] <@stef_lp> basi kasmeta
+01[12:01] <@stef_lp> am tam shto ne sa 128 simvola
+[12:01] <@mom> parvite 4 bita = 0..15 demek 1vata cifra
+01[12:01] <@stef_lp> ili ne mi raboti o4noto precenqvane
+[12:01] <@exod40> aaa, i tova e variant:)
+[12:01] <@exod40> mom e prav
+01[12:01] <@stef_lp> aha
+[12:01] <@mom> 6toto sa 32 * 16
+01[12:01] <@stef_lp> qsno qsno
+01[12:02] <@stef_lp> basi qkoto
+[12:02] <@mom> ee exod ti znae6
+[12:02] <@mom> re6enieto
+[12:02] <@mom> ili si go izmislil
+[12:02] <@mom> :)
+[12:02] <@exod40> znam go
+[12:02] <@exod40> ama ne e osobeno trudno
+[12:02] <@mom> sigurno
+[12:02] <@mom> 4akai
+[12:02] <@eagaeoppooaaa> btw pyrvite 4*s bita kakvo oznachava tochno?
+[12:02] <@exod40> 4akam
+[12:02] <@mom> mislim...
+[12:02] <@exod40> do i 10
+[12:02] <@exod40> 7 mins oshte
+[12:03] <@mom> xaxa
+01[12:03] <@stef_lp> ta tova kak sa reshava v smisal ka4vash si sorsa na sistema i 4akash da ti varne?
+[12:03] <@exod40> eagaeoppooaaa pyrvite S 4isla
+[12:03] <@mom> aide mislim do i 13 i posle
+[12:03] <@mom> vseki kazva kvo e izmislil
+01[12:03] <@stef_lp> parvite S simvola
+[12:03] <@mom> i nakraq bog exod
+[12:03] <@mom> ni svetva...
+[12:03] <@exod40> :P
+[12:03] <@eagaeoppooaaa> ok
+[12:03] <@eagaeoppooaaa> mersi
+[12:03] <@mom> parvite 4s bita na4i parvite s simvola
+[12:03] <@mom> ot klu4a
+[12:03] <@mom> poneje 4 bita = 1na 16-i4na cifra
+[12:04] <@mom> za ulesnenie sa go napraili
+[12:04] <@mom> ;)
+[12:04] <@mom> kolkoto i da e stranno...
+01[12:04] <@stef_lp> 4ek az ne razbiram kak si polzvash programata
+[12:04] <@exod40> ae imash encrypt funckiq
+01[12:04] <@stef_lp> vav sistema li q slagash
+[12:04] <@exod40> na koqto kato i dadesh neshto i key
+[12:04] <@exod40> tq ti dava encrypnatoto neshto
+01[12:04] <@stef_lp> ama vav sistema ne na kompa
+[12:05] <@exod40> kato i dadesh encrypnatoto neshto i key, drugata funkciq go decryptva i ti vryshta neshto
+[12:05] <@exod40> nqma zna4enie tova, zasega:)
+[12:05] <@exod40> .h failove sa mai
+[12:05] <@eagaeoppooaaa> samata funkciq do kolkota az mislq nqma znachenie kak gi encrypt - va za reshenieto na zadachata
+[12:05] <@eagaeoppooaaa> ili ima? exod ?
+[12:05] <@mom> nqma
+[12:06] <@eagaeoppooaaa> ok
+[12:06] <@exod40> da
+[12:06] <@exod40> nqma
+[12:06] <@mom> samo ?s
+[12:06] <@mom> teq funkcii
+[12:06] <@mom> sa edini4ni nali?
+[12:06] <@mom> vsmisal
+[12:06] <@exod40> ednozna4ni
+[12:06] <@mom> da qsno qsno
+[12:06] <@mom> ne we vsmisal 4e encrypt
+[12:06] <@mom> ne ti prai napravo dvoinoto kriptirane
+[12:06] <@eagaeoppooaaa> ne
+[12:06] <@mom> ma to e o4evidno sled kato podava6 edin klu4 samo :))
+[12:06] <@eagaeoppooaaa> pravi ti 1 encrypt
+[12:06] <@mom> omg 4akaite 4akaite.........................
+[12:06] <@exod40> ne kazvai reshenieto
+[12:07] <@eagaeoppooaaa> shte obsyjdame li koi kakvo e izmislil?
+[12:07] <@mom> aide sled
+[12:07] <@mom> 10 min
+[12:07] <@mom> pls
+[12:07] <@exod40> miii, velin go  obqsnqva
+[12:07] <@exod40> vinagi
+[12:07] <@exod40> t.e. gleda drugite da se setqt
+[12:07] <@exod40> ama az edva li shte moga kato nego...:)
+[12:07] <@mom> nedei pls...
+[12:07] <@exod40> nqma, spox:)
+[12:08] <@eagaeoppooaaa> ok, az moga li da kaja nqkva ideq? ili ne e podhodqshto ?
+[12:08] <@exod40> na private
+[12:08] <@eagaeoppooaaa> ok
+[12:08] <@exod40> aaa, kak se pravi:)
+01[12:08] <@stef_lp> cakash na nika 2 pati
+[12:08] <@exod40> grrrrrrrrr
+[12:09] <@exod40> shibaniq irc klient ne e tolkova prost
+[12:09] <@exod40> vij moje skype:)
+[12:10] <@mom> neeeeeeeeeeeeeeeeeee
+[12:10] <@exod40> (minutka za spam, no polezen spam!!!):)
+[12:10] <@mom> xaxaxa
+[12:10] <@exod40> <VelinTzanov> Ima edno zlatno pravilo, koeto triabva da zapomnite - 5 minti mislene mogat da vi spestiat 50 minuti pisane.
+[12:10] <@exod40> <VelinTzanov> Byrzoto i dobreto shte doidat s opita.
+[12:10] <@exod40> <VelinTzanov> Vajno e da ste spokoini i da otdeliate nujnoto vreme za izchistvane na reshenieto.
+[12:10] <@exod40> <VelinTzanov> Kato go izmislite V NIKAKYV SLUCHAI ne skachate da go pishete vednaga!
+[12:10] <@exod40> <VelinTzanov> Otdeliate danyk 5 minuti na Velin.
+[12:10] <@exod40> <VelinTzanov> Prez tezi 5 minuti vsichko koeto shte pravite e da mislite po realizaciata.
+[12:10] <@exod40> <VelinTzanov> Definirate masivite.koi ot vas znqt poveche ot drugi no vseki ima kakvo da nauchi d
+[12:10] <@exod40> <VelinTzanov> Promenlivite syshto.lukni" ili neshto podobno bez da g
+[12:10] <@exod40> <VelinTzanov> Predstaviate si algorityma.
+[12:10] <@exod40> <VelinTzanov> Pravite si malyk invariant za tova kakvo stava na vsiaka stypka i kakvo e systoianieto mejdu stypkite.
+[12:10] <@exod40> <VelinTzanov> Dokazvate si che tova koeto pravite e viarno (ako imate vreme, ako ne - pishete bez da dokazvate)
+[12:10] <@exod40> <VelinTzanov> Kato istekat 5-te minuti na Velin, siadate da pishete.
+[12:10] <@exod40> <VelinTzanov> Bas dyrja, che taka shte spestite pone 5 minuti ot pisaneto.
+[12:10] <@exod40> <VelinTzanov> I nai-vajnoto - to debug-vaneto. :)
+[12:10] <@exod40> <VelinTzanov> Zatova na BOI i IOI kato izmislite zadachata i kato se entusiazirate da ia code-nete vednaga da vi svetne lampichkata - opa! 5-te minuti na Velin!
+[12:10] <@exod40> <VelinTzanov> Iasno?
+[12:10] <@exod40> tova e edno ot nai-vajnite neshta na podogotvkata
+[12:11] <@exod40> mom go izmisli:)
+[12:11] <@mom> :)
+[12:11] <@mom> 6te polu4a li
+[12:11] <@mom> zna4ka?
+[12:12] <@exod40> pitai shefovete:)
+[12:12] <@exod40> w8 da vidim martin
+[12:12] <@mom> btw az vmoemnta log-vam
+[12:12] <@mom> ako ima nqkakvo zna4enie....
+[12:12] <@exod40> i az mai..
+[12:12] <@mom> xax
+[12:13] <@exod40> tyi
+01[12:13] <@stef_lp> abe mn stranno stana gore
+[12:13] <@exod40> vsi4ki tuk?
+[12:13] <@mom> w8
+[12:13] <@mom> btw aide koito e 6ef4eto za denq kato dade zada4a
+01[12:13] <@stef_lp> nqkvo smeseno ot tva deto pisahme v skype
+[12:13] <@exod40> pro4etohte li tova koeto velin e napisal?
+01[12:13] <@stef_lp> v smisal spama gore
+01[12:14] <@stef_lp> kak stana taka
+[12:14] <@exod40> kak?
+01[12:14] <@stef_lp> <@exod40> <VelinTzanov> Definirate masivite.koi ot vas znqt poveche ot drugi no vseki ima kakvo da nauchi d
+01[12:14] <@stef_lp> ei tuka
+01[12:14] <@stef_lp> <@exod40> <VelinTzanov> Promenlivite syshto.lukni" ili neshto podobno bez da g
+01[12:14] <@stef_lp> i tuka
+[12:14] <@exod40> aaaa, izrqzano li e...
+01[12:14] <@stef_lp> ma kvo stana
+01[12:14] <@stef_lp> ne be
+01[12:14] <@stef_lp> nqkak sa e smesilo sas skype
+01[12:14] <@stef_lp> deto pisahme
+01[12:14] <@stef_lp> Mlukni deto pisa mom
+[12:14] <@exod40> aaa
+01[12:14] <@stef_lp> i vesko
+[12:14] <@exod40> usral sym go:)
+01[12:14] <@stef_lp> ma ko stana
+[12:15] <@exod40> az sym vinoven
+[12:15] <@exod40> sry
+[12:15] <@exod40> ei sq pak shte spamq
+01[12:15] <@stef_lp> :DD
+01[12:15] <@stef_lp> ne be
+01[12:15] <@stef_lp> to samo e dobaveno 
+01[12:15] <@stef_lp> nishto mai ne lipsva
+[12:15] <@mom> awe da go oprai ;)
+[12:15] <@mom> predlojenie: aide kato se dade zada4a, v na4aloto koito znae kak se prai da ne kazva ni6to (tva 4e rumen kaza 4e e lesna do golqma stepen mi pomogna da q re6a) i edin po edin da ni se davat joker-ite sled kato primerno vsi4ki sme mislili 5-10 min i nqma napredak
+[12:15] <@mom> ili taka 6te e too slow...
+[12:16] <@exod40> <VelinTzanov> Ima edno zlatno pravilo, koeto triabva da zapomnite - 5 minti mislene mogat da vi spestiat 50 minuti pisane.
+[12:16] <@exod40> <VelinTzanov> Byrzoto i dobreto shte doidat s opita.
+[12:16] <@exod40> <VelinTzanov> Vajno e da ste spokoini i da otdeliate nujnoto vreme za izchistvane na reshenieto.
+[12:16] <@exod40> <VelinTzanov> Kato go izmislite V NIKAKYV SLUCHAI ne skachate da go pishete vednaga!
+[12:16] <@exod40> <VelinTzanov> Otdeliate danyk 5 minuti na Velin.
+01[12:16] <@stef_lp> ma ti reshi li q
+[12:16] <@exod40> <VelinTzanov> Prez tezi 5 minuti vsichko koeto shte pravite e da mislite po realizaciata.
+[12:16] <@exod40> <VelinTzanov> Definirate masivite.
+[12:16] <@exod40> <VelinTzanov> Promenlivite syshto.
+[12:16] <@exod40> <VelinTzanov> Predstaviate si algorityma.
+[12:16] <@exod40> <VelinTzanov> Pravite si malyk invariant za tova kakvo stava na vsiaka stypka i kakvo e systoianieto mejdu stypkite.
+[12:16] <@exod40> <VelinTzanov> Dokazvate si che tova koeto pravite e viarno (ako imate vreme, ako ne - pishete bez da dokazvate)
+[12:16] <@exod40> <VelinTzanov> Kato istekat 5-te minuti na Velin, siadate da pishete.
+[12:16] <@exod40> <VelinTzanov> Bas dyrja, che taka shte spestite pone 5 minuti ot pisaneto.
+[12:16] <@exod40> <VelinTzanov> I nai-vajnoto - to debug-vaneto. :)
+[12:16] <@exod40> <VelinTzanov> Zatova na BOI i IOI kato izmislite zadachata i kato se entusiazirate da ia code-nete vednaga da vi svetne lampichkata - opa! 5-te minuti na Velin!
+[12:16] <@exod40> <VelinTzanov> Iasno?
+01[12:16] <@stef_lp> samo az li nqmam nikva ideq
+[12:16] <@exod40> mom, nqma too slow za tova
+[12:16] <@exod40> :)
+[12:16] <@exod40> ok, ne znaeh, 4e tova, 4e e lesna e golqm joker
+[12:16] <@exod40> ae pro4etete tova na velin
+[12:16] <@exod40> i po4vam da obqsnqvam
+[12:16] <@exod40> ve4e shte pravim taka... s misleneto
+01[12:17] <@stef_lp> ae stana i 17
+01[12:17] <@stef_lp> nekoi da kazva ko sa prai
+[12:17] <@eagaeoppooaaa> az btw go pravq... pochti vinagi
+[12:17] <@exod40> perfektno:)
+[12:17] <@exod40> taka
+[12:18] <@exod40> kolko vyzmojni klu4a imame?
+[12:18] <@eagaeoppooaaa> 1<<20
+[12:18] <@mom> haha velin style :)
+[12:18] <@exod40> :P
+[12:18] <@exod40> eeee, ko moje da napravim...
+[12:18] <@exod40> 2 ^ 40:)
+01[12:18] <@stef_lp> da
+01[12:18] <@stef_lp> ee tva i az go izmislih
+01[12:18] <@stef_lp> :DD
+[12:19] <@eagaeoppooaaa> pravim 2 * 2 ^ 20
+[12:19] <@exod40> moje da namerim vsi4ki T = E ( startstring , k1 )
+[12:19] <@exod40> za vsi4ki k1
+[12:19] <@exod40> sys slojnost 2 ^ 20?
+[12:19] <@exod40> nali
+[12:19] <@eagaeoppooaaa> da
+01[12:19] <@stef_lp> i obratnoto ot krainiq..
+[12:19] <@exod40> vsi4ki otgovarqite
+01[12:19] <@stef_lp> da da
+[12:19] <@exod40> stef_lp sega, sam li se seti?
+01[12:19] <@stef_lp> m po4ti
+01[12:20] <@stef_lp> iskame da gi savpadnem
+[12:20] <@exod40> da
+[12:20] <@exod40> i K = D ( endstring , k2 )
+[12:20] <@exod40> za 2 ^ 20
+01[12:20] <@stef_lp> ama kak gi vrazvame?
+[12:20] <@exod40> i tyrsim nqkoie Ti == Ki
+01[12:20] <@stef_lp> aha da da tap vapros
+01[12:20] <@stef_lp> to moje si4ko vav masiv da blaskame
+[12:20] <@exod40> e pak qvno, 4e nqma da pravim 2 ^ 40...
+01[12:20] <@stef_lp> basi qkoto
+[12:21] <@exod40> stef_lp ko predlagash
+[12:21] <@exod40> kak da go napravim po-byrzo?
+[12:21] <@mom> s hashing
+[12:21] <@mom> ;)
+[12:21] <@exod40> sys set:)
+[12:21] <@exod40> sortirash i binary search
+[12:21] <@mom> da hui
+[12:21] <@mom> s hash 6te e po-barzo
+01[12:21] <@stef_lp> v masiv heshirame za seki kodiran ednokratno ot na4alniq pazim klu4a
+01[12:21] <@stef_lp> i ako ot krainiq polu4im nekoe koeto go imame print
+[12:21] <@exod40> nali znaete, 4e e output only
+[12:22] <@exod40> dali shte 4akash 5 secs ili 30 secs na test nqma golqmo zna4enie:)
+[12:22] <@eagaeoppooaaa> da
+[12:22] <@exod40> nesto neqsno?
+[12:22] <@eagaeoppooaaa> nqma
+01[12:22] <@stef_lp> nqma
+[12:22] <@exod40> mom?
+[12:22] <@mom> ne'
+[12:23] <@eagaeoppooaaa> btw imam vypros
+[12:23] <@exod40> kaji
+[12:23] <@eagaeoppooaaa> ne moje li da namerim samo edno T
+[12:23] <@eagaeoppooaaa> i sled tova da vidim dali to se poluchava bez hash i binary....?
+01[12:23] <@stef_lp> ne otivash li pak na 2^40 taka
+[12:23] <@exod40> vsi4ki T-ta shte gi namerish za 2 ^ 20
+[12:24] <@exod40> i sled tova shte go gledash s oshte 2 ^ 20 dali se polu4ava
+[12:24] <@mom> marto
+[12:24] <@mom> ne znae6
+[12:24] <@exod40> kato imash startstring i endstring
+[12:24] <@exod40> ne mojesh da kajesh key
+[12:24] <@mom> E()
+[12:24] <@mom> kak kodira
+[12:24] <@exod40> da
+[12:24] <@mom> i ne moje6 da prai6 binary
+[12:24] <@eagaeoppooaaa> qsno
+[12:24] <@mom> po nego
+[12:24] <@eagaeoppooaaa> razbrah
+[12:24] <@eagaeoppooaaa> ne e sugurno che ste se poluchi tozi str koito sym izbral?
+[12:24] <@exod40> baaaaa, ne o4akvah da me razbirat tolkova mnogo hora...:)
+[12:24] <@mom> a > b ne ozn 4e E(,a) > E(,b)
+[12:24] <@exod40> (3-ma)
+[12:24] <@mom> xaxaxax
+01[12:24] <@stef_lp> :D
+[12:25] <@mom> btw da poobob6tq: pravi mi vpe4atlenie 4e na mnooogo zada4i koito izglejdat 2^N ili 3^N ili a^N
+[12:25] <@mom> deto za N/2 varvi super brute force-a
+[12:25] <@exod40> eagaeoppooaaa vij kogato imash C = encrypt ( T , X )
+[12:25] <@exod40> i kato ne znaesh X
+[12:25] <@exod40> ne mojesh da go razberesh nikak
+[12:25] <@mom> ama za N ne 6te, nai 4esto e meet in the middle
+[12:25] <@eagaeoppooaaa> ok
+[12:25] <@exod40> kaji ako ne si razbral
+[12:26] <@exod40> ne me karaite da paste-vam pak ot logovete, 4e nai-golqmata grehota e da ne pitash :)
+01[12:26] <@stef_lp> az daje ne razbrah toi kakvo ne e razbral
+[12:26] <@exod40> imash <VelinTzanov> Ima edno zlatno pravilo, koeto triabva da zapomnite - 5 minti mislene mogat da vi spestiat 50 minuti pisane.
+[12:26] <@exod40> <VelinTzanov> Byrzoto i dobreto shte doidat s opita.
+[12:26] <@exod40> <VelinTzanov> Vajno e da ste spokoini i da otdeliate nujnoto vreme za izchistvane na reshenieto.
+[12:26] <@exod40> <VelinTzanov> Kato go izmislite V NIKAKYV SLUCHAI ne skachate da go pishete vednaga!
+[12:26] <@exod40> <VelinTzanov> Otdeliate danyk 5 minuti na Velin.
+[12:26] <@exod40> <VelinTzanov> Prez tezi 5 minuti vsichko koeto shte pravite e da mislite po realizaciata.
+[12:26] <@exod40> <VelinTzanov> Definirate masivite.
+[12:26] <@exod40> <VelinTzanov> Promenlivite syshto.
+[12:26] <@exod40> <VelinTzanov> Predstaviate si algorityma.
+[12:26] <@exod40> <VelinTzanov> Pravite si malyk invariant za tova kakvo stava na vsiaka stypka i kakvo e systoianieto mejdu stypkite.
+[12:26] <@exod40> <VelinTzanov> Dokazvate si che tova koeto pravite e viarno (ako imate vreme, ako ne - pishete bez da dokazvate)
+[12:26] <@exod40> <VelinTzanov> Kato istekat 5-te minuti na Velin, siadate da pishete.
+[12:26] <@exod40> <VelinTzanov> Bas dyrja, che taka shte spestite pone 5 minuti ot pisaneto.
+[12:26] <@exod40> <VelinTzanov> I nai-vajnoto - to debug-vaneto. :)
+[12:26] <@exod40> <VelinTzanov> Zatova na BOI i IOI kato izmislite zadachata i kato se entusiazirate da ia code-nete vednaga da vi svetne lampichkata - opa! 5-te minuti na Velin!
+[12:26] <@exod40> shit
+01[12:26] <@stef_lp> stia be :D
+[12:26] <@mom> hahahahah
+[12:26] <@exod40> pro4etete go pak!:)
+[12:26] <@mom> flooder :)
+[12:26] <@eagaeoppooaaa> ..... :)
+01[12:26] <@stef_lp> +ban exod40
+[12:26] <@exod40> ne uspqh da copna:)
+[12:26] <@exod40> C = encrypt ( T , X )
+[12:26] <@exod40> uspqh:)
+[12:27] <@exod40> ako znaesh C i T
+[12:27] <@exod40> mojesh li da kajesh klu4a X?
+[12:27] <@exod40> ne mojesh i zatova ne raboti onova reshenie
+01[12:27] <@stef_lp> koe znaesh?
+01[12:27] <@stef_lp> C i T tai li
+[12:27] <@exod40> da
+01[12:27] <@stef_lp> mda trq da proverish si4kite :O
+[12:27] <@mom> ne az dokolkoto razbrah se opitva da prai bsearch po X
+01[12:28] <@stef_lp> ta ako mojeshe da go namerim kakva mu beshe ideqta?
+[12:28] <@mom> i ot C da se oreantira dali nagore ili nadolu
+[12:28] <@exod40> ne:)
+[12:28] <@exod40> eagaeoppooaaa ti razbra li go pone
+[12:28] <@mom> xaxa kakto i da e
+[12:28] <@exod40> http://infoman.musala.com/contests/noi/2005/round3/A/day2/tasks_A.rtf
+[12:28] <@exod40> nali nqma vyprosi po double?
+[12:28] <@eagaeoppooaaa> nqma
+[12:29] <@exod40> zada4a 2
+[12:29] <@exod40> mirrors
+[12:29] <@mom> tazi na mene mi se stori ultra brutalna dokato q mislih....
+[12:29] <@eagaeoppooaaa> daide vreme za chetene
+[12:29] <@exod40> az ne sym q 4el...
+[12:29] <@mom> xaxaxa
+01[12:29] <@stef_lp> 4ek malko
+[12:29] <@mom> ama znae6 re6enieto :)))
+01[12:29] <@stef_lp> neee oshte malko po Double
+01[12:29] <@stef_lp> na4i martin iskashe
+01[12:29] <@stef_lp> da nameri T
+[12:29] <@exod40> w8
+[12:29] <@exod40> vryshtame se na double
+01[12:30] <@stef_lp> i sled tova s konstanta da nameri klu4a koito pravi krainiq string?
+[12:30] <@exod40> da
+01[12:30] <@stef_lp> v smisal da proveri si4ki T
+[12:30] <@exod40> da
+01[12:30] <@stef_lp> i dali ima takav klu4
+01[12:30] <@stef_lp> aha qsno
+01[12:30] <@stef_lp> next
+[12:30] <@exod40> T = encrypt ( startstring , k1 )
+[12:30] <@mom> marto tam li si we?
+[12:30] <@exod40> ae 4etete
+01[12:30] <@stef_lp> MIRRORS********************
+01[12:31] <@stef_lp> btw
+01[12:31] <@stef_lp> taq mirrors
+01[12:31] <@stef_lp> ne vijdam mnogo ograni4eniq
+01[12:31] <@stef_lp> za P za N za M..
+01[12:31] <@stef_lp> aa vidqh
+01[12:31] <@stef_lp> ..
+[12:31] <@eagaeoppooaaa> da
+[12:32] <@mom> btw kajete kogato iskate super tunuk joker po re6enieto ;)
+01[12:32] <@stef_lp> te pa si4kite zada4i s nqkvi biblioteki kak sha gi testvame..
+01[12:32] <@stef_lp> nivga do sq ne sam prail takos neshto
+[12:33] <@exod40> ...:)
+[12:33] <@exod40> mom 4akai ve
+[12:33] <@exod40> ne sym go pro4el oshte:)
+[12:33] <@exod40> da pomislim 5 mins
+[12:33] <@exod40> davash joker
+[12:33] <@exod40> oshte 5 mins
+[12:33] <@exod40> i t.n.:)
+01[12:33] <@stef_lp> ma toi bil super tanak na4i vtoriq pat 3 min
+01[12:34] <@stef_lp> a ne tr pove4e..
+01[12:34] <@stef_lp> awe 
+01[12:34] <@stef_lp> basi gadnata zada4a
+[12:34] <@mom> spoko az kazah kogato vie go poiskate ;)
+[12:34] <@eagaeoppooaaa> C(6, 100) * 6!
+[12:34] <@eagaeoppooaaa> :)
+[12:34] <@eagaeoppooaaa> opa...
+[12:34] <@mom> xaxa da we
+01[12:34] <@stef_lp> opa q :D
+[12:35] <@eagaeoppooaaa> C(6, 100) * 3^6
+[12:35] <@mom> to4no
+[12:35] <@mom> ;)
+[12:35] <@eagaeoppooaaa> :)
+[12:35] <@exod40> nishto ne razbrah:)
+[12:35] <@exod40> az uslovieto ne sym razbral
+[12:36] <@exod40> v na4aloto imate nqkvi ogledala
+01[12:36] <@stef_lp> ama ni znaem li kade stoq tez 2mata mai ne znaem?
+[12:36] <@eagaeoppooaaa> dadeno e samo N, M, P nali taka mom ?
+01[12:36] <@stef_lp> i cqlata tablica e dadena
+01[12:36] <@stef_lp> bez nikvi promeni
+[12:37] <@mom> ne
+[12:37] <@mom> samo n m i p
+[12:37] <@eagaeoppooaaa> tq ako e dadena nqma da e interesno
+[12:37] <@mom> mai...
+[12:37] <@mom> to4no
+[12:37] <@mom> ti si henzel
+01[12:37] <@stef_lp> a da..
+[12:37] <@mom> a ne sokol
+01[12:37] <@stef_lp> ne ti si henzel i gretel
+[12:37] <@exod40> i ko moje da pravish?
+[12:37] <@mom> ne vijda6 mn mn prez toq procep ;)
+[12:37] <@mom> da kaje6
+[12:38] <@mom> turi tva tva i tva i tva ogledalo
+[12:38] <@mom> edi kak si
+[12:38] <@mom> makar 4e si nqma6 i ideq kude se namira6
+[12:38] <@mom> makar 4e si nqma6 i ideq kude se namirat
+[12:38] <@mom> teq ogledala
+[12:38] <@exod40> mai znaesh kyde sa ogledalata
+[12:38] <@exod40> oba4e ne znaesh ti kyde si
+[12:38] <@eagaeoppooaaa> moje bi ne e nujno...
+01[12:38] <@stef_lp> ne znaesh nishto
+[12:38] <@mom> tq gi obru6ta ti zqpa6 prez dupkata i vijda6 ne6to
+[12:38] <@eagaeoppooaaa> znae se kyde sa henzel i gretel nali taka
+01[12:39] <@stef_lp> ti znaesh i 2mata koq kletka vijdat
+01[12:39] <@stef_lp> sled sqko pitane
+[12:39] <@eagaeoppooaaa> i getview vryshta 2te kletki koito te vijdata?:
+01[12:39] <@stef_lp> ne sa znae kade sa
+01[12:39] <@stef_lp> samo sled sqko pitane znaesh kakvo vijdat
+[12:39] <@eagaeoppooaaa> qsno :)
+[12:40] <@exod40> axa
+[12:40] <@exod40> kolko pitaniq moje da napravish?
+01[12:42] <@stef_lp> sigurno kolkoto e TL
+01[12:42] <@stef_lp> ma ne go pishe
+[12:42] <@mom> da
+[12:42] <@mom> mai...
+[12:42] <@exod40> a C ( 100 , 6 ) kolko e?:)
+[12:42] <@mom> mnogo
+[12:42] <@mom> :)
+[12:42] <@exod40> kofti:)
+[12:43] <@mom> 100 * 99 * 98...
+01[12:43] <@stef_lp> fuck zabravih si genialniq vapros
+[12:43] <@exod40> aaa, ne psuvai
+[12:43] <@mom> ./ 6*20
+[12:43] <@exod40> sled godini decata shte go gledat:)
+[12:43] <@mom> xaxaxa
+[12:43] <@exod40> btw, mai e nai-dobre da se predstavim
+01[12:43] <@stef_lp> da be edva li skoro sha ima nekoi 8mi klas
+01[12:43] <@stef_lp> :D
+[12:43] <@exod40> 4e sled 20-30 godini nqkoi kato go 4ete
+[12:43] <@exod40> da znae koi sme bili:)
+[12:43] <@mom> eee mislete weeeeeeeeeeeeee
+[12:43] <@mom> ili daam joker
+[12:43] <@exod40> 4akai
+[12:44] <@exod40> da doizqsnq uslovieto
+[12:44] <@exod40> razmenqsh nqkoi random ogledala
+01[12:44] <@stef_lp> aa da setih sa
+01[12:44] <@stef_lp> na4i
+[12:44] <@exod40> nqmash si i deq koi
+01[12:44] <@stef_lp> v momenta v koito
+01[12:44] <@stef_lp> getview
+01[12:44] <@stef_lp> a ne..
+01[12:44] <@stef_lp> ta kak sa prashta otgovora?
+[12:44] <@exod40> to go razbira
+[12:44] <@exod40> ako se vijdat
+[12:44] <@exod40> to ti kazva
+01[12:45] <@stef_lp> aa da na4i v momenta v koito kaje 4e sa vijdat edin drug i spira i CORRECT
+[12:45] <@exod40> da
+01[12:45] <@stef_lp> genialno
+[12:45] <@exod40> mom, ti nqmash absolutno nikva ideq ogledalo nomer edno kyde e?
+[12:45] <@exod40> mojesh da e na 12, 51?
+01[12:45] <@stef_lp> abe kva e slojnosta na vaprosa?
+[12:46] <@eagaeoppooaaa> da
+01[12:46] <@stef_lp> sigurno N*M
+[12:46] <@exod40> O ( 1 ) e
+01[12:46] <@stef_lp> kak
+[12:46] <@eagaeoppooaaa> O(1) - precomputing..
+[12:46] <@exod40> da
+[12:46] <@exod40> neshto takova
+01[12:46] <@stef_lp> aha
+[12:46] <@eagaeoppooaaa> C(6, 100)...
+[12:46] <@mom> nz
+[12:46] <@mom> dali e takava
+[12:46] <@mom> nomeraciqta
+[12:47] <@mom> w8
+[12:47] <@eagaeoppooaaa> nomeraciqta ne se znae kakva e
+01[12:47] <@stef_lp> sigurno parviq vapros sha e si4ki da sa padnali..
+01[12:47] <@stef_lp> i ot tam nqkvi qki raboti
+01[12:47] <@stef_lp> :D
+[12:47] <@exod40> moje da pitame za absolutno vsi4ki i da vidim koi sa na pytq na nqkogo:)
+[12:47] <@mom> клетки, които са номерирани както е показано на фигурите. Хензел и 
+01[12:47] <@stef_lp> a ne 4eta kirilica
+[12:47] <@exod40> i taka shte znaem kak shte izglejda pytq
+[12:47] <@exod40> koeto ne mi pomaga...
+[12:48] <@mom> priemi 4e
+[12:48] <@mom> znae6 kude sa
+[12:48] <@mom> H i G
+[12:48] <@mom> ;)
+[12:48] <@exod40> H i G?
+01[12:48] <@stef_lp> :D
+[12:48] <@mom> <stef_lp> sigurno parviq vapros sha e si4ki da sa padnali..
+[12:49] <@exod40> ama tova syshto ne mi pomaga
+[12:49] <@exod40> za h i g
+[12:49] <@exod40> ...
+[12:49] <@exod40> nqmam nikva informaciq...:)
+[12:49] <@exod40> moje da razberesh kakvo vijdat v momenta...
+[12:49] <@mom> клетки, които са номерирани както е показано на фигурите. Хензел и 
+[12:49] <@eagaeoppooaaa> probvash da napravish vsqko H i G
+[12:50] <@exod40> i sled tova imam 4uvstvoto, 4e ako pravish mnogo pyti edno i syshto
+[12:50] <@mom> tva danebi izliza na ieroglifi?
+[12:50] <@eagaeoppooaaa> Mom ne pishi na kirilica pls
+[12:50] <@exod40> da
+[12:50] <@eagaeoppooaaa> che nishto ne vijdam....
+[12:50] <@mom> xaxaxa
+[12:50] <@mom> awe pro4etete
+01[12:50] <@stef_lp> mom stiga pisa na kirilica nishto ne razbiram
+[12:50] <@mom> 3toto
+[12:50] <@mom> izre4enie
+[12:50] <@mom> ot uslovieto
+[12:50] <@mom> 4toto
+[12:50] <@mom> awe v na4aloto o6te
+[12:50] <@mom> da, taka sa nomerirani
+[12:50] <@mom> kletkite
+[12:50] <@exod40> az ti govorq
+[12:51] <@exod40> za kletkite kydeto sa ogledalata
+01[12:51] <@stef_lp> mom v reshenieto polzva li sa mehanizma na staqta?
+[12:51] <@eagaeoppooaaa> kluchovoto e che moje da e skrito...
+[12:51] <@mom> nito edin ot 3mata
+[12:51] <@mom> ne moga da razbera
+[12:51] <@mom> kvo mi kazva
+[12:51] <@mom> :))))
+[12:51] <@eagaeoppooaaa> :D
+01[12:51] <@stef_lp> D:
+[12:52] <@exod40> :P
+[12:52] <@eagaeoppooaaa> nomeraciqta otvynka e qsna che e taka zashtoto go pishe v uslovieto?
+[12:52] <@exod40> da
+[12:52] <@exod40> nomeraciqta otvyn e qsna
+[12:52] <@exod40> ama ima i nomeraciq
+[12:52] <@exod40> vytre
+[12:52] <@exod40> kydeto ima ogledala
+[12:52] <@exod40> kletka 1,1
+[12:52] <@exod40> ima ogledalo
+01[12:52] <@stef_lp> to navsqkude ima
+[12:52] <@eagaeoppooaaa> da
+01[12:52] <@stef_lp> samo 4e sa legnali nqkoi
+[12:53] <@eagaeoppooaaa> kakvo oznachava da e skrito edno ogledalo?
+[12:53] <@exod40> da
+[12:53] <@exod40> oba4e ne im znaesh nomeraciqta
+[12:53] <@exod40> da nqma
+01[12:53] <@stef_lp> da e legnalo
+[12:53] <@exod40> vse edno ogledalo
+01[12:53] <@stef_lp> minava la4a prez nego
+[12:53] <@eagaeoppooaaa> da
+[12:53] <@exod40> mom razbra li ni?
+01[12:54] <@stef_lp> mom na zarqza D:
+[12:54] <@eagaeoppooaaa> az predlagam mom da dade joikera
+[12:54] <@exod40> da
+[12:54] <@mom> taka
+[12:55] <@exod40> nikva ideq nqmam
+[12:55] <@mom> na4i ogledala ima nqkude
+[12:55] <@mom> no ne se znae kude
+[12:55] <@exod40> da
+[12:55] <@mom> ok joker:
+[12:55] <@mom> pro4etete obob6tenieto koeto napraih malko po-rano i na koeto nikoi ne oburna vnimanie ;)
+01[12:55] <@stef_lp> q paste
+[12:55] <@eagaeoppooaaa> onova na kirilica li?
+[12:55] <@mom> hahaha
+[12:55] <@exod40> q go paste-ni pak
+[12:55] <@eagaeoppooaaa> az go vijdam na arabski brat....
+01[12:56] <@stef_lp> :DD
+01[12:56] <@stef_lp> toi na gotvi za egipet
+[12:56] <@mom> <mom> btw da poobob6tq: pravi mi vpe4atlenie 4e na mnooogo 
+[12:56] <@mom> zada4i koito izglejdat 2^N ili 3^N ili a^N
+[12:56] <@mom> <mom> deto za N/2 varvi super brute force-a
+[12:56] <@mom> <mom> ama za N ne 6te, nai 4esto e meet in the middle
+[12:56] <@mom> :D ba6
+[12:56] <@exod40> C( 100/2 , 6/2 )?
+[12:56] <@mom> ...kirlicata be6e paste ot uslovieto we negodnici
+[12:56] <@exod40> c(50,3) kolko e?:)
+[12:56] <@mom> ne ba6
+[12:56] <@mom> omg hahah
+[12:56] <@exod40> eeeee, jalko:)
+[12:56] <@mom> parvo izmisli algoriama
+[12:56] <@mom> posle slojnostta we
+[12:56] <@mom> xaxaxaxaxaxa
+[12:57] <@eagaeoppooaaa> C(50, 3) * 3 ^ 3
+01[12:57] <@stef_lp> 4ek be
+01[12:57] <@stef_lp> kav meet in the middle
+[12:57] <@exod40> nq[#ioi08] 
+[12:57] <@exod40> nqmam ideq:)
+01[12:57] <@stef_lp> kvi sa tez frazeologi4ni izrodshitni
+01[12:57] <@stef_lp> nishto ne razbraim
+[12:57] <@mom> na prednata zada4a samo az li
+[12:57] <@mom> i vikam meet in the middle
+[12:57] <@mom> (double)
+[12:57] <@mom> ?
+[12:57] <@exod40> i az i az:)
+[12:57] <@eagaeoppooaaa> i az i az...
+[12:57] <@mom> emi ok na4i i tazi e tva :)
+01[12:57] <@stef_lp> aaa qsno
+01[12:57] <@stef_lp> k razbrah ta
+[12:57] <@mom> i slojnostta e
+01[12:57] <@stef_lp> ta kak sa reshava?
+[12:57] <@mom> C(100,3) * 3^3
+[12:57] <@mom> xaxaxa
+01[12:58] <@stef_lp> what the f
+[12:58] <@mom> ae pomislete malko
+01[12:58] <@stef_lp> k
+[12:58] <@mom> ba az vi kazah edva li ne kvo da praite
+[12:58] <@eagaeoppooaaa> ne pishete dokato se misli pls
+01[12:58] <@stef_lp> MISLENE***********
+[13:00] <@exod40> nishto ne izmislqm:)
+[13:00] <@eagaeoppooaaa> ne znam kyde da vkaram b_search - a
+[13:00] <@eagaeoppooaaa> t.e. kak kato imame vsichki otgovori
+01[13:00] <@stef_lp> abe kak sha cepim na 2 slojnostta basi mamata
+[13:00] <@exod40> ne e nujno da vkarvash b search:)
+[13:00] <@exod40> aaa
+[13:00] <@exod40> mom
+[13:00] <@exod40> obqsni go
+[13:00] <@exod40> bavno i podredeno
+[13:00] <@exod40> i davai nqkvi jokeri
+[13:00] <@exod40> i ni pitai vyprosi
+[13:01] <@eagaeoppooaaa> pravim N ^ 2 za positions na H i G i sled tova... 
+[13:01] <@mom> awe ne sum velin we
+[13:01] <@mom> ...
+[13:01] <@exod40> opitai se da go imitirash:)
+01[13:01] <@stef_lp> samo ot tova ti umira TL
+[13:01] <@mom> btw q daite pak
+01[13:01] <@stef_lp> 100^4
+[13:01] <@mom> uslovieto
+[13:01] <@mom> :))
+[13:01] <@eagaeoppooaaa> ..........
+[13:01] <@mom> awe marto
+[13:01] <@exod40> http://infoman.musala.com/contests/noi/2005/round3/A/day2/tasks_A.rtf
+[13:01] <@mom> pos na
+[13:01] <@eagaeoppooaaa> da
+[13:01] <@mom> H i G gi zema6
+01[13:01] <@stef_lp> a ne (100*4)^2
+[13:01] <@mom> const
+[13:01] <@exod40> mom nqmash gi
+[13:01] <@mom> guta6 si4ki ogledala i gleda6 kakvo vijdat!!!!!
+[13:02] <@mom> omg ne moje6
+[13:02] <@mom> da gutne6
+[13:02] <@mom> vs ogledala...
+[13:02] <@mom> taka e
+[13:02] <@eagaeoppooaaa> ne mojesh.........
+[13:02] <@mom> nqma6 gi
+[13:02] <@mom> :)
+[13:02] <@exod40> ...
+[13:02] <@exod40> idiot:)
+[13:02] <@eagaeoppooaaa> :)
+01[13:02] <@stef_lp> :DD
+[13:02] <@exod40> i sega ne znam li kak se reshva?:)
+[13:02] <@exod40> ne znaem*
+[13:02] <@mom> znaem
+[13:02] <@exod40> ok
+[13:02] <@eagaeoppooaaa> az ne znam
+[13:02] <@mom> prosto ne iskah da se izdavam 4e
+[13:02] <@exod40> shte obqsnish li?
+[13:02] <@mom> tova kude sa
+[13:02] <@mom> nqma zna4enie ;)
+[13:03] <@eagaeoppooaaa> xaxaxa ;D
+01[13:03] <@stef_lp> e to e qsno 4e e const
+[13:03] <@exod40> ae
+[13:03] <@exod40> mom
+[13:03] <@exod40> obqsnqvai
+01[13:03] <@stef_lp> nali ne preska4at nasam natma
+[13:03] <@exod40> kato velin:)
+[13:03] <@eagaeoppooaaa> xaxaxaxa
+[13:03] <@exod40> ne myrdat
+[13:03] <@mom> taka kato velin:
+[13:03] <@mom> kvo stava ako
+[13:04] <@mom> mrudnem nqkvi 3 ogledala
+[13:04] <@mom> i Henzel vijda kletka X
+[13:04] <@mom> mrudnem drugi 3
+[13:04] <@mom> i gretel vijda kletka X
+01[13:04] <@stef_lp> tva e imposible
+[13:04] <@mom> bullshit
+[13:04] <@exod40> ...
+01[13:04] <@stef_lp> ne moje da vijdat 1 i sashta
+[13:04] <@eagaeoppooaaa> xaxaxaxaxa
+01[13:04] <@stef_lp> moje li?
+[13:04] <@eagaeoppooaaa> da
+01[13:04] <@stef_lp> e kak..
+[13:04] <@exod40> ne moje
+01[13:05] <@stef_lp> na4i gretel vijda Y
+01[13:05] <@stef_lp> tei
+[13:05] <@exod40> ili pyk moje...
+[13:05] <@exod40> w8
+[13:05] <@exod40> moje
+01[13:05] <@stef_lp> aa da ni mardame razli4ni ogledala
+01[13:05] <@stef_lp> tei moje
+[13:05] <@exod40> razli4ni:)
+[13:05] <@exod40> davai mom
+01[13:06] <@stef_lp> v smisal pri 2ta vaprosa
+[13:06] <@exod40> ama nie ne sme kazali kakvo stava, ako go napravim tova;)
+[13:06] <@eagaeoppooaaa> tova e taka
+[13:06] <@mom> emi pomislete
+[13:06] <@mom> kvo stava
+[13:06] <@mom> parvo
+[13:07] <@mom> vijte 4e
+[13:07] <@mom> tq e preebala 6
+[13:07] <@mom> mirrors
+[13:07] <@exod40> H myrda A1, A2, A3
+[13:07] <@exod40> G myrda B1, B2, B3
+[13:07] <@mom> MLUK
+01[13:07] <@stef_lp> :DD
+[13:07] <@exod40> ok
+01[13:07] <@stef_lp> se pak e god
+01[13:07] <@stef_lp> moje da floodi
+[13:07] <@mom> ta tq e preebala 6
+[13:07] <@eagaeoppooaaa> i sled tova gledash 3 ^ 6
+[13:07] <@exod40> ostavete mom4il
+[13:07] <@eagaeoppooaaa> i te trqbva da ima otgovor
+[13:07] <@mom> i teq 6 vinagi moje da gi razdelim na 2 * 3
+[13:07] <@mom> taka 4e kato
+[13:07] <@mom> premestim otdelno ednite 3
+[13:08] <@mom> i posle drugite 3
+[13:08] <@mom> bez zna4enie kak sa razpolojeni ostanalite ogledala
+[13:08] <@mom> v 1niq slu4ai henzel vijda X, v drugiq - gretel vijda su6to X
+[13:08] <@mom> ne6to qsno ima li
+[13:08] <@mom> :)))
+01[13:08] <@stef_lp> gledame slu4aq v koito kato gi butnem namirame otgovora?
+[13:09] <@exod40> da
+[13:09] <@exod40> i ko
+[13:09] <@exod40> kakvo ni pomaga tova?
+01[13:09] <@stef_lp> az ne go razbiram tva
+[13:10] <@eagaeoppooaaa> mom ot tuka ako napravim 3^6 nqma li da izleze otgovora?
+01[13:10] <@stef_lp> na4i imame patq pri koito sa vijdat i ako butnem 3 i otiva nqkade posle ako butnem pak 3 otiva na sashtoto mqsto?
+[13:10] <@exod40> da
+01[13:10] <@stef_lp> wtf shto taka
+[13:10] <@exod40> ne
+[13:10] <@exod40> 4akai
+[13:10] <@exod40> pri nqkoi butnati 3 H vijda X
+[13:10] <@exod40> pri drugi (eventualno) butnati 3 G vijda X
+[13:10] <@exod40> samo tova
+[13:10] <@exod40> i ko ni pomaga tova mom?
+[13:11] <@mom> da marto e prav
+[13:11] <@eagaeoppooaaa> bva nai nakraq nqkoi da me chue........
+[13:11] <@mom> tva ozna4ava 4e (4ast) ot ednite 3
+[13:11] <@mom> i 4ast ot drugite 3
+[13:11] <@mom> sustavqt
+[13:11] <@mom> celiq put
+[13:11] <@mom> po koito
+[13:11] <@mom> H i G sa se vijdali
+[13:11] <@mom> predi tva
+01[13:11] <@stef_lp> nee tva ne go razbiram
+[13:11] <@mom> narisuvai si go
+[13:11] <@mom> 4akai i az... :)
+[13:11] <@eagaeoppooaaa> :)
+[13:12] <@mom> ima 2 slu4aq
+01[13:12] <@stef_lp> vsashnost na interesuva to4kata v koqto sa sabirat
+[13:12] <@mom> da
+[13:12] <@mom> w8...
+[13:12] <@mom> malko ascii pics :)
+[13:14] <@mom> ------X---H---
+[13:14] <@mom> |     .   .
+[13:14] <@mom> G.\ /./.............  
+[13:14] <@mom> | . . .   . 
+[13:14] <@mom> | \./ \.../
+01[13:14] <@stef_lp> na4i v to4kata koqto sa sabirat ima ogledalo koeto e mradnato pone ot ediniq
+01[13:14] <@stef_lp> aa ujas
+[13:14] <@mom> ------X---H---
+[13:14] <@mom> |     .   
+[13:14] <@mom> G.\ /./
+[13:14] <@mom> | . .    
+[13:14] <@mom> | \./ 
+[13:14] <@mom> taka
+[13:14] <@mom> taka gretel vijda kletka X, henzel vijda putka si maina
+01[13:15] <@stef_lp> :DD
+01[13:15] <@stef_lp> ne be tam sashto ima kletka
+[13:15] <@mom> ------X---H---
+[13:15] <@mom> |     .   .
+[13:15] <@mom> G     .   .
+[13:15] <@mom> |     .   .
+[13:15] <@mom> |     \.../ 
+[13:15] <@mom> taka henzel vijda X
+[13:15] <@exod40> da
+[13:15] <@mom> emi ako butnem ogledaloto
+[13:16] <@mom> deto kara gretel da vijda X poslednoto i deto pri H e legnalo
+[13:16] <@mom> to te 6te se vijdat
+[13:16] <@mom> stiga da varnem ogledalata na Gretel kakto kogato tq e vijdala X
+[13:17] <@mom> ------X---H---
+[13:17] <@mom> |         .
+[13:17] <@mom> G.\ /.\   .
+[13:17] <@mom> | . . .   .
+[13:17] <@mom> | \./ \.../
+[13:17] <@exod40> uuu, za ko tolkova slojno
+[13:17] <@exod40> te 4 v dqsno
+[13:17] <@exod40> izobshto ne ti trqbvat
+[13:17] <@exod40> v lqvo
+[13:17] <@exod40> po-to4no
+[13:17] <@mom> awe za da e interesno :)
+[13:17] <@exod40> :P
+[13:17] <@eagaeoppooaaa> ok
+01[13:17] <@stef_lp> na4i butame ako trqbva tova v koeto sa sabirat i ostanalite gi ostavqme
+[13:17] <@eagaeoppooaaa> znachi stignahme do izvoda che 3^6 vyrshi rabotata?
+01[13:17] <@stef_lp> basi qkoto
+[13:18] <@exod40> a sme sigurni, 4e sa ni nujni nai-mnogo 3 ogledala za da4a vijdame X
+[13:18] <@mom> da
+[13:18] <@exod40> s 3 ogledala moje da nakarame
+[13:18] <@mom> da
+[13:18] <@mom> da
+[13:18] <@mom> da
+[13:18] <@mom> i na 3mata
+[13:18] <@mom> :)
+[13:18] <@exod40> ediniq da vijda X
+[13:18] <@mom> ediniq da vijda takova X
+[13:19] <@mom> 4e drugiq su6to s max 3 ogledala
+[13:19] <@mom> da vidja su6toto X
+[13:19] <@exod40> xmmmmmm
+[13:19] <@eagaeoppooaaa> da... qko... :)
+[13:19] <@mom> zamislete se 4e e taka
+[13:19] <@exod40> samo tova me pritesnqva
+[13:19] <@eagaeoppooaaa> tazi zadacha mi haresa
+[13:19] <@mom> nqmam dokazatelstvo...
+[13:19] <@mom> ako iskate da vidite avtorovoto
+[13:19] <@exod40> kak to4no s 3 ogledala shte vijdame ednakvi...
+[13:19] <@mom> to e to4no tva
+[13:19] <@exod40> ok
+[13:19] <@eagaeoppooaaa> ti sam li si go izmislil
+[13:19] <@eagaeoppooaaa> ????
+[13:19] <@mom> C(100, 3) * 3^3 +  3^6
+[13:19] <@mom> ;)
+01[13:19] <@stef_lp> ako imame butane pri koeto sa vijdat na seki zavoi kat obarnem sa sabirat
+[13:19] <@mom> xaxaxaxaxaxaxaxa
+[13:20] <@exod40> kolko e taq slojnost?
+[13:20] <@exod40> c(100,3) kolko e?
+[13:20] <@mom> malko nad 4 miliona
+[13:20] <@eagaeoppooaaa> 27 000 000
+[13:20] <@mom> pitaniq
+[13:20] <@mom> ob6to
+[13:20] <@mom> xaxax drug put
+[13:20] <@mom> kazvam vi
+[13:21] <@mom> meet in the middle rulira otvsqkude...
+[13:21] <@exod40> :P
+[13:21] <@exod40> vseki li znae kak reshih onaq zada4a na kapralov
+[13:21] <@exod40> s meet in the middle
+[13:21] <@eagaeoppooaaa> 50 * 33 * 98 * 27 = 4365900
+[13:21] <@exod40> shtot gledam e takava temata
+[13:21] <@mom> marto trq znae
+[13:21] <@exod40> stef_lp znaesh li
+[13:21] <@exod40> onaq det trqa da razdelish
+[13:21] <@exod40> na 3 mnojestva
+[13:21] <@exod40> s ednakva cena
+01[13:22] <@stef_lp> deto na kontorlnoto?
+[13:22] <@exod40> da
+[13:22] <@exod40> na kontrolnoto na proletniq
+01[13:22] <@stef_lp> da i ko
+[13:22] <@eagaeoppooaaa> ne mislq che znam kakvo pravish ti
+[13:22] <@exod40> znaesh li mi meet in the middle reshenieto?
+01[13:22] <@stef_lp> aa da tvoito reshenie go razbrah
+01[13:22] <@stef_lp> tvoito e meet in the middle nali?
+[13:22] <@exod40> da
+[13:23] <@eagaeoppooaaa> bi li go obqsnil?
+[13:23] <@exod40> kydeto pravq 3 ^ 12 za pyrvata 4ast
+[13:23] <@exod40> ok
+[13:23] <@exod40> imash 24 4isla
+[13:23] <@exod40> i iskash da gi razdelish na 3 mnojestva
+[13:23] <@exod40> s ravni sumi
+01[13:23] <@stef_lp> 4ek daite
+01[13:23] <@stef_lp> da svarshim s taq
+01[13:23] <@stef_lp> imam vapros
+[13:23] <@exod40> aa
+[13:23] <@exod40> ok
+[13:23] <@exod40> sled tova
+01[13:23] <@stef_lp> na4i
+01[13:23] <@stef_lp> ako imame
+01[13:23] <@stef_lp> henzel v lqvo gretel v dqsno
+01[13:23] <@stef_lp> i sa vijdat kato si4ko e dolu
+01[13:23] <@stef_lp> v smisal prava liniq
+01[13:24] <@stef_lp> i mejdu tqh ima 6 ogledala koito sa butat
+01[13:24] <@stef_lp> kak sha stane da sa saberat v 1 to4ka
+[13:24] <@mom> levite 3
+[13:24] <@mom> sa gutnati i gledat v 4toto
+01[13:24] <@stef_lp> da qsno 10
+[13:24] <@mom> desnite 2 sa gutnati a
+01[13:24] <@stef_lp> da qsno 10x
+[13:24] <@mom> 4toto
+[13:24] <@mom> e obrunato
+[13:25] <@mom> taka 4e da ;)
+[13:25] <@mom> q kajete kak
+[13:25] <@mom> se podkarvat modulite
+[13:25] <@mom> sled kato exod4o
+[13:25] <@mom> obqsni negovata
+01[13:25] <@stef_lp> da i az iskam da razbera tova
+[13:25] <@exod40> az imam modul za double
+[13:26] <@exod40> 4akaite
+[13:26] <@exod40> za dokaztelstvo na tova
+01[13:26] <@stef_lp> btw izmislih dokazatelstvo na mirrors
+[13:26] <@exod40> kaji?
+01[13:26] <@stef_lp> na4i
+01[13:26] <@stef_lp> ako imame reshenieto
+01[13:26] <@stef_lp> patq
+01[13:27] <@stef_lp> i gledame
+01[13:27] <@stef_lp> 3toto ot dqsno na lqvo
+01[13:27] <@stef_lp> koeto e butnato
+01[13:27] <@stef_lp> ako e zavoi
+01[13:27] <@stef_lp> butame v obratnata posoka
+01[13:27] <@stef_lp> i sa sabirat
+01[13:27] <@stef_lp> ako e prav
+01[13:27] <@stef_lp> butame vednaj v 1ta vednaj v drugata
+01[13:27] <@stef_lp> i pak sa sabirat
+[13:27] <@mom> awe da moje
+[13:27] <@mom> ma
+[13:27] <@mom> kvo te ebe
+[13:27] <@mom> 3^6
+[13:28] <@eagaeoppooaaa> da
+01[13:28] <@stef_lp> aa ne ako e zavoi vednaj legnalo vednaj v obratnoto..
+01[13:28] <@stef_lp> i sa sabirat..
+[13:28] <@exod40> problema
+[13:28] <@exod40> e 
+[13:28] <@exod40> [13:28:33] вЂ¦ problema e ne tova, s 6 ^ 3 za teq ogledala, ami shto e sys sigurno nai-mnogo 3 ogledala shte sa dostaty4ni
+01[13:29] <@stef_lp> nali ti vikam
+[13:29] <@exod40> da gledat kym X
+01[13:29] <@stef_lp> gledame ot otgovora
+01[13:29] <@stef_lp> srednoto koeto e butnato
+01[13:29] <@stef_lp> nalqvo sa 3 nadqsno sa 3
+01[13:29] <@stef_lp> i mojem da go butnem taka 4e da sa saberat
+[13:29] <@exod40> e ne moje li v lqvo da sa 5, v dqsno da e 1
+[13:29] <@exod40> aaaaaaaa
+01[13:29] <@stef_lp> v smisal v drugata polovina nqma da gi butame
+[13:29] <@exod40> nie gi sybirame
+[13:29] <@exod40> meetvame gi v middle-a
+[13:30] <@exod40> qsnoooooooo
+[13:33] <@exod40> az go razbrah mai
+01[13:33] <@stef_lp> hm mai ne e bash taka..
+01[13:33] <@stef_lp> ni shtom zemame 3toto v drugata polovina sa 3 i ako trqbva da butnem 3toto stavat 4..
+[13:34] <@eagaeoppooaaa> daite si pls e-mail - ite da vi pratq modulite ako nqkoi ne moje da gi compile
+01[13:34] <@stef_lp> stef_lp@abv.bg
+[13:34] <@exod40> eagaeoppooaaa az ti pratih mail
+[13:34] <@exod40> skoro
+[13:34] <@eagaeoppooaaa> ok
+01[13:34] <@stef_lp> exod40 nali tvoq e ambigs?
+01[13:34] <@stef_lp> ili neshto takova
+[13:34] <@exod40> da
+[13:34] <@exod40> prati modulite na vsi4ki
+[13:35] <@eagaeoppooaaa> ok
+[13:35] <@eagaeoppooaaa> 2 -3 min shte se zabavq
+[13:36] <@exod40> tyi
+[13:36] <@exod40> da obqsnq moita
+[13:36] <@exod40> i da hodim
+01[13:36] <@stef_lp> ne
+01[13:36] <@stef_lp> ne sme svarshili smirrors
+01[13:36] <@stef_lp> az ne mi e mn vqrno
+01[13:36] <@stef_lp> dokazatelstvoto
+01[13:36] <@stef_lp> moje za 1ta polovina da sa naloji 4 butaniq da gi saberem
+[13:36] <@exod40> da
+[13:36] <@exod40> ...
+01[13:36] <@stef_lp> spored moito de 
+[13:37] <@exod40> sigurno moje vinagi da se razdelqt s 3
+[13:37] <@exod40> moje da se razdelqt i s 4/2
+[13:37] <@exod40> ama da se padnat v druga to4ka
+[13:37] <@exod40> moje da mogat da se razdelqt i s 3/3 i da se padnat da gledat v nqkoq po-razli4na to4ka
+[13:37] <@exod40> dokazatelstvoto e neqsno
+01[13:37] <@stef_lp> btw
+01[13:37] <@stef_lp> DO 6
+01[13:37] <@stef_lp> moje i po malko
+[13:38] <@exod40> az iskam da hodq da qm
+01[13:38] <@stef_lp> :D
+01[13:38] <@stef_lp> am ok obqsnqvai go
+01[13:38] <@stef_lp> ve4erta sha doizqsnqvame tiq
+[13:38] <@exod40> da
+[13:38] <@exod40> shte pitame nqkogo
+[13:38] <@exod40> eagaeoppooaaa tuk?
+[13:38] <@eagaeoppooaaa> da
+[13:38] <@exod40> mom?
+[13:39] <@eagaeoppooaaa> btw ne moga da namerq na double module??
+[13:39] <@exod40> az imam
+[13:40] <@exod40> tyi
+[13:40] <@eagaeoppooaaa> prati go pls i ti na vsichki
+[13:40] <@exod40> pravish 3 ^ 12 po pyrvata 4ast
+[13:40] <@exod40> i pravish vsi4ki 3-ki sumi
+[13:40] <@exod40> sortirash gi
+[13:40] <@exod40> i po vtorata 4ast pak pravish 3 ^ 12
+[13:41] <@exod40> pravish vsi4ki 3-ki sumi i tyrsish s binary search v gorniq masiv
+01[13:41] <@stef_lp> parvata moje da ne q sortirash
+[13:41] <@exod40> kakvoto ti trqbva, dali go ima:)
+01[13:41] <@stef_lp> a da de ti sq gi smeni 1va i 2ra
+01[13:41] <@stef_lp> btw na sastezanieto li go izmisli tova
+01[13:41] <@stef_lp> ili si pravil neshto podobno?
+01[13:42] <@stef_lp> shtot e basi qkotp
+[13:42] <@exod40> izmislih go
+[13:42] <@exod40> znaesh nqkyv meet in the middle
+01[13:42] <@stef_lp> 4ek izmislih
+01[13:42] <@stef_lp> genialen challenge
+01[13:42] <@stef_lp> na mirrors
+01[13:43] <@stef_lp> H / / \ / \ \ G
+01[13:43] <@stef_lp> kak sas po 3 butaniq sa sabirat?
+[13:43] <@eagaeoppooaaa> za tova pravish 3^6
+[13:43] <@exod40> nikak:)
+[13:43] <@eagaeoppooaaa> :)
+01[13:43] <@stef_lp> 3^6?
+[13:44] <@eagaeoppooaaa> da nali tova govorehme predi malko
+[13:44] <@eagaeoppooaaa> che kato imash 2te troiki ogledala
+01[13:44] <@stef_lp> da ama greshno sam go razbral
+[13:44] <@mom> gledai 4ovek...
+01[13:44] <@stef_lp> 2te troiki koito sabirat v 1 to4ka
+[13:44] <@eagaeoppooaaa> ako za tqh napravish 3^6 shte izleze otgovora
+[13:44] <@mom> parvite 3 ogledala
+[13:44] <@mom> gi guta6
+[13:44] <@mom> H vijda ne6to nagore
+[13:44] <@mom> nad 4toto ogledalo
+[13:44] <@mom> nali?
+01[13:44] <@stef_lp> da
+[13:45] <@mom> posle guta6
+[13:45] <@exod40> da
+[13:45] <@exod40> prav si:)
+[13:45] <@mom> desnite 2
+[13:45] <@exod40> i smenqsh 4-toto
+[13:45] <@mom> i obru6ta6 tva 4toto
+[13:45] <@mom> samo 4e ne6to
+[13:45] <@mom> ne mi e qsno
+01[13:45] <@stef_lp> a da we..
+[13:45] <@mom> ...
+[13:45] <@mom> kakvo stava ako
+[13:45] <@mom> tva koeto se vijda
+[13:45] <@mom> nagore ot 4toto ogledalo
+[13:45] <@mom> zavisi ot parvite 3
+[13:45] <@mom> vsmisal
+[13:45] <@mom> ako nad nego ima
+01[13:45] <@stef_lp> ama to nqma smisal ot 3^6 moje samo 6
+[13:45] <@mom> ./  \
+[13:46] <@mom> demek parviq put vijdame ne6to kato gutnem parvite 3
+[13:46] <@eagaeoppooaaa> kato predi tova si napravil C(6, 100) ne te byrka 3 ^ 6
+[13:46] <@mom> ne ne ne
+[13:46] <@mom> drugo
+[13:46] <@mom> gutame parvite 3
+[13:46] <@mom> w8...
+[13:46] <@mom> pic coming
+[13:47] <@mom>     /   \ 
+[13:47] <@mom> H / \ / / / \   G
+[13:47] <@mom> si4ki m/y H i G sa bili gutnati v na4aloto
+[13:47] <@mom> i ve6ticata gi e dignala
+[13:47] <@mom> ...
+[13:47] <@mom> daje
+[13:47] <@mom>     / \ \ 
+[13:47] <@mom> H / \ / / / \   G
+[13:48] <@mom>     / \ \ 
+[13:48] <@mom> H / \ / / / \   G
+[13:48] <@mom>     \ / /
+[13:48] <@mom> ...........
+[13:48] <@mom>     / \ \ 
+[13:48] <@mom> H / \ / / / \   G
+[13:48] <@mom>     \ / /
+[13:48] <@mom> 4e da ne moje i otdolu da se
+[13:48] <@mom> gledat :)
+[13:48] <@mom> kvo praim sega ne mi e mn qsno...
+01[13:48] <@stef_lp> 0.o
+[13:48] <@eagaeoppooaaa> ..........
+[13:48] <@mom> nqkoi razbra li
+[13:48] <@mom> kuv e problema
+[13:48] <@eagaeoppooaaa> az razbrah
+[13:48] <@eagaeoppooaaa> i vijdam reshenieto
+[13:49] <@eagaeoppooaaa> gytash prvite 3 i H vijda nad 3 toto
+01[13:49] <@stef_lp> abe kak gi risuvash tolkova barzo
+[13:49] <@mom> awe toq konkreten slu4ai
+[13:49] <@mom> e qsen
+[13:49] <@mom> 4akai
+[13:49] <@mom> da ima ne6to takova...
+[13:49] <@mom> nz...
+[13:49] <@mom> sigurno se dokazva
+[13:49] <@eagaeoppooaaa> ne moje da se poluchi tova koeto iskash zashtoto tq e premestila max 6 okledala?
+[13:49] <@mom> to4no
+[13:49] <@mom> samo 4e nie ne vijdame kletka X
+[13:49] <@mom> direktno
+[13:49] <@eagaeoppooaaa> ne te byrka..
+[13:49] <@mom> a prez nqkakvi drugi ogledala koito ne sme butali
+[13:49] <@mom> burka me
+[13:50] <@mom> 6toto nqkoe ot tqh moje da se okaje
+[13:50] <@mom> takova deto sme butnali
+[13:50] <@mom> i ako vuv vsi4ki slu4ai
+01[13:50] <@stef_lp> ma ni sha fanem i slu4aq v koito te stoqt a butame teq po patq
+01[13:50] <@stef_lp> nali proverqvame si4ko
+[13:50] <@mom> to4no
+[13:50] <@mom> ima li takuv
+[13:50] <@mom> v koito na putq do X
+[13:50] <@mom> nqma ot na6te ogledala deto pitame za tqh
+01[13:51] <@stef_lp> tova e kogato butame < 6
+01[13:51] <@stef_lp> daje <= 3
+01[13:51] <@stef_lp> za da sa saberat
+[13:52] <@eagaeoppooaaa> btw ako P < 6 stava shitavo za code - vane ili pone az ne razbiram kak bi stanalo hubavo?
+01[13:53] <@stef_lp> a po drug na4in kato ti razbiram vaprosa
+01[13:53] <@stef_lp> shtom sa sabirat
+[13:53] <@eagaeoppooaaa> t.e. ako P = 4 ili P = 5
+01[13:53] <@stef_lp> pone edno e butnato
+01[13:53] <@stef_lp> ne sashtoto e
+[13:53] <@exod40> pffff
+[13:53] <@exod40> ko stana tuka
+[13:53] <@mom> daje po-lesno
+[13:53] <@exod40> ludnica:)
+01[13:53] <@stef_lp> ni v C(6) zemame i bez da butame
+01[13:53] <@stef_lp> v edno ot polojeniqta ne sa buta realno
+01[13:53] <@stef_lp> ostava si sashtoto
+01[13:53] <@stef_lp> opa ne v C(6) a *6^3
+[13:54] <@eagaeoppooaaa> qsno :)
+01[13:54] <@stef_lp> 3^6 de
+[13:54] <@eagaeoppooaaa> dovechera v kolko shte se syberem ?
+01[13:55] <@stef_lp> kat gledam kak sa motame mai 7 nai dobre ;D
+[13:55] <@eagaeoppooaaa> i koga shte si prashtame code - vete?
+[13:55] <@eagaeoppooaaa> aide da e 8:00 pone?
+01[13:55] <@stef_lp> daite kajete sq kak sa praqt modulite
+[13:55] <@exod40> .cpp includevate vyv source-a
+[13:55] <@exod40> kym 8-9 dove4era
+[13:55] <@exod40> pratih mpduilite
+[13:55] <@exod40> ae
+[13:55] <@exod40> stiga tolkova zasega
+[13:55] <@eagaeoppooaaa> ae
+[13:55] <@eagaeoppooaaa> da
+[13:55] <@exod40> 8 dove4era
+[13:55] <@eagaeoppooaaa> cool
+[13:55] <@exod40> az moje nishto da ne sym svyrshil:)
+01[13:55] <@stef_lp> k are
+[13:55] <@exod40> t.e. tq programata e lesna
+[13:55] <@mom> aide 9
+[13:55] <@exod40> ae 9 naistina...
+[13:56] <@eagaeoppooaaa> aide 9
+01[13:56] <@stef_lp> ae ne
+01[13:56] <@stef_lp> :D
+[13:56] <@mom> 3>1
+01[13:56] <@stef_lp> stia we iskam dagledam gospodari
+[13:56] <@exod40> aaa
+[13:56] <@exod40> iskam da izlizam:)
+[13:56] <@eagaeoppooaaa> i az
+[13:56] <@mom> nqma takiva we
+[13:56] <@mom> imate ioi
+[13:56] <@mom> !!!!!!!!!!!!!!!!!
+[13:56] <@exod40> iskam i na plaj da hodq
+[13:56] <@exod40> ...
+[13:56] <@exod40> ae mlykni ve:)
+01[13:56] <@stef_lp> martine kakvo simvolizira nika ti?
+[13:56] <@mom> gnqv
+[13:56] <@exod40> buntarstvo:)
+[13:56] <@mom> :)))
+[13:56] <@exod40> :P
+[13:56] <@eagaeoppooaaa> 13 proizvolni bukvi ;)
+[13:57] <@exod40> convex hull, koito iska
+[13:57] <@exod40> double
+[13:57] <@exod40> pratih vi modul
+01[13:57] <@stef_lp> nqkoi irlandska psuvnq
+[13:57] <@exod40> include-vate .cpp-to
+[13:57] <@exod40> i syshto taka i mirrors:)
+[13:57] <@eagaeoppooaaa> buntarstvoto sreshtu TC staff
+[13:57] <@exod40> imate header
+[13:57] <@eagaeoppooaaa> za tova che me ban - naha...
+[13:57] <@exod40> ae
+[13:57] <@exod40> do dove4era
+[13:57] <@exod40> aaaa
+[13:57] <@eagaeoppooaaa> tochno predi edin open
+[13:57] <@exod40> posledno kolko 4asa
+[13:57] <@eagaeoppooaaa> ...
+[13:57] <@eagaeoppooaaa> 9:00
+01[13:57] <@stef_lp> 20:00
+01[13:57] <@stef_lp> 9 mina
+[13:57] <@exod40> mom?
+01[13:57] <@stef_lp> :D
+[13:57] <@eagaeoppooaaa> :D
+01[13:58] <@stef_lp> az sam tuka 20:00 i sha si prashtam na sebe si
+[13:58] <@eagaeoppooaaa> i oshte edin vajen vypros koi shte byde utre
+01[13:58] <@stef_lp> gostina?
+01[13:58] <@stef_lp> ili gospoda
+[13:58] <@eagaeoppooaaa> i koi shte sa zadachite za da moje da se podgotvqt
+[13:58] <@exod40> 20:00 dove4era:P
+[13:58] <@exod40> mom4il
+[13:58] <@exod40> sledvashtite zada4i
+[13:58] <@exod40> pratil sym vi program
+[13:59] <@eagaeoppooaaa> OK
+[13:59] <@exod40> Dwarfs, CEOI 2002
+[13:59] <@exod40> Palechko, IOI kontrolno 2004
+[13:59] <@exod40> Two Rods, IOI 2002
+[13:59] <@exod40> dwarfs i two rods moga da gi razkaja
+[13:59] <@exod40> nqma smisyl nqkoi da e god za celiq den
+[13:59] <@exod40> po-qko e zada4a god:)
+[13:59] <@eagaeoppooaaa> ot all_tasks
+01[14:00] <@stef_lp> i az two rods q znam
+[14:00] <@eagaeoppooaaa> ok bye for now :)
+[14:00] <@exod40> utre se pishe mnogo:)
+01[14:00] <@stef_lp> are bye
+[14:00] <@exod40> prigotvete si trakashtite klaviaturi:)
+[14:00] <@exod40> bye
+02[14:00] * @exod40 (~exod40@87-126-64-166.btc-net.bg) Quit (Quit: My damn controlling terminal disappeared!)

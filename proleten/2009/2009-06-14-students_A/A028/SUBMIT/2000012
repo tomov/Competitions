@@ -1,0 +1,54 @@
+#include<stdio.h>
+#include<algorithm>
+#define MAXN 100001
+using namespace std;
+int all[MAXN]={0},n,mem[10][1024][1024]={0};
+void init();
+int rec(int lvl,int max,int used);
+bool cmp(int a,int b){return a>b;}
+int main()
+{
+ int ans=0;
+ init();
+ sort(all,all+n,cmp);
+ if(n==2)ans=all[0]+all[1];
+ /*
+ for(int i=0;i<n;i++)
+ printf("%d ",all[i]);
+  printf("\n");
+ */
+ ans=rec(0,1,0);
+ printf("%d\n",ans);
+ return 0;
+}
+void init()
+{
+ scanf("%d",&n);
+ for(int i=0;i<n;i++)
+ scanf("%d",&all[i]);
+ return;
+}
+int rec(int lvl,int max,int used)
+{
+ if(lvl<10 && max<1024 && used< 1024)
+  if(mem[lvl][max][used])return mem[lvl][max][used];
+ if(!max) return 0;
+ int ans,tmp=0,tmp2,i;
+ if(max>=(n-used))
+ {
+  tmp=0;
+  for(i=used;i<n;i++)
+  tmp+=all[i];
+  return lvl*tmp;
+ }
+ ans=rec(lvl+1,max*2,used);
+ for(i=0;i<max;i++)
+ {
+  tmp+=all[used+i]*lvl;
+  tmp2=rec(lvl+1,(max-i-1)*2,used+i+1);
+  if(tmp2)if(ans>(tmp+tmp2))ans=tmp+tmp2;
+//  printf("lvl=%d max=%d used=%d ans=%d i=%d tmp=%d\n",lvl,max,used,ans,i,tmp);
+ }
+ if(lvl<10 && max<1024 && used< 1024)mem[lvl][max][used]=ans;
+ return ans;
+}

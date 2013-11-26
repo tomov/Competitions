@@ -1,0 +1,4 @@
+game (small group)
+
+9 of 10 tests OK
+30 points

@@ -1,0 +1,44 @@
+/*
+TASK: flatten
+LANG: C++
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int n,k;
+int A[1000001];
+
+int mod(int a)
+{ return a<0?-a:a; }
+
+int main()
+{
+ int i,j,maxx=-1,cost=INT_MAX,start=-1;
+ 
+ scanf("%d %d",&n,&k);
+ for(i=0;i<n;i++) { scanf("%d",&A[i]); if(A[i]>maxx) maxx=A[i]; }
+ 
+ for(i=0;i<=maxx;i++)
+    {
+     int sum=0;
+     for(j=0;j<k;j++) sum+=mod(A[j]-i); 
+     
+     if(cost==sum && start>0) start=0;
+     if(cost>sum) { cost=sum; start=0; }
+     
+     for(j=k;j<n;j++)
+      {
+       sum-=mod(A[j-k]-i);
+       sum+=mod(A[j]-i);
+       
+       if(cost==sum && start>(j-k+1)) start=j-k+1;
+       if(cost>sum) { cost=sum; start=j-k+1; }               
+      }
+   } 
+   
+ cout<<cost<<endl<<start+1<<endl;     
+ //system("pause");
+ return 0;
+}

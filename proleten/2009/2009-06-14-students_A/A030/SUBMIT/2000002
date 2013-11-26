@@ -1,0 +1,46 @@
+/*
+TASK: washer
+LANG: C++
+*/
+#include <iostream>
+#include <math.h>
+#include <vector>
+#define eps 1e-9
+using namespace std;
+
+vector<double> DP[81][81];
+bool used[80][80];
+
+void dfs(int n, int last)
+{
+     if (used[n][last]) return;
+     used[n][last] = 1;
+     if (n == 0)
+     {
+           DP[n][last].push_back(0);
+           return;
+     }
+     
+     vector<double> temp;
+     for (int i = 1; i <= last && n - i >= 0; i++)
+     {
+         dfs(n-i, i);
+         
+         for (int k = 0; k < DP[n-i][i].size(); k++)
+          temp.push_back(1./i + DP[n-i][i][k]);
+     }
+     
+     sort(temp.begin(), temp.end());
+     DP[n][last].push_back(temp[0]);
+     for (int i = 1; i < temp.size(); i++) if (fabs(temp[i] - temp[i-1] != 0))
+      DP[n][last].push_back(temp[i]);
+}
+
+int main()
+{
+    int N;
+    cin >> N;
+    dfs(N, N);
+    cout << DP[N][N].size() << endl;
+    return 0;
+}

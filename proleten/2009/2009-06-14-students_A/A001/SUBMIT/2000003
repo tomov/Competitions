@@ -1,0 +1,70 @@
+#include<cstdio>
+#include<vector>
+#include<algorithm>
+using namespace std;
+vector<int> g[30][50];
+int ng, ns[30], br;
+int color[30][50], ce[30], price[30], rdy[30];
+void read() {
+  int i,j;
+  scanf("%d", &ng);
+  for(i=0;i<ng;i++) {
+    int m;
+    scanf("%d %d %d %d", &ns[i], &m, &ce[i], &price[i]);
+    for(j=0;j<ns[i];j++) {
+      scanf("%d", &color[i][j]);
+    }
+    for(j=0;j<m;j++) {
+      int k,k1;
+      scanf("%d%d", &k, &k1);
+      k--;
+      k1--;
+      g[i][k].push_back(k1);
+      g[i][k1].push_back(k);
+    }
+  }
+}
+int d[50];
+void dfs (int i, int g1) {
+  d[i]=1;
+  int j;
+  for(j=0;j<g[g1][i].size();j++) {
+    if(!d[g[g1][i][j]]&&color[g1][g[g1][i][j]]!=ce[g1]) dfs(g[g1][i][j], g1);
+  }
+}
+int go () {
+  int i=0;
+  int gr1=0, gr=0;
+  sort(rdy, rdy+ng);
+  for(i=ng-1;i>=0;i--) {
+    if(gr1>gr) {
+      gr+=rdy[i];
+    }
+    else {
+      gr1+=rdy[i];
+    }
+  }
+  return max(gr, gr1);
+}
+void solve () {
+  int i,j;
+  int ans=0;
+  for(i=0;i<ng;i++) {
+    for(j=0;j<ns[i];j++) {
+      if(!d[j]&&color[i][j]!=ce[i]) {
+        dfs(j, i);
+        //printf("%d %d\n", i+1, j+1);
+        br++;
+      }
+    }
+    rdy[i]=(br*price[i]);
+    br=0;
+    memset(d, 0 ,sizeof(d));
+  }
+  printf("%d\n", go());
+}
+main () {
+  read();
+  solve();
+  return 0;
+}

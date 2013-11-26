@@ -1,0 +1,199 @@
+#include <module.h>
+
+typedef struct state
+{
+	bool set;
+	int mirror0, state0;
+	int mirror1, state1;
+	int mirror2, state2;	
+};
+
+const int MAX_N = 110;
+const int MAX_G = 6;
+const int STATES = 3;
+
+int N, M, P;
+int mirrors[MAX_G], states[MAX_G], romeo_view, juliet_view;
+int mirrors_size;
+bool used[MAX_N];
+state r[4 * MAX_N], j[4 * MAX_N];
+
+void Init()
+{
+	init();
+	
+	N = getN();
+	M = getM();
+	P = getP();
+}
+
+void Slow_Solve()
+{
+	if(P == 1)
+	{
+		for(mirrors[0] = 0; mirrors[0] < P; mirrors[0] ++)
+		{
+			for(states[0] = 0; states[0] < STATES; states[0] ++)
+			{
+				getView(1, mirrors, states, & romeo_view, & juliet_view);
+			}
+		}
+	}
+	
+	if(P == 2)
+	{
+		for(mirrors[0] = 0; mirrors[0] < P; mirrors[0] ++)
+		{
+			for(states[0] = 0; states[0] < STATES; states[0] ++)
+			{
+				for(mirrors[1] = mirrors[0] + 1; mirrors[1] < P; mirrors[1] ++)
+				{
+					for(states[1] = 0; states[1] < STATES; states[1] ++)
+					{
+						getView(2, mirrors, states, & romeo_view, & juliet_view);
+					}
+				}
+			}
+		}
+	}
+}
+
+void Find_Answer()
+{
+	for(states[0] = 0; states[0] < STATES; states[0] ++)
+	{
+		for(states[1] = 0; states[1] < STATES; states[1] ++)
+		{
+			for(states[2] = 0; states[2] < STATES; states[2] ++)
+			{
+				if(mirrors_size == 3)
+				{
+					getView(3, mirrors, states, & romeo_view, & juliet_view);
+					
+					continue;
+				}
+				
+				for(states[3] = 0; states[3] < STATES; states[3] ++)
+				{
+					if(mirrors_size == 4)
+					{
+						getView(4, mirrors, states, & romeo_view, & juliet_view);
+						
+						continue;
+					}
+					
+					for(states[4] = 0; states[4] < STATES; states[4] ++)
+					{
+						if(mirrors_size == 5)
+						{
+							getView(5, mirrors, states, & romeo_view, & juliet_view);
+							
+							continue;
+						}
+						
+						for(states[5] = 0; states[5] < STATES; states[5] ++)
+						{
+							getView(6, mirrors, states, & romeo_view, & juliet_view);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+void Solve()
+{
+	if(P < 3) Slow_Solve();
+	
+	for(mirrors[0] = 0; mirrors[0] < P; mirrors[0] ++)
+	{
+		for(states[0] = 0; states[0] < STATES; states[0] ++)
+		{
+			for(mirrors[1] = mirrors[0] + 1; mirrors[1] < P; mirrors[1] ++)
+			{
+				for(states[1] = 0; states[1] < STATES; states[1] ++)
+				{
+					for(mirrors[2] = mirrors[1] + 1; mirrors[2] < P; mirrors[2] ++)
+					{
+						for(states[2] = 0; states[2] < STATES; states[2] ++)
+						{
+							getView(3, mirrors, states, & romeo_view, & juliet_view);
+							
+							r[romeo_view].set = true;
+							r[romeo_view].mirror0 = mirrors[0];		r[romeo_view].state0 = states[0];
+							r[romeo_view].mirror1 = mirrors[1];		r[romeo_view].state1 = states[1];
+							r[romeo_view].mirror2 = mirrors[2];		r[romeo_view].state2 = states[2];
+							
+							j[juliet_view].set = true;
+							j[juliet_view].mirror0 = mirrors[0];	j[juliet_view].state0 = states[0];
+							j[juliet_view].mirror1 = mirrors[1];	j[juliet_view].state1 = states[1];
+							j[juliet_view].mirror2 = mirrors[2];	j[juliet_view].state2 = states[2];
+							
+							if(r[juliet_view].set)
+							{
+								used[mirrors[0]] = true;
+								used[mirrors[1]] = true;
+								used[mirrors[2]] = true;
+								
+								mirrors_size = 3;
+								
+								if(!used[r[juliet_view].mirror0])
+								{
+									mirrors[mirrors_size ++] = r[juliet_view].mirror0;
+								}
+								
+								if(!used[r[juliet_view].mirror1])
+								{
+									mirrors[mirrors_size ++] = r[juliet_view].mirror1;
+								}
+								
+								if(!used[r[juliet_view].mirror2])
+								{
+									mirrors[mirrors_size ++] = r[juliet_view].mirror2;
+								}
+								
+								Find_Answer();
+							}
+							
+							if(j[romeo_view].set)
+							{
+								used[mirrors[0]] = true;
+								used[mirrors[1]] = true;
+								used[mirrors[2]] = true;
+								
+								mirrors_size = 3;
+								
+								if(!used[j[romeo_view].mirror0])
+								{
+									mirrors[mirrors_size ++] = j[romeo_view].mirror0;
+								}
+								
+								if(!used[j[romeo_view].mirror1])
+								{
+									mirrors[mirrors_size ++] = j[romeo_view].mirror1;
+								}
+								
+								if(!used[j[romeo_view].mirror2])
+								{
+									mirrors[mirrors_size ++] = j[romeo_view].mirror2;
+								}
+								
+								Find_Answer();
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+int main()
+{
+	Init();
+	
+	Solve();
+	
+	return 0;
+}

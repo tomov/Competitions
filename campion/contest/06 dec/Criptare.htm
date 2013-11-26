@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Criptare</title>
+</head>
+<body bgcolor=#FFFFFF  link="#0000CC" vlink="#0000CC" alink="#0000CC">
+<p></P><p ><font face="Arial, Helvetica, sans-serif" size="2"><B><font size="4">criptare</font></B></font></p>
+<p ><font face="Arial, Helvetica, sans-serif" size="2"><I>Zaharel</I> and <I>Bronzarel</I> 
+  often have encryption challenges amongst themselves. This time, <I>Zaharel</I> 
+  encrypted a sequence of <font face="Courier New, Courier, mono">N</font> non-negative 
+  integers <font face="Courier New, Courier, mono">a<sub>0</sub>, a<sub>1</sub>, 
+  ...,a<sub>N-1</sub></font> as follows: he took a non-negative integer <font face="Courier New, Courier, mono">M</font> 
+  and built the following sequence: <font face="Courier New, Courier, mono">b<sub>i</sub> 
+  = a<sub>i</sub>+a<sub>(i+1) mod N</sub>+a<sub>(i+2) mod N</sub>+...+a<sub>(i+M-1) 
+  mod N</sub></font>; then he asked Bronzarel if he can determine the initial 
+  sequence <font face="Courier New, Courier, mono">a<sub>0</sub>, a<sub>1</sub>, 
+  ..., a<sub>N-1</sub></font><sub> </sub>if he is given this new sequence as well 
+  as number <font face="Courier New, Courier, mono">M</font>. </font></p>
+<p ><font face="Arial, Helvetica, sans-serif" size="2"><B><font size="3">Task</font></B></font></p>
+<p ><font face="Arial, Helvetica, sans-serif" size="2">Write a program that helps out <I>Bronzarel</I>. </font></p>
+<p ><font face="Arial, Helvetica, sans-serif" size="2"><B><font color="#000000" size="3">Input Data</font></B></font></p>
+<p ><font face="Arial, Helvetica, sans-serif" size="2">Line one of input file 
+  <B><font face="Courier New, Courier, mono">criptare.in</font> </B>contains the 
+  two positive integers, <font face="Courier New, Courier, mono">N M</font>, separated 
+  by a single space. The next line contains <font face="Courier New, Courier, mono">N</font> 
+  non-negative integers each separated by a single space, representing the sequence 
+  <font face="Courier New, Courier, mono">b<sub>0</sub>, b<sub>1</sub>, ..., b<sub>N-1</sub></font><sub>.</sub></font></p>
+<p ><font face="Arial, Helvetica, sans-serif" size="2"><B><font size="3">Output Data</font></B></font></p>
+<p ><font face="Arial, Helvetica, sans-serif" size="2">Output file <B><font face="Courier New, Courier, mono">criptare.out</font></B> 
+  will contain a single line with <font face="Courier New, Courier, mono">N</font> 
+  non-negative integers separated by a single space, representing the sequence 
+  <font face="Courier New, Courier, mono">a<sub>0</sub>, a<sub>1</sub>, ..., a<sub>N-1</sub></font>. 
+  Although there can be multiple solutions, <I>Bronzarel</I> knows that the sequence 
+  encrypted by <I>Zaharel</I> is the lexicographical minimum solution.</font></p>
+<p ><font face="Arial, Helvetica, sans-serif" size="2"><B><font size="3">Restrictions</font></B></font></p>
+<p><font face="Courier New, Courier, mono" size="2">1 &lt;= M, N &lt;= 50000<BR>
+  0 &lt;= b<sub>i</sub> &lt;= 10<sup>9 </sup></font><font face="Arial, Helvetica, sans-serif" size="2"><BR>
+  By <font face="Courier New, Courier, mono">a mod b</font> we understand the 
+  remainder of <font face="Courier New, Courier, mono">a</font>'s division to 
+  <font face="Courier New, Courier, mono">b</font><BR>
+  The existence of at least one solution is guaranteed.<BR>
+  The sequence <font face="Courier New, Courier, mono">a<sub>0</sub>, a<sub>1</sub>, 
+  ..., a<sub>N-1</sub></font><sub> </sub>must contain non-negative integers (not 
+  necessarily non-zero).</font></p>
+<p ><font face="Arial, Helvetica, sans-serif" size="2"><B><font size="3">Examples</font></B></font></p>
+<table  border=1 cellspacing=2 cellpadding=2 width="625"  valign="top">
+  <tr> 
+    <td > 
+      <p ><font face="Courier New, Courier, mono" size="2"><B>criptare.in </B></font></p>
+    </td>
+    <td width="22%" ><font face="Courier New, Courier, mono" size="2"><B>criptare.out</B></font></td>
+    <td ><font face="Courier New, Courier, mono" size="2"><B>criptare.in</B></font></td>
+    <td width="16%" > 
+      <p ><font face="Courier New, Courier, mono" size="2"><B>criptare.out</B></font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td width="24%" ><font face="Courier New, Courier, mono" size="2"> 3 2<BR> 3 5 4 </font></td>
+    <td width="22%"  valign="top"><font face="Courier New, Courier, mono" size="2">1 
+      2 3</font></td>
+    <td width="38%" valign=top><font face="Courier New, Courier, mono" size="2"> 6 4<BR> 8 13 11 13 17 10 </font></td>
+    <td width="16%"  valign="top"><font face="Courier New, Courier, mono" size="2"> 
+      2 5 0 1 7 3</font></td>
+  </tr>
+</table>
+<p> <font face="Arial, Helvetica, sans-serif" size="2"><B>Time limit</B>: 0.1 seconds/test</font></p>
+<p align=right ><font face="Arial, Helvetica, sans-serif" size="2"><I>Mircea Pa&#351;oi</I><BR> University of Bucharest, Mathematics &amp; IT Department<BR>
+  <a href="mailto:bogdanpasoi@yahoo.com">bogdanpasoi@yahoo.com</a></font></p>
+</body>
+</html>
+

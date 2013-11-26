@@ -1,0 +1,84 @@
+
+Session Start: Sat Aug 21 22:30:52 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+* spaceship has joined #ioi
+<rangel__> az ne
+<valo_bg> VelinTzanov: dobro utro :)
+* spaceship was kicked by VelinTzanov (VelinTzanov)
+* VelinTzanov sets mode: +ooo Swetko rangel__ valo_bg
+<VelinTzanov> Dobro da byde.
+<VelinTzanov> Niakoi da znae neshto za Vlado?
+<valo_bg> tykmo razpravqh kolko dohodno e ad si spammer
+<valo_bg> az ne znam... ako iskate da mu zvynna
+* Logging #ioi to 'logs\ioi_2004_08_22.log'
+<VelinTzanov> Zvynni, da.
+<valo_bg> maleeee zapochnal sym da poluchvam bylgarski spam...
+<valo_bg> w8
+<Swetko> aide da pochvame
+<Swetko> che az malko byrzam
+<VelinTzanov> Da, neka samo Valio se obadi.
+<Swetko> iskah po rano  da pochna ama ne znaeh zadachite
+<valo_bg> toi nqma inet...
+<VelinTzanov> Pri vsichki polojenia do 8:35 shte sme pochnali.
+<VelinTzanov> Kakvo znachi niama net?
+<VelinTzanov> (Swetko, kakvo znachi che byrzash?)
+<valo_bg> edin momenta....
+<valo_bg> toku shto mu doide, sega trqq da vleze
+* sssa88 has joined #ioi
+<VelinTzanov> OK
+<VelinTzanov> http://www.tzanov.com/ioi2004/snohomish/
+<VelinTzanov> Pochvame
+* VelinTzanov sets mode: +o sssa88
+<valo_bg> ama qki direktorii izmislqsh trqbva da ti se priznae :)
+<VelinTzanov> Svalete gi i trite zadachi za v sluchai che na niakoi mu spre net-a.
+<VelinTzanov> Hehe, Valio, tova sa istinski imena. :)
+<VelinTzanov> Naposledyk sym na vylna mestnosni okolo Seattle.
+<VelinTzanov> Vreme za vyprosi: 1 chas
+<VelinTzanov> Vreme za systezanie: 5 chasa :)
+<VelinTzanov> Edno poiasnenie po warriors: expected number of victories e prosto sumata ot veroiatnostite za pobeda v razlichnite bitki.
+<Swetko> abe na biometrics - imame niakvo mnoshestvo ot tochki i triabva da go vyrtim che da poluchim drugoto li e
+<VelinTzanov> Cheti uslovieto, Swetko. Vyprosyt ti e tvyrde obsht.
+<VelinTzanov> Na IOI se otgovaria samo s Yes, No i No comment.
+<Swetko> ami moia vapros e takuv
+<Swetko> mai go razbrah
+<VelinTzanov> Otgovoryt mi togava e "Ne". Ot teb ne se iska da vyrtish nishto. Iska se da napishesh programa koiato po daden vhod da generira veren izhod.
+<VelinTzanov> Shte go razberesh, ta. To si e napisano iasno v uslovieto. :)
+<Swetko> tazi suma ot veroiatnostite znachi moshe da e po goliama ot 1
+<VelinTzanov> Ami moje - nishto ne i prechi.
+<VelinTzanov> Pone az ne se seshtam da i prechi neshto. Ako ti se setish, tova veche e drugo neshto. No pone ne sledva direktno ot uslovieto.
+<valo_bg> time limiti?
+<valo_bg> memory limiti?
+<VelinTzanov> Ne se zanasiai. :)  Da raboti vednaga bez da lapa mnogo pamet. :)
+<VelinTzanov> Memory da rechem 64MB
+<VelinTzanov> Time: byrzo tam, znam li...
+<VelinTzanov> bio mislia che triabva da raboti vednaga.
+<VelinTzanov> Warriors ne znam. Niakolko sekundi moje bi moje.
+<VelinTzanov> Za parity ne znam - ne e moia zadachata. Mislia che beshe 5 secs, ama na niakakvi stari computers... taka che za vas e sekunda-dve sigurno.
+<valo_bg> ima q na edin acm-ski site parity...
+<valo_bg> ama ne pomnq kolko beshe...
+<VelinTzanov> Abe zabavliavaite se tam. :)
+<VelinTzanov> Az otivam da iam i moga da otgovariam sys zakysnenie, imaite predvid.
+<VelinTzanov> I btw, uspeh! :)
+<VelinTzanov> Shte vi otkysna glavite ako se izlojite (da ne kaja niakoia po-mirizliva duma)
+<valo_bg> na parity moje li da se zadavat vyprosi za intervali izlizashti izvyn dyljinta na chisloto zadadena ni v nachaloto?
+<Swetko> parity e ot CEOI
+<valo_bg> koga svyrshvame?
+<valo_bg> i oshte neshto izvyn temata: testovete ot BO2I na radio sa izvyn ogranicheniqta v uslovieto
+<sssa88> hehe dobro utro
+<valo_bg> stranno shtom tova e tolkova izvestno zashto nikoi ne se seti da go kaje vyv foruma
+<VelinTzanov> Valio, vyprosyt ti za Parity oshte li e v sila?
+<VelinTzanov> Da znam dali da gledam.
+<VelinTzanov> Ne mislia che moje, Valio, no dori i da moje kolko mu e da slojish tam dve nishtojni proverki i da gi vkarash v intervala.
+<VelinTzanov> T.e. da gi vkarash v dyljinata.
+<valo_bg> ok
+<sssa88> na warriors sys stdin i stdout li da rabotim?
+<VelinTzanov> Da
+<VelinTzanov> Na vsiaka zadacha stdin/stdout-stvaite. I na parity syshto.
+<VelinTzanov> Az obache shte potegliam... uspeh! I s po-malko ot 200 tochki da ne mi idvate... koito niama 200 tochki da si prigotvi kupichka s pepel za posipvane vyrhu glavata...
+<VelinTzanov> Chao!
+<sssa88> chao
+<valo_bg> chao
+* Disconnected
+Session Close: Sun Aug 22 00:24:57 2004

@@ -1,0 +1,521 @@
+
+Session Start: Mon Aug 16 20:02:55 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+* Logging #ioi to 'logs\ioi_2004_08_17.log'
+<VelinTzanov> Hmm.... pak ste mi samo dvama... :(
+* valo_bg has joined #ioi
+<sssa88> maj ne :)
+<valo_bg> dobro utro... nqmam net :(
+<sssa88> znachi ne e dobro
+<valo_bg> dnes vsichko e s glavata na gore... shte bqgam na zala, mai...
+<VelinTzanov> A sega ot kyde pishesh kato niamash Net?
+* VelinTzanov sets mode: +ooo rangel__ sssa88 valo_bg
+<valo_bg> vyrzah se prez telefona, no tam e dosta skypo...
+<valo_bg> za prodyljitelni prestoi... ima li vreme... shte se bavq 10 min
+<VelinTzanov> Ima vreme, da.
+<VelinTzanov> Biagai.
+<valo_bg> ok, to tuka ima nablizo zala
+* valo_bg has quit IRC
+<VelinTzanov> Vie kak ste, iunaci? Kak vyrvi podgotovkata?
+<sssa88> ami kak moze da vyrvi - trudno
+<VelinTzanov> :)
+<VelinTzanov> Dnes mai shte e nai-goliamoto nadynvane.
+<VelinTzanov> Vsyshtnost moje bi ima edno po-goliamo... da, ima. :)
+<VelinTzanov> Vlado, komentari po domashnite niakakvi?
+<sssa88> ami ne
+<sssa88> to az flatten razbrah kak stava v sybota ot rangel kak stava
+<sssa88> to ne bilo trudno ama az taka i ne q izmislih
+<VelinTzanov> Vzemi si poukata togava.
+<VelinTzanov> Kakto v mnogo drugi zadachi, cakata e prosto da otdelish neobhodimata informacia ot izlishnata.
+<sssa88> az trqbva i ot nedelnoto systezsanie pouka da si vzema
+<VelinTzanov> Mda.... opredeleno ne sym dovolen.
+<VelinTzanov> Ne sym gledal vnimatelno zadachite, no mi se struva, che temata e podobna na tova koeto shte vidite na IOI.
+<VelinTzanov> Pone sydeiki po rezultatite... 
+<sssa88> tam pyrvite dve - radio i game gi bqh izmislil uz pyk nakraq 40tochki ot tqh dvete
+<VelinTzanov> 190 e dobre... 160 gore-dolu biva... 70 obache e slabo.
+<VelinTzanov> I zashto taka?
+<sssa88> ami te testovete ne sa izlezli oshte
+<sssa88> obache na radio-to bqh propusnal da go napravq ako ima dva ednakvo dobri otgovora da izvede tozi kojto e naj-vlqvo
+<sssa88> vse pak si ostava vyprosa zashto crash-va na 3 testa ama tova shte go razbera kato izlqzat testovete
+<VelinTzanov> Ia az da hvana da gi procheta teia zadachi...
+<sssa88> i na game si otkrih greshka
+<sssa88> to az uz testvah pyk to vsyshnost ne sym testval za neshto dostatychno slozno che da go precakam
+* valo_bg has joined #ioi
+<valo_bg> re
+<sssa88> onq den pyk kato opravqh "game" sym igubil moze bi 2 chasa da si tyrsq greshka
+<sssa88> na sledvashtiq na sveza glava vidqh che greshno sym razpisal testovete na ryka i to vsyshnost rabotilo
+<VelinTzanov> :)
+<VelinTzanov> Pouki, pouki, pouki... ne e da niama kakvo da si izvadite.
+<VelinTzanov> Valio, ela mi sega tuka... kaji kolko tochki imash na reshenite zadachi na BO2I?
+<valo_bg> taka si e...
+<valo_bg> malko :(
+* Swetko has joined #ioi
+* CS sets mode: +v Swetko
+<VelinTzanov> I zashto tyi?
+<Swetko> zdraveite
+<VelinTzanov> Swetko, na kakvo dyljim chestta da te chakame 20 minuti?
+<valo_bg> ne sym prochel pravilno uslovieto na game
+<VelinTzanov> Za pryv pyt li ti se sluchva da ne prochetesh uslovie pravilno?
+<valo_bg> inachesi q napisah za 45 min. super siguren che raboti... i posle. iznenada!
+<Swetko> izviniavaite, uspah se
+<valo_bg> ne
+<valo_bg> za syjalenie
+<VelinTzanov> Povtarianeto na greshki e nai-goliamata greshka, Valio.
+<VelinTzanov> Da pravite greshki ne e problem. Problem e da ne si vadite poukite ot tiah.
+<valo_bg> e, vij... mnogo otdavna ne sym go pravil...
+<VelinTzanov> Ako na IOI se precakate zaradi niakoe neprocheteno uslovie shte e adski gadno da precakate vsichkia tozi trud (nai-veche vashia, no i moia)
+<VelinTzanov> Predi BOI govorihme - usloviata zadyljitelno se chetat 2 ili 3 pyti.
+<VelinTzanov> 1) V nachaloto
+<VelinTzanov> 2) Kogato se zakuchi rabotata
+<VelinTzanov> 3) Sled kato se svyrshi s rabotata po zadachata
+<VelinTzanov> I se chete VNIMATELNO
+<VelinTzanov> Ivo ne vi li gi kazva tezi raboti?
+<Swetko> i se chete cialoto:)
+<valo_bg> kaza gi
+* VelinTzanov sets mode: +oo Swetko valo_bg
+<VelinTzanov> Ami shto ne gi izpylniavaite kato gi e kazal?  Momcheto spodelia opit. Ne povtariaite negovite greshki. Inache da sme oshte v kamennata epoha (ili v epohata na backtrack-a, ako triabva da sme po-informatichni)
+<valo_bg> moje da se kaje che podcenih zadachata... moje bi zatova q napravih taq glupost
+<VelinTzanov> Vyprosi po domashnite?
+<sssa88> ne
+<Swetko> ne
+<valo_bg> az oshte ne sym napravil foo
+<sssa88> a i az
+<Swetko> foo i az ne sum
+<valo_bg> osven tova namrih edna mnogo stranna rabota v qsort-a, ama za tova posle
+<VelinTzanov> Koia beshe foo shte mi pripomnite li?
+<VelinTzanov> Futbolnia turnir li?
+<Swetko> ca
+<Swetko> d
+<Swetko> a
+<valo_bg> da
+<sssa88> ot ceoi'04 taq za machovete
+<VelinTzanov> Pravete, struvaite, gyrchete se, mychete se, no do 31-vi Avgust da ste ia napravili.
+<VelinTzanov> Ako triabva zaedno sednete i ia mislete - no ia reshete.
+<VelinTzanov> Koi ot vas e hodil po shkoli i systezania po matematika?
+<valo_bg> az poglednah testovete i zabelqzah tova-onova
+<valo_bg> az sym hodil
+<rangel__> tova da izvadish nqkakyv shablon ot testovete na zhurito spored men ne e reshenie
+<Swetko> to i az sum hodil, no ne v posledno vreme
+<valo_bg> az ne sym kazal che e reshenie. kazvam che sym zabelqzal tova-onova
+<VelinTzanov> A po systezanieto ot Nedelia niakakvi vyprosi/komentari/oplakvania da imate?
+<Swetko> ne
+<valo_bg> az veche si izlqh mykata...
+<rangel__> ne
+<sssa88> ne
+<VelinTzanov> Nali znaete che i utre imate systezanie ot 8:30 do 13:30
+<valo_bg> kyde shte e to? tuka?
+<VelinTzanov> Oshte ne sym izmislil zadachite, mejdu drugoto, no shte skalypia niakakva prilichna tema. :)
+<VelinTzanov> Da, tuk.
+<VelinTzanov> Vsyshtnost ne znam.
+<VelinTzanov> Okaza se che niama chovek koi da vi dade zadachite... zatova moje bi az shte gi upload-na niakyde i shte vi pratia link-a po-rano ot 8:30
+<VelinTzanov> No razchitam che shte ste chestni i che shte go pravite TOCHNO ot 8:30 do TOCHNO 13:30
+<VelinTzanov> Na IOI 5-te chasa sa striktni. Pochva se po signal i se svyrshva po signal.
+<valo_bg> ok, a  ti li shte gi testvash?
+<VelinTzanov> Udachen vypros. Ami mai shte triabva az da gi test-vam... no ne obeshtavam srokove.
+<VelinTzanov> Aide da hvashtame dneshnata tema - maximalen potok.
+<valo_bg> k
+<Swetko> ok
+<VelinTzanov> Aide da chuia koi kakyv algorithm pishe kato mu dadat maximalen potok?
+<sssa88> dijkstra
+<Swetko> zavisi otogranicheniata
+<valo_bg> az pisha modificirana diikstra
+<rangel__> ford-fulkerson s BFS
+<Swetko> vlado - bfs-to e po dobro - testval sum 
+<VelinTzanov> Za nai-debelite ogranichenia. :)
+<Swetko> ami onova deto go kaza minalata godina pisha az
+<VelinTzanov> Az i tazi godina shte go kaja, za da go pishat vsichki.
+<rangel__> az drug ne znam :-)
+<Swetko> no ne mi se e nalagalo na systezanie dosega da pisha potok osven matching - no za nego ima drugi algoritmi
+<VelinTzanov> Koi znae algorithma na Goldberg? (Preflow-push mu e drugoto ime)?
+<valo_bg> super... shtoto az s BFS ne znam kak shte stane byrzo
+<valo_bg> hmmm... q po-dobre go kaji
+<VelinTzanov> Mejdu drugoto, mislia che i matching-a se pravi dobre s Preflow-push, no ne sym siguren za tova...
+<Swetko> kak s BFS da stane byrzo
+<sssa88> za goldberg - ne go znam
+<VelinTzanov> Aide - az kato si trygna shte imate cial den da si govorite koi algorithm e po-dobyr. :)
+<VelinTzanov> Daite da pravim Goldberg-a i da hodia da si vyrsha rabotata.
+<Swetko> to mai ima razni algoritmi kudeto pak se tyrsiam augmenting putista i sa byrzi ama ne gi znam
+<Swetko> ok
+<VelinTzanov> Na vas vi triabva universalen algorithm, koito da go master-nete i koito da mojete da go prilagate (bez greshka) za vsiaka zadacha ot tozi klas.
+<VelinTzanov> Taka.
+<VelinTzanov> Neka pyrvo izchistim modela.
+<VelinTzanov> Imame graf.
+<VelinTzanov> Vsiako rebro v grafa (nasocheni rebra) si ima kapacitet.
+<VelinTzanov> Moje da imame dvuposochno rebro s razlichni kapaciteti.
+<VelinTzanov> Vyv vsiako rebro imame potok.
+<VelinTzanov> Za realizym priemame che flow[V][W] = -flow[W][V]
+<VelinTzanov> Kakto veche kazah, za vsiako rebro imame ogranichenie flow[V][W] <= capacity[V][W]
+<VelinTzanov> Syshto taka za vseki vryh V (bez source-a i sink-a) imame che sumX flow[X][V] = sumY flow[V][Y]
+<VelinTzanov> T.e. kolkoto potok vliza, tolkova i izliza.
+<VelinTzanov> Vsyshtnost ne.
+<VelinTzanov> Kazah go losho
+<VelinTzanov> Prosto sumX flow[X][V] = 0
+<VelinTzanov> MOdelyt iasen li e (vkl. poslednata mi popravka)?
+<Swetko> da
+<sssa88> da
+<rangel__> da
+<valo_bg> da
+<VelinTzanov> Tyrsim maximalniat potok. A toi se izmerva sys sumX flow[X][SINK]
+<VelinTzanov> syshto moje i sys sumX flow[SOURCE][X]
+<VelinTzanov> Mejdu drugoto, moje bi tuk triabva da otbeleja maxflow-mincut teoremata.
+<valo_bg> tova sumX nali oznachava za vsqko X=1..|V|
+<VelinTzanov> Da
+<VelinTzanov> A tia glasi che maximalniat potok e raven na minimalniat razrez, a imenno ako razdelim vyrhovete na dve chasti (ednata sys source-a, a drugata sys sink-a) razreza e raven na obshtia kapacitet na rebrata ot pyrvata polovina vyv vtorata.
+<VelinTzanov> Malko kato debelaka.
+<VelinTzanov> Ako mojete da namerite "stena" koiato da spira debelaka, znachi tolkova e maximalnia debelak.
+<VelinTzanov> Ako ne mojete da namerite "stena" koiato da spira debelak s radius X, znachi takyv debelak moje da mine.
+<VelinTzanov> Taka i s potoka.
+<VelinTzanov> Tazi teorema nastrana (Goldberg niama obshto s neia, pone ne priako)
+<VelinTzanov> Dotuk e iasno, nali?
+<Swetko> da
+<rangel__> da
+<valo_bg> to tova ne kazvashe li i neshto ot sorta che kato pusnem maxflow v nepreteglen graf s capaciteti 1 na rebrata tova ni dava broq na nepresichashtite se pytishta mejdu source-a i sink-a?
+<sssa88> za mincut-a kak tochno gi razdelqme teq vyrhove na dve chasti?
+<VelinTzanov> Neshto takova. :)
+<rangel__> tova mislq, che e sledstvie... lesno se vizhda
+<VelinTzanov> Za vsiako razdelenie mojesh da smetnesh cut.
+<VelinTzanov> Vzimash tova razdelenie za koeto cut-a e minimalen.
+<sssa88> aha qsno
+<VelinTzanov> I taka namirash kolko e mincut-a.
+<VelinTzanov> A toi e raven na maxflow-a.
+<VelinTzanov> Taka. Sega Goldberg.
+<VelinTzanov> Predstavete si grafyt kato narisuvan v ravninata.
+<VelinTzanov> Sega na vseki vryh shte slojim "visochina".
+<VelinTzanov> Horata obiknovenno go narichat label, no na nas visochina ni e po-intuitivno.
+<VelinTzanov> Pyrvonachalno Source-a ima visochina N (N e broiat na vyrhovete), a sink-a ima visochina 0.
+<VelinTzanov> Drugite vyrhove syshto imat 0, no tova ne e syshtestveno i podleji na promiana.
+<VelinTzanov> T.k. sme informatici i ne obichame razni analogovi vodi da tekat nasam-natam shte diskretizirame vodata.
+<VelinTzanov> Shte priemem che vodata sedi samo po vyrhovete.
+<VelinTzanov> Vse edno ia prenasiame s kofi, a ne po trybi.
+<VelinTzanov> Algorityma se systoi ot povdigane na vyrhovete nagore (uvelichavane na visochinite) i butane na kofite nadolu.
+<valo_bg> kak taka "i butane na kofite nadolu."
+<VelinTzanov> Shte obiasnia.
+<VelinTzanov> Tova e samo obrazno. :)
+<Swetko> premestvame gi
+<VelinTzanov> Vyv vseki moment vyv vsiako rebro si imame edno chislo: flow[v][w]
+<VelinTzanov> Syshto taka vyv vseki vryh si imame broi kofi (moje i da e drobno chislo): ex[v]
+<VelinTzanov> ex idva ot excess neshto si, t.e. izlishni kofi. :)
+<VelinTzanov> V nachaloto na algorithm-a pravim slednoto:
+<VelinTzanov> Butame kolkoto mojem kofi ot Source-a kym sysedite mu.
+<VelinTzanov> A imenno za vseki sysed X pravim flow[Source][X] = capacity[Source][X] i syotvetno ex[X] = capacity[Source][X]
+<VelinTzanov> Tova e nachalnoto razpredelenie.
+<VelinTzanov> Sega veche vyvejdame striktni pravila.
+<VelinTzanov> A te sa slednite:
+<VelinTzanov> Mojem da butame voda (kofi) samo ot vryh s visochina H+1 vyv vryh s visochina H
+<VelinTzanov> Chakaite da gi nomeriram za po-udobno:
+<VelinTzanov> 1. Visochinata na source-a e N, visochinata na sink-a e 0. Vinagi. Tezi ne podlejat na promiana.
+<VelinTzanov> 2. Visochinata na drugite vyrhove moje samo da se uvelichava (kato nikoga ne dostiga poveche ot 2N, shte vidim skoro zashto)
+<VelinTzanov> 3. Mojem da butame voda (kofi) samo ot vryh s visochina H+1 vyv vryh s visochina H
+<VelinTzanov> (t.e. s edno nivo nadolu)
+<VelinTzanov> 4. Ochevidno po rebro V->W mojem da butame ne poveche ot capacity[V][W] - flow[V][W] voda.
+<VelinTzanov> (inache moje da se okaje che flow-a e stanal poveche ot kapaciteta)
+<VelinTzanov> Tuk triabva da vi obyrna vnimanie, che e neshto napylno normalno da butnem voda nadolu po edno rebro i po-kysno tia (ili druga voda) da ni se vyrne obratno.
+<VelinTzanov> Taka naprimer moje da imame flow[V][W] da stane ot 0 na (da rechem) 5.
+<VelinTzanov> I posle da uvelichim flow[W][V] (koeto e -5) s 3 i taka da poluchim flow[W][V] = -2 i flow[V][W] = 2
+<VelinTzanov> Prosto si dyrjim kartinkata vinagi consistent.
+<VelinTzanov> Sega, celta ni e da butnem kolkoto se moje poveche kofi do sink-a.
+<VelinTzanov> Za celta shte izpolzvame dobriat star termin Residual Graf.
+<valo_bg> samo ne razbrah koga shte se poluchat drobni kofi, to tova predpolagam po-kysno...
+<Swetko> az susto
+<VelinTzanov> Tozi graf ni pokazva po koi trybi mojem da butame voda i po koi ne mojem.
+<VelinTzanov> Kakyv e problemyt s drobnite kofi?
+<VelinTzanov> tova sa prosto chisla.
+<VelinTzanov> Niama znachenie dali sa celi ili ne.
+<valo_bg> ok, nqma problem
+<VelinTzanov> Nikyde ne izpolzvame celostta na chislata.
+<VelinTzanov> Taka.
+<VelinTzanov> Edno rebro e saturate-nato (zapylneno) ako flow-a mu e raven na capacity-to.
+<VelinTzanov> Residual graph-a ima rebro tam kydeto rebroto ne e saturate-nato.
+<VelinTzanov> T.e. ako saturate-nem edno rebro, to go mahame ot residual grafa.
+<VelinTzanov> Ako posle go unsaturate-nem (t.e. ako butnem voda v obratnata posoka) go vryshtame pak v residual graph-a.
+<VelinTzanov> Iasno li e do tuk?
+<Swetko> da
+<rangel__> da
+<sssa88> da
+<valo_bg> da
+<VelinTzanov> Sega na vseki vryh mojem da pravim edna ot dve operacii:
+<VelinTzanov> - Ako tozi vryh niama rebro v residual graph-a kym po-dolen vryh, to povdigame visochinata na tozi vryh do visochinata na nai-niskia mu sysed (v residual graph-a) plus edno.
+<VelinTzanov> - Ako tozi vryh ima rebro kym po-nisyk vryh, to togava butame kolkoto mojem voda kym tozi po-nisyk sysed.
+<VelinTzanov> (kolkoto mojem znachi po-malkoto ot capacity[V][W]-flow[V][W] i ex[V])
+<VelinTzanov> Praveiki tezi dve operacii za vsichki vyrhove (bez source-a i sink-a) v kakyvto red si poiskame ni vodi do slednia krai: vsichkata voda se e ottekla ili v sink-a ili obratno v source-a; kolichestvoto voda v sink-a (ex[Sink]) e ravno na maxflow-a... a samiat flow e vyv flow[][] promenlivite.
+<VelinTzanov> Ne e li sladko? :)
+<valo_bg> az ne razbrah koga promenqme ex[i]
+<VelinTzanov> (Tova e algorithmyt, ako ne ste zabeliazali che sme svyrshili)
+<VelinTzanov> ex[i] e kolko voda imash vyv vryh i./
+<VelinTzanov> Vseki pyt kato butash K kofi voda ot X v W pravish slednoto:
+<valo_bg> aha... t.e. kolko voda vliza?
+<VelinTzanov> ex[X] -= K
+<VelinTzanov> ex[W] += K
+<VelinTzanov> flow[X][W] += K
+<VelinTzanov> flow[W][X] -= K
+<VelinTzanov> Vodata ne vliza i ne izliza. Nie samo ia mestim ot tuk tam.
+<VelinTzanov> ex[X] pokazva kolko voda ima v X.
+<VelinTzanov> Nakraia navsiakyde shte imash ex[] = 0
+<VelinTzanov> Samo v sink-a shte imash neshto (a v source-a poniatieto ex[] e malko bezsmisleno)
+<valo_bg> t.e. vyvejdame si edna voda v nachaloto (maksimalnata koqto pozvolqvat kapacitetie na decatana source-a) i posle q djurkame dokato si doide na mqstoto?
+<VelinTzanov> Tozi algorithm garantirano ti dava maxflow.
+<VelinTzanov> Tochno taka.
+<VelinTzanov> Nakraia tia krotko se otticha. :)
+<valo_bg> e kak togava shte stane taka che na vsichki vyrhove ex[i] = 0. tq tazi voda si e constantno kolichetvo v celiq graf?
+<VelinTzanov> Vyprosi po algorithm-a (po tova koeto sym obiasnil do tuk)?
+<Swetko> ne
+<VelinTzanov> Vodata nakraia se otticha v source-a ili v sink-a
+<sssa88> samo ne razbrah kak taka pravim vsichko tova v proizvolen red - nali residual grafa se promenq
+<VelinTzanov> ex[sink] > 0 (v osbhtia sluchai), ex[source] syshto.
+<VelinTzanov> Kakvo kato se promenia?
+<VelinTzanov> Redyt niama znachenie, vajnoto e da izteche vodata na miastoto si.
+<sssa88> ami veche ima novi rebra
+<VelinTzanov> Nikoia voda ne moje da se vyrne v source-a ako ima pyt do sinkl-a
+<valo_bg> aha... qsno... emi ne mi e mnogo qsno zashto raboti, ama aide da karame natatyk
+<VelinTzanov> E, shte obiasnia zashto raboti de.
+<VelinTzanov> Pyrvo shte dokajem che nikoia kofa ne moje da ostane v grafa.
+<VelinTzanov> A za tova shte otbelejim pyrvo che nikoia visochina ne moje da stane 2N
+<VelinTzanov> Ima edin paper sys striktno dokazatelstvo (na 20 stranici), koito shte vi dam da prochetete, no az shte go prerazkaja nakratko s malko nedomlyvki, koito nadiavam se shte mi prostite (a koito iska, moje da prochete syotvetnata chast ot paper-a)
+<VelinTzanov> Taka.
+<VelinTzanov> Source-a e fixiran na visochina N
+<VelinTzanov> Tezi koito imat source-a za sysed v residual graph-a sa s visochina ne poveche ot N+1 (t.k. mogat da izlivat v source-a kolkoto si iskat voda)
+<VelinTzanov> Tezi na koito te sa sysedi sa na ne poveche ot N+2
+<VelinTzanov> Shtom edna voda e stignala ot Source-a do X, znachi tia moje i da se vyrne obratno do source-a po residual graph-a (shtoto obratnia kapacitet se e uvelichil kato e minavala na otivane)
+<VelinTzanov> Zatova ako imame voda v X, to ima i pyt ot X do Source-a.
+<VelinTzanov> ZAtova visochinata na X ne moje da stane poveche ot 2N (za vsiako X)
+<VelinTzanov> Iasno?
+<valo_bg> mmm, ne mnogo...
+<sssa88> ne stava li da kazem che poneze imame N-2 hoda i na vseki hod uvelichavame predishnata maksimalna visochina maksimum s edno to maksimalnata visochina e 2*n-2?
+<valo_bg> e ne moje li da imame poveche ot n - 2 hoda?
+<VelinTzanov> Nomeryt e che ne moje vodata da si cirkulira nagore.
+<sssa88> nali vseki vryh go gledame vednyz - az taka razbrah, vednyz  proizvolen red
+<VelinTzanov> Vinagi shte ima pyt do source-a koito shte dyrji drugite vyrhove vyrzani na vryv kato baloni s helii.
+<VelinTzanov> Ne, razbral si greshno.
+<VelinTzanov> Ne sym kazal po cednyj.
+<VelinTzanov> Ne sym kazal po vednyj.
+<VelinTzanov> Gledame gi po mnogo pyti, no v proizvolen red.
+<VelinTzanov> Prosto si izbirash edin vryh s ex[]>0 i pravish za nego syotvetnata operacia.
+<VelinTzanov> I taka dokato ne ostanat vyrhove s ex[]>0
+<VelinTzanov> Sega poiziasni li se?
+<sssa88> aha
+<VelinTzanov> Valio?
+<valo_bg> edin moment...
+<VelinTzanov> Primeryt s helievite baloni stana li iasen?
+<VelinTzanov> Source-yt e fixiran na visochina N
+<sssa88> ne
+<VelinTzanov> Vseki vryh s ex[]>0 ima pyt (v residual graph-a) do source-a
+<valo_bg> qsnom mi e zashto max visochinata e 2*n
+<valo_bg> no sega se opitvam da si isqsnq ostanloto
+<VelinTzanov> Vyrhovete po tozi pyt sa s visochini N+1, N+2, ....
+<VelinTzanov> A, ne byrzai.
+<VelinTzanov> Ima vreme za ostanaloto.
+<VelinTzanov> Taka.
+<VelinTzanov> Dokazahme che sme do 2N
+<sssa88> ami to sysedite na sorsa ne mogat da imat visochina poveche ot N+1 poneze visochinata na sorsa e fiksirana na N?
+<valo_bg> az po malko po-razlichen nachi si go dokazvam tova za visochinite...
+<VelinTzanov> Ne "sysedite na source-a", a tezi na koito source-a e sysed.
+<valo_bg> sssa88: i az tova zabelqzah :)
+<valo_bg> vypreki che... to tova e residual grafa...
+<VelinTzanov> Aha
+<sssa88> mda
+<VelinTzanov> Taka
+<VelinTzanov> Sega e iasno che za vseki vryh mojem da izvyrshim edna ot dvete operacii.
+<VelinTzanov> I t.k. rasteja na visochinite e ogranichen otgore, to rano ili kysno shte izpompame vsichkata voda ot vsichki vyrhove.
+<VelinTzanov> T.e. dokazahme che algorithmyt svyrshva.
+<VelinTzanov> Sega triabva da dokajem i che e veren.
+<VelinTzanov> Taka.
+<VelinTzanov> Vsiaka voda svyshva v sink-a ili v source-a.
+<VelinTzanov> Vyprosyt e kolko ot pyrvonachalno pusnatata voda shte svyrshi v sink-a
+<VelinTzanov> Da dopusnem che e po-malko ot maxflow.
+<VelinTzanov> Ako e po-malko ot maxflow, togava shte ima pyt ot vyrha na niakoia kofa do sink-a.
+<VelinTzanov> Shtom ima takyv pyt, znachi visochinata na tozi vryh shte e po-malka ot N (analogichno na gornoto helievo balonche)
+<VelinTzanov> Shtom e taka, znachi vodata shte izteche kym sink-a, shtoto source-a e po-visoko.
+<VelinTzanov> Ami... tova e. :)
+<VelinTzanov> Iziasni li se? (algoritym-a napylno, dokazatelstvoto samo v obshti linii)
+<rangel__> ima li nqkakvo znachenie (za skorostta) po kakyv red obrabotvam vyrhovete (inache e qsno che raboti)
+<VelinTzanov> Da, ima ogromno znachenie. Ostatykyt ot chasa e posveten na tova.
+<valo_bg> (algoritym-a napylno, dokazatelstvoto samo v obshti linii) <- obshto vzeto tova e qsno. da...
+<VelinTzanov> Kato vi dam statiata i kato go napishete shte vi se iziasni syvsem.
+<VelinTzanov> Taka. Sega otnosno obrabotkata na vyrhovete:
+<VelinTzanov> Obshto vzeto podhodite sa dva: stek i opashka.
+<VelinTzanov> Razbira se ima i niakakvi hibridi (naprimer nai-visok vryh ili nai-nisyk vryh i t.n.) no kato cialo ideite sa dve.
+<VelinTzanov> PRakticheskiat efgekt e che stekyt se spravia mnogo,mnogo,mnogo po-slabo ot opashkata.
+<VelinTzanov> V tozi smisyl ideiata da vdigate edin vryh, da butate kofite ot nego, da go vdigate pak i pak da butate i taka do kraia ne e hubava.
+<VelinTzanov> Po-dobre e ako vi ostane voda sled pyrvoto butane da go slojite otzad na opashkata.
+<VelinTzanov> Syshto taka, algoritymyt ni dava mnogo pole za optimizacii i evristiki.
+<VelinTzanov> Ot celia kup takiva shte napravim samo edna, zashtoto tia e nai-dobrata i zashtoto obezsmislia ostanalite. :)
+<VelinTzanov> Naricha se Global Relabel i predstavliava slednoto:
+<VelinTzanov> V edin moment ni hrumva che grafyt e stanal tvyrde grozen i kriv i reshavame da orpavim visochinite s edin zamah.
+<VelinTzanov> A imenno:
+<VelinTzanov> Sink-a ima visochina 0
+<VelinTzanov> Tezi na koito toi e sysed im slagame visochina 1
+<VelinTzanov> Tezi koito imat tiah za sysedi stavat 2
+<VelinTzanov> posle 3, 4, ....
+<VelinTzanov> Ostanalite vyrhove gi nomerirame po analogichen nachin otnosno source-a (s visochini N, N+1, N+2, ...)
+<VelinTzanov> Inache kazano - puskame dve BFS-ta.
+<VelinTzanov> Pyrvo ot sink-a, posle ot source-a.
+<VelinTzanov> Mojete da experimentirate s tova kolko chesto da pravite Global Relabel, no edna razumna chestota e vednyj na vseki N operacii.
+<valo_bg> e nie ne obhojdame li celiq graf sys vsqko ot tezi 2 BFS-ta?
+<VelinTzanov> (taka se zapazva teoretichnata slojnost na algorithm-a... inache kazano pravite go 2 pyti po-baven teoretichno, no go pravite super-po-byrz na praktika)
+<VelinTzanov> Da, taka pravim.
+<sssa88> predpolagam v residual grafa go pravim tova?
+<Swetko> po skoro na vseki N liftvania ili na vseki N^2(M) pushvania - stot da se zapazi sloshnostta
+<VelinTzanov> Zatova ne e dobre na vseki hod da pravim Global Relabel.
+<valo_bg> a kakva e slojnostta na algorityma?
+<VelinTzanov> Da, vsichko e v residual graph-a. S drug graph prakticheski ne rabotim. :)
+<VelinTzanov> Hmm... shte te pratia kym statiata, Valio.
+<VelinTzanov> Neshto ot sorta na N^3 za pylen graf e na teoria...
+<VelinTzanov> No tozi algorithm ne e vajen na teoria, a na praktika.
+<valo_bg> az razbrah onova za balonite, no mnogo drugi neshta sa mi interesni
+<VelinTzanov> Tova e "praktichniat" maxflow algorithm.
+<VelinTzanov> Mdaaa, ima mnogo interesno okolo tozi algorithm.
+<VelinTzanov> Az naprimer cial semester se opitvah da go podkaram kachestveno na paralelna mashina s niakolko procesora.
+<sssa88> toest pri vtoroto BFS  obhozdame teq koito nqmat pyt do sink-a?
+<VelinTzanov> Nakraia tolkova go optimizirah serialno, che celiat paralelizym se zagubi. :)
+<VelinTzanov> Da, tochno taka, Vlado.
+<valo_bg> tezi koito ne sme obhodili do kolkoto razbrah...
+<VelinTzanov> Da de - to e vse taia,.
+<VelinTzanov> Znaete shto e to BFS, nali? :)
+<valo_bg> e chak tolkova ne sme izpadnali :)
+<rangel__> syshtoto sym go chuval i po vyprosyt za dvoichno tyrsene :-)
+<sssa88> i kak tochno se puska na paralelna mashina?
+<VelinTzanov> Pishesh go na Cilk.
+<VelinTzanov> Cilk e edin ezik deto sa go pravili v grupata na Charles Leiserson v MIT.
+<VelinTzanov> Az rabotih za Leiserson edna godina.
+<VelinTzanov> Pyrviat semester mychih Maxflow-a paralelno...
+<valo_bg> cql semestyr?
+<VelinTzanov> ... vtoriat pravih universalniat algorithm za igri.
+<VelinTzanov> E, 10 chasa na sedmica samo, vse pak.
+<Swetko> :)
+<VelinTzanov> Vyobshte interesni neshta pravim tam... ne e kato v SU.
+<valo_bg> aaa, taka po-moje...
+<Swetko> i kakvo - igrae vsiakakvi igri li
+<VelinTzanov> Obshto vzeto.
+<VelinTzanov> Igrae endspiel s 5 figuri.
+<VelinTzanov> I pecheli s optimalen broi hodove.
+<Swetko> sloshnostta mai e n^4 worst case ako niamame red v izbiraneto na operaciite
+<VelinTzanov> Naprimer znaesh li che ima mat s 3 konia?
+<VelinTzanov> I znaesh li che car i carica bie car i dva topa? :)
+<valo_bg> ama 5 figuri obshto ili 5 za vseki igrach?
+<Swetko> da be, za vseki igrach:)
+<VelinTzanov> Obshto
+<Swetko> to kakvo ste stane
+<sssa88> mnogo iskash, valio
+<VelinTzanov> No vsiakakvi figuri (bez peshki, che e mnogo slojno :) )
+<valo_bg> de da znam i az... koi znae kakvo sa sytvorili za edin semester
+<Swetko> 2^60 :)
+<valo_bg> aaa, sega shtqh da vi kazvam za qsort-a
+<Swetko> i ti si reshil da experementirash s nas na kontrolnoto
+<Swetko> ia kashi
+<VelinTzanov> Inache na Cilk sa pisali i mnogo dobra shahmatna programa, no tia razbira se, e s heuristics, a ne e optimalna kato nashia algorithm. :)
+<valo_bg> ako imame slednata cmp funkciq:
+<sssa88> gledam na stranica ima nqkakvi chess igri - kakvo kato ostanat 5 figuri i napravo trqbva da se otkaze chovek a? :)
+<valo_bg> int (double *a,double *b) { if (*a < *b) return -1; reutrn 1; }
+<valo_bg> qsort-a na gcc zabiva, doakto tozi na VS.NET bachka bez problemi
+<VelinTzanov> S 5 figuri igrata e reshena veche. :)
+<VelinTzanov> (Hehe, shtoto imash syntax error :) )
+<rangel__> mozhe li testove primer? (ponezhe pri men vinagi si e rabotilo)
+<Swetko> pri rangle she raboti
+<valo_bg> shte ti pratq source- ako iskash
+<valo_bg> pod linux ne sym go testval oshte
+<Swetko> abe valio
+<Swetko> kak taka vikash functia int(double*a,double*b)
+<VelinTzanov> Momcheta, az obache imam da vyrsha rabota, zatova daite da prikluchim s Goldberg i posle shte vi ostavia da se zabavliavate.
+<valo_bg> ufff, priemi che ima edno cmp otpred
+<Swetko> ne triabva li const void*a const void*b
+<VelinTzanov> TAka.
+<valo_bg> i osven tova ne e double *a, a const void *a i vytre castvam kym double
+<VelinTzanov> Znachi kakvo se iska ot vas po Goldberg:
+<rangel__> (trqbva, no na nqkoi kopilatori ne im puka za tipa)
+<valo_bg> a ve ne e tova problema... shte ti tratq source i test ako iskash
+<VelinTzanov> 1) Da si prochete paper-a ako neshto ne razbirate.
+<valo_bg> (razbiha SHA-0 : http://slashdot.org/article.pl?sid=04/08/17/0030243&tid=93&tid=162&tid=1&tid=218)
+<Swetko> iasno che ne e tova problema - valio vish dali sluchaino ne se izrodiava v n^2 stot pri men tova se sluchva pod WIN a pod linux na systite testove ne zabiva
+<valo_bg> vij sega... ako promenq funkciqta na slednata nqma problemi:
+<valo_bg> int cmp(double *a,double *b) { if (*a < *b) return -1; reutrn 1; }
+<valo_bg> opa... greshka...
+<valo_bg> int (double *a,double *b) { if (*a < *b) return -1;if (*a > *b) return 1;reutrn 0; }
+<Swetko> aha - mi ne moshe li da se obyrkva poneshe e floating point i da smiata vednush che a<b posle b>a ili nesto takoz
+<sssa88> tova stava poneze moze qsort-a da pita za ab, posle ba i taka do bezkraj
+<Swetko> znaish kakvo 
+<VelinTzanov> Sega go upload-vam.
+<valo_bg> ne znam... nali ti kazah... pod VS.NET nqma problemi
+<Swetko> pishi int (double *a,double *b) { if (*a < *b) return -1;reutrn 1; }
+<sssa88> realizaciqta im e druga i sigurno zatova se dyrzi po-razlichno
+<Swetko> ami sluchva se - dai na rangel da testva pod linux
+<Swetko> kolko elementa sortirash
+<valo_bg> kym 30000
+<valo_bg> sega obache sym v zala i nqmam source
+<Swetko> znaish li ko - proveri kolko pitania kum cmp ima pod djgpp i pod vs.net
+<VelinTzanov> http://www.tzanov.com/ioi2004/goldberg.pdf
+<VelinTzanov> Vijdate li go ili sbyrkah adresa?
+<Swetko> da vidim dali sa razlichni implementaciite - stot pod linux i win sa razlichni dori pri ednakvi gcc-ta
+<valo_bg> ok e
+<valo_bg> (za paper-a)
+<Swetko> http://mathstat.carleton.ca/~mortimer/382-Website/COP_files/COP-Chapter_3.pdf
+<Swetko> vishte i toz paper - susto e hubav - i pone na men mi beshe po iasen - ne e ot avtora na alogorituma ama vse pak stava
+<sssa88> male che golqmo
+<VelinTzanov> OK
+<VelinTzanov> Taka.
+<VelinTzanov> Ot vas syshto se ochakva da napishete i chista implementacia na algorithm-a i da ia test-vate sreshtu drugi algoritmi koito znaete i koito (eventualno) ste pisali.
+<VelinTzanov> Syshto taka, razbira se, se ochakva i da napishete niakolko zadachki koito se svejdat do maxflow (ili matching)
+<valo_bg> shte dadesh li nqkakvi?
+<VelinTzanov> Mojete da gi napishete i s drug algorithm, no niama da e nikak losho da vidite i Goldberg kak se dyrji na tiah.
+<VelinTzanov> RAzbira se, che shte dam.
+<VelinTzanov> Pizza, USACO March 2004
+<VelinTzanov> Knights, BaOI 2001
+<VelinTzanov> Guards, CEOI 2002
+<Swetko> az sum napisal 7 matching algorituma - 4 ot tiah sa na goldberg 3 s ford fulkerson i sum izsledval skorostite im 
+<VelinTzanov> I kakvo poluchi (na lichno)? :)
+<Swetko> te tova sa matchingi vsichkite
+<VelinTzanov> Ne kazvai na drugite
+* valo_bg has quit IRC (Read error: 104 (Connection reset by peer))
+<VelinTzanov> Neka imat stimul sami da otkriat. :)
+<VelinTzanov> Posle mojesh da im kajesh (sled sedmica naprimer)
+* valo_bg has joined #ioi
+<valo_bg> ufff, basi nekadyrniq admin v taq zala
+<valo_bg> kakvo izpusnah?
+<VelinTzanov> Kakvo poluchi posledno?
+<valo_bg> ne. znam... zatvoriha mi se vsichki prozorci...
+<VelinTzanov> Pratih ti na lichno.
+* VelinTzanov sets mode: +o valo_bg
+<sssa88> usaco zadachata kyde moze da i namerim uslovieto?
+<VelinTzanov> Taka.
+<valo_bg> paste-nete sled poslednoto koeto napiah
+<VelinTzanov> Sega shte ia potyrsia da vi ia pratia.
+<valo_bg> ok
+<VelinTzanov> PAste-nah ti na lichno, Valio
+<sssa88> a az go imam
+<VelinTzanov> Pratih vi usloviata na USACO March 2004 na e-mail-ite.
+<VelinTzanov> Tova e za dnes, iunaci.
+<valo_bg> ok... az guards mai sym q pisal, no shte probvam pak
+<VelinTzanov> Ot vas se ochakva hubava implementacia na algorithm-a (i nai-vajnoto: chista)
+<VelinTzanov> Kakto i razlichni testove i probi s nego i s drugite algoritmi...
+<Swetko> ami ne sum pravil matching s preflow - moshe da probvam
+<valo_bg> btw, oshte ne sa mi otgovorili za versiite na compilatorite
+<VelinTzanov> Da im pishe i Vlado togava.
+<Swetko> koi versii
+<Swetko> valio - proveri li dali ne se izrodiava v n^2
+<VelinTzanov> Ako triabva i na IOI-List pishete.
+<Swetko> az niama nushda da pisha stot pod linux moia problem go niama
+<VelinTzanov> (prodyljenie ot gore) a syshto se ochakva i da si reshite zadachite.
+<valo_bg> Swetko: ne e tova mislq... prosto vliza v bezkraen cikyl... dosta vreme go chakah... stava mizeriq obshto vzeto
+<Swetko> ok - a sto ne nikashesh i Hopkroft algorituma za matching-a che mislia che ste e po byrzo ot golbergskia
+<VelinTzanov> Ami - deistvaite!
+<VelinTzanov> Az shte potegliam.
+<VelinTzanov> Utre sutrin imate systezanie.
+<VelinTzanov> Nali i 4-mata ste na linia ot 8:30 do 13:30?
+<rangel__> da
+<sssa88> da
+<VelinTzanov> Vyprosi da imate, mejdu drugoto?
+<sssa88> ne
+<VelinTzanov> Shtoto ako ne, shte potegliam.
+<valo_bg> ne
+<valo_bg> ok. 8:30 tuk?
+<rangel__> chao
+<VelinTzanov> Ili tuk, ili shte sym vi pisal e-mail sys zadachite. Zatova ne go proveriavaite predi 8:30
+<VelinTzanov> Chao!
+<valo_bg> ok
+<valo_bg> chao
+<sssa88> chao
+<VelinTzanov> Swetko?
+<VelinTzanov> Toi Swetko gi znae tia raboti... ;)
+* Disconnected
+Session Close: Mon Aug 16 22:18:13 2004

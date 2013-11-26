@@ -1,0 +1,82 @@
+#include "aeslibc.h"
+#include <iostream>
+#include <set>
+#define h2b hexstr2block
+#define b2h block2hexstr
+//#define BLOCKLEN 32
+using namespace std;
+
+char let[17] = "0123456789ABCDEF";
+int S;
+HexStr k;
+Block p, c1, c2;
+
+struct A
+{
+       string c, k;
+       bool operator<(A a) const {return c < a.c;}
+       A(string _c, string _k):c(_c), k(_k){}
+       A(){}
+} table[1<<20];
+int cnt;
+
+void generate(int pos, bool flag)
+{
+     if (pos == S)
+     {
+             if (flag == 0)
+             {
+                  Block c1;
+                  Block K;
+                  h2b(k, K);
+                  encrypt(p, K, c1);
+                  
+                  HexStr CC;
+                  b2h(c1, CC);
+                  string S1((char*)CC);
+                  string S2((char*)k);
+                      
+                  table[cnt++] = A(S1, S2);
+             }
+             else 
+             {
+                  Block c1;
+                  Block K;
+                  h2b(k, K);
+                  decrypt(c2, K, c1);
+                  
+                  HexStr CC;
+                  b2h(c1, CC);
+                  string S1((char*)CC);
+                  string S2((char*)k);
+                  
+                  int l = -1, r = cnt;
+                  while (l + 1 != r)
+                  {
+                        int m = (l + r)/2;
+                        if (S1 < table[m].c) r = m;
+                        else l = m;
+                  }
+                  if (l != -1 && S1 == table[l].c) { cout << table[l].k << endl << k << endl; exit(0); }
+             }
+             return;
+     }
+     for (int i = 0; i < 16; i++)
+      k[pos] = let[i], generate(pos + 1, flag);
+}
+
+int main()
+{
+    int s;
+    HexStr ps, c1s, c2s;
+    cin >> S >> ps >> c2s;    
+    for (int i = 0; i < 32; i++) k[i] = '0';
+    h2b(ps, p);
+    h2b(c2s, c2);
+    
+    generate(0, 0);
+    sort(table, table + cnt);
+    //for (int i = 0; i < cnt; i++) cout << table[i].c << " " << table[i].k << endl;
+    generate(0, 1);
+    return 0;
+}

@@ -1,0 +1,255 @@
+**********************************************************************
+                           GREEN PROBLEMS
+**********************************************************************
+                  Four problems numbered 1 through 4
+**********************************************************************
+
+Problem 1: Cube Stacking [Romanian Olympiad (submitted by Mihai Patrascu), 2001]
+
+Farmer John and Betsy are playing a game with N (1 <= N <= 30,000)
+identical cubes labeled 1 through N. They start with N stacks, each
+containing a single cube. Farmer John asks Betsy to perform P (1
+<= P <= 100,000) operation.  There are two types of operations:
+moves and counts.
+  * In a move operation, Farmer John asks Bessie to move the stack
+    containing cube X on top of the stack containing cube Y.
+  * In a count operation, Farmer John asks Bessie to count the
+    number of cubes on the stack with cube X that are under the
+    cube X and report that value.
+
+Write a program that can verify the results of the game.
+
+PROBLEM NAME: cubes
+
+INPUT FORMAT:
+
+* Line 1: A single integer, P
+
+* Lines 2..P+1: Each of these lines describes a legal operation. Line
+        2 describes the first operation, etc.  Each line begins with a
+        'M' for a move operation or a 'C' for a count operation.  For
+        move operations, the line also contains two integers: X and Y.
+         For count operations, the line also contains a single
+        integer: X.
+
+Note that the value for N does not appear in the input file. No move
+operation will request a move a stack onto itself.
+
+SAMPLE INPUT (file cubes.in):
+
+6               | Six total operations
+M 1 6		 		 | 1,6 / 2 / 3 / 4 / 5 [1 is on top of 6]
+C 1		 		 | print number below cube 1: 1
+M 2 4		 		 | 1,6 / 2,4 / 3 / 5
+M 2 6		 		 | 2,4,1,6 / 3 / 5
+C 3		 		 | print number below cube 3: 0
+C 4		 		 | print number below cube 4: 2
+
+INPUT DETAILS:
+
+The '|' and succeeding characters show the current configuration;
+they are not part of the input file.
+
+OUTPUT FORMAT:
+
+Print the output from each of the count operations in the same order
+as the input file.
+
+SAMPLE OUTPUT (file cubes.out):
+
+1
+0
+2
+
+**********************************************************************
+
+Problem 2: The Cow Lineup [Brian Dean, 2004]
+
+Farmer John's N cows (1 <= N <= 100,000) are lined up in a row.
+Each cow is labeled with a number in the range 1...K (1 <= K <=
+10,000) identifying her breed.  For example, a line of 14 cows might
+have these breeds:
+
+    1 5 3 2 5 1 3 4 4 2 5 1 2 3
+
+Farmer John's acute mathematical mind notices all sorts of properties
+of number sequences like that above.  For instance, he notices that
+the sequence 3 4 1 3 is a subsequence (not necessarily contiguous)
+of the sequence of breed IDs above.  FJ is curious what is the
+length of the shortest possible sequence he can construct out of
+numbers in the range 1..K that is NOT a subsequence of the breed
+IDs of his cows.  Help him solve this problem.
+
+PROBLEM NAME: lineup
+
+INPUT FORMAT:
+
+* Line 1: Two integers, N and K
+
+* Lines 2..N+1: Each line contains a single integer that is the breed
+        ID of a cow. Line 2 describes cow 1; line 3 describes cow 2;
+        and so on.
+
+SAMPLE INPUT (file lineup.in):
+
+14 5
+1
+5
+3
+2
+5
+1
+3
+4
+4
+2
+5
+1
+2
+3
+
+OUTPUT FORMAT:
+
+* Line 1: The length of the shortest sequence that is not a
+        subsequence of the input
+
+SAMPLE OUTPUT (file lineup.out):
+
+3
+
+OUTPUT DETAILS:
+
+All the single digit 'sequences' appear. Each of the 25 two digit
+sequences also appears. Of the three digit sequences, the sequence
+2, 2, 4 does not appear.
+
+**********************************************************************
+
+Problem 3: MooFest [Brian Dean, 2004]
+
+Every year, Farmer John's N (1 <= N <= 20,000) cows attend "MooFest",
+a social gathering of cows from around the world.  MooFest involves
+a variety of events including haybale stacking, fence jumping, pin
+the tail on the farmer, and of course, mooing.  When the cows all
+stand in line for a particular event, they moo so loudly that the
+roar is practically deafening.  After participating in this event
+year after year, some of the cows have in fact lost a bit of their
+hearing.
+
+Each cow i has an associated "hearing" threshold v(i) (in the range
+1..20,000).  If a cow moos to cow i, she must use a volume of at
+least v(i) times the distance between the two cows in order to be
+heard by cow i.  If two cows i and j wish to converse, they must
+speak at a volume level equal to the distance between them times
+max(v(i),v(j)).
+
+Suppose each of the N cows is standing in a straight line (each cow
+at some unique x coordinate in the range 1..20,000), and every pair of
+cows is carrying on a conversation using the smallest possible
+volume.
+
+Compute the sum of all the volumes produced by all N(N-1)/2 pairs
+of mooing cows.
+
+PROBLEM NAME: moofest
+
+INPUT FORMAT:
+
+* Line 1: A single integer, N
+
+* Lines 2..N+1: Two integers: the volume threshold and x coordinate
+        for a cow.  Line 2 represents the first cow; line 3 represents
+        the second cow; and so on.  No two cows will stand at the same
+        location.
+
+SAMPLE INPUT (file moofest.in):
+
+4
+3 1
+2 5
+2 6
+4 3
+
+OUTPUT FORMAT:
+
+* Line 1: A single line with a single integer that is the sum of all
+        the volumes of  the conversing cows.
+
+SAMPLE OUTPUT (file moofest.out):
+
+57
+
+**********************************************************************
+
+Problem 4: Turning in Homework [Hal Burch, 2004]
+
+Bessie must turn in her homework for her C classes (1 <= C <= 1,000)
+at Moo U so that she still has time to chew the cud with her fellow
+classmates as they wait for the bus to go home.
+
+Teachers accept homework submissions only after they have finished
+their classes and also cleaned the chalkboard, put away lab supplies,
+and so on. The input data tells the earliest time a teacher will
+accept homework.
+
+Bessie starts at one end (distance 0) of a hallway H (1 <= H <=
+1,000) meters long and walks at the rate of one meter per second
+to various classrooms (in any order she chooses) to turn in her
+homework.  Each classroom is located along this hallway, as well
+as the door to the waiting area for the buses.
+
+Given the location of both the exit and the classrooms and also
+the teachers' schedules, determine the earliest time that Bessie
+can exit the door to the waiting area for the buses.  Bessie must
+turn in all her homework before exiting.  The act of turning in the
+homework takes no time, by the way.
+
+PROBLEM NAME: turnin
+
+INPUT FORMAT:
+
+* Line 1: Three integers: C, H, and B.  B (0 <= B <= H) is the
+        distance from the hall entrance to the bus waiting area.
+
+* Lines 2..C+1: Each line contains two integers that describe a
+        classroom where homework is to be submitted. The first integer
+        (0..H) is the number of meters to the classroom from the
+        hallway entrance.  The second integer (0..10,000) is the first
+        time (in seconds) that the teacher for that course will accept
+        homework.
+
+SAMPLE INPUT (file turnin.in):
+
+4 10 3
+8 9
+4 21
+3 16
+8 12
+
+OUTPUT FORMAT:
+
+* Line 1: A single integer: the earliest second that Bessie can exit
+        the door to the waiting area for the buses.
+
+SAMPLE OUTPUT (file turnin.out):
+
+22
+
+OUTPUT DETAILS:
+
+Time   Action
+  0   Bessie walks to the classrooms 8 meters down the hall (at 8m)
+  8   Bessie waits 1 second
+  9   Bessie turns in the first set of homework 
+  9   Bessie waits 3 seconds, thinking about cool hay in the summertime
+ 12   Bessie turns in the other homework for this location
+ 12   Bessie walks back to the classroom 4 meters down the hall (at 4m)
+ 16   Bessie waits 5 seconds, thinking of a handsome bull she once met
+ 21   Bessie turns in her homework
+ 21   Bessie walks back to the classroom 1 meters down the hall (at 3m)
+ 22   Bessie turns in her homework
+ 22   Bessie exits, since this also the location of the bus exit
+
+Thus, Bessie can leave at time 22.  No better schedule exists.
+
+**********************************************************************

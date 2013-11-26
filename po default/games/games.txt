@@ -1,0 +1,7 @@
+choose one -> win iff ^sg != 0
+choose n -> win iff at least one sg != 0
+choose n < all -> win iff at least one different sg
+choose all -> one who finishes first game wins -> win fast, lose slow -> win iff min(dist(x[i])) is of winning x[i] (odd)
+choose all available -> one who finishes last game wins -> win slowly, lose fast -> win iff max(dist(x[i])) is of winning x[i]
+
+WTIA -> terminal - superlosing, go to terminal - superwinning, go to superwinning or normal - normal -> if can't go to normal from normal, lose -> oridinary sum of games (with normal positions only)

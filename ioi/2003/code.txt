@@ -1,0 +1,52 @@
+
+
+
+
+3 3
+
+A = C + D
+Z = C + N
+Y = D + J
+
+A = D + C
+Z = C + N
+Y = D + J
+
+
+
+
+4 3
+RA = RB + RC
+RC = D + RE
+RF = RF + RJ
+RE = RF + RF
+HD = HE + HF
+HM = HN + D
+HN = HA + HB
+
+
+
+9 8
+A = C + D
+D = A + B
+C = Z + B
+D = K + D
+C = C + C
+D = C + D
+D = D + D
+C = D + C
+Y = Z + K
+
+X = X + Y
+Y = Y + Z
+Y = Y + Y
+Y = Z + Y
+Y = X + Y
+Z = Z + Z
+Y = Y + Z
+Y = Y + Y
+
+
+
+
+

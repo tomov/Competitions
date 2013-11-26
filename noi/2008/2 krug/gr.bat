@@ -1,0 +1,10 @@
+groups < groups01.in > groups01x.out
+groups < groups02.in > groups02x.out
+groups < groups03.in > groups03x.out
+groups < groups04.in > groups04x.out
+groups < groups05.in > groups05x.out
+groups < groups06.in > groups06x.out
+groups < groups07.in > groups07x.out
+groups < groups08.in > groups08x.out
+groups < groups09.in > groups09x.out
+groups < groups10.in > groups10x.out

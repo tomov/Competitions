@@ -1,0 +1,17 @@
+#include<iostream>
+
+using namespace std;
+
+typedef pair<int, int> pii;
+
+pii c;
+
+int main()
+{
+  int a, b;
+  scanf("%d%d", &a, &b);
+  printf("%d\n", a+b);
+  scanf("%d%d", &c.first, &c.second);
+  printf("%d\n", (a+b-c.first)*c.second);
+  return 0;
+}

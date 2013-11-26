@@ -1,0 +1,30 @@
+#include <cstdio>
+
+#define min(a,b) ((a)<(b)) ? (a) : (b)
+
+const int MAXN = 1 << 7;
+
+int n;
+int a[MAXN], k = 0;
+
+int main () {
+    scanf("%d", &n);
+
+    int i, send, br = 1;
+    a[k++] = n;
+    while (k < n) {
+        ++br;
+        //for (i = 0; i < k; ++i) printf("%d ", a[i]); puts("");
+        send = 0;
+        while (a[k-1] == 1) { k--; send++; }
+        a[k-1] -= 1; send++;
+        while (send) {
+            a[k] = min(send,a[k-1]);
+            send -= a[k];
+            k++;
+        }
+    }
+    printf("%d\n", br);
+
+    return 0;
+}

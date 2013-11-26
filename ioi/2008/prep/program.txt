@@ -1,0 +1,253 @@
+Tema 1:
+Ipyknala obvivka.
+Dvoichno tyrsene.
+
+8 June
+Double, IOI 2001 -
+Garden, NOI 3 1999 -
+
+9 June
+Dwarfs, CEOI 2002 -
+Two Rods, IOI 2002 -
+
+
+Tema 2:
+Optimalno naluchkvane.
+Modifikacii na dvoichno tyrsene.
+
+10 June
+Mountain, 2 Kont 2003 -
+False, 12 moneti, 1 falshiva, 3 teglenia ++++++++++++++++++++++
+Sequences, BOI 2002 -
+
+
+Tema 3:
+Reshavane na zadachi s pylni dvoichni dyrveta (index-ni dyrveta).
+Update & Query sistemi s cena na operacia LogN ili LogN*LogN.
+
+11 June
+Round, Spring 2004 -
+Mobiles, IOI 2001 -
+Optional: Moofest, USOpen 2004 -
+Optional: Circle, Spring 2003 -
+
+12 June
+Travers, BOI 2003 -
+Mars, BaOI 2001 -
+
+
+Kontrolno 1:
+13 June
+
+
+Tema 4:
+Teoria na chislata.
+Prekalkulirane na prostite chisla.
+Razlagane na chislo na prosti deliteli.
+
+14 June
+Laconism, Spring 2003 -
+Sequence, 3 Kont 2002 -
+Very Optional: B-smooth, POI 2002 ++++++++++++++++++++++
+
+
+Tema 5:
+Igri s obhvaten broi situacii.
+Opredeliane na pechelivshi, gubeshti i ravnostoini situacii.
+
+15 June
+Crazy, Spring 2004 -
+IOIwari, IOI 2001 -
+Score, IOI 2001 -
+
+16 June
+Trade, Spring 2003 -
+The L-Game, BaOI 2002 ++++++++++++++++++++++
+
+
+Tema 6:
+Igri s neobhvaten broi situacii.
+Ocenka na situaciite. Optimalni hodove.
+SG-Theorem. Sybirane na igri.
+
+17 June
+Conqueror, CEOI 2002 ++++++++++++++++++++++
+Nim, Ivan Anev -
+
+18 June
+Stripes, POI 2000, 1-vi kryg -
+Heads Game, Ivan Anev ++++++++++++++++++++++
+
+
+Tema 7:
+Postoianno podobriavane na situaciata.
+
+19 June
+Coins, Spring 2001 +
+XOR, IOI 2002 +
+(vij Aliens, BOI 2002 na 27-mi Avgust) ++++++++++++++++++++++
+
+
+Tema 8:
+Razshiriavane na grafa.
+Razshiriavane broia na situaciite.
+Labirinti.
+
+20 June
+Speed, BaOI2002 -
+Bic, BaOI 2002 -
+
+21 June
+3DLab, 2 Kont, 2004 -
+Lab, 2 Kont, 2001 -
+Robots, IOI 2003 -
+
+
+Kontrolno 2:
+22 June
+
+
+Tema 9:
+String matching.
+Knuth-Moris-Pratt & Rabin-Karp.
+
+23 June
+Pure implementation
+Pdrm, NOI 1 2002 +
+
+
+Tema 10:
+Kodirane & Dekodirane.
+
+24 June
+Encode/Decode, 3 Kont 2002 -
+Fax, 3 Kont 2002 -
+Cowq, USACO Dec 2003 ++++++++++++++++++++++
+
+
+Tema 11:
+Dvufazni dinamichni po dyrveta.
+
+25 June
+Paths, NOI 2004 -
+Tribe, BOI 2003 -
+
+
+Tema 12:
+Optimizirane na dinamichno, chrez sykrashtavane na
+vytreshnia cikyl izpolzvaiki otgovor na podzadacha.
+
+26 June
+BinTree, 2 Kont 2003 -
+Convex, 2 Kont 2004 -
+
+27 June
+Batch, IOI 2002 -
+Optional: Euro, BOI 2003 ++++++++++++++++++++++
+
+
+Kontrolno 3:
+28 June
+
+
+Tema 13:
+Obryshtane na permutacionni zadachi v zadachi
+boraveshti s intervali.
+
+29 June
+Caterpillar, CEOI 2000 +
+Handin, USOpen 2004 +
+
+30 June
+Utopia, IOI 2002 +
+
+
+
+
+Sled BOI:
+
+Tema 14:
+Reshavane na sistema ot lineini uravnenia (vkl. modulo 2)
+
+11 Avgust
+X ot CEOI 2000 -
+Register ot CEOI 2003 -
+Flatten, IOI 1999 +
+
+
+Tema 15:
+Namirane na maximum, chrez naprechen minimum.
+Modificirane na algoritym na Dijkstra.
+
+13 Avgust
+Debelak, NOI 2 2000 -
+Robot, BOI 2002 -
+Skiers, POI 2002 +
+Optional: Lights, IOI 1999 +
+
+
+Tema 16:
+Maximalen potok v graf.
+Svejdane na zadachi do maximalen potok
+
+17 Avgust
+Preflow-push
+Pizza, USACO March 2004 -
+Knights, BaOI 2001  -
+Guards, CEOI 2002 -
+
+
+Kontrolno 4:
+18 Avgust
+
+
+Tema 17:
+Parketirane na ploshti.
+
+20 Avgust
+Build, Fall 2001/2002 -
+Bugs, CEOI 2002 -
+
+
+Kontrolno 5:
+22 Avgust
+
+
+Tema 18:
+Dinamichno po shablon (forma).
+Mapping index <-> element v naredeno mnojestvo
+Mnogokratno puskane na modifikacii na dinamichno.
+
+24 Avgust
+Diag, 2 Kont 2003 -
+TwoFive, IOI 2001 -
+
+
+Kontrolno 6:
+25 Avgust
+
+
+Tema 19:
+Parcelirane na ravninata. Geometria. Naduvane na baloni.
+
+27 Avgust
+Nivi, 3 Kont 2001 +
+Old Map, BOI 2002 +
+Selo, Spring 2002 +
+Aliens, BOI 2002 +
+Light, 2 Kont 2001 +
+Fence, Fall 2001/2002 +
+Optional: A, Studentsko 08.05.2004 +
+
+
+Kontrolno 7:
+29 Avgust
+
+
+Tema 20:
+Obrabotka na elementite siakash vseki e posleden.
+Obrabotka na ravninata po lenti.
+
+31 Avgust
+Majesty, USOpen 2002 +
+Triangles, BaOI 2002 +

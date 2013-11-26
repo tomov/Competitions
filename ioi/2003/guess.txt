@@ -1,0 +1,5 @@
+4 8
+X Z X Y Z X Y Z
+X Y X X Z Z Y Y
+Y X Z Y Z X Y Z
+Y Y Z Z Z Z Z Z

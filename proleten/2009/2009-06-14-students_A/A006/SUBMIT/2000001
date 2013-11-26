@@ -1,0 +1,139 @@
+/*
+TASK:flatten
+LANG:C++
+*/
+#include <stdio.h>
+#include <math.h>
+#include <iostream>
+#define MAXN 1000100
+using namespace std;
+struct av
+{
+int pos;
+int st;
+};
+inline int cmp(av a, av b)
+{
+if (a.st==b.st) return a.pos<b.pos;
+return a.st<b.st;
+}
+int n,k;
+int bigbr[MAXN],littlebr[MAXN]; 
+long long bigsum[MAXN],littlesum[MAXN];
+
+inline void iput(int tree[],int pos,int st)
+{
+while (pos<=n)
+{
+tree[pos]+=st;
+pos+=pos&(-pos);
+}
+}
+
+inline void lput(long long tree[],int pos,long long st)
+{
+while (pos<=n)
+{
+tree[pos]+=st;
+pos+=pos&(-pos);
+}
+}
+int iqans;
+
+inline int iquery(int tree[],int pos)
+{
+iqans=0;
+while (pos!=0)
+{
+iqans+=tree[pos];
+pos-=pos&(-pos);
+}
+return iqans;
+}
+long long lqans;
+
+inline int lquery(long long tree[],int pos)
+{
+lqans=0;
+while (pos!=0)
+{
+lqans+=tree[pos];
+pos-=pos&(-pos);
+}
+return lqans;
+}
+
+inline int riquery(int tree[],int l,int r)
+{
+return iquery(tree,r)-iquery(tree,l-1);
+}
+
+inline long long rlquery(long long tree[],int l,int r)
+{
+return lquery(tree,r)-lquery(tree,l-1);
+}
+
+av aver[MAXN];
+av a[MAXN];
+
+long long sum;
+int main()
+{
+    scanf("%d%d",&n,&k);
+    int i;
+    for(i=0;i<k;i++)
+     {
+      scanf("%d",&a[i].st);
+      sum+=(long long)a[i].st;
+     a[i].pos=i+1;
+     }
+    aver[0].st=(int)round(sum/((double)k));
+    aver[0].pos=1;
+    for(i=k;i<n;i++)
+     {
+     scanf("%d",&a[i].st);
+     sum+=(long long)a[i].st;
+     sum-=(long long)a[i-k].st;
+     a[i].pos=i+1;
+    aver[i-k+1].st=(int)round(sum/((double)k));
+    aver[i-k+1].pos=i-k+2;
+     } 
+    sort(aver,aver+(n-k+1),cmp);
+    sort(a,a+n,cmp);
+    for(i=0;i<n;i++) 
+    {
+    iput(bigbr,a[i].pos,1);
+    lput(bigsum,a[i].pos,a[i].st);
+    }
+    int j;
+    i=0;
+   // printf("part 1 complete\n");
+    av ans,t;
+    ans.pos=0;
+    ans.st=0;
+    for(j=0;j<=n-k;j++)
+    {
+    while (aver[j].st>a[i].st && i<n)
+     {
+     iput(bigbr,a[i].pos,-1);
+     iput(littlebr,a[i].pos,+1);
+     lput(bigsum,a[i].pos,-a[i].st);
+     lput(littlesum,a[i].pos,a[i].st);
+     i++;
+     }
+    sum=(((long long)aver[j].st*riquery(littlebr,aver[j].pos,aver[j].pos+k-1))-rlquery(littlesum,aver[j].pos,aver[j].pos+k-1))+
+        ((rlquery(bigsum,aver[j].pos,aver[j].pos+k-1)-(long long)aver[j].st*riquery(bigbr,aver[j].pos,aver[j].pos+k-1)));
+  //  printf("pos=%d aver=%d sum=%lld\n",aver[j].pos,aver[j].st,sum);    
+    t.st=sum;
+    t.pos=aver[j].pos;
+    if (cmp(t,ans) || ans.pos==0) ans=t;
+    /*printf("riquery(littlebr,%d,%d)=%d\n",aver[j].pos,aver[j].pos+k-1,riquery(littlebr,aver[j].pos,aver[j].pos+k-1));
+    printf("rlquery(littlesum,%d,%d)=%lld\n",aver[j].pos,aver[j].pos+k-1,rlquery(littlesum,aver[j].pos,aver[j].pos+k-1));
+    printf("riquery(bigbr,%d,%d)=%d\n",aver[j].pos,aver[j].pos+k-1,riquery(bigbr,aver[j].pos,aver[j].pos+k-1));
+    printf("rlquery(bigsum,%d,%d)=%lld\n",aver[j].pos,aver[j].pos+k-1,rlquery(bigsum,aver[j].pos,aver[j].pos+k-1));*/
+    
+    }
+    printf("%d\n%d\n",ans.st,ans.pos);
+    //system("pause");  
+    return 0;
+}

@@ -1,0 +1,75 @@
+63 270
+b n sentences and a positive integer k are given. Each sentence is made up of lowercase English alphabet letters and spaces. The words in the sentences are separated by one or more spaces. From each sentence we take a single word and make a special sentence, so that any two words are separated by a single space. In the special sentence the first word is from the first sentence, the second word is from the second sentence, ..., the last word is from the last sentence.
+b Task
+b Determine a special sentence made up of exactly k characters.
+b Input Data 
+b Input file prop.in contains on line one positive integers n and k, separated by a space, and on the following n lines the sentences (each sentence on one line).
+b Output Data
+b Output file prop.out will contain a single line with the requested sentence or digit 0, if there is no solution.
+b Constraints and Statements
+b 1<=n<=250
+b 1<=k<=500
+b All sentences have a maximum of 255 characters. 
+b After each sentence there is an end of line character. 
+b Each sentence contains at least one word.
+b Example prop.in prop.out
+b 3 13
+b ana merge la mare
+b dina se joaca
+b mircea danseaza cu anita merge dina cu
+b A pentomino is an arrangement of 5 squares grouped together along their sides. Each piece is associated with a code. There are 12 distinct pieces, illustrated in the image below, the associated code being written under each piece: 
+b Pentominos can be combined (placed together) to create different shapes. In order to do this they can be turned (90, 180, 270 degrees) or mirrored. E.g. In the image below, the 12 pentominos are used to form a design similar to letter H.
+b Task
+b Being given such a shape, determine a method to obtain this shape using the 12 pentominos. The shape is given by a binary matrix with m lines and n columns, the 1 elements representing boxes that have to be "covered" with pentomino pieces, and the 0 elements representing free boxes that will not be covered. 
+b We know that each pentomino can be used only once. Also, all the pieces will be utilized. Pieces cannot overlap. A problem solution will replace in the initial map the binary values with the codes of the pieces that cover each cell in particular.
+b Ibnput Data
+b Line one of input file pento.in contains numbers m and n, separated by a single space, representing the size of the map. The following m lines each contain n binary digits, representing the map that has to be covered with pentominos.
+b Output Data
+b File pento.out will contain m lines, each line containing n positive integers between 0 and 12 representing the way in which the given map is covered.
+b Restrictions 
+b 3 <= m,n <= 100
+b Example
+b pento.in	
+b pento.out 	
+b Notes 
+b 12 6
+b 110011
+b 110011
+b 110011
+b 111111
+b 111111
+b 111111
+b 111111
+b 111111
+b 110011
+b 111011
+b 111011
+b 111001	
+b 8 0 0 12 9 
+b 8 8 0 0 12 9 
+b 2 8 0 0 12 9 
+b 2 2 2 12 12 9 
+b 2 7 6 6 10 9 
+b 7 7 7 6 10 10 
+b 7 3 3 6 6 10 
+b 3 3 1 1 1 10 
+b 3 4 0 0 1 11 
+b 4 4 4 0 1 11 
+b 5 4 5 0 11 11 
+b 5 5 5 0 0 11 	
+b The solution corresponds to the shape of letter H in the task image. 
+b Time limit: 0.4 seconds/test
+b prof. Carmen Popescu 
+b "Gheorghe Lazar" Sibiu National High School
+b Contact: popescu.carmen@yahoo.com
+
+
+2 501
+1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+
+
+3 13
+ana merge la mare
+dina se joaca
+mircea danseaza cu anita

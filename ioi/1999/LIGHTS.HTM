@@ -1,0 +1,101 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<title>TRAFFIC LIGHTS</title>
+</head>
+
+<body bgcolor="#A5B4D8" text="#0E2C73" link="#0E2C73" vlink="#0E2C73" alink="#A5B4D8">
+
+<table bgcolor="#ffffff" cellpadding="20" cellspacing="10">
+  <tr>
+    <td><b><font FACE="Arial,Helvetica" SIZE="5"><p ALIGN="left">TRAFFIC LIGHTS</font><font
+    FACE="Arial,Helvetica" SIZE="4"></p>
+    <p>PROBLEM</font></b></p>
+    <p ALIGN="JUSTIFY">In the city of Dingilville the traffic is arranged in an unusual way.
+    There are junctions and roads connecting the junctions. There is at most one road between
+    any two different junctions. There is no road connecting a junction to itself. Travel time
+    for a road is the same for both directions. At every junction there is a single traffic
+    light that is either blue or purple at any moment. The color of each light alternates
+    periodically: blue for certain duration and then purple for another duration. Traffic is
+    permitted to travel down the road between any two junctions, if and only if the lights at <u>both
+    junctions</u> are the same color at the moment of departing from one junction for the
+    other. If a vehicle arrives at a junction just at the moment the lights switch it must
+    consider the new colors of lights. Vehicles are allowed to wait at the junctions. You are
+    given the city map which shows<u> </p>
+    <ul>
+      </u>
+      <li>the travel times for all roads (integers), </li>
+      <li>the durations of the two colors at each junction (integers)</li>
+      <li>and the initial color of the light and the remaining time (integer) for this color to
+        change at each junction. </li>
+    </ul>
+    <p ALIGN="JUSTIFY">Your task is to find a path which takes the minimum time from a given
+    source junction to a given destination junction for a vehicle when the traffic starts. In
+    case more than one such path exists you are required to report only one of them.</p>
+    <p><font FACE="Arial,Helvetica" SIZE="4"><b>&nbsp;</p>
+    <p>ASSUMPTIONS</b></font><font SIZE="1"><ul>
+      </font>
+      <li>2 &lt;= <i>N </i>&lt;=300 where <i>N </i>is
+        the number of junctions. The junctions are identified by integers 1 through <i>N</i>.
+        These numbers are called id-numbers.</li>
+      <li>1 &lt;=<i>M </i>&lt;=14,000 where <i>M</i>
+        is the number of roads.</li>
+      <li>1 &lt;= <i>l<sub>ij</sub> &lt;= </i>100
+        where <i>l<sub>ij</sub></i> is the time required to move from junction <i>i</i> to <i>j </i>using
+        the road that connects <i>i</i> and <i>j</i>.<i> </li>
+      </i>
+      <li>1 &lt;= <i>t<sub>ic</sub> &lt;= </i>100
+        where <i>t<sub>ic</sub> </i>is the duration of the color <i>c</i> for the light at the
+        junction <i>i</i>. The index <i>c </i>is either<i> B </i>for<i> blue </i>or<i> P </i>for<i>
+        purple.</li>
+      </i>
+      <li>1 &lt;= <i>r<sub>ic</sub> &lt;= t<sub>ic
+        </sub></i>where <i>r<sub>ic</sub></i> is the remaining time for the initial color <i>c</i>
+        at junction <i>i.</i></li>
+    </ul>
+    <p><font FACE="Arial,Helvetica" SIZE="4"><b>&nbsp;</p>
+    <p>INPUT</b></font></p>
+    <p>The input is a text file named <font FACE="Courier"><b>lights.inp</b></font>.<ul>
+      <li>The first line contains two numbers: The id-number of the source junction and the
+        id-number of the destination junction. </li>
+      <li>The second line contains two numbers: <i>N</i>, <i>M</i>. </li>
+      <li>The following <i>N</i> lines contain information on <i>N</i> junctions. The (<i>i+</i>2)&#146;th<i>
+        </i>line of the input file holds information about the junction <i>i</i> : <i>C<sub>i</sub></i>,
+        <i>r<sub>ic</sub></i>, <i>t<sub>iB</sub></i>, <i>t<sub>iP</sub></i> where <i>C<sub>i</i> </sub>is
+        either &#145;<font FACE="Courier">B</font><i>&#146;</i> or &#145;<font FACE="Courier">P</font><i>&#146;</i>,
+        indicating the initial color of the light at the junction <i>i. </li>
+      </i>
+      <li>Finally, the next <i>M</i> lines contain information on <i>M</i> roads. Each line is of
+        the form: <i>i</i>, <i>j, l<sub>ij </sub></i>where <i>i</i> and <i>j</i> are the
+        id-numbers of the junctions which are connected by this road<i> </i>. </li>
+    </ul>
+    <p><font FACE="Arial,Helvetica" SIZE="4"><b>&nbsp;</p>
+    <p>OUTPUT</b></font></p>
+    <p>The output must be a text file named <font FACE="Courier"><b>lights.out</b></font>. </p>
+    <p>If a <b>path exists:<ul>
+      </b>
+      <li>The first line will contain the time taken by a minimum-time path from the source
+        junction to the destination junction. </li>
+      <li>Second line will contain the list of junctions that construct the minimum-time path you
+        have found. You have to write the junctions to the output file in the order of travelling.
+        Therefore the first integer in this line must be the id-number of the source junction and
+        the last one the id-number of the destination junction.</li>
+    </ul>
+    <p ALIGN="JUSTIFY">If a <b>path does not exist:</p>
+    <ul>
+      </b>
+      <li>A single line containing only the integer <font FACE="Courier">0</font>. </li>
+    </ul>
+    <p><font SIZE="2">&nbsp;</p>
+    <p></font><font face="Arial,Helvetica" SIZE="4"><strong>EXAMPLE</strong></font><font
+    size="5"></p>
+    </font><p><img src="lights.jpg" width="146" height="318" alt="lights.jpg (19121 bytes)"></p>
+    <font size="6"><p></font><b><font face="Arial,Helvetica" SIZE="4">EVALUATION</font></b></p>
+    <p>Your program will be allowed to run 2 seconds.<br>
+    No partial credit can be obtained for a test case.</td>
+  </tr>
+</table>
+</body>
+</html>

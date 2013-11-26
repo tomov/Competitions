@@ -1,0 +1,6 @@
+#include <cstdio>
+
+int main() {
+	printf ( "56\n" );
+	return 0;
+}

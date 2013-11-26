@@ -1,0 +1,223 @@
+/*
+user: A018
+pass: 5r41ot
+*/
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <iomanip>
+#include <cstring>
+#include <ctime>
+#include <cmath>
+#include <cstdio>
+#include <cstdlib>
+#include <algorithm>
+#include <utility>
+#include <numeric>
+#include <functional>
+#include <set>
+#include <vector>
+#include <bitset>
+#include <queue>
+#include <map>
+
+using namespace std;
+
+#define F(i,n) for (int i=0;i<n;i++)
+#define Repi(n) F(i,n)
+#define Repj(n) F(j,n)
+#define Repk(n) F(k,n)
+#define PI pair<int,int>
+#define LL long long
+#define PD pair<double,double>
+#define PQ priority_queue
+#define sqr(x) ((x)*(x))
+#define VI vector<int>
+#define MP make_pair
+#define SZ size()
+#define x first
+#define y second
+#define PB push_back
+
+#define Time (double)clock()/CLOCKS_PER_SEC
+#define ABS(x) (((x)>0)?(x):(-(x)))
+#define MAX(a,b) ((a)>(b)?(a):(b))
+#define MIN(a,b) ((a)<(b)?(a):(b))
+#define sign(a) (((a)>0)-((a)<0))
+
+const int MAXN=100002;
+
+int N;
+int a[MAXN];
+LL sum[MAXN];
+const int INF=1000000000;
+const LL LINF=1000000000000000001LL;
+
+LL summ(int l,int r)
+{ if (l>r) return 0; if (!l) return sum[r]; return sum[r]-sum[l-1]; }
+
+int dp[1024][1024];
+int root[1024][1024];
+
+int solve(int l,int r)
+{
+	int &ret=dp[l][r];
+	if (ret>-1) return ret;
+	if (l>=r) { root[l][r]=l; return ret=0;}
+	
+	ret=INF; root[l][r]=-1;
+	for (int i=l;i<r;i++)
+	 {
+	 	int tmp=solve(l,i) + solve(i+1,r);
+	 	tmp+=summ(l,i)+summ(i+1,r);
+	 	//cout<<"          "<<l<<" "<<r<<" root at "<<i<<" -> "<<tmp<<"\n";
+	 	if (tmp<ret)
+	 	 {  ret=tmp; root[l][r]=i; }
+	 }
+	
+	//cout<<l<<" "<<r<<" goto "<<root[l][r]<<" -> "<<ret<<"\n";
+	return ret;
+}
+
+void print(int l,int r,int lev)
+{
+	if (l>r) return;
+	if (l==r) { Repi(lev) cout<<"   "; cout<<a[l]<<" ("<<lev<<")\n"; return; }
+	print(root[l][r]+1,r,lev+1);
+	print(l,root[l][r],lev+1);	
+}
+
+
+
+LL dpp[MAXN];
+
+void solve2()
+{
+	dpp[N]=dpp[N-1]=0;
+	
+	for (int pos=N-2;pos>=0;pos--)
+	 {
+		LL lev=1,all=2,levsubstr;
+		dpp[pos]=LINF;
+		LL substr=(pos)?sum[pos-1]:0;
+		
+		//cout<<" at "<<pos<<" ("<<a[pos]<<")\n";
+		
+		for (int i=pos;i<N;i++)
+	 	{
+	 		if ( i-pos+2>all )
+	 		 all*=2,lev++;
+	 		levsubstr=__builtin_ctz(all-(i-pos+1));
+	 		//cout<<"        "<<i<<" : lev "<<lev<<" levs "<<levsubstr<<" all  "<<all<<" (sum "<<(sum[N-1]-substr)<<") \n";
+	 		
+	 		LL tmp=(sum[i]-substr)*lev + (sum[N-1]-sum[i])*(lev-levsubstr) + dpp[i+1];
+	 		//cout<<"               "<<tmp<<" = "<<(sum[i]-substr)<<"*"<<lev<<" + "<<(sum[N-1]-sum[i])<<"*"<<(lev-levsubstr)<<" + "<<dpp[i+1]<<"\n";
+	 		dpp[pos]=min(dpp[pos],tmp);
+	 	}
+	 	//cout<<" = "<<dpp[pos]<<" ("<<dp[pos][N-1]<<")"<<"\n";
+	 	
+	 }
+}
+
+
+LL lev,all,substr;
+int pos;
+
+inline LL getfor(int i)
+{
+	 	 	 	int low=31-__builtin_clz(all-(i-pos+1));
+	 	 	 	int last=1<<low;
+	 	 	 	int getin=all-(i-pos+1)-last;
+	 	 	 	getin*=2;
+	 	 	 	//cout<<"       to "<<i<<" ("<<a[i]<<") low "<<low<<" last "<<last<<" getin "<<getin<<" <=("<<N-i<<")"<<"\n";
+	 	 	 	getin=min(getin,N-i);
+	 	 	 	
+	 	 	 	LL tmp=(sum[i]-substr)*lev; 
+	 	 	 	tmp+=(sum[i+getin]-sum[i])*(lev+1LL);
+	 	 	 	tmp+=(sum[N-1]-sum[i+getin])*(lev-(LL)low);
+	 	 	 	tmp+=dpp[i+getin+1];
+	 	 	 	//cout<<"                 = "<<(sum[i]-substr)<<"*"<<lev<<" + "<<(sum[i+getin]-sum[i])<<"*"<<(lev+1LL)<<" + "<<(sum[N-1]-sum[i+getin])<<"*"<<(lev-(LL)low)<<" + "<<dpp[i+getin+1]<<" === "<<tmp<<"\n";
+	 	 	 	
+	 	 	  	//cout<<"                     "<<i<<"     "<<tmp<<"\n";
+	 	 	 	return tmp;
+}
+
+void solvee()
+{
+	dpp[N]=dpp[N-1]=0;
+	
+	for (pos=N-2;pos>=0;pos--)
+	 {
+	 	dpp[pos]=LINF;
+ 	 	substr=(pos)?sum[pos-1]:0;
+ 	 	int cnt;
+ 	 	//cout<<" at "<<pos<<" ("<<a[pos]<<")\n";
+	 	
+	 	for (lev=1,all=2; all<=N-pos; lev++,all*=2 );
+	 	//lev--; all/=2;
+	 	for (lev--,all/=2,cnt=0;  cnt<2 && lev>=1  ;lev--,all/=2,cnt++)
+	 	 {
+	 		//cout<<"  lev = "<<lev<<" all = "<<all<<"\n";
+	 		
+	 		
+	 		int l=pos,r=all+pos-2;
+	 		while (l+2<r)
+	 		 {
+	 		 	int m=(l+r)/2;
+	 		 	
+	 		 	//cout<<"                     "<<l<<","<<r<<" _ "<<m<<" = "<<getfor(m)<<" "<<getfor(m+1)<<"\n";
+	 		 	
+	 		 	if (getfor(m)<getfor(m+1))
+	 		 	 r=m;
+	 		 	else
+	 		 	 l=m+1;
+	 		 }
+	 		dpp[pos]=min(dpp[pos],getfor(l));
+	 		if (l+1-pos+1<all)
+	 		 dpp[pos]=min(dpp[pos],getfor(l+1));
+	 		if (l+2-pos+1<all)
+	 		 dpp[pos]=min(dpp[pos],getfor(l+2));
+	 		
+	 		/*
+	 	 	for (int i=all+pos-2; i>=pos; i--)//  pos;i-pos+1<all;i++)
+	 	 	 {
+	 	 	 	dpp[pos]=min(dpp[pos],getfor(i));
+	 	 	 	//cout<<"             "<<i<<" -> "<<getfor(i)<<"\n";
+	 	 	 } */
+	 	 }
+	 	//if (dpp[pos] != dp[pos][N-1])
+	 	// cout<<" == "<<dpp[pos]<<" ("<<dp[pos][N-1]<<")"<<"\n";
+	 }
+}
+
+int main()
+{
+	scanf("%d",&N);
+	Repi(N)
+		scanf("%d",a+i);
+	sort(a,a+N); reverse(a,a+N);
+	//Repi(N) cout<<a[i]<<" "; cout<<"\n";
+	LL ts=0;
+	Repi(N)
+	 ts+=a[i],sum[i]=ts;
+	
+	
+	//memset(dp,-1,sizeof(dp));
+	//printf ("%d\n",solve(0,N-1));
+	
+	
+	solvee();
+	cout<<dpp[0]<<"\n";
+	//cout<<Time<<"\n";
+	fprintf(stderr,"%.5lf\n",Time);
+	
+	return 0;
+	
+	print(0,N-1,0);
+	
+	solve2();
+	cout<<dpp[0]<<"\n";
+	solvee();
+	
+	return 0;
+}

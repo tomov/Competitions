@@ -1,0 +1,36 @@
+#include <cstdio>
+#include <math.h>
+
+int N, K, min = 2147000000, mini;
+int a[1048576];
+
+int main ()
+{
+    scanf ("%d %d", &N, &K);
+    for (int i = 0; i < N; ++i)
+        scanf ("%d", &a[i]);
+
+    double sum = 0;
+    for (int i = 0; i < K; ++i)
+    {
+        sum += a[i];
+    }
+    int avr = round(sum / K), cur = 0;
+    for (int j = 0; j < N-K; ++j)
+    {
+        cur = 0;
+        for (int i = 0; i < K; ++i)
+        {
+            cur += fabs(a[j+i] - avr);
+        }
+        if (cur < min) 
+        {
+            min = cur;
+            mini = j;
+        }
+        sum += a[j+K] - a[j];
+        avr = round(sum / K);
+    }
+    printf ("%d\n%d\n", min, mini + 1);
+    return 0;
+}

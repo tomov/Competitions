@@ -1,0 +1,5 @@
+L:\Momchil\Competitions\gcj\2010\qual\B\B\bin\Debug\B.exe
+L:\Momchil\Competitions\gcj\2010\qual\B\B\bin\Debug\B.pdb
+L:\Momchil\Competitions\gcj\2010\qual\B\B\obj\Debug\ResolveAssemblyReference.cache
+L:\Momchil\Competitions\gcj\2010\qual\B\B\obj\Debug\B.exe
+L:\Momchil\Competitions\gcj\2010\qual\B\B\obj\Debug\B.pdb

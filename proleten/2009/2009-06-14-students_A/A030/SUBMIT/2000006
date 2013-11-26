@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <algorithm>
+using namespace std;
+
+int sum[100001];
+int a[100001], N;
+
+int price(int free, int i, int lvl)
+{
+    int cnt = N - i + 1;
+    int tfree = free, tlvl = lvl;
+    for (;; tfree *= 2, tlvl++) if (tfree > cnt) break;
+    
+    tfree /= 2, tlvl--;
+    
+    //printf("%d %d\n", sum[N - (cnt - tfree)*2] - sum[i-1], sum[N] - sum[ N - (cnt - tfree)*2] );
+    return (sum[N - (cnt - tfree)*2] - sum[i-1])*tlvl + (sum[N] - sum[ N - (cnt - tfree)*2 ])*(tlvl+1);
+}
+
+int main()
+{
+    scanf("%d", &N);
+    for (int i = 1; i <= N; i++) scanf("%d", &a[i]);
+    sort(a + 1, a + N + 1);
+    reverse(a + 1, a + N + 1);
+    for (int i = 1; i <= N; i++) sum[i] = sum[i-1] + a[i];
+//    for (int i = 1; i <= N; i++) printf("%d\n", a[i]);    
+    int free = 1, lvl = 0;
+    //printf("%d\n", price(1, 1, 0));
+    //return 0;
+
+    
+    
+    int ans = 0;
+    for (int i = 1; i <= N; )
+    {
+        if (free == N - i + 1) { ans += lvl*(sum[N] - sum[i-1]); break; }
+        else
+        {
+            if (free > 1)
+            {
+                 if (price(free, i, lvl) >= price(free-1, i + 1, lvl) + lvl*a[i])
+                 {
+                      ans += lvl*a[i];
+                      free--;
+                      i++;
+                 }
+                 else free *= 2, lvl++;
+            }
+            else free *= 2, lvl++;
+        }
+    }
+    printf("%d\n", ans);
+    return 0;
+}

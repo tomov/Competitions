@@ -1,0 +1,6 @@
+inline ull doit(ull x, ull a, ull d, ull b) {
+  return x * a / d + b;
+  //ull xmod = x % d, xdiv = x / d;
+  //ull amod = a % d, adiv = a / d;
+  //return adiv * xdiv * d + adiv * xmod + amod * xdiv + xmod * amod / d + b;
+}

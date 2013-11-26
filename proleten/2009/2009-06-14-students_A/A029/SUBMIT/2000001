@@ -1,0 +1,18 @@
+#include <cstdio>
+
+int f(int s, int m) {
+    if(s < 0) return 0;
+    if(s == 0) return 1;
+
+    int r = 0;
+    for(int i = m; i >= 1; --i) {
+        r += f(s-i, i);
+    }
+    return r;
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    printf("%d\n", f(n, n));
+}

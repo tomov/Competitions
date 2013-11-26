@@ -1,0 +1,318 @@
+индексни дървета - пъхаме индекси, питаме за интервали със сложност O(logN)
+
+  [u]Что ета?[/u]
+пълно двоично дърво, където всеки node (връх) съдържа отговора на даденото "питане" (задача) за определен интервал (с дължина степен на 2-ката), като този интервал е разделен на 2 равни по-малки части от наследниците на дадения node, които пък от своя страна имат същото свойство. Листата на дървото отговарят за по една клетка. За удобство, дължината на целия интервал се взема степен на 2-ката. Напр:
+
+N=8
+
+[code]
+                     [1,8]
+            /-------/     \-------\
+         [1,4]                   [5,8]
+        /     \                 /     \
+   [1,2]       [3,4]       [5,6]       [7,8]
+   /   \      /     \     /     \     /     \
+[1,1] [2,2] [3,3] [4,4] [5,5] [6,6] [7,7] [8,8]
+[/code]
+
+Пак за удобство, node-овете се номерират по редове отляво надясно:
+
+[code]
+         1
+      /    \
+   2           3
+  /  \       /   \
+ 4    5     6     7
+/ \  / \   / \   / \
+8 9 10 11 12 13 14 15
+[/code]
+
+и така структурата може да се съхранява в линеен масив (затова му се вика индексно дърво), където децата на node с индекс i са i*2 и i*2+1, а бащата на i е i/2
+По този начин на първия елемент от редицата, с която работим, съответства N-тия елемент от масива на дървото, на втория - N+1-вия и т.н. до N-тата клетка, на която и съответства (2*N-1)-вият node на дървото
+
+когато пъхаме/променяме елемент, намираме листото му (индекс+=N-1) и започваме да отразяваме промяната във всички node-ове, чиито интервали съдържат този елемент (сиреч почваме да се катерим по родителите нагоре)
+
+когато питаме за интервал, номерът е да го разбием на минимален брой подинтервали, така че за всеки подинтервал да си има съответен node, който директно да може да отговори на питането. Така вместо да обхождаме всички елементи (както би направило едно наивно решение), ще обходим само (много) малък брой node-ове, които покриват целия търсен интервал. Това може да стане рекурсивно, като минаваме от по-големи към по-малки интервали (отгоре надолу) или като си измислим някаква простичка итеративна реализация (отдолу нагоре) дето в конкретния случай ще ни върши работа (вж. примера долу).
+
+
+[size=14][b][center]индексно дърво за суми[/center][/b][/size]
+
+  [u]ЗАДАЧА[/u]:
+имаме съседни клетки от 1..N
+пускаме 2 вида заявки: "добави x към клетка y" или "кажи колко е сумата на клетки y1..y2 включително"
+искаме да работи бързо
+
+...РЕШЕНИЕ:
+1) основната част
+
+[code]
+#include <cstdio>
+#define MAXN 1<<20
+
+int tree[MAXN],sz;
+int N;
+
+int main()
+{
+	scanf("%d\n",&N);            //  4etem i nov red sled N, ina4e 6te pro4ete za parvi simvol noviq red vmesto + ili ?
+	sz=1; while (sz<N) sz*=2;      // strogo < : pri N=8 , sz su6to e 8
+	
+	char c; int a,b;
+	while (scanf("%c%d%d\n",&c,&a,&b)==3)    // i tuk 4etem nov red seki pat poradi su6tata pri4ina
+			if (c=='+')
+			 update(a,b);
+			else
+			 printf("%d\n",sum(a,b));
+	return 0;
+}
+[/code]
+
+2) пъхането
+
+[code]void update(int pos,int val)
+{ 
+	pos+=sz-1;                 //  otivame na listoto, otgovarq6to za kletka pos
+	while (pos)
+	 tree[pos]+=val,pos/=2;        //  dobavqme kum vsi4ko node-ove, koito otgovarqt za intervali, v koito se sudurja pos
+}
+[/code]
+
+3) питането
+
+първи вариант - итеративен, бързичък, работи само за тази задача с индексно дърво (за максимум/минимум не става, очевидно)
+
+[code]int query(int pos)        // sumata na vsi4ki elementi ot 1 do pos
+{
+	if (!pos) return 0;     //  grani4en slu4ai
+	pos+=sz-1;
+	int res=tree[pos];     //  res = listoto otgovarq6to za pos
+	while (pos)           // varvim otdolu (ot listoto) nagore (kum korena)
+	 {
+			if (pos%2) res+=tree[pos-1];  //  ako sme v desen naslednik, dobavqme leviq mu brat ;; ako sme lqv, ne praim ni6to, 6tot ve4e decata mu sa se dobavili kum otgovora
+			pos/=2;            //  i otivame pri ba6ta mu
+	 }
+	return res;
+}
+
+int sum(int l,int r)
+{	return query(r)-query(l-1); }
+[/code]
+
+втори вариант за питането - рекурсивен, съвсем леко по-бавен (щот все пак вика функция с 5 параметъра не знам си колко пъти), но [u]универсален[/u] (работи за всякакви видове заявки, включително и за интервални дървета)
+
+[code]//   razbivame na podzada4i i izpolzvame otgovora za naslednicite, za da namerim otgovora za ba6tata
+int sum(int l,int r,int in,int tl,int tr)          // sumata na vsi4ki elementi v intervala [l..r] ot poddarvoto in (tl i tr sa prosto granicite na in)
+{
+	if (tr<l || tl>r) return 0;                               // ako nito edna kletka ot [l,r] ne e v poddarvoto in (<=> intervala na in ne se overlap-va s tozi, za koito pitame)
+	if (tl>=l && tr<=r) return tree[in];                      // ako intervalat na in izcqlo e vutre v na6iq, to otgovora na podzada4ata = stoinostta v node-a
+	int tm=(tl+tr)/2;
+	return sum2(l,r,in*2,tl,tm)+sum2(l,r,in*2+1,tm+1,tr);         // a ako se prepokrivat, otgovora = sumata ot otgovorite na decata
+}
+[/code]
+
+като това чудо го викаме по следния начин:
+[code]
+printf("%d\n",sum(l,r,1,1,sz));
+[/code]
+
+
+
+
+
+[i]tasks:
+     boi/2003/travers
+     proleten/2003/circle
+     proleten/2004/round (+ dp)
+     usopen/2004/moofest
+     ioi/2001/mobiles
+     usaco/2009/jan/gold/baric
+     musala soft/2007-2008/checkers
+     srm 424/div1/productofprices
+     baltic/2002/speed (+ dijkstra)
+     ioi/2007/pairs
+     noi/2006/psort
+     spoj/FLBRKLIN
+     ceoi/2003/therace
+     noi/2006/k1/skymap
+[/i]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[center][b][size=14]индексно дърво за минимум/максимум (range minimum/maximum query = RMQ)[/size][/b][/center]
+на това нещо му се вика и dynamic RMQ - щото може да поема update и query заявките в какъвто и да е ред, за разлика от static RMQ-то (see next post)
+
+съществената разлика от индексното за суми е, че тука итеративното query трябва да отговаря директно за интервала [l,r]  (а не по отделно за [1,r] и [1,l] и от единия да вади другия...)
+другото е, че тук инициализацията може да е малко по-особена
+
+примерна реализация (приемаме, че искаме не просто най-малката стойност в интервала, а индекса й в оригиналния масив). Реализацията приема, че индексите в оригиналния масив започват от 1. Инициализацията прави всички върхове на дървото да сочат в несъществуващ елемент на масива, който има много голяма стойност (+infinity)
+
+[code]#include <cstdio>
+#include <cstring>
+#include <algorithm>
+
+#define MAXN (1<<18)
+// скобите тука са важни, щото ако ги няма и на долния ред като замести с 1<<18*2 и заради приоритетите първо като умножи 18 с 2 и ще стане 1<<36 демек мазалооо... при "const int MAXN=1<<18;" няма такива боклуци, разбира се
+int RMQ[MAXN*2],size;
+int a[MAXN+3];   //vinagi zadelqme o6te malko pamet ;) just in case
+
+void initialize(int n)
+{
+	    memset(a,127,sizeof(a));
+	    size=1; while (size<n) size*=2;
+	    for (int i=1;i<size*2;i++) RMQ[i]=size+1;
+}
+
+
+void update(int ind, int val)
+{
+    a[ind]=val;
+    RMQ[ ind+size-1 ]=ind;    // listoto so4i kum indeksa ind v masiva a
+    ind+=size-1;               // opravqme indeksa ot masiven v durven
+
+    for(ind/=2; ind; ind/=2)
+         if( a[ RMQ[2*ind] ] < a[ RMQ[2*ind+1] ] )         //  ako elementa ot a, kum koito so4i leviq naslednik e po-malkiq
+                            RMQ[ind]=RMQ[2*ind];    //   teku6tiq node so4i kum tozi indeks
+         else
+                            RMQ[ind]=RMQ[2*ind+1];  // else so4i kum indeksa, kum koito so4i desniq naslednik
+        // tozi if-else moje da izglejda i taka:
+		//	   RMQ[ind] = RMQ[ 2*ind + (a[RMQ[2*ind+1]]<a[RMQ[2*ind]]) ];
+}
+
+
+int query(int l, int r)
+{
+     l+=size-1,r+=size-1;   // opraame indeksite na durveni
+     int pos=l;
+     while(l<=r)
+       {
+              
+              if(a[RMQ[l]]<a[pos]) pos=RMQ[l];   // otgovora so4i kum po-malkiq ot elementite,
+              if(a[RMQ[r]]<a[pos]) pos=RMQ[r];  // kum koito so4at teku6tite node-ove v darvoto
+              l++; l>>=1;  // stesnqvame i se katerim
+              r--; r>>=1;
+
+       }
+     return pos;
+}          
+[/code]
+
+
+както и при индексното за сума (и при всички останали случаи), query-то може да е и рекурсивно:
+
+[code]int query2(int L,int R,int in,int l,int r)   // питаме за интервал [L,R] като сме във връх in, чийто интервал е [l,r]
+{
+	if (r<L || l>R) return size+1;   // ако интервалът на in е извън търсения, извеждаме +INF
+	if (l>=L && r<=R) return RMQ[in];    // ако е изцяло в него - връщаме стойността във върха in
+	int m=(l+r)/2;     // иначе решаваме за двете деца на in и вземаме това, което сочи към по-малка стойност в масива a
+	int pos1=query2(L,R,in*2,l,m),pos2=query2(L,R,in*2+1,m+1,r);
+	if (a[pos1]<a[pos2]) return pos1; return pos2;
+}[/code]
+
+айде и главната част:
+
+[code]int main()
+{
+          int c,x,y,n;
+	scanf("%d",&n);
+          initialize(n);
+	printf("  '1 index value' - update ; '2 index1 index2' - query ;  1-based indices! ;   size = %d\n",size);
+	while (scanf("%d%d%d",&c,&x,&y)!=-1)
+	 {
+ 	    if (c==1)
+				update(x,y),printf("++++++++ a[%d]=%d\n",x,y);
+		else
+                          {
+                                        int z=query(x,y);  // или query2(x,y,1,1,size);
+				printf("min value for [%d,%d] is a[%d] = %d\n",x,y,z,a[z]);
+                          }
+	 }
+	return 0;
+}[/code]
+
+
+
+
+
+
+
+
+
+
+[size=large][b][center]Binary Indexed Trees[/center][/b][/size]
+
+update индекс, query интервал от вида [1,x]
+за разлика от обикновеното индексно дърво, това се пише по-бързо, работи по-бързо и паметта му е O(N) (а не O(2*N))
+Ще използваме понятието lowest bit (или lowest set bit или младши бит) на x - това е най-малката степен на двойката, която се съдържа в двоичния запис на x. Например за 6 (110) това е 2 (10), за 44 (10110) също е 2, за 24 (1100) е 8 (100), за 7 е 1, за 256 е 256. Един лесен начин да го намерим е като повдигнем 2 на броя на нули в края на числото, което се намира с __builtin_ctz(x)  (a.k.a. count trailing zeroes)
+[code]
+#define LOWBIT(x) (1<<__builtin_clz(x))
+[/code]
+обаче има и по-як начин - използва се хитрия факт, че (-x) = (~x)+1 , което на практика е всички 1-чки от х да станат нули и всички 0 да станат 1-чки, с изключение на тези от най-дясната единичка на x до края (или lowest bit-а на х). Като &-нем x с това число и всички единички наляво от младшия бит ще се изчистят и само той ще остане
+Например:
+    x  = 00...00110010111000
+   ~x  = 11...11001101000111
+(~x)+1 = 11...11001101001000 = (-x)
+x&(-x) = 00...00000000001000 = LOWBIT(x)
+[code]
+#define LOWBIT(x) (x&(-x))
+[/code]
+
+обяснение на самото BIT със схемички и всичко има тук -> http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=binaryIndexedTrees
+накратко: елемент bit[x] от дървото отговаря за интервала от елементи от a[x-LOWBIT(x)+1] до a[x].
+1 за [1,1]
+2 за [1,2]
+3 за [3,3]
+4 за [1,4]
+5 за [5,5]
+6 за [5,6]
+7 за [7,7]
+8 за [1,8]
+9 за [9,9]
+10 за [9,10]
+11 за [11,11]
+12 за [9,12]
+13 за [13,13]
+и т.н. 
+И от тук лесно се вижда как може със сложност O(logN) да променяме елементи и да отговаряме на заявки от вида [1,x] ;) Даже няма нужда да пазим оригиналния масив. Важно е обаче да разширим N до степен на двойката!
+
+Примерна реализация на индексно дърво за суми:
+
+[code]
+int bit[1<<20],N;
+
+void update(int x,int val)
+{
+  for (;x<=N;x+=LOWBIT(x))
+   bit[x]+=val;
+}
+
+int query(int x)
+{
+  int res=0;
+  for (;x;x-=LOWBIT(x))
+   res+=bit[x];
+  return res;
+}
+
+int sum(int x1,int x2)
+{ return query(x2)-query(x1-1); }
+[/code]
+
+Очевидно BIT не може да се използва за RMQ в произволен интервал, но пък може за RMQ в интервал [1,x] и така става много удобен за намиране, например, на най-дълга ненамаляваща подредица на дадена редица (Longest non-decreasing subsequence = LNDS). Като цяло това е много по-добрата алтернатива на индексно дърво за суми и на практика индексното дърво, както в началото го обясних, се използва предимно за dynamic RMQ по състезания.
+
+[i]tasks: същите като за индексно за суми[/i]

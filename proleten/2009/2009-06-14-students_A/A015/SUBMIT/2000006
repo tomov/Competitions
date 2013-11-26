@@ -1,0 +1,72 @@
+/*
+TASK: flatten
+LANG: C++
+*/
+
+#include<iostream>
+#define maxn 1000001
+using namespace std;
+
+int N,K;
+int a[maxn],d[maxn];
+int lbit[maxn];
+int mini=100000000,pos;
+
+inline int abs(int x)
+{
+if(x<0)return x*(-1);
+ else return x;
+}
+
+inline int lb(int p)
+{
+return p & (-p);
+}
+
+void insert(int x,int v)
+{
+ for(int i=x;i<=N;i=i+lb(i))
+  lbit[i]+=v; 
+}
+
+int query(int x)
+{int s=0;
+ for(int i=x;i>0;i=i-lb(i))
+  s=s+lbit[i];
+
+return s;
+}
+
+int get(int x,int y)
+{ 
+ int p=query(y)-query(x-1);
+ 
+ double s=double(p)/double(K);
+
+s=s+0.5;
+return int(s);
+}
+  
+void shit_solve()
+{
+ for(int i=1;i<=N-K+1;i++){int k=get(i,i+K-1); 
+  for(int j=i;j<K+i;j++)
+   d[i]=d[i]+abs(k-a[j]); 
+   
+   if(d[i]<mini) {mini=d[i]; pos=i;}
+    }
+}
+
+int main()
+{
+ scanf("%d %d",&N,&K);
+ 
+  for(int i=1;i<=N;i++){      
+   scanf("%d",&a[i]);
+    insert(i,a[i]);
+     }
+
+shit_solve();
+cout<<mini<<endl<<pos<<endl;   
+return 0;
+}

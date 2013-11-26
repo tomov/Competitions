@@ -1,0 +1,135 @@
+
+/* freeware, simple recursive sudoku solver */ 
+/* it will print all possible solutions     */ 
+/* inspired by a hard sudoku found in the   */ 
+/* else clause of the orginal_board         */ 
+
+/* wim colgate, January, 11th, 2006         */ 
+/* extended for large 16x16 January 15th    */ 
+
+#if defined(LARGE) 
+#define ROW_SIZE 12 
+#else 
+#define ROW_SIZE 9 
+#endif 
+
+#define SQUARE_X   (ROW_SIZE/3) 
+#define SQUARE_Y   (3) 
+#define ARRAY_SIZE (ROW_SIZE*ROW_SIZE) 
+
+#define BASE(num)  (((num)/ROW_SIZE)*ROW_SIZE) 
+#define TOP(num)   (((num)%ROW_SIZE)) 
+#define ULEFT(num) ((BASE(num)/(ROW_SIZE*SQUARE_Y)*(ROW_SIZE*SQUARE_Y))+((((num)-BASE(num))/SQUARE_X)*SQUARE_X)) 
+
+typedef struct _sudoku { 
+    unsigned char array[ARRAY_SIZE]; 
+} sudoku; 
+
+int solution_found = 0; 
+
+sudoku original_board = { 
+   0, 0, 7,    0, 6, 0,    0, 1, 0, 
+   5, 0, 0,    2, 0, 0,    0, 8, 7, 
+   9, 0, 0,    1, 0, 0,    0, 3, 0, 
+
+   0, 0, 0,    3, 0, 0,    7, 4, 0, 
+   0, 5, 0,    0, 0, 0,    0, 9, 0, 
+   0, 9, 8,    0, 0, 2,    0, 0, 0, 
+
+   0, 7, 0,    0, 0, 1,    0, 0, 9, 
+   2, 1, 0,    0, 0, 8,    0, 0, 4, 
+   0, 8, 0,    0, 5, 0,    3, 0, 0 
+}; 
+
+int place_next(int loc, sudoku *pboard) 
+{ 
+    while ((loc < ARRAY_SIZE) && (pboard->array[loc] != 0)) loc++; 
+
+    if (loc < ARRAY_SIZE) return loc; 
+
+    return -1; 
+} 
+
+void print_solution(sudoku *pboard) 
+{ 
+    int i, j; 
+
+    if (solution_found) printf("-------------------------------------\n\n"); 
+    for (i=0; i<ROW_SIZE; i++) { 
+        for (j=0; j<ROW_SIZE; j++) { 
+            if (j%SQUARE_X == 0) printf("  "); 
+            printf("  %X", pboard->array[i*ROW_SIZE+j]); 
+        } 
+        if ((i+1)%SQUARE_Y == 0) printf("\n"); 
+        printf("\n"); 
+    } 
+
+    printf("\n"); 
+    solution_found = 1; 
+} 
+
+int row_check(int loc, int val, sudoku *pboard) 
+{ 
+    int i = BASE(loc); 
+    int j; 
+
+    for (j=0; j<ROW_SIZE; j++) { 
+        if (pboard->array[i+j] == val) return 0; 
+    } 
+
+    return 1; 
+} 
+
+int column_check(int loc, int val, sudoku *pboard) 
+{ 
+    int i = TOP(loc); 
+    int j; 
+
+    for (j=0; j<ROW_SIZE; j++) { 
+        if (pboard->array[i+j*ROW_SIZE] == val) return 0; 
+    } 
+
+    return 1; 
+} 
+
+int square_check(int loc, int val, sudoku *pboard) 
+{ 
+    int i = ULEFT(loc); 
+    int j, k; 
+
+    for (j=0; j<SQUARE_Y; j++) { 
+        for (k=0; k<SQUARE_X; k++) { 
+            if (pboard->array[i+j*ROW_SIZE+k] == val) return 0; 
+        } 
+    } 
+
+    return 1; 
+} 
+
+int sudo(int loc, int num, sudoku board) 
+{ 
+    if (num > ROW_SIZE) return -1; 
+
+    loc = place_next(loc, &board); 
+
+    if (loc == -1) { 
+        print_solution(&board); exit(0);
+        return -1; 
+    } 
+
+    if (row_check(loc, num, &board) && column_check(loc, num, &board) && square_check(loc, num, &board)) { 
+        board.array[loc] = num; 
+        sudo(loc+1, 1, board); 
+        board.array[loc] = 0; 
+        sudo(loc, num+1, board); 
+    } else { 
+        sudo(loc, num+1, board); 
+    } 
+} 
+
+main(int argc, char *argv[]) 
+{ 
+    sudo(0, 1, original_board); 
+
+    if (!solution_found) printf("no solution found\n"); 
+} 

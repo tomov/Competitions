@@ -1,0 +1,1983 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<BASE HREF="http://www.mpi-sb.mpg.de/~rbeier/publications/esa2004.ps"><table border=1 width=100%><tr><td><table border=1 bgcolor=#ffffff cellpadding=10 cellspacing=0 width=100% color=#ffffff><tr><td><font face=arial,sans-serif color=black size=-1>Това е текстовата версия на файла <A HREF="http://www.mpi-sb.mpg.de/~rbeier/publications/esa2004.ps"><font color=blue>http://www.mpi-sb.mpg.de/~rbeier/publications/esa2004.ps</font></a>. <br><b><font color=#0039b6>G</font> <font color=#c41200>o</font> <font color=#f3c518>o</font> <font color=#0039b6>g</font> <font color=#30a72f>l</font> <font color=#c41200>e</font></b> автоматично създава текстови версии на документите, докато индексираме мрежата.<br>За връзка към тази страница или добавянето и в отметките, използвайте следния url: <code>http://www.google.com/search?q=cache:VnZlNhfZqm0J:www.mpi-sb.mpg.de/~rbeier/publications/esa2004.ps+%22horowitz-sahni+decomposition%22&amp;hl=bg&amp;ct=clnk&amp;cd=1&amp;client=opera</code></font><br><br><center><font size=-2><i>Google не е свързан с авторите на тази страница и не е отговорен за материалите в нея.</i></font></center></td></tr>
+<tr><td>
+<table border=0 cellpadding=0 cellspacing=0><tr><td><font face=arial,sans-serif color=black size=-1>Маркирани бяха тези търсени термини:&nbsp;</font></td><td bgcolor=#ffff66><b><font face=arial,sans-serif color=black size=-1>horowitz&nbsp;</font></b></td><td bgcolor=#ffff66><b><font face=arial,sans-serif color=black size=-1>sahni&nbsp;</font></b></td><td bgcolor=#ffff66><b><font face=arial,sans-serif color=black size=-1>decomposition&nbsp;</font></b></td></tr></table>
+</td></tr></table></td></tr></table>
+<hr>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Producer" content="GNU Ghostscript 7.07">
+<meta name="Creator" content="dvips(k) 5.92b Copyright 2002 Radical Eye Software">
+<title>An Experimental Study of Random Knapsack Problems</title>
+</head><body  bgcolor=#ffffff vlink="blue" link="blue">
+<table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=1><b>Page 1</b></a></font></td></tr></table><font size=3 face="Times"><span style="font-size:19px;font-family:Times">
+<div style="position:absolute;top:268;left:250"><nobr><b>An Experimental Study of Random Knapsack</b></nobr></div>
+<div style="position:absolute;top:295;left:414"><nobr><b>Problems</b></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:354;left:354"><nobr>Rene Beier</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:352;left:420"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:354;left:430"><nobr>and Berthold Vocking</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:352;left:564"><nobr>2</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:8px;font-family:Times">
+<div style="position:absolute;top:385;left:296"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:387;left:309"><nobr>Max-Planck-Institut fur Informatik, Saarbrucken, Germany</nobr></div>
+<div style="position:absolute;top:407;left:391"><nobr>rbeier@mpi-sb.mpg.de</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:8px;font-family:Times">
+<div style="position:absolute;top:418;left:301"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:420;left:314"><nobr>Fachbereich Informatik, Universitat Dortmund, Germany</nobr></div>
+<div style="position:absolute;top:440;left:352"><nobr>voecking@ls2.cs.uni-dortmund.de</nobr></div>
+<div style="position:absolute;top:499;left:245"><nobr><b>Abstract. </b>The size of the Pareto curve for the bicriteria version of the knapsack</nobr></div>
+<div style="position:absolute;top:516;left:245"><nobr>problem is polynomial on average. This has been shown for various random input</nobr></div>
+<div style="position:absolute;top:533;left:245"><nobr>distributions. We experimentally investigate the number of Pareto optimal knap-</nobr></div>
+<div style="position:absolute;top:549;left:245"><nobr>sack fillings. Our experiments suggests that the theoretically proven upper bound</nobr></div>
+<div style="position:absolute;top:566;left:245"><nobr>of <i>O</i>(<i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:8px;font-family:Times">
+<div style="position:absolute;top:564;left:281"><nobr>3</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:568;left:287"><nobr>) for uniform instances and <i>O</i>(φ<i>µn</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:8px;font-family:Times">
+<div style="position:absolute;top:564;left:472"><nobr>4</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:568;left:478"><nobr>) for general probability distributions</nobr></div>
+<div style="position:absolute;top:582;left:245"><nobr>is not tight. Instead we conjecture an upper bound of <i>O</i>(φ<i>µn</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:8px;font-family:Times">
+<div style="position:absolute;top:580;left:570"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:585;left:576"><nobr>) matching a lower</nobr></div>
+<div style="position:absolute;top:599;left:245"><nobr>bound for adversarial weights.</nobr></div>
+<div style="position:absolute;top:615;left:245"><nobr>In the second part we study advanced algorithmic techniques for the knapsack</nobr></div>
+<div style="position:absolute;top:632;left:245"><nobr>problem. We combine several ideas that have been used in theoretical studies</nobr></div>
+<div style="position:absolute;top:648;left:245"><nobr>to bound the average-case complexity of the knapsack problem. The concepts</nobr></div>
+<div style="position:absolute;top:665;left:245"><nobr>used are simple and have been known since at least 20 years, but apparently have</nobr></div>
+<div style="position:absolute;top:681;left:245"><nobr>not been used together. The result is a very competitive code that outperforms</nobr></div>
+<div style="position:absolute;top:698;left:245"><nobr>the best known implementation <i>Combo </i>by orders of magnitude also for harder</nobr></div>
+<div style="position:absolute;top:714;left:245"><nobr>random knapsack instances.</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:15px;font-family:Times">
+<div style="position:absolute;top:761;left:202"><nobr><b>1 Introduction</b></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:802;left:202"><nobr>Given <i>n </i>items with positive weights <i>w</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:808;left:437"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:805;left:444"><nobr>,...,<i>w</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:808;left:483"><nobr><i>n</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:802;left:494"><nobr>and profits <i>p</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:808;left:572"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:805;left:578"><nobr>,..., <i>p</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:808;left:616"><nobr><i>n</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:802;left:627"><nobr>and a knapsack</nobr></div>
+<div style="position:absolute;top:820;left:202"><nobr>capacity <i>c</i>, the knapsack problem asks for a subset <i>S </i>⊆ [<i>n</i>] := {1,2,...,<i>n</i>} such that</nobr></div>
+<div style="position:absolute;top:838;left:202"><nobr>∑</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:845;left:213"><nobr><i>i</i>∈<i>S</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:838;left:231"><nobr><i>w</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:844;left:241"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:841;left:249"><nobr>≤ <i>c </i>and ∑</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:845;left:315"><nobr><i>i</i>∈<i>S</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:838;left:334"><nobr><i>p</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:844;left:342"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:838;left:351"><nobr>is maximized. Starting with the pioneering work of Dantzig</nobr></div>
+<div style="position:absolute;top:856;left:202"><nobr>[4], the problem has been studied extensively in practice (e.g. [13,14,17]) as well as in</nobr></div>
+<div style="position:absolute;top:874;left:202"><nobr>theory (e.g. [12,9,5,2,3]). For a comprehensive treatment we refer to the recent mono-</nobr></div>
+<div style="position:absolute;top:892;left:202"><nobr>graph by Kellerer, Pferschy and Pisinger [11] which is entirely devoted to the knapsack</nobr></div>
+<div style="position:absolute;top:910;left:202"><nobr>problem and its variations. Despite the NP-hardness of the problem [8], several large</nobr></div>
+<div style="position:absolute;top:928;left:202"><nobr>scale instances can be solved to optimality very efficiently. In particular, randomly gen-</nobr></div>
+<div style="position:absolute;top:946;left:202"><nobr>erated instances seem to be quite easy to solve. As most exact algorithms rely on an</nobr></div>
+<div style="position:absolute;top:963;left:202"><nobr>partial enumeration of knapsack fillings, pruning the search space is an important issue</nobr></div>
+<div style="position:absolute;top:981;left:202"><nobr>for efficiency. A standard approach is the domination concept [18]. Consider the bicrite-</nobr></div>
+<div style="position:absolute;top:999;left:202"><nobr>ria version of the knapsack problem. Instead of a strict bound on the weight of knapsack</nobr></div>
+<div style="position:absolute;top:1017;left:202"><nobr>fillings, assume that the two objectives (weight and profit) are to be optimized simulta-</nobr></div>
+<div style="position:absolute;top:1035;left:202"><nobr>neously, i.e., we aim at minimizing weight and maximizing profit. The set of solutions</nobr></div>
+<div style="position:absolute;top:1053;left:202"><nobr>is then</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1053;left:245"><nobr><i>S</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1056;left:258"><nobr>= 2</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1053;left:280"><nobr>[<i>n</i>]</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1053;left:293"><nobr>.</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1082;left:216"><nobr>This work was supported in part by DFG grant Vo889/1-1.</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:1363;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=2><b>Page 2</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1425;left:202"><nobr>2</nobr></div>
+<div style="position:absolute;top:1425;left:252"><nobr>Rene Beier and Berthold Vocking</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1463;left:202"><nobr><i>Pareto optimal solutions </i>A solution dominates another solution if it is better or equally</nobr></div>
+<div style="position:absolute;top:1481;left:202"><nobr>good in all objectives and strictly better in at least one objective. A solution <i>S </i>is called</nobr></div>
+<div style="position:absolute;top:1499;left:202"><nobr><i>Pareto optimal </i>or <i>undominated</i>, if there is no other solution that dominates <i>S</i>. Let</nobr></div>
+<div style="position:absolute;top:1517;left:202"><nobr><i>w</i>(<i>S</i>) = ∑</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1524;left:260"><nobr><i>i</i>∈<i>S</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1517;left:279"><nobr><i>w</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1523;left:289"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1517;left:297"><nobr>and <i>p</i>(<i>S</i>) = ∑</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1524;left:379"><nobr><i>i</i>∈<i>S</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1517;left:399"><nobr><i>p</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1523;left:407"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1517;left:414"><nobr>denote the weight and profit of solution <i>S </i>∈</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1517;left:680"><nobr><i>S</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1517;left:690"><nobr>. The</nobr></div>
+<div style="position:absolute;top:1535;left:202"><nobr>set of pairs {(<i>w</i>(<i>S</i>), <i>p</i>(<i>S</i>)) | <i>S </i>∈</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1535;left:398"><nobr><i>S</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1535;left:409"><nobr>is Pareto optimal} is called <i>Pareto points </i>or <i>Pareto</i></nobr></div>
+<div style="position:absolute;top:1553;left:202"><nobr><i>curve </i>of</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1553;left:255"><nobr><i>S</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1553;left:264"><nobr>. These definitions translate to the more general framework of multiobjective</nobr></div>
+<div style="position:absolute;top:1571;left:202"><nobr>combinatorial optimization [6], where the notion of Pareto optimality plays an crucial</nobr></div>
+<div style="position:absolute;top:1589;left:202"><nobr>roll. In particular, the problem of enumerating all Pareto optimal solutions is of ma-</nobr></div>
+<div style="position:absolute;top:1606;left:202"><nobr>jor interest and has led to a long list of publications, compiled in [7]. For the knapsack</nobr></div>
+<div style="position:absolute;top:1624;left:202"><nobr>problem, however, enumerating Pareto optimal solutions is easy, due to the simple com-</nobr></div>
+<div style="position:absolute;top:1642;left:202"><nobr>binatorial structure of the problem.</nobr></div>
+<div style="position:absolute;top:1662;left:225"><nobr>Observe that enumerating all Pareto optimal knapsack fillings essentially solves the</nobr></div>
+<div style="position:absolute;top:1680;left:202"><nobr>knapsack problem as the most profitable solution that satisfies the capacity bound <i>c </i>is an</nobr></div>
+<div style="position:absolute;top:1698;left:202"><nobr>optimal solution. The reason is that every feasible dominated solution cannot be better</nobr></div>
+<div style="position:absolute;top:1716;left:202"><nobr>than the solution it is dominated by, which, by definition, is also feasible. Notice that</nobr></div>
+<div style="position:absolute;top:1734;left:202"><nobr>the number of Pareto points and Pareto optimal solutions can differ heavily since many</nobr></div>
+<div style="position:absolute;top:1752;left:202"><nobr>Pareto optimal solutions can be mapped to the same Pareto point. We will sometimes</nobr></div>
+<div style="position:absolute;top:1770;left:202"><nobr>blur this distinction for the sake of a short presentation.</nobr></div>
+<div style="position:absolute;top:1814;left:202"><nobr><i>The Nemhauser/Ullmann algorithm </i>In 1969, Nemhauser and Ullmann [16] introduce</nobr></div>
+<div style="position:absolute;top:1832;left:202"><nobr>the following elegant algorithm that computes a list of all Pareto points in an iterative</nobr></div>
+<div style="position:absolute;top:1850;left:202"><nobr>manner. In the literature (e.g. [11]) the algorithm is sometimes referred as “Dynamic</nobr></div>
+<div style="position:absolute;top:1868;left:202"><nobr>programming with lists”. For <i>i </i>∈ [<i>n</i>], let</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1868;left:443"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1874;left:453"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1868;left:460"><nobr>be the list of all Pareto points over the solu-</nobr></div>
+<div style="position:absolute;top:1886;left:202"><nobr>tion set</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1886;left:249"><nobr><i>S</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1891;left:257"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1888;left:264"><nobr>= 2</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1886;left:286"><nobr>[<i>i</i>]</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1886;left:296"><nobr>, i.e.,</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1886;left:329"><nobr><i>S</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1891;left:337"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1886;left:344"><nobr>contains all subsets of the items 1,...,<i>i</i>. Recall that each Pareto</nobr></div>
+<div style="position:absolute;top:1904;left:202"><nobr>point is a (<i>weight, profit</i>) pair. The points in</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1904;left:462"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1909;left:472"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1904;left:480"><nobr>are assumed to be listed in increasing or-</nobr></div>
+<div style="position:absolute;top:1921;left:202"><nobr>der of their weights. Clearly,</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1922;left:373"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1927;left:383"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1924;left:392"><nobr>= (0,0),(<i>w</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1927;left:465"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1924;left:472"><nobr>, <i>p</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1927;left:486"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1924;left:492"><nobr>) . The list</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1922;left:558"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1927;left:568"><nobr><i>i</i>+1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1921;left:589"><nobr>can be computed from</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1940;left:202"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1945;left:212"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1939;left:219"><nobr>as follows: Create a new ordered list</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1940;left:439"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1947;left:449"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1939;left:458"><nobr>by duplicating</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1940;left:547"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1945;left:557"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1939;left:564"><nobr>and adding (<i>w</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1945;left:649"><nobr><i>i</i>+1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1942;left:668"><nobr>, <i>p</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1945;left:682"><nobr><i>i</i>+1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1942;left:700"><nobr>) to</nobr></div>
+<div style="position:absolute;top:1957;left:202"><nobr>each point. Now we merge the two lists into</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1958;left:471"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1963;left:481"><nobr><i>i</i>+1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1957;left:503"><nobr>obeying the weight order of subsets.</nobr></div>
+<div style="position:absolute;top:1975;left:202"><nobr>Finally, those solutions are removed from the list that are dominated by other solutions</nobr></div>
+<div style="position:absolute;top:1993;left:202"><nobr>in the list. The list</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1994;left:319"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1999;left:329"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1993;left:337"><nobr>can be calculated from the list</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:1994;left:526"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:1999;left:536"><nobr><i>i</i>−1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1993;left:558"><nobr>in time that is linear in the</nobr></div>
+<div style="position:absolute;top:2011;left:202"><nobr>length of</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:2012;left:260"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2017;left:270"><nobr><i>i</i>−1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2011;left:288"><nobr>. Define <i>q</i>(<i>i</i>) = |</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:2012;left:386"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2017;left:396"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2014;left:400"><nobr>|. Thus, the Nemhauser/Ullmann algorithm computes</nobr></div>
+<div style="position:absolute;top:2029;left:202"><nobr>the Pareto curve in time <i>O</i>(∑</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2027;left:375"><nobr><i>n</i></nobr></div>
+<div style="position:absolute;top:2037;left:375"><nobr><i>i</i>=1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2029;left:395"><nobr><i>q</i>(<i>i</i>−1)).</nobr></div>
+<div style="position:absolute;top:2049;left:225"><nobr>In orderto extract the knapsack fillings correspondingto the computedPareto points,</nobr></div>
+<div style="position:absolute;top:2067;left:202"><nobr>we maintain a bit for each Pareto point in</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:2067;left:445"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2072;left:455"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2067;left:462"><nobr>indicating whether or not item <i>i </i>is contained</nobr></div>
+<div style="position:absolute;top:2085;left:202"><nobr>in the corresponding knapsack filling. The knapsack filling can then reconstructed re-</nobr></div>
+<div style="position:absolute;top:2103;left:202"><nobr>cursively using the standard technique from dynamic programming (see e.g. [11]). In a</nobr></div>
+<div style="position:absolute;top:2121;left:202"><nobr>recent theoretical study, the average number of Pareto points for the knapsack problem</nobr></div>
+<div style="position:absolute;top:2138;left:202"><nobr>has been proved to be polynomial under various random input distributions.</nobr></div>
+<div style="position:absolute;top:2178;left:202"><nobr><b>Theorem 1. </b><i>([2]) Suppose the weights are arbitrary positive numbers. Let q denote</i></nobr></div>
+<div style="position:absolute;top:2196;left:202"><nobr><i>the number of Pareto points over all n items and let T denote the running time of the</i></nobr></div>
+<div style="position:absolute;top:2214;left:202"><nobr><i>Nemhauser/Ullmann algorithm.</i></nobr></div>
+<div style="position:absolute;top:2250;left:213"><nobr><b>– </b><i>If profits are chosen according to the uniform distribution over </i>[0,1] <i>then E</i>[<i>q</i>] =</nobr></div>
+<div style="position:absolute;top:2269;left:228"><nobr><i>O</i>(<i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2267;left:252"><nobr>3</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2271;left:258"><nobr>) <i>and E</i>[<i>T</i>] = <i>O</i>(<i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2267;left:365"><nobr>4</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2271;left:371"><nobr>)<i>.</i></nobr></div>
+</span></font>
+
+<div style="position:absolute;top:2551;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=3><b>Page 3</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:2613;left:370"><nobr>An Experimental Study of Random Knapsack Problems</nobr></div>
+<div style="position:absolute;top:2613;left:714"><nobr>3</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2650;left:213"><nobr><b>– </b><i>For every i </i>∈ [<i>n</i>]<i>, let profit p</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2657;left:394"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2651;left:402"><nobr><i>be a non-negative random variable with density func-</i></nobr></div>
+<div style="position:absolute;top:2669;left:228"><nobr><i>tion f</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2675;left:261"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2669;left:267"><nobr>:</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:4px;font-family:Times">
+<div style="position:absolute;top:2677;left:275"><nobr>R</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2677;left:286"><nobr>≥0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2672;left:304"><nobr>→</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:4px;font-family:Times">
+<div style="position:absolute;top:2677;left:322"><nobr>R</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2677;left:334"><nobr>≥0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2669;left:349"><nobr><i>. Suppose µ </i>= max</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2676;left:459"><nobr><i>i</i>∈[<i>n</i>]</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2672;left:484"><nobr>(<b>E</b>[<i>p</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2675;left:514"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2672;left:518"><nobr>]) <i>and </i>φ = max</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2676;left:607"><nobr><i>i</i>∈[<i>n</i>]</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2672;left:632"><nobr>(sup</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2676;left:658"><nobr><i>x</i>∈</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:4px;font-family:Times">
+<div style="position:absolute;top:2681;left:671"><nobr>R</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2669;left:685"><nobr><i>f</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2675;left:689"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2672;left:693"><nobr>(<i>x</i>))<i>.</i></nobr></div>
+<div style="position:absolute;top:2689;left:228"><nobr><i>Then </i><b>E</b>[<i>q</i>] = <i>O</i>(φ<i>µn</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2688;left:346"><nobr>4</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2692;left:352"><nobr>) <i>and </i><b>E</b>[<i>q</i>] = <i>O</i>(φ<i>µn</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2688;left:473"><nobr>5</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2692;left:479"><nobr>)<i>.</i></nobr></div>
+<div style="position:absolute;top:2731;left:225"><nobr>In fact, the proof technique can easily be adapted to show a more general theorem</nobr></div>
+<div style="position:absolute;top:2749;left:202"><nobr>[1] which bounds the expected number of Pareto points over an arbitrary collection of</nobr></div>
+<div style="position:absolute;top:2767;left:202"><nobr>subsets of <i>n </i>elements (items) and which holds for any optimization direction for the</nobr></div>
+<div style="position:absolute;top:2785;left:202"><nobr>two objectives. This way, it applies to general bicriteria problems with linear objective</nobr></div>
+<div style="position:absolute;top:2803;left:202"><nobr>functions for which the solution set of an instance can be described by a collection of</nobr></div>
+<div style="position:absolute;top:2821;left:202"><nobr>subsets over a ground set. As an example, consider the bicriteria shortest path problem.</nobr></div>
+<div style="position:absolute;top:2839;left:202"><nobr>The ground set is the set of edges and solutions are elementary <i>s</i>,<i>t</i>-paths, hence, subsets</nobr></div>
+<div style="position:absolute;top:2857;left:202"><nobr>of edges. This generalized theorem has been applied to a simple algorithm enumerating</nobr></div>
+<div style="position:absolute;top:2875;left:202"><nobr>all Pareto optimal <i>s</i>,<i>t</i>-paths and, thus, led to the first average-case analysis [1] for the</nobr></div>
+<div style="position:absolute;top:2893;left:202"><nobr>constrained shortest path problem [15]. We believe that the generalized version of the</nobr></div>
+<div style="position:absolute;top:2911;left:202"><nobr>theorem hold much potential of improving and simplifying probabilistic analyses for</nobr></div>
+<div style="position:absolute;top:2929;left:202"><nobr>other combinatorial bicriteria problems and their variations.</nobr></div>
+<div style="position:absolute;top:2949;left:225"><nobr>An interesting question concerns the tightness of the upper bounds. There exists a</nobr></div>
+<div style="position:absolute;top:2967;left:202"><nobr>lower bound of <i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:2965;left:304"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2970;left:310"><nobr>/4 for non-decreasing density functions for knapsack instances using</nobr></div>
+<div style="position:absolute;top:2985;left:202"><nobr>exponentially growing weights [2]. This leaves a gap of order <i>n </i>for the uniform distri-</nobr></div>
+<div style="position:absolute;top:3003;left:202"><nobr>bution and order <i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:3001;left:312"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:3003;left:322"><nobr>for general distributions. In the first part of this experimental study</nobr></div>
+<div style="position:absolute;top:3021;left:202"><nobr>we investigate the number of Pareto points under various random input distributions.</nobr></div>
+<div style="position:absolute;top:3039;left:202"><nobr>Even though the experiments are limited to knapsack instances and the generality of the</nobr></div>
+<div style="position:absolute;top:3057;left:202"><nobr>upper bounds (adversarial weights, arbitrary probability distributions, different distri-</nobr></div>
+<div style="position:absolute;top:3075;left:202"><nobr>butions for different items) hardly allows a qualitative confirmation of the bounds, we</nobr></div>
+<div style="position:absolute;top:3093;left:202"><nobr>found some evidence that the lower bound is tight, which in turn opens the chance of</nobr></div>
+<div style="position:absolute;top:3111;left:202"><nobr>improving the upper bounds.</nobr></div>
+<div style="position:absolute;top:3131;left:225"><nobr>In the second part we study the influence of various algorithmic concepts on the</nobr></div>
+<div style="position:absolute;top:3149;left:202"><nobr>efficiency of knapsack algorithms. A combination of all considered ideas led to a very</nobr></div>
+<div style="position:absolute;top:3167;left:202"><nobr>competitive code. Interestingly, all concepts used are long known (at least since 1984)</nobr></div>
+<div style="position:absolute;top:3185;left:202"><nobr>but apparently have not been used together in an implementation.</nobr></div>
+<div style="position:absolute;top:3206;left:225"><nobr>The most influential algorithmic idea is the core concept. Core algorithms make use</nobr></div>
+<div style="position:absolute;top:3224;left:202"><nobr>of the fact that the optimal integral solution is usually close to the optimal fractional</nobr></div>
+<div style="position:absolute;top:3242;left:202"><nobr>one in the sense that only few items need to be exchanged in order to transform one into</nobr></div>
+<div style="position:absolute;top:3259;left:202"><nobr>the other. Obtaining an optimal fractional solution is computationally very inexpensive.</nobr></div>
+<div style="position:absolute;top:3277;left:202"><nobr>Based on this solution, a subset of items, called the core, is selected. The core problem</nobr></div>
+<div style="position:absolute;top:3295;left:202"><nobr>is to find an optimal solution under the restriction that items outside the core are fixed</nobr></div>
+<div style="position:absolute;top:3313;left:202"><nobr>to the value prescribed by the optimal fractional solution. The hope is that a small</nobr></div>
+<div style="position:absolute;top:3331;left:202"><nobr>core is sufficient to obtain an optimal solution for the unrestricted problem. The core</nobr></div>
+<div style="position:absolute;top:3349;left:202"><nobr>problem itself is again a knapsack problem with a different capacity bound and a subset</nobr></div>
+<div style="position:absolute;top:3367;left:202"><nobr>of the original items. Intuitively, the core should contain those items for which it is</nobr></div>
+<div style="position:absolute;top:3385;left:202"><nobr>hard to decide whether or not they are part of an optimal knapsack filling. The core</nobr></div>
+<div style="position:absolute;top:3403;left:202"><nobr>concept leaves much space for variations and heuristics, most notably, the selection of</nobr></div>
+<div style="position:absolute;top:3421;left:202"><nobr>the core items. A common approach selects items whose profit-to-weight ratio is closest</nobr></div>
+<div style="position:absolute;top:3439;left:202"><nobr>to the profit-to-weight ratio of the break item [11]. We, however, follow the definition of</nobr></div>
+<div style="position:absolute;top:3457;left:202"><nobr>Goldberg and Marchetti-Spaccamela [9], who introduce the notion of the loss of items.</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:3739;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=4><b>Page 4</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:3801;left:202"><nobr>4</nobr></div>
+<div style="position:absolute;top:3801;left:252"><nobr>Rene Beier and Berthold Vocking</nobr></div>
+<div style="position:absolute;top:3854;left:202"><nobr><b>Fig.1. </b>Items correspond to points in the</nobr></div>
+<div style="position:absolute;top:3871;left:202"><nobr><i>xy</i>-plane. The ray starting from the origin</nobr></div>
+<div style="position:absolute;top:3887;left:202"><nobr>through the break item is called Dantzig ray.</nobr></div>
+<div style="position:absolute;top:3904;left:202"><nobr>Items above the Dantzig ray are included in</nobr></div>
+<div style="position:absolute;top:3920;left:202"><nobr>the break solution, items below the Dantzig</nobr></div>
+<div style="position:absolute;top:3936;left:202"><nobr>ray are excluded. The loss of an item is the</nobr></div>
+<div style="position:absolute;top:3953;left:202"><nobr>vertical distance to the Dantzig ray. The core</nobr></div>
+<div style="position:absolute;top:3969;left:202"><nobr>region (shaded area) is a stripe around the</nobr></div>
+<div style="position:absolute;top:3986;left:202"><nobr>ray. It grows dynamically until the vertical</nobr></div>
+<div style="position:absolute;top:4002;left:202"><nobr>thickness has reached the size of the integral-</nobr></div>
+<div style="position:absolute;top:4019;left:202"><nobr>ity gap Γ. Items outside the core are fixed to</nobr></div>
+<div style="position:absolute;top:4035;left:202"><nobr>the value prescribed by the break solution.</nobr></div>
+<div style="position:absolute;top:3835;left:480"><nobr>1</nobr></div>
+<div style="position:absolute;top:4039;left:683"><nobr>1</nobr></div>
+<div style="position:absolute;top:4039;left:563"><nobr>weight</nobr></div>
+<div style="position:absolute;top:4039;left:482"><nobr>0</nobr></div>
+<div style="position:absolute;top:3945;left:480"><nobr>profit</nobr></div>
+<div style="position:absolute;top:3967;left:617"><nobr>loss(j)</nobr></div>
+<div style="position:absolute;top:3930;left:531"><nobr>loss(i)</nobr></div>
+<div style="position:absolute;top:4006;left:534"><nobr>Γ</nobr></div>
+<div style="position:absolute;top:3976;left:534"><nobr>Γ</nobr></div>
+<div style="position:absolute;top:3867;left:558"><nobr>Break Item</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:3942;left:627"><nobr>Dantzig Ray</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:3891;left:580"><nobr>i</nobr></div>
+<div style="position:absolute;top:3999;left:600"><nobr>j</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4088;left:225"><nobr>Let us first describe the greedy algorithm for computing an optimal fractional so-</nobr></div>
+<div style="position:absolute;top:4106;left:202"><nobr>lution. Starting with the empty knapsack, we add items one by one in order of non-</nobr></div>
+<div style="position:absolute;top:4124;left:202"><nobr>increasing profit-to-weight ratio. The algorithm stops when it encounters the first item</nobr></div>
+<div style="position:absolute;top:4142;left:202"><nobr>that would exceed the capacity bound <i>c</i>. This item is called <i>break item </i>and the com-</nobr></div>
+<div style="position:absolute;top:4160;left:202"><nobr>puted knapsack filling, not including the <i>break item</i>, is called the <i>break solution</i>. Fi-</nobr></div>
+<div style="position:absolute;top:4178;left:202"><nobr>nally, we fill the residual capacity with an appropriate fraction <i>f </i>&lt; 1 of the break</nobr></div>
+<div style="position:absolute;top:4196;left:202"><nobr>item. Let</nobr></div>
+<div style="position:absolute;top:4193;left:266"><nobr>¯</nobr></div>
+<div style="position:absolute;top:4196;left:262"><nobr><i>X </i>= (¯<i>x</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4201;left:305"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4198;left:311"><nobr>,..., ¯<i>x</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4201;left:347"><nobr><i>n</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4198;left:353"><nobr>) be the binary solution vector of this solution (or any other</nobr></div>
+<div style="position:absolute;top:4214;left:202"><nobr>optimal fractional solution). For any feasible integer solution <i>X </i>= (<i>x</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4219;left:622"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4216;left:628"><nobr>,...,<i>x</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4219;left:664"><nobr><i>n</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4216;left:670"><nobr>), define</nobr></div>
+<div style="position:absolute;top:4232;left:202"><nobr><i>ch</i>(<i>X</i>) = {<i>i </i>∈ [<i>n</i>] : ¯<i>x</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4237;left:316"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4234;left:322"><nobr>= <i>x</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4237;left:344"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4234;left:348"><nobr>}, i.e., <i>ch</i>(<i>X</i>) is the set of items on which</nobr></div>
+<div style="position:absolute;top:4229;left:595"><nobr>¯</nobr></div>
+<div style="position:absolute;top:4232;left:591"><nobr><i>X </i>and <i>X </i>do not agree.</nobr></div>
+<div style="position:absolute;top:4249;left:202"><nobr>When removing an item from</nobr></div>
+<div style="position:absolute;top:4247;left:389"><nobr>¯</nobr></div>
+<div style="position:absolute;top:4249;left:385"><nobr><i>X</i>, the freed capacity can be used to include other items</nobr></div>
+<div style="position:absolute;top:4267;left:202"><nobr>which have profit-to-weight ratio at most that of the break item. A different profit-to-</nobr></div>
+<div style="position:absolute;top:4285;left:202"><nobr>weight ratio of the exchanged items causes a loss in profit that can only be compensated</nobr></div>
+<div style="position:absolute;top:4303;left:202"><nobr>by better utilizing the knapsack capacity. This loss can be quantified as follows:</nobr></div>
+<div style="position:absolute;top:4329;left:202"><nobr><b>Definition 1. </b><i>Let r denote the profit-to-weight ratio of the break item. Define the loss</i></nobr></div>
+<div style="position:absolute;top:4347;left:202"><nobr><i>of item i to be loss</i>(<i>i</i>) = |<i>p</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4353;left:358"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4350;left:364"><nobr>−<i>rw</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4353;left:394"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4350;left:398"><nobr>|<i>.</i></nobr></div>
+<div style="position:absolute;top:4374;left:202"><nobr>Goldberg and Marchetti-Spaccamela [9] proved that the difference in profit between</nobr></div>
+<div style="position:absolute;top:4392;left:202"><nobr>any feasible integer solution <i>X </i>= (<i>x</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4398;left:417"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4395;left:423"><nobr>,...,<i>x</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4398;left:459"><nobr><i>n</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4395;left:465"><nobr>) and the optimal fractional solution</nobr></div>
+<div style="position:absolute;top:4389;left:689"><nobr>¯</nobr></div>
+<div style="position:absolute;top:4392;left:686"><nobr><i>X </i>can</nobr></div>
+<div style="position:absolute;top:4410;left:202"><nobr>be expressed as</nobr></div>
+<div style="position:absolute;top:4453;left:314"><nobr><i>p</i>(</nobr></div>
+<div style="position:absolute;top:4450;left:331"><nobr>¯</nobr></div>
+<div style="position:absolute;top:4453;left:327"><nobr><i>X</i>)− <i>p</i>(<i>X</i>) = <i>r c</i>−</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4441;left:456"><nobr><i>n</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:19px;font-family:Times">
+<div style="position:absolute;top:4448;left:451"><nobr>∑</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4472;left:451"><nobr><i>i</i>=1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4453;left:469"><nobr><i>x</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4459;left:476"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4453;left:480"><nobr><i>w</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4459;left:489"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4456;left:507"><nobr>+</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:19px;font-family:Times">
+<div style="position:absolute;top:4448;left:532"><nobr>∑</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4473;left:521"><nobr><i>i</i>∈<i>ch</i>(<i>X</i>)</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4453;left:560"><nobr>loss(<i>i</i>) .</nobr></div>
+<div style="position:absolute;top:4498;left:202"><nobr>The first term on the right hand side corresponds to an unused capacity of the inte-</nobr></div>
+<div style="position:absolute;top:4516;left:202"><nobr>ger solution <i>X </i>whereas the second term is due to the accumulated loss of all items</nobr></div>
+<div style="position:absolute;top:4534;left:202"><nobr>in <i>ch</i>(<i>X</i>). Let <i>X</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4534;left:303"><nobr>∗</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4534;left:316"><nobr>denote an arbitrary optimal integral solution. The integrality gap</nobr></div>
+<div style="position:absolute;top:4550;left:202"><nobr>Γ = <i>p</i>(</nobr></div>
+<div style="position:absolute;top:4549;left:246"><nobr>¯</nobr></div>
+<div style="position:absolute;top:4552;left:243"><nobr><i>X</i>)− <i>p</i>(<i>X</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4552;left:299"><nobr>∗</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4554;left:305"><nobr>) gives an upper bound for the accumulated loss of all items in <i>ch</i>(<i>X</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4552;left:705"><nobr>∗</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4554;left:711"><nobr>),</nobr></div>
+<div style="position:absolute;top:4570;left:202"><nobr>and therefore, also for the loss of each individual item in <i>ch</i>(<i>X</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4570;left:574"><nobr>∗</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4572;left:580"><nobr>).</nobr></div>
+<div style="position:absolute;top:4597;left:202"><nobr><b>Fact 1 </b><i>For any optimal integer solution X</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4597;left:456"><nobr>∗</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4597;left:466"><nobr><i>it holds </i>∑</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4604;left:525"><nobr><i>i</i>∈<i>ch</i>(<i>X</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:6px;font-family:Times">
+<div style="position:absolute;top:4605;left:557"><nobr>∗</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4606;left:562"><nobr>)</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4597;left:569"><nobr><i>loss</i>(<i>i</i>) ≤ Γ<i>.</i></nobr></div>
+<div style="position:absolute;top:4627;left:202"><nobr>Thus, items with loss larger than Γ must agree in</nobr></div>
+<div style="position:absolute;top:4624;left:510"><nobr>¯</nobr></div>
+<div style="position:absolute;top:4627;left:506"><nobr><i>X </i>and <i>X</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:4627;left:558"><nobr>∗</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4627;left:564"><nobr>. Consequently, we define</nobr></div>
+<div style="position:absolute;top:4645;left:202"><nobr>the core to consist of all elements with loss at most Γ. Since we do not know Γ, we</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:4927;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=5><b>Page 5</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:4989;left:370"><nobr>An Experimental Study of Random Knapsack Problems</nobr></div>
+<div style="position:absolute;top:4989;left:714"><nobr>5</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5027;left:202"><nobr>use a dynamic core, adding items one by one in order of increasing loss and compute</nobr></div>
+<div style="position:absolute;top:5045;left:202"><nobr>a new optimal solution whenever we extend the core. We stop when the next item has</nobr></div>
+<div style="position:absolute;top:5063;left:202"><nobr>loss larger than the current integrality gap, that is, the gap in profit between</nobr></div>
+<div style="position:absolute;top:5060;left:665"><nobr>¯</nobr></div>
+<div style="position:absolute;top:5063;left:662"><nobr><i>X </i>and the</nobr></div>
+<div style="position:absolute;top:5081;left:202"><nobr>best integer solution found so far. Figure 1 illustrates the definitions of the core.</nobr></div>
+<div style="position:absolute;top:5114;left:202"><nobr><i>Loss filter </i>Goldberg and Marchetti-Spaccamela further exploit Fact 1. Observe that</nobr></div>
+<div style="position:absolute;top:5132;left:202"><nobr>solving the core problem is equivalent to finding the set <i>ch</i>(<i>X</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:5132;left:577"><nobr>∗</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5135;left:584"><nobr>) for some optimal so-</nobr></div>
+<div style="position:absolute;top:5150;left:202"><nobr>lution <i>X</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:5150;left:252"><nobr>∗</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5150;left:258"><nobr>. Let <i>I</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:5156;left:295"><nobr><i>B</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5150;left:307"><nobr>denote the set of core items included in the break solution. We solve</nobr></div>
+<div style="position:absolute;top:5168;left:202"><nobr>a core problem relative to the break solution, that is, including an item from <i>I</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:5174;left:674"><nobr><i>B</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5168;left:687"><nobr>into a</nobr></div>
+<div style="position:absolute;top:5186;left:202"><nobr>core solution corresponds to removing it from the break solution. Hence, in the core</nobr></div>
+<div style="position:absolute;top:5204;left:202"><nobr>problem, items in <i>I</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:5210;left:319"><nobr><i>B</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5204;left:331"><nobr>have negative weight and profit. The capacity of this core prob-</nobr></div>
+<div style="position:absolute;top:5222;left:202"><nobr>lem is <i>c</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:5227;left:250"><nobr><i>B</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5222;left:258"><nobr>, the residual capacity of the break solution. The loss of a core solution <i>X </i>is</nobr></div>
+<div style="position:absolute;top:5240;left:202"><nobr>loss(<i>X</i>) = ∑</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:5237;left:277"><nobr><i>n</i></nobr></div>
+<div style="position:absolute;top:5247;left:277"><nobr><i>i</i>=1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5240;left:297"><nobr>loss(<i>i</i>)<i>x</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:5245;left:343"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5240;left:346"><nobr>. According to Fact 1, solutions with loss larger than the inte-</nobr></div>
+<div style="position:absolute;top:5258;left:202"><nobr>grality gap (or any upper bound, e.g., provided by the best integer solution found so</nobr></div>
+<div style="position:absolute;top:5276;left:202"><nobr>far) can not be optimal and, furthermore, cannot be extended to an optimal solution by</nobr></div>
+<div style="position:absolute;top:5294;left:202"><nobr>adding more core items. These solutions are filtered out in the enumeration process.</nobr></div>
+<div style="position:absolute;top:5327;left:202"><nobr><i>Horowitz and Sahni decomposition </i>Horowitz and Sahni [10] present a variation of the</nobr></div>
+<div style="position:absolute;top:5345;left:202"><nobr>Nemhauser/Ullmann algorithm utilizing two lists of Pareto points. Assume we partition</nobr></div>
+<div style="position:absolute;top:5363;left:202"><nobr>the set of items into <i>I </i>and <i>I </i>. Let</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:5363;left:402"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5363;left:417"><nobr>and</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:5363;left:442"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5363;left:461"><nobr>denote the sorted lists of Pareto points over</nobr></div>
+<div style="position:absolute;top:5381;left:202"><nobr><i>I </i>and <i>I </i>, respectively. Each Pareto point over the complete item set <i>I </i>∪ <i>I </i>can be con-</nobr></div>
+<div style="position:absolute;top:5399;left:202"><nobr>structed by combining two Pareto points from</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:5399;left:479"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5399;left:494"><nobr>and</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:5399;left:519"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5399;left:538"><nobr>(or unifying the corresponding</nobr></div>
+<div style="position:absolute;top:5417;left:202"><nobr>subsets of items). Instead of checking all pairs (<i>p</i>,<i>q</i>) ∈</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:5417;left:543"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5419;left:557"><nobr>×</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:5417;left:571"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5417;left:586"><nobr>, it suffices to find for</nobr></div>
+<div style="position:absolute;top:5435;left:202"><nobr>each <i>p </i>∈</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:5435;left:259"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5435;left:274"><nobr>the most profitable <i>q </i>∈</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:5435;left:414"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5435;left:433"><nobr>such that the combination of <i>p </i>and <i>q </i>is still fea-</nobr></div>
+<div style="position:absolute;top:5453;left:202"><nobr>sible. Since the lists are sorted, the <i>p </i>∈</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:5453;left:440"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5453;left:455"><nobr>with the most profitable combination can be</nobr></div>
+<div style="position:absolute;top:5470;left:202"><nobr>found by a single parallel scan of the two lists in opposite directions.</nobr></div>
+<div style="position:absolute;top:5512;left:202"><nobr><b>1.1 Experimental setup</b></nobr></div>
+<div style="position:absolute;top:5540;left:202"><nobr>In order to avoid effects that are caused by the pseudopolynomial complexity of the</nobr></div>
+<div style="position:absolute;top:5558;left:202"><nobr>algorithms we used a large integer domain of [0,2</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:5556;left:513"><nobr>30</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5561;left:527"><nobr>− 1] for the weights and profits</nobr></div>
+<div style="position:absolute;top:5576;left:202"><nobr>of items. The implementation uses 64 bit integer arithmetic (c++ type <i>long long</i>). All</nobr></div>
+<div style="position:absolute;top:5594;left:202"><nobr>programs have been compiled under SunOS 5.9 using the GNU compiler g++, version</nobr></div>
+<div style="position:absolute;top:5612;left:202"><nobr>3.2.1 with option “-O4”. All experiments have been performed on a Sunfire</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:5610;left:655"><nobr>c</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5612;left:668"><nobr>15k with</nobr></div>
+<div style="position:absolute;top:5630;left:202"><nobr>176GB of main memory and 900MHz SparcIII+ CPUs (SPECint2000= 535 for one</nobr></div>
+<div style="position:absolute;top:5648;left:202"><nobr>processor, according to www.specbench.org).</nobr></div>
+<div style="position:absolute;top:5681;left:202"><nobr><i>Random input distributions </i>Following the definition in [11], <i>X </i>←</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:5681;left:612"><nobr><i>U</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5684;left:625"><nobr>[<i>l</i>,<i>r</i>] means that</nobr></div>
+<div style="position:absolute;top:5699;left:202"><nobr>the random variable <i>X </i>is chosen independently uniformly at random from the interval</nobr></div>
+<div style="position:absolute;top:5720;left:202"><nobr>[<i>l</i>,<i>r</i>]. We investigate the following input distributions:</nobr></div>
+<div style="position:absolute;top:5743;left:202"><nobr><b>Uniform instances: </b><i>w </i>←</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:5744;left:362"><nobr><i>U</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5746;left:376"><nobr>[0,1] and <i>p </i>←</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:5744;left:464"><nobr><i>U</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5746;left:477"><nobr>[0,1].</nobr></div>
+<div style="position:absolute;top:5760;left:202"><nobr>δ<b>-correlated instances: </b><i>w </i>←</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:5761;left:384"><nobr><i>U</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5764;left:397"><nobr>[0,1] and <i>p </i>← <i>w</i>+<i>r </i>with <i>r </i>←</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:5761;left:572"><nobr><i>U</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5764;left:585"><nobr>[−δ/2,δ/2]for a given</nobr></div>
+<div style="position:absolute;top:5779;left:228"><nobr>0 &lt; δ ≤ 1. Notice that δ-correlated instances are a parameterized version of <i>weakly</i></nobr></div>
+<div style="position:absolute;top:5797;left:228"><nobr><i>correlated instances </i>used in former studies (e.g. [11,13,17,14]). The latter corre-</nobr></div>
+<div style="position:absolute;top:5815;left:228"><nobr>spond to δ-correlated instances with δ = 1/10. The corresponding density function</nobr></div>
+<div style="position:absolute;top:5833;left:228"><nobr>of the profits is upper bounded by φ = 1/δ.</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:6115;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=6><b>Page 6</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:6177;left:202"><nobr>6</nobr></div>
+<div style="position:absolute;top:6177;left:252"><nobr>Rene Beier and Berthold Vocking</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:6318;left:298"><nobr>1</nobr></div>
+<div style="position:absolute;top:6318;left:213"><nobr>0</nobr></div>
+<div style="position:absolute;top:6226;left:207"><nobr>1</nobr></div>
+<div style="position:absolute;top:6318;left:438"><nobr>1</nobr></div>
+<div style="position:absolute;top:6226;left:347"><nobr>1</nobr></div>
+<div style="position:absolute;top:6315;left:341"><nobr>0</nobr></div>
+<div style="position:absolute;top:6294;left:338"><nobr>δ/2</nobr></div>
+<div style="position:absolute;top:6318;left:575"><nobr>1</nobr></div>
+<div style="position:absolute;top:6318;left:489"><nobr>0</nobr></div>
+<div style="position:absolute;top:6226;left:483"><nobr>1</nobr></div>
+<div style="position:absolute;top:6317;left:549"><nobr>1−ε</nobr></div>
+<div style="position:absolute;top:6317;left:714"><nobr>1</nobr></div>
+<div style="position:absolute;top:6317;left:629"><nobr>0</nobr></div>
+<div style="position:absolute;top:6226;left:623"><nobr>1</nobr></div>
+<div style="position:absolute;top:6245;left:612"><nobr>1−ε</nobr></div>
+<div style="position:absolute;top:6215;left:235"><nobr>Uniform</nobr></div>
+<div style="position:absolute;top:6215;left:500"><nobr>Similar weight</nobr></div>
+<div style="position:absolute;top:6215;left:643"><nobr>Similar profit</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:8px;font-family:Times">
+<div style="position:absolute;top:6318;left:244"><nobr>weight</nobr></div>
+<div style="position:absolute;top:6318;left:384"><nobr>weight</nobr></div>
+<div style="position:absolute;top:6318;left:512"><nobr>weight</nobr></div>
+<div style="position:absolute;top:6318;left:663"><nobr>weight</nobr></div>
+<div style="position:absolute;top:6276;left:210"><nobr>profit</nobr></div>
+<div style="position:absolute;top:6273;left:349"><nobr>profit</nobr></div>
+<div style="position:absolute;top:6276;left:486"><nobr>profit</nobr></div>
+<div style="position:absolute;top:6279;left:626"><nobr>profit</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:6215;left:369"><nobr>−correlated</nobr></div>
+<div style="position:absolute;top:6214;left:364"><nobr>δ</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:6349;left:202"><nobr><b>Fig.2. </b>Classes of test instances: Items are samples uniformly from the shaded area. To obtain</nobr></div>
+<div style="position:absolute;top:6366;left:202"><nobr>integers, we scale each number by <i>R </i>and round to the next integer.</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6432;left:202"><nobr><b>Instances with similar weight: </b><i>w</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:6439;left:411"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6436;left:418"><nobr>←</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:6433;left:436"><nobr><i>U</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6436;left:450"><nobr>[(1−ε),1] and <i>w</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:6439;left:552"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6436;left:559"><nobr>←</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:6433;left:577"><nobr><i>U</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6436;left:590"><nobr>[0,1].</nobr></div>
+<div style="position:absolute;top:6451;left:202"><nobr><b>Instances with similar profit: </b><i>w</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:6457;left:404"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6454;left:411"><nobr>←</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:6452;left:429"><nobr><i>U</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6454;left:443"><nobr>[0,1] and <i>w</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:6457;left:511"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6454;left:518"><nobr>←</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:6452;left:536"><nobr><i>U</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6454;left:550"><nobr>[(1−ε),1].</nobr></div>
+<div style="position:absolute;top:6483;left:202"><nobr>In order to obtain integer weights and profits that can be processed by our algorithm,</nobr></div>
+<div style="position:absolute;top:6501;left:202"><nobr>we scale all values by <i>R </i>and round to the next integer. In this study we used <i>R </i>= 2</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:6499;left:687"><nobr>30</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6503;left:700"><nobr>−1</nobr></div>
+<div style="position:absolute;top:6519;left:202"><nobr>for all experiments. These definitions are illustrated in Figure 2. Observe that for δ-</nobr></div>
+<div style="position:absolute;top:6537;left:202"><nobr>correlated instances some items can have negative profits. This affects a fraction δ/8</nobr></div>
+<div style="position:absolute;top:6555;left:202"><nobr>of all items on average. These items have no effect on the Pareto curve. Nevertheless</nobr></div>
+<div style="position:absolute;top:6572;left:202"><nobr>they are processed by the Nemhauser/Ullmann algorithm. The reason to include these</nobr></div>
+<div style="position:absolute;top:6590;left:202"><nobr>instances in our study is a theoretical analysis of a core algorithm [3] for this class of</nobr></div>
+<div style="position:absolute;top:6608;left:202"><nobr>instances. The capacity <i>c </i>of the knapsack is set to β · ∑</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:6606;left:546"><nobr><i>n</i></nobr></div>
+<div style="position:absolute;top:6616;left:546"><nobr><i>i</i>=1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6608;left:566"><nobr><i>w</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:6614;left:575"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6608;left:579"><nobr>, with parameter β &lt; 1</nobr></div>
+<div style="position:absolute;top:6626;left:202"><nobr>specified for each experiment. If not indicated otherwise, each data point represents the</nobr></div>
+<div style="position:absolute;top:6644;left:202"><nobr>average over <i>T </i>trials where <i>T </i>is a parameter specified for each experiment.</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:15px;font-family:Times">
+<div style="position:absolute;top:6691;left:202"><nobr><b>2 Number of Pareto points</b></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6733;left:202"><nobr>In the following, <i>q</i>(<i>n</i>) denotes the (average) number of Pareto points over <i>n </i>items com-</nobr></div>
+<div style="position:absolute;top:6751;left:202"><nobr>puted by the Nemhauser/Ullmann algorithm.</nobr></div>
+<div style="position:absolute;top:6770;left:225"><nobr>First we tested uniform instances (Figure 3a). We observe that the ratio <i>q</i>(<i>n</i>)/<i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:6768;left:701"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6770;left:711"><nobr>is</nobr></div>
+<div style="position:absolute;top:6788;left:202"><nobr>decreasing in <i>n </i>indicating that <i>q</i>(<i>n</i>) = <i>O</i>(<i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:6786;left:453"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6790;left:459"><nobr>). As the decrease might be caused by lower</nobr></div>
+<div style="position:absolute;top:6806;left:202"><nobr>order terms, the result could be tight. The next experiment for instances with similar</nobr></div>
+<div style="position:absolute;top:6823;left:202"><nobr>weight gives some evidence for the contrary. Notice that by choosing ε = 1, we obtain</nobr></div>
+<div style="position:absolute;top:6841;left:202"><nobr>uniform instances. Figure 3b shows the dependence of ε on average number of Pareto</nobr></div>
+<div style="position:absolute;top:6859;left:202"><nobr>points for instances with similar weight. When decreasing ε then <i>q</i>(<i>n</i>,ε) first increases</nobr></div>
+<div style="position:absolute;top:6877;left:202"><nobr>about linearly but stays constant when ε falls below some value that depends on <i>n</i>. At</nobr></div>
+<div style="position:absolute;top:6895;left:202"><nobr>this value, subsets of different cardinality are well separated in the Pareto curve, i.e., if</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:6913;left:202"><nobr><i>P</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:6919;left:211"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6913;left:218"><nobr>denotes the set of Pareto optimal solutions with cardinality <i>i </i>then all knapsack fillings</nobr></div>
+<div style="position:absolute;top:6931;left:202"><nobr>in</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:6931;left:218"><nobr><i>P</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:6937;left:227"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6931;left:235"><nobr>have less weight (and less profit) than any solution in</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:6931;left:562"><nobr><i>P</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:6937;left:571"><nobr><i>i</i>+1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6931;left:589"><nobr>. For ε = 1/<i>n</i>, subsets</nobr></div>
+<div style="position:absolute;top:6949;left:202"><nobr>are obviously separated, but the effect occurs already for larger values of ε. A similar</nobr></div>
+<div style="position:absolute;top:6967;left:202"><nobr>separation of subsets was used in the proof for the lower bound of <i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:6965;left:634"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6969;left:640"><nobr>/4. The ratio</nobr></div>
+<div style="position:absolute;top:6985;left:202"><nobr><i>q</i>(<i>n</i>,ε)/<i>q</i>(<i>n</i>,1) apparently converges to <i>c</i>·log(<i>n</i>) for ε → 0 and some <i>c </i>∈</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:4px;font-family:Times">
+<div style="position:absolute;top:6993;left:647"><nobr>R</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:6993;left:659"><nobr>&gt;0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6985;left:674"><nobr>. In this</nobr></div>
+<div style="position:absolute;top:7003;left:202"><nobr>case, the separation would cause a logarithmic increase of <i>q</i>(<i>n</i>,ε) compared to uniform</nobr></div>
+<div style="position:absolute;top:7021;left:202"><nobr>instances. As our data suggests that <b>E</b>[<i>q</i>(<i>n</i>,ε)] = <i>O</i>(<i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:7019;left:513"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:7023;left:519"><nobr>) for instances with similar weight</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:7303;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=7><b>Page 7</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:7365;left:370"><nobr>An Experimental Study of Random Knapsack Problems</nobr></div>
+<div style="position:absolute;top:7365;left:714"><nobr>7</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:6px;font-family:Times">
+<div style="position:absolute;top:7564;left:219"><nobr>0.12</nobr></div>
+<div style="position:absolute;top:7549;left:219"><nobr>0.14</nobr></div>
+<div style="position:absolute;top:7534;left:219"><nobr>0.16</nobr></div>
+<div style="position:absolute;top:7519;left:219"><nobr>0.18</nobr></div>
+<div style="position:absolute;top:7504;left:224"><nobr>0.2</nobr></div>
+<div style="position:absolute;top:7490;left:219"><nobr>0.22</nobr></div>
+<div style="position:absolute;top:7475;left:219"><nobr>0.24</nobr></div>
+<div style="position:absolute;top:7460;left:219"><nobr>0.26</nobr></div>
+<div style="position:absolute;top:7445;left:219"><nobr>0.28</nobr></div>
+<div style="position:absolute;top:7430;left:224"><nobr>0.3</nobr></div>
+<div style="position:absolute;top:7415;left:219"><nobr>0.32</nobr></div>
+<div style="position:absolute;top:7572;left:239"><nobr>0</nobr></div>
+<div style="position:absolute;top:7572;left:283"><nobr>400</nobr></div>
+<div style="position:absolute;top:7572;left:332"><nobr>800</nobr></div>
+<div style="position:absolute;top:7572;left:379"><nobr>1200</nobr></div>
+<div style="position:absolute;top:7572;left:428"><nobr>1600</nobr></div>
+<div style="position:absolute;top:7499;left:205"><nobr>q(n)/n</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:4px;font-family:Times">
+<div style="position:absolute;top:7480;left:201"><nobr>2</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:6px;font-family:Times">
+<div style="position:absolute;top:7584;left:311"><nobr>Number of items n</nobr></div>
+<div style="position:absolute;top:7408;left:265"><nobr><b>(a) Average Number of Pareto Points q(n)</b></nobr></div>
+<div style="position:absolute;top:7424;left:337"><nobr>Uniform</nobr></div>
+<div style="position:absolute;top:7432;left:337"><nobr>similar weights, ε=1/n</nobr></div>
+<div style="position:absolute;top:7564;left:497"><nobr>1</nobr></div>
+<div style="position:absolute;top:7539;left:490"><nobr>1.1</nobr></div>
+<div style="position:absolute;top:7514;left:490"><nobr>1.2</nobr></div>
+<div style="position:absolute;top:7490;left:490"><nobr>1.3</nobr></div>
+<div style="position:absolute;top:7465;left:490"><nobr>1.4</nobr></div>
+<div style="position:absolute;top:7440;left:490"><nobr>1.5</nobr></div>
+<div style="position:absolute;top:7415;left:490"><nobr>1.6</nobr></div>
+<div style="position:absolute;top:7572;left:505"><nobr>1</nobr></div>
+<div style="position:absolute;top:7572;left:609"><nobr>10</nobr></div>
+<div style="position:absolute;top:7572;left:714"><nobr>100</nobr></div>
+<div style="position:absolute;top:7509;left:476"><nobr>q(n,</nobr></div>
+<div style="position:absolute;top:7494;left:476"><nobr>ε</nobr></div>
+<div style="position:absolute;top:7491;left:476"><nobr>)/q(n,1)</nobr></div>
+<div style="position:absolute;top:7584;left:607"><nobr>1/ ε</nobr></div>
+<div style="position:absolute;top:7408;left:551"><nobr><b>(b) Instances with similar weight</b></nobr></div>
+<div style="position:absolute;top:7531;left:691"><nobr>n=25</nobr></div>
+<div style="position:absolute;top:7539;left:691"><nobr>n=50</nobr></div>
+<div style="position:absolute;top:7547;left:691"><nobr>n=100</nobr></div>
+<div style="position:absolute;top:7555;left:691"><nobr>n=200</nobr></div>
+<div style="position:absolute;top:7757;left:230"><nobr>0</nobr></div>
+<div style="position:absolute;top:7727;left:221"><nobr>500</nobr></div>
+<div style="position:absolute;top:7697;left:217"><nobr>1000</nobr></div>
+<div style="position:absolute;top:7667;left:217"><nobr>1500</nobr></div>
+<div style="position:absolute;top:7637;left:217"><nobr>2000</nobr></div>
+<div style="position:absolute;top:7608;left:217"><nobr>2500</nobr></div>
+<div style="position:absolute;top:7765;left:239"><nobr>0</nobr></div>
+<div style="position:absolute;top:7765;left:266"><nobr>10</nobr></div>
+<div style="position:absolute;top:7765;left:296"><nobr>20</nobr></div>
+<div style="position:absolute;top:7765;left:326"><nobr>30</nobr></div>
+<div style="position:absolute;top:7765;left:356"><nobr>40</nobr></div>
+<div style="position:absolute;top:7765;left:385"><nobr>50</nobr></div>
+<div style="position:absolute;top:7765;left:415"><nobr>60</nobr></div>
+<div style="position:absolute;top:7765;left:445"><nobr>70</nobr></div>
+<div style="position:absolute;top:7689;left:204"><nobr>δ</nobr></div>
+<div style="position:absolute;top:7686;left:204"><nobr>q(n)</nobr></div>
+<div style="position:absolute;top:7777;left:338"><nobr>1/ δ</nobr></div>
+<div style="position:absolute;top:7601;left:294"><nobr><b>(c) </b>δ<b>- correlated instances</b></nobr></div>
+<div style="position:absolute;top:7617;left:419"><nobr>n=50</nobr></div>
+<div style="position:absolute;top:7625;left:419"><nobr>n=100</nobr></div>
+<div style="position:absolute;top:7757;left:495"><nobr>1e-07</nobr></div>
+<div style="position:absolute;top:7735;left:495"><nobr>1e-06</nobr></div>
+<div style="position:absolute;top:7714;left:495"><nobr>1e-05</nobr></div>
+<div style="position:absolute;top:7693;left:491"><nobr>0.0001</nobr></div>
+<div style="position:absolute;top:7671;left:496"><nobr>0.001</nobr></div>
+<div style="position:absolute;top:7650;left:500"><nobr>0.01</nobr></div>
+<div style="position:absolute;top:7629;left:505"><nobr>0.1</nobr></div>
+<div style="position:absolute;top:7608;left:511"><nobr>1</nobr></div>
+<div style="position:absolute;top:7765;left:519"><nobr>0</nobr></div>
+<div style="position:absolute;top:7765;left:547"><nobr>5000</nobr></div>
+<div style="position:absolute;top:7765;left:579"><nobr>10000</nobr></div>
+<div style="position:absolute;top:7765;left:614"><nobr>15000</nobr></div>
+<div style="position:absolute;top:7765;left:648"><nobr>20000</nobr></div>
+<div style="position:absolute;top:7765;left:682"><nobr>25000</nobr></div>
+<div style="position:absolute;top:7711;left:476"><nobr>relative frequency</nobr></div>
+<div style="position:absolute;top:7777;left:576"><nobr>Number of Pareto points</nobr></div>
+<div style="position:absolute;top:7601;left:538"><nobr><b>(d) Uniform instances: tail-function for q(n)</b></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:7804;left:202"><nobr><b>Fig.3. </b>Average number of Pareto points. <b>a) </b>Uniform instances and instances with similar weight</nobr></div>
+<div style="position:absolute;top:7821;left:202"><nobr>using ε = 1/<i>n</i>, <i>T </i>≥ 2000: the ratio <i>q</i>(<i>n</i>)/<i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:8px;font-family:Times">
+<div style="position:absolute;top:7819;left:443"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:7821;left:455"><nobr>decreases in <i>n </i>indicating that <i>q</i>(<i>n</i>) = <i>O</i>(<i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:8px;font-family:Times">
+<div style="position:absolute;top:7819;left:689"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:7824;left:695"><nobr>). <b>b)</b></nobr></div>
+<div style="position:absolute;top:7838;left:202"><nobr>Instances with similar weight, <i>T </i>= 10</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:8px;font-family:Times">
+<div style="position:absolute;top:7836;left:412"><nobr>4</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:7838;left:419"><nobr>: <i>q</i>(<i>n</i>,ε)/<i>q</i>(<i>n</i>,1) converges to <i>c </i>· <i>log</i>(<i>n</i>) for ε → 0 <b>c) </b>δ-</nobr></div>
+<div style="position:absolute;top:7854;left:202"><nobr>correlated instances, <i>T </i>= 10</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:8px;font-family:Times">
+<div style="position:absolute;top:7852;left:352"><nobr>4</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:7854;left:358"><nobr>: δ<i>q</i>(<i>n</i>) decreases in 1/δ indicating that <i>q</i>(<i>n</i>) = <i>O</i>(<i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:8px;font-family:Times">
+<div style="position:absolute;top:7852;left:629"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:7857;left:635"><nobr>/δ). <b>d) </b>Uniform</nobr></div>
+<div style="position:absolute;top:7871;left:202"><nobr>instances: tail-functions for <i>q</i>(<i>n</i>), graph shows the fraction of experiments with <i>q</i>(<i>n</i>) &gt; <i>x</i>, n=200.</nobr></div>
+<div style="position:absolute;top:7887;left:202"><nobr>We run 5 identical experiments to examine the random deviations.</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:7939;left:202"><nobr>using ε = 1/<i>n </i>(see Figure 3a), the asymptotic behavior of <i>q</i>(<i>n</i>) for uniform instances</nobr></div>
+<div style="position:absolute;top:7956;left:202"><nobr>should be smaller than <i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:7955;left:354"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:7956;left:366"><nobr>by at least a logarithmic factor, i.e., there is evidence that</nobr></div>
+<div style="position:absolute;top:7974;left:202"><nobr><b>E</b>[<i>q</i>(<i>n</i>)] = <i>O</i>(<i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:7973;left:290"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:7977;left:296"><nobr>/log<i>n</i>). The experimental data, however, does not allow any conclusion</nobr></div>
+<div style="position:absolute;top:7992;left:202"><nobr>whether or not <i>q</i>(<i>n</i>,ε) = Θ(<i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:7990;left:379"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:7995;left:385"><nobr>) for ε = 1/<i>n</i>. Notice that the results for instances with</nobr></div>
+<div style="position:absolute;top:8010;left:202"><nobr>similar profit and instances with similar weight are the same. This is due to the fact that,</nobr></div>
+<div style="position:absolute;top:8028;left:202"><nobr>for any given knapsack instance, exchanging the weight and profit of each item has no</nobr></div>
+<div style="position:absolute;top:8046;left:202"><nobr>influence on the Pareto curve of that instance [1].</nobr></div>
+<div style="position:absolute;top:8065;left:225"><nobr>Next we consider δ-correlated instances. As the density parameter for the profit</nobr></div>
+<div style="position:absolute;top:8083;left:202"><nobr>distributions is φ = 1/δ, applying Theorem 1 yields a bound of <i>O</i>(<i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:8081;left:626"><nobr>4</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:8085;left:632"><nobr>/δ). Figure 3a</nobr></div>
+<div style="position:absolute;top:8100;left:202"><nobr>shows that δ · <i>q</i>(<i>n</i>,δ) decreases in φ = 1/δ. Since uniform instances and δ-correlated</nobr></div>
+<div style="position:absolute;top:8118;left:202"><nobr>instances are quite similar for large δ, the data proposes an asymptotic behavior of</nobr></div>
+<div style="position:absolute;top:8136;left:202"><nobr><i>q</i>(<i>n</i>,δ) = <i>O</i>(<i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:8135;left:284"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:8139;left:290"><nobr>/δ). We conjecture that a separation of subsets with different cardinality</nobr></div>
+<div style="position:absolute;top:8154;left:202"><nobr>would increase the average number of Pareto points by a logarithmic factor log(<i>n</i>/δ)</nobr></div>
+<div style="position:absolute;top:8172;left:202"><nobr>and that <i>O</i>(<i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:8170;left:278"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:8175;left:284"><nobr>/δ) = <i>O</i>(φ<i>n</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:8170;left:355"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:8175;left:361"><nobr>) is a tight bound for adversarial weights.</nobr></div>
+<div style="position:absolute;top:8191;left:225"><nobr>Finally we investigate the distribution of the random variable <i>q</i>(<i>n</i>) for uniform in-</nobr></div>
+<div style="position:absolute;top:8209;left:202"><nobr>stances. Theorem 1 bounds the expected number of Pareto points. Applying the Markov</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:8491;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=8><b>Page 8</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:8553;left:202"><nobr>8</nobr></div>
+<div style="position:absolute;top:8553;left:252"><nobr>Rene Beier and Berthold Vocking</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:6px;font-family:Times">
+<div style="position:absolute;top:8752;left:219"><nobr>0.08</nobr></div>
+<div style="position:absolute;top:8735;left:219"><nobr>0.09</nobr></div>
+<div style="position:absolute;top:8719;left:224"><nobr>0.1</nobr></div>
+<div style="position:absolute;top:8702;left:219"><nobr>0.11</nobr></div>
+<div style="position:absolute;top:8686;left:219"><nobr>0.12</nobr></div>
+<div style="position:absolute;top:8669;left:219"><nobr>0.13</nobr></div>
+<div style="position:absolute;top:8653;left:219"><nobr>0.14</nobr></div>
+<div style="position:absolute;top:8636;left:219"><nobr>0.15</nobr></div>
+<div style="position:absolute;top:8620;left:219"><nobr>0.16</nobr></div>
+<div style="position:absolute;top:8603;left:219"><nobr>0.17</nobr></div>
+<div style="position:absolute;top:8760;left:239"><nobr>1</nobr></div>
+<div style="position:absolute;top:8760;left:269"><nobr>10</nobr></div>
+<div style="position:absolute;top:8760;left:300"><nobr>100</nobr></div>
+<div style="position:absolute;top:8760;left:331"><nobr>1000</nobr></div>
+<div style="position:absolute;top:8760;left:362"><nobr>10000 100000 1e+06</nobr></div>
+<div style="position:absolute;top:8696;left:205"><nobr>Γ</nobr></div>
+<div style="position:absolute;top:8691;left:205"><nobr>n / log</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:4px;font-family:Times">
+<div style="position:absolute;top:8669;left:201"><nobr>2</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:6px;font-family:Times">
+<div style="position:absolute;top:8663;left:205"><nobr>(n)</nobr></div>
+<div style="position:absolute;top:8772;left:311"><nobr>Number of items n</nobr></div>
+<div style="position:absolute;top:8596;left:269"><nobr><b>(a) Uniform instances: Integrality gap </b>Γ</nobr></div>
+<div style="position:absolute;top:8752;left:495"><nobr>1e-07</nobr></div>
+<div style="position:absolute;top:8731;left:495"><nobr>1e-06</nobr></div>
+<div style="position:absolute;top:8709;left:495"><nobr>1e-05</nobr></div>
+<div style="position:absolute;top:8688;left:491"><nobr>0.0001</nobr></div>
+<div style="position:absolute;top:8667;left:496"><nobr>0.001</nobr></div>
+<div style="position:absolute;top:8646;left:500"><nobr>0.01</nobr></div>
+<div style="position:absolute;top:8624;left:505"><nobr>0.1</nobr></div>
+<div style="position:absolute;top:8603;left:511"><nobr>1</nobr></div>
+<div style="position:absolute;top:8760;left:519"><nobr>0</nobr></div>
+<div style="position:absolute;top:8760;left:548"><nobr>0.001</nobr></div>
+<div style="position:absolute;top:8760;left:584"><nobr>0.002</nobr></div>
+<div style="position:absolute;top:8760;left:620"><nobr>0.003</nobr></div>
+<div style="position:absolute;top:8760;left:656"><nobr>0.004</nobr></div>
+<div style="position:absolute;top:8760;left:693"><nobr>0.005</nobr></div>
+<div style="position:absolute;top:8707;left:476"><nobr>relative frequency</nobr></div>
+<div style="position:absolute;top:8772;left:578"><nobr>Size of integrality gap Γ</nobr></div>
+<div style="position:absolute;top:8596;left:542"><nobr><b>(b) Uniform instances: Tail-function for </b>Γ</nobr></div>
+<div style="position:absolute;top:8945;left:219"><nobr>0.16</nobr></div>
+<div style="position:absolute;top:8915;left:219"><nobr>0.18</nobr></div>
+<div style="position:absolute;top:8885;left:224"><nobr>0.2</nobr></div>
+<div style="position:absolute;top:8855;left:219"><nobr>0.22</nobr></div>
+<div style="position:absolute;top:8825;left:219"><nobr>0.24</nobr></div>
+<div style="position:absolute;top:8796;left:219"><nobr>0.26</nobr></div>
+<div style="position:absolute;top:8953;left:239"><nobr>1</nobr></div>
+<div style="position:absolute;top:8953;left:289"><nobr>10</nobr></div>
+<div style="position:absolute;top:8953;left:338"><nobr>100</nobr></div>
+<div style="position:absolute;top:8953;left:388"><nobr>1000</nobr></div>
+<div style="position:absolute;top:8953;left:438"><nobr>10000</nobr></div>
+<div style="position:absolute;top:8897;left:205"><nobr>Γ</nobr></div>
+<div style="position:absolute;top:8893;left:205"><nobr>n / (</nobr></div>
+<div style="position:absolute;top:8876;left:205"><nobr>δ</nobr></div>
+<div style="position:absolute;top:8873;left:205"><nobr>log</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:4px;font-family:Times">
+<div style="position:absolute;top:8861;left:201"><nobr>2</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:6px;font-family:Times">
+<div style="position:absolute;top:8856;left:205"><nobr>(n/</nobr></div>
+<div style="position:absolute;top:8846;left:205"><nobr>δ</nobr></div>
+<div style="position:absolute;top:8843;left:205"><nobr>))</nobr></div>
+<div style="position:absolute;top:8965;left:338"><nobr>1/ δ</nobr></div>
+<div style="position:absolute;top:8789;left:262"><nobr><b>(c) </b>δ<b>-correlated instances: Integrality gap </b>Γ</nobr></div>
+<div style="position:absolute;top:8805;left:410"><nobr>n=100</nobr></div>
+<div style="position:absolute;top:8813;left:410"><nobr>n=1000</nobr></div>
+<div style="position:absolute;top:8821;left:410"><nobr>n=10000</nobr></div>
+<div style="position:absolute;top:8945;left:497"><nobr>0</nobr></div>
+<div style="position:absolute;top:8920;left:490"><nobr>0.1</nobr></div>
+<div style="position:absolute;top:8895;left:490"><nobr>0.2</nobr></div>
+<div style="position:absolute;top:8870;left:490"><nobr>0.3</nobr></div>
+<div style="position:absolute;top:8845;left:490"><nobr>0.4</nobr></div>
+<div style="position:absolute;top:8820;left:490"><nobr>0.5</nobr></div>
+<div style="position:absolute;top:8796;left:490"><nobr>0.6</nobr></div>
+<div style="position:absolute;top:8953;left:505"><nobr>1</nobr></div>
+<div style="position:absolute;top:8953;left:567"><nobr>10</nobr></div>
+<div style="position:absolute;top:8953;left:630"><nobr>100</nobr></div>
+<div style="position:absolute;top:8953;left:692"><nobr>1000</nobr></div>
+<div style="position:absolute;top:8912;left:476"><nobr>Number of Core items / n</nobr></div>
+<div style="position:absolute;top:8965;left:607"><nobr>1/ ε</nobr></div>
+<div style="position:absolute;top:8789;left:512"><nobr><b>(d) Instanes with similar profit: number of core items</b></nobr></div>
+<div style="position:absolute;top:8911;left:691"><nobr>n=50</nobr></div>
+<div style="position:absolute;top:8919;left:691"><nobr>n=100</nobr></div>
+<div style="position:absolute;top:8927;left:691"><nobr>n=200</nobr></div>
+<div style="position:absolute;top:8935;left:691"><nobr>n=400</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:8992;left:202"><nobr><b>Fig.4. a) </b>Average integrality gap Γ for uniform instances <b>b) </b>Tail function of Γ for uniform in-</nobr></div>
+<div style="position:absolute;top:9009;left:202"><nobr>stances with <i>n </i>= 10000 items: graph <i>f</i>(<i>x</i>) gives the fraction of experiments with Γ &gt; <i>x</i>. <b>c) </b>Aver-</nobr></div>
+<div style="position:absolute;top:9026;left:202"><nobr>age integrality gap Γ for δ-correlated instances. <b>d) </b>Random instances with similar profit: average</nobr></div>
+<div style="position:absolute;top:9042;left:202"><nobr>number of core items as a function of ε. We used <i>T </i>= 10000, β = 0.4 for all experiments.</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9092;left:202"><nobr>inequality yields only a weak tail bound: for all α ∈</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:4px;font-family:Times">
+<div style="position:absolute;top:9100;left:514"><nobr>R</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9099;left:526"><nobr>&gt;0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9092;left:541"><nobr>, <b>Pr</b>[<i>q</i>(<i>n</i>) &gt; α<b>E</b>[<i>q</i>(<i>n</i>)]] ≤ 1/α.</nobr></div>
+<div style="position:absolute;top:9110;left:202"><nobr>Figure 3d shows a much faster decay of the probability (notice the log scale). For ex-</nobr></div>
+<div style="position:absolute;top:9128;left:202"><nobr>ample, the probability that <i>q</i>(200) is larger than three times the average is about 10</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9128;left:706"><nobr>−5</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9145;left:202"><nobr>instead of 1/3. The experiments suggest that the tail decreases faster than a polynomial</nobr></div>
+<div style="position:absolute;top:9163;left:202"><nobr>1/α</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9162;left:227"><nobr><i>c</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9163;left:236"><nobr>but possibly slower than exponential 1/<i>c</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9161;left:480"><nobr>α</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9163;left:487"><nobr>.</nobr></div>
+<div style="position:absolute;top:9181;left:225"><nobr>In all our experiments (which we could not present here all) we have not found a</nobr></div>
+<div style="position:absolute;top:9199;left:202"><nobr>distribution where <i>q</i>(<i>n</i>) was larger than φ<i>µn</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9197;left:459"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9199;left:469"><nobr>on average, where φ and <i>µ </i>denote the max-</nobr></div>
+<div style="position:absolute;top:9217;left:202"><nobr>imum density and the maximum expectation over the profit distributions of all items,</nobr></div>
+<div style="position:absolute;top:9235;left:202"><nobr>respectively. This gives us some hope that the upper bound of <i>O</i>(φ<i>µn</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9233;left:605"><nobr>4</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9238;left:611"><nobr>) can be improved.</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:15px;font-family:Times">
+<div style="position:absolute;top:9278;left:202"><nobr><b>3 Properties of random knapsack instances</b></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9317;left:202"><nobr>The probabilistic analyses in [9] and [3] are based (among other results) on the upper</nobr></div>
+<div style="position:absolute;top:9339;left:202"><nobr>bound for the integrality gap Γ. Lueker [12] proved that <b>E</b>[Γ] = <i>O</i>(</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9335;left:625"><nobr>log</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:6px;font-family:Times">
+<div style="position:absolute;top:9333;left:639"><nobr>2</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9335;left:645"><nobr><i>n</i></nobr></div>
+<div style="position:absolute;top:9347;left:635"><nobr><i>n</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9341;left:653"><nobr>), provided</nobr></div>
+<div style="position:absolute;top:9357;left:202"><nobr>the weights and profits are drawn uniformly at random from [0,1]. Lueker also gave a</nobr></div>
+<div style="position:absolute;top:9379;left:202"><nobr>lower bound of</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9376;left:302"><nobr>1</nobr></div>
+<div style="position:absolute;top:9387;left:302"><nobr><i>n</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9379;left:314"><nobr>which was later improved to Ω(</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9375;left:512"><nobr>log</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:6px;font-family:Times">
+<div style="position:absolute;top:9373;left:526"><nobr>2</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9375;left:533"><nobr><i>n</i></nobr></div>
+<div style="position:absolute;top:9387;left:522"><nobr><i>n</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9381;left:540"><nobr>) by Goldberg and Marchetti-</nobr></div>
+<div style="position:absolute;top:9397;left:202"><nobr>Spaccamela [9]. A complete proof of the last result, however, was never published.</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:9679;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=9><b>Page 9</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:9741;left:370"><nobr>An Experimental Study of Random Knapsack Problems</nobr></div>
+<div style="position:absolute;top:9741;left:714"><nobr>9</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9779;left:202"><nobr>Our experiments are not sufficient to strongly support this lower bound. For an af-</nobr></div>
+<div style="position:absolute;top:9797;left:202"><nobr>firmative answer the curve in Figure 4a would need to converge to a constant <i>c </i>&gt; 0</nobr></div>
+<div style="position:absolute;top:9815;left:202"><nobr>(notice the log-scale for the number of items). Our experiments suggest that in this case</nobr></div>
+<div style="position:absolute;top:9833;left:202"><nobr>the constant <i>c </i>would be at most 1/12. The small constants involved also account for</nobr></div>
+<div style="position:absolute;top:9851;left:202"><nobr>the moderate number of core items when using the core definition of Goldberg and</nobr></div>
+<div style="position:absolute;top:9869;left:202"><nobr>Marchetti-Spaccamela. The average number of core items in our experiments was 20.2</nobr></div>
+<div style="position:absolute;top:9887;left:202"><nobr>for uniformly random instances with 1000 item and 67.5 for instances with 10</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9885;left:669"><nobr>6</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9887;left:679"><nobr>items.</nobr></div>
+<div style="position:absolute;top:9906;left:225"><nobr>Goldbergand Marchetti-Spaccamelashow that Lueker’s analysis for the upperbound</nobr></div>
+<div style="position:absolute;top:9924;left:202"><nobr>of Γ can easily be generalized to obtain exponentialtail bounds on Γ: there is constant <i>c</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9930;left:715"><nobr>0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9942;left:202"><nobr>such that for every α ≤ log</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9940;left:363"><nobr>4</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9942;left:370"><nobr><i>n</i>, <b>Pr </b>Γ ≥ α<i>c</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9948;left:452"><nobr>0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9945;left:458"><nobr>(log<i>n</i>)</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9940;left:498"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9945;left:505"><nobr>/<i>n </i>≤ 2</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9942;left:551"><nobr>−α</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9942;left:568"><nobr>. Our experiment show an</nobr></div>
+<div style="position:absolute;top:9962;left:202"><nobr>even more rapid decay (Figure 4b), also in terms of absolute values: We performed 10</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9960;left:715"><nobr>6</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9980;left:202"><nobr>experiments using <i>n </i>= 10000 items. The average integrality gap was <i>A </i>= 1.695·10</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9980;left:703"><nobr>−3</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9980;left:717"><nobr>.</nobr></div>
+<div style="position:absolute;top:9998;left:202"><nobr>The fraction of experiments in which Γ was larger than 2<i>A </i>was 4.5·10</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:9998;left:621"><nobr>−3</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9998;left:635"><nobr>. Only in three</nobr></div>
+<div style="position:absolute;top:10016;left:202"><nobr>experiments Γ was larger than 3<i>A </i>and the largest Γ was about 3.16<i>A</i>. Adapting Lueker’s</nobr></div>
+<div style="position:absolute;top:10034;left:202"><nobr>proof technique, a similar bound for the integrality gap of δ-correlated instances was</nobr></div>
+<div style="position:absolute;top:10052;left:202"><nobr>proven in [3]: <b>E</b>[Γ] = <i>O</i>(</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:10048;left:358"><nobr>δ</nobr></div>
+<div style="position:absolute;top:10060;left:356"><nobr><i>N</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:10052;left:368"><nobr>log</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:10049;left:387"><nobr>2 <i>N</i></nobr></div>
+<div style="position:absolute;top:10060;left:398"><nobr>δ</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:10054;left:407"><nobr>). Figure 4c comply with the theorem and, as in the</nobr></div>
+<div style="position:absolute;top:10070;left:202"><nobr>uniform case, give a weak indication that the bound could be tight, as the curves show</nobr></div>
+<div style="position:absolute;top:10087;left:202"><nobr>some tendency to converge to a constant <i>c </i>&gt; 0.</nobr></div>
+<div style="position:absolute;top:10107;left:225"><nobr>Finally consider instances with similar profit. Instead of the integrality gap we in-</nobr></div>
+<div style="position:absolute;top:10125;left:202"><nobr>vestigated the number of core items. Recall that Goldberg and Marchetti-Spaccamela’s</nobr></div>
+<div style="position:absolute;top:10143;left:202"><nobr>definition of the core closely relate the two quantities. In particular, the core includes</nobr></div>
+<div style="position:absolute;top:10161;left:202"><nobr>all items whose vertical distance to the Dantzig ray is at most Γ. Figure 4d shows that</nobr></div>
+<div style="position:absolute;top:10179;left:202"><nobr>the core contains more than half of all items when ε becomes small. The reason is that</nobr></div>
+<div style="position:absolute;top:10197;left:202"><nobr>items close to the Dantzig ray have a very similar weight. If the remaining capacity of</nobr></div>
+<div style="position:absolute;top:10215;left:202"><nobr>the knapsack is not close to the weight (or a multiple) of these items, its difficult to</nobr></div>
+<div style="position:absolute;top:10233;left:202"><nobr>fill the knapsack close to its capacity. Therefore, items more distant to the Dantzig ray</nobr></div>
+<div style="position:absolute;top:10251;left:202"><nobr>have to be used to fill the knapsack, but they exhibit a larger loss. As a consequence,</nobr></div>
+<div style="position:absolute;top:10268;left:202"><nobr>the integrality gap is much larger on average and so is the number of core items.</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:15px;font-family:Times">
+<div style="position:absolute;top:10322;left:202"><nobr><b>4 Efficiency of different implementations</b></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:10370;left:202"><nobr>Let us first describe our implementation in more detail. First we compute the break</nobr></div>
+<div style="position:absolute;top:10387;left:202"><nobr>solution</nobr></div>
+<div style="position:absolute;top:10385;left:259"><nobr>˜</nobr></div>
+<div style="position:absolute;top:10387;left:256"><nobr><i>X </i>in linear time. Then we use a dynamic core, adding items in order if in-</nobr></div>
+<div style="position:absolute;top:10405;left:202"><nobr>creasing loss. The capacity of the core problem is <i>c </i>−<i>w</i>(</nobr></div>
+<div style="position:absolute;top:10403;left:556"><nobr>˜</nobr></div>
+<div style="position:absolute;top:10405;left:552"><nobr><i>X</i>) and items included in</nobr></div>
+<div style="position:absolute;top:10403;left:714"><nobr>˜</nobr></div>
+<div style="position:absolute;top:10405;left:710"><nobr><i>X</i></nobr></div>
+<div style="position:absolute;top:10423;left:202"><nobr>become negative, that is, we negate the weight and profit of those items. The core prob-</nobr></div>
+<div style="position:absolute;top:10441;left:202"><nobr>lem is solved using the Nemhauser/Ullmann algorithm, except for the variant that uses</nobr></div>
+<div style="position:absolute;top:10459;left:202"><nobr>only the loss filter, as analyzed in [9]. The loss filter can easily be incorporated into</nobr></div>
+<div style="position:absolute;top:10477;left:202"><nobr>the Nemhauser/Ullmann algorithm, as the loss of a Pareto point is determined by its</nobr></div>
+<div style="position:absolute;top:10495;left:202"><nobr>weight and profit (see Figure 5f). Pareto points whose loss is larger than the “current”</nobr></div>
+<div style="position:absolute;top:10513;left:202"><nobr>integrality gap are deleted from the list. Observe that all solutions dominated by such</nobr></div>
+<div style="position:absolute;top:10531;left:202"><nobr>a filtered Pareto point have an even larger loss. Hence, domination concept and loss</nobr></div>
+<div style="position:absolute;top:10549;left:202"><nobr>filter are “compatible”. When using two lists (Horowitz and Sahni decomposition) we</nobr></div>
+<div style="position:absolute;top:10567;left:202"><nobr>alternately extend the lists with the next item and check for a new optimal solution in</nobr></div>
+<div style="position:absolute;top:10585;left:202"><nobr>each such iteration.</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:10867;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=10><b>Page 10</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:10929;left:202"><nobr>10</nobr></div>
+<div style="position:absolute;top:10929;left:252"><nobr>Rene Beier and Berthold Vocking</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:10967;left:202"><nobr><i>Additional heuristics </i>Instead of alternately extending the two lists we first extend only</nobr></div>
+<div style="position:absolute;top:10985;left:202"><nobr>one list, which grows exponentially at the beginning. Later we use the second list. The</nobr></div>
+<div style="position:absolute;top:11003;left:202"><nobr>idea is that the first list is based on items with small loss such that the loss filter has</nobr></div>
+<div style="position:absolute;top:11021;left:202"><nobr>hardly an effect. The items used in the second list are expected to have larger loss such</nobr></div>
+<div style="position:absolute;top:11039;left:202"><nobr>that the loss filter keeps the list relatively small and the extension of the list with new</nobr></div>
+<div style="position:absolute;top:11057;left:202"><nobr>items is fast. We use lazy evaluation, i.e., we do not scan the two lists in each iteration</nobr></div>
+<div style="position:absolute;top:11075;left:202"><nobr>to find new optimal solutions as we expect the first list to be significantly larger the the</nobr></div>
+<div style="position:absolute;top:11093;left:202"><nobr>second. Knowing the length of the lists, we balance the work for extending a list and</nobr></div>
+<div style="position:absolute;top:11110;left:202"><nobr>scanning both lists. Finally, we delete Pareto points from the list that cannot be extended</nobr></div>
+<div style="position:absolute;top:11128;left:202"><nobr>by forthcoming items as their loss is too large.</nobr></div>
+<div style="position:absolute;top:11151;left:225"><nobr>We investigate the influence of the different concepts (domination concept, loss fil-</nobr></div>
+<div style="position:absolute;top:11168;left:202"><nobr>ter, Horowitz and Sahni decomposition and additional heuristics) on the running time</nobr></div>
+<div style="position:absolute;top:11186;left:202"><nobr>of our algorithm, under different random input distributions. We compare our imple-</nobr></div>
+<div style="position:absolute;top:11204;left:202"><nobr>mentation to <i>Combo</i>, a knapsack solver due to Pisinger [13]. <i>Combo </i>combines vari-</nobr></div>
+<div style="position:absolute;top:11222;left:202"><nobr>ous advanced algorithmic techniques that have been independently developed to cope</nobr></div>
+<div style="position:absolute;top:11240;left:202"><nobr>with specifically designed difficult test instances. For instance, it applies cardinality</nobr></div>
+<div style="position:absolute;top:11258;left:202"><nobr>constraints generated from extended covers using Lagrangian relaxation, rudimentary</nobr></div>
+<div style="position:absolute;top:11276;left:202"><nobr>divisibility tests and it pairs dynamic programming states with items outside the core.</nobr></div>
+<div style="position:absolute;top:11294;left:202"><nobr>Our implementation, however, is rather simple but proves to be very efficient in reduc-</nobr></div>
+<div style="position:absolute;top:11312;left:202"><nobr>ing the number of enumerated knapsack filling for a given core. In particular, we add</nobr></div>
+<div style="position:absolute;top:11330;left:202"><nobr>items strictly in order of increasing loss to the core. This can lead to a very large core,</nobr></div>
+<div style="position:absolute;top:11348;left:202"><nobr>as shown in Figure 4d. We observed that whenever <i>Combo </i>was superior to our imple-</nobr></div>
+<div style="position:absolute;top:11366;left:202"><nobr>mentation, the core size of <i>Combo </i>was usually significantly smaller. So we consider our</nobr></div>
+<div style="position:absolute;top:11384;left:202"><nobr>implementation not as a competing knapsack solver but rather as a study that points out</nobr></div>
+<div style="position:absolute;top:11402;left:202"><nobr>possible improvements.</nobr></div>
+<div style="position:absolute;top:11424;left:225"><nobr>Due to technical difficulties with measuring small amounts of processing time and</nobr></div>
+<div style="position:absolute;top:11442;left:202"><nobr>huge differences in the running times we employ, besides the running time, another</nobr></div>
+<div style="position:absolute;top:11459;left:202"><nobr>measure, called work. Each basic step takes a unit work. This way, an iteration of the</nobr></div>
+<div style="position:absolute;top:11477;left:202"><nobr>Nemhauser/Ullmann algorithm with input list</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:11478;left:480"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:11477;left:496"><nobr>costs 2|</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:11478;left:541"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:11480;left:552"><nobr>| work units. Finding an op-</nobr></div>
+<div style="position:absolute;top:11495;left:202"><nobr>timal solution by scanning 2 lists</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:11496;left:404"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:11501;left:413"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:11495;left:424"><nobr>and</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:11496;left:449"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:11501;left:459"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:11495;left:469"><nobr>in parallel (Horowitz and Sahni decompo-</nobr></div>
+<div style="position:absolute;top:11513;left:202"><nobr>sition) costs |</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:11514;left:282"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:11519;left:292"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:11516;left:298"><nobr>|+|</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:11514;left:322"><nobr><i>L</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:9px;font-family:Times">
+<div style="position:absolute;top:11519;left:332"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:11516;left:338"><nobr>| work units.</nobr></div>
+<div style="position:absolute;top:11535;left:225"><nobr>Figure 5 shows the work and running time for different implementations. We expect</nobr></div>
+<div style="position:absolute;top:11553;left:202"><nobr>the work as well as the running time to increase quasi-linear in <i>n </i>and 1/δ for uniform</nobr></div>
+<div style="position:absolute;top:11571;left:202"><nobr>and δ-correlated instances (see [3] for a theoretical result). For an easier comparison,</nobr></div>
+<div style="position:absolute;top:11589;left:202"><nobr>we divided work and running time by <i>n </i>and 1/δ, accordingly. Notice that almost all</nobr></div>
+<div style="position:absolute;top:11607;left:202"><nobr>scales are logarithmic.</nobr></div>
+<div style="position:absolute;top:11629;left:225"><nobr>In contrast to the theoretical analyses of core algorithms in [9] and [3], where the</nobr></div>
+<div style="position:absolute;top:11647;left:202"><nobr>domination concept leads to a better running time bound than the loss filter, the latter</nobr></div>
+<div style="position:absolute;top:11665;left:202"><nobr>is superior in all experiments. This remains true for large instances, even if the domina-</nobr></div>
+<div style="position:absolute;top:11683;left:202"><nobr>tion concept is complemented by the <b style="color:black;background-color:#ffff66">Horowitz/Sahni decomposition</b> (2 lists of Pareto</nobr></div>
+<div style="position:absolute;top:11701;left:202"><nobr>points). The <i>Combo </i>code is superior to all three variants. Interestingly, the combination</nobr></div>
+<div style="position:absolute;top:11719;left:202"><nobr>of the 3 features (PO+Loss+2) clearly outperform <i>Combo </i>for uniform and δ-correlated</nobr></div>
+<div style="position:absolute;top:11737;left:202"><nobr>instances. In fact, it exhibits a sublinear running time for uniform instances (without lin-</nobr></div>
+<div style="position:absolute;top:11755;left:202"><nobr>ear time preprocessing). Using the described heuristics significantly improves the run-</nobr></div>
+<div style="position:absolute;top:11773;left:202"><nobr>ning times further. The average running time of <i>Combo </i>and our fastest implementation</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:12055;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=11><b>Page 11</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:12117;left:370"><nobr>An Experimental Study of Random Knapsack Problems</nobr></div>
+<div style="position:absolute;top:12117;left:707"><nobr>11</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:12155;left:202"><nobr>differs by a factor of 190 for uniform instances with 1024000 items. For δ-correlated</nobr></div>
+<div style="position:absolute;top:12173;left:202"><nobr>instances with 10000 items and δ = 1/1024, the factor is about 700.</nobr></div>
+<div style="position:absolute;top:12191;left:225"><nobr>The limitations of our implementation is illustrated in Figure 5e, which shows the</nobr></div>
+<div style="position:absolute;top:12209;left:202"><nobr>running time (with preprocessing) for instances with similar profit. Besides the large</nobr></div>
+<div style="position:absolute;top:12227;left:202"><nobr>core (Figure 4d), the large integrality gap makes the loss filter less efficient.</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:15px;font-family:Times">
+<div style="position:absolute;top:12271;left:202"><nobr><b>References</b></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:12310;left:209"><nobr>1. R. Beier. <i>Probabilistic Analysis of Combinatorial Optimization Problems</i>. PhD thesis, Uni-</nobr></div>
+<div style="position:absolute;top:12327;left:226"><nobr>versitat des Saarlandes, 2004. In preparation.</nobr></div>
+<div style="position:absolute;top:12343;left:209"><nobr>2. R. Beier and B. Vocking. Random knapsack in expected polynomial time. In <i>Proc. 35th</i></nobr></div>
+<div style="position:absolute;top:12360;left:226"><nobr><i>Annual ACM Symposium on Theory of Computing (STOC-2003)</i>, pages 232–241, San Diego,</nobr></div>
+<div style="position:absolute;top:12376;left:226"><nobr>USA, 2003.</nobr></div>
+<div style="position:absolute;top:12393;left:209"><nobr>3. R. Beier and B. Vocking. Probabilistic analysis of knapsack core algorithms. In <i>Proc. 15th</i></nobr></div>
+<div style="position:absolute;top:12409;left:226"><nobr><i>Annual Symposium on Discrete Algorithms (SODA-2004)</i>, pages 461–470, New Orleans,</nobr></div>
+<div style="position:absolute;top:12425;left:226"><nobr>USA, 2004.</nobr></div>
+<div style="position:absolute;top:12442;left:209"><nobr>4. G. B. Dantzig. Discrete variable extremum problems. <i>Operations Research</i>, 5:266–277,</nobr></div>
+<div style="position:absolute;top:12458;left:226"><nobr>1957.</nobr></div>
+<div style="position:absolute;top:12475;left:209"><nobr>5. M.E. Dyer and A. M. Frieze. Probabilistic analysis of the multidimensional knapsack prob-</nobr></div>
+<div style="position:absolute;top:12491;left:226"><nobr>lem. <i>Maths. of Operations Research</i>, 14(1):162–176, 1989.</nobr></div>
+<div style="position:absolute;top:12508;left:209"><nobr>6. M. Ehrgott. <i>Multicriteria optimization</i>. Springer Verlag, 2000.</nobr></div>
+<div style="position:absolute;top:12524;left:209"><nobr>7. M. Ehrgott and X. Gandibleux. <i>Multiple Criteria Optimization: State of the Art Annotated</i></nobr></div>
+<div style="position:absolute;top:12540;left:226"><nobr><i>Bibliographic Surveys</i>, volume 52 of <i>International Series in Operations Research and Man-</i></nobr></div>
+<div style="position:absolute;top:12557;left:226"><nobr><i>agement Science</i>. Kluwer Academic Publishers, Boston, 2002.</nobr></div>
+<div style="position:absolute;top:12573;left:209"><nobr>8. M. R. Garey and D. S. Johnson. <i>Computers and Intractability</i>. Freeman and Company, New</nobr></div>
+<div style="position:absolute;top:12590;left:226"><nobr>York, 1979.</nobr></div>
+<div style="position:absolute;top:12606;left:209"><nobr>9. A. Goldberg and A. Marchetti-Spaccamela. On finding the exact solution to a zero-one</nobr></div>
+<div style="position:absolute;top:12623;left:226"><nobr>knapsack problem. In <i>Proceedings of the 16th ACM Symposium on Theory of Computing</i></nobr></div>
+<div style="position:absolute;top:12639;left:226"><nobr><i>(STOC)</i>, pages 359–368, 1984.</nobr></div>
+<div style="position:absolute;top:12656;left:202"><nobr>10. E. Horowitz and S. Sahni. Computing partitions with applications to the knapsack problem.</nobr></div>
+<div style="position:absolute;top:12672;left:226"><nobr><i>Journal of the ACM</i>, 21(2):277–292, April 1974.</nobr></div>
+<div style="position:absolute;top:12688;left:202"><nobr>11. H. Kellerer, U. Pferschy, and D. Pisinger. <i>Knapsack Problems</i>. Springer, 2004.</nobr></div>
+<div style="position:absolute;top:12705;left:202"><nobr>12. G. S. Lueker. On the average difference between the solutions to linear and integer knapsack</nobr></div>
+<div style="position:absolute;top:12721;left:226"><nobr>problems. <i>Applied Probability - Computer Science, the Interface, Birkhauser</i>, 1:489–504,</nobr></div>
+<div style="position:absolute;top:12738;left:226"><nobr>1982.</nobr></div>
+<div style="position:absolute;top:12754;left:202"><nobr>13. S. Martello, D. Pisinger, and P. Toth. Dynamic programming and strong bounds for the 0-1</nobr></div>
+<div style="position:absolute;top:12771;left:226"><nobr>knapsack problem. <i>Management Science</i>, 45(3):414–424, 1999.</nobr></div>
+<div style="position:absolute;top:12787;left:202"><nobr>14. S. Martello, D. Pisinger, and P. Toth. New trends in exact algorithms for the 0-1 knapsack</nobr></div>
+<div style="position:absolute;top:12803;left:226"><nobr>problem. <i>European Journal of Operational Research</i>, 123:325–332, 2000.</nobr></div>
+<div style="position:absolute;top:12820;left:202"><nobr>15. K. Mehlhorn and M. Ziegelmann. Resource constrained shortest paths. In <i>Proc. 8th Annual</i></nobr></div>
+<div style="position:absolute;top:12836;left:226"><nobr><i>European Symp. (ESA-00)</i>, LNCS 1879, pages 326–337. Springer, 2000.</nobr></div>
+<div style="position:absolute;top:12853;left:202"><nobr>16. G. Nemhauser and Z. Ullmann. Discrete dynamic programming and capital allocation. <i>Man-</i></nobr></div>
+<div style="position:absolute;top:12869;left:226"><nobr><i>agement Science</i>, 15(9):494–505, 1969.</nobr></div>
+<div style="position:absolute;top:12886;left:202"><nobr>17. D. Pisinger. <i>Algorithms for Knapsack Problems</i>. PhD thesis, DIKU, University of Copen-</nobr></div>
+<div style="position:absolute;top:12902;left:226"><nobr>hagen, 1995.</nobr></div>
+<div style="position:absolute;top:12918;left:202"><nobr>18. H.M. Weingartner and D.N. Ness. Methods for the solution of the multi-dimensional 0/1</nobr></div>
+<div style="position:absolute;top:12935;left:226"><nobr>knapsack problem. <i>Operations Research</i>, 15(1):83–103, 1967.</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:13243;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=12><b>Page 12</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:13305;left:202"><nobr>12</nobr></div>
+<div style="position:absolute;top:13305;left:252"><nobr>Rene Beier and Berthold Vocking</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:5px;font-family:Times">
+<div style="position:absolute;top:13494;left:229"><nobr>0</nobr></div>
+<div style="position:absolute;top:13475;left:225"><nobr>20</nobr></div>
+<div style="position:absolute;top:13457;left:225"><nobr>40</nobr></div>
+<div style="position:absolute;top:13438;left:225"><nobr>60</nobr></div>
+<div style="position:absolute;top:13420;left:225"><nobr>80</nobr></div>
+<div style="position:absolute;top:13402;left:220"><nobr>100</nobr></div>
+<div style="position:absolute;top:13384;left:220"><nobr>120</nobr></div>
+<div style="position:absolute;top:13365;left:220"><nobr>140</nobr></div>
+<div style="position:absolute;top:13511;left:254"><nobr>250</nobr></div>
+<div style="position:absolute;top:13511;left:283"><nobr>1000</nobr></div>
+<div style="position:absolute;top:13511;left:314"><nobr>4000</nobr></div>
+<div style="position:absolute;top:13511;left:344"><nobr>16000</nobr></div>
+<div style="position:absolute;top:13511;left:375"><nobr>64000 256000</nobr></div>
+<div style="position:absolute;top:13451;left:208"><nobr>Work per item</nobr></div>
+<div style="position:absolute;top:13522;left:311"><nobr>Number of items n</nobr></div>
+<div style="position:absolute;top:13350;left:270"><nobr><b>(a) Uniform instances: work performed</b></nobr></div>
+<div style="position:absolute;top:13365;left:277"><nobr>PO</nobr></div>
+<div style="position:absolute;top:13373;left:277"><nobr>Loss</nobr></div>
+<div style="position:absolute;top:13381;left:277"><nobr>PO+Loss</nobr></div>
+<div style="position:absolute;top:13389;left:277"><nobr>PO+2Lists</nobr></div>
+<div style="position:absolute;top:13397;left:277"><nobr>PO+Loss+2Lists</nobr></div>
+<div style="position:absolute;top:13503;left:495"><nobr>1e-08</nobr></div>
+<div style="position:absolute;top:13466;left:495"><nobr>1e-07</nobr></div>
+<div style="position:absolute;top:13429;left:495"><nobr>1e-06</nobr></div>
+<div style="position:absolute;top:13393;left:495"><nobr>1e-05</nobr></div>
+<div style="position:absolute;top:13356;left:491"><nobr>0.0001</nobr></div>
+<div style="position:absolute;top:13511;left:529"><nobr>250</nobr></div>
+<div style="position:absolute;top:13511;left:557"><nobr>1000</nobr></div>
+<div style="position:absolute;top:13511;left:587"><nobr>4000</nobr></div>
+<div style="position:absolute;top:13511;left:615"><nobr>16000</nobr></div>
+<div style="position:absolute;top:13511;left:645"><nobr>64000 256000</nobr></div>
+<div style="position:absolute;top:13473;left:476"><nobr>Running time per item in s</nobr></div>
+<div style="position:absolute;top:13522;left:585"><nobr>Number of items n</nobr></div>
+<div style="position:absolute;top:13350;left:550"><nobr><b>(b) Uniform instances: running time</b></nobr></div>
+<div style="position:absolute;top:13462;left:558"><nobr>PO</nobr></div>
+<div style="position:absolute;top:13470;left:558"><nobr>Loss</nobr></div>
+<div style="position:absolute;top:13478;left:558"><nobr>combo</nobr></div>
+<div style="position:absolute;top:13486;left:558"><nobr>PO+2+Loss</nobr></div>
+<div style="position:absolute;top:13494;left:558"><nobr>PO+2+Loss+H</nobr></div>
+<div style="position:absolute;top:13692;left:248"><nobr>0</nobr></div>
+<div style="position:absolute;top:13663;left:226"><nobr>500000</nobr></div>
+<div style="position:absolute;top:13634;left:230"><nobr>1e+06</nobr></div>
+<div style="position:absolute;top:13604;left:224"><nobr>1.5e+06</nobr></div>
+<div style="position:absolute;top:13575;left:230"><nobr>2e+06</nobr></div>
+<div style="position:absolute;top:13546;left:224"><nobr>2.5e+06</nobr></div>
+<div style="position:absolute;top:13700;left:256"><nobr>1</nobr></div>
+<div style="position:absolute;top:13700;left:303"><nobr>10</nobr></div>
+<div style="position:absolute;top:13700;left:350"><nobr>100</nobr></div>
+<div style="position:absolute;top:13700;left:384"><nobr>512</nobr></div>
+<div style="position:absolute;top:13631;left:208"><nobr>Work * </nobr></div>
+<div style="position:absolute;top:13605;left:208"><nobr>δ</nobr></div>
+<div style="position:absolute;top:13712;left:348"><nobr>1/δ</nobr></div>
+<div style="position:absolute;top:13539;left:273"><nobr><b>(c) </b>δ<b>-correlated instances: work performed</b></nobr></div>
+<div style="position:absolute;top:13555;left:377"><nobr>PO</nobr></div>
+<div style="position:absolute;top:13563;left:377"><nobr>Loss</nobr></div>
+<div style="position:absolute;top:13570;left:377"><nobr>PO+Loss</nobr></div>
+<div style="position:absolute;top:13578;left:377"><nobr>PO+2Lists</nobr></div>
+<div style="position:absolute;top:13586;left:377"><nobr>PO+Loss+2Lists</nobr></div>
+<div style="position:absolute;top:13692;left:495"><nobr>1e-05</nobr></div>
+<div style="position:absolute;top:13663;left:491"><nobr>0.0001</nobr></div>
+<div style="position:absolute;top:13634;left:495"><nobr>0.001</nobr></div>
+<div style="position:absolute;top:13604;left:500"><nobr>0.01</nobr></div>
+<div style="position:absolute;top:13575;left:504"><nobr>0.1</nobr></div>
+<div style="position:absolute;top:13546;left:511"><nobr>1</nobr></div>
+<div style="position:absolute;top:13700;left:519"><nobr>1</nobr></div>
+<div style="position:absolute;top:13700;left:566"><nobr>10</nobr></div>
+<div style="position:absolute;top:13700;left:614"><nobr>100</nobr></div>
+<div style="position:absolute;top:13700;left:662"><nobr>1000</nobr></div>
+<div style="position:absolute;top:13653;left:476"><nobr>Running time * </nobr></div>
+<div style="position:absolute;top:13598;left:476"><nobr>δ</nobr></div>
+<div style="position:absolute;top:13594;left:476"><nobr>in s</nobr></div>
+<div style="position:absolute;top:13712;left:612"><nobr>1/δ</nobr></div>
+<div style="position:absolute;top:13539;left:543"><nobr><b>(d) </b>δ<b>-correlated instances: running time</b></nobr></div>
+<div style="position:absolute;top:13555;left:658"><nobr>PO</nobr></div>
+<div style="position:absolute;top:13563;left:658"><nobr>Loss</nobr></div>
+<div style="position:absolute;top:13570;left:658"><nobr>combo</nobr></div>
+<div style="position:absolute;top:13578;left:658"><nobr>PO+2+Loss</nobr></div>
+<div style="position:absolute;top:13586;left:658"><nobr>PO+2+Loss+H</nobr></div>
+<div style="position:absolute;top:13884;left:223"><nobr>0.001</nobr></div>
+<div style="position:absolute;top:13855;left:228"><nobr>0.01</nobr></div>
+<div style="position:absolute;top:13825;left:232"><nobr>0.1</nobr></div>
+<div style="position:absolute;top:13796;left:239"><nobr>1</nobr></div>
+<div style="position:absolute;top:13767;left:234"><nobr>10</nobr></div>
+<div style="position:absolute;top:13737;left:230"><nobr>100</nobr></div>
+<div style="position:absolute;top:13892;left:247"><nobr>1</nobr></div>
+<div style="position:absolute;top:13892;left:311"><nobr>10</nobr></div>
+<div style="position:absolute;top:13892;left:376"><nobr>100</nobr></div>
+<div style="position:absolute;top:13892;left:441"><nobr>1000</nobr></div>
+<div style="position:absolute;top:13839;left:208"><nobr>Running time in s</nobr></div>
+<div style="position:absolute;top:13904;left:343"><nobr>1/ε</nobr></div>
+<div style="position:absolute;top:13731;left:263"><nobr><b>(e) Instances with similar profit: running time</b></nobr></div>
+<div style="position:absolute;top:13867;left:391"><nobr>PO+2+Loss+H</nobr></div>
+<div style="position:absolute;top:13875;left:391"><nobr>combo</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:8px;font-family:Times">
+<div style="position:absolute;top:13762;left:522"><nobr>Break solution</nobr></div>
+<div style="position:absolute;top:13732;left:571"><nobr>profit</nobr></div>
+<div style="position:absolute;top:13810;left:681"><nobr>weight</nobr></div>
+<div style="position:absolute;top:13765;left:654"><nobr><i>l</i></nobr></div>
+<div style="position:absolute;top:13845;left:652"><nobr>loss filter</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:5px;font-family:Times">
+<div style="position:absolute;top:13738;left:694"><nobr>B</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:8px;font-family:Times">
+<div style="position:absolute;top:13732;left:630"><nobr>new capacity c</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:6px;font-family:Times">
+<div style="position:absolute;top:13733;left:485"><nobr><b>(f)</b></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:13931;left:202"><nobr><b>Fig.5. </b>Efficiency of different implementations: <b>a) </b>work and <b>b) </b>running time for uniform instances</nobr></div>
+<div style="position:absolute;top:13948;left:202"><nobr>as a function of <i>n</i>. <b>c) </b>work and <b>d) </b>running time for δ-correlated instances as a function of 1/δ</nobr></div>
+<div style="position:absolute;top:13965;left:202"><nobr>using <i>n </i>= 10000. <b>e) </b>Uniform instances with similar profit using <i>n </i>= 10000. Each curve represents</nobr></div>
+<div style="position:absolute;top:13981;left:202"><nobr>an implementation that uses a subset of the features as indicated: PO= filtering dominated solu-</nobr></div>
+<div style="position:absolute;top:13998;left:202"><nobr>tions, Loss= loss filter, 2 = two lists, H= additional heuristics, combo =<i>Combo </i>code. Each data</nobr></div>
+<div style="position:absolute;top:14014;left:202"><nobr>point represents the average over <i>T </i>= 1000 experiments. We used β = 0.4. The given running</nobr></div>
+<div style="position:absolute;top:14031;left:202"><nobr>times for uniform and δ-correlated instances do not include the linear time preprocessing (the</nobr></div>
+<div style="position:absolute;top:14047;left:202"><nobr>generation of the random instance, finding the optimal fractional solution, partitioning the set of</nobr></div>
+<div style="position:absolute;top:14063;left:202"><nobr>items according to the loss of items) as it dominates the running time for easy instances.</nobr></div>
+<div style="position:absolute;top:14079;left:202"><nobr><b>f) </b>Pareto curve of the core problem as a step function. Items included in the break solution are</nobr></div>
+<div style="position:absolute;top:14096;left:202"><nobr>negated, as we solve a core problem relative to the Break solution. The slope of line <i>l </i>is the profit-</nobr></div>
+<div style="position:absolute;top:14113;left:202"><nobr>to-weight ratio of the break item. Solutions in the shaded area (points whose vertical distance to</nobr></div>
+<div style="position:absolute;top:14129;left:202"><nobr><i>l </i>is larger than Γ) are filtered out by the loss filter. Observe that if a Pareto point (<i>w</i>, <i>p</i>) is filtered</nobr></div>
+<div style="position:absolute;top:14146;left:202"><nobr>out by the loss filter then all solutions dominated by (<i>w</i>, <i>p</i>) are in the shaded area as well.</nobr></div>
+</span></font>
+</body>
+</html>

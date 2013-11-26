@@ -1,0 +1,158 @@
+/*
+TASK: gaming
+LANG: C++
+*/
+
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <bitset>
+#include <set>
+
+using namespace std;
+
+vector<int> coins;
+
+vector<int> A[55];
+vector<int> toClear[55];
+int neigh[55][55];
+int color[55];
+int comp[55];
+int n,m,col,cost;
+bool used[55];
+int compNum;
+
+void bfs(int u,int c)
+{
+ queue<int> q;
+ int i,next,tmp,to;
+ 
+ q.push(u); used[u]=1; comp[u]=compNum;
+ 
+ while(!q.empty())
+ {
+  tmp=q.front(); q.pop();
+  comp[tmp]=compNum;
+  to=A[tmp].size();
+  for(i=0;i<to;i++)
+    {
+     next=A[tmp][i];
+     if(!used[next] && color[next]==c) { used[next]=1; comp[next]=1; q.push(next); }               
+    }                 
+ } 
+}
+
+void bfsFill(int u,int c)
+{
+ queue<int> q;
+ int i,next,tmp,to;
+ 
+ q.push(u); used[u]=1; 
+  
+ while(!q.empty())
+ {
+  tmp=q.front(); q.pop();
+  to=A[tmp].size();
+  for(i=0;i<to;i++)
+    {
+     next=A[tmp][i];
+     if(!used[next] && color[next]==c) { used[next]=1; q.push(next); }
+     if(color[next]!=c) neigh[compNum][comp[next]]=1;               
+    }                 
+ } 
+}   
+
+
+int solve()
+{
+ int u,v,i,j,cnt1=0,cnt2=0;
+ for(i=0;i<55;i++) A[i]=vector<int> ();
+ memset(used,0,sizeof(used));
+ memset(comp,-1,sizeof(comp));
+ memset(neigh,0,sizeof(neigh));
+ compNum=1;
+   
+ scanf("%d %d %d %d",&n,&m,&col,&cost);
+ 
+ for(i=0;i<n;i++) scanf("%d",&color[i]);
+ for(i=0;i<m;i++) { scanf("%d %d",&u,&v); A[u].push_back(v); A[v].push_back(u); }
+ 
+ for(i=0;i<n;i++)
+    if(!used[i] && color[i]!=col) { bfs(i,color[i]); compNum++; }
+ cnt1=compNum-1;
+ 
+ compNum=1;
+ for(i=0;i<n;i++)
+    if(!used[i] && color[i]==col) { bfsFill(i,color[i]); compNum++; }
+ cnt2=compNum-1;
+ 
+ int changes=0;
+ int lefted=cnt1;
+ 
+// cout<<"-------------------"<<endl;
+// cout<<cnt1<<" "<<cnt2<<endl;
+// for(i=1;i<=cnt2;cout<<endl,i++)
+//    for(j=1;j<=cnt1;j++)
+//        cout<<neigh[i][j]<<" ";
+// cout<<"-------------------"<<endl;
+ 
+ while(1)
+ {
+  bool answ=0;
+  int br=0;
+  int maxx=2;
+  int saved;
+  
+  for(i=1;i<=cnt2;i++)
+     { br=0;
+       for(j=1;j<=cnt1;j++)
+            if(neigh[i][j]) br++;
+       if(br>maxx) { maxx=br; saved=i; answ=1; }
+     }  
+  
+  if(!answ) break;
+  
+  vector<int> toDel;
+  changes+=2;
+  lefted-=maxx;
+  
+  int size;
+  for(j=1;j<=cnt1;j++)
+     if(neigh[saved][j]) toDel.push_back(j);
+  size=toDel.size();
+   
+  for(i=1;i<cnt2;i++)
+     for(j=0;j<size;j++)
+         neigh[i][toDel[j]]=0;
+ }
+ 
+ changes+=lefted;
+  
+ return changes*cost; 
+}
+
+int main()
+{
+ int l,tmp,sum=0,i;
+ scanf("%d",&l);
+  
+ for(i=0;i<l;i++) { tmp=solve(); sum+=tmp; coins.push_back(tmp); }
+ 
+ set<int> a,b;
+ set<int> :: iterator cnt;
+ 
+ for(i=0;i<l;i++)
+  {
+   a=b;
+   b.insert(coins[i]);
+   cnt=a.begin();
+   while(cnt!=a.end()) { if((*cnt)+coins[i]<sum/2+2) b.insert((*cnt)+coins[i]); cnt++; }               
+  }
+ 
+ cnt=b.end();
+ cnt--;
+ while((*cnt)>sum/2 && cnt!=b.begin()) cnt--;
+ cout<<max((*cnt),sum-(*cnt))<<endl;
+   
+ return 0;
+}

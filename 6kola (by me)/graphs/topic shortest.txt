@@ -1,0 +1,430 @@
+намиране на най-къс път в претеглени графи
+
+айде всеки да се заеме да препише от тетрадката някое от тези, че ги нямам у нас :)
+
+pseudo-dfs
+dijkstra (колкото повече варианти, толкова по-добре)
+bellman-ford
+floyd-warshall
+
+
+
+[i][b]tasks:[/b]
+
+just dijkstra:
+	srm 181/div1/kilomanx
+	proleten/2004/wireless
+	booi/2007/chase
+	booi/2008/platforms
+	shumen/2005/maps	
+	tco/2008/qual 3/cabledonation
+	srm 335/expensive travel
+	noi/2005/k3/burn
+	srm 150/div1/robocourier
+	srm 194/div1/islandferries
+	srm 198/div1/dungeonescape
+	tccc/2004/round 4/bombman
+	boi/2008/problem1
+
+dijkstra+graph extension:
+	baltic/2002/speed
+	srm 422/cavepassage
+	noi/2007/lift
+
+bellman ford (or similar):
+	dekana/2007/e
+	mcmf
+
+floyd-warshall:	
+	srm 184/div2/teambuilder[/i]
+
+
+....
+
+
+все пак идеята зад [b]дийкстра[/b] да я споменем:
+
+целта е да построим дърво на минимални пътища с даден корен, т.е. всеки път в дървото от корена до някой връх да е минимален (в сравнение с останалите възможни покриващи дървета)
+
+0. текущото дърво е само корена (върха, от който искаме да намерим минималните пътища)
+1. докато има върхове извън дървото
+    1а. вземаме всички ребра [b](a,b,c)[/b] (свързващи връх [b]а[/b] с връх [b]b[/b] с цена [b]c[/b]), за които връх [b]a[/b] е от дървото, а връх [b]b[/b] не е
+    1б. от тях избираме това, което като го добавим до дървото ще даде път до [b]b[/b], който е по-къс от всички останали пътища до b и от всички пътища образувани по този начин от останалите такива ребра. Сиреч разстоянието от корена до [b]a[/b] плюс цената [b]c[/b] да е минимално в сравнение с останалите ребра от този вид.
+    1в. добавяме го към дървото, добавяме и [b]b[/b] към дървото
+2. край
+
+това може да се направи със сложност [b]O(N^2)[/b] (намирането на най-близкия връх [b]b[/b] да става с линейно обхождане), което е по-удачен вариант при гъсти (dense) графи, или със.... (виж долу)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+за всяко d[v]= INF;  p[v]=-1;  d[src]=0;
+
+
+
+#define d first
+#define v second
+#define PI pair<int,int>
+#define MP make_pair
+
+
+[b]Pseudo DFS - O(много...)[/b]:
+
+[code]void pseudodfs(int v)
+ {
+       for(i=0;i<adj[v].size();i++)
+       { 
+              int next=adj[v][i];
+              if(d[v]+cost[v][i]<d[next])
+                    {
+                         d[next]=d[v]+cost[v][i];
+                         pseudodfs(next);
+                    }
+       }
+ }[/code]
+
+
+-----------------------------------------------------------------------
+
+
+[b]Dijkstra PQ - O(M*logN)[/b]:
+
+ 
+
+[code]void dijkstra(int src)
+{   
+     PQ<PI,vector<PI> ,greater<PI> > q;
+     q.push(MP(0,src));
+     while(!q.empty())
+       {
+            PI t=q.top();  
+            q.pop();
+            if(used[t.v]) continue;
+            used[t.v]=1;
+            for(i=0;i<=adj[t.v].size();i++)
+               {
+                      int next=adj[t.v][i];
+                      if(d[next] > t.d+cost[t.v][i])
+                         {
+                              d[next]=t.d+cost[t.v][i];  //променяме
+                              p[next]=t.v;
+                              q.push(MP(d[next],next)); //и пъхаме (не махаме)
+                         }
+               }
+       }
+}
+[/code]
+
+
+------------------------------------
+
+
+[b]Dijkstra set<PI> - O(M*LogN)[/b] - абсолютно същото като с PQ, само дето тука и махаме върхове => няма нужда от used (щот няма един и същи връх 2 пъти в опашката)
+
+
+[code]void dijkstra(int src)
+{   
+     set<PI> q;
+     q.insert(MP(0,src));
+     while(q.size())
+       {
+            PI t=*q.begin();  
+            q.erase(q.begin());
+            for(i=0;i<=adj[t.v].size();i++)
+               {
+                      int next=adj[t.v][i];
+                      if(d[next] > t.d+cost[t.v][i])
+                         {                                                  //редът!!!!
+                              q.erase(MP(d[next],next));         //махаме
+                              d[next]=t.d+cost[t.v][i];            //променяме
+                              q.insert(MP(d[next],next));        //пъхаме
+                              p[next]=t.v;
+                         }
+               }
+       }
+}[/code]
+
+.....................................................
+
+
+
+
+[b]Dijkstra set<наш си тип> - O(M*LogN)[/b] - 1:1 с горното, само че е маааалко по-бързо
+
+[code]
+struct entry
+{
+   int d,v;
+   entry(){};
+   entry(int dist, int vruh) { v=vruh,d=dist; };
+};
+
+bool operator<(const entry &a,const entry &b)
+{  return a.d<b.d;  }
+
+void dijkstra(int src)
+{   
+     set<entry> q;
+     q.insert(entry(0,src));
+     while(q.size())
+       {
+            entry t=*q.begin();  
+            q.erase(q.begin());
+            for(i=0;i<=adj[t.v].size();i++)
+               {
+                      int next=adj[t.v][i];
+                      if(d[next] > t.d+cost[t.v][i])
+                         {                                                  //редът!!!!
+                              q.erase(entry(d[next],next));         //махаме
+                              d[next]=t.d+cost[t.v][i];            //променяме
+                              q.insert(entry(d[next],next));        //пъхаме
+                              p[next]=t.v;
+                         }
+               }
+       }
+}[/code]
+
+
+................................
+
+[b]dijkstra with PQ<наш тип>[/b] - 1:1 с PQ<PI> ама леко по-бързо (аналогично...)
+
+[code] бла бла
+            ама operator<(...) е
+             return a.d [b]>[/b] b.d; !!! заради обратната сортировка в опашката
+ [/code]
+
+//edited by momchil :) br br
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[b]Bellman-Ford[/b]:
+
+
+[code]struct edge
+{
+    int f,s,c;
+    edge() {};
+    edge(int firstnode,int secondnode,int cost) { f=firstnode,s=secondnode,c=cost; };
+};
+
+vector<edge> edges;
+
+бла бла
+всяко 0<=v<N , d[v]=INF; p[v]=-1;
+d[src]=0; (аби като при dijkstra и pseudodfs)
+
+
+for(i=0; i<N; i++)
+{  
+      change=0;
+      for(j=0; j<edge.size(); j++)
+       {
+              int a=edges[j].f;
+              int b=edges[j].s;
+              int c=edges[j].c;
+              if(d[a]+c<d[b])
+                  {
+                       d[b]=d[a]+c;
+                       p[b]=a;
+                       change=1;
+                   }
+       }
+     if(!change) break;
+     if(i==N-1) cout<<"NEGATIVE CYCLE!!!!!"<<endl;
+}[/code]
+
+
+лека и весели празници  ;)
+
+//edited by momchil :)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[b]Dijkstra with set<int> - O(M*LogN) само че леко по-бързо от другите 4 варианта[/b]
+
+
+[code]struct cmp
+{
+  bool operator()(const int &a,const int &b) const
+  {return (d[a]==d[b])?a<b:d[a]<d[b]; };          //     прочети коментара при operator< на Dijkstra set<наш си тип>, няколко поста по-горе!!!
+};
+
+
+void dijkstra(int src)
+{
+   set<int,cmp> q;
+   q.insert(src);
+   while (q.size())
+    {
+       int v=*q.begin(); q.erase(q.begin());
+       for(i=0; i<adj[v].size(); i++)
+       { 
+          int next=adj[v][i];
+          if(d[next] > d[v]+cost[v][i])
+           {                                               //реда!!!!!!!!!!!!!
+             q.erase(next);                      // махаме...
+             d[next]=d[v]+cost[v][i];        // ...променяме...
+             q.insert(next);                     // ...пъхаме
+             p[next]=v;
+           }
+       }
+    }
+}
+[/code]
+
+
+//edited by momchil :) good work
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Are Ivo e pisal Belmond-Ford, az shte napisha Floyd...ili pone shte probvam, che tetradkata ne e v men... xD
+
+[b]Floyd-Warshall - O(N^3) с много малка константа[/b]
+
+ma3x - матрица на съседство с цени (0 = няма ребро)
+
+[code]for(i=0; i<N; i++)
+ for(j=0; j<N; j++)
+  shortest[i][j]=(има ребро между i и j) ? ma3x[i][j] : INF;
+
+for(mid=0; mid<N; i++)
+ for(a=0; a<N; a++)
+  for(b=0; b<N; b++)
+   if(shortest[a][mid] + shortest[mid][b] < shortest[a][b])
+    shortest[a][b] = shortest[a][mid] + shortest[mid][b];[/code]
+
+//i tova e edited by mom
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[b]Pseudo-BFS - O(ажяажяаог)[/b]
+
+[code]...там нулирането на d и p...
+q[0]=src;
+for (int st=0,en=1;st<en;st++)
+ {
+    int v=q[st];
+    for (int i=0;i<adj[v].size();i++)
+     {
+        int next=adj[v][i];
+        if (d[v]+cost[v][i] < d[next])
+         {
+               d[next]=d[v]+cost[v][i];
+               p[next]=v;
+               q[en++]=next;
+         }
+     }
+ }[/code]
+
+...макар че тея псевдо лайна са пълна глупост и НЕ ги пишете на състезание ;D
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Поправка - псевдо-BFS-то НЕ Е ГЛУПОСТ, а оптимизиран Bellman-Ford. Единствено трябва да се добави едно bool inqueue[] дето да казва дали даден връх вече не е в опашката (логично - за кво ни е да го пъхаме 23424 пъти). Моя грешка

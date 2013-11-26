@@ -1,0 +1,95 @@
+ne e re4eno 4e e best way
+samopodgotovka - we just tell u how (infoman - iubileina statiq)
+
+opredeli za kvo se sustezava6
+
+
+kak re6avate zada4i?
+- wrong way - proba s tests dokato ne stane, else read author's, implement & done
+- right way
+   samoanaliz!
+   pisane do 99% sure it works;
+   ot vs po-qka zad moe se nau4i ne6to, osobeno ako ne e trugnala ot 1st time; list bug-ove koito si oprail dokato si q re6aval - taka otkriva6 kvo gre6i6 nai-4esto
+   author's v kraen slu4ai, kato shva6ta6 i osmislq6 ideqta a ne go zazubrq6 v contxt na konkr zad, slaga6 q v to-do-listata i sled vreme q re6ava6 pak, bez da 4ete6 avtorovoto; kakvo ne ti e stignalo da se seti6 sam za re6enieto
+   spisak s re6eni zada4i po dati - tip, kak se re6ava, kakvi spunki ima6e i kvo nau4i ot neq; quote mine + izvodite ot tqh + common mistakes
+   quote velin
+=> moe re6i6 3214234234 zad i pak hui (e.g. ivan ivanov)
+- vse pak po-dobre wrong way otkolkoto ni6to
+
+preriodi m/y sustezaniqta
+
+- vs den/prez den - konkretna teoriq - practice (6te ka4a list s algo's & shit + links)
+- zada4i s taq teoriq (tc - sort by type; tc tutorials; cs stuff; wiki; google - "edi-kvi-si tasks/problems/etc")
+- razu4avane i ebavane s sredata - stl, dokumentation; experimenting
+- tc rulez
+- list s sites - zad + info
+- practice makes perfect
+- pisane / mislene - 2 aspects
+
+(2-3 sedmici) predi sustezanie
+
+- past takiva sustezaniq ili blizki do nego sustezaniq - 5 4asa na den pulna simulaciq! testing, analiz na gre6ki the right way + pisane dokato ne trugnat
+- poneje ne moje >1 na den, raznoobrazie s tc
+- sleep
+
+po vr na sustezanie
+
+- abstahira6 se ot drugite, te ne sa6testvuvat
+- time manegement - razberi kak e best za teb, eksperimentirai u vas
+- read all tasks CAREFULLY; brainstorm ideas v/y sqka (zapi6i gi est); posle try & develop po-zadulbo4eno teq ideas (kato ne misli6 po 2 zad ednovremenno est); ~pone 30 min total mislene bez pisane
+- zema6 (prividno) nai-lesnata; velin style - bfs (ne direktno na otgovora pri hard tasks (takia nema u bg)); kiss; ako zabie6 - free ur mind i pomisli kude burka6
+- pri izmisleno re6enie - psevdo-kod na lista; koda trq ti e v glavata! all implementation details clarified; challenge si4ko v algoritama - sqki ne6to priema6 4e ne e vqrno i misli6 kontra-primer (e.g. ioi 08 - me sux na island i dumite); nai-e kofti sled 2 4asa pisane da se okaje, 4e tva e pulna glupost
+- af + ri (see logs); podredenost; vse pak teq laina sa za po-izvratenite zada4i
+- parvo se pi6e brute force (daje predi da po4ne6 da q misli6 seriozno)! 1) za testing (rumen ; script) 2) za po-sigurno 3) bg - bf worx 6ot keleved & stoika gi marzi; 4) base - no panic ako se okaje 4e sol sux;;; nikvi pseudo-brute force! 5) nau4i se ot tc i ot usaco (za umni bf)
+- pisaneto e samo pisane, nikvo mislene dokat pi6e6
+- kato svar6i6 & si testval s primerni tests (a.k.a. prividno raboti) - read kod red po red (e.g. az gcj a&3)! cmp s af+ri ; challenge each line - kvo sum sburkal tuka (tc!)? kude moje toq red da se sgovni? tva vaji li za vs - kontra? (tc helps - e.g. anastasov)
+- prevazmogvane na euforiqta "qko re6ih zada4a!!" kato si predstavi6 kak gleda6 klasiraneto i ima6 10-20 to4ki na neq 6tot si oral nqkva glupost (100% se e slu4valo)
+- posle - generator + script za test s bf-to (!!!!! ; no ne i predi small tests + challenge) e.g. ioi08 - lotusite - 3 sols
+- kato si sure - minava6 na next; dokato q misli6 ostavi onva da generira, testva i da pi6ti ako ima gre6ka
+- never give up - zor do posledno, poslednite min sa cruical (pitai marto/men)
+- get used to toq stil (practice at home) - trudno e, no si struva; samo deto ne minava v tc i acm kato cqlo (e.g. samiq velin)
+- kusmeta do minimum - e.g. 1.5h left za 1na zad po koqto si mislil malko  - nema recepta bace
+- povedenie v zavisimost ot sustezanieto - play safe pri takiva det se subirat to4kite ili se minava ot krug na krug (e.g. noi, tc tournaments)
+
+sled sustezanie
+
+- malko relax; osmislqne kvo ne e stanalo kat trqq, kvo e mojelo da bude po-dobre
+- ako e mojelo da se predstavite po-dobre (bez poemane na nqkvi tupi riskove), sustezanieto e osrano
+- vs e razli4en - e.g. pri men, irlandeca, vesko i pr neuspeha motivira (uspeha demotivira pri men:)
+
+total:
+
+samokriti4nost, samoanaliz
+pi6i na list
+read code
+stay calm (ma ne zaspivai)
+sustezava6 se sus sebe si
+velin style
+
+
+more:
+
+pobeditelite pri malkite padat pri golemite
+pri nesigurno re6enie - if (n<343) bruteforce() else realsol()
+greedy - the more,the more
+time bombs
+scanf/printf
+
+
+
+references:
+mom ti si idiot (po default)
+srm log
+PREDI SUBMIT
+bg sustezaniq (noi)
+quotes (ioi prep)
+links (cd ..)
+hitrinki.txt (po default)
+
+
+
+
+
+
+
+http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=planApproach1

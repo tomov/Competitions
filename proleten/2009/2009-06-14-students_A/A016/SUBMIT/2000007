@@ -1,0 +1,42 @@
+#include<iostream>
+#include<cstdlib>
+#include<cstdio>
+#define MAXN 1000001
+using namespace std;
+unsigned A[MAXN];
+unsigned _abs(long d)
+{
+         if(d<0) return -d;
+         return d;
+}
+
+unsigned long  _round(long double d)
+{
+         unsigned long long t=d;
+         if(d-t<=0.5) return t;
+         return t+1;
+}
+
+int main()
+{
+    unsigned i,N,K,b,e,ind,min=INT_MAX,sr,t;
+    unsigned long sum=0;
+    scanf("%u%u", &N, &K);
+    for(i=0;i<N;i++)
+    scanf("%u", &A[i]);
+    b=0;e=K-1;
+    for(i=b;i<=e;i++)
+    sum+=A[i];
+    while(e<N) {
+          sr=_round(sum/K);
+          t=0;
+          for(i=b;i<=e;i++)
+          t+=_abs(A[i]-sr);
+          if(t<min) {ind=b+1;min=t;}
+          sum=sum-A[b]+A[e+1];
+          b++;e++;
+    }
+    printf("%u\n%u\n", min, ind);
+    //system("pause");
+    return 0;
+}

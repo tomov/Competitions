@@ -1,0 +1,409 @@
+Jun 21 19:57:33 *	Now talking on #ioi2006
+Jun 21 19:57:33 *	Topic for #ioi2006 is: koga pak shte pravim kontrolno? ( da pitam valio za zadachi po kvadratni poleta). Iskren: na 24 ve4erta NE sum svoboden (RD (ne moi:))) na 22-ri ot 9:00 trenirovka
+Jun 21 19:57:33 *	Topic for #ioi2006 set by vesko[more_ole]!~vesko_aw_@87.126.42.121 at Wed Jun 21 17:43:53 2006
+Jun 21 19:58:00 valo	zdraveite
+Jun 21 19:58:11 vesko[more_ole]	zdravei:)
+Jun 21 19:58:35 valo	kak sme?
+Jun 21 19:58:44 valo	interesen topic :)
+Jun 21 19:58:55 vesko[more_ole]	ammi da...
+Jun 21 19:59:04 vesko[more_ole]	iskah da te pitam za edni zadachi deto ne gi umeq
+Jun 21 19:59:06 vesko[more_ole]	apak ima nqkoi itneresni
+Jun 21 19:59:15 vesko[more_ole]	i ako i ti mojesh da se setish nqkoq kato ti kaja za kakvo stava vupros
+Jun 21 19:59:19 vesko[more_ole]	che da poreshavam takiva
+Jun 21 19:59:23 valo	mi dano az da gi umeq che da moga da ti pomogna ;-)
+Jun 21 20:00:00 vesko[more_ole]	stava vupros za zadachi kato
+Jun 21 20:00:05 vesko[more_ole]	land ot IOI 99 mislq che beshe
+Jun 21 20:00:13 vesko[more_ole]	i na poslednoto IOI vidqh che e imalo takava...
+Jun 21 20:00:23 vesko[more_ole]	i v gurciq mai e imalo nqkakva takava s durveta nqkvi
+Jun 21 20:00:35 vesko[more_ole]	imache na BaOI04
+Jun 21 20:00:45 vesko[more_ole]	edna zadacha camp mislq che beshe...
+Jun 21 20:00:48 vesko[more_ole]	takav tip zadachi
+Jun 21 20:01:08 valo	ne znam. kaji mi link ili mi razkaji uslovieto
+Jun 21 20:01:53 vesko[more_ole]	w8
+Jun 21 20:02:22 vesko[more_ole]	http://www.rafb.net/paste/results/i6L5tm97.html
+Jun 21 20:02:48 evy	land-a e hubawa zada4a
+Jun 21 20:02:58 evy	to nomera e da izmisli6 kak da ti e strukturata
+Jun 21 20:03:07 evy	to ob6to wzeto na wsqkyde e taka :)
+Jun 21 20:03:23 *	PreslavLe (~presley@217-10-254-7.cable.evrocom.net) has joined #ioi2006
+Jun 21 20:03:28 PreslavLe	zdraveite
+Jun 21 20:03:42 valo	a da setih se :)
+Jun 21 20:03:46 valo	PreslavLe: zdravei :)
+Jun 21 20:03:56 vesko[more_ole]	zdrasti PreslavLe
+Jun 21 20:04:09 vesko[more_ole]	[20:02:08] <vesko[more_ole]> http://www.rafb.net/paste/results/i6L5tm97.html
+Jun 21 20:06:07 PreslavLe	kakvi sa ogranicheniqta che ne moga da procheta
+Jun 21 20:06:24 PreslavLe	btw znaete li kakav mi e baga na champs ot USAICO :)
+Jun 21 20:06:29 valo	100x100
+Jun 21 20:06:33 vesko[more_ole]	C <= 10
+Jun 21 20:06:37 vesko[more_ole]	700x700
+Jun 21 20:06:53 vesko[more_ole]	-30 000 < H < 30 000
+Jun 21 20:06:53 PreslavLe	masiva mi e po-malak :)
+Jun 21 20:06:57 vesko[more_ole]	h e visochinata
+Jun 21 20:06:57 PreslavLe	sek
+Jun 21 20:07:01 valo	a da. to regiona deto e result-a e do 100x100
+Jun 21 20:07:09 vesko[more_ole]	PreslavLe kakav ti e bug-a?
+Jun 21 20:07:18 PreslavLe	(20:07:22) PreslavLe: masiva mi e po-malak :)
+Jun 21 20:07:25 vesko[more_ole]	da valo tova shtqh da go propusna
+Jun 21 20:07:34 vesko[more_ole]	PreslavLe do kolko si go ostavil?
+Jun 21 20:08:29 PreslavLe	1024
+Jun 21 20:09:30 PreslavLe	az se sestham za elementarno reshenie 49*10^6
+Jun 21 20:09:52 vesko[more_ole]	kak go izbra tova 49?
+Jun 21 20:09:57 vesko[more_ole]	logN^2
+Jun 21 20:10:13 PreslavLe	700*700:)
+Jun 21 20:12:19 PreslavLe	a inache moje i 4,9 * 10^6
+Jun 21 20:12:27 valo	az si mislq dali ne moje da se priloji onaq dalavera sys stack-ovete
+Jun 21 20:12:41 PreslavLe	4 000 000 operacii mnogo li e?
+Jun 21 20:12:45 vesko[more_ole]	PreslavLe da
+Jun 21 20:12:52 vesko[more_ole]	valo kakva dalavera
+Jun 21 20:12:56 valo	pri polojenie che ogranichenieto e 60sec..
+Jun 21 20:13:03 valo	ne mislq che 4*10^6 e mnogo
+Jun 21 20:13:10 evy	valo ne6to podobno e...
+Jun 21 20:13:18 PreslavLe	uff
+Jun 21 20:13:30 vesko[more_ole]	... reshsnieto e 10*100*100
+Jun 21 20:13:33 PreslavLe	chakai che moje da ne stane ama 49*10^6 100% stava :)
+Jun 21 20:13:43 PreslavLe	:)
+Jun 21 20:13:45 valo	znaete li ima edna zadacha
+Jun 21 20:13:59 valo	v koqto sa ti e dadena vse edno histograma
+Jun 21 20:14:08 vesko[more_ole]	ne
+Jun 21 20:14:08 valo	t.e. imash edna os
+Jun 21 20:14:26 valo	na koqto imash pozicii, 0,1,2,3,4,5,6,....
+Jun 21 20:14:36 valo	na vsqka poziciq ima stylb s opredelena visochina
+Jun 21 20:15:03 valo	vse edno taka imash... moment da nachertaq
+Jun 21 20:16:33 valo	# #   #
+Jun 21 20:16:33 valo	# # ####
+Jun 21 20:16:33 valo	# #######
+Jun 21 20:16:33 valo	#########
+Jun 21 20:16:44 PreslavLe	valo tova kak shte go prilojish?
+Jun 21 20:17:00 valo	i trqbva da kajesh kakyv e max pravoygylnik deto moje da se vmesti v taq kartinka
+Jun 21 20:17:10 valo	kato toi trqbva da e sys strani usporedni na osite
+Jun 21 20:17:24 vesko[more_ole]	a harabi
+Jun 21 20:17:25 PreslavLe	tova moje daje bez stackove :)
+Jun 21 20:17:27 vesko[more_ole]	tazi nqmam ideq kak stava
+Jun 21 20:17:33 vesko[more_ole]	i sega shte mi kajesh:)
+Jun 21 20:17:39 valo	ta ideqta e che moje da se napravi lineino
+Jun 21 20:17:55 valo	PreslavLe: i kak stava bez stack-ove?
+Jun 21 20:18:04 valo	to e edin stack de ;-)
+Jun 21 20:18:10 PreslavLe	ami kato knuth-moris-prat
+Jun 21 20:18:19 PreslavLe	dinamichno
+Jun 21 20:18:26 PreslavLe	i to se dokazva che e lineino prosto
+Jun 21 20:18:34 valo	aha
+Jun 21 20:18:39 valo	mai imashe neshto takova
+Jun 21 20:18:50 vesko[more_ole]	valo kaji kak
+Jun 21 20:19:18 valo	vesko[more_ole]: chai da si go pripomnq ;-)
+Jun 21 20:19:50 evy	:) for (i=1;i<=n;i++) while (stack[s]>cur[i]) s--;
+Jun 21 20:19:57 evy	stack[++s]=a[i];
+Jun 21 20:20:02 evy	opa *cur[i]
+Jun 21 20:20:11 evy	i samo slaga6 da gleda6 kyde ti e maximalno
+Jun 21 20:20:20 valo	znachi
+Jun 21 20:20:31 valo	vyrvish po poziciite kato trygnesh ot nachaloto
+Jun 21 20:20:36 valo	i imash edin stack
+Jun 21 20:20:58 valo	slagash visochinite v stack-a
+Jun 21 20:21:05 valo	kato predi tova gledash kakvo ima v nego
+Jun 21 20:21:17 valo	ako e prazen slagash (to ne moje koi znae kakvo da se napravi togava;-)
+Jun 21 20:21:21 PreslavLe	hora pochnete po-otnachalo
+Jun 21 20:21:51 PreslavLe	za vsqko i si predstavqsh che to shte uchastva v pravoagalnika i shte e nai-niskoto
+Jun 21 20:21:54 valo	ako visichinata koqto e na vyrha na stack-a e po-golqma ot tekushtata
+Jun 21 20:22:14 PreslavLe	i trqbva da namerish nai-blizkoto po-nisko ot lqvo i ot dqsno i smqtash liceto na tozi pravoagalnik
+Jun 21 20:22:22 PreslavLe	kato gi smetnesh za vsichki namirash nai-malkoto
+Jun 21 20:22:37 PreslavLe	i sega te ti obesnqvat kak da namerish nai-blizkoto po-nisko ot lqvo i ot dqsno
+Jun 21 20:23:33 valo	tova koeto kaza PreslavLe ne e li qsno?
+Jun 21 20:23:59 vesko[more_ole]	ok i..
+Jun 21 20:24:00 evy	PreslavLe, ostawi valo da se izkaje do kraq, mnogo e gadno dawa du6i da goworqt zaedno...
+Jun 21 20:24:13 PreslavLe	qsno e predpolagam che trqbva ot tam da se pochne
+Jun 21 20:24:14 PreslavLe	ok
+Jun 21 20:24:38 valo	evy: ti da vidish kogato i iskren e tuka kakvo stava
+Jun 21 20:25:00 PreslavLe	pazar :)
+Jun 21 20:25:04 evy	jalko 4e ne mi  e podryka da go udrqm
+Jun 21 20:25:09 vesko[more_ole]	e ne samo iskren ima vina spored men
+Jun 21 20:25:13 valo	obshto vzeto...
+Jun 21 20:25:15 vesko[more_ole]	prosto nie nqmame red
+Jun 21 20:25:33 valo	taka dai da obqsnim tova sys stack-ovete
+Jun 21 20:25:47 valo	ta znachi vyrvish po poziciite i slagash v stack-a
+Jun 21 20:25:51 valo	kato predi da slojish vytre
+Jun 21 20:26:01 valo	mahash vsichki na vyrha koito sa po-niski ot nego
+Jun 21 20:26:08 valo	i taka go slagash otgore
+Jun 21 20:26:15 valo	taka v kraina smetka se poluchava taka che
+Jun 21 20:26:30 valo	vyv vseki edin moment v stack-a ti ima visochini
+Jun 21 20:26:42 valo	koito sa v narastvashta golemina
+Jun 21 20:26:46 valo	tova qsno li e?
+Jun 21 20:26:51 vesko[more_ole]	da
+Jun 21 20:27:02 PreslavLe	valo mahash vsichki, koito sa po-visoki ot nego
+Jun 21 20:27:15 vesko[more_ole]	[20:25:46] <valo> mahash vsichki na vyrha koito sa po-niski ot nego
+Jun 21 20:27:20 valo	taka
+Jun 21 20:27:24 vesko[more_ole]	koito sa po visoki mai trqbva
+Jun 21 20:27:24 valo	sega kakva e ideqta
+Jun 21 20:27:40 valo	da de. trqbva da sa vinagi narastvashi v stack-a
+Jun 21 20:27:43 vesko[more_ole]	slusham e
+Jun 21 20:28:46 valo	chai da si go formuliram...
+Jun 21 20:29:13 valo	ideqta na mahaneto
+Jun 21 20:29:22 valo	na tezi koito sa po-visoki e che
+Jun 21 20:29:36 valo	pravoygylnikyt v koito uchastva toq deto sega shte go vkarvame
+Jun 21 20:29:55 valo	prodyljava vyv tezi koito gi mahame
+Jun 21 20:30:10 valo	tyi kato te sa po-visoki
+Jun 21 20:30:44 vesko[more_ole]	tova na vseki hod li go pravim?
+Jun 21 20:30:50 vesko[more_ole]	ili go pravim 1-pat za cqlata redica
+Jun 21 20:30:57 vesko[more_ole]	i posle smqtame neshtoto koeto e otgovor
+Jun 21 20:31:05 valo	pravim go na vsqka stypka
+Jun 21 20:31:16 valo	predi da vkarame nova visochina v stack-a
+Jun 21 20:31:22 valo	i izchislqvame
+Jun 21 20:31:38 valo	kolko ni e pravoygylnikym koito se poluchava po tozi nachin
+Jun 21 20:32:09 vesko[more_ole]	dobre ako imam 1 2 2 2 1
+Jun 21 20:32:11 vesko[more_ole]	slagam 1
+Jun 21 20:32:16 vesko[more_ole]	slagam 2
+Jun 21 20:32:25 vesko[more_ole]	sledvashtoto 2 ne go slagam...
+Jun 21 20:32:29 valo	slgash go
+Jun 21 20:32:35 valo	tyi kato e s ravna golemina
+Jun 21 20:32:42 PreslavLe	ami vadish 2 i posle slagash 2 :)
+Jun 21 20:32:42 vesko[more_ole]	ddobre 1 2 2 2 visocnihata e 1
+Jun 21 20:32:55 vesko[more_ole]	is tava 4
+Jun 21 20:33:00 vesko[more_ole]	liceto
+Jun 21 20:33:09 PreslavLe	da
+Jun 21 20:33:14 valo	ima oshte edin moment
+Jun 21 20:33:19 vesko[more_ole]	posle slagam 1
+Jun 21 20:33:23 vesko[more_ole]	i maham 2 2 2
+Jun 21 20:33:29 vesko[more_ole]	i stava 1 1 i lice 5...
+Jun 21 20:34:02 valo	samo da si go spomnq...
+Jun 21 20:34:23 PreslavLe	vesko[more_ole] po-tozi nachin smqtash nai-blikata po-niska ot lqvo i ot dqsno.
+Jun 21 20:34:31 PreslavLe	i ako te sa ti R i L
+Jun 21 20:34:49 vesko[more_ole]	demek minavash edin pat nalqvo i q pat na dqsno?
+Jun 21 20:34:51 PreslavLe	to liceto na tozi pravoagalnik e h*(R-L)
+Jun 21 20:34:55 vesko[more_ole]	aha
+Jun 21 20:34:57 PreslavLe	da
+Jun 21 20:34:57 vesko[more_ole]	sega veche zagrqh
+Jun 21 20:35:16 PreslavLe	h*(R-L-1), no tova ne e vajno :)
+Jun 21 20:35:41 valo	taka
+Jun 21 20:35:42 vesko[more_ole]	da svanah veche
+Jun 21 20:35:46 vesko[more_ole]	tova sa mnogo hitri idei
+Jun 21 20:36:00 vesko[more_ole]	usaco gledam mnogo chesto davat takiva deto trqbva da se setish neshto s stek-ove
+Jun 21 20:36:04 valo	do momenta kakvo smetnahme: smetnahme kolko ni otiva pravoygylniky na lqvo
+Jun 21 20:36:31 valo	trqbva da smetnem i na dqsno kolko otiva i tova mislq che moje da stane kato mahame nqkoi ot stack-a
+Jun 21 20:36:56 PreslavLe	valo ne trqbva li da napravish nov stack otnachalo i da obhodish v obratnata posoka
+Jun 21 20:37:04 valo	ne e nujno
+Jun 21 20:37:15 valo	mojesh samo s edno obhojdane
+Jun 21 20:37:23 valo	inache moje i taka de :)
+Jun 21 20:37:37 PreslavLe	kak moje s edno obhojdane?
+Jun 21 20:37:51 PreslavLe	malko neveroqtno mi zvuchi
+Jun 21 20:37:54 valo	stava
+Jun 21 20:37:56 valo	eto kak:
+Jun 21 20:38:06 valo	kato slagash nqkoi v stack-a
+Jun 21 20:38:20 valo	nali mahash nqkoi predi tova?
+Jun 21 20:38:30 PreslavLe	da
+Jun 21 20:38:37 valo	pazi sh za vseki koito si slojil do kyde si mahnal
+Jun 21 20:38:46 valo	t.e. tova mu e left border-a
+Jun 21 20:38:57 valo	osven tova
+Jun 21 20:39:07 valo	kogato mahash nqkoi ot stack-a
+Jun 21 20:39:20 vesko[more_ole]	smisal che tezi deto si gi mahnal right bound-a im e tozi element
+Jun 21 20:39:21 valo	ti go mahash zashtoto tozi koito iskash da slojish v momenta
+Jun 21 20:39:31 vesko[more_ole]	a ti s obhojdaneto namirash left bound-a
+Jun 21 20:39:36 valo	se qvqva negov right border
+Jun 21 20:40:05 PreslavLe	valo: a tezi deto sa ravni slagash li gi ili gi mahash?
+Jun 21 20:40:18 valo	slagash gi
+Jun 21 20:40:30 PreslavLe	i kak tochno namirash left bound-a?
+Jun 21 20:40:31 evy	valo,  po dobre e da nqma6 rawni posledowatelni
+Jun 21 20:40:34 valo	mai mojesh i da gi mahash vsyshnost...
+Jun 21 20:40:45 PreslavLe	ako imash trqbva da pazish dopalnitelni za left bound-a
+Jun 21 20:40:51 valo	da... ako gi mahash tova nqma da te precaka
+Jun 21 20:41:02 PreslavLe	ako nqmash ne mojesh da namerish right bound-a
+Jun 21 20:41:16 valo	zashto da ne mojesh?
+Jun 21 20:41:17 evy	PreslavLe,  tuk izob6to nqma6 rigth bound
+Jun 21 20:41:32 evy	right bount-a e ti mqsto-1 kydeto se namire6
+Jun 21 20:41:35 evy	*namira6
+Jun 21 20:41:41 PreslavLe	da
+Jun 21 20:41:41 valo	imenno
+Jun 21 20:41:43 PreslavLe	no
+Jun 21 20:41:44 PreslavLe	primerno
+Jun 21 20:41:47 PreslavLe	1 2 2 1
+Jun 21 20:41:50 PreslavLe	slagam 1
+Jun 21 20:41:52 PreslavLe	slagam 2
+Jun 21 20:41:56 PreslavLe	maham 2 i slagam 2
+Jun 21 20:41:59 evy	a left bound-a ti e tam da kydeto za 1-wi pyt stawa po malko wiso4inata ot teku6ata
+Jun 21 20:42:07 PreslavLe	i taka na parvata 2-ka rifhg bound-a shte e greshen
+Jun 21 20:42:20 valo	da no na vtorata shte e ok
+Jun 21 20:42:30 evy	nali ti kazah da e gleda6 right bound
+Jun 21 20:42:40 PreslavLe	aham :)
+Jun 21 20:42:47 evy	towa ne6to 6te nameri max otgowora, bez zna4i dali w deden moment moje da imame mnogo po golqmo lice
+Jun 21 20:42:57 evy	*zna4enie
+Jun 21 20:43:26 PreslavLe	qsno, znachi nqkade moje da se obarka, no inache ako gledame vsichki shte nameri otgovora
+Jun 21 20:43:33 valo	i tova e lineino zashtoto vseki go vkarvame i izkarvame tochno po vednuj v stack-a
+Jun 21 20:44:02 valo	i na vsqka stypka ili vkarvame ili izkarvame
+Jun 21 20:44:23 valo	stanba li qsno?
+Jun 21 20:44:39 valo	tova e interesna zadacha i moje da se prilaga na razni mesta
+Jun 21 20:44:59 valo	kato primerno pravoygylnik s max lice koito e samo s 0 v matrica ot 0 i 1
+Jun 21 20:45:12 PreslavLe	na vskqa stypka moje i da vkarame i da izkarvame, no tova e podrobnost :)
+Jun 21 20:45:28 vesko[more_ole]	.. to jiv sex stana...
+Jun 21 20:45:36 valo	PreslavLe: tuk pod stypka imam predvid primitivna stypka v koqto ili vkarvash ili izkarvash
+Jun 21 20:45:52 valo	:-D
+Jun 21 20:45:57 valo	stana li qsno?
+Jun 21 20:46:01 PreslavLe	za kakvo nie e tazi primitivna stapka?
+Jun 21 20:46:30 PreslavLe	ok
+Jun 21 20:46:32 PreslavLe	qsno
+Jun 21 20:46:42 evy	q samo edno ne6to da se razberem
+Jun 21 20:46:42 PreslavLe	da ne zadalbavame v gluposti
+Jun 21 20:46:44 valo	nz. prosto dokazvam slojnosti. kato pochnete diskretna matematika i vie taka shte se izkrivite ;-)
+Jun 21 20:46:55 valo	evy: kaji
+Jun 21 20:46:56 evy	stawa li utre systezanieto e da po kysno
+Jun 21 20:47:03 evy	4e ne moga da stana rano
+Jun 21 20:47:04 PreslavLe	e da, no tazi stapka ne razbrah kakvo ti pomaga za sljonostta
+Jun 21 20:48:26 valo	ok
+Jun 21 20:48:28 valo	razberete se
+Jun 21 20:48:33 valo	az nqmam nishto obshto :)
+Jun 21 20:48:49 evy	12 stawa li?
+Jun 21 20:49:14 PreslavLe	mnogo kasno stavash :)
+Jun 21 20:49:15 PreslavLe	ok
+Jun 21 20:49:58 vesko[more_ole]	PreslavLe mislq che ti stavash rano:)
+Jun 21 20:50:02 evy	PreslavLe, 6tot mnogo rano lqgam
+Jun 21 20:50:08 vesko[more_ole]	vupros na gledna tochka;)
+Jun 21 20:50:29 PreslavLe	vesko[more_ole]
+Jun 21 20:50:35 PreslavLe	i az stavam po sashtoto vreme
+Jun 21 20:50:38 PreslavLe	prosto se bazikam :)
+Jun 21 20:51:11 *	Swetko (Swetko@client-82-199-203-110.speedy.sellinet.net) has joined #ioi2006
+Jun 21 20:51:18 evy	koi koga iska da go prawi
+Jun 21 20:51:23 valo	az vikam Swetko da kaje shtoto nali i toi e zamesen
+Jun 21 20:51:24 evy	az iskam sled 12 
+Jun 21 20:51:26 vesko[more_ole]	evy az ot 9
+Jun 21 20:51:40 PreslavLe	evy, ti nali si go pravil?
+Jun 21 20:51:42 vesko[more_ole]	shtom shte e seriozno
+Jun 21 20:51:49 evy	PreslavLe, swetko 6te dawa BOI
+Jun 21 20:51:55 vesko[more_ole]	ako beshe usaco mojeshe i ot 12
+Jun 21 20:52:05 PreslavLe	Baltic?
+Jun 21 20:52:05 evy	ako be6e usaco za men nqma zna4enie
+Jun 21 20:52:16 evy	swetko do koga 6te si w ruse?
+Jun 21 20:52:25 Swetko	do dosta
+Jun 21 20:52:31 Swetko	i posle otivam v irlandia
+Jun 21 20:52:36 Swetko	moga ednoto da go napravia ot ruse
+Jun 21 20:52:41 Swetko	primerno nedelia sutrinta
+Jun 21 20:52:48 Swetko	no poveche ne moga
+Jun 21 20:52:50 evy	men me ustroiwa
+Jun 21 20:52:52 Swetko	petuk sym na izpi
+Jun 21 20:52:53 PreslavLe	kakvo shte pravims v Irlandiq :)?
+Jun 21 20:52:58 Swetko	sybota sigurno niama da moga
+Jun 21 20:53:04 PreslavLe	Swetko
+Jun 21 20:53:04 vesko[more_ole]	PreslavLe klasira se za google code jam finalite
+Jun 21 20:53:06 Swetko	nedelia ste e vtoria den ot Baoi
+Jun 21 20:53:08 valo	Google Code Jam
+Jun 21 20:53:09 Swetko	i posle me niama
+Jun 21 20:53:12 PreslavLe	dai zadachi na nqoi drug ako moje da gi organizira
+Jun 21 20:53:17 valo	az se osrah nai-brutalno
+Jun 21 20:53:27 evy	q kajete posledno za utre kakwo se razbirame
+Jun 21 20:53:29 vesko[more_ole]	valo ne ni psihirai
+Jun 21 20:54:02 PreslavLe	ami
+Jun 21 20:54:12 PreslavLe	evy: v 10 ne mojesh li da stanesh primerno?
+Jun 21 20:54:18 valo	vesko[more_ole]: mi az naposledyk sym mnogo zle, ako ne si zabelqzal. formata mi e pod vsqkakva kritika
+Jun 21 20:54:54 vesko[more_ole]	valo... na teb ne ti trqbva forma:)
+Jun 21 20:55:11 PreslavLe	Zashtoto az sledobed ne moga da sam mnogo seriozen na saztezaniq :)
+Jun 21 20:55:15 PreslavLe	ama ako ne mojesh
+Jun 21 20:55:17 PreslavLe	shte e ot 12
+Jun 21 20:55:21 valo	vesko[more_ole]: da ti kaja esenta dosta shte mi pritrqbva
+Jun 21 20:55:27 evy	oooo PreslavLe,  mnogo rano..
+Jun 21 20:55:32 evy	az zaspiwam kym 6
+Jun 21 20:55:39 PreslavLe	hah :)
+Jun 21 20:55:55 PreslavLe	valo: za kakvo?
+Jun 21 20:56:03 PreslavLe	evy: az sam ok sas 12
+Jun 21 20:56:22 PreslavLe	Swetko: drugata sedmica shte govorish li s Borisov ili nqkoi drug da ni organizira edna kontrola ot USACO?
+Jun 21 20:56:39 PreslavLe	vesko[more_ole] ti ok li si s 12(da napisha neshto i za teb)
+Jun 21 20:57:07 Swetko	dobre
+Jun 21 20:57:07 vesko[more_ole]	ne
+Jun 21 20:57:13 Swetko	druagta sedmica ste pravite usaco
+Jun 21 20:57:20 Swetko	no nedelia nali se razbrahme :)
+Jun 21 20:57:22 PreslavLe	super :)
+Jun 21 20:57:27 vesko[more_ole]	nishto ne razbrah sega
+Jun 21 20:57:33 Swetko	i gledaite da stanete rano togava (v 9 ste e)
+Jun 21 20:57:40 Swetko	a za utre se razberete koi koga ste go pravi
+Jun 21 20:57:40 PreslavLe	znachi chetvartak(utre) i nedelq - BaOI
+Jun 21 20:57:44 Swetko	da
+Jun 21 20:57:44 PreslavLe	drugata sedmica USAICO
+Jun 21 20:57:46 Swetko	da
+Jun 21 20:57:50 vesko[more_ole]	super
+Jun 21 20:57:56 PreslavLe	po-drugata sedmica v nachaloto BOI :)
+Jun 21 20:58:11 vesko[more_ole]	kakvo BOI nali shte go svarshim do nedelq?
+Jun 21 20:58:23 PreslavLe	hah :)
+Jun 21 20:58:34 PreslavLe	Balkan Olympiad in Informatics imam predvid
+Jun 21 20:59:12 valo	znachi utre v kolko?
+Jun 21 20:59:14 PreslavLe	a tazi zadacha deto dadohte link kak se reshava
+Jun 21 20:59:22 Swetko	koia zadacha be
+Jun 21 20:59:27 valo	az vikam da pomislite
+Jun 21 20:59:32 valo	i az shte pomislq ;-)
+Jun 21 20:59:38 PreslavLe	valo: ok
+Jun 21 20:59:55 PreslavLe	Swetko: (20:04:38) vesko[more_ole]: [20:02:08] <vesko[more_ole]> http://www.rafb.net/paste/results/i6L5tm97.html
+Jun 21 21:00:30 valo	ok
+Jun 21 21:00:34 valo	kajete sega posledno
+Jun 21 21:00:35 PreslavLe	valo: sledvashta sbirka?
+Jun 21 21:00:35 vesko[more_ole]	Swetko utre problem li shte ti e da go pravq v 9?
+Jun 21 21:00:52 valo	utre vikam az
+Jun 21 21:00:55 Swetko	niamam problemi az (niama az da hodia na IOI)
+Jun 21 21:00:56 PreslavLe	valo: ok
+Jun 21 21:00:59 Swetko	vie kazhete koi koga
+Jun 21 21:01:10 PreslavLe	az iskam rano: no rosti ne moje da stane
+Jun 21 21:01:13 valo	dai pyrvo kontrolata da utochnim
+Jun 21 21:01:13 PreslavLe	iskren ne go znam
+Jun 21 21:01:36 valo	evy: ti do kysno shte piesh li kakvo? ili shte gledash mach? ;-)
+Jun 21 21:02:03 vesko[more_ole]	valo are da ne e utre
+Jun 21 21:02:13 vesko[more_ole]	ok purvo kontrolata
+Jun 21 21:02:21 vesko[more_ole]	dobre kakav e problema vseki da go pravi kogato iska
+Jun 21 21:02:26 vesko[more_ole]	vsichki znaem ot kade sa zadachite...
+Jun 21 21:02:29 evy	valo, sled malko otiwam da gledam ma4
+Jun 21 21:02:34 vesko[more_ole]	vseki sqda i si meri 5h...
+Jun 21 21:02:38 evy	pyk i nali ti kazah 4e ne moga da zaspiwam ne6to
+Jun 21 21:02:40 PreslavLe	vesko[more_ole]
+Jun 21 21:02:44 PreslavLe	nqma saztezatelni usloviq
+Jun 21 21:02:47 vesko[more_ole]	ako 2-ma se navqt na edno i sushto vreme ok...
+Jun 21 21:02:49 evy	nqkolko pyti se probwah po cql den ne spq i pak zaspiwam w 4-5
+Jun 21 21:03:11 Swetko	nali  ima lesno 700^3 reshenie
+Jun 21 21:03:26 PreslavLe	700^2*100 ima mnogo lesno
+Jun 21 21:03:36 PreslavLe	a da
+Jun 21 21:03:39 PreslavLe	t.e. 700^3
+Jun 21 21:03:41 evy	mom4eta, wse za drugo po4wate da goworite
+Jun 21 21:03:51 PreslavLe	evy: az kazah vsichko :)
+Jun 21 21:03:53 evy	utre az i preslaw w 12
+Jun 21 21:03:55 evy	nali
+Jun 21 21:03:58 PreslavLe	ok
+Jun 21 21:04:05 evy	to predpolagam 4e i iskren 
+Jun 21 21:04:08 vesko[more_ole]	ok az sam ot 9:)
+Jun 21 21:04:09 PreslavLe	vesko[more_ole]
+Jun 21 21:04:11 evy	6tot ako se napie6 taq we4er
+Jun 21 21:04:15 evy	se symnqwam da stane w 9
+Jun 21 21:04:19 evy	*napie
+Jun 21 21:04:26 PreslavLe	hahah
+Jun 21 21:04:29 Swetko	chakai che se obyrkah nesto 700^3*100 
+Jun 21 21:04:32 Swetko	t.e. probva se vsichko
+Jun 21 21:04:33 PreslavLe	iskren da se napie taq vecher?
+Jun 21 21:04:37 vesko[more_ole]	sega za sbirkata utre
+Jun 21 21:05:02 valo	utochnihme li kontrolata?
+Jun 21 21:05:15 PreslavLe	ami az i evy i iskren eventulano ot 12:00
+Jun 21 21:05:18 vesko[more_ole]	da
+Jun 21 21:05:21 PreslavLe	vesko ot 9 iska
+Jun 21 21:05:27 Swetko	dazhe 700^2*100 izmislih
+Jun 21 21:05:31 vesko[more_ole]	az iskam ot 9 shtoto ot 3h sam na shofiorksi kurs
+Jun 21 21:05:33 Swetko	tova mozhe i da stigne 
+Jun 21 21:05:37 Swetko	zavisi kvi sa limititw
+Jun 21 21:05:42 vesko[more_ole]	a veche go mestih 1 pat zaradi kontrolnoto
+Jun 21 21:05:43 PreslavLe	60 sec
+Jun 21 21:05:50 Swetko	ee kvo e tova
+Jun 21 21:05:56 vesko[more_ole]	60 sek no prez 99-ta
+Jun 21 21:05:57 Swetko	za kvo mislih reshenie togava
+Jun 21 21:06:04 Swetko	e goliama rabota
+Jun 21 21:06:11 PreslavLe	Swetko, ami moje da ima po-hubavo
+Jun 21 21:06:12 Swetko	200 mhz sa imali pone togava
+Jun 21 21:06:26 Swetko	ot 700^2*100 trudno ste ima
+Jun 21 21:06:36 Swetko	jurito sa precenili che tova reshenie ste mine
+Jun 21 21:06:37 PreslavLe	vesko kaza che ima 10*100*100
+Jun 21 21:06:46 Swetko	10?
+Jun 21 21:06:50 vesko[more_ole]	obarkah se
+Jun 21 21:06:57 vesko[more_ole]	10*700*700 e mislq
+Jun 21 21:07:18 PreslavLe	s binary search?
+Jun 21 21:07:25 valo	aide utre
+Jun 21 21:07:27 PreslavLe	a to s tova C<=10 ne moje li da se napravi neshto
+Jun 21 21:07:29 valo	pak v 20:00
+Jun 21 21:07:32 PreslavLe	ok
+Jun 21 21:07:38 PreslavLe	Swetko znachi utre v 12:00
+Jun 21 21:07:38 vesko[more_ole]	valo utre ne moga
+Jun 21 21:07:47 Swetko	abe vsichki li sa ot 12
+Jun 21 21:07:56 PreslavLe	ami vesko iska ot 9:00
+Jun 21 21:08:02 PreslavLe	i az moga togava no rosti ne moje
+Jun 21 21:08:36 Swetko	kazhete posledno koi koga
+Jun 21 21:08:55 PreslavLe	vesko v 9:00
+Jun 21 21:09:00 PreslavLe	drugite v 12:00
+Jun 21 21:09:04 evy	PreslavLe, to4no towa C e nai wajnoto
+Jun 21 21:09:43 valo	dobre. znachi utre v 20:00
+Jun 21 21:09:46 valo	do utre togava
+Jun 21 21:09:51 valo	leka
+Jun 21 21:09:54 Swetko	leka

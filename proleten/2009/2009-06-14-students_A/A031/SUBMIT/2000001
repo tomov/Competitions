@@ -1,0 +1,30 @@
+#include <cstdio>
+#include <algorithm>
+#include <iostream>
+
+const int MAX_N = 100000 + 10;
+
+int N;
+int f[MAX_N];
+int res;
+int main()
+{
+    scanf("%d", &N);
+    for(int i = 0; i < N; i ++) scanf("%d", &f[i]);
+    std :: sort(f, f + N, std :: greater<int>());
+    int pos = 0;
+    int len = 1;
+    int to = 1;
+    int h = 0;
+    for(int i = 0; i < N; i ++)	printf("%d ", f[i]); printf("\n");
+    while(pos < N)
+    {
+		for(; pos < N && pos < to; pos ++)
+			res += f[pos] * h;
+		len *= 2;
+		to += len;
+		h ++;
+    }
+    printf("%d\n", res);
+    return 0;
+}

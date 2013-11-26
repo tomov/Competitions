@@ -1,0 +1,12 @@
+psevdo kod za re6avane na visk4i kombinatorni zada4i (za codirane i dekodirane po kriterii)
+primerno taq za permutaciite
+
+proceduri:
+count - po kolko na4ina moje da zavur6i6 permutaciq s dadeno na4alo
+possible - koi elementi moje da sloji6 na pos+1-va poziciq pri dadeni teq predi neq
+
+
+- po nomer da kaje6 permutaciq:
+  dobavq6 count na si4ki vuzmojni bukvi na pos posledovatelno dokato ne stanat pove4e ot iskaniq broi, turva6 teku6tata bukv, vadi6 ot broi teq predi nego i pos++
+- po permutaciq da kaje6 nomer:
+  za sqka bukva dobavq6 count na si4ki leksikografski < ot neq i pos++

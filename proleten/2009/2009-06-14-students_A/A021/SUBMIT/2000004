@@ -1,0 +1,137 @@
+
+#include <cstdio>
+#include <cstring>
+#include <algorithm>
+using namespace std;
+
+const int INF = 12345;
+const int MAX_L = 30 + 5;
+const int MAX_N = 50 + 5;
+const int MAX_M = 2500 * 2 + 5;
+
+int L, N, M, C, T;
+int color[MAX_N];
+
+int E = 0;
+int prev[MAX_M], last[MAX_N], adj[MAX_M];
+
+int final_set;
+int best[1 << 20]; // A bitmask dynamic programming solution. :)
+int ans[MAX_L];
+
+inline void add_edge(int x, int y) {
+    adj[E] = y;
+    prev[E] = last[x];
+    last[x] = E++;
+}
+
+inline int get_bit(int set, int bit) {
+    return (set >> bit) & 1;
+}
+
+inline int get_neighbours(int set, int at) {
+    static int q[MAX_N];
+    int qh = 0;
+    int qt = 1;
+    q[qh] = at;
+    int res = 1 << at;
+    while (qh < qt) {
+        at = q[qh++];
+        for (int j = last[at]; j != -1; j = prev[j])
+            if (!get_bit(res, adj[j]) && get_bit(set, adj[j]) == get_bit(set, at)) {
+                res |= 1 << adj[j];
+                q[qt++] = adj[j];
+            }
+    }
+    return res;
+}
+
+int rec(int set) {
+    if (set == final_set)
+        return 0;
+    if (best[set] != -1)
+        return best[set];
+    int &res = best[set];
+    res = INF;
+    int mark = 0;
+    for (int i = 0; i < N; ++i)
+        if (((mark >> i) & 1) == 0) {
+            int cur_set = get_neighbours(set, i);
+            mark |= cur_set;
+            res = min(res, 1 + rec(set ^ cur_set));
+        }
+    return res;
+}
+
+void solve(int tst) {
+    memset(last, -1, sizeof(last));
+    scanf("%d %d %d %d", &N, &M, &C, &T);
+    for (int i = 0; i < N; ++i)
+        scanf("%d", &color[i]);
+    for (int i = 0; i < M; ++i) {
+        int x, y;
+        scanf("%d %d", &x, &y);
+        add_edge(x, y);
+        add_edge(y, x);
+    }
+    int all = 1 << N;
+    memset(best, -1, sizeof(int) * all);
+    final_set = 0;
+    if (C == 1)
+        final_set = (1 << N) - 1;
+    int go_set = 0;
+    for (int i = 0; i < N; ++i)
+        if (color[i])
+            go_set |= 1 << i;
+    ans[tst] = rec(go_set) * T;
+//    printf("%d\n", ans[tst]);
+
+}
+
+int solve2() {
+    int total = 0;
+    for (int i = 0; i < L; ++i)
+        total += ans[i];
+
+    int n1 = L / 2;
+    int n2 = L - n1;
+    static int all[1 << (MAX_L / 2)];
+    int cnt = 1 << n1;
+    for (int set = 0; set < cnt; ++set) {
+        int sum = 0;
+        for (int j = 0; j < n1; ++j)
+            if (((set >> j) & 1) > 0)
+                sum += ans[j];
+//        printf("%d, ", sum);
+        all[set] = sum * 2;
+    }
+//    puts("");
+    sort(all, all + cnt);
+    cnt = unique(all, all + cnt) - all;
+    int res = 2147483647;
+    for (int set = 0; set < (1 << n2); ++set) {
+        int sum = 0;
+        for (int j = 0; j < n2; ++j)
+            if (((set >> j) & 1) > 0)
+                sum += ans[n1 + j] * 2;
+//        printf("%d, ", sum);
+        int k = lower_bound(all, all + cnt, total - sum) - all;
+        for (int d = k - 1; d <= k + 1; ++d) {
+            if (d >= 0 && d < cnt) {
+//                printf("sum (%d) + sum' (%d)\n", sum / 2, all[d] / 2);
+                res = min(res, max(all[d] / 2 + sum / 2, total - all[d] / 2 - sum / 2));
+            }
+        }
+    }
+//    puts("");
+    return res;
+}
+
+int main() {
+    scanf("%d", &L);
+    for (int tst = 0; tst < L; ++tst) {
+        solve(tst);
+    }
+    printf("%d\n", solve2());
+    return 0;
+}

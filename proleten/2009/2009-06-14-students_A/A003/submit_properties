@@ -1,0 +1,34 @@
+<hashtable>
+  <entry>
+    <string>washer</string>
+    <string>2000003</string>
+  </entry>
+  <entry>
+    <string>flatten_submit_time</string>
+    <string>2009.06.13 10:14:26</string>
+  </entry>
+  <entry>
+    <string>washer_language</string>
+    <string>C++</string>
+  </entry>
+  <entry>
+    <string>flatten_filename</string>
+    <string>flatten.cpp</string>
+  </entry>
+  <entry>
+    <string>washer_filename</string>
+    <string>washer.cpp</string>
+  </entry>
+  <entry>
+    <string>washer_submit_time</string>
+    <string>2009.06.13 13:41:38</string>
+  </entry>
+  <entry>
+    <string>flatten</string>
+    <string>2000002</string>
+  </entry>
+  <entry>
+    <string>flatten_language</string>
+    <string>C++</string>
+  </entry>
+</hashtable>

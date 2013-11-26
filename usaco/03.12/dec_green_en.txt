@@ -1,0 +1,239 @@
+**********************************************************************
+                           GREEN PROBLEMS
+**********************************************************************
+                  Four problems numbered 1 through 4
+**********************************************************************
+
+Problem 1: Rain Cover [Alex Schwendner, 2003]
+
+The farm has suffered an extraordinary amount of rain lately. Now
+wanting to eat free from rain, the ingenious cows have set up N (1 <=
+N <= 25,000) rectangular umbrellas to shield them from the rain while
+they are grazing.
+
+The cows' field is a single strip of grass, and each umbrella
+completely covers some interval of grass. However, they have set up
+the umbrellas in a most haphazard way, and some of the umbrellas cover
+all or part of an area covered by one or more other umbrellas. Your
+task is to find the greatest number of umbrellas whose areas are
+completely covered by a single umbrella.
+
+PROBLEM NAME: cover
+
+INPUT FORMAT:
+
+* Line 1: The single integer N
+
+* Lines 2..N+1: Two space-separated integers, A and B (1 <= A < B <=
+        2,000,000,000) that are the endpoints of the interval of grass
+        covered by an umbrella. No endpoint is shared by any two
+        umbrellas.
+
+SAMPLE INPUT (file cover.in):
+
+4
+1 7
+2 3
+5 6
+4 10
+
+OUTPUT FORMAT:
+
+* Line 1: A single integer that is the maximum number of umbrellas
+        whose coverage is entirely within the area covered by another
+        single umbrella.
+
+SAMPLE OUTPUT (file cover.out):
+
+2
+
+OUTPUT DETAILS:
+
+The first umbrella covers the second and third umbrellas, as seen below:
+
+      *-----------*
+      |           |
+*-----------*
+|           |
+| *-*   *-* |
+| | |   | | |
+1 2 3 4 5 6 7 8 9 10
+
+**********************************************************************
+
+Problem 2: Elite Eating [Bulgarian Winter 2002] [via Nikolay Valtchanov, 2003]
+
+FJ has uniquely branded 1,000 cows, each with an integer in the range
+(1..1,000).
+
+FJ has also created an elite eating program where exactly N (1 <=
+N <= 250) cows with specific brands get to enter the barn first.  The
+restriction on this elite group of cows is that the sum of the squares
+of the cows' brands must be strictly less than a given integer S (1
+<= S < = 10,100).
+
+Determine the number of different groups of cows that can be selected
+for the elite eating program.
+
+PROBLEM NAME: elite
+
+INPUT FORMAT:
+
+* Line 1: Two space-separated integers, N and S
+
+SAMPLE INPUT (file elite.in):
+
+3 30
+
+OUTPUT FORMAT:
+
+* Line 1: A single integer that is the number of different possible
+        groups that can line up for elite eating.
+
+SAMPLE OUTPUT (file elite.out):
+
+4
+
+OUTPUT DETAILS:
+
+The sequences of length 3 with sum of squares < 30 are:
+1 2 3
+1 2 4
+2 3 4
+1 3 4
+
+The sequence of brands 1 2 5 is not valid since 1 + 4 + 25 = 30 and
+is not strictly less than 30.
+
+**********************************************************************
+
+Problem 3: Spring Vacation [Jeff Cohen, 2002]
+
+Farmer John has won the WCOW radio station call-in sweepstakes grand
+prize: K (1 <= K <= 62) plane tickets for a vacation getaway to sunny
+Bovine, TX, home of the world's largest cow waterslide.
+
+FJ has decided to give the tickets to K of his N (K <= N <= 900) cows
+(who, for the purposes of this problem, are numbered 1..N).  He wants
+to send only cows who are all friends with each other; you are
+provided a list of F (1 <= F <= 5600) friendships.
+
+Determine the set of K cow-friends that will enjoy the fabulous
+vacation.
+
+PROBLEM NAME: sprbrk
+
+INPUT FORMAT:
+
+* Line 1: Three space-separated integers: K, N, and F.
+
+* Lines 2..F+1: Each line contains two space-separated integers that
+        describe friendship between the two named cows. Friendship is
+        commutative, if cow 2 likes cow 4 then cow 4 likes cow 2.
+
+SAMPLE INPUT (file sprbrk.in):
+
+4 6 8
+1 2
+1 3
+1 6
+2 3
+2 6
+3 6
+4 5
+5 6
+
+OUTPUT FORMAT:
+
+Output -1 if no set of K friends exists.  Otherwise, output the set of
+K cow-friends in ascending order, one integer per output line.  If
+more than one set of K friends exists, output the set whose first
+element is smallest (or second element is smallest if the first
+elements are the same, etc.).
+
+SAMPLE OUTPUT (file sprbrk.out):
+
+1
+2
+3
+6
+
+**********************************************************************
+
+Problem 4: Cow Queueing [Richard Forster BIO 2003, 2003]
+
+The cows are lining up for dinner.  They use an order determined by
+the numerical brands on their hide.  FJ knew the cows weren't too
+bright, so he used brands with only '0's and '1's. Each cow received a 
+brand whose length was no longer than 31 bits.
+
+The not-so-bright cows don't line up in the order we might expect:
+0
+1
+10
+11
+100
+etc.
+
+Instead, they line up in an order where the brands are sorted by these
+rules:
+
+   * A brand with fewer '1's precedes a brand with more '1's
+
+   * For brands with the same number of '1's, the brand with
+     the smallest magnitude (calculated traditionally) comes first
+
+Thus, the cow with brand 1000 (a single '1') lines up before the cow
+with brand 110 (two '1's).  The order of the 12 cows numbered 100
+through 1111 is:
+
+100
+1000
+101
+110
+1001
+1010
+1100
+111
+1011
+1101
+1110
+1111
+
+Except for the '0' brand, brands don't have leading zeroes. Happily, if 
+brand M is present in line and brand N is present in line, then all 
+brands whose magnitude falls between M and N is present in line.
+
+Write a program to find which cow is in a given place in line.
+ 
+
+PROBLEM NAME: cowq
+
+INPUT FORMAT:
+
+* Line 1: A single binary integer: the cow brand whose magnitude is
+        the smallest of  all those standing in line
+
+* Line 2: A single binary integer: the cow brand whose magnitude is
+        the largest of all those standing in line
+
+* Line 3: A single decimal integer: the position in the line whose cow
+        brand is to  be reported.  The first cow in line is in
+        position 1.
+
+SAMPLE INPUT (file cowq.in):
+
+100
+1111
+5
+
+OUTPUT FORMAT:
+
+* Line 1: The integer that is the brand of the cow standing in the
+        line position named in the input.
+
+SAMPLE OUTPUT (file cowq.out):
+
+1001
+
+**********************************************************************

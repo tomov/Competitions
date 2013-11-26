@@ -1,0 +1,123 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <cstdio>
+#include <cstring>
+#include <set>
+#include <queue>
+
+#define MAX 64
+#define INF 999666333
+#define DEBUG_INFO 1
+
+using namespace std;
+FILE *in; FILE *out;
+
+int numLevels;
+int timeNeeded[MAX];
+
+int n, m;
+int color, weight, wholeTime;
+vector <int> v[MAX];
+
+int col[MAX], vis[MAX];
+
+
+int click(int node, int sColor, long long mask)
+{
+	mask ^= (1 << node);
+	for (int i=0; i<(int)v[node].size(); i++)
+	{
+		if (sColor == 0 && (mask & (1 << v[node][i])) == 0) mask = click(v[node][i], sColor, mask);
+		if (sColor != 0 && (mask & (1 << v[node][i])) != 0) mask = click(v[node][i], sColor, mask);
+	}
+	return mask;
+}
+
+int play()
+{
+	int clicks;
+	long long mask = 0;
+	for (int i=0; i<n; i++) mask |= (col[i] << i);
+	
+	set < long long > vis;
+	queue < pair < long long, int > > q;
+	
+	q.push(make_pair(mask, 0));
+	vis.insert(mask);
+	
+	while (!q.empty())
+	{
+		mask = q.front().first;
+		clicks = q.front().second;
+		q.pop();
+		
+		if (color == 0 && mask == 0) return clicks;
+		if (color == 1 && mask == (1 << n) - 1) return clicks;
+		
+		for (int i = 0; i < n; i++)
+		{
+			long long nmask = click(i, mask & (1LL << i), mask);
+			if (vis.find(nmask) == vis.end())
+			{
+				vis.insert(nmask);
+				q.push(make_pair(nmask, clicks + 1));
+			}
+		}
+	}
+	return INF;
+}
+
+int eval(int cur, int sum)
+{
+	if (sum + sum >= wholeTime) return sum;
+	if (cur >= numLevels) return wholeTime - sum;
+	
+	return min(eval(cur + 1, sum), eval(cur + 1, sum + timeNeeded[cur]));
+}
+
+int main(void)
+{
+	in = stdin; out = stdout;
+//	in = fopen("gaming.in", "rt"); out = fopen("gaming.out", "wt");
+	
+	fscanf(in, "%d", &numLevels);
+	for (int level = 0; level < numLevels; level++)
+	{
+		fscanf(in, "%d %d %d %d", &n, &m, &color, &weight);
+		for (int i=0; i<n; i++)
+		{
+			v[i].clear();
+			fscanf(in, "%d", &col[i]);
+		}
+		
+		int n1, n2;
+		for (int i=0; i<m; i++)
+		{
+			fscanf(in, "%d %d", &n1, &n2);
+			v[n1].push_back(n2);
+			v[n2].push_back(n1);
+		}
+		timeNeeded[level] = weight * play();
+		if (DEBUG_INFO)
+			cout << "Time needed for level " << level + 1 << " is: " << timeNeeded[level] << endl;
+	}
+	
+	wholeTime = 0;
+	for (int i=0; i<numLevels; i++)
+		wholeTime += timeNeeded[i];
+	
+	sort(timeNeeded, timeNeeded + numLevels);
+	reverse(timeNeeded, timeNeeded + numLevels);
+
+	int ans = eval(0, 0);
+	fprintf(out, "%d\n", ans);
+	
+	if (DEBUG_INFO)
+	{
+		cout << "Time needed: " << wholeTime << endl;
+		cout << "Answer is: " << ans << endl;
+//		system("pause");
+	}
+	return 0;
+}

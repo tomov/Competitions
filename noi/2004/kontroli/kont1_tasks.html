@@ -1,0 +1,319 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>XX НАЦИОНАЛНА ОЛИМПИАДА ПО ИНФОРМАТИКА</title>
+
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10pt;
+	font-family:"Arial";}
+h1
+	{margin-top:0in;
+	margin-right:-.5in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:10pt;
+	font-family:"Arial";}
+body {margin: 20px;}
+h2
+	{margin-top:0in;
+	margin-right:-.5in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:.5in;
+	page-break-after:avoid;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:10pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:.5in;
+	font-size:10pt;
+	font-family:"Arial";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:56.7pt 56.7pt 56.7pt 56.7pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=BG
+style='font-size:12pt'>XX НАЦИОНАЛНА ОЛИМПИАДА ПО ИНФОРМАТИКА</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><i><span lang=BG
+style='font-size:12pt'>Национален кръг</span></i></b><b><span lang=BG
+style='font-size:12pt'>, <i>Варна, 23–24 април 2004 г.</i></span></b></p>
+
+<p class=MsoNormal><span lang=BG>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=BG>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:.5in'><b><span lang=BG style='font-size:
+12pt'>Задача </span></b><b><span style='font-size:12pt'>3</span></b><b><span
+lang=BG style='font-size:12pt'>.</span></b><b><span style='font-size:12pt'>1</span></b><b><span
+lang=BG style='font-size:12pt'>. ИЗКАЧВАНЕ</span></b></p>
+
+<p class=MsoNormal style='text-indent:.5in'><b><span lang=BG style='font-size:
+12pt'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>Група
+от </span><i>N</i><i> </i><span lang=BG>български алпинисти, номерирани с
+числата от 1 до </span><i>N</i><span lang=BG>,</span><span lang=BG> </span><span
+lang=BG>се готви за изкачване на поредния осемхилядник в Хималаите. Част от
+изкачването е много тежък траверс, при който алпинистите трябва да се движат
+задължително един след друг и не могат да се изпреварват, защото всяко изпреварване
+е свързано с огромен риск. Траверсът е съставен от </span><i>M</i><span
+lang=BG> отсечки, всяка от които трябва да се преодолява с различна алпийска
+техника, а различните алпинисти са различно подготвени да използват съответната
+техника. Ръководителят на експедицията много внимателно преценил качествата на
+участниците и за всеки алпинист установил времето, необходимо за преминаване на
+всяка от </span><i>M</i><span lang=BG>-те отсечки. Остава най</span><span
+lang=RU>-</span><span lang=BG>трудното – така да се подредят алпинистите, че
+сумарното време за изкачването на всички алпинисти да е минимално. </span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>Напишете
+програма </span><b><span style='font-size:12pt;font-family:"Courier New"'>TRAV</span></b><b><span
+lang=RU style='font-size:12pt;font-family:"Courier New"'>.</span></b><b><span
+style='font-size:12pt;font-family:"Courier New"'>EXE</span></b><span lang=BG>,
+с която да се опитате да помогнете на ръководителя да избере най-доброто
+решение. </span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>Първият
+ред на стандартния вход съдържа числата <i>N</i> и <i>M</i>,</span><span
+lang=RU> 3 </span><span lang=BG>&#8804;</span><span lang=BG> </span><i><span
+lang=BG>N</span></i><span lang=BG> </span><span lang=BG>&#8804; </span><span
+lang=RU>9</span><span lang=BG>, 5&#8804; <i>M</i></span><span lang=BG> </span><span
+lang=BG>&#8804; 50. На всеки от следващите </span><i>N</i><span lang=BG> реда
+има по </span><i>M</i><span lang=BG> числа</span><span lang=RU>, </span><span
+lang=BG>разделени с по един интервал. На реда с номер </span><i>I</i><span
+lang=RU>+1 </span><span lang=BG>са дадени времената </span><i>T</i><sub>IJ</sub><span
+lang=BG>, необходими на алпиниста с номер </span><i>I</i><span lang=BG> да
+изкачи съответните отсечки (подредени в реда по който се изкачват)</span><span
+lang=RU>, </span><span lang=BG>1&#8804; </span><i>I</i><i> </i><span lang=BG>&#8804;
+<i>N</i>, 1&#8804; </span><i>J</i><i> </i><span lang=BG>&#8804; </span><i>M</i><span
+lang=BG>, 1&#8804; </span><i>T</i><sub>IJ</sub><i> </i><span lang=BG>&#8804; </span><span
+lang=RU>255</span><span lang=BG>. </span></p>
+
+<p class=MsoBodyTextIndent><span lang=BG>На стандартния изход да се изведат,
+разделени с по един интервал, номерата на алпинистите, подредени в реда, по
+който ще извършат изкачването.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>&nbsp;</span></p>
+
+<h1><span lang=BG>ПРИМЕР</span></h1>
+
+<h2 style='text-indent:0in'><span lang=BG style='font-weight:normal'>Вход</span></h2>
+
+<p class=MsoNormal><span lang=BG style='font-family:"Courier New"'>3 5</span></p>
+
+<p class=MsoNormal><span lang=BG style='font-family:"Courier New"'>6 5 5 2 4</span></p>
+
+<p class=MsoNormal><span lang=BG style='font-family:"Courier New"'>3 3 12 1 1</span></p>
+
+<p class=MsoNormal><span lang=BG style='font-family:"Courier New"'>9 1 5 6 4</span></p>
+
+<h2 style='text-indent:0in'><span lang=BG style='font-weight:normal'>&nbsp;</span></h2>
+
+<h2 style='text-indent:0in'><span lang=BG style='font-weight:normal'>Изход</span></h2>
+
+<p class=MsoNormal><span lang=BG style='font-family:"Courier New"'>2 1 3</span></p>
+
+<span lang=BG style='font-size:10pt;font-family:"Arial"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=BG
+style='font-size:12pt'>XX НАЦИОНАЛНА ОЛИМПИАДА ПО ИНФОРМАТИКА</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><i><span lang=BG
+style='font-size:12pt'>Национален кръг</span></i></b><b><span lang=BG
+style='font-size:12pt'>, <i>Варна, 2</i></span></b><b><i><span lang=RU
+style='font-size:12pt'>4</span></i></b><b><i><span lang=BG style='font-size:
+12pt'>–2</span></i></b><b><i><span lang=RU style='font-size:12pt'>5</span></i></b><b><i><span
+lang=BG style='font-size:12pt'> април 2004 г.</span></i></b></p>
+
+<p class=MsoNormal><span lang=BG>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><b><span
+lang=BG style='font-size:12pt'>Задача</span></b><b><span lang=BG
+style='font-size:12pt'> </span></b><b><span lang=EN-GB style='font-size:12pt'>3</span></b><b><span
+lang=RU style='font-size:12pt'>.</span></b><b><span lang=EN-GB
+style='font-size:12pt'>2</span></b><b><span lang=BG style='font-size:12pt'>.
+ТОЧКИ</span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>В
+равнината са дадени </span><i><span lang=EN-GB>n</span></i><i><span lang=EN-GB>
+</span></i><span lang=RU>точки </span><i><span lang=EN-GB>A<sub>i</sub></span></i><span
+lang=RU>(</span><i><span lang=EN-GB>x<sub>i</sub></span></i><span lang=RU>,</span><i><span
+lang=EN-GB>y<sub>i</sub></span></i><span lang=RU>), </span><i><span lang=EN-GB>i</span></i><span
+lang=RU>=1,...,</span><i><span lang=EN-GB>n</span></i><span lang=RU>,</span><i><span
+lang=RU> </span></i><span lang=BG>които са върхове на многоъгълника </span><i><span
+lang=EN-GB>A</span></i><i><sub><span lang=BG>1</span></sub><span lang=EN-GB>A</span></i><i><sub><span
+lang=BG>2</span></sub></i><i><span lang=BG>...</span><span lang=EN-GB>A<sub>n</sub></span></i><span
+lang=RU>.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=RU>Напишете
+програма </span><span lang=EN-GB style='font-family:"Courier New"'>POINTS</span><span
+lang=RU style='font-family:"Courier New"'>.</span><span lang=EN-GB
+style='font-family:"Courier New"'>EXE</span><span lang=RU>, която</span><span
+lang=BG> намира броя на точките с целочислени координати, лежащи във
+вътрешността или по контура на дадения многоъгълник. </span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=RU>Данните
+се въвеждат от стандартния вход. На първия ред е записано числото </span><i><span
+lang=EN-GB>n</span></i><span lang=RU>. Следват </span><i><span lang=EN-GB>n</span></i><span
+lang=RU> реда, всеки съдържащ поредната двойка координати </span><i><span
+lang=EN-GB>x<sub>i</sub></span></i><span lang=RU>, </span><i><span lang=EN-GB>y<sub>i</sub></span></i><span
+lang=RU>,  </span><i><span lang=EN-GB>i</span></i><span lang=RU>=1,...,</span><i><span
+lang=EN-GB>n</span></i><span lang=RU>, като </span><span lang=BG>две цели </span><span
+lang=RU>числа</span><span lang=BG>,</span><span lang=RU> разделени с интервал.
+Търсеният брой да се изведе на стандартния изход.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>Ограничения:
+3 </span><span lang=BG style='font-family:Symbol'>&pound;</span><i><span
+lang=BG> </span><span lang=EN-GB>n</span></i><i><span lang=EN-GB> </span></i><span
+lang=BG style='font-family:Symbol'>&pound;</span><span lang=BG> 1000</span><span
+lang=RU>, </span><span lang=RU> </span><i><span lang=EN-GB>x<sub>i</sub></span></i><span
+lang=RU> и </span><i><span lang=EN-GB>y<sub>i</sub></span></i><i><span
+lang=EN-GB> </span></i><span lang=RU>са цели числа от интервала [–10<sup>4</sup>,
+10<sup>4</sup>].</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG>&nbsp;</span></p>
+
+<h1><span lang=RU style='font-weight:normal'>            П</span><span lang=BG
+style='font-weight:normal'>РИМЕР</span></h1>
+
+<h1><span lang=RU>            Вход</span></h1>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG style='font-family:
+"Courier New"'>     5</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=RU style='font-family:
+"Courier New"'>     0 0</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG style='font-family:
+"Courier New"'>     5</span><span lang=RU style='font-family:"Courier New"'> 0</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG style='font-family:
+"Courier New"'>     5</span><span lang=BG style='font-family:"Courier New"'> </span><span
+lang=BG style='font-family:"Courier New"'>3</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG style='font-family:
+"Courier New"'>     3</span><span lang=BG style='font-family:"Courier New"'> </span><span
+lang=BG style='font-family:"Courier New"'>2</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG style='font-family:
+"Courier New"'>     1 4</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=RU>&nbsp;</span></p>
+
+<h1><span lang=RU>            Изход</span></h1>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG style='font-family:
+"Courier New"'>     20</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG>&nbsp;</span></p>
+
+<span style='font-size:10pt;font-family:"Arial"'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=BG
+style='font-size:12pt'>XX НАЦИОНАЛНА ОЛИМПИАДА ПО ИНФОРМАТИКА</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><i><span lang=BG
+style='font-size:12pt'>Национален кръг</span></i></b><b><span lang=BG
+style='font-size:12pt'>, <i>Варна, 23–24 април 2004 г.</i></span></b></p>
+
+<p class=MsoNormal><span lang=BG>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=BG>&nbsp;</span></p>
+
+<h2><span lang=BG style='font-size:12pt'>3.3. НИЗОВЕ</span></h2>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG>Дадени са </span><i><span
+lang=EN-GB>N</span></i><span lang=EN-GB> </span><span lang=BG>низа, всеки
+съдържащ само главни латински букви, най-много 10 на брой </span><span lang=RU>(0
+&lt; </span><i><span lang=EN-GB>N</span></i><i><span lang=EN-GB> </span></i><span
+lang=RU>&lt; 100000). </span><span lang=BG>Напишете програма </span><b><span
+lang=EN-GB style='font-family:"Courier New"'>STRING</span></b><b><span lang=RU
+style='font-family:"Courier New"'>.</span></b><b><span lang=EN-GB
+style='font-family:"Courier New"'>EXE</span></b><span lang=BG>, която намира
+кой низ се среща най-рядко. Ако съществува повече от един такъв низ, програмата
+трябва да изведе този от тях, който се среща първи във входните данни. </span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG>На първия ред в
+стандартния вход е даден броят </span><i><span lang=EN-GB>N</span></i><span
+lang=RU>. Следват </span><i><span lang=EN-GB>N</span></i><span lang=EN-GB> </span><span
+lang=BG>реда, всеки съдържащ едни низ. Търсеният низ трябва да бъде изведен на
+стандартния изход.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG>Пример</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=RU>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG>Вход</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=RU>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=RU style='font-family:
+"Courier New"'>4</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-family:"Courier New"'>AA</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-family:"Courier New"'>BBB</span></p>
+
+<h1><span lang=BG style='font-weight:normal'>CCC</span></h1>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-family:"Courier New"'>AA</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=RU>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG>Изход</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=RU>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN-GB
+style='font-family:"Courier New"'>BBB</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

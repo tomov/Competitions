@@ -1,0 +1,200 @@
+#include <cstdlib>
+#include <cassert>
+#include <string>
+#include <sstream>
+#include <vector>
+#include <iostream>
+#include <iomanip>
+#include <algorithm>
+#include <functional>
+using namespace std;
+
+#define MAX_VALUE(x,y)  ((x) > (y) ? (x) : (y))
+#define ASSERT(x)
+
+#define MAX_UNIT_VALUE  (ullong_MAX >> 2)
+#define BASE1  10
+#define BASE2  1000000000
+
+typedef unsigned long uint;
+typedef unsigned long long ullong;
+
+class LongVec
+{
+friend ostream& operator<< (ostream& os, const LongVec& ins);
+
+  private :
+    static uint  rem;
+    uint remainder;
+    vector<uint> objects;
+
+  public :
+    
+    LongVec();
+    LongVec operator+(LongVec);
+    LongVec operator*(LongVec);
+    
+    LongVec (uint);
+    
+    ullong operator() (const ullong n1, const ullong n2)
+    {
+    ullong k;
+         
+      const ullong value = n1 + n2 + rem;
+      rem = value/BASE2;
+      k=value%BASE2;
+      return (k);
+    }
+};
+
+LongVec::LongVec()
+{}
+
+LongVec::LongVec (uint i)
+    {
+      ASSERT (i < BASE2);
+      
+      objects.reserve(objects.size() + 1);
+
+      objects.push_back (i);
+    }
+
+LongVec LongVec::operator+(LongVec a)
+{
+LongVec b,Sum;
+b=*this;
+const ullong max_size = MAX_VALUE (a.objects.size (), b.objects.size ());
+
+      Sum.objects.reserve(Sum.objects.size() + 1);
+      a.objects.reserve(max_size);
+      b.objects.reserve(max_size);
+      Sum.objects.reserve(max_size);
+
+      a.objects.resize(max_size);
+      b.objects.resize(max_size);
+      Sum.objects.resize(max_size);
+
+      rem = 0;
+      transform (&a.objects[0], &a.objects[0] + a.objects.size(), &b.objects[0], &Sum.objects[0], *this);
+
+      if (rem) Sum.objects.push_back (rem);
+      
+      return Sum;
+}
+
+LongVec LongVec::operator*(LongVec a)
+{
+LongVec Sum,Temp,t,b;
+b=*this;
+uint k;
+ullong SizeOfA=a.objects.size(),SizeOfB=b.objects.size(),x,y;
+           
+           Sum.objects.clear();
+
+           for(int i=0;i<SizeOfA;i++)
+           {
+              remainder=0;
+              Temp.objects.clear();
+
+              for(int AddNull=1;AddNull<=i;AddNull++)
+                  Temp.objects.push_back(0);
+                        
+              for(int j=0;j<SizeOfB;j++)
+              {
+                  x=a.objects[i];
+                  y=b.objects[j];
+                  
+                  ullong value = x * y  +remainder;
+                  remainder = value/BASE2;
+                  k = value%BASE2;
+                  Temp.objects.push_back (k);
+              }
+              if(remainder) Temp.objects.push_back (remainder);        
+                  
+              t=Temp+Sum;
+              Sum=t;
+           }
+           
+           
+           return Sum;
+}
+
+inline ostream& operator<< (ostream& os, const LongVec& ins)
+{
+  ASSERT (!ins.objects.empty ());
+  for (uint i = (ins.objects.size () - 1); i; --i)
+  {
+    os << ins.objects [i] << setw (BASE1 - 1) << setfill ('0');
+  }
+  
+  return os << ins.objects [0];
+}
+
+LongVec Fib(ullong n)
+{
+LongVec i,j,k,B;
+ullong t;
+    
+    
+clock_t w8=clock();
+
+    
+    i=1;j=1;t=1;k=0;
+    
+    if(n<=2) return j;
+    
+    while(t<=n) t*=2;
+    
+    t/=4;
+    
+    while(t>0)
+    {             
+        B=j*j;
+        j=j*(i+k);
+        i=i*i+B;
+        k=k*k+B;
+        
+        if (n&t)
+        {
+            k = j;
+            j = i;
+            i = j + k;
+        }
+        
+        t/=2;
+    }
+    
+    w8-=clock();
+    double w81=(double)w8/(double)CLOCKS_PER_SEC;
+    cout<<w81<<endl;
+    system("pause");
+    
+    return j;
+}
+
+void Show (ullong n)
+{
+ostringstream   oss;
+
+  oss << Fib(n) << "\n";
+
+  cout << oss.str();
+}
+
+uint LongVec::rem (0); 
+
+
+int main()
+{
+ullong N;
+
+ 
+    cin>>N;
+    N++;
+
+    Show(N);
+
+    system("pause");
+
+    return 0;
+}

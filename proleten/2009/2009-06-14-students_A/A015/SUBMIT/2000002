@@ -1,0 +1,26 @@
+#include<iostream>
+#define maxn 100001
+using namespace std;
+
+int N,a[maxn];
+int st=1;
+int sum;
+
+int main()
+{
+ cin>>N;
+ 
+  for(int i=1;i<=N;i++)
+   scanf("%d",&a[i]);
+ 
+  int j=0,h=1;;  
+ for(int i=1;i<=N;i++){  
+  if(st<=j) {st=st<<1; h++; j=0;}
+   sum=sum+a[i]*h;
+   //cout<<st<<" "<<a[i]<<endl;
+ j++;  
+  }   
+
+cout<<sum<<endl;    
+return 0;
+}   

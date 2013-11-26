@@ -1,0 +1,45 @@
+------NOI's:
+
+http://www.oi.edu.pl/ - polish
+http://www.olympiad.org.uk/ - uk
+http://www.uwp.edu/sws/usaco/ - us
+http://byoi.narod.ru/english/ - belarussian
+http://olympiads.ru/ - russian
+http://olympiad.cs.uct.ac.za/ - south africa
+http://www.olymp.vinnica.ua/ - ukraine (no eng)
+http://www.ioi-jp.org/index-e.html - japan
+http://www.iarcs.org.in/inoi/ - indian
+http://www.comp.nus.edu.sg/~noi/ - singapore
+http://olympiads.win.tue.nl/ioi/noi/index.html - links (sux)
+http://www.hsin.hr/coci/ - croatian
+infoman.musala.com ; www.math.bas.bg/infos - bg
+
+------IOI's:
+
+baltic
+ceoi
+ioi
+
+------ACM's & online judges:
+
+http://www.topcoder.com/tc/
+http://ipsc.ksp.sk/old.php
+http://spoj.sphere.pl/
+http://acm.timus.ru/
+http://train.usaco.org/usacogate
+http://www.opencup.ru/
+http://acm.uva.es/problemset/
+http://acm.sgu.ru/
+http://acm.pku.edu.cn/JudgeOnline/
+http://acm.zju.edu.cn/
+http://www.programmingchallenges.com/
+http://olympiad.cs.uct.ac.za/
+
+------contests:
+
+http://konkurs.musala.com/index.php
+
+------other:
+
+iskren.info
+http://judge.openfmi.net/mediawiki/index.php/Начална_страница

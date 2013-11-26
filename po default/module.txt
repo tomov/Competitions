@@ -1,0 +1,9 @@
+ti si praish asd.cpp
+[20:37:31] exod40 says: koeto ti e modula
+[20:37:37] exod40 says: i vytre pishesh funckiite na modula
+[20:37:40] exod40 says: i imash i asd.h
+[20:37:45] exod40 says: v asd.cpp include-vash asd.h
+[20:39:15] exod40 says: g++ my_source.cpp -static -lm asd.o -o my_exe.bin
+g++ asd.cpp -c
+[20:40:19] exod40 says: na ioi shte ti dadyt
+[20:40:21] exod40 says: asd.o

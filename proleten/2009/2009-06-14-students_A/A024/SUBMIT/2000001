@@ -1,0 +1,57 @@
+#include <cstdio>
+#include <cmath>
+#define eps 1e-4
+
+int N;
+int grid [128][128]; 
+double current = 0;
+double arr [1048576];
+int nArr = 0;
+
+bool used (double x)
+{
+    for (int i = 0; i < nArr; ++i) if (fabs(arr[i] - x) < eps) return true;
+    return false;
+}
+
+void add (double x)
+{
+    arr[nArr++] = x;
+}
+
+int f(int n, int min, int d)
+{
+    current += 1.0/min;
+    if (used(current))
+    {
+        current -= 1.0/min;
+        return 0;
+    }
+    if (grid[n][min] > 1 || n == min)  
+    {
+//        printf ("%d %d %lf\n", n, min, current);
+        {
+            add(current);
+            current -= 1.0/min;
+            return grid[n][min];
+        }
+    }
+    for (int i = min; i <= (n >> 1); ++i)
+    {
+        grid[n][min] += f(n-i, i, d + 1);
+    }
+    current -= 1.0/min;
+    return grid[n][min];
+    //grid[n][min] += f(n, n, d + 1);
+}
+
+int main ()
+{
+    scanf ("%d", &N);
+    
+    for (int i = 0; i < N; ++i)
+        for (int j = 0; j < N; ++j)
+            grid[i+1][j+1] = 1;
+    
+    printf ("%d\n", f(N,1, 1));
+}

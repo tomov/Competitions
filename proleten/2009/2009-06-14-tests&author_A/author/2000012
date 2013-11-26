@@ -1,0 +1,143 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <cstdio>
+#include <cstring>
+
+#define MAX 64
+#define INF 999666333
+
+using namespace std;
+FILE *in; FILE *out;
+
+int numLevels;
+int timeNeeded[MAX];
+
+int n, m;
+int color, weight;
+vector <int> v[MAX];
+
+int col[MAX], save[MAX];
+int vis[MAX], comp[MAX], compLen;
+
+void getComponent(int node)
+{
+	vis[node] = 1;
+	comp[compLen++] = node;
+	
+	for (int i=0; i<(int)v[node].size(); i++)
+		if (!vis[v[node][i]]) getComponent(v[node][i]);
+}
+
+int done()
+{
+	for (int i=0; i<compLen; i++)
+		if (col[comp[i]] != color) return 0;
+	return 1;
+}
+
+void click(int node, int sColor)
+{
+	col[node] = !sColor;
+	for (int i=0; i<(int)v[node].size(); i++)
+		if (col[v[node][i]] == sColor) click(v[node][i], sColor);
+}
+
+int play()
+{
+	int answer = 0;
+	memset(vis, 0, sizeof(vis));
+	memcpy(save, col, sizeof(save));
+
+	// For each connected component
+	for (int node = 0; node < n; node++) if (!vis[node])
+	{
+		// Get component
+		compLen = 0;
+		getComponent(node);
+		
+		// Calculate optimal solution
+		int best = INF;		
+		for (int i=0; i<compLen; i++) // Each potential center of component
+		{
+			int curr = 0;
+			memcpy(col, save, sizeof(col));
+
+			while (!done()) {click(comp[i], col[comp[i]]); curr++;}
+			best = min(best, curr);
+		}
+		answer += best;
+	}
+	return answer;
+}
+
+int eval()
+{
+	vector <int> part1, part2;
+	int middle = numLevels / 2;
+	int remain = numLevels - middle;
+
+	int wholeTime = 0;
+	for (int i=0; i<numLevels; i++) wholeTime += timeNeeded[i];
+
+	for (int mask = 0; mask < (1 << middle); mask++)
+	{
+		int sum = 0;
+		for (int i=0; i<middle; i++)
+			if (mask & (1 << i)) sum += timeNeeded[i];		
+		part1.push_back(sum);
+	}
+	
+	for (int mask = 0; mask < (1 << remain); mask++)
+	{
+		int sum = 0;
+		for (int i=0; i<remain; i++)
+			if (mask & (1 << i)) sum += timeNeeded[i + middle];
+		part2.push_back(sum);
+	}
+	sort(part2.begin(), part2.end());
+	
+	int best = INF;
+	for (int i=0; i<(int)part1.size(); i++)
+	{
+		int left = 0, right = (int)part2.size() - 1, mid;
+		while (left <= right)
+		{
+			mid = (left + right) / 2;
+			int curr = part1[i] + part2[mid];
+			best = min(best, max(curr, wholeTime - curr));
+			if (curr < wholeTime - curr) left = mid + 1;
+			else right = mid - 1;
+		}
+	}
+	return best;
+}
+
+int main(void)
+{
+	in = stdin; out = stdout;
+//	in = fopen("gaming.in", "rt"); out = fopen("gaming.out", "wt");
+	
+	fscanf(in, "%d", &numLevels);
+	for (int level = 0; level < numLevels; level++)
+	{
+		fscanf(in, "%d %d %d %d", &n, &m, &color, &weight);
+		for (int i=0; i<n; i++)
+		{
+			v[i].clear();
+			fscanf(in, "%d", &col[i]);
+		}
+		
+		int n1, n2;
+		for (int i=0; i<m; i++)
+		{
+			fscanf(in, "%d %d", &n1, &n2);
+			v[n1].push_back(n2);
+			v[n2].push_back(n1);
+		}
+		timeNeeded[level] = weight * play();
+	}
+	
+	fprintf(out, "%d\n", eval());
+	return 0;
+}

@@ -1,0 +1,541 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 10 (filtered)">
+<title>ПРОЛЕТЕН ТУРНИР ПО ИНФОРМАТИКА</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Bitstream Vera Sans";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h1
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h5
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.5in;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+h6
+	{margin:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoList, li.MsoList, div.MsoList
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:.5in;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	color:black;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=Section1>
+
+<h5><span lang=BG style='font-size:14.0pt'>Задача А1. БЕЗЖИЧНА ВРЪЗКА</span></h5>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG
+style='font-size:11.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>Новият
+български мобилен оператор <i>Безжичтел</i> въвежда нова услуга – изпращане на
+SMS съобщение до двама души едновременно! От <i>Безжичтел</i> биха искали да
+предлагат услугата на цена по-ниска от цената за две отделни съобщения и за целта
+им е необходима вашата помощ. Мрежата на мобилния оператор се състои от <i>N</i>
+клетки (3 &#8804; <i>N</i> &#8804; 4000), като някои двойки от тях са свързани
+и могат да си предават съобщения. Всяка връзка има цена за изпращане на
+съобщение по нея, като цената е равна на енергията необходима за изпращането на
+съобщението. Поради особеностите на терена енергията необходима за изпращането
+на съобщение може да е различна за двете посоки на една връзка. Трябва да имаме
+предвид още, че някои предаватели са с ограничена мощност и поради това някои
+връзки са използваеми само в едната посока (т.е. всяка зададена връзка е
+еднопосочна). Броят на връзките няма да надвишава 1 000 000.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>Връзките
+на <i>Безжичтел</i> са безжични, затова имат една важна особеност. Ако клетка <i>A</i>
+изпраща съобщение до клетка <i>B</i> с енергия <i>К</i>, всички клетки, които
+изискват енергия по-малка или равна на <i>К</i>, за да получат съобщение
+директно (без посредник) от <i>А</i>, също ще получат съобщението до <i>B</i>.
+Например, ако цената за изпращане на съобщение от <i>A</i> до <i>B</i> е 5, от <i>А</i>
+до <i>C</i> е 3, а от <i>А</i> до <i>D</i> е 8, то тогава съобщението от <i>А</i>
+до <i>B</i>, изпратено с енергия 5 ще бъде получено и от <i>C</i>, но няма да
+бъде получено от <i>D</i>. Ако, обаче, от <i>C</i> до <i>E </i>има връзка
+изискваща енергия 1, но няма връзка от <i>A </i>до <i>E</i>, то тогава
+съобщението от <i>А</i> до <i>B</i> независимо с каква енергия е изпратено,
+няма да бъде получено от <i>E</i>. Шефовете на <i>Безжичтел</i> биха искали да
+използвате тази особеност, за да минимизирате цената за изпращане на едно
+съобщение от една клетка, до други две клетки едновременно.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>Напишете
+програма </span><b><span lang=BG style='font-family:"Courier New"'>WIRELESS.EXE</span></b><span
+lang=BG>, която по зададено <i>N</i>, цените за изпращане на съобщение по
+различните връзки на <i>Безжичтел</i> и номерата на три клетки <i>А</i>, <i>B</i>
+и <i>C</i>, намира ней-евтината схема за изпращане на съобщение от <i>А</i> до <i>B</i>
+и <i>C</i>.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>Входните
+данни се четат от <b>стандартния вход</b> и се състоят от <i>N </i>+1 реда. На
+първия ред е записано числото <i>N</i>, както и номерата <i>А</i>, <i>B</i> и <i>C</i>
+в този ред, разделени с по един интервал (трите номера на клетките са три
+различни, цели числа между 1 и <i>N</i> включително). На всеки от следващите <i>N</i>
+реда са записани данните за клетката със съответния номер (на първия от тези
+редове са данните за клетка номер 1, на втория – за клетка номер 2 и т.н.) <i>I-</i>тият
+от тези редове започва с цяло число <i>K<sub>I</sub> </i>(0 &#8804; <i>K<sub>I</sub></i>
+&lt; <i>N</i>), задаващо броя на клетките, на които клетка номер <i>I </i>може
+да изпраща съобщение. Следват <i>K<sub>I</sub> </i>двойки цели числа, като
+всяка двойка описва една от тези <i>K<sub>I</sub></i> клетки. Първото число на
+двойката задава номера на клетката, а второто задава цената за изпращане на
+съобщение от клетка <i>I</i> до тази клетка (цената е цяло число между 0 и 100
+000 включително). Клетките на реда са подредени според цените (вторите числа)
+във възходящ ред. Всички числа на реда са разделени с по един интервал.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>Резултатът
+от вашата програма трябва да бъде изведен на <b>стандартния изход</b>. Първият
+ред трябва да съдържа две числа, разделени с интервал – броя <i>M</i> на
+изпращания на съобщението във вашата схема и общата цена на изпращанията (която
+е сумата от цените на отделните изпращания). Следващите <i>M </i>реда трябва да
+описват изпращанията на съобщенията в хронологичен ред. Всеки ред трябва да
+съдържа две числа разделени с интервал – номера на клетката изпращаща
+съобщението и <b>количеството енергия</b>, което се използва. Никоя клетка не
+може да изпрати съобщението преди да го е получила, с изключение на клетката с
+номер <i>А</i>. След изпълнението на описаните от вас изпращания трябва и двете
+клетки-получатели <i>B</i> и <i>C</i> да са получили съобщението, при това
+общата цена на схемата трябва да е минималната възможна. В случай, че
+съществуват няколко такива схеми, изберете и изведете само една. Поставената
+задача винаги има решение.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>&nbsp;</span></p>
+
+<h1><span lang=BG>&nbsp;</span></h1>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=319 valign=top style='width:239.25pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <h1><span lang=BG style='font-size:14.0pt'>ПРИМЕР 1         </span></h1>
+  <h6><span lang=BG>Вход                           Изход</span></h6>
+  <p class=MsoNormal><span lang=BG style='font-size:14.0pt;font-family:"Courier New"'>4
+  1 2 3      2 3 </span></p>
+  <p class=MsoNormal><span lang=BG style='font-size:14.0pt;font-family:"Courier New"'>2
+  3 1 4 2    1 1 </span></p>
+  <p class=MsoNormal><span lang=BG style='font-size:14.0pt;font-family:"Courier New"'>0            3
+  2</span></p>
+  <p class=MsoNormal><span lang=BG style='font-size:14.0pt;font-family:"Courier New"'>2
+  4 1 2 2    </span></p>
+  <p class=MsoNormal><span lang=BG style='font-size:14.0pt;font-family:"Courier New"'>1
+  2 2</span></p>
+  <p class=MsoNormal><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal><span lang=BG>Клетка 1 изпраща съобщението до клетка 3,</span></p>
+  <p class=MsoNormal><span lang=BG>която после го изпраща до клетка 2.</span></p>
+  <p class=MsoNormal><span lang=BG>&nbsp;</span></p>
+  </td>
+  <td width=319 valign=top style='width:239.3pt;border:none;padding:0in 5.4pt 0in 5.4pt'>
+  <h1><span lang=BG style='font-size:14.0pt'>ПРИМЕР 2</span></h1>
+  <h6><span lang=BG>Вход                           Изход</span></h6>
+  <p class=MsoNormal><span lang=BG style='font-size:14.0pt;font-family:"Courier New"'>4
+  1 2 3      2 4</span></p>
+  <p class=MsoNormal style='text-align:justify'><span lang=BG style='font-size:
+  14.0pt;font-family:"Courier New"'>2 4 3 3 4    1 3</span></p>
+  <p class=MsoNormal><span lang=BG style='font-size:14.0pt;font-family:"Courier New"'>0            4
+  1</span></p>
+  <p class=MsoNormal><span lang=BG style='font-size:14.0pt;font-family:"Courier New"'>2
+  2 1 4 8</span></p>
+  <p class=MsoNormal><span lang=BG style='font-size:14.0pt;font-family:"Courier New"'>2
+  3 1 2 1</span></p>
+  <p class=MsoNormal><span lang=BG style='font-family:"Courier New"'>&nbsp;</span></p>
+  <p class=MsoNormal style='text-align:justify'><span lang=BG>Клетка 1 изпраща
+  съобщението до  клетка 4,</span></p>
+  <p class=MsoNormal><span lang=BG>която после го изпраща до клетки 2 и 3</span></p>
+  <p class=MsoNormal style='text-align:justify'><span lang=BG>едновременно.</span></p>
+  <p class=MsoNormal><span lang=BG>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<h1><span lang=BG style='font-size:14.0pt'>&nbsp;</span></h1>
+
+<span lang=BG style='font-size:12.0pt;font-family:"Times New Roman"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=BG
+style='font-size:16.0pt'> </span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><i><span lang=BG
+style='font-size:16.0pt'> </span></i></b></p>
+
+<p class=MsoNormal><span lang=BG style='font-size:10.0pt'>&nbsp;</span></p>
+
+<h1 style='text-indent:.5in'><span lang=BG style='font-size:14.0pt'>Задача А2.
+ЧИСЛУДНИЦА</span></h1>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent><span lang=BG>Известният професор по теория на
+числата Числослав Простократнов и не по-малко известният програмист Лудни Бъгски
+усилено спорели за това, кое е по-използваемо в съвременната приложна теория на
+числата – феноменалният професорски ум, или способността на компютрите да
+правят милиони изчисления в секунда без наличието на какъвто и да е било ум. За
+да решат спора си, те решили да играят следната игра (наречена по имената на
+двамата играчи Числудница)</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>Играта
+се играе на черна дъска, на която във всеки момент са записани две естествени
+числа. В началото на дъската са написани две числа, всяко от които е не
+по-малко от 2 и не по-голямо от 500. Двамата играчи се редуват правейки ходове
+с двете написани числа. Всеки ход се състои от следното. Играчът на ход избира
+едно от числата и го заменя с по-малко число, което е кратно на негов делител.
+Едно число <i>А</i> може да бъде заменено с друго число <i>B</i> (1&lt;<i>B</i>&lt;А)
+тогава и само тогава, когато <i>А</i> и <i>B</i> не са взаимно прости. Например
+числото 12 може да бъде заменено с числата 2, 3, 4, 6, 8, 9 и 10. Едновременно
+с тази замяна, играчът на ход трябва задължително да увеличи другото число на
+дъската с едно. Така възможните ходове от комбинацията (12, 6) са (2, 7), (3,
+7), (4, 7) , (6, 7), (8, 7), (9, 7), (10, 7), (13, 2), (13, 3) и (13, 4),.
+Играта завършва тогава, когато играчът, който е на ред не може да направи
+валиден ход (т.е. числата на дъската са прости). Играчът, който в този момент е
+на ход губи играта.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;page-break-after:
+avoid'><span lang=BG>Първи на ход е Бъгски, а началните числа се генерират от
+компютърна програма, написана от негов приятел, и затова са такива, че
+независимо от ходовете на проф. Простократнов, Бъгски  може да спечели играта
+(стига да играе подходящи ходове). Затова г-н Бъгски може да напише програма,
+която да играе играта от негово име и винаги да печели, независимо от ходовете
+на проф. Простократнов. А вие? Напишете програма</span><span lang=BG
+style='font-size:14.0pt'> </span><b><span lang=BG style='font-size:14.0pt;
+font-family:"Courier New"'>CRAZY.EXE</span></b><span lang=BG>, която по
+зададени две числа <i>X</i> и <i>Y</i> (2</span><span lang=BG style='font-family:
+Symbol'>&pound;</span><i><span lang=BG>X</span></i><span lang=BG
+style='font-family:Symbol'>&pound;</span><span lang=BG>500, 2</span><span
+lang=BG style='font-family:Symbol'>&pound;</span><i><span lang=BG>Y</span></i><span
+lang=BG style='font-family:Symbol'>&pound;</span><span lang=BG>500) играе и
+печели Числудница с минимален брой ходове. </span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;page-break-after:
+avoid'><span lang=BG>Числата <i>X</i> и <i>Y</i>, както в началото, така и след
+всеки ход на опонента се получават в двата аргумента на подпрограмата </span><span
+lang=BG style='font-family:"Courier New"'>getnum</span><span lang=BG>. Ходът на
+опонента винаги ще е валиден. Ако имате възможен ход, т.е. може да се променят <i>X</i>
+и <i>Y</i> в съответствие с правилата в <i>X</i>1 и <i>Y</i>1, съответно, това
+трябва да стане с извикване на подпрограмата </span><span lang=BG
+style='font-family:"Courier New"'>setnum</span><span lang=BG> с аргументи <i>X</i>1
+и <i>Y</i>1. Редът на числата трябва да остане непроменен (т.е. от (15, 6)
+валиден ход е (16, 2), но не и (2, 16)). Ако изпратените от програмата две
+числа са прости, т.е. печелите играта, както и ако нямате възможен ход, т.е.
+след поредния ви ход опонентът е достигнал до две прости числа и значи губите, </span><span
+lang=BG style='font-family:"Courier New"'>setnum</span><span lang=BG> ще
+прекрати изпълнението на програмата.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>Проф.
+Простократнов е изключително добър специалист и ако му дадете възможност, той
+ще ви победи. Освен това, в губеща позиция той ще играе така, че да отложи
+загубата си колкото може повече, независимо от вашите ходове. Иначе казано, за
+да победите проф. Простократнов с минимален брой ходове трябва да играете
+оптимално, а не да разчитате на грешка от негова страна.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>Програмата
+ще бъде оценена с 20 тестови примера, като за всеки от тях ще получите 5 точки
+в случай че програмата спечели играта с минимален брой ходове, 1 точка в случай
+че програмата спечели играта, но не с минималния брой ходове и 0 точки в случай
+че програмата загуби играта или направи невалиден ход. Спечелването на играта в
+половината от тестовете не може да стане по друг начин освен по оптималния вачин,
+затова програма, която винаги печели играта, но не го прави по най-добрия начин
+ще спечели минимум 60 точки. </span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG>&nbsp;</span></p>
+
+<h1><span lang=BG style='font-size:14.0pt'>ПРИМЕР 1                                                                   ПРИМЕР
+2</span></h1>
+
+<h1><span lang=BG>Получавате</span><span lang=BG style='font-family:Courier'> Из</span><span
+lang=BG>пращате                                                    Получавате</span><span
+lang=BG style='font-family:Courier'> Из</span><span lang=BG>пращате</span></h1>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG style='font-size:
+14.0pt;font-family:"Courier New"'>343 3                              7 32</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG style='font-size:
+14.0pt;font-family:"Courier New"'>         7 4                                8
+8</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG style='font-size:
+14.0pt;font-family:"Courier New"'>8 2                                9 4</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG style='font-size:
+14.0pt;font-family:"Courier New"'>         2 3                                3
+5</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG style='font-size:
+11.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG style='font-size:
+11.0pt'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='text-indent:.5in'><b><span lang=BG
+style='font-size:12.0pt;font-family:"Times New Roman"'>Библиотека за FreePascal</span></b><b><span
+lang=BG style='font-size:12.0pt;font-family:Arial'>  </span></b><u><span
+lang=BG style='font-size:12.0pt;font-family:Arial'>(</span></u><u><span
+lang=BG style='font-size:13.0pt'>module.ppu</span></u><u><span lang=BG
+style='font-size:13.0pt;font-family:Arial'>, </span></u><u><span lang=BG
+style='font-size:13.0pt'>module.o</span></u><u><span lang=BG style='font-size:
+12.0pt;font-family:Arial'>)</span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span lang=BG
+style='font-size:13.0pt;font-family:"Courier New"'>     </span></b><span
+lang=BG style='font-size:13.0pt;font-family:"Courier New"'>procedure<b> </b>getnum(var
+X,Y: LongInt);</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG style='font-size:
+13.0pt;font-family:"Courier New"'>     procedure<b> </b>setnum(X1,Y1: LongInt);</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG style='font-size:
+13.0pt;font-family:"Courier New"'>     </span><span lang=BG>&nbsp;</span></p>
+
+<p class=MsoPlainText style='text-align:justify;text-indent:.5in'><b><span
+lang=BG style='font-size:12.0pt;font-family:"Times New Roman"'>Инструкции:</span></b><span
+lang=BG style='font-size:12.0pt;font-family:"Times New Roman"'> За да
+компилирате вашия файл</span><span lang=BG style='font-size:12.0pt;font-family:
+Arial'> </span><span lang=BG style='font-size:13.0pt'>crazy.pas</span><span
+lang=BG style='font-size:12.0pt;font-family:"Times New Roman"'>, включете
+оператора</span><span lang=BG style='font-size:12.0pt;font-family:Arial'> </span><span
+lang=BG style='font-size:13.0pt'>uses module</span><span lang=BG
+style='font-size:13.0pt;font-family:"Times New Roman"'>;</span><span lang=BG
+style='font-size:12.0pt;font-family:"Times New Roman"'> в изходния текст и
+компилирайте с</span><span lang=BG style='font-size:12.0pt'> </span></p>
+
+<p class=MsoPlainText style='text-align:justify;text-indent:.5in'><span
+lang=BG style='font-size:13.0pt'>fpc –So –O2 –XS crazy.pas</span></p>
+
+<p class=MsoPlainText style='text-indent:.5in'><span lang=BG style='font-size:
+12.0pt;font-family:"Times New Roman"'>Програмата </span><span lang=BG
+style='font-size:13.0pt'>example.pas</span><span lang=BG style='font-size:12.0pt;
+font-family:Arial'> </span><span lang=BG style='font-size:12.0pt;font-family:
+"Times New Roman"'>е пример за използване на тази библиотека</span><span
+lang=BG style='font-size:12.0pt;font-family:Arial'>.</span></p>
+
+<p class=MsoPlainText><span lang=BG style='font-family:Arial'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='text-indent:.5in'><b><span lang=BG
+style='font-size:12.0pt;font-family:"Times New Roman"'>Библиотека за GNU C/C++</span></b><b><span
+lang=BG style='font-size:12.0pt;font-family:Arial'>  </span></b><u><span
+lang=BG style='font-size:12.0pt;font-family:Arial'>(</span></u><u><span
+lang=BG style='font-size:13.0pt'>module.h, module.o</span></u><u><span lang=BG
+style='font-size:12.0pt;font-family:Arial'>)</span></u></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><span lang=BG
+style='font-size:13.0pt;font-family:"Courier New"'>void<b> </b>getnum(long* X,
+long* Y);</span></p>
+
+<p class=MsoPlainText style='text-indent:.5in'><span lang=BG style='font-size:
+13.0pt'>void<b> </b>setnum(long X1, long Y1);</span></p>
+
+<p class=MsoPlainText><span lang=BG>&nbsp;</span></p>
+
+<p class=MsoPlainText style='text-indent:.5in'><b><span lang=BG
+style='font-size:12.0pt;font-family:"Times New Roman"'>Инструкции:</span></b><span
+lang=BG style='font-size:12.0pt;font-family:"Times New Roman"'> За да
+компилирате вашия файл </span><span lang=BG style='font-size:13.0pt'>crazy.c</span><span
+lang=BG style='font-family:"Times New Roman"'> </span><span lang=BG
+style='font-size:12.0pt;font-family:"Times New Roman"'>или </span><span
+lang=BG style='font-size:13.0pt'>crazy.cpp</span><span lang=BG
+style='font-family:Arial'>, </span><span lang=BG style='font-size:12.0pt;
+font-family:"Times New Roman"'>използвайте  </span><span lang=BG
+style='font-size:13.0pt'>#include &quot;module.h&quot;</span><span lang=BG
+style='font-family:Arial'> </span><span lang=BG style='font-size:12.0pt;
+font-family:"Times New Roman"'>в изходния текст и компилирайте с:</span></p>
+
+<p class=MsoPlainText style='text-indent:.5in'><span lang=BG style='font-size:
+13.0pt'>gcc&nbsp;</span><span lang=BG style='font-size:13.0pt'>–</span><span
+lang=BG style='font-size:13.0pt'>O2 -static crazy.c module.o -lm -o crazy.exe</span></p>
+
+<p class=MsoPlainText style='text-indent:.5in'><span lang=BG style='font-size:
+13.0pt'>gXX&nbsp;</span><span lang=BG style='font-size:13.0pt'>–</span><span
+lang=BG style='font-size:13.0pt'>O2 -static crazy.cpp module.o -lm -o crazy.exe</span></p>
+
+<p class=MsoPlainText style='text-indent:.5in'><span lang=BG style='font-size:
+12.0pt;font-family:"Times New Roman"'>Програмата </span><span lang=BG
+style='font-size:13.0pt'>example.c</span><span lang=BG style='font-family:Arial'>
+</span><span lang=BG style='font-size:12.0pt;font-family:"Times New Roman"'>е
+пример за използване на тази библиотека.</span></p>
+
+<p class=MsoPlainText style='text-indent:.5in'><b><span lang=BG
+style='font-family:Arial'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='text-indent:.5in'><b><span lang=BG
+style='font-size:12.0pt;font-family:"Times New Roman"'>За пишещите на C/C++ в
+RHIDE: </span></b><span lang=BG style='font-size:12.0pt;font-family:"Times New Roman"'>Непременно
+задайте на Options-&gt;Linker configuration стойност</span><span lang=BG> </span><span
+lang=BG style='font-size:13.0pt'>module.o</span><span lang=BG style='font-family:
+Arial'>.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><b><span
+lang=BG>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in'><b><span
+lang=BG>Експерименти: </span></b><span lang=BG>За да тествате програмата си ще
+разполагате с експериментална версия на действителния модул. Тя чете началните
+две числа, с които искате да проверите програмата си от единствения ред на файла
+</span><span lang=BG style='font-size:13.0pt;font-family:"Courier New"'>crazy.in</span><span
+lang=BG>. Резултатът от експеримента – дали програмата ви печели или губи – ще
+бъде изведе във файла </span><span lang=BG style='font-size:13.0pt;font-family:
+"Courier New"'>crazy.out</span><span lang=BG>. Модулът за експерименти не
+винаги играе оптимално и не дава информация дали програмата ви е играла
+оптимално.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG>&nbsp;</span></p>
+
+<span lang=BG style='font-size:12.0pt;font-family:"Times New Roman"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='text-align:justify'><b><span lang=BG>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span lang=BG
+style='font-size:16.0pt'> </span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><i><span lang=BG
+style='font-size:16.0pt'> </span></i></b></p>
+
+<p class=MsoNormal><span lang=BG style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.35pt;margin-bottom:
+0in;margin-left:28.35pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+34.65pt'><b><span lang=BG style='font-size:14.0pt'>Задача А3. КРЪГЛА МАСА</span></b></p>
+
+<p class=MsoNormal style='margin-right:-.35pt;text-align:justify'><span
+lang=BG style='font-size:14.0pt'>          </span></p>
+
+<p class=MsoNormal style='margin-right:-.35pt;text-align:justify;text-indent:
+35.45pt'><span lang=BG>Крал Артур често събирал рицарите си на кръглата маса,
+както за обсъждане на важни въпроси, така и за празнуване. Веднъж той ги
+поканил да отпразнуват поредната победа, но когато всички се събрали се
+оказало, че били доста повече от местата на масата, тъй като някои от рицарите
+довели и свои приятели. Крал Артур не искал да връща гости, затова наредил на
+слугите да намерят по-голяма маса, която да поставят на мястото на старата.
+Броят на гостите бил 2<i>N</i>, където <i>N </i>е естествено число ненадминаващо
+2000. Крал Артур бил човек на реда и обичал всяко нещо да бъде на мястото си,
+затова раздал на гостите номера от 1 до 2<i>N</i>. Местата били означени със
+същите числа (в последователността в която са наредени около масата)  и всеки
+гост трябвало да седне на мястото означено с неговия номер. Гостите можели да
+влизат в стаята през две врати: <i>първата</i> се намира между местата с номера
+1 и 2<i>N</i>, а <i>втората</i>, диаметрално противоположна, се намира между
+местата с номера <i>N </i>и <i>N </i>+1. Пред първата врата се били подредили<i>
+N </i>от гостите, а пред втората – останалите <i>N</i>. </span></p>
+
+<p class=MsoNormal style='margin-right:-.35pt;text-align:justify;text-indent:
+35.45pt'><span lang=BG>За нещастие, залата (която също била кръгла) не била
+достатъчно голяма. След като новата маса била инсталирана се оказало, че за да
+може някой гост да отиде до мястото си, трябва да вдигне всеки вече седнал,
+покрай когото минава. Рицарите били умни и се замислили как да организират
+влизането в залата, с минимален брой вдигания на вече седнали гости. Ясно било,
+че гостите ще влизат един по един, спазвайки реда на всяка от вратите, но може
+да се определи поне от коя врата да влезе следващият гост, като след влизането
+той тръгва в тази от двете посоки (по часовниковата стрелка или обратно на
+часовниковата стрелка) за да стигне до мястото си, в която ще вдигне по-малко
+седнали. </span></p>
+
+<p class=MsoNormal style='margin-right:-.35pt;text-align:justify;text-indent:
+35.45pt'><span lang=BG>Задачата е да напишете програма <b>ROUND.EXE</b>, която
+по зададен ред на гостите пред всяка врата да намира минималния брой вдигания
+на вече седнали гости, при който всички да стигнат до местата си.</span></p>
+
+<p class=MsoNormal style='margin-right:-.35pt;text-align:justify;text-indent:
+35.45pt'><span lang=BG>Входните данни са зададени на <b>стандартният вход</b>,
+като на първия ред е числото <i>N</i>. На вторият ред са зададени номерата на <i>N</i>
+гости, в реда по който са наредени пред първата врата, разделени с по интервал,
+а на третия – номерата на останалите <i>N  </i>гости в реда, по който са
+наредени пред втората врата, също разделени с по един интервал. Гостът, чийто
+номер е първи в реда ще влезе първи от съответната врата.</span></p>
+
+<p class=MsoNormal style='margin-right:-.35pt;text-align:justify;text-indent:
+35.45pt'><span lang=BG>Не единствения ред на <b>стандартният изход</b>
+програмата трябва да изведе едно число – минималния брой разминавания.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:-.35pt;margin-bottom:
+0in;margin-left:28.35pt;margin-bottom:.0001pt;text-align:justify'><span
+lang=BG>&nbsp;</span></p>
+
+<h1><span lang=BG>ПРИМЕР</span></h1>
+
+<p class=MsoNormal><span lang=BG>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=BG>Вход:                                                       Изход:</span></b></p>
+
+<p class=MsoNormal><span lang=BG style='font-size:14.0pt;font-family:Courier'>3                       3</span></p>
+
+<p class=MsoList style='margin-bottom:0in;margin-bottom:.0001pt'><span lang=BG
+style='font-size:14.0pt;font-family:Courier'>4 5 3</span></p>
+
+<p class=MsoNormal><span lang=BG style='font-size:14.0pt;font-family:Courier'>6
+2 1</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=BG>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

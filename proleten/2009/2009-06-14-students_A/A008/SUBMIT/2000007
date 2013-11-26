@@ -1,0 +1,28 @@
+#include <cstdio>
+#define MAXN 100000
+
+int n, m[MAXN], sum;
+
+int main (void)
+{
+    int i, j, temp = 0, top = 1;
+    scanf("%d", &n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &m[i]);
+    }
+    
+    for (i = 0; i < n; i++) {
+        temp = m[i];
+        for (j = 0; j < n; j++) {
+            if (temp < m[j]) {
+                temp = m[j];
+            }
+        }
+        sum += temp*top;
+        top++;
+    }
+    
+    printf("%d\n", sum/2 - 2);
+    
+    return 0;
+}

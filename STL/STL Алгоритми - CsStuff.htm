@@ -1,0 +1,993 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="bg" lang="bg" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="KEYWORDS" content="STL Алгоритми" />
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="/favicon.ico" />
+    <title>STL Алгоритми - CsStuff</title>
+    <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/wiki/skins/monobook/main.css"; /*]]>*/</style>
+    <link rel="stylesheet" type="text/css" media="print" href="/wiki/skins/common/commonPrint.css" />
+    <!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css";</style><![endif]-->
+    <!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css";</style><![endif]-->
+    <!--[if gte IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css";</style><![endif]-->
+    <!--[if IE]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+    <script type="text/javascript" src="/wiki/index.php?title=-&amp;action=raw&amp;gen=js"></script>    <script type="text/javascript" src="/wiki/skins/common/wikibits.js"></script>
+    <style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D1%8F%D0%A3%D0%B8%D0%BA%D0%B8:Monobook.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css";
+/*]]>*/</style>          </head>
+  <body         class="ns-0">
+    <div id="globalWrapper">
+      <div id="column-content">
+	<div id="content">
+	  <a name="top" id="contentTop"></a>
+	  	  <h1 class="firstHeading">STL Алгоритми</h1>
+	  <div id="bodyContent">
+	    <h3 id="siteSub">от CsStuff, свободната енциклопедия</h3>
+	    <div id="contentSub"></div>
+	    	    	    <!-- start content -->
+	    <p>1.Защо са ни тези мъдри писания? – Защото с тях се пише по-разбрано и освен това реализациите на доста от алгоритмите се пишат доста по-бързо.
+2.Масиви, низове и всякакви други контейнери са сложени под общите “област” или
+“последователност”.
+3.Последователностите( областите ) в семантиката са описани по начина.
+“име на пром. + начало” и “име на пром. + край”.
+Пример:  
+Int A[100];
+Sort(A,A+100);
+В горния пример “А” ни е все едно “А+0”.
+</p><p>Бележка към редактора:Май ще трябва в началото да напишем как да си дефинират функционални обекти и функции за сравнения.
+</p>
+<table border="0" id="toc"><tr id="toctitle"><td align="center">
+<b>Съдържание</b> <script type="text/javascript">showTocToggle("показване","скриване")</script></td></tr><tr id="tocinside"><td>
+<div class="tocline"><a href="#.D0.94.D0.B6.D0.B2.D1.8A.D1.87.D0.BA.D0.B8">1 Джвъчки</a><br /></div>
+<div class="tocindent">
+<p><a href="#min">1.1 min</a><br />
+<a href="#max">1.2 max</a><br />
+<a href="#swap">1.3 swap</a><br />
+</p>
+</div>
+<div class="tocline"><a href="#.D0.A2.D1.8A.D1.80.D1.81.D0.B5.D0.BD.D0.B5_.D0.B2_.D0.BD.D0.B5.D1.81.D0.BE.D1.80.D1.82.D0.B8.D1.80.D0.B0.D0.BD.D0.B8_.D0.BF.D0.BE.D1.81.D0.BB.D0.B5.D0.B4.D0.BE.D0.B2.D0.B0.D1.82.D0.B5.D0.BB.D0.BD.D0.BE.D1.81.D1.82.D0.B8">2 Търсене в несортирани последователности</a><br /></div>
+<div class="tocindent">
+<p><a href="#find">2.1 find</a><br />
+<a href="#find_if">2.2 find_if</a><br />
+<a href="#find_first_of">2.3 find_first_of</a><br />
+<a href="#count">2.4 count</a><br />
+<a href="#min_element">2.5 min_element</a><br />
+<a href="#max_element">2.6 max_element</a><br />
+<a href="#lexicographical_compare">2.7 lexicographical_compare</a><br />
+<a href="#mismatch">2.8 mismatch</a><br />
+<a href="#equal">2.9 equal</a><br />
+<a href="#search">2.10 search</a><br />
+<a href="#find_end">2.11 find_end</a><br />
+</p>
+</div>
+<div class="tocline"><a href="#.D0.9F.D1.80.D0.BE.D0.BC.D1.8F.D0.BD.D0.B0_.D0.BD.D0.B0_.D0.BF.D0.BE.D1.81.D0.BB.D0.B5.D0.B4.D0.BE.D0.B2.D0.B0.D1.82.D0.B5.D0.BB.D0.BD.D0.BE.D1.81.D1.82.D0.B8">3 Промяна на последователности</a><br /></div>
+<div class="tocindent">
+<p><a href="#swap_ranges">3.1 swap_ranges</a><br />
+<a href="#replace">3.2 replace</a><br />
+<a href="#replace_if">3.3 replace_if</a><br />
+<a href="#fill">3.4 fill</a><br />
+<a href="#fill_n">3.5 fill_n</a><br />
+<a href="#generate">3.6 generate</a><br />
+<a href="#generate_n">3.7 generate_n</a><br />
+<a href="#remove">3.8 remove</a><br />
+<a href="#remove_if">3.9 remove_if</a><br />
+<a href="#unique">3.10 unique</a><br />
+<a href="#reverse">3.11 reverse</a><br />
+<a href="#rotate">3.12 rotate</a><br />
+<a href="#random_shuffle">3.13 random_shuffle</a><br />
+<a href="#sort">3.14 sort</a><br />
+<a href="#stable_sort">3.15 stable_sort</a><br />
+</p>
+</div>
+<div class="tocline"><a href="#.D0.A1.D0.BE.D1.80.D1.82.D0.B8.D1.80.D0.B0.D0.BD.D0.B8_.D0.9F.D0.BE.D1.81.D0.BB.D0.B5.D0.B4.D0.BE.D0.B2.D0.B0.D1.82.D0.B5.D0.BB.D0.BD.D0.BE.D1.81.D1.82.D0.B8">4 Сортирани Последователности</a><br /></div>
+<div class="tocindent">
+<p><a href="#is_sorted">4.1 is_sorted</a><br />
+<a href="#lower_bound">4.2 lower_bound</a><br />
+<a href="#upper_bound">4.3 upper_bound</a><br />
+<a href="#equal_range">4.4 equal_range</a><br />
+<a href="#binary_search">4.5 binary_search</a><br />
+<a href="#merge">4.6 merge</a><br />
+<a href="#includes">4.7 includes</a><br />
+</p>
+</div>
+<div class="tocline"><a href="#.D0.97.D0.B0_.D0.B4.D0.B2.D0.BE.D0.B8.D1.87.D0.BD.D0.B0_.D0.BF.D0.B8.D1.80.D0.B0.D0.BC.D0.B8.D0.B4.D0.B0">5 За двоична пирамида</a><br /></div>
+<div class="tocindent">
+<p><a href="#make_heap">5.1 make_heap</a><br />
+<a href="#push_heap">5.2 push_heap</a><br />
+<a href="#pop_heap">5.3 pop_heap</a><br />
+<a href="#sort_heap">5.4 sort_heap</a><br />
+<a href="#is_heap">5.5 is_heap</a><br />
+</p>
+</div>
+<div class="tocline"><a href="#.D0.9F.D0.B5.D1.80.D0.BC.D1.83.D1.82.D0.B0.D1.86.D0.B8.D0.B8">6 Пермутации</a><br /></div>
+<div class="tocindent">
+<p><a href="#next_permutation">6.1 next_permutation</a><br />
+<a href="#prev_permutation">6.2 prev_permutation</a><br />
+</p>
+</div>
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=1" title="STL Алгоритми">редактиране</a>]</div><a name=".D0.94.D0.B6.D0.B2.D1.8A.D1.87.D0.BA.D0.B8"></a><h2> Джвъчки </h2>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=2" title="STL Алгоритми">редактиране</a>]</div><a name="min"></a><h3> min </h3>
+<p>Връща по-малката от две стойности.
+</p><p>Пример:
+</p><p>const int x = min(3, 9);
+assert(x == 3);
+</p><p><br />
+Семантика:
+Min(име на пром1.(да не е масив), име на пром2.(да не е масив));
+</p><p>Сложност:Константна.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=3" title="STL Алгоритми">редактиране</a>]</div><a name="max"></a><h3> max </h3>
+<p>Същото като min, само че връща по-голямата стойност.Семантиката и сложността са същите.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=4" title="STL Алгоритми">редактиране</a>]</div><a name="swap"></a><h3> swap </h3>
+<p>Разменя стойностите на две променливи.
+</p><p>Пример:
+</p><p>int x = 1;
+int y = 2;
+assert(x == 1 &amp;&amp; y == 2);
+swap(x, y);
+assert(x == 2 &amp;&amp; y == 1);
+</p><p><br />
+Семантика:
+Swap( име на пром1., име на пром2. );
+</p><p><br />
+Сложност:Константна.
+</p><p>Употреба:Къде ли не.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=5" title="STL Алгоритми">редактиране</a>]</div><a name=".D0.A2.D1.8A.D1.80.D1.81.D0.B5.D0.BD.D0.B5_.D0.B2_.D0.BD.D0.B5.D1.81.D0.BE.D1.80.D1.82.D0.B8.D1.80.D0.B0.D0.BD.D0.B8_.D0.BF.D0.BE.D1.81.D0.BB.D0.B5.D0.B4.D0.BE.D0.B2.D0.B0.D1.82.D0.B5.D0.BB.D0.BD.D0.BE.D1.81.D1.82.D0.B8"></a><h2> Търсене в несортирани последователности </h2>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=6" title="STL Алгоритми">редактиране</a>]</div><a name="find"></a><h3> find </h3>
+<p>Функцията Find намира първото срещане на определена последователност или на 1 елемент в дадена последователност (string в string или число в масив) и връща итератор(от същия тип като стойността на търсеното) към началото на последователността или към самия елемент.
+</p><p>Пример:
+vector &lt;int&gt; A;
+A.push_back(1);
+A.push_back(2);
+A.push_back(3);
+</p><p>int i;
+</p><p>i=find(a.begin(),a.end(),2);
+</p><p><br />
+Семантика:
+find(име на пром. + началото на последователността , име на пром. + края + 1, стойност или име на променлива  който търсим);
+</p><p>Сложност: Линейна.
+</p><p>Употреба:Когато искаме да търсим низ в друг низ , и не ни трябва КМП или когато търсим елемент в масив.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=7" title="STL Алгоритми">редактиране</a>]</div><a name="find_if"></a><h3> find_if </h3>
+<p>Същото като горното, само с разликата че намира елемента, който отговаря на даден критерии за сравнение.
+</p><p>Критерия за сравнение се осъществява с функционален обект ( предикат ).
+Пример за обект:
+</p>
+<pre>
+class GreaterThan
+{
+public:
+      GreaterThan (int nn)&nbsp;: m_n(nn) {}
+      bool operator() (int cmp) { return cmp &gt; m_n; }
+private:
+      int m_n;
+};
+</pre>
+<p>Този предикат сравнява елемента подаден му със предварително зададен елемент, като връща истина (true), ако подадения елемент е по-голям от предварително зададения
+Например за даден вектор v функцията find_if (v.begin(), v.end(), GreaterThan(5)); връща итератор към първия елемент, който е по-голям от 5. Характерното при предикатите е, че трябва да имат operator(), който да се вика от алгоритъма. Има и разни подробности, че трябва копията на предиката да са еквивалентни, но това са редки случаи&nbsp;;)
+Има разни готови предикати в STL като equal_to, greater и т.н.
+</p><p>Семантика:
+find_if(име на пром.+начало , име на пром. + края + 1, функц. обект);
+</p><p>Сложност:Линейна.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=8" title="STL Алгоритми">редактиране</a>]</div><a name="find_first_of"></a><h3> find_first_of </h3>
+<p>Наподобява find, но за разлика от него търси за всеки един от елементите в последователността, която се подава за търсене.
+</p><p>Пример:
+</p>
+<pre>
+	int main()
+	{
+		const char* WS = &quot;\t\n &quot;;
+		const int n_WS = strlen(WS);
+		
+		char* s1 = &quot;This sentence contains five words.&quot;;
+		char* s2 = &quot;OneWord&quot;;
+	
+		char* end1 = find_first_of(s1, s1 + strlen(s1), WS, WS + n_WS); 
+		char* end2 = find_first_of(s2, s2 + strlen(s2), WS, WS + n_WS); 
+		printf(&quot;First word of s1: %.*s\n&quot;, end1 - s1, s1); 
+		printf(&quot;First word of s2: %.*s\n&quot;, end2 - s2, s2); 
+	}
+</pre>
+<p>Семантика:
+Find_first_of(име на пром1. + начало, име на пром1. + край, име на пром2. + начало, име на пром2. + край);
+</p><p>Сложност:края на пром1*края на пром2.
+</p><p>Употреба:Намиране на шпация, нов ред, табулация, точки, запетайки и тн. в низ.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=9" title="STL Алгоритми">редактиране</a>]</div><a name="count"></a><h3> count </h3>
+<p>Намира броя на срещанията на определен елемент в дадена последователност.Връща броя на срещания.
+</p><p>Пример:
+</p><p>int main() {
+</p>
+<pre> int A[] = { 2, 0, 4, 6, 0, 3, 1, -7 };
+ const int N = sizeof(A) / sizeof(int);
+</pre>
+<pre> cout &lt;&lt; "Number of zeros: " 
+      &lt;&lt; count(A, A + N, 0)
+      &lt;&lt; endl;
+</pre>
+<p>}
+</p><p><br />
+Семантика: 
+Count(име на пром. + начало, име на пром. + край, пром. или стойнот чиито брой търсим, (елемент , който добавяме броя));
+</p><p>Бележка: Отсега нататък ще отбелязваме със скоби параметрите на функцията, които не са задължителни.
+</p><p>Сложност:Линейна.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=10" title="STL Алгоритми">редактиране</a>]</div><a name="min_element"></a><h3> min_element </h3>
+<p>Намира минималния елемент в дадена последователност.
+</p><p>Пример:
+</p><p>int main()
+{
+</p>
+<pre> list&lt;int&gt; L;
+ generate_n(front_inserter(L), 1000, rand);
+ 
+ list&lt;int&gt;::const_iterator it = min_element(L.begin(), L.end());
+ cout &lt;&lt; "The smallest element is " &lt;&lt; *it &lt;&lt; endl;
+</pre>
+<p>}
+</p><p>Семантика:
+Min_element(име на пром. + начало, име на пром. + край);
+</p><p>Сложност:Линейна.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=11" title="STL Алгоритми">редактиране</a>]</div><a name="max_element"></a><h3> max_element </h3>
+<p>Същото като min_element, само че намира най-големия елемент. Семантиката и сложността са същите.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=12" title="STL Алгоритми">редактиране</a>]</div><a name="lexicographical_compare"></a><h3> lexicographical_compare </h3>
+<p>Проверява коя от двете подадени области е по-голяма в лексикографски( азбучен ) ред.Връща true, ако първата област е по-голяма и false, ако втората е по-голяма.
+</p><p>Пример:
+</p><p>int main()
+{
+</p>
+<pre> int A1[] = {3, 1, 4, 1, 5, 9, 3};
+ int A2[] = {3, 1, 4, 2, 8, 5, 7};
+ int A3[] = {1, 2, 3, 4};
+ int A4[] = {1, 2, 3, 4, 5};
+</pre>
+<pre> const int N1 = sizeof(A1) / sizeof(int);
+ const int N2 = sizeof(A2) / sizeof(int);
+ const int N3 = sizeof(A3) / sizeof(int);
+ const int N4 = sizeof(A4) / sizeof(int);
+</pre>
+<pre> bool C12 = lexicographical_compare(A1, A1 + N1, A2, A2 + N2);
+ bool C34 = lexicographical_compare(A3, A3 + N3, A4, A4 + N4);
+</pre>
+<pre> cout &lt;&lt; "A1[] &lt; A2[]: " &lt;&lt; (C12&nbsp;? "true"&nbsp;: "false") &lt;&lt; endl;
+ cout &lt;&lt; "A3[] &lt; A4[]: " &lt;&lt; (C34&nbsp;? "true"&nbsp;: "false") &lt;&lt; endl;
+</pre>
+<p>}
+</p><p><br />
+Семантика:
+Lexicographical_compare(име на пром1. + начало, име на пром1. + край, име на пром2. + начало, име на пром2. + край);
+</p><p>Сложност:Линейна.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=13" title="STL Алгоритми">редактиране</a>]</div><a name="mismatch"></a><h3> mismatch </h3>
+<p>Намира първото несъответствие между елементите на две последователности.Връща елемент от тип Pair.Ако няма несъответствие връша first да е първия итератор и second да е първият2 + (последният1 - първият1).Първата последователност трябва да е с по-малка големина, защото тя е определяща каква част от втората ще бъде сравнена.
+</p><p>Пример:
+</p><p>int A1[] = { 3, 1, 4, 1, 5, 9, 3 };
+int A2[] = { 3, 1, 4, 2, 8, 5, 7 };
+const int N = sizeof(A1) / sizeof(int);
+</p><p>pair&lt;int*, int*&gt; result = mismatch(A1, A1 + N, A2);
+cout &lt;&lt; "The first mismatch is in position " &lt;&lt; result.first - A1 &lt;&lt; endl;
+cout &lt;&lt; "Values are: " &lt;&lt; *(result.first) &lt;&lt; ", " &lt;&lt; *(result.second) &lt;&lt; endl;
+Семантика:
+Mismatch(име на пром1. + начало, име на пром1. + край , име на пром2. + началото, (Предикат));
+</p><p><br />
+Сложност:Линейна.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=14" title="STL Алгоритми">редактиране</a>]</div><a name="equal"></a><h3> equal </h3>
+<p>Определя дали две области съвпадат.Изискванията са подобно на mismatch.Връща true, ако съвпадат и false, ако ли не. 
+</p><p>Пример:
+</p><p>int A1[] = { 3, 1, 4, 1, 5, 9, 3 };
+int A2[] = { 3, 1, 4, 2, 8, 5, 7 };
+const int N = sizeof(A1) / sizeof(int);
+</p><p>cout &lt;&lt; "Result of comparison: " &lt;&lt; equal(A1, A1 + N, A2) &lt;&lt; endl;
+</p><p><br />
+Семантика:
+Подобна на mismatch.
+</p><p><br />
+Сложност:Линейна.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=15" title="STL Алгоритми">редактиране</a>]</div><a name="search"></a><h3> search </h3>
+<p>Търси подпоследователност в дадена последователност.Връща итератор към началото на първата подпоследователност или ако няма такава връща итератора на последния елемент на първия параметър.
+</p><p>Пример:
+</p>
+<pre> const char S1[] = "Hello, world!";
+ const char S2[] = "world";
+ const int N1 = sizeof(S1) - 1;
+ const int N2 = sizeof(S2) - 1;
+</pre>
+<pre> const char* p = search(S1, S1 + N1, S2, S2 + N2);
+ printf("Found subsequence \"%s\" at character %d of sequence \"%s\".\n",
+        S2, p - S1, S1);
+</pre>
+<p><br />
+Семантика:
+Search(име на пром1. + началото, име на пром1. + края, име на пром2. + началото, име на пром2. + края)
+</p><p><br />
+Сложност:Квадратична.
+</p><p><br />
+Употреба:Върши огромна работа при операции с низове.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=16" title="STL Алгоритми">редактиране</a>]</div><a name="find_end"></a><h3> find_end </h3>
+<p>Същото като search, само че намира последата подпоследователност и връща итератор към началото и.Семантика, сложност и употреба са същите като при search.
+</p><p><br />
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=17" title="STL Алгоритми">редактиране</a>]</div><a name=".D0.9F.D1.80.D0.BE.D0.BC.D1.8F.D0.BD.D0.B0_.D0.BD.D0.B0_.D0.BF.D0.BE.D1.81.D0.BB.D0.B5.D0.B4.D0.BE.D0.B2.D0.B0.D1.82.D0.B5.D0.BB.D0.BD.D0.BE.D1.81.D1.82.D0.B8"></a><h2> Промяна на последователности </h2>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=18" title="STL Алгоритми">редактиране</a>]</div><a name="swap_ranges"></a><h3> swap_ranges </h3>
+<p>Разменя елементите в цели последователности.Първата последователност подадена на функцията трябва да е по-малка, защото тя определя големината на разменящите се елементи.
+</p><p>Пример:
+</p><p>vector&lt;int&gt; V1, V2;
+V1.push_back(1);
+V1.push_back(2);
+V2.push_back(3);
+V2.push_back(4);
+</p><p>assert(V1[0] == 1 &amp;&amp; V1[1] == 2 &amp;&amp; V2[0] == 3 &amp;&amp; V2[1] == 4);
+swap_ranges(V1.begin(), V1.end(), V2.begin());
+assert(V1[0] == 3 &amp;&amp; V1[1] == 4 &amp;&amp; V2[0] == 1 &amp;&amp; V2[1] == 2)
+</p><p><br />
+Семантика:
+Swap_ranges( име на пром1. + начало, име на пром1. + край, име на пром2. + начало )
+</p><p><br />
+Сложност:Линейна.
+</p><p><br />
+Употреба:При реализация на MergeSort и при низове.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=19" title="STL Алгоритми">редактиране</a>]</div><a name="replace"></a><h3> replace </h3>
+<p>Заменя всеки елемент в последователността, който е еднакъв на подадената стойност или елемент.
+</p><p>Пример:
+</p><p>vector&lt;int&gt; V;
+V.push_back(1);
+V.push_back(2);
+V.push_back(3);
+V.push_back(1);
+</p><p>replace(V.begin(), V.end(), 1, 99);
+assert(V[0] == 99 &amp;&amp; V[3] == 99);
+</p><p><br />
+Семантика:
+Replace( име на пром1. + начало, име на пром1. + края, променлива която ще заменяме, променлива която ще заменя );
+</p><p><br />
+Сложност:Линейна.
+</p><p><br />
+Употреба:Щирока употреба в низовете и в някои задачи за насиви.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=20" title="STL Алгоритми">редактиране</a>]</div><a name="replace_if"></a><h3> replace_if </h3>
+<p>Същото като replace, но има и предикат, който определя при какво условие да се заменят.
+</p><p>Пример:
+</p><p>vector&lt;int&gt; V;
+V.push_back(1);
+V.push_back(-3);
+V.push_back(2);
+V.push_back(-1);
+</p><p>replace_if(V.begin(), V.end(), bind2nd(less&lt;int&gt;(), 0), -1);
+assert(V[1] == 0 &amp;&amp; V[3] == 0);
+</p><p>Семантика:
+Replace_if( име на пром1. + начало, име на пром1. + края,  предикат, променлива която ще заменя );
+</p><p><br />
+Сложност:Линейна.
+</p><p>Употреба:Като на replace.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=21" title="STL Алгоритми">редактиране</a>]</div><a name="fill"></a><h3> fill </h3>
+<p>Запълва последователност с някаква стойност.
+</p><p>Пример:
+vector&lt;double&gt; V(4);
+fill(V.begin(), V.end(), 137);
+assert(V[0] == 137 &amp;&amp; V[1] == 137 &amp;&amp; V[2] == 137 &amp;&amp; V[3] == 137);
+</p><p><br />
+Семантика:
+Fill(име на пром1. + начало, име на пром1. + край, стойност);
+</p><p><br />
+Сложност:Линейна.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=22" title="STL Алгоритми">редактиране</a>]</div><a name="fill_n"></a><h3> fill_n </h3>
+<p>Запълва с някаква стойност първите N елемента от началото на последователността.
+</p><p>Пример:
+</p><p>vector&lt;double&gt; V;
+fill_n(back_inserter(V), 4, 137);
+assert(V.size() == 4 &amp;&amp; V[0] == 42 &amp;&amp; V[1] == 42 &amp;&amp; V[2] == 42 &amp;&amp; V[3] == 42);
+</p><p><br />
+Семантика:
+Fill_N( име на пром1. + начало, N, стойност);
+</p><p>Сложност:Линейна.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=23" title="STL Алгоритми">редактиране</a>]</div><a name="generate"></a><h3> generate </h3>
+<p>Гeнерира елементите в последователността, по някакъв функционален обект за генериране на цисла ( най-добре да се ползва стандартната за C++, функция rand() ).
+</p><p>Пример:
+</p><p>vector&lt;int&gt; V;
+...
+generate(V.begin(), V.end(), rand);
+</p><p><br />
+Семантика:
+Generate( име на пром. + начало, име на пром. + край, функц. обект );
+</p><p>Сложност:Линейна.
+</p><p>Употреба:Ми ако правите алчен алгоритъм може да свърши работа или ако си генерирате някакъв вход.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=24" title="STL Алгоритми">редактиране</a>]</div><a name="generate_n"></a><h3> generate_n </h3>
+<p>Генерира N на брой числа в последователността.
+</p><p>Пример:
+Да се напише.
+</p><p>Семантика:
+Generate_N( име на пром. + край, N, функционален обект);
+</p><p>Сложност: Линейна.
+</p><p>Употреба: Като на Generate.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=25" title="STL Алгоритми">редактиране</a>]</div><a name="remove"></a><h3> remove </h3>
+<p>Премахва елементите в последователността равни на подадения елемент.
+</p><p>Пример:
+</p><p>vector&lt;int&gt; V;
+V.push_back(3);
+V.push_back(1);
+V.push_back(4);
+V.push_back(1);
+V.push_back(5);
+V.push_back(9);
+</p><p>copy(V.begin(), V.end(), ostream_iterator&lt;int&gt;(cout, " "));
+</p>
+<pre>   // The output is "3 1 4 1 5 9".
+</pre>
+<p>vector&lt;int&gt;::iterator new_end = remove(V.begin(), V.end(), 1);
+copy(V.begin(), new_end, ostream_iterator&lt;int&gt;(cout, " "));
+</p>
+<pre>   // The output is "3 4 5 9".
+</pre>
+<p><br />
+Семантика:
+Remove(име на пром. + на4ало, име на пром. + край, елемент който да премахваме);
+</p><p><br />
+Сложност:Линейна.
+</p><p>Употреба:Низове и масиви.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=26" title="STL Алгоритми">редактиране</a>]</div><a name="remove_if"></a><h3> remove_if </h3>
+<p>Като Remove, но премахва елементите, ако изпълняват някакво условие (предикат).
+</p><p>Пример:
+</p>
+<pre>
+vector&lt;int&gt; V;
+V.push_back(1);
+V.push_back(4);
+V.push_back(2);
+V.push_back(8);
+V.push_back(5);
+V.push_back(7);
+
+copy(V.begin(), V.end(), ostream_iterator&lt;int&gt;(cout, &quot; &quot;));
+    // The output is &quot;1 4 2 8 5 7&quot;
+
+vector&lt;int&gt;::iterator new_end = 
+        remove_if(V.begin(), V.end(), 
+                  compose1(bind2nd(equal_to&lt;int&gt;(), 0),
+                           bind2nd(modulus&lt;int&gt;(), 2)));
+V.erase(new_end, V.end()); [1]
+
+copy(V.begin(), V.end(), ostream_iterator&lt;int&gt;(cout, &quot; &quot;));
+    // The output is &quot;1 5 7&quot;.
+</pre>
+<p>Семантика:
+Replace_if( име на пром. + начало, име на пром. + край, предикат );
+</p><p>Сложност:Линейна.
+</p><p>Употреба:Като replace.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=27" title="STL Алгоритми">редактиране</a>]</div><a name="unique"></a><h3> unique </h3>
+<p>unique е особен алгоритъм - той НЕ премахва повтарящите се елементи. В действителност контейнера може да е масив и от него не може да се трие. Ето какво прави
+</p><p>Ако в подадената му редица има последвателни повтарящи се елементи, от тях остава само първия, а другите се преместват в края на редицата. Това означава, че ако подадената редица е сортирана, в началото й ще останат само уникалните елементи, а в края ще бъдат премесестени повторенията. unique връща указател към новия края на уникалната редица - т.е. мястото, което разделя уникалните от повтарящите се елементи.
+</p><p>Пример:
+</p><p>vector&lt;int&gt; V;
+V.push_back(1);
+V.push_back(3);
+V.push_back(3);
+V.push_back(3);
+V.push_back(2);
+V.push_back(2);
+V.push_back(1);
+</p><p>vector&lt;int&gt;::iterator new_end = unique(V.begin(), V.end());
+copy(V.begin(), new_end, ostream_iterator&lt;int&gt;(cout, " "));
+</p>
+<pre>   // The output is "1 3 2 1".
+</pre>
+<p>Семантика:
+unique( име на пром. + начало, име на пром1. +  край );
+</p><p>Сложност:Линейна.
+</p><p><br />
+Употреба:Извиквате ге след sort и получавате всички различни елементи за време O(NlogN).
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=28" title="STL Алгоритми">редактиране</a>]</div><a name="reverse"></a><h3> reverse </h3>
+<p>Обръща областта огледално спрямо средата и.
+</p><p>Пример:
+vector&lt;int&gt; V;
+V.push_back(0);
+V.push_back(1);
+V.push_back(2);
+copy(V.begin(), V.end(), ostream_iterator&lt;int&gt;(cout, " "));
+</p>
+<pre>               // Output: 0 1 2
+</pre>
+<p>reverse(V.begin(), V.end());
+copy(V.begin(), V.end(), ostream_iterator&lt;int&gt;(cout, " "));
+</p>
+<pre>// Output: 2 1 0
+</pre>
+<p>Семантика:
+Reverse( име на пром. + начало, име на пром. + край );
+</p><p>Сложност:Линейна.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=29" title="STL Алгоритми">редактиране</a>]</div><a name="rotate"></a><h3> rotate </h3>
+<p>Завърта наляво елементите в дадена областта.Избира се един елемент, който да иде наляво и той става първи в областта, елемента след него става втори , а елементите се “залепят” след посления елемент.
+</p><p>Пример:
+</p><p>char alpha[] = "abcdefghijklmnopqrstuvwxyz";
+rotate(alpha, alpha + 13, alpha + 26);
+printf("%s\n", alpha);
+// The output is nopqrstuvwxyzabcdefghijklm
+</p><p><br />
+Семантика:
+Rotate( име на пром. + начало, име на пром. + елементо който искаме да въртим, име на пром. + край );
+</p><p><br />
+Сложност:Линейна.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=30" title="STL Алгоритми">редактиране</a>]</div><a name="random_shuffle"></a><h3> random_shuffle </h3>
+<p>Размества по произволен начин елементите в областта.
+</p><p>Пример:
+</p><p>const int N = 8;
+int A[] = {1, 2, 3, 4, 5, 6, 7, 8};
+random_shuffle(A, A + N);
+copy(A, A + N, ostream_iterator&lt;int&gt;(cout, " "));
+// The printed result might be 7 1 6 3 2 5 4 8, 
+//  or any of 40,319 other possibilities.
+</p><p><br />
+Семантика:
+Random_shuffle( име на пром. + начало, име на пром. + край );
+</p><p><br />
+Сложност:Линейна.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=31" title="STL Алгоритми">редактиране</a>]</div><a name="sort"></a><h3> sort </h3>
+<p>Сортира елементите от областта по някакъв критерий.Може да дефинира функция за сравнение ( трябва да е от тип bool).
+Пример:
+Bool CMP(int &amp;i,int &amp;j)
+{
+if(i&gt;j) return 1;//Разменя елементит 
+else return 0;}//Иначе не ги разменя
+.....
+sort(A,A+N,CMP);
+Семантика:
+Sort( име на пром. + начало, име на пром. + край, функция );
+</p><p><br />
+Сложност: O(n log n)
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=32" title="STL Алгоритми">редактиране</a>]</div><a name="stable_sort"></a><h3> stable_sort </h3>
+<p>Абсолютно същото като sort.Само дето бачка по друг алгоритъм.
+</p><p>Пример:
+</p><p>	int masiv[100];
+</p><p><br />
+	int N;
+	cin&gt;&gt;N;
+	int i;
+	for(i=1;i&lt;=N;i++)
+	{
+		cin&gt;&gt;masiv[i];
+	}
+</p><p>	stable_sort(masiv+1,masiv+N+1);
+</p><p><br />
+Семантика:Като на Sort.
+</p><p><br />
+Сложност:Като на Sort.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=33" title="STL Алгоритми">редактиране</a>]</div><a name=".D0.A1.D0.BE.D1.80.D1.82.D0.B8.D1.80.D0.B0.D0.BD.D0.B8_.D0.9F.D0.BE.D1.81.D0.BB.D0.B5.D0.B4.D0.BE.D0.B2.D0.B0.D1.82.D0.B5.D0.BB.D0.BD.D0.BE.D1.81.D1.82.D0.B8"></a><h2> Сортирани Последователности </h2>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=34" title="STL Алгоритми">редактиране</a>]</div><a name="is_sorted"></a><h3> is_sorted </h3>
+<p>Проверява дали областта е сортирана.Връща true, ако е сортирана и false, ако не е.Може да ползвате самостоятелна функция за сравнение.
+</p><p>Пример:
+</p><p>int A[] = {1, 4, 2, 8, 5, 7};
+const int N = sizeof(A) / sizeof(int);
+</p><p>assert(!is_sorted(A, A + N));
+sort(A, A + N);
+assert(is_sorted(A, A + N));
+</p><p><br />
+Семантина:
+Is_sorted( име на пром. + начало, име на пром. + край, функция за сравнение );
+</p><p><br />
+Сложност:Линейна.
+</p><p><br />
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=35" title="STL Алгоритми">редактиране</a>]</div><a name="lower_bound"></a><h3> lower_bound </h3>
+<p>Намира първия елемент в дадена сортирана последователност, който има стойност по-малка от зададената.
+</p><p><br />
+Пример:
+int main()
+{
+</p>
+<pre> int A[] = { 1, 2, 3, 3, 3, 5, 8 };
+ const int N = sizeof(A) / sizeof(int);
+</pre>
+<pre> for (int i = 1; i &lt;= 10; ++i) {
+   int* p = lower_bound(A, A + N, i);
+   cout &lt;&lt; "Searching for " &lt;&lt; i &lt;&lt; ".  ";
+   cout &lt;&lt; "Result: index = " &lt;&lt; p - A &lt;&lt; ", ";
+   if (p&nbsp;!= A + N)
+     cout &lt;&lt; "A[" &lt;&lt; p - A &lt;&lt; "] == " &lt;&lt; *p &lt;&lt; endl;
+   else
+     cout &lt;&lt; "which is off-the-end." &lt;&lt; endl;
+ }
+</pre>
+<p>}
+</p><p><br />
+Семантика:
+Lower_bound( име на пром. + начало, име на пром. + край, стойност която търсим, функция за сравнение );
+</p><p><br />
+Сложност:Логаритмична.
+</p><p><br />
+Употреба:Ако трябва да пазим нещо в сортиран вид.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=36" title="STL Алгоритми">редактиране</a>]</div><a name="upper_bound"></a><h3> upper_bound </h3>
+<p>Същото като lower_bound, но намира по-голямата стойност не по-малката.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=37" title="STL Алгоритми">редактиране</a>]</div><a name="equal_range"></a><h3> equal_range </h3>
+<p>Двоично търсене,което намира последователността равна на даден елемент, в някаква определена сортирана последователност.Връща тип pair , като first е равно на итератора, от който започва последователността, а second е равно на итератора, в който завършва последователността.
+</p><p>Пример:
+</p><p>int main()
+{
+</p>
+<pre> int A[] = { 1, 2, 3, 3, 3, 5, 8 };
+ const int N = sizeof(A) / sizeof(int);
+</pre>
+<pre> for (int i = 2; i &lt;= 4; ++i) {
+   pair&lt;int*, int*&gt; result = equal_range(A, A + N, i);
+</pre>
+<pre>   cout &lt;&lt; endl;
+   cout &lt;&lt; "Searching for " &lt;&lt; i &lt;&lt; endl;
+   cout &lt;&lt; "  First position where " &lt;&lt; i &lt;&lt; " could be inserted: "
+        &lt;&lt; result.first - A &lt;&lt; endl;
+   cout &lt;&lt; "  Last position where " &lt;&lt; i &lt;&lt; " could be inserted: "
+        &lt;&lt; result.second - A &lt;&lt; endl;
+   if (result.first &lt; A + N)
+     cout &lt;&lt; "  *result.first = " &lt;&lt; *result.first &lt;&lt; endl;
+   if (result.second &lt; A + N)
+     cout &lt;&lt; "  *result.second = " &lt;&lt; *result.second &lt;&lt; endl;
+ }
+</pre>
+<p>}
+</p><p><br />
+Семантика:
+</p><p>Equal_ranges( име на пром. + начало, име на пром. + край, стойност която ще търсим, функция за сравнение );
+</p><p><br />
+Сложност:Логаритмична.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=38" title="STL Алгоритми">редактиране</a>]</div><a name="binary_search"></a><h3> binary_search </h3>
+<p>Двоично търсене, което проверява дали елемента е в сортираната последователност.
+Връща true, ако го има и false, ако го няма.
+</p><p>Пример:
+</p><p>int main()
+{
+</p>
+<pre> int A[] = { 1, 2, 3, 3, 3, 5, 8 };
+ const int N = sizeof(A) / sizeof(int);
+</pre>
+<pre> for (int i = 1; i &lt;= 10; ++i) {
+   cout &lt;&lt; "Searching for " &lt;&lt; i &lt;&lt; ": "
+        &lt;&lt; (binary_search(A, A + N, i)&nbsp;? "present"&nbsp;: "not present") &lt;&lt; endl;
+ }
+</pre>
+<p>}
+</p><p><br />
+Семантика:
+Bin_search( име на пром. + начало, име на пром. +  край, стойност която търсим, функция за сравнение );
+</p><p><br />
+Сложност:Логаритмична.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=39" title="STL Алгоритми">редактиране</a>]</div><a name="merge"></a><h3> merge </h3>
+<p>Слива две наредени последователности, запазвайки резултата в наредена
+трета.Критерия за сравнение може да се промени с функция за сравнение.
+Последователността, в която се пази резултата се подава като 5 параметър на функцията.
+</p><p>Пример:
+</p><p>int main()
+{
+</p>
+<pre> int A1[] = { 1, 3, 5, 7 };
+ int A2[] = { 2, 4, 6, 8 };
+ const int N1 = sizeof(A1) / sizeof(int);
+ const int N2 = sizeof(A2) / sizeof(int);
+</pre>
+<pre> merge(A1, A1 + N1, A2, A2 + N2, 
+       ostream_iterator&lt;int&gt;(cout, " "));
+ // The output is "1 2 3 4 5 6 7 8"
+</pre>
+<p>}
+</p><p><br />
+Семантика:
+Merge( име на пром1. + начало, име на пром1. + край, име на пром2. + начало, име на пром2. + край, име на пром.3, функция за сравнение );
+</p><p><br />
+Сложност:Линейна.
+</p><p><br />
+Употреба:При писане на Mergesort .И при доста други алгоритми. 
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=40" title="STL Алгоритми">редактиране</a>]</div><a name="includes"></a><h3> includes </h3>
+<p>Определя дали дадена сортирана последователност съдържа елементите на друга
+сортирана такава.
+</p><p>Пример:
+</p><p>int A1[] = { 1, 2, 3, 4, 5, 6, 7 };
+int A2[] = { 1, 4, 7 };
+int A3[] = { 2, 7, 9 };
+int A4[] = { 1, 1, 2, 3, 5, 8, 13, 21 };
+int A5[] = { 1, 2, 13, 13 };
+int A6[] = { 1, 1, 3, 21 };
+</p><p>const int N1 = sizeof(A1) / sizeof(int);
+const int N2 = sizeof(A2) / sizeof(int);
+const int N3 = sizeof(A3) / sizeof(int);
+const int N4 = sizeof(A4) / sizeof(int);
+const int N5 = sizeof(A5) / sizeof(int);
+const int N6 = sizeof(A6) / sizeof(int);
+</p><p>cout &lt;&lt; "A2 contained in A1: " 
+</p>
+<pre>    &lt;&lt; (includes(A1, A1 + N1, A2, A2 + N2)&nbsp;? "true"&nbsp;: "false") &lt;&lt; endl;
+</pre>
+<p>cout &lt;&lt; "A3 contained in A1: " 
+</p>
+<pre>    &lt;&lt; (includes(A1, A1 + N2, A3, A3 + N3)&nbsp;? "true"&nbsp;: "false") &lt;&lt; endl;
+</pre>
+<p>cout &lt;&lt; "A5 contained in A4: " 
+</p>
+<pre>    &lt;&lt; (includes(A4, A4 + N4, A5, A5 + N5)&nbsp;? "true"&nbsp;: "false") &lt;&lt; endl;
+</pre>
+<p>cout &lt;&lt; "A6 contained in A4: " 
+</p>
+<pre>    &lt;&lt; (includes(A4, A4 + N4, A6, A6 + N6)&nbsp;? "true"&nbsp;: "false") &lt;&lt; endl;
+</pre>
+<p>The output is: 
+A2 contained in A1: true
+A3 contained in A1: false
+A5 contained in A4: false
+A6 contained in A4: true
+</p><p><br />
+</p><p>Семантика:
+Includes(име на пром1. + начало, име на пром1. + край, име на пром2. + начало, име на пром2. + край, функция за сравнение);
+</p><p>Сложност:Линейна.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=41" title="STL Алгоритми">редактиране</a>]</div><a name=".D0.97.D0.B0_.D0.B4.D0.B2.D0.BE.D0.B8.D1.87.D0.BD.D0.B0_.D0.BF.D0.B8.D1.80.D0.B0.D0.BC.D0.B8.D0.B4.D0.B0"></a><h2> За двоична пирамида </h2>
+<p>Следващите алгоритми рядко се използват пряко, тъй като за двоична пирамида обикновенно се използва адаптера priority_queue.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=42" title="STL Алгоритми">редактиране</a>]</div><a name="make_heap"></a><h3> make_heap </h3>
+<p>Създава пирамида по дадеда последователност.Създаването може да бъде по някаква функция за сравнение.
+</p><p>Пример:
+</p><p>int main()
+{
+</p>
+<pre> int A[] = {1, 4, 2, 8, 5, 7};
+ const int N = sizeof(A) / sizeof(int);
+</pre>
+<pre> make_heap(A, A+N);
+ copy(A, A+N, ostream_iterator&lt;int&gt;(cout, " "));
+ cout &lt;&lt; endl;
+</pre>
+<pre> sort_heap(A, A+N);
+ copy(A, A+N, ostream_iterator&lt;int&gt;(cout, " "));
+ cout &lt;&lt; endl;
+</pre>
+<p>}
+</p><p><br />
+Семантика:
+</p><p>Make_heap(име на пром. + начало, име на пром. + край, фунция за сравнение);
+</p><p><br />
+Сложност:Линейна.
+</p><p>Употреба:Пирамидата е много бърза стуктура от данни, защото операциите добавяна и премахване са с логаритмична сложност.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=43" title="STL Алгоритми">редактиране</a>]</div><a name="push_heap"></a><h3> push_heap </h3>
+<p>Добавя елемент към пирамидата.Но добавения елемент трябва вече да е в последователността, тоест като извикаме функцията и тя прибавя към дадената пирамида, елементите който са след последния елемент, съдържащ се в  нея.
+</p><p>Пример:
+</p><p>int main()
+{
+</p>
+<pre> int A[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+</pre>
+<pre> make_heap(A, A + 9);
+ cout &lt;&lt; "[A, A + 9)  = ";
+ copy(A, A + 9, ostream_iterator&lt;int&gt;(cout, " "));
+ 
+ push_heap(A, A + 10);
+ cout &lt;&lt; endl &lt;&lt; "[A, A + 10) = ";
+ copy(A, A + 10, ostream_iterator&lt;int&gt;(cout, " "));
+ cout &lt;&lt; endl;
+</pre>
+<p>}
+</p><p><br />
+Семантика:
+Push_heap( име на пром. + начало, име на пром. + край (обезателно итератор след последния елемент на пирамидата), функция за сравнение );
+</p><p>Сложност:Логаритмична.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=44" title="STL Алгоритми">редактиране</a>]</div><a name="pop_heap"></a><h3> pop_heap </h3>
+<p>Премахва най-големия по някакъв критерий елемент в пирамида.
+</p><p>Пример:
+</p><p>int main()
+{
+</p>
+<pre> int A[] = {1, 2, 3, 4, 5, 6};
+ const int N = sizeof(A) / sizeof(int);
+</pre>
+<pre> make_heap(A, A+N);
+ cout &lt;&lt; "Before pop: ";
+ copy(A, A+N, ostream_iterator&lt;int&gt;(cout, " "));
+</pre>
+<pre> pop_heap(A, A+N);
+ cout &lt;&lt; endl &lt;&lt; "After pop: ";
+ copy(A, A+N-1, ostream_iterator&lt;int&gt;(cout, " "));
+ cout &lt;&lt; endl &lt;&lt; "A[N-1] = " &lt;&lt; A[N-1] &lt;&lt; endl;
+</pre>
+<p>}
+</p><p>Семантика:
+Pop_heap(име на пром. + начало, име на пром. + край, функция за сравнение);
+</p><p>Сложност:Логаритмична.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=45" title="STL Алгоритми">редактиране</a>]</div><a name="sort_heap"></a><h3> sort_heap </h3>
+<p>Сортира пирамида по даден критерий(ТОВА НЕ Е ПИРАМИДАЛНО СОРТИРАНЕ!).
+</p><p>Пример:
+</p><p>int main()
+{
+</p>
+<pre> int A[] = {1, 4, 2, 8, 5, 7};
+ const int N = sizeof(A) / sizeof(int);
+</pre>
+<pre> make_heap(A, A+N);
+ copy(A, A+N, ostream_iterator&lt;int&gt;(cout, " "));
+ cout &lt;&lt; endl;
+</pre>
+<pre> sort_heap(A, A+N);
+ copy(A, A+N, ostream_iterator&lt;int&gt;(cout, " "));
+ cout &lt;&lt; endl;
+</pre>
+<p>}
+</p><p><br />
+Семантика:
+Sort_heap(име на пром. + начало, име на пром. + край, функция за сравнение);
+</p><p><br />
+Сложност:Логаритмична*Линейна.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=46" title="STL Алгоритми">редактиране</a>]</div><a name="is_heap"></a><h3> is_heap </h3>
+<p>Проверява дали дадена последователност е пирамида.Връща true, ако е и false, ако не е.
+</p><p>Пример:
+</p><p>int A[] = {1, 2, 3, 4, 5, 6, 7};
+const int N = sizeof(A) / sizeof(int);
+</p><p>assert(!is_heap(A, A+N));
+make_heap(A, A+N);
+assert(is_heap(A, A+N));
+</p><p><br />
+Семантика:
+Is_heap(име на пром. +  начало, име на пром. + край);
+</p><p><br />
+Сложност:Линейна.
+</p><p><br />
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=47" title="STL Алгоритми">редактиране</a>]</div><a name=".D0.9F.D0.B5.D1.80.D0.BC.D1.83.D1.82.D0.B0.D1.86.D0.B8.D0.B8"></a><h2> Пермутации </h2>
+<p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=48" title="STL Алгоритми">редактиране</a>]</div><a name="next_permutation"></a><h3> next_permutation </h3>
+<p>Генерира следващата лексикографска пермутация на подадената област ( генерира е в същата област ).
+</p><p>Пример:
+</p><p>template &lt;class BidirectionalIterator&gt; 
+void snail_sort(BidirectionalIterator first, BidirectionalIterator last)
+{
+</p>
+<pre> while (next_permutation(first, last)) {}
+</pre>
+<p>}
+</p><p>int main()
+{
+</p>
+<pre> int A[] = {8, 3, 6, 1, 2, 5, 7, 4};
+ const int N = sizeof(A) / sizeof(int);
+</pre>
+<pre> snail_sort(A, A+N);
+ copy(A, A+N, ostream_iterator&lt;int&gt;(cout, "\n"));
+</pre>
+<p>}
+</p><p><br />
+Семантика:
+next_permutation(име на пром. + начало, име на пром. +  край);
+</p><p>Сложност:Линейна.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit&amp;section=49" title="STL Алгоритми">редактиране</a>]</div><a name="prev_permutation"></a><h3> prev_permutation </h3>
+<p>Същото като next_permutation, само че генерира предишната лексикографска пермутация.
+</p>
+<!-- Saved in parser cache with key wikidb:pcache:idhash:944-1!1!0!1!0!1!0!!bg and timestamp 20061231104601 -->
+<div class="printfooter">
+Взето от "<a href="http://judge.openfmi.net/wiki/index.php/STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8">http://judge.openfmi.net/wiki/index.php/STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8</a>".</div>
+	    	    <!-- end content -->
+	    <div class="visualClear"></div>
+	  </div>
+	</div>
+      </div>
+      <div id="column-one">
+	<div id="p-cactions" class="portlet">
+	  <h5>Views</h5>
+	  <ul>
+	    <li id="ca-nstab-main"
+	       class="selected"	       ><a href="/wiki/index.php/STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8">Статия</a></li><li id="ca-talk"
+	       	       ><a href="/wiki/index.php/%D0%91%D0%B5%D1%81%D0%B5%D0%B4%D0%B0:STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8">Беседа</a></li><li id="ca-edit"
+	       	       ><a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=edit">Редактиране</a></li><li id="ca-history"
+	       	       ><a href="/wiki/index.php?title=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8&amp;action=history">История</a></li>	  </ul>
+	</div>
+	<div class="portlet" id="p-personal">
+	  <h5>Лични инструменти</h5>
+	  <div class="pBody">
+	    <ul>
+	    <li id="pt-login"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Userlogin&amp;returnto=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8">Влизане</a></li>	    </ul>
+	  </div>
+	</div>
+	<div class="portlet" id="p-logo">
+	  <a style="background-image: url(/wiki/skins/common/images/wiki.png);"
+	    href="/wiki/index.php/%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0"
+	    title="Начална страница"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="portlet" id="p-nav">
+	  <h5>Навигация</h5>
+	  <div class="pBody">
+	    <ul>
+	      	      <li id="n-mainpage"><a href="/wiki/index.php/%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Начална страница</a></li>	      <li id="n-portal"><a href="/wiki/index.php/CsStuff:%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB">Портал за общността</a></li>	      <li id="n-currentevents"><a href="/wiki/index.php/Current_events">Текущи събития</a></li>	      <li id="n-recentchanges"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Recentchanges">Последни промени</a></li>	      <li id="n-randompage"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Randompage">Случайна страница</a></li>	      <li id="n-help"><a href="/wiki/index.php/%D0%9F%D0%BE%D0%BC%D0%BE%D1%89:%D0%9F%D0%BE%D0%BC%D0%BE%D1%89">Помощ</a></li>	      <li id="n-sitesupport"><a href="/wiki/index.php/CsStuff:Site_support">Дарения</a></li>	    </ul>
+	  </div>
+	</div>
+	<div id="p-search" class="portlet">
+	  <h5><label for="searchInput">Търсене</label></h5>
+	  <div class="pBody">
+	    <form name="searchform" action="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Search" id="searchform">
+	      <input id="searchInput" name="search" type="text"
+	        accesskey="s" value="" />
+	      <input type='submit' name="go" class="searchButton" id="searchGoButton"
+	        value="Отваряне"
+	        />&nbsp;<input type='submit' name="fulltext"
+	        class="searchButton"
+	        value="Търсене" />
+	    </form>
+	  </div>
+	</div>
+	<div class="portlet" id="p-tb">
+	  <h5>Кутия с инструменти</h5>
+	  <div class="pBody">
+	    <ul>
+		  		  <li id="t-whatlinkshere"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Whatlinkshere&amp;target=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8">Какво сочи насам</a></li>
+		  		  <li id="t-recentchangeslinked"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Recentchangeslinked&amp;target=STL_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8">Сродни промени</a></li>
+		  	      	      	      	      	      	      	      	      	      <li id="t-specialpages"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Specialpages">Специални страници</a></li>	      	    </ul>
+	  </div>
+	</div>
+	      </div><!-- end of the left (by default at least) column -->
+      <div class="visualClear"></div>
+      <div id="footer">
+    <div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/wiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>		<ul id="f-list">
+	  <li id="f-lastmod"> Последна промяна на страницата: 15:51, 23 окт 2006.</li>	  <li id="f-viewcount">Страницата е била преглеждана 870 пъти.</li>	  	  	  <li id="f-about"><a href="/wiki/index.php/CsStuff:%D0%97%D0%B0_CsStuff" title="CsStuff:За CsStuff">За CsStuff</a></li>	  <li id="f-disclaimer"><a href="/wiki/index.php/CsStuff:%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F_%D0%B7%D0%B0_%D0%BF%D0%BE%D0%BB%D0%B7%D0%B2%D0%B0%D0%BD%D0%B5" title="CsStuff:Условия за ползване">Условия за ползване</a></li>	</ul>
+      </div>
+    </div>
+    <!-- Served by judge in 0.47 secs. -->
+  </body>
+</html>

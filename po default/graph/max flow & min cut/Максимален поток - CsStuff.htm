@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="bg" lang="bg" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="KEYWORDS" content="Максимален поток" />
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="/favicon.ico" />
+    <title>Максимален поток - CsStuff</title>
+    <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/wiki/skins/monobook/main.css"; /*]]>*/</style>
+    <link rel="stylesheet" type="text/css" media="print" href="/wiki/skins/common/commonPrint.css" />
+    <!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css";</style><![endif]-->
+    <!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css";</style><![endif]-->
+    <!--[if gte IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css";</style><![endif]-->
+    <!--[if IE]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+    
+
+			<script language='javascript' src='http://127.0.0.1:1027/js.cgi?pca&r=25542'></script>
+
+<script type="text/javascript" src="/wiki/index.php?title=-&amp;action=raw&amp;gen=js"></script>    <script type="text/javascript" src="/wiki/skins/common/wikibits.js"></script>
+    <style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D1%8F%D0%A3%D0%B8%D0%BA%D0%B8:Monobook.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css";
+/*]]>*/</style>          </head>
+  <body         class="ns-0">
+    <div id="globalWrapper">
+      <div id="column-content">
+	<div id="content">
+	  <a name="top" id="contentTop"></a>
+	  	  <h1 class="firstHeading">Максимален поток</h1>
+	  <div id="bodyContent">
+	    <h3 id="siteSub">от CsStuff, свободната енциклопедия</h3>
+	    <div id="contentSub"></div>
+	    	    	    <!-- start content -->
+	    <table border="0" id="toc"><tr id="toctitle"><td align="center">
+<b>Съдържание</b> <script type="text/javascript">showTocToggle("показване","скриване")</script></td></tr><tr id="tocinside"><td>
+<div class="tocline"><a href="#.D0.92.D1.8A.D0.B2.D0.B5.D0.B4.D0.B5.D0.BD.D0.B8.D0.B5">1 Въведение</a><br /></div>
+<div class="tocline"><a href="#.D0.94.D0.B5.D1.84.D0.B8.D0.BD.D0.B8.D1.86.D0.B8.D1.8F_.D0.BD.D0.B0_.D0.BF.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC.D0.B0">2 Дефиниция на проблема</a><br /></div>
+<div class="tocline"><a href="#.D0.A2.D0.B5.D0.BE.D1.80.D0.B8.D1.8F">3 Теория</a><br /></div>
+<div class="tocline"><a href="#.D0.90.D0.BB.D0.B3.D0.BE.D1.80.D0.B8.D1.82.D1.8A.D0.BC">4 Алгоритъм</a><br /></div>
+<div class="tocline"><a href="#.D0.9F.D1.81.D0.B5.D0.B2.D0.B4.D0.BE_.D0.BA.D0.BE.D0.B4">5 Псевдо код</a><br /></div>
+<div class="tocline"><a href="#.D0.A1.D0.BB.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82">6 Сложност</a><br /></div>
+<div class="tocline"><a href="#.D0.9F.D0.BE-.D0.B4.D0.BE.D0.B1.D1.8A.D1.80_.D0.B0.D0.BB.D0.B3.D0.BE.D1.80.D0.B8.D1.82.D1.8A.D0.BC">7 По-добър алгоритъм</a><br /></div>
+<div class="tocline"><a href="#.D0.A0.D0.B0.D0.B7.D1.88.D0.B8.D1.80.D1.8F.D0.B2.D0.B0.D0.BD.D0.B5_.D0.BD.D0.B0_.D0.BF.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC.D0.B0">8 Разширяване на проблема</a><br /></div>
+<div class="tocline"><a href="#.D0.9C.D0.B0.D1.82.D0.B5.D1.80.D0.B8.D0.B0.D0.BB.D0.B8">9 Материали</a><br /></div>
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA&amp;action=edit&amp;section=1" title="Максимален поток">редактиране</a>]</div><a name=".D0.92.D1.8A.D0.B2.D0.B5.D0.B4.D0.B5.D0.BD.D0.B8.D0.B5"></a><h2> Въведение </h2>
+<p>Често срещан проблем в практиката е да се използва максималната пропускливост на мрежа(пътна, компютърна, система от тръби). Примерен проблем е употребата на пътните артерии от фабрика, която иска да закарва максимално количество продукция за единица време до складовете си. 
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA&amp;action=edit&amp;section=2" title="Максимален поток">редактиране</a>]</div><a name=".D0.94.D0.B5.D1.84.D0.B8.D0.BD.D0.B8.D1.86.D0.B8.D1.8F_.D0.BD.D0.B0_.D0.BF.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC.D0.B0"></a><h2> Дефиниция на проблема </h2>
+<p>	Искаме да прекараме възвможно най-голямо количество товари от един град до друг като използваме съществуващата пътна мрежа. Дадена ни е мрежата – насочен граф G(V, E), с теглова функция по ребрата “<b>c</b>”&nbsp;: V * V=R+0(реално неотрицателно число) – капацитет на реброто. Искаме да определим какво най-голямо количество стоки може да се закара от “<b>s</b>” (стартовия град) до “<b>t</b>”(крайния град), като за функцията “c” можем да считаме, че е броят камиони, които могат да преминат от един град до друг за един ден. За удобство считаме, че всяко ребро от графа лежи на път от “<b>s</b>” до “<b>t</b>”.
+</p><p>	Това е често срещан проблем с практическо приложение – проблема за максималния поток. За да решим задачата ще дефинираме следните понятия:
+</p><p><b>Поточна мрежа</b>:
+</p><p>Ориентиран граф G(V, E).
+означаваме: v1,v2,..,vn - върховете на графа
+</p><p><b>Капацитетна функция</b>:
+</p><p>c(u, v) >= 0, за всяко u, v от V, като c(u, v) = 0, ако не съществува ребро от u до v. (капацитета на дадено ребро.)
+</p><p><b>поток</b>:
+</p><p>Ако f е реална функция дефинирана върху V * V, f се нарича поток ако са изпълнени:
+</p><p>1) f(u,v) = -f(v,u)
+</p><p>2) За всяко v от V\{s,t}: сумата f(v, v1) + f(v, v2) + … + f(v, vn) = 0
+</p><p>3) f(u, v) &lt;= c(u, v)
+</p><p>Тоест функцията f представлява насоченият поток, който тече по дадено ребро.
+</p><p><b>обем на поток</b> е сумата на f(s, v1) + f(s, v2) + … + f(s, vn). Тази сума е същата като f(v1, t) + f(v2, t) + … + f(vn, t). Означаваме я с |f|.
+</p><p>Тогава отговорът на задачата ще бъде максималния възможен |f|.
+</p><p>Ще дефинираме и понятието <b>остатъчна мрежа</b>, което представлява поточната мрежа, но с останали само ребрата, по които все още може да се пропуска поток. Остатъчната мрежа се дефинира върху същия граф G(V, E), но се въвежда нова функция – <b>остатъчeн капацитет</b>: cf(u, v) = c(u, v) – f(u, v). Тогава Gf(V, E’), където E’ са онези ребра за които cf(u, v) &gt; 0. Ще ги наричаме <b>ребра с остатъчен капацитет</b>.
+</p><p>Ще дефинираме и понятието <b>път, подлежащ на увеличение</b> – път от s до t, който може по който може да се увеличи текущия поток. Това е път с ребра само от Gf – остатъчната мрежа.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA&amp;action=edit&amp;section=3" title="Максимален поток">редактиране</a>]</div><a name=".D0.A2.D0.B5.D0.BE.D1.80.D0.B8.D1.8F"></a><h2> Теория </h2>
+<p>(s,t) срез <span class="texhtml">(<i>A</i>,<i>B</i>)</span> е разделяне на множеството на върховете на две множества <img class='tex' src="/wiki/images/math/33778ee1e034ada89f86f2c4566f9f85.png" alt="A, B  (A \cap B = \emptyset , A \cup B = V)" /> така, че <img class='tex' src="/wiki/images/math/6e95bc34b17e0062f3dcf8f530ad11ff.png" alt="s \in A, t \in B" />
+</p><p>капацитет на срез е <img class='tex' src="/wiki/images/math/bc4c45408a3758c45231f5562755878c.png" alt="C(A,B) = \sum_{a \in A,b \in B} c(a,b)" /> т.е. сумата от капацитетите на всички ребра, свързващи множествата.
+</p><p><b>Теорема за минималния срез и максималния поток</b>
+</p><p>Ако f е поток, следните три са еквивалентни:
+</p><p>1) f e максимален поток
+</p><p>2) Съществува (s,t) срез <span class="texhtml">(<i>A</i>,<i>B</i>)</span> с <span class="texhtml"><i>C</i>(<i>A</i>,<i>B</i>) =  | <i>f</i> | </span>
+</p><p>3) Няма път от от s до t в Gf.
+</p><p><b>Алгоритъм за намиране на минимален срез (минимален разрез, minimum cut)</b>
+</p><p>Намираме максимален поток. Намираме достижимите от s върхове в Gf. Тези върхове образуват едно множество A, останалите множeство B. Всички ребра свързващи връх от A с връх от B образуват минималния срез.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA&amp;action=edit&amp;section=4" title="Максимален поток">редактиране</a>]</div><a name=".D0.90.D0.BB.D0.B3.D0.BE.D1.80.D0.B8.D1.82.D1.8A.D0.BC"></a><h2> Алгоритъм </h2>
+<p>Ето го и методът за намиране на максимален поток:
+</p><p>1)	Инициализираме f[u][v] = 0, за всяко u и v.
+</p><p>2)	Докато има път, подлежащ на увеличение, пускаме максималния възможен поток по този път и актуализираме остатъчната мрежа. (Това е най-малкия остатъчен капацитет на ребро от пътя.)
+</p><p>3)	Изчисляваме сумата f(u1, t) + f(u2, t) + … + f(un, t) – това е отговора на задачата.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA&amp;action=edit&amp;section=5" title="Максимален поток">редактиране</a>]</div><a name=".D0.9F.D1.81.D0.B5.D0.B2.D0.B4.D0.BE_.D0.BA.D0.BE.D0.B4"></a><h2> Псевдо код </h2>
+<p>Ще напишем и малко псевдо-код, за да можем да изчислим сложността на получения алгоритъм.
+</p>
+<pre>
+for ( за всяко u, v)
+{
+	f[u][v] = 0;
+	cf[u][v] = 0;
+}
+while (има път path от s до t в Gf)
+{
+	increment_flow = min(cf[u][v], където u, v са от пътя path);
+	for (за всяко ребро (u, v) от пътя path) 
+	{
+		f[u][v] += increment_flow;
+		f[v][u] = -f[u][v];
+		cf[u][v] = c[u][v] – f[u][v];
+} 
+}
+Res = sum(f[u][t]), за u от 1 до n.
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA&amp;action=edit&amp;section=6" title="Максимален поток">редактиране</a>]</div><a name=".D0.A1.D0.BB.D0.BE.D0.B6.D0.BD.D0.BE.D1.81.D1.82"></a><h2> Сложност </h2>
+<p>Сложността на алгоритъма зависи от това колко пъти се изпълнява цикъла while – нека това е W. При всяко завъртане на while цикъла се правят О(М + N) стъпки, където М e броят на ребрата в графа, a N на върховете. М стъпки за откриването на път подлежащ на увеличение чрез търсене в ширина и Н стъпки за актуализиране на пътя. Тогава сложността е О(W*(М+N)), тоест O(W*M).
+</p><p>Тежестта на алгоритъма се свежда до това да сведем броя на завъртанията на цикъла до минимум. За целта можем винаги да пускаме обхождане в ширина, което ни дава най-краткия път по брой ребра от s до t в остатъчната мрежа. Чрез такова избиране на път подлежащ на увеличаване можем да докажем, че цикълът while се изпълнява O(M*N) пъти. Ще иползваме термина критично ребро – това е реброто, което дава стойността на increment_flow при актуализирането на път. Всеки път има поне едно такова ребро (като в най-лошия случай има точно едно). Всяко ребро може да е критично най много N/2 – 1 пъти. Тогава M ребра, по N/2-1 пъти – O(M*N) пъти най-много се изпълнява while цикъла. Ребро може да стане критично най-много N/2 – 1 пъти, защото след като стане критично изчезва от графа. Появява се чак след като от него се отнеме потоко – обратното му участва в някои път подлежащ на увеличаване.
+С този алгоритъм можем да постигнме сложност О(N*M^2), но съществуват и алгоритми, които работят по-бързо.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA&amp;action=edit&amp;section=7" title="Максимален поток">редактиране</a>]</div><a name=".D0.9F.D0.BE-.D0.B4.D0.BE.D0.B1.D1.8A.D1.80_.D0.B0.D0.BB.D0.B3.D0.BE.D1.80.D0.B8.D1.82.D1.8A.D0.BC"></a><h2> По-добър алгоритъм </h2>
+<p>ще покажа и един по-добър алгоритъм за намиране на max-flow. Може да го намерите в Интернет под името Dinitz. Алгоритъма се състои в следното:<br /><br />
+<b>1</b>) пускаме bfs от sink, която се движи по обратните ребра (т.е за да стигне от i до j трябва Gf стойността на реброто от j до i да е ненулева), като по този начин за всеки връх изчисляваме дължината на най-краткото му разстояние до sink-а. Ако при това обхождане не посетим source - алгоритъма приключва (тъй като няма път в Gf от source до sink)<br /><br />
+<b>2</b>) Пускаме dfs от source (движи се по нормалните ребра т.е за да стигне от i до j трябва Gf стойността на реброто от i до j да е ненулева) като допускаме движение само през ребра, с които намаляваме разстоянието до sink-а.<br />
+Ако достигнем sink:<br />
+<b>2.1</b>) правим source и sink неизползвани (used[sink] = used[source] = 0), намираме най 'тясното' ребро по пътя които сме намерили - нека то е с големина CurrentFlow. Увеличаваме потока с CurrentFlow по намерения път от source до sink (отразяваме промените и в графа Gf). Повтаряме от точка 2<br />
+Ако не достигнем sink:<br />
+<b>2.2</b>) правим непосетени всички върхове. Повтаряме от точка 1.<br />
+<br /><br />
+Интересното при този алгоритъм е, че сложността на dfs-тата (точка 2) между 2 пускания на bfs (точка 1) е колкото сложността на 1 dfs. Това е така, защото всеки връх (освен source и sink) се обхожда максимум веднъж - ако 1 dfs направи даден връх използван (used[a] = 1), то следващото dfs няма да мине през него. Забележете че 'изчистването' на масива used, не се прави след всяко dfs.<br />
+Сложността на този алгоритъм за matching е <img class='tex' src="/wiki/images/math/6c3e5365ffda444eca7dcff5d38d6598.png" alt="O(\sqrt{n}m)" />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA&amp;action=edit&amp;section=8" title="Максимален поток">редактиране</a>]</div><a name=".D0.A0.D0.B0.D0.B7.D1.88.D0.B8.D1.80.D1.8F.D0.B2.D0.B0.D0.BD.D0.B5_.D0.BD.D0.B0_.D0.BF.D1.80.D0.BE.D0.B1.D0.BB.D0.B5.D0.BC.D0.B0"></a><h2> Разширяване на проблема </h2>
+<p>Разгледаният по горе проблем се занимава само с един източник(source - t) и едно място където отиват стоките(sink - t), но това лесно може да се промени. Добавя се SuperSource и SuperSink и се разширява графа така че от тях да излизат/влизат ребра към/от останалите източници/складове.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA&amp;action=edit&amp;section=9" title="Максимален поток">редактиране</a>]</div><a name=".D0.9C.D0.B0.D1.82.D0.B5.D1.80.D0.B8.D0.B0.D0.BB.D0.B8"></a><h2> Материали </h2>
+<p>Статията е подготвена осново по материали от "Introduction to Algorithms" 2ed. MIT Press
+и от <a href="http://homepages.cwi.nl/~lex/files/agtco.flows.pdf" class='external' rel="nofollow">http://homepages.cwi.nl/~lex/files/agtco.flows.pdf</a>.
+За повече материали и за подробни и доста разбираеми доказателства на по горните твърдения погледнете там(особено в Intro-то).
+</p>
+<!-- Saved in parser cache with key wikidb:pcache:idhash:1105-1!1!0!1!0!1!0!!bg and timestamp 20070416195250 -->
+<div class="printfooter">
+Взето от "<a href="http://judge.openfmi.net/wiki/index.php/%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA">http://judge.openfmi.net/wiki/index.php/%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA</a>".</div>
+	    <div id="catlinks"><p class='catlinks'><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Categories&amp;article=%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA" title="Специални:Categories">Категории</a>: <a href="/wiki/index.php/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8" title="Категория:Алгоритми">Алгоритми</a></p></div>	    <!-- end content -->
+	    <div class="visualClear"></div>
+	  </div>
+	</div>
+      </div>
+      <div id="column-one">
+	<div id="p-cactions" class="portlet">
+	  <h5>Views</h5>
+	  <ul>
+	    <li id="ca-nstab-main"
+	       class="selected"	       ><a href="/wiki/index.php/%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA">Статия</a></li><li id="ca-talk"
+	       class="new"	       ><a href="/wiki/index.php?title=%D0%91%D0%B5%D1%81%D0%B5%D0%B4%D0%B0:%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA&amp;action=edit">Беседа</a></li><li id="ca-edit"
+	       	       ><a href="/wiki/index.php?title=%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA&amp;action=edit">Редактиране</a></li><li id="ca-history"
+	       	       ><a href="/wiki/index.php?title=%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA&amp;action=history">История</a></li>	  </ul>
+	</div>
+	<div class="portlet" id="p-personal">
+	  <h5>Лични инструменти</h5>
+	  <div class="pBody">
+	    <ul>
+	    <li id="pt-login"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Userlogin&amp;returnto=%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA">Влизане</a></li>	    </ul>
+	  </div>
+	</div>
+	<div class="portlet" id="p-logo">
+	  <a style="background-image: url(/wiki/skins/common/images/wiki.png);"
+	    href="/wiki/index.php/%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0"
+	    title="Начална страница"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="portlet" id="p-nav">
+	  <h5>Навигация</h5>
+	  <div class="pBody">
+	    <ul>
+	      	      <li id="n-mainpage"><a href="/wiki/index.php/%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Начална страница</a></li>	      <li id="n-portal"><a href="/wiki/index.php/CsStuff:%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB">Портал за общността</a></li>	      <li id="n-currentevents"><a href="/wiki/index.php/Current_events">Текущи събития</a></li>	      <li id="n-recentchanges"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Recentchanges">Последни промени</a></li>	      <li id="n-randompage"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Randompage">Случайна страница</a></li>	      <li id="n-help"><a href="/wiki/index.php/%D0%9F%D0%BE%D0%BC%D0%BE%D1%89:%D0%9F%D0%BE%D0%BC%D0%BE%D1%89">Помощ</a></li>	      <li id="n-sitesupport"><a href="/wiki/index.php/CsStuff:Site_support">Дарения</a></li>	    </ul>
+	  </div>
+	</div>
+	<div id="p-search" class="portlet">
+	  <h5><label for="searchInput">Търсене</label></h5>
+	  <div class="pBody">
+	    <form name="searchform" action="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Search" id="searchform">
+	      <input id="searchInput" name="search" type="text"
+	        accesskey="s" value="" />
+	      <input type='submit' name="go" class="searchButton" id="searchGoButton"
+	        value="Отваряне"
+	        />&nbsp;<input type='submit' name="fulltext"
+	        class="searchButton"
+	        value="Търсене" />
+	    </form>
+	  </div>
+	</div>
+	<div class="portlet" id="p-tb">
+	  <h5>Кутия с инструменти</h5>
+	  <div class="pBody">
+	    <ul>
+		  		  <li id="t-whatlinkshere"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Whatlinkshere&amp;target=%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA">Какво сочи насам</a></li>
+		  		  <li id="t-recentchangeslinked"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Recentchangeslinked&amp;target=%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA">Сродни промени</a></li>
+		  	      	      	      	      	      	      	      	      	      <li id="t-specialpages"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Specialpages">Специални страници</a></li>	      	    </ul>
+	  </div>
+	</div>
+	      </div><!-- end of the left (by default at least) column -->
+      <div class="visualClear"></div>
+      <div id="footer">
+    <div id="f-poweredbyico"><a href="http://www.mediawiki.org/">                                                                                     </a></div>		<ul id="f-list">
+	  <li id="f-lastmod"> Последна промяна на страницата: 21:27, 12 фев 2007.</li>	  <li id="f-viewcount">Страницата е била преглеждана 376 пъти.</li>	  	  	  <li id="f-about"><a href="/wiki/index.php/CsStuff:%D0%97%D0%B0_CsStuff" title="CsStuff:За CsStuff">За CsStuff</a></li>	  <li id="f-disclaimer"><a href="/wiki/index.php/CsStuff:%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F_%D0%B7%D0%B0_%D0%BF%D0%BE%D0%BB%D0%B7%D0%B2%D0%B0%D0%BD%D0%B5" title="CsStuff:Условия за ползване">Условия за ползване</a></li>	</ul>
+      </div>
+    </div>
+    <!-- Served by judge in 0.26 secs. -->
+  </body>
+</html>
+
+<script language='javascript'>postamble();</script>

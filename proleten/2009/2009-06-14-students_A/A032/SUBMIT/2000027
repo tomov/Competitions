@@ -1,0 +1,231 @@
+#include <cstdio>
+#include <vector>
+
+template <class T>
+class pri_queue
+{
+    T* buff;
+    int sz;
+public:
+    inline pri_queue(void* buffer)
+    {
+        buff=(T*)buffer;
+        --buff;
+        sz=0;
+    }
+    inline void push(T obj)
+    {
+        ++sz;
+        buff[sz]=obj;
+        int i=sz;
+        while(i!=1)
+        {
+            if(buff[i]<buff[i/2])
+            {
+                std::swap(buff[i],buff[i/2]);
+                i/=2;
+            }
+            else
+                break;
+        }
+    }
+    inline T& min()
+    {
+        return buff[1];
+    }
+    inline void pop()
+    {
+        buff[1]=buff[sz];
+        --sz;
+        int i=1;
+        while(1)
+        {
+            if(i*2<=sz)
+            {
+                if(buff[i]>buff[i*2])
+                {
+                    if(((i*2)+1)<=sz&&buff[(i*2)+1]<buff[i*2])
+                    {
+                        std::swap(buff[(i*2)+1],buff[i]);
+                        i=(i*2)+1;
+                    }
+                    else
+                    {
+                        std::swap(buff[i],buff[i*2]);
+                        i=i*2;
+                    }
+                }
+                else if(((i*2)+1)<=sz&&buff[(i*2)+1]<buff[i])
+                {
+                    std::swap(buff[(i*2)+1],buff[i]);
+                    i=(i*2)+1;
+                }
+                else
+                    break;
+            }
+            else
+                break;
+        }
+    }
+    inline bool empty()
+    {
+        return sz==0;
+    }
+    inline int size()
+    {
+        return sz;
+    }
+};
+char heap[2*(1<<10)];
+class Graph
+{
+    struct vert
+    {
+        int dist;
+        int to;
+        inline vert(){}
+        inline vert(int _dist,int _to)
+        {
+            dist=_dist;
+            to=_to;
+        }
+        inline bool operator>(vert& rh)
+        {
+            return dist>rh.dist;
+        }
+        inline bool operator<(vert& rh)
+        {
+            return dist<rh.dist;
+        }
+    };
+    std::vector<int> e[64];
+    int cols[64];
+    int any_visited[64];
+    int any_max_dist[64];
+    int visited[64];
+    int n;
+    int c_dest;
+public:
+    int t;
+    inline void scan()
+    {
+        int m;
+        scanf("%d%d%d%d",&n,&m,&c_dest,&t);
+//        e.resize(n);
+
+        //cols.resize(n);
+        std::fill(any_visited,any_visited+n,-1);
+
+        std::fill(any_max_dist,any_max_dist+n,-1);
+        for(int i=0;i<n;++i)
+        {
+            int col;
+            scanf("%d",&col);
+            cols[i]=col;
+            e[i].clear();
+        }
+        for(int i=0;i<m;++i)
+        {
+            int x,y;
+            scanf("%d%d",&x,&y);
+            e[x].push_back(y);
+            e[y].push_back(x);
+        }
+       // printf("so far so good\n");
+    }
+    inline int get_max_dist(int start)
+    {
+       // printf("geting max dist for start=%d\n",start);
+        int res=0;
+        pri_queue<vert> pq(heap);
+        pq.push(vert(0,start));
+        std::fill(visited,visited+n,-1);
+        visited[start]=0;
+        while(!pq.empty())
+        {
+            vert cu=pq.min();
+            pq.pop();
+            if(any_visited[cu.to]==-1)
+                any_visited[cu.to]=start;
+            if(cu.dist!=visited[cu.to])
+            {
+                //printf("kboom\n");
+                continue;
+            }
+            for(int i=0;i<e[cu.to].size();++i)
+            {
+                if(visited[e[cu.to][i]]==-1||(cols[e[cu.to][i]]==cols[cu.to]&&visited[e[cu.to][i]]>cu.dist))
+                {
+                    if(cols[e[cu.to][i]]!=cols[cu.to])
+                        pq.push(vert(visited[e[cu.to][i]]=cu.dist+1,e[cu.to][i]));
+                    else
+                        pq.push(vert(visited[e[cu.to][i]]=cu.dist,e[cu.to][i]));
+                }
+            }
+            if(res<cu.dist)
+                res=cu.dist;
+        }
+        any_max_dist[start]=res;
+    //    printf("%d \n",res);
+        return res;
+    }
+    inline int solve()
+    {
+        for(int i=0;i<n;++i)
+        {
+            int m=get_max_dist(i);
+            //if(cols[i]!=c_dest)
+            //    ++m;
+            if(m<any_max_dist[any_visited[i]]||any_max_dist[any_visited[i]]==-1)
+                any_max_dist[any_visited[i]]=m;
+            //printf("iterating trough solve %i\n");
+        }
+        int ret=0;
+        for(int i=0;i<n;++i)
+        {
+            int g=any_max_dist[any_visited[i]];
+            ret+=g;
+            any_max_dist[any_visited[i]]=0;
+        }
+        return ret;
+    }
+
+};
+std::vector<bool> closer;
+std::vector<int> vals;
+int main()
+{
+    try
+    {
+        int max_t=0;
+        int t_num;
+        {
+            Graph g;
+            scanf("%d",&t_num);
+
+            while(t_num--)
+            {
+                g.scan();
+                int a=g.solve();
+                a*=g.t;
+                max_t+=a;
+                vals.push_back(a);
+            }
+        }
+        closer=std::vector<bool>(max_t/2+1,false);
+        closer[0]=true;
+        for(int i=0;i<vals.size();++i)
+            for(int j=closer.size()-1-vals[i];j>=0;--j)
+                if(closer[j])
+                    closer[j+vals[i]]=true;
+        int max=closer.size()-1;
+        while(!closer[max])
+            --max;
+        printf("%d\n",max);
+
+    }
+    catch(int exception)
+    {
+        printf("unholy exception:%d\n",exception);
+    }
+}

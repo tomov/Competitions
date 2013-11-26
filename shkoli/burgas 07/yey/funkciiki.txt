@@ -1,0 +1,72 @@
+#include <windows.h>
+#include <cstdio>
+#include <algorithm>
+#include <cmath>
+#include <iostream>
+using namespace std;
+
+struct point {int x,y;};
+typedef point vec;
+
+point mnug[102];
+int n;
+
+int cp(point p0,point p1,point p2)
+{ int dx1=p1.x-p0.x;
+  int dx2=p2.x-p0.x;
+  int dy1=p1.y-p0.y;
+  int dy2=p2.y-p0.y;
+  return dx1*dy2-dx2*dy1;
+}
+
+int cp(vec v1,vec v2)
+{
+    return v1.x*v2.y-v2.x*v1.y;
+}
+
+int sp(point p0,point p1,point p2)
+{ int dx1=p1.x-p0.x;
+  int dx2=p2.x-p0.x;
+  int dy1=p1.y-p0.y;
+  int dy2=p2.y-p0.y;
+  return dx1*dx2+dy1*dy2;    
+}
+
+int sp(vec v1,vec v2)
+{
+    return v1.x*v2.x+v1.y*v2.y;
+}
+
+point osevasim(point p1,point p2,point p0)
+{
+    point pp;
+    int a=p2.x-p1.x;
+    int b=p2.y-p1.y;
+    int x1=p0.x-p1.x;
+    int y1=p0.y-p1.y;
+    int aabb=a*a+b*b;
+    pp.x=p1.x+((a*a-b*b)*x1+2*a*b*y1)/aabb;
+    pp.y=p1.y+(2*a*b*x1-aabb*y1)/aabb;
+    return pp;
+}
+
+point presto4(point p1,point p2, point p3,point p4, int &yey)
+{
+    point p;
+    vec v13,v34,v12,v21;
+    v13.x=p3.x-p1.x; v13.y=p3.y-p1.y;
+    v34.x=p4.x-p3.x; v34.y=p4.y-p3.y;
+    v12.x=p2.x-p1.x; v12.y=p2.y-p1.y;
+    v21.x=p1.x-p2.x; v21.y=p1.y-p2.y;
+    double t,u;
+    t=(double)cp(v13,v34)/cp(v12,v34);
+    u=(double)cp(v21,v13)/cp(v12,v34);
+    p.x=p1.x+t*(p2.x-p1.x);
+    p.y=p1.y+t*(p2.y-p1.y);
+    yey=0;
+    if ((t>=0)&&(t<=1)) yey|=1;
+    if ((u>=0)&&(u<=1)) yey|=2;
+    if (cp(v12,v34)==0) yey|=4;
+    if (sp(v12,v34)==0) yey|=8;
+    return p;
+}

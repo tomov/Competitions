@@ -1,0 +1,38 @@
+__builtin_clz() //count leading zeroes
+__builtin_ctz() //count trailing zeroes
+__builtin_ffs() //count pos of lowest set bit
+x&(-x) //lowest set bit
+
+__builtin_popcount()
+
+
+
+a/b=d(mod c) <=> a*1/b=d(mod c)
+1/b(mod c)=ext_gcd(b,c).x;     //iff gcd(b,c)=1, else nqma re6enie
+
+
+for(s = left; s > 0; s = (s - 1) & left)  //iterate s over all subsets of left
+
+
+
+//exod bsrch
+
+while (l<r)
+ mid=l+(r-l+1)/2;
+ if (..) l=mid; else r=mid-1;
+
+OR
+  mid=l+(r-l)/2;
+  if (..) l=mid+1; else r=mid;
+
+
+
+STL:
+
+set_union(...), set_intersection(...), set_difference(...) and set_symmetric_difference(...)
+//end_result = blabla( begin1, end1, begin2, end2, begin_result ) - vru6ta iterator kum end na list-a
+
+vector< pair<string, int> > V(all(M));
+copy(all(v2), v1.end() - v2.size()); 
+
+

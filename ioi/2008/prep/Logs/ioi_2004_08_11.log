@@ -1,0 +1,623 @@
+
+Session Start: Tue Aug 10 20:01:36 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+<valo_bg> choveche... az predi 1 chas slqzoh ot avtobusa :)
+<VelinTzanov> Zdrasti banda
+<VelinTzanov> Koi e Butterk?
+<valo_bg> VelinTzanov: hi :)
+<rangel__> zdravej
+<valo_bg> abuser
+<Swetko> zdrasti
+* Butterk was kicked by VelinTzanov (VelinTzanov)
+* VelinTzanov sets mode: +ooo Swetko rangel__ valo_bg
+<rangel__> e kakyv ti e problema da se naspish v rejsa?
+<rangel__> az kak da se naspq na kupon kydeto horata piqt i slushat metal, a? :-)
+<valo_bg> v teq avtobusi e absurdno da se spi :(
+* Logging #ioi to 'logs\ioi_2004_08_11.log'
+<valo_bg> az dori na dve ne moga da se sgyna
+<VelinTzanov> Gledam che se zabavliavate, a? :)
+<rangel__> mdam :-) shtoto maj sledvashtiq mesec shte gi propuskam kuponite i reshih pone na tozi da se qvq :-)
+<valo_bg> i oshte kak :)
+<VelinTzanov> Mejdu drugoto, Valio, dobre doshyl v nashata grupa. :)
+<valo_bg> dobre zavarili
+<VelinTzanov> Niakakvi vyprosi da imate?
+<valo_bg> i kato sme trygnali v toq duh... modula na path ot site-a na e jurito modula, pone az ne namrih takyv
+<VelinTzanov> (Mejdu drugoto, Valio, ti predal li si vsichki domashni?)
+<valo_bg> ei sega shte ti gi pratq... samo na path ne znam oshte kyde mi e greshkata...
+<VelinTzanov> Ne, az domashnite ot predi BOI imah predvid.
+<VelinTzanov> Shte ti pratia i modula po niakoe vreme.
+<rangel__> mozhe li i na men da go pratish?
+<valo_bg> aaaaa.... xexe... hmmm.... ami ne znam sys sigurnost...
+<valo_bg> mai pdrm mi ostana....
+<rangel__> ami Ivo beshe na kupona, ako znaeh shtqh da go pitam :-)
+<VelinTzanov> Triabva da se predadat. Az moite unaci gi dyrja iz kyso - samo Swetko e poizostanal malko s domashnite, no i toi shte si gi predade.
+<Swetko> az si misleh che gi biah napisal 
+<valo_bg> dobre... shte vidq posledniq mail na Ivo i shte ti gi predam...
+<Swetko> ste gi opravia
+<VelinTzanov> Swetko, ei sega shte ti pratia list s tezi koito ili ne rabotiat ili ne si gi predal.
+<Swetko> az imam
+<Swetko> nedei
+<VelinTzanov> Drugi vyprosi?
+<VelinTzanov> (Valio, pishi mi za modula na Path na e-mail, da ne zabravia)
+<valo_bg> ok
+<rangel__> kakvo tochno imame za domashna? (sled BOI)
+<valo_bg> imash li spisyk s moite nedovyrsheni domashni?
+<VelinTzanov> Ne, Valio, vashite spisyci gi niamam.
+<valo_bg> ok
+<valo_bg> togava az shte proverq..
+<VelinTzanov> Sega shte obiasnia, Rangele.
+<VelinTzanov> Drugi vyprosi?
+<valo_bg> i shte neshto... na chess polzvam malko mnogo pamet... mislq che shte e hubavo da obsydim tazi zadacha po-kysno
+<VelinTzanov> OK, moje da ia obsydim i sega ako iskate.
+<valo_bg> super
+<VelinTzanov> Po princip iskam da zapochvame sesiite s takiva obsyjdania na problemi.,
+<VelinTzanov> Koi ia e reshil neia i koi ne e?
+<Swetko> az ne sum
+<rangel__> i az ne sym
+<valo_bg> ako reshenie s mnogo pamet se smqta za reshenie...
+<valo_bg> az imash edin osnoven problem
+<VelinTzanov> Taka, iasno li e che tova e ciklichna igra s obhvaten broi situacii?
+<valo_bg> da znam ot edna situaciq kakvi moje da sa mi prednite
+<valo_bg> da
+<rangel__> da
+<VelinTzanov> OK, Valio, neka pochnem ot nachalo, che sega ne znam kak modelirash situaciite oshte.
+<VelinTzanov> Swetko?
+<Swetko> ca
+<Swetko> da
+<VelinTzanov> Taka. Neka sega da vidim pyrvo kak da modelirame situaciite. Koe e situacia? Kak definirame situacia i kakvo chislo sypostaviame na vsiaka situacia?
+<VelinTzanov> (chisloto ni triabva za index v masiva)
+<VelinTzanov> (inache kazano: kak kodirame i dekodirame situaciite?)
+<VelinTzanov> Idei?
+<Swetko> ami po pozicia na colonel i dvata caria i koi e na hod
+<valo_bg> aaa
+<valo_bg> i dali colonela e zat
+<valo_bg> *zet
+<Swetko> tova moshe da se izbegne
+<Swetko> chrez edin trik
+<valo_bg> sigurno... kato gledah avtorovoto reshenie :)
+<VelinTzanov> Valio, ima edno osnovno pravilo, koeto triabva da zapomnite: izbiagvaite specialnite sluchai.
+<Swetko> stot ako colonela go vzemat na X-ti hod
+<VelinTzanov> Da, Swetko, prodyljavai.
+<Swetko> ako na X+1 via nashia car ne vzeme drugia 
+<Swetko> igrata ste e ravna => gubim
+<valo_bg> da... tova go zabelqzah, no taka sqkash stava dosta po-slojno...
+<VelinTzanov> Edin ot kluchovite momenti v tazi zadacha e da zacepite che vi interesuvat samo situaciite s tri figuri na dyskata, t.k. ostanalite sa trivialni.
+<rangel__> t.e. sa krajni situacii
+<VelinTzanov> Tochno taka - te sa kraini situacii.
+<VelinTzanov> Taka
+<VelinTzanov> Valio, tova "siakash" ne go razbiram.
+<VelinTzanov> V informatikata "siakash" se izpolzva samo v poslednia chas, kogato byrzate i niamate vreme da mislite i da dokazvate.
+* Swetko has quit IRC (Ping timeout: 180 seconds)
+<VelinTzanov> Ako imate vreme, "siakash" se proveriava dali e viarno ili ne.
+<valo_bg> az go mislih po tozi nachin, no ne uspqh da izmislq neshto dostatychnno prosto
+<VelinTzanov> V sluchaia: proveriavash dali ako modelirash samo situaciite s po 3 figuri shte ti e lesno da predstavish i tezi s po 2.
+<VelinTzanov> OK, neka go pomislim zaedno togava.
+<VelinTzanov> Triabva da napravim slednite stypki:
+<VelinTzanov> 1) Da namerim krainite situacii
+<VelinTzanov> 2) Da smetnem koia situacia kolko deca ima.
+<VelinTzanov> 3) Da pusnem standartnia algorithm, kato na vsiaka smetnata situacia i update-vame roditelite.
+<VelinTzanov> S nashia oprosten model samo s 3-figurni situacii kak pravim tochka 1)?
+<VelinTzanov> Koi situacii sa kraini?
+<VelinTzanov> (Vie ste na red)
+<rangel__> tezi, pri koito ima 2 figuri na edno pole
+<valo_bg> i v zavisimst koi e na hod se opredele pobeditelq
+<VelinTzanov> Zvuchi dobre. A malko po-podrobno?
+<valo_bg> kato dekodirame edna situacq trqbva da proverim dali ima figuri na edno pole
+<rangel__> ako dvata carq sa na edno pole pecheli tozi, kojto ne e na hod (t.e. kojto e vzel chuzdiq car)
+<rangel__> ako na edno pole sa car i polkovnik i na hod e carq znachi toj gubi
+<rangel__> ako na hod e polkovnika trqbva da proverim dali negoviq car pecheli v 1 hod inache gubi
+<VelinTzanov> Kak go proveriavame tova?
+<rangel__> ami ako carq e na nqkoe ot sysednite poleta
+<VelinTzanov> Tochno taka.
+<VelinTzanov> A ako caria e vyrhu sobstvenia si polkovnik ili ako trite figuri sa na edno pole?
+<rangel__> nevalidna situaciq
+<valo_bg> situaciqta e nevalidna
+<VelinTzanov> Tochno taka. Tezi situacii prosto gi preskachame.
+<VelinTzanov> Mislia che tochka 1) e iasna. Vyprosi?
+<rangel__> ne
+<valo_bg> ne
+<rangel__> btw. Swetko i Vlado kyde se gubqt?
+<VelinTzanov> Vlado e v Sofia i ne moje da doide.
+<VelinTzanov> Swetko neshto go drop-na...
+<valo_bg> a! verno... swtko koga e izlqzal...
+<VelinTzanov> Sega tochka 2)
+<VelinTzanov> Kak smiatame decata na edna situacia, bi triabvalo da e trivialno.
+<VelinTzanov> Imate iasna definicia za tova kak se pravi hod.
+<valo_bg> da... samo ako imame hod na cherniq car i toi moje da vzeme colonel kakvo pravim...
+<rangel__> prosto pravim hoda i gledame dali e validna poziciq (vse oshte figurite sa na dyskata, da nqmame polkovnik i negoviq car na edno pole)
+<VelinTzanov> Kakvo da pravish? Zashto tozi sluchai ti se vijda specialen?
+<rangel__> toj veche e razgledan po tochka 1
+* Swetko has joined #ioi
+* CS sets mode: +v Swetko
+<VelinTzanov> Mejdu drugoto moeto avtorovo reshenie e malko po-razlichno ot tova koeto nie definirame sega.
+<VelinTzanov> Pri men situacii s dve figuri na edno pole vyobshte ne se razglejdat.
+<VelinTzanov> A za kraini situacii se vzimat tezi pri koito niakoia figura moje da se premesti vyrhu niakoia druga.
+<VelinTzanov> No tova e podrobnost. Bi triabvalo i dvete da rabotiat, stiga da gi napishete pravilno.
+<rangel__> to ne e li napylno analogichno?
+* VelinTzanov sets mode: +o Swetko
+<VelinTzanov> Da, napylno analogichno e.
+<VelinTzanov> Vajnoto e da imate iasni definicii i e strogo preporychitelno da niamate specialni sluchai.
+<VelinTzanov> Valio, razbra li zashto tova koeto kaza ti ne e specialen sluchai?
+<VelinTzanov> Rangele, plz, paste-ni na Swetko kakvoto izpusna.
+<valo_bg> gore-dolu...
+<VelinTzanov> Prosto ako imash hod kym kraina situacia tova ne e specialen sluchai.
+<VelinTzanov> Car vyrhu polkovnik e kraina situacia.
+<VelinTzanov> (razbira se car vyrhu sobstvenia si polkovnik ne e validen hod)
+<valo_bg> samo trqbva da si vyveden ocenka za dylbochina, zahtoto taka tazglejdame sitacii s edin hod napred...
+<VelinTzanov> Hmm... tova uslojniava zadachata. Dobre e da ne vi se nalaga da pomnite dylbochinata.
+<VelinTzanov> Ako pomislish po-detailno shte vidish che ne ti triabva.
+<VelinTzanov> Ti slagash kato "kraini" samo igri koito svyrshvat sled 1 ili 2 hoda.
+<VelinTzanov> No ti triabav da klasificirash ednite situacii kato takiva s 1, 3, 5, 7, ... hoda
+<VelinTzanov> A drugite kato takiva s 2, 4, 6, ....
+* Swetko has quit IRC (Ping timeout: 180 seconds)
+<VelinTzanov> Zatova niama problem da slagash situacii s 2 hoda do kraia pred takiva s 1.
+<VelinTzanov> Moje bi zvuchi malko slojno, no kato go pomislish shte ti izleze.
+<VelinTzanov> Iasna li e vtorata chast?
+<rangel__> mozhesh i prosto da si gi podredish kato gi butash v opashkata, pyrvo krajni situacii s edin hod, sled tova tezi s 2
+<VelinTzanov> Moje i taka.
+<valo_bg> t.e. vyzmojno li e ot edna situacq A da imash dva naslednika
+<valo_bg> edin s dylbochina 1
+<valo_bg> i edin s dylbochina 2?
+<rangel__> uzh e qsno, no ne shteshe da raboti posledniq pyt :-( kato se pribera vkyshti pak shte sedna da go pisha
+<VelinTzanov> Rangele, mislia che niama zashto da si uslojniavash jivota.
+<VelinTzanov> Valio, situaciite koito svyrshvat s 1 hod sa pechelivshi.
+<VelinTzanov> Tezi s 2 sa gubeshti.
+<VelinTzanov> Taka che niama baza za sravnenie.
+<VelinTzanov> Mojesh spokoino da gi "razminavash" s 1 hod.
+<valo_bg> aaaa sega razbrah kakvo imash v predvid :)
+<VelinTzanov> Prosto triabva da go pomislite na spokoistvie.
+<valo_bg> 1,3,5,7 i t.n. sa ti pechelivshi, a 2,4,6 i t.n. gubeshti
+<VelinTzanov> OK. Sega da vidim stypka 3).
+<VelinTzanov> Kak namirame roditelite na edna situacia?
+<VelinTzanov> Ami mnogo prosto: kakto namirame i decata: prosto naobratno.
+<VelinTzanov> IAsno li e? :)
+<valo_bg> da
+<rangel__> da
+<VelinTzanov> Tuk iasno si lichi kak pechelim ot lesnoto modelirane na situaciite.
+<VelinTzanov> Ako ne beshe takova, triabvashe da resurrect-vame figuri.
+<VelinTzanov> Koeto ne e nevyzmojno, prosto e malko po-slojno.
+<valo_bg> az specialno go pravq sys spysyk na parent-ite....
+<VelinTzanov> Izlishno e, Valio.
+<VelinTzanov> I zaema pamet.
+<valo_bg> i to dosta...
+<VelinTzanov> Triabva da go pravite s O(V) pamet, a ne s O(E)
+<VelinTzanov> Samo vremeto vi moje da e O(E)
+<VelinTzanov> (V - vertices; E - edges)
+<VelinTzanov> Tova vaji za vsiaka igra.
+<VelinTzanov> Vinagi triabva da se stremite da izbiagvate tezi spisyci i da si gi smiatate roditelite.
+<VelinTzanov> Ot tuk natatyk zadachata e klasicheska igra i se predpolaga, che shte uspeete da ia napishete.
+<VelinTzanov> Drugi vyrposi po drugi zadachi?  (Ili po syshtata, ako imate)
+<valo_bg> az se chudq kak se dokazva reshenie na GAME, no tova shte go pomislq pyrvo sam...
+<rangel__> men mi e chudno kak se reshavat CEOI-skite zadachi (no te maj shte sa na drugo obsyzhdane)
+<VelinTzanov> Ne vi li razdadoha avtorovi reshenia na BOI?
+<VelinTzanov> S Ivo napisahme edin hubav analiz na zadachata da vi go razdadat.
+<valo_bg> a da... i tva e interesno :)
+<valo_bg> razdadoha ni
+<VelinTzanov> CEOI-skite zadachi sym gi gledal malko otgore-otgore... shte triabva poveche individualna rabota da svyrshite s tiah.
+<valo_bg> shte pregledam i nego... nali ti kazah, shte go pomislq sam i ako imam problemi shte pitam po-kysno
+<VelinTzanov> Dyrja samo da napravite tazi s futbolnoto pyrvenstvo.
+<VelinTzanov> Imam oshte 2-3 zadachi ot neinia klas, koito dyrja da reshite, zashtoto moje da vi se padnat na IOI.
+<VelinTzanov> (Vsyshtnost i drugite dyrja da gi reshite, no za tiah moga samo beglo da pomagam)
+<VelinTzanov> Mejdu drugoto, tazi s dvete kyshti mai e sykrashtavane na vytreshnia cikyl, a? :)
+<VelinTzanov> Valio, ako sa vi razdali reshenia na BOI, procheti si go - bi triabvalo da e striktno dokazatelstvoto.
+<valo_bg> sigurno, no ne sme otkrili oshte kakvo tochno
+<valo_bg> (tova beshe za kyshtite)
+<VelinTzanov> Dobre e da go usyvyrshenstvate tozi vytreshen cikyl, che iavno obichat da go davat horata... veche stanaha 6 zadachi ot poslednite 3 godini s nego.
+<rangel__> toj Swetko mi opisvashe nqkakvo sykrashtavane mislq, no ne go razbrah
+<valo_bg> to ima, no ne dostatychno byrzo
+<VelinTzanov> Pomislete ia na spokoistvie 2-3 chasa i predpolagam sami shte go izmislite.
+<VelinTzanov> Da, ima 4 razlichni dinamichni s razlichen broi tochki.
+<VelinTzanov> N^4 = 20
+<VelinTzanov> N^3 = 40
+<VelinTzanov> N^3/N^2 = 70
+<VelinTzanov> N^2 = 100
+<VelinTzanov> Kato pyrvite tri sa +10 eventualno.
+<rangel__> az ako ne se lyzha N^2 e ochevidno kak se pishe, no maj trqbva po-byrzo
+<rangel__> (ili se seshtam za druga zadacha)
+<VelinTzanov> A niakoi izmisliha vtorata optimizacia, no ne izmisliha pyrvata i imaha N^4/N^2 reshenie, koeto poluchi 60.
+<VelinTzanov> Govorim za Game.
+<VelinTzanov> AAaaa, za dvete kyshti li. :)
+<rangel__> a, ti govorish za game, misleh che govorish za onazi s melnicite
+<valo_bg> rangel__: mda... to tam N beshe do 100000 mai...
+<VelinTzanov> Ako za onazi s melnicite - ne znam. Ne sym ia mislil.
+<VelinTzanov> Vidiah che iavno ima sykrashtavane na vytreshnia cikyl i spriah da ia mislia.
+<VelinTzanov> Mislia che beshe po-malko: 40 000 ili neshto takova.
+<VelinTzanov> Kakto i da e: pomislete gi dobre.
+<VelinTzanov> Napishete gi daje.
+<VelinTzanov> I si gi test-vaite, che az niamam vreme.
+<VelinTzanov> Tova me navejda na drugoto neshto, koeto iskah da vi kaja.
+<VelinTzanov> Tazi chast na podgotovkata shte se provede malko po-razlichno ot predishnata.
+<VelinTzanov> Doniakyde po vashe jelanie, doniakyde poradi lipsa na vreme ot moia strana, no shte se naloji da polagate dosta poveche individualni usilia.
+<VelinTzanov> Podgotovkata shte ima dve paralelni strani:
+<VelinTzanov> 1) Shte pravim razni temi 2 pyti sedmichno.
+<VelinTzanov> 2) Vie shte si reshavate samostoiatelno zadachki. BOI, CEOI, BaOI, kakvoto tam si namerite.
+<VelinTzanov> Silno ste okurajeni da si obsyjdate zadachite edin s drug. Mojete daje da si pravite sreshti v tozi kanal v udobno za vas vreme.
+<VelinTzanov> A moje i da si reshavate samostoiatelno, ako taka se spraviate po-efektivno.
+<VelinTzanov> Niama znachenie za men kak rabotite, vajnoto e da rabotite zdravo.
+<VelinTzanov> Otnosno drugata strata (temite), pak shte triabva poveche individualna rabota.
+<VelinTzanov> Az shte govoria samo teoriata.
+<VelinTzanov> Resheniata na zadachite-ilustracii shte go ostaviam na vas.
+<VelinTzanov> I posle shte iskam da si razkajete koi kakvo e izmislil, a i na men syshto.
+<VelinTzanov> Osven tova iskam i da vi davame trenirovychni systezania s po-leki zadachi, no za syjalenie nikoi ne mi e izpratil nito edna zadacha i tova mai niama da go byde mnogo... pone na 15-ti imate B2OI
+<VelinTzanov> T.e. BO2I
+<VelinTzanov> Kelevedjiev i Kapralov dadoha li vi moite 10 zadachi vyv Varna?
+<VelinTzanov> Tuk li ste, btw? :)
+<rangel__> koi sa tvoite 10 zadachi?
+<rangel__> keleveda davashe nqkakvi ot ruski sajtove
+<valo_bg> ruskite?
+<VelinTzanov> Ami ne sa ot ruski olimpiadi, ne sa i ot hyrvatski... abe znam li - te sigurno sa shteli da vi kajat ako sa vi gi dali (che sa moi)
+<valo_bg> g6prog.narod.ru li beshe?....
+<rangel__> ami qvno ne sa gi dali togava
+<VelinTzanov> Strahotno! Znachi shte napravim 3 trenirovki s tiah.
+<valo_bg> mai taka izliza...
+<VelinTzanov> Az shte gi pitam vse pak de.
+<VelinTzanov> No tova e mnogo dobra novina. :-D
+<VelinTzanov> Taka, formatyt na podgotovkata iasen li e?
+<valo_bg> da
+<rangel__> koga obqsnqvame nashite resheniq? na sledvashtata sesiq li?
+<VelinTzanov> Hmm... ne sym izmislil oshte. :)  Ami da.
+<VelinTzanov> Nai-dobre se syberete predi sesiata (naprimer predishnia den) i si gi obiasnete edin na drug.
+<VelinTzanov> A posle na sutrinta mi kajete obshtoto si stanovishte. :)
+<VelinTzanov> Ne iskam da se protochva s chasove tova, zatova e dobre vie da gi obsydite edin s drug predi da govorite s men.
+<rangel__> ok. drugoto mislq, che e qsno.
+<VelinTzanov> Da izgladite nedorazumeniata, taka da se kaje. :)
+<VelinTzanov> Taka.
+<valo_bg> ok
+<VelinTzanov> Da pochvame li s temata za dnes?
+<valo_bg> da
+<rangel__> da
+<VelinTzanov> Ia mi kajete sega: zapoznati li ste s Lineina Algebra?
+<VelinTzanov> Matrici, reshavane na sistemi lineini uravnenia, takiva raboti?
+<valo_bg> emiiii, gore-dolu...
+<rangel__> imam nqkakva predstava
+<valo_bg> metod na gaus i t.n.
+<rangel__> maj sym pisal reshavane na sistema s N^3
+<rangel__> (no mozhe i da se byrkam)
+<VelinTzanov> Taka.
+<VelinTzanov> Tova e teoretichnata zadacha za dnes:
+<VelinTzanov> Imame sistema ot lineini uravnenia i triabva da ia reshim.
+<VelinTzanov> Primerno:
+<VelinTzanov> 3*x + 5*y + 8*z = 12
+<VelinTzanov> 4*x + 5*y + 0*z = 10
+<VelinTzanov> 4*x + 2*y - 1*z = -4
+<VelinTzanov> Koeficientite sa vi zadadeni vyv vhoda.
+<VelinTzanov> Ot vas se iska da namerite promenlivite.
+<VelinTzanov> Taka che da sa izpylneni neravenstvata.
+<VelinTzanov> Kluchovite stypki sa slednite:
+<VelinTzanov> Ako umnojite dvete strani na edno uravnenie s edno i syshto nenulevo chislo, resheniata na sistemata si ostavat syshtite.
+<VelinTzanov> Ako pribavite edno uravnenie kym drugo uravnenie pak, resheniata si ostavat syshtite.
+<VelinTzanov> (poslednoto shte reche ot u1 i u2 (dve uravnenia) da preobrazuvate v (u1+u2) i u2)
+<VelinTzanov> Naprimer:
+<VelinTzanov> 3*x + 5*y + 8*z = 12
+<VelinTzanov> 4*x + 5*y + 0*z = 10
+<VelinTzanov> Moje da se preobrazuvat v:
+<VelinTzanov> 7*x + 10*y + 8*z = 22
+<VelinTzanov> 4*x + 5*y + 0*z = 10
+<VelinTzanov> Iasno?
+<rangel__> da
+<valo_bg> da
+<VelinTzanov> Izpolzvaiki tezi dve preobrazuvanie mojem lesno da nulirame pyrvite koeficienti na vsichki uravnenia s izkluchenie na pyrvoto.
+<VelinTzanov> Koi se seshta kak?
+<valo_bg> emi za vski koeficient
+<valo_bg> unojavame ednoto uravnenie po chislo taka che koeficienta da stane raven na syshiq koeficient ot sledvashtoto uravnenie
+<valo_bg> i posle gi vadim
+<valo_bg> i gledame 1 uravnenie sys sledvashtoto uravnenie i sledvashtite koeficienti
+<rangel__> tova ne se li ucheshe v 7-mi klas?
+<valo_bg> opa, chai malko...
+<valo_bg> mai ne e taka...
+<valo_bg> rangel__: az do kolkoto znam se uchi v universiteta
+<rangel__> e tam se uchi slozhniq variant :-)
+<rangel__> ako pyrviq izraz e a*x + neshto si
+<VelinTzanov> Osnovnite pohvati sa ot 7-mi klas.
+<rangel__> vzimame edno proizvolno uravnenie b*x + neshto si
+<rangel__> umnozhavame pyrvoto uravnenie po -b/a i go pribavqme kym drugoto
+<VelinTzanov> Inache po-sistematizirano i "globalno" shte go pravite v universiteta... btw v SU i v MIT se pravi dosta razlichno, no tova e tema na drug razgovor, koito shte vodim chak sled IOI (ako si go zaslujite :) )
+<VelinTzanov> Da, Rangel go obiasni striktno.
+<VelinTzanov> No vijdam che i Valio go razbira dobre.
+<VelinTzanov> Taka. Sega mojem da napravim syshtoto i s vtoria koeficient za vsichki uravnenia sled vtoroto.
+<VelinTzanov> Iasno e kak, nali? (niama nujda da obiasniavate)
+<valo_bg> samo che trqbva da napravim taka che koeficienta koito razglejdame v momenta da padne vyv vsichki sledvashti uravneniq
+<rangel__> da
+<valo_bg> da... tova mi se gubeshe
+<valo_bg> qsno
+<VelinTzanov> Posle s tretia koeficient i t.n...
+<VelinTzanov> Sega obache triabva da vnimavate.
+<VelinTzanov> Zashtoto ako vtoria koeficient na vtoroto uravnenie e 0 niama da stane i shte triabva da razmestite dve uravnenia, za da imate uravnenie s nenulev vtori koeficient na vtoro miasto.
+<VelinTzanov> (razbira se syshtoto vaji i za pyrvia koeficient i pyrvoto uravnenie, kakto i za tretite, chetvyrtite i t.n...
+<VelinTzanov> Na vsiaka stypka triabva da proveriavate da ne bi da imate nulev koeficient i ako imate da razmestite s niakoe uravnenie, koeto ima nenulev koeficient.
+<VelinTzanov> Iasno?
+<rangel__> pyk ako nqma uravnenie s nenulev koeficient znachi ot tazi promenliva nqma smisyl
+<rangel__> da
+<valo_bg> da... t.e. sistemata ima bezbroi mnogo resheniq
+<VelinTzanov> Valio, ne byrzai.
+<VelinTzanov> Ne sym vi kazal kolko promenlivi imate i kolko uravnenia.
+<VelinTzanov> Moje da imate 100 promenlivi i 2 uravnenia. Moje da imate i 4 promenlivi i 60 uravnenia. :)
+<valo_bg> da... prav si...
+<VelinTzanov> Nai-chesto sreshtania sluchai e po raven broi promenlivi i uravnenia, no tova ne e vinagi.
+<VelinTzanov> Prosto preskachate promenlivata i tolkoz.
+<valo_bg> az za tozi sluchai si mislq, shtoto...
+<rangel__> to maj lesno se dokazvashe che mozhe da ima 0, 1 ili bezbroj reshiq...
+<VelinTzanov> Da, taka e.
+<VelinTzanov> Mojete da si go dokajete ako iskate. :)
+<VelinTzanov> Prosto ako imate 2 reshenia, to imate bezbroi. :)
+<valo_bg> taka. posle?
+<VelinTzanov> Posle stigame do kraia.
+<VelinTzanov> Nakraia ako imame 0 = 1 ili neshto takova znachi niamame reshenie.
+<VelinTzanov> Ako pyk imame svobodni promenlivi znachi imame bezbroi reshenia.
+<rangel__> ako imame a*x = b imame edno reshenie
+<VelinTzanov> (niakoi zadachi moje da vi karat da namerite edno ot tiah, no tova e lesno)
+<VelinTzanov> Tochno taka.
+<VelinTzanov> I taka mojete da zamestite x s tova reshenie.
+<rangel__> ako imame a*x + b*y = c (ili poveche promenlivi) imame bezbroj resheniq
+<VelinTzanov> I posle da poglednete sledvashtoto uravnenie.
+<VelinTzanov> Imaite predvid che mojete da imate bezbroi reshenia, no pak da imate promenlivi samo s edna vyzmojna stoinost.
+<VelinTzanov> Naprimer:
+<VelinTzanov> x = 5
+<VelinTzanov> y+z = 8
+<VelinTzanov> 2*y + 2*z = 16
+<VelinTzanov> Bezbroi mnogo reshenia
+<VelinTzanov> No te sa bezbroi mnogo zaradi y i z.
+<VelinTzanov> x si ima samo edno vyzmojno reshenie.
+<VelinTzanov> Kakto i da e. Chrez tezi transformacii mojete da svedete zadachata samo do uravnenia ot tip:
+<VelinTzanov> (koeficient) * (promenliva) = (chislo)
+<valo_bg> tuk oabche e problemna i tochnosta
+<VelinTzanov> I v zavisimost ot koeficienta i chisloto ili imate no solution, ili imate proizvolna stoinost za promenlivata, ili imate edna edinstvena vyzmojna stoinost za promenlivata.
+<rangel__> ami trqbvat racionalni chisla
+<VelinTzanov> Problemyt s tochnostta shte go uchite po chisleni metodi v universiteta.
+<VelinTzanov> Za IOI niama da vi triabva.
+<rangel__> ili molitvichka floating-point-a da ne zakryglq :-)
+<valo_bg> moje da pravim drobni chisla
+<valo_bg> sys chislitel i znamenatel celi chisla
+<VelinTzanov> Zasega ot vas iskam da ste maistori na algorityma i po-tochno na ideiata na tazi redukcia.
+<VelinTzanov> Da, Valio, mojete da pravite mnogo neshta, no nali znaete - tuk ne se uchim na podrobnosti, a na idei (paradigmi, taka da se kaje)
+<valo_bg> a tova po-dbore ot N^3 moje li da stane (prin N ur. i neizvestni)
+<VelinTzanov> Mislia che moje. Pone za umnojavane na matrici znam che nai-dobroto e N^2.36.... ili neshto takova.
+<VelinTzanov> Sigurno i reshavane na sistemi uravnenia moje s podobna slojnost.
+<rangel__> ako prosto sledvash ideqta da vzemesh uravnenie i da go izvadish ot vsichki ostanli to ti stava N^3
+<VelinTzanov> Za umnojavane na matrici daje ima N^log7 dosta lesen algorithm.
+<rangel__> ako izmislish nqkakvi izvrashteniq mozhe i da se namali, no principno shte e kofti spored men
+<VelinTzanov> Kakto i da e.
+<VelinTzanov> Vyprosyt e: ideiata za redukciata edno-po-edno iasna li e?
+<rangel__> da
+<valo_bg> da
+<VelinTzanov> Da razchitam li, che na IOI kato dadat zadacha v koiato neshtata se izchistvat edno po edno shte ia opravite za 100?
+<VelinTzanov> :)
+<VelinTzanov> Shte razchitam. No za da sym siguren, shte proveria.
+<VelinTzanov> I shte vi dam niakolko takiva zadachki.
+<VelinTzanov> No predi tova shte razshiria mynichko teoriata.
+<valo_bg> az ne bih dal takova obeshtanie... neshto 100 se okazvat neposilni tochki za men :(
+<rangel__> Veline na IOI imame li pravo na <600 tochki? :-) (shtoto s podobni obeshtaniq maj do tam shte go dokarame :-)
+<VelinTzanov> Ili po-tochno shte vi dam edno hubavo prilojenie.
+<VelinTzanov> A, na IOI vse shte nameriat neshto koeto da ne sme vi davali... :)
+<VelinTzanov> Taka.
+<VelinTzanov> Sega na vyprosa:
+<VelinTzanov> Imate pak sistema ot lineini uravnenia.
+<VelinTzanov> No koeficientite sa samo 0 i 1
+<VelinTzanov> I pod lineini ne se razbira + ili -, a se razbira XOR.
+<VelinTzanov> Naprimer:
+<VelinTzanov> x XOR y XOR r = 1
+<valo_bg> (az sym pisal samo tozi variant)
+<VelinTzanov> x XOR z = 0
+<rangel__> tova ne se li vodi GF(2)?
+<VelinTzanov> y XOR r XOR d = 1
+* Swetko has joined #ioi
+* CS sets mode: +v Swetko
+<VelinTzanov> Ne sym mnogo na ti s oznacheniata, Rangele. :)  Mislia che taka se vodeshe
+<Swetko> na dostavchica mu sprial toka
+<VelinTzanov> Swetko, jiv li si be, momche? Cial chas te niama.
+<VelinTzanov> Hehe - kato v Albania... tam BOI beshe na generator, che spirashe toka... :)
+<VelinTzanov> I beshe 4 chasa, che generatora ne mojeshe da izkara 5... :)
+<VelinTzanov> Swetko, nakratko: reshavame sistema ot lineini uravnenia.
+<VelinTzanov> T.e. veche ia reshihme.
+<Swetko> tuk sum vece
+<Swetko> koia zadacha po tovhno
+<VelinTzanov> I sega ia reshavame v dvoichna sistema s XOR-ove.
+<VelinTzanov> Ohh, ti si izpusnal dosta.
+<VelinTzanov> Sega shte ti paste-na.
+<VelinTzanov> Ne vsichko, samo vajnoto
+<Swetko> che az znam mnogo i samo edna beshe pulna sistema - ot CEOI 2003
+<VelinTzanov> I do CEOI shte stignem. Vsichko s vremeto mu.
+<Swetko> inache celta beshe da se otreshe ot diagonala nagore nali
+<rangel__> aham, metod na Gaus mislq, che se naricha
+<Swetko> taka e - ama tochno v momenta ne se sestam kakvo se praveshe no mislia che ste go izmislia
+<rangel__> ako ne go izmislish shte go vidish v log-a
+<VelinTzanov> Ako ne - shte prochetesh loga.
+<VelinTzanov> Paste-nah ti kakvoto triabvashe.
+<VelinTzanov> Ta taka: v dvoichna sistema rabotata e syshtata.
+<VelinTzanov> Samo deto:
+<VelinTzanov> 1) Niama kakvo da umnojavate uravneniata po koeficienti, shtoto niama drug vyzmojen koeficient osven 1. :)
+<VelinTzanov> 2) Vmesto da sybirate ili izvajdate uravnenia shte XOR-vate uravnenia.
+<VelinTzanov> Natatyk istoriata e syshtata.
+<VelinTzanov> (btw zabravih da kaja, che vsiaka promenliva e 0 ili 1)
+<VelinTzanov> Iasno li e ili ima vyprosi?
+<valo_bg> qsno
+<Swetko> da
+<rangel__> qsno
+<Swetko> da
+<rangel__> neshto drugo za dnes ima li?
+<Swetko> tuk li ste
+<Swetko> aha
+<VelinTzanov> Taka
+<VelinTzanov> Ima, razbira se.
+<VelinTzanov> Zadachki. :)
+<VelinTzanov> Kakto veche kazah, zadachkite niama da se obiasniavat predi da ste gi pomislili hubavo.
+<VelinTzanov> Celta na vsiaka zadacha e da ia modelirate pravilno, da ia svedete do izuchavanata teoria (ili do neina variacia) i da ia reshite. :)
+<VelinTzanov> A eto i zadachkite koito vi ostaviam za domashno:
+<VelinTzanov> X ot CEOI 2000
+<VelinTzanov> Register ot CEOI 2003
+<VelinTzanov> Flatten, IOI 1999
+<VelinTzanov> Moment samo da vidia dali e CEOI 2000 ili CEOI 2001.
+<Swetko> 2000 e
+<Swetko> vuv Varna reshavahme edna takava BUS
+<VelinTzanov> Mdaaa, 2000 e.
+<VelinTzanov> Bus li?
+<rangel__> onazi beshe po-lesna zashtoto vsichki uravneniq stavaha s 2 promenlivi
+<VelinTzanov> V smisyl zadacha sys sistema ot lineini uravnenia li?
+<VelinTzanov> Aha... e, dobre ste napravili. :)
+<valo_bg> tam obache az q reshih s bsearch
+<rangel__> i dori mislq, che se poluchavashe i edno uravnenie s edna promenliva ot koeto prosto se razvivat ostanalite :-)
+<VelinTzanov> Sega imate dostatychno zadachki da si mislite. :)
+<VelinTzanov> Mejdu drugoto, nali pomnite temata s postoiannoto podobriavane na situaciata? (Coins ot Proleten 2001 i XOR ot IOI 2002)?
+<VelinTzanov> Minalata godina davah Flatten ot IOI '99 v tazi tema. Sega ia premestih v lineini uravnenia. No vsyshtnost zadachkata e mix mejdu dvete.
+<VelinTzanov> Zashtoto ot vas se iska da napravite neshto po nezadyljitelno-optimalen-nachin.
+<valo_bg> da
+<rangel__> da
+<Swetko> da
+<VelinTzanov> Poveche jokeri niama da davam (zasega)
+<VelinTzanov> Pomislete hubavo zadachkite, reshete gi, daje gi napishete ako mojete...
+<VelinTzanov> ... i posle gi obsydete predi sledvashtata ni sreshta i mi gi razkajete sledvashtia pyt.
+<VelinTzanov> Swetko samo shte go pomolia da ne vi kazva kak se pravi Flatten, a da vi ostavi da se gyrchite. :)
+<VelinTzanov> Syshtoto i za Register.
+<valo_bg> koga shte e sledvashtata sreshta?
+<Swetko> ok
+<VelinTzanov> Mejdu drugoto e dobre i zadachite ot CEOI 2003 da gi napravite - te veche seriozno sa zadachi za 600 tochki.
+<VelinTzanov> Az izmislih vseki ot dvata dena za chas-chas i polovina.
+<VelinTzanov> A Ivo koito togava beshe na vasheto miasto napravi 5 zadachi po 100 tochki (i edna s 25 ako ne se lyja, ama toi i na neia mojeshe da napravi 100)
+<VelinTzanov> I gi napravi v realno vreme na Online systezanieto.
+<valo_bg> az togava nqmah ideq po povecheto ot tqh...
+<VelinTzanov> Idealno. Sega shte triabva da izkarash 600 na tiah (da, naistina sa lesni zadachi)
+<VelinTzanov> Register beshe edna ot dvete po-trudnichki. :)  No dori i te biaha "sredni", a ne "trudni".
+<VelinTzanov> CEOI 2004 e po-seriozno systezanie.
+<VelinTzanov> No i tam mislia che bez da se napriagate hvashtate zlatoto.
+<VelinTzanov> I zadyljitelno iskam futbolnoto pyrvenstvo da mi ia napravite.
+<rangel__> az na CEOI'04 ne znam kak shte hvana 200 tochki :-(
+<VelinTzanov> Posle shte vi dam i drugi podobni zadachi za uprajnenie.
+<VelinTzanov> Rangele, ia smelo! Vij na BOI 2004 kak si gi bil i dvamata hyrvati.
+<VelinTzanov> Znachi i na CEOI 2004 mojesh.
+<Swetko> az na CEOI 2004 poveche ot 260 ne moga
+<VelinTzanov> (i spokoino - i az se izlojih na CEOI predi 2 godini... no na BOI i na IOI gi bih zdravo :) )
+<VelinTzanov> Niama ne moga. Siadaite i si biite glavite v stenite dokato ne gi izmislite tezi zadachi.
+<Swetko> tiah ste gi obsydim li
+<rangel__> ne, tqh shte gi mislim :-)
+<VelinTzanov> Vyobshte ima mnogo rabota da svyrshite do IOI.
+<Swetko> ami mislili sme dosta 
+<VelinTzanov> Niamate drugo zanimanie do togava.
+<valo_bg> az pyrvo shte si biq glavata, vie ako iskate obsyjdaite
+<VelinTzanov> Chakaite da gi pogledna i da vi dam po edin kratyk komentar.
+<VelinTzanov> Clouds neshto ne razbrah tochno kyde e lycha (pravata li gledate ili tochkata), no mi se vijda obiknovenna heap-shtina.
+<Swetko> po skoro ot vtoria den
+<rangel__> az ne sym gi mislil seriozno otkakto gi mychih online, ama vzemajki predvid che togava za 5 chasa dori i idei nqmah na vtori den...
+<VelinTzanov> obiknovena t.e. (s edno n) :)
+<Swetko> ot purvia sa po lesni
+<VelinTzanov> Sweets e dinamichno za B-grupa.
+<Swetko> clouds e prosto presichane na linia s mnogougulnici
+<Swetko> ne e
+<VelinTzanov> Trips mai e niakakyv matching... makar che ne sym ia mislil seriozno. Ima li po-prosto reshenie?
+<valo_bg> VelinTzanov: vij time limita
+<Swetko> stot ogranichenieto e 0.1 sec
+<Swetko> trip e greedy 
+<VelinTzanov> 10M operacii mislia che minavat za 0.1 sec.
+<Swetko> 100M sa
+<VelinTzanov> Greedy li e? :) Sladka rabota.
+<Swetko> puk i niama da minat i 10M
+<VelinTzanov> Az mislia che gi napravih 10M...
+<Swetko> si mislia
+<VelinTzanov> A, shte minat be... te sa super prosti.
+<Swetko> ami bravi
+<VelinTzanov> Znam li.
+<VelinTzanov> Napishete go kato horata.
+<VelinTzanov> Ne viarvam da e super slojna.
+<VelinTzanov> Mislai che biaha dosta visoki rezultatite na neia... ili se lyja?
+<valo_bg> ne sa
+<Swetko> ne e mnogo no samo 1-2 sa ia reshili na systezanieto
+<VelinTzanov> Football League kakto kazah iskam da si ia izmislite.
+<VelinTzanov> Lesna e.
+<rangel__> da, vsichki bqha napisali dinamichnoto za B gruba, koeto hvashta 50-60 :-)
+<VelinTzanov> Ia vij ti... interesno... shte ia vidia az tazi zadacha po niakoe vreme.
+<valo_bg> na ioiforum.org ima reshenie
+<valo_bg> kombinatorika nqkakva
+<VelinTzanov> Two sawmills mislia che e sykrashtavane na nai-vytreshnia cikyl ili neshto v tozi duh.
+<Swetko> ami sukrastavahme go ama bez uspeh
+<Swetko> zasega
+<Swetko> nito puk dvoichno tyrsene stana
+<VelinTzanov> Hmm... zashto da ne stava sys sykrashtavane?
+<Swetko> az prosto ne sum uspial - ne che ne stava
+<VelinTzanov> :) A, shte uspeesh. :)
+<VelinTzanov> A Puzzle neshto ne se seshtam kak shte stane...
+<VelinTzanov> Nali Ivan Anev vi beshe dal niakakva podobna na trenirovka.
+<VelinTzanov> Tia kak se reshavashe?
+<VelinTzanov> (Anevata zadacha)
+<Swetko> ami te sa suvsem razlichni
+<Swetko> tam samo se pita dali moshe ili ne
+<rangel__> tam dvete neshta bqha nezavisimi ili neshto podobno
+<valo_bg> za koq stava vypros? ne se seshtam
+<rangel__> a tuk kolonite i redovete silno zavisqt edno ot drugo
+<Swetko> az uspiah da ia naredia do sredata
+<VelinTzanov> Aaaa, mislia che i az ia poizmislih puzzle-a na CEOI - sega se setih che ia biah mislil.
+<VelinTzanov> Edin invariant vi kazva dali ima ili niama reshenie.
+<Swetko> sigurno
+<VelinTzanov> Ostanaloto e subroutine-shtini kato na Two Rods malko... :)
+<valo_bg> aaaa ti me razbi... trqbva da q pomislq taq zadacha
+<Swetko> az puk si misleh che vinagi ima reshenie
+<rangel__> 1 3 2
+<rangel__> 4 5 6
+<VelinTzanov> Az nikoia ot tezi zadachi ne sym ia izchistval. Vsichkite sym gi napravil syvsem otgore-otgore... taka che moje i da vi davam greshni nasoki sega. No mislia che niamate problem da hvanete zlato na tezi zadachi, ako ste si s akyla i ne se panirate.
+<rangel__> tova maj nqma
+<VelinTzanov> Aide momcheta - ostaviam vi da se zabavliavate.
+<VelinTzanov> Imate MNOGO rabota.
+<VelinTzanov> I malko vreme.
+<VelinTzanov> Uspeh! :)
+<VelinTzanov> (Sledvashtata ni sreshta e sled 2 dni tuk)
+<valo_bg> koga shte e sledvashtata lekciq?
+<valo_bg> ok
+<rangel__> t.e. petyk sutrinta?
+<VelinTzanov> Petyk, 13-ti Avgust, 6:00 sutrinta
+<VelinTzanov> Oshte ne znam kakvo shte pravim, no shte go izmislia. :)
+<VelinTzanov> Iurnete i Vlado, che go niama dnes.
+<VelinTzanov> I obsydete zadachite predi sesiata.
+<VelinTzanov> Btw, imate li drugi neshta za vyrshene predi IOI?
+<VelinTzanov> Ili ste full-time nacionali sega?
+* Disconnected
+Session Close: Tue Aug 10 22:09:16 2004
+
+Session Start: Tue Aug 10 22:09:42 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+<VelinTzanov> <rangel__> t.e. petyk sutrinta?
+<VelinTzanov> <VelinTzanov> Petyk, 13-ti Avgust, 6:00 sutrinta
+<VelinTzanov> <VelinTzanov> Oshte ne znam kakvo shte pravim, no shte go izmislia. :)
+<VelinTzanov> <VelinTzanov> Iurnete i Vlado, che go niama dnes.
+<VelinTzanov> <VelinTzanov> I obsydete zadachite predi sesiata.
+<VelinTzanov> <VelinTzanov> Btw, imate li drugi neshta za vyrshene predi IOI?
+<VelinTzanov> <VelinTzanov> Ili ste full-time nacionali sega?
+<VelinTzanov> * Disconnected
+<VelinTzanov> Paste-nete kakvoto izpusnah.
+<rangel__> [09:09] <rangel__> ako e tova da si hodq, zashtoto sym na zala i sym polu-zaspal :-)
+<VelinTzanov> Tova e, samo mi otgovorete na vyprosa.
+<rangel__> nqmam druga rabota
+<VelinTzanov> A, i oshte edin: s lekciite nali vi e iasno kakvo se ochakva ot vas?
+<rangel__> principno da, samo ne znam otkyde da izkopaq zadachi za heap
+<rangel__> no predpolagam, che vse shte uspeq da si namerq nqkolko hubavi
+<Swetko> aaa
+<Swetko> za tez lekcii stava duma
+<VelinTzanov> Mai se predpolaga na vseki ot vas da mu pisha niakoi i drug e-mail s 3-4 paragrafa otnosno tova kakvo da govori... no e dobre oshte otsega da se zamislite po vyprosa.
+<VelinTzanov> Nedeita da razchitate na men, shtoto moje i da ne nameria vreme da vi gi pisha tezi e-mails. :)
+<Swetko> rangele - edna zadacha ot usacoto - ti mi ia obiasniava - tia stava i s dvoivchno tyrsene i az ste ia kasha
+<valo_bg> az smqtam da hvana nqkoi knijka i da vidq tam kakvo pishe kato uvod
+<valo_bg> primerno v Intoduction-a
+<VelinTzanov> Rangele, tvoiata e lesna. Obiasniavaneto na samia Heap i prilojenieto mu kym Dijkstra shte ti iziade pochti cialoto vreme. :)
+<rangel__> shte si pregledam skromniq arhiv s resheni zadachki i vse shte namerq neshto :-)
+<rangel__> e tova za Dijkstrata ne go li obqsnqvashe nqkoj drug?
+<Swetko> moshe i onazi hyrvatska deto stava i s heap
+<rangel__> e to heap ti trqbva samo ako si maloumen kato men i ne vidish che se pishe bez heap
+<VelinTzanov> Ne, ti si za heap-skata chast na Dijkstra-ta. Vlado obiasniava razshirenia na Dijkstrata... edno ot tiah daje shte go pravim idnite dni.
+<valo_bg> rangel__: ti trqq da kajesh tvoeto lineino na a1, ama sega taka mi se spi che 2 ne vijdam
+<VelinTzanov> OK
+<VelinTzanov> Aide, ostaviam vi.
+<Swetko> aide chao
+<rangel__> tazi vecher mozhe bi shte sym se naspal i shte sym vkyshti i shte ti go obqsnq
+<rangel__> chao
+<VelinTzanov> Samo Swetko i Valio ne mi kazaha dali sa full-time ili imat i drugi zanimania.
+<valo_bg> full time sym
+<VelinTzanov> OK.
+<VelinTzanov> Chao, Valio
+<VelinTzanov> Chao, Rangel
+<VelinTzanov> Za Swetko niama chao, che toi se zanimava i s drugi raboti i sega se chudi kak da mi kaje... :)
+<VelinTzanov> Kaji si Swetko, ne se pritesniavai, SAT-ove li te mychat? :)
+* Swetko has quit IRC (Read error: 104 (Connection reset by peer))
+* Disconnected
+* Not connected to server
+Session Close: Tue Aug 10 22:16:26 2004

@@ -1,0 +1,60 @@
+Hi,
+
+
+Definitely the more difficult day.
+
+I. Memory
+
+1. "by turning two cards face up so that the NUMBERS are visible" - why not letters?
+
+2. In the explanation of Subtask 1, games (the last word) should be singular, I think.
+
+100 points.
+
+
+II. HotterColder
+
+1. I believe the grader currently never uses t, the number of test cases, from the input files.
+
+Obviously it is some kind of modified binary search. My solution splits the interval in 2 by guessing with the number which is symmetrical to the last one, with the middle of the interval being the symmetry axis. However, the limitation that G must be between 1 and N messes up some cases. I got 80 points.
+
+III. Saveit
+
+1. The problem statement never mentions that all cities are connected
+
+2. "where each hop carries the package between..." - at first I though that "hop" stands for something that also carries packages. I think the whole explanation of the transportation process could be rewritten, perhaps something like "a package must be transported over a sequence of cities, where each city is connected to the next one by an aircraft that shuttles between them". Especially since the next sentence implies that cities are also part of the sequence. Or maybe "flight" would be a better term than "hop".
+
+3. I believe the problem statement should mention the representation of P, and that no pair of cities is repeated, and that the graph is undirected.
+
+4. I think it should be emphasized that hops(h,c,d) should be called even with h = c and, when both h and c are hubs, with (c, h) and (h, c) separately
+
+5. I couldn't define global variables with the same names in decode.cpp and encode.cpp, but I believe this can't be fixed due to the way the files are compiled. Yet it is somewhat irritating.
+
+6. The prototype has a folder "saveit" that contains the same files that are in the archive.
+
+First I thought of Huffman codes, but the extra ~15000 bits that would be used to encode the codes made me give up the idea, and it won't work if all cities are on a straight line. Then I thought of removing all edges that don't belong to any shortest paths and encoding the graph, either as an edge list (wouldn't work on a complete graph) or a compressed adjacency matrix (how to compress it?). I also gave this up. 50 points
+
+IV. Maze
+
+1. I think the second paragraph could be written a bit better. For example, USACO style, "The field can be represented as a rectangular grid of cells where each cell contains either corn stalks or obstacles that prevent corn from growing (trees, buildings, etc). Pathways are created by crushing corn stalks in certain cells, thus making them passable. The only passable cell that touches the boundary of the field is the entrance, and one passable cell from the interior is the core of the maze." Something like that.
+
+2. "X represents a square with a tree or OTHER obstruction" - maybe "some other"?
+
+3. "You are to copy them to files named maze.1 maze.2 and transform" - "etc". missing. And isn't maze1.txt, maze2.txt more accurate? Also field1.txt, field2.txt etc.
+
+4. "The grader reads each file named maze.1, maze.1 etc." - maze.1 twice
+
+5. "maze derived from one of the cornfields" - or from "the corresponding cornfield"?
+
+6. grader.cpp exits on some assert() and I couldn't get it to work.
+
+An interesting problem. I thought about making zig-zags in the open areas, or around the obstacles, and joining them in some way (some of the fields were screaming for this). I couldn't write anything that does this smartly though, so I just used the brute force to gain some points on the large test cases. The small ones I did by hand, of course. 58 points.
+
+
+
+Well, I think in total I did better than the last two years, but I believe it is because the stress factor was out of the game. Maybe all scores will be a little higher this year.
+
+Good luck with the rest of the preparations, and I hope the contestants like the new changes as much as I do. I regret that I won't be able to play around with the submission system and the graders a little longer, my internet access currently is very limited. I hope I've been at least a little helpful.
+
+Best regards,
+Momchil

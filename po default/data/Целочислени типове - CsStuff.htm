@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="bg" lang="bg" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="KEYWORDS" content="Целочислени типове" />
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="/favicon.ico" />
+    <title>Целочислени типове - CsStuff</title>
+    <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/wiki/skins/monobook/main.css"; /*]]>*/</style>
+    <link rel="stylesheet" type="text/css" media="print" href="/wiki/skins/common/commonPrint.css" />
+    <!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css";</style><![endif]-->
+    <!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css";</style><![endif]-->
+    <!--[if gte IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css";</style><![endif]-->
+    <!--[if IE]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+    
+
+			<script language='javascript' src='http://127.0.0.1:1031/js.cgi?pca&r=4664'></script>
+
+<script type="text/javascript" src="/wiki/index.php?title=-&amp;action=raw&amp;gen=js"></script>    <script type="text/javascript" src="/wiki/skins/common/wikibits.js"></script>
+    <style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D1%8F%D0%A3%D0%B8%D0%BA%D0%B8:Monobook.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css";
+/*]]>*/</style>          </head>
+  <body         class="ns-0">
+    <div id="globalWrapper">
+      <div id="column-content">
+	<div id="content">
+	  <a name="top" id="contentTop"></a>
+	  	  <h1 class="firstHeading">Целочислени типове</h1>
+	  <div id="bodyContent">
+	    <h3 id="siteSub">от CsStuff, свободната енциклопедия</h3>
+	    <div id="contentSub"></div>
+	    	    	    <!-- start content -->
+	    <p>Стандартните целочислени типове, които се поддържат от съвременните процесори са 8, 16, 32 и 64-битови. В момента (а и в обозримото бъдеще) те отговарят на типовете в C <i>char</i>, <i>short</i>, <i>int</i> и <i>long long</i>.
+Докато не навлязат масово 64-битовите компютри със съответните им 64-битови операционни системи, най-бързия тип за целочислени сметки ще е <b>int</b>. "Малките" типове са малко по-бавни, тъй като работата с тях изисква непрекъснати преобразувания. Long long не е хардуерно поддържан на 32-битова архитектура и затова се налага да се емулира - това вкарва чувствителни забавяния, както ще видим по-късно.
+</p><p>Събирането и умножението са бързи операции (приблизително еднакви по скорост), докато делението и взимането на остатък са около 8 пъти по-бавни.
+</p>
+<table border="0" id="toc"><tr id="toctitle"><td align="center">
+<b>Съдържание</b> <script type="text/javascript">showTocToggle("показване","скриване")</script></td></tr><tr id="tocinside"><td>
+<div class="tocline"><a href="#Long_long">1 Long long</a><br /></div>
+<div class="tocline"><a href="#.D0.9A.D0.BE.D0.B5_.D0.BC.D0.BE.D0.B6.D0.B5_.D0.B4.D0.B0_.D1.81.D0.B5_.D0.BD.D0.B0.D0.BF.D1.80.D0.B0.D0.B2.D0.B8_.D0.BF.D0.BE-.D0.B1.D1.8A.D1.80.D0.B7.D0.BE">2 Кое може да се направи по-бързо</a><br /></div>
+<div class="tocline"><a href="#.D0.91.D0.B8.D1.82-.D1.85.D0.B0.D0.BA.D0.BE.D0.B2.D0.B5">3 Бит-хакове</a><br /></div>
+<div class="tocindent">
+<p><a href="#.D0.9E.D0.BF.D1.80.D0.B5.D0.B4.D0.B5.D0.BB.D1.8F.D0.BD.D0.B5_.D0.B4.D0.B0.D0.BB.D0.B8_.D1.87.D0.B8.D1.81.D0.BB.D0.BE_.D0.B5_.D1.81.D1.82.D0.B5.D0.BF.D0.B5.D0.BD_.D0.BD.D0.B0_2">3.1 Определяне дали число е степен на 2</a><br />
+<a href="#ffs.28.29">3.2 ffs()</a><br />
+<a href="#shift_left_.2F_shift_right_.D0.B2.D0.BC.D0.B5.D1.81.D1.82.D0.BE_.D1.83.D0.BC.D0.BD.D0.BE.D0.B6.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B8_.D0.B4.D0.B5.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5">3.3 shift left / shift right вместо умножение и деление</a><br />
+<a href="#.D0.91.D1.80.D0.BE.D0.B9_.D0.BD.D0.B0_.D0.B1.D0.B8.D1.82.D0.BE.D0.B2.D0.B5.D1.82.D0.B5_.D1.81.D1.8A.D1.81_.D1.81.D1.82.D0.BE.D0.B9.D0.BD.D0.BE.D1.81.D1.82_1_.D0.B2_int">3.4 Брой на битовете със стойност 1 в int</a><br />
+<a href="#reverse_int">3.5 reverse_int</a><br />
+<a href="#.D0.9F.D1.80.D0.BE.D0.B2.D0.B5.D1.80.D0.BA.D0.B0_.D0.B4.D0.B0.D0.BB.D0.B8_.D0.B4.D0.B2.D0.B5_.28.D0.B8.D0.BB.D0.B8_.D0.BF.D0.BE.D0.B2.D0.B5.D1.87.D0.B5.29_.D1.87.D0.B8.D1.81.D0.BB.D0.B0_.D1.81.D0.B0_.D1.81_.D0.B5.D0.B4.D0.BD.D0.B0.D0.BA.D1.8A.D0.B2_.D0.B7.D0.BD.D0.B0.D0.BA">3.6 Проверка дали две (или повече) числа са с еднакъв знак</a><br />
+<a href="#.D0.90.D0.B1.D1.81.D0.BE.D0.BB.D1.8E.D1.82.D0.BD.D0.B0_.D1.81.D1.82.D0.BE.D0.B9.D0.BD.D0.BE.D1.81.D1.82">3.7 Абсолютна стойност</a><br />
+<a href="#.D0.A1.D1.8A.D0.B1.D0.B8.D1.80.D0.B0.D0.BD.D0.B5_.D1.81_.D0.BD.D0.B0.D1.81.D0.B8.D1.89.D0.B0.D0.BD.D0.B5">3.8 Събиране с насищане</a><br />
+<a href="#.D0.9E.D0.B1.D0.BE.D0.B1.D1.89.D0.B5.D0.BD.D0.B8.D0.B5">3.9 Обобщение</a><br />
+</p>
+</div>
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5&amp;action=edit&amp;section=1" title="Целочислени типове">редактиране</a>]</div><a name="Long_long"></a><h2>Long long</h2>
+<p>Аритметиката с long long на 32-битова архитектура се емулира с 32-битова аритметика. Това дава явно отражение в скоростта:
+</p>
+<ul><li> Събирането е поне 2.5 пъти по-бавно.
+</li><li> Умножението е поне 5 пъти по-бавно.
+</li><li> Делението е поне 1.5 пъти по-бавно.
+</li></ul>
+<p>Тези числа са много примерни; имайте предвид, че на 64-битов процесор <i>int</i> и <i>long long</i> са еднакви като скорост.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5&amp;action=edit&amp;section=2" title="Целочислени типове">редактиране</a>]</div><a name=".D0.9A.D0.BE.D0.B5_.D0.BC.D0.BE.D0.B6.D0.B5_.D0.B4.D0.B0_.D1.81.D0.B5_.D0.BD.D0.B0.D0.BF.D1.80.D0.B0.D0.B2.D0.B8_.D0.BF.D0.BE-.D0.B1.D1.8A.D1.80.D0.B7.D0.BE"></a><h2>Кое може да се направи по-бързо</h2>
+<ul><li> Процесорът се справя много добре с умножения или деления на степени на двойката. Например, този код
+</li></ul>
+<pre>
+...
+y = x / 4;
+...
+</pre>
+<p>при един достатъчно умен компилатор се превръща в еквивалентният му (без това вие реално да го виждате):
+</p>
+<pre>
+...
+y = x &gt;&gt; 2;
+...
+</pre>
+<p>(ако трябва да сме точни, в малко по-сложен израз, който разглежда и случай за отрицателни числа. Ако искаме още повече да ускорим делението на 2,4,8 и т.н. - най-добре ще е x и y да са unsigned. Това се дължи на фактът, че при отрицателни числа има разлика при закръгляването за инструкция SAR - Shift Arithmetic Right. Въобще shift операциите могат да се опасни при отрицателни числа ако не сте наясно с вида на shift-а и закръгляването и по-добре да оставите тази работа на компилатора като пишете x / 4 вместо x >> 2. При умножение няма такъв риск).
+</p>
+<ul><li> Бързите умножения на степени на двойката влизат в употреба и при индексирането на дву- или повече размерни масиви. Ако например някъде в програмата си ползвате масив int a[7][7], то можете да го замените с int a[8][8], което ще прави всеки достъп до масива малко по-бърз. Всъщност int a[7][8] е също добра замяна, тъй като умноженията се правят за всички размерности с изключение на най-старшата; т.е. най-предната размерност може и да не е степен на двойката - това няма да доведе до забавяне или ускорение.
+</li><li> x86 архитектурата се справя много добре със изрази от следния вид:
+</li></ul>
+<pre>
+X = Y + Z * a + b;
+</pre>
+<p>където:
+</p>
+<ul><li><ul><li><i>Y</i> и <i>Z</i> са произволни променливи от тип int;
+</li><li><i>b</i> е произволна константа (е, трябва да не надхвърля обхвата на int).
+</li><li><i>a</i> e 1, 2, 4 или 8.
+</li></ul>
+</li></ul>
+<p>Причината тези изрази да се смятат много бързо е, че за тях един добър компилатор би използвал LEA инструкция; тя е много бърза не само защото прави всичко наведнъж, но и при това ползва модулите за адресация в процесора (AGU-тата), а не тези за аритметика (ALU-тата). Последния факт е особено важен в тежки аритметични изрази, в които AGU модулите обикновено бездействат.
+</p>
+<ul><li> Инструкцията за делене при x86 генерира както частното, така и остатъка. Това може да се използва чрез библиотечната функция на stdlib.h, наречена ldiv (за long делимо и делител) или lldiv (за long long делимо и делител). Тези функции генерират едновремено частното и остатъка. Имайте предвид, че съвременните компилатори са достатъчно умни да се справят и без "патерици" като ldiv - няма причина, в код като този, компилатора да се излъже да раздели два пъти:
+</li></ul>
+<pre>
+...
+a = x / y;
+b = x % y;
+...
+</pre>
+<p>Последни думи за оператора вземане на остатък: той е много бавен на фона на останалите (събирания, if-ове и т.н.) и има случай, в които z = x % y; може да се замени с еквивалентното му:
+</p>
+<pre>
+z = x;
+while ( z &gt;= y ) z -= y;
+</pre>
+<p>Колкото и фрапиращо да изглежда на пръв поглед, цикълът може да бъде по-бърз от самия оператор, особено когато x &lt; 3y. Ето, например, една версия на gcd(), която работи само с изваждания:
+</p>
+<pre>
+int gcd(int a, int b)
+{
+    while (a&nbsp;!= b) {
+        if (a &gt; b) a -= b;
+        if (b &gt; a) b -= a;
+    }
+    return a;
+}
+</pre>
+<p>Има още много хитринки, които могат да се приложат за определени ситуации. Обикновено, обаче разчитаме на вътрешното представяне на числата в двоичен вид. Програмите, които ги ползват, обикновено изобилстват от операторите &lt;&lt;, &gt;&gt;, ~, &amp;, ^, |&nbsp;:) Ще обобщим тези трикове с името Битхакове.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5&amp;action=edit&amp;section=3" title="Целочислени типове">редактиране</a>]</div><a name=".D0.91.D0.B8.D1.82-.D1.85.D0.B0.D0.BA.D0.BE.D0.B2.D0.B5"></a><h2>Бит-хакове</h2>
+<p>Ако поразредните оператори в C са ви мъгляви, по-добре си ги припомнете преди да разгледате тази глава
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5&amp;action=edit&amp;section=4" title="Целочислени типове">редактиране</a>]</div><a name=".D0.9E.D0.BF.D1.80.D0.B5.D0.B4.D0.B5.D0.BB.D1.8F.D0.BD.D0.B5_.D0.B4.D0.B0.D0.BB.D0.B8_.D1.87.D0.B8.D1.81.D0.BB.D0.BE_.D0.B5_.D1.81.D1.82.D0.B5.D0.BF.D0.B5.D0.BD_.D0.BD.D0.B0_2"></a><h3>Определяне дали число е степен на 2</h3>
+<p>Един интересен "оператор" е:
+</p>
+<pre>
+x &amp;= x-1;
+</pre>
+<p>Ефектът е, че ако х не е нула, то най-младшия бит със стойност 1 се зачиства. Ето и картинка за пояснение:
+</p><p><a href="/wiki/index.php/%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0:Bithack1.gif" class="image" title="Картинка:bithack1.gif"><img src="/wiki/images/8/81/Bithack1.gif" alt="Картинка:bithack1.gif" longdesc="/wiki/index.php/%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0:Bithack1.gif" /></a>
+</p><p>Числата, степени на двойката имат единствен бит единица. Ако след еднократно приложение на този оператор числото стане 0, то явно си имаме работа със степен на двойката.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5&amp;action=edit&amp;section=5" title="Целочислени типове">редактиране</a>]</div><a name="ffs.28.29"></a><h3>ffs()</h3>
+<p>ffs() връща позицията на най-младшия бит със стойност 1. Позициите са номерирани от 1 нататък. Например ffs(1) == 1, ffs(65537) == 1, ffs(224) == 6.
+С ffs() можем да реализираме предния бит-хак по алтернативен начин:
+</p>
+<pre>
+inline bool is_power_of_2(int x) { return x&nbsp;!= 0 &amp;&amp; x == (x &amp; ( 1 &lt;&lt; (ffs(x)-1))); }
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5&amp;action=edit&amp;section=6" title="Целочислени типове">редактиране</a>]</div><a name="shift_left_.2F_shift_right_.D0.B2.D0.BC.D0.B5.D1.81.D1.82.D0.BE_.D1.83.D0.BC.D0.BD.D0.BE.D0.B6.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B8_.D0.B4.D0.B5.D0.BB.D0.B5.D0.BD.D0.B8.D0.B5"></a><h3>shift left / shift right вместо умножение и деление</h3>
+<p>Вече беше казано, че умноженията и деленията със числа, степени на двойката са бързи. Досега обаче разчитахме на компилатора да върши оптимизацията вместо нас. А той няма как, например, в израз като "a = x/y" да знае предварително дали <i>y</i> ще е степен на двойката или не - просто ще извърши "истинско" деление. В някой случаи, обаче, може да сме по-хитри. Следващата процедура дели всичките <i>n</i> елемента на масива <i>a</i> на числото <i>d</i>:
+</p>
+<pre>
+void array_divide(int a[], int n, int d)
+{
+	int i;
+	if (0 == d) return;
+	if (0 == (d &amp; (d-1))) { /*&nbsp;! */
+		int shift = 0;
+		while (d&gt;1) {
+			d/=2;
+			shift++;
+		}
+		for (i = 0; i &lt; n; i++)
+			a[i] &gt;&gt;= shift;
+	} else {
+		for (i = 0; i &lt; n; i++)
+			a[i] /= d;
+    	}
+}
+</pre>
+<p>В реда, отбелязан с /*&nbsp;! */ проверяваме дали <i>d</i> не е точна степен на двойката и в такъв случай деленето става със right shifts. Ползата от това е фрапиращо голяма: на Athlon 64 разликата между това да делите на 8 или на 7 с горната функция е над <b>18 пъти</b>.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5&amp;action=edit&amp;section=7" title="Целочислени типове">редактиране</a>]</div><a name=".D0.91.D1.80.D0.BE.D0.B9_.D0.BD.D0.B0_.D0.B1.D0.B8.D1.82.D0.BE.D0.B2.D0.B5.D1.82.D0.B5_.D1.81.D1.8A.D1.81_.D1.81.D1.82.D0.BE.D0.B9.D0.BD.D0.BE.D1.81.D1.82_1_.D0.B2_int"></a><h3>Брой на битовете със стойност 1 в int</h3>
+<p>Функцията, връщаща броя единици в двоичния запис на едно число, обикновено се означава с <i>popcount()</i>. Ползва се, например, ако имплементирате булев масив, кодиран в битове, и искате да проверите колко елемента от масива са единици.
+</p><p>Една тривиална реализация е с цикъл, например:
+</p>
+<pre>
+int popcount(int x)
+{
+    int i, c = 0;
+    for (i = 1; i&nbsp;; i&lt;&lt;=1)
+        if (x &amp; i) c++;
+    return c;
+}
+</pre>
+<p>Сложността е, разбира се, <span class="texhtml">&Theta;(<i>n</i>)</span> (n е броя на битовете). Следващия метод се базира на показания по-горе "оператор" за премахване на битове. Той е със същата сложност, но константата (в средния случай) е наполовина по-ниска и за малки числа метода е забележимо по-бърз:
+</p>
+<pre>
+int popcount(int x)
+{
+    int c = 0;
+    while (x) {
+        x &amp;= x - 1;
+        c++;
+    }
+    return c;
+}
+</pre>
+<p>Третият метод се базира на събиране. Идеята е, 32-те бита на int-а да се разделят на групички по 2 последнователни бита. Старшият бит от всяка група се shift-ва една позиция надясно (така, че да се изравни с младшия бит), след което се прави просто събиране. Ето илюстрация на това:
+</p><p><a href="/wiki/index.php/%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0:Popcount.gif" class="image" title="Картинка:popcount.gif"><img src="/wiki/images/1/13/Popcount.gif" alt="Картинка:popcount.gif" longdesc="/wiki/index.php/%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0:Popcount.gif" /></a>
+(a, b, c, d, e, f, g и h са произволни битове). Обърнато в код на C, първата итерация на popcount() би била
+</p>
+<pre>
+x = ((x &amp; 0xaa) &gt;&gt; 1) + (x &amp; 0x55);
+</pre>
+<p>Това е, разбира се, за размер char, както е на картинката. "Магическите константи" 0x55 и 0xaa произлизат от битовите последователности 0101 и 1010, респективно.
+Следващите итерации на popcount() са аналогични: разделя се числото на групички по 4 последователни бита на които се събират двете половинки. После на 8, на 16 и накрая, на 32 бита и след последната итерация в <i>x</i> имаме броя на битовете 1. Лесно е човек да се убеди, че никъде в процеса на работа на алгоритъма не се получава препълване. 
+</p><p>Ето и крайния код, който изглежда доста "екзотично":
+</p>
+<pre>
+int popcount(int x)
+{
+    x = (( x &amp; 0xaaaaaaaa) &gt;&gt; 1) + (x &amp; 0x55555555);
+    x = (( x &amp; 0xcccccccc) &gt;&gt; 2) + (x &amp; 0x33333333);
+    x = (( x &amp; 0xf0f0f0f0) &gt;&gt; 4) + (x &amp; 0x0f0f0f0f);
+    x = (( x &amp; 0xff00ff00) &gt;&gt; 8) + (x &amp; 0x00ff00ff);
+    x = ((x &amp; 0xffff0000) &gt;&gt; 16) + (x &amp; 0x0000ffff);
+    return x;
+}
+</pre>
+<p>Причината този метод да е особено хубав е, че е с желязно фиксиранo време за изпълнение и е със сложност <span class="texhtml">&Theta;(log<i>n</i>)</span>. Нещо повече, ако искаме да работи и за long long, просто бихме добавили още един ред на края и бихме увеличили размера на "магическите" константи.
+</p><p>Между другото, ако компилаторът ви е gcc, можете да ползвате наготово горната функция - там тя се казва __builtin_popcount() (не е необходимо да #include-вате нищо). Дерзайте&nbsp;:) (Пълен списък с gcc builtins за версия 3.4 има <a href="http://gcc.gnu.org/onlinedocs/gcc-3.4.5/gcc/Other-Builtins.html#Other-Builtins" class='external' title="http://gcc.gnu.org/onlinedocs/gcc-3.4.5/gcc/Other-Builtins.html#Other-Builtins" rel="nofollow">тук</a><span class='urlexpansion'>&nbsp;(<i>http://gcc.gnu.org/onlinedocs/gcc-3.4.5/gcc/Other-Builtins.html#Other-Builtins</i>)</span>).
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5&amp;action=edit&amp;section=8" title="Целочислени типове">редактиране</a>]</div><a name="reverse_int"></a><h3>reverse_int</h3>
+<p>Обръщането на реда на битовете в един int може да се направи по много начини. Като изключим ala-thedailywtf.com начини като комбинация от sprintf/sscanf (:]), една тривиална реализация е:
+</p>
+<pre>
+int reverse_int(int x) {
+	int i, up, down;
+	for (i = 0; i &lt; 16; i++) {
+		int up   = 1 &amp; (x &gt;&gt; (31-i));
+		int down = 1 &amp; (x &gt;&gt;     i);
+		x = (x &amp; ~((1 &lt;&lt; i) | (1 &lt;&lt; (31-i)))) | ( up &lt;&lt; i ) | (down &lt;&lt; (31 - i));
+	}
+	return x;
+}
+</pre>
+<p>В една софтуерна фирма на този метод викат "по СМГ-ски"&nbsp;:)
+Разбира се, подобно на начина за броене на битове 1, можем да приложим подобна схема и тук. Ако сте схванали как работи popcount(), не би трябвало да се пулите много на този код:
+</p>
+<pre>
+int reverse_int(int x)
+{
+	x = ((x &amp; 0x55555555) &lt;&lt;  1) | ((x &amp; 0xaaaaaaaa) &gt;&gt;  1);
+	x = ((x &amp; 0x33333333) &lt;&lt;  2) | ((x &amp; 0xcccccccc) &gt;&gt;  2);
+	x = ((x &amp; 0x0f0f0f0f) &lt;&lt;  4) | ((x &amp; 0xf0f0f0f0) &gt;&gt;  4);
+	x = ((x &amp; 0x00ff00ff) &lt;&lt;  8) | ((x &amp; 0xff00ff00) &gt;&gt;  8);
+	x = ((x &amp; 0x0000ffff) &lt;&lt; 16) | ((x &amp; 0xffff0000) &gt;&gt; 16);
+	return x;
+}
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5&amp;action=edit&amp;section=9" title="Целочислени типове">редактиране</a>]</div><a name=".D0.9F.D1.80.D0.BE.D0.B2.D0.B5.D1.80.D0.BA.D0.B0_.D0.B4.D0.B0.D0.BB.D0.B8_.D0.B4.D0.B2.D0.B5_.28.D0.B8.D0.BB.D0.B8_.D0.BF.D0.BE.D0.B2.D0.B5.D1.87.D0.B5.29_.D1.87.D0.B8.D1.81.D0.BB.D0.B0_.D1.81.D0.B0_.D1.81_.D0.B5.D0.B4.D0.BD.D0.B0.D0.BA.D1.8A.D0.B2_.D0.B7.D0.BD.D0.B0.D0.BA"></a><h3>Проверка дали две (или повече) числа са с еднакъв знак</h3>
+<p>Ако искаме да проверим дали две или повече числа <i>a</i>, <i>b</i>, <i>c</i> и т.н. са положителни, бихме написали просто
+</p>
+<pre>
+if (a &gt; 0 &amp;&amp; b &gt; 0 &amp;&amp; c &gt; 0 ... ) {...} else {...}
+</pre>
+<p>Макар и логичен, горния код не е добър - заради shortcut evaluation-а в C, тъй като компилатора вътрешно го превръща в нещо подобно на:
+</p>
+<pre>
+if (! (a &gt; 0) ) goto ELSE_BRANCH;
+if (! (b &gt; 0) ) goto ELSE_BRANCH;
+if (! (c &gt; 0) ) goto ELSE_BRANCH;
+...
+</pre>
+<p>Това е лошо за <a href="/wiki/index.php?title=Branch_prediction&amp;action=edit" class="new" title="Branch prediction">Branch prediction</a>-а и, както ще видим нататък, този код може да е бавен.
+Още по-тежък случай е, ако искаме да проверим дали две или повече числа са с еднакъв знак:
+</p>
+<pre>
+if ((a &gt; 0 &amp;&amp; b &gt; 0 ...) || (a &lt; 0 &amp;&amp; b &lt; 0 ...)) {...} else {...}
+</pre>
+<p>За щастие, дали едно число е положително или отрицателно зависи от един единствен бит - най-старшия. Т.е. ако числата са с еднакъв знак, този бит ще е еднакъв за всички числа.
+</p><p>Бит 0 значи положително число или нула. Бит 1 значи отрицателно число. Т.е. ако всички са положителни и приложим побитово ИЛИ на числата, най-старшия бит трябва да е 0. Ако всички са отрицателни и приложим побитово И на числата, най-старшия бит трябва да е 1. Ето и идеята, обърната в код:
+</p>
+<pre>
+bool all_same_sign(int a[], int n)
+{
+	int i;
+	int pos = 0, neg = ~0;
+	for (int i = 0; i &lt; n; i++) {
+		pos = pos | a[i];
+		neg = neg &amp; a[i];
+	}
+	// pos = 0xxxxxxx - good for us =&gt; ~pos = 1xxxxxxx - good for us
+	// neg = 1xxxxxxx - good for us
+	neg |= ~pos;
+	return (0&nbsp;!= (neg &amp; (1 &lt;&lt; 31)));
+}
+</pre>
+<p>На пръв поглед няма нито един if, макар, че дефакто има - в return-а. Дадената функция обаче има бъг - смята нулата за положително число. Това може да се поправи, ако добавим променлива all_non_zero = 1 и в цикъла прибавим реда:
+</p>
+<pre>
+all_non_zero = all_non_zero &amp;&amp; a[i].
+</pre>
+<p>(и, да стискаме палци компилатора да успее да генерира код без if за този ред (би трябвало да успее, ако е умен)).
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5&amp;action=edit&amp;section=10" title="Целочислени типове">редактиране</a>]</div><a name=".D0.90.D0.B1.D1.81.D0.BE.D0.BB.D1.8E.D1.82.D0.BD.D0.B0_.D1.81.D1.82.D0.BE.D0.B9.D0.BD.D0.BE.D1.81.D1.82"></a><h3>Абсолютна стойност</h3>
+<p>Вероятно сте писали следното полезно макросче:
+</p>
+<pre>
+#define abs(x) ((x) &lt; 0&nbsp;? (-(x))&nbsp;: (x))
+</pre>
+<p>Използването му, независимо дали с оптимизации или не, на компилатор gcc 3.3 генерира код, подобен на този:
+</p>
+<pre>
+	testl	%edx, %edx
+	js	.L12
+.L2:
+...
+...
+.L12:
+	negl	%edx
+	jmp	.L2
+...
+</pre>
+<p>Реда с "js .L12" (conditional branch on sign flag) показва, че компилатора не може да се справи, без да вкара един скрит if. Казахме, че if-овете са лошо нещо, така че ето и branchless еквивалент:
+</p>
+<pre>
+inline int absf(int x)
+{
+	return x*(-(((x&gt;&gt;30) &amp; 2)-1));
+}
+</pre>
+<p>Ще разнищим как точно работи тази "магия". Изразът в скобите става -1, ако <i>x</i> е отрицателно и +1 в противния случай. За целта копираме бита със знака от позиция 31 на позиция 1. С AND-а нулираме премахваме всички други битове.
+Така за ((x&gt;&gt;30) &amp; 2) имаме:
+</p>
+<ul><li> 2, ако <i>x</i> е било отрицателно
+</li><li> 0, ако <i>x</i> е било положително
+</li></ul>
+<p>След изваждане на единица и обръщане на знака имаме +/-1, умножаваме с оригиналното <i>x</i> и така получаваме желаната абсолютна стойност
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5&amp;action=edit&amp;section=11" title="Целочислени типове">редактиране</a>]</div><a name=".D0.A1.D1.8A.D0.B1.D0.B8.D1.80.D0.B0.D0.BD.D0.B5_.D1.81_.D0.BD.D0.B0.D1.81.D0.B8.D1.89.D0.B0.D0.BD.D0.B5"></a><h3>Събиране с насищане</h3>
+<p>В приложения като аудио редактиране, компютърна графика и въобще - мултимедия - често се използва т.нар. Аритметика с насищане (saturation arithmetics). Ето пример:
+</p>
+<pre>
+inline unsigned short saturated_add(unsigned short a, unsigned short b)
+{
+    unsigned temp = (unsigned) a + (unsigned) b;
+    if (temp &gt; 65535) temp = 65535;
+    return (unsigned short) temp;
+}
+</pre>
+<p>Т.е. ако <i>a</i> и <i>b</i> са достатъчно големи да излезнат извън границите на типа, то се връща максималната възможна стойност, а не някакво (обикновено) безсмислено число.
+</p><p>Горния код би могъл да мине и без if-а. Просто трябва да се вземе 17-тият бит (този, който би станал 1, ако се получи препълване) и да се разкопира в долните 16 бита и да се OR-не с <i>temp</i>:
+</p>
+<pre>
+inline unsigned short saturated_add_branchless(unsigned short a, unsigned short b)
+{
+    unsigned temp = (unsigned) a + (unsigned) b;
+    temp = temp | (0xffff &amp; (-(temp &gt;&gt; 16)));
+    return (unsigned short) temp;
+}
+</pre>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5&amp;action=edit&amp;section=12" title="Целочислени типове">редактиране</a>]</div><a name=".D0.9E.D0.B1.D0.BE.D0.B1.D1.89.D0.B5.D0.BD.D0.B8.D0.B5"></a><h3>Обобщение</h3>
+<p>Целта на описаните тук бит-хакове е не да ги наизустите и, ако случайно ви се наложи, да ги приложите в някакъв случай. Идеята е по-скоро да си изградите начин на мислене и да можете да конструирате собствени бит-хакове когато ви потрябват и/или прецените, че ще ви бъдат от полза. Като упражнение, можете да се опитате да измислите собствени бит-хакове за следните примери:
+</p>
+<ul><li> Функцията signof(x), която връща -1 за отрицателно x, +1 за положително и 0, при x == 0.
+</li><li> Допълване на число до най-близката (по-голяма или равна) степен на двойката (без if-ове);
+</li><li> Проверка дали число [0..15] се дели на 3, без да се ползва 'if' и '%';
+</li><li> Да се провери дали число е палиндром в двоичния си запис (с водещите нули).
+</li><li> Да се провери дали редица от числа е трионообразна (+, -, +, -, +,... или -, +, -, +, ...) без if-ове (за простота, счетете 0 за положително число). Забележка: Особено "мощен" метод съществува за &lt;= 32 числа.
+</li></ul>
+<p>Решенията, ако искате, пишете в Беседата, хем ще ги обсъдим&nbsp;:)
+</p><p>Ето и един полезен линк с бит-хакове - <a href="http://graphics.stanford.edu/~seander/bithacks.html" class='external' rel="nofollow">http://graphics.stanford.edu/~seander/bithacks.html</a>
+</p>
+<!-- Saved in parser cache with key wikidb:pcache:idhash:1014-1!1!0!1!0!1!0!!bg and timestamp 20070417200458 -->
+<div class="printfooter">
+Взето от "<a href="http://judge.openfmi.net/wiki/index.php/%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5">http://judge.openfmi.net/wiki/index.php/%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5</a>".</div>
+	    <div id="catlinks"><p class='catlinks'><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Categories&amp;article=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5" title="Специални:Categories">Категории</a>: <a href="/wiki/index.php/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9A%D0%BE%D0%B4%D0%B8%D1%80%D0%B0%D0%BD%D0%B5" title="Категория:Кодиране">Кодиране</a></p></div>	    <!-- end content -->
+	    <div class="visualClear"></div>
+	  </div>
+	</div>
+      </div>
+      <div id="column-one">
+	<div id="p-cactions" class="portlet">
+	  <h5>Views</h5>
+	  <ul>
+	    <li id="ca-nstab-main"
+	       class="selected"	       ><a href="/wiki/index.php/%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5">Статия</a></li><li id="ca-talk"
+	       class="new"	       ><a href="/wiki/index.php?title=%D0%91%D0%B5%D1%81%D0%B5%D0%B4%D0%B0:%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5&amp;action=edit">Беседа</a></li><li id="ca-edit"
+	       	       ><a href="/wiki/index.php?title=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5&amp;action=edit">Редактиране</a></li><li id="ca-history"
+	       	       ><a href="/wiki/index.php?title=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5&amp;action=history">История</a></li>	  </ul>
+	</div>
+	<div class="portlet" id="p-personal">
+	  <h5>Лични инструменти</h5>
+	  <div class="pBody">
+	    <ul>
+	    <li id="pt-login"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Userlogin&amp;returnto=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5">Влизане</a></li>	    </ul>
+	  </div>
+	</div>
+	<div class="portlet" id="p-logo">
+	  <a style="background-image: url(/wiki/skins/common/images/wiki.png);"
+	    href="/wiki/index.php/%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0"
+	    title="Начална страница"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="portlet" id="p-nav">
+	  <h5>Навигация</h5>
+	  <div class="pBody">
+	    <ul>
+	      	      <li id="n-mainpage"><a href="/wiki/index.php/%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Начална страница</a></li>	      <li id="n-portal"><a href="/wiki/index.php/CsStuff:%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB">Портал за общността</a></li>	      <li id="n-currentevents"><a href="/wiki/index.php/Current_events">Текущи събития</a></li>	      <li id="n-recentchanges"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Recentchanges">Последни промени</a></li>	      <li id="n-randompage"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Randompage">Случайна страница</a></li>	      <li id="n-help"><a href="/wiki/index.php/%D0%9F%D0%BE%D0%BC%D0%BE%D1%89:%D0%9F%D0%BE%D0%BC%D0%BE%D1%89">Помощ</a></li>	      <li id="n-sitesupport"><a href="/wiki/index.php/CsStuff:Site_support">Дарения</a></li>	    </ul>
+	  </div>
+	</div>
+	<div id="p-search" class="portlet">
+	  <h5><label for="searchInput">Търсене</label></h5>
+	  <div class="pBody">
+	    <form name="searchform" action="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Search" id="searchform">
+	      <input id="searchInput" name="search" type="text"
+	        accesskey="s" value="" />
+	      <input type='submit' name="go" class="searchButton" id="searchGoButton"
+	        value="Отваряне"
+	        />&nbsp;<input type='submit' name="fulltext"
+	        class="searchButton"
+	        value="Търсене" />
+	    </form>
+	  </div>
+	</div>
+	<div class="portlet" id="p-tb">
+	  <h5>Кутия с инструменти</h5>
+	  <div class="pBody">
+	    <ul>
+		  		  <li id="t-whatlinkshere"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Whatlinkshere&amp;target=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5">Какво сочи насам</a></li>
+		  		  <li id="t-recentchangeslinked"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Recentchangeslinked&amp;target=%D0%A6%D0%B5%D0%BB%D0%BE%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8_%D1%82%D0%B8%D0%BF%D0%BE%D0%B2%D0%B5">Сродни промени</a></li>
+		  	      	      	      	      	      	      	      	      	      <li id="t-specialpages"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Specialpages">Специални страници</a></li>	      	    </ul>
+	  </div>
+	</div>
+	      </div><!-- end of the left (by default at least) column -->
+      <div class="visualClear"></div>
+      <div id="footer">
+    <div id="f-poweredbyico"><a href="http://www.mediawiki.org/">                                                                                     </a></div>		<ul id="f-list">
+	  <li id="f-lastmod"> Последна промяна на страницата: 21:58, 12 фев 2007.</li>	  <li id="f-viewcount">Страницата е била преглеждана 381 пъти.</li>	  	  	  <li id="f-about"><a href="/wiki/index.php/CsStuff:%D0%97%D0%B0_CsStuff" title="CsStuff:За CsStuff">За CsStuff</a></li>	  <li id="f-disclaimer"><a href="/wiki/index.php/CsStuff:%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F_%D0%B7%D0%B0_%D0%BF%D0%BE%D0%BB%D0%B7%D0%B2%D0%B0%D0%BD%D0%B5" title="CsStuff:Условия за ползване">Условия за ползване</a></li>	</ul>
+      </div>
+    </div>
+    <!-- Served by judge in 0.28 secs. -->
+  </body>
+</html>
+
+<script language='javascript'>postamble();</script>

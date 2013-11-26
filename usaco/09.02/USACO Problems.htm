@@ -1,0 +1,368 @@
+<html>
+<head>
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<script language="javascript">
+<!--
+    var endtime;
+    
+    function initcount(secondsleft) {
+        var now = new Date();
+        return now.getTime() + secondsleft*1000;
+    }
+    function count1(i) { i = i - i%1; return i; } 
+    function count2(i) { i = i - i%1; if (i < 10) return "0"+i; return i; }
+    function updateclock(head, word, endtime) {
+        var now = new Date();
+        var delta = (endtime - now.getTime())/1000;
+        var s, x;
+        if(delta < 1)
+            s = head + " has ended";
+        else{
+            s = head + " ends: ";
+            s = head + ": ";
+            if(delta >= 24*3600)
+                s = s + count1(delta/86400) + "d";
+            if(delta >= 3600)
+                s = s + count2((delta/3600)%24) + "h";
+            if(delta >= 60)
+                s = s + count2((delta/60)%60) + "m";
+            s = s + count2(delta%60) + "s";
+            setTimeout("updateclock('"+head+"','"+word+"',"+endtime+")", 500);
+        }
+
+        var slot = document.getElementById(word);
+        slot.innerHTML = s;
+    }
+-->
+</script>
+
+<title>USACO Problems</title>
+</head>
+<body onload="" background='/usaco/bg9gold.jpg'>
+
+<font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+<table><tr>
+<td><img src='/usaco/cowhead2.gif'>
+</td>
+<td valign='top'>
+<table cellpadding=0 cellspacing=0>
+    <tr><td>Contest: FEB09 <b>GOLD</b> Division</td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    
+</table>
+</td></tr>
+</table>
+<font color=red><b>
+</b></font>
+
+<br><font size='6'<b>ANALYSIS MODE</b></font><br>
+Submit solutions for your own enjoyment.
+
+</font><pre>**********************************************************************
+                           GOLD PROBLEMS
+**********************************************************************
+                  Three problems numbered 1 through 3
+**********************************************************************
+
+Problem 1: Fair Shuttle [Russ Cox and Hal Burch, 2006]
+
+Although Farmer John has no problems walking around the fair to
+collect prizes or see the shows, his cows are not in such good
+shape; a full day of walking around the fair leaves them exhausted.
+To help them enjoy the fair, FJ has arranged for a shuttle truck
+to take the cows from place to place in the fairgrounds.
+
+FJ couldn't afford a really great shuttle, so the shuttle he rented
+traverses its route only once (!) and makes N (1 &lt;= N &lt;= 20,000)
+stops (conveniently numbered 1..N) along its path. A total of K (1
+&lt;= K &lt;= 50,000) groups of cows conveniently numbered 1..K wish to
+use the shuttle, each of the M_i (1 &lt;= M_i &lt;= N) cows in group i
+wanting to ride from one stop S_i (1 &lt;= S_i &lt; E_i) to another stop
+E_i (S_i &lt; E_i &lt;= N) farther along the route.
+
+The shuttle might not be able to pick up an entire group of cows
+(since it has limited capacity) but can pick up partial groups as
+appropriate.
+
+Given the capacity C (1 &lt;= C &lt;= 100) of the shuttle truck and the
+descriptions of the groups of cows that want to visit various sites
+at the fair, determine the maximum number of cows that can ride the
+shuttle during the fair.
+
+PROBLEM NAME: shuttle
+
+INPUT FORMAT:
+
+* Line 1: Three space-separated integers: K, N, and C
+
+* Lines 2..K+1: Line i+1 describes group i of the cows with three
+        space-separated integers: S_i, E_i, and M_i
+
+SAMPLE INPUT (file shuttle.in):
+
+8 15 3
+1 5 2
+13 14 1
+5 8 3
+8 14 2
+14 15 1
+9 12 1
+12 15 2
+4 6 1
+
+OUTPUT FORMAT:
+
+* Line 1: The maximum number of cows that can ride the shuttle at the
+        fair.
+
+SAMPLE OUTPUT (file shuttle.out):
+
+10
+
+OUTPUT DETAILS:
+
+The shuttle can take 2 cows from stop 1 to stop 5, 3 from 5 to 8, 2 from 8
+to 14, 1 from 9 to 12, 1 from 13 to 14, and 1 from 14 to 15.
+
+**********************************************************************
+
+Problem 2: Stock Market [Rob Kolstad(?), 2008]
+
+Despite their innate prudence, the cows took a beating in the home
+mortgage market and now are trying their hand at stocks. Happily,
+Bessie is prescient and knows not only today's S (2 &lt;= S &lt;= 50)
+stock prices but also the future stock prices for a total of D days
+(2 &lt;= D &lt;= 10).
+
+Given the matrix of current and future stock prices on various days
+(1 &lt;= PR_sd &lt;= 1,000) and an initial M (1 &lt;= M &lt;= 200,000) units
+of money, determine an optimal buying and selling strategy in order
+to maximize the gain realized by selling stock on the final day.
+Shares must be purchased in integer multiples, and you need not
+spend all the money (or any money). It is guaranteed that you will
+not be able to earn a profit of more than 500,000 units of money.
+
+Consider the example below of a bull (i.e., improving) market, the
+kind Bessie likes most. In this case, S=2 stocks and D=3 days. The
+cows have 10 units of money to invest.
+
+                   Today's price
+                   |   Tomorrow's price
+                   |   |  Two days hence
+             Stock |   |  | 
+              1    10 15 15
+              2    13 11 20
+
+If money is to be made, the cows must purchase stock 1 on day 1.
+Selling stock 1 on day 2 and quickly buying stock 2 yields 4 money
+in the bank and one share of 2. Selling stock 2 on the final day
+brings in 20 money for a total of 24 money when the 20 is added to
+the bank.
+
+PROBLEM NAME: stock
+
+INPUT FORMAT:
+
+* Line 1: Three space-separated integers: S, D, and M
+
+* Lines 2..S+1: Line s+1 contains the D prices for stock s on days
+        1..D: PR_sd
+
+SAMPLE INPUT (file stock.in):
+
+2 3 10
+10 15 15
+13 11 20
+
+OUTPUT FORMAT:
+
+* Line 1: The maximum amount of money possible to have after selling
+        on day D.
+
+SAMPLE OUTPUT (file stock.out):
+
+24
+
+**********************************************************************
+
+Problem 3: Revamping Trails [Percy Liang, 2008]
+
+Farmer John dutifully checks on the cows every day. He traverses
+some of the M (1 &lt;= M &lt;= 50,000) trails conveniently numbered 1..M
+from pasture 1 all the way out to pasture N (a journey which is
+always possible for trail maps given in the test data). The N (1
+&lt;= N &lt;= 10,000) pastures conveniently numbered 1..N on Farmer John's
+farm are currently connected by bidirectional dirt trails.  Each
+trail i connects pastures P1_i and P2_i (1 &lt;= P1_i &lt;= N; 1 &lt;= P2_i
+&lt;= N) and requires T_i (1 &lt;= T_i &lt;= 1,000,000) units of time to
+traverse.
+
+He wants to revamp some of the trails on his farm to save time on
+his long journey. Specifically, he will choose K (1 &lt;= K &lt;= 20)
+trails to turn into highways, which will effectively reduce the
+trail's traversal time to 0. Help FJ decide which trails to revamp
+to minimize the resulting time of getting from pasture 1 to N.
+
+TIME LIMIT: 2 seconds
+
+PROBLEM NAME: revamp
+
+INPUT FORMAT:
+
+* Line 1: Three space-separated integers: N, M, and K
+
+* Lines 2..M+1: Line i+1 describes trail i with three space-separated
+        integers: P1_i, P2_i, and T_i
+
+SAMPLE INPUT (file revamp.in):
+
+4 4 1
+1 2 10
+2 4 10
+1 3 1
+3 4 100
+
+OUTPUT FORMAT:
+
+* Line 1: The length of the shortest path after revamping no more than
+        K edges
+
+SAMPLE OUTPUT (file revamp.out):
+
+1
+
+OUTPUT DETAILS:
+
+K is 1; revamp trail 3-&gt;4 to take time 0 instead of 100. The new shortest
+path is 1-&gt;3-&gt;4, total traversal time now 1.
+
+**********************************************************************
+
+</pre><hr>
+<form action="/ioiupload" enctype="multipart/form-data" method="POST">
+<input type="hidden" name="a" value="A9qSAnWEU86">
+
+<table>
+<tr><td>
+
+<table bgcolor="#000000" cellpadding=0 cellspacing=0 border=0 width=100%>
+<tr><td height=1></td></tr>
+<tr><td width=1><td>
+
+  <font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+  <table bgcolor="#bfffbf" cellpadding=5 width=100%>
+  <tr><td><b>Submit a program  for grading:&nbsp;<b><input type="file" NAME="filename">
+  &nbsp;&nbsp;
+  <input type="submit" VALUE="Submit" name='submit'></td></tr>
+  </table>
+
+</td><td width=1></td></tr>
+<tr height=1><td></td></tr>
+</table>
+
+
+</td></tr>
+
+<tr><td><hr></td></tr>
+
+<tr><td>
+
+<table bgcolor="#000000" cellpadding=0 cellspacing=0 border=0 width=100%>
+<tr><td height=1></td></tr>
+<tr><td width=1><td>
+
+   <table bgcolor="#bfffbf" cellpadding=5 width=100%>
+   <tr><td colspan='2'>
+   <font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+   <b>To run your program with your own test data, enter the program<br>
+   file name and input file name then click 'Test':</b></td></tr>
+
+  <tr><td>
+
+   <table>
+   <tr><td>
+     <table>
+     <tr><td>
+     <font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+     <B>Program&nbsp;File:&nbsp;</B></td>
+         <td><input type="file" NAME="testprogramname"></td></tr>
+     <tr><td align="right">
+         <font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+         <B>Input&nbsp;File:&nbsp;</B></td>
+         <td><input type="file" NAME="testfilename"></td></tr>
+     </table>
+   </td>
+   <td>&nbsp;&nbsp;</td>
+   <td><input type="submit" VALUE="Test" name='submit'></td>
+   </tr>
+   </table>
+
+   </td></tr></table>
+
+</td><td width=1></td></tr>
+<tr height=1><td></td></tr>
+</table>
+
+</tr></td>
+<tr><td><hr></td></tr>
+
+<tr><td>
+
+<table bgcolor="#000000" cellpadding=0 cellspacing=0 border=0 width=100%>
+<tr><td height=1></td></tr>
+<tr><td width=1><td>
+
+<table bgcolor="#bfffbf" cellpadding=5 width=100%>
+<tr><td>
+<font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+<b>Backup a file:&nbsp;</b><input type="file" NAME="backupfilename">
+&nbsp;&nbsp;&nbsp;<input type="submit" VALUE="Backup" NAME='submit'>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" VALUE="See Backups" NAME='submit'>
+</td></tr></table>
+
+</td><td width=1></td></tr>
+<tr height=1><td><td></tr>
+</table>
+
+</td></tr>
+
+<tr><td><hr></td></tr>
+
+</table>
+<tr><td><font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'> The following solution files are saved for grading:<br>
+<table cellspacing='2'>
+<tr><th>Name</th><th>Size</th><th>When</th><th>Age</th></tr>
+<td><a href="/ioiupload?a=A9qSAnWEU86&seesaved=revamp.c">revamp.c</a></td>
+<td align ='right'>1994</td>
+<td align ='right'> 1h18:46</td>
+<td align ='right'>35h34:42</td></tr>
+<td><a href="/ioiupload?a=A9qSAnWEU86&seesaved=shuttle.c">shuttle.c</a></td>
+<td align ='right'>5026</td>
+<td align ='right'> 2h58:51</td>
+<td align ='right'>33h54:37</td></tr>
+<td><a href="/ioiupload?a=A9qSAnWEU86&seesaved=stock.c">stock.c</a></td>
+<td align ='right'>1906</td>
+<td align ='right'> 3h14:53</td>
+<td align ='right'>33h38:35</td></tr>
+</table></td></tr>
+<hr>
+<center>
+<a href="/ioiedit?a=A9qSAnWEU86">Edit your database record</a>&nbsp;|&nbsp;
+
+<a href="/ioiupload?a=A9qSAnWEU86&logout=1"> Logout </a>
+<!--<a href="https://ace.delos.com/rules.html" target="_blank"> Rules </a>-->
+&nbsp;|&nbsp;
+<a href=http://ace.delos.com/ioiupload?init=1&a=A9qSAnWEU86>Main contest index</a>
+</center>
+<!--&nbsp;|&nbsp;-->
+<center>
+<a href=http://ace.delos.com/ioiupload?a=A9qSAnWEU86&showsubmit>See submitted solutions</a>
+&nbsp;|&nbsp;
+<a href=http://ace.delos.com/ioiupload?a=A9qSAnWEU86&suggestionbox>Send message
+to operations staff</a><br>
+Director is not online<br>
+This page was generated at 19:53:28 GMT.
+</center>
+</body>

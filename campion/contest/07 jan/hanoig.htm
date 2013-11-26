@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<TITLE>hanoig</TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#FF00FF">
+<h3><font face="Arial, Helvetica, sans-serif" size="2"><B> <font size="4">hanoig</font></B></font></h3>
+<p></P><P ALIGN="JUSTIFY"><font face="Arial, Helvetica, sans-serif" size="2">Let's take 3 rods (<font face="Courier New, Courier, mono">A</font>, <font face="Courier New, Courier, mono">B</font> and <font face="Courier New, Courier, mono">C</font>). Rod <font face="Courier New, Courier, mono">A</font> contains <font face="Courier New, Courier, mono">n</font> disks of <font face="Courier New, Courier, mono">k</font> distinct sizes <font face="Courier New, Courier, mono">d<sub>1</sub>&gt;d<sub>2</sub>&gt;...&gt;d<sub>k</sub></font>.<BR> More specifically, there are <font face="Courier New, Courier, mono">m<sub>1</sub></font> disks of diameter <font face="Courier New, Courier, mono">d<sub>1</sub></font>, <font face="Courier New, Courier, mono">m<sub>2</sub></font> disks of diameter <font face="Courier New, Courier, mono">d<sub>2</sub></font>, ..., <font face="Courier New, Courier, mono">m<sub>k</sub></font> disks of diameter <font face="Courier New, Courier, mono">d<sub></sub><sub>k</sub></font>.<BR> Obviously, <font face="Courier New, Courier, mono">m<sub>1</sub>+m<sub>2</sub>+...+m<sub>k</sub>=n</font>.<BR> The disks are initially placed on rod <font face="Courier New, Courier, mono">A</font> 
+  in descending size order, from the base to the top (so at the base we have the <font face="Courier New, Courier, mono">m<sub>1</sub></font> disks of diameter <font face="Courier New, Courier, mono">d<sub>1</sub></font>, then the <font face="Courier New, Courier, mono">m<sub>2</sub></font> disks of diameter <font face="Courier New, Courier, mono">d<sub>2</sub></font>, ...).<BR> During a move a single disk can be moved from one rod to another, but never will a larger diameter disk be placed over a smaller diameter disk.<BR> The purpose is to move all disks from rod <font face="Courier New, Courier, mono">A</font> to rod <font face="Courier New, Courier, mono">B</font>, permanently respecting descending size order.<BR> Rod <font face="Courier New, Courier, mono">C</font> can be used as a maneuver rod.</font><BR>
+</P>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><B><font size="3">Task</font></B></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Write a program that determines the minimum number of moves that have to be executed to move the <font face="Courier New, Courier, mono">n</font> disks from rod <font face="Courier New, Courier, mono">A</font> to rod <font face="Courier New, Courier, mono">B</font>.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><B><font size="3">Input Data </font></B></font></p>
+<P><font face="Arial, Helvetica, sans-serif" size="2">Input file <font face="Courier New, Courier, mono">hanoig.in</font> 
+  contains on the first line a positive integer <font face="Courier New, Courier, mono">k</font>, 
+  with the meaning in the task description. The second line will contain <font face="Courier New, Courier, mono">k</font> 
+  positive integers each separated by a space, <font face="Courier New, Courier, mono">m<sub>1</sub> 
+  m<sub>2</sub> ... m<sub>k</sub></font>.</font></P>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><B><font size="3">Output Data</font></B></font></p>
+<P><font face="Arial, Helvetica, sans-serif" size="2">Output file <font face="Courier New, Courier, mono">hanoig.out</font> 
+  will contain a single line with the minimum number of moves which have to be 
+  executed to move the <font face="Courier New, Courier, mono">n=m<sub>1</sub>+m<sub>2</sub>+...+m<sub>k</sub></font> 
+  disks from rod <font face="Courier New, Courier, mono">A</font> to rod <font face="Courier New, Courier, mono">B</font>.</font></P>
+<p><font face="Arial, Helvetica, sans-serif"><B><font size="3">Constraints</font> and Statements</B></font> </p>
+<UL>
+  <LI><font face="Courier New, Courier, mono" size="2">0 &lt; k &lt;= 1000</font></LI>
+  <LI><font face="Courier New, Courier, mono" size="2">0 &lt; m<sub>i </sub>&lt;= 1000</font><font face="Arial, Helvetica, sans-serif" size="2">, for any <font face="Courier New, Courier, mono">i=1, 2, ..., k</font></font></LI>
+  <LI><font face="Arial, Helvetica, sans-serif" size="2">The disks are not numbered, therefore disks of the same size are considered identical.</font><font face="Arial, Helvetica, sans-serif"><BR>
+    </font></LI>
+</UL>
+<font face="Arial, Helvetica, sans-serif" size="2"><B> <font size="3">Example</font></B></font> 
+<TABLE BORDER CELLSPACING=2 CELLPADDING=2 WIDTH=583>
+  <TR> 
+    <TD WIDTH="25%" VALIGN="TOP"> <B><font face="Courier New, Courier, mono" size="2"> hanoig.in </font></B></TD>
+    <td width="20%" valign="TOP"><B><font face="Courier New, Courier, mono" size="2">hanoig.out</font></B></td>
+  </TR>
+  <TR> 
+    <TD WIDTH="25%" VALIGN="TOP"> 
+      <p><B><font face="Courier New, Courier, mono" size="2">2<BR> 2 3</font></B><B><font face="Courier New, Courier, mono" size="2"><BR>
+        </font></B></p>
+      </TD>
+    <td width="20%" valign="TOP"><B><font face="Courier New, Courier, mono" size="2">8</font></B></td>
+  </TR>
+</TABLE>
+<P> <font face="Arial, Helvetica, sans-serif" size="2"><B>Time limit</B>: 0.1 seconds/test</font></P>
+<p align="RIGHT"><font size="2" face="Arial, Helvetica, sans-serif">prof. <I>Emanuela Cerchez</I><BR>
+  </font> <font size="2" face="Arial, Helvetica, sans-serif">&quot;<I>Grigore Moisil</I>&quot; Ia&#351;i IT High School<BR>
+  </font> <font size="2" face="Arial, Helvetica, sans-serif"> Contact:<a href="mailto:emanuela.cerchez@gmail.com">emanuela.cerchez@gmail.com</a><BR>
+  </font> 
+</BODY>
+</HTML>
+

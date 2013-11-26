@@ -1,0 +1,9 @@
+vectors, polar form
+translation
+cp, sp
+dist point to point, point to line
+reflection (axis, point)
+rotation
+line intersection
+
+useful: atan2, complex

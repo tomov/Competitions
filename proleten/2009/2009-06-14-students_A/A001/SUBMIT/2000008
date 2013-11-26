@@ -1,0 +1,19 @@
+#include<cstdio>
+main () {
+  int a,k,i;
+  int prev, c, br=0;
+  scanf("%d%d",&a, &k);
+  scanf("%d", &prev);
+  for(i=0;i<a-1;i++) {
+    scanf("%d", &c);
+    if(c==prev) br++;
+    else {
+      if(br==k) {
+        printf("0 %d\n", i-(k));return 0;}
+        br=1;
+    }
+    prev=c;
+  }
+  printf("0 %d\n", a-k+1);
+  return 0;
+}

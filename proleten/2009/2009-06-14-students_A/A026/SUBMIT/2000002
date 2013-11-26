@@ -1,0 +1,78 @@
+/*
+codr: timiter
+task: flatten
+lang: C++
+*/
+
+#include <cstdio>
+#include <iostream>
+
+using namespace std;
+
+int n, k, c = 1;
+long long p = 0, s = 0;
+int d[1048576];
+
+int main()
+{
+    scanf("%d %d", &n, &k);
+    int i, j, l, m;
+    long long h;
+    double r;
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &d[i]);
+    }
+    for (i = 0; i < k; i++)
+    {
+        s += d[i];
+    }
+    r = s / (double)k;
+    if (r < (int)r + 0.5)
+    {
+        l = r;
+    }
+    else
+    {
+        l = r + 1;
+    }
+    for (j = 0; j < k; j++)
+    {
+        m = d[j] - l;
+        if (m < 0)
+        {
+            m = -m;
+        }
+        p += m;
+    }
+    for (; i < n; i++)
+    {
+        s += d[i] - d[i - k];
+        r = s / (double)k;
+        if (r < (int)r + 0.5)
+        {
+            l = r;
+        }
+        else
+        {
+            l = r + 1;
+        }
+        h = 0;
+        for (j = i - k + 1; j <= i; j++)
+        {
+            m = d[j] - l;
+            if (m < 0)
+            {
+                m = -m;
+            }
+            h += m;
+        }
+        if (h < p)
+        {
+            p = h;
+            c = i - k + 2;
+        }
+    }
+    cout << p << "\n" << c << "\n";
+    return 0;
+}

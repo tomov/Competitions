@@ -1,0 +1,1206 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<BASE HREF="http://docto-si.ugr.es/Mathware/v7n2-3/PS/01verdegay.ps.gz"><table border=1 width=100%><tr><td><table border=1 bgcolor=#ffffff cellpadding=10 cellspacing=0 width=100% color=#ffffff><tr><td><font face=arial,sans-serif color=black size=-1>Това е текстовата версия на файла <A HREF="http://docto-si.ugr.es/Mathware/v7n2-3/PS/01verdegay.ps.gz"><font color=blue>http://docto-si.ugr.es/Mathware/v7n2-3/PS/01verdegay.ps.gz</font></a>. <br><b><font color=#0039b6>G</font> <font color=#c41200>o</font> <font color=#f3c518>o</font> <font color=#0039b6>g</font> <font color=#30a72f>l</font> <font color=#c41200>e</font></b> автоматично създава текстови версии на документите, докато индексираме мрежата.<br>За връзка към тази страница или добавянето и в отметките, използвайте следния url: <code>http://www.google.com/search?q=cache:zjrPbZw2rKwJ:docto-si.ugr.es/Mathware/v7n2-3/PS/01verdegay.ps.gz+horowitz+sahni+decomposition+knapsack&amp;hl=bg&amp;gl=bg&amp;ct=clnk&amp;cd=4</code></font><br><br><center><font size=-2><i>Google не е свързан с авторите на тази страница и не е отговорен за материалите в нея.</i></font></center></td></tr>
+<tr><td>
+<table border=0 cellpadding=0 cellspacing=0><tr><td><font face=arial,sans-serif color=black size=-1>Маркирани бяха тези търсени термини:&nbsp;</font></td><td bgcolor=#ffff66><b><font face=arial,sans-serif color=black size=-1>horowitz&nbsp;</font></b></td><td bgcolor=#a0ffff><b><font face=arial,sans-serif color=black size=-1>sahni&nbsp;</font></b></td><td bgcolor=#99ff99><b><font face=arial,sans-serif color=black size=-1>decomposition&nbsp;</font></b></td><td bgcolor=#ff9999><b><font face=arial,sans-serif color=black size=-1>knapsack&nbsp;</font></b></td></tr></table>
+</td></tr></table></td></tr></table>
+<hr>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Producer" content="GNU Ghostscript 7.05">
+<meta name="Creator" content="PSCRIPT.DRV Versi   n 4.0">
+<meta name="CreationDate" content="09/27/01 09:34:09">
+<title>Fuzzy Termination Criteria in Knapsack Problem Algorithms</title>
+</head><body  bgcolor=#ffffff vlink="blue" link="blue">
+<table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=1><b>Page 1</b></a></font></td></tr></table><font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:240;left:166"><nobr><i>Mathware &amp; Soft Computing 7 (2000) 89-97</i></nobr></div>
+<div style="position:absolute;top:1165;left:426"><nobr>89</nobr></div>
+</span></font>
+<font size=4 face="Times"><span style="font-size:23px;font-family:Times">
+<div style="position:absolute;top:349;left:228"><nobr>Fuzzy Termination Criteria in <b style="color:black;background-color:#ff9999">Knapsack</b></nobr></div>
+<div style="position:absolute;top:388;left:325"><nobr>Problem Algorithms</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:14px;font-family:Times">
+<div style="position:absolute;top:385;left:534"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:426;left:289"><nobr>J.L. Verdegay</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:10px;font-family:Times">
+<div style="position:absolute;top:423;left:390"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:426;left:401"><nobr>and E. Vergara-Moreno</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:10px;font-family:Times">
+<div style="position:absolute;top:423;left:572"><nobr>2</nobr></div>
+<div style="position:absolute;top:444;left:202"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:447;left:212"><nobr>Depto. de Ciencias de la Computación e Inteligencia Artificial.</nobr></div>
+<div style="position:absolute;top:467;left:254"><nobr>Universidad de Granada. 18071 Granada,  SPAIN</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:10px;font-family:Times">
+<div style="position:absolute;top:485;left:197"><nobr>2</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:488;left:207"><nobr>Depto. Matemáticas. Univ. Nacional de Trujillo. Trujillo, PERU</nobr></div>
+<div style="position:absolute;top:509;left:261"><nobr><i>verdegay@ugr.es, vergara@math.unitru.edu.pe</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:573;left:406"><nobr><b>Abstract</b></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:626;left:219"><nobr>Fuzzy  rule  based  termination  criteria  are  introduced  in  two  conventional</nobr></div>
+<div style="position:absolute;top:641;left:208"><nobr>and exact algorithms solving <b style="color:black;background-color:#ff9999">Knapsack</b> Problems. As a consequence two new</nobr></div>
+<div style="position:absolute;top:657;left:208"><nobr>solution algorithms are obtained. These algorithms are  heuristic ones with  a</nobr></div>
+<div style="position:absolute;top:672;left:208"><nobr>high performance. The efficiency of the algorithms obtained is illustrated by</nobr></div>
+<div style="position:absolute;top:688;left:208"><nobr>solving some numerical examples.</nobr></div>
+<div style="position:absolute;top:712;left:219"><nobr><b>Keywords: </b>Algorithms, <b style="color:black;background-color:#ff9999">Knapsack</b> Problem, Fuzzy Rule Based Systems</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:762;left:166"><nobr><b>1 Introduction</b></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:5px;font-family:Times">
+<div style="position:absolute;top:1142;left:166"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:10px;font-family:Times">
+<div style="position:absolute;top:1143;left:173"><nobr>Research supported in part under project CICyT PB98-1305</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:791;left:166"><nobr>The context in which this work will be developed is approached from two different</nobr></div>
+<div style="position:absolute;top:808;left:166"><nobr>perspectives. On the one hand, as it is well known the methodologies associated to</nobr></div>
+<div style="position:absolute;top:825;left:166"><nobr>the fuzzy sets and systems have been based, in almost all the cases, in other already</nobr></div>
+<div style="position:absolute;top:842;left:166"><nobr>existent methodologies, which we could call classical ones. In fact it has been few</nobr></div>
+<div style="position:absolute;top:860;left:166"><nobr>frequent  to  find  original  solution  methods  and  approaches  in  the  fuzzy  sets  and</nobr></div>
+<div style="position:absolute;top:877;left:166"><nobr>systems  field  able  to  solve  conventional  (meant  here  as  non  fuzzy)  models  and</nobr></div>
+<div style="position:absolute;top:894;left:166"><nobr>problems. This has been not the case of the so called Fuzzy Rule Based Systems,</nobr></div>
+<div style="position:absolute;top:911;left:166"><nobr>which have provided a proper methodology from the fuzzy sets and systems field to</nobr></div>
+<div style="position:absolute;top:929;left:166"><nobr>broader areas, as for instance is the case of the Control Theory. On the other hand, in</nobr></div>
+<div style="position:absolute;top:946;left:166"><nobr>the general framework of Artificial Intelligence,  as  well  as  in other  scientific  and</nobr></div>
+<div style="position:absolute;top:963;left:166"><nobr>technological areas, one of the most profitable topics in different senses has been,</nobr></div>
+<div style="position:absolute;top:980;left:166"><nobr>and  it  is,  that  of  Mathematical  Programming  models  and  methods.  Mathematical</nobr></div>
+<div style="position:absolute;top:998;left:166"><nobr>Programming models provide a wholistic framework for addressing problems which</nobr></div>
+<div style="position:absolute;top:1015;left:166"><nobr>is very appropriate in a great variety of different contexts.</nobr></div>
+<div style="position:absolute;top:1041;left:166"><nobr>In particular, one of the most relevant problems in Mathematical Programming and</nobr></div>
+<div style="position:absolute;top:1058;left:166"><nobr>that  has  very  important  applications  in  a  number  of  areas,  is  the  so  called  0-1</nobr></div>
+<div style="position:absolute;top:1076;left:166"><nobr><b style="color:black;background-color:#ff9999">Knapsack</b> Problem, which in all the following will be referred simply as <b style="color:black;background-color:#ff9999">Knapsack</b></nobr></div>
+<div style="position:absolute;top:1093;left:166"><nobr>Problem  (KP).  As  said  KP  is  interesting  to  be  studied  mainly  because  of  two</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:1438;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=2><b>Page 2</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:1503;left:191"><nobr>90</nobr></div>
+<div style="position:absolute;top:1503;left:555"><nobr><i>J.L. Verdegay &amp; E. Vergara</i></nobr></div>
+<div style="position:absolute;top:1555;left:191"><nobr>reasons. The first one is that of their simple structure  which  permit  to  study  both</nobr></div>
+<div style="position:absolute;top:1573;left:191"><nobr>combinatorial  properties  and  other  optimization  problems  that  can  be  solved  by</nobr></div>
+<div style="position:absolute;top:1590;left:191"><nobr>means of a sequence of easiest KP-type problems. The second reason is that KP may</nobr></div>
+<div style="position:absolute;top:1607;left:191"><nobr>represent many practical situations in a variety of areas. Therefore from this twice</nobr></div>
+<div style="position:absolute;top:1625;left:191"><nobr>point  of  view  this  work  focuses  on  the  interface  between  the  Fuzzy  Rule  Based</nobr></div>
+<div style="position:absolute;top:1642;left:191"><nobr>Systems and  Mathematical Programming models and methods, to analyze how the</nobr></div>
+<div style="position:absolute;top:1659;left:191"><nobr>methodology associated to these Fuzzy Rule Based Systems can be applied to solve</nobr></div>
+<div style="position:absolute;top:1676;left:191"><nobr>the concrete case of conventional KP.</nobr></div>
+<div style="position:absolute;top:1703;left:191"><nobr>In essence, and roughly speaking, the easiest KP is addressed as to fill up a <b style="color:black;background-color:#ff9999">knapsack</b></nobr></div>
+<div style="position:absolute;top:1720;left:191"><nobr>by  choosing  from  among  various  possible  objects  those  which  will  provide  a</nobr></div>
+<div style="position:absolute;top:1737;left:191"><nobr>maximum profit, in some sense which is to be specified, and provided that there is</nobr></div>
+<div style="position:absolute;top:1754;left:191"><nobr>some  pre-established  capacity  limitation  on  the  <b style="color:black;background-color:#ff9999">knapsack</b>.  This  apparently  easy</nobr></div>
+<div style="position:absolute;top:1771;left:191"><nobr>problem is NP-hard, [3], what means that there is not any known algorithm solving</nobr></div>
+<div style="position:absolute;top:1789;left:191"><nobr>it in a polynomial time. Under these circumstances using approximate algorithms or</nobr></div>
+<div style="position:absolute;top:1806;left:191"><nobr>heuristics  is  usually  quite  convenient  as  they  permit  to  obtain  solutions  that,</nobr></div>
+<div style="position:absolute;top:1823;left:191"><nobr>although not the optimal ones, are near the former optimal solutions. But to face the</nobr></div>
+<div style="position:absolute;top:1841;left:191"><nobr>KP  solution,  it  also  may  be  an  alternative  approach,  for  NP-hard  problems  in</nobr></div>
+<div style="position:absolute;top:1858;left:191"><nobr>general  but  or course  for  the  KP in particular, to  consider  the definition  of fuzzy</nobr></div>
+<div style="position:absolute;top:1875;left:191"><nobr>termination criteria (fuzzy rule based) on the exact and known algorithms solving</nobr></div>
+<div style="position:absolute;top:1892;left:191"><nobr>those problems.</nobr></div>
+<div style="position:absolute;top:1919;left:191"><nobr>Classically the stop criteria fix the conditions for terminating the iterative procedure</nobr></div>
+<div style="position:absolute;top:1936;left:191"><nobr>of an algorithm, and they are established from  the theoretic characteristics of the</nobr></div>
+<div style="position:absolute;top:1953;left:191"><nobr>problem, the nature of the solution which is searched for, and  the type of algorithm</nobr></div>
+<div style="position:absolute;top:1970;left:191"><nobr>being used, which definitely states a reference set and it stops when the termination</nobr></div>
+<div style="position:absolute;top:1987;left:191"><nobr>criterion is verified.</nobr></div>
+<div style="position:absolute;top:2014;left:191"><nobr>To make flexible the exact algorithms, by introducing fuzzy rule based termination</nobr></div>
+<div style="position:absolute;top:2031;left:191"><nobr>criteria,  assumes  to  consider  that  the  reference  set  is  a  fuzzy  set,  what  therefore</nobr></div>
+<div style="position:absolute;top:2048;left:191"><nobr>means to fix the fuzzy termination criterion directly depending on the membership</nobr></div>
+<div style="position:absolute;top:2066;left:191"><nobr>degree  of  the  elements  in  that  fuzzy  set.  These  fuzzy  termination  criteria  were</nobr></div>
+<div style="position:absolute;top:2083;left:191"><nobr>presented  for  first  time  under  the  general  framework  provided  by  Mathematical</nobr></div>
+<div style="position:absolute;top:2100;left:191"><nobr>Programming  in  [5],  and  then  developed  in  [1]  for  the  particular  case  of  Linear</nobr></div>
+<div style="position:absolute;top:2117;left:191"><nobr>Programming, i.e., for the Simplex algorithm. In [6] the results obtained in [1] and</nobr></div>
+<div style="position:absolute;top:2135;left:191"><nobr>[5]  were  generalized by  using nonlinear  membership  functions.  Also  in  [6]  fuzzy</nobr></div>
+<div style="position:absolute;top:2152;left:191"><nobr>termination  criteria  for  Karmarkar’s  algorithm  were  studied  and  a  variety  of</nobr></div>
+<div style="position:absolute;top:2169;left:191"><nobr>applications analyzed.</nobr></div>
+<div style="position:absolute;top:2195;left:191"><nobr>As it is known in the exact algorithms for the KP the termination criteria vary from</nobr></div>
+<div style="position:absolute;top:2212;left:191"><nobr>an algorithm to another. By introducing these fuzzy criteria however this diversity of</nobr></div>
+<div style="position:absolute;top:2230;left:191"><nobr>conventional  termination  criteria  is  uniformed.  Consequently  in  the  next  section</nobr></div>
+<div style="position:absolute;top:2247;left:191"><nobr>some exact algorithms solving the KP as well as another to obtain upper bounds for</nobr></div>
+<div style="position:absolute;top:2264;left:191"><nobr>this problem are outlined and remembered. In section 3 fuzzy termination criteria are</nobr></div>
+<div style="position:absolute;top:2281;left:191"><nobr>described  in  depth.  Then  the  algorithms  described  in  the  previous  section  are</nobr></div>
+<div style="position:absolute;top:2299;left:191"><nobr>coherently  reformulated  to  obtain  the  corresponding  new  heuristics  algorithms</nobr></div>
+<div style="position:absolute;top:2316;left:191"><nobr>which  approximately  will  solve  the  KP.  In  the  last  section  the  efficiency  of  the</nobr></div>
+<div style="position:absolute;top:2333;left:191"><nobr>heuristics obtained  is  tested by  solving  some  numerical  examples. The  results  are</nobr></div>
+<div style="position:absolute;top:2351;left:191"><nobr>compared  with  those  ones  provided  by  conventional  algorithms  also  solving  KP.</nobr></div>
+<div style="position:absolute;top:2368;left:191"><nobr>Finally some conclusions are pointed out.</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:2701;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=3><b>Page 3</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2766;left:166"><nobr><i>Fuzzy Termination Criteria in <b style="color:black;background-color:#ff9999">Knapsack</b> Problem Algorithms        </i></nobr></div>
+<div style="position:absolute;top:2766;left:685"><nobr>91</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:2818;left:166"><nobr><b>2  Algorithms solving the <b style="color:black;background-color:#ff9999">Knapsack</b> Problem</b></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2848;left:166"><nobr>Let first remarked again that from among all the large variety of possible KP which</nobr></div>
+<div style="position:absolute;top:2865;left:166"><nobr>can be addressed, we will focus here on the 0-1 KP, which can be mathematically</nobr></div>
+<div style="position:absolute;top:2883;left:166"><nobr>formulated by numbering the objects from 1 to n and introducing a vector of binary</nobr></div>
+<div style="position:absolute;top:2901;left:166"><nobr>variables x</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:2908;left:235"><nobr>j</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2901;left:247"><nobr>(j∈J={1,...,n}) such that x</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:2908;left:413"><nobr>j</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2901;left:419"><nobr>= 1 if object j is selected to be introduced in</nobr></div>
+<div style="position:absolute;top:2918;left:166"><nobr>the <b style="color:black;background-color:#ff9999">knapsack</b>, and x</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:2926;left:291"><nobr>j</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2918;left:300"><nobr>= 0 otherwise. Then if p</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:2926;left:454"><nobr>j</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2918;left:461"><nobr>is the benefit, or cost, of selecting the</nobr></div>
+<div style="position:absolute;top:2936;left:166"><nobr>object j, w</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:2943;left:234"><nobr>j</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2936;left:242"><nobr>its size, or weight, and c the capacity of the <b style="color:black;background-color:#ff9999">knapsack</b>, the problem will</nobr></div>
+<div style="position:absolute;top:2953;left:166"><nobr>be to select, from among all the binary vectors x verifying the constraint of capacity</nobr></div>
+<div style="position:absolute;top:2970;left:166"><nobr>the one which maximizes (alternatively minimizes if the p</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:2977;left:544"><nobr>j</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:2970;left:553"><nobr>are costs) the objective</nobr></div>
+<div style="position:absolute;top:2987;left:166"><nobr>function defined by the benefits, that is, the problem is stated as follows</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:18px;font-family:Times">
+<div style="position:absolute;top:3008;left:539"><nobr>{ }</nobr></div>
+</span></font>
+<font size=4 face="Times"><span style="font-size:22px;font-family:Times">
+<div style="position:absolute;top:3004;left:359"><nobr>{</nobr></div>
+<div style="position:absolute;top:3004;left:595"><nobr>}</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:3015;left:634"><nobr>)1(</nobr></div>
+<div style="position:absolute;top:3015;left:568"><nobr>,</nobr></div>
+<div style="position:absolute;top:3015;left:556"><nobr>1,</nobr></div>
+<div style="position:absolute;top:3015;left:546"><nobr>0</nobr></div>
+<div style="position:absolute;top:3015;left:509"><nobr>;</nobr></div>
+<div style="position:absolute;top:3015;left:429"><nobr>:</nobr></div>
+<div style="position:absolute;top:3015;left:588"><nobr><i>J</i></nobr></div>
+<div style="position:absolute;top:3015;left:574"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:3015;left:517"><nobr><i>x</i></nobr></div>
+<div style="position:absolute;top:3015;left:503"><nobr><i>c</i></nobr></div>
+<div style="position:absolute;top:3015;left:480"><nobr><i>x</i></nobr></div>
+<div style="position:absolute;top:3015;left:464"><nobr><i>w</i></nobr></div>
+<div style="position:absolute;top:3015;left:415"><nobr><i>x</i></nobr></div>
+<div style="position:absolute;top:3015;left:400"><nobr><i>p</i></nobr></div>
+<div style="position:absolute;top:3015;left:328"><nobr><i>Max</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:10px;font-family:Times">
+<div style="position:absolute;top:3021;left:525"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:3020;left:456"><nobr><i>J</i></nobr></div>
+<div style="position:absolute;top:3020;left:444"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:3021;left:489"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:3021;left:475"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:3020;left:390"><nobr><i>J</i></nobr></div>
+<div style="position:absolute;top:3020;left:378"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:3021;left:423"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:3021;left:409"><nobr><i>j</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:3014;left:578"><nobr>∈</nobr></div>
+<div style="position:absolute;top:3014;left:530"><nobr>∈</nobr></div>
+<div style="position:absolute;top:3014;left:495"><nobr>≤</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:10px;font-family:Times">
+<div style="position:absolute;top:3016;left:432"><nobr>∑</nobr></div>
+<div style="position:absolute;top:3019;left:447"><nobr>∈</nobr></div>
+<div style="position:absolute;top:3016;left:367"><nobr>∑</nobr></div>
+<div style="position:absolute;top:3019;left:382"><nobr>∈</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:3047;left:166"><nobr>In the following it will be assumed that the objects are ordered in such a way that</nobr></div>
+<div style="position:absolute;top:3065;left:166"><nobr>one verifies</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:3103;left:480"><nobr><i>.</i></nobr></div>
+<div style="position:absolute;top:3115;left:462"><nobr><i>w</i></nobr></div>
+<div style="position:absolute;top:3093;left:464"><nobr><i>p</i></nobr></div>
+<div style="position:absolute;top:3103;left:439"><nobr><i>...</i></nobr></div>
+<div style="position:absolute;top:3115;left:411"><nobr><i>w</i></nobr></div>
+<div style="position:absolute;top:3093;left:413"><nobr><i>p</i></nobr></div>
+<div style="position:absolute;top:3115;left:383"><nobr><i>w</i></nobr></div>
+<div style="position:absolute;top:3093;left:384"><nobr><i>p</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:3120;left:471"><nobr><i>n</i></nobr></div>
+<div style="position:absolute;top:3101;left:471"><nobr><i>n</i></nobr></div>
+<div style="position:absolute;top:3120;left:421"><nobr><i>2</i></nobr></div>
+<div style="position:absolute;top:3101;left:420"><nobr><i>2</i></nobr></div>
+<div style="position:absolute;top:3120;left:391"><nobr><i>1</i></nobr></div>
+<div style="position:absolute;top:3101;left:391"><nobr><i>1</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:3102;left:450"><nobr>≥</nobr></div>
+<div style="position:absolute;top:3102;left:429"><nobr>≥</nobr></div>
+<div style="position:absolute;top:3102;left:400"><nobr>≥</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:3101;left:623"><nobr>(2)</nobr></div>
+<div style="position:absolute;top:3142;left:166"><nobr>and the objective function of the KP, that is, the objective function in (1) will be</nobr></div>
+<div style="position:absolute;top:3159;left:166"><nobr>denoted by z(KP)</nobr></div>
+<div style="position:absolute;top:3185;left:166"><nobr><b>2.1. Dantzig’s upper bound</b></nobr></div>
+<div style="position:absolute;top:3213;left:166"><nobr>A upper bound U for (1) is such that z(KP) ≤ U. There exist several algorithms for</nobr></div>
+<div style="position:absolute;top:3230;left:166"><nobr>determining upper bounds [3]. For the sake of easiness here we will use Dantzig’s</nobr></div>
+<div style="position:absolute;top:3247;left:166"><nobr>upper bound, which can be obtained from the linear programming relaxation of (1),</nobr></div>
+<div style="position:absolute;top:3266;left:166"><nobr>C(KP), that is from the continuous KP derived from (1) when x</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:3273;left:575"><nobr>j</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:3264;left:583"><nobr>∈ [0,1], instead of</nobr></div>
+<div style="position:absolute;top:3284;left:166"><nobr>x</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:3291;left:174"><nobr>j</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:3283;left:188"><nobr>∈{0,1},  j∈J.  When  the  objects  are  ordered  according  to  (2),  they  are</nobr></div>
+<div style="position:absolute;top:3301;left:166"><nobr>consecutively inserted in the <b style="color:black;background-color:#ff9999">knapsack</b> until the first object, s, which does not fit it is</nobr></div>
+<div style="position:absolute;top:3319;left:166"><nobr>found. This object is called “critical object” and it may be defined as</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:10px;font-family:Times">
+<div style="position:absolute;top:3350;left:513"><nobr>)3</nobr></div>
+<div style="position:absolute;top:3350;left:502"><nobr>(</nobr></div>
+<div style="position:absolute;top:3350;left:370"><nobr>min </nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:6px;font-family:Times">
+<div style="position:absolute;top:3366;left:420"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:10px;font-family:Times">
+<div style="position:absolute;top:3362;left:458"><nobr>   </nobr></div>
+<div style="position:absolute;top:3351;left:458"><nobr>   </nobr></div>
+<div style="position:absolute;top:3340;left:458"><nobr>   </nobr></div>
+<div style="position:absolute;top:3362;left:393"><nobr>   </nobr></div>
+<div style="position:absolute;top:3351;left:393"><nobr>   </nobr></div>
+<div style="position:absolute;top:3340;left:393"><nobr>   </nobr></div>
+<div style="position:absolute;top:3348;left:441"><nobr>&gt;</nobr></div>
+<div style="position:absolute;top:3348;left:359"><nobr>=</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:13px;font-family:Times">
+<div style="position:absolute;top:3347;left:413"><nobr>∑</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:6px;font-family:Times">
+<div style="position:absolute;top:3365;left:416"><nobr>=</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:10px;font-family:Times">
+<div style="position:absolute;top:3350;left:452"><nobr><i>c</i></nobr></div>
+<div style="position:absolute;top:3350;left:426"><nobr><i>w</i></nobr></div>
+<div style="position:absolute;top:3350;left:402"><nobr><i>j:</i></nobr></div>
+<div style="position:absolute;top:3350;left:350"><nobr><i>s</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:6px;font-family:Times">
+<div style="position:absolute;top:3341;left:418"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:3366;left:413"><nobr><i>i</i></nobr></div>
+<div style="position:absolute;top:3357;left:434"><nobr><i>i</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:3380;left:166"><nobr>Dantzig’s bound is computed from this critical object as,</nobr></div>
+<div style="position:absolute;top:3489;left:166"><nobr>where, as usual     <i>x</i>    denotes the largest integer not greater than x.</nobr></div>
+<div style="position:absolute;top:3515;left:166"><nobr><b>2.2. Exact algorithms</b></nobr></div>
+<div style="position:absolute;top:3541;left:166"><nobr>As said, there exist several algorithms solving the KP. In [3] a good revision of them</nobr></div>
+<div style="position:absolute;top:3558;left:166"><nobr>can  be  found.  Apart  from  the  well  known  greedy  algorithms,  the  most  relevant</nobr></div>
+<div style="position:absolute;top:3575;left:166"><nobr>methods solving the KP are those based upon either  Branch and Bound or Dynamic</nobr></div>
+<div style="position:absolute;top:3593;left:166"><nobr>Programming approach. This is the main reason why in this paper, for illustrating</nobr></div>
+<div style="position:absolute;top:3610;left:166"><nobr>the use of the proposed fuzzy termination criteria, we have focused on a) <b style="color:black;background-color:#ffff66">Horowitz</b>-</nobr></div>
+<div style="position:absolute;top:3627;left:166"><nobr><b style="color:black;background-color:#a0ffff">Sahni</b> algorithm, Branch and Bound based, and b) another Dynamic  Programming</nobr></div>
+<div style="position:absolute;top:3645;left:166"><nobr>based algorithm, which in the following will be briefly described.</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:14px;font-family:Times">
+<div style="position:absolute;top:3419;left:392"><nobr>   </nobr></div>
+<div style="position:absolute;top:3419;left:458"><nobr>   </nobr></div>
+<div style="position:absolute;top:3419;left:540"><nobr>   </nobr></div>
+<div style="position:absolute;top:3419;left:596"><nobr>   </nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:3447;left:647"><nobr>)5</nobr></div>
+<div style="position:absolute;top:3447;left:635"><nobr>(</nobr></div>
+<div style="position:absolute;top:3421;left:647"><nobr>)4</nobr></div>
+<div style="position:absolute;top:3421;left:634"><nobr>(</nobr></div>
+<div style="position:absolute;top:3421;left:600"><nobr>,</nobr></div>
+<div style="position:absolute;top:3421;left:448"><nobr>))</nobr></div>
+<div style="position:absolute;top:3421;left:419"><nobr>(</nobr></div>
+<div style="position:absolute;top:3421;left:404"><nobr>(</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:3445;left:486"><nobr>1</nobr></div>
+<div style="position:absolute;top:3456;left:487"><nobr>1</nobr></div>
+<div style="position:absolute;top:3418;left:501"><nobr>1</nobr></div>
+<div style="position:absolute;top:3429;left:502"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:14px;font-family:Times">
+<div style="position:absolute;top:3445;left:463"><nobr>∑</nobr></div>
+<div style="position:absolute;top:3419;left:478"><nobr>∑</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:3444;left:481"><nobr>−</nobr></div>
+<div style="position:absolute;top:3455;left:482"><nobr>=</nobr></div>
+<div style="position:absolute;top:3418;left:496"><nobr>−</nobr></div>
+<div style="position:absolute;top:3429;left:497"><nobr>=</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:3446;left:453"><nobr>−</nobr></div>
+<div style="position:absolute;top:3446;left:432"><nobr>=</nobr></div>
+<div style="position:absolute;top:3420;left:529"><nobr>+</nobr></div>
+<div style="position:absolute;top:3420;left:467"><nobr>=</nobr></div>
+<div style="position:absolute;top:3420;left:380"><nobr>=</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:3445;left:477"><nobr><i>s</i></nobr></div>
+<div style="position:absolute;top:3456;left:478"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:3455;left:506"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:3428;left:589"><nobr><i>s</i></nobr></div>
+<div style="position:absolute;top:3428;left:565"><nobr><i>s</i></nobr></div>
+<div style="position:absolute;top:3418;left:492"><nobr><i>s</i></nobr></div>
+<div style="position:absolute;top:3429;left:493"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:3428;left:521"><nobr><i>j</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:3447;left:494"><nobr><i>w</i></nobr></div>
+<div style="position:absolute;top:3447;left:443"><nobr><i>c</i></nobr></div>
+<div style="position:absolute;top:3447;left:420"><nobr><i>c</i></nobr></div>
+<div style="position:absolute;top:3421;left:579"><nobr><i>w</i></nobr></div>
+<div style="position:absolute;top:3421;left:556"><nobr><i>p</i></nobr></div>
+<div style="position:absolute;top:3421;left:544"><nobr><i>c</i></nobr></div>
+<div style="position:absolute;top:3421;left:510"><nobr><i>p</i></nobr></div>
+<div style="position:absolute;top:3421;left:425"><nobr><i>PM</i></nobr></div>
+<div style="position:absolute;top:3421;left:408"><nobr><i>C</i></nobr></div>
+<div style="position:absolute;top:3421;left:397"><nobr><i>z</i></nobr></div>
+<div style="position:absolute;top:3421;left:364"><nobr><i>U</i></nobr></div>
+</span></font>
+
+<div style="position:absolute;top:3964;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=4><b>Page 4</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4029;left:191"><nobr>92</nobr></div>
+<div style="position:absolute;top:4029;left:555"><nobr><i>J.L. Verdegay &amp; E. Vergara</i></nobr></div>
+<div style="position:absolute;top:4081;left:191"><nobr><b>2.2.1. <b style="color:black;background-color:#ffff66">Horowitz</b>-<b style="color:black;background-color:#a0ffff">Sahni</b> algorithm</b></nobr></div>
+<div style="position:absolute;top:4108;left:191"><nobr>This  is  an  algorithm  which  effectively  improves  the  first  Branch  and  Bound</nobr></div>
+<div style="position:absolute;top:4125;left:191"><nobr>approach  for  the  exact  solution  of  KP,  formerly  presented  by  P.  Kolesar  in  the</nobr></div>
+<div style="position:absolute;top:4142;left:191"><nobr>sixties,  and  basically  follows  a  depth-first  methodology  by  means  of  which,</nobr></div>
+<div style="position:absolute;top:4160;left:191"><nobr>provided that the objects are sorted as in (2):</nobr></div>
+<div style="position:absolute;top:4186;left:191"><nobr>1) by  the  branching  scheme at each  node,  selects  the  not-yet-fixed object j  such</nobr></div>
+<div style="position:absolute;top:4203;left:218"><nobr>that  has  the  maximum  benefit  per  unit  weight.  Then  creates  two  descendent</nobr></div>
+<div style="position:absolute;top:4220;left:218"><nobr>nodes by fixing x</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4227;left:328"><nobr>j</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4220;left:335"><nobr>equal to 1 and 0, respectively;</nobr></div>
+<div style="position:absolute;top:4247;left:191"><nobr>2) the search follows then from the node associated with the insertion of the object</nobr></div>
+<div style="position:absolute;top:4264;left:218"><nobr>j (x</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4271;left:240"><nobr>j</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4264;left:243"><nobr>=1), what basically is a greedy strategy.</nobr></div>
+<div style="position:absolute;top:4290;left:191"><nobr>The algorithm progress by doing forward moves and backtracking ones. By the first</nobr></div>
+<div style="position:absolute;top:4307;left:191"><nobr>moves the largest set of new consecutive objects are inserted in the current solution.</nobr></div>
+<div style="position:absolute;top:4324;left:191"><nobr>By means of the second moves is possible to delete the last inserted object of the</nobr></div>
+<div style="position:absolute;top:4342;left:191"><nobr>current solution. Each time in which a forward move is completed, the upper bound</nobr></div>
+<div style="position:absolute;top:4359;left:191"><nobr>is  computed  and  compared  with  the  best  value  obtained  until  that  moment  The</nobr></div>
+<div style="position:absolute;top:4376;left:191"><nobr>terminating criterion here is that the algorithm stops when no further backtracking</nobr></div>
+<div style="position:absolute;top:4394;left:191"><nobr>can be performed.</nobr></div>
+<div style="position:absolute;top:4446;left:191"><nobr><b>2.2.2. Elimination of states algorithm</b></nobr></div>
+<div style="position:absolute;top:4472;left:191"><nobr>From the Dynamic Programming point of view the natural <b style="color:black;background-color:#99ff99">decomposition</b> of a KP</nobr></div>
+<div style="position:absolute;top:4491;left:191"><nobr>will be obtained by considering the sub-problems KP(m,c</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4489;left:557"><nobr>I</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4491;left:560"><nobr>), with m (1≤m≤n) objects</nobr></div>
+<div style="position:absolute;top:4509;left:191"><nobr>and a capacity c</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4507;left:293"><nobr>I</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4509;left:300"><nobr>, 0≤ c</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4507;left:336"><nobr>I</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4508;left:343"><nobr>≤c. Let f</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4516;left:397"><nobr>m</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4509;left:405"><nobr>(c</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4507;left:417"><nobr>I</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4509;left:421"><nobr>) the optimal solution value of KP(m,c</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4507;left:663"><nobr>I</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4509;left:667"><nobr>),</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:4566;left:402"><nobr>{ }</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:4572;left:496"><nobr>.</nobr></div>
+<div style="position:absolute;top:4572;left:464"><nobr>,...,</nobr></div>
+<div style="position:absolute;top:4572;left:458"><nobr>1</nobr></div>
+<div style="position:absolute;top:4572;left:428"><nobr>,</nobr></div>
+<div style="position:absolute;top:4572;left:417"><nobr>1,</nobr></div>
+<div style="position:absolute;top:4572;left:407"><nobr>0</nobr></div>
+<div style="position:absolute;top:4541;left:605"><nobr>)6</nobr></div>
+<div style="position:absolute;top:4541;left:592"><nobr>(</nobr></div>
+<div style="position:absolute;top:4541;left:462"><nobr>:</nobr></div>
+<div style="position:absolute;top:4541;left:349"><nobr>)</nobr></div>
+<div style="position:absolute;top:4541;left:327"><nobr>(</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4558;left:481"><nobr>1</nobr></div>
+<div style="position:absolute;top:4558;left:419"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:4572;left:486"><nobr><i>m</i></nobr></div>
+<div style="position:absolute;top:4572;left:438"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:4572;left:371"><nobr><i>x</i></nobr></div>
+<div style="position:absolute;top:4572;left:340"><nobr><i>con</i></nobr></div>
+<div style="position:absolute;top:4541;left:537"><nobr><i>c</i></nobr></div>
+<div style="position:absolute;top:4541;left:505"><nobr><i>x</i></nobr></div>
+<div style="position:absolute;top:4541;left:486"><nobr><i>w</i></nobr></div>
+<div style="position:absolute;top:4541;left:443"><nobr><i>x</i></nobr></div>
+<div style="position:absolute;top:4541;left:427"><nobr><i>p</i></nobr></div>
+<div style="position:absolute;top:4541;left:370"><nobr><i>max</i></nobr></div>
+<div style="position:absolute;top:4541;left:332"><nobr><i>c</i></nobr></div>
+<div style="position:absolute;top:4541;left:310"><nobr><i>f</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4580;left:381"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:4538;left:546"><nobr><i>I</i></nobr></div>
+<div style="position:absolute;top:4532;left:473"><nobr><i>m</i></nobr></div>
+<div style="position:absolute;top:4558;left:471"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:4548;left:515"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:4548;left:499"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:4532;left:412"><nobr><i>m</i></nobr></div>
+<div style="position:absolute;top:4558;left:410"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:4548;left:453"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:4548;left:438"><nobr><i>j</i></nobr></div>
+<div style="position:absolute;top:4538;left:341"><nobr><i>I</i></nobr></div>
+<div style="position:absolute;top:4548;left:317"><nobr><i>m</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:4571;left:447"><nobr>=</nobr></div>
+<div style="position:absolute;top:4571;left:389"><nobr>∈</nobr></div>
+<div style="position:absolute;top:4551;left:553"><nobr>   </nobr></div>
+<div style="position:absolute;top:4555;left:553"><nobr>   </nobr></div>
+<div style="position:absolute;top:4531;left:553"><nobr>   </nobr></div>
+<div style="position:absolute;top:4542;left:553"><nobr>   </nobr></div>
+<div style="position:absolute;top:4529;left:553"><nobr>   </nobr></div>
+<div style="position:absolute;top:4551;left:400"><nobr>   </nobr></div>
+<div style="position:absolute;top:4555;left:400"><nobr>   </nobr></div>
+<div style="position:absolute;top:4531;left:400"><nobr>   </nobr></div>
+<div style="position:absolute;top:4542;left:400"><nobr>   </nobr></div>
+<div style="position:absolute;top:4529;left:400"><nobr>   </nobr></div>
+<div style="position:absolute;top:4540;left:524"><nobr>≤</nobr></div>
+<div style="position:absolute;top:4540;left:358"><nobr>=</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:14px;font-family:Times">
+<div style="position:absolute;top:4539;left:470"><nobr>∑</nobr></div>
+<div style="position:absolute;top:4539;left:409"><nobr>∑</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4557;left:475"><nobr>=</nobr></div>
+<div style="position:absolute;top:4557;left:414"><nobr>=</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4603;left:191"><nobr>To solve the KP by Dynamic  Programming  this  technique  considers  n  stages  (the</nobr></div>
+<div style="position:absolute;top:4620;left:191"><nobr>number of possible objects to be selected) and computes, at each stage, the values</nobr></div>
+<div style="position:absolute;top:4637;left:191"><nobr>f</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4645;left:197"><nobr>m</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4637;left:204"><nobr>(c</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4635;left:217"><nobr>I</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4637;left:220"><nobr>) of (6) by using the classical recursion way,</nobr></div>
+</span></font>
+<font size=4 face="Times"><span style="font-size:20px;font-family:Times">
+<div style="position:absolute;top:4688;left:396"><nobr>(</nobr></div>
+<div style="position:absolute;top:4688;left:553"><nobr>)</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:10px;font-family:Times">
+<div style="position:absolute;top:4722;left:458"><nobr><i>c</i></nobr></div>
+<div style="position:absolute;top:4722;left:425"><nobr><i>w</i></nobr></div>
+<div style="position:absolute;top:4722;left:397"><nobr><i>c</i></nobr></div>
+<div style="position:absolute;top:4722;left:360"><nobr><i>para</i></nobr></div>
+<div style="position:absolute;top:4700;left:538"><nobr><i>p</i></nobr></div>
+<div style="position:absolute;top:4700;left:503"><nobr><i>w</i></nobr></div>
+<div style="position:absolute;top:4700;left:479"><nobr><i>c</i></nobr></div>
+<div style="position:absolute;top:4700;left:453"><nobr><i>f</i></nobr></div>
+<div style="position:absolute;top:4700;left:427"><nobr><i>c</i></nobr></div>
+<div style="position:absolute;top:4700;left:402"><nobr><i>f</i></nobr></div>
+<div style="position:absolute;top:4700;left:374"><nobr><i>max</i></nobr></div>
+<div style="position:absolute;top:4678;left:402"><nobr><i>c</i></nobr></div>
+<div style="position:absolute;top:4678;left:377"><nobr><i>f</i></nobr></div>
+<div style="position:absolute;top:4688;left:336"><nobr><i>c</i></nobr></div>
+<div style="position:absolute;top:4688;left:320"><nobr><i>f</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:6px;font-family:Times">
+<div style="position:absolute;top:4729;left:433"><nobr><i>m</i></nobr></div>
+<div style="position:absolute;top:4720;left:404"><nobr><i>I</i></nobr></div>
+<div style="position:absolute;top:4706;left:545"><nobr><i>m</i></nobr></div>
+<div style="position:absolute;top:4706;left:512"><nobr><i>m</i></nobr></div>
+<div style="position:absolute;top:4697;left:485"><nobr><i>I</i></nobr></div>
+<div style="position:absolute;top:4706;left:458"><nobr><i>m</i></nobr></div>
+<div style="position:absolute;top:4697;left:434"><nobr><i>I</i></nobr></div>
+<div style="position:absolute;top:4706;left:406"><nobr><i>m</i></nobr></div>
+<div style="position:absolute;top:4676;left:409"><nobr><i>I</i></nobr></div>
+<div style="position:absolute;top:4685;left:381"><nobr><i>m</i></nobr></div>
+<div style="position:absolute;top:4686;left:343"><nobr><i>I</i></nobr></div>
+<div style="position:absolute;top:4694;left:324"><nobr><i>m</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:10px;font-family:Times">
+<div style="position:absolute;top:4722;left:440"><nobr>,...,</nobr></div>
+<div style="position:absolute;top:4688;left:596"><nobr>)7</nobr></div>
+<div style="position:absolute;top:4688;left:585"><nobr>(</nobr></div>
+<div style="position:absolute;top:4700;left:555"><nobr>,</nobr></div>
+<div style="position:absolute;top:4700;left:519"><nobr>)</nobr></div>
+<div style="position:absolute;top:4700;left:474"><nobr>(</nobr></div>
+<div style="position:absolute;top:4700;left:440"><nobr>),</nobr></div>
+<div style="position:absolute;top:4700;left:423"><nobr>(</nobr></div>
+<div style="position:absolute;top:4678;left:414"><nobr>)</nobr></div>
+<div style="position:absolute;top:4678;left:398"><nobr>(</nobr></div>
+<div style="position:absolute;top:4688;left:348"><nobr>)</nobr></div>
+<div style="position:absolute;top:4688;left:332"><nobr>(</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:6px;font-family:Times">
+<div style="position:absolute;top:4706;left:469"><nobr>1</nobr></div>
+<div style="position:absolute;top:4706;left:418"><nobr>1</nobr></div>
+<div style="position:absolute;top:4685;left:393"><nobr>1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:10px;font-family:Times">
+<div style="position:absolute;top:4721;left:413"><nobr>=</nobr></div>
+<div style="position:absolute;top:4698;left:368"><nobr>   </nobr></div>
+<div style="position:absolute;top:4702;left:368"><nobr>   </nobr></div>
+<div style="position:absolute;top:4679;left:368"><nobr>   </nobr></div>
+<div style="position:absolute;top:4688;left:368"><nobr>   </nobr></div>
+<div style="position:absolute;top:4675;left:368"><nobr>   </nobr></div>
+<div style="position:absolute;top:4698;left:526"><nobr>+</nobr></div>
+<div style="position:absolute;top:4698;left:493"><nobr>−</nobr></div>
+<div style="position:absolute;top:4686;left:357"><nobr>=</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:6px;font-family:Times">
+<div style="position:absolute;top:4706;left:465"><nobr>−</nobr></div>
+<div style="position:absolute;top:4706;left:413"><nobr>−</nobr></div>
+<div style="position:absolute;top:4684;left:388"><nobr>−</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4749;left:191"><nobr>Feasible  solutions  associated  to  f</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4756;left:415"><nobr>m</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4749;left:423"><nobr>(c</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4747;left:435"><nobr>I</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4749;left:439"><nobr>)  values  are  called  states,  and  the  optimal</nobr></div>
+<div style="position:absolute;top:4766;left:191"><nobr>solution  of  the  problem  is  therefore  the  state  associated  to  f</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4774;left:594"><nobr>n</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4766;left:599"><nobr>(c).  The  number  of</nobr></div>
+<div style="position:absolute;top:4784;left:191"><nobr>states in each stage, as in [2] has been pointed out, may be reduced by eliminating</nobr></div>
+<div style="position:absolute;top:4801;left:191"><nobr>those states which  will not modify at  any  extent the  optimal  states determination.</nobr></div>
+<div style="position:absolute;top:4818;left:191"><nobr>These  states  are called  dominated  states.  The  subsequent  algorithm  computes  and</nobr></div>
+<div style="position:absolute;top:4835;left:191"><nobr>reserves in each step the nondominated states. These states are used as input values</nobr></div>
+<div style="position:absolute;top:4853;left:191"><nobr>in order to find the states of the next stage. Although, as it is patent, he termination</nobr></div>
+<div style="position:absolute;top:4870;left:191"><nobr>criterion of this algorithm is not specified in a concrete way, the process will end</nobr></div>
+<div style="position:absolute;top:4887;left:191"><nobr>when the state f</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:4894;left:291"><nobr>n</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:4887;left:296"><nobr>(c) is reached.</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:5227;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=5><b>Page 5</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5292;left:166"><nobr><i>Fuzzy Termination Criteria in <b style="color:black;background-color:#ff9999">Knapsack</b> Problem Algorithms        </i></nobr></div>
+<div style="position:absolute;top:5292;left:685"><nobr>93</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:5344;left:166"><nobr><b>3  Fuzzy termination criteria for KP solution algorithms</b></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5374;left:166"><nobr>As  in  many  other  NP-hard  problems,  KP  often  accept  as  optimal  solutions  good</nobr></div>
+<div style="position:absolute;top:5391;left:166"><nobr>solutions, which, although they are not the best ones, they are good enough in some</nobr></div>
+<div style="position:absolute;top:5409;left:166"><nobr>sense.  To  find  these  kind  of  good  enough  solutions,  using heuristic  algorithms  is</nobr></div>
+<div style="position:absolute;top:5426;left:166"><nobr>very appropriated. The alternative way here proposed however assumes to flexible,</nobr></div>
+<div style="position:absolute;top:5443;left:166"><nobr>to soft, the exact algorithms at hand, and to solve the particular problem considered</nobr></div>
+<div style="position:absolute;top:5461;left:166"><nobr>by  introducing  fuzzy  termination  criteria,  which  finally  provide  a  new  class  of</nobr></div>
+<div style="position:absolute;top:5478;left:166"><nobr>heuristic rule-based algorithms.</nobr></div>
+<div style="position:absolute;top:5504;left:166"><nobr>To illustrate this approach let consider a KP formulated as in (1), and let assume an</nobr></div>
+<div style="position:absolute;top:5521;left:166"><nobr>appropriate  dimension  of  it  as  to  guarantee  that  will  be  not  possible  to  find  its</nobr></div>
+<div style="position:absolute;top:5539;left:166"><nobr>optimal solution in a reasonable time that is, we are supposing that the number of</nobr></div>
+<div style="position:absolute;top:5556;left:166"><nobr>objects is extremely large. In this context two facts are patent:</nobr></div>
+<div style="position:absolute;top:5582;left:166"><nobr>a) Not any solution can be acceptable.</nobr></div>
+<div style="position:absolute;top:5608;left:166"><nobr>b) The  decision-maker,  the  problem-solver  always  will  have  an  imprecise  idea</nobr></div>
+<div style="position:absolute;top:5625;left:193"><nobr>(meant as a vague notion) on the range in which (s)he  will be able to accept a</nobr></div>
+<div style="position:absolute;top:5643;left:193"><nobr>final value. This imprecise nature is very suitable to be  represented by means of</nobr></div>
+<div style="position:absolute;top:5660;left:193"><nobr>a  fuzzy  set,  instead  of  an  interval,  as  often  the  decision-maker  is  very</nobr></div>
+<div style="position:absolute;top:5677;left:193"><nobr>comfortable in expressing his(her) wishes on the values to be accepted if (s)he</nobr></div>
+<div style="position:absolute;top:5694;left:193"><nobr>can  also  express  their  corresponding  satisfaction  degrees,  what  in  essence</nobr></div>
+<div style="position:absolute;top:5712;left:193"><nobr>means  that  comfortability  on  the  final  values  to  be  accepted  is  a  matter  of</nobr></div>
+<div style="position:absolute;top:5729;left:193"><nobr>degree.</nobr></div>
+<div style="position:absolute;top:5755;left:166"><nobr>Coherently  let  us  assume  that  the  fuzzy  set  representing  the  proposed  decision-</nobr></div>
+<div style="position:absolute;top:5773;left:166"><nobr>maker’s satisfaction on the final value to be accepted as solution is given by means</nobr></div>
+<div style="position:absolute;top:5790;left:166"><nobr>of the following membership function</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:5841;left:533"><nobr>)8</nobr></div>
+<div style="position:absolute;top:5841;left:522"><nobr>(</nobr></div>
+<div style="position:absolute;top:5855;left:492"><nobr>.</nobr></div>
+<div style="position:absolute;top:5855;left:396"><nobr>)</nobr></div>
+<div style="position:absolute;top:5855;left:387"><nobr>(</nobr></div>
+<div style="position:absolute;top:5827;left:460"><nobr>,</nobr></div>
+<div style="position:absolute;top:5827;left:377"><nobr>0</nobr></div>
+<div style="position:absolute;top:5841;left:350"><nobr>)</nobr></div>
+<div style="position:absolute;top:5841;left:338"><nobr>(</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:5862;left:486"><nobr>0</nobr></div>
+<div style="position:absolute;top:5862;left:434"><nobr>0</nobr></div>
+<div style="position:absolute;top:5834;left:454"><nobr>0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:5854;left:370"><nobr>   </nobr></div>
+<div style="position:absolute;top:5858;left:370"><nobr>   </nobr></div>
+<div style="position:absolute;top:5832;left:370"><nobr>   </nobr></div>
+<div style="position:absolute;top:5843;left:370"><nobr>   </nobr></div>
+<div style="position:absolute;top:5827;left:370"><nobr>   </nobr></div>
+<div style="position:absolute;top:5854;left:465"><nobr>≤</nobr></div>
+<div style="position:absolute;top:5854;left:443"><nobr>≤</nobr></div>
+<div style="position:absolute;top:5826;left:436"><nobr>&lt;</nobr></div>
+<div style="position:absolute;top:5840;left:358"><nobr>=</nobr></div>
+<div style="position:absolute;top:5855;left:475"><nobr><i>U</i></nobr></div>
+<div style="position:absolute;top:5855;left:455"><nobr><i>z</i></nobr></div>
+<div style="position:absolute;top:5855;left:427"><nobr><i>L</i></nobr></div>
+<div style="position:absolute;top:5855;left:391"><nobr><i>t</i></nobr></div>
+<div style="position:absolute;top:5855;left:379"><nobr><i>f</i></nobr></div>
+<div style="position:absolute;top:5827;left:447"><nobr><i>L</i></nobr></div>
+<div style="position:absolute;top:5827;left:426"><nobr><i>z</i></nobr></div>
+<div style="position:absolute;top:5841;left:344"><nobr><i>z</i></nobr></div>
+<div style="position:absolute;top:5840;left:329"><nobr>µ</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5893;left:166"><nobr>where <i>f</i>(.) is a non decreasing and continuos function,  [0,1] valued and L</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:5901;left:647"><nobr>0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5893;left:657"><nobr>and U</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:5901;left:696"><nobr>0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5911;left:166"><nobr>are bounds, lower and upper respectively, for the optimal value <i>z</i>* corresponding to</nobr></div>
+<div style="position:absolute;top:5929;left:166"><nobr>the optimal solution, that is, L</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:5936;left:356"><nobr>0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5928;left:365"><nobr>≤ z* ≤ U</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:5936;left:420"><nobr>0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:5929;left:426"><nobr>.</nobr></div>
+<div style="position:absolute;top:5955;left:166"><nobr>In general these  bounds should be  provided  by  the  decision-maker,  as  (s)he  is  in</nobr></div>
+<div style="position:absolute;top:5973;left:166"><nobr>charge of defining this acceptability concept. But when the problem has a very high</nobr></div>
+<div style="position:absolute;top:5990;left:166"><nobr>dimensionality, as here we are supposing, we need to assume the decision-maker’s</nobr></div>
+<div style="position:absolute;top:6007;left:166"><nobr>impossibility to precise these data. In such a case very good substitutes of the former</nobr></div>
+<div style="position:absolute;top:6024;left:166"><nobr>vales  L</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:6032;left:215"><nobr>0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6024;left:228"><nobr>and  U</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:6032;left:269"><nobr>0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6024;left:282"><nobr>can  be  the  optimal  solution  provided  by  any  greedy  algorithm</nobr></div>
+<div style="position:absolute;top:6041;left:166"><nobr>applied to (1), for L</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:6049;left:292"><nobr>0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6041;left:297"><nobr>, and the Dantzig’s bound for U</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:6049;left:498"><nobr>0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6041;left:503"><nobr>. Using these two values in (8),</nobr></div>
+<div style="position:absolute;top:6059;left:166"><nobr>the definition of the membership function may be straightforward obtained.</nobr></div>
+<div style="position:absolute;top:6085;left:166"><nobr>Consequently,  under  this  assumptions  on bounds  and  membership  function,  if  the</nobr></div>
+<div style="position:absolute;top:6102;left:166"><nobr>decision-maker  is  to  accept  a  feasible  solution  with  a  value  z  which  has  a</nobr></div>
+<div style="position:absolute;top:6121;left:166"><nobr>membership degree greater than or equal to α ∈(0,1), the stop criterion is:</nobr></div>
+<div style="position:absolute;top:6156;left:378"><nobr><i>f</i>(<i>z</i>) ≥ α</nobr></div>
+<div style="position:absolute;top:6156;left:450"><nobr>or  <i>z </i>≥ <i>f </i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:6154;left:515"><nobr>-1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6156;left:524"><nobr>(α)  </nobr></div>
+<div style="position:absolute;top:6156;left:645"><nobr>(9)</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:6490;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=6><b>Page 6</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6555;left:191"><nobr>94</nobr></div>
+<div style="position:absolute;top:6555;left:555"><nobr><i>J.L. Verdegay &amp; E. Vergara</i></nobr></div>
+<div style="position:absolute;top:6607;left:191"><nobr>When this termination criterion is introduced in the algorithms here considered, they</nobr></div>
+<div style="position:absolute;top:6625;left:191"><nobr>are  flexibled  in  such  a  way  that the computing  process  can  be  stopped  when  the</nobr></div>
+<div style="position:absolute;top:6642;left:191"><nobr>condition (9) is satisfied.</nobr></div>
+<div style="position:absolute;top:6661;left:191"><nobr>Provided  that the  acceptation degree  α has  been  fixed,  there are  two  possibilities</nobr></div>
+<div style="position:absolute;top:6678;left:191"><nobr>around the optimal value z*:</nobr></div>
+<div style="position:absolute;top:6705;left:191"><nobr>a) It is greater than  <i>f</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:6703;left:337"><nobr>-1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6705;left:346"><nobr>(α). Then we can obtain an acceptable solution,</nobr></div>
+<div style="position:absolute;top:6733;left:191"><nobr>b) It is lower than or equal to <i>f </i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:6731;left:392"><nobr>-1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6733;left:401"><nobr>(α). In this case the termination criterion makes not</nobr></div>
+<div style="position:absolute;top:6750;left:213"><nobr>sense  because  the  process  never  will  end.  This  is  the  reason  why  the  exact</nobr></div>
+<div style="position:absolute;top:6767;left:213"><nobr>termination criteria must be maintained, giving thus a subsidiary character to the</nobr></div>
+<div style="position:absolute;top:6784;left:213"><nobr>fuzzy termination criterion.</nobr></div>
+<div style="position:absolute;top:6810;left:191"><nobr>One  way  to  reduce  the  possibility  of  situations  like  b)  above  is  to  use,  as</nobr></div>
+<div style="position:absolute;top:6828;left:191"><nobr>membership function (8), a concave function, as in such a case</nobr></div>
+<div style="position:absolute;top:6855;left:417"><nobr><i>h</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:6853;left:425"><nobr>-1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6855;left:433"><nobr>(α)<i>&lt;f </i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:6853;left:473"><nobr>-1</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:6855;left:481"><nobr>(α)</nobr></div>
+<div style="position:absolute;top:6881;left:191"><nobr>for any function <i>h </i>concave.</nobr></div>
+<div style="position:absolute;top:6908;left:191"><nobr>A possible concave function which can be used in the definition of the membership</nobr></div>
+<div style="position:absolute;top:6925;left:191"><nobr>function (8) may be the following:</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:6966;left:540"><nobr>)</nobr></div>
+<div style="position:absolute;top:6966;left:524"><nobr>10</nobr></div>
+<div style="position:absolute;top:6966;left:520"><nobr>(</nobr></div>
+<div style="position:absolute;top:6966;left:394"><nobr>)</nobr></div>
+<div style="position:absolute;top:6966;left:383"><nobr>(</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:6984;left:476"><nobr>0</nobr></div>
+<div style="position:absolute;top:6984;left:442"><nobr>0</nobr></div>
+<div style="position:absolute;top:6964;left:468"><nobr>0</nobr></div>
+<div style="position:absolute;top:6969;left:418"><nobr><i>n</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:6977;left:467"><nobr><i>L</i></nobr></div>
+<div style="position:absolute;top:6977;left:429"><nobr><i>U</i></nobr></div>
+<div style="position:absolute;top:6957;left:459"><nobr><i>L</i></nobr></div>
+<div style="position:absolute;top:6957;left:437"><nobr><i>t</i></nobr></div>
+<div style="position:absolute;top:6966;left:389"><nobr><i>t</i></nobr></div>
+<div style="position:absolute;top:6966;left:375"><nobr><i>f</i></nobr></div>
+<div style="position:absolute;top:6976;left:454"><nobr>−</nobr></div>
+<div style="position:absolute;top:6956;left:446"><nobr>−</nobr></div>
+<div style="position:absolute;top:6965;left:404"><nobr>=</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:7008;left:191"><nobr>with <i>n</i>&gt;1. Then (9) becomes to:</nobr></div>
+<div style="position:absolute;top:7039;left:549"><nobr>)</nobr></div>
+<div style="position:absolute;top:7039;left:536"><nobr>11</nobr></div>
+<div style="position:absolute;top:7039;left:532"><nobr>(</nobr></div>
+<div style="position:absolute;top:7039;left:467"><nobr>)</nobr></div>
+<div style="position:absolute;top:7039;left:416"><nobr>(</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:8px;font-family:Times">
+<div style="position:absolute;top:7047;left:460"><nobr>0</nobr></div>
+<div style="position:absolute;top:7047;left:431"><nobr>0</nobr></div>
+<div style="position:absolute;top:7047;left:395"><nobr>0</nobr></div>
+<div style="position:absolute;top:7037;left:481"><nobr><i>n</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:7039;left:453"><nobr><i>L</i></nobr></div>
+<div style="position:absolute;top:7039;left:420"><nobr><i>U</i></nobr></div>
+<div style="position:absolute;top:7039;left:384"><nobr><i>U</i></nobr></div>
+<div style="position:absolute;top:7039;left:364"><nobr><i>z</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:13px;font-family:Times">
+<div style="position:absolute;top:7037;left:470"><nobr>α</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:7038;left:441"><nobr>−</nobr></div>
+<div style="position:absolute;top:7038;left:405"><nobr>+</nobr></div>
+<div style="position:absolute;top:7038;left:374"><nobr>≥</nobr></div>
+<div style="position:absolute;top:7078;left:191"><nobr>To clarify the process, and as an illustration, in the following  we  will  modify the</nobr></div>
+<div style="position:absolute;top:7095;left:191"><nobr>termination criteria of the two algorithms presented in the above section</nobr></div>
+<div style="position:absolute;top:7148;left:191"><nobr><b>3.1 New termination criterion for the <b style="color:black;background-color:#ffff66">Horowitz</b>-<b style="color:black;background-color:#a0ffff">Sahni</b> algorithm</b></nobr></div>
+<div style="position:absolute;top:7174;left:191"><nobr>In  the  <b style="color:black;background-color:#ffff66">Horowitz</b>-<b style="color:black;background-color:#a0ffff">Sahni</b>  algorithm  the  stopping  criterion  is  stated  as  to  stop  the</nobr></div>
+<div style="position:absolute;top:7191;left:191"><nobr>process  when  there  are  not  any  backtracking  possibility.  When  the  algorithm  is</nobr></div>
+<div style="position:absolute;top:7209;left:191"><nobr>softened,  besides  of  maintain  this  criterion,  the  condition  (9)  is  also  introduced.</nobr></div>
+<div style="position:absolute;top:7226;left:191"><nobr>Thus, with this additional termination criterion the algorithm will analyze each time</nobr></div>
+<div style="position:absolute;top:7243;left:191"><nobr>that a new solution is obtained whether or not the corresponding value satisfies the</nobr></div>
+<div style="position:absolute;top:7260;left:191"><nobr>condition  (9).  In  the case  of  a  positive  response,  the  process  stops  providing  the</nobr></div>
+<div style="position:absolute;top:7278;left:191"><nobr>corresponding acceptable solution.</nobr></div>
+<div style="position:absolute;top:7330;left:191"><nobr><b>3.2 New termination criterion for the elimination states algorithm</b></nobr></div>
+<div style="position:absolute;top:7356;left:191"><nobr>As said,  in  this  algorithm  the  termination  criterion  assumes  tat  the  process  stops</nobr></div>
+<div style="position:absolute;top:7374;left:191"><nobr>when  the  state  with  the  value  <i>f</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:7381;left:406"><nobr><i>n</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:7374;left:411"><nobr>(<i>c</i>)  is  obtained.  According  to  this  criterion  the</nobr></div>
+<div style="position:absolute;top:7391;left:191"><nobr>process will be active until the last state in the last step, although the exact solution</nobr></div>
+<div style="position:absolute;top:7408;left:191"><nobr>is  obtained  in  a  previous  step  or  in  a  state  before.  By  introducing  the  fuzzy</nobr></div>
+<div style="position:absolute;top:7425;left:191"><nobr>termination criterion in each step and state, if an acceptable value has been, or not,</nobr></div>
+<div style="position:absolute;top:7443;left:191"><nobr>obtained  will  be  analyzed. In  the case  of  a  positive  response,  the  process  will  be</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:7753;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=7><b>Page 7</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:7818;left:166"><nobr><i>Fuzzy Termination Criteria in <b style="color:black;background-color:#ff9999">Knapsack</b> Problem Algorithms        </i></nobr></div>
+<div style="position:absolute;top:7818;left:685"><nobr>95</nobr></div>
+<div style="position:absolute;top:7870;left:166"><nobr>stopped. As it may result evident, under this criterion there is not any necessity of</nobr></div>
+<div style="position:absolute;top:7888;left:166"><nobr>solving all the steps and all the states.</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:7922;left:166"><nobr><b>4 Experimental results</b></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:7952;left:166"><nobr>In this section e will present the results of the computational experiments carried out</nobr></div>
+<div style="position:absolute;top:7969;left:166"><nobr>with KP of  1.000, 5.000, 10.000 and 50.000 objects, whose values and weights, in</nobr></div>
+<div style="position:absolute;top:7987;left:166"><nobr>all the cases in the interval [1,1000], have been random generated. Moreover in all</nobr></div>
+<div style="position:absolute;top:8004;left:166"><nobr>the problems the capacity of the <b style="color:black;background-color:#ff9999">knapsack</b> is the half-sum of the weights.</nobr></div>
+<div style="position:absolute;top:8030;left:166"><nobr>Let  it  noted  on  the  one  hand  that  for  each  of  the  algorithms  considered  in  the</nobr></div>
+<div style="position:absolute;top:8049;left:166"><nobr>previous section, with fuzzy termination criteria, a membership degree of α = 0.5, α</nobr></div>
+<div style="position:absolute;top:8067;left:166"><nobr>= 0.8 and α = 1, is successively assumed, being evident that the last case (α = 1)</nobr></div>
+<div style="position:absolute;top:8084;left:166"><nobr>corresponds exactly to the classical algorithm with non fuzzy termination criterion.</nobr></div>
+<div style="position:absolute;top:8101;left:166"><nobr>It is also important to remark that in the tables of results below, the error and the</nobr></div>
+<div style="position:absolute;top:8119;left:166"><nobr>execution time are given for each of the above algorithm in section 2, and the error</nobr></div>
+<div style="position:absolute;top:8136;left:166"><nobr>is computed as</nobr></div>
+<div style="position:absolute;top:8162;left:201"><nobr><i>Error = 100 x [(Dantzig Bound) – (Obtained Solution)]/ (Dantzig Bound)</i></nobr></div>
+<div style="position:absolute;top:8188;left:166"><nobr>On  the  other  hand,  in  order  to  compare  the  results  obtained,  and  provided  the</nobr></div>
+<div style="position:absolute;top:8205;left:166"><nobr>approximate  nature  of  the  algorithms  under  analysis,  we  consider  the  <b style="color:black;background-color:#a0ffff">Sahni</b>’s</nobr></div>
+<div style="position:absolute;top:8223;left:166"><nobr>Algorithm  [4],  which  is  a  very  used  and  therefore  known  algorithm  that  runs</nobr></div>
+<div style="position:absolute;top:8240;left:166"><nobr>according to the following greedy scheme: If from among a set of k items M have</nobr></div>
+<div style="position:absolute;top:8257;left:166"><nobr>been  already  introduced  into  the  <b style="color:black;background-color:#ff9999">knapsack</b>,  the  algorithm  tries  to  fill  up  the</nobr></div>
+<div style="position:absolute;top:8274;left:166"><nobr>remaining capacity. To do this action, first all the possible sets M consisting of k</nobr></div>
+<div style="position:absolute;top:8292;left:166"><nobr>elements  to  be  introduced  in  the  <b style="color:black;background-color:#ff9999">knapsack</b>  are  generated.  Then  the  remaining</nobr></div>
+<div style="position:absolute;top:8309;left:166"><nobr>capacity of the <b style="color:black;background-color:#ff9999">knapsack</b> is filled up. Because of obvious reasons this algorithm is</nobr></div>
+<div style="position:absolute;top:8326;left:166"><nobr>often used for k = 1, 2, 3.</nobr></div>
+<div style="position:absolute;top:8353;left:166"><nobr>Let  us  quote,  finally,  that  in  the  fuzzy  termination  criteria  of  the  two  algorithms</nobr></div>
+<div style="position:absolute;top:8370;left:166"><nobr>revised in section 2, about which this last section presents results, it has been used</nobr></div>
+<div style="position:absolute;top:8387;left:166"><nobr>the condition</nobr></div>
+<div style="position:absolute;top:8414;left:374"><nobr><i>z </i>≥ L</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:8422;left:407"><nobr>0 </nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:8414;left:415"><nobr>+(U</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:8422;left:440"><nobr>0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:8414;left:449"><nobr>-L</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:8422;left:464"><nobr>0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:8414;left:469"><nobr>).α</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:8412;left:488"><nobr>4</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:8441;left:166"><nobr>that is, the fuzzy criteria are defined by means of the membership function (8) with</nobr></div>
+<div style="position:absolute;top:8458;left:166"><nobr>the  function  f  being  given  by  (10)  and  n  =  4;  L</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:8465;left:491"><nobr>0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:8458;left:511"><nobr>is  the  corresponding  solution</nobr></div>
+<div style="position:absolute;top:8475;left:166"><nobr>obtained from the basic greedy algorithm, and U</nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:8482;left:472"><nobr>0</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:8475;left:481"><nobr>is the Dantzig’s bound.</nobr></div>
+<div style="position:absolute;top:8501;left:166"><nobr>Table  1  shows  the  results  from  the  experiments  after  using  the  <b style="color:black;background-color:#ffff66">Horowitz</b>-<b style="color:black;background-color:#a0ffff">Sahni</b></nobr></div>
+<div style="position:absolute;top:8519;left:166"><nobr>Algorithm   of  the  section  3  with  the explained  fuzzy  termination  criteria.  In  this</nobr></div>
+<div style="position:absolute;top:8536;left:166"><nobr>table the results that the approximate algorithm of <b style="color:black;background-color:#a0ffff">Sahni</b> provides are also shown.</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:10px;font-family:Times">
+<div style="position:absolute;top:8572;left:285"><nobr><b style="color:black;background-color:#ffff66">Horowitz</b>-<b style="color:black;background-color:#a0ffff">Sahni</b> Algorithm</nobr></div>
+<div style="position:absolute;top:8572;left:501"><nobr><b style="color:black;background-color:#a0ffff">Sahni</b>  Algorithm (approximate)</nobr></div>
+<div style="position:absolute;top:8587;left:248"><nobr>Exact</nobr></div>
+<div style="position:absolute;top:8587;left:339"><nobr>α = 0.5</nobr></div>
+<div style="position:absolute;top:8587;left:425"><nobr>α = 0.8</nobr></div>
+<div style="position:absolute;top:8587;left:530"><nobr>K = 2</nobr></div>
+<div style="position:absolute;top:8587;left:643"><nobr>K =3</nobr></div>
+<div style="position:absolute;top:8586;left:183"><nobr>N</nobr></div>
+<div style="position:absolute;top:8603;left:224"><nobr>error</nobr></div>
+<div style="position:absolute;top:8603;left:278"><nobr>time</nobr></div>
+<div style="position:absolute;top:8603;left:329"><nobr>Error</nobr></div>
+<div style="position:absolute;top:8603;left:373"><nobr>time</nobr></div>
+<div style="position:absolute;top:8603;left:415"><nobr>error</nobr></div>
+<div style="position:absolute;top:8603;left:458"><nobr>time</nobr></div>
+<div style="position:absolute;top:8603;left:505"><nobr>error</nobr></div>
+<div style="position:absolute;top:8603;left:565"><nobr>time</nobr></div>
+<div style="position:absolute;top:8603;left:617"><nobr>error</nobr></div>
+<div style="position:absolute;top:8603;left:669"><nobr>Time</nobr></div>
+<div style="position:absolute;top:8618;left:173"><nobr>1.000</nobr></div>
+<div style="position:absolute;top:8632;left:173"><nobr>5.000</nobr></div>
+<div style="position:absolute;top:8645;left:170"><nobr>10.000</nobr></div>
+<div style="position:absolute;top:8659;left:170"><nobr>50.000</nobr></div>
+<div style="position:absolute;top:8618;left:213"><nobr>.001928</nobr></div>
+<div style="position:absolute;top:8632;left:213"><nobr>.000098</nobr></div>
+<div style="position:absolute;top:8645;left:213"><nobr>.00002</nobr></div>
+<div style="position:absolute;top:8659;left:213"><nobr>.00000</nobr></div>
+<div style="position:absolute;top:8618;left:266"><nobr>.044</nobr></div>
+<div style="position:absolute;top:8632;left:266"><nobr>1.462</nobr></div>
+<div style="position:absolute;top:8645;left:266"><nobr>3.72</nobr></div>
+<div style="position:absolute;top:8659;left:266"><nobr>21.8380</nobr></div>
+<div style="position:absolute;top:8618;left:319"><nobr>.00517</nobr></div>
+<div style="position:absolute;top:8632;left:319"><nobr>.000464</nobr></div>
+<div style="position:absolute;top:8645;left:319"><nobr>.000108</nobr></div>
+<div style="position:absolute;top:8659;left:319"><nobr>.000021</nobr></div>
+<div style="position:absolute;top:8618;left:372"><nobr>.0</nobr></div>
+<div style="position:absolute;top:8632;left:372"><nobr>.0</nobr></div>
+<div style="position:absolute;top:8645;left:372"><nobr>.01</nobr></div>
+<div style="position:absolute;top:8659;left:372"><nobr>.096</nobr></div>
+<div style="position:absolute;top:8618;left:404"><nobr>.003959</nobr></div>
+<div style="position:absolute;top:8632;left:404"><nobr>.000316</nobr></div>
+<div style="position:absolute;top:8645;left:404"><nobr>.000059</nobr></div>
+<div style="position:absolute;top:8659;left:404"><nobr>.000013</nobr></div>
+<div style="position:absolute;top:8618;left:457"><nobr>.0</nobr></div>
+<div style="position:absolute;top:8632;left:457"><nobr>.022</nobr></div>
+<div style="position:absolute;top:8645;left:457"><nobr>.012</nobr></div>
+<div style="position:absolute;top:8659;left:457"><nobr>.136</nobr></div>
+<div style="position:absolute;top:8618;left:489"><nobr>.0032556</nobr></div>
+<div style="position:absolute;top:8632;left:489"><nobr>.000237</nobr></div>
+<div style="position:absolute;top:8645;left:489"><nobr>.000298</nobr></div>
+<div style="position:absolute;top:8659;left:489"><nobr>.000003</nobr></div>
+<div style="position:absolute;top:8618;left:553"><nobr>.11</nobr></div>
+<div style="position:absolute;top:8632;left:553"><nobr>2.538</nobr></div>
+<div style="position:absolute;top:8645;left:553"><nobr>8.802</nobr></div>
+<div style="position:absolute;top:8659;left:553"><nobr>212.476</nobr></div>
+<div style="position:absolute;top:8618;left:606"><nobr>.002471</nobr></div>
+<div style="position:absolute;top:8632;left:606"><nobr>.000168</nobr></div>
+<div style="position:absolute;top:8645;left:606"><nobr>.000272</nobr></div>
+<div style="position:absolute;top:8659;left:606"><nobr>.0</nobr></div>
+<div style="position:absolute;top:8618;left:659"><nobr>.23</nobr></div>
+<div style="position:absolute;top:8632;left:659"><nobr>4.58</nobr></div>
+<div style="position:absolute;top:8645;left:659"><nobr>13.97</nobr></div>
+<div style="position:absolute;top:8659;left:659"><nobr>257.764</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:8691;left:190"><nobr><b>Table 1. </b>Results from the <b style="color:black;background-color:#ffff66">Horowitz</b>-<b style="color:black;background-color:#a0ffff">Sahni</b> Algorithm with fuzzy termination</nobr></div>
+<div style="position:absolute;top:8709;left:407"><nobr>criterion</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:9016;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=8><b>Page 8</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9081;left:191"><nobr>96</nobr></div>
+<div style="position:absolute;top:9081;left:555"><nobr><i>J.L. Verdegay &amp; E. Vergara</i></nobr></div>
+<div style="position:absolute;top:9133;left:191"><nobr>As  it  can  be  seen,  <b style="color:black;background-color:#ffff66">Horowitz</b>-<b style="color:black;background-color:#a0ffff">Sahni</b>  algorithm  with  a  fuzzy  termination  criterion</nobr></div>
+<div style="position:absolute;top:9151;left:191"><nobr>provides results with low errors, and with very short times with respect to both the</nobr></div>
+<div style="position:absolute;top:9168;left:191"><nobr>exact and approximate solutions that <b style="color:black;background-color:#a0ffff">Sahni</b> algorithm reports. This last advantage is</nobr></div>
+<div style="position:absolute;top:9185;left:191"><nobr>much more significative when the number of objects increases.</nobr></div>
+<div style="position:absolute;top:9212;left:191"><nobr>On the other hand Table 2 shows other results from the experiments after using the</nobr></div>
+<div style="position:absolute;top:9229;left:191"><nobr>above Elimination of States algorithm with a fuzzy termination criterion. It is shown</nobr></div>
+<div style="position:absolute;top:9246;left:191"><nobr>as this algorithm provides a better approximation (lower error) with lower times than</nobr></div>
+<div style="position:absolute;top:9263;left:191"><nobr><b style="color:black;background-color:#a0ffff">Sahni</b> algorithm.</nobr></div>
+<div style="position:absolute;top:9290;left:191"><nobr>Results  and  conclusions pointed out  from  Table 1  and Table 2 are  a proof  of the</nobr></div>
+<div style="position:absolute;top:9307;left:191"><nobr>validity of the proposed approach.</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:11px;font-family:Times">
+<div style="position:absolute;top:9343;left:365"><nobr>Elimination of States Algorithm</nobr></div>
+<div style="position:absolute;top:9359;left:298"><nobr>Exact</nobr></div>
+<div style="position:absolute;top:9359;left:416"><nobr>α = 0.5</nobr></div>
+<div style="position:absolute;top:9359;left:554"><nobr>α = 0.8</nobr></div>
+<div style="position:absolute;top:9358;left:218"><nobr>N</nobr></div>
+<div style="position:absolute;top:9377;left:273"><nobr>Error</nobr></div>
+<div style="position:absolute;top:9377;left:332"><nobr>Time</nobr></div>
+<div style="position:absolute;top:9377;left:391"><nobr>error</nobr></div>
+<div style="position:absolute;top:9377;left:456"><nobr>time</nobr></div>
+<div style="position:absolute;top:9377;left:524"><nobr>error</nobr></div>
+<div style="position:absolute;top:9377;left:600"><nobr>time</nobr></div>
+<div style="position:absolute;top:9394;left:208"><nobr>1.000</nobr></div>
+<div style="position:absolute;top:9410;left:208"><nobr>5.000</nobr></div>
+<div style="position:absolute;top:9425;left:205"><nobr>10.000</nobr></div>
+<div style="position:absolute;top:9441;left:205"><nobr>50.000</nobr></div>
+<div style="position:absolute;top:9394;left:265"><nobr>.001928</nobr></div>
+<div style="position:absolute;top:9410;left:265"><nobr>.000098</nobr></div>
+<div style="position:absolute;top:9425;left:269"><nobr>.00002</nobr></div>
+<div style="position:absolute;top:9441;left:282"><nobr>.0</nobr></div>
+<div style="position:absolute;top:9394;left:337"><nobr>.24</nobr></div>
+<div style="position:absolute;top:9410;left:330"><nobr>3.778</nobr></div>
+<div style="position:absolute;top:9425;left:327"><nobr>12.198</nobr></div>
+<div style="position:absolute;top:9441;left:324"><nobr>223.944</nobr></div>
+<div style="position:absolute;top:9394;left:382"><nobr>.004367</nobr></div>
+<div style="position:absolute;top:9410;left:382"><nobr>.000276</nobr></div>
+<div style="position:absolute;top:9425;left:382"><nobr>.000069</nobr></div>
+<div style="position:absolute;top:9441;left:382"><nobr>.000004</nobr></div>
+<div style="position:absolute;top:9394;left:459"><nobr>.19</nobr></div>
+<div style="position:absolute;top:9410;left:452"><nobr>3.076</nobr></div>
+<div style="position:absolute;top:9425;left:449"><nobr>10.182</nobr></div>
+<div style="position:absolute;top:9441;left:446"><nobr>218.350</nobr></div>
+<div style="position:absolute;top:9394;left:518"><nobr>.00382</nobr></div>
+<div style="position:absolute;top:9410;left:515"><nobr>.000247</nobr></div>
+<div style="position:absolute;top:9425;left:515"><nobr>.000029</nobr></div>
+<div style="position:absolute;top:9441;left:515"><nobr>.000003</nobr></div>
+<div style="position:absolute;top:9394;left:600"><nobr>.236</nobr></div>
+<div style="position:absolute;top:9410;left:596"><nobr>3.098</nobr></div>
+<div style="position:absolute;top:9425;left:593"><nobr>10.252</nobr></div>
+<div style="position:absolute;top:9441;left:589"><nobr>218.376</nobr></div>
+<div style="position:absolute;top:9474;left:292"><nobr><b style="color:black;background-color:#a0ffff">Sahni</b> Algorithm (approximate)</nobr></div>
+<div style="position:absolute;top:9491;left:298"><nobr>K = 2</nobr></div>
+<div style="position:absolute;top:9491;left:421"><nobr>K = 3</nobr></div>
+<div style="position:absolute;top:9490;left:218"><nobr>N</nobr></div>
+<div style="position:absolute;top:9508;left:274"><nobr>error</nobr></div>
+<div style="position:absolute;top:9508;left:334"><nobr>time</nobr></div>
+<div style="position:absolute;top:9508;left:391"><nobr>error</nobr></div>
+<div style="position:absolute;top:9508;left:456"><nobr>time</nobr></div>
+<div style="position:absolute;top:9525;left:208"><nobr>1.000</nobr></div>
+<div style="position:absolute;top:9540;left:208"><nobr>5.000</nobr></div>
+<div style="position:absolute;top:9556;left:205"><nobr>10.000</nobr></div>
+<div style="position:absolute;top:9571;left:205"><nobr>50.000</nobr></div>
+<div style="position:absolute;top:9525;left:262"><nobr>.0032556</nobr></div>
+<div style="position:absolute;top:9540;left:265"><nobr>.000237</nobr></div>
+<div style="position:absolute;top:9556;left:265"><nobr>.000298</nobr></div>
+<div style="position:absolute;top:9571;left:265"><nobr>.000003</nobr></div>
+<div style="position:absolute;top:9525;left:337"><nobr>.11</nobr></div>
+<div style="position:absolute;top:9540;left:330"><nobr>2.538</nobr></div>
+<div style="position:absolute;top:9556;left:330"><nobr>8.802</nobr></div>
+<div style="position:absolute;top:9571;left:324"><nobr>212.476</nobr></div>
+<div style="position:absolute;top:9525;left:382"><nobr>.002471</nobr></div>
+<div style="position:absolute;top:9540;left:382"><nobr>.000168</nobr></div>
+<div style="position:absolute;top:9556;left:382"><nobr>.000272</nobr></div>
+<div style="position:absolute;top:9571;left:399"><nobr>.0</nobr></div>
+<div style="position:absolute;top:9525;left:459"><nobr>.23</nobr></div>
+<div style="position:absolute;top:9540;left:456"><nobr>4.58</nobr></div>
+<div style="position:absolute;top:9556;left:452"><nobr>13.97</nobr></div>
+<div style="position:absolute;top:9571;left:446"><nobr>257.764</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9605;left:199"><nobr><b>Table 2. </b>Results from the Elimination of States Algorithm with fuzzy termination</nobr></div>
+<div style="position:absolute;top:9622;left:432"><nobr>criterion</nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:16px;font-family:Times">
+<div style="position:absolute;top:9656;left:191"><nobr><b>5   Conclusions</b></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:9687;left:191"><nobr>From  the  presented  results  one  can  conclude  that  the  incorporation  to  the</nobr></div>
+<div style="position:absolute;top:9704;left:191"><nobr>conventional  (exact)  algorithms  here  considered  of  fuzzy  rule  based  termination</nobr></div>
+<div style="position:absolute;top:9721;left:191"><nobr>criteria  produces  new  procedures  of  solution  that,  in  situations  where  obtaining</nobr></div>
+<div style="position:absolute;top:9738;left:191"><nobr>optimal  solutions  is  a  difficult  or  impossible  task,  permit  to  solve  the  problems</nobr></div>
+<div style="position:absolute;top:9756;left:191"><nobr>according  to  satisfaction  degrees  of  the  decision-maker.  The  generality  and</nobr></div>
+<div style="position:absolute;top:9773;left:191"><nobr>robustness of the methods which eventually could  be derived from the use of the</nobr></div>
+<div style="position:absolute;top:9790;left:191"><nobr>rule based systems, very well tested in a variety of contexts, foresees the adequacy</nobr></div>
+<div style="position:absolute;top:9807;left:191"><nobr>of the approach here described to a great number of situations.</nobr></div>
+<div style="position:absolute;top:9868;left:191"><nobr><b>Acknowledgements</b></nobr></div>
+<div style="position:absolute;top:9894;left:191"><nobr>Second  author  is  indebted  to  the  Spanish  Agency  for  International  Cooperation</nobr></div>
+<div style="position:absolute;top:9912;left:191"><nobr>(AECI)  that  supported  him  by  a  grant  to  study  in  the  Department  of  Computer</nobr></div>
+<div style="position:absolute;top:9929;left:191"><nobr>Science and Artificial Intelligence of University of Granada.</nobr></div>
+</span></font>
+
+<div style="position:absolute;top:10279;left:0"><hr><table border=0 width=100%><tr><td bgcolor=eeeeee align=right><font face=arial,sans-serif><a name=9><b>Page 9</b></a></font></td></tr></table></div><font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:10344;left:166"><nobr><i>Fuzzy Termination Criteria in <b style="color:black;background-color:#ff9999">Knapsack</b> Problem Algorithms        </i></nobr></div>
+<div style="position:absolute;top:10344;left:685"><nobr>97</nobr></div>
+<div style="position:absolute;top:10396;left:166"><nobr><b>References</b></nobr></div>
+<div style="position:absolute;top:10423;left:166"><nobr>[1] F.  Herrera and  J.L.  Verdegay.  Fuzzy  control  rules  in  optimization  problems,</nobr></div>
+<div style="position:absolute;top:10440;left:198"><nobr><i>Scientia Iranica</i>, Vol 3, Nos.1,2,3. (1996) 89-96.</nobr></div>
+<div style="position:absolute;top:10466;left:166"><nobr>[2] E.  <b style="color:black;background-color:#ffff66">Horowitz</b>  and  S.  <b style="color:black;background-color:#a0ffff">Sahni</b>.  Computing  partitions  with  applications  to  the</nobr></div>
+<div style="position:absolute;top:10484;left:198"><nobr><b style="color:black;background-color:#ff9999">knapsack</b> problem, <i>Journal of ACM </i>21 (1974) 277-292.</nobr></div>
+<div style="position:absolute;top:10510;left:166"><nobr>[3]  S. Martello and P. Toth. <i><b style="color:black;background-color:#ff9999">Knapsack</b> Problems</i>, John Wiley and Sons 1990.</nobr></div>
+<div style="position:absolute;top:10536;left:166"><nobr>[4] S.  <b style="color:black;background-color:#a0ffff">Sahni</b>.  Approximate  algorithms  for  the  0-1  <b style="color:black;background-color:#ff9999">knapsack</b>  problem, <i>Journal  of</i></nobr></div>
+<div style="position:absolute;top:10553;left:198"><nobr><i>ACM </i>22 (1975) 115-124.</nobr></div>
+<div style="position:absolute;top:10580;left:166"><nobr>[5] J.L.  Verdegay.  Fuzzy  Optimization:  models,  methods  and  perspectives; <i>6</i></nobr></div>
+</span></font>
+<font size=2 face="Times"><span style="font-size:7px;font-family:Times">
+<div style="position:absolute;top:10578;left:693"><nobr><i>th</i></nobr></div>
+</span></font>
+<font size=3 face="Times"><span style="font-size:12px;font-family:Times">
+<div style="position:absolute;top:10597;left:198"><nobr><i>IFSA-95 World Congress</i>. Sau Paulo - Brazil, 1995, 39-7.</nobr></div>
+<div style="position:absolute;top:10623;left:166"><nobr>[6] E.R. Vergara. New Termination Criteria for Optimization Algorithms, Dept. of</nobr></div>
+<div style="position:absolute;top:10640;left:198"><nobr>Computer  Science  and  Artificial  Intelligence.  University  of  Granada  (Ph.D.),</nobr></div>
+<div style="position:absolute;top:10657;left:198"><nobr>1999 (in spanish).</nobr></div>
+</span></font>
+</body>
+</html>

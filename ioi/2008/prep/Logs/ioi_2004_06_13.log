@@ -1,0 +1,253 @@
+
+Session Start: Sat Jun 12 22:05:27 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+<Swetko> Znachi Vesko si ia reshi na NlogN ama konstantnata mu sloshnost mu iziade tochkite
+<VelinTzanov> Oho, vie ot rano ste tuk? :)
+<Swetko> az i Ivaylo obyrkahme pri dvoichnoto tyrsene 
+* Logging #ioi to 'logs\ioi_2004_06_13.log'
+<Swetko> a Ivan prosto ne se e setil da go pravi
+<Swetko> tova se sluchva chesto - i az deto ot tolkoz vreme znam tez dyrveta na proletnia ne se setih da gi napisha
+<Swetko> a osven tova testovete biaha greshni
+<Prince_of_Dawn> nerazbrah kakwo e naprawil Vesko
+<Swetko> ami reshil si ia
+<Prince_of_Dawn> i kolko tochki ima ?
+<Swetko> ama na 3-4 testa mu vyrveshe za 0.5-0.7 sec
+<Swetko> pri ogranichenie 0.5
+<Swetko> 60-70
+<Swetko> ne pomnia tochno
+* VelinTzanov sets mode: +ooo Prince_of_Dawn Swetko rangel__
+<VelinTzanov> 60 ima
+<Prince_of_Dawn> vsichko e do bojiqta pomosht w opredelen moment.
+<Swetko> a Anev ima 40-50 stoto go e pisla
+<Swetko> ama ne za golemi chisla
+<Swetko> t.e ne do 100 000 000
+<Swetko> a do po malko
+<rangel__> ponqkoga e do preizchisleniq, Borisov :-)
+<Prince_of_Dawn> na Noi w posledniq momen napisah edna ot zadachite i izkarah 80
+<Prince_of_Dawn> inache mojebi nqmashe da sam tuk sega
+<Prince_of_Dawn> a neshtata stanaha za minuti
+<Swetko> aha i az za minuti napisah zadachite :)
+<Swetko> drug vapros kolko tochno minuti
+<Prince_of_Dawn> vchera sedq i gledam traves i ne moga da otkriq che wmesto >= sam napisal == 
+<Prince_of_Dawn> mi 10 min predi kraq zadachata ne raboteshe
+<VelinTzanov> Borisov, na koia zadacha imash 80 be?!
+<Prince_of_Dawn> a ne bqh proverqwal drugite
+<Prince_of_Dawn> tazi s promenliwite
+<Prince_of_Dawn> az nqmam ideq zashto imam 80
+<Prince_of_Dawn> mojeh da imam 0 as well as 100
+<Swetko> ami kak si optimiziral
+* tony` has joined #ioi
+<Swetko> na travers spored vas ima li ednakvi sanduci ili ne
+<Prince_of_Dawn> be tochna e ideqta ma neshto sam obarkal ili znam li?
+<Prince_of_Dawn> ima
+<Swetko> t.e. s ednakvi visochini
+<tony`> zdravejte!
+<Swetko> zdrasti
+<Prince_of_Dawn> daja na 1 test se wijdat
+<Prince_of_Dawn> zdr
+<VelinTzanov> Koi si ti, tony'?
+<Swetko> ami v uslovieto kakvo pish
+<Swetko> e
+<Prince_of_Dawn> Anton
+<tony`> anton
+<VelinTzanov> Iasno. :)
+* tony` is now known as anton_dimitrov
+<VelinTzanov> Shtiah da te kick-na, pomislih te za "nashestvenik" :)
+<Prince_of_Dawn> toi taka hubawo me rasmq kato kaza che shte sam kapitan na 2 otbor 
+* VelinTzanov sets mode: +o anton_dimitrov
+<Prince_of_Dawn> ( a az tohcno bqh slqzal ot parwiq i mi beshe kofti )
+<anton_dimitrov> emi taka si e
+<anton_dimitrov> takav si :)
+<VelinTzanov> Mdaa.. takyv si. :)
+<VelinTzanov> Minalata godina kapitana na vtoria otbor specheli BOI. :)
+<Prince_of_Dawn> ;)
+<Prince_of_Dawn> az za drug paralel pravih
+<Prince_of_Dawn> che ti si 3-ti 2002
+<Prince_of_Dawn> riskow e 2-ri 2003
+<Prince_of_Dawn> i nqkoi trqbwa da stane 1-wi 2004
+<Prince_of_Dawn> ;))))
+<Prince_of_Dawn> ma towa.....
+<Swetko> kapitan li beshe
+<Swetko> sto be
+<Swetko> kato nisto niakoi da stane
+<Swetko> ko mu doide bojiata pomost:)
+* sssa88 has joined #ioi
+<sssa88> dobro utro
+<VelinTzanov> Aaaa, Slavi si e postavil za cel da e 1-vi na IOI 2004.  :)  Ama moje i niakoi ot vas da stane.
+* VelinTzanov sets mode: +o sssa88
+<Prince_of_Dawn> na men slavi na NOI mi kaza che iska da go priemat w sofiiskiq
+<Prince_of_Dawn> ne kaza nishto za IOI i dr.
+<Swetko> toi i minaloto liato tova razpravishe
+<Prince_of_Dawn> :)
+<Swetko> kato biahme vuv Varna
+<Prince_of_Dawn> koe tochno towa koeto az kazah ili Velin
+<Swetko> koeto ti kaza
+<VelinTzanov> Da, Swetko, bez molitvichka niama kak da stane... :)
+<Prince_of_Dawn> ima li tsarkwa blizko do mqstoto kadeto shte e IOI
+* main[] has joined #ioi
+* main[] is now known as main
+* VelinTzanov sets mode: +o main
+<main> nie sme po- neseriozni, a :)
+<Prince_of_Dawn> towa ti li si slavi
+<VelinTzanov> Ne ti triabva cyrkva Borisov. Molitvichka stiga. :)
+<main> az sym, borisoff
+* valo_bg has joined #ioi
+<valo_bg> dobro utro :)
+<Prince_of_Dawn> poznah te po zwuka na djapankite ;)
+<anton_dimitrov> dobro
+<Prince_of_Dawn> dobro da e
+<valo_bg> oshte 1 chakame mai...
+<main> awe dobro... glei prokletoto slynce kak sweti i gadnite pti4ki kak kreshtiat tuka...
+* Kashmir has joined #ioi
+* CS sets mode: +v Kashmir
+<main> ei go na
+<Kashmir> dobro udra
+<Kashmir> dobro udro
+<valo_bg> mdaaaa
+<main> udro
+<main> lol
+<valo_bg> dal Bog dobro :)
+<main> uTro,be, rosti
+* VelinTzanov sets mode: +o Kashmir
+* VelinTzanov sets mode: +o valo_bg
+<Kashmir> krywta o6te ne se e ka4ila w glawata mi
+<main> axa az sym poluzaspal ...
+<rangel__> kak mozhe da vi se spi tolkova kysno? :-)
+<valo_bg> a, kryv!!! za kakvo ti kryv. vajnoto e kafeta da e stignalo :)
+<valo_bg> *kafeto
+<main> xaxa rangele wii swiknaxte da stawate w 6...
+<valo_bg> az po-rano ot 10 ne moga...
+* Swetko has quit IRC (Ping timeout: 180 seconds)
+<Prince_of_Dawn> Veline kakwo prawim ako spre neta?
+<rangel__> molitvichka, Borisov :-)
+<VelinTzanov> Prashate zadachite kato se vyrne net-a.
+<valo_bg> otivash vyv zala i prashtash na 5-tiq chas :)
+<VelinTzanov> Ne, prosto spirash na 5-tia chas i predavash posle.
+<Prince_of_Dawn> w sofiq zalite sa bez flopita
+<VelinTzanov> Razchitam che shte ste chestno.
+<Prince_of_Dawn> slusham
+* Swetko has joined #ioi
+<valo_bg> Prince_of_Dawn: imat pone na server-a floppy, are sega...
+* CS sets mode: +v Swetko
+<main> Prince_of_Dawn: a imate li CD Recorders w sofia?
+* valo_bg sets mode: +o Swetko
+<Swetko> az si mislia che mulchite puk to kakvo bilo
+<main> Swetko: goworilnia!
+<main> lafche :P
+<Prince_of_Dawn> neshto me ebawate a az istinata wi kazwam
+<valo_bg> emi to tolkora rano, kakvo drugo :)
+<Swetko> ne be , diconectna me
+<main> mdaaaa...
+<VelinTzanov> Aide! POchvame
+<main> Swetko: da, widiaxme :)
+<valo_bg> aide
+<Swetko> aide
+<main> mi da po4wame, to se e widialo che sha se zaspiwa nad keyboarda
+<VelinTzanov> http://www.tzanov.com/ioi2004/contest1/
+<main> aaaa ne .doc... uff
+<VelinTzanov> Vreme za vyprosi: 1 chas
+<rangel__> main: i az neshto podobno si pomislih :-)
+<valo_bg> main: nali.... kofti
+<VelinTzanov> Sorry, momcheta, taka sa mi gi dali.
+* IvoRiskov has joined #ioi
+* CS sets mode: +o IvoRiskov
+<valo_bg> kak prashtame i kyde?
+<main> da we openoffice se ebe... ama kakto i da e
+<VelinTzanov> Btw, ne vi e razresheno da govorite s nikogo po vreme na systezanieto.
+<IvoRiskov> kak ste bojci?
+<valo_bg> kak prashtame i kyde?
+<VelinTzanov> Prashtate na men, na Ivo i na Ivan Anev.
+<VelinTzanov> Veche rabotiat, Ivo.
+<IvoRiskov> ok. podranili ste :)
+<valo_bg> i na trimata?
+<VelinTzanov> Da
+<valo_bg> kak beshe email-a na Anev?
+<VelinTzanov> Vsyshtnost tochni sme. Ti si zakysnial malko. :)
+<IvoRiskov> hm pri men e 8:27
+<VelinTzanov> Pri men e :35 sega
+<IvoRiskov> ivan_anev@yahoo.com
+<VelinTzanov> ivan.anev@musala.com mai e po-dobre.
+<valo_bg> ok
+<valo_bg> i pri men e 35
+<IvoRiskov> stiga be. zhiweq 7 min nazad
+<Kashmir> ne6to drugo?
+<VelinTzanov> SYshto Internet i drugi podobni sa zabraneni... to si e za vas da spazvate pravilata de. Kakto vijdate ne vi sledim striktno.,
+<VelinTzanov> Ne se seshtam drugo zasega.
+<IvoRiskov> az se seshtam
+<IvoRiskov> postarajte se do kraq na denq da mi predadete nepredadeni domashni
+<IvoRiskov> ne moga da gi testwam(nqmam net), no da ne se bawim
+<IvoRiskov> towa beshe do moqta grupa
+* Kashmir has quit IRC (Ping timeout: 180 seconds)
+<valo_bg> ogranicheniq na time i memory?
+<valo_bg> i estestveno na kakvo shte se testva?
+<IvoRiskov> ta ponezhe Ivan shte testwa i ne znaem tochno kakwa mu e mahinata
+<IvoRiskov> zatowa po negowo predlozhenie time limit-a e 5s
+<VelinTzanov> Abe 5 sec grubo kazano.
+<VelinTzanov> Gledaite da raboti tam byrzo. :)
+<valo_bg> :)) ok
+<IvoRiskov> za pametta - predpolagam s kolkoto razpolaga PC-to mu
+<main> VelinTzanov: niamame prawo i stari sorsowe da si polzwame, nali :)
+<IvoRiskov> 32 pri wsichki polozheniq trqbwa da ima :)
+* Kashmir has joined #ioi
+* ariend has joined #ioi
+* CS sets mode: +v Kashmir
+<VelinTzanov> Koi e ariend?
+* VelinTzanov sets mode: +o Kashmir
+<Swetko> to ako moshesh slavi
+<VelinTzanov> Slavi, niamate razbira se.
+<Swetko> to ako moshesh slavi...
+<VelinTzanov> Ne, nedeite.
+<main> Swetko: nali :)))
+<VelinTzanov> I da mojete nedeite.
+<VelinTzanov> Ne e "obrazovatelno".
+<Kashmir> wypros: matro6kite ne e zadyljitelno da sa prilepnali, nali?
+<main> VelinTzanov: ariend e bot pusnat ot UniBG mrejata... nz
+* ariend was kicked by VelinTzanov (VelinTzanov)
+<Kashmir> i kolko e pozwolenata pamet i wreme, pak za matro6kite
+<Kashmir> ?
+<VelinTzanov> 32MB, 5 sec
+<VelinTzanov> Ako ne pishe che triabva da sa prilepnali, znachi ne e zadyljitelno.
+<VelinTzanov> Procheti uslovieto prosto.
+<Kashmir> na kolko MHZ?
+<VelinTzanov> Na 66MHz
+<VelinTzanov> :)
+<VelinTzanov> Ne znam na kolko - gledai da vyrvi byrzo tam.
+<Kashmir> dobre
+* Kashmir has quit IRC
+<rangel__> kakvi sa imenata na zadachite i pishem li nqkakvi komentari v nachaloto?
+<VelinTzanov> Imenata na file-ovete - syshtite sa/
+<IvoRiskov> komentari si mislq che ne sa nuzhni, no napishete wse pak
+<rangel__> samo za optimize ima posocheno ime na fajl
+* Kashmir has joined #ioi
+* CS sets mode: +v Kashmir
+<Kashmir> a na opt kolko e wremeto?
+<Kashmir> ???
+<rangel__> vsichki sa po 5 sec
+<Kashmir> 10x
+<valo_bg> hmmm, a kak se trqq da se kazvat exe-tata?
+<valo_bg> t.e. sorsovete?
+<valo_bg> his, mat o opt?
+<VelinTzanov> Da
+* VelinTzanov sets mode: +o Kashmir
+<valo_bg> ok
+<IvoRiskov> hajde momcheta! priqtna rabota. az shte trxgwam
+<valo_bg> 10x
+<valo_bg> hao
+<anton_dimitrov> ok,chao,mersi
+<valo_bg> chao
+<rangel__> a razpolagame li s mynichko poveche ot 32 MB? :-) primerno 33
+* Kashmir has quit IRC (Ping timeout: 180 seconds)
+* IvoRiskov has quit IRC
+<VelinTzanov> Ne
+<rangel__> ok
+<VelinTzanov> Shte se nauchite da se sybirate v 32. :p
+<VelinTzanov> Niama da proveriavam. No ne lyjete - za vashe dobro e.
+<VelinTzanov> Oshte 10 minuti za vyprosi.
+<VelinTzanov> Aide - koito pital pital.
+<VelinTzanov> Sled 4 chasa (malko po-malko) da ste gi pratili.
+<VelinTzanov> Uspeh!
+<VelinTzanov> I chao!
+* Disconnected
+Session Close: Sat Jun 12 23:40:22 2004

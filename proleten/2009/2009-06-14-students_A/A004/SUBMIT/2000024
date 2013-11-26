@@ -1,0 +1,57 @@
+/*
+TASK: leaves
+LANG: C++
+*/
+
+#include <iostream>
+#include <algorithm>
+#include <cstdio>
+
+using namespace std;
+
+int n;
+int A[1000002];
+long long int sum[1000002];
+unsigned long long int dp [1000002];
+unsigned long long int suma;
+int help[64]={0};
+
+void gready1()
+{int i;
+ suma=0;
+ for(i=1;i<n-1;i++) suma+=A[i]*i;
+ suma+=(A[n-1]+A[n])*(n-1);
+}
+
+int main()
+{
+ int i,j;
+ 
+ scanf("%d",&n);
+ for(i=1;i<=n;i++) scanf("%d",&A[i]);
+ sort(A+1,A+n+1,greater<int>());
+ 
+ if(n==2) { cout<<A[1]+A[2]<<endl; return 0; }
+ 
+ sum[n]=A[n];
+ for(i=n-1;i>0;i--) { sum[i]=sum[i+1]+A[i]; dp[i]=LONG_LONG_MAX; }
+ 
+ int pos=0,helpSize;
+ while(help[pos]<n) {help[pos+1]=help[pos]*2+1; pos++;}
+ helpSize=pos;
+ 
+ dp[n]=0; 
+ dp[n-1]=A[n-1]+A[n];
+ for(i=n-2;i>0;i--)
+   {
+    for(j=1;j<helpSize && help[j]<(n-i+1);j++)
+        if(((sum[i]-sum[i+help[j]])*j+dp[i+help[j]]+sum[i+help[j]]*j)<dp[i]) dp[i]=(sum[i]-sum[i+help[j]])*j+dp[i+help[j]]+sum[i+help[j]]*j;     
+   }
+   
+ gready1();
+ 
+ if(dp[1]>suma) dp[1]=suma;   
+ cout<<dp[1]<<endl;
+ 
+ return 0;
+}

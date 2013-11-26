@@ -1,0 +1,64 @@
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+
+int n;
+int a[1 << 17];
+int sum[1 << 17];
+int dp[1 << 10][1 << 10];
+
+void read() {
+	int i;
+	
+	scanf ( "%d" , &n );
+	for (i = 1; i <= n; i++)
+		scanf ( "%d" , &a[i] );
+}
+
+int go ( int l , int r ) {
+	if ( r <= 1000 ) {
+		int &ans = dp[l][r];
+		if ( ans != -1 ) return ans;
+	}
+	
+	if ( l == r ) return 0;
+	int i;
+	int cur; 
+	int idx = -1;
+	int ans = 1 << 30;
+	
+	for (i = l; i < r; i++) {
+		cur = go ( l , i ) + sum[i] - sum[l - 1];
+		cur += go ( i + 1 , r ) + sum[r] - sum[i];
+		
+		if ( cur < ans ) {
+			ans = cur;
+			idx = i;
+		}
+	}
+	
+//	printf ( "%d %d    %d   %d\n" , l , r , ans , idx );
+	
+	if ( r <= 1000 ) 
+		dp[l][r] = ans;
+	return ans;
+}
+
+void solve() {
+	int i;
+	
+	memset ( dp , -1 , sizeof dp );
+	
+	sort ( a + 1 , a + n + 1 );
+	for (i = 1; i <= n; i++)
+		sum[i] = sum[i - 1] + a[i];
+	
+	printf ( "%d\n" , go ( 1 , n ) );
+}
+
+int main() {
+	read();
+	solve();
+	
+	return 0;
+}

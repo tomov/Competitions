@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int n;
+long long int br=1;
+int a[100];
+void rec(int x, int y, int z)
+{
+    int i;
+    if (y==x) { br++; a[x]=n-z; /*for (i=1; i<=x; i++) cout << a[i] << ' '; cout<< endl;*/return; }
+    for (i=a[y-1]; i<=(n-z)/(x-y+1);i++)
+     {
+                   a[y]=i;
+                   rec(x, y+1, z+i);
+     }
+}
+int main()
+{
+    cin >> n;
+    a[0]=1;
+    for (int i=2; i<=n;i++) rec(i, 1, 0);
+    cout << br << '\n';
+    
+    system("pause");
+    return 0;
+}

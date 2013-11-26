@@ -1,0 +1,370 @@
+SRM 307 DIV 1
+500 - ne znae6e unique i istringstream; ne suobrazi double-ite, ne doobmisli kak da proverqva6 dali moje da mine X vagoni za dadenoto vreme (aloo vlaka su6to se dviji), uslovie pri trivialniq slu4ai, WTF is wrong s 6ibanata to4nost?!?!?!?!
+250 - ne obmisli algoritama kakto trqbva
+TCCC 07 Round 1A
+1000 - izmisli dinami4noto...napisa formulata na lista...no re6i 4e ne stava. ooo ti daje uslovieto ne si razbral, mani begi........
+SRM 285 DIV 1
+250 - ne obmisli dobre dinami4noto - kvo pazi, koi sa na4 stoinosti i trivialnite slu4ai, do koi stoinosti da go varti6 i pr
+; 2ri opit - pak osra shit-a...grani4ni slu4ai; a da - gledai kogato dinami4noto ti vzema MIN ot NEIZPOLZVANI STOINOSTI = 0 - po-to4no tam vutre6niq cikul trqq6e da go varti6 ot set-natite stoinosti na predniq red natatuk...
+500 - dobre...samo deto bavno zagrq 4e e const, a ne logn
+SRM 144 DIV 1
+500 - sortira6 descending po 1/n i ascending po name = ascending po n i name, 4eti pak uslovieto - moje pove4e whitespaces...
+SRM 179 DIV 1
+250 - s.SZ-1, continue != break
+600 - kolkoto i o4evidno da e re6enieto, vij dali nqma da e too slow
+SRM 339 DIV 1
+400 - dinami4no rulez; int != double
+SRM 341 DIV 1
+550 - FUCK FUCK FUCK!!!!! globalni i lokalni s 1ni i su6ti imena!!! ; razmeri na masivi; usloviq za BFS (4eti uslovieto); 4istene na stoinosti (za used-a); nepravilno zadadeni grani4ni slu4ai (t=(0,0))
+SRM 345 DIV 1
+500 - game - po4ti kato Nim, prosti4ko re6enie, ma koi da go vidi
+SRM 361 DIV 1
+500 - dobre, samo deto te murze6e da pomisli6 dali ne moje da e i ne4etna duljina
+SRM 363 DIV 1
+250 - gledai long long ili int, ina4e excellent ;)
+500 - pfff...vnimavai kato copy-paste i edit source; trivialniteeeee...; long long (po-to4no ot masiv v 4islo) - fucked up s ograni4enieto na tipa, ma MNOOOOOOOOOOOOOOOOOOOOGO!!!!
+SRM 360 DIV 1
+500 - pri MAX FLOW: pri spisaka na susedite dobavqi i obratnite rebra, ni6to 4e sa 0 - posle stavat >0 !!! 
+SRM 359 DIV 1
+250 - ako 6ansovete sa p0,p1,p2,p3,p4, 6ansa da se izpulnqt 0,1 i 4 i da NE se izpulnqt 2 i 3 = p0*p1*(1-p2)*(1-p3)*p4
+500 - presi4ane na simetrali - sux...; mahane na priblizitelno ednakvi elementi ot set ot ne6to-si - mnogo sux; ponqkoga e po-dobre da broi6 tezi koito NE stavat i da gi izvadi6 ot vsi4ki, vmesto da broi6 teq deto stavat; (ne 4e boklucite do tuk imat ob6to s re6enieto...) geometriite - glavni i malki bukvi i izob6to bukvi - qko oburkvaciqqq; ako moje bez double - super, samo deto kato vdiga6 na kvadrat i na hiperkub izliza ot tipa => long long! ; u4i si matematikata...
+1000 - omg kato sa ti kazali 4e moje da se preebe6 s overflow vij danebi se preebava6 s overflow...a i pak be6e blizo 1viq put
+SRM 364 DIV 1
+1000 - OMG da be6e poglednal parvo neq...
+500 - 8 puti misli, 1n put pi6i...mnogo zle! ...; ...i vse pak dp s mask se vijda ot dale4e po princip
+250 - bravo :)
+SRM 598 DIV 1
+250 - tova, 4e page e do 500000 ne ozn, 4e ne moje da stigne6 do nego ot nqkoi po-golqm page!
+500 - nau4i extended euclidean algorithm, ni6to 4e ne ti trqq tuk ;)
+1000 - uslovieto... i vse pak max flow e qko ne6to za namirane na bitpartie matching, ako est vidi6 4e tova se iska de...; pfff nau4i se da pi6e6 bfs we; ot de ti hrumna da ostava6 po 1na akula ako sa mn ednakvi we 6aran, kat moi6 i bez da gi maha6 kvo sa prai6 na hitar
+SRM 597 DIV 1
+250 - better and better...
+500 - gledai primerite za neqsnotii po uslovieto!!; kak moje be...taka stava pri promenqne na imena na promenlivi; WAAA biva li navsqkude long long i nakraq int ans=ne6to si...bitch
+1000 - hah clock() sometimes helps ;) ina4e mnoo tehni4eski gre6ki, a da be6e se zamislil nad n^2 in the first place
+SRM 232 DIV 1
+250 - AAAA 6ibanite indeksi we idiot!!!!!!!!!!!!!!!!!!!!!! i .SZ vru6ta unsigned!!! baaaaaaaaaaaaaaaaaaa...............................
+TCCC06 Round 2A
+500 - da be6e doobmislil proverkata dali ima 'M' v na4aloto na interval... ba testvai gi teq bozi za 500 we, ne vii6 li 4e gi osira6... a da be6e i osmislil uslvietooo - ne moje da ima 2 vlojeni intervala s razli4ni krai6ta!!!...we ob6to vzeto ZLEEEEE
+SRM 367 DIV 1
+250 - baa kato proverqva6 cifri na long dig pri samoto subirane, vij 4e nakraq moje da dobavi6 i o6te 1na cifra... i q izpusna
+500 - BRAO :)
+1000 - lexicographically...idiot
+SRM 366 DIV 1
+250 - pak izpusna trivialen slu4ai..._!_
+500 - 6to za uligofren...mask < (1<<n) MINUS 1... hem po-malko hem minus 1 bravo bravo pohvalno
+SRM 365 DIV 1
+300 - i%r molq ti seee... ina4e algebra rulz, izpolzvai q ot vr na vr
+500 - pfff ebasi matematikite deba mama mu deeba i apostolova 6to q ne slu6am...
+SRM 368 DIV 1
+250 - sfklgjhopksdfhgjolsdfjkghsdfgjkl[p;dfhklsg[poksdfghjwsnmo[rknbhkopncvbhl;kbhnsdfl;kgnjqer[okhno;[kfajhk;jadfnjkl;gkl'aghdnsdfhllkn;hlk;fnsdghhjnklasfdhkjjhklrtrjkyeiop'[rwqyhkl'njadfgnlgbnsdfgkldfhknlfj;'dhskjl;'k;'jldgjk'k;'dflsgnmlk;xcn'mxkl;cfgnbl'mfgxnhkl'rfbhjkl[jsdf;'[]ghjkadfl;['ghj'sl;dkfjhg;l[k'sfgjh
+kak se proverqva za cikli be putkaaaa...
+500 - uslovie 2 otse4ki da imat ob6ta to4kaaaa...dumb bitch, slu4aq s 1na prava MNOGO go osra! ; 6ibanite slu4ai sus 0levi otse4ki... beeee izob6to FUCK!!!!!
+SRM 356 DIV 1
+250 - adasdasdasdasd 
+OMFGGGGGG OMFG OMFG OMFG OMFG OMFG OMFG OMFG ZA C++ 6336/900 = 7.039 ............................... MOTHER FUCKING COCK SUCKING IDIOTS!!!!!
+=> (int)(x+0.5) ;)
+SRM 145 DIV 1
+250 - baa 100 4asa po nqkuv slu4ai deto daje ne su6testvuva...4eti uslovieto be kreten!
+600 - nulirai masivite; a i kato mesti6 fragmenti ot kod, gledai usloviqta dali o6te trqq da sa su6tite;)
+1000 - uslovieto mama mu stara... USLOVETO MAMA MU STARA!!!!!
+damn 4ovek.........ima6 pravoto naistina da osmislq6 kakvo e uslovieto
+a da...i da promenq6 usloviqta na ciklite kato promenq6 algorituma...
+...................................................
+omg omg omg omg OMG OMG OMG OMG OMG OMG OMG OMGO MDFGOPJSDL;GKJSDFL;KHJSLD;FJHOQIEJGOISEHRJTGONHXF;OWARET;IOGHWIO;HYOILSERHGSDDNGBL;SKDFNHO'QI435HYOWRTHGKL;JZXDFNB,L;XMCNB;OIHGOISRETEHGLSD;FKJGA;DLKGJLAS;DKS....
+nqkoi hora si nulirat masivite kogato trqbva............................................................................................................................a drugi neeeeeeeeee
+SRM 146 DIV 1
+300 - ooooo nedei za 298.08 pts you fucking genius you ;) {}
+600 - haresva6 mi haresva6 mi
+800 - braaaaaaavo weeeee :D samo deto napisa south[west.SZ-1] koeto be6e malko tupo ma...taka e s copy-paste
+SRM 147 DIV 1
+350 - vnimavai s teq while-ove i glei de moi da zacikli 6otooo... => run-vai grani4ni testove!
+500 - Repi(j) ozna4ava 4e varti6 cikul po j
+SRM 148 DIV 1
+450 - Repi(9) zna4i 4e i se varti ot 0 do 8 a ne ot 0 do 9 we prostak!
+SRM 354 DIV 1
+300 - golemina na masiviteeeeeeeeeee; baaa uslovieto za nevalidnost da go be6e poglednal pak...
+500 - da be6e testval prez top coder za SGKILL...ina4e dobre
+SRM 370 DIV 1
+250 - dfgds;gksd;'hksfd;'lhjdkl;'fgshj'sl;fkghjsl;kfgjh'[lksdfjgl;'skdfjh;asdkl'fjgad;'flgjds;l'kfgjdls;kfhjlskdjgl'k;adjgl;sdfjgl;kdsfjgl;ksdfjgld;skfjghl;sdkfjhl;sdfjhl;skfdghjl;kasdfgjl;dksfgjl;sdfkgjsl;dkgjl;sdg.....koi da predpoloji 4e kato pazi6 otno6enieto kato chislitel i znamenatel pootdelno i gi umnojava6 tam i gi razdelq6 na GCD - overflow... a e trqqlo napravo otno6enieto v double
+500 - dsfgm,fgld,asfghak;dsfhgkladflhgklsdfahgkljsdhgkjlsdfhglkjsdfhbjklsdfhgklWSDLKJFGHSDLKFJGHDKASJLFGHKJ;ASDHG;KJSADFHGKLJSDFHGKLJSDFHGKLJSDFHGKLSDFGH MASIVITE WE KRETEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEENNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 2 ZADA4I DA RE6I6 I 2TE DA GI OSERE6 ZA PULNITE GLUPSTI MOTHER FUCKEEEEEEEEEEEEEEEEEEEEEEEERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRJDSFGL;'DSJFKG;'LSDJFHL;DSJKHL;KFSGJHL;DSKJGLSD;KJHL;SDFKJHL;DSKJHL;DFKSGJHL;KWHJROWJOISRBNF;LNBDFL;GHJ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+SRM 369 DIV 1
+250 - zle...ina4e trivialnite slu4ai pak gi osra; a i ima6 pravoto da ne postavq6 NENUJNI usloviq koito samo ti ebavat re6enieto; a i OVERFLOW!!!
+SRM 353 DIV 1
+250 - OKAY :)
+500 - SUPER! samo 4e!!!!!!!!! double1 >= double2 LAPA UI! double1 - double2 >= -EPS e better  (<=EPS obratnoto)
+SRM 352 DIV 1
+250 - bravos ;)
+500 - 6ibaniq dev o4evidno ima problem sus sscanf na long long localna promenliva (ako e globalna np) - tc ne gi ebe, ma da ne se preebe6 pri debugvaneto ;) 
+SRM 351 DIV 1
+250 - B1-=11; S1++ a ne S1+=9...uslovieto; zaciklqneeeeee!!!! i ot kuf zor while kato e if...
+SRM 371 DIV 1
+...challenging SUX _!_...
+500 - kiss kiss KISS KISS KISS!!!!!!!!!!!!!!!!!!!!!!
+SRM 373 DIV 1
+250 - greedy != dp...i kato promenq6 na4alnite values for debugging purposes, posle gi vru6tai pak, nali?
+a i razbira se KISS!!!!!!!!!!!!!!!!
+500 - grani4niq test for fuck's sake; iiii vse pak... double<>+-EPS ponqkoga EBAVA osobeno kogato stava ?s za to4ni smetki, ili za int-ove koito sa stanali double-i
+SRM ne6to si DIV 1
+1000 - pri bfs ima USED masiv!!! ; pri broeneto SU6TO IMA USED MASIV 6toto broi6 po 2 puti nqkoi ne6ta!!! a i gledai ograni4eniqta we punk ass bitch
+SRM 374 DIV 1
+275 - uslovieto we...na 2ro mqsto e unsorted seq a ne stringa...
+500 - good job :)
+SRM 376 DIV 1
+250 - idiot...+| ot krustoputq ne otiva6 v | we... i pak - kato vari na e.g. tests ne ozn 4e 6te vari i na sys tests...
+TCHS 46
+500 - IDIOT IDIOT IDIOT IDIOT!!!!!!! GRANI4NIQ BE!!! baaa ot 4to na 9to mqsto...
+;lakehfgkljsadhfjklghdafkjlghkljasdfghkjladfhgkljadfhkjlghsdafklghklsdfjhg
+TCHS 47
+1000 - IDOOOOOOOOOOOOT!!!!!!!!!!!!!!! kato izmisli6 optimizaciq, osobeno TOLKOVA PROSTA, pri polojenie 4e worst case-a ti e DADEN kvo te eba da q napi6e6 we karuk murzeliv!!!!!!!!!
+SRM 379 DIV 1
+250 - vij kvo stava IN CASE OF TIES you idiot...
+500 - overflooooww!!!!!!! da be6e turil po 1n long long i da si jivee6 jivota be...
+SRM 380 DIV 1
+500 - bsearch rulez, so pomislqi za funkciq deto ti vra6ta DA ili NE tam qsno koga ;)
+SRM 381 DIV 1
+500 - ba ponqkoga e qko da otsee6 kvo info e vajno i da si definira6 state...i posle dp ili bfs..aaa da i MISLI!!! 4e kato maha6 elementi dori i da nesuvpada6ti elementi, na praktika broq razli4ni elementi se zapazva 6toto ne dobavq6 suvpada6ti elementi...idiot
+SRM 382 DIV 1
+250 - sdflfgjldfg baaaa 24234 vlojeni cikala kato tva BFS deto go prai6 N^2 puti moje6 1n put da go naprai6 samo...da ne govorim 4e -1 slu4aq go otarva, idiot!!! ...da ne govorim 4e si osral i konstantite
+500 - nulirvai si masivite pri ciklene be kreten!!! i ponqkoga nqkoi strukturi deto si gi izmislq6 i im se vika GRAPH...
+SRM 383 DIV 1
+250 - greedy works, ama ne ot 1viq put...da be6e pomislil kak da preska4a6 duskite deto te preebavat i to NE s nqkvi DP-ta, sled kato moje prosto da vidi6 danebi dobavenata pe4alba e <0 ...
+500 - dp s maska rulez...pone trugna ot 1viq put (sled kato go pro4ete de :)
+SRM 384 DIV 1
+500 - basi probability-te...pone go shvana i trugna ot 1viq put ;) (baa neska mi varvi..)
+SRM 385 DIV 1
+500 - ba da be6e pomislil malko v/y state-a be 4ovek - pazi6 vs koloni i vs redove dali sa rotated, a ne vseki rotate-nat pos...daje v uslovieto sa ti kazali - 2 rotacii = 0 ebasi... a i dijkstra se spira kogato stigne6 destination-a vuv while-loop-a, a ne pri add-vaneto na state-ovete
+SRM 386 DIV 1
+250 - not bad ;)
+500 - pff basi naglasenoto...qkata raota 4e ~2^30 varvi za ~1 sec na tehnoto wc. su6to i 4e sortira polygon-ite na koit 6te cepi6 to4kite po lice i direktno otrqza vsi4ki sled 666-iq, koeto si e pove4e ot naglaseno, ma nqkoi put moje i da trugne ot 1viq put :)))
+.......
+SRM 387 DIV 1
+500 - nikoga nikoga NIKOGA NIKOGA AMA NIKOGA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NE OTVARQI 1000 POINTER-A V DIV PO VREME NA CONTEST !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! AMA NIKOGAAAA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! KRETEN!!!! baaaa moje6e da ima6 kolko pove4e to4ki.............................................IDIOT TAPANAR GLUPAK LAKUM 6IBAN DA TE EBA V GAZA WEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+.........
+PSDFL;GKHJLK;SDFHJGL;KWDFHJGLK;SDFJHGL;KSDFJH;LKSDFJHL;'KDSFHJLK;DFGSHJG;LSDFKGJHG;LFDKGJGDL;SFKGJKSDL;FKJGSDFLGHJL;KDFSGJDLSFK;GJLD;FSJGL;DSFKGJL;DSFKGJLD;SFGJL;DSFJGDSFL;KSDFHGFLKJSDFHGKLDSFHGLKJSDFHGKLDJSFHGKDSLFJGHKSDLFHGLKDFSHGKLDSFHGKDSJFHGKLSDFGHDKLSFJGH
+kak moje...vidq 4e ne mu raboti re6enieto, izmisli super qkiq test...6to ne si pro4ete parametrite pone da e validen...i biva li 10 sec sled tva da go challenge-ne drug....ti si tup...prost...zaguben.............dumi nqmam.....
+...
+950 - tup da be6e vidql 4e si osral q-to ot suma na geom progresiq we. 132423 4asa debug...
+SRM 378 DIV 1
+500 - tapanar. kak 6te opredeli6 potencialnite koreni na polinom sled kato an=0 ili a0=0 be kuh.....i tva 4e mod 2^64=0 ne ozna4ava 4e mod 2^17 ne e nula su6to - za tva smetai v takuva slu4ai pone v 2-3 additional %MOD-ove, po vazmojnost prosti 4isla...a i
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+(-a)%b != -(a%b)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+SRM 377 DIV 1
+500 - matrix multiplication RULEZ; opitvai da go vijda6 ot vreme na vreme; a i vnimavai s modul aritmetikata i overflow-vaneto
+SRM 349 DIV 1
+250 - slu4aite sa ti mnogo pove4e be punk;;; slu4aite be GLUM!!!
+SRM 348 DIV 1
+250 - ba kato burza6 i trie6 shits, glei da ne trie6 kod deto ti trqbva...a i kak moje da slaga6 d[st][en]=-1 da ti zna4i used sled kato d[st][en] MOJE da e -1 kato normalna stoinost be idiot...
+500 - greedy rules - kato schedule-va6 i othvurlq6 intervals s ograni4en number of overlapping intervals, sort intervalite po end-time-a
+SRM 347 DIV 1
+250 - omggg vij 4e moje da se zasekat samoletite ne samo na kruglo vreme be; i izpolzvai max precision koito moje6; ternary search rulez; 10.9!=1e9 i vnimavai s drebnite laina
+450 - pri ternary search vur6tai min ot l,l1,r1,r (kakto pri bsearch ot l i r)
+sRM 344
+250 - WoW...ne spi! :P i ponqkoga greedy qko vladee
+500 - 6to-gode...samo 4e da se be6e setil 4e po-dobre da cnt[needed]--; kogato go izpolzva6 tva needed a ne kato pita6 s kolko hoda se stiga do nego, sled kato samata rekursiq ne si izpolzva avtomati4no decata v protiven slu4ai (demek 4e tuk tretira6e grani4niq slu4ai razli4no ot ob6tiq); a i careful sus stack overflow - ako si siguren 4e 6te e plitko, moje deep++ na vseki rec i posle deep-- i ako deep>100000 return -1;
+SRM 346 DIV 1
+500 - kato ne moje6 da izmisli6 greedily 1nata 4ast ot algoritama, izmisli drugata (pri polojenie 4e ot sate-a na ednata vednaga ti se opredelq drugata) a.k.a. ako ne znae6 kak leksikografski nai-dobre da sloji6 narastva6tata redica otpred, sloji leksikografski nai-lo6o namalqva6tata redica otzad
+SRM 350 DIV 1
+500 - cikli v oreantiran graph se detectvat sus dfs i 2 used masiva; v oreantiran necikli4en graph kakvoto i da e se namira s DP!!!
+TCHSO 2007 Round 2 Gamma
+1000 - SFGSDFGSDFG {2,4} > {2,3,4} leksikografski be idiot!!! mn qsno 4e trq da gi sravni6, bit maskata ni6to ne ti osigurqva!!!
+...
+ti si idoit be....ti si kreten....kuh..urungutungel ne6tasten...ne moje6 edni 4 prosti usloviq na edna 6ibana prosta igra da implementira6 kato horata be....baaaaaaaaaa...deti se 4e {1,2,3,3,4} pak ima 4 posledovatelni, ni6to 4e razlikite sa 1,1,0,1... mno kuh eee!!!!!! da ne govorim 4e i drugite usloviq be6e osral weeee kvo da ti kaja..... PUTKA!!!!!
+TCHSO 2007 Round 2 Delta
+1000 - O...V...E...R...F..L...O...W!!!!!!!!!!!!!!!!!!!!!!! LONG LONG !!!!!!!!!!!!!
+TCHSO 2007 Round-ovete
+- baaa kopele ne si izmislqi s teq po 500 deto pi6e6 pulnite gluposti deto hi4 ne im vqrva6 deto trugvat ot 1viq put...seriozno careful na online round-a 4eee !!!!
+TCHSO 2007 Round 2 Beta
+1000 - keep it simple stupid...mn qsno 4e ako znae6 koq duma na koi 2 pozicii se presi4a poslednite 2 pozicii moi6 da gi opredeli6 bez problemi, kvo si izmislq6 s razni koordinati i 6ibani smetki
+TCHSO 2007 Round 3 Beta
+500 - not so fast...worst case-a ti bavi... ; PROST BE! kak moje nanovo da stroi6 redicata vseki put sled kato novata se obrazuva kato kum starata se dobavi to4no edno 4islo i pri tova da smqta6 nanovo i indeksite..kude e N^2 kude e N...bravo mom   ;   offff ba nau4i se da obob6tava6 ne6tata i da vijda6 ne6to kato moje da se naprai po-prosto be izrut
+1000 - ba...precision-a suck-va...long double ponqkoga pomaga, ma nevinagi; grani4niq slu4ai -proverqvai nakraq sled bsearch-a izpulneno li ti e uslovieto da ima re6enie! (popravka - pri po4ti ednakvi stoinosti na m=(l+r)/2. zaradi tova floow(+-EPS) se okazva re6ava6to i nakraq moje da izleze 4e krainiq e s lo6 check ma e po4ti raven na turseniq, samo 4e da kajem 4e nqma re6enie, zatova v momenta v koito bsearch-a nameri podhodq6to re6enie kazvame 4e ima i ne pitame pove4e...ili prosto izpolzva6 ans koito se promenq po vr na bsearch-a ako m stava, kato v na4aloto ans=-1.;  +-EPS pri cmp sucks qko; integral i decimal part otdelno - rulez, samo 4e navsqkude trq i 2te da gi smqta6...i pak li toq overflow be...
+TCHSO 2007 ROund 3 Gamma
+BRAO we :)))) samo deto na 1000 - ima6 2 adj list-a, vnimavai v koi push-va6
+TCHSO 2007 ROund 3 Delta
+500 - idiot...grani4niq slu4ai be! ako nqma otgovor kvo, "" li 6te vurne6???
+1000 - 50*50=1024 taka li be kretenqsal idiot takuv.......opa6kite se pravqt pone do 100000 qsno li ti e be!!!
+TcHSO bla bla
+1000 - baa nedei dp ponqkoga da moje da handle-va i max/min raboti v graphi s cikli... (min road with e1>e2 for every pair (e1,e2) of consequent edges)
+1000 - pri ternary search, kogato ba4ka6 s celi 4isla i SI PROVERQVAI GRANICITE BE MALOUMNIK!!!!...ili pone sloji left da e < ot min granica
+1000 - dp is your friend...da, i ne si misli 4e ima hitar na4in da kaje6 za durvo kolko na kuv min broi grupi ot lineini posledovatelnosti ot rebra moje da go cepne6 - po-skoro broi kolko max rebra 6te ostanat v takiva grupi s Dp-nce
+SRM 343 DIV 1
+250 - bravo be izmisli ne6to posle napi6i ne6to drugo...
+500 - l<=5, f<=5, ma v hoda na igrata se seti 4e ediniq moje da obere vsi4ko i 6te ima SGKILL 6ot memorization masivite sa malki; a i kato prai6 memorization s used masiv i ako pravi6 proverkata za used predi grani4nite slu4ai, pri grani4nite slu4ai return r=blabla kapi6?? ina4e dovolen, worked 1st time a si be6e izvrateno :)
+SRM 342 DIV 1
+250 - IDIOT!!!!! gledai za elementarnite gre6ki be...kak moje da pravi6 'a'-tata na nuli i da sort-va6 dumite sled kato na praktika sled vsqka duma izliza 4e ima "aaaaaaaaaaa" i dumite "aa" i "aaaaa" na praktika stavat 1na i su6ta duma...ma koi da misli be!
+SRM 340 DIV 1
+500 - mahai nenujnite parametri na dp-to!!! i grani4nite slu4ai beeee....
+TCO08 Qual 1
+250 - awe pi4...ima6 f(x)=X*probX + max( f(x),ne6to_si )*probM + f(x)*probF
+mi ti idoit li si ili kvo??? ima6 suma na geom progresiq be idiot! ostava samo dali onova s max-a go zema6 ili ne...
+ret=X*probX;
+ret=MAX(
+ne6to_si*probM + ret*(1-probF)    ,
+ret*(1-(probM+probF))
+);
+TCO 2008 Qual 3
+1000 - IDIOT!!!!!!!!!!!! KAK MOJE ZA MATRICA S RAZLI4NI RAZMERI DA Q PI6E6 KATO KVADRATNA!!! i za6to po dqvolite kato vidq 4e e pravougulna sloji samo na edno mqsto M, a navsqkude drugade ostana N!!! ei tapanar ne se nau4i kato edit-va6 source da misli6 kvo o6te trq se promeni we tapak!!!!!
+baaaaaaaaaaaaaaaaaa ti naistina si tup be...................TVA TI RE6AVA6E ZADA4ATA WE MALOUMNIK!!!! DA TI EPA PUTKATA MAINA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+SDFBH;']LJSFL;GKH;LSDFK'GHJL;SDFHKJL;'DKFGHJ;'SRTHJLDFGHJL;KSDFGJHL'KSFGJH'
+[;SDFOH
+]DFGSPH
+DGHJ
+;LSRG
+'HP[IKSFDG'
+HKSF;GL
+HJL;'KSFGHJL;KSFGHJL;SFKGHJL;SFKHGJS;LDKGJL;'SDFGKL;
+MOJE6E DA STANE6 JULT WE MAMUT GROZEN KIORAV!!!!!!!!!!!!!!!!!!!!!
+.......
+........
+.......
+.......
+izvod: TESTVAI!!!!!!!!!!!!!!! I 4ETI SOURCE-A S RAZBIRANE!!!! a ne da si misli6 4e 6tom si go submit-nal na4i si bezsmurten.......................baaa moje6e pove4e ot iskren da ima6 mami4kata mu............
+.........
+.........
+..........
+..........
+.................
+..................
+....................
+.....................
+...........
+...........
+oipdsfjhgkljsdfhgkljsdfhgkljsdfhkljsfghl;ksdfh
+'sfghkl;fdghjk;lfghjgojdfa
+gksd;fhjlksdfgjghl;kdfjg;lsdfjgl;ksdfhj;lkdfjg
+'sdfghl;sdfhgkljdshfgkljhdfsgklhdsfkljghdsflkjghsdlfg
+nau4i se da testva6 we...i da si 4ete6 source-a we....o6te li ne si razbral 4e ne si bezgre6en...4e nikoi ne e bezgre6en...baaaaaaaa............................
+SRM 389 DIV 1
+250 - keep it simple stupid...ima6 suma na drobi deto si ebava maikata na znamenatelq i 4islitelq...mi vmesto da se prai6 na hitar sus otdelni 4islitel i znamenatel napravo ans+=tek; tek*=c/t; i jivota e lesen be...ba da be6e opital parvo tva vmesto prostotiite ti. vse pak e 250...
+500 - ti idiot li si...i&(1<<j) ti vra6ta 10000(2) kak moje da go umnojava6 po ne6to si vse edno o4akva6 da ti vurne 0 ili 1...punk
+SRM 390 DIV 1
+500 - kato ni6to drugo ne vur6i rabota...bsearch + greedy DP su6to go imai naum
+SRM 338 DIV 1
+250 - vnimavai s EPS-ovete...floor(x+1e-7) ponqkoga preebava!; AAAAA!!!!!! ima6 4e ans<=MAX i 4e moje da nqma valid ans...za kvo si izmislq6 GRE6NI conditions za -1 kato moje prosto sled bsearch-a da vidi6 danebi ans>MAX i da izvejda6 -1 togava...idiot!
+SRM 337 DIV 1
+250 - ok...prai6 dp. kato vzema6 MAX ot vseki state, 6to ne gleda6 state-ovete deto v na4aloto gi initialize-va6? i ot kuv zor priema6 4e ima6 karti kato moje vs da sa ti jokeri?? izvod: GRANI4NITE SLU4AI!!!!!!!! i koi ti kaza 4e ne moje6 da slaga6 jokeri bez karta sled tqh...baaaa OSRA SE!!!!
+TCO08 Round 1
+250 - greedy...pf...v4era
+1000 - da se be6e nau4il 4e testovete ne sa gre6ni v topcoder...TI si gre6en i NE SI 4ETE6 USLOVIETO WE!!! bravo we muj ti daje ne si osuznal kuv e algoritama za nomerirane...zle zle zle!
+SRM 336 DIV 1
+500 - LONG LONG!!!!!!! i testvai...pone s golemite primeri....; trie6 elementi ot masiv i posle vra6ta6 indeks ot masiva s IZTRITITE elementi...bravo; i si oglejdai grani4nite slu4ai...kakto i nai-prostitie slu4ai deto moat se izdunat; i izpipvai algoritama!!! bahti naglasenoto...da be6e testval MNOGO
+TCO Round 2
+glupak...predi da submit-va6 vij dali si (LL) navsqkade WE!!!!!! baaaaaaa ima6e 6ans ma pak se preeba da te eba v kretena mu s kreten...
+SRM 335 DIV 1
+550 - ne moje6 da nameri6 vsi4ki sumi na 4islata 1/1,1/2..1/9...bravo naistina pohvalno...TAPAK!!!
+a i double-i kato constanti se pi6at pone do 10tiq znak sled to4kata
+....
+KEEP IT SIMPLE STUPID!!! za kvo ti e izli6no izmerenie na state-a??? osobeno za koeto otidoha tolkova glavoboliq...
+SRM 334 DIV 1
+250 - da si namalq6 const faktora e hubavo ne6to...osobeno kato si govorim za 10!*50*12 nqkak si 10!*10 izglejda po-dobre...
+SRM 390 DIV 1
+500 - ne e kato da go keep-va6 simple...i za nqkvi takiva gadosti kato subirane i delena na obiknoveni drobi si pi6i struct be maloumen
+SRM 331 DIV 1
+500 - segmentation fault! ii WTF!?!?!!!?!?!?!!??! 10*1000^3 varvi za < 0.5 sec worst case?!?!?!! omg i nagodeni slu4ai...
+TCO Round 3
+250 - KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK MOJE TAKUV IDIOT BE!!!!!!!!!!! parvo...int i; for (INT i...){} i posle gleda6 tova i kva mu e stoinostta...TUP TUP TUP TUP TUP TUP TUUUUP!!!! vtoro...kak vzema6 parvite N bita ot 4islo...sus while(A) ?!?!?!?! AAASSSSHHHOOOLLLEEE!!!!!!!!!!!!!! dumi neam... reitinga izlita6e prosto....i pak - TESTVAI na tqhnata ma6ina. pak ima6e razlika v results...fuck
+SRM 325 Div 1
+300 - you IDIOT koga 6te se nau4i6 4e 50*50 = 2500 > 1000 !!!!!!!!!!
+500 - mnogo si tup BE!!! tva 4e input-a ti e ot -1e9 do 1e9 ozna4ava li 4e i otgovora ti e v toq interval we glamur!!!! bahti...
+1000 - ponqkoga dp sus memorization v map raboti, osobeno ako parametrite namalqvat eksponencialno i search space-a si e maluk after all ;)
+SRM 324 DIV 1
+500 - mediana i centar na masite sa 2 razli4ni ne6ta, i kogato trqbva da nameri6 optimalna to4ka za set ot to4ki i ti prili4a na nqkoe ot teq 2te, probvai i 2te
+SRM 323 DIV 1
+250 - pri takiva ad-hocs misli hubavo kvi usloviq kvo ti garantirat! i parvo se proverqva dali ima re6enie izob6to, sled tova dali ne sa nqkolko re6eniqta...osobeno v toq slu4ai
+500 - kak se razviva kvadrat na sbor...kvo e tva skorostta deleno na putq...kak ne se seti da razpi6e6 uravnenieto in the first place??? ee kude ti e matematikata ot 9ti klas be ?!?!?!?!
+ba teq slu4ai gi prospa...i kak moje da ostavi6 vremeto da bude otricatelno be MORON..  a i MATEMATIKA!!!!!!!!!!!!!!!!!!!!!!!!!! PREOBRAZUVANIQ!!!! DOPUSTIMI STOINOSTI!!!!!!!!!
+SRM 322 DIV 1
+1000 - gledai ograni4eniqta be. GLEDAI OGRANI4ENIQTA BE!!! na vsi4ki promelnivi!!! i mn qsno 4e kato ti davat string zna4i e LL
+SRM 321 DIV 1
+500 - kak moje da br[i]+=cnt[i] vmesto br[i]=br[i-1]+cnt[i] beeeeee...
+SRM 318 DIV 1
+500 - total o4akvana suma = SUM of (vuzmojna_suma_i * prob_i) for all independent vuzmojna_suma_i reachable from current node
+SRM 314 DIV 1
+1000 - ne si igrai sus time limit-a!; ternary search + nqkvi qki 6itni i improvizacii varhu po4ti monotonni laina sometimes works i to qko (v TC su6to puskat razni deto na kusmet se se6ta6 da razgleda6 parvite 10^6 ot 10^18 slu4aq, primerno)...we zabelqzvai nqkvi kusmetliiski bluposti; careful sus overflow!!! a i ne pravi nqkvi ne6ta sus slojnost log kato moje da sa sus O(1)
+SRM 312 DIV 1
+500 - TUP SI MA PUTKA zatva testvai i misli!!!!!  i se nau4i kak se pi6e directed connected component..
+1050 - baa dp kato mu pravi6 otdelno parviq red, pri polojenie 4e ans=min/max ot vsi4ko, 6to ne mine6 edin put i parviq red a?
+SRM 392 DIV 1
+1000 - LUD SI WEEEEEEEEEEEEEEE :DDDDDDDDDD
+250 - ba ako prefixa i suffixa sa ot edna i su6ta duma dali moje da gi obedinqva6??? punk...tva ti bqha 15$!!!
+500 - ot vseki vrah oma6 edno izliza6to rebro... tva ozna4ava 4e ima6 NE EDIN CIKAL, a za VSEKI SUBGRAPH PO EDIN cikal!!! maliii...da ne govorim 4e ne znae6 kak da nameri6 samite cikli, 4e break-va6 vutre6niq cikal ma posle ne ot4ita6 da continue-ne6 vun6niq po toq povod iii vaob6te izob6to
+SRM 311 DIV 1
+1000 - testvai! po4ti go be6e dokaral, ma ne se seti, 4e ne trqbva da go puska6 da zamenq pove4e cifri otkolkoto ve4e ima6! brao napravi 23423 ebani grani4ni slu4aq, ba6 algoritama na 3 reda go osra... i da BRAVO naistina a-=min(a,b); b-=min(a,b); ... po4ti kato a=b; b=a;.....
+SRM 309 DIV 1
+600 - .size() vru6ta UNSIGNED!!!!; ti si mnogo tup naistina...kak moje <?= da go zameni6 sus if ( < ) ...nqqm dumi prosto;
+HINT za svalqne na slojnost na DP - vmesto state da vzema to4no stoinostta na last element, moje da e max st-st na last element ili ne6to takova, demek to4no tva koeto ti trqq, 4e da ne obhojda6 vs stoinosti vseki put
+SRM 308 DIV 1
+500 - nikoga nikoga NIKOGA! ne hamaluvai... a.k.a. pi6i CIKLI!!! i kogato podava6 masiv koito SORTIRA6 i preebava6, gledai da e vektor...i to bez &
+TCHSO 2008 Finals
+500 - CBA > BAA...tva ozna4ava li 4e ABC < AAB ???
+1000 - dobre, 6to za TUPO i BEZOSNOVATELNO suobrajenie 4e moje cikala da varti6 do cost/2...awe tva sa 300 pts we po-dobre 1n 4as da varti ma nakraq da e vqrno otkolkoto 1 min ma da e gre6no!!!!!
+SRM 394 DIV 1
+600 - 4astnite slu4ai we; i pak 4astnite slu4ai... (usporedni/perpendikulqrni na abscisata ebavat); mnogo careful pri tqh - oreantacii (koq to4ka e 1va, koq - 2ra); koeficienti; tangensi; znaci i pr; BAAAA prava moje da se proektira v sebe si pri oseva simetriq we glamur!
+SRM 395 DIV 1
+500 (a i kelevejiev07 zad.5) - O.M.G.!!! broi permutacii s nqkvo svoistvo...ti se opitva6 da izkara6 state za N elementa state s N+1 elementa kato gleda6 kvo stava ako rugne6 4isloto (N+1) na vsqka poziciq...e, 6to ne se seti vmesto nego (4islo po-golqmo ot nai-golqmoto) da ruga6 0 (po-malko ot nai-malkoto) koeto defakto e su6toto 6tot vse 1no si ++ vsi4ki ot predi6niq state i vkarva6 1...i dp-to izliza to4no edin red formulka, bi mu maikata...
+SRM 306 DIV 1
+500 - gauss is your friend...i kato se okaje 4e daden red sled tam nqkvi laina e stanal samo nuli, tva ne ozna4ava 4e sled nego nqma drugi nenulevi redove
+1050 - linear algebra rulez; matrix multiplication rulez; adj matrix ^ k [i][j] = kolko putq ima ot i do j s duljina k ; ako s[i] e sumata na geometri4nata progresiq a[0]+..+a[i], to s[2*j]=s[j]+s[j]*a[j] & s[2*j+1]=s[2*j]+a[2*j+1]
+SRM 304 DIV 1
+300 - maleeeee golqm idiot si be!!! parvo misli, posle pi6i we! kak moje da ne osaznae6 4e e tolkoz prosto i posle pak da ne moi6 go napi6e6...bati idiotaaaa...ima6 N 4isla v krug4e, ne moi6 da zema6 susedni, kak sq se smqta kva max suma moi6 da vzeme6??? IDIOT!!!!!!!!!
+SRM 397 DIv 1
+1000 - DTIBUGZ WE KRETEN!!!!!! 1vo BAA MISLI KAK MOJE DA OTREJE6 SLU4AI BE KUV E SMISALA DA ZEMMA6 RADIUS DETO NE SE DOPIRAT 2 OKRAJNOSTI!!!!! i 2ro... BAAAAAAAA NE ZNAE6 LI KOI REBRA DA NULIRA6 PRI AUGMENTED GRAPH BEEEE BAA KATO SI IDIOT PONE NULIRAI CQLATA MATRICA DA TE EBA V OPTIMIZIRA6TIQ KELE6 NE6TASTEN
+....i zapomni - 2 seta, dadeno koi ot 1 s koi ot 2 e suvmestim; max total suvmestimi = broi1 + broi2 - min(?!) nesuvmestimi, koito se polu4avat kato naprai6 rebra m/y teq koito Ne sa suvmestimi i matching tam
+SRM 398 DIV 1
+500 - dobre, kato promenq6 kod misli pak deaa...ostavq6 sstari raboti i ti ebavat maikata, a sa drebolii...indeksiraneto na specialnite poleta ot 1, ti na 1-cata q inicializira6 za specialni poleta s 0-based index...karuk! da ne govorim 4e prosto DP go misli 23423 4asa
+1000 - precision shit: kogato menka6 double v int i tam nulite te burkat, pravi if (fabs(x)<1e-7) x=0  ;;;  double i int - parvo se umnojava, posle se deli ! ina4e dobre go izmisli greedy-to za graph samo po vertice degrees :)
+SRM 303 Div 1
+1000 - grani4nite bee!! kazano ti e izri4no 4e ne moi6 da probiva6 po krainite koloni! i se6tai se 4e adjM[i][i]=0, osobeni predi floyd-warshall
+SRM 399 DIV 1
+250 - ZLEEE!!! test & retest with big shits!
+500 - baa grani4niq slu4ai go vru6ta6 s return 0; pri polojenie 4e preid tva ret=INF i to posle kato go izvika pak i poznai 0 ili INF vru6ta...
+1000 - flow kudeto ot edni rebra moje da zema6 pove4e, ot drugi po-malko awe izob6to ako ima6 razli4no otno6enie kum otdelni vidove rebra - probvai da cepi6 na nqkolko graph-a s ob6t source
+SRM 401
+550 - careful kato copy-paste kod!!! 1na cifra = 0 to4ki... i si 4eti uslovieto! t moje da e razli4no za 2te 4astici  ba i po-leko kat se prai6 na muj i si igrae6 s 4astnite slu4ai - pak premesti koda i pak se okaza 4e ans ima na4alna stoinost, koqt vra6ta6 na gre6no mqsto!    !!!!!!!!!!!!!! (-3)%2 = -1 !!!!!!!
+kriv idiot hubavo gleda6 dali vx==0 && vy==0 ami ako 1no ot 2te e ravno na 0, i po-to4no tva na koeto deli6 po-natatak v re6enieto???? negodnik...
+omg ami ako I1 == I2 ??? broi6 2 to4ki, a tq bila edna...fuck
+bravo a[0]=..,a[1]=.. ama ina4e a.SZ=0
+i pak - proverqvai VSI4KO na koeto v daden moment deli6 kvo stava ako e ravno na 0
+BAA bahti naglasenata zada4a zaklevam se... 24234 submit-a
+SRM 402
+450 - uslovieto!!! smallest index of the block, a ne first index of the block!!!!! idiot!
+1000 - grani4niq we - vij 4e se osira ako cqloto 4islo si stava samo! ;; o6te edin special case - ako nameri6 otgovor, no ima nuli predi poslednoto 4islo i se okaje 4e ako zeme6 nqkoq ot teq nuli ima po-dobar otg;  ba hubavo se seti 1q put da sravnqva6 4islata do ob6tata im duljina, ama 6to ne se seti i 2riq?? kato sravnqva6 4ista stringove, mahni leading zeroes be! i string.erase(pos) ne trie edin element, a vsi4ki do kraq na dumata;
+----- kato cqlo: tursi6 dali moje da naprai6 ne6to kato vseki put se mu4i6 da go napravi6 optimalno bavno i mu4itelno - a ne moje li da si naprai6 f() deto ti kazva 1vo dali IZOB6TO moje6 da go napravi6 i 4ak togava da trugva6 da go prai6...;;; better idea - vmesto dp[x][y] = moje/ne moje ; probvai s dp[x] = optimal y koeto MOJE - nqkak si podobrqva slojnostta
+SRM 403
+500 - ograni4eniqta!!! dp[10^9] bah grani4niq slu4ai ako nqma6 lucky numbers ti se duni! ... a vidq li 4e go iskat modulo ne6to si?!?!
+...kat mod-va6 residual network-a i puska6 pak flow zemi q opravi a;;; i grani4niq! dobre 4e ima6 takuv test case
+kato udvoqva6 varhovete, udvoi i memory-to pls
+SRM 404
+500 - bah sum na 3000 int-a do 10^9 e LONG LONG we!!!
+SRM 405
+500 - (po4ti) vs cikli v oreantiran graph - puska6 bfs we! samo deto nema used masiv...punk
+SRM 406
+500 - AAAAAAAAAA zema6 MAX ot 4isla koito moje da sa i OTRICATELNI i initialize-va6 s ans=0 BRAVO....... i trivialnite slu4ai be! careful kogato edit-va6 kode kvo stava s tqh - ami ako ne fold-va6 izob6ot? punk!!!
+250 - OMG kato prai6 next_permutation parvo pravi SORT we!!!!!!!
+SRM 407
+250 - baa nai-krivoto dp kolko vreme go pi6e6 be
+500 - 3^12 > 2^19 ........i kalkulatora ti go kaza, ma kato si tup...
+1000 - keep min cost max flow in mind!!! osobeno kogato ima nqkvi laina deto se vliqqt ot dr laina i deto ima nqkvi limiti i deto ne stava s gauss; i misli kude trq modva6 input dannite v network-a!! kato minava augm path prez kletka, obiknoveno q swap-va 2 puti
+SRM 421
+500 - ako na sqka stupka umnojava6 piece_count*piece_size za da polu4i6 originalniq size, qko gre6ki se natrupvat i testovete te pre4upvat!
+SRM 419
+500 - ako NQMA validen hod ot teku6tata poziciq, si4ki pe4elqt sus probability 0 !!! a ti prai6 nqkvi deleniq na 0 nqkvi -1.#IND deto daje ne se za4udi za kvo ti gi dava na sample tests...AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA I 6IBANIQ ARRAY INDEXING OUT OF BOUNDS!!!!!!!!!!!!!!!! BAAAAA GLEDAI KOQ PROMENLIVA KOLKO GOLQMA MOJE DA E WEEEEE I KVO SE PRAI6 NA UMEN KVO TE EBE 64*64*64 MI TRQQ DA PRAI6 EDNOTO PO-MALKO...................TAPAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK;;;;;;;;;; OMG koi da predpoloji 4e v toq slu4ai EPS ot porqduka na 1e-9 ni naebava qko v guza 6tot probabilities stavat mn malki, a v uslovieto izri4no pi6e ako nqma NIKAKUV 6ans (6.2342e-15 vse pak e nqkuv 6ans...)
+SRM 423
+1000 - ans*=i; ans%=MOD; ==> OVERFLOW! 6to? 6ot i>MOD ama mnogo!!! i pls ne smqtai 100000! 100000 puti .... idiot i kak moje 5*10^6 puti da razdeli6 na nqkvi posledovatelni 4isla vmesto da gi umnoji6 i nakraq da razdeli6 be
+500 - kreten USLOVIETO BE!!! 4erniq moje da pravi po 2 hoda navednuj!
+SRM 421
+1000 - ba 4astnite slu4ai kato gi razglejda6 otdelno ne ostavqi cikula da si gi varti i tqh vse pak...a i vmesto da misli6 nqkvi izvra6teniq kak da prebroi6 si4ki subsets s X, prosto prebroi vsi4ki BEZ X i gi izvadi ot ob6tiq broi...punk..a i pak parvoto ne6to...i BEZ izli6ni laina! pomisli koe ti e neobhodimoto info v deistvitelnost, nali se razbrahme deba... ;;; careful s bukvi4kite...CAREFUL S BUKVI4KITE!!! baa aman ot tehni4eski gre6ki deba mama mu...i OvERFLOW! longlong!! test s golemi primeri
+SRM 422
+500 - idiot 6to re6i 4e kato prekara6 grupa, 4ovekat deto 6te varne kartata trqbva zaduljitelno da e ot grupata??? test & proofread! omg i pak - kak re6i 4e vinagi moje EDIN 4ovek da varne6 za da prevede nqkoi... SLOW!!! iterate over subsets, a ne if-ove!! a i &-vai s ALL kogato prai6 iteration over all subsets varhu ne6to otricatelno..i to sled kato pove4e ot edin 4ovek moje da se vra6ta naprao si4ki ti se naebava s tva pravene po 2 hoda na red i gledane samo na teq det sa ot ednata strana na pe6terata..... => KISSSSS!!! ako v samoto na4alo be6e go naprail taka prosto...
+1000 - omg workshop->workshop rebrata zabravi i taka stana vazmojno edin workshop da se assign-ne za nqkolko mini!!!
+SRM 424
+600 - ne ostavqi cout<<-ove, pls, osobeno v NIA-VUTRE6NIQ CIKAL NA REKURSIQTA..... i vse pak map memorization rulez ponqkoga i si struva opita, osobeno v TC. ba malko prosti optimizations - kak moje da ostavq6 strength/intellect da stava nad 1000 sled kato pove4e ne ti i trqbva be balak
+SRM 418
+500 - try different approaches be;
+SRM 417
+1000 - ba kak moje da sravnqva6 ans sus VREMENNITE MIN distances be, osobeno sled kato iska6 da e max...
+sRM 425
+250 - ba 4oveeek tva e 250 BE!!!! kvo tolkova o4akva6 da e?? KISS!
+500 - OMG ne razbra li 4e s samoto generirane ve4e podrejda6 to4kite v nqkuv reD!!!! i ti ostava samo da opredeli6 v kakuv red mesti6 pionkite!!! AAAAAAAAAAAAAAA i tva s BFS-to be6e pove4e ot TAPO!!!!!!!!!!!!!!!!! KAK MOJE DA UPDATE-VA6 QUEUE-TO D[NX][NY]=D[XSTART][YSTART]+1 !!!! VMESTO D[X][Y]+1 !!!!!!!!!!!!!! OMG!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! YOU WASTED IT YOU FUCKING IDIOT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 2 MIN SLED KRAQ ....... DUMI NEMAM............................v tapoto TC ne pre4i da obmislq6 re6eniqta i da prai6 suobrajeniq we negodnik...
+ee vse pak tve be6e gre6no. vse pak ne sa vsi4ki vazmojni naredbi na to4kite. vaprosat e za6to po dqvolite moje razstoqnieto da go smqta6 kato absolutna razlika v koordinatite na source to4kata i dest to4kata? za6to ne se polu4avat konflikti??? shit...

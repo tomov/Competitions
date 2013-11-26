@@ -1,0 +1,2205 @@
+<HTML>
+<HEAD>
+<TITLE>System of Linear Equations and Matrix Inversion</TITLE>
+<META NAME="generator" CONTENT="Sausage Software HotDog Professional 5">
+</HEAD>
+<BODY aLink=#551a8b bgColor=#ffffff link=#0063a4 text=#000000 vLink=#990000>
+<meta name="keywords" content="system of equations, matrix inversion, system of linear equations, solving system of equations.">
+<meta name="description" content="This JavaScript solves up to ten by ten systems of linear equations. It also allows us perform matrix inversion of matrices of up to order ten.">
+
+<p>
+<font face ="verdana, arial, helvetica">
+<H1><CENTER><FONT face="verdana, arial, helvetica" color=#dc143c size=5>Solving System of Linear Equations<br>with Application to Matrix Inversion</font></center></h1>
+<P><br><center>
+
+<A href="http://unix.hensa.ac.uk/sites/home.ubalt.edu/ntsbarsh/Business-stat/otherapplets/scientificCal.htm"   target=new><FONT color=#dc143c><B>Europe Mirror Site</B></FONT></A>&nbsp; &nbsp;<A href="http://www.mirrorservice.org/sites/home.ubalt.edu/ntsbarsh/Business-stat/otherapplets/scientificCal.htm" target=new><FONT color=#dc143c><B>Mirror Site for Asia</B></FONT></A> 
+&nbsp; &nbsp;<A href="http://www.mirrorservice.org/sites/home.ubalt.edu/ntsbarsh/Business-stat/otherapplets/scientificCal.htm" target=new><B><FONT color=#dc143c>Mirror Site for Middle East</FONT></B></A>
+ &nbsp; &nbsp;<A href="http://home.ubalt.edu/ntsbarsh/zero/scientificCal.htm" target=new><B><FONT color=#dc143c>USA Site</B></FONT></A>
+
+</CENTER><p>
+
+<P>
+<BLOCKQUOTE>
+This JavaScript <A href="scientificCal.htm" target =New><b>E-labs</b></A> learning object is intended for finding the solution to systems of linear equations up to three equations with three unknowns.  It also allows us to find the inverse of a matrix.
+<p>
+Other JavaScript learning objects for decision making in this series are categorized under different areas of applications at the <B><A href="#rmenu">MENU</A></B> section on this page.<p>
+<DIV align=right><CITE><A href="../home.html" 
+  target=new>Professor Hossein Arsham</A>&nbsp; &nbsp;</CITE></DIV>
+<P>
+<hr>
+<p>
+<p>
+In entering your data to move from cell to cell in the data-matrix use the <B>Tab key</B> not arrow or enter keys.
+<p>
+<p>
+<B>Instructions and Applications:</B> <p>
+</BLOCKQUOTE>
+<ol>
+<li>The unknown variable names are X1, X2, X3,..and X10, depending on if you have one equation, two equations, or three equations with one unknown, two unknown, or three unknown variables, respectively.<p>
+<li>Starting from left-upper corner, replace as many zeros, in the data-matrix with the coefficients of the unknown variables in the equations together with their right-hand-side values, as needed.  The coefficient matrix must be a squared-matrix appearing on the upper left corner of the Data-Matrix, therefore, do not leave any blank rows in between.<p>
+<li>The  JavaScript is based on the <a href="../opre/partIV.htm#rPivoOper" target="new">Gauss-Jordan (GJ) row operations</a>.  The requirement for GJ operations is that the first element in the coefficients-matrix must be non-zero.  Therefore, first enter the coefficient of all equations having non-zero X1 coefficient; then enter all other equations. That is, any equation with zero coefficients for X1 must appear at the end of Data Entry Table. 
+<p>
+<font  color="#DC143C">Numerical Example 1:</font> Consider the following system of equations:
+<p>
+X2 + X3 = 5<br>
+3X1 + X3 = 6<br>
+-X1 + X2 = 1<br>
+<p>
+The matrix of the coefficient of the variables is:
+<p>
+
+ &nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;1<br>
+&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1<br>
+-1&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;0<br>
+
+<p>
+The first entry of the first column is zero, while there is always at least one non-zero element therein. Therefore, we have to rearrange the system of equation in such a way that any equation with zero X1 coefficient appear among the last set of equations.  That is, considering an equivalent system of equation:
+<p>
+3X1 + X3 = 6<br>
+-X1 + X2 = 1<br>
+X2 + X3 = 5<br>
+<p>
+Solve this equivalent system of equation by entering its coefficient and the RHS values in the Data Entry Table,  then click on the "Calculate" button. The output is the solution:  X1 = 1, X2 = 2, and X3 = 3,  which can be verified by substitutions.
+<p>
+<li><font color="#DC143C"><b>Finding the Matrix Inverse Using System of Equations Solver:</b></font>  To find the inverse of a square matrix of size n, solve n systems of equations with a unit vector as their right hand side. The following numerical example illustrates the process:
+<p>
+<font  color="#DC143C">Numerical Example 2:</font>  Suppose we wish to find the inverse (A<FONT><SUP>-1</SUP></FONT>) of the following matrix (if it exists) A:
+<p>
+<center><table COLS=4 WIDTH="15%" HEIGHT="20%" >
+<tr>
+<td></td>
+<td></td>
+<td VALIGN=BOTTOM>2</td>
+<td VALIGN=BOTTOM>&nbsp; 1</td>
+</tr>
+<tr>
+<td ALIGN=RIGHT><font size=+1>A</font></td>
+<td>=</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td VALIGN=TOP>1</td>
+<td VALIGN=TOP>
+<center>-1</center>
+</td>
+</tr>
+</table></center>
+<p>
+In general, to find the A<FONT><SUP>-1</SUP></FONT>, column by column, solve n systems of equations having the coefficient matrix A, however with n distinct identity vectors as their RHS value.
+<p>
+For this numerical example, we have to solve the following two systems of equations:
+<p>
+2X1 + X1 = 1<br>
+ X1 - X2 = 0 
+<p>
+and
+<p>
+     2X1 + X1 = 0<br>
+     X1 - X2 = 1<p>
+<p>
+Notice that the coefficient of the variables X1 and X2 are matrix A in both systems of equations, however the RHS are two identity vectors in n=2 dimensional space.
+<p>
+The solutions, following the above instruction, of the first and second systems of equations provide the first and the second column of the A<FONT><SUP>-1</SUP></FONT> matrix.  
+<p>
+To find the first column of A<FONT><SUP>-1</SUP></FONT> solve:
+<p>
+ 2X1 + X1 = 1<br>
+   X1 -  X2 = 0
+<p>
+This gives X1 = 1/3 , X2 = 1/3.  To find the second  column of A<FONT><SUP>-1</SUP></FONT> solve:
+<p>
+ 2X1 + X1 = 0<br>
+   X1 -  X2 = 1
+<p>
+This gives X1 = 1/3 , X2  = -2/3.  Therefore, A<FONT><SUP>-1</SUP></FONT>p  is
+<p>
+<center><table COLS=4 WIDTH="21%" HEIGHT="20%" >
+<tr>
+<td></td>
+<td></td>
+<td VALIGN=BOTTOM>1/3</td>
+<td VALIGN=BOTTOM>&nbsp; 1/3</td>
+</tr>
+<tr>
+<td ALIGN=RIGHT><font size=+1>A</font><sup>-1</sup></td>
+<td>=</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td VALIGN=TOP>1/3</td>
+<td VALIGN=TOP>
+<center>-2/3</center>
+</td>
+</tr>
+</table></center>
+<p>
+ <li><font color="#DC143C"><b>Notice:</b></font>   A matrix possessing an inverse is called <b>nonsingular</b>, or invertible.  A matrix is called singular if it does not have an inverse.  For example, the following matrix is a singular one:
+<center>
+<p>
+ &nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;4<br>
+&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;-1<br>
+-1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;5<br>
+</center>
+<p>
+  Therefore, in applying the above procedure for inverting a matrix, if the matrix is a singular one, then at least of the systems of equations has no solution. 
+<p>
+<li>
+To edit your data, including add/change/delete, you do not have to click on the "clear" button, and re-enter your data all over again. You may simply add, change a number to another in the same cell, or delete a number from a cell by setting its value to zero. After editing, then click the "calculate" button.  
+<p>This is helpful in, e.g. finding the inverse of A<FONT><SUB>10x10</SUB></FONT> matrix, where we have to change the RHS values only.
+<p>For extensive edit or to use the JavaScript for a new set of data, then use the "clear" button. 
+</ol>
+
+
+<p>
+<hr>
+<p> 
+  <script language="JavaScript">
+
+
+<!--
+
+
+
+function initArray() {
+      this.length = initArray.arguments.length
+      for (var i = 0; i < this.length; i++)
+      this[i+1] = initArray.arguments[i]
+   }
+
+function solve (m) {
+
+var a1 = new initArray(parseFloat(document.matrix.a11.value, 10), parseFloat(document.matrix.a12.value, 10), parseFloat(document.matrix.a13.value, 10), parseFloat(document.matrix.a14.value, 10),parseFloat(document.matrix.a15.value, 10),parseFloat(document.matrix.a16.value, 10),parseFloat(document.matrix.a17.value, 10),parseFloat(document.matrix.a18.value, 10),parseFloat(document.matrix.a19.value, 10),parseFloat(document.matrix.a110.value, 10),parseFloat(document.matrix.a111.value, 10))
+
+var  a2 = new initArray(parseFloat(document.matrix.a21.value, 10), parseFloat(document.matrix.a22.value, 10), parseFloat(document.matrix.a23.value, 10), parseFloat(document.matrix.a24.value, 10),parseFloat(document.matrix.a25.value, 10),parseFloat(document.matrix.a26.value, 10),parseFloat(document.matrix.a27.value, 10),parseFloat(document.matrix.a28.value, 10),parseFloat(document.matrix.a29.value, 10),parseFloat(document.matrix.a210.value, 10),parseFloat(document.matrix.a211.value, 10))
+
+var a3 = new initArray(parseFloat(document.matrix.a31.value, 10), parseFloat(document.matrix.a32.value, 10), parseFloat(document.matrix.a33.value, 10), parseFloat(document.matrix.a34.value, 10), parseFloat(document.matrix.a35.value, 10),parseFloat(document.matrix.a36.value, 10),parseFloat(document.matrix.a37.value, 10),parseFloat(document.matrix.a38.value, 10),parseFloat(document.matrix.a39.value, 10),parseFloat(document.matrix.a310.value, 10),parseFloat(document.matrix.a311.value, 10))
+
+var a4 = new initArray(parseFloat(document.matrix.a41.value, 10), parseFloat(document.matrix.a42.value, 10), parseFloat(document.matrix.a43.value, 10), parseFloat(document.matrix.a44.value, 10), parseFloat(document.matrix.a45.value, 10),parseFloat(document.matrix.a46.value, 10),parseFloat(document.matrix.a47.value, 10),parseFloat(document.matrix.a48.value, 10),parseFloat(document.matrix.a49.value, 10),parseFloat(document.matrix.a410.value, 10),parseFloat(document.matrix.a411.value, 10))
+var a5 = new initArray(parseFloat(document.matrix.a51.value, 10), parseFloat(document.matrix.a52.value, 10), parseFloat(document.matrix.a53.value, 10), parseFloat(document.matrix.a54.value, 10), parseFloat(document.matrix.a55.value, 10),parseFloat(document.matrix.a56.value, 10),parseFloat(document.matrix.a57.value, 10),parseFloat(document.matrix.a58.value, 10),parseFloat(document.matrix.a59.value, 10),parseFloat(document.matrix.a510.value, 10),parseFloat(document.matrix.a511.value, 10))
+var a6 = new initArray(parseFloat(document.matrix.a61.value, 10), parseFloat(document.matrix.a62.value, 10), parseFloat(document.matrix.a63.value, 10), parseFloat(document.matrix.a64.value, 10), parseFloat(document.matrix.a65.value, 10),parseFloat(document.matrix.a66.value, 10),parseFloat(document.matrix.a67.value, 10),parseFloat(document.matrix.a68.value, 10),parseFloat(document.matrix.a69.value, 10),parseFloat(document.matrix.a610.value, 10),parseFloat(document.matrix.a611.value, 10))
+var a7 = new initArray(parseFloat(document.matrix.a71.value, 10), parseFloat(document.matrix.a72.value, 10), parseFloat(document.matrix.a73.value, 10), parseFloat(document.matrix.a74.value, 10), parseFloat(document.matrix.a75.value, 10),parseFloat(document.matrix.a76.value, 10),parseFloat(document.matrix.a77.value, 10),parseFloat(document.matrix.a78.value, 10),parseFloat(document.matrix.a79.value, 10),parseFloat(document.matrix.a710.value, 10),parseFloat(document.matrix.a711.value, 10))
+var a8 = new initArray(parseFloat(document.matrix.a81.value, 10), parseFloat(document.matrix.a82.value, 10), parseFloat(document.matrix.a83.value, 10), parseFloat(document.matrix.a84.value, 10), parseFloat(document.matrix.a85.value, 10),parseFloat(document.matrix.a86.value, 10),parseFloat(document.matrix.a87.value, 10),parseFloat(document.matrix.a88.value, 10),parseFloat(document.matrix.a89.value, 10),parseFloat(document.matrix.a810.value, 10),parseFloat(document.matrix.a811.value, 10))
+var a9 = new initArray(parseFloat(document.matrix.a91.value, 10), parseFloat(document.matrix.a92.value, 10), parseFloat(document.matrix.a93.value, 10), parseFloat(document.matrix.a94.value, 10), parseFloat(document.matrix.a95.value, 10),parseFloat(document.matrix.a96.value, 10),parseFloat(document.matrix.a97.value, 10),parseFloat(document.matrix.a98.value, 10),parseFloat(document.matrix.a99.value, 10),parseFloat(document.matrix.a910.value, 10),parseFloat(document.matrix.a911.value, 10))
+var a10 = new initArray(parseFloat(document.matrix.a101.value, 10), parseFloat(document.matrix.a102.value, 10), parseFloat(document.matrix.a103.value, 10), parseFloat(document.matrix.a104.value, 10), parseFloat(document.matrix.a105.value, 10),parseFloat(document.matrix.a106.value, 10),parseFloat(document.matrix.a107.value, 10),parseFloat(document.matrix.a108.value, 10),parseFloat(document.matrix.a109.value, 10),parseFloat(document.matrix.a1010.value, 10),parseFloat(document.matrix.a1011.value, 10))
+
+var t1 = a1
+var t2 = a2
+var t3 = a3
+var t4 = a4
+var t5 = a5
+var t6 = a6
+var t7 = a7
+var t8 = a8   		
+var t9 = a9
+var t10 = a10  
+
+		if (a1[1] != 0) {       
+                var temp = a1[1]
+                for (var i=1; i<=11; i++) 
+                        { a1[i] = a1[i] / temp }
+        }                       
+               
+        var temp = -a2[1]
+
+        for ( var i=1; i<=11; i++ ) {
+                 a2[i] = a2[i] + (a1[i] * temp) }
+
+
+        var temp = -a3[1]
+
+        for ( var i=1; i<=11; i++ ) {
+                 a3[i] = a3[i] + (a1[i] * temp) }
+       
+      
+          
+        var temp = -a4[1]
+
+        for ( var i=1; i<=11; i++ ) {
+                 a4[i] = a4[i] + (a1[i] * temp) }
+          
+           var temp = -a5[1]
+
+        for ( var i=1; i<=11; i++ ) {
+                 a5[i] = a5[i] + (a1[i] * temp)}
+				 
+				 
+				 var temp = -a6[1]
+
+        for ( var i=1; i<=11; i++ ) {
+                 a6[i] = a6[i] + (a1[i] * temp)  }
+				 
+				 	 var temp = -a7[1]
+
+        for ( var i=1; i<=11; i++ ) {
+                 a7[i] = a7[i] + (a1[i] * temp)  }
+				 
+			 var temp = -a8[1]
+
+        for ( var i=1; i<=11; i++ ) {
+                 a8[i] = a8[i] + (a1[i] * temp)  }	 
+		
+		
+				 var temp = -a9[1]
+
+        for ( var i=1; i<=11; i++ ) {
+                 a9[i] = a9[i] + (a1[i] * temp)  }	 
+				 
+				  var temp = -a10[1]
+
+        for ( var i=1; i<=11; i++ ) {
+                 a10[i] = a10[i] + (a1[i] * temp)  }	
+				 
+		//TWO//
+            		if (a2[2] == 0 ) {             
+                for (var i=2; i<=11; i++) {
+                        var temp = a2[i]
+                             a2[i] = a3[i]
+                             a3[i] = a4[i]
+                             a4[i] = a5[i]
+						     a5[i] = a6[i]
+							 a6[i] = a7[i]
+							 a7[i]=  a8[i]
+							 a8[i]= a9[i]
+							 a9[i]= a10[i]
+							 a10[i]=temp }
+        }               
+        
+        if (a2[2] != 0 ) {                              
+                var temp = a2[2]
+                a2[2] = a2[2] / temp         
+                a2[3] = a2[3] / temp
+                a2[4] = a2[4] / temp 
+                a2[5] = a2[5] / temp 
+                a2[6] = a2[6] / temp                
+                a2[7] = a2[7] / temp 
+				a2[8] = a2[8] / temp
+				a2[9] = a2[9] / temp
+				a2[10] = a2[10] / temp
+				a2[11] = a2[11] / temp
+			
+			
+			 var temp = -a10[2]
+
+        for ( var i=2; i<=11; i++ ) {
+                 a10[i] = a10[i] + (a2[i] * temp) }
+				 
+				 
+				 
+			 var temp = -a9[2]
+
+        for ( var i=2; i<=11; i++ ) {
+                 a9[i] = a9[i] + (a2[i] * temp) }
+			
+				  var temp = -a8[2]
+
+        for ( var i=2; i<=11; i++ ) {
+                 a8[i] = a8[i] + (a2[i] * temp) }
+			
+				  var temp = -a7[2]
+
+        for ( var i=2; i<=11; i++ ) {
+                 a7[i] = a7[i] + (a2[i] * temp) }
+				 
+				 
+				 var temp = -a6[2]
+
+        for ( var i=2; i<=11; i++ ) {
+                 a6[i] = a6[i] + (a2[i] * temp) }
+				
+				
+				 var temp = -a5[2]
+
+        for ( var i=2; i<=11; i++ ) {
+                 a5[i] = a5[i] + (a2[i] * temp) }
+				
+				
+				 var temp = -a4[2]
+
+        for ( var i=2; i<=11; i++ ) {
+                 a4[i] = a4[i] + (a2[i] * temp) }
+                                 
+                                                
+        var temp = -a3[2]
+
+        for ( var i=2; i<=11; i++ ) {
+                 a3[i] = a3[i] + (a2[i] * temp) }
+                                 
+                                 
+        
+        var temp = -a1[2]
+
+        for ( var i=2; i<=11; i++ ) {
+                 a1[i] = a1[i] + (a2[i] * temp) }
+        
+                        }
+                        
+                        
+                        //THREE//
+                         
+                          if (a3[3] == 0 ) {             
+                for (var i=3; i<=11; i++) {
+                     	   var temp = a3[i]
+                             a3[i] = a4[i]
+                             a4[i] = a5[i]
+							 a5[i] = a6[i]
+							 a6[i]= a7[i]
+							 a7[i]= a8[i]
+							 a8[i]= a9[i]
+							 a9[i]= a10[i]
+							 a10[i]= temp}
+        }    
+                        
+                        
+                        if (a3[3] != 0 ) {                              
+                var temp = a3[3]
+                a3[3] = a3[3] / temp           
+                a3[4] = a3[4] / temp    
+                a3[5] = a3[5] / temp
+                a3[6] = a3[6] / temp 
+				a3[7] = a3[7] / temp 	
+				a3[8] = a3[8] / temp 
+				a3[9] = a3[9] / temp 
+				a3[10] = a3[10] / temp 
+				a3[11] = a3[11] / temp 
+				
+				var temp = -a10[3]
+        a10[3] = a10[3] + (a3[3] * temp)
+        a10[4] = a10[4] + (a3[4] * temp)
+        a10[5] = a10[5] + (a3[5] * temp)
+		a10[6] = a10[6] + (a3[6] * temp)
+		a10[7] = a10[7] + (a3[7] * temp)
+		a10[8] = a10[8] + (a3[8] * temp)
+		a10[9] = a10[9] + (a3[9] * temp)
+		a10[10] = a10[10] + (a3[10] * temp)	
+		a10[11] = a10[11] + (a3[11] * temp)
+				
+					
+						var temp = -a9[3]
+        a9[3] = a9[3] + (a3[3] * temp)
+        a9[4] = a9[4] + (a3[4] * temp)
+        a9[5] = a9[5] + (a3[5] * temp)
+		a9[6] = a9[6] + (a3[6] * temp)
+		a9[7] = a9[7] + (a3[7] * temp)
+		a9[8] = a9[8] + (a3[8] * temp)
+		a9[9] = a9[9] + (a3[9] * temp)
+		a9[10] = a9[10] + (a3[10] * temp)	
+		a9[11] = a9[11] + (a3[11] * temp)
+						
+			
+				var temp = -a8[3]
+        a8[3] = a8[3] + (a3[3] * temp)
+        a8[4] = a8[4] + (a3[4] * temp)
+        a8[5] = a8[5] + (a3[5] * temp)
+		a8[6] = a8[6] + (a3[6] * temp)
+		a8[7] = a8[7] + (a3[7] * temp)
+		a8[8] = a8[8] + (a3[8] * temp)
+		a8[9] = a8[9] + (a3[9] * temp)
+		a8[10] = a8[10] + (a3[10] * temp)
+		a8[11] = a8[11] + (a3[11] * temp)
+	
+		
+				var temp = -a7[3]
+        a7[3] = a7[3] + (a3[3] * temp)
+        a7[4] = a7[4] + (a3[4] * temp)
+        a7[5] = a7[5] + (a3[5] * temp)
+		a7[6] = a7[6] + (a3[6] * temp)
+		a7[7] = a7[7] + (a3[7] * temp)
+		a7[8] = a7[8] + (a3[8] * temp)
+		a7[9] = a7[9] + (a3[9] * temp)		
+		a7[10] = a7[10] + (a3[10] * temp)
+	    a7[11] = a7[11] + (a3[11] * temp)		
+				
+				  var temp = -a6[3]
+        a6[3] = a6[3] + (a3[3] * temp)
+        a6[4] = a6[4] + (a3[4] * temp)
+        a6[5] = a6[5] + (a3[5] * temp)
+		a6[6] = a6[6] + (a3[6] * temp)
+		a6[7] = a6[7] + (a3[7] * temp)
+		a6[8] = a6[8] + (a3[8] * temp)
+		a6[9] = a6[9] + (a3[9] * temp)
+		a6[10] = a6[10] + (a3[10] * temp)
+		a6[11] = a6[11] + (a3[11] * temp)
+				
+						  var temp = -a5[3]
+        a5[3] = a5[3] + (a3[3] * temp)
+        a5[4] = a5[4] + (a3[4] * temp)
+        a5[5] = a5[5] + (a3[5] * temp)
+		a5[6] = a5[6] + (a3[6] * temp)
+		a5[7] = a5[7] + (a3[7] * temp)
+		a5[8] = a5[8] + (a3[8] * temp)
+		a5[9] = a5[9] + (a3[9] * temp)
+		a5[10] = a5[10] + (a3[10] * temp)
+        a5[11] = a5[11] + (a3[11] * temp)
+	
+	      
+                         var temp = -a4[3]
+        a4[3] = a4[3] + (a3[3] * temp)
+        a4[4] = a4[4] + (a3[4] * temp)
+        a4[5] = a4[5] + (a3[5] * temp)  
+        a4[6] = a4[6] + (a3[6] * temp) 
+		a4[7] = a4[7] + (a3[7] * temp)
+		a4[8] = a4[8] + (a3[8] * temp)
+		a4[9] = a4[9] + (a3[9] * temp)
+		a4[10] = a4[10] + (a3[10] * temp)
+		a4[11] = a4[11] + (a3[11] * temp)
+		                       
+        var temp = -a2[3]
+        a2[3] = a2[3] + (a3[3] * temp)
+        a2[4] = a2[4] + (a3[4] * temp)
+        a2[5] = a2[5] + (a3[5] * temp)
+        a2[6] = a2[6] + (a3[6] * temp)
+        a2[7] = a2[7] + (a3[7] * temp)       
+        a2[8] = a2[8] + (a3[8] * temp) 
+		a2[9] = a2[9] + (a3[9] * temp) 
+  		a2[10] = a2[10] + (a3[10] * temp)
+		a2[11] = a2[11] + (a3[11] * temp)	
+
+        var temp = -a1[3]
+        a1[3] = a1[3] + (a3[3] * temp)
+        a1[4] = a1[4] + (a3[4] * temp)  
+        a1[5] = a1[5] + (a3[5] * temp)
+		a1[6] = a1[6] + (a3[6] * temp) 
+		a1[7] = a1[7] + (a3[7] * temp)
+		a1[8] = a1[8] + (a3[8] * temp)
+		a1[9] = a1[9] + (a3[9] * temp)}
+	    a1[10] = a1[10] + (a3[10] * temp)
+		a1[11] = a1[11] + (a3[11] * temp)
+
+
+//FOUR 
+
+
+    if (a4[4] == 0 ) {             
+                for (var i=4; i<=11; i++) {
+                        var temp = a4[i]
+                             a4[i] = a5[i]
+							 a5[i] = a6[i]
+							 a6[i] = a7[i]
+							 a7[i] = a8[i]
+							 a8[i]= a9[i]
+							 a9[i]= a10[i]
+							 a10[i]=temp}
+        }    
+
+        if (a4[4] != 0 ) {                              
+                var temp = a4[4]
+                a4[4] = a4[4] / temp           
+                a4[5] = a4[5] / temp    
+         		a4[6] = a4[6] / temp 
+                a4[7] = a4[7] / temp
+                a4[8] = a4[8] / temp
+				a4[9] = a4[9] / temp
+				a4[10] = a4[10] / temp
+    			a4[11] = a4[11] / temp
+
+		
+		var temp = -a10[4]
+        a10[4] = a10[4] + (a4[4] * temp)
+        a10[5] = a10[5] + (a4[5] * temp)
+        a10[6] = a10[6] + (a4[6] * temp)
+		a10[7] = a10[7] + (a4[7] * temp)
+		a10[8] = a10[8] + (a4[8] * temp)
+		a10[9] = a10[9] + (a4[9] * temp)
+		a10[10] = a10[10] + (a4[10] * temp)
+		a10[11] = a10[11] + (a4[11] * temp)
+		
+		
+		var temp = -a9[4]
+        a9[4] = a9[4] + (a4[4] * temp)
+        a9[5] = a9[5] + (a4[5] * temp)
+        a9[6] = a9[6] + (a4[6] * temp)
+		a9[7] = a9[7] + (a4[7] * temp)
+		a9[8] = a9[8] + (a4[8] * temp)
+		a9[9] = a9[9] + (a4[9] * temp)
+		a9[10] = a9[10] + (a4[10] * temp)
+		a9[11] = a9[11] + (a4[11] * temp)
+		
+				var temp = -a8[4]
+        a8[4] = a8[4] + (a4[4] * temp)
+        a8[5] = a8[5] + (a4[5] * temp)
+        a8[6] = a8[6] + (a4[6] * temp)
+		a8[7] = a8[7] + (a4[7] * temp)
+		a8[8] = a8[8] + (a4[8] * temp)
+		a8[9] = a8[9] + (a4[9] * temp)
+		a8[10] = a8[10] + (a4[10] * temp)
+		a8[11] = a8[11] + (a4[11] * temp)
+
+
+				 var temp = -a7[4]
+        a7[4] = a7[4] + (a4[4] * temp)
+        a7[5] = a7[5] + (a4[5] * temp)
+        a7[6] = a7[6] + (a4[6] * temp)
+		a7[7] = a7[7] + (a4[7] * temp)
+		a7[8] = a7[8] + (a4[8] * temp)
+		a7[9] = a7[9] + (a4[9] * temp)
+		a7[10] = a7[10] + (a4[10] * temp)
+		a7[11] = a7[11] + (a4[11] * temp)
+		
+		
+				 var temp = -a6[4]
+        a6[4] = a6[4] + (a4[4] * temp)
+        a6[5] = a6[5] + (a4[5] * temp)
+        a6[6] = a6[6] + (a4[6] * temp)
+		a6[7] = a6[7] + (a4[7] * temp)
+		a6[8] = a6[8] + (a4[8] * temp)
+		a6[9] = a6[9] + (a4[9] * temp)	
+		a6[10] = a6[10] + (a4[10] * temp)
+		a6[11] = a6[11] + (a4[11] * temp)
+				
+		
+			 var temp = -a5[4]
+        a5[4] = a5[4] + (a4[4] * temp)
+        a5[5] = a5[5] + (a4[5] * temp)
+        a5[6] = a5[6] + (a4[6] * temp)
+		a5[7] = a5[7] + (a4[7] * temp)
+		a5[8] = a5[8] + (a4[8] * temp)	
+		a5[9] = a5[9] + (a4[9] * temp)		
+		a5[10] = a5[10] + (a4[10] * temp)
+		a5[11] = a5[11] + (a4[11] * temp)
+		
+		
+				
+                var temp = -a3[4]
+        a3[4] = a3[4] + (a4[4] * temp)
+        a3[5] = a3[5] + (a4[5] * temp)
+         a3[6] = a3[6] + (a4[6] * temp)
+		 a3[7] = a3[7] + (a4[7] * temp)
+		 a3[8] = a3[8] + (a4[8] * temp)       
+		 a3[9] = a3[9] + (a4[9] * temp)   
+		 a3[10] = a3[10] + (a4[10] * temp)
+		a3[11] = a3[11] + (a4[11] * temp)
+		
+		
+        var temp = -a2[4]
+        a2[4] = a2[4] + (a4[4] * temp)
+        a2[5] = a2[5] + (a4[5] * temp)
+        a2[6] = a2[6] + (a4[6] * temp)
+		a2[7] = a2[7] + (a4[7] * temp)
+		 a2[8] = a2[8] + (a4[8] * temp) 
+		 a2[9] = a2[9] + (a4[9] * temp) 
+		 a2[10] = a2[10] + (a4[10] * temp)
+		a2[11] = a2[11] + (a4[11] * temp)
+		
+		
+        var temp = -a1[4]
+		
+        a1[4] = a1[4] + (a4[4] * temp)
+        a1[5] = a1[5] + (a4[5] * temp)  
+        a1[6] = a1[6] + (a4[6] * temp) 
+		 a1[7] = a1[7] + (a4[7] * temp) 
+		a1[8] = a1[8] + (a4[8] * temp)
+		a1[9] = a1[9] + (a4[9] * temp)
+		a1[10] = a1[10] + (a4[10] * temp)
+		a1[11] = a1[11] + (a4[11] * temp) }
+
+//FIVE
+
+  if (a5[5] == 0 ) {             
+                for (var i=5; i<=11; i++) {
+                        var temp = a5[i]
+                             a5[i] = a6[i]
+							 a6[i] = a7[i]
+							 a7[i] = a8[i]
+							 a8[i]=a9[i]
+							 a9[i]=a10[i]
+							 a10[i]=temp
+							 }
+        }
+                	
+
+        if (a5[5] != 0 ) {  
+		
+		                            
+                var temp = a5[5]
+                a5[5] = a5[5] / temp    
+         		a5[6] = a5[6] / temp 
+                a5[7] = a5[7] / temp 
+                a5[8] = a5[8] / temp 
+				a5[9] = a5[9] / temp
+			    a5[10] = a5[10] / temp
+				a5[11] = a5[11] / temp
+				
+				var temp = -a10[5]
+      	        a10[5] = a10[5] + (a5[5] * temp)
+          		a10[6] = a10[6] + (a5[6] * temp)
+				a10[7] = a10[7] + (a5[7] * temp)
+				a10[8] = a10[8] + (a5[8] * temp)
+				a10[9] = a10[9] + (a5[9] * temp)
+				a10[10] = a10[10] + (a5[10] * temp)
+				a10[11] = a10[11] + (a5[11] * temp)
+
+				var temp = -a9[5]
+      	        a9[5] = a9[5] + (a5[5] * temp)
+          		a9[6] = a9[6] + (a5[6] * temp)
+				a9[7] = a9[7] + (a5[7] * temp)
+				a9[8] = a9[8] + (a5[8] * temp)
+				a9[9] = a9[9] + (a5[9] * temp)
+				a9[10] = a9[10] + (a5[10] * temp)
+				a9[11] = a9[11] + (a5[11] * temp)
+
+
+				var temp = -a8[5]
+      	        a8[5] = a8[5] + (a5[5] * temp)
+          		a8[6] = a8[6] + (a5[6] * temp)
+				a8[7] = a8[7] + (a5[7] * temp)
+				a8[8] = a8[8] + (a5[8] * temp)
+				a8[9] = a8[9] + (a5[9] * temp)
+				a8[10] = a8[10] + (a5[10] * temp)
+    			a8[11] = a8[11] + (a5[11] * temp)
+			
+			var temp = -a7[5]
+      	        a7[5] = a7[5] + (a5[5] * temp)
+          		a7[6] = a7[6] + (a5[6] * temp)
+				a7[7] = a7[7] + (a5[7] * temp)
+				a7[8] = a7[8] + (a5[8] * temp)
+				a7[9] = a7[9] + (a5[9] * temp)
+				a7[10] = a7[10] + (a5[10] * temp)
+				a7[11] = a7[11] + (a5[11] * temp)
+			   
+				var temp = -a6[5]
+      	        a6[5] = a6[5] + (a5[5] * temp)
+          		a6[6] = a6[6] + (a5[6] * temp)
+				a6[7] = a6[7] + (a5[7] * temp)
+				a6[8] = a6[8] + (a5[8] * temp)
+				a6[9] = a6[9] + (a5[9] * temp)
+				a6[10] = a6[10] + (a5[10] * temp)
+				a6[11] = a6[11] + (a5[11] * temp)
+			
+			
+			var temp = -a4[5]
+      	        a4[5] = a4[5] + (a5[5] * temp)
+          		a4[6] = a4[6] + (a5[6] * temp)
+				a4[7] = a4[7] + (a5[7] * temp)
+				a4[8] = a4[8] + (a5[8] * temp)
+				a4[9] = a4[9] + (a5[9] * temp)
+				a4[10] = a4[10] + (a5[10] * temp)
+				a4[11] = a4[11] + (a5[11] * temp)
+				
+               var temp = -a3[5]
+      	        a3[5] = a3[5] + (a5[5] * temp)
+          		a3[6] = a3[6] + (a5[6] * temp)
+				a3[7] = a3[7] + (a5[7] * temp)
+				a3[8] = a3[8] + (a5[8] * temp)
+				a3[9] = a3[9] + (a5[9] * temp)
+				a3[10] = a3[10] + (a5[10] * temp)
+				a3[11] = a3[11] + (a5[11] * temp)
+			     
+        var temp = -a2[5]
+		
+		a2[5] = a2[5] + (a5[5] * temp)
+        a2[6] = a2[6] + (a5[6] * temp)
+		a2[7] = a2[7] + (a5[7] * temp)
+		a2[8] = a2[8] + (a5[8] * temp)
+		a2[9] = a2[9] + (a5[9] * temp)
+		a2[10] = a2[10] + (a5[10] * temp)
+		a2[11] = a2[11] + (a5[11] * temp)
+		
+        var temp = -a1[5]
+       
+        a1[5] = a1[5] + (a5[5] * temp)  
+        a1[6] = a1[6] + (a5[6] * temp) 
+		a1[7] = a1[7] + (a5[7] * temp)
+		a1[8] = a1[8] + (a5[8] * temp)
+		a1[9] = a1[9] + (a5[9] * temp) 
+		a1[10] = a1[10] + (a5[10] * temp)
+		a1[11] = a1[11] + (a5[11] * temp) }
+
+
+
+//SIX//
+ if (a6[6] == 0 ) {             
+                for (var i=6; i<=11; i++) {
+                        var temp = a6[i]
+                             
+							 a6[i] = a7[i]
+							 a7[i] = a8[i]
+							 a8[i]= a9[i]
+							 a9[i]= a10[i]
+							 a10[i] = temp
+							 }
+        }
+
+
+
+ if (a6[6] != 0 ) {                              
+                var temp = a6[6]
+                       
+                a6[6] = a6[6] / temp           
+                a6[7] = a6[7] / temp    
+                a6[8] = a6[8] / temp  
+			    a6[9] = a6[9] / temp                            
+		   	    a6[10] = a6[10] / temp 
+				a6[11] = a6[11] / temp 
+				
+		
+				 var temp = -a10[6]
+      
+        a10[6] = a10[6] + (a6[6] * temp)
+        a10[7] = a10[7] + (a6[7] * temp)
+		a10[8] = a10[8] + (a6[8] * temp)
+		a10[9] = a10[9] + (a6[9] * temp)
+		a10[10] = a10[10] + (a6[10] * temp)
+		a10[11] = a10[11] + (a6[11] * temp)
+		
+				 var temp = -a9[6]
+      
+        a9[6] = a9[6] + (a6[6] * temp)
+        a9[7] = a9[7] + (a6[7] * temp)
+		a9[8] = a9[8] + (a6[8] * temp)
+		a9[9] = a9[9] + (a6[9] * temp)
+		a9[10] = a9[10] + (a6[10] * temp)
+		a9[11] = a9[11] + (a6[11] * temp)
+
+
+             
+				 var temp = -a8[6]
+      
+        a8[6] = a8[6] + (a6[6] * temp)
+        a8[7] = a8[7] + (a6[7] * temp)
+		a8[8] = a8[8] + (a6[8] * temp)
+		a8[9] = a8[9] + (a6[9] * temp)
+		a8[10] = a8[10] + (a6[10] * temp)	
+		a8[11] = a8[11] + (a6[11] * temp)
+			
+	
+				 var temp = -a7[6]
+      
+        a7[6] = a7[6] + (a6[6] * temp)
+        a7[7] = a7[7] + (a6[7] * temp)
+		a7[8] = a7[8] + (a6[8] * temp)
+		a7[9] = a7[9] + (a6[9] * temp)
+		a7[10] = a7[10] + (a6[10] * temp)	
+		a7[11] = a7[11] + (a6[11] * temp)
+			
+			
+				 var temp = -a5[6]
+      
+        a5[6] = a5[6] + (a6[6] * temp)
+        a5[7] = a5[7] + (a6[7] * temp)
+		a5[8] = a5[8] + (a6[8] * temp)
+		a5[9] = a5[9] + (a6[9] * temp)
+		a5[10] = a5[10] + (a6[10] * temp)	
+		a5[11] = a5[11] + (a6[11] * temp)	
+                
+			
+				 var temp = -a4[6]
+      
+        a4[6] = a4[6] + (a6[6] * temp)
+        a4[7] = a4[7] + (a6[7] * temp)
+		a4[8] = a4[8] + (a6[8] * temp)
+		a4[9] = a4[9] + (a6[9] * temp)
+		a4[10] = a4[10] + (a6[10] * temp)	
+		a4[11] = a4[11] + (a6[11] * temp)
+                
+				
+		
+				 var temp = -a3[6]
+      
+        a3[6] = a3[6] + (a6[6] * temp)
+        a3[7] = a3[7] + (a6[7] * temp)
+		a3[8] = a3[8] + (a6[8] * temp)
+		a3[9] = a3[9] + (a6[9] * temp)
+		a3[10] = a3[10] + (a6[10] * temp)	
+		a3[11] = a3[11] + (a6[11] * temp)
+		     
+
+        var temp = -a2[6]	
+      
+        a2[6] = a2[6] + (a6[6] * temp)
+        a2[7] = a2[7] + (a6[7] * temp)
+		a2[8] = a2[8] + (a6[8] * temp)
+		a2[9] = a2[9] + (a6[9] * temp)
+		a2[10] = a2[10] + (a6[10] * temp)	
+		a2[11] = a2[11] + (a6[11] * temp)
+		
+     
+				 var temp = -a1[6]
+      
+        a1[6] = a1[6] + (a6[6] * temp)
+        a1[7] = a1[7] + (a6[7] * temp)
+		a1[8] = a1[8] + (a6[8] * temp)
+		a1[9] = a1[9] + (a6[9] * temp)
+		a1[10] = a1[10] + (a6[10] * temp)	
+		a1[11] = a1[11] + (a6[11] * temp)
+				}
+
+
+//SEVEN
+
+ if (a7[7] == 0 ) {             
+                for (var i=7; i<=11; i++) {
+                        var temp = a7[i]
+                             
+					
+							 a7[i] = a8[i]
+							 a8[i]= a9[i]
+							 a9[i]=a10[i]
+							 a10[i]=temp
+							 }
+        }
+
+
+ if (a7[7] != 0 ) {                              
+                var temp = a7[7]
+                       
+                a7[7] = a7[7] / temp           
+                a7[8] = a7[8] / temp    
+                a7[9] = a7[9] / temp  
+        		a7[10] = a7[10] / temp	
+			    a7[11] = a7[11] / temp
+					 
+					var temp = -a10[7]
+      
+          a10[7] = a10[7] + (a7[7] * temp)
+          a10[8] = a10[8] + (a7[8] * temp)
+		  a10[9] = a10[9] + (a7[9] * temp)
+		  a10[10] = a10[10] + (a7[10] * temp)	
+		  a10[11] = a10[11] + (a7[11] * temp)
+		   
+				var temp = -a9[7]
+      
+          a9[7] = a9[7] + (a7[7] * temp)
+          a9[8] = a9[8] + (a7[8] * temp)
+		  a9[9] = a9[9] + (a7[9] * temp)
+		  a9[10] = a9[10] + (a7[10] * temp)	
+		  a9[11] = a9[11] + (a7[11] * temp)
+					 
+					
+				var temp = -a8[7]
+      
+          a8[7] = a8[7] + (a7[7] * temp)
+          a8[8] = a8[8] + (a7[8] * temp)
+		  a8[9] = a8[9] + (a7[9] * temp)
+		  a8[10] = a8[10] + (a7[10] * temp)	
+		a8[11] = a8[11] + (a7[11] * temp)
+			
+				
+				var temp = -a6[7]
+      
+          a6[7] = a6[7] + (a7[7] * temp)
+          a6[8] = a6[8] + (a7[8] * temp)
+		  a6[9] = a6[9] + (a7[9] * temp)
+		  a6[10] = a6[10] + (a7[10] * temp)	
+		a6[11] = a6[11] + (a7[11] * temp)
+			
+				var temp = -a5[7]
+      
+          a5[7] = a5[7] + (a7[7] * temp)
+          a5[8] = a5[8] + (a7[8] * temp)
+		  a5[9] = a5[9] + (a7[9] * temp)
+		  a5[10] = a5[10] + (a7[10] * temp)	
+		a5[11] = a5[11] + (a7[11] * temp)
+				
+                
+				
+				var temp = -a4[7]
+      
+          a4[7] = a4[7] + (a7[7] * temp)
+          a4[8] = a4[8] + (a7[8] * temp)
+   		  a4[9] = a4[9] + (a7[9] * temp)
+		 a4[10] = a4[10] + (a7[10] * temp)	
+		a4[11] = a4[11] + (a7[11] * temp)
+        
+		
+		        var temp = -a3[7]
+           
+          a3[7] = a3[7] + (a7[7] * temp)
+          a3[8] = a3[8] + (a7[8] * temp)
+		  a3[9] = a3[9] + (a7[9] * temp)
+		  a3[10] = a3[10] + (a7[10] * temp)	
+		a3[11] = a3[11] + (a7[11] * temp) 
+	
+				var temp = -a2[7]
+      
+          a2[7] = a2[7] + (a7[7] * temp)
+          a2[8] = a2[8] + (a7[8] * temp)
+		  a2[9] = a2[9] + (a7[9] * temp)
+		  a2[10] = a2[10] + (a7[10] * temp)	
+		a2[11] = a2[11] + (a7[11] * temp)
+
+     
+				var temp = -a1[7]
+      
+          a1[7] = a1[7] + (a7[7] * temp)
+          a1[8] = a1[8] + (a7[8] * temp)
+		  a1[9] = a1[9] + (a7[9] * temp)
+		  a1[10] = a1[10] + (a7[10] * temp)	
+		 a1[11] = a1[11] + (a7[11] * temp)
+			  
+			  }
+		
+		
+		//EIGHT
+if (a8[8] == 0 ) {             
+                for (var i=8; i<=11; i++) {
+                        var temp = a8[i]
+                             
+					
+							 
+							 a8[i]= a9[i]
+							 a9[i]= a10[i]
+							 a10[i] = temp
+							 }
+        }
+
+
+
+ if (a8[8] != 0 ) {                              
+                var temp = a8[8]
+                       
+                a8[8] = a8[8] / temp           
+                a8[9] = a8[9] / temp    
+                a8[10] = a8[10] / temp 
+				a8[11] = a8[11] / temp 
+		
+		
+			var temp = -a10[8]
+      
+        a10[8] = a10[8] + (a8[8] * temp)
+        a10[9] = a10[9] + (a8[9] * temp)
+		a10[10] = a10[10] + (a8[10] * temp)	
+		a10[11] = a10[11] + (a8[11] * temp)
+				
+		var temp = -a9[8]
+      
+        a9[8] = a9[8] + (a8[8] * temp)
+        a9[9] = a9[9] + (a8[9] * temp)
+		a9[10] = a9[10] + (a8[10] * temp)	
+		a9[11] = a9[11] + (a8[11] * temp)
+		
+				
+		var temp = -a7[8]
+      
+        a7[8] = a7[8] + (a8[8] * temp)
+        a7[9] = a7[9] + (a8[9] * temp)
+		a7[10] = a7[10] + (a8[10] * temp)	
+		a7[11] = a7[11] + (a8[11] * temp)
+		
+		
+					
+		var temp = -a6[8]
+      
+        a6[8] = a6[8] + (a8[8] * temp)
+        a6[9] = a6[9] + (a8[9] * temp)
+		a6[10] = a6[10] + (a8[10] * temp)	
+		a6[11] = a6[11] + (a8[11] * temp)
+		
+				
+		var temp = -a5[8]
+      
+        a5[8] = a5[8] + (a8[8] * temp)
+        a5[9] = a5[9] + (a8[9] * temp)
+		a5[10] = a5[10] + (a8[10] * temp)	
+		a5[11] = a5[11] + (a8[11] * temp)
+				
+
+				var temp = -a4[8]
+      
+        a4[8] = a4[8] + (a8[8] * temp)
+        a4[9] = a4[9] + (a8[9] * temp)
+		a4[10] = a4[10] + (a8[10] * temp)	
+		a4[11] = a4[11] + (a8[11] * temp)
+		  
+	
+				
+		var temp = -a3[8]
+      
+        a3[8] = a3[8] + (a8[8] * temp)
+        a3[9] = a3[9] + (a8[9] * temp)
+		a3[10] = a3[10] + (a8[10] * temp)	
+		a3[11] = a3[11] + (a8[11] * temp)
+				
+
+				
+		var temp = -a2[8]
+      
+        a2[8] = a2[8] + (a8[8] * temp)
+        a2[9] = a2[9] + (a8[9] * temp)
+		a2[10] = a2[10] + (a8[10] * temp)	
+		a2[11] = a2[11] + (a8[11] * temp)
+				
+
+	
+				
+		var temp = -a1[8]
+      
+        a1[8] = a1[8] + (a8[8] * temp)
+        a1[9] = a1[9] + (a8[9] * temp)
+		a1[10] = a1[10] + (a8[10] * temp)	
+		a1[11] = a1[11] + (a8[11] * temp)
+		  
+					
+		}
+		
+	if (a9[9] == 0 ) {             
+                for (var i=9; i<=11; i++) {
+                        var temp = a9[i]
+                             
+					a9[i]= a10[i]
+					a10[i] = temp
+							 }
+        }
+
+	
+		
+if (a9[9] != 0 ) {                              
+                var temp = a9[9]
+                       
+                      
+                a9[9] = a9[9] / temp    
+                a9[10] = a9[10] / temp 
+				a9[11] = a9[11] / temp 
+		
+		
+		var temp = -a10[9]
+      
+        a10[9] = a10[9] + (a9[9] * temp)
+		a10[10] = a10[10] + (a9[10] * temp)	
+		a10[11] = a10[11] + (a9[11] * temp)
+		
+		
+		var temp = -a8[9]
+      
+        a8[9] = a8[9] + (a9[9] * temp)
+		a8[10] = a8[10] + (a9[10] * temp)	
+		a8[11] = a8[11] + (a9[11] * temp)
+		
+				
+		
+				
+		var temp = -a7[9]
+      
+        a7[9] = a7[9] + (a9[9] * temp)
+  
+		a7[10] = a7[10] + (a9[10] * temp)	
+		a7[11] = a7[11] + (a9[11] * temp)
+		
+		
+					
+		var temp = -a6[9]
+      
+        a6[9] = a6[9] + (a9[9] * temp)
+      
+		a6[10] = a6[10] + (a9[10] * temp)	
+		a6[11] = a6[11] + (a9[11] * temp)
+		
+				
+		var temp = -a5[9]
+      
+        a5[9] = a5[9] + (a9[9] * temp)
+       
+		a5[10] = a5[10] + (a9[10] * temp)	
+		a5[11] = a5[11] + (a9[11] * temp)
+				
+
+				var temp = -a4[9]
+      
+        a4[9] = a4[9] + (a9[9] * temp)
+       
+		a4[10] = a4[10] + (a9[10] * temp)	
+		a4[11] = a4[11] + (a9[11] * temp)
+		  
+	
+				
+		var temp = -a3[9]
+      
+        a3[9] = a3[9] + (a9[9] * temp)
+ 
+		a3[10] = a3[10] + (a9[10] * temp)	
+		a3[11] = a3[11] + (a9[11] * temp)
+				
+
+				
+		var temp = -a2[9]
+      
+        a2[9] = a2[9] + (a9[9] * temp)
+    
+		a2[10] = a2[10] + (a9[10] * temp)	
+		a2[11] = a2[11] + (a9[11] * temp)
+				
+
+	
+				
+		var temp = -a1[9]
+      
+        a1[9] = a1[9] + (a9[9] * temp)
+       
+		a1[10] = a1[10] + (a9[10] * temp)	
+		a1[11] = a1[11] + (a9[11] * temp)
+		  
+					
+		}
+
+		
+if (a10[10] != 0 ) {                              
+                var temp = a10[10]
+                       
+                      
+                
+                a10[10] = a10[10] / temp 
+				a10[11] = a10[11] / temp 
+		
+		
+		var temp = -a9[10]
+		a9[10] = a9[10] + (a10[10] * temp)	
+		a9[11] = a9[11] + (a10[11] * temp)
+		
+		
+		var temp = -a8[10]
+        a8[10] = a8[10] + (a10[10] * temp)	
+		a8[11] = a8[11] + (a10[11] * temp)
+		
+		var temp = -a7[10]
+      
+     	a7[10] = a7[10] + (a10[10] * temp)	
+		a7[11] = a7[11] + (a10[11] * temp)
+		
+		
+					
+		var temp = -a6[10]
+       
+		a6[10] = a6[10] + (a10[10] * temp)	
+		a6[11] = a6[11] + (a10[11] * temp)
+		
+				
+		var temp = -a5[10]
+      
+      	a5[10] = a5[10] + (a10[10] * temp)	
+		a5[11] = a5[11] + (a10[11] * temp)
+				
+
+				var temp = -a4[10]
+      
+   		a4[10] = a4[10] + (a10[10] * temp)	
+		a4[11] = a4[11] + (a10[11] * temp)
+		  
+	
+				
+		var temp = -a3[10]
+      
+		a3[10] = a3[10] + (a10[10] * temp)	
+		a3[11] = a3[11] + (a10[11] * temp)
+				
+
+				
+		var temp = -a2[10]
+      
+        a2[10] = a2[10] + (a10[10] * temp)	
+		a2[11] = a2[11] + (a10[11] * temp)
+				
+
+	
+				
+		var temp = -a1[10]
+      
+        a1[10] = a1[10] + (a10[10] * temp)	
+		a1[11] = a1[11] + (a10[11] * temp)
+		  
+					
+		}
+
+
+
+
+
+
+
+
+
+
+if (t1[1] * a1[11] + t1[2] * a2[11] + t1[3]*a3[11] + t1[4] * a4[11] + t1[5] * a5[11] + t1[6]*a6[11] 
++ t1[7] * a7[11] + t1[8] * a8[11] + t1[9]*a9[11] + t1[10] * a10[11] != t1[11] ) 
+        { alert("\rData entry error, try the Nnumerical Example\r\rOr system of equations has no solution, or many solutions.") }
+
+if (t2[1] * a1[11] + t2[2] * a2[11] + t2[3]*a3[11] + t2[4] * a4[11] + t2[5] * a5[11] + t2[6]*a6[11] 
++ t2[7] * a7[11] + t2[8] * a8[11] + t2[9]*a9[11] + t2[10] * a10[11] != t2[11] ) 
+        { alert("\rData entry error, try the Nnumerical Example\r\rOr system of equations has no solution, or many solutions.") }
+
+
+if (t3[1] * a1[11] + t3[2] * a2[11] + t3[3]*a3[11] + t3[4] * a4[11] + t3[5] * a5[11] + t3[6]*a6[11] 
++ t3[7] * a7[11] + t3[8] * a8[11] + t3[9]*a9[11] + t3[10] * a10[11] != t3[11] )
+        { alert("\rData entry error, try the Nnumerical Example\r\rOr system of equations has no solution, or many solutions.") }
+
+
+
+
+if (t4[1] * a1[11] + t4[2] * a2[11] + t4[3]*a3[11] + t4[4] * a4[11] + t4[5] * a5[11] + t4[6]*a6[11] 
++ t4[7] * a7[11] + t4[8] * a8[11] + t4[9]*a9[11] + t4[10] * a10[11] != t4[11] )
+        { alert("\rData entry error, try the Nnumerical Example\r\rOr system of equations has no solution, or many solutions.") } 
+
+
+
+
+if (t5[1] * a1[11] + t5[2] * a2[11] + t5[3]*a3[11] + t5[4] * a4[11] + t5[5] * a5[11] + t5[6]*a6[11] 
++ t5[7] * a7[11] + t5[8] * a8[11] + t5[9]*a9[11] + t5[10] * a10[11] != t5[11] )
+        { alert("\rData entry error, try the Nnumerical Example\r\rOr system of equations has no solution, or many solutions.") } 
+
+
+
+if (t6[1] * a1[11] + t6[2] * a2[11] + t6[3]*a3[11] + t6[4] * a4[11] + t6[5] * a5[11] + t6[6]*a6[11] 
++ t6[7] * a7[11] + t6[8] * a8[11] + t6[9]*a9[11] + t6[10] * a10[11] != t6[11] )
+        { alert("\rData entry error, try the Nnumerical Example\r\rOr system of equations has no solution, or many solutions.") } 
+
+
+
+if (t7[1] * a1[11] + t7[2] * a2[11] + t7[3]*a3[11] + t7[4] * a4[11] + t7[5] * a5[11] + t7[6]*a6[11] 
++ t7[7] * a7[11] + t7[8] * a8[11] + t7[9]*a9[11] + t7[10] * a10[11] != t7[11] )
+        { alert("\rData entry error, try the Nnumerical Example\r\rOr system of equations has no solution, or many solutions.") } 
+
+
+
+if (t8[1] * a1[11] + t8[2] * a2[11] + t8[3]*a3[11] + t8[4] * a4[11] + t8[5] * a5[11] + t8[6]*a6[11] 
++ t8[7] * a7[11] + t8[8] * a8[11] + t8[9]*a9[11] + t8[10] * a10[11] != t8[11] )
+        { alert("\rData entry error, try the Nnumerical Example\r\rOr system of equations has no solution, or many solutions.") } 
+
+
+
+if (t9[1] * a1[11] + t9[2] * a2[11] + t9[3]*a3[11] + t9[4] * a4[11] + t9[5] * a5[11] + t9[6]*a6[11] 
++ t9[7] * a7[11] + t9[8] * a8[11] + t9[9]*a9[11] + t9[10] * a10[11] != t9[11] )
+        { alert("\rData entry error, try the Nnumerical Example\r\rOr system of equations has no solution, or many solutions.") } 
+
+
+
+
+if (t10[1] * a1[11] + t10[2] * a2[11] + t10[3]*a3[11] + t10[4] * a4[11] + t10[5] * a5[11] + t10[6]*a6[11] 
++ t10[7] * a7[11] + t10[8] * a8[11] + t10[9]*a9[11] + t10[10] * a10[11] != t10[11] )
+        { alert("\rData entry error, try the Nnumerical Example\r\rOr system of equations has no solution, or many solutions.") } 
+
+
+
+
+
+
+m.x1.value=Math.round(1000*a1[11])/1000;
+  
+m.x2.value=Math.round(1000*a2[11])/1000;
+  
+m.x3.value=Math.round(1000*a3[11])/1000;
+  
+m.x4.value=Math.round(1000*a4[11])/1000;
+  
+m.x5.value=Math.round(1000*a5[11])/1000;
+  
+m.x6.value=Math.round(1000*a6[11])/1000;
+m.x7.value=Math.round(1000*a7[11])/1000;
+  
+m.x8.value=Math.round(1000*a8[11])/1000;
+m.x9.value=Math.round(1000*a9[11])/1000;
+m.x10.value=Math.round(1000*a10[11])/1000;
+
+
+
+}
+
+//-->
+
+
+</script>
+</font>
+<form name="matrix">
+  <table width="660" align="center">
+    <tr> 
+      <th width="6%"><font face="verdana, arial, helvetica"><b><font size="2">X1</font></b></font></th>
+      <th width="6%"><font face="verdana, arial, helvetica"><b><font size="2">X2</font></b></font></th>
+      <th width="6%"><font face="verdana, arial, helvetica"><b><font size="2">X3</font></b></font></th>
+      <th width="6%"><font face="verdana, arial, helvetica"><b><font size="2">X4</font></b></font></th>
+      <th width="6%"><font face="verdana, arial, helvetica" size="2">X5</font></th>
+      <th width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica" size="2">X6</font></div>
+      </th>
+      <th width="6%"><font size="2" face="verdana, arial, helvetica">X7</font></th>
+      <th width="6%"><font size="2" face="verdana, arial, helvetica">X8</font></th>
+      <th width="6%"><font face="verdana, arial, helvetica" size="2">X9</font></th>
+      <th width="6%"><font face="verdana, arial, helvetica" size="2">x10</font></th>
+      <th width="6%"><font size="2" face="verdana, arial, helvetica">RHS</font></th>
+    </tr>
+    <tr> 
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a11"  size="3"  value="">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a12"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a13"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a14"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a15"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a16"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a17"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a18"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a19"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a110"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a111"  size="3"  value="0">
+          </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a21"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a22"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a23"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a24"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a25"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a26"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a27"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a28"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a29"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a210"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a211"  size="3"  value="0">
+          </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a31"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a32"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a33"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a34"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a35"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a36"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a37"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a38"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a39"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a310"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a311"  size="3"  value="0">
+          </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a41"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a42"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a43"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a44"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a45"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a46"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a47"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a48"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a49"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a410"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a411"  size="3"  value="0">
+          </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a51"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a52"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a53"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a54"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a55"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a56"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a57"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a58"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a59"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a510"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="31"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a511"  size="3"  value="0">
+          </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a61"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a62"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a63"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a64"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a65"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a66"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a67"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a68"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a69"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <p align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a610"  size="3"  value="0">
+          </font></p>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a611"  size="3"  value="0">
+          </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a71"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a72"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a73"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a74"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a75"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a76"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a77"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a78"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a79"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a710"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a711"  size="3"  value="0">
+          </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="6%" height="29"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a81"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a82"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a83"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a84"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a85"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a86"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a87"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a88"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a89"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a810"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type="text" name="a811"  size="3"  value="0">
+          </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a91"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a92"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a93"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a94"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a95"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a96"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a97"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a98"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a99"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a910"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a911"  size="3"  value="0">
+          </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a101"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a102"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a103"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a104"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a105"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a106"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a107"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a108"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a109"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a1010"  size="3"  value="0">
+          </font></div>
+      </td>
+      <td width="6%"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="a1011"  size="3"  value="0">
+          </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="6%" ></td>
+      <td width="6%" > 
+        <div align="right"> </div>
+      </td>
+      <td width="6%" > 
+        <div align="left"> </div>
+      </td>
+      <td width="6%" ></td>
+      <td width="6%" ></td>
+      <td width="6%" ></td>
+      <td width="6%" ></td>
+      <td width="6%" ></td>
+      <td width="6%" ></td>
+      <td width="6%" ></td>
+      <td width="6%" ></td>
+    </tr>
+    <tr> 
+      <td colspan="11"> 
+        <div align="center"> <font face="verdana, arial, helvetica"> 
+          <input type=reset value=" Reset " name="reset">
+          <input type="button"
+            value="Calculate" size="10" onClick="solve(matrix)" name="button">
+          </font></div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="11">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td colspan="11"> 
+        <div align="center"><font size="2" face="verdana, arial, helvetica"><b><font size="3" color="#990000">Solution 
+          Is:</font></b></font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="6%" height="29"> 
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>X1</b></font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>X2</b></font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>X3</b></font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>X4</b></font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>X5</b></font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>X6</b></font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>X7</b></font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>X8</b></font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>X9</b></font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><b>X10</b></font></div>
+      </td>
+      <td width="6%" height="29">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="6%" height="29"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="x1"  size="3" >
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="x2"  size="3" >
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="x3"  size="3" >
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="x4"  size="3" >
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="x5"  size="3" >
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="x6"  size="3" >
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="x7"  size="3" >
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="x8"  size="3" >
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="x9"  size="3" >
+          </font></div>
+      </td>
+      <td width="6%" height="29"> 
+        <div align="center"><font face="verdana, arial, helvetica"> 
+          <input type="text" name="x10"  size="3" >
+          </font></div>
+      </td>
+      <td width="6%" height="29">&nbsp;</td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+</form>
+
+<p>
+<p>
+<br>
+<BR>
+<BLOCKQUOTE>
+  <HR>
+<font face ="verdana, arial, helvetica"> 
+<P>
+  <CENTER>For Technical Details, Back to:<BR><A  href="../opre/partXII.htm" 
+  target="new">Topics in Linear Algebra</A>
+  <P>
+  <HR>
+  <P>Kindly <A href="mailto:harsham@ubalt.edu">email</A> your comments to:<BR><A href="../home.html"  target="new">Professor Hossein Arsham</A> </CENTER>
+<p>
+<hr>
+
+
+
+</font></BLOCKQUOTE>
+<font face ="verdana, arial, helvetica"> 
+
+<A name="rmenu" ></A>
+
+</font><p><font face ="verdana, arial, helvetica"><center>
+    <font size=4 color="#DC143C"><b>MENU</b></font>
+  </center>
+</font><center><font face ="verdana, arial, helvetica">
+<p>
+    </font><table width="600"><tr valign=TOP>
+      <td nowrap width="230" align="right" height="63"> 
+        <font face ="verdana, arial, helvetica">
+          </font> 
+          <table width="40%" border="0"> 
+            <tr>
+              <td nowrap>
+<p>
+<font size=2 face ="verdana, arial, helvetica">
+<a href="http://home.ubalt.edu/ntsbarsh/stat-data/Forecast.htm"  target="new"><font  color="#DC143C"><b>Decision Tools in Economics & Finance</b></font></a><br>
+ <a href="http://www.mirrorservice.org/sites/home.ubalt.edu/ntsbarsh/Business-stat/stat-data/Forecast.htm" target="new"><font  color="#DC143C"><b>Europe Mirror Site</b></font></a><br>
+
+<ul>
+<li><a href="ABClass.htm" target="new">ABC Inventory Classification</a>
+<li><a href="Autoreg.htm" target="new">Autoregressive Time Series</a>
+<li><a href="MultiVariate.htm" target ="new">Beta and Covariance Computations</a>
+<li><A href="Bivariate.htm"  target=new>Bivariate Discrete Distributions</A>
+<li><A href="BreakEven.htm"  target=new>Break-Even Analysis and Forecasting</A>
+<li><a href="Javastat.htm" target ="new"> Categorized Probabilistic, and Statistical Tools</a>
+<li><a href="Trend.htm" target ="new">Detecting Trend & Autocrrelation</a>
+<li><a href="Outlier.htm" target= "new">Determination of the Outliers</a>
+<li><a href="ForecaSmo.htm" target ="new"> Forecasting by Smoothing</a>
+<li><a href="Inventory.htm" target= "new">Inventory Control Models</a>
+<li><a href="../opre/LpSolvers.htm" target="new">Linear Optimization Solvers to Download</a>
+<li><a href="LPTools.htm" target="new">Linear Optimization with Sensitivity</a>
+<li><a href="CompoundCal.htm" target ="new">Maths of Money: Compound Interest Analysis</a>
+<li><a href="../Matrix/Mat4.htm"  target="new">Matrix Algebra, and Markov Chains</a>
+<li><a href="Esteem.htm"  target="new">Mean, and Variance Estimations</a>
+<li><a href="MeasurAccur.htm"  target="new">Measuring Forecast Accuracy</a>
+<li><a href="PolynoReg.htm"  target="new">Other Polynomial Regressions</a>
+<li><a href="Replacement.htm" target="new">Optimal Age for Replacement</a>
+<li><a href="PaRHSSyEqu.htm" target="new">Parametric System of Linear Equations</a>
+<li><a href="RiskMeasur.htm" target="new">Performance Measures for Portfolios</a>
+<li><a href="../graph/TimeSeriesPlot.htm" target="new">Plot of a Time Series</a>
+<li><a href="Regression.htm" target ="new">Predictions by Regression</a>
+<li><a href="ConfIntPro.htm" target ="new">Proportion Estimation</a>
+<li><a href="QuadReg.htm" target="new">Quadratic Regression</a>
+<li><a href="MultRgression.htm" target ="new">Regression Modeling</a>
+<li><a href="SeasonalTools.htm" target="new">Seasonal Index</a>
+<li><a href="Newsboy.htm" target="new">Single-period Inventory Analysis</a>
+<li><a href="Descriptive.htm" target="new">Summarize Your Data</a>
+<li><a href="SysEq.htm" target="new">System of Equations, and Matrix Inversion</a>
+<li><a href="Fluctuation.htm" target= "new">Test for Random Fluctuations</a>
+<li><a href="TestSeason.htm"  target="new">Test for Seasonality</a>
+<li><a href="Stationary.htm"  target="new">Test for Stationary Time Series</a>
+<li><a href="TimeSeriesStat.htm"  target="new"> Time Series' Statistics</a>
+</ul>
+
+<br>
+<a href="http://home.ubalt.edu/ntsbarsh/opre640a/partIX.htm"  target="new"><font  color="#DC143C"><b> Probabilistic Modeling</b></font></a><br>
+ <a href="http://www.mirrorservice.org/sites/home.ubalt.edu/ntsbarsh/Business-stat/opre/partIX.htm" target="new"><font  color="#DC143C"><b>Europe Mirror Site</b></font></a><br>
+<ul>
+<li><a href="BayesInfer.htm" target ="new">Bayesian Inference for the Mean</a>
+<li><a href="../matrix/matrix.htm" target="new">Bayes' Revised Probability</a>
+<li><A href="Bivariate.htm"  target=new>Bivariate Discrete Distributions</A>
+<li><A href="Ustat.htm"  target=new>Comparing Two Random Variables</A>
+<li><a href="ADuncertain.htm" target ="new"> Decision Making Under Uncertainty</a>
+<li><a href="Utility.htm" target ="new"> Determination of Utility Function</a>
+<li><a href="DaRisky.htm" target ="new">Making Risky Decisions</a>
+<li><a href="RiskCal.htm" target ="new">Measure the Quality of Your Decision</a>
+<li><a href="multinomial.htm"  target="new">Multinomial Distributions</a>
+<li><a href="Game.htm" target= "new">Two-Person Zero-Sum Games</a>
+</ul>
+<p>
+
+
+
+</td>
+</tr>
+</table>
+</td>
+<td width="97" height="63">&nbsp;</td>
+<td nowrap width="232" height="63"> 
+<table width="40%" border="0">
+<tr>
+<td nowrap>
+<font size=2 face ="verdana, arial, helvetica">
+<a href="../opre504.htm"  target="new"><font  color="#DC143C"><b>Statistics</b></font></a><br><a href="http://www.mirrorservice.org/sites/home.ubalt.edu/ntsbarsh/Business-stat/opre504.htm" target="new"><font color="#DC143C"><b>Europe Mirror Site</b></font></a>
+<p>
+<ul>
+<li><a href="ANOCOV.htm" target= "new">Analysis of Covariance</a>
+<li><A href="SeveralMeans.htm"  target=new>ANOVA for Condensed Data Sets</A>
+<li><a href="ANOVADep.htm" target= "new">ANOVA for Dependent Populations</a>
+<li><a href="ANOVA.htm" target ="new">ANOVA: Testing the Means</a>
+<li><a href="BayesInfer.htm" target ="new">Bayesian Statistical Inference</a>
+<li><a href="MultiVariate.htm"  target="new">Bivariate Sampling Statistics</a>
+<li><a href="Catego.htm" target="new">Chi-square Test for Relationship</a>
+<li><a href="CountTest.htm" target ="new"> Compatibility of Multi-Counts </a>
+<li><a href="EsteemI.htm" target ="new"> Confidence Intervals for Two Populations</a>
+<li><a href="Descriptive.htm"  target="new">Descriptive Statistics</a>
+<li><a href="Outlier.htm" target= "new">Determination of the Outliers</a>
+<li><a href="ECDF.htm" target ="new">Empirical Distribution Function</a>
+<li><a href="BartletTest.htm" target ="new"> Equality of Multi-variances </a>
+<li><a href="Esteem.htm" target= "new">Estimations With Confidence</a>
+<li><a href="goodness.htm" target="new">Goodness-of-Fit for Discrete Variables</a>
+<li><a href="HomoCrosstable.htm" target="new">Identical Populations Testing</a>
+<li><a href="NuIndex.htm" target ="new">Index Numbers with Applications</a>
+<li><a href="ks.htm" target ="new">K-S Test for Equality of Two Populations</a>
+<li><a href="LilliExpon.htm"  target="new">Lilliefors Test for Exponentially</a>
+<li><a href="MultRgression.htm" target="new">Multiple Regressions</a>
+<li><a href="ConfIntPro.htm" target= "new">Percentage: Estimation & Testing</a>
+<li><A href="PairedProp.htm"  target=new>Paired Proportion Test</A>
+<li><a href="PolynoReg.htm" target="new">Polynomial Regressions</a>
+<li><a href="Pooled.htm" target ="new">Pooling  Means, and Variances</a>
+<li><a href="pvalues.htm" target="new">P-values for the Popular Distributions</a>
+<li><a href="QuadReg.htm" target="new">Quadratic Regression</a>
+<li><a href="SampleSize.htm"  target="new">Sample Size Determination</a>
+<li><a href="RevisMean.htm" target= "new">Revising the Mean and the Variance</a>
+<li><a href="scatter.htm" target= "new">Scattered Diagram and the Outliers</a>
+<li><a href="Regression.htm" target ="new"> Simple Linear Regression</a>
+<li><A href="InaccracyAssessmet.htm"  target=new>Subjective Assessment of Estimates</A>
+<li><a href="SubjTest.htm" target= "new">Subjectivity in Hypothesis Testing </a>
+<li><a href="MultiCorr.htm" target= "new">Test for Several Correlation Coefficients</a>
+<li><a href="../histograming/topframe.html"  target="new">Test for Homogeneity of a Population</a>
+<li><a href="Normality.htm"  target="new">Test for Normality</a>
+<li><a href="Uniform.htm"  target="new">Test for Uniform Distribution</a>
+<li><a href="PoissonTest.htm"  target="new">Testing Poisson Process</a>
+<li><a href="Randomness.htm"  target="new">Test for Randomness</a>
+<li><a href="ProporTest.htm"  target="new">Testing Several Proportions</a>
+<li><a href="MeanTest.htm"  target="new">Testing  the Mean</a>
+<li><a href="MediansTest.htm"  target="new">Testing the Medians</a>
+<li><a href="correlation.htm" target= "new"> Testing the Correlation Coefficient</a>
+<li><a href="TwoPopTest.htm"  target="new">Testing Two Populations</a>
+<li><a href="variationtest.htm"  target="new">Testing the Variance</a>
+<li><a href="Paired.htm"  target="new">The Before-and-After Test</a>
+<li><a href="ThreeMeans.htm" target= "new">The Other Means</a>
+<li><A href="ANOVATwo.htm"  target=new>Two-Way ANOVA Test</A>
+<li><A href="ANOVA2Rep.htm"  target=new>Two-Way ANOVA with Replications</A>
+</ul>
+<p>
+</td>
+</tr>
+</table>
+</td>
+</table>
+</center>
+<P>
+<BLOCKQUOTE>
+<hr>
+<p>
+<font  color="#00700f">The Copyright Statement:</font> The fair use, according to the 1996 <a href="http://www.adec.edu/admin/papers/fair10-17.html" target="new">Fair Use Guidelines for Educational Multimedia</a>, of materials presented on this Web site is permitted for non-commercial and classroom purposes only. <br> 
+This site may be translated and/or mirrored intact (including these notices), on any server with public access.  All files are available at <A href="http://www.mirrorservice.org/sites/home.ubalt.edu/ntsbarsh/Business-stat" target=new>http://www.mirrorservice.org/sites/home.ubalt.edu/ntsbarsh/Business-stat</A> for mirroring.<p>
+ Kindly <a href="mailto:harsham@ubalt.edu"> e-mail</a> me your comments, suggestions, and concerns. Thank you. <div align="right"><cite><a href="../home.html"  target="new">Professor Hossein Arsham</a>&nbsp; &nbsp;</cite></div>
+<p>
+<hr>
+<center>
+Back to:
+<p>
+<A HREF="../home.html" target="new">Dr Arsham's Home Page</A>
+<p>
+</center></BLOCKQUOTE><center>
+<hr>
+</font>
+EOF: © 1994-2007.
+
+<hr>
+
+<P>&nbsp; 
+</center></BODY></HTML>
+
+

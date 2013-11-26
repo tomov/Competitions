@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+				<meta name="keywords" content="Reverse Polish notation,Articles with unsourced statements since June 2008,1920,1960,1960s,1972,Abstract syntax tree,Ada programming language,Addition,Australia,Binary operator" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+		<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/rss+xml" title="Wikipedia RSS Feed" href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=rss" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom Feed" href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Reverse Polish notation - Wikipedia, the free encyclopedia</title>
+		<style type="text/css" media="screen, projection">/*<![CDATA[*/
+			@import "/skins-1.5/common/shared.css?154";
+			@import "/skins-1.5/monobook/main.css?154";
+		/*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="/skins-1.5/common/commonPrint.css?154" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/skins-1.5/monobook/IE50Fixes.css?154";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/skins-1.5/monobook/IE55Fixes.css?154";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/skins-1.5/monobook/IE60Fixes.css?154";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/skins-1.5/monobook/IE70Fixes.css?154";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins-1.5/common/IEFixes.js?154"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		
+		<script type= "text/javascript">/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/skins-1.5";
+var wgArticlePath = "/wiki/$1";
+var wgScriptPath = "/w";
+var wgScript = "/w/index.php";
+var wgVariantArticlePath = false;
+var wgActionPaths = [];
+var wgServer = "http://en.wikipedia.org";
+var wgCanonicalNamespace = "";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 0;
+var wgPageName = "Reverse_Polish_notation";
+var wgTitle = "Reverse Polish notation";
+var wgAction = "view";
+var wgArticleId = "26513";
+var wgIsArticle = true;
+var wgUserName = null;
+var wgUserGroups = null;
+var wgUserLanguage = "en";
+var wgContentLanguage = "en";
+var wgBreakFrames = false;
+var wgCurRevisionId = "218527809";
+var wgVersion = "1.13alpha";
+var wgEnableAPI = true;
+var wgEnableWriteAPI = false;
+var wgMWSuggestTemplate = "http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}";
+var wgDBname = "enwiki";
+var wgSearchNamespaces = [0];
+var wgMWSuggestMessages = ["with suggestions", "no suggestions"];
+var wgRestrictionEdit = [];
+var wgRestrictionMove = [];
+/*]]>*/</script>
+                
+		<script type="text/javascript" src="/skins-1.5/common/wikibits.js?154"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/skins-1.5/common/ajax.js?154"></script>
+		<script type="text/javascript" src="/skins-1.5/common/mwsuggest.js?154"></script>
+<style type="text/css">/*<![CDATA[*/
+.source-python {line-height: normal;}
+.source-python li {line-height: normal;}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for python
+ * CSS class: source-python, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie (http://qbnz.com/highlighter)
+ */
+.source-python .de1, .source-python .de2 {font-family: 'Courier New', Courier, monospace; font-weight: normal;}
+.source-python  {}
+.source-python .head {}
+.source-python .foot {}
+.source-python .imp {font-weight: bold; color: red;}
+.source-python .ln-xtra {color: #cc0; background-color: #ffc;}
+.source-python li {font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;}
+.source-python li.li2 {font-weight: bold;}
+.source-python .kw1 {color: #ff7700;font-weight:bold;}
+.source-python .kw2 {color: #008000;}
+.source-python .kw3 {color: #dc143c;}
+.source-python .kw4 {color: #0000cd;}
+.source-python .co1 {color: #808080; font-style: italic;}
+.source-python .coMULTI {color: #808080; font-style: italic;}
+.source-python .es0 {color: #000099; font-weight: bold;}
+.source-python .br0 {color: #66cc66;}
+.source-python .st0 {color: #483d8b;}
+.source-python .nu0 {color: #ff4500;}
+.source-python .me1 {color: black;}
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/w/index.php?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400";
+/*]]>*/
+</style>		<script type="text/javascript" src="/w/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "/w/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400";
+@import "/w/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400";
+@import "/w/index.php?title=-&action=raw&gen=css&maxage=2678400";
+/*]]>*/</style>
+	</head>
+<body class="mediawiki ns-0 ltr page-Reverse_Polish_notation">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+		<div id="siteNotice"><script type="text/javascript" language="JavaScript">
+<!--
+document.writeln("\x3cp\x3e\x3c/p\x3e\n");
+-->
+</script></div>		<h1 class="firstHeading">Reverse Polish notation</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Wikipedia, the free encyclopedia</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<table class="infobox" width="150" style="text-align:center">
+<tr>
+<td><a href="/wiki/Image:Postfix-dia.png" class="image" title="Postfix-dia.png"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Postfix-dia.png/125px-Postfix-dia.png" width="125" height="39" border="0" /></a></td>
+</tr>
+<tr>
+<td><a href="/wiki/Polish_notation" title="Polish notation">Prefix notation</a></td>
+</tr>
+<tr>
+<td><a href="/wiki/Infix_notation" title="Infix notation">Infix notation</a></td>
+</tr>
+<tr>
+<td><strong class="selflink">Postfix notation</strong></td>
+</tr>
+</table>
+<p><b>Reverse Polish notation</b> (or just <b>RPN</b>) by analogy with the related <a href="/wiki/Polish_notation" title="Polish notation">Polish notation</a>, a postfix notation introduced in <a href="/wiki/1920" title="1920">1920</a> by the <a href="/wiki/Poland" title="Poland">Polish</a> mathematician <a href="/wiki/Jan_%C5%81ukasiewicz" title="Jan Łukasiewicz">Jan Łukasiewicz</a>, is a mathematical notation wherein every operator follows all of its operands. It is also known as <b>Postfix notation</b>.</p>
+<p>The Reverse Polish scheme was proposed by <a href="/wiki/F._L._Bauer" class="mw-redirect" title="F. L. Bauer">F. L. Bauer</a> and <a href="/wiki/E._W._Dijkstra" class="mw-redirect" title="E. W. Dijkstra">E. W. Dijkstra</a> in early <a href="/wiki/1960s" title="1960s">1960s</a> to reduce memory access and utilize the stack to evaluate expressions. The notation and algorithms for this scheme were enriched by <a href="/wiki/Australia" title="Australia">Australian</a> philosopher and computer scientist <a href="http://www.csc.liv.ac.uk/~peter/hamblin.html" class="external text" title="http://www.csc.liv.ac.uk/~peter/hamblin.html" rel="nofollow">Charles Hamblin</a> in the mid-<a href="/wiki/1960" title="1960">1960s</a>.</p>
+<p>Most of what follows is about <a href="/wiki/Binary_operator" class="mw-redirect" title="Binary operator">binary operators</a>. A <a href="/wiki/Unary_operator" class="mw-redirect" title="Unary operator">unary operator</a> for which the Reverse Polish notation is the general convention is the <a href="/wiki/Factorial" title="Factorial">factorial</a>.</p>
+<table id="toc" class="toc" summary="Contents">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1"><a href="#Explanation"><span class="tocnumber">1</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1"><a href="#Practical_implications"><span class="tocnumber">2</span> <span class="toctext">Practical implications</span></a></li>
+<li class="toclevel-1"><a href="#Disadvantages"><span class="tocnumber">3</span> <span class="toctext">Disadvantages</span></a></li>
+<li class="toclevel-1"><a href="#The_postfix_algorithm"><span class="tocnumber">4</span> <span class="toctext">The postfix algorithm</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">4.1</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Converting_from_infix_notation"><span class="tocnumber">5</span> <span class="toctext">Converting from infix notation</span></a></li>
+<li class="toclevel-1"><a href="#Implementations"><span class="tocnumber">6</span> <span class="toctext">Implementations</span></a></li>
+<li class="toclevel-1"><a href="#A_Postfix_evaluator_implemented_in_Python"><span class="tocnumber">7</span> <span class="toctext">A Postfix evaluator implemented in Python</span></a></li>
+<li class="toclevel-1"><a href="#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+ if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<p><a name="Explanation" id="Explanation"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Reverse_Polish_notation&amp;action=edit&amp;section=1" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline">Explanation</span></h2>
+<p>In Reverse Polish notation the <a href="/wiki/Operator" title="Operator">operators</a> follow their <a href="/wiki/Operands" class="mw-redirect" title="Operands">operands</a>; for instance, to add three and four one would write "3 4 +" rather than "3 + 4". If there are multiple operations, the operator is given immediately after its second operand; so the expression written "3 − 4 + 5" in conventional infix notation would be written "3 4 − 5 +" in RPN: first subtract 4 from 3, then add 5 to that. An advantage of RPN is that it obviates the need for parentheses that are required by infix. While "3 − 4 * 5" can also be written "3 − (4 * 5)", that means something quite different from "(3 − 4) * 5", and only the parentheses disambiguate the two meanings. In postfix, the former would be written "3 4 5 * −", which unambiguously means "3 (4 5 *) −".</p>
+<p>Interpreters of Reverse Polish notation are often <a href="/wiki/Stack_%28data_structure%29" title="Stack (data structure)">stack</a>-based; that is, operands are pushed onto a stack, and when an operation is performed, its operands are popped from a stack and its result pushed back on. Stacks, and therefore RPN, have the advantage of being easy to implement and very fast.</p>
+<p>Note that, despite the name, reverse Polish notation is not exactly the reverse of Polish notation, because for a non-<a href="/wiki/Commutative" class="mw-redirect" title="Commutative">commutative</a> operation the operands are still written in the conventional order (e.g. "6 3 /" in reverse Polish corresponds to "/ 6 3" in Polish notation, these both evaluating to 2). Numbers are of course also written with the digits in the conventional order.</p>
+<p><a name="Practical_implications" id="Practical_implications"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Reverse_Polish_notation&amp;action=edit&amp;section=2" title="Edit section: Practical implications">edit</a>]</span> <span class="mw-headline">Practical implications</span></h2>
+<ul>
+<li>Calculations occur as soon as an operator is specified. Thus, expressions are not entered wholesale from right to left but calculated one piece at a time from the centre outwards. This results in fewer operator errors when performing complex calculations.<sup class="noprint Template-Fact"><span title="This claim needs references to reliable sources&#160;since June 2008" style="white-space: nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">citation needed</a></i>]</span></sup></li>
+<li>The automatic stack permits the automatic storage of intermediate results for use later: this key feature is what permits RPN calculators easily to evaluate expressions of arbitrary complexity: they do not have limits on the complexity of expression they can calculate, unlike typical scientific calculators.</li>
+<li>Brackets and parentheses are unnecessary: the user simply performs calculations in the order that is required, letting the automatic stack store intermediate results on the fly for later use. Likewise, there is no requirement for the <a href="/wiki/Order_of_operations" title="Order of operations">precedence</a> rules required in infix notation.</li>
+<li>In RPN calculators, no <i>equals</i> key is required to force computation to occur.</li>
+<li>RPN calculators do, however, require an <i>enter</i> key to separate two adjacent numeric operands.</li>
+<li>The machine state is always a stack of values awaiting operation; it is impossible to enter an operator onto the stack. This makes use conceptually easy compared to more complex entry methods.</li>
+<li>Educationally, RPN calculators have the advantage that the user must understand the expression being calculated: it is not possible to simply copy the expression from paper into the machine and read off the answer without understanding. One must calculate from the middle of the expression, which makes life easier but only if the user understands what they are doing.</li>
+<li>Reverse Polish notation also reflects the way calculations are done on pen and paper. One first writes the numbers down and then performs the calculation. Thus the concept is easy to teach.</li>
+</ul>
+<p><a name="Disadvantages" id="Disadvantages"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Reverse_Polish_notation&amp;action=edit&amp;section=3" title="Edit section: Disadvantages">edit</a>]</span> <span class="mw-headline">Disadvantages</span></h2>
+<ul>
+<li>The widespread use of infix electronic calculators using (<a href="/wiki/Infix_notation" title="Infix notation">infix</a>) in educational systems can make RPN impractical at times due to rigid teaching methods; but once learned, most users of RPN find that it is faster and easier to calculate expressions,<sup class="noprint Template-Fact"><span title="This claim needs references to reliable sources&#160;since June 2008" style="white-space: nowrap;">[<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed">citation needed</a></i>]</span></sup> particularly the more complex ones, than with a conventional <i>scientific</i> calculator. It is also easy for a computer to convert <a href="/wiki/Infix_notation" title="Infix notation">infix notation</a> to postfix, most notably via Dijkstra's shunting yard algorithm - see <a href="#Converting_from_infix_notation" title="">converting from infix notation</a> below.</li>
+<li>When writing RPN on paper, a job that is very rarely needed, adjacent numbers have to have a space between them. This requires clear handwriting to prevent confusion (for instance, 12 34 + could look a lot like 123 4 +).</li>
+<li>RPN calculators are comparatively rare. When an RPN calculator is unavailable, frequent users of RPN calculators may find use of infix calculators difficult due to habit. The usual fault is trying to use the <i>equals</i> key as <i>enter</i>. Whatever the error, calculations get lost and have to be re-started, but the same could be said for a transition from infix to RPN.</li>
+</ul>
+<p><a name="The_postfix_algorithm" id="The_postfix_algorithm"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Reverse_Polish_notation&amp;action=edit&amp;section=4" title="Edit section: The postfix algorithm">edit</a>]</span> <span class="mw-headline">The postfix algorithm</span></h2>
+<p>The algorithm for evaluating any postfix expression is fairly straightforward:</p>
+<ul>
+<li>While there are input tokens left
+<ul>
+<li>Read the next token from input.</li>
+<li>If the token is a value
+<ul>
+<li>Push it onto the stack.</li>
+</ul>
+</li>
+<li>Otherwise, the token is a function. (Operators, like <b><a href="/wiki/Addition" title="Addition">+</a></b>, are simply functions taking two arguments.)
+<ul>
+<li>It is known that the function takes <b>n</b> arguments.</li>
+<li>If there are fewer than <b>n</b> values on the stack
+<ul>
+<li><b>(Error)</b> The user has not input sufficient values in the expression.</li>
+</ul>
+</li>
+<li>Else, Pop the top <b>n</b> values from the stack.</li>
+<li>Evaluate the function, with the values as arguments.</li>
+<li>Push the returned results, if any, back onto the stack.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If there is only one value in the stack
+<ul>
+<li>That value is the result of the calculation.</li>
+</ul>
+</li>
+<li>If there are more values in the stack
+<ul>
+<li><b>(Error)</b> The user input too many values.</li>
+</ul>
+</li>
+</ul>
+<p><a name="Example" id="Example"></a></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Reverse_Polish_notation&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a>]</span> <span class="mw-headline">Example</span></h3>
+<p>The infix expression "5 + ((1 + 2) * 4) − 3" can be written down like this in RPN:</p>
+<dl>
+<dd>5 1 2 + 4 * + 3 -</dd>
+</dl>
+<p>The expression is evaluated left-to-right, with the inputs interpreted as shown in the following table (the <i>Stack</i> is the list of values the algorithm is "keeping track of" after the <i>Operation</i> given in the middle column has taken place):</p>
+<table class="wikitable">
+<tr>
+<th>Input</th>
+<th>Operation</th>
+<th>Stack</th>
+<th>Comment</th>
+</tr>
+<tr>
+<td>5</td>
+<td>Push operand</td>
+<td>5</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Push operand</td>
+<td>5, 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Push operand</td>
+<td>5, 1, 2</td>
+</tr>
+<tr>
+<td>+</td>
+<td>Add</td>
+<td>5, 3</td>
+<td>Pop two values (1, 2) and push result (3)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Push operand</td>
+<td>5, 3, 4</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiply</td>
+<td>5, 12</td>
+<td>Pop two values (3, 4) and push result (12)</td>
+</tr>
+<tr>
+<td>+</td>
+<td>Add</td>
+<td>17</td>
+<td>Pop two values (5, 12) and push result (17)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Push operand</td>
+<td>17, 3</td>
+</tr>
+<tr>
+<td>−</td>
+<td>Subtract</td>
+<td>14</td>
+<td>Pop two values (17, 3) and push result (14)</td>
+</tr>
+</table>
+<p>When a computation is finished, its result remains as the top (and only) value in the stack; in this case, 14.</p>
+<p><a name="Converting_from_infix_notation" id="Converting_from_infix_notation"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Reverse_Polish_notation&amp;action=edit&amp;section=6" title="Edit section: Converting from infix notation">edit</a>]</span> <span class="mw-headline">Converting from infix notation</span></h2>
+<dl>
+<dd>
+<div class="noprint relarticle mainarticle"><i>Main article: <a href="/wiki/Shunting_yard_algorithm" title="Shunting yard algorithm">Shunting yard algorithm</a></i></div>
+</dd>
+</dl>
+<p><a href="/wiki/Edsger_Dijkstra" class="mw-redirect" title="Edsger Dijkstra">Edsger Dijkstra</a> invented the "shunting yard" algorithm to convert infix expressions to postfix (RPN), so named because its operation resembles that of a <a href="/wiki/Classification_yard" title="Classification yard">railroad shunting yard</a>.</p>
+<p>There are other ways of producing postfix expressions from infix notation. Most <a href="/wiki/Operator-precedence_parser" title="Operator-precedence parser">Operator-precedence parsers</a> can be modified to produce postfix expressions; in particular, once an <a href="/wiki/Abstract_syntax_tree" title="Abstract syntax tree">abstract syntax tree</a> has been constructed, the corresponding postfix expression is given by a simple <a href="/wiki/Post-order_traversal" class="mw-redirect" title="Post-order traversal">post-order traversal</a> of that tree.</p>
+<p><a name="Implementations" id="Implementations"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Reverse_Polish_notation&amp;action=edit&amp;section=7" title="Edit section: Implementations">edit</a>]</span> <span class="mw-headline">Implementations</span></h2>
+<p>The first computers to implement architectures enabling RPN were the English Electric Company's <a href="/wiki/English_Electric_KDF9" title="English Electric KDF9">KDF9</a> machine, which was announced in 1960 and delivered (i.e. made available commercially) in 1963, and the American <a href="/wiki/Burroughs_large_systems" title="Burroughs large systems">Burroughs B5000</a>, announced in 1961 and also delivered in 1963. One of the designers of the B5000, <a href="/wiki/Robert_%28Bob%29_Barton" title="Robert (Bob) Barton">Robert S. Barton</a>, later wrote that he developed RPN independently of Hamblin, sometime in 1958 while reading a textbook on symbolic logic, and before he was aware of Hamblin's work.</p>
+<p><a href="/wiki/Friden%2C_Inc." title="Friden, Inc.">Friden</a> introduced RPN to the desktop calculator market with the EC-130 in June of 1963. <a href="/wiki/Hewlett-Packard" class="mw-redirect" title="Hewlett-Packard">Hewlett-Packard</a> (HP) engineers designed the 9100A Desktop Calculator in 1968 with RPN. This calculator popularized RPN among the scientific and engineering communities, even though early advertisements for the 9100A failed to mention RPN. The <a href="/wiki/HP-35" title="HP-35">HP-35</a>, the world's first handheld scientific <a href="/wiki/Calculator" title="Calculator">calculator</a>, used RPN in <a href="/wiki/1972" title="1972">1972</a>, as did the <a href="/wiki/HP-10C" class="mw-redirect" title="HP-10C">HP-10C</a> series of calculators, including the famous financial calculator, the HP-12C. When Hewlett-Packard introduced a later business calculator, the <a href="/w/index.php?title=HP-19B&amp;action=edit&amp;redlink=1" class="new" title="HP-19B (page does not exist)">HP-19B</a>, without RPN, feedback from financiers and others used to the 12-C compelled them to release the <a href="/w/index.php?title=HP-19BII&amp;action=edit&amp;redlink=1" class="new" title="HP-19BII (page does not exist)">HP-19BII</a>, which gave users the option of using algebraic notation or RPN.</p>
+<p>Existing implementations using Reverse Polish notation include:</p>
+<ul>
+<li><a href="http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx" class="external text" title="http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx" rel="nofollow">Microsoft PowerToy calculator</a> for Windows XP</li>
+<li><a href="http://midp-calc.sourceforge.net" class="external text" title="http://midp-calc.sourceforge.net" rel="nofollow">RPN calculator for cellular phones</a>, in open source Java</li>
+<li><a href="http://www.nthlab.com/software/rpn" class="external text" title="http://www.nthlab.com/software/rpn" rel="nofollow">RPN calculator</a> for <a href="/wiki/Palm_%28PDA%29" title="Palm (PDA)">Palm PDAs</a></li>
+<li><a href="/wiki/Calculator_%28Mac_OS_X%29" title="Calculator (Mac OS X)">Mac OS X Calculator</a></li>
+<li><a href="/wiki/Forth_%28programming_language%29" title="Forth (programming language)">Forth programming language</a></li>
+<li><a href="/wiki/Factor_programming_language" class="mw-redirect" title="Factor programming language">Factor programming language</a></li>
+<li>Some <a href="/wiki/Hewlett-Packard" class="mw-redirect" title="Hewlett-Packard">Hewlett-Packard</a> science/engineering and business/finance <a href="/wiki/Calculator" title="Calculator">calculators</a></li>
+<li><a href="/wiki/PostScript" title="PostScript">PostScript</a> page description language</li>
+<li><a href="/wiki/TI-89" class="mw-redirect" title="TI-89">TI-89</a> and <a href="/wiki/TI-92_series" title="TI-92 series">TI-92 series</a> via third party software <a href="http://www.paxm.org/symbulator/download/rpn.html" class="external text" title="http://www.paxm.org/symbulator/download/rpn.html" rel="nofollow">implementation</a></li>
+<li><a href="/wiki/Unix" title="Unix">Unix system</a> calculator program <a href="/wiki/Dc_%28Unix%29" title="Dc (Unix)">dc</a></li>
+<li><a href="http://web.newsguy.com/marcio/iphone/macalc/" class="external text" title="http://web.newsguy.com/marcio/iphone/macalc/" rel="nofollow">MAcalc</a> for the <a href="/wiki/IPhone" title="IPhone">iPhone</a></li>
+<li>Writing an <a href="/wiki/Interpreter_%28computing%29" title="Interpreter (computing)">Interpreter</a></li>
+<li>Interactive <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a> <a href="http://main.linuxfocus.org/~guido/javascript/rpnjcalc.html" class="external text" title="http://main.linuxfocus.org/~guido/javascript/rpnjcalc.html" rel="nofollow">RPN calculator</a></li>
+<li>JavaScript <a href="http://dse.webonastick.com/rpncalc/" class="external text" title="http://dse.webonastick.com/rpncalc/" rel="nofollow">RPN calculator with keyboard-based user interface</a>, more like HP calculators</li>
+<li><a href="http://www.lowth.com/rope/LanguageReference" class="external text" title="http://www.lowth.com/rope/LanguageReference" rel="nofollow">Linux IpTables "Rope" programming language</a></li>
+<li><a href="http://en.wikibooks.org/wiki/Ada_Programming/Mathematical_calculations" class="extiw" title="wikibooks:Ada_Programming/Mathematical_calculations">Wikibooks:Ada Programming/Mathematical calculations</a> <small>(RPN calculator implemented in <a href="/wiki/Ada_programming_language" class="mw-redirect" title="Ada programming language">Ada</a>)</small></li>
+<li><a href="/wiki/Emacs#Features" title="Emacs">Emacs</a> lisp library package: calc</li>
+<li><a href="http://www.vintagecalculators.com/html/sinclair___the_pocket_calculat.html" class="external text" title="http://www.vintagecalculators.com/html/sinclair___the_pocket_calculat.html" rel="nofollow">Sinclair calculators</a></li>
+<li>Open source <a href="/wiki/GTK%2B" title="GTK+">GTK+</a> based <a href="http://galculator.sourceforge.net/" class="external text" title="http://galculator.sourceforge.net/" rel="nofollow">galculator</a></li>
+<li>Infix to Postfix Conversion / Postfix Evaluator / Postfix to Infix Conversion <a href="http://www.java2s.com/Code/JavaScript/Development/Postfix-Infix.htm" class="external autonumber" title="http://www.java2s.com/Code/JavaScript/Development/Postfix-Infix.htm" rel="nofollow">[1]</a></li>
+<li>Simple <a href="http://www.randomwalking.com/misc/xul_rpn/rpn.xul" class="external text" title="http://www.randomwalking.com/misc/xul_rpn/rpn.xul" rel="nofollow">XUL RPN Calculator</a></li>
+</ul>
+<p><a name="A_Postfix_evaluator_implemented_in_Python" id="A_Postfix_evaluator_implemented_in_Python"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Reverse_Polish_notation&amp;action=edit&amp;section=8" title="Edit section: A Postfix evaluator implemented in Python">edit</a>]</span> <span class="mw-headline">A Postfix evaluator implemented in Python</span></h2>
+<div dir="ltr" style="text-align: left;">
+<pre class="source-python">
+<span class="co1"># Valid elements of input are binary operators, integers,</span>
+<span class="co1"># and floating point numbers, separated by spaces.</span>
+<span class="co1">#   e.g.  100 2 / 2 ** 3.14 *</span>
+stack = <span class="br0">[</span><span class="br0">]</span>
+<span class="kw1">for</span> i <span class="kw1">in</span> <span class="kw2">raw_input</span><span class="br0">(</span><span class="st0">'Input: '</span><span class="br0">)</span>.<span class="me1">split</span><span class="br0">(</span><span class="br0">)</span>:
+  <span class="kw1">if</span> i<span class="br0">[</span><span class="nu0">-1</span><span class="br0">]</span>.<span class="me1">isdigit</span><span class="br0">(</span><span class="br0">)</span>:
+    stack.<span class="me1">append</span><span class="br0">(</span><span class="kw2">eval</span><span class="br0">(</span>i<span class="br0">)</span><span class="br0">)</span>
+  <span class="kw1">else</span>:
+    <span class="kw1">if</span> <span class="kw2">len</span><span class="br0">(</span>stack<span class="br0">)</span> &lt; <span class="nu0">2</span>:
+      quit<span class="br0">(</span><span class="st0">'Error: Too few input values'</span><span class="br0">)</span>
+    <span class="kw1">else</span>:
+      value2 = stack.<span class="me1">pop</span><span class="br0">(</span><span class="br0">)</span>
+      value1 = stack.<span class="me1">pop</span><span class="br0">(</span><span class="br0">)</span>
+      stack.<span class="me1">append</span><span class="br0">(</span><span class="kw2">eval</span><span class="br0">(</span><span class="st0">'value1 %s value2'</span> % i<span class="br0">)</span><span class="br0">)</span>
+<span class="kw1">if</span> <span class="kw2">len</span><span class="br0">(</span>stack<span class="br0">)</span> &gt; <span class="nu0">1</span>:
+  quit<span class="br0">(</span><span class="st0">'Error: Too many input values'</span><span class="br0">)</span>
+<span class="kw1">else</span>:
+  <span class="kw1">print</span> <span class="st0">'Answer: %s'</span> % stack<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>
+</pre></div>
+<p><a name="See_also" id="See_also"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Reverse_Polish_notation&amp;action=edit&amp;section=9" title="Edit section: See also">edit</a>]</span> <span class="mw-headline">See also</span></h2>
+<div style="-moz-column-count:2; column-count:2;">
+<ul>
+<li><a href="/wiki/Forth_%28programming_language%29" title="Forth (programming language)">Forth (programming language)</a></li>
+<li><a href="/wiki/PostScript" title="PostScript">PostScript</a></li>
+<li><a href="/wiki/HP_calculators" title="HP calculators">HP calculators</a></li>
+<li><a href="/wiki/LIFO" title="LIFO">LIFO</a></li>
+<li><a href="/wiki/Stack_machine" title="Stack machine">Stack machine</a></li>
+<li><a href="/wiki/Subject_Object_Verb" title="Subject Object Verb">Subject Object Verb</a></li>
+<li><a href="/wiki/Object_Subject_Verb" title="Object Subject Verb">Object Subject Verb</a></li>
+<li><a href="/wiki/Prefix_notation" class="mw-redirect" title="Prefix notation">Prefix notation</a> (Polish notation)</li>
+<li><a href="/wiki/Joy_Programming_Language" class="mw-redirect" title="Joy Programming Language">Joy Programming Language</a></li>
+<li><a href="/wiki/Factor_programming_language" class="mw-redirect" title="Factor programming language">Factor programming language</a></li>
+</ul>
+</div>
+<p><a name="External_links" id="External_links"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Reverse_Polish_notation&amp;action=edit&amp;section=10" title="Edit section: External links">edit</a>]</span> <span class="mw-headline">External links</span></h2>
+<ul>
+<li><a href="http://sourceforge.net/projects/rpnsolve" class="external text" title="http://sourceforge.net/projects/rpnsolve" rel="nofollow">RPNSolve</a> - Free commandline-based RPN solver for Linux/Unix , Open Source (Gnu GPL). By Adam N. Ward</li>
+<li>Free <a href="http://www.hpmuseum.org/cgi-sys/cgiwrap/hpmuseum/forum.cgi?read=131454#131454" class="external text" title="http://www.hpmuseum.org/cgi-sys/cgiwrap/hpmuseum/forum.cgi?read=131454#131454" rel="nofollow">RPN Calculator Simulations</a> for Microsoft Windows - By Mike T.</li>
+<li><a href="http://midp-calc.sourceforge.net/Calc.html" class="external text" title="http://midp-calc.sourceforge.net/Calc.html" rel="nofollow">MIDP calculator</a> A powerful RPN calculator for cells: statistics, matrix, plot,...(GPL) - By Roar Lauritzsen</li>
+<li><a href="http://www.xnumber.com/xnumber/rpn_or_adl.htm" class="external text" title="http://www.xnumber.com/xnumber/rpn_or_adl.htm" rel="nofollow"><i>RPN or DAL? A brief analysis of Reverse Polish Notation against Direct Algebraic Logic</i></a> – By James Redin</li>
+<li><a href="http://www.spsu.edu/cs/faculty/bbrown/web_lectures/postfix/" class="external text" title="http://www.spsu.edu/cs/faculty/bbrown/web_lectures/postfix/" rel="nofollow">Postfix Notation Mini-Lecture</a> – By Bob Brown</li>
+<li><a href="http://www.langmaker.com/shallowfith.htm" class="external text" title="http://www.langmaker.com/shallowfith.htm" rel="nofollow">Fith: An Alien Conlang With A LIFO Grammar</a> – By Jeffrey Henning</li>
+<li><a href="http://qalculate.sourceforge.net/" class="external text" title="http://qalculate.sourceforge.net/" rel="nofollow">Qalculate!</a> An open-source calculator with an RPN mode</li>
+<li><a href="http://www.tordivel.no/xcalc/" class="external text" title="http://www.tordivel.no/xcalc/" rel="nofollow">XCALC: A Windows freeware RPN Calculator</a> – By Bernt Ribbum</li>
+<li><a href="http://lashwhip.com/grpn.html" class="external text" title="http://lashwhip.com/grpn.html" rel="nofollow">GRPN: A Graphical RPN Calculator</a> for Unix systems (GPL) – By Paul Wilkins</li>
+<li><a href="http://mtvoid.com/calcium/" class="external text" title="http://mtvoid.com/calcium/" rel="nofollow">Calcium: A freeware RPN Calculator for S60 smartphones</a> – By mtvoid</li>
+<li><a href="http://www.objecttechnology.com/yarpncalc/" class="external text" title="http://www.objecttechnology.com/yarpncalc/" rel="nofollow">YaRPNcalc: A freeware RPN Calculator for PocketPC</a> – By Philipp Tschannen</li>
+<li><a href="http://www.nthlab.com/software/rpn/" class="external text" title="http://www.nthlab.com/software/rpn/" rel="nofollow">RPN: An advanced, programmable postfix calculator with solving and graphing for Palm PDAs</a> - By Russell Y. Webb</li>
+<li><a href="http://www.phpclasses.org/browse/package/4078.html" class="external text" title="http://www.phpclasses.org/browse/package/4078.html" rel="nofollow">Simple RPN Interpreter written in PHP</a> - by Arturo González-Mata</li>
+<li><a href="http://www.speech.kth.se/calculator/" class="external text" title="http://www.speech.kth.se/calculator/" rel="nofollow">Calculator.NET</a> - Enhanced Calculator for Windows with full RPN support</li>
+<li><a href="http://web.newsguy.com/marcio/iphone/macalc/" class="external text" title="http://web.newsguy.com/marcio/iphone/macalc/" rel="nofollow">MACalc</a> - HP16C based calculator for iPhone</li>
+<li><a href="http://www.benhaim.net/mecalc/mecalc.html" class="external text" title="http://www.benhaim.net/mecalc/mecalc.html" rel="nofollow">Meculcalator</a> - An on-line Javascript RPN calculator with advanced features</li>
+<li><a href="http://www.cs.inf.ethz.ch/~wirth/Articles/GoodIdeas_origFig.pdf" class="external autonumber" title="http://www.cs.inf.ethz.ch/~wirth/Articles/GoodIdeas_origFig.pdf" rel="nofollow">[2]</a> - Good Ideas remembered by Nick Wurth</li>
+<li><a href="http://www.cs.inf.ethz.ch/~wirth/Articles/GoodIdeas_origFig.pdf" class="external autonumber" title="http://www.cs.inf.ethz.ch/~wirth/Articles/GoodIdeas_origFig.pdf" rel="nofollow">[3]</a> - Good Ideas remembered by Nick Wurth</li>
+<li><a href="http://home.scarlet.be/kpm/magenta2008/mg.html#rpn" class="external text" title="http://home.scarlet.be/kpm/magenta2008/mg.html#rpn" rel="nofollow">Magenta2008 RPN</a> - RPN calculator written in JavaScript with support of complex numbers and optional expression evaluation</li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 211/1000000
+Post-expand include size: 2550/2048000 bytes
+Template argument size: 723/2048000 bytes
+Expensive parser function count: 2/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:26513-0!1!0!default!!en!2 and timestamp 20080611011424 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation">http://en.wikipedia.org/wiki/Reverse_Polish_notation</a>"</div>
+			<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>:&#32;<span dir='ltr'><a href="/wiki/Category:Calculators" title="Category:Calculators">Calculators</a></span> | <span dir='ltr'><a href="/wiki/Category:Mathematical_notation" title="Category:Mathematical notation">Mathematical notation</a></span> | <span dir='ltr'><a href="/wiki/Category:Articles_with_example_Python_code" title="Category:Articles with example Python code">Articles with example Python code</a></span></div><div id="mw-hidden-catlinks" class="mw-hidden-cats-hidden">Hidden categories:&#32;<span dir='ltr'><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></span> | <span dir='ltr'><a href="/wiki/Category:Articles_with_unsourced_statements_since_June_2008" title="Category:Articles with unsourced statements since June 2008">Articles with unsourced statements since June 2008</a></span></div></div>			<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+					 <li id="ca-nstab-main" class="selected"><a href="/wiki/Reverse_Polish_notation" title="View the content page [c]" accesskey="c">Article</a></li>
+					 <li id="ca-talk"><a href="/wiki/Talk:Reverse_Polish_notation" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+					 <li id="ca-edit"><a href="/w/index.php?title=Reverse_Polish_notation&amp;action=edit" title="You can edit this page. Please use the preview button before saving. [e]" accesskey="e">Edit this page</a></li>
+					 <li id="ca-history"><a href="/w/index.php?title=Reverse_Polish_notation&amp;action=history" title="Past versions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Reverse_Polish_notation" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+		<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li>
+				<li id="n-Contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+				<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content">Featured content</a></li>
+				<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+				<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+			</ul>
+		</div>
+	</div>
+		<div class='generated-sidebar portlet' id='p-interaction'>
+		<h5>Interaction</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-aboutsite"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+				<li id="n-portal"><a href="/wiki/Wikipedia:Community_Portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+				<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Donate" title="Support us">Donate to Wikipedia</a></li>
+				<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+			</ul>
+		</div>
+	</div>
+		<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/wiki/Special:Search" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" title="Search Wikipedia [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if one exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the wiki for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Reverse_Polish_notation" title="List of all English Wikipedia pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Reverse_Polish_notation" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/w/index.php?title=Reverse_Polish_notation&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/w/index.php?title=Reverse_Polish_notation&amp;oldid=218527809" title="Permanent link to this version of the page">Permanent link</a></li><li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Reverse_Polish_notation&amp;id=218527809">Cite this page</a></li>			</ul>
+		</div>
+	</div>
+	<div id="p-lang" class="portlet">
+		<h5>Languages</h5>
+		<div class="pBody">
+			<ul>
+				<li class="interwiki-da"><a href="http://da.wikipedia.org/wiki/Omvendt_polsk_notation">Dansk</a></li>
+				<li class="interwiki-de"><a href="http://de.wikipedia.org/wiki/Umgekehrte_Polnische_Notation">Deutsch</a></li>
+				<li class="interwiki-es"><a href="http://es.wikipedia.org/wiki/Notaci%C3%B3n_polaca_inversa">Español</a></li>
+				<li class="interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Notation_polonaise_inverse">Français</a></li>
+				<li class="interwiki-ko"><a href="http://ko.wikipedia.org/wiki/%EC%97%AD%ED%8F%B4%EB%9E%80%EB%93%9C_%ED%91%9C%EA%B8%B0%EB%B2%95">한국어</a></li>
+				<li class="interwiki-hr"><a href="http://hr.wikipedia.org/wiki/Obrnuta_poljska_notacija">Hrvatski</a></li>
+				<li class="interwiki-hu"><a href="http://hu.wikipedia.org/wiki/Ford%C3%ADtott_lengyel_jel%C3%B6l%C3%A9s">Magyar</a></li>
+				<li class="interwiki-it"><a href="http://it.wikipedia.org/wiki/Notazione_polacca_inversa">Italiano</a></li>
+				<li class="interwiki-he"><a href="http://he.wikipedia.org/wiki/%D7%9B%D7%AA%D7%99%D7%91_%D7%A4%D7%95%D7%9C%D7%A0%D7%99">עברית</a></li>
+				<li class="interwiki-nl"><a href="http://nl.wikipedia.org/wiki/Omgekeerde_Poolse_notatie">Nederlands</a></li>
+				<li class="interwiki-ja"><a href="http://ja.wikipedia.org/wiki/%E9%80%86%E3%83%9D%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89%E8%A8%98%E6%B3%95">日本語</a></li>
+				<li class="interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Odwrotna_notacja_polska">Polski</a></li>
+				<li class="interwiki-pt"><a href="http://pt.wikipedia.org/wiki/Nota%C3%A7%C3%A3o_polonesa_inversa">Português</a></li>
+				<li class="interwiki-ru"><a href="http://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C">Русский</a></li>
+				<li class="interwiki-sl"><a href="http://sl.wikipedia.org/wiki/Obrnjen_poljski_zapis">Slovenščina</a></li>
+				<li class="interwiki-sr"><a href="http://sr.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%BD%D1%83%D1%82%D0%B0_%D0%BF%D0%BE%D1%99%D1%81%D0%BA%D0%B0_%D0%BD%D0%BE%D1%82%D0%B0%D1%86%D0%B8%D1%98%D0%B0">Српски / Srpski</a></li>
+				<li class="interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Omv%C3%A4nd_polsk_notation">Svenska</a></li>
+			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/skins-1.5/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" border="0" alt="Wikimedia Foundation"/></a></div>
+			<ul id="f-list">
+				<li id="lastmod"> This page was last modified on 10 June 2008, at 23:46.</li>
+				<li id="copyright">All text is available under the terms of the <a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License" title="Wikipedia:Text of the GNU Free Documentation License">GNU Free Documentation License</a>. (See <b><a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Copyrights" title="Wikipedia:Copyrights">Copyrights</a></b> for details.) <br /> Wikipedia&reg; is a registered trademark of the <a href="http://www.wikimediafoundation.org">Wikimedia Foundation, Inc</a>., a U.S. registered <a class='internal' href="http://en.wikipedia.org/wiki/501%28c%29#501.28c.29.283.29" title="501(c)(3)">501(c)(3)</a> <a href="http://wikimediafoundation.org/wiki/Deductibility_of_donations">tax-deductible</a> <a class='internal' href="http://en.wikipedia.org/wiki/Non-profit_organization" title="Non-profit organization">nonprofit</a> <a href="http://en.wikipedia.org/wiki/Charitable_organization" title="Charitable organization">charity</a>.<br /></li>
+				<li id="privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+				<li id="about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+				<li id="disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served by srv36 in 0.058 secs. --></body></html>

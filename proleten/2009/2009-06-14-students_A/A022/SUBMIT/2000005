@@ -1,0 +1,121 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+typedef long long ll;
+class RSQ
+{
+	ll f;
+	ll a[2*1048576];
+	
+	public:
+	
+	void init() { f=1048576; for(ll i=0; i<2*f; i++) a[i]=0; }
+	
+	void add(ll ind, ll v)
+	{
+		ind+=f;
+		while(ind>0) { a[ind]+=v; ind/=2; }
+	}
+	
+	ll sum(ll l, ll r)
+	{
+		l+=f; r+=f;
+		ll res=0;
+		while(l<=r)
+		{
+			if(l%2) res+=(ll)a[l++];
+			if(r%2==0) res+=(ll)a[r--];
+			l/=2; r/=2;
+		}
+		return res;
+	}
+	
+	ll& operator[](ll ind) { return a[ind+f]; }
+} e;
+
+ll fk[1048576];
+
+ll line, cost, ucnt, dcnt;
+
+void lineUp()
+{
+	//cout<<"Linr up\n";
+	ll op=line, top=1000000, bottom=line, m, ucnt, dcnt;
+	while(top>bottom)
+	{
+		//cout<<"tb "<<top<<' '<<bottom<<endl;
+		m=(top+bottom)/2;
+		dcnt=e.sum(0, m-1);
+		ucnt=e.sum(m+1, 1000000);
+		//cout<<dcnt<<' '<<ucnt<<endl;
+		if(e[m]>0 && abs(dcnt-ucnt)<=max(1ll, e[m])) { line=m; break; }
+		else if(dcnt<ucnt-1) bottom=m+1;
+		else top=m-1;
+	}
+	if(top==bottom) line=top;
+	
+	ll md=line-op;
+	cost+=e[op]*md+::dcnt*md-::ucnt*md;
+	
+	::ucnt=e.sum(line+1, 1000000); ::dcnt=e.sum(0, line-1);
+}
+
+void lineDn()
+{
+	//cout<<"Linedn\n";
+	ll op=line, top=line, bottom=0, m, ucnt, dcnt;
+	while(top>bottom)
+	{
+		//cout<<"tb "<<top<<' '<<bottom<<endl;
+		m=(top+bottom)/2;
+		dcnt=e.sum(0, m-1);
+		ucnt=e.sum(m+1, 1000000);
+		//cout<<dcnt<<' '<<ucnt<<endl;
+		if(e[m]>0 && abs(dcnt-ucnt)<=max(1ll, e[m])) { line=m; break; }
+		else if(dcnt<=ucnt+1) bottom=m+1;
+		else top=m-1;
+	}
+	if(top==bottom) line=top;
+	
+	ll md=line-op;
+	cost+=-e[op]*md+::dcnt*md-::ucnt*md;
+	
+	::ucnt=e.sum(line+1, 1000000); ::dcnt=e.sum(0, line-1);
+}
+
+int main()
+{
+	e.init();
+	
+	ll n, k; cin>>n>>k;
+	
+	ll i;
+	for(i=0; i<k; i++) { cin>>fk[i]; e.add(fk[i], 1); }
+	//cout<<"Read first k\n";
+	line=0; lineUp();
+	
+	for(i=0; i<k; i++) cost+=abs(line-fk[i]);
+	
+	ll mcost=cost, first=0;
+	//cout<<mcost<<' '<<first<<endl;
+	for(; i<n; i++)
+	{
+		//cout<<"i="<<i<<"   ";
+		cin>>fk[i];
+		e.add(fk[i], 1);
+		if(fk[i]<line) dcnt++; if(fk[i]>line) ucnt++;
+		cost+=abs(fk[i]-line);
+		e.add(fk[i-k], -1);
+		if(fk[i-k]<line) dcnt--; if(fk[i-k]>line) ucnt--;
+		cost-=abs(fk[i-k]-line);
+		//cout<<ucnt<<' '<<dcnt<<"  ";
+		if(ucnt>dcnt) lineUp();
+		else if(ucnt<dcnt) lineDn();
+		//cout<<"line "<<line<<' '<<cost<<endl;
+		if(cost<mcost) { /*cout<<"ch\n"<<i<<endl;*/mcost=cost; first=i-k+2; }
+	}
+	
+	cout<<mcost<<'\n'<<first<<endl;
+	return 0;
+}

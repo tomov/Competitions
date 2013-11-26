@@ -1,0 +1,1051 @@
+
+Session Start: Wed Jun 23 20:24:27 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+* blohdiest was kicked by VelinTzanov (VelinTzanov)
+* VelinTzanov sets mode: +ooo rangel__ sssa88 Swetko
+<rangel__> utre dylga sesiq li se ochakva?
+<VelinTzanov> Da
+<VelinTzanov> Osven tova shte e po-kysno.
+<VelinTzanov> Zashto?
+<rangel__> zashtoto imame oficialno vrychvane na diplomite ot 9:15 :(
+* Prince_of_Dawn has joined #ioi
+* CS sets mode: +v Prince_of_Dawn
+<VelinTzanov> Losho
+* VelinTzanov sets mode: +o Prince_of_Dawn
+<Prince_of_Dawn> sorry za sakanenieto
+<Prince_of_Dawn> dobro utro
+<sssa88> dobro
+<rangel__> to sigurno mozhe i po-kysno da otida, no shtom pochvame po-kysno tova oznachava li che sme do 
+  obqd? :-)
+<Prince_of_Dawn> az sam na uchilishte ot 9
+<Prince_of_Dawn> toest trqbwa da izlqza 8:30
+<VelinTzanov> Izchakaite 10-tina minuti, che mi se otvori edna rabota tuk...
+<Prince_of_Dawn> ok
+<VelinTzanov> Taka
+<VelinTzanov> Hmm... sega shte vidia programata.
+<VelinTzanov> Mai shte vi dadem edin den pochivka taka kato gledam.
+<VelinTzanov> Ama tova znachi che shte svyrshim s podgotovkata na 1-vi July
+<Swetko> oh mali
+<VelinTzanov> Koeto znachi che chak na 2-ri shte mojete da pytuvate za Sofia (tia deto triabva da se 
+  zapisvat za SU)... abe ne si e rabota.
+<Swetko> triabva da se naspim za BOI
+<VelinTzanov> Moje prosto da mahna dneshnata tema i da mina na sledvashtata... :?
+<VelinTzanov> Shtoto dneshnoto e lesno.
+<Swetko> kakva e 
+<VelinTzanov> Chakaite oshte malko da pomislia.
+<VelinTzanov> Znachi shte napravim taka.
+<VelinTzanov> Dnes shte si vzemem materiala.
+<VelinTzanov> Utre shte imame kysna sesia.
+<VelinTzanov> Moje bi kym 8:30 ili neshto ot sorta.
+<Swetko> ami do kolko
+<VelinTzanov> Tova znachi samo Swetko i Vlado, a Borisov i Rangel niama da gi ima.
+<VelinTzanov> Off, to i ti si na uchilishte... :(
+<Swetko> az triabva da otida na uchiliste utre
+<Swetko> dashe mai si mislia i che za vtoria chas
+<Prince_of_Dawn> i az
+<Swetko> triabva da sum tam
+<VelinTzanov> OK. Togava dnes shte vzemem utreshnia material, a utre samo shte vi dam za domashno dneshnia 
+  bez da go prepodavam.
+<Swetko> ok
+<Prince_of_Dawn> nerazbiram mnogo
+<Prince_of_Dawn> ma kakto kajesh
+<VelinTzanov> Znachi shte vi dam domashnoto koeto shte vi e za utre oshte dnes.
+<VelinTzanov> OK
+<VelinTzanov> Neka obiasnia.
+<VelinTzanov> Za dnes imame 3 leki zadachi.
+<VelinTzanov> Za utre imame 2 po-tejki.
+<VelinTzanov> Dnes shte obiasnia 2-te tejki i te shte sa vi za domashno.
+<VelinTzanov> Osven tova shte vi dam i 3-te leki, te shte sa za sledvashtia den. Prosto niama da imame sesia 
+  vyrhu tiah.
+<Prince_of_Dawn> znachi w petak nqma da stawame w 6
+<VelinTzanov> Tochno taka.
+<Swetko> az stanah dneska 5
+<VelinTzanov> No pak shte si imate domashno. Prosto niama da vi go reshavam az. :)
+<Prince_of_Dawn> togawa trqbwa da obesnish tejite za 2chasa i 10 min ~
+<VelinTzanov> OK
+<VelinTzanov> Znachi sega vi davam usloviata na lekite da gi prochetete i da gi razberete (i da mi kajete 
+  ako ima neshto neiasno), a az prez tova vreme shte se opitam malko da se podgotvia za tejkite, che ne sym 
+  se gotvil vyobshte za tiah.
+<VelinTzanov> OK?
+<sssa88> ok
+<Swetko> d
+<Swetko> aa
+<rangel__> ok
+<Prince_of_Dawn> ok
+* Logging #ioi to 'logs\ioi_2004_06_24.log'
+<Prince_of_Dawn> moje da sme gi reshawale
+<VelinTzanov> Encode/Decode, 3 Kont 2002
+<VelinTzanov> Fax, 3 Kont 2002
+<VelinTzanov> Cowq, USACO Dec 2003
+<VelinTzanov> Moje, da.
+<Prince_of_Dawn> reshawali
+<Prince_of_Dawn> az sam reshawa dwe
+<Prince_of_Dawn> ;)
+<VelinTzanov> http://infoman.musala.com/contests/noi/2002/kont3_tasks.html
+<Swetko> cowq ne e chak tolkova lesna
+<Swetko> az pone mnogo mi izleze
+<Swetko> moshe li da ia razkashesh
+<Swetko> naburzo
+<Swetko> stot moito reshenie mnogo tromavo
+<Swetko> drugite sum gi reshaval
+<VelinTzanov> http://www.tzanov.com/ioi2004/usaco/2003decG.htm
+<Swetko> to pri tez codirania i decodirania ima edin obst princip 
+<VelinTzanov> Obshto vzeto ideiata na tozi den e da se uprajnite na kodirane, dekodirane, izbroiavane, dinamichni, kombinacii, variacii, shturotii.. :)
+<Swetko> deto ako se spazva vsichko izliza
+<VelinTzanov> Tochno taka, Swetko.
+<VelinTzanov> Btw, Encode/Decode triabva da raboti momentalno... ne mi pishete Nikolovshtini s 6 vlojeni cikyla... :)
+<Swetko> niama
+<Swetko> az sum vlagal nai mnogo 5 cikula
+<VelinTzanov> Za men e mnogo vajno na BOI/IOI ako vi dadat zadacha v koiato se tyrsi niakakyv broi, da ia napravite za 100 vsichki.
+<VelinTzanov> Sega shte vidia cowq, Swetko.
+<Swetko> ama triabva da otkriem formulata
+<Prince_of_Dawn> swetko na men conq mi se widi moshtno dinamichna
+<Swetko> e , pri men ne dinamichna 
+<VelinTzanov> Da, cowq si e moshtno dinamichna... no ne klasicheski dinamichna, a takava s kakvito iskah da se zanimavame dnes.
+<VelinTzanov> Kakto i s drugi zadachi e vajno da se zapitash kakvo ti e dadeno.
+<VelinTzanov> Kakvo mojesh da smetnesh lesno ot vhoda?
+<VelinTzanov> Mojesh da smetnesh vsiakakvi broiki i naredbi.
+<VelinTzanov> Mojesh da smetnesh kolko chisla ima s daden broi 1-ci.
+<VelinTzanov> Mojesh da smetnesh kolko ot tiah sa po-malki ot edi kolko si i kolko sa po-golemi.
+<Prince_of_Dawn> az shte se opitam da obesnq na swetko edna ideq
+<VelinTzanov> Mojesh da si izmislish kakvoto si iskash broene i da go smetnesh byrzo.
+<Prince_of_Dawn> na pravita
+<VelinTzanov> Na kakvo?
+<VelinTzanov> Borisov?
+<VelinTzanov> Kakvo e "pravita"?
+<Prince_of_Dawn> lichno
+<Prince_of_Dawn> ti mu wikash lichnoto
+<VelinTzanov> Haha... private-a :)
+<VelinTzanov> Kakva ideia, Borisov?
+<VelinTzanov> Ako e po cowq davai v kanala.
+<Prince_of_Dawn> moje da si naprawish funktsiq f(d,l)
+<Prince_of_Dawn> koqto da kaza po kolko nachina moje da se naprawi swoichno chislo s d tsifri i l edinitsi w nego
+<Prince_of_Dawn> i sega shte smetnesh absolutnata pozitsiq na nachalnoto chislo
+<Prince_of_Dawn> mi namirash che elementa w nachaloto na reditsata ima absoluten nomer 125
+<Prince_of_Dawn> i da kajem che tarsish 5-tiq sled nego 
+<Prince_of_Dawn> zanachi tarsish todawa 130 element w golqmata reditsa
+<VelinTzanov> Krasivo.
+<Prince_of_Dawn> do tuk beglo ideqta qsna li e
+<VelinTzanov> Obshto vzeto vsichki podobni zadachi za izbroiavane izpolzvat podobni podhodi i metodi. Dinamichno + malko um.
+<VelinTzanov> OK, shte te ostavia da dovyrshish (momcheta, otgovariaite na Borisov de :) )
+<Swetko> da
+<sssa88> da
+<rangel__> da
+<Prince_of_Dawn> mi namiraneto na 130-tiq chken e kato razkodirane na perm
+<Prince_of_Dawn> trqbwa da se wnimawa poneje chislata zapochwat wsichki s 1
+<Prince_of_Dawn> ma towa sa podrobnosti
+<Prince_of_Dawn> i ne kazah che posledniq chlen na reditstsata e za da pokaje kolko e shiroka
+<Swetko> i che tova za kakvo ti e
+<Prince_of_Dawn> mi poneje moje da ima reditsa
+<Prince_of_Dawn> 10
+<Prince_of_Dawn> 100
+<Prince_of_Dawn> 1000
+<Prince_of_Dawn> 10000
+<Prince_of_Dawn> obache ako ako sa ti dali parwi chlen 10
+<Prince_of_Dawn> i posleden 1111
+<Prince_of_Dawn> to znachi che nqma 10000
+<Prince_of_Dawn> watre w reditsata
+<Prince_of_Dawn> pone taka razbiram az ot uslowieto? 
+<Prince_of_Dawn> razbrahte li primera?
+<Prince_of_Dawn> i kakwo mislite za talkowanieto mi ( prochetete pak ulowieto )
+<Swetko> taka e
+<sssa88> maj da
+<Prince_of_Dawn> poneje pishe che poslednoto chislo e max magnitude
+<Prince_of_Dawn> koeto si e naormalnata podredba
+<Prince_of_Dawn> (magnitude znachi neormalna tejest na chisloto
+<Prince_of_Dawn> Az nikoga ne sam q pisal. Samo imam ideq. Moje de e gresha. ;)
+<Swetko> a az sum ia pisal i mi e 4 KB sorsa
+<Swetko> zatova pitah za niakakvo po dobro reshenie
+<VelinTzanov> Vsichki takiva zadachi mojete da gi reshite kato prosto si napravite edin dylyg spisyk s neshtata koito mojete da si smetnete - broi chisla po-malki ot tova s edi kolko si edinici i t.n... ili pyk po kolko pyti mojem da izberem 3 neshta izmejdu 5... ili kakvoto e tam za konkretnata zadacha.
+<Prince_of_Dawn> rangele razbra li me
+<rangel__> da
+<VelinTzanov> Swetko, dobrinata na tezi reshenia ne se izmerva s razmera na source-a samo.
+<VelinTzanov> Po-vajno e da ima red i da sa verni vryzkite.
+<Swetko> iamame podredba - i kriterii po koito tia se izvyrshva  vseki s razlichen prioritet
+<Swetko> ami estestveno che sa verni - nali mi raboti
+<VelinTzanov> Kato iasno si definiral vsiako dinamichno kakvo tochno smiata, posle i 6KB da e niama da imash problem (osven ako ne napravish pravopisna greshka :) )
+<Swetko> ama vremeto neobhodimo da se napishe e goliamo
+<Prince_of_Dawn> ;(
+<VelinTzanov> Zashto da e goliamo? Imash ne poveche ot 2-3 stypki.
+<Swetko> ami definiral sum si
+<VelinTzanov> Vsiaka stypka bi triabvalo da e kratka.. ne poveche ot 10 minuti.
+<Swetko> abe taka e
+<VelinTzanov> NA men mi e dosta chudno kak si uspial 4KB...
+<Swetko> ama kato stypkata ne si izpulniava zadachata :)
+<Swetko> abe opravih ia
+<Swetko> zast
+<Swetko> o
+<Prince_of_Dawn> haide po sashtestwo
+<Swetko> iamame podredba - i kriterii po koito tia se izvyrshva  vseki s razlichen prioritet - i kato codirame 1)vzemame nai visokia prioritet i gledame kolko konfiguracii imat po nisuk purvi kriterij
+<VelinTzanov> Syjaliavam, che sega niamam vreme da minem prez vsiaka zadacha i da vi pokaja konkretni "iasni definicii" i prosti vryzki... no se nadiavam che ako pomislite dostatychno shte mojete sami da si gi napravite.
+<Swetko> posle 2-ria kriterij (sortirani po prioritet)
+<Swetko> az tova pravilo spazvam
+<Prince_of_Dawn> probwai s tazi ideq kolko KB shte ti izleze koda
+<VelinTzanov> Zatova, makar da e za drugiden tova domashno, molia vi postaraite se da izmislite hubavo vsiaka zadacha i da napishete iasno i po vyzmojnost kratko reshenie na vsiaka ot tiah.
+<Swetko> ami ste vidia
+<VelinTzanov> Ima mnogo drugi takiva zadachi... te sa niakak si "klasicheski".
+<VelinTzanov> Koeto gi pravi dosta veroiatni za "lesna" zadacha na BOI/IOI.
+<VelinTzanov> Zatova molia vi, otnesete se maximalno seriozno kym tiah.
+<VelinTzanov> Ako triabva reshete oshte 1-2 takiva zadachi.
+<VelinTzanov> Prosto e mnogo vajno da ste sigurni che v kraina smetka shte napravite tazi zadacha na BOI/IOI, ako ima takava.
+<Swetko> ot CEOI 2002 ima edna hubava
+<VelinTzanov> OK?
+<Swetko> da
+<VelinTzanov> Da, ot CEOI 2002 ima. :)
+<sssa88> i baltic'00 syshto
+<rangel__> da
+<VelinTzanov> OK
+<VelinTzanov> Reshete i tiah.
+<sssa88> ok
+<VelinTzanov> Ne mi gi predavaite - no se uprajnete.
+<VelinTzanov> Da razchitam che kato se vidim tuk sled 2 dena veche shte ste maistori na tozi tip dinamichni?
+<VelinTzanov> Moga li da razchitam?
+<sssa88> ami dano
+<VelinTzanov> Nedev, ia po-seriozno.
+<Prince_of_Dawn> da
+<VelinTzanov> Ako imash problemi mi pishi.
+<Swetko> da
+<sssa88> ok
+<rangel__> da, shtom trqbva :-)
+<VelinTzanov> Pravilata v nacionalnia otbor po informatika sa podobni na Hristianskata teologia... "shefa" iska neshto ot vas, ako ne mojete se obryshtate kym "shefa" i toi vi pomaga. Variant da ne go svyrshite prosto niama. :)
+<VelinTzanov> Aide sega na sledvashtata tema.
+<VelinTzanov> Btw, ne znam dali vi kazah, no ot vtoroto kontrolno natatyk shte se zanimavame s razlichni variacii na tema dinamichni.
+<VelinTzanov> Pravihme malko string-ove, sega malko broene, a za dnes temata e dinamichni po dyrveta/.
+<VelinTzanov> Dinamichnite po dyrveta po princip sa prosta rabota.
+<VelinTzanov> Otriazvash dyrvoto niakyde i smiatash "podzadacha" za poddyrvoto.
+<VelinTzanov> Primer: po kolko nachina moga da ocvetia vyrhovete na dadeno dyrvo v bialo i cherno, taka che da niamam dva sysedni beli vyrha.
+<Swetko> predpolagam ne sa mnogo
+<VelinTzanov> Reshenieto e prostichko - pravim dinamichno za vsiako "poddyrvo"
+<VelinTzanov> I t.k. "bydeshteto" ni zavisi ne samo ot poddyrvoto, no i ot cveta na vyrha do nego, razshiriavame malko dinamichnoto.
+<VelinTzanov> Zatova imame dve dinamichni - broia ako vyrha za koito e zakacheno dyrvoto e cheren i syshtoto za v sluchai che tozi vryh e bial.
+<VelinTzanov> Iasna li e ideiata?
+<VelinTzanov> (Tazi zadacha ia sychinih sega, vyobshte ne sym ia planiral :) )
+<Swetko> da
+<sssa88> da
+<rangel__> da
+<Prince_of_Dawn> da
+<Swetko> ot BOI li ste pravim
+<VelinTzanov> Ta kazvah che povecheto zadachi mogat da se napraviat s tazi tehnika na otriazvane na poddyrveta i eventualno razshiriavane na dinamichnoto.
+<VelinTzanov> Tyrpenie, Swetko.
+<VelinTzanov> Tova koia zadacha shte pravim e NAI-NEZNACHITELNOTO neshto.
+<VelinTzanov> Vajnoto e metoda koito shte pravim.
+<VelinTzanov> Zadachata e samo bleda ilustracia.
+<VelinTzanov> Dori i nai-slojnata zadacha ot klasa ne pokriva vsichki detaili na metoda.
+<VelinTzanov> Zatova iskam da se sysredotochite vyrhu metoda, a ne vyrhu zadachite.
+<VelinTzanov> Na BOI/IOI sys sigurnost shte sreshnete neshto koeto ne ste vijdali predi... dori da e ot syshtia klas.
+<VelinTzanov> Togava shte si prolichi koi e vniknal v (i razbral) metoda i koi e gledal samo otdelnite zadachi.
+<VelinTzanov> Ta taka.
+<Prince_of_Dawn> Ako si swarshim zanaqtieto predi 8:30 shte wi rakaja edna sluchka ot perioda kogato Velin imashe weche edin zlaten medal koqto se otnasq do wcherashniq matarql
+<VelinTzanov> Mnogo e vajno kato vidite dyrvo i v nego da se pita neshto vednaga da potyrsite niakakyv takyv podhod.
+<VelinTzanov> IAsno?
+<Prince_of_Dawn> da
+<Swetko> da
+<sssa88> da
+<rangel__> da
+<VelinTzanov> Shte vidim kolko e iasno... :)
+<VelinTzanov> Poniakoga obache rabotata ne e tolkova prosta.
+<VelinTzanov> Poniakoga siakash za malko izliza zadachata i se okazva che ne e syvsem taka...
+<VelinTzanov> Edna goliama chast ot tezi zadachi se reshavat s tova koeto az naricham dvufazno dinamichno po dyrveta.
+<VelinTzanov> Dnes shte vi pokaja dva takiva primera.
+<VelinTzanov> Zapochvame s Paths ot NOI 2004
+<VelinTzanov> http://infoman.musala.com/contests/noi/2004/round3_tasks.html
+<VelinTzanov> Niakoi ot vas sigurno znaiat che zadachata ima i drugi reshenia osven tova koeto shte obiasnia sega.
+<VelinTzanov> Iskam da zabravite za tiah sega, zashtoto na drugi "dyrvesni" zadachi niama da gi imate.
+<Prince_of_Dawn> ok
+<VelinTzanov> Tazi zadacha ia izpolzvam za ilustracia na metoda, a ne za da tvyrdia che tova e edinstvenia vyzmojen i nai-dobyr metod za reshavaneto i.
+<VelinTzanov> Kato ia prochetete i ste gotovi - kajete.
+<Prince_of_Dawn> gotowo
+<rangel__> az si q spomnqm
+<Swetko> znam go i 2-te reshenia - ama reshih che onova ste e po lesno
+<sssa88> ready
+<Swetko> gotov sum
+<VelinTzanov> Swetko, nito znam koi 2 reshenia imash predvid, nito znam koe e "onova". :)  No chestno kazano ne me i interesuva (vse pak Borisov niama vsichkoto vreme na sveta, a mai i nie)
+<VelinTzanov> Ta kakva e nashata general idea za dyrvesni zadachi kato tazi?
+<Prince_of_Dawn> da reshim zadachata za pod darwoto i da warnem rezultat
+<VelinTzanov> Tochno taka.
+<VelinTzanov> Znachi tova za koeto si mislim e imenno tova - na vsiako poddyrvo mu namirame nai-goliamata dylbochina.
+<Swetko> kak taka 
+<VelinTzanov> Tuk triabva da vi napravi vpechatlenie, che "poddyrvo" se obrazuva kato otsechem niakoe ot rebrata.
+<rangel__> tova oznachava che ni trqbva koren
+<Prince_of_Dawn> towa ot koeto idwame
+<VelinTzanov> T.e. nasheto dinamichno namira nai-goliamata "dylbochina" za vsiako rebro v dvete mu posoki.
+<Prince_of_Dawn> ;)
+<VelinTzanov> Da, Rangel se orientira pravilno.
+<VelinTzanov> Triabva da ima red.
+<Swetko> ami tova veche po stava
+<VelinTzanov> Kogato govorim za dyrveta red znachi koren. :)
+<VelinTzanov> ako e bez red shte vidite che "dinamichnoto" stava O(K^2+neshto), kydeto K e degree-to na vyrha s nai-goliamo degree.
+<VelinTzanov> Po princip s dyrvetata ima dva gnusni problema, koito riadko se poiaviavat na testove, no bez da gi reshite riadko mojete da imate 100 tochki.
+<VelinTzanov> Ediniat e goliamata rekursia s krainia stack.
+<VelinTzanov> Drugiat e podoben O(Degree^2) problem.
+<Swetko> nali veche si ima reshenie purvia problem
+<Swetko> usigned _stklen = 10000000000000000
+<Swetko> taka li beshe
+<sssa88> unsigned
+<Prince_of_Dawn> ne chak taka
+<Swetko> da de
+<Prince_of_Dawn> ;)
+<sssa88> i ako go slozish taka shte stane losho predpolagam
+<rangel__> mislq, che OS-a nqma da e mnogo shtastliv ot podobni izpylneniq :-)
+<VelinTzanov> (ako oshte ne ste razbrali - tova K^2 se poluchava zashtoto ne mojem na vseki vryh da mu zapishem dylbochinata - vseki pyt kogato gledame dylbochinata ot dadeno rebro v niakoia posoka, to triabva da gledame syotvetnia vryh BEZ tova rebro)
+<VelinTzanov> Za da se spasim i ot dvata problema ednovremenno (osobeno ako ne znaem C-hitrinkite), prilagame nashata stara tehnika.,
+<VelinTzanov> A imenno tehnikata narechene s trite bukvi - red. :)
+<Swetko> ami zatova triabva da izmislim nesto
+<VelinTzanov> Vzimame si koren na dyrvoto.
+<VelinTzanov> I sega pod "dylbichina" veche razbirame dylbochina v posoka kym listata.
+<VelinTzanov> Taka dinamichnoto stava dosta prosto.
+<VelinTzanov> Na vseki vryh mojem da namerim koi ot klonite mu e nai-d
+<VelinTzanov> Na vseki vryh mojem da namerim koi ot klonite mu e nai-dylbok.
+<VelinTzanov> I da dobavim edno kym dylbochinata mu i da poluchim dylbochinata na vyrha.
+<VelinTzanov> ... i taka do korena.
+<VelinTzanov> Do tuk iasno li e?
+<rangel__> da
+<VelinTzanov> (prosto v tazi naredba vseki (osven korena) si ima bashta i vseki si znae sinovete)
+<sssa88> da
+<VelinTzanov> Borisov, Swetko?
+<Swetko> d
+<Swetko> aa
+<Prince_of_Dawn> da
+<VelinTzanov> OK
+<VelinTzanov> Kakyv e problemyt s tova krasivo dinamichno?
+<Prince_of_Dawn> che reshawa zadachata samo za edin wrah
+<Prince_of_Dawn> samo za korena
+<VelinTzanov> :)  A zashto ne ia reshava za drugite?
+<Prince_of_Dawn> poneje
+<Prince_of_Dawn> dinamichnoto reshawa
+<rangel__> mozhe nqkoj vryh da ima po-dylyg pyt prez korena kym nqkoe drugo poddyrvo
+<Prince_of_Dawn> samo podzadachata (toest namira razstoenito samo mejdu detsata
+<VelinTzanov> Borisov, imam chuvstvoto che si mnogo navit ti da go kajesh, dori i da ne si go izmislil oshte. :)
+<rangel__> a dinamichnoto shte e namerilo samo pytishtata v negovoto poddyrvo
+<VelinTzanov> Rangel go kaza po-hubavo. :)
+<VelinTzanov> ZAtova za tazi zadacha prilagame dvufazno dinamichno.
+<Prince_of_Dawn> neznam kak da dam oblik na mislite si w dumi ( ezika e neshto tolkowa ogranichawashto ) ;(
+<VelinTzanov> A imenno - dobaviame si vtora faza.
+<Prince_of_Dawn> ;)
+<VelinTzanov> Slava Bogu che niamash vyzmojnost da ni izraziavash mislite si v tialo, a si ogranichen samo s dumite. :)
+<VelinTzanov> Pyrvata faza beshe ot listata kym korena.
+<VelinTzanov> Vtorata normalno shte e ot korena kym listata.
+<Prince_of_Dawn> aaa seshtam se
+<VelinTzanov> V pyrvata faza zapochvame ot listata, zashtoto tiah sme gi "reshili" (dylbochina 0)
+<VelinTzanov> Vyv vtorata faza zapochvame ot korena po syshtata prichina - zashtoto nego sme go reshili.
+<VelinTzanov> Kakto Borisov umno otbeliaza po-gore, pryvata faza reshava zadachata za korena.
+<VelinTzanov> Sega vyv vtorata faza ostava da napravim samo slednoto:
+<VelinTzanov> Kogato dinamichnoto e reshilo zadachata za tatko, da ia reshi i za men.
+<Prince_of_Dawn> \\Tate, Tate iskam fafla
+<VelinTzanov> I t.k. nai-dylbokia klon na tatko moje da minava prez men, triabva tatko da si pomni dvata nai-dylboki klona.
+<VelinTzanov> Tova ne e problem.
+<VelinTzanov> Mojem lesno da modificirame pyrvata faza da namira dvata nai-dylboki klona.
+<VelinTzanov> Nali vi e iasno zashto tova ne e problem?
+<Prince_of_Dawn> da
+<Prince_of_Dawn> ako nqma dwa takiwa klona
+<Swetko> ami zastoto ne e - zasto da imame problem da si pazim dvata nai dulboki
+<sssa88> a kak shte razberem che minava prez nas?
+<Swetko> e, togava niama i da ti se nalaga da gi pomnish
+<sssa88> a da
+<sssa88> da qsno e
+<VelinTzanov> Borisov, ami syshtoto ako niama nito edin klon. :)  Dylbochina 0.
+<rangel__> da, qsno
+<VelinTzanov> Vlado, ami nali tatko pomni koi dve sincheta sa nai-dylbokite.
+<Prince_of_Dawn> aha
+<sssa88> da da
+<VelinTzanov> Sega da si napravim na spokoistvie vtorata faza.
+<VelinTzanov> Vtorata faza triabva samo da proveri dali tatko mi promenia moite dva nai-dylboki klona.
+<VelinTzanov> Za celta gledam tatko i gledam dali az sym mu nai-dylbokia sin.
+<VelinTzanov> Ako ne sym - vzimam dylbochinata na tatko (koiato minava prez drug sin) i dobaviam 1 - tova e dylbochinata mu ot moia gledna tochka.
+<VelinTzanov> Ako az sym mu nai-dylbokia, to vzimam vtorata dylbochina na tatko, pak dobaviam 1 i taka poluchavam negovata dylbochina ot moia gledna tochka.
+<Prince_of_Dawn> (mejdu drugoto weline w zadachata rebrata imat teglo)
+<VelinTzanov> Posle samo sravniavam s moite dve nai-golemi dylbochini i pravia neobhodimite zameni.
+<VelinTzanov> Imat li teglo? :)
+<VelinTzanov> Vse taia - ne dobaviate 1, ami tegloto na rebroto.
+<Prince_of_Dawn> ne si chetesh uslowieto?
+<Prince_of_Dawn> qsno e
+<VelinTzanov> RAzbria se che ne go cheta! :)
+<Swetko> vse taia
+<VelinTzanov> RAzbirate li vtorata faza i zashto tia raboti?
+<Prince_of_Dawn> da
+<sssa88> da
+<rangel__> da
+<Swetko> da
+<VelinTzanov> A mojete li da napishete vsiaka ot dvete fazi bez rekursia?
+<Prince_of_Dawn> moje li da wmakna
+<VelinTzanov> Moje.
+<Swetko> :()
+<Swetko> :(
+<Prince_of_Dawn> parwo za rekursiqta da pomislim]
+<VelinTzanov> OK
+<Swetko> sigurno moshe 
+<Swetko> poneshe moshem da si ia simulirame
+<Swetko> ama e gadno
+<VelinTzanov> Ne, niamah predvid tova.
+<Swetko> e, do 10 000 vyrha raboti
+<VelinTzanov> Pravim slednoto:
+<VelinTzanov> Faza 1:
+<rangel__> moga, obache za pyrvata shte mi trqbvat 2 BFS-ta kakto go mislq
+<VelinTzanov> Vseki znae kolko deca ima.
+<Swetko> SDFS
+<Swetko> DFS
+<VelinTzanov> V nachaloto vseki si ima broiach raven na broia na decata mu.
+<VelinTzanov> Vseki pyt kogato "reshim" niakoe ot decata mu namaliavame tozi broiach s edno.
+<Prince_of_Dawn> eha opashka
+<VelinTzanov> Kogato broiacha stane 0 - aide na opashkata.
+<VelinTzanov> V nachaloto, ochevidno, na opashkata se narejdat samo listata.
+<VelinTzanov> Iasno?
+<Prince_of_Dawn> da
+<rangel__> a kak namirame listata?
+<VelinTzanov> Minavame po vsichki vyrhove i gledame koi niama deca. :)
+<sssa88> ama za da namerim koi sa listata oshte edno BFS shte trqbwa
+<VelinTzanov> Shtoto vseki si znae decata, Rangele.
+<rangel__> e kak si znam decata za proizvolen koren?
+<sssa88> e predi da sme go orientirali tova dyrvo po-nqkoj vryh kak znaem tova za decata
+<Prince_of_Dawn> izbirame si nqkoi za koren
+<VelinTzanov> E, puskash edno BFS ot korena. :)
+<Prince_of_Dawn> i posle darwoto e opredeleno
+<rangel__> aha, e taka i az moga :-0
+<VelinTzanov> Abe BFS mu e maikata - s opashka.
+<sssa88> gledaj samo edno uvelichavane na stack-a kolko rabota spestqva
+<VelinTzanov> Dali ot korena ili ot listata - triabva da mojete da go pravite.
+<VelinTzanov> Vlado, na niakoi zadachi ne moje prosto sys stack-a.
+<VelinTzanov> Na niakoi si triabva krasivo BFS.
+<sssa88> e da
+<VelinTzanov> Az s edno takova udarih 76 tochki na nereshena zadacha na IOI. :)
+<rangel__> stack-a qde poveche pamet ot opashkata (sistemniq pone)
+<sssa88> koq?
+<VelinTzanov> Depot, IOI 2001
+<VelinTzanov> Na neia zacepih che prosto imash dadeni zavisimosti mejdu otdelnite sandyci koi predi kogo e...
+<VelinTzanov> ... i uspiah da izveda niakoi zavisimosti, no ne vsichki.
+<VelinTzanov> I si napisah edno takova iako BFS, koeto da se razhojda po zavisimostite optimalno, bez da gubi vreme...
+<VelinTzanov> ... i izkarah 76. :)
+<VelinTzanov> Drugite ot otbora imaha 72, 20 i 12.
+<VelinTzanov> Abe napravo mi specheli zlatnia medal tova... :)
+<VelinTzanov> ... i molitvichkata nai-veche. Zashtoto bez neia niamashe da trygne. :)
+<Prince_of_Dawn> da
+<VelinTzanov> Aide na zadachata:
+<VelinTzanov> iasno li e kak se pishe bez rekursia i dvete fazi?
+<rangel__> da
+<sssa88> da
+<Prince_of_Dawn> da
+<Prince_of_Dawn> wtorata shte si q pomislq
+<VelinTzanov> Vtorata e chisto BFS veche. :)
+<VelinTzanov> A to moje i DFS da napravite na neia (s vash si stack, vmesto s opashka) :)  Vse taia.
+<Prince_of_Dawn> ;)
+<VelinTzanov> Swetko, iasno li e?
+<Swetko> da
+<VelinTzanov> Shte ia imam utre predadena za domashno, nali?
+<Swetko> d
+<Swetko> a
+<sssa88> da
+<Prince_of_Dawn> da
+<rangel__> da
+<Prince_of_Dawn> az daje si napisah dneshnoto
+<Prince_of_Dawn> gore dolu
+<Swetko> i az
+<Swetko> ama oste ne sum predal
+<VelinTzanov> Sledvashtata zadacha:
+<VelinTzanov> Tribes, BOI 2003
+<VelinTzanov> http://infoman.musala.com/contests/boi/2003/tribe_bg.doc
+<Swetko> ti po toz metod li ste ia obiasniavash 
+<Prince_of_Dawn> gotowo
+<Swetko> ili na Mihai reshenieto
+<Swetko> stot negovoto ne go razbiram
+<VelinTzanov> Swetko, dobre che ne si mi pod ryka, che shtiah da ti otksyna glavata! Nali ti kazah che celta ne e da reshim zadachata! Celta e da se uprajnim na metoda!
+<VelinTzanov> Razbira se che shte ia pravia po syshtia metod kato predishnata zadacha!
+<VelinTzanov> Hich ne sym i chel na site-a na BOI kakvo pishe kato reshenie. :)
+<Prince_of_Dawn> veline ne ubiwai swetko
+<VelinTzanov> Vajno e da mojete da reshavate celia klas takiva zadachi.
+<sssa88> btw, az kato gledah testovete ostanah s vpechatlenieto che ima nqkoj s poveche ot edin bash bashta
+<Prince_of_Dawn> dogodina nqma koi da e natsional
+<VelinTzanov> Borisov, ako ne go ubia prosto ne vijdam kak shte se klasirash, taka che ne si znaesh interesa, momche! :)
+<Prince_of_Dawn> az sam tap 
+<Prince_of_Dawn> rostislaw neshto mu stawa naposledak ne e kato na Esenniq
+<VelinTzanov> Ooo, Borisov, ti si mislish che dogodina shte ti e lesno... hahahaaa... :)  Ia vij kak sa se naredili tochno sled nacionalnia otbor niakolko 9-10 klas momcheta.
+<rangel__> gotovo
+<VelinTzanov> Ot godina do godina mnogo se promeniat neshtata.
+<sssa88> ready
+<Prince_of_Dawn> towa e qsno 
+<VelinTzanov> Naprimer 2001-va trimata nai-dobri v otbora biahme syotvetno 37, 50 i 23 (ili 26) na minalogodishnata olimpiada. :)
+<Prince_of_Dawn> ma az samo kazwah che Swetko e vajen ne go ubiwai
+<VelinTzanov> Prochetohte li?
+<VelinTzanov> (i razbrahte li :) )
+<rangel__> da
+<Prince_of_Dawn> da
+<Prince_of_Dawn> da
+<sssa88> da
+<VelinTzanov> OK. Imame dyrvesna zadacha.
+<VelinTzanov> Znachi se opitvame da si otrejem poddyrveta.
+<VelinTzanov> Kakvo triabva da ni kazva dinamichnoto?
+<Swetko> kato otreshem edna dyga 
+<VelinTzanov> Kakvo kato ia otrejem?
+<Swetko> i kato sloshim daden vrah ot tazi da e koren , kolko e reshenieto za tez dyrveta li
+<VelinTzanov> Neshto takova.
+<VelinTzanov> Ama ia mi go daite po-hubavo.
+<Swetko> da reshim za vsiaka dyga
+<VelinTzanov> Kakvo znachi "tozi vrah da e koren" (kakvo e koren?) i kakvo znachi "reshenieto za tez dyrveta"?
+<Swetko> i za vseki vrah
+<VelinTzanov> Kakvo po-tochno imash predvid, Swetko.
+<Swetko> ami reshem dugata
+<VelinTzanov> Kakvo znachi "da reshim"?
+<Swetko> i se obrazuvat 2 dyrveta
+<Swetko> da poluchim otgovora
+<VelinTzanov> Dobre de, vzimam si dyrvoto koeto e kym listata (a ne tova kym korena)
+<VelinTzanov> I kakvo ni gree tozi otgovor?
+<VelinTzanov> Kakvo ni pomaga?
+<rangel__> celta e da smetnem na koq masa naj-dalech bihme mogli da postavim daden vryh nali? (pri nqkakva podredba)
+<VelinTzanov> Da, Rangele.
+<Swetko> da
+<Swetko> ami chakai purvo da pochnem otnachalo
+<VelinTzanov> Rangele, ako se chudish za Swetkovoto, da, ne ni vyrshi rabota. :)
+<VelinTzanov> OK, pochti otnachalo.
+<rangel__> ami ako znaem otgovorite za vsichki sysedi mislq, che mozhem da smetnem i za tekushtiq vryh
+<Swetko> pochti ?
+<Prince_of_Dawn> pochni
+<Swetko> da
+<rangel__> i pak kato prednata pyrvo reshavame za korena (che e naj-lesno) i posle i za vsichki ostanali
+<Swetko> ami purvo da zabeleshim che tyrsim takova 
+<VelinTzanov> pochti = pochni, da :)
+<Prince_of_Dawn> sprete za moment
+<Swetko> ocvetiavane che nikoi chivek da ne e ocveten kato sinovete si ili bastata si
+<Prince_of_Dawn> nishto ne otbiram
+<Swetko> basta si
+<VelinTzanov> Kaji, Borisov.
+<VelinTzanov> Obyrkaniat vinagi e s predimstvo pred mnogoznaikovcite. :)
+<Swetko> ami to i az se obyrkah
+<Prince_of_Dawn> be ne moga da cheta obqnaniqta wi mnogo barzo pishete
+<sssa88> znachi stavame trima
+<VelinTzanov> Nishto de, neka Borisov kaje pyrvo, che toi pyrvi se obyrka. :)
+<Prince_of_Dawn> i nerabrano
+<VelinTzanov> :)
+<VelinTzanov> OK
+<Prince_of_Dawn> prosto daite edi po edin
+<VelinTzanov> Pochvame na chisto.
+<VelinTzanov> Idei ot kyde da zapochnem?
+<VelinTzanov> Iskame niakakvo dinamichno.
+<VelinTzanov> No ne e iasno kak shte definirame podzadachite.
+<Swetko> ami ot tova do kakvo da si svedem zadachata
+<VelinTzanov> IAsno e che shte gi definirame za poddyrveta.
+<VelinTzanov> No ne e iasno kavo tochno tyrsim v tezi poddyrveta.
+<rangel__> az maj imam ideq
+<VelinTzanov> OK. Kaji do kakvo da ia svedem, Swetko.
+<VelinTzanov> OK, Rangele, sled Swetko vednaga si ti.
+<Swetko> ami do proizvolno dyrvo , stot nali e dadeno dyrvo s koren
+<VelinTzanov> ???
+<Swetko> ami dadeno e dyrvo s koren  - voshda
+<VelinTzanov> Toi tozi koren niama nikakvo znachenie mai.
+<VelinTzanov> Ili ima? Ima li?
+<Swetko> t.e. da ne se zalugvame che imame koren
+<Swetko> niama
+<VelinTzanov> OK de.
+<VelinTzanov> Ne se zalygvame.
+<Swetko> znachenie - tochno tova triabva da se kashe purvo
+<VelinTzanov> Rangele, ti kakvo shteshe da kajesh?
+<rangel__> ideqta e za vseki vryh da smetnem kolko dalech mozhem da go pratim po masite izpolzvajki samo vyrhovete v negovoto poddyrvo
+<rangel__> ochevidno vsichki lista sa na masa 0
+<VelinTzanov> Idealno.
+<VelinTzanov> Momcheta, ne mislite li che ima neshto umno v Rangel? :)
+<VelinTzanov> Znachi taka:
+<rangel__> za vyrhovete, koito imat deca mozhem da gi slozhim na masa k, samo ako mozhem da zapylnim pyrvite k-1 masi chrez decata
+<VelinTzanov> Tyrsim nai-dalechnata masa do koiato mojem da stignem.
+<VelinTzanov> Da, Rangele, sega shte go izchistia kato za pred vsichki.
+<VelinTzanov> Ta, tyrsim nai-dalechnata masa do koiato mojem da stignem.
+<VelinTzanov> Kakvo znachi tova?
+<VelinTzanov> Znachi che tyrsim nai-dalechnata masa do koiato moje NIAKOI ot plemeto da stigne.
+<VelinTzanov> Zatova prosto gledame za vseki ot plemeto do koia masa moje da stigne. :)
+<VelinTzanov> Edno mnogo vajno nabludenie: Ako X moje da stigne do masa K, to togava toi moje da stigne i do vsichki masi predi K, stiga da poiskame da go slojim tam.
+<Swetko> triabva da se kashe che ako moshem da pratim daden vrah na masa K kato izpolzvame samo negovoto poddyrvo to moshem da go pratim i na masa K-1..1
+<VelinTzanov> Dotuk e iasno, nali?
+<VelinTzanov> Eto, Swetko chatka. :)
+<Swetko> tova po intuicia se vishda
+<Swetko> e, ne chatkam , prosto go znam
+<VelinTzanov> E, i ot uslovieto se vijda de... :)
+<VelinTzanov> Mogat da siadat vyv vsiakakyv red.
+<VelinTzanov> Bratiata ne zavisiat edni ot drugi.
+<VelinTzanov> Znachi vinagi mojem da slojim vyprosniat chovek kydeto reshim. I da go slojim predi tozi ot chlenovete na semeistvoto mu koito shte siada na po-natatyshna masa.
+<VelinTzanov> Kazano po-formalno:
+<VelinTzanov> Na vseki kanibal sypostaviame po edno chislo K - maximalnata masa na koiato moje da sedi.
+<VelinTzanov> Edin aborigen ima chislo K togava i samo togava kogato:
+<VelinTzanov> Ima 1 priak rodnina s chislo pone K-1, ima 2 preki rodnini s chislo pone K-2, 3-ma s chislo pone K-3 i t.n.... K-1 rodnini s chislo pone 1.
+<Swetko> ne e nushno da 
+<VelinTzanov> Ako nomerirame chislata po tozi nachin, to lesno mojem da slojim vseki na masata s negovia nomer.
+<Swetko> prosto da ima 1 s K-1  , 1 s K-2
+<Swetko> i t.n.
+<VelinTzanov> E, ako ima dvama s K-1 i nito edin s K-2 pak go slagame da e K.
+<VelinTzanov> Gornoto mi tvyrdenie obache mai e malko greshnichko.... ili ne e?!
+<Swetko> da de,
+<Swetko> greshnichko e
+<Swetko> malko samo :)
+<VelinTzanov> Vseki go slagame na masata s tozi nomer, za koito sme go izpolzvali/.
+<VelinTzanov> T.e. ako imam chovek s nomer 3.
+<VelinTzanov> Koito ima dvama rodnini s nomera 2.
+<VelinTzanov> Izpolzvame edinia rodnina za da pokriem nomer 2, a drugia - za nomer 1.
+<Swetko> da ima po 1 priak naslednik koito MOZHE da sedne na masa K-1   ,      1 na masa  K-2 ,  1  na masa K-3
+<VelinTzanov> OK de. Taka da go kajem. Ama kato kazvash 1 na K-2 da se ima predvid bez da broim predishnia. :)
+<Swetko> ama moshem  i s  edin rodnina  1 i edin 2 susto
+<Swetko> MOZHE da sedne ne znachi maximalnata mu masa
+<VelinTzanov> Swetko, napravihme goliama byrkotia s teb.
+<VelinTzanov> Az se opitah da karam formalno a gledai kakvo go namazahme sega. Chak me e sram.
+<rangel__> ako si sortiram naslednicite po nomera, pyrvoto k, za koeto a[k] < k mi e nomera
+<rangel__> kydeto a[k] e nomera na k-toto dete v sortiraniq spisyk
+<Swetko> ami mai da
+<Swetko> ama moshe i po lesno
+<Swetko> bez sortirane
+<VelinTzanov> Momcheta, dylbaete v neshto koeto ne e problema.
+<rangel__> sigruno ima i po-lesen nachin da se smetne ot sortiraneto no tova pone pokazva kakvo mi trqbva
+<VelinTzanov> Problemyt e moje li chovek s nomer K da go slojim na masa po-malka ot K.
+<VelinTzanov> Tova e koeto triabva da kajem formalno.
+<rangel__> trqbva da mozhem
+<VelinTzanov> I go kazvame taka:
+<VelinTzanov> Triabva, no triabva da sme sigurni.
+<Swetko> estestveno
+<rangel__> tova oznachava che nqkoe negovo dete e na masa k-1, premestvame tova dete sled nego i sme gotovi
+<rangel__> (sled nego v reda na pristigane
+<Swetko> da si trenirame intuiciata
+<VelinTzanov> Shtoto moje da imash mnoooogo hora s chislo 5 i edin s chislo 6. Kak si siguren che tia s 5-ticite niama da se izblyskat na 4 i tozi s 6 da ne moje da go slojim na 6. :)
+<VelinTzanov> Swetko, ne vi ucha na intuicia be, momche! >:-[[[
+<VelinTzanov> Iasno e che i intuiciata ia ima.
+<VelinTzanov> Ama veche vi vijdam kak shte otdelite 25 minuti na systezanie da se chudite taka li e ili ne e taka...
+<VelinTzanov> Che poniakoga intuiciata lyje.
+* Svetko has joined #ioi
+* Fiorvllo has joined #ioi
+<VelinTzanov> Ushkim neshto e taka pyk to se okazva inache.
+* Svetko is now known as Swetko2
+<rangel__> e nali znam, che moga da gi slozha na 5? znachi ne bi trqbvalo vsichki da se nablyskat na 4 pri pravilen izbor
+* Fiorvllo was kicked by VelinTzanov (VelinTzanov)
+<Prince_of_Dawn> imam okolko 20 min Molq da go naprawim po chisto
+<VelinTzanov> OK. Vzimam duamta.
+<VelinTzanov> Swetko, kaji koi ot dvamata si ti?
+<VelinTzanov> Izpusna li neshto?
+<Swetko> i dvamata 
+<Swetko> ne
+<VelinTzanov> OK
+<Swetko> dobre sum
+<VelinTzanov> Taka.
+<VelinTzanov> Eto edno dobro dokazatelstvo:
+<VelinTzanov> Na vseki vryh s chislo K.
+<VelinTzanov> Mojem da sypostavim na K-1 ot sysedite mu chislata ot 1 do K-1.
+<VelinTzanov> Vzimame bash-vyrha (tozi s nai-goliamoto chislo)
+<VelinTzanov> Sypostaviame mu chisloto mu.
+<VelinTzanov> Posle na K-1-te mu sysedi im sypostaviame chislata ot 1 do K-1
+<VelinTzanov> Posle na vseki ot tiah na negovite sysedi im pravim syshtoto.
+<VelinTzanov> Naprimer na tozi na koito sme slojili 4 mu vzimame sysedite...
+<VelinTzanov> .. i im slagame 1, 2 i 3.
+<VelinTzanov> ... i taka do kraia.
+<VelinTzanov> Nakraia slagame vseki na masata chiito nomer mu e bil sypostaven. A ostanalite gi ignorirame (tiah shte gi slojim nakraia sled kato sedne bash-choveka, za da ne prechat)
+<VelinTzanov> T.e. dokazahme che nashata sistema za nomerirane vsyshtnost raboti.
+<VelinTzanov> Iasno?
+<Prince_of_Dawn> da
+<rangel__> da
+<sssa88> da
+<VelinTzanov> Swetkovcite? :)
+<VelinTzanov> Tiah i dvamata gi niama mai.
+<VelinTzanov> Swetko go hvana shizofreniata neshto i ne e mejdu nas veche.
+<Prince_of_Dawn> na nego mu e qsna zadachata spoed men;)
+<VelinTzanov> Po-tochno mejdu nas e tialom (daje dva pyti), no duhom go niama. :)
+<VelinTzanov> Borisov, ne mi puka za zadachata. Iskam metoda da mu se iziasni dobre.
+<VelinTzanov> Che na IOI da ne se izlojim pak na neshta koito znaem.
+<VelinTzanov> Taka.
+<VelinTzanov> Sega veche idva tova koeto kaza Rangel sto minuti po-gore.
+<VelinTzanov> Dinamichnoto na poddyrvetata prosto namira chisloto na tehnia "koren".
+<Swetko2> tuk sum
+<VelinTzanov> Zabelejete, tova e razlichno ot reshenieto na zadachata za poddyrvoto.
+<VelinTzanov> Poddyrvoto moje da si ima niakakvo drugo maximalno chislo za nego si. Nas ne ni interesuva to.
+<VelinTzanov> Nas ni interesuva chisloto na "korena" mu - na tozi vryh koito e vryzkata s ostanalata chast ot dyrvoto.
+<VelinTzanov> Prichinata e che v tova dinamichno se opitvame da nomerirame VSICHKI vyrhove i taka da namerim nai-golemia... a ne samocelno da tyrsim nai-golemia.
+<VelinTzanov> Zapomnete - v tezi dinamichni po dyrveta vinagi smiatame neshto za "korena" na poddyrvetata - nikoga za samite poddyrveta.
+<VelinTzanov> Redyt e mnogo vajen. Zatova vinagi korenite igraiat rolia.
+<VelinTzanov> TAka.
+<VelinTzanov> Znachi podzadachata e da namerim nomera na korena na poddyrvoto.
+<VelinTzanov> Kak pravim faza 1 iasno li e?
+<VelinTzanov> Gledame nomerata na decata.
+<VelinTzanov> I gledame koe e nai-goliamoto chislo za koeto decata pokrivat vsichko po-malko ot nego.
+<VelinTzanov> I povtariame dinamichnoto chak do korena.
+<sssa88> a tova kak shte go napravim?
+<VelinTzanov> Iasno?
+<VelinTzanov> Ami neka pomislim kak tochno shte go napravim...
+<VelinTzanov> Mojesh da sortirash decata, kakto predloji Rangel.
+<Prince_of_Dawn> ok
+<Swetko2> ami za vsiako chislo pazim kolko deca imame s nego
+<VelinTzanov> Obshtata slojnost na sortiraniata shte ti e O(N*LogN)... a na praktika shte e O(N).
+<sssa88> ok
+<Swetko2> zasto 
+<VelinTzanov> Da, moje i taka. I posle cikylche po chislata.
+<Swetko2> nali ako imame N-1 suseda
+<VelinTzanov> Swetko, tova sa glupavi podrobnosti, niamame vreme za tiah.
+<Swetko2> kak ste stane O(n)
+<Swetko2> ok
+<Swetko2> iasno
+<VelinTzanov> O(N*LogN) e napylno OK.
+<VelinTzanov> Tvoeto mi haresva poveche obache.
+<VelinTzanov> Vse taia.
+<VelinTzanov> Faza 1 iasna li e na vsichki?
+<Prince_of_Dawn> da
+<sssa88> da
+<rangel__> da
+<Swetko2> to i moeto e N*logN
+<VelinTzanov> Vse taia.
+<VelinTzanov> Vajnoto e che e po-prostichko i iasno.
+<VelinTzanov> Taka.
+<VelinTzanov> Sega faza 2.
+<Swetko2>  no ako se optimizira moshe da stane O(N) ama ne e vashno de
+<VelinTzanov> Bashtata vliza v igrata! :)
+<VelinTzanov> Kakvo pravim sega?
+<VelinTzanov> Reshili sme zadachata za tatko.
+<Prince_of_Dawn> BFS?
+<VelinTzanov> I sega shte integrirame tatko v nashata zadacha.
+<VelinTzanov> Borisov, BFS-to e podrobnost po realizaciata.
+<VelinTzanov> Az govoria za samata ideia.
+<rangel__> ami trqbva mi nomera na bashta mi bez da izpolzva men v smetkite
+<VelinTzanov> Tochno taka, Rangele.
+<VelinTzanov> Neshto poveche - na vseki ot bratiata mi shte mu triabva tova.
+<VelinTzanov> Ha sega da vi vidia. :)
+<VelinTzanov> Rabotata stana po-slojno otkolkoto na Paths. :)
+<VelinTzanov> Tam pomnehme samo dvata nai-dylboki pytia. A tuk?
+<Swetko2> kakvo BFS, DFS e mnogo po iako
+<VelinTzanov> Pomislete i mi kajete ako se setite.
+<VelinTzanov> Swetko, shte te kick-na.
+<rangel__> ima 2 varianta - otsystvieto na edno dete ili pravi nomera mu k-1 ili si ostava k, mislq
+<Swetko2> ti znaesh li kak
+<VelinTzanov> Mislia che znam. :)
+<Swetko2> kakvo sum zapravil 
+<VelinTzanov> Sega ostava da mina prez vashata kritika. :)
+<Swetko2> ami az sum syglasen s rangel
+<VelinTzanov> Ami ne me interesuva BFS i DFS sega.
+<VelinTzanov> Mojesh li da go dokajesh, Rangele?
+<Swetko2> ami az na borisov govoreh , ti nisto ne si kazal za BFS 
+<Prince_of_Dawn> moje da go dokaje
+<Prince_of_Dawn> na men mi e qsno
+<rangel__> ako imam drugo dete, s koeto moga da zapylnq masata na koqto e tova, koeto maham znachi nomera na tatko ne se promenq
+<VelinTzanov> Na Borisov na lichno mu pishi.
+<Prince_of_Dawn> ???
+<Prince_of_Dawn> qsno
+<Prince_of_Dawn> i kakwo shte prawim velio
+<VelinTzanov> Rangele, az imah predvid da dokajesh che nomera pada nai-mnogo s 1.
+<rangel__> ako nqmam takova dete, to moga da premestq vsichki deca s po-golqm nomer edna masa vstrani (kym po-malko) i sym gotov s roditel s nomer k-1
+<VelinTzanov> OK
+<VelinTzanov> Vyprosyt sega ostava mojem li lesno da namerim na edin bashta koi deca mu svaliat nomera i koi ne?
+<rangel__> ako imam 2-ma bratq s ednakvi nomera po-golemi ot moq ne promenqm nomera na bashtata
+<rangel__> inache bi trqbvalo da go promenq
+<rangel__> ne e vqrno
+<VelinTzanov> Kakvo znachi "nomer na brat" v tozi sluchai - ne e mnogo iasno
+<VelinTzanov> Tova max nomera na brata li e ili e namalenie nomer
+<Prince_of_Dawn> Az trqbwa da hodq na school dowarshete bez men az shte cheta posle log-a
+<VelinTzanov> namalenia nomer?
+<VelinTzanov> OK, Borisov.
+<Prince_of_Dawn> haide chao
+<VelinTzanov> Chao, uspeh!
+<sssa88> chao
+<rangel__> kakvo oznachava namelen nomer na nqkoj ot bratqta?
+<rangel__> nali nomerata na bratqta ne zavisqt edin ot drug?
+<VelinTzanov> Ami ako sym nomer 3
+<VelinTzanov> Imam dve deca nomer 2
+<VelinTzanov> Tova e nenamalen nomer.
+<VelinTzanov> Ako namalia ednoto na 1 togava 1 i 2 sa namlenite im nomera.
+<VelinTzanov> S cel da zapylnia 1 2 3 ... K-1
+<VelinTzanov> OK. Neka az se opitam da go formuliram.
+<VelinTzanov> Za da si sloji bashatat nomer K
+<VelinTzanov> Triabva da ima pone edin sin s nomer K-1
+<VelinTzanov> Pone 2 sina s nomer K-2...
+<VelinTzanov> Pone 3 s K-3 i t.n...
+<VelinTzanov> Veche znaem kolko e K.
+<VelinTzanov> Mojem spokoino da "sleznem" po sinovete i da vidim sled koi sinove sme na granicata i sled koi sme si OK.
+<VelinTzanov> Ako v daden moment ot slizaneto se okazjem na granicata, t.e. da imame TOCHNO L deca s nomer pone K-L
+<VelinTzanov> To togava tezi L deca sa "kritichni" za nashia nomer.
+<VelinTzanov> t.e. mahaneto im bi ni namalilo nomera na K-1.
+<VelinTzanov> Ostanalite ne sa takiva - t.e. tiah kato gi mahnem tatko si ostava K.
+<VelinTzanov> Iasno li e?
+<rangel__> da
+<Swetko2> da
+<VelinTzanov> Vlado?
+<sssa88> tova tam za sinovete ne moga da go razbera
+<sssa88> zashto pone dvama s nomer k-2?
+<VelinTzanov> Koe po-tochno?
+<VelinTzanov> Pone dvama s nomer PONE K-2
+<sssa88> trima s k-3 i t.n.
+<VelinTzanov> Za da imam nomer K kakvo e iziskvaneto?
+<Swetko2> da imash po edin ot tezi
+<VelinTzanov> Ako imam edin sin s nomer K-1 ne mi e dostatychno.
+<VelinTzanov> Triabva da imam oshte edin sin s nomer pone K-2
+<Swetko2> ama aok
+<VelinTzanov> I oshte edin s nomer K-3 (ili poveche)
+<Swetko2> imash 1 s K 1 s K-1 1 s K-2 ..........  1 s 1
+<sssa88> aha maj zagrqh
+<VelinTzanov> Swetko, dobre be, ne razbiram zashto triabva kato obiasniavam neshto po edin nachin ti da go obiasniavah po drug ednovremeno s men?!!
+<sssa88> toest kym tezi s k-2 shte se vkluchvat i tezi s k-1
+<VelinTzanov> Da, tochno taka, Vlado.
+<Swetko2> ami ti kazvash che triabva da imame 2 s K-2 
+<rangel__> 2-ma s _pone_ k-2
+<Swetko2> az tova ne zagriah
+<VelinTzanov> Aha, t.e. i ti ne si go razbral. :)
+<VelinTzanov> Prichinata e che pyrvo biahme s moiata definicia predi 1 chas, posle ti dade tvoiata i tia e ostanala v glavata na Vlado.. i posle az si karah po moiata i... :(
+<Swetko2> t.e. da imame pone 2 sina s nomer pone K-2
+<VelinTzanov> Da, tochno taka.
+<Swetko2> taka mislia che po dobre zvuchi
+<VelinTzanov> Sega vijdam che gore sym propusnal "pone"-to. :(
+<VelinTzanov> Aide oshte vednyj (za Borisov):
+<VelinTzanov> Triabva ni PONE 1 sin s nomer PONE K-1
+<VelinTzanov> Syshto taa ni triabvat PONE 2 sina s nomera PONE K-2 (gornia pak go broim)
+<VelinTzanov> Syshto PONE 3 sina s nomera PONE K-3 (gornite si gi broim)
+<VelinTzanov> I t.n.
+<VelinTzanov> Sega veche kato znaem K (vyv vtorata faza)
+<VelinTzanov> Mojem da kajem koi sinove sa "kritichni".
+<VelinTzanov> Zabelejete che tova go pravim vyv vtorata faza - kogato sme reshili zadachata napylno za vyprosnia roditel.
+<VelinTzanov> Ne si i pomisliaite da go pravite oshte v pyrvata faza!
+<VelinTzanov> Ta eto kak kazvame koi sinove sa kritichni:
+<VelinTzanov> Gledame za vsiako L ot 1 do K-1:
+<VelinTzanov> Ako imame TOCHNO L sina s chisla PONE K-L, to togava tezi TOCHNO L sina sa kritichni.
+<VelinTzanov> Ako niakoi ne e otbeliazan kato kritichen za nikoe L, to toi ne e kritichen.
+<VelinTzanov> Iasno?
+<sssa88> da
+<rangel__> maj propuskame neshto - dqdoto
+<Swetko2> zasto samo da popitam ne moshem da smiatame koi e kritichen usporedno s izchisliavaneto na vyrha
+<VelinTzanov> Sega obiasniavam.
+<VelinTzanov> V pyrvata faza (kogato izchisliavame vyrha za pyrvi pyt, bez da broim "diadoto") niamame pylna informacia.
+<VelinTzanov> Togava ne triabva da gi pravim tezi smetki. Zashtot te sa nepravilni.
+<Swetko2> nali togava pridobivame informacia za decata
+<VelinTzanov> Chak sled kato reshim zadachata za bashtata, togava mojem da napravim tezi smetki.
+<VelinTzanov> T.e. chak sled kato veche znaem i diadoto.
+<Swetko2> t.e. da reshim znachi ?
+<VelinTzanov> Swetko, vyv vtorata faza li imash predvid?
+<Swetko2> da namerim chisloto li
+<VelinTzanov> Da reshim zanchi da reshim napylno - da mu namerim chisloto.
+<Swetko2> ami nali vtorata faza reshavame za niakoe dete
+<VelinTzanov> Da svyrshim vtorata faza s nego - tova znachi.
+<VelinTzanov> OK.
+<Swetko2> aha
+<VelinTzanov> Obiasniavam otnachalo.
+<VelinTzanov> Pyrva faza:
+<VelinTzanov> Smiatam kakvo nai-goliamo chislo moga da dostigna na bazata na decata si.
+<VelinTzanov> SAMO NA BAZATA NA DECATA SI. Bez da si gledam roditelia.
+<VelinTzanov> Vtora faza:
+<VelinTzanov> Vyv vtorata faza veche znam kakvo da ochakvam ot roditelia si. T.e. znam mu chisloto ot moia gledna tochka.
+<VelinTzanov> Sled kato imam veche tazi informacia pravia slednoto:
+<VelinTzanov> Opredeliam koi ot rodninite mi (sinovete, vkl. bashta mi) sa "kritichni".
+<VelinTzanov> Tova dali bashta mi e kritichen nikoi ne go gree.
+<VelinTzanov> Vajni sa sinovete.
+<VelinTzanov> Taka.
+<VelinTzanov> Ako chisloto mi e K.
+<VelinTzanov> To za kritichnite si sinove az shte izglejdam kato K-1.
+<VelinTzanov> A za drugite shte sym kato K.
+<VelinTzanov> Gotovo. Posle prodyljavam BFS-to kym sinovete si.
+<VelinTzanov> A base case-a e korenyt, koito niama bashta. :)
+<VelinTzanov> T.e. toi napravo si gleda sinovete i smiata kritichnite.
+<VelinTzanov> Sega iasno li e?
+<rangel__> da
+<sssa88> tuka e momenta da spomena che tezi bez bashta sa nqkolko v testovete
+<Swetko2> vish az kak si go predstaviam - kashi dali e greshno
+<Swetko2> ami da - Dan Ghinea zatova e obyrkal tazi zadacha
+<VelinTzanov> Vlado, kakvo iskash da kajesh? Che dyrvoto e razpokysano li? :)
+<sssa88> ami mislq che da
+<Swetko2> che e dadeno proizvolno dyrvo
+<sssa88> az bqh izmislil edno super greshno reshenie
+<sssa88> edno vreme
+<Swetko2> e, niama znachenie
+<VelinTzanov> Swetko, kak taka ia e obyrkal? Iskash da kajesh che sa go oshtetili na olimpiadata li? :)
+<Swetko2> vish az kak si go predstaviam - kashi dali e greshno
+<Swetko2> ami mai da
+<sssa88> i proverqvah testovete za prostotii
+<Swetko2> taka kazva ANev
+<VelinTzanov> Hahaa... i sa go lishili ot Laptop? :)
+<Swetko2> ami mai da
+<Swetko2> ne znam tochno ama nesto takova e stanalo
+<VelinTzanov> OK, Swetko kaji kak go vijdash ti?
+<VelinTzanov> Vlado, ne razbrah, ti razbra li tova koeto kazah? Iasna li ti e zadachata (kakto na Rangel)? :)
+<Swetko2> znachi az smiatam za vseki vrah vse edno toi e koren kolko mu e chisloto
+<VelinTzanov> Stop
+<VelinTzanov> Kakvo znachi tova.
+<sssa88> da
+<VelinTzanov> Kakvo znachenie ima koren li e ili ne e.
+<VelinTzanov> Chisloto si e chislo. To ne zavisi ot korenuvaneto.
+<Swetko2> ami t.e. che niama basta
+<Swetko2> vse edno toi e voshd 
+<VelinTzanov> Da de - faza 1.
+<rangel__> tova oznachava li che N pyti pravish faza 1?
+<VelinTzanov> Swetko, imash predvid che gledash poddyrvoto mu, nali?
+<Swetko2> i smiatam koi sa mu kritichnite deca
+<Swetko2> da N puti - za vseki vrah
+<VelinTzanov> Ili gledash cialoto dyrvo?
+<Swetko2> kak taka gledam poddyrvoto
+<Swetko2> ne, gledam cialoto dyrvo
+<VelinTzanov> Swetko tova e N^2
+<Swetko2> togava kak ste obiasnish che vyrvi za <0.1 secundi ?
+<Swetko2> ne sum svarshil oste
+<VelinTzanov> Ami tova koeto mi kazvash dosega e chist N^2. :)
+<Swetko2> dosega da
+<Swetko2> znachi az smiatam za vseki vrah vse edno toi e koren kolko mu e chisloto  i smiatam koi sa mu kritichnite deca 
+<VelinTzanov> OK de. Kaji kak go smiatash za vseki vryh po otdelno za po-malko to O(N)
+<VelinTzanov> Kak go smiatash?
+<VelinTzanov> Na bazata na kakvo?
+<VelinTzanov> Mnogo mi e chudno kak go pravish bez red?
+<VelinTzanov> Za koi vryh go smiatash pyrvo i kak?
+<Swetko2> ami purvo za vrah 1
+<Swetko2> posle za niakoi ot decata mu i taka
+<Swetko2> obsto vzeto imam edno DFS v drugoto
+<VelinTzanov> Ne razbiram.
+<rangel__> koga se spirat tezi DFS-ta?
+<VelinTzanov> Kato grymne stack-a, Rangele. :)
+<Swetko2> ne grumva :)
+<Swetko2> niama takiva testove stot sa lesni i niama da gi dadat
+<Swetko2> a puk inache nali si imame trick za stekove
+<rangel__> btw. maj e naj-krasivo da si smqtame chisloto na edin vryh (pyk i kritichnite deca) s indeksno dyrvo
+<VelinTzanov> Swetko, ne razbrah kak reshavash zadachata za vryh 1?
+<VelinTzanov> Rangel veche e stanal takyv maistor na index-nite dyrveta che gi pishe pod pyt i nad pyt... :)
+<VelinTzanov> Veche si ima i Index Tree sort sigurno... :)
+<Swetko2> ami reshavam za vsiako ot decata mu
+<VelinTzanov> E taka shte zaciklish bezkraino.
+<rangel__> mi s indeksnoto dyrvo mnogo lesno moga da proverq dali imam pone L chisla po-golemi ot K-L :-)
+<Swetko2> kato decata mu sa koreni na tehnite dyrveta (tezi koito se poluchavat kato reznem dygata
+<VelinTzanov> Shtoto ne e iasno koi na kogo e dete kato vseki e koren. :)
+<VelinTzanov> Aha.
+<VelinTzanov> T.e. pravish nashata faza 1.
+<VelinTzanov> OK
+<VelinTzanov> I posle kakvo?
+<Swetko2> i posle kato sum reshil za vsichki deca
+<rangel__> ami ot vseki vryh puska edno DFS do sysednite mu (samo do tqh) za da vidi tehnite chisla (pone az taka go razbrah)
+<Swetko2> lesno namiram kakvo mu e chisloto na vyrha ako toi e koren na cialoto dyrvo
+<rangel__> i pravi vyprosnata faza 2, no po dosta neocheviden nachin
+<Swetko2> da taka pravia
+<VelinTzanov> Nishto ne razbrah.
+<Swetko2> lesno namiram kakvo mu e chisloto na vyrha ako toi e koren na cialoto dyrvo - zaedno s tova namiram i kritichnite mu dca
+<Swetko2> dobre de
+<rangel__> ami sled kato e smetnal korena si haresva edno dete
+<rangel__> i vsichkite mu sysedi (zaedno s korena) gi broi kato deca i pravi smetkite nanovo
+<Swetko2> taka pravia da
+<rangel__> t.e. smqta chisloto na vyrha i kritichnite deca
+<Swetko2> ne tochno 
+<Swetko2> nali imam edin vrah i na vsiako dete mu znam chisloto ako deteto e koren na dyrvoto koeto se poluchava kato otreshem rebroto
+<VelinTzanov> Swetko, naistina ne razbiram zashto triabva da izlivash tazi pomia v log-a ni. :)
+<Swetko2> ami dobre mlukvam - ama ne e pomia
+<rangel__> (e mozhe i az da ne sym go razbral)
+<VelinTzanov> Ako reshenieto ti minava testovete sigurno e viarno.
+<Swetko2> ami viarno e 
+<VelinTzanov> No:
+<Swetko2> i izpolzva pak toia metod 
+<VelinTzanov> 1) Moje teoretichno da e bavno.
+<VelinTzanov> 2) Ne e chisto i ne se generalizira (ili e absolutno syshtoto kato moeto)
+<Swetko2> teoretichno ne e bavno - v tova sum siguren
+<Swetko2> sega ne moga da ti go obiasnia
+<VelinTzanov> E, znachi sigurno e syshtoto koeto az obiasniavah.
+<VelinTzanov> Nai-mnogo da ima Degree^2 bug.
+<Swetko2> po skoro e absolutno sustoto kato tvoito
+<VelinTzanov> OK
+<Swetko2> i tova niama
+<VelinTzanov> Vajnoto za men oabche e:
+<Swetko2> i e chisto 
+<VelinTzanov> oabche = obache
+<VelinTzanov> Da vidite obshtata ideia s koiato pravim dvufazni dinamichni.
+<Swetko2> prosto ne moga da ti go obiasnia
+<VelinTzanov> Iasna i striktna ideia.
+<VelinTzanov> Trygvame ot listata kym korena.
+<VelinTzanov> Gledame samo decata si.
+<VelinTzanov> Posle trygvame ot korena kym listata i gledame i bashtite si veche.
+<VelinTzanov> Tova e chistata ideia, formulirana dobre.
+<Swetko2> izpolzvam tazi ideia da reshavam za vsiako podyrvo koeto se obrazuva kato reznem niakoia dyga
+<Swetko2> nali tova e generalnata ideia
+<VelinTzanov> Tova e metod s koito mojete da reshite goliama chast ot dyrvesnite zadachi, koito ne stavat s elementarnia metod.
+<VelinTzanov> Swetko, neka obiasnia.
+<VelinTzanov> Zadryj komentarite za malko.
+<Swetko2> ami dobre - ne znaeh che ne si svarshil
+<VelinTzanov> Nai-generalnata ideia e da reshavate zadachata za poddyrveta.
+<VelinTzanov> I to ne proizvolni poddyrveta, a takiva s edno otriazvane.
+<VelinTzanov> Tova e nai-nei-generalnata ideia.
+<VelinTzanov> Tai e prosta.
+<VelinTzanov> I v nai-prostia si vid nai-chesto raboti.
+<VelinTzanov> No poniakoga ne e dostatychna sama po sebe si.
+<VelinTzanov> Zatova se poluchavat po-slojni programi.
+<VelinTzanov> Poniakoga se poluchava nevyobrazima byrkotia.
+<VelinTzanov> Za da ne vi se sluchi na systezanie da stane byrkotia, az vi davam hubav, podreden, stypka-po-stypka metod.
+<VelinTzanov> S tozi metod stavat vsichki dyrvesni zadachi za koito se seshtam (koito ne stavat s po-elementarnia metod).
+<VelinTzanov> Iskam da mojete da go prilagate za absolutno nepoznata dyrvesna zadacha.
+<VelinTzanov> V koiato se tyrsi neshto izvrateno i koeto zavisi ot cialoto dyrvo.
+<VelinTzanov> Tova iskam.
+<VelinTzanov> Iskam da znam che na BOI/IOI ako ima takyv tip zadacha shte ia napravite bez da se spynete v neia.
+<VelinTzanov> Syglasen sym che ima hiliada drugi reshenia na vsiaka dyrvesna zadacha.
+<VelinTzanov> Vkl. na Paths i na Tribes.
+<VelinTzanov> No iskam da vniknete v dvete fazi za koito govoria az, za da mojete da gi prilagate za absolutno nepoznata zadacha.
+<VelinTzanov> Prosto ako sviknete s hubavia metod imate garancia che shte uspeete na systezanieto (stiga zadachata da se reshava s tozi metod, razbira se)
+<VelinTzanov> A inache ako si pishete vashi si raboti, specifichni za zadachata (kakvito ima ne edna i za Paths i za Tribes), niama da imate tazi garancia. Niama da e iasno dali shte mojete da se setite takova reshenie i za novata, nepoznata zadacha, koiato vi chaka (eventualno) na BOI/IOI.
+<VelinTzanov> OK?
+<rangel__> aham
+<sssa88> ok
+* Swetko2 has quit IRC (irc.spnet.net irc.techno-link.com)
+* Swetko has quit IRC (irc.spnet.net irc.techno-link.com)
+* dsd has joined #ioi
+* Affordi has joined #ioi
+* dsd is now known as Swetko
+<VelinTzanov> Sega ti paste-vam.
+* Affordi was kicked by rangel__ (User terminated!)
+<Swetko> kakvo izpusnah
+<VelinTzanov> Chakame otgovor ot Swetko samo. :)
+* VelinTzanov sets mode: +o Swetko
+<Swetko> da
+<Swetko> dobre
+<Swetko> niakoi iska li N^2 
+<Swetko> reshenie na OPTIMIZE
+<VelinTzanov> Kakvo e tova?
+<rangel__> koq optimize?
+<VelinTzanov> Kakvo e OPTIMIZE?
+<Swetko> zadachata ot purvoto kontrolno
+<VelinTzanov> Samo edno posledno neshto.
+<VelinTzanov> Poneje moje da ne ostana do kraia na N^2 reshenieto na OPTIMIZE da popitam za posledno:
+<VelinTzanov> Imate li vyprosi?
+<Swetko> ne
+<sssa88> ne
+<rangel__> ne
+<VelinTzanov> Da razchitam li che kato doida sled 2 dni shet ste maistori na kodiraneto/dekodiraneto/broeneteo/vairaciite i kombinacii i nai-veche na dinamichnite po dyrveta - ednofazni i dvufazni?
+<Swetko> da
+<Swetko> ednofaznni ne sme reshavali
+<VelinTzanov> Zashtoto sa elementarni, Swetko! Zadachi za Grupa B!
+<sssa88> da
+<Swetko> moshe onaia ot BOI drugata ednofazno da ia reshim
+<VelinTzanov> A, da! Idealno!
+<Swetko> ne bih kazal che vsichki sa takiva
+<VelinTzanov> Eto vi treta zadacha za domashno!
+<Swetko> ima ednofazni koito pak se razshiriavat
+<Swetko> sega ste me ubiete predpolagam
+<VelinTzanov> http://infoman.musala.com/contests/boi/2002/problems_bg.zip
+<VelinTzanov> BOI 2002, Zadacha 5
+<Swetko> az za druga imah predvid ot 2003
+<Swetko> a i taz ne e dinamichna
+<Swetko> COMPANY-to
+<VelinTzanov> Eii da be, ne e dinamichna, viarno. :)
+<VelinTzanov> OK - ne e za domashno. :)
+<VelinTzanov> Hmm... da, i company-to mojete da si go pomislite.
+<Swetko> ama ot 2003 - moshe da mine za dinamichna - moshe i da ne mine
+<Swetko> zavisi koi kak tulkuva
+<VelinTzanov> Makar che az nego ne sym go mislil v tazi ramka, zashtot to si imashe dosta specifichni hitrinki... kato naprimer tova che razlikata beshe max 1 i niakakvi takiva podobni.
+<sssa88> tq dobre se reshava s randomizaciq
+<Swetko> ami da 
+<Swetko> btw. tazi company ia ima na polskata olimpiada 1999 3-ti krag purva zadacha
+<Swetko> kato mnogo malko modificirana versia
+<Swetko> no se reshava po absolutno sustia nachin
+<VelinTzanov> :) Kak sa ia otkradnali, a? :)
+<Swetko> ami ne znam
+<VelinTzanov> OK, momcheta az prikluchih za dnes.
+<VelinTzanov> Obsydete Optimize ako iskate.
+<VelinTzanov> Az shte izchezna po niakoe vreme.
+<VelinTzanov> Chao!
+<Swetko> prosto predpolagam sa ia procheli ot edno miasto
+<sssa88> chao
+<Swetko> chao
+<rangel__> chao
+<Swetko> niakoi iska li optimize da razbere
+<sssa88> az uslovieto ne si spomnqm
+<Swetko> ne e nushno
+<Swetko> az niama da ia obisniavam
+<Swetko> i az ne znam kak staba
+<Swetko> imam reshenieto na edna zadacha koiato mnogo prilicha na optimize
+<Swetko> ima samo mnogo malka razlika
+<Swetko> koiato e nesustestvena
+<Swetko> i reshenieto e na  
+<Swetko> swetko.data.bg
+<sssa88> tova skaniranoto mnogo qko
+<sssa88> na pergament ot pharaonovo vreme mqza
+<Swetko> tam ima i edin archiv    tasks.zip     koito  e archiv na vsichkite mi sorsove
+<Swetko> ami da
+<Swetko> ama se chete
+<Swetko> tova koeto triabva
+<Swetko> razbrahte li kakva e drugata zadacha
+* Swetko_AG has joined #ioi
+* sssa88 is now known as sssa88_qde
+* Disconnected
+Session Close: Wed Jun 23 23:35:24 2004

@@ -1,0 +1,873 @@
+
+Session Start: Fri Jun 18 20:03:26 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* duplixators has joined #ioi
+* Logging #ioi to 'logs\ioi_2004_06_19.log'
+<VelinTzanov> Zdrasti!
+<VelinTzanov> Koi ste tuk?
+<rangel__> az sym tuk
+<sssa88> zdrasti
+* Prince_of_Dawn has joined #ioi
+<Prince_of_Dawn> sajalqwam za zakasnenieto
+<Prince_of_Dawn> dobro utro
+<VelinTzanov> Swetko?
+<sssa88> dobro
+<Swetko> da
+<Swetko> tuk sum
+<Swetko> ei sega prastam domashnoto
+<VelinTzanov> Shte ni osvobodish li ot prisystvieto na nekanenia ni gost? :)
+* duplixators was kicked by Swetko (Swetko)
+<VelinTzanov> Mersi
+<VelinTzanov> Kakvo e polojenieto sega, momcheta? RAzbirate li gi veche igrite?
+<Prince_of_Dawn> kolko e uchtiv ;)(
+<VelinTzanov> Niakakvi problemi s turncoin?
+<VelinTzanov> Ili cointurn li beshe... :)
+<Prince_of_Dawn> mi az ne sam q napisal i idei nqma mnogo
+<Prince_of_Dawn> ma razbrah uslowieto wcherera w 12
+<VelinTzanov> A, che zashto da niama idei be.. az nali kazah kak se pravi nakraia vchera - reshavash za TTTTH, za TTTHT za TTHTT, THTTT i HTTTT i kombinirash posle. :)
+<sssa88> ami az tam v domashnoto sym ti pisal kakvo ne razbiram - zashto kombiniranto e vqrno
+<Prince_of_Dawn> shte Xor-nem nqkoi ot tqh
+<Swetko> az go razbrah s pomostta na rangel
+<rangel__> i naj-vazhnoto e che X^X = 0 :-) (tova naistina e mnogo vazhno)
+<VelinTzanov> Aha... i che obryshtaneto na obryshtaneto e syshtoto kato pyrvonachalnoto. :)
+<VelinTzanov> Koi kakvo ne mi e predal ot domashnoto?
+<Prince_of_Dawn> poslednite dwe zadachi
+<rangel__> imahme li neshto drugo osven stripes i turncoin? (ponezhe ne namerih iz log-a)
+* Swetko sets mode: +vvv Prince_of_Dawn rangel__ sssa88
+* Swetko sets mode: +ooo Prince_of_Dawn rangel__ sssa88
+* Swetko sets mode: +o VelinTzanov
+<VelinTzanov> Ne, niamashe.
+<rangel__> znachi vsichko trqbva da sym predal
+<VelinTzanov> OK
+<VelinTzanov> Swetko, ti kakvo pravi vchera?
+<VelinTzanov> Swetko?
+<VelinTzanov> Swetko spi. Vlado, ti?
+<Swetko> domashnoto
+<sssa88> i az domashnoto
+<VelinTzanov> Swetko, na teb da razbiram che ti e iasno, taka li?
+<VelinTzanov> Vlado i Borisov gledam che sa imali problemi.
+<Swetko> da
+<VelinTzanov> Ako iskate sega da go obsydim? Ili da si karame po plan, a posle Rangel da vi raziasniava?
+<Swetko> ama samo v toz sluchai
+<VelinTzanov> Kak predpochitate vie?
+<Prince_of_Dawn> zawisi kakwo shte e po plan dnes
+<Swetko> triabva oste malko takiva da poreshavam za da razbera kak staka kato promeniame v mnogo edinichni igri se zapazva svoistvoto
+<sssa88> vsqkak mi e dobre na men
+<VelinTzanov> Dnes shte pravim krasiva informatika - samo za umnici ;)
+<Prince_of_Dawn> ;(
+<VelinTzanov> Rangele, ti?
+<Swetko> ia kashi oste niakoia takava zadahchka samo da mislim
+<Swetko> bez da pishim
+<Prince_of_Dawn> mi po-dobre rangel posle da ni kaje ako iska
+<VelinTzanov> O, Swetko, vzemi ot onzi paper. Tam ima 2-D turncoin i drugi takiva shturotii... daje ne znam dali ne pipat proizvedenie na igri ili neshto takova. :)
+<rangel__> mi az napisah domashnoto, i onazi ot CEOI obache za neq nqma testove taka che raboti samo na teoriq :-) i edna typa zadacha ot USACO-to napisah
+<VelinTzanov> Tova e dobre. Samo deto te pitah dali predpochitash sega da govorim s Vlado i Borisov za turncoin ili sled kato svyrsha ti da im obiasnish?
+<rangel__> dam, ima i proizvedenie na igri v onzi paper, az go poglednah vchera i i reshih che maj drug pyt shte go dorazbiram :-)
+<rangel__> ami na men mi e vse taq, samo che mozhe da ne mi e syvsem pylno dokazatelstvoto (makar che az si mu vqrvam ;-)
+<VelinTzanov> Az vyobshte ne sym mislil pylno dokazatelstvo. :) No triabva da ima. :)
+<VelinTzanov> Vse pak ot paper sme go vzeli... :)
+<Swetko> e che nali dokazvahme
+<VelinTzanov> Borisov? Ti reshavash.
+<rangel__> e az ne go vzeh ot paper-a de :-) posle vidqh che i tam go ima :-)
+<Prince_of_Dawn> aide posle
+<VelinTzanov> Da, swetko, dokazvate.
+<Swetko> kakva e razlikata meshdu pulno dokazatelstvo i dokazatelstvo
+<VelinTzanov> Niama. Dokazatelstvoto ili e pylno ili ne e nikakvo dokazatelstvo. :)
+<VelinTzanov> Az ochakvam vie da si go dokajete. :)
+<VelinTzanov> Ako ne mojete, shte se namesia i az. No inache topkata e vyv vas. :)
+<VelinTzanov> Sega mai shte triabva da pochakate da resha zadachata za dnes... :)
+<VelinTzanov> Shtoto niamah vreme da si spomnia kak se reshavashe i sega gledam che ne znam... :)
+<Swetko> koia e tia
+<VelinTzanov> Abe ia da vi ia dam, pyk shte vidim:
+<VelinTzanov> Prolet 2001, Coins
+<Swetko> aha 
+<VelinTzanov> http://infoman.musala.com/contests/spring/2001/problems_11-12.rtf
+<Swetko> pomnia kak stavashe
+<Swetko> naskoro si pripomniah
+<VelinTzanov> Pishi mi na lichno.
+<VelinTzanov> Az pomnia ideiata, no podrobnostite neshto mi biagat.
+<VelinTzanov> Kato prochetete i razberete mi kajete.
+<Prince_of_Dawn> gotowo
+<sssa88> gotovo
+<rangel__> gotovo
+<VelinTzanov> Taka. Niakoi znae li kak se reshava krasivo zadachata?
+<VelinTzanov> Osven Swetko.
+<VelinTzanov> (Veche i az znam :) Spomnih si)
+<Prince_of_Dawn> ne
+<rangel__> az ne
+<VelinTzanov> Vyobshte niakoi znae li neshto po-dobre ot backtrack?
+<Prince_of_Dawn> mi moje da napravim opit za bfs
+<sssa88> i az ne
+<Prince_of_Dawn> bez da otbelqzwame poseteni ( nemojem )
+<VelinTzanov> Chudesno. Temata za dnes e "Postoianno podobriavane na situaciata".
+<VelinTzanov> Ima malko vryzka s teoriata na igrite... no malko.
+<rangel__> nqkoj shte mi obqsni li primerniq izhod ponezhe qvno ne sym razbral syvsem
+<VelinTzanov> Obshto vzeto klasa ot zadachi koito reshavame taka e zadachite v koito ot nas se ochakva da napravim neshto chrez niakakvi hodove, kato se iska hodovete da sa malko, no bez da e nujno da sa absolutnia minimum.
+<VelinTzanov> Podhodyt e da hvanem niakakyv parametyr na "situaciite" i s vseki hod (ili grupa hodove) da namaliavame tozi parametyr.
+<VelinTzanov> ... dokato go svedem do jelanata stoinost (nai-chesto 0)
+<VelinTzanov> Sega shte ti otgovoria, Rangele.
+<VelinTzanov> Pyrvonachalno imash 1 2 3
+<rangel__> Vlado mi obqsni
+<VelinTzanov> OK
+<VelinTzanov> Krasotata vyv vsiaka ot tezi zadachi e da se setish za tozi parametyr.
+<VelinTzanov> Poniakoga tova e lesno, poniakoga e ochevidno, a poniakoga se iska da si matematik i da gi chatkash invariantite... :)
+<Prince_of_Dawn> invarqntite ?
+<VelinTzanov> Coins e takava zadacha - iskame malko hodove, ne zadyljitelno absoluten minimum. Vidite li takava zadacha, pochti sigurno e che se reshava s tozi metod. OK?
+<VelinTzanov> Shte stignem i do tiah, Borisov. :)
+<sssa88> ok
+<VelinTzanov> Kakvo iskame da svedem do 0 v tazi zadacha?
+<Prince_of_Dawn> mi na NOI imashe neshto takowa ma beshe razlichno
+<Prince_of_Dawn> nqkoe ot a ,b,c
+<VelinTzanov> Na NOI lesno se vijdashe, che zadachata ima optimalno reshenie.
+<Swetko> ne go vidiah lesno
+<VelinTzanov> :)
+<VelinTzanov> Ama si go vidial vse pak, nali? :)
+<Swetko> samo sled kato poglednah che optimalnoto reshenie beshe chlenuvano v uslovieto togava razbrah
+<VelinTzanov> Hahahaaa... :)
+<Prince_of_Dawn> ;)
+<Swetko> i che tam biaha 20 hoda a puk C(3,5) s povtorenie e 21
+<Swetko> i se usumnih
+<Prince_of_Dawn> chasowete po literaturn ne sa bili naprazni
+<VelinTzanov> :) Aha
+<VelinTzanov> Gyrcite kato vi dadat edni genomi shte vidish i na biologiata prilojenieto... :)
+<VelinTzanov> Ta kakvo gledame da svalim na 0 v tazi zadacha?
+<VelinTzanov> Aide de, momcheta, tova e lesen vypros. :)
+<VelinTzanov> Abe vryzkata li mi prekysna ili vie si mylchite nesto? :(
+<rangel__> broq na monetite v nqkoq ot kutiite
+<VelinTzanov> Xtra! Rangel go zakova. :)
+* Prince_of_Dawn_ has joined #ioi
+<rangel__> pone taka pishe v uslovieto de :-)
+<VelinTzanov> Sega ti paste-vam, Borisov.
+* VelinTzanov sets mode: +o Prince_of_Dawn_
+<VelinTzanov> Taka.
+<VelinTzanov> Shtom iskame postoianno da podobriavame (minimizirame) niakoi parametyr i shtom uslovieto iska da svalim broia na monetite v niakoia kupchina do 0, znachi logichno e da si pomislim dali ne mojem postepenno da svaliame broia na monetite v nai-malkata kupchina.
+<VelinTzanov> Celta e 0.
+<VelinTzanov> No ako na vseki hod (ili niakolko hoda) uspeem da namaliavame tova chislo, nakaraia shte stignem 0 sys sigurnost.
+<VelinTzanov> DA vidim sega kakvo ni triabva (kakvo se tyrsi)
+<VelinTzanov> Ako imame 1 moneta v edna ot kupchinite shte mojem li da ia svalim do 0?
+<VelinTzanov> Kak mislite?
+<Prince_of_Dawn_> ako imame druga kopchina s 1
+<sssa88> ne
+<VelinTzanov> Ako imate 1, X i Y syotvetno v trite kupchini.
+<Prince_of_Dawn_> da
+<VelinTzanov> Dobre de, ne mojete li da izravnite dve kupchini? :)
+* Prince_of_Dawn has quit IRC (irc.techno-link.com irc.lt-tech.org)
+<Prince_of_Dawn_> ne
+<Prince_of_Dawn_> shte se opitame da napravim X ili Y == 1?
+<VelinTzanov> Hmmm... ne, ochevidno.
+<VelinTzanov> Shte se opitate de, i shte vidite che ne moje.
+<VelinTzanov> Pomislete malko.
+<VelinTzanov> Ochevidno e che shte slagam moneti vyrhu kupchinata s 1 moneta.
+<VelinTzanov> Taka tazi kupchina shte stane 2, 4, 8, 16, ...
+<VelinTzanov> Vyprosyt e samo otkyde vzimam monetite za da gi trupam tam.
+<VelinTzanov> Idei?
+<VelinTzanov> Da priemem che X <= Y
+* rangel__ has quit IRC (Ping timeout: 180 seconds)
+<VelinTzanov> A, to Rangel go drop-nalo, zatova niama idei.. :)
+<Prince_of_Dawn_> mi shte izpompame ot X i Y dokato ne gi izrawnim ?
+* rangel__ has joined #ioi
+<VelinTzanov> Zashto ti e da gi izravniavash? :)
+<Swetko> moshe da ne gi izravnish
+<VelinTzanov> Ami ako Y e 10000, a X e 2? Kak shte gi izravnish? :)
+<Prince_of_Dawn_> mi kato gi izrawnq i posle ot ednoto w dugoto i gotowo
+<VelinTzanov> Rangele, sega ti paste-vam.
+<VelinTzanov> A kak shte gi izravnish? :)
+<Prince_of_Dawn_> e towa nqma da moga
+<Prince_of_Dawn_> imam ideq
+<VelinTzanov> Slusham ia s interes
+<Prince_of_Dawn_> shte trupam stepenite na 2 po sledniq nachin warhu 1
+* VelinTzanov sets mode: +o rangel__
+<Prince_of_Dawn_> kogagato tazi stepen se sadarja w X togawa q wzimam ot X
+<Prince_of_Dawn_> toest ako tozi bit e setnat w X go otsetwam
+<Prince_of_Dawn_> ako ne e setnat tam wzimam ot Y
+<VelinTzanov> Znam si az che si maistor na "umnite" zadachi, Borisov... :)
+<Prince_of_Dawn_> i taka po nqkoe wreme X shte stane 1000000 (dwoichno)
+<Prince_of_Dawn_> i moeto 1 shte se e prearnalo w 1000000 ( doichno ) 
+<Prince_of_Dawn_> samo ne znam kak stignahme do situatsiqta 1 X Y
+<VelinTzanov> Sega gledame kakvo tyrsim, ne gledame kakvo ni e dadeno.
+<VelinTzanov> Ako mojehme da imame 1 shtiahme da mojem da go svalim do 0.
+<Prince_of_Dawn_> (badeshte w minaloto nezawarsheno)
+<VelinTzanov> Drugite, iasno li vi e kakvo kaza Borisov?
+<VelinTzanov> Ako X e 10100100
+<rangel__> dobre de kakvo pravq kogato syotvetniq bit ne mi e setnat nito v X, nito v Y?
+<VelinTzanov> To 1 stava na 10 (dvoichno) kato vzimame 1 ot Y-a.
+<VelinTzanov> Ne ti triabva da ti e set-nat v Y.
+<VelinTzanov> Posle 10 stava 100, pak ot Y
+<VelinTzanov> Posle 100 stava 100, tozi pyt ot X./
+<VelinTzanov> Taka X stava 10100000
+<VelinTzanov> Posle pravim 100 na 1000, 10000 i 100000 vse ot Y.
+<VelinTzanov> Posle go pravim na 1000000 tozi pyt ot X.
+<VelinTzanov> Taka X stava 10000000
+<VelinTzanov> Posle pravim 1000000 na 10000000 ot Y.
+<VelinTzanov> I nakraia go pravim na 100000000 ot X, a X ostava 0.
+<VelinTzanov> Razbrahte li go sega?
+<Swetko> mosh
+<Swetko> da
+<rangel__> da
+<sssa88> da
+<Prince_of_Dawn_> da
+<VelinTzanov> Ne e trudno da se setish, nali? Hehe... :)
+<VelinTzanov> Dobre de, 1 lesno se svalia na 0.
+<VelinTzanov> Ama kak stigame do 1?
+<VelinTzanov> Ami... po syshtia nachin. :)  Neka vidim kak.
+<VelinTzanov> Kakvo pravim ako imame 2 v edna kupchina, a v drugite >= 2?  Naprimer 2, X, i Y.
+<VelinTzanov> 2 <= X <= Y
+<VelinTzanov> Kakvo pravim sega, za da podobrim tova 2?
+<Prince_of_Dawn_> mi prawim sashtoto s X i Y
+<Prince_of_Dawn_> obache moje da poluchim ili 0 ili 1 ot X
+<Prince_of_Dawn_> i dwete sa dobri barqnti
+<Prince_of_Dawn_> Varqnti
+<VelinTzanov> Taka.
+<VelinTzanov> Mojem da prilojim syshtata caka kato predi malko.
+<VelinTzanov> Samo deto shte mojem da izchistim samo po-golemite bitove na X. Nai-malkia niama da mojem,.
+<VelinTzanov> T.e. nakraia X shte ostane 1 ili 0. Koeto ni ustroiva.
+<VelinTzanov> Iasno?
+<sssa88> da
+<Swetko> da
+<rangel__> da
+<Prince_of_Dawn_> da
+<VelinTzanov> Ot 2 lesno. Ami ot 3?
+<VelinTzanov> Aide sega da vi vidia - ot 3 kak podobriavame?
+<VelinTzanov> Swetko, ti krotko. :)
+<VelinTzanov> 3 = 2 + 1, nali taka?
+<VelinTzanov> Tova kakvo vi pomaga?
+<Prince_of_Dawn_> 2*3 = 2*2 + 2*1
+<VelinTzanov> A tova kakvo ni pomaga?
+<rangel__> tova ne mi pomaga mnogo zashtoto ne moga da vzema 2-ka ot ednata i 1-ca ot drugata kupchinka
+<VelinTzanov> Rangel e absolutno prav - tova vyobshte ne ni pomaga! :)
+<VelinTzanov> Drugade shte da e cakata... :)
+<VelinTzanov> Naprimer che X = A*3+ (0, 1 ili 2)
+<VelinTzanov> A tova kakvo ni pomaga?
+<Swetko> iskam da kasha nesto po TURNCOIN - nali ste igraem edin srestu drug i ima znachenie kak izbirame hoda - primerno az sega sum si pusnal moita programa da igrae srestu sebe si i ste chakam oste dylgo stot proveriavam vyzmoshnite hodove otpred nazad a ne obratno i p toz nachin zadnite bitove ste bydat mnogo kusno izchisteni i stava nesto kato dvoivhen broiach koito e baven - zatova neka izbirame hoda koito e vyzmoshno po v kraia na string-a t.e. da puskame c
+<VelinTzanov> Ako X beshe A*3 (t.e. ako X se deleshe na 3) kakvo shtiahme da pravim?
+<VelinTzanov> Swetko, neshto go otriaza tvoeto syobshtenie.
+<Swetko> dokude
+<VelinTzanov> n - zatova neka izbirame hoda koito e vyzmoshno po v kraia na string-a t.e. da puskame c
+<VelinTzanov> Momcheta, kajete de, ako X se deleshe na 3 kakvo pravim?
+<VelinTzanov> Tuk li ste?
+<Swetko> iskam da kasha nesto po TURNCOIN - nali ste igraem edin srestu drug i ima znachenie 
+<Swetko> kak izbirame hoda - primerno az sega sum si pusnal moita programa da igrae srestu 
+<Swetko> sebe si i ste chakam oste dylgo stot proveriavam vyzmoshnite hodove otpred nazad a ne 
+<Swetko> obratno i p toz nachin zadnite bitove ste bydat mnogo kusno izchisteni i stava nesto kato 
+<Swetko> dvoivhen broiach koito e baven - zatova neka izbirame hoda koito e 
+<Swetko> vyzmoshno po v kraia na string-a t.e. da puskame cikula ot kraia a ne ot nachaloto
+<sssa88> tuk
+<Prince_of_Dawn_> i az
+<Prince_of_Dawn_> mislq malko
+<Prince_of_Dawn_> mi mai znam
+<rangel__> men ot odeve mi se mota nqkakva ideq ako imam kupchinka K i iskam da postigna K-1, da predstavq chislata v K-ichna brojna sistema i da si gi vyrtq, obache ne znam dali shte stane
+<VelinTzanov> Niama da stane./
+<VelinTzanov> No ako gi predstavish kato dvoichno chislo po K shte stane.
+<VelinTzanov> K*0b101011010101
+<VelinTzanov> Taka. Imame 3 = 1*3
+<VelinTzanov> Imame X = 10101011(dvoichno)*3
+<VelinTzanov> I karame po poznatata shema:
+<VelinTzanov> Prehvyrviame ot X
+<VelinTzanov> X stava 10101010*3
+<VelinTzanov> Posle prehvyrliame ot Y
+<VelinTzanov> 1-to stana 100
+<VelinTzanov> Prehvyrliame ot X
+<VelinTzanov> Off, obyrkah go. :)
+<VelinTzanov> Abe hvashtate ideiata, nali? :)
+<VelinTzanov> Zabravete za 3-kata prosto.
+<rangel__> aham
+<sssa88> aha
+<Prince_of_Dawn_> az ne
+<Prince_of_Dawn_> w torichni chisla li rabotim ili w dwoichni
+<VelinTzanov> Nakraia vmesto X shte vi ostane samo ostatyka po modul 3. Koito e 0, 1 ili 2.
+<rangel__> i posle ot X, shte mi ostane X%3
+<VelinTzanov> Borisov, v dvoichni.
+<VelinTzanov> Prosto gledame samo tazi chast na chislata koiato se deli na 3.
+<VelinTzanov> Ostatyka po modul 3 go ignorirame.
+<VelinTzanov> I si obryshtame edinicite ot edna moneta v 3 moneti.
+<VelinTzanov> Vse edno 3-kite moneti sa ti navyrzani s lastici.
+<VelinTzanov> I ne mojesh da gi razdeliash.
+<VelinTzanov> Taka shte imash golemi 3-monetnici.
+<VelinTzanov> Moneti ot po 30 stotinki. :)
+<VelinTzanov> I togava imash zadachata da svalish 1 3-monetnik do 0 3-monetnika.
+<VelinTzanov> I si ia reshavash po syshtia nachin kakto svaliash 1 moneta do 0 moneti.
+<VelinTzanov> Prosto nakraia ti ostavat 0, 1 ili 2 monetki v kupchinata na X.
+<VelinTzanov> RAzbra li go?
+<Prince_of_Dawn_> mai go razbiram
+<VelinTzanov> OK. Sega mojete li da go reshite za 17?
+<VelinTzanov> Ako imam 17 moneti v nai-malkata kupchina... kak gi pravia da sa po-malko?
+<Prince_of_Dawn_> znachi ako X%3==0 to x->0
+<VelinTzanov> Da
+<Swetko> da
+<VelinTzanov> Swetko, ti tova go mojeshe oshte minalata godina. :)
+<VelinTzanov> Drugite? :)
+<VelinTzanov> (AAa, ti na Borisov otgovariash, ne na men :) )
+<rangel__> ami pravim sedemnajsemonetnici i po syshtiq nachin
+<sssa88> e znachi s 17 shte e po modul 17 taka li?
+<VelinTzanov> Da
+<Swetko> da
+<VelinTzanov> Pravish si 17-monetnici kakto kaza RAngel.
+<VelinTzanov> I si izchistvash deliashtata se na 17 chast na X.
+<VelinTzanov> I ti ostava samo ostatyka na X po modul 17.
+<VelinTzanov> Koito e 0, 1, 2, 3, 4, .... ili 16.
+<sssa88> nqma li opasnost da stanat mnogo hodovete taka?
+<VelinTzanov> Ami v srednia sluchai sa LogN^2.
+<VelinTzanov> Na testovete nai-tejkia test mai e samo 33 hoda. :)
+<VelinTzanov> A zadachata ima potencial za mnogo poveche... :)
+<Swetko> bi triabvalo broia na premestvania da e  log^2  ot niakoia ot kuphcinkite
+<VelinTzanov> No takiva testove sa imali - takiva sa dali. :)
+<Swetko> hah
+<VelinTzanov> Da de - (LogN)^2 imah predvid az. :)
+<Swetko> tova i az go otkrih za log^2
+<VelinTzanov> Log^2 e dobro chislo spored men.
+<VelinTzanov> Inache kakvo pravish? Backtrack?
+<Swetko> da be
+<Swetko> 1000 999 998
+<VelinTzanov> V shirina ili v dylbochina? :):):):)
+<Swetko> vsastnost tova ne e losho
+<VelinTzanov> Az na systezanieto pisah edin takyv i namerih na edin primer reshenie s 2698 hoda. :):):):):)
+<VelinTzanov> Moje da si predstavite kolko tochki e tova.:)
+<VelinTzanov> Imah 40 na tazi zadacha.
+<VelinTzanov> 240 na systezanieto.
+<Prince_of_Dawn_> ;)
+<VelinTzanov> Dogodina pak imah 240 na Proletnia. :)
+<Prince_of_Dawn_> ne mislq che e spravedliwo
+<VelinTzanov> Sledvashtite dve godini nikoi ne moja da napravi tolkova mnogo na Proletnia... shtoto az davah zadachite. :)
+<Swetko> vsastnost si mislia che ne e log^2
+<Swetko> po malko ste da e ama niama znachenie
+<VelinTzanov> Log^2N e v srednia sluchai.
+<Prince_of_Dawn_> da ni dawash wse zadachi na koito dori i ti ne si se spravil
+<Swetko> da be
+<VelinTzanov> Borisov, nali se razbrahme za kakvo e tazi podgotovka - za da ne povtariate nashite greshki!
+<Swetko> tvoia backtrack e tolkova
+<VelinTzanov> ???
+<Prince_of_Dawn_> e slavi ima 220
+<Prince_of_Dawn_> priblijawa do 240
+<Swetko> zasto sled kato srednia sluchai ste e log^2
+<rangel__> svetko kak se pishe backtrack s logaritmichna slozhnost?!?! :-)
+<VelinTzanov> Tova e po-dobre. Minalata godina Anev imashe edva 195.
+<Swetko> nai loshia test e 33
+<VelinTzanov> Swetko, neshto ne go razbiram az. :)
+<Swetko> log^2=100 
+<Swetko> a da ne
+<VelinTzanov> Borisov, vsyshtnost az ne vi kazvam, che i dvete godini ne go spechelih az tova systezanie. :) Ednata imashe 288, a drugata 280. :)
+<VelinTzanov> Prodyljavam da ne go razbiram. :)
+<VelinTzanov> Swetko, testovete biaha kalpavi.
+<Swetko> abe to i az se obyrkah
+<VelinTzanov> Prosto reshenieto e striktno, podredeno, definirano i gotino.
+<Swetko> misleh si che log^2 e 1000 puk to 100
+<Swetko> nali 1000 beshe ogranichenieto
+<VelinTzanov> DA
+<Swetko> ok
+<Swetko> opravih se
+<VelinTzanov> I kluchovote e che si hvashtame edin parametyr i vinagi go svaliame... do kraia/
+<Prince_of_Dawn_> az q razbrah
+<VelinTzanov> IAsna li e zadachata? Shte mojete li da ia napishete?
+<Swetko> i az
+<sssa88> da
+<rangel__> da
+<Swetko> da
+<Swetko> ia prochetete tova koeto napisah
+<Swetko> predi malko
+<Swetko> za TURNCOIN 
+<Swetko> stot kato obyrnah cikula vyrvi za hodove proporcionalni na dylshinata na string-a
+<VelinTzanov> Da, ideiata ne e losha. Ama te mai veche sa ia predali, Swetko.
+<Swetko> inache za hodove  eksponencialni po dylshinata na stringa
+<Swetko> nisto
+<Swetko> pak
+<VelinTzanov> :) OK
+<Swetko> i az 2 puti ia predadoh ama i treti ste ia dam
+<VelinTzanov> To ti kato igraesh taka te niama znachenie kak shte igraiat. :)
+<rangel__> mi az tochno taka igraq (ot dqsno nalqvo) shtoto mi se struvashe che taka po-rano shte namerq pechelivsh hod i shte ciklq po-malko
+<Swetko> da be
+<Swetko> ama pomeshdu si
+<Swetko> ok
+<VelinTzanov> :) OK
+<Swetko> ste ia pratia obyrnata
+<VelinTzanov> Sega veche kato znaem kak se praviat takiva zadachi, da minem na serioznata zadacha:
+<VelinTzanov> IOI 2002, XOR
+<rangel__> pyk ako nqmam pechelivsh hod izobshto ne ciklq tuj che sym lesen :-)
+<VelinTzanov> http://infoman.musala.com/contests/ioi/2002/xor_bg.doc
+<VelinTzanov> Kato ste gotovi kajete.
+<sssa88> gotov
+<rangel__> gotov
+<Swetko> i az
+<Prince_of_Dawn_> i az
+<VelinTzanov> Zadachata opredeleno e v nashia klas - gledame da svyrshim niakakva rabota, byrzo, no ne zadyljitelno optimalno.
+<VelinTzanov> Vsyshtnost optimalno mai e NP-hard. :)
+<Prince_of_Dawn_> NP-hard-hard
+<Prince_of_Dawn_> ;)
+<VelinTzanov> Taka. Znachi shte si hvanem niakoi parametyr i shte go namaliavame na vseki hod (ili grupa ot hodove).
+<Swetko> aha
+<Swetko> niama optimalno - ama ima pochti optimalno
+<VelinTzanov> Taka. Sega da vidim kakyv parametyr da si hvanem...
+<VelinTzanov> Kakvo se opitvame da zanulim?
+<Swetko> broi cherni kvadratcheta
+<sssa88> broq na razlichnite v tekushtoto i zelevoto
+<Prince_of_Dawn_> mi pravoagalnik
+<VelinTzanov> :)
+<Swetko> i tova moshe da ni navede na misulta da tyrsim max cheren pravougulnik i da go izbelim
+<VelinTzanov> Chakai sega, Swetko. :)
+<Swetko> imame si N^2 za tova - taka che s malko chakane ste stane rabotata
+<Swetko> davam prosto ideia
+<VelinTzanov> Ta kakvo se opitvame da zanulim? Borisov, triabva da e quantitative neshtoto - inache ne mojesh da go podobriavash. :)
+<VelinTzanov> Swetko, nomeryt e che pyrviat parametyr za koito se seshtame e broia na chernite 1x1 kvadratcheta.
+<VelinTzanov> Tvoeto izpolzva syshtia parametyr.
+<VelinTzanov> Prosto e optimizacia.
+<VelinTzanov> Tova reshenie ne e mnogo losho... no nishto ne ni garantira otkym tochki.
+<VelinTzanov> Az imam 41 tochki s takova. :)
+<Swetko> da
+<Swetko> tvoito e red za red
+<VelinTzanov> Idei za drugi parametri?
+<rangel__> na men mi se struva logichno da namalqm razmera na bounding-box-a na chernite kvadratcheta
+<VelinTzanov> DA, no s kakva slojnost?
+<VelinTzanov> Tova pak e mnogo obryshtania, Rangele.
+<rangel__> mi... golqma :-)
+<VelinTzanov> Inache ideiata e dobra.
+<VelinTzanov> Drugo?
+<VelinTzanov> Chernoto ima vytreshnost.
+<VelinTzanov> Ima i steni.
+<VelinTzanov> Kakvo drugo ostana?
+<Prince_of_Dawn_> agli
+<VelinTzanov> Aham. :)
+<VelinTzanov> Daite da se zahvanem za ygli-te.
+<VelinTzanov> Ako go ostavim bez ygli niama shans, nali? :)
+<VelinTzanov> Znachi triabva da go zahapem za yglite. :)
+<VelinTzanov> Kakvo mojem da kajem za yglite mu?
+<VelinTzanov> Kakvo pravi yglite specialni?
+<Prince_of_Dawn_> mi che tqh gore dolu znaem kak da gi Xor-nem
+<VelinTzanov> Hmmmm... neshto po-hubavo.
+<VelinTzanov> Da razgledame tochkite na grid-a - tam kydeto se sybirat po 4 kvadratcheta.
+<VelinTzanov> Kato flip-nem edin pravoygylnik kakvo pravim s tezi grid-tochki? S kakvo yglite na pravoygylnika sa po-razlichni?
+<rangel__> obryshtame necheten broj ot 4-te kvadratcheta okolo tochkata
+<rangel__> t.e. 1 de :-) a drugade obryshtame po 2 ili po 4
+<VelinTzanov> Super! :)
+<rangel__> obache ako slozha 2 kvadratcheta edno do drugo tova shte me obyrka
+<rangel__> vsyshtnost nqma :-)
+<Prince_of_Dawn_> az malko ne razbrah
+<Prince_of_Dawn_> kakwo e grid tochka?
+<VelinTzanov> Sega znachi koi grid-tochki sa specialni?
+<VelinTzanov> OK, neka obiasnia.
+<VelinTzanov> Nali vijdash kvadratchetata. Te bivat cherni ili beli.
+<Prince_of_Dawn_> da
+<VelinTzanov> Nali vijdash na kartinkata tezi tochki v koito se sybirat po 4 kvadratcheta.
+<VelinTzanov> Vyrhovete na kvadratchetata.
+<Prince_of_Dawn_> da
+<VelinTzanov> Za tiah govorim.
+<VelinTzanov> Ako vzema edin pravoygylnik.
+<VelinTzanov> I go flip-na.
+<Prince_of_Dawn_> aha
+<VelinTzanov> To togava vsichki takiva grid-tochki vyv vytreshnosta prejiviavat edno i syshto - 4-te im kvadratcheta se flip-vat.
+<Prince_of_Dawn_> smenqsh 1,2,ili 4 kwadratcheta okolo nego
+<VelinTzanov> Da. Po stenite e 2. A po yglite e 1.
+<VelinTzanov> Kluchovoto e slednoto:
+<VelinTzanov> Ako na vsiaka grid-tochka i prebroia broia na chernite kvadratcheta okolo neia...
+<VelinTzanov> ... shte polucha chetno ili nechetno chislo.
+<VelinTzanov> Vseki pyt kato flip-vam niakakyv pravoygylnik az smeniam tazi chetnost na 4-te ygyla. No ia zapazvam na vsichki drugi tochki.
+<VelinTzanov> Tova razbirate li go vsichki?
+<sssa88> da
+<Swetko> 0 e chetno
+<Prince_of_Dawn_> da
+<VelinTzanov> Da, chetno e.
+<VelinTzanov> Rangele?
+<VelinTzanov> Ti?
+* rangel__ has quit IRC (Ping timeout: 180 seconds)
+<VelinTzanov> :)
+<Prince_of_Dawn_> ->
+<VelinTzanov> Shte se vyrne i shte mu paste-nem.
+<VelinTzanov> Taka.
+<VelinTzanov> 0 e chetno.
+<VelinTzanov> Nakraia vsichki grid-points triabva da sa 0.
+<VelinTzanov> Znachi vsichki triabva da sa chetni.
+<Prince_of_Dawn_> opredeleno
+<VelinTzanov> Neshto poveche: Ako vsichki sa chetni, znachi sme gotovi.
+<VelinTzanov> Zashto?
+<VelinTzanov> (chakam otgovor)
+<Swetko> sega triabva da dokashem che ne moshe da sa chetni i da ne sa 0
+<VelinTzanov> Zashto niamaneto na nechetni grid-points oznachava che vsichki kvadratcheta sa beli?
+<VelinTzanov> Borisov, Vlado?
+<Prince_of_Dawn_> mi poneje 
+<Prince_of_Dawn_> za da ima cherni kwadratcheta to te obrazuwat nqkakwa figura
+* rangel__ has joined #ioi
+<Prince_of_Dawn_> koqto ima pone edin grid point koito sledwa da e 1
+<VelinTzanov> :) Da, no zashto? :)
+<VelinTzanov> Rangele, sega paste-vam.
+* Swetko has quit IRC (Ping timeout: 180 seconds)
+* Swetko_uchi has joined #ioi
+* Swetko_uchi is now known as Swetko
+<Prince_of_Dawn_> mi towa kazwam che shtom ima cherno kwadratche
+<Prince_of_Dawn_> to weroqtno e chast ot nqkakwa figura
+<Swetko> pastnete mi 
+<Prince_of_Dawn_> tazi figura ima
+<Swetko> nai gorno i nai diasno
+<Prince_of_Dawn_> pone edin grid point do koito se dopira samo s rab
+<Prince_of_Dawn_> da imenno
+<VelinTzanov> Ta zashto kazvash, Borisov?
+<VelinTzanov> Off, ne vidiah che ste pisali. :)
+<VelinTzanov> Da, iasno.
+<VelinTzanov> OK
+<Swetko> vinagi ima nai gorno i nai diasno kvadratche i negovie goren desen gridpoint ste e necheten
+<VelinTzanov> IAsno.
+<Prince_of_Dawn_> da
+<VelinTzanov> OK. Znachi iskame da nulirame nechetnite grid points.
+<VelinTzanov> E tova veche e dobyr parametyr!
+<VelinTzanov> Na vsichki li im e iasno?
+<sssa88> da
+<rangel__> da
+<Swetko> da
+<Prince_of_Dawn_> da
+<Prince_of_Dawn_> predlagam da izbirame prawoagalnitsi s agli nechetni
+<Swetko> aha
+<Swetko> ami ako ne moshesh
+<VelinTzanov> Dobro predlojenie.
+<VelinTzanov> Samo kaji s kolko nechetni? :)
+<sssa88> kolkoto se moze poveche
+<Prince_of_Dawn_> mi trqbwa da s poweche ot 3
+<rangel__> ami pone s 3, zashtoto inache nishto ne namalqme
+<Swetko> probvame s 4 
+<Prince_of_Dawn_> nakraq stawame s 2 grid point nechetni 
+<Swetko> ako ne moshe davame s
+<Swetko> 3
+<Prince_of_Dawn_> i ne znam kakwo stawa posle
+<VelinTzanov> Taka. Neka vyveda malko red.
+<VelinTzanov> Iskame da hvashtame pravoygylnici s 3 ili 4 nechetni ygyla.
+<VelinTzanov> Tova oznachava che vseki pyt shte namaliavame broia na nechetnite ygli syotvetno s 2 ili s 4.
+<Swetko> triabva da dokashem che s 3 vinagi moshem
+<VelinTzanov> Nakraia shte stignem do 0 i pechelim.
+<VelinTzanov> Da. Ostava vyprosyt mojem li vinagi da izberem pone 3 nechetni ygyla?
+<VelinTzanov> Idei za dokazatelstvo?
+<Prince_of_Dawn_> da
+<Swetko> ami ako ne moshem 
+<rangel__> ami ako ima samo 2 nqma da mozhem :-)
+<Prince_of_Dawn_> mojem 
+<Swetko> kakvo ste pravim
+<Swetko> niama da moshem da ia izchistim li
+<Prince_of_Dawn_> nemoje da ima samo dwa
+<Swetko> lesno se vishda che vinagi moshem
+<rangel__> mozhe, ako pravoygylnika e liniq
+<Prince_of_Dawn_> tofawa sa 4
+<Swetko> togava ima 4 
+<Swetko> da de 
+<Swetko> ako sa 4 iasno
+<Prince_of_Dawn_> mi az mi znam zashto
+<Prince_of_Dawn_> mi kakto izbrahme nai gore nai w desno kletkata
+<Prince_of_Dawn_> taka moje da izberem i tazi w lqwo 
+<Prince_of_Dawn_> i tezi dolu
+<VelinTzanov> Iskash da kajesh che dokaza che vinagi imame 4 li?
+<Swetko> ama dali dolu ste ima takiva
+<Prince_of_Dawn_> toest trqbwa da ima pone 4 nechetni
+<Swetko> niamame vinagi 4
+<VelinTzanov> A dali vliavo shte ima? :)
+<Swetko> obsto 
+<VelinTzanov> Borisov, dokaji sega.
+<Prince_of_Dawn_> da
+<Swetko> ama moshe da ne leshat na edin pravougulnik
+<VelinTzanov> Slushame podredeno dokazatelstvo ot Borisov/
+<VelinTzanov> Swetko, samo slushame sega.
+<VelinTzanov> Borisov govori. :)
+<Prince_of_Dawn_> dobre
+<Prince_of_Dawn_> znachi wsichki se saglasihte s towa koeto kaza swetko za nai-gore nai w dqsno
+<Prince_of_Dawn_> neka poglednem tozi red koito sadarja towa kwadratche ( nai gorniq red)
+<VelinTzanov> OK
+<Prince_of_Dawn_> w tozi red sega izbirame nai -lqwoto
+<Prince_of_Dawn_> ok do tuk
+<Prince_of_Dawn_> towa moje da e sashtoto kato nasheto nai-dqsno
+<Prince_of_Dawn_> obache togawa pak imame dwe grid points ( tazi gore w dqsno ot kwadratcheto i tazi gore w lqwo)?
+<VelinTzanov> OK
+<VelinTzanov> Imash 2.
+<VelinTzanov> Sega?
+<Prince_of_Dawn_> sega 
+<Prince_of_Dawn_> ima dwas luchaq 
+<Prince_of_Dawn_> tarsq nai dolniq red
+<Prince_of_Dawn_> 1) toi e sashtiq kato nai-gorniq
+<Prince_of_Dawn_> 2) toi e drug
+<Prince_of_Dawn_> ako 1) to togawa weche sam nameril nai-lqwoto i nai dqsnto kwadratche
+<Prince_of_Dawn_> i za tqh wzemam tozi pat da lqtoto tochakta doli w lqwo ot nego
+<Prince_of_Dawn_> a na dqsnoto tazi dolu w dqsno ot nego
+<Prince_of_Dawn_> ako 2) to togawa neshtata sa sashtite samo che na drug red
+<VelinTzanov> 1 e iasno. 2)?
+<VelinTzanov> I taka imash drugi 2, no te ne pasvat na pyrvite 2. :)
+<Prince_of_Dawn_> iskash podrobno
+<VelinTzanov> Iskam, da. :)
+<Prince_of_Dawn_> da imam dwe drugi
+<Prince_of_Dawn_> obshto 4 nali?
+<VelinTzanov> OK. I?
+<Prince_of_Dawn_> mi nqma problem
+<VelinTzanov> No mojesh li da vzemesh pravoygylnik s ygli v tezi 4 grid points?
+<Prince_of_Dawn_> znachi dokazahme che winagi imame pone 4 otchki
+<Prince_of_Dawn_> ne 
+<VelinTzanov> E togava ne ni gree osobeno. :)
+<VelinTzanov> Iskame da mojem da izberem pravoygylnik na koito pone 3 ot yglite da sa nechetni.
+<Swetko> az moshe li da dokasha za 3
+<Swetko> az moshe li da dokasha za 3
+<VelinTzanov> Ne :)
+<VelinTzanov> Iskam niakoi ot tiah.
+<VelinTzanov> Teb te znam che mojesh. :)
+<Prince_of_Dawn_> mi az pak moga
+<VelinTzanov> Davai
+* VelinTzanov sets mode: +oo rangel__ Swetko
+<Prince_of_Dawn_> mi namerihme dwe-te tochki deto bqha nai-gore
+<Prince_of_Dawn_> ok?
+<VelinTzanov> OK
+<Prince_of_Dawn_> sega
+<Prince_of_Dawn_> wzimame dqsnata ot tqh
+<Prince_of_Dawn_> i sega se dwijim po tochkite
+<Prince_of_Dawn_> ot tazi nai-dqsna tochka slizame edna tocka nadolu
+<Prince_of_Dawn_> razbirate li?
+<Swetko> da
+<Prince_of_Dawn_> predstawete si che chertaq liniq mejdu tochkite prez koito minawam
+<VelinTzanov> OK. I?
+<VelinTzanov> Dokyde ia chertaesh?
+<Prince_of_Dawn_> i taka sega sam nachertal otsechka s daljina edno
+<VelinTzanov> OK
+<Prince_of_Dawn_> ot lqwo na koqto e Bqlo a ot dqsno cherno
+<Prince_of_Dawn_> nali?
+<VelinTzanov> Mai naopaki.
+<VelinTzanov> Nali vse diasnata.
+<VelinTzanov> Ako hodish nadolu triabva chernoto da ti e vliavo.
+<VelinTzanov> vse = vze
+<Prince_of_Dawn_> da
+<VelinTzanov> OK
+<VelinTzanov> i?
+<Prince_of_Dawn_> i po tazi linq progaljawam da gledam tochkite nadolu i nadolu dokato sreshtna takaw s nechetno chislo
+<Swetko> zadulshitelno ste ima
+<Prince_of_Dawn_> poneje na swaka takawa liniika deto chertaw s daljina 1
+<Prince_of_Dawn_> ot ednata strana ima bqlo a ot drugata cherno ( mogat da se smenqt)
+<Prince_of_Dawn_> no na kraq zadaljitelno shte ima dwe beli ( swarshwa ekrana )
+<VelinTzanov> Ne e zadyljitelno.
+<VelinTzanov> Moje da imash i dve cherni. :)
+<Prince_of_Dawn_> ;)))
+<VelinTzanov> Vajno e da se otbeleji tova.
+<VelinTzanov> OK de. Iasno. Mojete da namerite 3 nechetni grid-points koito da praviat pravoygylnik.
+<Prince_of_Dawn_> wie s swetko me rabrahte ma Nedev i Rangel neznam dali sa hwanali maglqwite mi obqsneniq
+<VelinTzanov> Vsichki li razbraha kak?
+<Swetko> da
+<Prince_of_Dawn_> ne stawam za ucitel
+<Swetko> i moshe da probvame vsichki varianti za 3 da vidim dali sluchaino ne sa stanali 4
+<Swetko> i ako sa dobre
+<Swetko> ako ne sa
+<Swetko> ne chak tolkova dobre
+<Swetko> samo s 3 niama da imate 100 tochki
+<VelinTzanov> Offf, Swetko, izchakai malko de.
+<VelinTzanov> Zashto si tolkova priprian?
+<VelinTzanov> Rangel i Vlado oshte ne sa kazali che sa razbrali.
+<Prince_of_Dawn_> iska 100
+<VelinTzanov> Ako gi zasipem sys syobshtenia, a te ne sa, oshte poveche shte gi obyrkame.
+<VelinTzanov> Rangel, Vlado, tuk li ste?
+<Swetko> aaa ne vidiah
+-> [rangel__] PING
+-> [sssa88] TIME
+-> [sssa88] PING
+<rangel__> da
+<sssa88> ami to ne e li ochevidno che vinagi shte ima ili s 3 ili 4 to inache nqma da ima reshenie ottuk natatyk?
+<VelinTzanov> Razbrahte li zashto vinagi ima pone 3?
+<VelinTzanov> Ne, ne e ochevidno Vlado.
+<rangel__> da
+<VelinTzanov> Zashto da e ochevidno?
+<sssa88> ami ako nqma nito s 3 nito s 4 nqma kak da prodylzim
+<VelinTzanov> Na nas ni triabva algorithm da gi namerim. N^4 ne e dobyr algorithm.
+<VelinTzanov> Zashto da niama?
+<VelinTzanov> Prodyljavash s neshto s 2. I posle ti izlizat 3 i 4 blagodarenie na nego.
+<VelinTzanov> Tova e na teoria.
+<VelinTzanov> Triabva da dokajesh che vinagi imash 3 ili 4.
+<VelinTzanov> Prosto ne e ochevidno.
+<VelinTzanov> A i dori da beshe, triabva ti algorithm da gi namerish tezi 3.
+<Prince_of_Dawn_> Velin powtori pak neshtata
+<sssa88> ami az znachi ne sym razbral
+<VelinTzanov> Ne moje prosto da probvash vseki 3.
+<VelinTzanov> OK, Neka povtorim za Vlado.
+<VelinTzanov> Vlado, celta e na vseki hod da namaliavame parametyra.
+<VelinTzanov> Parametyryt e broia na nechetnite grid-points - t.e. tezi grid-points s necheten broi cherni kvadratcheta okolo tiah.
+<VelinTzanov> OK?
+<sssa88> ok
+<VelinTzanov> Kak gi namaliavame tezi nechetni grid points?
+<VelinTzanov> Namaliavame gi s hodovete si - kato flip-vame pravoygylnici.
+<VelinTzanov> Za celta obache TRIABVA DA DOKAJEM, che vinagi ima pravoygylnik s tri nechetni grid point-s v tri ot yglite mu (ili 4)
+<VelinTzanov> Zashtoto tova ne e ochevidno.
+<VelinTzanov> Neshto poveche - triabva da pokajem, che mojem da namerim takyv pravoygylnik za razumno vreme... shtoto niamame vsichkoto vreme na sveta.
+<Swetko> N^4 stava
+<VelinTzanov> Razbirash li?
+<sssa88> da
+<VelinTzanov> Hmm... Swetko limita e 2000. Imash 2000x2000 grid points. Tyrsish 3 ygyla. Stava 2000^6... obshto 2000 hoda - 2000^7. Ne moje. :)
+<VelinTzanov> Taka. Dokazatelstvoto e slednoto:
+<VelinTzanov> Vzimame nai-gornia red s cherni kvadratcheta.
+<VelinTzanov> Vyrvim nadiasno po nego dokato stignem bialo kvadratche. Tam e 1 necheten grid point.
+<VelinTzanov> Iasno?
+<Prince_of_Dawn_> gore mejdu dwete
+<Prince_of_Dawn_> kwadratcheta
+<sssa88> da
+<VelinTzanov> Pravim syshtoto i naliavao.
+<VelinTzanov> naliavo
+<VelinTzanov> taka poluchavame 2 grid points na edna linia.
+<VelinTzanov> Sega vzimame diasnata ot tezi dvete.
+<VelinTzanov> I trygvame nadolu.
+<VelinTzanov> I vyrvim dokato stignem necheten grid point.
+<VelinTzanov> Takyv vinagi syshtestvuva, zashtoto inache triabva vinagi da imame cherno i bialo ot dvete strani na vertikalnata prava po koiato se spuskame.
+<VelinTzanov> A tova e nevyzmojno - vse niakoga shte stignem do dve ednakvi kvadratcheta ot dvete strani (nai-malkoto kato izlezem ot pravoygylnika)
+<VelinTzanov> TAka fixirame 3-ta nechetna grid tochka.
+<VelinTzanov> I sme gotovi.
+<sssa88> aha
+<VelinTzanov> Pravoygylnika s ygli v tezi 3 tochki go flip-vame.
+<VelinTzanov> I taka zadyljitelno namaliavame obshtia broi nechetni grid points s pone 2.
+<VelinTzanov> TAka che ako tozi broi pyrvonachalno e X, to shte uspeem da prikluchim s nai-mnogo X/2 hoda.
+<VelinTzanov> Iasno?
+<VelinTzanov> Na vsichki li e iasno poslednoto?
+<Prince_of_Dawn_> shto N=4000
+<Prince_of_Dawn_> kak N^4 e dopustimo?
+<sssa88> da
+<Swetko> N^2 na hod e priemlivo iskam da kasha - stot ako probvame vseki s nachalo kudeto sme sega i protivopoloshen ugul a te sa n^2 ste nametim kakvoto ni triabva
+<Swetko> tui kato imame N^2 hoda max
+<VelinTzanov> Borisov, N^2 na vseki hod. Obshto N^3.
+<Swetko> a kolkoto sa poveche nechetnite grids - t.e. kolkoto poveche hodove - tolkova po byrzo ste namerim s 4 
+<Swetko> nechetni vyrha
+<VelinTzanov> Ami te daje mai sa N max... ama moje i N^2 da sa, znam li.
+<VelinTzanov> Swetko, aide posle da govorim za 4 vyrha, che shte obyrkash drugite.
+<VelinTzanov> Pitam - razbrahte li zashto s tazi strategia mojem da prikluchim s X/2 hoda?
+<Swetko> ami ne stignahme li dotam
+<VelinTzanov> Kydeto X e broia na nechetnite grid points v nachaloto.
+<rangel__> da
+<VelinTzanov> Ne, ne oshte, Swetko.
+<VelinTzanov> Vlado, Borisov?
+<Prince_of_Dawn_> da
+<sssa88> da
+<VelinTzanov> OK
+<VelinTzanov> Sega. Na vseki hod mojem da promenim do 4 nechetni grid points.
+<VelinTzanov> T.e. kakvoto i da pravim ne mojem da reshim zadachata s po-malko ot X/4 hoda.
+<Prince_of_Dawn_> da
+<VelinTzanov> Zashtoto triabva da gi obyrnem vsichki tezi nechetni grid points.
+<VelinTzanov> Tova iasno li e?
+<Prince_of_Dawn_> da
+<VelinTzanov> Tova oznachava, che nasheto reshenie e 2-optimalno, t.e. to e ne po-veche ot 2 pyti po-losho ot nai-dobroto.
+<rangel__> da
+<sssa88> da
+<Prince_of_Dawn_> poneje moje da nqma takowa deto winagi da izbira 4 otchki
+<Prince_of_Dawn_> pak nashto moje nqkoi pat da sluchi na 4
+<Swetko> dosta chesto
+<VelinTzanov> Da. Shte byde po-dobre ot 2-optimalno.
+<VelinTzanov> Kolko tochki se poluchavaha taka? Mejdu 60 i 80 niakyde biaha.
+<Swetko> koga
+<Swetko> ami ne znam
+<Swetko> tam niakude
+<VelinTzanov> Sega ostava da se zabavliavate kato tyrsite razlichni nachini da obryshtate s po 4 nechetni ygyla, a ne s po 3. :)
+<Prince_of_Dawn_> ;)
+<VelinTzanov> Ako iskate se zabavliavaite, ako iskate nedeite.
+<VelinTzanov> Kluchovoto v zadachata e da si nauchite uroka.
+<Prince_of_Dawn_> az na IOI bih bil dowolen
+<Prince_of_Dawn_> shtqh da macha nqkoq druga zadacha
+<VelinTzanov> A imenno - che ako triabva neshto taka da se optimizira (nestriktno) to cakata e da namerite hubav parametyr i da go namaliavate postoianno... do krai.
+<Prince_of_Dawn_> ili da testwam tazi
+<VelinTzanov> To niama kakvo da i test-vash - pishesh si samo edin validator za izhodnia file - dali izchistva kvadratcheto.
+<VelinTzanov> Shtoto te primerite sa ti dadeni. :)
+<Prince_of_Dawn_> ma towa a aglite na prawoagalnika i chetnosta e neseshtaemo
+<Swetko> abe to ne ti e nikakva trudnost da namerish 4 tochki
+<VelinTzanov> Ne e neseshtaemo, Borisov. Niakoi systezateli se setiha na olimpiadata.
+<Swetko> tiankai da she i s 4 go e napisal
+<Prince_of_Dawn_> te ne sa hora
+<Swetko> e sto be
+<VelinTzanov> Hora sa, Borisov.
+<VelinTzanov> I az sym chovek.
+<Swetko> az sum go vishdal - edi takuv dreben s ochilca 
+<VelinTzanov> I Ivo syshto.
+<Swetko> koreiche malko
+<VelinTzanov> Toi ne se klasira sega za IOI 2004, btw. :):):)
+<VelinTzanov> Vypreki che ima 2 zlatni medala.
+<Swetko> haha
+<sssa88> male
+<VelinTzanov> A minalata ne se beshe klasiral na IMO-to, vypreki che pak mai imashe zlaten ot predi.
+<Swetko> ne sum gledal oste americanskia otbor
+<Prince_of_Dawn_> naprawo si e smeshno
+<VelinTzanov> Ami kakto vinagi imat 2-ma Homeschooled.
+<Prince_of_Dawn_> kato si pomislish koi drug se e klasiral
+<Swetko> toi kato REID barton
+<Swetko> edin 11-to klasnik 
+<Swetko> minalata godina beshe 6-ti na IOI
+<VelinTzanov> Ne e recheno da sa se klairali po-dobri... amerikanskata sistema za podbor dalech ne e syvyrshenna.
+<Swetko> male - edinia e hodil na IPhO ma IMO i na IOI
+<VelinTzanov> Anders e po-dobyr mai. :)
+<Swetko> za IMO ne sum siguren
+<Prince_of_Dawn_> vidqhte li che ne sa hora ;)
+<VelinTzanov> Koi e hodil na IPhO?
+<Swetko> Anders
+<Swetko> na IOI 2003 
+<VelinTzanov> I na IPhO li e hodil? Hahaaa.. ne znaeh. :)
+<Swetko> vidiah che ima bluzka
+<Swetko> ili shishence za voda
+<VelinTzanov> Interesno... :)
+<Swetko> a puk mai i na IMO
+<VelinTzanov> Na IMO ima zlato.
+<Prince_of_Dawn_> trqbwa da si naprawq teniski s wsichki mejdunarodni sastezaniq poslednite 5 godini 
+<VelinTzanov> Abe - amerikancite shte gi biem nai-setne, niama kak... :)
+<Swetko> te i 4-mata sa bili na IOI minalata godina
+<Prince_of_Dawn_> i postoqnno da gi smenqm na IOI
+<Swetko> ednite vyv neoficialnia otbor
+<VelinTzanov> Vyprosi po XOR, Coins i vyobshte po dneshnia metod da imate?
+<Prince_of_Dawn_> shte plasha drugite
+<Swetko> a edinia ima i oste edna IOI
+<VelinTzanov> Shtoto az triabva da biagam...
+<Swetko> dai oste takiva zadachi
+<VelinTzanov> Da, Alex beshe i na IOI 2002.
+<rangel__> :-)
+<VelinTzanov> Togava beshe 9-ti klas - kato Rostislav.
+<Prince_of_Dawn_> az bih predlojil na Slavi da otstapi mqsto na Rostislaw ;)
+<Prince_of_Dawn_> wse pak momcheto ima golqma prespektiwa
+<Swetko> da ima
+<Swetko> da, ima
+<Prince_of_Dawn_> az moga li da si hodq?
+<VelinTzanov> Moje.
+<VelinTzanov> Drugit, imate li vyprosi?
+<VelinTzanov> Rangel, Vlado?
+<Prince_of_Dawn_> aide chao
+<VelinTzanov> Shte imam li zadachite napisani za utre?
+<rangel__> ne
+<sssa88> ne
+<Prince_of_Dawn_> da
+<sssa88> za zadachite - da
+<rangel__> osven ako ne se zakuchi neshto :-)
+<sssa88> a koga shte e sledvashtoto kontrolno
+<VelinTzanov> Planyt e 22-ri June.
+<VelinTzanov> No moje da go premestim utre ako uchenicite ne mogat da se izmyknat ot uchilishte. :)
+<VelinTzanov> Ama to utre Borisov go niama.,
+<Prince_of_Dawn_> kakwo uchilishte 
+<VelinTzanov> T.e. niama go sled 8:30... znachi niama da e utre.
+<VelinTzanov> Znachi vtornik - 22-ri June.
+<sssa88> aha
+<Prince_of_Dawn_> az nqmam problemi
+<VelinTzanov> Kontrolnoto vi e vyv vtornik, Borisov.
+<VelinTzanov> Swetko, ti?
+<Prince_of_Dawn_> ok
+<VelinTzanov> Swetko
+<VelinTzanov> Swetko?
+<VelinTzanov> Aide momcheta, az vi ostaviam. Chao!
+<sssa88> chao
+<rangel__> chao
+<Swetko> chao
+<sssa88> Rangele, q obqsni nakratko zashto xor-vaneto na sg-valuetata na zadachata s monetite raboti, molq?
+<rangel__> znachi predpolozhenieto e che SG sumata na edna poziciq e XOR-a ot SG sumite na edinichnite moneti nali?
+<sssa88> da
+<rangel__> tova shte e vqrno ako tazi stojnost pritezhava svojstvoto che ne mozhem da q zadyrzhim ako napravim hod i che mozhem da postignem vsqka po niska stojnost chrez nqkoj hod (tova e opredelenieto za SG suma)
+<rangel__> za da si napravim dokazatelstvoto dopuskame che imame SG sumite za edinichnite moneti (svishe kakto se izrazi Velin :-)
+<rangel__> chrez nqkoj hod mozhem da preobrazuvame edna moneta v 0 ili poveche drugi (zavisi ot broq na edinicite v shablona)
+<rangel__> taka SG sumata sled hoda shte byde XOR-a na monetite, koito sa H sled tozi hod
+<rangel__> pyrvo zashto tazi suma ne mozhe da ostane syshtata
+<rangel__> moment che ne moga da go opisha kakto trqbva
+<rangel__> moneta ot koqto pravq hoda zadylzhitelno izchezva i ot neq se poluchavat 0 ili poveche moneti na pozicii vdqsno ot neq
+<rangel__> SG sumata na monetite, koito se poluchavat zadylzhitelno e razlichna ot SG-sumata na monetata, koqto sym mahnal
+<rangel__> koeto oznachava che sled hoda nqma kak da polucha syshtata SG suma kakto v nachaloto
+<rangel__> moga da ignoriram fakta che vmesto da slagam moneti de fakto mozhe da maham takiva zashtoto efekta e syshtiq kato 2 pyti da slozha v XOR-a X
+<rangel__> tova qsno li e?
+<sssa88> da
+<rangel__> sega zashto moga da polucha vsqka po-malka stojnost
+<rangel__> dokazatelstvoto e napylno analogichno na drugite, koito sme davali
+<rangel__> SG sumata na situaciqta se poluchava kato XOR ot SG sumi
+* Prince_of_Dawn_ has left #ioi
+<rangel__> t.e. moga da polucha vsichki po-malki stojnosti za vsqka ot tqh
+<rangel__> primerno tekushtata SG suma e X, a az iskam da q napravq Y
+<rangel__> oznachavam Z = X^Y
+<rangel__> i tyrsq takava moneta, za koqto nejnata SG suma ^ Z da e po-malko chislo
+<rangel__> takava vinagi syshtestvuva (pak se dokazva analogichno izpolzvajki naj-starshiq bit na Z)
+<rangel__> qsno li e?
+<sssa88> aha
+<rangel__> i taka razlagajki tazi moneta na nqkolko drugi shte se poluchat dve moneti na edna poziciq, koeto obache e ekvivalentno na 0 moneti (te biha imali syshtiq efekt vyrhu SG sumata na poziciqta)
+<rangel__> tova oznachava che XOR ot SG sumite na monetite e validna SG funkciq za situaciq s nqkolko moneti
+<sssa88> aha
+<sssa88> thanks
+<rangel__> izpolzvajki tozi fakt veche mogat da se namerqt SG sumite na edinichnite moneti (po indukciq)
+<sssa88> da tam e qsno veche
+* Disconnected
+Session Close: Fri Jun 18 23:13:08 2004

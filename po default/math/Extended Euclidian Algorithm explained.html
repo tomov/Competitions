@@ -1,0 +1,287 @@
+<html>
+  <head>
+    <title>
+      The Extended Euclidian Algorithm
+    </title>
+  </head>
+  <body bgcolor="#BBBBBB">
+    <h1>The Extended Euclidian Algorithm</h1>
+
+      <p>
+        The Extended Euclidian Algorithm is of interest to us by virtue of its ability
+        to ease the computation of the modular inverse of an integer when that integer
+        is relatively prime to the modulus.
+        This ability substantially eases the burden of computing the decryption key
+        for a Rivest, Shamir, Adleman (RSA) public key encryption set when the integers
+        involved are large.
+      </p>
+
+      <p>
+        To begin, Euclid observed that the greatest common divisor (gcd) of two positive integers,
+        <i>u</i> and <i>v</i>, is the same as the greatest common divisor of <i>v</i>
+        and the remainder when the larger is divided by the smaller.
+        (Customarily, <i>u</i> is taken to be the larger number.)
+        If that remainder is called <i>r</i>, then
+      </p>
+
+      <pre><b>
+    gcd( u, v) = gcd( v, r)  where r = remainder(u / v)
+      </b></pre>
+
+      <p>
+        This is a relatively easy result to derive.
+        Assume that there is such a greatest common divisor, <i>d</i>.
+        Then, there must be integers <i>m</i> and <i>n</i> such that
+      </p>
+
+      <pre><b>
+    u = md
+    v = nd
+      </b></pre>
+
+      <p>
+        There is necessarily some third integer, <i>s</i>, such that
+      </p>
+
+      <pre><b>
+    r = u - sv
+      </b></pre>
+
+      <p>
+        Thus,
+      </p>
+
+      <pre><b>
+    r = u - sv
+      = (md) - s(nd)
+      = (md) - (sn)d
+      = (m - sn)d
+      </b></pre>
+
+      <p>
+        and thus <i>d</i> divides <i>r</i>.
+      </p>
+
+      <p>
+        This does not answer whether or not <i>d</i> is the greatest common divisor
+        of <i>v</i> and <i>r</i>.
+        Let us assume that there is another integer, <i>e</i>, greater than <i>d</i>
+        which divides <i>v</i> and <i>r</i>.
+        Then, there would be integers <i>j</i> and <i>k</i> such that
+      </p>
+
+      <pre><b>
+    v = je
+    r = ke
+      </b></pre>
+
+      <p>
+        Since
+      </p>
+
+      <pre><b>
+    r = u - sv
+      </b></pre>
+
+      <p>
+        from above, we may deduce that
+      </p>
+
+      <pre><b>
+    u = sv + r
+      = s(je) + (ke)
+      = (sj)e + (ke)
+      = (sj + k)e
+      </b></pre>
+
+      <p>
+        and, thus, that <i>e</i> must necessarily divide <i>u</i>.
+        However, if this is true, then <i>d</i> was not the greatest common divisor of
+        <i>u</i> and <i>v</i>, which is contrary to the original assumption.
+        Thus, <i>e</i> cannot exist and <i>d</i> is, indeed, the greatest common divisor
+        of <i>v</i> and <i>r</i>.
+      </p>
+
+      <p>
+        With this observation in hand, the algorithm is then trivial: continually replace
+        <i>u</i> with <i>v</i> and <i>v</i> with <i>r</i> until the remainder of the
+        division operation is 0.
+        The last <i>r</i> is the greatest common divisor.
+        For example, let <i>u</i> be 987 and <i>v</i> be 217.
+      </p>
+
+      <pre><b>
+     u   v   r 
+    --- --- ---
+    987 217 119
+    217 119  98
+    119  98  21
+     98  21  14
+     21  14   7
+     14   7   0  => gcd( 987, 217) = 7
+      </b></pre>
+
+      <p>
+        This then is the basic Euclidian Algorithm.
+        At this point, though, it is not easy to see what good this does us in finding a modular
+        inverse.
+        In fact, we haven't exactly discussed what a modular inverse is.
+      </p>
+
+      <p>
+        A modular inverse is a number, <i>b</i>, which multiplies a number, <i>a</i>, the result
+        <i>modulo n</i> to produce 1.
+        Thus,
+      </p>
+
+      <pre><b>
+    (a * b) mod n = 1
+      </b></pre>
+
+      <p>
+        To get to this fascinating result, it helps if you read somebody else's exposition
+        of the algorithm.
+        We start off by writting a true equation.
+      </p>
+
+      <pre><b>
+    (1 * u) + (0 * v) = u
+      </b></pre>
+
+      <p>
+        That seems true enough.
+        We now write under it another still true equation.
+      </p>
+
+      <pre><b>
+    (1 * u) + (0 * v) = u
+    (0 * u) + (1 * v) = v
+      </b></pre>
+
+      <p>
+        Suppose now that we apply Euclid's Algorithm above to these two equations
+        to compute <i>r</i>.
+        If we take <i>q</i> to be the integer portion of the division <i>u/v</i>, then
+        <i>r</i> is simply <i>q</i> times the second equation subtracted from the first
+        equation.
+        (In fact, we will denote <i>q</i> and <i>r</i> as <i>q1</i> and <i>r1</i> because
+        we will be repeating this step.)
+        Thus,
+      </p>
+
+      <pre><b>
+      ( 1 * u) + ( 0 * v) = u
+    - ( 0 * u) + (q1 * v) = q1 * v
+      -------------------   ------
+      ( 1 * u) - (q1 * v) = r1
+      </b></pre>
+
+      <p>
+        The new equation is, again, true enough.
+        We may now apply the same cycle to the second and third equations.
+      </p>
+
+      <pre><b>
+      ( 0 * u) + ( 1 * v) = v
+      ( 1 * u) - (q1 * v) = r1
+
+      (  0 * u) + (              1 * v) = v
+    - ( q2 * u) +         (q1 * q2 * v) = q2 * r1
+      ---------------------------------   -------
+      (-q2 * u) + ((1 - (q1 * q2)) * v) = r2
+      </b></pre>
+
+      <p>
+        Writing the equations out like this is a little messy after an iteration or two.
+        As an vector expression, the iteration is quite elegant:
+      </p>
+
+      <pre><b>
+    Let (u1, u2, u3) = ( 1, 0, u)  // Our two original true equations in vector form
+        (v1, v2, v3) = ( 0, 1, v)  //
+
+    While ((u3 mod v3) != 0)       // While the current u and v still have a remainder
+    { 
+      q = int(u3 / v3)             
+      (t1, t2, t3) = (u1, u2, u3) - (q * (v1, v2, v3))
+      (u1, u2, u3) = (v1, v2, v3)
+      (v1, v2, v3) = (t1, t2, t3)
+    }
+      </b></pre>
+
+      <p>
+        This iteration will eventually stop and the final <i>v3</i> will be the
+        <i>gcd</i> of our original <i>u</i> and <i>v</i>.
+        Notice also that the final <i>v1</i> and <i>v2</i> satisfy the equation
+      </p>
+
+      <pre><b>
+    (v1 * u) + (v2 * v) = gcd( u, v)
+      </b></pre>
+
+      <p>
+        although either <i>v1</i> or <i>v2</i> may be negative.
+        (In fact, one of them being negative is unavoidable since a non-trivial
+        <i>gcd</i> is certainly less than <i>v</i>.)
+        We can deal with this, though, by waving our hands very, very fast.
+        Start with this bit.
+      </p>
+
+      <pre><b>
+     (v1 * u) + (v2 * v)             =  gcd( u, v)
+     (v1 * u)                        =  gcd( u, v) - (v2 * v)
+     (v1 * u) mod v                  = [gcd( u, v) - (v2 * v)] mod v
+    {(v1 * u) + [(s * u) * v]} mod v = [gcd( u, v)] mod v
+    {(v1 * u) + [(s * v) * u]} mod v =  gcd( u, v)
+    {[v1 + (s * v)] * u} mod v       =  gcd( u, v)
+    [(v1 mod v) * u] mod v           =  gcd( u, v)
+      </b></pre>
+
+      <p>
+        where <i>s</i> is some astutely picked integer.
+        A symmetric derivation yields the similar result
+      </p>
+
+      <pre><b>
+    [(v2 mod u) * v] mod u           =  gcd( u, v)
+      </b></pre>
+
+      <p>
+        Now we are getting close.
+        Real close.
+        If we let <i>u</i> be our <i>n</i>, <i>v</i> be our <i>a</i>, and <i>(v2 mod n)</i> be our <i>b</i>,
+        <strong>and</strong> our <i>a</i> is less than our <i>n</i>,
+        then this last equation substitutes out to be
+      </p>
+
+      <pre><b>
+    (b * a) mod n = gcd( n, a)
+    (a * b) mod n = gcd( n, a)
+      </b></pre>
+
+      <p>
+        Now the last magic hat comes out of the rabbit!
+        If we further require that <i>a</i> be <b>relatively prime</b> to <i>n</i>,
+        we then know the <i>gcd( n, a)</i> by definition to be 1 and we, at long last,
+        can write
+      </p>
+
+      <pre><b>
+    (a * b) mod n = 1
+      </b></pre>
+
+      <p>
+        which is what we wanted.
+        Whewwwwwww.
+      </p>
+
+
+        <br>National Aeronautics and Space Administration
+        <br>John H. Glenn Research Center at Lewis Field
+        <br>Cleveland, Ohio
+        <br>Author: <cite><a href="mailto:William.H.Jones@grc.nasa.gov">William Henry Jones</a></cite>
+        <br>Site Curator: <cite><a href="mailto:William.H.Jones@grc.nasa.gov">William H. Jones</a></cite>
+        <br>Responsible Official: <cite><a href="mailto:William.H.Jones@grc.nasa.gov">William H. Jones</a></cite>
+        <br>Date and Version: 23 Nov 1998 X00.00
+  </body>
+</html>

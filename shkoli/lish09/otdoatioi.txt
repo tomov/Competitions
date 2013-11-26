@@ -1,0 +1,8 @@
+ulimit -s 1000000000
+ulimit -S 123123123123
+
+
+configure kate -> external tools
+
+
+

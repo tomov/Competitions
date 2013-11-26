@@ -1,0 +1,84 @@
+
+#include <cstdio>
+using namespace std;
+
+const int MAX_N = 1000000 + 5;
+const int MAX_K = 1000000 + 5;
+
+int N, K;
+int h[MAX_N];
+int idt1[MAX_N];
+int exact[MAX_N];
+long long idt2[MAX_N];
+long long total_sum = 0;
+
+void read() {
+    scanf("%d %d", &N, &K);
+    for (int i = 0; i < N; ++i)
+        scanf("%d", &h[i]);
+}
+
+inline void add(int pos, int val, int delta) {
+    total_sum += val;
+    exact[pos] += delta;
+    for (int i = pos + 1; i < MAX_N; i += i & -i) {
+        idt2[i] += val;
+        idt1[i] += delta;
+    }
+}
+
+inline void get_sum(int pos, long long &res, int &cnt) {
+    res = 0;
+    cnt = 0;
+    for (int i = pos + 1; i > 0; i -= i & -i) {
+        res += idt2[i];
+        cnt += idt1[i];
+    }
+}
+
+inline long long f(int nh) {
+    int cnt_less;
+    long long sum_less;
+    get_sum(nh - 1, sum_less, cnt_less);
+    long long res = cnt_less * nh - sum_less;
+    long long cnt_bigger = K - cnt_less - exact[nh];
+    res += total_sum - ((long long)exact[nh]) * nh - sum_less - cnt_bigger * nh;
+    return res;
+}
+
+void solve() {
+    for (int i = 0; i < K; ++i)
+        add(h[i], h[i], 1);
+    long long res = 1LL << 60;
+    int pos = -1;
+    int first = 0;
+    for (int i = K - 1; i < N; ++i, ++first) {
+        int l = 0;
+        int r = 1000000;
+        while (r - l > 1) {
+            int m = (l + r) / 2;
+            if (f(m) > f(m + 1))
+                l = m;
+            else
+                r = m;
+        }
+        while (l <= r) {
+            long long cur = f(l);
+            if (res > cur) {
+                res = cur;
+                pos = first;
+            }
+            ++l;
+        }
+        add(h[first], -h[first], -1);
+        if (i + 1 < N)
+            add(h[i + 1], h[i + 1], 1);
+    }
+    printf("%lld\n%d\n", res, pos + 1);
+}
+
+int main() {
+    read();
+    solve();
+    return 0;
+}

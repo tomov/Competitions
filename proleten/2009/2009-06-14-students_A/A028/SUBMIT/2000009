@@ -1,0 +1,38 @@
+#include<stdio.h>
+#define MAXN 81
+using namespace std;
+int main()
+{
+ int dp[MAXN][MAXN]={0},i,n,j,ans=0;
+ scanf("%d",&n);
+ dp[0][0]=1;
+ for(i=1;i<=n;i++)
+ { 
+  dp[i][0]=dp[i][1]=dp[i][i]=dp[i][i-1]=1;
+ }
+ /*
+ for(i=0;i<=n;i++)
+ {
+  for(j=0;j<=n;j++)
+   printf("%d ",dp[i][j]);
+  printf("\n");
+ }
+  printf("\n");
+*/
+ for(i=4;i<=n;i++)
+  for(j=2;j<i-1;j++)
+   dp[i][j]=dp[i-j][j]+dp[i-1][j-1];
+/*
+ for(i=0;i<=n;i++)
+ {
+  printf("%d:",i);
+  for(j=0;j<=n;j++)
+   printf("%d ",dp[i][j]);
+  printf("\n");
+ }
+ */
+ for(i=1;i<=n;i++)
+ ans+=dp[n][i];
+ printf("%d\n",ans);
+ return 0;
+}

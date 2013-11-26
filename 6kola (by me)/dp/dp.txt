@@ -1,0 +1,9 @@
+
+
+parvo rec ako e po-lesno, 4e da gledame zavisimostite kat praim iterative
+only possible when fixed topology of nodes
+
+
+iterative tricks:
+  mem cut - outermost cycle (dp[x][][]..[] needs only dp[x+1][][]..[])
+  time cut - innermost cycle

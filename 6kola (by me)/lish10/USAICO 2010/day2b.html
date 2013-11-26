@@ -1,0 +1,390 @@
+
+<!-- saved from url=(0059)http://ace.delos.com/ioiupload?d=gold&a=2eZ6p7h3LX9&lang=en -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META http-equiv="Pragma" content="no-cache">
+<SCRIPT language="javascript">
+<!--
+    var endtime;
+    
+    function initcount(secondsleft) {
+        var now = new Date();
+        return now.getTime() + secondsleft*1000;
+    }
+    function count1(i) { i = i - i%1; return i; } 
+    function count2(i) { i = i - i%1; if (i < 10) return "0"+i; return i; }
+    function updateclock(head, word, endtime) {
+        var now = new Date();
+        var delta = (endtime - now.getTime())/1000;
+        var s, x;
+        if(delta < 1)
+            s = head + " has ended";
+        else{
+            s = head + " ends: ";
+            s = head + ": ";
+            if(delta >= 24*3600)
+                s = s + count1(delta/86400) + "d";
+            if(delta >= 3600)
+                s = s + count2((delta/3600)%24) + "h";
+            if(delta >= 60)
+                s = s + count2((delta/60)%60) + "m";
+            s = s + count2(delta%60) + "s";
+            setTimeout("updateclock('"+head+"','"+word+"',"+endtime+")", 500);
+        }
+
+        var slot = document.getElementById(word);
+        slot.innerHTML = s;
+    }
+-->
+</SCRIPT>
+
+<TITLE>USACO Problems</TITLE>
+<STYLE type="text/css"><!--
+table,td,body {
+font-family: Helvetica, Verdana, Arial, SunSans-Regular, Sans-Serif;
+}
+--></STYLE>
+<SCRIPT>window["_GOOG_TRANS_EXT_VER"] = "1";</SCRIPT></HEAD><BODY onload="" background="./day2b_files/bg9gold.jpg">
+
+<FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+<TABLE><TBODY><TR>
+<TD><IMG src="./day2b_files/cowhead2.gif">
+</TD>
+<TD valign="top">
+<TABLE cellpadding="0" cellspacing="0">
+    <TBODY><TR><TD>Contest: USAICO10-2B <B>GOLD</B> Division</TD></TR>
+    <TR><TD></TR>
+    <TR><TD>Your proctor is Rob Kolstad</TD></TR>
+    <TR><TD></TR>
+    
+</TBODY></TABLE>
+</TD></TR>
+</TBODY></TABLE>
+<FONT color="red"><B>
+</B></FONT>
+
+<BR><FONT size="6"><B>ANALYSIS MODE</B></FONT><BR>
+Submit solutions for your own enjoyment.
+
+</FONT><PRE>**********************************************************************
+                           GOLD PROBLEMS
+**********************************************************************
+                  Three problems numbered 1 through 3
+**********************************************************************
+
+Problem 1: Maximum Milk (2) [Brian Dean, 2010]
+
+Farmer John has a list of N (1 &lt;= N &lt;= 250,000) cows conveniently
+numbered 1..N that he can purchase. Each cow j has a specific milk
+output M_j (1 &lt;= M_j &lt;= 1,000,000,000) as well as the two specific
+feed types F1_j and F2_j (1 &lt;= F1_j &lt;= 2*N; 1 &lt;= F2_j &lt;= 2*N; F1_j
+!= F2_j) she requires for dinner. She must eat one unit of either
+feed type every day.
+
+FJ wants to purchase a set of cows whose total milk output is as
+large as possible. However, he must be able to feed all the cows
+he purchases, and he can only supply one unit per day of each feed
+type. So, for each cow he purchases, he must assign one of the two
+feasible feed types it will eat so that at most one cow in the herd
+feeds on each specific feed type.
+
+Help Farmer John maximize his milk output. Write a program that
+reads in the milk output and feed types for each cow and supplies
+the maximum possible milk output.
+
+PROBLEM NAME: maxmilk2
+
+INPUT FORMAT:
+
+* Line 1: A single integer: N
+
+* Lines 2..N+1: Line j+1 describes cow j with three space-separated
+        integers: M_j, F1_j, and F2_j
+
+SAMPLE INPUT (file maxmilk2.in):
+
+5
+2 7 2
+8 2 8
+2 5 2
+2 5 8
+6 7 5
+
+INPUT DETAILS:
+
+There are five cows. Cows 1, 2, and 3 will eat feed type 2. Cows 3, 4, and
+5 will eat feed type 5. Cows 1 and 5 will eat feed type 7, and cows 2 and 4
+will eat feed type 8.
+
+OUTPUT FORMAT:
+
+* Line 1: A single integer: Farmer John's maximum possible milk
+        output.
+
+SAMPLE OUTPUT (file maxmilk2.out):
+
+18
+
+OUTPUT DETAILS:
+
+We can feed cows 1, 2, 3, and 5 by giving cow 1 feed type 2, cow 2
+feed type 8, cow 3 feed type 5, and cow 5 feed type 7. This yields
+a total milk output of 18, which is the best possible.
+
+**********************************************************************
+
+Problem 2: Tornado [Brian Dean, 2004]
+
+Farmer John lives on a farm with N (1 &lt;= N &lt;= 1,000) fields
+conveniently numbered 1..N. On a particularly terrifying day, a
+tornado hit Farmer John's farm and destroyed some of the directed
+trails between pairs of fields. For example, where there might have
+been a directed trail connecting from field 1 to field 3, there
+might no longer be such a trail. The remaining set of M directed
+trails (1 &lt;= M &lt;= 10,000) unfortunately might not be sufficient to
+allow Farmer John to travel between all pairs of fields along a
+sequence of directed trails.
+
+Help Farmer John determine the minimum number of directed trails
+he must build in order to restore full "connectivity" to his farm,
+so that he can successfully travel between any pair of fields along
+some sequence of directed trails.
+
+Directed trails are described by their endpoints E_1i and E_2i (1
+&lt;= E_1i &lt;= N; 1 &lt;= E_2i &lt;= N; E_1i != E_2i). Note that directed
+trail (i,j) goes the opposite direction from trail (j,i), even
+though both connect the same fields. The existence of trail (i,j)
+is independent of trail (j,i): one of the pair might exist, both
+might exist, or none might exist.
+
+PROBLEM NAME: tornado2
+
+INPUT FORMAT:
+
+* Line 1: Two space-separated integers: N and M
+
+* Lines 2..M+1: Line i+1 describes an extant directed trail i with two
+        space-separated integers: E_1i and E_2i.
+
+SAMPLE INPUT (file tornado2.in):
+
+4 6
+1 2
+3 1
+1 3
+1 4
+3 4
+4 1
+
+INPUT DETAILS:
+
+Below is a map of the farm's trails:
+
+   2 &lt;--- 1 &lt;--&gt; 4
+          ^      ^
+          |      |
+          v     / 
+          3 ----
+
+OUTPUT FORMAT:
+
+* Line 1: A single integer that is the maximum number of trails FJ can
+        build to re-establish connectivity
+
+SAMPLE OUTPUT (file tornado2.out):
+
+1
+
+OUTPUT DETAILS:
+
+A single additional directed trail from 2 to any of the three other fields
+will suffice to restore connectivity.
+
+**********************************************************************
+
+Problem 3: Milk Team Select [Percy Liang, 2002]
+
+Farmer John's N (1 &lt;= N &lt;= 500) cows are trying to select the
+milking team for the world-famous Multistate Milking Match-up (MMM)
+competition. As you probably know, any team that produces at least
+X (1 &lt;= X &lt;= 1,000,000) gallons of milk is a winner.
+
+Each cow has the potential of contributing between -10,000 and
+10,000 gallons of milk. (Sadly, some cows have a tendency to knock
+over jugs containing milk produced by other cows.)
+
+The MMM prides itself on promoting family values. FJ's cows have
+no doubt that they can produce X gallons of milk and win the contest,
+but to support the contest's spirit, they want to send a team with
+as many parent-child relationships as possible (while still producing
+at least X gallons of milk). Not surprisingly, all the cows on FJ's
+farm are female.
+
+Given the family tree of FJ's cows and the amount of milk that each
+would contribute, compute the maximum number of parent-child
+relationships that can exist in a winning team. Note that a set of
+cows with a grandmother-mother-daughter combination has two
+parent-child relationships (grandmother-mother, mother-daughter).
+
+PROBLEM NAME: tselect
+
+INPUT FORMAT:
+
+* Line 1: Two space-separated integers, N and X.
+
+* Lines 2..N+1: Line i+1 contains two space-separated integers
+        describing cow i. The first integer is the number of gallons
+        of milk cow i would contribute. The second integer (range
+        1..N) is the index of the cow's mother. If the cow's mother is
+        unknown, the second number is 0. The family information has no
+        cycles: no cow is her own mother, grandmother, etc.
+
+SAMPLE INPUT (file tselect.in):
+
+5 8
+-1 0
+3 1
+5 1
+-3 3
+2 0
+
+INPUT DETAILS:
+
+There are 5 cows. Cow 1 can produce -1 gallons and has two daughters, cow
+2 and 3, who can produce 3 and 5 gallons, respectively. Cow 3 has a
+daughter (cow 4) who can produce -3 gallons. Then there's cow 5, who can
+produce 2 gallons.
+
+OUTPUT FORMAT:
+
+* Line 1: The maximum number of parent-child relationships possible on
+        a winning team. Print -1 if no team can win.
+
+SAMPLE OUTPUT (file tselect.out):
+
+2
+
+OUTPUT DETAILS:
+
+The best team consists of cows 1, 2, 3, and 5. Together they produce
+(-1)+3+5+2 = 9 &gt;= 8 gallons and have 2 parent-child relationships
+(1--2 and 1--3). Note that a team with cows 2, 3, and 5 would be
+able to produce more milk (10 gallons), but would have fewer
+parent-child relationships (0).
+
+**********************************************************************
+
+</PRE><HR>
+<FORM action="http://ace.delos.com/ioiupload" enctype="multipart/form-data" method="POST">
+<INPUT type="hidden" name="a" value="2eZ6p7h3LX9">
+
+<TABLE>
+<TBODY><TR><TD>
+
+<TABLE bgcolor="#000000" cellpadding="0" cellspacing="0" border="0" width="100%">
+<TBODY><TR><TD height="1"></TR>
+<TR><TD width="1"><TD>
+
+  <FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+  <TABLE bgcolor="#bfffbf" cellpadding="5" width="100%">
+  <TBODY><TR><TD><B>Submit a program  for grading:&nbsp;<B><INPUT type="file" name="filename">
+  &nbsp;&nbsp;
+  <INPUT type="submit" value="Submit" name="submit"></B></B></TD></TR>
+  </TBODY></TABLE>
+
+</FONT></TD><TD width="1"></TR>
+<TR height="1"><TD></TR>
+</TBODY></TABLE>
+
+
+</TD></TR>
+
+<TR><TD><HR></TD></TR>
+
+<TR><TD>
+
+<TABLE bgcolor="#000000" cellpadding="0" cellspacing="0" border="0" width="100%">
+<TBODY><TR><TD height="1"></TR>
+<TR><TD width="1"><TD>
+
+   <TABLE bgcolor="#bfffbf" cellpadding="5" width="100%">
+   <TBODY><TR><TD colspan="2">
+   <FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+   <B>To run your program with your own test data, enter the program<BR>
+   file name and input file name then click 'Test':</B></FONT></TD></TR>
+
+  <TR><TD>
+
+   <TABLE>
+   <TBODY><TR><TD>
+     <TABLE>
+     <TBODY><TR><TD>
+     <FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+     <B>Program&nbsp;File:&nbsp;</B></FONT></TD>
+         <TD><INPUT type="file" name="testprogramname"></TD></TR>
+     <TR><TD align="right">
+         <FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+         <B>Input&nbsp;File:&nbsp;</B></FONT></TD>
+         <TD><INPUT type="file" name="testfilename"></TD></TR>
+     </TBODY></TABLE>
+   </TD>
+   <TD>&nbsp;&nbsp;</TD>
+   <TD><INPUT type="submit" value="Test" name="submit"></TD>
+   </TR>
+   </TBODY></TABLE>
+
+   </TD></TR></TBODY></TABLE>
+
+</TD><TD width="1"></TR>
+<TR height="1"><TD></TR>
+</TBODY></TABLE>
+
+</TD></TR>
+<TR><TD><HR></TD></TR>
+
+<TR><TD>
+
+  <TABLE bgcolor="#000000" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <TBODY><TR><TD height="1"></TR>
+    <TR><TD width="1"><TD>
+
+    <TABLE bgcolor="#bfffbf" cellpadding="5" width="100%">
+      <TBODY><TR><TD>
+      <FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+      <B>Backup a file:&nbsp;</B><INPUT type="file" name="backupfilename">
+      &nbsp;&nbsp;&nbsp;<INPUT type="submit" value="Backup" name="submit">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <INPUT type="submit" value="See Backups" name="submit">
+      </FONT></TD></TR>
+    </TBODY></TABLE>
+
+    </TD><TD width="1"></TR>
+    <TR><TD height="1"><TD></TR>
+  </TBODY></TABLE>
+
+</TD></TR>
+<TR><TD><HR></TD></TR>
+
+</TBODY></TABLE>
+Nothing is currently saved for grading.<HR>
+<CENTER>
+<A href="http://ace.delos.com/ioiedit?a=2eZ6p7h3LX9">Edit your database record</A>&nbsp;|&nbsp;
+
+<A href="http://ace.delos.com/ioiupload?a=2eZ6p7h3LX9&logout=1"> Logout </A>
+<!--<a href="https://ace.delos.com/rules.html" target="_blank"> Rules </a>-->
+&nbsp;|&nbsp;
+<A href="http://ace.delos.com/ioiupload?init=1&a=2eZ6p7h3LX9">Main contest index</A>
+</CENTER>
+<!--&nbsp;|&nbsp;-->
+<CENTER>
+<A href="http://ace.delos.com/ioiupload?a=2eZ6p7h3LX9&showsubmit">See submitted solutions</A>
+&nbsp;|&nbsp;
+<A href="http://ace.delos.com/ioiupload?a=2eZ6p7h3LX9&suggestionbox">Send message
+to operations staff</A>
+&nbsp;|&nbsp;
+Phone: +1 719-321-7333
+<BR>
+Director is not online<BR>
+This page was generated at 20:55:09 GMT.
+</CENTER>
+
+</FORM></BODY></HTML>

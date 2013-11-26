@@ -1,0 +1,512 @@
+<html>
+<head>
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<script language="javascript">
+<!--
+    var endtime;
+    
+    function initcount(secondsleft) {
+        var now = new Date();
+        return now.getTime() + secondsleft*1000;
+    }
+    function count1(i) { i = i - i%1; return i; } 
+    function count2(i) { i = i - i%1; if (i < 10) return "0"+i; return i; }
+    function updateclock(head, word, endtime) {
+        var now = new Date();
+        var delta = (endtime - now.getTime())/1000;
+        var s, x;
+        if(delta < 1)
+            s = head + " has ended";
+        else{
+            s = head + " ends: ";
+            s = head + ": ";
+            if(delta >= 24*3600)
+                s = s + count1(delta/86400) + "d";
+            if(delta >= 3600)
+                s = s + count2((delta/3600)%24) + "h";
+            if(delta >= 60)
+                s = s + count2((delta/60)%60) + "m";
+            s = s + count2(delta%60) + "s";
+            setTimeout("updateclock('"+head+"','"+word+"',"+endtime+")", 500);
+        }
+
+        var slot = document.getElementById(word);
+        slot.innerHTML = s;
+    }
+-->
+</script>
+
+<title>USACO Problems</title>
+</head>
+<body onload="" background='/usaco/bg9gold.jpg'>
+
+<font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+<table><tr>
+<td><img src='/usaco/cowhead2.gif'>
+</td>
+<td valign='top'>
+<table cellpadding=0 cellspacing=0>
+    <tr><td>Contest: NOV08 <b>GOLD</b> Division</td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+    
+</table>
+</td></tr>
+</table>
+<font color=red><b>
+</b></font>
+
+<br><font size='6'<b>ANALYSIS MODE</b></font><br>
+Submit solutions for your own enjoyment.
+
+</font><pre>ANNOUNCEMENT: If USACO's upgrade can be completed then accepted
+submitted solutions will be viewable by all contest participants
+after the contest is complete.
+
+NOTE: Each problem has a point value. Your goal is to maximize the
+number of points you score. Your score is the sum of your three
+highest-scoring submissions. Increase your score by correctly solving
+tasks; maximize your score by correctly solving tasks with the
+higher point values.
+
+**********************************************************************
+                           GOLD PROBLEMS
+**********************************************************************
+                  Four problems numbered 1 through 4
+**********************************************************************
+
+Problem 1: Mixed Up Cows [Don Piele, 2007]
+
+Each of Farmer John's N (4 &lt;= N &lt;= 16) cows has a unique serial
+number S_i (1 &lt;= S_i &lt;= 25,000). The cows are so proud of it that
+each one now wears her number in a gangsta manner engraved in large
+letters on a gold plate hung around her ample bovine neck.
+
+Gangsta cows are rebellious and line up to be milked in an order
+called 'Mixed Up'. A cow order is 'Mixed Up' if the sequence of
+serial numbers formed by their milking line is such that the serial
+numbers of every pair of consecutive cows in line differs by more
+than K (1 &lt;= K &lt;= 3400). For example, if N = 6 and K = 1 then 1,
+3, 5, 2, 6, 4 is a 'Mixed Up' lineup but 1, 3, 6, 5, 2, 4 is not
+(since the consecutive numbers 5 and 6 differ by 1).
+
+How many different ways can N cows be Mixed Up?
+
+For your first 10 submissions, you will be provided with the results of
+running your program on a part of the actual test data.
+
+POINTS: 200
+
+PROBLEM NAME: mixup2
+
+INPUT FORMAT:
+
+* Line 1: Two space-separated integers: N and K
+
+* Lines 2..N+1: Line i+1 contains a single integer that is the serial
+        number of cow i: S_i
+
+SAMPLE INPUT (file mixup2.in):
+
+4 1
+3
+4
+2
+1
+
+OUTPUT FORMAT:
+
+* Line 1: A single integer that is the number of ways that N cows can
+        be 'Mixed Up'. The answer is guaranteed to fit in a 64 bit
+        integer.
+
+SAMPLE OUTPUT (file mixup2.out):
+
+2
+
+OUTPUT DETAILS:
+
+The 2 possible Mixed Up arrangements are:
+3 1 4 2
+2 4 1 3
+
+**********************************************************************
+
+Problem 2: Cheering up the Cows [David Benjamin and Jacob Steinhardt, 2008]
+
+Farmer John has grown so lazy that he no longer wants to continue
+maintaining the cow paths that currently provide a way to visit
+each of his N (5 &lt;= N &lt;= 10,000) pastures (conveniently numbered
+1..N). Each and every pasture is home to one cow. FJ plans to remove
+as many of the P (N-1 &lt;= P &lt;= 100,000) paths as possible while keeping
+the pastures connected. You must determine which N-1 paths to keep.
+
+Bidirectional path j connects pastures S_j and E_j (1 &lt;= S_j &lt;= N;
+1 &lt;= E_j &lt;= N; S_j != E_j) and requires L_j (0 &lt;= L_j &lt;= 1,000) time
+to traverse. No pair of pastures is directly connected by more than
+one path.
+
+The cows are sad that their transportation system is being reduced.
+You must visit each cow at least once every day to cheer her up.
+Every time you visit pasture i (even if you're just traveling
+through), you must talk to the cow for time C_i (1 &lt;= C_i &lt;= 1,000).
+
+You will spend each night in the same pasture (which you will choose)
+until the cows have recovered from their sadness. You will end up
+talking to the cow in the sleeping pasture at least in the morning
+when you wake up and in the evening after you have returned to
+sleep.
+
+Assuming that Farmer John follows your suggestions of which paths
+to keep and you pick the optimal pasture to sleep in, determine the
+minimal amount of time it will take you to visit each cow at least
+once in a day.
+
+For your first 10 submissions, you will be provided with the results of
+running your program on a part of the actual test data.
+
+POINTS: 300
+
+PROBLEM NAME: cheer
+
+INPUT FORMAT:
+
+* Line 1: Two space-separated integers: N and P
+
+* Lines 2..N+1: Line i+1 contains a single integer: C_i
+
+* Lines N+2..N+P+1: Line N+j+1 contains three space-separated
+        integers: S_j, E_j, and L_j
+
+SAMPLE INPUT (file cheer.in):
+
+5 7
+10
+10
+20
+6
+30
+1 2 5
+2 3 5
+2 4 12
+3 4 17
+2 5 15
+3 5 6
+4 5 12
+
+INPUT DETAILS:
+
+              +-(15)-+
+             /        \
+            /          \
+     1-(5)-2-(5)-3-(6)--5
+            \   /(17)  /
+         (12)\ /      /(12)
+              4------+
+
+OUTPUT FORMAT:
+
+* Line 1: A single integer, the total time it takes to visit all the
+        cows (including the two visits to the cow in your
+        sleeping-pasture)
+
+SAMPLE OUTPUT (file cheer.out):
+
+176
+
+OUTPUT DETAILS:
+
+Keep these paths:
+
+     1-(5)-2-(5)-3      5
+            \          /
+         (12)\        /(12)
+             *4------+
+
+Wake up in pasture 4 and visit pastures in the order 4, 5, 4, 2,
+3, 2, 1, 2, 4 yielding a total time of 176 before going back to
+sleep.
+
+**********************************************************************
+
+Problem 3: Light Switching [LongFan, 2008]
+
+Farmer John tries to keep the cows sharp by letting them play with
+intellectual toys. One of the larger toys is the lights in the barn.
+Each of the N (2 &lt;= N &lt;= 100,000) cow stalls conveniently numbered
+1..N has a colorful light above it.
+
+At the beginning of the evening, all the lights are off. The cows
+control the lights with a set of N pushbutton switches that toggle
+the lights; pushing switch i changes the state of light i from off
+to on or from on to off.
+
+The cows read and execute a list of M (1 &lt;= M &lt;= 100,000) operations
+expressed as one of two integers (0 &lt;= operation &lt;= 1).
+
+The first kind of operation (denoted by a 0 command) includes two
+subsequent integers S_i and E_i (1 &lt;= S_i &lt;= E_i &lt;= N) that indicate
+a starting switch and ending switch. They execute the operation by
+pushing each pushbutton from S_i through E_i inclusive exactly once.
+
+The second kind of operation (denoted by a 1 command) asks the cows
+to count how many lights are on in the range given by two integers
+S_i and E_i (1 &lt;= S_i &lt;= E_i &lt;= N) which specify the inclusive range
+in which the cows should count the number of lights that are on.
+
+Help FJ ensure the cows are getting the correct answer by processing
+the list and producing the proper counts.
+
+POINTS: 300
+
+PROBLEM NAME: lites
+
+INPUT FORMAT:
+
+* Line 1: Two space-separated integers: N and M
+
+* Lines 2..M+1: Each line represents an operation with three
+        space-separated integers: operation, S_i, and E_i
+
+SAMPLE INPUT (file lites.in):
+
+4 5
+0 1 2
+0 2 4
+1 2 3
+0 2 4
+1 1 4
+
+INPUT DETAILS:
+
+Four lights; five commands. Here is the sequence that should
+be processed:
+	    Lights
+            1 2 3 4
+  Init:     O O O O   O = off  * = on
+  0 1 2 -&gt;  * * O O  toggle lights 1 and 2
+  0 2 4 -&gt;  * O * *
+  1 2 3 -&gt;  1        count the number of lit lights in range 2..3
+  0 2 4 -&gt;  * * O O  toggle lights 2, 3, and 4
+  1 1 4 -&gt;  2        count the number of lit lights in the range 1..4
+
+OUTPUT FORMAT:
+
+* Lines 1..number of queries: For each output query, print the count
+        as an integer by itself on a single line.
+
+SAMPLE OUTPUT (file lites.out):
+
+1
+2
+
+**********************************************************************
+
+Problem 4: Toys [Chen Hu, 2006]
+
+Bessie's birthday is coming up, and she wishes to celebrate for the
+next D (1 &lt;= D &lt;= 100,000; 70% of testdata has 1 &lt;= D &lt;= 500) days.
+Cows have short attention spans so Bessie wants to provide toys to
+entertain them. She has calculated that she will require T_i (1 &lt;=
+T_i &lt;= 50) toys on day i.
+
+Bessie's kindergarten provides many services to its aspiring bovine
+programmers, including a toy shop which sells toys for Tc (1 &lt;= Tc
+&lt;= 60) dollars. Bessie wishes to save money by reusing toys, but
+Farmer John is worried about transmitting diseases and requires
+toys to be disinfected before use. (The toy shop disinfects the
+toys when it sells them.)
+
+The two disinfectant services near the farm provide handy complete
+services. The first one charges C1 dollars and requires N1 nights
+to complete; the second charges C2 dollars and requires N2 nights
+to complete (1 &lt;= N1 &lt;= D; 1 &lt;= N2 &lt;= D; 1 &lt;= C1 &lt;= 60; 1 &lt;= C2 &lt;=
+60). Bessie takes the toys to the disinfecters after the party and
+can pay and pick them back up the next morning if one night service
+is rendered, or on later mornings if more nights are required for
+disinfecting.
+
+Being an educated cow, Bessie has already learned the value of
+saving her money. Help her find the cheapest way she can provide
+toys for her party.
+
+POINTS: 400
+
+PROBLEM NAME: toy
+
+INPUT FORMAT:
+
+* Line 1: Six space-separated integers: D, N1, N2, C1, C2, Tc
+
+* Lines 2..D+1: Line i+1 contains a single integer: T_i
+
+SAMPLE INPUT (file toy.in):
+
+4 1 2 2 1 3
+8
+2
+1
+6
+
+INPUT DETAILS:
+
+Bessie wishes to party for 4 days, and requires 8 toys the first day, 2
+toys the second, 1 toy the third, and 6 toys on the fourth day. The
+first disinfectant service takes 1 day and charges $2, and the
+second takes 2 days and charges $1. Buying a new toy costs $3.
+
+OUTPUT FORMAT:
+
+* Line 1: The minimum cost to provide safe and sanitary toys for
+        Bessie's birthday parties.
+
+SAMPLE OUTPUT (file toy.out):
+
+35
+
+OUTPUT DETAILS:
+
+Day 1   Purchase 8 toys in the morning for $24; party in the
+	afternoon. Take 2 toys to the fast cleaner (overnight) and
+	the other 6 toys to the slow cleaner (two nights).
+
+Day 2   Pick up the two toys at the fast cleaner; pay $4. Party in
+	the afternoon. Take 1 toy to the slow cleaner.
+
+Day 3   Pick up 6 toys from the slow cleaner and pay $6. Party in
+        the afternoon.
+
+Day 4   Pick up the final remaining toy from the slow cleaner
+        (bringing the number of toys onsite back to 6); pay $1.
+        Party hearty with the realization that a minimum amount of
+        money was spent.
+
+**********************************************************************
+
+</pre><hr>
+<form action="/ioiupload" enctype="multipart/form-data" method="POST">
+<input type="hidden" name="a" value="7ymSmIe3uVm">
+
+<table>
+<tr><td>
+
+<table bgcolor="#000000" cellpadding=0 cellspacing=0 border=0 width=100%>
+<tr><td height=1></td></tr>
+<tr><td width=1><td>
+
+  <font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+  <table bgcolor="#bfffbf" cellpadding=5 width=100%>
+  <tr><td><b>Submit a program  for grading:&nbsp;<b><input type="file" NAME="filename">
+  &nbsp;&nbsp;
+  <input type="submit" VALUE="Submit" name='submit'></td></tr>
+  </table>
+
+</td><td width=1></td></tr>
+<tr height=1><td></td></tr>
+</table>
+
+
+</td></tr>
+
+<tr><td><hr></td></tr>
+
+<tr><td>
+
+<table bgcolor="#000000" cellpadding=0 cellspacing=0 border=0 width=100%>
+<tr><td height=1></td></tr>
+<tr><td width=1><td>
+
+   <table bgcolor="#bfffbf" cellpadding=5 width=100%>
+   <tr><td colspan='2'>
+   <font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+   <b>To run your program with your own test data, enter the program<br>
+   file name and input file name then click 'Test':</b></td></tr>
+
+  <tr><td>
+
+   <table>
+   <tr><td>
+     <table>
+     <tr><td>
+     <font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+     <B>Program&nbsp;File:&nbsp;</B></td>
+         <td><input type="file" NAME="testprogramname"></td></tr>
+     <tr><td align="right">
+         <font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+         <B>Input&nbsp;File:&nbsp;</B></td>
+         <td><input type="file" NAME="testfilename"></td></tr>
+     </table>
+   </td>
+   <td>&nbsp;&nbsp;</td>
+   <td><input type="submit" VALUE="Test" name='submit'></td>
+   </tr>
+   </table>
+
+   </td></tr></table>
+
+</td><td width=1></td></tr>
+<tr height=1><td></td></tr>
+</table>
+
+</tr></td>
+<tr><td><hr></td></tr>
+
+<tr><td>
+
+<table bgcolor="#000000" cellpadding=0 cellspacing=0 border=0 width=100%>
+<tr><td height=1></td></tr>
+<tr><td width=1><td>
+
+<table bgcolor="#bfffbf" cellpadding=5 width=100%>
+<tr><td>
+<font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+<b>Backup a file:&nbsp;</b><input type="file" NAME="backupfilename">
+&nbsp;&nbsp;&nbsp;<input type="submit" VALUE="Backup" NAME='submit'>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" VALUE="See Backups" NAME='submit'>
+</td></tr></table>
+
+</td><td width=1></td></tr>
+<tr height=1><td><td></tr>
+</table>
+
+</td></tr>
+
+<tr><td><hr></td></tr>
+
+</table>
+<tr><td><font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'> The following solution files are saved for grading:<br>
+<table cellspacing='2'>
+<tr><th>Name</th><th>Size</th><th>When</th><th>Age</th></tr>
+<td><a href="/ioiupload?a=7ymSmIe3uVm&seesaved=cheer.c">cheer.c</a></td>
+<td align ='right'>2463</td>
+<td align ='right'>10h33:02</td>
+<td align ='right'>722h44:18</td></tr>
+<td><a href="/ioiupload?a=7ymSmIe3uVm&seesaved=lites.c">lites.c</a></td>
+<td align ='right'>3329</td>
+<td align ='right'>10h09:52</td>
+<td align ='right'>723h07:28</td></tr>
+<td><a href="/ioiupload?a=7ymSmIe3uVm&seesaved=mixup2.c">mixup2.c</a></td>
+<td align ='right'>2188</td>
+<td align ='right'> 9h14:19</td>
+<td align ='right'>724h03:01</td></tr>
+</table></td></tr>
+<hr>
+<center>
+<a href="/ioiedit?a=7ymSmIe3uVm">Edit your database record</a>&nbsp;|&nbsp;
+
+<a href="/ioiupload?a=7ymSmIe3uVm&logout=1"> Logout </a>
+<!--<a href="https://ace.delos.com/rules.html" target="_blank"> Rules </a>-->
+&nbsp;|&nbsp;
+<a href=http://ace.delos.com/ioiupload?init=1&a=7ymSmIe3uVm>Main contest index</a>
+</center>
+<!--&nbsp;|&nbsp;-->
+<center>
+<a href=http://ace.delos.com/ioiupload?a=7ymSmIe3uVm&showsubmit>See submitted solutions</a>
+&nbsp;|&nbsp;
+<a href=http://ace.delos.com/ioiupload?a=7ymSmIe3uVm&suggestionbox>Send message
+to operations staff</a><br>
+Director is not online<br>
+This page was generated at 20:17:20 GMT.
+</center>
+</body>

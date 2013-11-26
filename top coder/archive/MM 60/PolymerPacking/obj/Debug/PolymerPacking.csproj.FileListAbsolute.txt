@@ -1,0 +1,5 @@
+E:\topcoder\mm\PolymerPacking\PolymerPacking\bin\Debug\PolymerPacking.exe
+E:\topcoder\mm\PolymerPacking\PolymerPacking\bin\Debug\PolymerPacking.pdb
+E:\topcoder\mm\PolymerPacking\PolymerPacking\obj\Debug\ResolveAssemblyReference.cache
+E:\topcoder\mm\PolymerPacking\PolymerPacking\obj\Debug\PolymerPacking.exe
+E:\topcoder\mm\PolymerPacking\PolymerPacking\obj\Debug\PolymerPacking.pdb

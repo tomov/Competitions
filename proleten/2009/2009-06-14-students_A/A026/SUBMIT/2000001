@@ -1,0 +1,44 @@
+/*
+codr: timiter
+task: washer
+lang: C++
+*/
+
+#include <cstdio>
+#include <vector>
+
+using namespace std;
+
+int n;
+long long s = 0;
+vector<double> d;
+
+void doit(int, int, double);
+
+int main()
+{
+    scanf("%d", &n);
+    doit(n, n, 0.0);
+    printf("%d\n", s);
+    return 0;
+}
+
+void doit(int k, int m, double c)
+{
+    int i;
+    if (k == 0)
+    {
+        int e = d.size();
+        for (i = 0; i < e && c != d[i]; i++);
+        if (i == e)
+        {
+            d.push_back(c);
+            s++;
+        }
+        return;
+    }
+    for (i = 1; i <= k && i <= m; i++)
+    {
+        doit(k - i, i, c + 1.0 / i);
+    }
+}

@@ -1,0 +1,95 @@
+/*
+ID: pascala1
+PROG: fc
+LANG: C++
+*/
+
+#include <cstdio>
+#include <complex>
+
+#define X							real()
+#define Y							imag()
+#define EQ(a, b)					(fabs((a) - (b)) < EPS)
+#define dot(a, b)					real(conj(a) * (b))
+#define cross(a, b)					imag(conj(a) * (b))
+#define length(a)					sqrt(dot(a, a));
+#define area2(a, b, c)				cross((b) - (a), (c) - (a))
+
+typedef std :: complex<double> point;
+
+FILE * in = fopen("fc.in", "r");
+FILE * out = fopen("fc.out", "w");
+
+const int MAX_N = 1 << 15;
+const double EPS = 1e-9;
+
+int N, C;
+point p[MAX_N], c[MAX_N];
+double ans;
+
+void Read()
+{
+	fscanf(in, "%d", & N);
+	
+	for(int i = 0; i < N; i ++)
+	{
+		fscanf(in, "%lf %lf", & p[i].X, & p[i].Y);
+	}
+}
+
+bool point_cmp_x(const point & a, const point & b)
+{
+	return !EQ(a.X, b.X) ? a.X < b.X : b.Y < a.Y;
+}
+
+void Convex_Hull()
+{
+	sort(p, p + N, point_cmp_x);
+	
+	for(int i = 0; i < N; i ++)
+	{
+		while(2 <= C && 0.0 < area2(c[C - 2], c[C - 1], p[i]))
+		{
+			C --;
+		}
+		
+		c[C ++] = p[i];
+	}
+	
+	for(int i = N - 1; 0 <= i; i --)
+	{
+		while(2 <= C && 0.0 < area2(c[C - 2], c[C - 1], p[i]))
+		{
+			C --;
+		}
+		
+		c[C ++] = p[i];
+	}
+}
+
+void Solve()
+{
+	Convex_Hull();
+	
+	for(int i = 1; i < C; i ++)
+	{
+		ans += length(c[i] - c[i - 1]);
+	}
+}
+
+void Write()
+{
+	fprintf(out, "%.2lf\n", ans);
+//	system("pause");
+}
+
+int main()
+{
+	Read();
+	
+	Solve();
+	
+	Write();
+	
+	return 0;
+}

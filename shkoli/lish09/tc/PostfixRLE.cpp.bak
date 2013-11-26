@@ -1,0 +1,165 @@
+// BEGIN CUT HERE
+/*
+// PROBLEM STATEMENT
+// Postfix notation (or reverse Polish notation) is a method for writing down arithmetic expressions without brackets, but still maintaining the order of operations. The postfix notation for an expression consisting of a single variable or number consists only of that variable or number. The postfix notation for an expression "A#B" (here A and B are other expressions and '#' is the operator evaluated last in our expression) is obtained by concatenating the postfix notation for A, the postfix notation for B, and '#'.
+For example, the postfix notation for "((a+f)*b)*(c*d)" is "af+b*cd**". Another way of looking at the postfix notation is that it is a program for a stack calculator. Every variable or number means "push that variable or number on the stack". Every operator means "pop the two top items from the stack, perform the operation on them, and push the result back on the stack". For example, when evaluating "af+b*cd**", the stack changes as follows: {a}, {a,f}, {a+f}, {a+f,b}, {(a+f)*b}, {(a+f)*b,c}, {(a+f)*b,c,d}, {(a+f)*b,c*d}, {((a+f)*b)*(c*d)}.
+You are given an expression in postfix notation, containing only variables and operators. All the operators are binary (take two operands), associative, and commutative. That means for any operator #, expressions A, B, and C, the following properties hold:
+Associativity: A#(B#C)=(A#B)#C. 
+Commutativity: A#B=B#A. 
+That allows you to rearrange operands corresponding to the same operator. For example, using both rules one could rearrange the expression shown above:
+As expression: "((a+f)*b)*(c*d)" can be rearranged to "d*((a+f)*(b*c))".
+In postfix notation: "af+b*cd**" can be rearranged to "daf+bc***".
+Your task is to find a postfix expression that can be obtained by rearranging the initial expression using only the associativity and commutativity rules, and having the least RLE-size. The RLE-size of a string is the number of blocks of consecutive equal characters in it (i.e., the RLE-size of "xx+yy+zz+**" is 7).
+The input for this problem is given as a String[] expression. Concatenate all elements of that String[] to get the initial expression in postfix notation. Each variable is denoted by a lowercase letter ('a'-'z'), and the operators are denoted by characters '+', '*', '#', '!', '@', '$', '%' and '^'. You are to return the smallest possible RLE-size of a postfix expression that can be obtained from the initial expression by applying some (possibly none) of the above rules.
+
+DEFINITION
+Class:PostfixRLE
+Method:getCompressedSize
+Parameters:vector <string>
+Returns:int
+Method signature:int getCompressedSize(vector <string> expression)
+
+
+NOTES
+-All the quotes in the problem statement are for clarity only.
+
+
+CONSTRAINTS
+-expression will contain between 1 and 50 elements, inclusive.
+-Each element of expression will contain between 1 and 50 characters, inclusive.
+-Each character in each element of expression will be a lowercase letter ('a'-'z'), '+', '*', '#', '!', '@', '$', '%' or '^'.
+-expression will be a valid arithmetic expression in postfix notation.
+
+
+EXAMPLES
+
+0)
+{"af+b*cd**"}
+
+Returns: 7
+
+"daf+bc***" is one of the possible best rearrangements.
+
+1)
+{"xy*x*y*x*y*"}
+
+Returns: 3
+
+Yields "xxxyyy*****" or "yyyxxx*****".
+
+2)
+{"abcdefg!@#$%^"}
+
+Returns: 13
+
+No point in changing anything here.
+
+3)
+{"xy@z@ab@c@yc%%%"}
+
+Returns: 9
+
+
+
+4)
+{"abc++",
+"abc++",
+"abc++",
+"a",
+"b",
+"c",
+"*",
+"*",
+"*",
+"*",
+"*"}
+
+Returns: 13
+
+
+
+*/
+// END CUT HERE
+
+#include <cstdio>
+#include <cstdlib>
+#include <ctime>
+
+#include <vector>
+#include <set>
+#include <map>
+#include <list>
+#include <stack>
+#include <queue>
+#include <deque>
+#include <cstring>
+#include <bitset>
+
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <iomanip>
+
+#include <cmath>
+#include <algorithm>
+#include <utility>
+#include <numeric>
+#include <functional>
+
+using namespace std;
+
+#define SZ size()
+#define PB push_back
+#define MP make_pair
+#define x first
+#define y second
+
+#define LL long long
+#define PI pair<int,int>
+#define VI vector<int>
+
+#define F(i,n) for (int i=0;i<n;i++)
+#define Repi(n) F(i,n)
+#define Repj(n) F(j,n)
+#define Repk(n) F(k,n)
+
+class PostfixRLE {
+	public:
+	int getCompressedSize(vector <string> expression) {
+
+	}
+                             
+// BEGIN CUT HERE
+	public:
+	void run_test(int Case) { if ((Case == -1) || (Case == 0)) test_case_0(); if ((Case == -1) || (Case == 1)) test_case_1(); if ((Case == -1) || (Case == 2)) test_case_2(); if ((Case == -1) || (Case == 3)) test_case_3(); if ((Case == -1) || (Case == 4)) test_case_4(); }
+	private:
+	template <typename T> string print_array(const vector<T> &V) { ostringstream os; os << "{ "; for (typename vector<T>::const_iterator iter = V.begin(); iter != V.end(); ++iter) os << '\"' << *iter << "\","; os << " }"; return os.str(); }
+	void verify_case(int Case, const int &Expected, const int &Received) { cerr << "Test Case #" << Case << "..."; if (Expected == Received) cerr << "PASSED" << endl; else { cerr << "FAILED" << endl; cerr << "\tExpected: \"" << Expected << '\"' << endl; cerr << "\tReceived: \"" << Received << '\"' << endl; } }
+	void test_case_0() { string Arr0[] = {"af+b*cd**"}; vector <string> Arg0(Arr0, Arr0 + (sizeof(Arr0) / sizeof(Arr0[0]))); int Arg1 = 7; verify_case(0, Arg1, getCompressedSize(Arg0)); }
+	void test_case_1() { string Arr0[] = {"xy*x*y*x*y*"}; vector <string> Arg0(Arr0, Arr0 + (sizeof(Arr0) / sizeof(Arr0[0]))); int Arg1 = 3; verify_case(1, Arg1, getCompressedSize(Arg0)); }
+	void test_case_2() { string Arr0[] = {"abcdefg!@#$%^"}; vector <string> Arg0(Arr0, Arr0 + (sizeof(Arr0) / sizeof(Arr0[0]))); int Arg1 = 13; verify_case(2, Arg1, getCompressedSize(Arg0)); }
+	void test_case_3() { string Arr0[] = {"xy@z@ab@c@yc%%%"}; vector <string> Arg0(Arr0, Arr0 + (sizeof(Arr0) / sizeof(Arr0[0]))); int Arg1 = 9; verify_case(3, Arg1, getCompressedSize(Arg0)); }
+	void test_case_4() { string Arr0[] = {"abc++",
+"abc++",
+"abc++",
+"a",
+"b",
+"c",
+"*",
+"*",
+"*",
+"*",
+"*"}; vector <string> Arg0(Arr0, Arr0 + (sizeof(Arr0) / sizeof(Arr0[0]))); int Arg1 = 13; verify_case(4, Arg1, getCompressedSize(Arg0)); }
+
+// END CUT HERE
+
+};
+
+// BEGIN CUT HERE
+int main()
+{ int t; cin>>t;
+        PostfixRLE ___test;
+        ___test.run_test(t);
+        system("pause");
+}
+// END CUT HERE

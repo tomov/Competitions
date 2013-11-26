@@ -1,0 +1,40 @@
+/*
+TASK: flatten
+LANG: C++
+*/
+
+#include<iostream>
+#define maxn 1000001
+using namespace std;
+
+int N,K;
+int a[maxn],d[maxn];
+int mini=100000000,pos;
+
+inline int abs(int x)
+{
+if(x<0)return x*(-1);
+ else return x;
+}
+
+void shit_solve()
+{
+ for(int i=1;i<=N-K+1;i++){
+  for(int j=i+1;j<K+i;j++)
+   d[i]=d[i]+abs(a[i]-a[j]); 
+   
+   if(d[i]<mini) {mini=d[i]; pos=i;}
+    }
+}
+
+int main()
+{
+ scanf("%d %d",&N,&K);
+ 
+  for(int i=1;i<=N;i++)
+   scanf("%d",&a[i]);
+
+shit_solve();
+cout<<mini<<endl<<pos<<endl;   
+return 0;
+}

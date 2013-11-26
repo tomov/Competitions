@@ -1,0 +1,93 @@
+struct fract{
+	LL a,b;
+	fract(){ a=0,b=1; }
+	void normalize()
+	 {	 if (b<0) b=-b,a=-a; 
+	     LL g=__gcd(a,b);
+	     if (g<0) g=-g;
+		 a/=g,b/=g; 
+	 }
+	fract(LL aa,LL bb){ a=aa,b=bb; normalize(); }
+
+	// assignment
+	
+	fract& operator=(fract t)
+	{ a=t.a,b=t.b; return *this; }
+	fract& operator=(LL t)
+	{ a=t,b=1; return *this; }
+};
+
+ostream& operator<< (ostream& s,const fract &t)
+{ s<<t.a<<"/"<<t.b; return s; }
+
+//arithmetic
+
+fract operator-(fract t)
+{ return fract(-t.a,t.b); }
+
+fract operator+(fract u,fract t)
+{ LL lcm=u.b/__gcd(u.b,t.b)*t.b;
+  return fract( lcm/u.b*u.a + lcm/t.b*t.a , lcm );
+}
+
+fract operator-(fract u,fract t)
+{ return u+(-t); }
+
+fract operator*(fract u,fract t)
+{	return fract(u.a*t.a , u.b*t.b); }
+
+fract operator/(fract u,fract t)
+{ return fract(u.a*t.b , u.b*t.a); }
+
+bool operator<(fract u,fract t)
+{ return u.a*t.b < u.b*t.a; }
+
+bool operator>(fract u,fract t)
+{ return t<u; }
+
+bool operator==(fract u,fract t)
+{ return u.a==t.a && u.b==t.b; }
+
+//arithmetic with LL's
+
+fract operator+(LL x,fract t)
+{ return fract(x,1)+t; }
+
+fract operator+(fract t,LL x)
+{ return fract(x,1)+t; }
+
+fract operator-(LL x,fract t)
+{ return fract(x,1)-t; }
+
+fract operator-(fract t,LL x)
+{ return t-fract(x,1); }
+
+fract operator*(LL x,fract t)
+{ return fract(t.a*x,t.b); }
+
+fract operator*(fract t,LL x)
+{ return fract(t.a*x,t.b); }
+
+fract operator/(LL x,fract t)
+{ return fract(x*t.b,t.a); }
+
+fract operator/(fract t,LL x)
+{ return fract(t.a,t.b*x); }
+
+bool operator<(LL x,fract t)
+{ return fract(x,1)<t; }
+
+bool operator<(fract t,LL x)
+{ return t<fract(x,1); }
+
+bool operator>(LL x,fract t)
+{ return fract(x,1)>t; }
+
+bool operator>(fract t,LL x)
+{ return t>fract(x,1); }
+
+bool operator==(LL x,fract t)
+{ return fract(x,1)==t; }
+
+bool operator==(fract t,LL x)
+{ return t==fract(x,1); }

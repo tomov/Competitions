@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="bg" lang="bg" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="KEYWORDS" content="Suffix Array" />
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="/favicon.ico" />
+    <title>Suffix Array - CsStuff</title>
+    <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/wiki/skins/monobook/main.css"; /*]]>*/</style>
+    <link rel="stylesheet" type="text/css" media="print" href="/wiki/skins/common/commonPrint.css" />
+    <!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css";</style><![endif]-->
+    <!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css";</style><![endif]-->
+    <!--[if gte IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css";</style><![endif]-->
+    <!--[if IE]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+    <script type="text/javascript" src="/wiki/index.php?title=-&amp;action=raw&amp;gen=js"></script>    <script type="text/javascript" src="/wiki/skins/common/wikibits.js"></script>
+    <style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D1%8F%D0%A3%D0%B8%D0%BA%D0%B8:Monobook.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css";
+/*]]>*/</style>          </head>
+  <body         class="ns-0">
+    <div id="globalWrapper">
+      <div id="column-content">
+	<div id="content">
+	  <a name="top" id="contentTop"></a>
+	  	  <h1 class="firstHeading">Suffix Array</h1>
+	  <div id="bodyContent">
+	    <h3 id="siteSub">от CsStuff, свободната енциклопедия</h3>
+	    <div id="contentSub"></div>
+	    	    	    <!-- start content -->
+	    <table border="0" id="toc"><tr id="toctitle"><td align="center">
+<b>Съдържание</b> <script type="text/javascript">showTocToggle("показване","скриване")</script></td></tr><tr id="tocinside"><td>
+<div class="tocline"><a href="#.D0.92.D1.8A.D0.B2.D0.B5.D0.B4.D0.B5.D0.BD.D0.B8.D0.B5">1 Въведение</a><br /></div>
+<div class="tocindent">
+<p><a href="#.D0.94.D0.B5.D1.84.D0.B8.D0.BD.D0.B8.D1.86.D0.B8.D1.8F">1.1 Дефиниция</a><br />
+</p>
+</div>
+<div class="tocline"><a href="#.D0.9A.D0.BE.D0.BD.D1.81.D1.82.D1.80.D1.83.D0.B8.D1.80.D0.B0.D0.BD.D0.B5">2 Конструиране</a><br /></div>
+<div class="tocindent">
+<p><a href="#O.28nlogn.29">2.1 O(nlogn)</a><br />
+<a href="#O.28n.29">2.2 O(n)</a><br />
+</p>
+</div>
+<div class="tocline"><a href="#.D0.9E.D0.BF.D0.B5.D1.80.D0.B0.D1.86.D0.B8.D0.B8">3 Операции</a><br /></div>
+<div class="tocline"><a href="#.D0.A0.D0.B5.D0.B0.D0.BB.D0.B8.D0.B7.D0.B0.D1.86.D0.B8.D1.8F">4 Реализация</a><br /></div>
+<div class="tocindent">
+<p><a href="#.D0.9F.D1.80.D0.B8.D0.BB.D0.BE.D0.B6.D0.B5.D0.BD.D0.B8.D1.8F">4.1 Приложения</a><br />
+<a href="#.D0.92.D1.80.D1.8A.D0.B7.D0.BA.D0.B8">4.2 Връзки</a><br />
+</p>
+</div>
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Suffix_Array&amp;action=edit&amp;section=1" title="Suffix Array">редактиране</a>]</div><a name=".D0.92.D1.8A.D0.B2.D0.B5.D0.B4.D0.B5.D0.BD.D0.B8.D0.B5"></a><h2> Въведение </h2>
+<p>алабала и какъв е смисъла от него.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Suffix_Array&amp;action=edit&amp;section=2" title="Suffix Array">редактиране</a>]</div><a name=".D0.94.D0.B5.D1.84.D0.B8.D0.BD.D0.B8.D1.86.D0.B8.D1.8F"></a><h3> Дефиниция </h3>
+<p>Какво точно е (препоръчвам да използваш 0 базирано индексиране).
+</p><p>Пример
+</p><p>Кякво може да се прави с него
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Suffix_Array&amp;action=edit&amp;section=3" title="Suffix Array">редактиране</a>]</div><a name=".D0.9A.D0.BE.D0.BD.D1.81.D1.82.D1.80.D1.83.D0.B8.D1.80.D0.B0.D0.BD.D0.B5"></a><h2> Конструиране </h2>
+<p>Спомени че може да се направи от Suffix Tree и как.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Suffix_Array&amp;action=edit&amp;section=4" title="Suffix Array">редактиране</a>]</div><a name="O.28nlogn.29"></a><h3> <span class="texhtml"><i>O</i>(<i>n</i>log<i>n</i>)</span> </h3>
+<p>Това е което в средния случай е линейно, но в най лошия е <span class="texhtml"><i>O</i>(<i>n</i>log<i>n</i>)</span>. Ако разбереш следващото, може да не го описваш подробно.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Suffix_Array&amp;action=edit&amp;section=5" title="Suffix Array">редактиране</a>]</div><a name="O.28n.29"></a><h3> <span class="texhtml"><i>O</i>(<i>n</i>)</span> </h3>
+<p>&nbsp;&nbsp;&nbsp;Heka стрингът <i >Т = t<sub >0</sub >t<sub >1</sub >...t<sub >n</sub ></i > е дефиниран върху азбуката <i >&sum; = {0..n}</i >. Нека последният елемент на <i >Т</i > ни е буква, която не се среща никъде другаде в <i >Т</i >, и е лексикографски най - малката буква в <i >&sum;</i >. Означаваме тази буква с <i >'$'</i >. Дефинираме <i >Т<sub >i</sub >=t<sub >i</sub >t<sub >i+1</sub >...t<sub >n</sub ></i >, като суфикс на <i >Т</i >, започващ с <i >t<sub >i</sub ></i >. Класифицираме всички суфикси на <i >Т</i > в два типа<i >:</i > суфиксът <i >Т<sub >i</sub ></i > е от тип <i >S</i >, ако <i >T<sub >i</sub > &lt; T<sub >i+1</sub ></i > и е от тип <i >L</i >, ако <i >Т<sub >i+1</sub > &lt; Т<sub >i</sub ></i >.(Означението <i >T<sub >i</sub > &lt; T<sub >i+1</sub ></i > ще използваме, за да покажем, че <i >T<sub >i</sub ></i > е лексикографски по-малък от <i >T<sub >i+1</sub ></i >) Последният суфикс <i >T<sub >n</sub ></i > класифицираме като тип <i >S</i > и <i >L</i > едновременно, тъй като той няма с какво да бъде сравнен.
+</p><p><b >Лема 1:</b > Всички суфикси на <i >Т</i > могат да бъдат класифицирани, като тип <i >L</i > или <i >S</i > за <i >O(n)</i > време.
+</p><p><b >Доказателство:</b > Разглеждаме суфиксът <i >Т<sub >i</sub ></i > (i &lt; n) <i >:</i ><br />
+<b >Случай 1:</b > Ako <i >t<sub >i</sub > &ne; t<sub >i+1</sub ></i >  - сравняваме <i >t<sub >i</sub ></i > и <i >t<sub >i+1</sub ></i > за да определим типа на <i >Т<sub >i</sub ></i >.<br />                                          
+<b >Случай 2:</b > Ako <i >t<sub >i</sub > = t<sub >i+1</sub ></i >  - намираме най-малкото <i >j &gt; i</i >, такова че <i >t<sub >j</sub > &ne; t<sub >i</sub ></i >.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ако <i >t<sub >j</sub > &gt; t<sub >i</sub ></i >, тогава <i >T<sub >i</sub >, T<sub >i+1</sub >, ... , T<sub >j-1</sub ></i > са от тип<i >S</i >.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ако <i >t<sub >j</sub > &lt; t<sub >i</sub ></i >, тогава <i >T<sub >i</sub >, T<sub >i+1</sub >, ... , T<sub >j-1</sub ></i > са от тип <i >L</i >.<br />
+Така всички суфикси могат да бъдат класифицирани, като тип <i >S</i > или <i >L</i >, като сканираме <i >Т</i > отляво на дясно за линейно време <i >O(n)</i >.
+</p><p><b >Лема 2:</b > Суфикс от тип <i >S</i > е лексикографски по-голям от суфикс от суфикс от тип <i >L</i >, започващи с една и съща буква.
+</p><p><b >Доказателство:</b >Нека <i >T<sub >i</sub ></i > е суфикс от тип <i >S</i >, a <i >Т<sub >j</sub ></i > е суфикс от тип <i >L</i >, като и двата суфикса да започват с буква <i >c</i >. Допускаме, че <i >T<sub >i</sub > &lt; T<sub >j</sub ></i >.Тогава можем да запишем <i >T<sub >i</sub >=c&alpha;c<sub >1</sub >&beta;</i > и <i >T<sub >j</sub > = c&alpha;c<sub >2</sub >&gamma;</i >, където <i >c<sub >1</sub > &ne; c<sub >2</sub ></i > и <i >&alpha;</i >, <i >&beta;</i > и <i >&gamma;</i > са (възможно е и празни) стрингове.<br />
+<b >Случай 1:</b > &alpha; съдържа буква различна от <i >c</i >. Нека <i >c<sub >3</sub ></i > е най - лявата буква в <i >a</i >, която е различна от <i >c</i >. Тъй като <i >T<sub >i</sub ></i > е суфикс от тип <i >S</i >,<i >c<sub >3</sub > &gt; c</i >. Аналогично за <i >T<sub >j</sub ></i > <i >c<sub >3</sub > &lt; c</i >. Това води до противоречие, следователно допускането, че <i >T<sub >i</sub > &lt; T<sub >j</sub ></i > е грешно.<br />
+<b >Случай 2:</b > &alpha; не са съдържа буква, различна от <i >c</i >. Тъй като <i >T<sub >i</sub ></i > е от тип <i >S &rArr; c<sub >1</sub > &ge; c, T<sub >j</sub > </i > е от тип <i >L &rArr; c<sub >2</sub > &le; c &rArr; c<sub >2</sub > &le; c<sub >1</sub ></i >, но <i >T<sub >i</sub > &lt; T<sub >j</sub > &rArr; c<sub >1</sub > &lt; c<sub >2</sub ></i >, което води до противоречие с допускането, че <i >T<sub >i</sub > &lt; T<sub >j</sub ></i >.
+</p><p><b >Извод 1:</b > В суфиксен масив на <i >Т</i >, всички суфикси от тип <i >S</i >, се появяват след суфиксите от тип <i >L</i >.
+</p><p>&nbsp;&nbsp;&nbsp;Heka <i >А</i > е масив, който съдържа индексите на всички суфикси на <i >Т</i >, не задължително в сортиран ред. Създаваме масив <i >R</i >, такъв че <i >R[i] = k</i >, ako <i >A[k] = i</i >(R пази позициите, където суфикса T<sub >i</sub > се намира в A). Когато променяме съдържанието на масива <i >A</i >, трява да се грижим за обновяване на съдържанието на масива <i >R</i >. Нека <i >B</i > ни е масив от всички суфикси от тип <i >S</i > подредени лексикографски. Използвайки <i >B</i > можем да сортираме лексикографски всички суфикси на <i >Т</i > по следния начин:<br />
+&nbsp;&nbsp;&nbsp;<i >1.</i > Групираме всички суфикси на <i >Т</i > по първата им буква в масива <i >А</i >, т.е всяка група съдържа всички суфикси, които започват с една и съща буква. Тази стъпка отнема линейно време <i >O(n)</i >.<br />
+&nbsp;&nbsp;&nbsp;<i >2.</i > Сканираме <i >B</i > от дясно на ляво. За всеки суфикс, посетен при сканирането, преместваме суфикса на текущия край на неговата група в <i >A</i > и изместваме текущия край с едно в ляво.Преместване на суфикс на дадена позиция означава да сменим местата на суфикса със суфикса заемащ дадената позиция. След като приключим сканирането на <i >B</i >, от <a href="/wiki/index.php?title=%D0%98%D0%B7%D0%B2%D0%BE%D0%B4_1&amp;action=edit" class="new" title="Извод 1">Извод 1</a> следва, че всички суфикси от тип <i >S</i > са на правилните си позиции. Тази стъпка отнема <i >O(|B|)=O(n)</i > време.<br />
+&nbsp;&nbsp;&nbsp;<i >3.</i > Сканираме <i >A</i > от ляво на дясно. За всяко <i >A[i]</i >, ако <i >Т<sub >А[i]-1</sub ></i > е суфикс от тип <i >L</i >, преместваме <i >А[i]</i > във текущото начало на групата му в <i >А</i > и увеличаваме текущото начало с 1. Тази стъпка отнема <i >О(n)</i > време и в края и <i >А</i > съдържа всички суфикси на <i >Т</i >, подредени лексикогафски. <a href="/wiki/index.php?title=%D0%9B%D0%B5%D0%BC%D0%B0_3&amp;action=edit" class="new" title="Лема 3">Лема 3</a> 
+доказва верността на тази стъпка.
+</p><p><b >Лема 3:</b > В стъпка 3, когато сканирането достигне <i >А[i]</i >, суфикса <i >T<sub >A[i]</sub ></i > е на правилната си позиция при лексикографско сортиране.
+</p><p><b >Доказателство:</b >
+Ще докажем лемата с индукция по <i >i</i >. Започваме с най - малкия суфикс в <i >Т</i >. Той е от тип <i >S</i > и неговата правилна позиция е <i >А[0]</i >. Нека <i >A[1]A[2]...A[i]</i > са първите <i >i</i > сортирани суфикса. Сега трябва да покажем, че когато сканирането достигне <i >А[i+1]</i >, тогава суфикса <i >T<sub >A[i+1]</sub ></i > е на правилната си позиция. Допускаме, че това твърдение е грешно. Тогава съществува суфикс , сочен от <i >А[k]</i > (k &gt; i + 1), който трябва да бъде на позиция 
+<i >А[i+1]</i >, т.е. <i >Т<sub >А[k]</sub > &lt; T<sub >A[i+1]</sub ></i >. Тъй като всички суфикси от тип
+<i >S</i > са вече сортирани, <i >T<sub >A[k]</sub ></i > и <i >T<sub >A[i+1]</sub ></i > са от тип <i >L</i >. Тъй като <i >А</i > е групирана по първите букви на суфиксите и суфикс не може да излезе от групата си, <i >T<sub >A[k]</sub ></i > и <i >T<sub >A[i+1]</sub ></i > започват с една и съща буква.
+Нека тази буква е <i >c</i >. Нека <i >Т<sub >А[i+1]</sub > = c&alpha;</i > и <i >T<sub >A[k]</sub ></i > е <i >c&beta;</i >, където <i >&alpha;</i > и <i >&beta;</i > са стрингове. Тъй като <i >&beta; &lt; &alpha;</i >, <i >Т<sub >А[k]</sub ></i > трябва да бъде преместен в текъщото начало на групата си преди <i >Т<sub >А[i+1]</sub ></i >. Следователно <i >Т<sub >А[k]</sub ></i > не може да стои от дясно на <i >Т<sub >А[i+1]</sub ></i >, което води до противоречие.
+</p><p>&nbsp;&nbsp;&nbsp;Дефинираме позицията <i >i</i > да бъде от тип <i >S</i >, ако суфикса <i >T<sub >i</sub ></i > е от тип <i >S</i >, иначе позицията <i >i</i > да бъде от тип <i >L</i >, ако <i >Т<sub >i</sub ></i > е от тип <i >L</i >. Подниза <i >t<sub >i</sub >...t<sub >j</sub ></i > наричаме низ от тип <i >S</i >, ако <i >i</i > и <i >j</i > са позиции от тип <i >S</i > и всички позиции между <i >i</i > и <i >j</i > са от тип <i >L</i >.
+&nbsp;&nbsp;&nbsp;Целта ни е да сортираме всички суфикси от тип <i >S</i > от <i >Т</i >. За целта, първо ще сортираме всички, тип <i >S</i > подстрингове. Сортирането, генерира групи, в които всички субстрингове са идентични. Номерираме групите от 0 в последоватено нарастващ ред. След това генерираме нов стринг Т&prime; по следния начин<i >:</i > Сканираме <i >Т</i > отляво на дясно и за всяка позиция от тип <i >S</i > пишем номера на групата. От този стринг, от номерата на групите конструираме <i >Т&prime;</i >. Всеки суфикс от тип <i >S</i > от <i >Т</i > отговаря на точно един суфикс от <i >Т&prime;</i > (<a href="/wiki/index.php?title=%D0%9B%D0%B5%D0%BC%D0%B0_4&amp;action=edit" class="new" title="Лема 4">Лема 4</a>).Тогава сортирането на <i >Т</i > ще е еквивалентно, на сортирането на <i >Т&prime;</i >. Сортираме <i >Т&prime;</i > рекурсивно.
+</p><p>&nbsp;&nbsp;&nbsp;Първо трябва да сортираме всички тип <i >S</i > подстрингове за линейно време. За всеки суфикс <i >Т<sub >i</sub ></i >, дефинираме <i >S-distance</i >, което е разстоянието от стартовата позиция <i >i</i > на суфикса, до най - близката, от ляво, позиция от тип <i >S</i >. Запазваме тези стойности в масив <i >Dist</i >, като <i >Dist[i] = {S-distance на суфикса Ti} </i >. Ако не съществува <i >S</i > позиция от ляво на <i >i</i >, <i >Dist[i] = 0</i >.Сортираме <i >S</i > подстринговете по следния начин:<br />
+&nbsp;&nbsp;&nbsp;<i >1.</i > За всеки суфикс от <i >А</i >, изчисляваме S-Distance, като сканираме <i >T</i > от ляво на дясно и запазваме разстоянието от текущата позиция до най - близката от ляво <i >S</i >позиция. Докато на позиция <i >i S-Distance</i > за <i >Т<sub >i</sub ></i > е известна я записваме в <i >Dist[i]</i >. По този начин попълваме Dist за линейно време.<br />
+&nbsp;&nbsp;&nbsp;<i >2.</i > Нека <i >m</i > е най - голямата <i >S-Distance</i >. Създаваме <i >m</i > списъка, такива че, списъкът <i >j</i > (1 &le; j &le; m), съдържа всички суфикси с <i >S-Distance = j</i >. Списъците са подредени по реда, по който се появяват в <i >A</i >. Това може да се постигне, чрез сканиране на <i >A</i > от ляво надясно за линейно време, като се обръщаме към <i >Dist[A[i]]</i >, за да сложим <i >T<sub >i</sub ></i >в правилният списък.<br />
+&nbsp;&nbsp;&nbsp;<i >3.</i > Сортирането на <i >S</i > подстринговете става като последователно
+сортираме по техните <i >j-ти</i > букви. Това става , като обхождаmе последователно списъците и за всеки списък <i >j</i > вземамаме елемента на позиция <i >i</i > и преместваме елемента <i >t<sub >i-j</sub ></i > от списъка <i >A</i > в текущото начало на групата му.Тъй като общия размер на списъците е <i >O(n)</i >, то сортирането става за време <i >O(n)</i >.
+</p><p><b >Лема 4:</b > Нека <i >T<sub >i</sub ></i > и <i >T<sub >j</sub ></i > са два суфикса на <i >T</i > и нека <i >T&prime;<sub >i&prime;</sub ></i > и <i >T&prime;<sub >j&prime;</sub ></i > са съответните им суфикси в Т&prime;. Тогава, <i >T<sub >i</sub ></i > &lt; <i >T<sub >i</sub ></i > &hArr; <i >T&prime;<sub >i&prime;</sub ></i > &lt; <i >T&prime;<sub >j&prime;</sub ></i >
+</p><p><b >Доказателство:</b > Първо ще докажем, че <i >T&prime;<sub >i&prime;</sub ></i > &lt; <i >T&prime;<sub >j&prime;</sub ></i > &rArr; <i >T<sub >i</sub ></i > &lt; <i >T<sub >i</sub ></i >.  Префиксите 
+<i >T<sub >i</sub ></i > и <i >T<sub >j</sub ></i >, отговарящи на най-дългия общ префикс на 
+<i >T&prime;<sub >i&prime;</sub ></i > и <i >T&prime;<sub >j&prime;</sub ></i > трябва да са 
+идентични. Това е, защотото, ако две групи са с един и същи номер, тогава съответстващите 
+подстрингове трябва да са едни и същи. Разглеждаме най-лявата позиция в която 
+<i >T&prime;<sub >i&prime;</sub ></i > и <i >T&prime;<sub >j&prime;</sub ></i > се различават. 
+Такава позиция съществува и буквите (номерата на групите) на 
+<i >T&prime;<sub >i&prime;</sub ></i > и <i >T&prime;<sub >j&prime;</sub ></i > в тази позиция 
+определя кое от двете, <i >T&prime;<sub >i&prime;</sub ></i > или 
+<i >T&prime;<sub >j&prime;</sub ></i > е лексикографски по-малко. Нека <i >k</i > е номера на 
+групата в <i >T&prime;<sub >i&prime;</sub >&gt;</i > и <i >l</i >, бъде номера на групата в 
+<i >T&prime;<sub >j&prime;</sub >&gt;</i > на тази позиция. Тъй като 
+<i >T&prime;<sub >i&prime;</sub >&gt;</i > &lt; <i >T&prime;<sub >j&prime;</sub >&gt;</i >, то <i >k &lt; l</i >. 
+Нека <i >&alpha;</i > е подстрингът отговарящ на <i >k</i > и <i >&beta;</i > е подстринга.<br />
+<b >Случай 1:</b > <i >&beta;</i > не е префикс на <i >&alpha;</i >. Във този случай, <i >k &lt; l 
+&rArr; &alpha; &lt; &beta;</i >, от което следва  <i >T<sub >i</sub ></i > &lt; 
+<i >T<sub >i</sub ></i >.<br />
+<b >Случай 2:</b > <i >&beta;</i > е префикс на <i >&alpha;</i >.Нека последната буква на 
+<i >&beta;</i > е <i >c</i >. Съответстващата позиция в <i >Т</i > е <i >S</i > тип позиция. 
+Позицията на отговарящия на <i >c</i > в <i >&alpha;</i >, трябва да е позиция от тип <i >L</i >. 
+Докато двата суфиксите, които започват от тези позиции започват с една и съща буква, от 
+<b >Извод 1</b >, суфиксът то тип <i >L</i > трябва да бъде лексикографски по-малък от
+суфикса от тип <i >S</i >. Следователно <i >T<sub >i</sub > &lt; T<sub >j</sub ></i >.
+От едно към едно съответствието между суфиксите <i >T&prime;</i > и и суфиксите от тип 
+<i >S</i > в <i >T</i >, следва, че <i >T<sub >i</sub ></i > &lt; <i >T<sub >i</sub ></i > &rArr; 
+<i >T&prime;<sub >i&prime;</sub >&gt;</i > &lt; <i >T&prime;<sub >j&prime;</sub ></i ><br />
+<b >Извод 2:</b > Сортирането на суфиксите на <i >T&prime;</i > намира сортирания ред на 
+суфиксите тип <i >S</i > от <i >T</i >.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Suffix_Array&amp;action=edit&amp;section=6" title="Suffix Array">редактиране</a>]</div><a name=".D0.9E.D0.BF.D0.B5.D1.80.D0.B0.D1.86.D0.B8.D0.B8"></a><h2> Операции </h2>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Suffix_Array&amp;action=edit&amp;section=7" title="Suffix Array">редактиране</a>]</div><a name=".D0.A0.D0.B5.D0.B0.D0.BB.D0.B8.D0.B7.D0.B0.D1.86.D0.B8.D1.8F"></a><h2> Реализация </h2>
+<p>Сорс код който конструира.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Suffix_Array&amp;action=edit&amp;section=8" title="Suffix Array">редактиране</a>]</div><a name=".D0.9F.D1.80.D0.B8.D0.BB.D0.BE.D0.B6.D0.B5.D0.BD.D0.B8.D1.8F"></a><h3> Приложения </h3>
+<p>Някоя друга задачка която се решава с него.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Suffix_Array&amp;action=edit&amp;section=9" title="Suffix Array">редактиране</a>]</div><a name=".D0.92.D1.80.D1.8A.D0.B7.D0.BA.D0.B8"></a><h3> Връзки </h3>
+<p>Линкове за повече информация по-въпроса (примерно нещата които ти си чела). Макар и малка тази секция е доста важна и полезна.
+</p>
+<!-- Saved in parser cache with key wikidb:pcache:idhash:969-1!1!0!1!0!1!0!!bg and timestamp 20061219172040 -->
+<div class="printfooter">
+Взето от "<a href="http://judge.openfmi.net/wiki/index.php/Suffix_Array">http://judge.openfmi.net/wiki/index.php/Suffix_Array</a>".</div>
+	    	    <!-- end content -->
+	    <div class="visualClear"></div>
+	  </div>
+	</div>
+      </div>
+      <div id="column-one">
+	<div id="p-cactions" class="portlet">
+	  <h5>Views</h5>
+	  <ul>
+	    <li id="ca-nstab-main"
+	       class="selected"	       ><a href="/wiki/index.php/Suffix_Array">Статия</a></li><li id="ca-talk"
+	       class="new"	       ><a href="/wiki/index.php?title=%D0%91%D0%B5%D1%81%D0%B5%D0%B4%D0%B0:Suffix_Array&amp;action=edit">Беседа</a></li><li id="ca-edit"
+	       	       ><a href="/wiki/index.php?title=Suffix_Array&amp;action=edit">Редактиране</a></li><li id="ca-history"
+	       	       ><a href="/wiki/index.php?title=Suffix_Array&amp;action=history">История</a></li>	  </ul>
+	</div>
+	<div class="portlet" id="p-personal">
+	  <h5>Лични инструменти</h5>
+	  <div class="pBody">
+	    <ul>
+	    <li id="pt-login"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Userlogin&amp;returnto=Suffix_Array">Влизане</a></li>	    </ul>
+	  </div>
+	</div>
+	<div class="portlet" id="p-logo">
+	  <a style="background-image: url(/wiki/skins/common/images/wiki.png);"
+	    href="/wiki/index.php/%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0"
+	    title="Начална страница"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="portlet" id="p-nav">
+	  <h5>Навигация</h5>
+	  <div class="pBody">
+	    <ul>
+	      	      <li id="n-mainpage"><a href="/wiki/index.php/%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Начална страница</a></li>	      <li id="n-portal"><a href="/wiki/index.php/CsStuff:%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB">Портал за общността</a></li>	      <li id="n-currentevents"><a href="/wiki/index.php/Current_events">Текущи събития</a></li>	      <li id="n-recentchanges"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Recentchanges">Последни промени</a></li>	      <li id="n-randompage"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Randompage">Случайна страница</a></li>	      <li id="n-help"><a href="/wiki/index.php/%D0%9F%D0%BE%D0%BC%D0%BE%D1%89:%D0%9F%D0%BE%D0%BC%D0%BE%D1%89">Помощ</a></li>	      <li id="n-sitesupport"><a href="/wiki/index.php/CsStuff:Site_support">Дарения</a></li>	    </ul>
+	  </div>
+	</div>
+	<div id="p-search" class="portlet">
+	  <h5><label for="searchInput">Търсене</label></h5>
+	  <div class="pBody">
+	    <form name="searchform" action="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Search" id="searchform">
+	      <input id="searchInput" name="search" type="text"
+	        accesskey="s" value="" />
+	      <input type='submit' name="go" class="searchButton" id="searchGoButton"
+	        value="Отваряне"
+	        />&nbsp;<input type='submit' name="fulltext"
+	        class="searchButton"
+	        value="Търсене" />
+	    </form>
+	  </div>
+	</div>
+	<div class="portlet" id="p-tb">
+	  <h5>Кутия с инструменти</h5>
+	  <div class="pBody">
+	    <ul>
+		  		  <li id="t-whatlinkshere"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Whatlinkshere&amp;target=Suffix_Array">Какво сочи насам</a></li>
+		  		  <li id="t-recentchangeslinked"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Recentchangeslinked&amp;target=Suffix_Array">Сродни промени</a></li>
+		  	      	      	      	      	      	      	      	      	      <li id="t-specialpages"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Specialpages">Специални страници</a></li>	      	    </ul>
+	  </div>
+	</div>
+	      </div><!-- end of the left (by default at least) column -->
+      <div class="visualClear"></div>
+      <div id="footer">
+    <div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/wiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>		<ul id="f-list">
+	  <li id="f-lastmod"> Последна промяна на страницата: 05:16, 21 фев 2006.</li>	  <li id="f-viewcount">Страницата е била преглеждана 336 пъти.</li>	  	  	  <li id="f-about"><a href="/wiki/index.php/CsStuff:%D0%97%D0%B0_CsStuff" title="CsStuff:За CsStuff">За CsStuff</a></li>	  <li id="f-disclaimer"><a href="/wiki/index.php/CsStuff:%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F_%D0%B7%D0%B0_%D0%BF%D0%BE%D0%BB%D0%B7%D0%B2%D0%B0%D0%BD%D0%B5" title="CsStuff:Условия за ползване">Условия за ползване</a></li>	</ul>
+      </div>
+    </div>
+    <!-- Served by judge in 0.23 secs. -->
+  </body>
+</html>

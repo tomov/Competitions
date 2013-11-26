@@ -1,0 +1,162 @@
+		     <html>
+<head><title>Olimpiada Informatyczna</title>
+<meta name="Author" content="Piotr Stańczyk (piotr@econews.pl)">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-2">
+<link rel="stylesheet" href="Olimpiada Informatyczna3_files/stylep00.css" type="text/css">
+</head>
+<body text=black marginheight=0 topmargin=0 marginwidth=0 leftmargin=0>
+<style>
+<!--
+
+ #konkurs {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+ #zid, #zadanie, #autor {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+ #zid { text-align: left }
+ #autor { text-align: right }
+
+ #etap, #data {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+//-->
+</style>
+
+<table width="90%" border="0">
+<tr>
+<td valign="MIDDLE" colspan=2>
+<div id="konkurs">VIII Olimpiada Informatyczna 2000/2001</div>
+</td>
+<!--
+<td width="75" valign="MIDDLE">
+<img src="../../img/oi6logo.gif">
+</td>
+-->
+</tr>
+</table>
+
+
+<hr>
+
+<table width="90%" cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td align=left>
+<div id="zid">Task: MRO</div>
+</td>
+<td>
+<div id="autor">Author: Krzysztof Loryś</div>
+</td>
+</tr>
+</table>
+<div id="zadanie">Ants and the ladybug</div>
+
+<hr>
+<table width="90%">
+<tr>
+<td id="etap">II stage contest, the second day</td>
+<td align="right" id="data">
+&nbsp;
+</td>
+</tr>
+</table>
+
+
+<p>
+  As we all know ants are able to raise aphides. Aphides produce sweet honey dew, which is drank
+  by ants. Ants defend aphides against the bitterest enemies of theirs - ladybugs. On the tree near to the anthill there lives
+  such culture of aphides. Aphides feed on leaves and ramifications of the tree.
+  There are <i>n</i> ant-guards (numbered from 1 to <i>n</i>). A ladybug threatens the culture, she always sits in places where aphides appear,
+  (i.e. on leaves or ramifications). When a ladybug sits on the tree guard-ants set off in her direction in order to chase her away. They comply with the following rules:&nbsp;
+<ul>
+    <li> between any two chosen places on the tree (leaves or ramifications)
+      there is exactly one way to go without turning back - each of the ants
+      starts going along such route to the place of ladybug's landing,&nbsp;
+    <li> if there is an ant in the place of the ladybug's landing, the ladybug takes off immediately,
+    <li> if there is another ant on the route to the ladybug landing place, then
+      the ant that is farther from the ladybug stops its wandering and remains
+      on
+      its current position,
+    <li> if two or more ants try to get to the same ramification of the tree, only one reaches it - the one with the
+      least number, the others stay on their positions (leaves or
+      ramifications),
+    <li> an ant which gets to the place of ladybug's landing chases it away  and stays on this position.&nbsp;
+  
+  </ul>
+<p>The ladybug is stubborn and lands on the tree again. Then ants set off again trying to chase away the intruder. In order to simplify we assume that getting
+through one branch connecting a leaf with a
+ramification or connecting two ramifications takes a unit of time.&nbsp;</p>
+
+<h3>Task</h3>
+<p>Write a program which:</p>
+    <ul>
+      <li> reads from the input file MRO.IN the description of the tree, the start positions of ants,
+        and places where the ladybug lands, 
+      <li> for each ant finds its final position and number of times this ant chased
+        the ladybug away, 
+      <li> writes the result into the output file MRO.OUT.
+    </ul>
+    
+  <h3>Input</h3>
+In the first line of the text file MRO.OUT there is one integer <i>n</i>, equal to the number of leaves and ramifications
+on the tree, 1&lt;=<i>n</i>&lt;=5000. We assume that leaves and ramifications are numbered from 1 to
+<i>n</i>. Each of the following <i>n</i>-1 lines describes a branch --- a
+description consist of two integers
+<i> a</i> and <i>b</i>, it means that a given branch connects places
+<i> a</i> and <i> b</i> of the tree. The branches allow to get from one place to the another. In the
+(<i>n</i>+1)-st line there is one integer <i>k</i>, 1&lt;=<i>k</i>&lt;=1000 and <i> k</i>&lt;=<i>n</i>;
+<i>k</i> is equal to number of ants that guard the tree. In each of the following
+<i> k</i> lines one positive integer (not grater than <i>n</i>) is written. An integer written in
+(<i>n</i>+1+<i>i</i>)<i>-</i>th line is a start position of the&nbsp; <i>i</i>-th
+ant. There is no position on the tree (neither leave nor ramification) with more than one ant. In the line
+<i>n</i>+<i>k</i>+2 there is one integer
+<i>l</i>, 1&lt;=<i>l</i>&lt;=500, <i>l</i> says how many times a ladybug lands on the tree. In each of the following
+<i> l</i> lines one positive integer (not grater than <i>n</i>) is written.
+These numbers describe
+the places in which the ladybug successively lands.
+
+  <h3>Output</h3>
+
+<p>Your program should write <i> k</i> lines in the output file MRO.OUT. In the <i>i</i>-th line there should be written two integers
+separated by a single space - the final position of  the <i>i</i>-th ant  (number of
+a ramification or a leaf) and the number indicating how many times the <i>i</i>-th
+ant chased the ladybug away. </p>
+
+  <h3>Example</h3>
+<p>For the input file MRO.IN:</p>
+
+  <table>
+  <tr valign=top>
+  <td><pre>4
+1 2
+1 3
+2 4
+2
+1
+2
+2
+2
+4
+</pre>
+</td>
+<td>
+<img src="Olimpiada Informatyczna3_files/mrowki00.gif" width="136" height="80">
+</td>
+</tr>
+  </table>
+  
+the correct answer is the output file MRO.OUT:
+<pre>
+1 0
+4 2</pre>
+
+<!-- This document saved from http://www.oi.edu.pl/php/show.php?ac=e181113&module=show&file=zadania/oi8/mrowki&print=yes -->

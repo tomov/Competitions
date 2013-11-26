@@ -1,0 +1,616 @@
+
+Session Start: Sat Jun 26 20:35:28 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+<VelinTzanov> Iunaci dnes shte pochnem 30-tina minuti po-kysno. OK?
+* VelinTzanov sets mode: +ooo Prince_of_Dawn_ rangel__ sssa88
+* VelinTzanov sets mode: +o Swetko
+<VelinTzanov> Niakoi byrza li za niakyde dnes?
+<rangel__> tova sled oshte kolko oznachava?
+<Swetko> ok
+<Prince_of_Dawn_> ne
+<rangel__> (ne byrzam za nikyde prosto da znam)
+<Prince_of_Dawn_> ok
+* Prince_of_Dawn_ has quit IRC (Ping timeout: 180 seconds)
+<VelinTzanov> Hmm... Borisov neshto go niama.
+* Logging #ioi to 'logs\ioi_2004_06_27.log'
+<VelinTzanov> Swetko, ako iskash mu zvynni. Az shte se zabavia oshte 3-4 minutki shtom go niama.
+<Swetko> ok
+<Swetko> toi moshe da e trygnal kum zala
+<Swetko> b
+<Swetko> b
+<VelinTzanov> OK
+<Swetko> borisov tuk li e
+<VelinTzanov> Ochevidno ne. :)
+<Swetko> borisov tuk li e
+<Swetko> na men mi kaza che e tuk
+<Swetko> ok
+<Swetko> pak ste mu zvanna
+<Swetko> kaza
+<Swetko> che ste probva oste niakolko puti 
+<Swetko> i che ako ne stane
+<Swetko> ste hodi
+<Swetko> na zala
+<VelinTzanov> Kolko vreme gore-dolu e tova?
+<Swetko> do 10 min
+<VelinTzanov> OK
+<Swetko> ste doidel
+<Swetko> kaza ako iskame da pochvame
+<VelinTzanov> Kajete vie imate li niakakvi vyprosi po materiala?
+<Swetko> ami ne
+<VelinTzanov> Shte go izchakame za materiala, no inache shte pochvame.
+<VelinTzanov> Rangel, Vlado?
+<rangel__> materiala mi e qsen (pone taka si mislq :-), no convex se zakuchi izkljuchitelno zhestoko
+<sssa88> ne
+<Swetko> moia ne se e zakuchil
+<Swetko> prosto dokato si opravia koi cikul otjkude dokude da hodi
+<Swetko> tukmo sum go izmislil, no sega me boli glavata
+* Prince_of_Dawn has joined #ioi
+* CS sets mode: +v Prince_of_Dawn
+<VelinTzanov> Uchete se, momcheta, sega vi e vremeto.
+<Prince_of_Dawn> sajalqwam
+<VelinTzanov> Sega e momentyt da vidite zashto stavat tia bug-ove.
+<VelinTzanov> Niama problem, Borisov, nali ne si vinoven ti. :)
+* VelinTzanov sets mode: +o Prince_of_Dawn
+<sssa88> na men pyk mi se sluchi neshto mnogo stranno - convex beshe baven i bygav , rekoh da go napravq po-byrz i to vze che i buga izchezna i sega ne znam kyde mi e bila greshkata
+<Prince_of_Dawn> az shte se obajdam chesto za da widjdam dali sam tuk
+<VelinTzanov> :)
+<VelinTzanov> Mojesh da se ping-vash sam. :)
+<Prince_of_Dawn> ne znam kak stawa ;(
+<VelinTzanov> A zashto beshe baven, Vlado?
+<sssa88> amo konstantata neshto golqma beshe
+<sssa88> razkarah tam edni raboti ot naj-vytrshnite zikli i dolu-gore se opravi (sega raboti za malko nad 3s. namoq komp)
+<VelinTzanov> Znachi problemyt e bil che si imal izlishni raboti.
+<VelinTzanov> Izlishnite raboti znachat izlishni bug-ove v obshtia sluchai. :)
+<sssa88> e te ne bqha bash izlishni
+<VelinTzanov> No sa bili bug-avi dokolkoto razbiram. :)
+<Prince_of_Dawn> az ne se sprawih s tazi zadacha
+<sssa88> to se obhozda edin spisyk s tochki i prosto optimizaciiqta beshe pyrvo teq tochki deto sa nad nqkakyv y da si gi sloza v drug spisyk che da ne smqtam nasocheno lice izlishno
+<sssa88> i kato go napravih tova veche bug nqmashe
+<VelinTzanov> Borisov, zashto ne se spravi?
+<Prince_of_Dawn> mi nqkoi neshta mi bqha neqsni
+<Prince_of_Dawn> primerno
+<Prince_of_Dawn> moga li da sortiram tochkite okolo nqkoq druga kakto si go prawq pri obwiwka bez da me  e grija che te wsashnot w momenta sa tsiklichni
+<VelinTzanov> Kakvo e ciklichno ne razbrah.
+<Prince_of_Dawn> mi ostanalite tochki okolko edna tochka obrazuwat kragche
+<Prince_of_Dawn> funktsiqta za srawnenie ne e ednoznachna
+<Prince_of_Dawn> moje a>b>c no a<c
+<VelinTzanov> :)
+<VelinTzanov> Znachi ne ti e pravilna funkciata.:)
+<Prince_of_Dawn> poneje ne sortirash okolo tochkata nai-dolu nai w dqsno
+<VelinTzanov> Dobre e da gi razdelish na dve polovini togava.
+<Swetko> ami zatova s atan2
+<VelinTzanov> Chakaite da vidia az kak sym go pravil.
+<Prince_of_Dawn> prati mi source molq
+<VelinTzanov> Hehe... s atan2 sym go pravil. :)
+<VelinTzanov> Drugiat variant e da imash dva kriteria.
+<Swetko> drugoto stava s mnogo ifove
+<VelinTzanov> Pyrvi kriterii dali e v gornata ili v dolnata polovina. Vtori kriterii - orient-a.
+<VelinTzanov> Chak pyk mnogo if-ove.
+<sssa88> az taka go pravih
+<Prince_of_Dawn> az nikoga ne sam polzwal atan
+<Prince_of_Dawn> ma s dwata kriteriq shte se sprawq
+<Prince_of_Dawn> i oshte neshto iskah da pitam 
+<VelinTzanov> Swetko, ne si mi predal domashno neshto gledam.
+<VelinTzanov> Borisov, pratih ti source-ove. Pitai.
+<Prince_of_Dawn> kak si sortwame tochkite za da reshawame interatiwno
+<Prince_of_Dawn> (sashtoto sortirane li pozlwame?)
+<VelinTzanov> Aha
+<VelinTzanov> Okolo pk.
+<Prince_of_Dawn> okolo p1
+<VelinTzanov> Ne
+<VelinTzanov> Okolo pk
+<VelinTzanov> Delish tochkite na dve chasti - otnosno pravata p1-pk.
+<Prince_of_Dawn> ne
+* sssa88 has quit IRC (Success)
+<Prince_of_Dawn> drugo pitam
+<VelinTzanov> Kakvo pitash?
+<Prince_of_Dawn> nali izbirame pk po  spetsqlen nachi ( spetsqlen red )
+* sssa88 has joined #ioi
+<VelinTzanov> Taka li pravim?
+<VelinTzanov> Az mislia che vyrtim vsichki pk-ta nared.
+<VelinTzanov> Aaaa, da sortirame v krygche okolo p1.
+<VelinTzanov> Samo tezi deto sa nad p1 razbira se, shtoto p1 triabva da e "nai-dolna".
+<Prince_of_Dawn> mi nali ot edno pk swekdame zadachata do drugo pk
+<VelinTzanov> I kato vyrvish po krygcheto taka vinagi si smiatal tezi dinamichni koito shte ti triabvat.
+<Prince_of_Dawn> dwe sortiraniq li prawish ili pozwash staroto
+<VelinTzanov> Da.
+<VelinTzanov> Vlado, sega ti paste-vam.
+<Prince_of_Dawn> na wapros s ili ne moje da otgoworish da ;)
+<VelinTzanov> Iavno otgovaraiam na predishnia vypros znachi.
+<VelinTzanov> Ne razbiram vyprosa s "ili"-to.
+<rangel__> a setih se kakvo da pitam :-) ponezhe ne uspqh da si izmislq sortiraniqta po kulturen nachin gi precompute-vam predi osnovnite cikli, ta ima li nqkakyv po inteligenten nachin?
+<Prince_of_Dawn> wse edno
+<Prince_of_Dawn> tap e
+<Prince_of_Dawn> neznam dali shte moga da q napisha no shte se probwam
+<VelinTzanov> Rangele i az gi pravia predi ciklite. :)
+<VelinTzanov> Vsyshtnost sega kato pogledna imam edno vytre v cikyla... i edno vyn... hmm...
+<VelinTzanov> Prochetete mi source-a prosto. Niama li go na Infoman?
+<Prince_of_Dawn> ne
+<sssa88> ne
+<rangel__> ami az smqtam vsichkite vyzmozhni N sortiraniq i sled tova pravq edna luda indeksaciq po tezi sortiranite masivi (sigurno tam se omazva neshto, no to e prosto nevyzmozhno za debug... pochti :-)
+<VelinTzanov> Az Ivan Anev shte go bia znachi!
+<VelinTzanov> Zashto publikuva testovete bez avtorovoto! >:-[
+<VelinTzanov> Rangele, ne pishete kod koito ne mojete da debug-vate.
+<VelinTzanov> Pomislete 5 minuti kak da go napishete po-chisto... vmesto 50 minuti da go debug-vate (ili poveche)
+<Prince_of_Dawn> moje tsetso da mu go e dal taka
+<VelinTzanov> Pratih vi source-ovete si.
+<Prince_of_Dawn> imashe twoi sorce na hexa
+<VelinTzanov> Znachi shte biem ceco. :)
+<VelinTzanov> Haha... tia hexa ne e moia zadacha. :)
+<Prince_of_Dawn> golqm si poboinik ;)
+<VelinTzanov> Prosto Ivo beshe napravil N*LogN reshenie, a az N... taka da se kaje toi hvashtashe 70 na sobstvenata si zadacha. :)
+<Swetko> az ste gi gledam chak sled kato si ia resha
+<VelinTzanov> Borisov, bez boi v BG ne stava. :)
+<VelinTzanov> OK, Swetko.
+<VelinTzanov> Swetko, ia kaji ti kakvo pravi vchera?
+<VelinTzanov> Ti Bintree ia niamashe za domashno (shtot ia imahme minalata godina)? Togava? :)
+<Swetko> ami convex 
+<VelinTzanov> I cial den ia pisa i ne ia napisa?!
+<VelinTzanov> Maiko mila... az taka kato vi gledam tazi zadacha deto ia pravih dnes (za kontrolnoto sled BOI) vie syvsem niama da ia reshite... :(
+<Swetko> e, ne cial den
+<VelinTzanov> Shtoto tia mi otne malko poveche vreme i usilia ot Convex... a vie ako s Convex ste tolkova zatrudneni, na neia znachi shte umrete... :(
+<Prince_of_Dawn> ne men convex mi e mnogo trudna ;( 
+<Prince_of_Dawn> da
+<VelinTzanov> Nishto, Borisov, taka se uchi chovek.
+<Prince_of_Dawn> umiriki ?
+<Swetko> ami az ne sum zatrudnen da ia napisha - po skoro ste mi e trudno da ia izmislia
+<Swetko> inache ne sum ia pisal mnogo
+<Swetko> a puk i nesto mi se speshe
+<VelinTzanov> Borisov, Anev da znaesh kyde e? Da ne e otishyl niakyde za weekend-a?
+<Prince_of_Dawn> nqmam ideq
+<Prince_of_Dawn> debnah go wchera da go pitam po ICQ 
+<Prince_of_Dawn> po zadachite ma go nqmashe;(
+<VelinTzanov> Swetko, sybota beshe be momche, cial den li ti se speshe?!
+<Prince_of_Dawn> na men i doseshtaneto i pisaneto sa mi trudni ;( 
+<VelinTzanov> Vlado, ti?
+<sssa88> az samo domashnoto (e i edno golqmo spane mu udarih sledobqd)
+<VelinTzanov> Borisov, aide stiga mrynka - stiagai se tam.
+<VelinTzanov> TReti si na NOI. Znachi mojesh.
+<VelinTzanov> Spaneto e hubavo neshto, da. :)
+<Swetko> tam biaha lesni zadachite
+<VelinTzanov> Rangele, ti?
+<Swetko> da be
+<Swetko> kato spish po 10 chasa na den 
+<VelinTzanov> Swetko, i tezi sa lesni.
+<rangel__> ami osnovno debug-vah convex :-)
+<Swetko> na NOI biaha po lesni
+<VelinTzanov> Swetko, na drugite iavno ne sa im bili tolkova lesni kolkoto na teb... ako sydim po rezultatite.
+<Swetko> ami prosto sa sbygnali tuk tam
+<Swetko> sluchilo mi se vednush da ne sbygna nesto
+<Prince_of_Dawn> towa e minalo
+<Prince_of_Dawn> aide po materiala
+<rangel__> (az togava si sbygnah pochti vsichko, koeto mozheh da sbygna :-)
+<VelinTzanov> Shtom v minaloto si mogyl, znachi i sega mojesh. 200 tochki na systezatelen den hich ne e CHAK tolkova trudno.
+<VelinTzanov> Borisov, kaji samo ti kakvo pravi vchera?
+<Prince_of_Dawn> mi az wednaga pochnah da pish domashnoto i stignah do convex
+<Prince_of_Dawn> kato razbrah che ne znam dostatachno 
+<Prince_of_Dawn> misli po cowq
+<VelinTzanov> Iskate li da vi dam oshte convexopodobni zadachi da se uprajniavate?
+<Prince_of_Dawn> i ne gi izmislih do dwa chasa
+<sssa88> aha
+<Prince_of_Dawn> ako sa lesni 
+<Swetko> dai
+<Prince_of_Dawn> vecherta imahme gosti
+<VelinTzanov> Prosto sa variacii po temata - edna e O(N^2), a drugata e O(N^4)
+<Swetko> ok
+<VelinTzanov> Ednata zadacha e slednata:
+<VelinTzanov> Dadeni sa vi 100 dobri tochki.
+<VelinTzanov> DAdeni sa vi i 100 loshi tochki.
+<VelinTzanov> Tyrsi se tozi izpyknal mnogoygylnik koito sybira max dobri tochki bez da sydyrja nito edna losha.
+<VelinTzanov> Taka li beshe be, Vlado?
+<sssa88> ne
+<Swetko> ili s max lice
+<VelinTzanov> Ia mi pripomni togava.
+<Swetko> mnogougulnik s max lice koito da niama po kontura si i vutre loshi
+<VelinTzanov> To liceto moje da stane infinite mai ako tova gledash da maximizirash.
+<Prince_of_Dawn> tazi shte da e N^4
+<sssa88> mnogoygylnik vyrhovete na kojto sa dobri tochki s maksimalno lice i v nego nqma loshi tochki
+<VelinTzanov> A, tochno taka. :)
+<Prince_of_Dawn> a izpaknal li e
+<Swetko> da
+<VelinTzanov> Tova se tyrsi. Za N^4. :)
+<VelinTzanov> Da, izpyknal.
+<VelinTzanov> Otivam da vzema neshto za iadene i se vryshtam do minutka.
+<sssa88> po toq metod kato convex nqma li da stane N^3 ?
+<VelinTzanov> Vie kajete ako imate vyprosi po uslovieto.
+<Swetko> i az ste vzema
+<Swetko> ami drugata
+<VelinTzanov> Ami imash i druga N^4 chast.
+<sssa88> koq?
+<VelinTzanov> Kak kazvash kyde niama losha tochka?
+<sssa88> a da
+<VelinTzanov> Drugata:
+<VelinTzanov> Imate grid 100x100
+<VelinTzanov> T.e. 10 000 tochki max.
+<VelinTzanov> Pita se za broia na izpyknalite mnogoygylnici s vyrhove v tezi tochki, chiito strani sa samo vertiklani, horizontalni i diagonalni.
+<Swetko> po 45 gradusa li
+<VelinTzanov> Da
+<VelinTzanov> Pyrvata zadacha e ot niakakvo rusko systezanie.  A vtorata e ot Top Coder - ot polufinala na Petko Minkov.
+<Swetko> znachi dadeno e N=100  i sloshnostta e  N^4
+<VelinTzanov> Mda.
+<VelinTzanov> To mai e N i M - pravoygylnik. Ne kvadrat.
+<Swetko> ok
+<Prince_of_Dawn> lele
+<VelinTzanov> Abe vijte ia tam - namerete zadachite ot polufinala na Aprilskoto systezanie v Boston... tozi v koito uchastva 5ko.
+<VelinTzanov> Edin ot systezatelite ia reshi zaedno s oshte edna za 75 minuti!
+<sssa88> taq za kolko beshe - 200 tochki ? :)
+<VelinTzanov> 500
+<Prince_of_Dawn> ;)
+<Swetko> haha
+<sssa88> ne mi se misli kakva e bila tazi za 1000
+<Swetko> znachi niama da e tolkova trudna
+<VelinTzanov> A, tazi za 1000 ne beshe nishto osobeno. :)
+<Swetko> to ima mnogo povtorenia
+<VelinTzanov> Vse pak tova e polufinal na TopCoder - tam sa nai-golemite izrodi i izvergi. :)
+<Swetko> i ako se izpolzvat ste se poluchi nesto hubavo
+<Swetko> Petko
+<VelinTzanov> Aide posle shte gi mislim tezi zadachi.
+<Swetko> ti uchastvash li
+<VelinTzanov> Sega kajete ima li drugi vyrposi?
+<sssa88> ne
+<Swetko> ne
+<rangel__> ne
+<Prince_of_Dawn> ne
+<VelinTzanov> Ne. Men me drazni byrzaneto. Az ne obicham taka.
+<Prince_of_Dawn> kakwo imash predwid pod arzaneto?
+<Swetko> ami ACM znachi ne obichash
+<VelinTzanov> Az obicham da si mislia na spokoistvie i da izliaza s dobyr rezultat nakraia. Ne iskam da byrzam, zashtoto taka ne pokazvam kakvoto moga.
+<Prince_of_Dawn> barzaneto
+<VelinTzanov> Da, ne obicham ACM.
+<VelinTzanov> Deistvam pripriano na ACM i zatova gubia.
+<VelinTzanov> Samo ot byrzane.
+<VelinTzanov> Ako mi gi dadat tezi zadachi bez byrzane ne bih imal problemi.
+<Prince_of_Dawn> moje da onowesh IOI za studenti
+<VelinTzanov> No v byrzinata pisha kakvi li ne gluposti.
+<Swetko> da be
+<Swetko> dobra ideia
+<VelinTzanov> :)  Ama ne stava.
+<Swetko> ama tam triabva da sa niakakvi izrodski zadachi
+<VelinTzanov> Zadachite triabva da sa tvyrde trudni... :)
+<VelinTzanov> I bi bilo tvyrde trudno da se izmisliat. :)
+<Swetko> e che niama problem
+<Swetko> ste sa kato XOR ili  reverse
+<Swetko> ot IOI2003
+<VelinTzanov> Dokato za uchenici moga da izmisliam po dve zadachi na edno hodene v kenefa po goliama nujda.... :):):)
+<Prince_of_Dawn> ;))))))))
+<Prince_of_Dawn> taka znachi 
+<Prince_of_Dawn> kato otida w polwdiw i se potq 5 chasa 
+<VelinTzanov> Na proletnia vi dadoh 4 takiva zadachi - nabyrzo izmisleni.
+<VelinTzanov> Wireless ia izmislihme dokato obiadvahme s jenata. :)
+<Swetko> aide da pochvame
+<Prince_of_Dawn> da znam che nad twoite tworeniq w kenefa ;)
+<VelinTzanov> Convex ot skuka v chas po AI... :)
+<Swetko> heh
+<Swetko> izkustven intelekt li e tova
+<Prince_of_Dawn> da
+<VelinTzanov> Crazynum reshih da izmislia edna nepredskazuema igra... pomislih i ia izmislih taka. :)
+<Swetko> e, to igra e lesno da se izimisli
+<VelinTzanov> A 3DLab ia izmislihme s Ivo po ICQ-to - vikam mu dai da izmislim edin labirint... i go izmislihme za ima-niama 4-5 minuti. :)
+<VelinTzanov> Aide izmisli edna hubava i mi ia prati za BOI. :)
+<VelinTzanov> Lesno bilo...
+<Prince_of_Dawn> az shte go naprawq
+<Swetko> kato crazynum imah predvid
+<VelinTzanov> Otnema minimum 3 dni da napishesh vsichkite moduli, chekeri, solution-i i t.n...
+<VelinTzanov> OK
+<VelinTzanov> Aide po materiala za dnes:
+<Swetko> az govorih za samoto izmisliane
+<Swetko> ok
+<Swetko> aide
+<VelinTzanov> Prodyljavame s nashata tema za sykrashtavaneto na nai-vytreshnia cikyl.
+<Prince_of_Dawn> 1:33 chasa sled nachalto pochwame matqriala ;) ne sme li fenove
+<VelinTzanov> Vchera pravihme zadachi chiato teoretichna slojnost se namaliavashe blagodarenie na optimizaciata.
+<VelinTzanov> Dnes shte pravi ot drugite - takiva deto si ostavat syshtite na teoria, no na praktika sa mnogo po-byrzi.
+<VelinTzanov> Vsyshtnost shte pravim samo edna (da imate vreme da si dopishete convex, shtoto ste trima). Drugata shte vi ia ostavia da si ia mislite.
+<VelinTzanov> Zadachata e Batch ot IOI 2002.
+<VelinTzanov> <VelinTzanov> Delish tochkite na dve chasti - otnosno pravata p1-pk.
+<VelinTzanov> <Prince_of_Dawn> ne
+<VelinTzanov> * sssa88 has quit IRC (Success)
+<VelinTzanov> <Prince_of_Dawn> drugo pitam
+<VelinTzanov> <VelinTzanov> Kakvo pitash?
+<VelinTzanov> <Prince_of_Dawn> nali izbirame pk po  spetsqlen nachi ( spetsqlen red )
+<VelinTzanov> * sssa88 has joined #ioi
+<VelinTzanov> <VelinTzanov> Taka li pravim?
+<VelinTzanov> <VelinTzanov> Az mislia che vyrtim vsichki pk-ta nared.
+<VelinTzanov> <VelinTzanov> Aaaa, da sortirame v krygche okolo p1.
+<VelinTzanov> Off
+<VelinTzanov> Greshen Copy/Paste. :)(
+<VelinTzanov> http://infoman.musala.com/contests/ioi/2002/batch.doc
+<rangel__> gotov
+<VelinTzanov> Kajete kato ste gotovi.
+<VelinTzanov> Swetko, ti po-krotko. Vse pak ia znaesh. :)
+<VelinTzanov> Vsyshtnost za Wireless vi izlygah malko... pyrvonachalnata ideia se rodi ot edna lekcia po komunikacionni sistemi... uslovieto na zadachata e adski realistichno mejdu drugoto. :)
+<sssa88> gotov
+<VelinTzanov> Tia pyrvonachalnata zadacha beshe da se nameriat disjoint pytishta do edna tochka... ama tova beshe tvyrde slojno za vas... i zatova ia oprostihme... kato intelektualno zanimanie po vreme na obiad. :)
+* VelinTzanov sets mode: +o sssa88
+<Prince_of_Dawn> gotowo
+<VelinTzanov> Shte vi ostavia da ia pomislite malko, che usloiveto si iziskva vreme da se proumee.
+<VelinTzanov> Kajete kato se poiaviat idei.
+<Prince_of_Dawn> zashto nqkoi pat prosto ne qdesh ;) ili da si goworite za wremeto ;)
+<Prince_of_Dawn> az imam
+<VelinTzanov> Az i iam osven tova. :)
+<VelinTzanov> Izviniavai, Borisov, prosto se grija da niamate prekaleno samochuvstvie. :)
+<VelinTzanov> KAzvai de.
+<Prince_of_Dawn> mi dinamichno ;)
+<rangel__> neshto po-konkretno? :-)
+<VelinTzanov> Da, neshto po-konkretno? :)
+<Prince_of_Dawn> mi ako sme smetnali minT za do k-tiq 
+<Prince_of_Dawn> to da se opitame da smetne minT za k+1-wiq
+<Prince_of_Dawn> kato moje da go lojim w predishni batch
+<Prince_of_Dawn> ili da mu naprawim now
+<VelinTzanov> Zvuchi dobre.
+<VelinTzanov> No kakva ti e slojnostta?
+<VelinTzanov> Zashtoto imash problem.
+<Prince_of_Dawn> mi neznam
+<VelinTzanov> Ne e vajna samo cenata koiato si platil do momenta, no i vremeto ima znachenie.
+<sssa88> ami za tova gi smqtame naobratno
+<sssa88> ot posledniq kym pyrviq
+<sssa88> i togava vremeto nqma znachenie
+<VelinTzanov> Taka li?!
+<Swetko> ia obiasni
+<Swetko> taka pishe v handout-a ma ne sum si igral da go razbera
+<VelinTzanov> Kak da niama - ima si. :)
+<sssa88> ami primerno ako smqtame za k, i pitame kolko e bilo za k+1
+<VelinTzanov> V Handout-a sa izpusnali da kajat nai-vajnoto iavno. :)
+<VelinTzanov> DObre de, vremeto koeto otdeliash na k ima otnoshenie kym cenata koiato shte platish za k+1
+<sssa88> k+1 si go smetnal sprqmo moment 0
+<VelinTzanov> E kak go pravish kato ne znaesh kolko vreme otnema k?
+<sssa88> ta k ako otnema x vreme  cenata na teq ot k+1 do kraq shte q umnozish po z i shte pribavish tova kym rezultata ot dp-to za k+1
+<sssa88> z=x
+<sssa88> i taka vremeto ne ti trqbvaq
+<Prince_of_Dawn> prav e
+<sssa88> tova ne sym go chel ot handout-a sam sym si go izmislil
+<Swetko> znachi mislish kato avtorite
+<VelinTzanov> Otlichen 6 za Vladko. :)
+<VelinTzanov> Tova i az go izmislih na systezanieto.
+<Swetko> nisto che tam pishe i lineino reshenie
+<rangel__> az moga da go napravq i v drugata posoka prosto trqbva da pazq malko poveche informaciq za posledniq batch (tozi kojto oshte ne sym zatvoril)
+<VelinTzanov> No si go pravia otpred nazda.
+<VelinTzanov> Ne ti triabva da obryshtash reda.
+<Prince_of_Dawn> e moqta ideq beshe takawa da pazim posledniq batch
+<VelinTzanov> Prosto triabva da se zamislish kolko e realnata cena na edin batch.
+<VelinTzanov> Az mejdu drugoto oshte ne sym chel lineinoto reshenie. :)
+<VelinTzanov> No moga da vi predloja reshenie za 100. :)
+<VelinTzanov> Ta realnata cena na edin batch:
+<VelinTzanov> Tova e ne samo parite koito vadish ot djoba za nego, no i oskypiavaneto na sledvashtite batch-ove, koeto tozi batch porajda.
+<VelinTzanov> Zatova vremeto na tozi batch triabva da se umnoji po cenata na vsichki batch-ove vbydeshteto (vkl. nego), a ne samo po negovata si cena.
+<VelinTzanov> Taka veche vseki batch stava nezavisim. Sam za sebe si.
+<VelinTzanov> Kak se seshtame?
+<VelinTzanov> Ami mnogo prosto - zadavame si vyprosa kakvo ima znachenie za bydeshteto.
+<VelinTzanov> I enkapsulirame nego - tova koeto ima znachenie.
+<Swetko> ami iskame da se oturvem ot vremeto
+<VelinTzanov> Ima znachenie vremeto po cenata na vsichki bydeshti batch-ove.
+<VelinTzanov> Zatova "realnata" cena e tazi koiato dava otrajenie vyrhu bydeshteto. T.e. triabva da otchitame i bydeshteto kato ia smiatame.
+<VelinTzanov> Taka si poluchavate klasichesko N^2 dinamichno.
+<VelinTzanov> Razbrahte li me (gore-dolu)?
+<Prince_of_Dawn> az ne rabitam
+<sssa88> da
+<VelinTzanov> OK, neka procheta uslovieto za da ti go obiasnia po-dobre. :)
+<Prince_of_Dawn>  chakai
+<VelinTzanov> Chakam.
+<Prince_of_Dawn> mi kakta taka shte go umnojish po batchowete w badeshte kato ne znaesh kolko sa nabroi?
+<Swetko> kak ste ne znaesh
+<VelinTzanov> Znaesh elementite.
+<VelinTzanov> Tia cenata e na element, ne na batch.
+<Swetko> ste go umnoshish po vremeto na vsichki batchove
+<Swetko> a da de, na elementite
+<Prince_of_Dawn> i kakwo prawish na wsqka stapka
+<VelinTzanov> Ami ti mojesh da smetnesh "realnata" cena na vseki batch.
+<VelinTzanov> Tia e vremeto na batch-a po "cenata za zabaviane" na vsichki elementi ot batch-a i ot bydeshteto.
+<VelinTzanov> Za da poluchish obshtata cena samo sumirash "realnite" ceni.
+<VelinTzanov> I tuk veche optimumyt se namira s nai-klasicheskoto dinamichno na zemiata.
+<Prince_of_Dawn> aha
+<VelinTzanov> RAzbra li go sega?
+<VelinTzanov> Tova da namerish "realnata" cena e izkluchitelno vajno.
+<VelinTzanov> Inache imash N^3 dinamichno i 30-35 tochki niakyde.
+<VelinTzanov> N^2 e 70 ako ne se lyja.
+<Swetko> taka pishe
+<VelinTzanov> Uchete se da ne pravite izlishni neshta.
+<VelinTzanov> Zadavaite si vyrposa kakvo vsyshtnost ima znachenie za bydeshteto - kakvo e opredeliashto.
+<VelinTzanov> Ako razsyjdavate nad tozi vypros mojete samo ot otgovora mu da reshite polovinata zadachi po zemiata.
+<VelinTzanov> A moje bi i poveche. :)
+<VelinTzanov> Taka samo s misyl vyrhu tova hvashtate 70 tochki tuk.
+<VelinTzanov> Vsichki li razbirat iasno N^2 reshenieto (do stepen da ste gotovi da go napishete na 15-tina reda oshte sega :) )
+<Swetko> da
+<sssa88> da
+<VelinTzanov> Az izchezvam za minutka-dve.
+<Prince_of_Dawn> da
+<rangel__> da
+<VelinTzanov> OK
+<VelinTzanov> Sega kakvo pravim?
+<VelinTzanov> Kak optimizirame?
+<VelinTzanov> Imame dva cikyla.
+<VelinTzanov> KOi ot dvata podleji na optimizacia?
+<Prince_of_Dawn> vatreshniq ?
+<VelinTzanov> JAckpot za Borisov! :)
+<Prince_of_Dawn> e towa drugite ne go kazaha poneje gi marzi da pishat takiwa ochewidni neshta
+<VelinTzanov> A kak?
+<Prince_of_Dawn> mi predpolagam che nqma da tarsim do kraq
+<VelinTzanov> Triabva da izpolzvame informacia ot predishnite izpylnenia na tozi cikyl - tova e iasno.
+<Prince_of_Dawn> a shte sprem nqkade
+<VelinTzanov> Vyprosyt e kak? :)
+<VelinTzanov> Zavisi kak definirash "nachalo" i "krai"? :)
+<VelinTzanov> Vyprosyt e kyde shte sprem i zashto tochno tam?
+<Prince_of_Dawn> predlagam da ne hodim po - dalech ot kadeto sme hodili posledniq pat, no neznam zashto
+<VelinTzanov> Dobra intuicia.
+<VelinTzanov> Niakak si ako do K e izleznalo che e nai-dobre poslednoto da pochva ot M, niama logika do K+1 da izleze che poslednto triabva da pochva predi M. No zashto?
+<VelinTzanov> Po princip tazi zadacha e reshavane na edna dilema.
+<VelinTzanov> Dilemata e po-goliam ili po-malyk batch da pravim.
+<VelinTzanov> Kakvi sa predimstvata i nedostatycite na vseki ot dvata izbora?
+<VelinTzanov> (chakam otgovor)
+<Prince_of_Dawn> mi ako e golqm se zabawqt rabotite w batch-a
+<Prince_of_Dawn> a ako e malak plashtame S
+<VelinTzanov> Tochno taka.
+<VelinTzanov> Vinagi e dobre da si davame smetka kakvi sa predimstvata i kakvi sa nedostatycite.
+<VelinTzanov> Sega zashto tova koeto kazah po-gore che niama logika, naistina niama logika?
+<Prince_of_Dawn> mi shte dopusnem che e wazmojno da se sluchi i shte dokajem che ima protiworeshiw
+<rangel__> zashtoto shte napravim po-golqm batch, kojto shte ima po-golqmo zabavqne (pri syshtiq broj batchove, t.e. syshtat cena ot S)
+<VelinTzanov> Borisov, ti veche klonish kym dokazatelstvoto.
+<VelinTzanov> Az pitah za intuiciata vse oshte.
+<VelinTzanov> Rangele, neshto ne te razbiram.
+<rangel__> nali sme namerili dokyde e batch-a, kojto svyrshva v k
+<rangel__> ako pravim batch, kojto svyrsha v k+1 i pochva po-rano toj e po-golqm, nali?
+<VelinTzanov> Da
+<rangel__> e nqmame nikakva ideq da pravim po-golqm batch, zashtoto toj shte predizvika po-golqmo zabavne
+<Prince_of_Dawn> rangele ma toi pokriwa i k+1 neormalno e da e po-skap
+<VelinTzanov> Po-goliamo ot koe?
+<VelinTzanov> To po tazi logika dai da go napravim minimalen. :)
+<Prince_of_Dawn> mi otnosno intuitsiqta
+<Prince_of_Dawn> si mislq che shtom predniq pat si se sprql na batch do m
+<Prince_of_Dawn> zashto tozi pat shte prawish po-golqm ( ne prosto po-golqm a dosta po-golqm)
+<VelinTzanov> E, s 1 po-goliam.
+<VelinTzanov> OK. Neka dam niakakvo malko po-podredeno obiasnenie:
+<rangel__> s 2, zashtoto vzimame nachalo predi m
+<VelinTzanov> Sravniavame tova nachaloto da e M i tova da e L (kato L<M)
+<VelinTzanov> Kogato sme bili do K sme reshili che M e po-dobyr variant ot L.
+<VelinTzanov> REshenieto se vzima na baza sumata na dinamichno[M]+realnaCenaNaBloka(M,K) (i syshtoto neshto za L)
+<VelinTzanov> Predimstvoto na L e v po-malkata stoinost za dinamichno[
+<VelinTzanov> Predimstvoto na L e v po-malkata stoinost za dinamichno[]
+<VelinTzanov> Predimstvoto na M e v po-malkata stoinost na realnata cena na bloka.
+<VelinTzanov> Dali gledame ot K ili ot K+1 dinamichno[]-to si e edno i syshto za L i za M.
+<VelinTzanov> No cenata na bloka ne e edna i syshta.
+<VelinTzanov> Predimstvoto na M e oshte po-podchertano pri po-goliam blok.
+<VelinTzanov> Po-formalno kazano:
+<VelinTzanov> blok[M,K+1]-blok[L,K+1] > blok[M,K]-blok[L,K]
+<VelinTzanov> Shte vi ostavia sami da si go dokajete.
+<VelinTzanov> Kajete kato ste gotovi.
+<rangel__> to ne e li ochevidno?
+<Prince_of_Dawn> gotow
+<VelinTzanov> Rangele >:-[
+<VelinTzanov> Vajno e da vi e iasno kak stavat tezi dokazatelstva... poviarvai mi shte vi triabvat.
+<VelinTzanov> A i da ne vi potriabvat, veroiatnostta e tvyrde goliama, za da ia prenebregvate.
+<rangel__> ne kazvam che tvyrdenieto e ochevidno a che dokazatelstvoto e takova
+<Prince_of_Dawn> ne sam gotow
+<VelinTzanov> :) OK
+<Prince_of_Dawn> mejdo drugoto
+<Prince_of_Dawn> na towa koeto si napisal za dokazwane i dwete mu strani sa <0 taka li si iskal?
+<VelinTzanov> Ami mai ne sym iskal taka. :)
+<VelinTzanov> Naobratno triabva da e mai. :)
+<Prince_of_Dawn> blok[L,K+1]-blok[M,K+1]>blok[L,K]-blok[M,K]
+<VelinTzanov> Swetko, Vlado, vie tuk li ste?
+<VelinTzanov> Da, taka Borisov.
+<sssa88> tuk
+<Swetko> da
+<Prince_of_Dawn> az moga
+<VelinTzanov> Kakvo stana?
+<VelinTzanov> Drugite?
+<rangel__> da, dokazah go
+<VelinTzanov> A drugite? :)
+<VelinTzanov> Borisov, aide davai, che drugite neshto zaspaha.
+<Prince_of_Dawn> mi 
+<Prince_of_Dawn> sega neka
+<Prince_of_Dawn> a - sbora ot tsenite na chislata mejdu L i M
+<Prince_of_Dawn> b - sbora to senite ot M do kraq ( do kraq na wsichki elementi )
+<Prince_of_Dawn> i neka blok[L,K] se izplanqwa za wreme q
+<Prince_of_Dawn> a blok[M,K] za wreme o
+<Prince_of_Dawn> togawa blok[L,K]-blok[M,K] = 
+<Prince_of_Dawn> a*q+b*q-b*p ( mejdo drugoto q>p poneje bloka e po golqm )
+<rangel__> kakvo e p?
+<Prince_of_Dawn> opa
+<Prince_of_Dawn> p == o
+<Prince_of_Dawn> weche shte go naricham p
+<Prince_of_Dawn> taka e nali?
+<rangel__> maj da
+<Prince_of_Dawn> a*q+b*q - tsenata na blok[L,K]
+<Prince_of_Dawn> pak b*p - tsenata na blok[M,K];
+<Prince_of_Dawn> i sega gledame lqwata strana
+<Prince_of_Dawn> q se uvelichawa s tsenata na elementa k+1 ( neka da e g)
+<Prince_of_Dawn> toest q stawa q+g
+<Prince_of_Dawn> a p stawa p+g
+<Prince_of_Dawn> i napiswame pak sashtoto
+<Prince_of_Dawn> a*(q+g)+b*(q+g)-b*(p+g)
+<sssa88> znachi g ne e cenata a vremeto?
+<Prince_of_Dawn> w sashtnost e ochewidno che b*(q+g)>b*(p+q) ( poneje q>p ) (poneje bloka na q e po golqm ( toest poweche wreme bawi )
+<Prince_of_Dawn> da
+<Prince_of_Dawn> da Nedev
+<Prince_of_Dawn> i sega ne samo razlikata b*(q+g)-b*(p+q) e po-golqma ot tazi w dqsno
+<Prince_of_Dawn> a i a*(q+g) e stanalo po golqmo
+<Prince_of_Dawn> towa e
+<Prince_of_Dawn> mojeh i po kratko
+<Prince_of_Dawn> razbrahte li me ;(
+<sssa88> maj da
+<Swetko> da
+<Prince_of_Dawn> swetko 
+<Prince_of_Dawn> mejdo drugoto 
+<sssa88> samo promqnata v cenata ne spomena ama tq nqma znachenie
+<Prince_of_Dawn> tiq ot moq klas mnogo ti se kefqt che si 4-ti na matematika na Milko Balkanski
+<Swetko> 4-ti li sum
+<Swetko> az chuh che sum 3-ti
+<Prince_of_Dawn> ;)
+<Prince_of_Dawn> moje i treti da si
+<Swetko> ama ne znaeh dali e sigurno
+<Prince_of_Dawn> pak si shef
+<Swetko> tova na matematikata li samo ili i na 2-te obsto
+<VelinTzanov> Kakvo e tova systezanie?
+<Prince_of_Dawn> matematika
+<Swetko> eh, ne triabvashe da osiram informatikata
+<VelinTzanov> Chuval sym go no ne znam mnogo - kajete podrobnosti.
+<Prince_of_Dawn> mi Milko Blakanski e din profesor w frantsiq balgarin
+<Prince_of_Dawn> i prawi sastezanie na frenski
+<Prince_of_Dawn> koito specheli w otdelnite distsiplini otiwa na ekskurziq w france
+<VelinTzanov> I Swetko govori Frenski do stepen da uchastva na systezania s nego?!
+<Prince_of_Dawn> i pecheli stipendiq
+<Prince_of_Dawn> ne
+<Prince_of_Dawn> tazi godina imashe i na ang
+<Prince_of_Dawn> to i az uchastwah i swetko 
+<VelinTzanov> Aaaa, spomniam si Niki Chakyrov ot moia klas go beshe spechelil... imashe 63 tochki ot 70, a vtoriat imashe 21. :)
+<Prince_of_Dawn> obache informatikata q specheli edin sauchenik ;(
+<VelinTzanov> Koi?
+<Prince_of_Dawn> Vasil
+<VelinTzanov> I kakvo predstavliava systezanieto po informatika? Koi dava zadachite?
+<Prince_of_Dawn> Manev
+<Swetko>  ne govoria nikak frenski - to imashe i na anglijski
+<VelinTzanov> :) Iasno.
+<Swetko> az tolkoz mnogo lugah v moite reshenia che se chudia kak sa gi priznali
+<VelinTzanov> OK. Momcheta, az ne sledih dokazatelstvoto vi, ama iasno li e vsihcko veche?
+<Swetko> da
+<sssa88> da
+<rangel__> da
+<Prince_of_Dawn> da
+<VelinTzanov> Znachi shte ia imam predadena utre za domashno, zaedno s convex (za koito ne ia e napisal).
+<Swetko> az ia napisah
+<VelinTzanov> Drugata zadacha, koiato e optional - t.e. ne e zadyljitelno da ia predavate
+<Prince_of_Dawn> shte se  opitame
+<VelinTzanov> e Euro ot BOI 2003
+<Swetko> ama tam ne stava samo s toz trik
+<VelinTzanov> http://infoman.musala.com/contests/boi/2003/euro_bg.doc
+<VelinTzanov> Ne sym ia mislil podrobno, Swetko.
+<VelinTzanov> Ostavam vi ia da si ia pomislite i eventualno da si ia reshite.
+<Swetko> ami pomisli ia
+<VelinTzanov> A ti skochi ot 8-mia etaj.
+<VelinTzanov> :)
+<Swetko> triabva osven sykrastaven na vytreshnia cikul i oste nesto
+<VelinTzanov> Swetko, az niamam vreme da vecheriam, ti iskash da gledam zadachi za udovolstvie!
+<VelinTzanov> Pishi na lichno kakvo oshte triabva.
+<Prince_of_Dawn> mi towa li e za dnes
+<Prince_of_Dawn> utre w 8:30
+<Prince_of_Dawn> dano imam i-net
+<VelinTzanov> Da.
+<VelinTzanov> Dano imame zadachi.
+<VelinTzanov> Che ako ne otkria Anev moje i da izmisliam zadachite na miasto. :)
+<Swetko> e, vse ste namerite
+<VelinTzanov> Ne che ne moga da vi izmislia zadachi na miasto... :) NO vse pak.
+<Prince_of_Dawn> malko e kofti che se otsenqwat ACM-ski
+<Prince_of_Dawn> matoi anev e lubitel na ACM oshte ot NOI 2003
+<VelinTzanov> Borisov, niamame vreme da vi pravim hubavi testove.
+<VelinTzanov> Na harizan kon zybite ne se gledat, nali znaesh. :)
+<VelinTzanov> Tova imame, tova vi davame. :)
+<Prince_of_Dawn> znam ;)
+<VelinTzanov> A daje mai i nego moje da go niamame. :)
+<Prince_of_Dawn> ne se oplakwam
+<VelinTzanov> Vyprosi po celia material ot vytreshnite cikli ot vchera i dneska?
+<Prince_of_Dawn> ne
+<Swetko> ne
+<VelinTzanov> Ako ne - do utre v 8:30 na trenirovkata.
+<Prince_of_Dawn> do utre
+<Prince_of_Dawn> leka
+<VelinTzanov> Rangel, Vlado?
+<sssa88> ne
+<Swetko> do utre
+<sssa88> do utre
+<rangel__> nqmam vyprosi
+<VelinTzanov> OK. Chao do utre!
+<rangel__> chao
+* Disconnected
+Session Close: Sat Jun 26 23:04:06 2004

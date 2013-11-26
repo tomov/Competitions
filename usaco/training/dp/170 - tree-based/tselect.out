@@ -1,0 +1,88 @@
+ in 3
+   final dp 0 : 0 
+   final dp 1 : 1 
+ in 4
+   final dp 0 : 0 
+   final dp 1 : -4 
+ in 5
+   final dp 0 : 0 
+   final dp 1 : -1 
+ in 2
+     from 3
+                  new dp 0 : 1 
+                  new dp 1 : -4 -3 
+     from 4
+                  new dp 0 : 1 -2122219135 
+                  new dp 1 : -4 -3 -7 
+     from 5
+                  new dp 0 : 1 -2122219135 -2122219135 
+                  new dp 1 : -4 -3 -4 -8 
+   final dp 0 : 1 -2122219135 -2122219135 
+   final dp 1 : -4 -3 -4 -8 
+ in 7
+   final dp 0 : 0 
+   final dp 1 : 1 
+ in 8
+   final dp 0 : 0 
+   final dp 1 : 3 
+ in 9
+   final dp 0 : 0 
+   final dp 1 : 1 
+ in 6
+     from 7
+                  new dp 0 : 1 
+                  new dp 1 : 4 5 
+     from 8
+                  new dp 0 : 4 -2122219132 
+                  new dp 1 : 4 7 8 
+     from 9
+                  new dp 0 : 5 -2122219131 -2122219134 
+                  new dp 1 : 4 7 8 9 
+   final dp 0 : 5 -2122219131 -2122219134 
+   final dp 1 : 4 7 8 9 
+ in 11
+   final dp 0 : 0 
+   final dp 1 : -1 
+ in 10
+     from 11
+                  new dp 0 : 0 
+                  new dp 1 : -4 -5 
+   final dp 0 : 0 
+   final dp 1 : -4 -5 
+ in 1
+     from 2
+                  new dp 0 : 1 -3 -4 -8 
+                  new dp 1 : -2 -7 -6 -7 -11 
+     from 6
+                  new dp 0 : 6 8 9 10 6 5 1 -2122219126 
+                  new dp 1 : 3 2 5 6 7 2 3 2 -2 
+     from 10
+                  new dp 0 : 6 8 9 10 6 5 1 -4 -2122219131 -2122219135 
+                  new dp 1 : 3 2 5 6 7 3 3 2 -2 -3 -7 
+   final dp 0 : 6 8 9 10 6 5 1 -4 -2122219131 -2122219135 
+   final dp 1 : 3 2 5 6 7 3 3 2 -2 -3 -7 
+ in 14
+   final dp 0 : 0 
+   final dp 1 : 3 
+ in 13
+     from 14
+                  new dp 0 : 3 
+                  new dp 1 : -1 2 
+   final dp 0 : 3 
+   final dp 1 : -1 2 
+ in 12
+     from 13
+                  new dp 0 : 3 2 
+                  new dp 1 : -1 -5 -2 
+   final dp 0 : 3 2 
+   final dp 1 : -1 -5 -2 
+ in 0
+     from 1
+                  new dp 0 : 6 8 9 10 7 5 3 2 -2 -3 -7 
+                  new dp 1 : 6 8 9 10 6 7 3 3 2 -2 -3 -7 
+     from 12
+                  new dp 0 : 9 11 12 13 12 9 7 5 4 0 -1 -5 -9 -2122219135 
+                  new dp 1 : 9 11 12 13 12 10 9 6 5 4 1 0 -4 -5 -9 
+   final dp 0 : 9 11 12 13 12 9 7 5 4 0 -1 -5 -9 -2122219135 
+   final dp 1 : 9 11 12 13 12 10 9 6 5 4 1 0 -4 -5 -9 
+8

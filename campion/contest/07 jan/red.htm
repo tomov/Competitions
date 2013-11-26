@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<TITLE>red</TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#FF00FF">
+<h3><font face="Arial, Helvetica, sans-serif" size="2"><B> <font size="4">red</font></B></font></h3>
+<P ALIGN="JUSTIFY"><font face="Arial, Helvetica, sans-serif" size="2">Let's take 
+  <font face="Courier New, Courier, mono">n</font> points numbered from <font face="Courier New, Courier, mono">1</font> 
+  to <font face="Courier New, Courier, mono">n</font>, placed in order on a circle. 
+  Initially the points are colored in black. We have to color in red <font face="Courier New, Courier, mono">k</font> 
+  of these <font face="Courier New, Courier, mono">n</font> points, so that no 
+  two nearby red points exist. </font></P>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><B><font size="3">Task</font></B></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Determine in how many ways 
+  we can color <font face="Courier New, Courier, mono">k</font> of the <font face="Courier New, Courier, mono">n</font> 
+  points so that no two nearby red points exist.</font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><B><font size="3">Input Data </font></B></font></p>
+<P><font face="Arial, Helvetica, sans-serif" size="2">Input file <font face="Courier New, Courier, mono">red.in</font> 
+  contains on the first line the positive integers <font face="Courier New, Courier, mono">n</font> 
+  and <font face="Courier New, Courier, mono">k</font>, separated by a space.</font></P>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><B><font size="3">Output Data</font></B></font></p>
+<P><font face="Arial, Helvetica, sans-serif" size="2">Output file <font face="Courier New, Courier, mono">red.out</font> will contain a single line with the determined number of ways.</font></P>
+<p><font face="Arial, Helvetica, sans-serif"><B><font size="3">Constraints</font></B></font></p>
+<UL>
+  <LI><font face="Courier New, Courier, mono" size="2">0&lt;n&lt;=400</font></LI>
+  <LI><font face="Courier New, Courier, mono" size="2">0&lt;k&lt;=n-k</font><font face="Arial, Helvetica, sans-serif"><BR>
+    </font></LI>
+</UL>
+<font face="Arial, Helvetica, sans-serif" size="2"><B> <font size="3">Examples</font></B></font> 
+<TABLE BORDER CELLSPACING=1 CELLPADDING=7 WIDTH=750>
+  <TR> 
+    <TD WIDTH="24%" VALIGN="TOP"> <B><font face="Courier New, Courier, mono" size="2"> red.in </font></B></TD>
+    <td width="25%" valign="TOP"><B><font face="Courier New, Courier, mono" size="2">red.out</font></B></td>
+    <td width="51%" valign="TOP"><B><font face="Arial, Helvetica, sans-serif" size="2">Explanation</font></B></td>
+  </TR>
+  <TR> 
+    <TD WIDTH="24%" VALIGN="TOP"> 
+      <p><B><font face="Courier New, Courier, mono" size="2">4 2</font></B></p>
+      </TD>
+    <td width="25%" valign="TOP"><B><font face="Courier New, Courier, mono" size="2">2</font></B></td>
+    <td width="51%" valign="TOP"> 
+      <p><font face="Arial, Helvetica, sans-serif" size="2">The two coloring ways are:</font><font size="2"><BR>
+        <font face="Courier New, Courier, mono" color="#FF0000">1</font><font face="Courier New, Courier, mono">2<font color="#FF0000">3</font>4<BR> 1<font color="#FF0000">2</font>3<font color="#FF0000">4</font></font></font></p>
+      </td>
+  </TR>
+</TABLE>
+<p>&nbsp;</p><table BORDER cellspacing=1 cellpadding=7 width=750>
+  <tr> 
+    <td width="24%" valign="TOP"> <B><font face="Courier New, Courier, mono" size="2"> red.in </font></B></td>
+    <td width="25%" valign="TOP"><B><font face="Courier New, Courier, mono" size="2">red.out</font></B></td>
+    <td width="51%" valign="TOP"><B><font face="Arial, Helvetica, sans-serif" size="2">Explanation</font></B></td>
+  </tr>
+  <tr> 
+    <td width="24%" valign="TOP"> 
+      <p><B><font face="Courier New, Courier, mono" size="2">5 2</font></B></p>
+    </td>
+    <td width="25%" valign="TOP"><B><font face="Courier New, Courier, mono" size="2">5</font></B></td>
+    <td width="51%" valign="TOP"> 
+      <p><font face="Arial, Helvetica, sans-serif" size="2">The five coloring ways are:<BR>
+        </font><font size="2" face="Courier New, Courier, mono" color="#FF0000">1</font><font size="2" face="Courier New, Courier, mono">2<font color="#FF0000">3</font>45</font><font size="2"><BR>
+        </font><font size="2" face="Courier New, Courier, mono" color="#FF0000">1</font><font size="2" face="Courier New, Courier, mono">23<font color="#FF0000">4</font>5</font><font size="2"><BR>
+        </font><font size="2" face="Courier New, Courier, mono">1<font color="#FF0000">2</font>3<font color="#FF0000">4</font>5</font><BR>
+        <font size="2" face="Courier New, Courier, mono">1<font color="#FF0000">2</font>34<font color="#FF0000">5</font></font><BR>
+        <font size="2" face="Courier New, Courier, mono">12<font color="#FF0000">3</font>4<font color="#FF0000">5</font></font></p>
+      </td>
+  </tr>
+</table>
+<P><font face="Arial, Helvetica, sans-serif" size="2"><B>Time limit</B>: 0.1 seconds/test</font></P>
+<p align="RIGHT"><font size="2" face="Arial, Helvetica, sans-serif">prof. <I>Marinel Serban </I><BR>
+  </font> <font size="2" face="Arial, Helvetica, sans-serif">&quot;<I>Grigore Moisil</I>&quot; Ia&#351;i IT High School<BR>
+  </font> <font size="2" face="Arial, Helvetica, sans-serif"> Contact:<a href="mailto:marinel_serban@yahoo.com">marinel_serban@yahoo.com</a><BR>
+  </font> 
+</BODY>
+</HTML>
+

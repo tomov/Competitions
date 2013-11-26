@@ -1,0 +1,164 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<title>UNDERGROUND CITY</title>
+</head>
+
+<body bgcolor="#A5B4D8" text="#0E2C73" link="#0E2C73" vlink="#0E2C73" alink="#A5B4D8">
+
+<table bgcolor="#ffffff" cellpadding="20" cellspacing="10">
+  <tr>
+    <td><b><font FACE="Arial,Helvetica" SIZE="5"><p ALIGN="left">UNDERGROUND CITY</p>
+    </font><font FACE="Arial,Helvetica" SIZE="4"><p></font><font FACE="Arial,Helvetica"
+    size="3">PROBLEM</p>
+    </font></b><p ALIGN="JUSTIFY">You are imnprisoned in one of the underground cities in of
+    Cappadocia. Wandering around in the dark to find a way out you find by chance the map of
+    the city. Unfortunately, there is no mark on the map pointing where you are. It is your
+    task to find that out by exploring the city. </p>
+    <p ALIGN="JUSTIFY">The map of the city is a rectangular grid of unit squares. Each square
+    is either an open square, marked with the letter &#145;<font FACE="Courier">O</font>&#146;,
+    or a part of a wall, marked with the letter &#145;<font FACE="Courier">W</font>&#146;. The
+    north direction is also shown on the map. Luckily, you have a compass at hand so you can
+    orient the map correctly. Initially, you are on an open square.</p>
+    <p ALIGN="JUSTIFY">Everything starts by calling the procedure (or function) <font
+    FACE="Courier">start</font> with no arguments. You can explore the city by using the
+    procedures (or functions) <font FACE="Courier">look</font> and <font FACE="Courier">move</font>.
+    </p>
+    <p ALIGN="JUSTIFY">You can posinge questions in the form of a procedure (or function) call<i>
+    </i><font FACE="Courier">look(</font><i>dir</i><font FACE="Courier">)</font> where <i>dir</i>
+    denotes the direction you are looking inat, which can be one of the characters &#145;<font
+    FACE="Courier">N</font>&#146;, &#145;<font FACE="Courier">S</font>&#146;, &#145;<font
+    FACE="Courier">E</font>&#146; and &#145;<font FACE="Courier">W</font>&#146; denoting
+    north, south, east and west, respectively. Now assume the argument <i>dir</i> is &#145;<font
+    FACE="Courier">N</font>&#146;. The reply will be the character letter &#145;<font
+    FACE="Courier">O</font>&#146;<i> </i>if the square to your north is an open square, and
+    &#145;<font FACE="Courier">W</font>&#146; if it is a wall. Similarly, it is possible to
+    look at and get information in about the other directions.neighboring squares. </p>
+    <p ALIGN="JUSTIFY">You can step into one of the four neighboring squares by calling <font
+    FACE="Courier">move(</font><i>dir</i><font FACE="Courier">)</font> where <i>dir </i>denotes
+    the direction of your step as described above. You can only move to an open square.
+    Attempting to move into a wall would be a grave mistake. It is possible to reach any open
+    square of the city starting from any open square.</p>
+    <p ALIGN="JUSTIFY">You are required to find the position of the open square where you
+    found the map by looking (calling <font FACE="Courier">look(</font><i>dir</i><font
+    FACE="Courier">)</font>) minimum number of times. Once you found the position you must
+    report it by calling <font FACE="Courier">finish(</font><i>x</i><font FACE="Courier">,</font><i>y</i><font
+    FACE="Courier">)</font> where <i>x</i> is the horizontal (west-east) coordinate and <i>y</i>
+    is the vertical (south-north) coordinate of the position. </p>
+    <p>&nbsp;</p>
+    <b><font FACE="Arial,Helvetica" SIZE="4"><p></font><font FACE="Arial,Helvetica" size="3">ASSUMPTIONS</font></b><font
+    size="1"><ul>
+      </font>
+      <li>31 &lt;= <i>U </i>&lt;=100 where <i>U</i>
+        is the width of the map, i.e. length, in number of squares, of the map in the horizontal
+        (west-east) direction.</li>
+      <li>31 &lt;=<i>NV </i>&lt;=100 where <i>NV</i>
+        is the height of the map, (i.e. length, in number of squares, of the map in the vertical
+        (south-north) direction.</li>
+      <li>1 &lt;= <i>M </i>&lt;=100 where <i>M</i>
+        is the width of the map (i.e. length, in number of squares, of the map in the the
+        horizontal (west-east) direction.</li>
+      <li>The city is surrounded with walls, which are included on the map. </li>
+      <li>The south-west corner of the city has the coordinate (1,1) and the north-east corner has
+        the coordinate (<i>U</i>,<i>V</i>)..</li>
+    </ul>
+    <p>&nbsp;</p>
+    <b><font FACE="Arial,Helvetica" SIZE="4"><p></font><font FACE="Arial,Helvetica" size="3">INPUT</p>
+    </font></b><p>The input is a text file named <font FACE="Courier"><b>under.inp</b></font>.<ul>
+      <li>The first line contains two numbers: <i>N, MU, V</i>.</li>
+      <li>Each of the following <i>NV</i> lines: contains a row of the map in the horizontal
+        direction. Each line consists of <i>MU</i> characters, so that the <i>x</i>&#146;th
+        character on the <br>
+        (<i>V</i>-<i>y</i>+2)&#146;th line of the input file has information about the position (<i>x</i>,<i>y</i>)
+        of the map: It<b> </b>each of which is either a letter &#145;<font FACE="Courier">W</font>&#146;
+        denoting a wall at that position, or a lettern &#145;<font FACE="Courier">O</font>&#146;<font
+        FACE="Courier"><b> </b></font>denoting an open square. [In contrary to integer data, this
+        data has no blanks in between]The data on these lines do not have any blanks in between. </li>
+    </ul>
+    <p>&nbsp;</p>
+    <b><font FACE="Arial,Helvetica" SIZE="4"><p></font><font FACE="Arial,Helvetica" size="3">OUTPUT</p>
+    </font></b><p ALIGN="JUSTIFY">No output file will be generated. The result found by your
+    program must be reported by calling <font FACE="Courier">finish(</font><i>x</i>,<i>y</i><font
+    FACE="Courier">)</font>.</p>
+    <p>&nbsp;</p>
+    <b><font FACE="Arial,Helvetica" SIZE="4"><p></font><font FACE="Arial,Helvetica" size="3">EXAMPLE</p>
+    </font></b><font SIZE="1"><p><img src="under.jpg" width="589" height="224"
+    alt="under.jpg (32182 bytes)"></p>
+    </font><b><font FACE="Arial,Helvetica" SIZE="4"><p></font><font FACE="Arial,Helvetica"
+    size="3">INSTRUCTIONS FOR PASCAL PROGRAMMERS</p>
+    </font></b><p>Have the following in your source file:</p>
+    <font FACE="Courier"><p>uses undertpu.tpu; </p>
+    </font><p>This tpu will provide the following: </p>
+    <font FACE="Courier"><p>procedure start; { must be called first }</p>
+    <p>function look (dir:char):char; </p>
+    <p>procedure move (dir:char);</p>
+    <p>procedure finish (x,y:integer); { must be called last }</p>
+    </font><font FACE="Arial,Helvetica" SIZE="4"><b><p>&nbsp;</p>
+    </b></font><p><font FACE="Arial,Helvetica" size="3"><b>INSTRUCTIONS FOR C/C++ PROGRAMMERS</b></font></p>
+    <p>Have the following in your source file:</p>
+    <font FACE="Courier"><p>#include &quot;under.h&quot;</p>
+    </font><p>Include <font FACE="Courier">under.obj</font> in project. Have the following in
+    your source file:This will provide the following declarations:</p>
+    <font FACE="Courier"><p>void start (void); /* must be called first */</p>
+    <p>char look (char);</p>
+    <p>void move (char);</p>
+    <p>void finish (int,int); /* must be called last */</p>
+    </font><p>&nbsp;</p>
+    <p>Also o create a project called <font FACE="Courier">under</font> which should include
+    your program (<font FACE="Courier">under.c</font> or <font FACE="Courier">under.cpp</font>)
+    and the library for interaction named <font FACE="Courier">underobj.obj</font>. To do this
+    you need to use the <i>project</i> menu of IDE and choose the <i>open</i> option to create
+    a project, and then use <i>add item</i> to include your source file (<font FACE="Courier">under.c</font>
+    or <font FACE="Courier">under.cpp</font>) and the file <font FACE="Courier">underobj.obj</font>.
+    </p>
+    <u><p>Use the LARGE memory model compiler option.</u> (<i>Careful</i>: This overrides the
+    memory model mentioned in the <i>Rules of Contest</i>.) </p>
+    <font FACE="Arial,Helvetica" SIZE="4"><b><p></b>&nbsp;</p>
+    <p></font><font FACE="Arial,Helvetica" size="3"><b>EVALUATION</p>
+    </b></font><p>Your program will be allowed to run 5 seconds.</p>
+    <p ALIGN="JUSTIFY">To get full credit the number of calls to <font FACE="Courier" SIZE="4">look</font>
+    must be the same or less than the number determined by the evaluation program. You can
+    obtain partial credit according to the following formula:</p>
+    <p ALIGN="JUSTIFY">To get full credit, <i>A</i>, for a test case the number of calls to <font
+    FACE="Courier">look</font>, <i>x</i>, must be the same or less than or equal to the
+    number, <i>M</i>, set by the evaluation program. Note that <i>M</i> is chosen as larger
+    than (&gt;) the minimum. In particular, <i>M</i> is independent of the clockwise or
+    counter-clockwise ordering of the directions for looking. You can obtain partial credit if
+    the number of calls to <font FACE="Courier">look</font> is greater than (&gt;) <i>M</i>
+    but less than (&lt;) twice <i>M</i>. The points you get for a test case is given
+    calculated by rounding to the nearest integer the value obtained by the following formula:
+    </p>
+    <i><p ALIGN="JUSTIFY">A</i> if <i>x</i> &lt;= <i>M</p>
+    <p ALIGN="JUSTIFY">A</i>/<i>M</i> (2<i>M</i> &#150; <i>x</i>) /<i>M</i> if <i>M</i> &lt; <i>x</i>
+    &lt; 2<i>M</p>
+    </i><p ALIGN="JUSTIFY">0 if <i>x</i> <font FACE="Symbol">³</font> 2<i>M</p>
+    </i><p ALIGN="JUSTIFY">Illegal behavior by your program will result in zero points.
+    Illegal behaviors specific to this task are are the following:</p>
+    <ul>
+      <li>Calling a a library procedure (or function) with an unacceptable argument, for example a
+        character which does not designate a direction.</li>
+      <li>Attempting to move into a wall.</li>
+      <li>Failing to follow the instructions.</li>
+    </ul>
+    <font FACE="Arial,Helvetica" SIZE="4"><b><p></b>&nbsp;</p>
+    </font><p><font FACE="Arial,Helvetica" size="3"><b>HOW TO TRY OUT YOUR PROGRAM</b></font></p>
+    <p ALIGN="JUSTIFY">Create a text file called <font FACE="Courier">place.txt</font>
+    including the position of the map. Run your program. See the result in the file <font
+    FACE="Courier">result.txt</font>.</p>
+    <p ALIGN="JUSTIFY">The file <font FACE="Courier">place.txt </font>should have one line
+    having the horizontal and vertical coordinates of the position of the map. You need to
+    create your own input data file <font FACE="Courier">under.inp</font>. The <font
+    FACE="Courier">result.txt</font> file will contain two lines. The first line will have the
+    arguments <i>x</i> and <i>y</i> for your call to <font FACE="Courier">finish</font> (<i>x</i>,<i>y</i>).
+    The second line will have a message of the form &quot;<font FACE="Courier">You used look
+    nnn times</font>&quot;. Note that this trial is for checking the compatibility of your
+    program with the library. It has nothing to do with the correctness of your solution. </p>
+    <p>&nbsp;</p>
+    <b><font FACE="Arial,Helvetica" SIZE="4"><p></font><font FACE="Arial,Helvetica" size="3">GRADING</p>
+    </font></b><p>Your program will be allowed to run 5 seconds.</td>
+  </tr>
+</table>
+</body>
+</html>

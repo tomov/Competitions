@@ -1,0 +1,648 @@
+#include <vector>
+#include <list>
+#include <map>
+#include <set>
+#include <deque>
+#include <stack>
+#include <bitset>
+#include <algorithm>
+#include <functional>
+#include <numeric>
+#include <utility>
+#include <sstream>
+#include <iostream>
+#include <fstream>
+#include <queue>
+#include <iomanip>
+#include <cstdio>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
+
+
+#define SZ size()
+#define PB push_back
+#define ALL(v) v.begin(),v.end()
+#define MP make_pair
+#define x first
+#define y second
+
+#define LL long long
+#define UI unsigned int
+#define ULL unsigned long long
+#define PI pair<int,int>
+#define PD pair<double,double>
+#define PLL pair<LL,LL>
+#define PULL pair<ULL,ULL>
+#define VI vector<int>
+#define VD vector<double>
+#define VS vector<string>
+#define SI set<int>
+#define PQ priority_queue
+#define VVI vector<vector<int> >
+#define IT iterator
+
+#define sign(a) ((a)>0)-((a)<0)
+#define sqr(a) ((a)*(a))
+#define Repi(n) for (int i=0; i<n; i++)
+#define Repj(n) for (int j=0; j<n; j++)
+#define Repk(n) for (int k=0; k<n; k++)
+
+#define INF 2000000000
+#define EPS 1e-6
+
+#define pause system("pause")
+
+using namespace std;
+
+
+//WARNING - TEMPLATED & VECTORED SHITS MAKE IT AT LEAST 2 TIMES SLOWER THAN A CLEAN IMPLEMENTAITON!!!
+
+// improved shortest path algorithm used for max flow (see topcoder article)
+// successive shortest path algorithm used for min cost max flow (see topcoder article)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// simple network (no multigraph support) ; adjency matrix used for capacities => small graphs (becomes slow for N > ~500)
+template<class CapType> class FlowNetwork_s{
+	public: 
+		int N,M;
+	    vector<VI> adj;
+	    vector<vector<CapType> > cap;
+	    void init(int _N) { N=_N; M=0; adj.clear(); cap.clear(); adj.resize(N); cap.resize(N); Repi(N) cap[i].resize(N); }
+	    void add(int u,int v,CapType _cap=1)
+	     {
+			if (!cap[u][v] && !cap[v][u]) { adj[u].PB(v); adj[v].PB(u); }
+			cap[u][v]+=_cap; M++;
+	     }
+      };
+	
+template<class CapType> CapType MaxFlow(FlowNetwork_s<CapType> &G,int source,int sink,bool residual=0)
+{
+	VI dist(G.N),path(G.N),prev(G.N),q(G.N),next(G.N);
+	vector<bool> used(G.N);
+	vector<vector<CapType> > res=G.cap;
+	int u,v,pc;
+	CapType mincap,Flow=0;
+
+	q[0]=sink; used[sink]=1; dist[sink]=0;
+	for (int s=0,e=1;s<e;s++)
+	 {
+			u=q[s];
+			Repi(G.adj[u].SZ)
+			 {
+					v=G.adj[u][i];
+					if (G.cap[v][u]>0 && !used[v])
+					 {
+							dist[v]=dist[u]+1;
+							used[v]=1;
+							q[e++]=v;
+					 }
+			 }
+	 }
+
+	u=source; prev[source]=-1;
+	while (dist[source]<G.N)
+	 {
+			for(;next[u]<G.adj[u].SZ;next[u]++)
+			 { v=G.adj[u][next[u]];
+			   if (res[u][v]>0 && dist[u]==dist[v]+1) break;
+			 }
+			if (next[u]==G.adj[u].SZ)
+			 {
+			   dist[u]=INF;
+			   Repi(G.adj[u].SZ)
+			    if (res[u][G.adj[u][i]]>0)
+			     dist[u]=min(dist[u],dist[G.adj[u][i]]+1);
+			   next[u]=0;
+			   if (u!=source) u=prev[u];
+			   continue;
+			 }
+			prev[v]=u;
+			u=v;
+			if (u==sink)
+			 {
+			   pc=0;
+			   while (u!=-1) { path[pc++]=u; u=prev[u]; }
+			   reverse(path.begin(),path.begin()+pc);
+			   mincap=res[path[0]][path[1]];
+			   for (int i=1;i<pc-1;i++)
+			    mincap=min(mincap,res[path[i]][path[i+1]]);
+			   Flow+=mincap;
+			   Repi(pc-1)
+			    {
+					res[path[i]][path[i+1]]-=mincap;
+					res[path[i+1]][path[i]]+=mincap;
+				}
+			   u=source;
+			 }
+	 }
+	if (residual) G.cap=res;
+	return Flow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// better version - suitable for large multigraphs ; warning: each call of add() creates a separate edge with the given capacity (unlike the capacity-matrix version above)
+// note: MaxFlow function is still slow...don't know why. Better use Dinitz...
+template<class CapType> class FlowNetwork{
+	public: 
+		int N,M;
+	    vector<VI> adj;
+	    vector<vector<CapType> > cap;
+	    vector<VI> twin;
+	    void init(int _N) { N=_N; M=0; adj.clear(); cap.clear(); adj.resize(N); cap.resize(N); twin.clear(); twin.resize(N); }
+	    void add(int u,int v,CapType _cap=1)
+	     {
+			twin[u].PB(adj[v].SZ); twin[v].PB(adj[u].SZ);
+			adj[u].PB(v); adj[v].PB(u);
+			cap[u].PB(_cap); cap[v].PB(0);
+	     }
+	    
+
+
+
+	    vector<vector<CapType> > res;
+	    vector<bool> used,sux;
+	    VI q,dist;
+	    int src,snk;
+	    bool bfs(int v)
+	     {
+				used.assign(N,0);
+				dist.assign(N,-1);
+				q[0]=v; dist[v]=0; used[v]=1;
+				for (int s=0,e=1;s<e;s++)
+				 {
+						int u=q[s];
+						Repi(adj[u].SZ)
+						 {
+								v=adj[u][i];
+								int at=twin[u][i];
+								if (res[v][at]>0 && !used[v])
+								 {
+										dist[v]=dist[u]+1;
+										used[v]=1;
+										q[e++]=v;
+								 }
+						 }
+				 }
+				return used[src];
+		 }
+	    
+	    VI prev,previ,path,pathi;
+	    bool dfs(int v)
+	     {
+				if (v==snk) return 1;
+				if (used[v] || sux[v]) return 0;
+				used[v]=1;
+				Repi(adj[v].SZ)
+				 {
+				   if (res[v][i] && dfs(adj[v][i]))
+				    {
+						prev[adj[v][i]]=v;
+						previ[adj[v][i]]=i;
+						return 1;
+					}
+				 }
+				sux[v]=1;
+				return 0;
+		 }
+	    
+	    CapType augment()
+	     {
+					   int pc=0,u=snk;
+					   while (u!=-1) { path[pc++]=u; pathi[pc-1]=previ[u]; u=prev[u]; }
+					   reverse(path.begin(),path.begin()+pc); reverse(pathi.begin(),pathi.begin()+pc);
+					   
+					   CapType mincap=res[path[0]][pathi[1]];
+					   for (int i=1;i<pc-1;i++)
+					      mincap=min(mincap,res[path[i]][pathi[i+1]]);
+
+					   Repi(pc-1)
+					    {
+							res[path[i]][pathi[i+1]]-=mincap;
+							int at=twin[path[i]][pathi[i+1]];
+							res[path[i+1]][at]+=mincap;
+						}		
+					
+					   return mincap;
+		 }
+	    
+	    CapType Dinitz(int source,int sink,bool residual=0)
+	     {
+				CapType flow=0;
+				src=source,snk=sink;
+				res=cap;
+				q.resize(N); prev.resize(N); previ.resize(N); prev[src]=-1; path.resize(N); pathi.resize(N);
+				while (bfs(sink))
+				 {
+						used.assign(N,0);
+						sux.assign(N,0);
+						while (dfs(source))
+						 {
+							flow+=augment();
+							used.assign(N,0);
+						 }
+				 }
+				if (residual) cap=res;
+				return flow;
+		 }
+
+
+
+
+
+
+		CapType MaxFlow(int source,int sink,bool residual=0)
+		 {
+			VI dist(N),path(N),pathi(N),prev(N),previ(N),q(N),next(N);
+			vector<bool> used(N);
+			vector<vector<CapType> > res=cap;
+			int u,v,pc;
+			CapType mincap,Flow=0;
+		
+			q[0]=sink; used[sink]=1; dist[sink]=0;
+			for (int s=0,e=1;s<e;s++)
+			 {
+					u=q[s];
+					Repi(adj[u].SZ)
+					 {
+							v=adj[u][i];
+							int at=twin[u][i];
+							if (cap[v][at]>0 && !used[v])
+							 {
+									dist[v]=dist[u]+1;
+									used[v]=1;
+									q[e++]=v;
+							 }
+					 }
+			 }
+		
+			u=source; prev[source]=-1; previ[source]=0;
+			while (dist[source]<N)
+			 {
+					for(;next[u]<adj[u].SZ;next[u]++)
+					 { v=adj[u][next[u]];
+					   if (res[u][next[u]]>0 && dist[u]==dist[v]+1) break;
+					 }
+					if (next[u]==adj[u].SZ)
+					 {
+					   dist[u]=INF;
+					   Repi(adj[u].SZ)
+					    if (res[u][i]>0)
+					     dist[u]=min(dist[u],dist[adj[u][i]]+1);
+					   next[u]=0;
+					   if (u!=source) u=prev[u];
+					   continue;
+					 }
+					prev[v]=u;
+					previ[v]=next[u];
+					u=v;
+					if (u==sink)
+					 {
+					   pc=0;
+					   while (u!=-1) { path[pc++]=u; pathi[pc-1]=previ[u]; u=prev[u]; }
+					   reverse(path.begin(),path.begin()+pc); reverse(pathi.begin(),pathi.begin()+pc);
+					   
+					   mincap=res[path[0]][pathi[1]];
+					   for (int i=1;i<pc-1;i++)
+					      mincap=min(mincap,res[path[i]][pathi[i+1]]);
+					   Flow+=mincap;
+					   Repi(pc-1)
+					    {
+							res[path[i]][pathi[i+1]]-=mincap;
+							int at=twin[path[i]][pathi[i+1]];
+							res[path[i+1]][at]+=mincap;
+						}
+					   u=source;
+					 }
+			 }
+			if (residual) cap=res;
+			return Flow;
+		 }
+
+
+      };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//simple => no multigraphs ; capacity and cost matrices => no separate reverse edges
+template<class CapType,class CostType> class CostFlowNetwork_s{
+	public:
+	  int N,M;
+	  vector<VI> adj;
+	  vector<vector<CostType> > cost;
+	  vector<vector<CapType> > cap;
+	  void init(int _N) { N=_N; M=0; adj.clear(); cap.clear(); cost.clear(); adj.resize(N); cap.resize(N); Repi(N) cap[i].resize(N); cost.resize(N); Repi(N) cost[i].resize(N); }
+	  void add(int u,int v,CapType _cap=1,CostType _cost=0)
+	   {
+			adj[u].PB(v); adj[v].PB(u);
+			cap[u][v]=_cap; cap[v][u]=0;
+			cost[u][v]=_cost; cost[v][u]=-_cost;
+			M++;
+	   }
+	};
+
+
+template<class CapType,class CostType> pair<CapType,CostType> MinCostMaxFlow_CycleCancelling(CostFlowNetwork_s<CapType,CostType> &G,int source,int sink)
+{
+		vector<CostType> dist(G.N);
+		vector<vector<CostType> > red=G.cost;
+		vector<bool> used(G.N);
+		VI prev(G.N),path(G.N);
+		int cc,u,v,pc,cycle; CostType tmpcost,Cost=0; CapType Flow=0,mincap;
+		
+	    FlowNetwork_s<CapType> G1; G1.N=G.N; G1.adj=G.adj; G1.cap=G.cap;
+	    Flow=MaxFlow<CapType>(G1,source,sink,1);
+	    
+	    while(1)
+	     {
+			fill(dist.begin(),dist.end(),0);
+			bool change=0;
+			cc=0;
+		    Repk(G.N+1)
+		     {
+			  change=0;
+			  Repi(G.N)
+			   Repj(G.adj[i].SZ)
+			     {
+					v=G.adj[i][j]; tmpcost=dist[i]+G.cost[i][v];
+					if (G1.cap[i][v]>0 && dist[v]>tmpcost)
+					 {
+							dist[v]=tmpcost;
+							prev[v]=i;
+							change=1;
+			                if (k==G.N) cycle=v;
+					 }
+			     }
+			  if (!change) break;
+			 }
+			if (!change) break;
+			
+			fill(used.begin(),used.end(),0);
+			u=cycle;
+			pc=0;
+			do { used[u]=1; path[pc++]=u; u=prev[u]; } while (!used[u]);
+			reverse(path.begin(),path.begin()+pc);
+			int c; for (c=0;path[c]!=u;c++);
+			pc=c+1; path[pc++]=path[0];
+			
+			mincap=G1.cap[u][path[0]];
+			Repi(pc-2) mincap=min(mincap,G1.cap[path[i]][path[i+1]]);
+		    Repi(pc-1)
+		     {
+					G1.cap[path[i]][path[i+1]]-=mincap;
+					G1.cap[path[i+1]][path[i]]+=mincap;
+			 }
+		 }
+	    
+		Repi(G.N)
+		 Repj(G.adj[i].SZ)
+		  {
+				v=G.adj[i][j];
+				if (G.cap[i][v]>G1.cap[i][v])
+				 Cost+=(CostType)(G.cap[i][v]-G1.cap[i][v])*G.cost[i][v];
+		  }
+	    return MP(Flow,Cost);
+}
+
+
+template<class CapType,class CostType> pair<CapType,CostType> MinCostMaxFlow(CostFlowNetwork_s<CapType,CostType> &G,int source,int sink)
+	{
+		vector<vector<CapType> > res=G.cap;
+		vector<CostType> dist(G.N);
+		vector<vector<CostType> > red=G.cost;
+		vector<bool> used(G.N),used1(G.N);
+		VI prev(G.N),path(G.N);
+		int u,v,pc; CostType tmpcost,Cost=0; CapType Flow=0,mincap;
+	    
+
+		
+		used[source]=1;
+		Repk(G.N)
+		 {
+		  bool change=0;
+		  Repi(G.N)
+		   if (used[i])
+		    Repj(G.adj[i].SZ)
+		     {
+					v=G.adj[i][j]; tmpcost=dist[i]+G.cost[i][v];
+					if ((!used[v] || dist[v]>tmpcost) && G.cap[i][v]>0)
+					 {
+							used[v]=1;
+							dist[v]=tmpcost;
+							change=1;
+					 }
+		     }
+		  if (!change) break;
+		  if (change && k==G.N-1)
+		   return MinCostMaxFlow_CycleCancelling<CapType,CostType>(G,source,sink);
+		 }
+		
+		
+		Repi(G.N) Repj(G.adj[i].SZ) { v=G.adj[i][j]; red[i][v]+=dist[i]-dist[v]; }
+		PQ<pair<CostType,int>,vector<pair<CostType,int> >,greater<pair<CostType,int> > > q;
+		pair<CostType,int> tmp;
+		prev[source]=-1;
+		while(1)
+		 {
+				fill(used.begin(),used.end(),0);
+				fill(used1.begin(),used1.end(),0);
+				dist[source]=0;
+				q.push(MP(0,source));
+				while (!q.empty())
+				 {
+						tmp=q.top(); q.pop();
+						if (used[tmp.y]) continue;
+						used[tmp.y]=1;
+						u=tmp.y;
+						Repi(G.adj[u].SZ)
+						 {
+								v=G.adj[u][i];
+								if (!used[v] && res[u][v]>0 && (!used1[v] || dist[v]>dist[u]+red[u][v]))
+								 {
+										used1[v]=1;
+										dist[v]=dist[u]+red[u][v];
+										prev[v]=u;
+										q.push(MP(dist[v],v));
+								 }
+						 }
+				 }
+				if (!used[sink]) break;
+				
+				v=sink; pc=0;
+				while (v!=-1) { path[pc++]=v; v=prev[v]; }
+				reverse(path.begin(),path.begin()+pc);
+				mincap=res[path[0]][path[1]];
+				for (int i=1;i<pc-1;i++)
+				 mincap=min(mincap,res[path[i]][path[i+1]]);
+				Flow+=mincap;
+				Repi(pc-1)
+				 {
+						res[path[i]][path[i+1]]-=mincap;
+						res[path[i+1]][path[i]]+=mincap;
+				 }
+		        Repi(G.N) Repj(G.adj[i].SZ) { v=G.adj[i][j]; red[i][v]+=dist[i]-dist[v]; }
+		 }
+		
+		Repi(G.N)
+		 Repj(G.adj[i].SZ)
+		  {
+				v=G.adj[i][j];
+				if (G.cap[i][v]>res[i][v])
+				 Cost+=(CostType)(G.cap[i][v]-res[i][v])*G.cost[i][v];
+		  }
+		return MP(Flow,Cost);
+	}
+
+
+
+
+// this once sucks...
+template<class CapType,class CostType> pair<CapType,CostType> MinCostMaxFlow_BellmanFord(CostFlowNetwork_s<CapType,CostType> &G,int source,int sink)
+	{
+		vector<vector<CapType> > res=G.cap;
+		vector<CostType> dist(G.N);
+		vector<bool> used(G.N);
+		VI prev(G.N),path(G.N);
+		int u,v,pc; CostType tmpcost,Cost=0; CapType Flow=0,mincap;
+		dist[source]=0; prev[source]=-1;
+		
+		while(1)
+		{
+		  fill(used.begin(),used.end(),0);
+		  used[source]=1;
+		  Repk(G.N)
+		   {
+		    bool change=0;
+		    Repi(G.N)
+		     if (used[i])
+		      Repj(G.adj[i].SZ)
+		       {
+			 		  v=G.adj[i][j]; if (res[i][v]<=0) continue;
+					  tmpcost=dist[i]+G.cost[i][v];
+					  if (!used[v] || dist[v]>tmpcost)
+					   {
+							  used[v]=1;
+							  dist[v]=tmpcost;
+							  prev[v]=i;
+							  change=1;
+					   }
+		       }
+		    if (!change) break;
+		    if (change && k==G.N-1) return MP(-1,-1); //negative cycle
+		   }
+		   
+		  if (!used[sink]) return MP(Flow,Cost);
+		  
+		  v=sink; pc=0;
+		  while (v!=-1) { path[pc++]=v; v=prev[v]; }
+		  reverse(path.begin(),path.begin()+pc);
+		  mincap=res[path[0]][path[1]]; tmpcost=G.cost[path[0]][path[1]];
+		  for (int i=1;i<pc-1;i++)
+		   {
+		     mincap=min(mincap,res[path[i]][path[i+1]]);
+		     tmpcost+=G.cost[path[i]][path[i+1]];
+		   }
+		  Flow+=mincap; Cost+=tmpcost*(CostType)mincap;
+		  Repi(pc-1)
+		   {
+				res[path[i]][path[i+1]]-=mincap;
+ 			    res[path[i+1]][path[i]]+=mincap;
+		   }
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+int main()
+{
+	ifstream f("flownetwork.in");
+	int j,k,l,source,sink;
+	f>>source>>sink;
+	
+	FlowNetwork_s<double> G;
+	G.init(11);
+	
+	while (f>>j>>k>>l)
+			G.add(j,k,l);
+	f.close();
+	
+	cout<<MaxFlow<double>(G,source,sink)<<endl;
+	
+	pause;
+	return 0;
+}

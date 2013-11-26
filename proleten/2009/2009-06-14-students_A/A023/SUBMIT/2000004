@@ -1,0 +1,48 @@
+#include <cstdio>
+
+const int MAXN = 1 << 20;
+
+int n , k;
+int a[MAXN];
+
+void read() {
+	int i;
+	
+	scanf ( "%d%d" , &n , &k );
+	for (i = 1; i <= n; i++)
+		scanf ( "%d" , &a[i] );
+}
+
+long long doit ( long long ) { return 0LL; }
+
+void solve() {
+	long long sum = 0;
+	long long ans , cur;
+	int idx;
+	int i;
+	
+	for (i = 1; i <= k; i++)
+		sum += (long long)a[i];
+	ans = doit ( sum );
+	idx = 1;
+	
+	for (i = k + 1; i <= n; i++) {
+		sum -= (long long)a[i - k];
+		sum += (long long)a[i];
+		
+		cur = doit ( sum );
+		if ( cur < ans ) {
+			ans = cur;
+			idx = i - k + 1;
+		}
+	}
+	
+	printf ( "%lld\n%d\n" , ans , idx );
+}
+
+int main() {
+	read();
+	solve();
+	
+	return 0;
+}

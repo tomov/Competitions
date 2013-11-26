@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+int DP[1000][1000];
+int a[1000];
+int sum [1000];
+int n;
+int rec (int f, int l)
+{
+	if (DP[f][l]!= -1) return DP[f][l];
+	if (f == l) return DP[f][l] = 0;
+	int k;
+	int ret = -1;
+	for (k = f; k < l; k++)
+	{
+		int temp = rec (f, k) + rec (k+1, l);
+		if (ret == -1 || temp + (sum [l] - sum [f-1]) < ret) ret = temp + sum [l] - sum [f-1]; 
+	}
+	
+	return DP[f][l] = ret;
+}
+
+int main ()
+{
+	
+	memset (DP, -1, sizeof (DP));
+	scanf ("%d", &n);
+	if (n > 300) while (1);
+	int i;
+	for (i = 1; i<=n; i++)
+	{
+		scanf ("%d", &a[i]);
+	}
+	sort (a+1, a+n+1);
+	
+	for (i = 1; i<=n; i++)
+	sum [i] = a[i] + sum[i-1];
+
+	//for (i = 1; i<=n; i++)
+	//	cout << a[i]<<" "; cout <<endl;
+	//for (i = 1; i<=n; i++) cout << sum[i]<<" "; cout << endl; 
+	printf ("%d\n", rec (1, n));
+	//printf ("%d\n", rec (1, n));
+
+	
+	return 0;
+}

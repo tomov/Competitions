@@ -1,0 +1,69 @@
+Hello,
+
+You didn't send me a gpg key, so I believe there is no need to encrypt this message.
+
+
+In general, I am very pleased with the changes in this IOI. The RunC environment and the prototypes spare a lot of routine coding that usually wastes the competitor's precious time. Although it took me a few minutes to get used to the new setup, it was surely worthwhile. I believe the subproblems-type-of-grading and the detailed feedback will assess each contestant's abilities more objectively. And the common time and memory constraints also remove a little unnecessary complexities.
+
+Day 1 didn’t bring any surprises – 2 easy, 1 medium and 1 difficult, as always. The form of the language problem was a little unexpected, yet it is very interesting. I had some problems with the internet connection and I made my last two submissions this morning, although I had them ready last night before the 5 hours had passed.
+
+First of all, I have some minor suggestions about the environment in general. 
+
+1.	I didn’t quite understand how the tokens work from the information on the cover sheet. It says that you can use up to 2 tokens in any 30 min period, but what I saw is 3 tokens per task which regenerate at certain times. I think that should be explained a little more clearly, and that there are separate tokens for each problem.
+
+2.	Although contestants have example test cases at hand, I believe there should be example test cases in all problem statements where it is applicable (for Day 1, in traffic and quality). There is one for quality, but none for traffic.
+
+3.	In the VirtualBox version of the environment, the screen turns off after about 10 minutes of inactivity. It is somewhat annoying to have to type the password each time, so I think it should be turned off in the real competition.
+
+4.	When detailed results for a problem are displayed, I think the rows of the table that correspond to failed subtasks should clearly stand out (e.g. colored in red). It is a minor thing, but it spares contestants some extra 2 seconds of anxiety having to read “passed” or “failed”.
+
+5.	The grader takes very long to grade submissions and I believe it is so because the results for the example test cases aren’t displayed until it is tested on all test cases. I know it is a bit late to make changes to the grading system, but it would be nice if the example results are displayed as soon as possible, even though the contestant can know them easily from his own machine. This was especially annoying with problem quality.
+
+
+Now for the problems.
+
+
+I.	Cluedo
+
+No suggestions. Very clear problem statement. It is obvious that it is the easiest problem. Got 100 points
+
+
+II.	Traffic
+
+1.	First it says “people work in large cities”, but then it speaks about only one city. I understand this is a transition from the real situation to the world of the problem statement, but it can be a bit confusing. I would suggest leaving all the real-world information in the first paragraph and saying something like “people work in the big city” in the second. 
+
+2.	Also the phrase “city centre” could cause ambiguous associations (for example, I think of this as a sort of building or set of buildings). I believe “central city” or something like that would be more appropriate.
+
+3.	 As I already mentioned, an example test case would be nice.
+
+After some small observations, it was clear this is the second easy problem. Got 100 points
+
+
+III.	Quality
+
+1.	There was a problem with the answer in the first example test case in the prototype (it was 9 instead of 13). Also, the grader returns “Wrong answer” or “Correct” whereas the .expected-files expect “Answer X Correct”.
+
+2.	The highlighted rectangle in the example test case in the problem statement should be shifted 1 row up.
+
+3.	I think it isn’t made clear that the quality numbers are all distinct.
+
+4.	“dimensions H from north to south AND BY W from west to east” – typo
+
+First I thought of binary search, but then discarded the idea as too easy and spent 2 hours coding one using a quad-tree. When I saw the results and knew it was too slow, I thought of binary search again and when I got it, it was much, much easier to code. I think a lot of people will solve this problem, perhaps a little more than necessary. Got 100 points.
+
+
+IV.	Language
+
+1.	 “10,000 practice examples” - I reckon it should be clearly stated that these are example excerpts which are actually part of one example test case (i.e. one execution), and that the real grading will also be done with one test case.
+
+2.	“The sample and official languages are numbered differently, and the symbols within each excerpt are also numbered differently.” The second part seems ambiguous to me. Perhaps something like “The numbering of languages and symbols in the example excerpts is different from that in the official excerpts.”
+
+3.	The statement speaks of the accuracy as a “percentage” but it is rather used as a “fraction” in the formula for subtask 2. Perhaps “1.14 * (alpha - 30)”?
+
+4.	I don’t think Rocchio’s method is described well.  The last sentence in particular is confusing. “in a previously seen excerpt” or “in ALL previously seen excerpts”? I implemented what I understood, namely if count[language][letter] is the number of times the letter letter has occurred in the language language, then similarity with L = sum of count[L][S] for all S in E. But this scored only 25% on the example test case. Perhaps I’ve implemented it wrong, I couldn’t get it to work on the system anyway, but if it is indeed meant to score only 25% on the examples then I think that should also be stated in the problem statement.
+
+The problem was a pleasant surprise. I liked it a lot, although I decided to leave it last because it seemed the most difficult. I didn’t think too much on it, and was surprised that my first idea got so many points. I use the same array count[language][letter], but instead of similarity with L, I define difference with L = sum of (average count[L][S] – count of S in E) ^ 2, and seek the smallest difference. I got 68 points.
+
+Overall, maybe the tasks are a bit easier than necessary and I think there will be minor differences in the higher scores from Day 1, mostly caused by the language problem. Today I’ll do Day 2.
+
+

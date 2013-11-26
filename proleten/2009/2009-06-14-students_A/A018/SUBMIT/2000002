@@ -1,0 +1,218 @@
+/*
+user: A018
+pass: 5r41ot
+*/
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <iomanip>
+#include <cstring>
+#include <ctime>
+#include <cmath>
+#include <cstdio>
+#include <cstdlib>
+#include <algorithm>
+#include <utility>
+#include <numeric>
+#include <functional>
+#include <set>
+#include <vector>
+#include <bitset>
+#include <queue>
+#include <map>
+
+using namespace std;
+
+#define F(i,n) for (int i=0;i<n;i++)
+#define Repi(n) F(i,n)
+#define Repj(n) F(j,n)
+#define Repk(n) F(k,n)
+#define PI pair<int,int>
+#define LL long long
+#define PD pair<double,double>
+#define PQ priority_queue
+#define sqr(x) ((x)*(x))
+#define VI vector<int>
+#define MP make_pair
+#define SZ size()
+#define x first
+#define y second
+#define PB push_back
+
+#define Time (double)clock()/CLOCKS_PER_SEC
+#define ABS(x) (((x)>0)?(x):(-(x)))
+#define MAX(a,b) ((a)>(b)?(a):(b))
+#define MIN(a,b) ((a)<(b)?(a):(b))
+#define sign(a) (((a)>0)-((a)<0))
+
+int L;
+int N,M,C,T;
+
+const int MAXN=51;
+int col[MAXN];
+VI adj[MAXN];
+
+int ans[MAXN];
+
+
+
+
+
+
+int dp[1<<12],q[1<<12];
+
+int nmask,mask,want;
+
+void dfs(int v)
+{
+	if (nmask&(1<<v)) return;
+	nmask|=(1<<v);
+	Repi(adj[v].SZ)
+	 {
+	   int to=adj[v][i];
+	   if ( ((mask>>to)&1) == ((mask>>v)&1) )
+	    dfs(to);
+	 }
+}
+
+int bf()
+{
+	memset(dp,-1,sizeof(dp));
+	
+	mask=0;
+	want=0;
+	if (C) want=(1<<N)-1;
+	Repi(N)
+	 mask|=col[i]<<i;
+	dp[mask]=0;
+	q[0]=mask;
+	
+	for (int s=0,e=1; s<e; s++)
+	 {
+	 	mask=q[s];
+	 //	cout<<" at "<<mask<<" with "<<dp[mask]<<"\n";
+	 	Repi(N)
+	 	 {
+	 	 	nmask=0;
+	 	 	dfs(i);
+	 	 //	cout<<"   shift "<<i<<" ("<<nmask<<")  : ";
+	 	 	nmask=mask^nmask;
+	 	 	//cout<<nmask<<"\n";
+	 	 	
+	 	 	if (dp[nmask]!=-1) continue;
+	 	 	dp[nmask]=dp[mask]+1;
+	 	 	q[e++]=nmask;
+	 	 //	cout<<"                               yes!\n";
+	 	 	if (nmask==want) goto end;
+	 	 }
+	 }
+	end:;
+	return dp[want]*T;
+}
+
+
+int A[1<<15];
+int B[1<<15];
+
+int ret=1000000000;
+int sum;
+
+inline void check(int gr)
+{
+	ret=min( ret , max(gr,sum-gr) );
+}
+
+
+int main()
+{
+	scanf("%d",&L);
+	F(t,L)
+	 {
+		scanf("%d%d%d%d",&N,&M,&C,&T);	
+		Repi(N) scanf("%d",col+i),adj[i].clear();
+		Repi(M)
+		 {
+		 	int a,b;
+		 	scanf("%d%d",&a,&b);
+		 	adj[a].PB(b);
+		 	adj[b].PB(a);
+		 }
+		 
+		//cout<<"\n\n\nSOLVE FOR "<<t<<"\n";
+		if (N<=12)
+		 {
+		   ans[t]=bf();
+		 }
+		//cout<<t<<" -> "<<ans[t]<<"\n";
+	 }
+	 
+	 
+	 /*
+	  		srand(time(NULL));
+	L=10;
+	Repi(L)
+	 ans[i]=rand()%1000,cout<<ans[i]<<",";
+	 cout<<"\n";
+	*/
+
+	 
+	int As=L/2;
+	int Bs=L-As;
+	Repi(1<<As)
+	 {
+	 	Repj(As)
+	 	 if (i&(1<<j))
+	 		A[i]+=ans[j];
+	 }
+	Repi(1<<Bs)
+	 {
+	 	Repj(Bs)
+	 	 if (i&(1<<j))
+	 		B[i]+=ans[j+As];
+	 }
+ 	sum=A[(1<<As)-1]+B[(1<<Bs)-1];
+ 	
+ 	
+ 	
+ 	
+ /*	
+	int ttt=1000000000;
+	Repi(1<<L)
+	 {
+	 	int tmp=0;
+	 	Repj(L)
+	 	 if (i&(1<<j))
+	 	  tmp+=ans[j];
+	 	ttt=min(ttt,max(tmp,sum-tmp));
+	 }
+	printf("%d\n",ttt);
+*/	 
+
+ 	
+ 	
+ 	
+ 	
+ 	
+	sort(B,B+(1<<Bs));
+	Repi((1<<As))
+	 {
+	 	int *it=lower_bound(B,B+(1<<Bs),sum/2-A[i]);
+	 	
+	 	check(A[i]+it[0]);
+	 	if (it+1<B+(1<<Bs))
+	 	 check(A[i]+it[1]);
+	 	if (it>B)
+	 	 check(A[i]+it[-1]);
+	 
+ 	 	it=upper_bound(B,B+(1<<Bs),sum/2-A[i]);
+	 	check(A[i]+it[0]);
+	 	if (it+1<B+(1<<Bs))
+	 	 check(A[i]+it[1]);
+	 	if (it>B)
+	 	 check(A[i]+it[-1]);
+	}
+	printf("%d\n",ret);
+
+
+	return 0;
+}

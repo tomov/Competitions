@@ -1,0 +1,37 @@
+/*
+TASK: leaves
+LANG: C++
+*/
+#include <iostream>
+#include <algorithm>
+#define MAXN (1 << 20)
+using namespace std;
+
+int n , a[MAXN] , sol, br;
+
+int main ()
+{
+ scanf ("%d", &n);   br = n-1;
+ for (int i=0; i < n; ++i)
+  scanf ("%d", &a[i]);
+ 
+ sort (a , a + n);
+ 
+ int  st = 0, k = 1;
+ while ( k < n )
+  {
+   k <<= 1;
+   st ++;
+  }
+ if ( k != n ) { st --; }
+ if ( k == n ) k <<= 1;
+ 
+ for (int i=0 ; i < k-n; ++i)
+  sol += a[br--]*st; //cout << "sol += " << a[br+1] << " * " << st << endl; }
+ 
+ for (int i=k-n; i < n; ++i)
+  sol += a[br--]*(st+1); //cout << "sol += " << a[br+1] << " * " << st+1 << endl; }
+ 
+ printf ("%d\n", sol );
+ return 0;  
+} 

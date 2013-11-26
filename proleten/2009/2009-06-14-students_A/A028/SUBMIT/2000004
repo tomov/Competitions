@@ -1,0 +1,93 @@
+#include<iostream>
+#include<vector>
+#define MAXN 1000000
+#define ABS(a) ((a)>0?(a):(-a))
+#define pii pair < int, int> 
+using namespace std;
+int all[MAXN]={0},n,k,mode[MAXN],m=-1;
+vector <pii> v;
+int main()
+{
+ int i,modemax=0,modei,ans=0x7FFFFFFF,tmp=0,fl=1,x,start,j,fff;
+ scanf("%d%d",&n,&k); //init
+ for(i=0;i<n;i++)
+ {
+  scanf("%d",&all[i]);
+  if(all[i]>m)m=all[i];
+ }
+ v.push_back(make_pair(0,0));
+ for(i=0;i<k;i++)
+ {
+  if(!mode[all[i]]){v.push_back(make_pair(1,all[i]));mode[all[i]]=v.size()-1;}
+  else v[mode[all[i]]].first++;
+  if(v[mode[all[i]]].first>modemax)
+  {
+   modemax=v[mode[all[i]]].first;
+   modei=v[mode[all[i]]].second;
+  }
+ }
+/* 
+ for(i=0;i<v.size();i++)
+ printf("%d: %d %d\n",i,v[i].first,v[i].second);
+ printf("%d\n",modei);
+ */
+ for(x=modei;fl;x--)
+ {
+  fl=tmp=0;
+  for(i=0;i<v.size();i++)
+  {
+   fff=x-v[i].second;
+   fff=ABS(fff);
+   tmp+=fff*v[i].first;
+  }
+  if(ans>tmp){ans=tmp;fl=1;}
+//  printf("%d %d %d\n",x,ans,fff);
+ }
+ for(fl=1,x=modei+1;fl;x++)
+ {
+  fl=tmp=0;
+  for(i=0;i<v.size();i++)
+  {
+   fff=(x-v[i].second);
+   fff=ABS(fff);
+   tmp+=fff*v[i].first;
+//  printf("%d %d %d %d\n",i,x,fff,tmp);
+  }
+  if(ans>tmp){ans=tmp;fl=1;}
+  
+ }
+ start=1;
+ for(j=0;j<n-k;j++)
+ {
+  v[mode[all[j]]].first--;
+  if(mode[all[k+j]])v[mode[all[k+j]]].first++;
+  if(!mode[all[k+j]]){v.push_back(make_pair(1,all[k+j]));mode[all[k+j]]=v.size()-1;}
+  if(modei==all[j])
+   for(i=0;i<v.size();i++)
+    if(v[i].first>modemax)
+    {
+     modemax=v[i].first;
+     modei=v[i].second;
+    }
+ // printf("%d: %d %d\n",j,modemax,modei);
+ for(fl=1,x=modei;fl;x++)
+ {
+  fl=tmp=0;
+  for(i=0;i<v.size();i++)
+   tmp+=ABS((x-v[i].second))*v[i].first;
+  if(ans>tmp){ans=tmp;fl=1;start=j+2;}
+ // printf("%d %d %d\n",x,ans,tmp);
+ }
+ for(fl=1,x=modei-1;fl;x--)
+ {
+  fl=tmp=0;
+  for(i=0;i<v.size();i++)
+   tmp+=ABS((x-v[i].second))*v[i].first;
+  if(ans>tmp){ans=tmp;fl=1;start=j+2;}
+//  printf("%d %d %d\n",x,ans,tmp);
+ }
+  
+ }
+ printf("%d\n%d\n",ans,start);
+ return 0;
+}

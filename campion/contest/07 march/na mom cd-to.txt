@@ -1,0 +1,18 @@
+tva fa6ta 70 to4ki o.O
+
+int main()
+{
+   int res=0,c,d,p,l;
+   FILE *in,*out;
+   in=fopen("cd.in","r");
+   out=fopen("cd.out","w");
+   fscanf(in,"%d%d%d",&c,&d,&k);
+   res=(c+d)/k;
+   if((c+d)%k)res++;
+   res<<=1;
+   res--;
+   fprintf(out,"%d\n",res);
+   fclose(in);
+   fclose(out);
+return 0;
+}

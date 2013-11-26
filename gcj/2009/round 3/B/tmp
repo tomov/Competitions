@@ -1,0 +1,622 @@
+ eval ehw+hwww
+    over where 
+                         cur = 2
+                         cur = 2
+                         cur = 2
+                 res 2 += 2
+                         cur = 1
+                         cur = 1
+                         cur = 1
+                         cur = 1
+                         res = 3
+    over when 
+                         cur = 1
+                         cur = 1
+                         cur = 1
+                 res 1 += 1
+                         cur = 1
+                         cur = 1
+                         cur = 1
+                         cur = 1
+                         res = 2
+    over where when 
+                         cur = 3
+                         cur = 6
+                         cur = 12
+                 res 12 += 12
+                         cur = 2
+                         cur = 4
+                         cur = 8
+                         cur = 16
+                         res = 28
+    over what 
+                         cur = 0
+                         cur = 0
+                         cur = 0
+                 res 0 += 0
+                         cur = 1
+                         cur = 1
+                         cur = 1
+                         cur = 1
+                         res = 1
+    over where what 
+                         cur = 2
+                         cur = 4
+                         cur = 8
+                 res 8 += 8
+                         cur = 2
+                         cur = 4
+                         cur = 8
+                         cur = 16
+                         res = 24
+    over when what 
+                         cur = 1
+                         cur = 2
+                         cur = 4
+                 res 4 += 4
+                         cur = 2
+                         cur = 4
+                         cur = 8
+                         cur = 16
+                         res = 20
+    over where when what 
+                         cur = 3
+                         cur = 9
+                         cur = 27
+                 res 27 += 27
+                         cur = 3
+                         cur = 9
+                         cur = 27
+                         cur = 81
+                         res = 108
+    over whether 
+                         cur = 2
+                         cur = 4
+                         cur = 4
+                 res 4 += 4
+                         cur = 2
+                         cur = 2
+                         cur = 2
+                         cur = 2
+                         res = 6
+    over where whether 
+                         cur = 4
+                         cur = 12
+                         cur = 24
+                 res 24 += 24
+                         cur = 3
+                         cur = 6
+                         cur = 12
+                         cur = 24
+                         res = 48
+    over when whether 
+                         cur = 3
+                         cur = 9
+                         cur = 18
+                 res 18 += 18
+                         cur = 3
+                         cur = 6
+                         cur = 12
+                         cur = 24
+                         res = 42
+    over where when whether 
+                         cur = 5
+                         cur = 20
+                         cur = 60
+                 res 60 += 60
+                         cur = 4
+                         cur = 12
+                         cur = 36
+                         cur = 108
+                         res = 168
+    over what whether 
+                         cur = 2
+                         cur = 6
+                         cur = 12
+                 res 12 += 12
+                         cur = 3
+                         cur = 6
+                         cur = 12
+                         cur = 24
+                         res = 36
+    over where what whether 
+                         cur = 4
+                         cur = 16
+                         cur = 48
+                 res 48 += 48
+                         cur = 4
+                         cur = 12
+                         cur = 36
+                         cur = 108
+                         res = 156
+    over when what whether 
+                         cur = 3
+                         cur = 12
+                         cur = 36
+                 res 36 += 36
+                         cur = 4
+                         cur = 12
+                         cur = 36
+                         cur = 108
+                         res = 144
+    over where when what whether 
+                         cur = 5
+                         cur = 25
+                         cur = 100
+                 res 100 += 100
+                         cur = 5
+                         cur = 20
+                         cur = 80
+                         cur = 320
+                         res = 420
+    over who 
+                         cur = 0
+                         cur = 0
+                         cur = 0
+                 res 0 += 0
+                         cur = 1
+                         cur = 1
+                         cur = 1
+                         cur = 1
+                         res = 1
+    over where who 
+                         cur = 2
+                         cur = 4
+                         cur = 8
+                 res 8 += 8
+                         cur = 2
+                         cur = 4
+                         cur = 8
+                         cur = 16
+                         res = 24
+    over when who 
+                         cur = 1
+                         cur = 2
+                         cur = 4
+                 res 4 += 4
+                         cur = 2
+                         cur = 4
+                         cur = 8
+                         cur = 16
+                         res = 20
+    over where when who 
+                         cur = 3
+                         cur = 9
+                         cur = 27
+                 res 27 += 27
+                         cur = 3
+                         cur = 9
+                         cur = 27
+                         cur = 81
+                         res = 108
+    over what who 
+                         cur = 0
+                         cur = 0
+                         cur = 0
+                 res 0 += 0
+                         cur = 2
+                         cur = 4
+                         cur = 8
+                         cur = 16
+                         res = 16
+    over where what who 
+                         cur = 2
+                         cur = 6
+                         cur = 18
+                 res 18 += 18
+                         cur = 3
+                         cur = 9
+                         cur = 27
+                         cur = 81
+                         res = 99
+    over when what who 
+                         cur = 1
+                         cur = 3
+                         cur = 9
+                 res 9 += 9
+                         cur = 3
+                         cur = 9
+                         cur = 27
+                         cur = 81
+                         res = 90
+    over where when what who 
+                         cur = 3
+                         cur = 12
+                         cur = 48
+                 res 48 += 48
+                         cur = 4
+                         cur = 16
+                         cur = 64
+                         cur = 256
+                         res = 304
+    over whether who 
+                         cur = 2
+                         cur = 6
+                         cur = 12
+                 res 12 += 12
+                         cur = 3
+                         cur = 6
+                         cur = 12
+                         cur = 24
+                         res = 36
+    over where whether who 
+                         cur = 4
+                         cur = 16
+                         cur = 48
+                 res 48 += 48
+                         cur = 4
+                         cur = 12
+                         cur = 36
+                         cur = 108
+                         res = 156
+    over when whether who 
+                         cur = 3
+                         cur = 12
+                         cur = 36
+                 res 36 += 36
+                         cur = 4
+                         cur = 12
+                         cur = 36
+                         cur = 108
+                         res = 144
+    over where when whether who 
+                         cur = 5
+                         cur = 25
+                         cur = 100
+                 res 100 += 100
+                         cur = 5
+                         cur = 20
+                         cur = 80
+                         cur = 320
+                         res = 420
+    over what whether who 
+                         cur = 2
+                         cur = 8
+                         cur = 24
+                 res 24 += 24
+                         cur = 4
+                         cur = 12
+                         cur = 36
+                         cur = 108
+                         res = 132
+    over where what whether who 
+                         cur = 4
+                         cur = 20
+                         cur = 80
+                 res 80 += 80
+                         cur = 5
+                         cur = 20
+                         cur = 80
+                         cur = 320
+                         res = 400
+    over when what whether who 
+                         cur = 3
+                         cur = 15
+                         cur = 60
+                 res 60 += 60
+                         cur = 5
+                         cur = 20
+                         cur = 80
+                         cur = 320
+                         res = 380
+    over where when what whether who 
+                         cur = 5
+                         cur = 30
+                         cur = 150
+                 res 150 += 150
+                         cur = 6
+                         cur = 30
+                         cur = 150
+                         cur = 750
+                         res = 900
+    over whose 
+                         cur = 1
+                         cur = 1
+                         cur = 1
+                 res 1 += 1
+                         cur = 1
+                         cur = 1
+                         cur = 1
+                         cur = 1
+                         res = 2
+    over where whose 
+                         cur = 3
+                         cur = 6
+                         cur = 12
+                 res 12 += 12
+                         cur = 2
+                         cur = 4
+                         cur = 8
+                         cur = 16
+                         res = 28
+    over when whose 
+                         cur = 2
+                         cur = 4
+                         cur = 8
+                 res 8 += 8
+                         cur = 2
+                         cur = 4
+                         cur = 8
+                         cur = 16
+                         res = 24
+    over where when whose 
+                         cur = 4
+                         cur = 12
+                         cur = 36
+                 res 36 += 36
+                         cur = 3
+                         cur = 9
+                         cur = 27
+                         cur = 81
+                         res = 117
+    over what whose 
+                         cur = 1
+                         cur = 2
+                         cur = 4
+                 res 4 += 4
+                         cur = 2
+                         cur = 4
+                         cur = 8
+                         cur = 16
+                         res = 20
+    over where what whose 
+                         cur = 3
+                         cur = 9
+                         cur = 27
+                 res 27 += 27
+                         cur = 3
+                         cur = 9
+                         cur = 27
+                         cur = 81
+                         res = 108
+    over when what whose 
+                         cur = 2
+                         cur = 6
+                         cur = 18
+                 res 18 += 18
+                         cur = 3
+                         cur = 9
+                         cur = 27
+                         cur = 81
+                         res = 99
+    over where when what whose 
+                         cur = 4
+                         cur = 16
+                         cur = 64
+                 res 64 += 64
+                         cur = 4
+                         cur = 16
+                         cur = 64
+                         cur = 256
+                         res = 320
+    over whether whose 
+                         cur = 3
+                         cur = 9
+                         cur = 18
+                 res 18 += 18
+                         cur = 3
+                         cur = 6
+                         cur = 12
+                         cur = 24
+                         res = 42
+    over where whether whose 
+                         cur = 5
+                         cur = 20
+                         cur = 60
+                 res 60 += 60
+                         cur = 4
+                         cur = 12
+                         cur = 36
+                         cur = 108
+                         res = 168
+    over when whether whose 
+                         cur = 4
+                         cur = 16
+                         cur = 48
+                 res 48 += 48
+                         cur = 4
+                         cur = 12
+                         cur = 36
+                         cur = 108
+                         res = 156
+    over where when whether whose 
+                         cur = 6
+                         cur = 30
+                         cur = 120
+                 res 120 += 120
+                         cur = 5
+                         cur = 20
+                         cur = 80
+                         cur = 320
+                         res = 440
+    over what whether whose 
+                         cur = 3
+                         cur = 12
+                         cur = 36
+                 res 36 += 36
+                         cur = 4
+                         cur = 12
+                         cur = 36
+                         cur = 108
+                         res = 144
+    over where what whether whose 
+                         cur = 5
+                         cur = 25
+                         cur = 100
+                 res 100 += 100
+                         cur = 5
+                         cur = 20
+                         cur = 80
+                         cur = 320
+                         res = 420
+    over when what whether whose 
+                         cur = 4
+                         cur = 20
+                         cur = 80
+                 res 80 += 80
+                         cur = 5
+                         cur = 20
+                         cur = 80
+                         cur = 320
+                         res = 400
+    over where when what whether whose 
+                         cur = 6
+                         cur = 36
+                         cur = 180
+                 res 180 += 180
+                         cur = 6
+                         cur = 30
+                         cur = 150
+                         cur = 750
+                         res = 930
+    over who whose 
+                         cur = 1
+                         cur = 2
+                         cur = 4
+                 res 4 += 4
+                         cur = 2
+                         cur = 4
+                         cur = 8
+                         cur = 16
+                         res = 20
+    over where who whose 
+                         cur = 3
+                         cur = 9
+                         cur = 27
+                 res 27 += 27
+                         cur = 3
+                         cur = 9
+                         cur = 27
+                         cur = 81
+                         res = 108
+    over when who whose 
+                         cur = 2
+                         cur = 6
+                         cur = 18
+                 res 18 += 18
+                         cur = 3
+                         cur = 9
+                         cur = 27
+                         cur = 81
+                         res = 99
+    over where when who whose 
+                         cur = 4
+                         cur = 16
+                         cur = 64
+                 res 64 += 64
+                         cur = 4
+                         cur = 16
+                         cur = 64
+                         cur = 256
+                         res = 320
+    over what who whose 
+                         cur = 1
+                         cur = 3
+                         cur = 9
+                 res 9 += 9
+                         cur = 3
+                         cur = 9
+                         cur = 27
+                         cur = 81
+                         res = 90
+    over where what who whose 
+                         cur = 3
+                         cur = 12
+                         cur = 48
+                 res 48 += 48
+                         cur = 4
+                         cur = 16
+                         cur = 64
+                         cur = 256
+                         res = 304
+    over when what who whose 
+                         cur = 2
+                         cur = 8
+                         cur = 32
+                 res 32 += 32
+                         cur = 4
+                         cur = 16
+                         cur = 64
+                         cur = 256
+                         res = 288
+    over where when what who whose 
+                         cur = 4
+                         cur = 20
+                         cur = 100
+                 res 100 += 100
+                         cur = 5
+                         cur = 25
+                         cur = 125
+                         cur = 625
+                         res = 725
+    over whether who whose 
+                         cur = 3
+                         cur = 12
+                         cur = 36
+                 res 36 += 36
+                         cur = 4
+                         cur = 12
+                         cur = 36
+                         cur = 108
+                         res = 144
+    over where whether who whose 
+                         cur = 5
+                         cur = 25
+                         cur = 100
+                 res 100 += 100
+                         cur = 5
+                         cur = 20
+                         cur = 80
+                         cur = 320
+                         res = 420
+    over when whether who whose 
+                         cur = 4
+                         cur = 20
+                         cur = 80
+                 res 80 += 80
+                         cur = 5
+                         cur = 20
+                         cur = 80
+                         cur = 320
+                         res = 400
+    over where when whether who whose 
+                         cur = 6
+                         cur = 36
+                         cur = 180
+                 res 180 += 180
+                         cur = 6
+                         cur = 30
+                         cur = 150
+                         cur = 750
+                         res = 930
+    over what whether who whose 
+                         cur = 3
+                         cur = 15
+                         cur = 60
+                 res 60 += 60
+                         cur = 5
+                         cur = 20
+                         cur = 80
+                         cur = 320
+                         res = 380
+    over where what whether who whose 
+                         cur = 5
+                         cur = 30
+                         cur = 150
+                 res 150 += 150
+                         cur = 6
+                         cur = 30
+                         cur = 150
+                         cur = 750
+                         res = 900
+    over when what whether who whose 
+                         cur = 4
+                         cur = 24
+                         cur = 120
+                 res 120 += 120
+                         cur = 6
+                         cur = 30
+                         cur = 150
+                         cur = 750
+                         res = 870
+Case #0: 15 856 5219 4667 33

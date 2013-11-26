@@ -1,0 +1,113 @@
+<html>
+<body vlink="#ffcc00" link="#ffcc00" alink="#ffcc00" bgcolor=white>
+<center>
+<table border=0 width=590 cellpadding=4 cellspacing=0> 
+  <td bgcolor="#993333" width=90><font face="helvetica" size=1 color="white"><a href="../index.html">Home</a></td>
+  <td bgcolor="#ffaa00" width=460 align="right"><font face="helvetica" size=2 color="#993333"><b> I n t e r n e t &nbsp; C o n t e s t </b></td>
+  <td bgcolor="#ffaa00" width=5 rowspan=2 valign="bottom" align="center"><font face="helvetica" size=1>i n t e r n e t  <br><br> c o n t e s t</td>
+  <td bgcolor="#993333" width=5 rowspan=3 valign="top" align="center"><b><font color="#ffcc00" size=-1 face="helvetica">C E O I <br><br>  2 0 0 0 </td>
+  <tr>
+  <td bgcolor="#993333" width=90 valign="top">
+	<font face="helvetica" size=1 color="#ffcc00">
+	<br><br>
+   	<a href="../regulations.html">Regulations</a>  <br><br>
+	<a href="../schedule.html">Schedule</a>  <br><br>
+	<a href="../committee.html">Organising<br> Team</a>  <br><br>
+	<a href="../clujro.html">Cluj&Romania</a>  <br><br>
+	<a href="../sponsors.html">Sponsors</a> <br><br>
+	<a href="../secretariat.html">Secretariat</a> <br><br>
+	<a href="../internet/rules.html">Internet Contest</a><br><br>   
+	<a href="../links.html">Links</a><br><br>   
+	<p>
+
+	<br>___________<br>
+
+	Web design:
+	<a href="mailto:vivi@sunsite.pub.ro">Vivi</a>
+
+   </td>
+   <td width=460 valign="top" bgcolor="#ffcc00">
+        <font face="helvetica" size=1>
+<center>
+	[ <a href="rules.html"><font color="black">The rules</font></a> |
+	<a href="probleme.html"><font color="black">Read the problems</font></a> |
+ 	<a href="submit.html"><font color="black">Submit solutions</font></a> |
+	<a href="clasament.html"><font color="black">Results</font></a> |
+ 	<a href="down.html"><font color="black">Downloads</font></a> ]
+</center>
+<font face="helvetica" size=2>
+<br><a href="day1.html"><font size=1 color="darkred">Day one problems are available here.</font></a><br><center>
+<font size=3>
+<br><font color="darkred"><b>Day 2</b></font><br>
+[ <a href="p4.html"><font color="darkred"><b>Problem 4</b></font></a> | 
+<a href="p5.html"><font color="darkred"><b>Problem 5</b></font></a> |
+<a href="p6.html"><font color="darkred"><b>Problem 6</b></font></a> ]
+</center>
+<font size=-1><br>
+<br>
+
+<font size=-1><br>
+<b>Problem 6 </b>: Enlightened landscape 
+<br><br>
+
+Consider a landscape composed of connected line segments:
+<center><img src="img22.gif" border=5></center>
+<br>
+Above the landscape, <i>N</i> light bulbs are hang at the same height <i>T</i> in various horizontal positions. The purpose of these light bulbs is to light up the entire landscape. A landscape point is considered lit if it can "see" a light bulb directly, that is, if the line segment which links the point with a bulb does not contain any other landscape segments point.
+<br><br>
+<b>Task</b>
+<br>Write a program that determines the mi-ni-mum number of light bulbs that must be switched on in order to illuminate the entire landscape.
+<br>
+<br><b>Input </b>
+<br>Input file name: <b>LIGHT.IN</b>
+<br><b>Line 1</b>: M 
+<li> An integer, the number of landscape height specifications, including the first and the last point of the landscape.
+<br><b>Lines 2..<i>M</i>+1</b>: X<sub>i</sub> H<sub>i</sub> 
+<li> Two integers, separated by a space: the landscape height H<sub>i</sub> at horizontal position X<sub>i</sub>, 1 <= i <= M; for 1 <= i <= M-1 we have X<sub>i+1</sub> > X<sub>i</sub>; any two consecutive specified points identify a segment of line in the landscape.
+<br><b>Line <i>M</i>+2</b>: N T
+<li> Two integers, separated by a space, the num-ber of light bulbs and their height coordinate (altitude). The bulbs are numbered from 1 to N)
+<br><b>Line M+3</b>: B<sub>1</sub> B<sub>2</sub> ... B<sub>N</sub>
+
+<li> N integers, separated by spaces: the hori-zon-tal coordinates of the light bulbs Bi+1 > Bi, 1 £ i £ N-1;
+<br><br>
+<b>Output </b>
+<br>File name: <b>LIGHT.OUT</b>
+<br><b>Line 1</b>: K
+<li> An integer: the minimum number of light bulbs to be switched on.
+<br><b>Line 2</b>: L<sub>1</sub> L<sub>2</sub> ... L<sub>K</sub>
+<li> K integers, separated by spaces: the labels of the light bulbs to be switched on spe-cified in increasing order of their horizontal coordinates. 
+<br><br>
+<b>Limits</b>
+<li> 1 <= M <= 200
+<li> 1 <= N <= 200
+<li> 1 <= X<sub>i</sub> <= 10000 for 1 <= i <= M
+<li> 1 < T <= 10000 
+<li> 1 <= H<sub>i</sub> <= 10000 for 1 <= i <= M
+<li> T > H<sub>i</sub> for any 1 <= i <= M
+<li> X<sub>1</sub> <= B<sub>1</sub> and B<sub>N</sub> <= X<sub>M</sub>
+<li> The task always has a solution for the test data. If there are multiple solutions, only one is required.
+<br><br>
+<b>Example</b>
+<font face="courier">
+<pre>
+LIGHT.IN          LIGHT.OUT 
+6                 2
+1 1               1 4
+3 3
+4 1
+7 1
+8 3
+11 1
+4 5
+1 5 6 10
+</pre>
+
+
+   </td>
+   <tr>
+   <td width=90 bgcolor="#993333" valign="bottom"><font size=1>&nbsp;</td>
+   <td bgcolor="#ffaa00" width=5 colspan=2><font size=1>&nbsp;</td>
+
+</table>
+</body>
+</html>

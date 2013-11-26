@@ -1,0 +1,61 @@
+#include<iostream>
+#include<vector>
+#include<ext/numeric>
+#include<algorithm>
+#define powl(A,B) __gnu_cxx::__power(A,B);
+#define MAXN 100001
+using namespace std;
+
+unsigned N;
+vector<unsigned>A;
+bool cmp(unsigned a, unsigned b)
+{
+     return a>b;
+}
+
+short log(unsigned br)
+{
+     unsigned i=0;
+     while(br>=2) {br/=2;i++;}
+     return i;
+}
+     
+unsigned res(unsigned br, unsigned ind, unsigned h)
+{
+     short getlog;
+     unsigned i,p,ret=0,size;
+     getlog=log(br);
+     p=br-powl(2,getlog);
+     if(!p) {
+        for(i=ind;i<ind+br;i++)
+            ret+=A[i]*(getlog+h);
+        return ret;
+     }
+     size=ind+br-p*2;
+     for(i=ind;i<size;i++)
+     ret+=A[i]*(getlog+h);
+     for(i=size;i<N;i++)
+     ret+=A[i]*(getlog+h+1);
+     return ret;
+}
+         
+int main()
+{
+    unsigned ans=1000000,i,p,r;
+    cin>>N;
+    for(i=0;i<N;i++) {
+        cin>>p;
+        A.push_back(p);
+    }
+    sort(A.begin(), A.end(), cmp);
+    p=1;
+    while(p<=N/2) {
+                 r=res(p,0,1)+res(N-p,p,1);
+                 if(r<ans) ans=r;
+                 p++;
+    }
+    cout<<ans;
+    cout<<'\n';
+    //system("pause");
+    return 0;
+}

@@ -1,0 +1,124 @@
+[center][size=14][b]Eulerian path/cycle in undirected graph[/b][/size][/center]
+
+Път в граф, който минава точно веднъж по всички ребра.
+
+[u]Условие[/u] за съществуване на Ойлеров [u]цикъл[/u] (почваме от връх х и зъвършваме в него): степента на всеки връх да е [u]четно[/u] число (степен на връх в непретеглен граф е броят на ребрата с един край в този връх). Това е щот като влезем във всеки връх, после трябва и да излезем от него, демек всеки връх има толкова ребра за влизане, колкото и за излизане (включително и първият).
+[u]Условие[/u] за съществуване на Ойлеров [u]път[/u] (почваме и свършваме в различни върхове): степента на всички върхове, с изключение на [u]точно два[/u] върха, да е четна. Логиката е същата, само дето един връх има едно излизане, а друг - едно влизане в повече.
+
+[u]Алгоритъм [/u]за генериране на Ойлеров път:
+Рекурсивно обхождаме върховете (при намиране на път почваме от един от двата върха с нечетна степен, при цикъл - от който и да е връх). Вмомента сме във връх v. Ако v има съсед, до който има ребро, отиваме рекурсивно в него и трием реброто, което ги свързва. Иначе добавяме v към Ойлеровия път и изплуваме от рекурсията (излизаме от v). Така може да се получи да сме влезли с рекурсията няколко пъти в един и същи връх, но това да не ви шашка ;)
+
+примерна реализация със сложност O(MlogN) (M - брой ребра, N - брой върхове):
+[code]#include <vector>
+#include <list>
+#include <map>
+#include <set>
+#include <deque>
+#include <stack>
+#include <bitset>
+#include <algorithm>
+#include <functional>
+#include <numeric>
+#include <utility>
+#include <sstream>
+#include <iostream>
+#include <fstream>
+#include <queue>
+#include <iomanip>
+#include <cstdio>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
+
+
+#define SZ size()
+#define PB push_back
+#define ALL(v) v.begin(),v.end()
+#define MP make_pair
+#define x first
+#define y second
+
+#define LL long long
+#define UI unsigned int
+#define ULL unsigned long long
+#define PI pair<int,int>
+#define PD pair<double,double>
+#define PLL pair<LL,LL>
+#define PULL pair<ULL,ULL>
+#define VI vector<int>
+#define VD vector<double>
+#define VS vector<string>
+#define SI set<int>
+#define PQ priority_queue
+#define VVI vector<vector<int> >
+#define IT iterator
+
+#define sign(a) ((a)>0)-((a)<0)
+#define sqr(a) ((a)*(a))
+#define Repi(n) for (int i=0; i<n; i++)
+#define Repj(n) for (int j=0; j<n; j++)
+#define Repk(n) for (int k=0; k<n; k++)
+
+#define INF 2000000000
+#define EPS 1e-6
+
+#define pause system("pause")
+
+using namespace std;
+
+int n,m;
+#define MAXN 1000
+VI p; set<int> adj[MAXN];
+
+void eulerian(int v)
+{
+	while (adj[v].SZ)   //  докато v има съседи
+	 {
+			int j=*adj[v].begin();              // вземаме който и да е от тях
+			adj[v].erase(adj[v].begin());       // мааме го от на v списъка
+			adj[j].erase(v);                    // -----------------------------------------ВНИМАНИЕ! махаме и v от неговия списък!!!!! - графът е неореантиран и трябва да се грижим данеби минем по това ребро в другата посока!!!! Именно заради този тънък момент се налага да правим set вместо vector - това го няма при ореантирания вариант
+			eulerian(j);                     // и продължаваме в съседчето
+	 }
+	p.PB(v);   // обходили сме всички съседи на v и го бутаме в пътя
+}
+
+int main()
+{
+    int i,j,k,l;
+    scanf("%d%d",&n,&m);
+    Repi(m)
+     {
+			scanf("%d%d",&j,&k);
+			adj[j].insert(k); adj[k].insert(j);   // списъците на наследниците са set, за да можем бързо да трием ребра (в противен случай стават едни обхождания и лайна и сложността става O(M*N) - вж. на Емо реализацията)
+	 }
+	int br=0,st=0;
+	Repi(n)
+	 if (adj[i].SZ%2)                 // броим нечетните върхове
+	  {	   st=i; br++;	  }        // ако е нечетен - вземаме го да е и начален
+	if (br!=2 && br!=0) cout<<"NEMA BACE!\n";
+    
+    eulerian(st);
+    
+    Repi(p.SZ) cout<<p[i]<<" "; cout<<endl;
+    system("pause");
+    
+    return 0;
+}
+[/code]
+
+Забележете колко тази рекурсия прилича на dfs-то за намиране на топологично сортиране - там обаче маркираме самите върхове като използвани, а не ребрата между тях, и затова не влизаме в един и същи връх 2 пъти и не го срещаме 2 пъти в генерираното сортиране, за разлика от това тук. Но останалото е аналогично - влизаме в съседите, изпълняваме алгоритъма за тях и добавяме в списъка.
+
+
+[center][size=14][b]Eulerian path/cycle in directed graph[/b][/size][/center]
+
+Само дето графът е ореантиран. Тук нещата мисля, че са малко по-лесни.
+Условието за съществуване на цикъл е броят на влизащите ребра да е равен на броя на излизащите за всеки връх. За път е един връх да има едно влизащо в повече, а друг - едно излизащо в повече. Абе същата логика. Алгоритъмът и той е почти същият, с разликата че маркирането на ребрата като използвани става само от единия връх, което премахва необходимостта от set и разни други лайна.
+
+ето хубаво обяснение с картинки и пример: http://www.graph-magics.com/articles/euler.php
+вижте и реализациите на Емо.
+
+
+[i][b]tasks:[/b]
+	usaco/2008/dec/gold/winchk
+	shumen/2007/bignum
+[/i]

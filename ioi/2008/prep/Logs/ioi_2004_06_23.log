@@ -1,0 +1,1307 @@
+
+Session Start: Tue Jun 22 20:01:01 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+* spherd has joined #ioi
+* VelinTzanov sets mode: +ooo Prince_of_Dawn rangel__ sssa88
+* spherd was kicked by VelinTzanov (VelinTzanov)
+* Logging #ioi to 'logs\ioi_2004_06_23.log'
+<VelinTzanov> Swetko nali ne e kazval che niama da idva dnes?
+<Prince_of_Dawn> na men ne e
+<rangel__> pone na men ne
+* Swetko_uchi has joined #ioi
+* Swetko_uchi is now known as Swetko
+<VelinTzanov> Vsichki li se sybrahme?
+* VelinTzanov sets mode: +o Swetko
+<rangel__> mozhe bi ne :-)
+<Prince_of_Dawn> ?
+<VelinTzanov> Vsichki li ste tuk pitam. :)
+<VelinTzanov> Swetko, Vlado?
+<sssa88> TUK
+<Prince_of_Dawn> da
+<Swetko> da
+<VelinTzanov> OK
+<VelinTzanov> Kak mina kontrolnoto? Az pochti nishto ne znam (osven usloviata na zadachite)?
+<Prince_of_Dawn> az sam za boi
+<VelinTzanov> Za BOI ili za boi? :)
+<Prince_of_Dawn> wtoroto
+<rangel__> to maj i az taka :-) vsyshtnost mozhe bi za 1/3 boj :-)
+<Swetko> ami az reshih 2-te , a na matrix sum obyrkal nadiavam se samo nachalnite opredelenia za pechelivshi i gubesti
+<VelinTzanov> Po princip tova koeto iskame ot vas e da pravite pone po 2 zadachi.
+<VelinTzanov> T.e. 230-240 tochki po vyzmojnost... no i 200 e dobre.
+<Swetko> pisal sum pozicia s agent telephon i NEO za pechelivsha
+<Swetko> na takiva zadachi li ?
+<VelinTzanov> Btw, az Matrix ia pisah na ACM-sko systezanie za pryv pyt. :) Na jivo! :) I ia prieha ot raz.
+<VelinTzanov> Zaedno s oshte niakolko drugi zadachi.
+<VelinTzanov> I sym pisal tochno tova koeto vi uchim. Znachi i vie mojete. :)
+<Swetko> ami bravo
+<Swetko> az tochno tova i napisah
+<VelinTzanov> E, sega, tezi zadachki biaha malko lesni.... te biaha 4 pyrvonachalno, no az iskah da vi dadem 3, za da se uprajniavate na taktika malko.
+<Swetko> ama koi da se seti purvo da beleshi poziciata gubesta a posle pechelivsha
+<VelinTzanov> Momcheta, vie nali shvanahte che "labirinta" Matrix vsyshtnost e igra?
+<VelinTzanov> Imam predvid osven Swetko.
+<sssa88> da
+<Prince_of_Dawn> az ne
+<VelinTzanov> A sega znaesh li, Borisov, ili da obiasniavam?
+<rangel__> da, to e dosta ochevidno che hodovete ne sa simetrichni
+<Prince_of_Dawn> znam
+<Swetko> abe az se chudeh dali beshe igra ili puk ot onezi BFS-ta v labirinti, stot dosega labirintite biaha vse BFS-ta
+<VelinTzanov> Tova che ne sa simetrichni ne vi prechi, Rangele. :)
+<Prince_of_Dawn> razbrah go po wreme na sastezaieto
+<rangel__> znam che ne mi prechi, ama v labirint ne moga da go napravq :-)
+<VelinTzanov> Ne. Narochno vi go dadohme igra tozi pyt. Da vidim dali shte shtraknete. :)
+<VelinTzanov> Rangele, da ia napishesh tazi zadacha za domashno. >:-[
+<VelinTzanov> Borisov, t.e. ti se seti po vreme na systezanieto che tova e obhvatna, ciklichna igra, taka li?
+<rangel__> tq ne raboti li kakto sym q napisal?
+<VelinTzanov> Aaa, ne znam. :)
+<VelinTzanov> Az si misleh che si ia omazal, shtoto taka mi prozvucha.
+<VelinTzanov> Vlado, ti kakvo shte kajesh?
+<Prince_of_Dawn> mi.. w nachaloto se zbaludih (sebsesi ) che e labirint napisha go 
+<VelinTzanov> Kato cialo za systezanieto imam predvid, Vlado.
+<rangel__> ne, omazal sym soldiers, tazi uzh e vqrna, no e debug-vana mnogo
+<Prince_of_Dawn> toi dade sashtite otgowori
+<sssa88> ami soldiers ne sym reshil
+<sssa88> dano drugite sa verni
+<Prince_of_Dawn> posle ne go testwah i sednah da pisha druga zadacha
+<Prince_of_Dawn> posle kato swarshih s neq reshih da riskuwam za tozi edin char 
+<rangel__> * ne e debug-vana mnogo
+<VelinTzanov> Borisov, Borisov.... pyrvo se misli, posle se pishe! 5 minuti mislene poniakoga spestiavat 50 minuti pisane.
+<Prince_of_Dawn> da napisha i 3-tata 
+<sssa88> a na soldiers vchera si q proverih - hvashtam 0 testa poneze sym opleskal dori greedeto det go pisah , a s vqrno greedy hvashtam 2 testa
+<Prince_of_Dawn> i naraq ostanah s edna
+<VelinTzanov> Losho, losho.
+<VelinTzanov> 2 zadachi e limita za uspeshno predstaviane.
+<Prince_of_Dawn> ( ako znaesh kakwo staranie hwarlih w 5-te minuti na Velin za tazi zadacha wsichko beshe qsno)
+<VelinTzanov> I na BOI, na kontrolnoto (kontrolnite) i na IOI syshto - dve zadachi na den.
+<VelinTzanov> I zashto ti e greshno reshenieto kato ushkim vsichko e bilo iasno? Kakvo ne vidia?
+<VelinTzanov> Borisov?
+<Prince_of_Dawn> mi prosto si misleh che rashenie kato w labirintite shte reshi zadachata poneje shte obhodi wsichki situatsii
+<VelinTzanov> Kak definira "situacia"?
+<Prince_of_Dawn> obache to ne igrae waobshte w polza na agentite
+<VelinTzanov> Kofti...
+<Prince_of_Dawn> i taka
+<VelinTzanov> Shte se nauchish da mislish pravilno, Borisov... niakoi den. :)
+<VelinTzanov> Imash oshte edna godina, taka da go kajem. :)
+<Prince_of_Dawn> prosto se zabludih i realizirah zabludata
+<VelinTzanov> Ia mi kajete koi ot vas mi pazi 5-te minutki?
+<Prince_of_Dawn> az ti gi otdelih
+<Swetko> ami na dve ot zadachite ne sum stot mi se stroriha lesni
+<rangel__> mi az na soldiers ne si gi otdelish, shtoto uzh mi beshe qsno... i to se vidq kolko mi e bilo qsno :-)
+<Swetko> a predi da napisha matric otskochih douchiliste
+<Swetko> i tia mi otleshavashe po putia i obratno
+<VelinTzanov> Rangele, vzemi si poukite. 5-te minutki ne sa niakakva shega ot moia strana.
+<sssa88> za matrix predi da q pochna poobmislih dolu-gore kakvo smqtam da pravq
+<VelinTzanov> Swetko, slushai i ti, 5-te minutki sa za da vi spestiat 50 minutki.
+<VelinTzanov> Pomisliaite go podrobno predi da go pishete.
+<Swetko> to i na men ush mi beshe iasno soldiers ama se opletoh
+<VelinTzanov> Iasno definiratite VSICHKO. Vseki masiv, vsiaka stypka, vsiako neshto v koda.
+<Swetko> ami to az ia pisah 50 minuti
+<VelinTzanov> Eto
+<VelinTzanov> Reshenieto na Soldiers se pishe 5 minuti. :)
+<Swetko> posle oste 20 dokati si otkria edin bug wmesto  if(p==2) su pisal if(p==0) - tova ne znam dali 5-te minutki ste go opraviat
+<VelinTzanov> Prosto e mnogo vajno da obmisliate vsichko do poslednata podrobnost predi da pochvate da pishete.
+<Swetko> az si znaeh che triabva da e p==2 ama prosto po inercia sum pisal nesto
+<VelinTzanov> Ne, bug-ovete niama da vi opraviat 5-te minutki... no shte vi predpaziat ot po-seriozni greshki. A te sa mnogo po-opasni. Shtoto bugs lesno se opraviat. Wrong programite obache ne.
+<VelinTzanov> Sega pravia edna zadacha za BOI/kontrolnite i moga da vi obeshtaia che bez 5-te minutki prosto ne mojete da ia reshite.
+<VelinTzanov> No s tiah - mojete.
+<Swetko> ne bih kazal che bugovete lesno se opraviat :)
+<VelinTzanov> Izkluchitelno vajno e (za neia) da si podredite neshtata v glavata i da napishete tova koeto vi triabva maximalno kratko i iasno.
+<VelinTzanov> Ami, Swetko, nauchi se da gi opraviash lesno. Debug-vaneto ne e CHAK tolkova trudna rabota.
+<VelinTzanov> Namirash test koito ne raboti i posle pravish dvoichno tyrsene po koda. :)
+<Prince_of_Dawn> ;)
+<VelinTzanov> Vlado, a ti ne se zadovoliavai s "poobmislih gore-dolu kakvo smiatam da pravia". Izmisliai go dokrai i togava pishi.
+<Swetko> hehe - ami kak da resha che edna chast ne raboti sled kato generira niakolko masiva s 2 000 000 elementa
+<VelinTzanov> Sega moje i da ne si imal problemi, no na BOI/IOI moje da imash.
+<VelinTzanov> A tam e strashno ako se opletat neshtata... zashtoto vi hvashta panikata i nastypva sigurna i mychitelna smyrt.
+<VelinTzanov> Ami, Swetko, mnogo prosto - gledash masivite. :)
+<VelinTzanov> Ako sa iasno definirani kakvo znachat lesno shte mojesh da proverish dali sa verni.
+<Prince_of_Dawn> haide po sashtestwo che imam da pisha domashni za uchilishte a ne Velin ne sam mu predal 3 zad
+<VelinTzanov> Mdaaa... ne si.
+<Swetko> ami to greshkata koi znae kude moshe da se krie - 
+<VelinTzanov> OK. Vyprosi po materiala do sega?
+<Prince_of_Dawn> nqmam
+<sssa88> ne
+<Swetko> abe naposleduk ne mi e trudno da debugvam ama vse pak
+<rangel__> ne
+<VelinTzanov> Ti znaesh be, Swetko! Ti vijdash dali pyrvata polovina ot programata e viarna ili ne! Ti mojesh da kajesh v koia polovina na koda e!
+<VelinTzanov> OK. Ta kakvo drugo pravihte prez tezi dva dni? Swetko
+<Swetko> ami az oste robots ne sum napisal - vchera mi se restartira kompiutura i ostanah bez robots
+<sssa88> az drugo osven domashnoto ne sym pravil
+<VelinTzanov> Shte gi napishesh, Swetko, ne se pritesniavai. :)
+<VelinTzanov> Borisov, ti?
+<Prince_of_Dawn> az s domashnoto se zorq. Ne mi stiga mosht i znanie dori i nego da napisha (da ne izostawam)
+<VelinTzanov> Vlado, veche treti den niamash nishto osven domashnoto. Siguren li si che otdeliash neobhodimoto vreme na podgotovkata si?
+<VelinTzanov> Rangele, ti?
+<sssa88> ami onq den izgubih mnogo vreme da napisha domashnoto , a vchera osven kontrolnoto bqhme na lekciq v uchilishte i nqmashe vreme
+<rangel__> i az sym samo na domashnoto
+<VelinTzanov> OK
+<VelinTzanov> (kakva lekcia, Vlado? :) Prosto sym lubopiten, ne che ima znachenie)
+<sssa88> za Java igri
+<VelinTzanov> Dnes shte pravim elementarni string-ovi algoritmi.
+<sssa88> za gsm-i
+<VelinTzanov> I shte demonstrirame oshte edno predimstvo na randomizaciata pred deterministichnite algoritmi.
+<VelinTzanov> (Gotino, Vlado. Az pyk sym pisal PacMan za cherno-bial TV :) )
+<sssa88> super
+<VelinTzanov> Pyrviat problem koito shte reshim dnes e nai-klasicheskiat string-ov problem. A imenno:
+<Prince_of_Dawn> az ne sam chuwal za pacMan
+<VelinTzanov> Daden ni e text s dyljina T
+<VelinTzanov> Borisov, tyrsi v Google za "PacMan" i shte vidish kakvo e.
+<Swetko> KMP nali e elementaren :)
+<VelinTzanov> Za Google si chuval, nadiavam se. :)
+<VelinTzanov> Daden e i Pattern (string) s dyljina P.
+<VelinTzanov> Tyrsim vsichki mesta kydeto Pattern-a se sydyrja v Text-a.
+<Prince_of_Dawn> kolko tajno;) wchera anev kaza da hodq da igraq tribes i az go popitah dali ima predwid zadachata tribes ot BOI
+<VelinTzanov> Uslovieto iasno li e?
+<Prince_of_Dawn> da
+<Swetko> a to kakvo bilo
+<sssa88> da
+<Swetko> da
+<rangel__> da
+<Swetko> edin pravih testove na 2 algorituma
+<VelinTzanov> Ocevidniat algorithm (za Mihai oshte po-ochevidniat) e sys slojnost T*P
+<Swetko> i biah vkaral 15 MB text
+<Swetko> ama za proizvolen tekst ne e tolkova losh
+<VelinTzanov> Taka e, ne e losh.
+<VelinTzanov> No iskame da go napravim sys slojnost T+P
+<Swetko> za anglisjki tekst - ima dobra sloshsnost - na praktika lineina
+<VelinTzanov> Koi znae kak?
+<sssa88> az ne znam
+<Swetko> az znam 2 nachina
+<Prince_of_Dawn> i az
+<rangel__> chel sym go, no ne go razbiram (nito moga da go napisha)
+<Swetko> ama edinia ne e suvsem T+P -  rabin karp
+<VelinTzanov> Swetko, dnes shte gi pravim i dvata.
+<VelinTzanov> Ta kakto kazah shte pravim dva algorithm-a.
+<VelinTzanov> Ediniat - Knuth-Morris-Pratt (moje da byrkam pravopisa) e po-krasiv.
+<VelinTzanov> Drugiat - Rabin-Karp e po-hityr i po-prost. :)
+<Swetko> samo, kashi chuval li si za niakakuv algoritum finite automata  koito se izpolzva za string matching
+<VelinTzanov> Akcentyt pada vyrhu vtoria dnes.
+<Swetko> rabin karp osven tova e i mnogo po baven
+<VelinTzanov> Sigurno ima, Swetko.
+<VelinTzanov> Za String matching ima pone 7-8 mnogo dobri algorityma.
+<Swetko> ok
+<VelinTzanov> Az prosto sym izbral 2, zashtoto tezi 2 nai-mi haresvat.
+<VelinTzanov> Ivo naprimer shteshe da vi prepodava drugi... no az go prinudih. :)
+<Swetko> ok
+<Swetko> kakvi ?
+<VelinTzanov> Taka. Pyrvo da se zamislim kakvo ni zabavia.
+<VelinTzanov> Oo, ne pomnia, pitai go. Niakakvi izvrateni... :)
+<VelinTzanov> Ediniat mai beshe Z-algorithm-a, a drugiat pak beshe niakakva dvoika imena, ama 'a de - ne pomnia koi.
+<sssa88> tuka ima "nqkolko" algorityma za string matching : http://www-igm.univ-mlv.fr/~lecroq/string/node1.html
+<Swetko> che moshem da stignem do poslednia simvol i posle da se okashe che ima greshka i da pochnem otnachalo
+<VelinTzanov> Zabavianeto ni idva kogato imame chastichno pripokrivane, koeto fail-va da ni dade istinsko pripokrivane.
+<VelinTzanov> Da
+<VelinTzanov> Swetko, btw, shte ocenia ako ostavish drugite da uchastvat poveche. Vse pak ti gi znaesh tezi neshta, te ne.
+<Swetko> Boyer Moore  beshe nesto takova s 2 imena -  btw.   v Introduction to algorithms ima mnogo - Veline, dobra li e tazi  kniga spored teb 
+<Swetko> ok
+<VelinTzanov> Nashata cel e tezi sluchai da ne ni prichiniavat zabaviane.
+<VelinTzanov> Da, Swetko, dobra e.
+<VelinTzanov> Az lichno ia polzvam vinagi kogato mi triabva neshto, koeto ne znam (ili sym zabravil).
+<VelinTzanov> Podhodyt e iasen - da izpolzvame tova koeto sme smetnali dosega, kato dobavim samo O(1) slojnost na vsiaka stypka.
+<VelinTzanov> Ops! Neka pyrvo definiram stypka. :)
+<VelinTzanov> Stypka e iasno kakvo e - proveriavame dali pattern-a vliza v text-a na konkretna pozicia.
+<VelinTzanov> I prosto proveriavame T-P takiva pozicii (s edin prost cikyl).
+<VelinTzanov> Nomeryt e vsiaka stypka da ni kostva grubo kazano O(1).
+<VelinTzanov> Iasno li e do tuk?
+<rangel__> da
+<Prince_of_Dawn> kak taka T-P
+<sssa88> da
+<VelinTzanov> Ami niama smisyl da proveriavash poslednite P pozicii, Borisov, zashtoto tam text-a veche e po-kys ot P. :)
+<VelinTzanov> NIama kak P da vleze syvsem nakraia (kydeto sa ostanali po-malko ot P bukvi)
+<Prince_of_Dawn> aaaaaaaa towa bilo minus
+<Prince_of_Dawn> az mislih che znachi nqkakwo kodirane na pozitsiq
+<VelinTzanov> :)
+<VelinTzanov> Ta, iasno li e dotuk, Borisov?
+<Prince_of_Dawn> da
+<VelinTzanov> Taka. Sega shte modificirame glupavia algorithm, taka che da se otyrvem ot izlishnite operacii.
+<VelinTzanov> Neka rabotim s primer, za da vi e po-lesno.
+<VelinTzanov> Swetko, ako se seshtash hubav primer za KMP dai mi, molia te, che ne sym se podgotvil.
+<VelinTzanov> Moga da sychinia neshto na miasto. Naprimer tova:
+<VelinTzanov> Tyrsim ABCDABCAB
+<VelinTzanov> Text-a moje da e neshto ot sorta na ABABCABCDABCDABABCABCDABCABABCABCD naprimer
+<VelinTzanov> Mai triabvashe s malki bukvi... :)
+* Retrieving #ioi info...
+<Prince_of_Dawn> ma trqbwashe po -kratak  ;)
+<VelinTzanov> abcdabcab
+<VelinTzanov> ababcabcdabcdababcabcdabcababcabcd
+<VelinTzanov> Taka. Sega si hvashtame 1-vata bukva na text-a.
+<VelinTzanov> I sveriavame dvata string-a.
+<VelinTzanov> Na 3-tata bukva otkrivame ralzika.
+<VelinTzanov> Sega probvame vtorata bukva - na pyrvata bukva otkrivame razlika.
+<VelinTzanov> Sega probvame ot 3-tata bukva (na T) - tozi pyt se provaliame na 4-tata bukva (na P)
+<VelinTzanov> Posle pak i pak i pak...
+<Prince_of_Dawn> towa ne e li tapiq
+<VelinTzanov> Tam kydeto proveriavate abcdababc naprimer shet stignete chak to 7-mia znak.
+<VelinTzanov> Tova e typia, da.
+<VelinTzanov> Kakto vijdate na vsiaka stypka vyrshite dosta rabota, koiato izhvyrliate posle. Dobre e da mojete da ia preizpolzvate.
+<VelinTzanov> Tova koeto KMP iska da napravi e slednoto:
+<VelinTzanov> Proveriavame match zapochvasht ot X-tia znak na T.
+<VelinTzanov> Stignali sme do 7-mia (primerno) znak na P i tam se provaliame.
+<Swetko> ../fdfs/fds
+<Swetko> moshe li niakoi da mi kashe kakvo znachi tova izirazeno v direcktorii
+<VelinTzanov> KMP iska za O(1) vreme da ni dade nai-dylgia string, koito match-va do syshtata pozicia (pozicia X+7 v T)
+<VelinTzanov> (mojete da otgovorite na Swetko ako iskate)
+<VelinTzanov> Az mejduvremenno shte ilustriram tova koeto kazah.
+<VelinTzanov> Ako do momenta sme napasnali abcdabc i sme se provalili.
+<VelinTzanov> Iskame da vidim che sledvashtoto napasvane koeto shte ni se sluchi (do syshtata pozicia v text-a) shte e abc
+<VelinTzanov> Ako imam text abcdabcdabc
+<VelinTzanov> Pochvam ot nachaloto.
+<VelinTzanov> Off, opletoh go. :(
+<VelinTzanov> Text: abcdabcdabce
+<VelinTzanov> Pattern abcdabce
+<VelinTzanov> Pravia proverk.a
+<VelinTzanov> Stignal sym do sedmia znak.
+<VelinTzanov> Pattern-a mi e match-nat do abcdabc. tova syotvetstva na znacite ot 1 do 7 v text-a.
+<VelinTzanov> Provaliam se.
+<VelinTzanov> KMP vednaga me postavia v situacia v koiato sym match-nal "abc" ot Pattern-a (pyrvite 3 znaka) sys znaci ot 5 do 7 ot text-a.
+<VelinTzanov> Razbrahte li gore-dolu kakvo imam predvid?
+<rangel__> da
+<sssa88> da
+<Prince_of_Dawn> mi da
+<VelinTzanov> Za da moje da pravi tova KMP pravi O(P) preprocessing na Pattern-a.
+<sssa88> a KMP-to seshta li se da preskochi ot 1 do 5
+<Prince_of_Dawn> neshto kato pochwash da se tarsish sam w sebe si
+<VelinTzanov> Sega shte obiasnia, Vlado.
+<VelinTzanov> Ta preprocessing-a na P predstavliava slednoto:
+<VelinTzanov> Za vseki prefix X na P namirame nai-dylgia prefix Y na P, koito e sufix na X.
+<VelinTzanov> Taka ako X e abcdabc
+<VelinTzanov> Y e abc
+<VelinTzanov> Zashtoto Y e nai-dylgia prefix na P, koito se iaviava suffix na X.
+<VelinTzanov> Nali znaete kakvo e prefix i suffix?
+<rangel__> da
+<VelinTzanov> Prefix e substring, sydyrjasht pyrvite niakolko znaka.
+<sssa88> a koe X v sluchaq gore?
+<VelinTzanov> Suffix e substring sydyrjasht poslednite niakolko znaka.
+<VelinTzanov> V sluchaia gore P=abcdabc......
+<VelinTzanov> X = abcdabc
+<VelinTzanov> Y = abc
+<VelinTzanov> X i Y sa prefixi na P
+<VelinTzanov> Y e suffix na X
+<VelinTzanov> Za vsiako X (a te sa P na broi) namirame syotvetnoto mu Y.
+<VelinTzanov> Nai-goliamoto Y koeto e hem prefix na P (drug prefix, po-kys ot X), hem e suffix na X.
+<VelinTzanov> Definiciata iasna li e?
+<Prince_of_Dawn> da
+<sssa88> da
+<VelinTzanov> Ako ne, ne se pritesniavaite da kajete. Az obiasniavam losho dnes. :)
+<rangel__> qsno
+<VelinTzanov> Kazano po-prosto na vsiako chislo i ot 1 do P triabva da sypostavim drugo chislo b[i] ot 0 do i-1
+<VelinTzanov> i e dyljinata na X
+<VelinTzanov> b[i] e dyljinata na syotvetnia mu Y
+<VelinTzanov> Edno chislo ni stiga (dyljinata) zashtoto govorim za prefixi na P.
+<VelinTzanov> T.e. nachalot na tezi string-ove vinagi sybpada s nachaloto na P. Zatova ni triabva samo dyljinata im.
+<VelinTzanov> Tova e zadacha koiato se pravi lesno sys slojnost O(P^2). No ima dinamichno sys slojnost O(P)
+<VelinTzanov> Idei?
+<VelinTzanov> b[i-1] dali ne moje da ni e polezno?
+<VelinTzanov> Osobeno ako znak i syvpada sys znak b[i-1]+1
+<Prince_of_Dawn> mi da
+<VelinTzanov> Ako P(i) = P(b[i-1]+1), to togava ochevidno b[i] = b[i-1]+1
+<VelinTzanov> Nali taka? Razbirate li go tova?
+<sssa88> da
+<rangel__> da
+<Prince_of_Dawn> ne
+<VelinTzanov> Ako b[i] ne e b[i-1]+1, to togava b[i-1] shteshe da e b[i]-1
+<VelinTzanov> Dopusni protivnoto, Borisov.
+<Prince_of_Dawn> ok
+<VelinTzanov> Da dopusnem che b[i] ne e b[i-1]+1
+<Prince_of_Dawn> qsno
+<VelinTzanov> Togava b[i] e nai-dylgia prefix na P, koito e sufix na b[i]
+<VelinTzanov> Syvsem li e iasno?
+<VelinTzanov> Da spiram li?
+<Prince_of_Dawn> da
+<VelinTzanov> OK
+<Prince_of_Dawn> toest qsno e
+<VelinTzanov> A kakvo pravim ako znak i i znak b[i-1]+1 sa razlichni?
+<sssa88> samo che naj-dylgiq li e tozi prefix?
+<VelinTzanov> Imate pravo na O(1) operacii.
+<Prince_of_Dawn> nqma sufix
+* out_infinity has joined #ioi
+* CS sets mode: +o out_infinity
+<VelinTzanov> Vlado, ako ima po-dylyg, to shte ima po-dylyg i za i-1
+<Prince_of_Dawn> dobro utro
+<VelinTzanov> b[i-1] e dylyg pone kolkoto b[i]-1
+<VelinTzanov> Prosto b[i]-1 sys sigurnost e suffix na i-1
+<VelinTzanov> Zashtoto b[i] e suffix na i
+<VelinTzanov> Shtom i-1 ima suffix dylyg kolkoto b[i]-1, to znachi b[i-1] e PONE b[i]-1
+<VelinTzanov> Tova znachi che b[i] <= b[i-1]+1
+<VelinTzanov> Znachi ako vzemem b[i] = b[i-1]+1 sys sigurnost ne sme po-kysi ot nai-dylgia suffix.
+<VelinTzanov> Iziasni li se doniakyde?
+<sssa88> da
+<VelinTzanov> Sega kakvo pravim v sluchaia v koito znak i e razlichen ot znak b[i-1]+1?
+<VelinTzanov> Imame O(1) skorost na razpolojenie.
+<VelinTzanov> Znachi triabva da izpolzvame niakoia ot promenlivite koito imame.
+<VelinTzanov> A te sa i, i-1, b[i-1] i mai ne se seshtam druga.
+<VelinTzanov> Vie seshtate li se?
+<VelinTzanov> Kakvo drugo ni ostava?
+<VelinTzanov> i-2?
+<VelinTzanov> Ili b[b[i-1]]?
+<Prince_of_Dawn> mi nqmame li i-n
+<rangel__> tova ne e li kato da sme propadnali na tyrsene na b[i-1] viq znak
+<VelinTzanov> E, da, no ako shte probvash i-2 i-3... mai stava lineina slojnostta, a ti imash samo konstantna.
+<VelinTzanov> Ne te razbrah, Rangele.
+<rangel__> t.e. da stava b[b[i-1]] (ili pone taka mi se struva)
+<rangel__> nali vse edno tyrsim shablona v samiq shablon?
+<VelinTzanov> Tochno taka!
+<VelinTzanov> Ako b[i-1]+1 e razlichno ot i
+<VelinTzanov> To togava probvame b[b[i-1]]+1 dali e ravno na i
+<VelinTzanov> I ako e ravno pravim b[i] = b[b[i-1]]+1
+<VelinTzanov> Pomislete malko i mi kajete razbirate li zashto.
+<Prince_of_Dawn> az da
+<VelinTzanov> Rangel, Vlado?
+<sssa88> ami az ne
+<VelinTzanov> Neka pak dopusnem protivnoto.
+<VelinTzanov> T.e. ako b[i] e po-goliamo ot b[b[i-1]]+1
+<VelinTzanov> Kakvo shte se okaje togava?
+<VelinTzanov> Shte se okaje che b[i-1] (koeto e >= b[i]-1) e po-goliamo ili ravno na b[b[i-1]]
+<rangel__> che sufix-a na b[i-1] ne e optimalen
+<VelinTzanov> A po definicia b[X] e po-malko ot X.
+<VelinTzanov> Ops, opletoh go neshto.
+<VelinTzanov> Rangele, ia ti go obiasni. :)
+<Prince_of_Dawn> moga az
+<VelinTzanov> Davai, Borisov.
+<rangel__> maj i az se opletoh :-)
+<Prince_of_Dawn> mi znachi za momenta ima edin prefih i
+<VelinTzanov> Spokoino, sega i Borisov shte se oplete. :)
+<VelinTzanov> Da, ima
+<Prince_of_Dawn> neka de e i-1
+<VelinTzanov> Neka i da e i-1 li?!!
+<Prince_of_Dawn> i negowiq suffih b[i]
+<Prince_of_Dawn> opa b[i-1]
+<VelinTzanov> Aha.
+<VelinTzanov> Imame i-1 i negovia max suffix b[i-1]
+<Prince_of_Dawn> i-1 i b[i-1]
+<VelinTzanov> OK
+<Prince_of_Dawn> i sega se opitwame da razshirim neshtata s edin znak
+<Prince_of_Dawn> toest dolqpqme sledwashtiq znak
+<Prince_of_Dawn> opredeleno b[i-1] + dobaweniq znak e wse oshte suffix na i-1 + dobaweniq znak ?
+<Prince_of_Dawn> nali?
+<VelinTzanov> Da
+<Prince_of_Dawn> veline ti go znaesh
+<Prince_of_Dawn> vlado dali me razbira
+<sssa88> da
+<sssa88> zasega
+<Prince_of_Dawn> obache ne znaem dali polucheniq b[i-1]+nowiq znak e waliden preffix na P
+<Prince_of_Dawn> i zatowa trqbwa da prowerim b[i-1]+1 znak na P
+<Prince_of_Dawn> (b[i-1] w sashnost e daljina na string zapochwasht ot parwiq znak na P )
+<Prince_of_Dawn> i ako tozi b[i-1]+1 znak e kato tozi deto go dobawihme na kraq znachi wsichko e OK
+<VelinTzanov> A inache?
+<Prince_of_Dawn> i b[i] = b[i-1]+1 ( towa znachi sashtoto kato na prdnata stpka no + edin znak poweche
+<Prince_of_Dawn> vlado do tuk?
+<sssa88> da
+<Prince_of_Dawn> i sega ;)
+<VelinTzanov> Borisov, ako zapecna az mai moga da go napravia.. ama mi triabva oshte minutka da go izchistia.
+<VelinTzanov> Gotov sym/.
+<VelinTzanov> Taka imame i
+<VelinTzanov> Imame i-1
+<VelinTzanov> Imame b[i-1]
+<VelinTzanov> Vidiahme che b[i] e po-malko ot b[i-1]+1
+<VelinTzanov> (Prosto sme v tozi sluchai)
+<VelinTzanov> OK?
+<sssa88> ok
+<rangel__> da
+<VelinTzanov> ZAtova az kazvam da probvame b[b[i-1]]+1
+<VelinTzanov> Zashto tova e maximalno?
+<VelinTzanov> Da dopusnem che ne e.
+<VelinTzanov> Da dopusnem che b[i] = c+1
+<VelinTzanov> Taka che c>b[b[i-1]]
+<VelinTzanov> Sekunda...
+<VelinTzanov> c<b[i-1]
+<VelinTzanov> Tova go znaem.
+<rangel__> ami ponezhe b[i] ima edin znak poveche ot b[i-1] to sufix-a na b[i-1] (t.e. b[b[i-1]]) mozhe da byde c
+<VelinTzanov> Shtom pyrvite c+1 simvola syvpadat s poslednite c+1 simvola na i
+<VelinTzanov> to znachi pyrvite c simvola syvpadat s poslednite c simvola na i-1
+<VelinTzanov> grr.... oshte edna sekunda.
+<rangel__> da, i az tova se opitvah da kazha :-)
+<rangel__> ne za sekundata a onova po-gore
+<VelinTzanov> b[i-1] syvpata syshto s poslednite niakolko simvola na i-1
+<VelinTzanov> c < b[i-1]
+<sssa88> az maj si go usmislih
+<VelinTzanov> Znachi pyrvite c simvola syvpadat s posledni c simvola na b[i-1]
+<VelinTzanov> Znachi b[i-1] moje da e ravno na c, koeto e po-goliamo ot b[b[i-1]]. Protivorechie.
+<VelinTzanov> Nai-setne! :D
+<VelinTzanov> Vlado, tova gore mai e dokazatelstvo.
+<VelinTzanov> Procheti go i mi kaji dali go razbirash.
+<VelinTzanov> Iskam da kaja che nakraia kato namerim pravilnoto b[i] to shte byde niakoe b[b[b[b[b[b[b....b[i-1]+1
+<VelinTzanov> T.e. b[b[b[b[b....b[i-1]]]]...]+1
+<rangel__> ami maj tova si beshe napylno dostatychno:
+<rangel__> <VelinTzanov> Shtom pyrvite c+1 simvola syvpadat s poslednite c+1 simvola na i 
+<rangel__> <VelinTzanov> to znachi pyrvite c simvola syvpadat s poslednite c simvola na i-1 
+<VelinTzanov> Ne beshe, rangele.
+<rangel__> ponezhe tova oznachavashe che imame suffix na i-1, kojto e prefix s dylzhina c
+<VelinTzanov> Dostatychno li ti e za b[b[b[b[.....
+<VelinTzanov> I kakvo ot tova?
+<VelinTzanov> b[i-1] > c niamash problem
+<VelinTzanov> Triabvashe da pokaja che i b[i-1] syshto ima suffix s dyljina c - tova veche e problemyt.
+<rangel__> za mnogoto b-ta edno sled drugo ne e. no ot nego se seshtash
+<Prince_of_Dawn> raka kato pishete mnogo vlado nqma da go razbere
+<VelinTzanov> I taka da izleze che c e po-dobyr kandidat za b[b[i-1]]
+<sssa88> maj mistana qsno
+<VelinTzanov> OK
+<VelinTzanov> Na IOI niama da e nujno da pomnish tochnoto dokazatelstvo, stiga da pomnish algorithm-a.
+<VelinTzanov> A ako se poiavi zadacha s podobna ideia, to togava triabva da pomnish ideiata na dokazatelstvoto, a ne tochnata mu formulirovka.
+<Prince_of_Dawn> towa beshe predprodsesinga na P
+<VelinTzanov> Nadiavam se, che pone ideiata stana iasna.
+<Swetko> ima mnogo priloshenia toz algoritum 
+<VelinTzanov> Ima, da.
+<Swetko> osven za strin matchins
+<VelinTzanov> No niama da navlizame sega v tiah.
+<Swetko> ste gi kashem li
+<VelinTzanov> Kaji sega ako imash neshto predvid.
+<Swetko> ok samo ste gi spomena
+<VelinTzanov> (Btw, swetko, oshte ne sme napravili algorithm-a)
+<Swetko> ami moshem za O(n) da proverim dali edin string e ciklichna rotacia na drug
+<VelinTzanov> Napravihme samo Preprocessing-a... daje i nego ne sme napravili.
+<Swetko> ami togava po kusno
+<VelinTzanov> OK
+<VelinTzanov> taka.
+<Swetko> KMP mnogo trudno se razbira -  i na men purvia put ne mi stana iasno
+<VelinTzanov> Znachi dadoh vi algorithm za preprocessing. No zashto tozi algorithm da e lineen?
+<Swetko> ama kato go napisah niakolko puti go razbrah
+<VelinTzanov> Lineen li e vsyshtnost?
+<rangel__> na men vyobshte ne mi izglezhda lineen s onezi vsichkite b-ta po-gore
+<VelinTzanov> Shtoto prilicha na kvadraten na pryv pogledn.
+<VelinTzanov> No e lineen, Rangele.
+<VelinTzanov> Zashto e lineen?
+<Swetko> az da si mulcha ?
+<VelinTzanov> Da, mylchi si.
+<Prince_of_Dawn> mi zashtoto
+<rangel__> kak se opravqme s vlozhenite b-ta za konstantno vreme?
+<VelinTzanov> Ne se opraviame.
+<VelinTzanov> Moje da imash lineen broi vlojeni b-ta.
+<Prince_of_Dawn> wseki element ot P go izkluchwame tochno wednaj ot suffih-a
+<VelinTzanov> Zadai si tozi vypros - mojesh li da imash mnogo vlojeni b-ta dva pyti podred?
+<sssa88> ne e li P*alphabeta taka?
+<VelinTzanov> Imam predvid lineen broi vlojeni b-ta.
+<Prince_of_Dawn> ne
+<VelinTzanov> Neka obiasnia.
+<Prince_of_Dawn> moje da imash samo wednaj
+<VelinTzanov> Rangel pitah, ne teb. :)
+<VelinTzanov> OK. Neka obiasnia.
+<VelinTzanov> Vyrtim cikyl za i ot 1 do P.
+<VelinTzanov> Tvyrdia che broia na izvyrshenite operacii + b[i] (za tekushtoto i) e vinagi O(P)
+<VelinTzanov> Greshka.
+<VelinTzanov> Tvyrdia che e vinagi O(i)
+<VelinTzanov> Dokazvame go po indukcia.
+<VelinTzanov> Ako operaciite do i-1 + b[i-1] sa O(i-1)
+<VelinTzanov> Smiatame b[i] i tova kolko ni otnema?
+<sssa88> b[i-1]+1 operacii
+<VelinTzanov> Maximum.
+<sssa88> max
+<VelinTzanov> Samo deto ne e tolkova.
+<VelinTzanov> b[i-1]-b[i]+1
+<sssa88> ?
+<VelinTzanov> Tova vryshtane nazad v b-tata moje da ni otneme ne poveche ot O(b[i-1] - b[i]) operacii.
+<VelinTzanov> Moje li da ni otneme poveche?
+<VelinTzanov> Ne.
+<Prince_of_Dawn> ne
+<VelinTzanov> Zashtoto pyrvonachalno gledame b[i-1]
+<VelinTzanov> I posle na vsiaka stypka namaliavame razglejdanoto s pone 1.
+<VelinTzanov> I nakraia svyrshvame v b[i]
+<VelinTzanov> Znachi sme izharchili nai-mnogo b[i-1] - b[i] operacii.
+<VelinTzanov> Taka de, b[i-1] - b[i] + 1
+<VelinTzanov> Iasno?
+<rangel__> da
+<Prince_of_Dawn> da
+<sssa88> da ne e O(b[i-1])-b[i] operacii?
+<VelinTzanov> Ochevidno ne e, Vlado.
+<VelinTzanov> Otkyde ti hrumna?
+<VelinTzanov> Nikyde niamame O(b[i-1) operacii.
+<VelinTzanov> Kogato imame operacia, tia sys sigurnost ni namaliava b[i]
+<sssa88> ami qvno ne razbiram neshto
+<VelinTzanov> OK. Neka obiasnia.
+<VelinTzanov> Imame edna promenliva P.
+<VelinTzanov> Off, neka ne e P.
+<VelinTzanov> Neka e K.
+<VelinTzanov> V nachaloto K = b[i-1]
+<VelinTzanov> Vseki pyt kogato plashtam edin dolar namaliavam K s pone 1.
+<VelinTzanov> Zashtoto b[b[i-1]] e pone s 1 po-malko ot b[i-1]
+<VelinTzanov> Nakraia K = b[i]  (ili po-tochno b[i] stava ravno na K)
+<VelinTzanov> Kolko dolara sym izharchil?
+<VelinTzanov> Ne poveche ot b[i-1] - b[i]
+<sssa88> zashto?
+<Prince_of_Dawn> towa e kato ( for ( int i=b[i-1] ; i>b[i] ; i-- )
+<Prince_of_Dawn> prosto namalqwash i ot b[i-1] do b[i] ;)
+<VelinTzanov> Borisov, zashto izpolzvash i za Boga!
+<VelinTzanov> Napravi broiacha j :)
+<sssa88> a da
+<VelinTzanov> Ili k nai-dobre.
+<VelinTzanov> OK.
+<sssa88> zagrqh
+<Prince_of_Dawn> widqli veline
+<VelinTzanov> Znachi e iasno, che tazi slojnost e b[i-1] - b[i] + 1?
+<Prince_of_Dawn> ako ne beshe i nqmashe da me ravere vlado ;)
+<sssa88> da qsno
+<VelinTzanov> Shte ti otkysna glavata. Mojeshe da go obyrkash do samoubiistvo!
+<Prince_of_Dawn> kakwo protiw ima i;)
+<VelinTzanov> Ami izpolzvash go v b[i]!
+<rangel__> mnogo :-) zashtoto sys syshtoto i indeksirash b-to :-)
+<Prince_of_Dawn> opa
+<VelinTzanov> i>b[i] vinagi e viarno. Znachi cikyla ti e bezkraen!!!
+<Prince_of_Dawn> bug
+<VelinTzanov> :)
+<Prince_of_Dawn> zbih
+<VelinTzanov> Aide sega da si dokaja slojnostta.
+<VelinTzanov> Indukciata t.e.
+<VelinTzanov> Slojnostta ni dosega e O(i-1) + b[i-1
+<VelinTzanov> T.e. ne.
+<rangel__> ne mozhe li prosto da gi sumirame tezi neshta po vsqko i ot 0 do P?
+<VelinTzanov> Slojnostta + b[i-1] e O(i-1)
+<VelinTzanov> Moje, Rangele, no neka bydem po-striktni.
+<VelinTzanov> Az i ti go razbirame i ni e lesno, no za drugite ne e taka.
+<VelinTzanov> Dobaviame novata slojnost = b[i-1] - b[i] + 1
+<sssa88> az zagrqh kvo shte stane
+<Prince_of_Dawn> i az
+<VelinTzanov> Stava Slojnostta + b[i] e O(i)
+<Prince_of_Dawn> moje da propush dokazatelstwoto
+<sssa88> shte ostane b[0]+b[m] nakraq
+<VelinTzanov> OK
+<VelinTzanov> Tova neshto se naricha Amortized Analysis i shte vi triabva mnogo.
+<VelinTzanov> Prosto vajnoto e slednoto:
+<VelinTzanov> Moje vsiaka stypka da e O(N), no vsichki stypki zaedno sa syshto O(N)./
+<VelinTzanov> Tova e taka, zashtoto za da ima stypka O(N) tia triabva da e natrupala niakakyv zariad (v sluchaia "zariada" e b[i-1])
+<VelinTzanov> A natrupvaneto na zariada iziskva vreme.
+<VelinTzanov> T.e. iziskva stypki.
+<VelinTzanov> Zatova mojete da dokajete che slojnostta dosega + zariada e O(N)
+<VelinTzanov> I pri tova triabva ZADYLJITELNO zariada vi vinagi da e polojitelen.
+<VelinTzanov> Taka dokazvate che slojnostta e O(N)  (slojnostta na celia algorithm)
+<VelinTzanov> IAsno li e shto e to Amortized Analysis?
+<Prince_of_Dawn> da
+<sssa88> da
+<rangel__> da, gore-dolu
+<VelinTzanov> Sega imame Preprocessnat pattern.
+<VelinTzanov> I go tyrsim v text-a.
+<VelinTzanov> Tuk veche e iasno.
+<VelinTzanov> Imame edin ukazatel kym znak ot P.
+<VelinTzanov> I edin ukazatel kym znak ot T.
+<VelinTzanov> I na vsiaka sypka:
+<VelinTzanov> Uvelichavame ukazatelia kym T
+<VelinTzanov> Ops! Greshka.
+<VelinTzanov> Na vsiaka stypka:
+<VelinTzanov> Gledame dali stoinostite v dvata ukazatelia syvpadat.
+<VelinTzanov> Ako syvpadat - uvelichavame gi i dvata.
+<VelinTzanov> Ako ne syvpadat - zameniame ukazatelia v P, koito sochi kym i-tia znak na P, s ukazatel koito sochi kym b[i]-tia znak na P.
+<VelinTzanov> I pak probvame.
+<Prince_of_Dawn> \\Ops! Velin did it again ;)
+<VelinTzanov> I taka dokato stignem do kraia na P (uspeshno namirane na pattern-a) ili do kraia na T (failure)
+<Prince_of_Dawn> qsno
+<VelinTzanov> Borisov, az pone ne pisha bezkraini cikli kato ilustracia na amortized analysis i ne pretendiram che vsichko im e OK. :)
+<VelinTzanov> Algorithm-a iasen li e?
+<Prince_of_Dawn> da
+<rangel__> da
+<Prince_of_Dawn> ma az sam tap a ti ne si ;))
+<VelinTzanov> Vlado?
+<sssa88> gore ne trqbva li da smenim i uk-to kym T?
+<Prince_of_Dawn> w sasnost se ebawam zaradi ops-a w BG e rqdko izpolzwan 
+<VelinTzanov> Koga?
+<sssa88> kato smnqme kym P
+<sssa88> pri nesyvpdenie
+<VelinTzanov> ZAshto iskash da go promeniash?
+<sssa88> ami vsyshnost maj nito edin ot dvata ne promenqme
+<sssa88> a samo nachaloto na tekushtiq match
+<sssa88> ne e li taka
+<sssa88> a da de p-to da
+<Prince_of_Dawn> ne promqnqme tozi w P
+<sssa88> da da
+<sssa88> qsno
+<Prince_of_Dawn> ok
+<Prince_of_Dawn> Veline gotowi li sme da prodaljim
+<VelinTzanov> OK
+<VelinTzanov> Govorih po telefona, izviniavaite.
+<Prince_of_Dawn> nqma prob
+<VelinTzanov> Edin posleden vypros po KMP.
+<VelinTzanov> Zashto slojnostta mu e T+P? :)
+<Prince_of_Dawn> dali mojem da go napishem ? ;)
+<VelinTzanov> Tova vryshtane po P prilicha na O(T*P)
+<VelinTzanov> Da, Borisov, shte mojete da go napishete. :)
+<rangel__> no ne e, dori i da vyrnem nazad pak uvelichavame T
+<rangel__> (t.e. ukazatelq kym T)
+<Prince_of_Dawn> (misleh che towa shte popitash)
+<VelinTzanov> Ne e taka, Rangele.
+<VelinTzanov> Ukazatelia kym T si ostava syshtia dokato ne namerim podhodiasht match.
+<VelinTzanov> Ako syvsem niama match vryshtame P-ukazatelia na 0.
+<VelinTzanov> Togava go broim za match i prodyljavame s T-ukazatelia.
+<Prince_of_Dawn> i otnowo posredtstwom amortizatsiqta kato tsqlo nqma da napravi poweche ot T operatsii
+<VelinTzanov> Tochno taka, Borisov.
+<VelinTzanov> A zashto?
+<VelinTzanov> Kakva e amortizaciata v sluchaia?
+<VelinTzanov> Kakvo e "zariada"? :)
+<Prince_of_Dawn> zarqda e 
+<VelinTzanov> Barabani...
+<Prince_of_Dawn> tarseneto ne sledwashto P
+<VelinTzanov> MOLIA?!
+<Prince_of_Dawn> sledwasht okazatel w P
+<Prince_of_Dawn> toest
+<rangel__> zarqda e kakva chast ot P sme machnali
+<VelinTzanov> Tyrseneto e operacia, ne e chislo.
+<VelinTzanov> T.e. poziciata na P-ukazatelia.
+<VelinTzanov> Da, tova e zariadyt.
+<VelinTzanov> Toi otnema 1 stypka za da se uvelichi s 1.
+<VelinTzanov> I na vsiaka stypka otdeliame vreme 1 + vreme proporcionalno na namaliavaneto na zariada.
+<VelinTzanov> Zatova obshtoto vreme (srednoto) e 1 na stypka.
+<VelinTzanov> Ili O(T) obshto.
+<VelinTzanov> Horata kazvat O(T+P) zashtoto preprocessing-a e O(P).
+<VelinTzanov> Ili znam li gi zashto... zashtoto zvuchi po-tejkarsko. :)
+<VelinTzanov> Taka. Mojete li da go napishete tui chudo?
+<sssa88> da
+<VelinTzanov> Dosta e prosto za pisane.
+<VelinTzanov> Edin masiv i 4 cikyla - 2 po 2 edin v drug.
+<VelinTzanov> Samo triabva da vnimavate da ne obyrkate index-ite s +1 ili -1 :)
+<rangel__> te dosta neshta se pishat tolkova prosto, no vse ima kakvo da se oplete :-)
+<VelinTzanov> Vlado, Rangel, Swetko?
+<Prince_of_Dawn> da
+<VelinTzanov> Rangele, ne bydi pesimist. Otivash za zlaten medal na BOI vse pak.
+* out_infinity has quit IRC (Read error: 104 (Connection reset by peer))
+<rangel__> i ti li, Veline? :-)
+<VelinTzanov> Rangel i Swetko? Mojete li da go napishete ili ne?
+<VelinTzanov> Btw, v momenta sme na 1/3 ot materiala za denia. :(
+<VelinTzanov> Ama ostanaloto shte go napravim byrzo. :)
+<VelinTzanov> Kakvo i az li?
+* Disconnected
+Session Close: Tue Jun 22 22:25:25 2004
+
+Session Start: Tue Jun 22 22:26:11 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* Qideo has joined #ioi
+* CS sets mode: +o VelinTzanov
+<Prince_of_Dawn> Varnenski jargon;)
+<sssa88> ami kato dupe
+<VelinTzanov> Dropna me.
+<Prince_of_Dawn> oha
+<VelinTzanov> <VelinTzanov> Rangele, ne bydi pesimist. Otivash za zlaten medal na BOI vse pak.
+<VelinTzanov> * out_infinity has quit IRC (Read error: 104 (Connection reset by peer))
+<VelinTzanov> <rangel__> i ti li, Veline? :-)
+<VelinTzanov> <VelinTzanov> Rangel i Swetko? Mojete li da go napishete ili ne?
+<VelinTzanov> <VelinTzanov> Btw, v momenta sme na 1/3 ot materiala za denia. :(
+<VelinTzanov> <VelinTzanov> Ama ostanaloto shte go napravim byrzo. :)
+<VelinTzanov> <VelinTzanov> Kakvo i az li?
+<VelinTzanov> PAste-nete kakvoto izpusnah v kanala.
+<Swetko> vlado, mnogo interesen sait
+* Qideo was kicked by VelinTzanov (VelinTzanov)
+<Swetko> toku sto go izteglih zaedno s apletite
+<rangel__> da shte moga da go napisha
+<Prince_of_Dawn> Pastwam
+<Prince_of_Dawn>  *** Quits: out_infinity (out_infini@212.36.11.21) (Read error: 104 (Connection reset by peer))
+<Prince_of_Dawn> [08:23] <rangel__> i ti li, Veline? :-)
+<Prince_of_Dawn> [08:23] <rangel__> qvno naistina sym mnogo pesimistichen :-)
+<Prince_of_Dawn> [08:23] *** Joins: out_infinity (out_infini@212.36.11.21)
+<Prince_of_Dawn> [08:23] *** CS sets mode: +o out_infinity
+<Prince_of_Dawn> [08:24] <Prince_of_Dawn> haide napred
+<Prince_of_Dawn> [08:24] <Prince_of_Dawn> che nqma da zawarsha po deografiq
+<Prince_of_Dawn> [08:24] <Prince_of_Dawn> geografiq
+<Prince_of_Dawn> [08:24] <Swetko> vchera na men mi pisa 6
+<Prince_of_Dawn> [08:24] <Swetko> po geografia :)
+<Prince_of_Dawn> [08:24] <Prince_of_Dawn> dupe
+<Prince_of_Dawn> [08:25] <Prince_of_Dawn> taka kazwame w sofiq
+<Prince_of_Dawn> [08:25] <Prince_of_Dawn> ;)
+<Prince_of_Dawn> [08:25] <Swetko> a dneska po anglijski - toku sto mi se obadiha che ne e nushno da hodia da me izpitvat
+<Prince_of_Dawn> [08:25] <sssa88> ha
+<Prince_of_Dawn> [08:25] *** Quits: VelinTzanov (~tzanov@216-160-108-186.tukw.qwest.net) (Ping timeout: 180 seconds)
+<Prince_of_Dawn> [08:25] <Prince_of_Dawn> pak dupe
+<Prince_of_Dawn> [08:25] <sssa88> dirnik napravo
+<Prince_of_Dawn> [08:25] <Prince_of_Dawn> Velin kato doide kak shte se zaradwa na neshtata deto si goworim
+<Prince_of_Dawn> [08:26] <Prince_of_Dawn> kakwo e dirnik?
+<Prince_of_Dawn> [08:26] *** Joins: VelinTzanov (~tzanov@216-160-108-186.tu
+<Prince_of_Dawn> KRAI NA PAST-a
+<VelinTzanov> :)
+<Swetko> ei , toz KMP  ne izleze tolkova  ocheviden bre
+<VelinTzanov> OK
+<VelinTzanov> Aide sega na Rabin-Karp. OK?
+<Swetko> otdelihme mu poveche vreme dori i ot SG-to
+<sssa88> ok
+<Prince_of_Dawn> ok
+<rangel__> da
+<VelinTzanov> Aha... podoziram che pak shte schupim niakoi rekord.
+<VelinTzanov> No tozi pyt ne zaradi karanici za tova kak triabva da ima red i definicii, a zaradi dokazatelstva na algoritmi. :)
+<VelinTzanov> Vsichki znaete kakvo e hashcode nali?
+<VelinTzanov> Ili fingerprint
+<Prince_of_Dawn> ne
+<VelinTzanov> :)
+<sssa88> ne
+<Prince_of_Dawn> i dwete
+<Swetko> kakvo e fingerprint
+<sssa88> zahashcode podoziram kakvo e ama drugoto
+<VelinTzanov> Obshto vzeto imame niakakvo goliamo parche danni (goliam string naprimer) i imame izvratena funkcia koiato sypostavia na tova parche edno chislo.
+<Swetko> hashcode e funkcia koiato vzema niakakuv argument i vrasta chislo
+<VelinTzanov> To e edno i syshto.
+<VelinTzanov> Trika na funkciata e, che rezultatyt e nepredvidim.
+<VelinTzanov> hash(x) = hash(x) vinagi.
+<VelinTzanov> T.e. ako A = B to hash(A) = hash(B)
+<Swetko> hashcode=fingerprint - taka li 
+<VelinTzanov> Da
+<VelinTzanov> Tova sa prosto termini. Izpolzvat se na razlichni mesta, no ideiata zad tiah e edna i syshta.
+<Prince_of_Dawn> lele
+<Swetko> ok
+<VelinTzanov> Ta ideiata e che e trudno da namerish A i B taka che A != B i hash(A) = hash(B)
+<VelinTzanov> V smisyl che hash-a e maximalno randomiziran i razbyrkan.
+<VelinTzanov> Edno prilojenie ochevidno e v Hash tablicite.
+<rangel__> e to tova maj zavisi i ot sizeof(hash(A))
+<VelinTzanov> Drugo e v kriptografiata. :)
+<VelinTzanov> Da, razbira se che zavisi.
+* Prince_of_Dawn has quit IRC (irc.interbgc.com irc.spnet.net)
+* rangel__ has quit IRC (irc.interbgc.com irc.spnet.net)
+* out_infinity has quit IRC (irc.interbgc.com irc.spnet.net)
+<sssa88> opa
+<VelinTzanov> Obshto vzeto mojete da izkarate hiliadi dolari ako namerite dva string-a A i B, koito sa razlichni i koito imat ednakyv 128-bitov hashCode s niakoi ot dobrite hash algoritmi.
+* rangel__ has joined #ioi
+* Prince_of_Dawn has joined #ioi
+* irc.ITDNet.net sets mode: +oov rangel__ Prince_of_Dawn Prince_of_Dawn
+* Prince_of_Dawn has quit IRC (irc.naturella.com irc.ITDNet.net)
+* rangel__ has quit IRC (irc.naturella.com irc.ITDNet.net)
+<VelinTzanov> Hmmm... Vlado, opravete go toia mnet.bg be. :)
+<sssa88> che samo toj e nared v momenta
+<VelinTzanov> :)
+* rangel__ has joined #ioi
+* Prince_of_Dawn has joined #ioi
+* irc.ITDNet.net sets mode: +oov rangel__ Prince_of_Dawn Prince_of_Dawn
+<sssa88> tehniq se e precakal
+<Prince_of_Dawn> posle moje da si go poiskash s a["abc"]
+<VelinTzanov> Po-skoro vryzkata mejdu dvete.
+<rangel__> vie li izchezvate ili nie? :-)
+<VelinTzanov> <rangel__> e to tova maj zavisi i ot sizeof(hash(A))
+<VelinTzanov> <VelinTzanov> Drugo e v kriptografiata. :)
+<VelinTzanov> <VelinTzanov> Da, razbira se che zavisi.
+<VelinTzanov> * Prince_of_Dawn has quit IRC (irc.interbgc.com irc.spnet.net)
+<VelinTzanov> * rangel__ has quit IRC (irc.interbgc.com irc.spnet.net)
+<VelinTzanov> * out_infinity has quit IRC (irc.interbgc.com irc.spnet.net)
+<VelinTzanov> <sssa88> opa
+<VelinTzanov> <VelinTzanov> Obshto vzeto mojete da izkarate hiliadi dolari ako namerite dva string-a A i B, koito sa razlichni i koito imat ednakyv 128-bitov hashCode s niakoi ot dobrite hash algoritmi.
+<VelinTzanov> * rangel__ has joined #ioi
+<VelinTzanov> * Prince_of_Dawn has joined #ioi
+<sssa88> a ti gi skivash taka li?
+<VelinTzanov> Ne, i az sym kym Mnet. :)
+<VelinTzanov> Momcheta, tuk li ste vsichki?
+<Prince_of_Dawn> da
+<Prince_of_Dawn> az ne sam izlizal
+<rangel__> da
+<VelinTzanov> OK
+<Prince_of_Dawn> swetko?
+<VelinTzanov> Swetko otdavna ne e s nas. :)
+<Prince_of_Dawn> vlado?
+<VelinTzanov> Vlado e tuk... mai.
+<sssa88> tuk
+<VelinTzanov> Ok
+<VelinTzanov> Ta ideiata e che ako dvata hashcode-a sa ravni mnogo e veroiatno i string-ovete da sa ravni.
+<VelinTzanov> Razbira se nie shet proverim dali naistina sa ravni, no shte imame adski malko false alarms.
+<VelinTzanov> Ami, tova e ideiata na Rabin-Karp. :)
+<VelinTzanov> Vyprosi? :)
+<Prince_of_Dawn> kaji sega kak shte prawim onezi magii
+<Swetko> ne
+* Prince_of_Dawn has quit IRC (irc.ITDNet.net irc.techno-link.com)
+* rangel__ has quit IRC (irc.ITDNet.net irc.techno-link.com)
+* rangel__ has joined #ioi
+* Prince_of_Dawn has joined #ioi
+* irc.techno-link.com sets mode: +oov rangel__ Prince_of_Dawn Prince_of_Dawn
+* CS sets mode: -oo rangel__ Prince_of_Dawn
+<Prince_of_Dawn> hashcode
+<Prince_of_Dawn> rangele az si te wijdam 
+<Prince_of_Dawn> oniq neshto im stawa
+<rangel__> t.e. probvame inkrementalno da smqtame hashcode-a i pravim cqlostna proverka samo ako syvpada li? (tova mi e naj-dobroto predpolozhenie za momenta :-)
+* out_infinity has joined #ioi
+* CS sets mode: +o out_infinity
+<VelinTzanov> Da razbiram che mojete da napishete Rabin-Karp taka li?!!!! 8-!
+<sssa88> ne ne razbiraj taka
+<Prince_of_Dawn> be niq s rangel si sedim wiq neshto grupowo si izlizat
+<VelinTzanov> Borisov, ia izlezte dvamata s Rangel i se log-nete v irc.mnet.bg
+<VelinTzanov> Taka vsichki shte sme na edin server i niama da ima problemi.
+<VelinTzanov> OK?
+<Prince_of_Dawn> ok
+<VelinTzanov> Aide - izlizaite i vlizaite.
+* Prince_of_Dawn has quit IRC (0,50lv/ chas zala Matricata - Silistra DENONOSHTNO ∂:))
+* rangel__ has quit IRC (Remote closed the connection)
+<VelinTzanov> Rangele, ti ne smeesh da izlezesh kato gledash Borisov kak ne se vyrna... :)
+<VelinTzanov> A, izleze. :)
+* Prince_of_Dawn has joined #ioi
+* CS sets mode: +v Prince_of_Dawn
+* VelinTzanov sets mode: +o Prince_of_Dawn
+* rangel__ has joined #ioi
+<VelinTzanov> OK
+* VelinTzanov sets mode: +o rangel__
+<Prince_of_Dawn> wsichko e gotowo
+<VelinTzanov> Ideiata e slednata.
+<VelinTzanov> Vzimame znacite ot 1 do P v T
+<VelinTzanov> Pravim im hashcode
+<VelinTzanov> Sravniavame go s hashcode-a na P
+<VelinTzanov> Posle pravim hashcode na znacite ot 2 do P+1 v T
+<VelinTzanov> Posle ot 3 do P+2
+<VelinTzanov> ...i taka do kraia.
+<VelinTzanov> Sravniavaneto na hashcode-ovete e O(1)
+<rangel__> e tova ne stava li T*P (za da smetna T na broj hashcode-a s razmer P)
+<VelinTzanov> V sluchai che namerim syvpadenie proveriavame dali sme namerili naistina.
+<VelinTzanov> No imame tvyrde malko false alarms... taka che niama problem.
+<VelinTzanov> Problem e ako imame mnogo syvpadenia i ni triabvat vsichkite.
+<rangel__> ili samiq hashcode go smqtam ot predhodniq s O(1), shtoto inache nqma smisyl
+<VelinTzanov> Rangele, sega shte obiasnia.
+<VelinTzanov> Rangel se opasiava che smitaneto na hashcode-a na edna pozicia otnema O(P)
+<VelinTzanov> Napylno s osnovanie
+<VelinTzanov> :)
+<VelinTzanov> Triabva ni takyv hashcode deto da mojem da go smetnem za O(1) ot predishnia hashcode. :)
+<VelinTzanov> Da se seshtate za neshto podhodiashto?
+<Prince_of_Dawn> chakai malko
+<VelinTzanov> Kaji Borisov. Vypros li imash?
+<rangel__> ami trivialniq variant kato umnozhavame ASCII kodovete (no tova ne e osobenno dobry hash :-)
+<VelinTzanov> I kak namirash za O(1) vreme?
+<Prince_of_Dawn> znachi ako sam te rabral prawilno iskash da napravim hashcode na vsichki stringow s daljina P zapochwashti ot T, T+1, T+2
+<VelinTzanov> Da, tochno taka, Borisov.
+<VelinTzanov> No iskam vseki hashcode da go smiatate za O(1) ot predishnia.
+<Prince_of_Dawn> mi smqta si na parwiq str
+<Prince_of_Dawn> i posle wadi edno i maha edno
+<rangel__> ami znam koj mnozhitel trqbva da mahna i koj e noviq za vsqka poziciq
+<Prince_of_Dawn> imenno
+<VelinTzanov> A kak mahash mnojitel? Tova da ne sa ti krushi da mahash edna. :)
+<rangel__> (i shte mi trqbva da go smqtam po modul neshto zashtoto inache shte e golqmo chislo)
+<VelinTzanov> Aha, blizko si.
+<rangel__> ne moga li da razdelq na nego?
+<VelinTzanov> Po modul?
+<VelinTzanov> Kak shte razdelish kato si po modul?
+<rangel__> trudno :-)
+<VelinTzanov> Trudno. :)
+<VelinTzanov> Neshto drugo ni triabva.
+<rangel__> ami moga da im pravq XOR na ASCII-tata :-)
+<rangel__> ama tova e typo veche :-)
+<VelinTzanov> (da ne govorim kakvo stava ako niakoia bukva ti e syshtata kato modula :) )
+<VelinTzanov> Mdaaa... ne e mnogo umno.
+<rangel__> e shte si vzema modula nqkoq krasivo golqmo prosto chislo (primerno 599999 :-)
+<Prince_of_Dawn> az ne vijdam kakaw e problema
+<VelinTzanov> Da, tova e mnogo vajno. Modula da e krasivo, goliamo, prosto chislo. :)
+<VelinTzanov> Problema s koe, Borisov?
+<Prince_of_Dawn> ako koda to tuk e X
+<Prince_of_Dawn> to togawa mahame (X-'a'+MOD)%MOD
+<Prince_of_Dawn> maha 'a' ot X 
+<VelinTzanov> Ti predlagash hashcode-a da e sumata na chislata, taka li Borisov? :)
+<Prince_of_Dawn> da
+<VelinTzanov> Zashtoto operaciata ti za mahane e takava. :)
+<Prince_of_Dawn> iskam da razkaja edna istoriq
+<rangel__> tova maj syshto ne e mnogo umno
+<VelinTzanov> Tova ne e mnogo dobyr hashcode. Taka imash tvyrde malko vyzmojnosti.
+<Prince_of_Dawn> mi poneje moje X-'a' da e otritsatelno
+<VelinTzanov> Vyzmojnostite ti sa proporcionalni na alphabet*P
+<VelinTzanov> T.e. ako imash P = 10 i alphabet = 3 (t.e. 3 bukvi v azbukata) imash samo 30-tina vyzmojni hashcodes.
+* Swetko has quit IRC (Ping timeout: 180 seconds)
+* Swetko_uchi has joined #ioi
+* Swetko_uchi is now known as Swetko
+<VelinTzanov> OK. Eto edin hubav hashcode:
+<rangel__> za obshto 3^10 razlichni niza
+<VelinTzanov> Da, nabludenieto na Rangel e dobro.
+<Prince_of_Dawn> mi az za towa se seshtam
+<VelinTzanov> Samiat string e edno chislo.
+<VelinTzanov> Prosto ima adski mnogo cifri. :)
+<VelinTzanov> Nalepete mu bitovete edin do drug i poluchavate chislo.
+<VelinTzanov> Vzemete go sega po modul 591637
+<VelinTzanov> I nikoi niama da moje da nameri dva razlichni string-a s ednakyv hashcode... predvid che ne znae kakyv vi e modula. :)
+<rangel__> tova hubavo no kak da go smqtam za O(1)
+<VelinTzanov> Tochno tova e nai-sladkoto.
+<VelinTzanov> Imash chisloto po modul K
+<VelinTzanov> Da primem che imame azbuka ot 32 znaka, za udobstvo.
+<VelinTzanov> 5 bita na znak.
+<VelinTzanov> Ako oznachim chislata (deto posle gi modulosvame) s c[1], c[2], c[3], .... c[t-p]
+<Prince_of_Dawn> poslednoto ne e li c[p]
+<rangel__> a trqbva mi prosto da izvadq c[1]*2^l
+<rangel__> i da si pribavq c[p]
+<rangel__> kydeto stepenta l se donaglasq :-)
+<VelinTzanov> Borisov, imash T-P dumichki na koito triabva da smetnesh hashcode-a.
+<VelinTzanov> Da, Rangele, mnogo si blizo.
+<VelinTzanov> Sega shte go obiasnia, samo mi triabva malko vreme.
+<VelinTzanov> A vie ne me ostaviate da go napisha. :)
+<Prince_of_Dawn> a da
+<rangel__> ok, spiram s ideite
+<VelinTzanov> c[x] = (c[x+1] - T(x+P)*32^P)*32+c[x]
+<VelinTzanov> Ianche kazano vadite nai-goliamata bukva.
+<VelinTzanov> Umnojavate po 32
+<VelinTzanov> I dobaviate nai-malkata bukva
+<VelinTzanov> Taka poluchavate koda na c[x] ot koda na c[x+1]
+<sssa88> tolkova li e vazno modula da e prosto chislo?
+<Swetko> i az taka pravia
+<VelinTzanov> Vlado, vajno e ot teoretichna gledna tochka. Ot prakticheska ne e.
+<VelinTzanov> Vajno e da niama niakakvi chesto sreshtani deliteli.
+<Swetko> ami da niama mnogo deliteli e dobre
+<VelinTzanov> gotinoto e che gornata operacia izpolzva samo sybirane i umnojenie, koito niamat problem s modula.
+<VelinTzanov> Ta razbrahte li sega kak smiatame hashcodes edin ot drug za O(1) vreme?
+<Prince_of_Dawn> oshte ne
+<rangel__> da
+<VelinTzanov> Kaji, Borisov, kakvo ne e iasno. :)
+<Prince_of_Dawn> znachi gi stroim ot c[x+1] kam c[x];
+<VelinTzanov> Ami mislia che mojeshe i ot c[x] kym c[x+1] no sega se opitvam da si spomnia kak...
+<Prince_of_Dawn> ma towa koeto si napisal kato formula ne sawpada s obqsneniqta po-dolu
+<VelinTzanov> No sys sigurnost moje ot c[x+1] da poluchish c[x]
+<rangel__> vsyshtnost gore maj ima greshka
+<rangel__> trqbva da se pribavq T(x) a ne c(x) nakraq
+<Prince_of_Dawn>  c[x] = (c[x+1] - T(x+P)*32^P)*32+c[x]
+<Prince_of_Dawn> [08:56] <VelinTzanov> Ianche kazano vadite nai-goliamata bukva.
+<Prince_of_Dawn> [08:56] <VelinTzanov> Umnojavate po 32
+<Prince_of_Dawn> [08:56] <VelinTzanov> I dobaviate nai-malkata bukva
+<VelinTzanov> Ta, razbira se!
+<VelinTzanov> Ta = Da
+<VelinTzanov> c[x] e T(x)
+<VelinTzanov> Ne moje da definiram c[x] sys sebe si. :)
+<rangel__> ponezhe e dosta hitro c(x) da e ravno na c(x) + neshto :-)
+<VelinTzanov> Izviniavaite. Prosto sym dosta umoren veche.
+<Prince_of_Dawn> az be razbiram drugo
+<Prince_of_Dawn> T(x+p)*32^P !!!
+<VelinTzanov> Ako imash 2-ichna broina sistema kakva e "tejestta" na P-tata cifra?
+<VelinTzanov> 2^P nali?
+<VelinTzanov> A ako imash 32-ichna azbuka?
+<VelinTzanov> Tejestta na P-tata bukva e 32^P
+<VelinTzanov> T(x+p) e P-tata bukva
+<VelinTzanov> Tejestta i e 32^P
+<Prince_of_Dawn> dobre ma tuk imash izwajdane !! towa e problem za MOD
+<VelinTzanov> Ne e problem.
+<VelinTzanov> Zashto da e problem?
+<Prince_of_Dawn> mi ti kaza che ima samo + i *
+<VelinTzanov> E, to - si e +
+<VelinTzanov> Prosto + otricatelno chislo
+<VelinTzanov> OK de, + - i * :)
+* out_infinity sets mode: +o Swetko
+<VelinTzanov> Plus, minus i po. :)
+<sssa88> kak se vryzva tova s modula - teq raboti nqma li da izcheznat kato go modul-vash
+<sssa88> ?
+<VelinTzanov> Ami ne, niama. :)
+<VelinTzanov> zashto da izcheznat be, Borisov?
+<Prince_of_Dawn> ivlado go kaza
+<Prince_of_Dawn> az sam nevinen ;)
+<VelinTzanov> mod(a)*mod(b) = mod(a*b)
+<VelinTzanov> mod(a+b) = mod(mod(a)+b)
+<Prince_of_Dawn> qsno
+<rangel__> ne e li mod(mod(a)*mod(b)) (za po-sigurno)
+<VelinTzanov> mod(a-b) = mod(mod(a)-b)
+<VelinTzanov> Rangele, prosto sym obyrnal ravenstvoto.
+<VelinTzanov> mod(a*b) = mod(a)*mod(b)
+<VelinTzanov> Moje i oshte edin mod da mu slojish, da. :)
+<VelinTzanov> mod(mod(a)*mod(b))
+<rangel__> ami 2*5 mod 5 = 1
+<rangel__> (2 mod 5) * (3 mod 5) = 6
+<VelinTzanov> 2*5 mod 5 = 0 :)
+<Prince_of_Dawn> ok
+<rangel__> t.e. 2*3  mod 5 :-)
+<Prince_of_Dawn> haide na kopona
+<VelinTzanov> Aide stiga vremegubie - iasno li vi e?
+<sssa88> ne
+<Swetko> da
+<VelinTzanov> Koe ne e iasno, Vlado?
+<rangel__> maj da
+<sssa88> ami kak stava nomera s teq moduli
+<Swetko> vish v Intro to algorithms  - tam i KMP i rabin karp sa dovre obiasneni
+<sssa88> samoto hashirane ne mi qsno
+<sssa88> zashto raboti
+<VelinTzanov> OK, neka obiasnia.
+<VelinTzanov> String-a e chislo. Tova e iasno, nali?
+<VelinTzanov> Goliamo chislo.
+<VelinTzanov> V 32-ichna broina sistema.
+<VelinTzanov> Ako dva string-a sa ravni to i chislata im sa ravni. Nali tova e iasno?
+<VelinTzanov> Otgovariai, plz. :)
+<sssa88> da
+<VelinTzanov> Ako vzem chisloto po modul K, kydeto K e niakakvo goliamo prosto chislo, to ako dva string-a sa ravni modulite im shte si ostanat ravni, nali?
+<sssa88> da
+<VelinTzanov> Osven tova ako dva string-a ne sa ravni e mnogo trudno da gi naglasish taka che da sa im ravni hashcode-ovete, shtoto ti ne znaesh K.
+<VelinTzanov> T.e. tozi koito pishe testovete ne znae tvoeto K.
+<sssa88> da
+<VelinTzanov> Kak smiatam hashcode-a na substring(T, T-p+1, P)
+<VelinTzanov> (tova e string-a ot poslednite P znaci na T)
+<VelinTzanov> Btw, momcheta, az mai malko vi byrkam shtoto az vzimam pyrvata bukva kato nai-malka. A to obiknovenno horata ia vzemat kato nai-starsha.
+<VelinTzanov> No kato sym go pochnal taka taka shte go izkaram dokraia.
+<Prince_of_Dawn> ne e poblem
+<VelinTzanov> Ta chisloto na substring-a koito zapochva ot T(x) i zavyrshva v T(x+P-1) e:
+<VelinTzanov> T(x) + T(x+1)*32 + T(x+2)*32^2 + .... T(x+p-1)*32^(p-1)
+<VelinTzanov> Tova go oznachavame s Ch(x) (kato Chislo)
+<VelinTzanov> Ch(x) mod K go oznachavame s c(x)
+<VelinTzanov> Iskame da smetnem Ch(x) ot Ch(x+1) za O(1)
+<Prince_of_Dawn> !!!
+<VelinTzanov> Opa!
+<VelinTzanov> ISkame da smetnem c(x) ot c(x+1) za O(1)
+<VelinTzanov> IAsno?
+<sssa88> ‰‡
+<sssa88> da
+<VelinTzanov> Eto kak go pravim:
+<VelinTzanov> Pyrvo da pokaja kak smiatame Ch(x) ot Ch(x+1)
+<VelinTzanov> Ch(x) = Ch(x+1)*32 - T(x+p)*32^p + T(x)
+<VelinTzanov> IAsno?
+<sssa88> da
+<VelinTzanov> Sega kato modulosame poluchavame:
+<VelinTzanov> c(x) = (c(x+1) - T(x+p)*32^p + T(x)) mod K
+<VelinTzanov> Pomisli malko i shte vidish zashto tova e viarno.
+<VelinTzanov> Ako ne mojesh da si obiasnish, kaji.
+<Prince_of_Dawn> iztarwa edno *31
+<sssa88> ami 32^p moze da e mnogo golqmo chislo
+<Prince_of_Dawn> *32
+<VelinTzanov> (btw, rekorda go otviahme)
+<out_infinity> sorry 4e interuptvam :) no vi razpratih rezultati ot kontrolnoto
+<Prince_of_Dawn> to w sashnost e (32^p)%MOD
+<VelinTzanov> Da, tochno taka, Borisov.
+<sssa88> aha
+<VelinTzanov> Ne ti triabva 32^p v chist vid.
+<VelinTzanov> Mojesh spokoino da si go modulnesh i nego. :)
+<VelinTzanov> Sega veche iziasni li se vsichko?
+<sssa88> aha
+<VelinTzanov> OK
+<VelinTzanov> Znachi mojete da napishete Rabin-Karp?
+<rangel__> da
+<VelinTzanov> Za domashno. Zaedno s KMP.
+<VelinTzanov> Mojete li? Vlado, Rangel, Swetko?
+<Swetko> da
+<sssa88> da
+<VelinTzanov> Stiga gledahte rezultatite na Anev, nasrali ste se zdravo pak. :) Kajete shte si napishete li domashnoto pone.
+<rangel__> da
+<VelinTzanov> OK
+<Swetko> kak po tochno da chetem
+<Swetko> vhoda
+<Prince_of_Dawn> da
+<VelinTzanov> I za da ne mislite che samo vi budalkam s toia Rabin-Karp shte reshim edna zadacha ot systezanie s nego.
+<VelinTzanov> Dva reda.
+<Swetko> i kakuv da e izhofa
+<VelinTzanov> Na pyrvia e text-a, na vtoria e pattern-a.
+<VelinTzanov> Ednoto shte se kazva kmp.exe
+<VelinTzanov> A trugoto rk.exe
+<VelinTzanov> trugoto = drugoto
+<Prince_of_Dawn> shte swarshwame li?
+<VelinTzanov> IZhoda... hmm...
+<VelinTzanov> NE, Borisov, kazah che shte vi dam i zadacha.
+<VelinTzanov> Izhoda da e index-a na nachaloto na pyrvia match.
+<VelinTzanov> Ako niama match - 0.
+<VelinTzanov> Indexite se broiat ot 1 ochevidno.
+<VelinTzanov> Eto i zadachata:
+<sssa88> moze neq za domasno
+<VelinTzanov> NOI 2002, 1-vi kryg, zadacha Pdrm
+<VelinTzanov> Infoman mai neshto e down... :(
+<Prince_of_Dawn> az shte izlizam togawa
+<VelinTzanov> A, mai stana.
+<VelinTzanov> Kyde otivash be, Borisov? :)
+<out_infinity> samo da kaja... ako nqkoj ima vyprosi po resheniqta na zada4ite ot kontrolnite, sega e dobriq moment da me pita, poneje v4era se porazminahme s dosta hora.
+<Prince_of_Dawn> mi na uchilishte trqbwa da hodq
+<Prince_of_Dawn> ma ako shte obesnqwash ostawam
+<out_infinity> haha, otiva da svalq momi4eta
+<Prince_of_Dawn> ako shte dadesh samo link
+<VelinTzanov> Hmm... viarno.
+<Prince_of_Dawn> da si hodq
+<VelinTzanov> Shte obiasniavam, razbira se.
+<Prince_of_Dawn> znachi ostawam
+<VelinTzanov> http://infoman.musala.com/contests/noi/2002/round1_tasks.html
+<VelinTzanov> Prochetete i mi kajete kato ste gotovi i ste razbrali.
+<Swetko> moita matrix raboti s na Anev testovete ama e bavna :)
+<rangel__> gotovo
+<sssa88> ready
+<out_infinity> Swetko tq maj i na acm.uva.es raboti, no e bavna
+<VelinTzanov> Aide da obsyjdame kontrolnoto posle, che shte zaspia pred ekrana, a imame zadacha.
+<Prince_of_Dawn> gotowo
+<VelinTzanov> Swetko, prochete li zadachata?
+* Swetko has quit IRC (Ping timeout: 180 seconds)
+<Prince_of_Dawn> toi umrq
+<Prince_of_Dawn> dawai
+<VelinTzanov> OK, shte karame bez Swetko.
+<VelinTzanov> Samo triabva da proveria dali shte stane tova koeto si misleh... che neshto se usymnih.
+<VelinTzanov> Vie ia pomislete mejduvremenno.
+* Swetko_uchi has joined #ioi
+* Swetko_uchi is now known as Swetko
+* Onemda has joined #ioi
+* Onemda was kicked by VelinTzanov (VelinTzanov)
+* VelinTzanov sets mode: +o Swetko
+<out_infinity> samo da kaja... moq source na relatives deto sym go pratil.... ne raboti :)
+<Prince_of_Dawn> ;)
+<Swetko> abe to na topcoder imashe takava zadacha naskoto
+<Swetko> az ottam ia znam
+<Swetko> aide 
+<Swetko> az ste hodia na daskalo
+<Swetko> chao
+<Swetko> na vsichki
+<sssa88> chao
+<rangel__> chao
+<Prince_of_Dawn> chao
+* Swetko is now known as Swetko_AG
+<VelinTzanov> Ta momcheta, ideiata mi e slednata:
+<VelinTzanov> Probvame za vseki vyzmojen centyr na palindroma.
+<VelinTzanov> (puskame dve otdelni versii na algorithm-a - edna za chetni i edna za nechetni palindromi)
+<VelinTzanov> V nachaloto probvame s dyljina na vseki ot "rykavite" na palindroma 1.
+<VelinTzanov> Dokato namerim takyv.
+<VelinTzanov> Kato namerim, ostavame na syshtia centyr i uvelichavame "rykavite" na 2.
+<VelinTzanov> Ako pak e palindrom na 3 i t.n... do K
+<VelinTzanov> Posle prmestvame centyra s edno nastrani i gledame dali e palindrom s razmer K.
+<VelinTzanov> Ako ne e prodyljavame natatyk...
+<VelinTzanov> ... ako e, pak uvelichavame "rykavite" na K+1, K+2, ....
+<VelinTzanov> ... i posle kato svyrshim pak natatyk po centrovete...
+* Swetko_AG has quit IRC (Ping timeout: 180 seconds)
+<VelinTzanov> Vse edno hodim po edin grid.
+<VelinTzanov> V koito ednoto izmerenie e centyra na palindroma.
+<VelinTzanov> A drugoto izmerenie e dyljinata na palindroma.
+<VelinTzanov> I nie vinagi hodim nagore i nadiasno.
+<VelinTzanov> I taka do kraia na string-a.
+<Prince_of_Dawn> qsno
+<VelinTzanov> Obshto vremeto e dyljinata na palindroma plus dyljinata na nai-dylgia palindrom.
+<VelinTzanov> Koeto e lineino i ni ustroiva.
+<VelinTzanov> Edinstvenoto koeto me trevoji e dali niamam delenie v smiataneto na Rabin-Karp-skite hashcodes.
+<Prince_of_Dawn> ;)
+* Swetko_uchi has joined #ioi
+* Swetko_uchi is now known as Swetko
+<VelinTzanov> I sega malko mi se spi i mi e trudno da mislia razumno.
+<VelinTzanov> Vie kak mislite?
+<VelinTzanov> Ia kajete pyrvo, razbirate li ideiata za reshavane na zadachata s Rabin-Karp-ski podhod?
+<Prince_of_Dawn> az mislq che sas sigurnost ima
+<rangel__> nqma logika da ima delene
+<sssa88> da
+<VelinTzanov> Ima logika, Rangele, shtoto edinia rykav se dviji naobratno - toi e ogledalen na pyrvia.
+<Prince_of_Dawn> poneje ot dwete strani smqtash rakawite po ralichen nachin
+<VelinTzanov> Pomislete go, molia vi. Shte go pomislia i az.
+<Prince_of_Dawn> moje da si kopnem whodniq string i da si go slojim naobratno pod nashiq
+<VelinTzanov> Da, no kakvo tyrsish taka, Borisov?
+<rangel__> prosto tejestta na bukvite e razlichna
+<VelinTzanov> Koftito e che kato hodish napred v edinia rykav v drugia hodish nazad.
+<Prince_of_Dawn> nemoje da izbqgame ot towa
+<Prince_of_Dawn> moje da pomislim za deleneto kak shte stane
+<rangel__> da no i tejestite mi sa naobratno, bi trqbvalo da stane syshtoto
+<rangel__> delene po modul trudno shte izmislish :-)
+* Swetko has quit IRC (Ping timeout: 180 seconds)
+<Prince_of_Dawn> az mislq che nqma prolem
+<VelinTzanov> Deleneto niama da stane.
+<Prince_of_Dawn> shom kazwate
+<Prince_of_Dawn> Veline a tazi zadacha moje li da se reshi s tozi algo
+* Swetko has joined #ioi
+* CS sets mode: +v Swetko
+<sssa88> napraktika na leviq  ot koda shte nu izvadish tova koeto posledno si dobavil i shte dobavish neshto si po 32^dilzinata
+<sssa88> toest obratnoto na tova koeto dosega pravihme
+<sssa88> pri heshiraneto
+<Prince_of_Dawn> da ma predi towa trqbwa da naprawish p/32
+<Prince_of_Dawn> p-=T[a];
+<Prince_of_Dawn> p/=32;
+<Prince_of_Dawn> p+=T[b]*32^K
+<Prince_of_Dawn> nestawa kaza Velin
+<VelinTzanov> Ne znam dali ne stava.
+<sssa88> moze vmesto da delish tova drugoto da go umnozish
+<VelinTzanov> Chetoh sega edin dokument s edna podobna zadacha i tam vyobshte ne razglejdat obratnoto vyrtene na string-a kato problem.
+<VelinTzanov> Priemat che mojesh da uvelichish/namalish string-a ot koiato si strana poiskash i pak shte poluchish O(1) vreme za fingerprint-a.
+<VelinTzanov> A, Vlado, ti si genialen be!!!
+<VelinTzanov> RAzbira se che mojesh da umnojish drugoto!!!!
+<VelinTzanov> Yahoo! :)
+<VelinTzanov> EEe, momche, ti mi obra tochkite!
+* Swetko has quit IRC (Ping timeout: 180 seconds)
+<VelinTzanov> Znaeh si az che ima smisyl ciala nosht da ti obiasniavam stypka po stypka kato na 5-toklasnik! :)
+<VelinTzanov> Eto che izleze neshto nakraia! :)
+<VelinTzanov> RAzbrahte li ideiata na Vlado?
+<sssa88> :)
+<Prince_of_Dawn> mi towa reshawa problema
+<Prince_of_Dawn> az da
+<VelinTzanov> Aham, reshava go.
+<VelinTzanov> Malko shte se ozorite da izmislite kak tochno shte go realizirate, no sled kato go izmislite realizaciata e lesna.
+<VelinTzanov> Rangel?
+<rangel__> ideqta ne e li che prosto nqma nuzhda ot delene?
+<rangel__> t.e. i v dvata sluchaq imame samo sybirane i umnozhenie
+<VelinTzanov> Ideiata e che vmesto da delish ednoto, po-dobre da umnojish drugoto. :)
+<VelinTzanov> Taka niama da sravniavash hashcode-ovete im, ami shet sravnish hashcode-ovete na chislata po 32.
+* Swetko has joined #ioi
+* CS sets mode: +v Swetko
+<VelinTzanov> Koeto si e prosto drug vid hashcode-ove.
+<VelinTzanov> Da, samo sybirane, izvajdane i umnojenie polzvame.
+<VelinTzanov> Deleneto e zabraneno.
+<VelinTzanov> No ne ni triabva, zashtoto mojem da si umnojim drugoto neshto.
+<VelinTzanov> Sladka rabota.
+<rangel__> aham, qsno
+<VelinTzanov> OK. Imate tri zadachi za domashno. Malko sa vi mnojko mai, ama niama kak.
+<VelinTzanov> I na trite koda shte e dosta kratyk.
+<Prince_of_Dawn> ;(((((
+<VelinTzanov> Mai se sybrahme v 4 chasa, a? :-D
+<rangel__> bravo na nas :-)
+<Prince_of_Dawn> moq log e74 KB
+<VelinTzanov> Borisov, trud mu e maikata, momche. Niama kak inache.
+<VelinTzanov> Moia e 63. Staria rekord ot 51 riapa da iade.
+<VelinTzanov> A minalata godina rekorda beshe 39 mai... :)
+<VelinTzanov> Nishto, tova e dobre.
+<Prince_of_Dawn> towa ne e mnogo hubawo
+<Prince_of_Dawn> znachi dwe neshta
+<Prince_of_Dawn> ili sme potapi ot Anev i kompaniq
+<VelinTzanov> Dogodina moje da niama podgotovka i da ostavia log-ovete na nacionalite da gi chetat... osobeno ako 3-ma ot 4-mata sa Swetko, Nikola i Rostislav.
+<Prince_of_Dawn> ili Velin ni iznasilwa dwoino poveche
+<VelinTzanov> Borisov, tazi godina podgotovkata vyrvi mnogo po-dobre ot minalata.
+<VelinTzanov> Nehstata sa mnogo po-podredeni, mnogo po-iasni, mnogo po-planirani, a i ste mnogo po-izriadni s domashnite ot tiah.
+<Prince_of_Dawn> az mislq che taka ne hubawo da se opitwash da ni nauchish na wsichko za 25 dena
+<Prince_of_Dawn> pone na men mi e mnogo nanagorno
+<VelinTzanov> E, rezultatite na kontrolnite vi sa slabi de...
+<VelinTzanov> ... no na BOI i na IOI shte vidim kak se sravniavate s tiah... gore-dolu.
+<VelinTzanov> Borisov, tova e samo polovinata. :)  Drugata polovina e za sled BOI. :)
+* Swetko has quit IRC (Ping timeout: 180 seconds)
+<VelinTzanov> A i kakvo da te napravia kato hodish na uchilishte be, momche... :)
+<Prince_of_Dawn> ;) mnogo smeshno
+<Prince_of_Dawn> to az pochti ne hodq 
+<VelinTzanov> Drugite kato imat po 8 chasa na den samo zatova - ami tova im e rabotata - spraviat se.
+<Prince_of_Dawn> prosto sam si malko tap
+<VelinTzanov> BOI vi chaka. IOI posle. Ne moje da vi ostavim neuki.
+<VelinTzanov> Nishto, Borisov, imash i dogodina. Taka shte ti ulegnat vsichki neshta... mojesh da si gi chetesh za leka nosht. :)
+<Prince_of_Dawn> ako ne klasirame za IOI moje li da ni dawsh log-owe ot podgotowkata sled IOI
+<Prince_of_Dawn> sled boi
+<Prince_of_Dawn> de
+<rangel__> to ako i tam se predstavqme kato na kontrolnite ni chaka boi maj :-)
+<VelinTzanov> Btw, programata ottuk natatyk e dosta tejka. Vseki den shte vi dynim zdravo. :)
+<VelinTzanov> Ako izdyhnete - kazvate i vzimame edin den pochivka kolektivno.
+<Prince_of_Dawn> koga shte swarshi tozi ujas
+<VelinTzanov> Ne te razbrah, Borisov.
+<VelinTzanov> Na 30-ti June e poslednia den po plan.
+<VelinTzanov> Na 28-mi e poslednoto kontrolno.
+<Prince_of_Dawn> shte ima podgotowka za 8choweka sled BOI 
+<Prince_of_Dawn> ili pone log-owe???
+<VelinTzanov> Ne, Borisov, niama da ima.
+<Prince_of_Dawn> i log
+<VelinTzanov> Ti iavno ne razbirash kakva e ideiata.
+<VelinTzanov> Ideiata e da vlezete vyv forma. S novi zadachi, s novi predizvikatelstva.
+<VelinTzanov> Tezi zadachi shte gi pazia za vas, no za dogodina - kogato shte hodite na IOI.
+<VelinTzanov> Ako minalata godina biah dal zadachite na vsichki sega shteshe da si myrzel kato Swetko. :)
+<VelinTzanov> Vij toi kato ne pishe domashni kak se e otpusnal i si misli, che vsichko mu e iasno... :)
+<Prince_of_Dawn> ;( ne mislq kato teb az mislq che e po wajno chowek prez godinata da gradi materqla 
+<VelinTzanov> No go chaka tejyk BOI... i ako ne go napravi go chaka tejyk boi. :)
+<Prince_of_Dawn> a ne za 20 dena 
+<VelinTzanov> A ti prez godinata krakata li si klati? Nali mi se oplakvashe kolko mnogo reshavash!
+<Prince_of_Dawn> da ma sam reshawal lainqni zadachi po greshen nachin 
+* tony` has joined #ioi
+<VelinTzanov> To i takiva triabva da se reshavat.
+<VelinTzanov> Toni, rano si moito momche. :)
+<tony`> opa, sorry
+<VelinTzanov> Nie otperihme 4 chasa tozi pyt.
+<tony`> abe vij ot 6 dosega li?
+<VelinTzanov> DA
+<tony`> vij ne ste nared, aide chao
+<Prince_of_Dawn> az waobshe ne znaeh che ima tazi tipowe igri
+<rangel__> ama tova s greshniq nachin e kofti
+<VelinTzanov> Prigotvi se za bezsynni noshti - vie pochvate chak ot 17:00 :)
+* tony` has left #ioi
+<VelinTzanov> OK, momcheta, izvodite ot dnes:
+<VelinTzanov> - KMP ideiata.
+<Prince_of_Dawn> zadachata deto mi q warna speed ( sam razshiril i rebrata ) zatowa ne warwi
+<VelinTzanov> Tia ima mnogo prilojenia kato ideia.
+<VelinTzanov> Ima i razni mnogomerni versii na KMP. Aho-Corasick i drugi podobni.
+<VelinTzanov> Zashto si gi razshiril be, Borisov? Nali govorihme da ne gi razshiriavash?
+<VelinTzanov> Rabin-Karp e demonstracia na silata na randomizaciata i hash-vaneto.
+<Prince_of_Dawn> ma towa sam go naprawil predi NOI
+<VelinTzanov> fingerprint-vaneto taka da go narechem.
+<VelinTzanov> Sega shte go prenapishesh kato horata.
+<Prince_of_Dawn> vij kato nqma koi da me nauchi kakwi neshta prawq
+<Prince_of_Dawn> prenapisah go i ti go pratih
+<VelinTzanov> Borisov, ako i sega mi pishtish che ne si nauchen, turi mu pepel!
+<VelinTzanov> Do 30-ti June shte imash celia material koito shte ti triabva do IOI vkluchitelno, che i poveche!
+<VelinTzanov> Tova mejdu BOI i IOI e material nad nivoto na IOI, koito e samo za vlizane vyv forma.
+<Prince_of_Dawn> dobre
+<VelinTzanov> Ta, da prodylja s poukite.
+<VelinTzanov> Ako imate string-ova zadacha, mnogo veroiatno e tia da se reshava s modifikacia na Rabin-Karp.
+<VelinTzanov> Zatova tribva da usyvyrshenstvate tehnikata.
+<VelinTzanov> Zadachata s palindromite e edin hubav primer za prilojenie.
+<VelinTzanov> Az ne znam drugo lineino reshenie za neia.
+<VelinTzanov> Daje s niakoi (mai beshe Swetko) si govorihme syvsem skoro za neia... i togava ne znaeh.
+<VelinTzanov> Da razchitam, che shte usyvyrshenstvate metoda, nali?
+<VelinTzanov> OK?
+<Prince_of_Dawn> da
+<rangel__> da
+<sssa88> ok
+<VelinTzanov> A Borisov, ti tepyrva triabva da se nauchish da si samostoiatelen. Osnovnoto uchene v jivota se pravi sam. Tova koeto te uchat drugite e samo malkoto nachalo.
+<VelinTzanov> ... kolkoto da ne otrkivash neshtata koito te sa otkrili.
+<out_infinity> rangel__ ili Prince_of_Dawn, molq da pratite mailove ot kontrolnoto na sssa88, 4e pyrvo bqh mu obyrkal e-mail-a, a posle mi se skapa poshtata :(
+<VelinTzanov> Tepyrva ti predstoi sam da se gotvish, sam da se zanimavash. Sam da otkrivash teoria i sam da izmisliash zadachi.
+<rangel__> ej sega shte gi pratq
+<out_infinity> 10x
+<out_infinity> trqbva da sa 3
+<VelinTzanov> Anev, tuk obiknovenno polzvame istinski imena, btw... :)
+<VelinTzanov> OK, momcheta, az sym dotuk.
+<VelinTzanov> Jelaia vi uspeh.
+<rangel__> az imam samo 2, edin s rezultati i edin s 4-tata zadacha
+<Prince_of_Dawn> chao
+<VelinTzanov> Vyprosi (za posledno)?
+<rangel__> chao
+<sssa88> ne
+<VelinTzanov> Ako ne - chao!
+<rangel__> ne
+<sssa88> chao
+* Disconnected
+Session Close: Wed Jun 23 00:14:29 2004

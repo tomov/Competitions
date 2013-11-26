@@ -1,0 +1,137 @@
+#include <set>
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+
+const int MAXN = 1 << 17;
+
+int n;
+int a[MAXN];
+int lvl[MAXN];
+int cnt[1 << 11];
+
+void read() {
+	int i;
+	
+	scanf ( "%d" , &n );
+	for (i = 1; i <= n; i++)
+		scanf ( "%d" , &a[i] );
+}
+
+long long solve1 ( int l , int r ) {
+	memset ( cnt , 0 , sizeof cnt );
+	int tot = r - l + 1;
+	int i , j;
+	int all;
+	int f;
+	int sum;
+	int other;
+	int left;
+	int get;
+	long long ans = 0;
+	
+	if ( l > 1 ) ++ tot;
+	
+	for (i = 0; (1 << i) < tot; i ++);
+	all = 1 << i;
+	f = i;
+	
+	for (j = l; j <= r; j++) {
+		lvl[j] = i;
+		ans += a[j] * i;
+	}
+	
+	for (j = r; j >= l; j--) {
+		if ( all - 1 >= tot ) {
+			-- all;
+			-- lvl[j];
+			ans -= a[j];
+		} else
+			++ cnt[ a[j] ];
+	}
+	if ( l > 1 )cnt[0] ++;
+	
+	for (i = r; i >= l; i--) {
+		sum = a[i];
+		
+		left = 1 << (f - lvl[i]);
+		++ left;
+			
+		for (j = 0; j <= 1024; j++) {
+			get = min ( left , cnt[j] );
+				
+			cnt[j] -= get;
+			sum -= get * j;
+			left -= get;
+		}
+		
+		if ( left != 0 ) continue;
+		
+		if ( lvl[i] != lvl[i - 1] ) {
+			other = a[i];
+			left = 1 << (f - lvl[i - 1]);
+			++ left;
+			
+			for (j = 0; j <= 1024; j++) {
+				get = min ( left , cnt[j] );
+				
+				cnt[j] -= get;
+				other += get * j;
+				left -= get;
+			}
+			
+			if ( sum > 0 && sum > other ) {
+				-- lvl[i];
+				ans += sum;
+				cnt[ - sum + a[i] ] ++;
+				++ i;
+			}	
+			continue;
+		}
+		
+		if ( sum < 0  ) break;
+		ans -= sum;
+		cnt[ - sum + a[i] ] ++;
+		-- lvl[i];
+		++ i;
+	}
+	
+	return ans;
+}
+
+void solve() {
+	int i;
+	int lim;
+	int sum = 0;
+	int curlvl = 0;
+	long long ans = 0;
+	
+	sort ( a + 1 , a + n + 1 );
+	
+	while ( 1 ) {
+		for (i = n; i >= 2; i--)
+			if ( a[i] > a[i - 1] + a[i - 2] )
+				break;
+		if ( i == 2 ) -- i;
+		lim = i;
+		
+		sum = 0;
+		for (i = lim; i <= n; i++) sum += a[i];
+
+		ans += solve1 ( lim , n ) + sum * curlvl;
+		for (i = 0; (1 << i) < (n - lim + 2); i++) ;
+		curlvl += i;
+		n = lim - 1;
+		
+		if ( n == 0 ) break;
+	}
+	
+	printf ( "%lld\n" , ans );
+}
+
+int main() {
+	read();
+	solve();
+	
+	return 0;
+}

@@ -1,0 +1,234 @@
+Day 1:
+Ipyknala obvivka.
+Dvoichno tyrsene.
+
+Double, IOI 2001
+Mirrors, NOI 2005
+Garden, NOI 3 1999
+
+
+
+Day 2:
+Dwarfs, CEOI 2002
+Palechko, IOI kontrolno 2004
+Two Rods, IOI 2002
+
+
+
+Day 3:
+Optimalno naluchkvane.
+Modifikacii na dvoichno tyrsene.
+
+Mountain, 2 Kont 2003
+False, 12 moneti, 1 falshiva, 3 teglenia
+Sequences, BOI 2002
+
+
+
+Day 4:
+Reshavane na zadachi s pylni dvoichni dyrveta (index-ni dyrveta).
+Update & Query sistemi s cena na operacia LogN ili LogN*LogN.
+
+Round, Spring 2004
+Mobiles, IOI 2001
+Moofest, USOpen 2004
+Circle, Spring 2003
+Team, BOI 2004
+
+
+
+Day 5:
+Travers, BOI 2003
+Mars, BaOI 2001
+(Vyzmojno e da dobavim malko swetkovski zada4i...)
+
+
+
+Day 6:
+Teoria na chislata.
+Prekalkulirane na prostite chisla.
+Razlagane na chislo na prosti deliteli.
+
+Laconism, Spring 2003
+Sequence, 3 Kont 2002
+B-smooth, POI 2002
+
+
+
+Day 7:
+Igri s obhvaten broi situacii.
+Opredeliane na pechelivshi, gubeshti i ravnostoini situacii.
+
+Crazy, Spring 2004
+IOIwari, IOI 2001
+Score, IOI 2001
+
+
+
+Day 8:
+Trade, Spring 2003
+The L-Game, BaOI 2002
+
+
+
+Day 9:
+Igri s neobhvaten broi situacii.
+Ocenka na situaciite. Optimalni hodove.
+SG-Theorem. Sybirane na igri.
+
+Conqueror, CEOI 2002
+Nim, Ivan Anev
+BGame, posledno IOI kontrolno 2005
+
+
+
+Day 10:
+Stripes, POI 2000, 1-vi kryg
+Heads Game, Ivan Anev
+
+
+
+Day 11:
+Postoianno podobriavane na situaciata.
+Coins, Spring 2001
+XOR, IOI 2002
+Aliens, BOI 2002
+
+
+
+Day 12:
+Speed, BaOI2002
+Bic, BaOI 2002
+Race, BOI 2004
+
+
+
+Day 13:
+3DLab, 2 Kont, 2004
+Lab, 2 Kont, 2001
+Robots, IOI 2003
+Wappo, Spring 2005
+
+
+
+Day 14:
+String matching.
+Knuth-Moris-Pratt & Rabin-Karp.
+
+Pure implementation
+Pdrm, NOI 1 2002
+
+
+
+Day 15:
+Kodirane & Dekodirane.
+
+Encode/Decode, 3 Kont 2002
+Fax, 3 Kont 2002
+Cowq, USACO Dec 2003
+
+
+
+Day 16:
+Dvufazni dinamichni po dyrveta.
+
+Paths, NOI 2004
+Tribe, BOI 2003
+
+
+
+Day 17:
+Optimizirane na dinamichno, chrez sykrashtavane na
+vytreshnia cikyl izpolzvaiki otgovor na podzadacha.
+
+BinTree, 2 Kont 2003
+Convex, 2 Kont 2004
+
+
+
+Day 18:
+Batch, IOI 2002
+Game, BOI 2004
+Euro, BOI 2003
+
+
+
+Day 19:
+Obryshtane na permutacionni zadachi v zadachi
+boraveshti s intervali.
+
+Caterpillar, CEOI 2000
+Handin, USOpen 2004
+
+
+
+Day 20:
+Utopia, IOI 2002
+
+
+Day 21:
+Reshavane na sistema ot lineini uravnenia (vkl. modulo 2)
+X ot CEOI 2000
+Register ot CEOI 2003
+Flatten, IOI 1999
+
+
+
+Day 22:
+Namirane na maximum, chrez naprechen minimum.
+Modificirane na algoritym na Dijkstra.
+
+Debelak, NOI 2 2000
+Robot, BOI 2002
+Skiers, POI 2002
+Lights, IOI 1999
+
+
+
+Day 23:
+Maximalen potok v graf.
+Svejdane na zadachi do maximalen potok
+
+Preflow-push
+Pizza, USACO March 2004
+Knights, BaOI 2001
+Guards, CEOI 2002
+
+
+Day 24:
+Parketirane na ploshti.
+
+Build, Fall 2001/2002
+Bugs, CEOI 2002
+
+
+Day 25:
+Dinamichno po shablon (forma).
+Mapping index <-> element v naredeno mnojestvo
+Mnogokratno puskane na modifikacii na dinamichno.
+
+Diag, 2 Kont 2003
+TwoFive, IOI 2001
+
+
+
+Day 26:
+Parcelirane na ravninata. Geometria. Naduvane na baloni.
+
+Nivi, 3 Kont 2001
+Old Map, BOI 2002
+Selo, Spring 2002
+Aliens, BOI 2002
+Light, 2 Kont 2001
+Fence, Fall 2001/2002
+A, Studentsko 08.05.2004
+
+
+
+Day 27:
+Obrabotka na elementite siakash vseki e posleden.
+Obrabotka na ravninata po lenti.
+
+Majesty, USOpen 2002
+Triangles, BaOI 2002
+

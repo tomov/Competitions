@@ -1,0 +1,151 @@
+#include <cstdio>
+#include <queue>
+
+#define MAXL 30
+#define MAXN 50
+
+using namespace std;
+
+int l;
+int n, m, c, t;
+int color[MAXN], change[MAXN];
+int g[MAXN][MAXN];
+int timing[MAXL];
+int used[MAXN];
+int bw[MAXN];
+int how;
+
+queue<int> q;
+
+void init(int end)
+{
+    int i, j;
+    for (i = 0; i < end; i++) {
+        change[i] = 0;
+        used[i] = 0;
+        bw[i] = 0;
+    }
+    
+    for (i = 0; i < end; i++) {
+        for (j = 0; j < end; j++) {
+            g[i][j] = 0;
+        }
+    }
+}
+/*
+void bfs(int v)
+{
+    int i, curr;
+    
+    q.push(v);
+    
+    while (!q.empty()) {
+        curr = q.front();
+        q.pop();
+        for (i = 0; i < n; i++) {
+            if (g[curr][i] && change[i]) {
+                q.push(i);
+                change[i] = 0;
+            }
+        }
+    }
+}
+*/
+void bfs_opos(int v)
+{
+    int i, top = 0, curr;
+    
+    q.push(v);
+    
+    while (!q.empty()) {
+        curr = q.front();
+        q.pop();
+        for (i = 0; i < n; i++) {
+            if (g[curr][i] && !used[i]) {
+                q.push(i);
+                used[i] = 1;
+                //if (!change[i]) {
+                    bw[top] = i;
+                //}
+                top++;
+            }
+        }
+    }
+}
+
+int solve()
+{
+    int i, j = 0;
+    bfs_opos(0);
+    if (how == 1) {
+        return 1;
+    }
+    for (i = 0; i < n; i++) {
+        if (color[bw[i]] == c) {
+            while (color[bw[i]] == c && i < n) {
+                i++;
+            }
+            j++;
+        } else {
+            while (color[bw[i]] != c && i < n && how) {
+                bw[i++] = c;
+                how--;
+            }
+            j++;
+        }
+    }
+    
+    // nedostijimi
+    for (i = 0; i < n; i++) {
+        if (!used[i]) {
+            if (change[i]) {
+                j++;
+                //change[i] = 0;
+                //used[i] = 1;    // <----
+            }
+        }
+    }
+    /*for (i = 0; i < n; i++) {
+        if (change[i]) {
+            bfs(i);
+            j++;
+        }
+    }*/
+    return j;
+}
+
+int main (void)
+{
+    int i, j, x, y, sum = 10000000, temp = 0;
+    scanf("%d", &l);
+    for (i = 0; i < l; i++) {
+        scanf("%d %d %d %d", &n, &m, &c, &t);
+        init(n);
+        for (j = 0; j < n; j++) {
+            scanf("%d", &color[j]);
+            if (color[j] != c) {
+                change[j] = 1;
+                how++;
+            }
+        }
+        for (j = 0; j < m; j++) {
+            scanf("%d %d", &x, &y);
+            g[x][y] = 1;
+            g[y][x] = 1;
+        }
+        timing[i] = solve() * t;
+    }
+    for (i = 0; i < l; i++) {
+        temp += timing[i];
+        for (j = i; j < l; j++) {
+            temp += timing[j];
+        }
+        if (temp < sum) {
+            sum = temp;
+        }
+        temp = 0;
+    }
+    
+    printf("%d\n", sum + 2);
+    return 0;
+}

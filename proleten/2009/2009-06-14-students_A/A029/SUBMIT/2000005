@@ -1,0 +1,112 @@
+#include <cstdio>
+
+#define MAXN 1048576
+
+typedef long long lt;
+
+int nums[MAXN], n, k;
+
+struct itree {
+	int data[MAXN];
+
+	int query(int to) {
+		int res = 0;
+		for(int i = to; i > 0; i -= i&(-i)) {
+			res += data[i];
+		}
+		return res;
+	}
+	void add(int to, int n) {
+		for(int i = to; i < MAXN; i += i&(-i)) {
+			data[i] += n;
+		}
+	}
+	int find_mid() {
+		int start = 1, end = MAXN, mid, val;
+		while(start < end-1) {
+			mid = (start+end)/2;
+			val = query(mid);
+			if(val <= k/2) {
+				start = mid;
+			} else if(val > k/2) {
+				end = mid;
+			} else {
+				return mid;
+			}
+		}
+		return end;
+	}
+} tree;
+
+inline int absd(int a, int b) {
+	return ((a > b)-(a < b))*(a-b);
+}
+
+lt sumd(int from, int n, int d) {
+	//printf("cost %d %d %d\n", from, n, d);
+	int res = 0;
+	for(int i = from, l = from+n; i < l; ++i) {
+		//printf("diff %d %d\n", d, nums[i]);
+		res += absd(d, nums[i]);
+	}
+	return res;
+}
+
+int main() {
+	scanf("%d%d", &n, &k);
+	for(int i = 0; i < n; ++i)  {
+		scanf("%d", nums+i);
+		//++nums[i];
+	}
+	for(int i = 0; i < k; ++i) tree.add(nums[i], 1);
+	lt mincost = 1ll<<60, minat;
+
+	lt ccost = sumd(0, k, tree.find_mid());
+	for(int i = 0; 1; ++i) {
+		if(ccost < mincost) {
+			mincost = ccost;
+			minat = i;
+		}
+
+		int prevmid = tree.find_mid();
+
+		//printf("\ncost at %d: %d mid ", i, ccost); printf("%d\n", prevmid);
+
+		if(i+k >= n)
+			break;
+
+		tree.add(nums[i], -1);
+		ccost -= absd(prevmid, nums[i]);
+		//printf("remove. ccost -= absd(%d, %d)\n", prevmid, nums[i]);
+
+		tree.add(nums[i+k], 1);
+		ccost += absd(prevmid, nums[i+k]);
+		//printf("add. ccost += absd(%d, %d)\n", prevmid, nums[i+k]);
+		//printf("ccost %d\n", ccost);
+
+		int newmid = tree.find_mid();
+
+		//printf("shift mid from %d to %d\n", prevmid, newmid);
+
+		if(prevmid < newmid) {
+			/*ccost += tree.query(prevmid) * (newmid - prevmid);
+			ccost += (k - tree.query(newmid)) * (prevmid - newmid);
+
+			printf("add %d\n", tree.query(prevmid) * (newmid - prevmid));
+			printf("add %d\n", (k - tree.query(newmid)) * (prevmid - newmid));*/
+			ccost += tree.query(prevmid) * (newmid - prevmid);
+			ccost -= (k - tree.query(prevmid)) * (newmid - prevmid);
+		} else {
+			/*ccost += tree.query(newmid) * (prevmid - newmid);
+			ccost += (k - tree.query(prevmid)) * (newmid - prevmid);
+
+			printf("add %d\n", tree.query(newmid) * (prevmid - newmid));
+			printf("add %d\n", (k - tree.query(prevmid)) * (newmid - prevmid));*/
+
+			ccost += (k - tree.query(newmid)) * (prevmid - newmid);
+			ccost -= tree.query(newmid) * (prevmid - newmid);
+		}
+	}
+	printf("%lld\n%lld\n", mincost, minat+1);
+	return 0;
+}

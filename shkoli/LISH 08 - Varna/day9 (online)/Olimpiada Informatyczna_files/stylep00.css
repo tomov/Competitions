@@ -1,0 +1,42 @@
+BODY{SCROLLBAR-FACE-COLOR: #336699;}
+A{font-family:Verdana, Helvetica, Helv; font-size:12px; text-decoration:underline; color:black}
+A:hover{font-family:Verdana, Helvetica, Helv; font-size:12px; text-decoration:none; color:336699}
+
+body,p,div,span,th,td{font-family:Verdana,Arial,sans-serif;font-size:12px}
+h1{font-size:25px}
+.head{color:#000;font-size: 25px;font-family:arial;font-weight:bold;text-decoration:none}
+.med{color:#000;font-size: 15px;font-family:arial}
+.small{color:#000;font-size: 10px;font-family:arial}
+.table{background:#EEEEEE;color:#000000;line-height:13px;font-family:arial;font-weight:bold}
+.tabhead1{font-size:15px; background:#EEEEEE;color:#000000;line-height:20px;font-family:arial;font-weight:bold}
+.tabhead2{background:#EEEEEE;color:#000000;line-height:15px;font-family:arial}
+.tabl1{background:#F7F7F7;color:#000000;line-height:13px;font-family:arial}
+.tabl0{background:#FFFFFF;color:#000000;line-height:13px;font-family:arial}
+A.tabl0{font-family:Verdana, Helvetica, Helv; font-size:11px; font-weight:bold; text-decoration:underline; color:white}
+A.tabl1{font-family:Verdana, Helvetica, Helv; font-size:11px; font-weight:bold; text-decoration:underline; color:white}
+A.tabl0:hover{font-family:Verdana, Helvetica, Helv; font-size:11px; font-weight:bold; text-decoration:none; color:white}
+A.tabl1:hover{font-family:Verdana, Helvetica, Helv; font-size:11px; font-weight:bold; text-decoration:none; color:white}
+
+.Button{background=#0033CC;color:#FFF;font-weight:bold}
+
+.bigone{color:#666666;font-family:Comic Sans MS;font-weight:bold;font-size:30px;text-decoration:none}
+.bigone:hover{color:#666666;font-family:Comic Sans MS;font-weight:bold;font-size:30px;text-decoration:none}
+
+A.c10{font-family:Verdana, Helvetica, Helv; font-size:11px; font-weight:bold; text-decoration:none; color:white}
+A.c10:hover{font-family:Verdana, Helvetica, Helv; font-size:11px; font-weight:bold; text-decoration:none; color:"#EFEFEF"}
+.c10t{padding-left:0.5cm; padding-top:2px; padding-bottom:2px;}
+
+
+A.c20{font-family:Verdana, Helvetica, Helv; font-size:11px; text-decoration:none; color:Navy}
+A.c20:hover{font-family:Verdana, Helvetica, Helv; font-size:11px; text-decoration:none; color:Red}
+.c20t{padding-left:0.5cm; padding-top:2px; padding-bottom:2px; padding-right:5px;}
+
+A.c30:hover{font-family:Verdana, Helvetica, Helv; font-size:10px; text-decoration:none; color:"#3030FF"}
+A.c30{font-family:Verdana, Helvetica, Helv; font-size:10px; text-decoration:none; color:Navy}
+.c30t{padding-left:0.7cm; padding-top:3px; padding-bottom:3px; padding-right:2px;}
+
+.newstitle{color:#000;font-size: 17px;font-family:arial;font-weight:bold}
+.newsdate{color:#000;font-size: 17px;font-family:arial;font-weight:bold}
+.newsbody{color:#000;font-size: 14px;font-family:arial}
+A.newsbody{color:#229;font-size: 14px;font-family:arial}
+A.newsbody:hover{color:#00F;font-size: 14px;font-family:arial}

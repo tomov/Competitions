@@ -1,0 +1,67 @@
+stl:
+bitset
+(multi)map
+(mul)set
+PQ
+http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=standardTemplateLibrary
+http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=standardTemplateLibrary2
+
+
+struct; class
+pointers; char*
+tricks: a[i] i<0 ; bitmasks; all subsets ; 
+
+
+
+TC
+
+
+
+MATH:
+
+primes,eratosthenes, , factorization, bases, fast power
+modular arithmetic; bases; vector; (ext_)gcd ; kombinatorika
+http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=math_for_topcoders
+http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=primalityTesting
+http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=combinatorics
+http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=primeNumbers
+http://en.wikipedia.org/wiki/Extended_Euclidean_algorithm
+
+
+
+
+
+algos (za vseki vid graph po otdelno):
+dfs, bfs(pfs), floyd, bellman ford, dijkstra (!=pfs), euler(hamilton), dp - dag
+
+raz6ir na grapha
+
+shit v/y graphs:
+mst, maxflow
+
+
+
+DP
+
+http://infoman.musala.com/anniversary/articles/Alexander.Georgiev_dynamic.programming.pdf
+http://ace.delos.com/usacogate
+http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=dynProg
+
+
+
+MAX FLOW
+
+analogiq na debit na trubi
+- intuitivni examples
+- augmenting path algo's
+- example zada4i
+
+
+GAMES
+
+
+
+
+GEOMETRY
+
+

@@ -1,0 +1,87 @@
+#include <cstdio>
+
+#define MAXN 80
+
+int n, res;
+int pd[MAXN], zn[MAXN];
+int k[MAXN][MAXN];
+/*
+int solve(int v, int u)
+{
+    printf("%d %d\n", v, u);
+    if (v < u) {
+        return 0;
+    }
+    if (u > 1) {
+        solve(u, 1);
+    }
+    printf("--\n");
+    solve(v - 1, u + 1);
+}*/
+
+int plus1()
+{
+    int i = 0;
+    pd[i]++;
+    while (pd[i] == 2) {
+        pd[i] = 0;
+        pd[++i]++;
+    }
+    return i;
+}
+
+int nod(int a, int b)
+{
+    return (a>0) ? nod(a % b, a) : b;
+}
+
+void get()
+{
+    int i, j = 1, temp = 1, top = 0, nd;
+    int chisl = 0, zn_= 1;
+    for (i = 1; i < n; i++) {
+        if (pd[i] == pd[i-1]) {
+            j++;
+        } else {
+            zn[top++] = j;
+            j = 1;
+        }
+    }
+    zn[top++] = j;
+    for (i = 0; i < top; i++) {
+        zn_ *= zn[i];
+    }
+    for (i = 0; i < top; i++) {
+        chisl += zn_ / zn[i];
+    }
+    
+    nd = nod(zn_, chisl);
+    
+    if (zn_ % nd == 0 && chisl % nd == 0) {
+        zn_ /= nd;
+        chisl /= nd;
+    }
+    
+    if (!k[chisl][zn_]) {
+        res++;
+        k[chisl][zn_] = 1;
+    }
+}
+
+void solve()
+{
+    int i, j;
+    while (i < n) {
+        get();
+        i = plus1();
+    }
+}
+
+int main (void)
+{
+    scanf("%d", &n);
+    solve();
+    printf("%d\n", res);
+    
+    return 0;
+}

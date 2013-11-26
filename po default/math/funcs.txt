@@ -1,0 +1,208 @@
+int gcd(int a,int b)
+{ return (b==0)?a:gcd(b,a%b); }
+
+
+
+PI ext_gcd(int a,int b)
+{
+  if (a%b==0) return MP(0,1);
+  PI t=ext_gcd(b,a%b);
+  return MP(t.y,t.x-t.y*(a/b));
+}
+
+
+
+<=>
+
+
+
+u=(1,0,u)  v=(0,1,v)
+while u3%v3
+  q=u3/v3;
+  t=u-q*v;
+  u=v;
+  v=t;
+
+
+
+<=>
+
+
+
+LL mod(LL a, LL m)
+{
+    a %= m;
+    if (a < 0) a += m;
+    return a;
+}
+
+LL inverse(LL a, LL m)
+{
+    a = mod(a, m);
+    if (a == 1) return 1;
+    return mod((1 - m * inverse(m % a, a)) / a, m);
+}
+
+LL comb(LL N,LL K)
+{
+	if (K<N-K) K=N-K;
+	LL ans=1;
+	for (LL i=K+1,j=1;i<N;j++,i++)
+	 {
+			ans*=i;
+			ans%=MOD;
+			ans*=inverse(j,MOD);
+			ans%=MOD;
+	 }
+	return ans;
+}
+
+
+
+
+
+
+
+
+
+
+
+LL power(LL q,LL N)
+{
+   LL res=1;
+   for(;N;N>>=1)
+    {
+      if (N&1) res*=q;
+      q*=q;
+    }
+   return res;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LL lcm(LL a,LL b)
+{
+	return a/__gcd(a,b)*b;
+}
+
+#define IT vector<LL>::iterator
+LL lcm(IT i1,IT i2)
+{
+	LL L=1;
+	for (IT it=i1;it!=i2;it++)
+	 L=lcm(L,*it);
+	return L;
+}
+
+
+
+
+
+// calculates gcd(x,lcm(array)) without having to actually calculate the lcm of the array
+
+LL mem[61];
+LL gcd(IT i1,IT i2)
+{
+	if (mem[i2-i1]>-1) return mem[i2-i1];
+	if (i1==i2) return mem[i2-i1]=1LL;
+	LL g=1;
+	for (vector<LL>::iterator it=i1;it!=i2;it++)
+			g*=__gcd( *i2/g , *it/gcd(i1,it) );
+	return mem[i2-i1]=g;
+}
+
+LL GCD(LL x,vector<LL> a)
+{
+	memset(mem,-1,sizeof(mem));
+	a.PB(x);
+	return gcd(a.begin(),a.end()-1);
+}
+
+
+
+
+
+
+
+
+
+
+Fibonacci
+
+F(2n-1) = F(n-1)^2 + F(n)^2
+F(2n) = ( 2 F(n-1) + F(n) ) F(n)
+
+
+Catalan
+
+C(n)=1/(n+1) * Combination(2n,n)
+
+
+Combinations with repetition
+
+Combination(n + k - 1, k) == Combination(n + k - 1, n - 1)
+
+permutations of p groups of equal elements (group i has ki elements)
+n! / k1! / k2! / k3! / ... / kp!
+
+Partitions of N with smallest addend >= K
+
+p(k,n) = 0 if k > n
+p(k,n) = 1 if k = n
+p(k,n) = p(k+1,n) + p(k,n-k) otherwise
+p(n) = partitions of N = p(1,n)
+
+
+Farey sequence
+
+... a/b , c/d , e/f ... - (a+b)/(e+f) = c/d
+
+
+
+Number of integers coprime to n (and <= n) :
+Euler's totient function = phi(n) = n * product for all primes p dividing n (1 - 1/p) :
+
+memset(divisor,-1,sizeof(divisor));
+phi[1]=1;
+for (int i=2;i<=N;i++)
+ {
+  if (divisor[i]==-1)
+   {
+		phi[i]=i-1;
+		if (i<=N/i)
+		for (int j=i*i;j<=N;j+=i)
+		 divisor[j]=i;
+   }
+  else
+   {
+		int mul=1,t=i/divisor[i];
+		while (t%divisor[i]==0) t/=divisor[i],mul*=divisor[i];
+		phi[i]=phi[t]*(divisor[i]-1)*mul;
+   }
+ }
+
+
+
+
+
+
+
+
+
+The LCM of a set of fully reduced fractions is therefore:
+    LCM(numerators)
+   -----------------
+   GCD(denominators)
+

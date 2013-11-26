@@ -1,0 +1,87 @@
+#include <cstdio>
+#include <climits>
+
+const int MAX_N = 1000000 + 10;
+const int MAX_H = 1048576 + 10;
+const int sz = 1048576;
+
+int N, K;
+int h[MAX_N];
+int BIT_cnt[MAX_H];
+int BIT_h[MAX_H];
+int res = INT_MAX, pos, c;
+
+void update_cnt(int pos, int v)
+{
+	for(; pos <= sz; pos += (pos & -pos))
+		BIT_cnt[pos] += v;
+}
+
+void update_h(int pos, int v)
+{
+	for(; pos <= sz; pos += (pos & -pos))
+		BIT_h[pos] += v;
+}
+
+int query(int *BIT, int to)
+{
+	int res = 0;
+	for(; to; to -= (to & -to))
+		res += BIT[to];
+	return res;
+}
+
+int query(int *BIT, int st, int end)
+{
+	return query(BIT, end) - query(BIT, st - 1);
+}
+
+int eval(int h)
+{
+	int low = query(BIT_cnt, h) * h - query(BIT_h, h);
+	int up = query(BIT_h, h + 1, sz) - query(BIT_cnt, h + 1, sz) * h;
+//	printf("%d %d\n", query(BIT_cnt, h), query(BIT_h, h));
+	return low + up;
+}
+
+int main()
+{
+	scanf("%d %d", &N, &K);
+	for(int i = 0; i < N; i ++)
+	{
+		scanf("%d", &h[i]);
+		h[i] ++;
+	}
+	h[N] = 1;
+	for(int i = 0; i < K; i ++)	
+	{
+		update_cnt(h[i], 1);
+		update_h(h[i], h[i]);
+	}
+	for(int st = 0; st + K <= N; st ++)
+	{
+		int find = K >> 1;
+		int len = sz;
+		int add = 0;
+		while(len)
+		{
+//			printf("add: %d len: %d value: %d find: %d\n", add, len, BIT_cnt[add + len], find);
+			if( BIT_cnt[add + len] <= find )
+			{
+				find -= BIT_cnt[add + len];
+				add += len;
+			}
+			len >>= 1;
+		}
+		if( (c = eval(add)) < res )	res = c, pos = st;
+		if( (c = eval(add + 1)) < res )	res = c, pos = st;
+//		printf("%d %d %d find: %d\n", st, add, c, find);
+		update_cnt(h[st], -1);
+		update_h(h[st], -h[st]);
+		update_cnt(h[st + K], 1);
+		update_h(h[st + K], h[st + K]);
+	}
+	printf("%d\n", res);
+	printf("%d\n", pos + 1);
+    return 0;
+}

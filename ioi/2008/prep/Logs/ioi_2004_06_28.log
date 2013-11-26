@@ -1,0 +1,222 @@
+
+Session Start: Sun Jun 27 21:27:25 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+* Logging #ioi to 'logs\ioi_2004_06_28.log'
+<VelinTzanov> Zdrasti
+<main[]> zdrasti
+<VelinTzanov> Gotov li si?
+<main[]> mi kwo da sum gotow...
+<VelinTzanov> Da ti davam li zadachite?
+<main[]> dawai
+<VelinTzanov> http://www.tzanov.com/ioi2004/urubamba/
+<main[]> uf pak docowe
+<main[]> ok
+<VelinTzanov> Slavi, znaesh prikazkata - na harizan kon ne se gledat zybite. :)
+<main[]> :-D ne be prosto pod linux poniakoga ima problemi. no tezi se otwariat
+* VelinTzanov sets mode: +o main[]
+* Prince_of_Dawn has joined #ioi
+* CS sets mode: +v Prince_of_Dawn
+* mctiny has joined #ioi
+<Prince_of_Dawn> q anew znachi shte ima zadachi
+<out_infinity> est
+* valo_bg has joined #ioi
+<valo_bg> durutro :)
+<Prince_of_Dawn> duro
+<Prince_of_Dawn> ;)
+<main[]> ne wi triaat tia zadachi..
+<valo_bg> Prince_of_Dawn: neshto useshtam sarkazym v komentara ti ;)
+<valo_bg> main[]: koi be, dusha?
+<main[]> det anev sha wi gi dawa ;)
+* mctiny has left #ioi
+<valo_bg> "sha wi gi dawa"? na tebe nqma li da gi dava? :)
+<Prince_of_Dawn> toi weche se sstezawa
+<valo_bg> mamka mu... ostavat mi 6.7 MB do kraq na meseca...
+<valo_bg> aaaa
+<valo_bg> brao na nego :)
+<valo_bg> uspeh nachi
+* rangel__ has joined #ioi
+<Prince_of_Dawn> kato pishesh si habish ot MB tite
+<main[]> niaa nujda - kakto we4e kazax - ne ti triaat ;)
+<valo_bg> Prince_of_Dawn: ti kato pishesh syshto mi se habqt
+<Prince_of_Dawn> ;)
+<valo_bg> a ve kakvo e mn. chislo na "kapuchino"?
+<Prince_of_Dawn> kapuchinota
+<valo_bg> a zashto ne kapuchinita?
+<valo_bg> ili kapuchina
+<valo_bg> ili kapuchini
+<Prince_of_Dawn> chuwal sam da kazwat "dwe kapusinota
+<valo_bg> az ne piq kapuchino! kakvo me interesuva :)
+<valo_bg> opa.. 0.2 MB zaminaha... pishete po-malko :)))
+<Prince_of_Dawn> shto ne mi dadesh icq-to si da si ti go imam
+<Prince_of_Dawn> moje da te pomolq za neshto nqkoga
+<valo_bg> emi tochno v momenta sym go izkluchil zashtoto mnogo trafik pravi :)
+<valo_bg> search-ni me. shte me namerish. tyrsish Valentin Mihov
+<valo_bg> ot Varna
+<valo_bg> roden 17 03 1985
+* tony` has joined #ioi
+* sagaciouq has joined #ioi
+<tony`> zdravejte!
+<valo_bg> tony`: kakvo stana s hodeneto v sf?
+<valo_bg> tony`: zdravei :)
+<tony`> dnes triabva da reshim
+<Prince_of_Dawn> pathfinder taka li>
+<tony`> a i na borisof triabva da kazhem, za da otidem zaedno v plovdiv
+<valo_bg> Prince_of_Dawn: taka li pishe? hmmm stranno trqqshe da e drugo, ama e tova
+<Prince_of_Dawn> to pishe che si na 16 ma kak da e
+<valo_bg> Prince_of_Dawn: ooo ne e tova
+<valo_bg> Prince_of_Dawn: q vij v infoto dali pishe za site-ovete mi
+<Prince_of_Dawn> ne
+<valo_bg> Prince_of_Dawn: ako pishe nachi e tova
+<valo_bg> nachi vij za valo
+* Swetko has joined #ioi
+* CS sets mode: +v Swetko
+<valo_bg> Swetko: oo kak sme?
+<Prince_of_Dawn> valio a utre kak shte prawish podgotowka s 6 MB
+<valo_bg> emi nqdqvam se testovete na zadachite za domashno da ne sa golemi ili da gi imam na pc-to
+<valo_bg> na nqkoi gi imam, shte vidim za drugite
+<valo_bg> inacheveche browse-vam samo s txt browser-i
+<valo_bg> are oshte 0.2 MB ....
+<valo_bg> trqbva 2 dena da izdyrja... po 3 MB na den...
+* sagaciouq has left #ioi
+<valo_bg> se shte se spravq
+<Prince_of_Dawn> usp.
+<valo_bg> mrs.
+<rangel__> Valjo ti da ne gi qdesh tezi megabajti? :-)
+<valo_bg> za syjalenie ne... ako gi qdqh shtq da sedq gladen. reshenieto shteshe da mngo prosto :)
+<tony`> ave Valio, nishto, shte idvash do Slavito s disketki i toj shte ti dava testovete :))
+* VelinTzanov sets mode: +ooo rangel__ tony` valo_bg
+* VelinTzanov sets mode: +oo Prince_of_Dawn Swetko
+<valo_bg> moje i taka. shte se spravq
+<rangel__> az bih si gi slozhil v RAM disk-a :-)
+<valo_bg> az ne sym takyv gyzar i nqmam takiva ekstri
+<rangel__> e az imam samo zashtoto me myrzi da si go maham :-)
+<valo_bg> spored chasovnika mi trqq da pochvame sled 2 min
+<VelinTzanov> Da
+* sssa88 has joined #ioi
+<VelinTzanov> Ostana samo Rosti.
+<sssa88> dobro utro
+<valo_bg> eto go batko veeee :)
+<VelinTzanov> Dobro da byde
+<valo_bg> sssa88: zdr
+<sssa88> zdr
+<tony`> zdravej Vlado
+<Prince_of_Dawn> toi li wi e batko
+<valo_bg> sssa88: koga smqtash da pytuvash za sf?
+* VelinTzanov sets mode: +o sssa88
+<sssa88> ami ne znam
+<tony`> mnogo isano ti vinagi taka kazvash :))
+<sssa88> chetvyrtyk moze bi
+<valo_bg> aha, t.e. nqma da si s nas. tova iskash da chuq
+<VelinTzanov> Po-rano ot chetvyrtyk ne vi puskam.
+<VelinTzanov> A po-kysno shte e tvyrde kysno.
+<VelinTzanov> Vie koga ste?
+<valo_bg> ama chai malko..
+<tony`> chakaj be valo i nij v chetvartak shte patuvame maj
+<valo_bg> to chetvyrtyk koga e?
+<tony`> 1-vi
+<VelinTzanov> 1-vi July
+<tony`> vlado, s noshtnia vlak li?
+<Prince_of_Dawn> i shte istarwete july-q
+<valo_bg> aaaaa, emi nachi, sssa88, spalno mqsto shte zemash li?
+<sssa88> de da znam
+<valo_bg> Prince_of_Dawn: za July Morning li govorish?
+<Prince_of_Dawn> da
+<rangel__> koga shte pristignete v Sofiq?
+<Prince_of_Dawn> ne mu li wikate taka
+<valo_bg> Prince_of_Dawn: to nie ne che ne moje da otidem ama are edna godina shte propusnem :)
+<valo_bg> rangel__: rano sutrinta
+<rangel__> t.e. rano na 1-vi?
+<tony`> rano na 2-ri
+<valo_bg> rangel__: ne. rano na 2-ri
+<Prince_of_Dawn> na men sasho simeonow mi razprawql za july-q
+<rangel__> aha, znachi i az togava shte dojda :-)
+<Prince_of_Dawn> shte spite li w sf
+<VelinTzanov> Pri vsichki polojenia, da vi pitam sega che ste mi vsichki tuk: nali shte mojete da mi popylnite po edna web-ska blanka na 30-ti vecherta?
+<Swetko> d
+<Swetko> a
+<Prince_of_Dawn> ako patuwate na 3 kam plowdiw sam s was
+<tony`> da
+<valo_bg> da
+<rangel__> da
+<sssa88> da
+<valo_bg> vsqko da e razlichno...
+<Prince_of_Dawn> da
+<valo_bg> :)
+<Swetko> borisov, az ste putuvam sigurno ot sofia kum plovdiv
+<VelinTzanov> Momcheta, az vikam da pochvame.
+<Swetko> i az
+<valo_bg> are
+<VelinTzanov> Rostislav vse shte doide.
+<VelinTzanov> Niakoi ima li mu telefona?
+<Prince_of_Dawn> mi to togawa sme wsichki bez rosti ot sf kam plovdiv
+<valo_bg> rosti oshte ne doshyl...
+* Kashmir has joined #ioi
+* CS sets mode: +v Kashmir
+<Kashmir> zdraweite
+<VelinTzanov> Aide
+<valo_bg> eto go :)
+<Swetko> aide
+<VelinTzanov> Pochvame
+<valo_bg> Kashmir: zdr
+<VelinTzanov> http://www.tzanov.com/ioi2004/urubamba/
+* VelinTzanov sets mode: +o Kashmir
+<VelinTzanov> Edin chas za vyprosi.
+<VelinTzanov> 5 chasa schitano ot sega.
+* Kashmir has quit IRC (Ping timeout: 180 seconds)
+<valo_bg> na domination ima li nqkakva kartinka?
+<out_infinity> ima, no ne e vajna
+<valo_bg> ok... shtoto ne mi se zarejda
+<tony`> All the workstations  are connected by a linear network <- tova znachi che sa svarzani 1-2-3-4-5 i t.n. li?
+<tony`> t.e. v edna verizhka
+<valo_bg> aham
+* Kashmir has joined #ioi
+* CS sets mode: +v Kashmir
+* VelinTzanov sets mode: +o Kashmir
+<rangel__> primerniq vhod na domination ne otgovarq na uslovieto
+<rangel__> pishe che ranka na edna stanciq e ot 0 do n-1
+<rangel__> v primerniq vhod ne e tochno taka
+<VelinTzanov> Ne pisha taka, Rangele.
+<VelinTzanov> Pishe che nomerata im sa ot 0 do N-1
+<VelinTzanov> Za ranka ne pishe takova neshto.
+<VelinTzanov> Pishe samo che e unique
+<tony`> the rank of each workstation from 0 to N-1 <- tova li imash predvid?
+* Kashmir has quit IRC (Ping timeout: 180 seconds)
+<VelinTzanov> 0 to N-1 se otnasia za nomerata im, a ne za rankovete.
+<rangel__> aha, ok
+<valo_bg> ogranichenie za ranga na pc-tata na domination? shte se sybere li v int?
+<out_infinity> po-dobre si pro4eti pak uslovieto
+<valo_bg> emi pishe che sa numbers... no kolko golemi numbers...
+<valo_bg> a da
+<valo_bg> ok
+<valo_bg> aaaa ne
+<valo_bg> to tova e za id-tata im
+<out_infinity> ahaaam... ami da v int se sybirat
+<out_infinity> sorry
+<valo_bg> ok
+<out_infinity> ne razbrah vyprosa
+<valo_bg> 10x
+* valo_bg has quit IRC (irc.lirex.com irc.VarnaBG.net)
+* rangel__ has quit IRC (Remote closed the connection)
+* rangel__ has joined #ioi
+<Swetko> acm-ski li ste sa oceniavanita
+<out_infinity> na ednata ne e... na drugite neznam :))
+<out_infinity> moje i po-testove da e
+<Swetko> na koia e
+<Swetko> na koia ne e
+* sssa88 has quit IRC
+* sssa88 has joined #ioi
+<VelinTzanov> Tazi s dyrvoto.
+<VelinTzanov> No neia taka ili inache triabva da ia reshite za 100, ili shte vi otkysnem glavite... taka che niama znachenie. :)
+<out_infinity> abe i drugite gi imam po testove
+<out_infinity> ne iziskvat checker
+<out_infinity> taka 4e davajte smelo
+<out_infinity> makar4e na tazi s puzzle-a ima samo YES/NO
+<out_infinity> i... tam trqbva ili 100 ili nishto, inak kak da razberem 4e ste q reshili
+* Prince_of_Dawn has quit IRC (Ping timeout: 380 seconds)
+* out_infinity has left #ioi
+<VelinTzanov> Aide, uspeh i chao.  Slavi e do 12:30, ostanalite do 13:36 po moia chasovnik.
+<VelinTzanov> Utre sesiite sa po plan - 6:00 moiata i 17:00 Ivovata (ili kakto tam ste se ugovorili)
+* Disconnected
+Session Close: Mon Jun 28 00:11:31 2004

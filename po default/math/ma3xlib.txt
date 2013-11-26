@@ -1,0 +1,43 @@
+//square matrices only!!!
+
+const LL MOD=1234567891;
+
+class matrix{
+	public:
+		vector<VI> val;
+		matrix()                    { val.clear(); }
+		matrix(int n,int value=0)   { val.resize(n); Repi(n) val[i].assign(n,value); }
+		void ident()                { Repi(val.SZ) val[i][i]=1; }
+		void print(int width)       { Repi(val.SZ){ Repj(val[i].SZ)  cout<<setw(width)<<val[i][j]; cout<<"\n"; } }
+		matrix operator*(const matrix &b)
+		 {
+				matrix res;
+				if (val.SZ!=b.val.SZ) return res;
+				res=matrix(val.SZ);
+				Repi(val.SZ)
+				 Repj(val.SZ)
+				  Repk(val.SZ)
+				   res.val[i][j]=((LL)res.val[i][j]+(LL)val[i][k]*(LL)b.val[k][j])%MOD;
+				return res;
+		 }
+		VI operator*(const VI &b)
+		 {
+				VI res;
+				if (b.SZ!=val.SZ) return res;
+				res.resize(val.SZ);
+				Repi(val.SZ)
+				 Repj(val.SZ)
+				  res[i]=((LL)res[i]+(LL)val[i][j]*(LL)b[j])%MOD;
+		 }
+ 	};
+ 	
+matrix power(matrix a,LL n)
+{
+	matrix ans(a.val.SZ); ans.ident();
+	for(;n;n>>=1)
+	 {
+			if (n&1) ans=ans*a;
+			a=a*a;
+	 }
+	return ans;
+}

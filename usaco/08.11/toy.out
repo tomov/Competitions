@@ -1,0 +1,23 @@
+ day 1 (8) :
+  0 clean & 0 dirty
+  buy 8 toys ; ans 24
+  left 0 clean & 8 dirty
+       cheap slow dem 7 inc -2 req 9
+      slow clean 9 toys ; ans 33
+       expensive fast dem 0 inc 0 req 0
+ day 2 (2) :
+  0 clean & 8 dirty
+  buy 2 toys ; ans 39
+  left 0 clean & 10 dirty
+       cheap slow dem 6 inc 8 req -2
+       expensive fast dem -2 inc 0 req -2
+ day 3 (1) :
+  9 clean & 10 dirty
+  left 8 clean & 11 dirty
+       cheap slow dem 0 inc -6 req -2
+       expensive fast dem 6 inc 0 req -2
+ day 4 (6) :
+  8 clean & 11 dirty
+  left 2 clean & 17 dirty
+       cheap slow dem 0 inc 0 req -2
+       expensive fast dem 0 inc 0 req -2

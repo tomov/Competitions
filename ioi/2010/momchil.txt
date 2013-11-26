@@ -1,0 +1,33 @@
+Momchil,
+
+I have created you an account on our beta grading
+server.  You'll be able to see all the task names --
+please just ignore the ones that don't apply
+
+To access the grading server,
+
+  https://cforall.uwaterloo.ca:8443
+
+  momchil:       8bf15629
+
+To access the competition tasks,
+
+  https://plg1.cs.uwaterloo.ca/~gvcormac/bbb/day1
+  https://plg1.cs.uwaterloo.ca/~gvcormac/bbb/day2
+
+  bbb:    bbbISit
+
+Please make sure you install version 1.3 of RunC:
+
+  http://plg1.cs.uwaterloo.ca/~gvcormac/RunC-IOI/
+
+(If you have version 1.2, just install this over top.)
+
+I would appreciate it if, as far as possible, you
+could do the two days as you would two separate competition
+days, and give me feedback on what you did, what you found
+confusing, etc. 
+
+thanks and regards,
+
+Gordon

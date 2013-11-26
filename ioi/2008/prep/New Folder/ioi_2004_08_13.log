@@ -1,0 +1,630 @@
+
+Session Start: Thu Aug 12 20:00:18 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+* Logging #ioi to 'logs\ioi_2004_08_13.log'
+<sssa88> znachi si dosta po-napred ot men
+<rangel__> t.e. napravih edna sistema, no mogat da mi se poluchat stranni otgovori, po koito da ne moga da igraq
+<VelinTzanov> Mai sym izpusnal pyrvata chast ot razgovora. :)
+<rangel__> (primerno da mi se nalozhi da pravq polovinka hod :-)
+* VelinTzanov sets mode: +oo rangel__ sssa88
+<rangel__> za flat stava duma, i obshto vzeto propusna samo vyprosa dali sym q izmislil
+<VelinTzanov> Ami to mai gore-dolu samo triabva da si napravish sistemata i sled tova da si ia reshish i posle samo da karash nujnite hodove.
+<rangel__> ami znachi ili pravq greshna sistema ili mozhe da mi trqbva da pravq polovinki hodove
+<VelinTzanov> Vlado, ia zvynni edin telefon na Valio, che toi sigurno spi.
+<VelinTzanov> Vie sybrahte li se da obsydite zadachite bez men vchera?
+<sssa88> ami neudobno mi - shte sybudq vsichki tam
+<rangel__> az pone ne, zashtoto bqh mnogo zaspal :-(
+<sssa88> daj da pochakame oshte mynichko
+<VelinTzanov> OK. Kato stane i :15 obache niakoi triabva da mu se obadi.
+<VelinTzanov> Ne sme vinovni nie che sme sybudili horata - toi e vinovniat. Vse pak toi poema otgovornostta da stava rano.
+<sssa88> dobre i v 15 shte zvynna
+<VelinTzanov> A za Swetko niakoi da znae neshto?
+<sssa88> az ne
+<rangel__> i az ne
+<VelinTzanov> A imate li mu telefona?
+<sssa88> az ne
+<sssa88> btw kolko e tochniq chas v momenta?
+<VelinTzanov> 6:11
+<VelinTzanov> Po moia chasovnik
+<sssa88> thanks
+<rangel__> i az ne znam telefona na Swetko
+<sssa88> eh vchera umrq nadezdata na moq zivot - nqkoj mrysnik specheli 5-te miliona ot tototo
+<VelinTzanov> Hahahaaa... :)
+<VelinTzanov> I kakvo shteshe da gi pravish tia 5 miliona?
+<sssa88> oho - dylgo e za razpravqne
+<VelinTzanov> Swetko: 082 230212
+<VelinTzanov> Shteshe da si propileesh vyzmojnostite (talanta taka da se kaje)
+<VelinTzanov> Sega kato shte si beden shte stane chovek ot teb.  ;)
+<sssa88> a ne se znae
+<VelinTzanov> (Btw, te sigurno kym 3 miliona ot 5-te otivat za danyci)
+<sssa88> e v amerika moze i taka da e... :)
+<VelinTzanov> Hmm... v US danycite sa dosta po-niski otkolkoto v BG.
+<VelinTzanov> A i v US pechalbite gi izplashtat v prodyljenie na 20-tina godini... nikoga ne gi poluchavash na kup parite.
+<VelinTzanov> (i kakto mojesh da se dosetish prez tezi 20 godini inflaciata dosta gi iziajda)
+<sssa88> abe da gi izqzda - kolkoto ostanat tam vsee sym dovolen :)
+<VelinTzanov> Aide, zvynnete po edno telefonche.
+<VelinTzanov> Vlado na Valio. Rangel na Swetko.
+<sssa88> ok
+<rangel__> ok
+<VelinTzanov> Ako vi pitat "Koi go tyrsi" kajete "VElin" :)
+<VelinTzanov> Osobeno ako vi pitat "Koi idiot go tyrsi v 6 sutrinta?! >:-["
+<sssa88> :)
+<sssa88> nikoi ne diga vse oshte
+<sssa88> chuvsvam kak stavam nahalen
+<rangel__> i pri men, sled 1 min zvynene telefona prosto izpishtq i pak mi davashe signal svobodno
+<VelinTzanov> Da ne e stanalo zemetresenie prez noshtta be?
+<sssa88> i pri men taka
+<VelinTzanov> OK - shte pochvame bez tiah.
+<sssa88> az ne sym usetil
+<VelinTzanov> Kajete sega - napravihte li zadachite?
+<VelinTzanov> Register?
+<rangel__> az ne :-( (vsyshtnost register mi raboti, no drugite 2 ne)
+<sssa88> az ne - vchera sled kato se vyrnah nqmah vreme - samo prochetoh log-a i misleh po flatten
+<sssa88> drugite dve sym gi pisal i zatova ot flatten pochnah kato po interesna
+<VelinTzanov> I izmisli li neshto?
+<sssa88> obache nishto ne izmislih
+<VelinTzanov> OK - t.k. drugite gi niama da chuia te kakvo sa izmislili shte vi ostavia da si gi pomislite oshte malko.
+<sssa88> osven e dosta losho reshenie koeto moze bi nqma da raboti - no i da razboti shte napravi dosta operacii - max kym 40000
+<sssa88> i nqma nishto obshto s sistemi linejni uravneniq ili podobrqvane na situaciqta
+<VelinTzanov> Niakakvi vyprosi, koito da vi izmychvat? (osven kak se reshavat zadachite)
+<VelinTzanov> To algorityma za reshavane na lineini uravnenia vsyshtnost si e edno podobriavane na situaciata.
+<VelinTzanov> Indukcia, princip na krainia element, postoianno podobriavane na situaciata, sistemi lineini uravnenia... vsichko e edno i syshto. :)
+<VelinTzanov> Nali znaete, kato stanete guruta i zavyrshite doktorat shte vidite iasno kak informatikata e edno goliamo, cialo neshto. :)
+<VelinTzanov> A inache po Flatten - prosto se zamisli koi sa promenlivite koito ti triabvat. Kakvo e vajno i koia informacia e izlishna?
+<VelinTzanov> Tova dostatychno sme go nabivali - triabva da go mojete veche.
+<rangel__> ami na men osnovnite mi vyprosi sa kak da prestana da kashlqm i kak da se naspq (no tova ne sa podhodqshti vyprosi za sluchaq)
+<rangel__> drugoto shte go izmislq po nqkakyv nachin
+<VelinTzanov> Oblichai se toplo, spi prez denia i si liagai rano.
+<VelinTzanov> A prez ostanaloto vreme - informatika do dupka.
+<VelinTzanov> Taka kato si na leglo shte se nauchish da si izchistvash resheniata predi da gi pishesh.
+<VelinTzanov> Posle shte gi napisvash bez greshka za 15 minuti, shtoto shte si gi izchistil na max (do stepen celia kod da ti e v glavata)
+* Swetko has joined #ioi
+* CS sets mode: +v Swetko
+<VelinTzanov> Ohoo!
+<VelinTzanov> Niakoi se izlupi nai-setne!
+<Swetko> zdraveite
+<VelinTzanov> Vas sa vi razglezili vyv Varna - ne stavate rano veche. :)
+* VelinTzanov sets mode: +o Swetko
+<VelinTzanov> Valio pyk syvsem ne moje, gorkia. :)
+<sssa88> zdr
+<Swetko> kakvo pravim sega
+<VelinTzanov> Chakame vi.
+<VelinTzanov> Pitah dvamata iunaci koito biaha doshli navreme dali sa reshili zadachite i ne biaha.
+<VelinTzanov> Ti dokyde si s tiah?
+<Swetko> ami az dvete sum gi reshaval 
+<Swetko> X mislia che ne e trudna
+<Swetko> tia pak se sveshda do sistema s o, 1 i XOR
+<rangel__> e da, no e s ogranichenie 1000, pyk 1000^3 e mnogo (t.e. trqbva ti neshto po-hitro)
+<rangel__> (inache sistemata e ochevidna :-)
+<Swetko> e hubavo de
+<Swetko> ste napravia kato Ivo na CEOI
+<VelinTzanov> :)
+<Swetko> ste kompresiram v int-ove
+<Swetko> ama tova ne promenia sloshnostta
+<VelinTzanov> Hubavoto na tezi sistemi s 0 i 1 e, che polovinata ot chislata sa 0.
+<Swetko> puk i poneshe grapha e planaren ima malko rebra
+<VelinTzanov> I tova vi ulesniava, taka da se kaje.... mai. :)
+<Swetko> sigurno i tova moshe da se izpolzva
+<VelinTzanov> Mdaaa, sigurno moje. :)
+<rangel__> e i az taka reshih, no ne se setih kak :-)
+<sssa88> naj-malkoto trqbva da gi kompresirash poneze nqma pamet - systezanieto e ot 2000-godina 1Mb e mnogo
+<Swetko> ili mai ne e
+<Swetko> ili mai ne e planaren
+<Swetko> tova li e cakata
+<rangel__> mislq, che e. pri vsichki polozhenie imash 2*N rebra :-) (ochevidno e :-)
+<VelinTzanov> OK
+<VelinTzanov> Shte imate shans da obsydite zadachkite 4-mata po-kysno.
+<Swetko> ami ne bi li triabvalo da moshe da se izpolzva tova
+<Swetko> ok
+<rangel__> imah ideq za reshenie V*E, koeto shte e hubavo obache se chupi :-(
+<Swetko> :)
+<VelinTzanov> Ako iskate da fixirame chas v koito da se sybirate da obsyjdate zadachite (bez men)?
+<rangel__> (pak e sistema uravneniq, samo che s malko po drug metod sprqmo vhodnite danni)
+<Swetko> ami dobre
+<Swetko> btw. az pochti vinagi sum v kanala
+<sssa88> az predlagam 7 vecherta
+<VelinTzanov> OK: glasuvame 7 vecherta, denia predi sbirkata s men.
+<VelinTzanov> Swetko, Rangel?
+<rangel__> ne mozhe li po-kysno?
+<Swetko> ne moshe li i po chesta
+<rangel__> e to mozhe i vseki den predpolagam :-)
+<VelinTzanov> Rangele, ti nali iskashe da se naspivash? :)
+<rangel__> e az nali shte spq prez denq :-)
+<VelinTzanov> Dai predlojenie: koga po-kysno?
+<Swetko> 9
+<VelinTzanov> Tova prez denia shtoto si bolen. :)
+<sssa88> 9 e mnogo kysno adi 8
+<VelinTzanov> Ako iskate da spite 8 chasa triabva da legnete nai-kysno v 10
+<Swetko> ami az sledobed spia
+<VelinTzanov> Tova shte vi otneme kym 2 chasa, znachi po-kysno ot 8 ne moje.
+<Swetko> stot ne moga da si liagam v 10
+<VelinTzanov> :)  Do sled 8 li spish?
+<sssa88> ne e dobre taka v gyrciq shte te razkarvat po ekskurzii i nqma da moze da se naspish
+<rangel__> az 8 posledovatelni chasa spq edinstveno ako ne sym spal 2 dena predi tova...
+<VelinTzanov> :) Znachi stavash za MIT student.
+<VelinTzanov> Na men po edno vreme poslednia semester mi se sluchi da spia syotvetno 4 4 4 i 0 chasa v posledovatelni noshti. :)
+<VelinTzanov> OK - razbirate li se za 8:00 vecherta?
+<Swetko> da
+<rangel__> ok
+<VelinTzanov> Rangel, Vlado?
+<sssa88> i posle "elate v amerika tuka e po-hubavo" :)
+<sssa88> da
+<VelinTzanov> 'mi che ta po-hubavo e. :)
+<VelinTzanov> Posle kato pochnesh rabota i bachkash samo po 8 chasa na den, 5 dni v sedmicata, znaesh li kakyv strahoten kef e. :)
+<VelinTzanov> Aide da pochvame s temata za dnes.
+<VelinTzanov> Aaa, ne, oshte edin vypros.
+* valo_bg has joined #ioi
+* mioky has joined #ioi
+<VelinTzanov> A! Toi doide! :)
+* VelinTzanov sets mode: +o valo_bg
+<valo_bg> izvinqvaite... uspah se :(...
+* mioky was kicked by VelinTzanov (VelinTzanov)
+<VelinTzanov> V kolko si legna vchera?
+<valo_bg> principno kysno si legnah zashtoto trqbvashe da izprashtame edin syuchenik v USA, no uj bqh spal pred denq...
+<Swetko> to tova niama znacheni dali si spal prez denia
+<rangel__> (ima Ogromno znachenie :-)
+<Swetko> e, da izdyrshash po do kusno
+<Swetko> ama sutrinta pak ti spi
+<valo_bg> obeshtavam da ne se povtori...
+<VelinTzanov> OK, ot sledvashtia pyt shte ima disciplina.
+<VelinTzanov> 6:00 tuk, ili budim roditelite vi s telefona.
+<valo_bg> tova e ideq... valdo trqbvashe da mi zvynne
+<VelinTzanov> ZVYN do dupka. :)
+<valo_bg> *vlado
+<sssa88> zvynnah
+<VelinTzanov> Toi zvynia, ama nikoi ne vdigna. :)
+<VelinTzanov> I reshihme da ne zvynim do dupka.
+<VelinTzanov> No sledvashtia pyt (ako ima sledvasht pyt) shte go napravim.
+<valo_bg> seriozno! nikoi ne e zvyndql...
+<sssa88> ami to na men telefona pochna da mi pishti
+<VelinTzanov> Taka, Valio, sreshti v 8:00 vecherta bez men, denia predi sreshtata s men OK li sa
+<VelinTzanov> ?
+<VelinTzanov> Za obsyjdane na zadachite mejdu vas.
+<valo_bg> ok
+<VelinTzanov> OK. RAzbrahme se za sreshtite.
+<VelinTzanov> Sega oshte edin vypros predi da pochnem.
+<VelinTzanov> Namerih vi edno kilo zadachi za kontrolni i mojem da napravim pone 5 kontrolni s tiah.
+<VelinTzanov> Vyprosyt e iskate li i ako da - koga?
+<Swetko> az iskam
+<VelinTzanov> Sreshtite s men sa vyv Vtornik i Petyk.
+<sssa88> i az
+<valo_bg> az iskam. kogato kajete
+<VelinTzanov> Osven tozi pyt imame oshte 5 sreshti.
+<Swetko> ne moshe li da gi integrirate v BO2I
+<VelinTzanov> Ne syvsem, zashtoto edna chast ot tiah sa ACM-ski tip.
+<valo_bg> az mislq che anton i slavi shte sa naviti, samo s bogdanov trqbva da se prikazva
+<valo_bg> aha,ok
+<Swetko> i kakvo kato sa ACM-ski
+<Swetko> niamate testove li
+<VelinTzanov> Ami znam li... 0 ili 100. :)
+<VelinTzanov> A, testove ima. Prosto ne sa kato za hubavo tochkuvane.
+<Swetko> kakvoto stane
+<VelinTzanov> Tova e drugiat vypros: triabva mi dobrovolec koito da vi organizira systezaniata.
+<VelinTzanov> No shte pisha na Slavi, Anton, Anev i koi tam se setia i vse shte nameria.
+<valo_bg> anton sigurno shte e navit
+<VelinTzanov> OK
+<VelinTzanov> Kajete samo na koi dati da gi napravim?
+<VelinTzanov> Nedelite sa udobni.
+<VelinTzanov> No veche imate edin BO2I tazi nedelia.
+<Swetko> dobre
+<Swetko> ama triabva i drugi dni stot
+<Swetko> nali ssa 5
+<valo_bg> na men mi e vse edno
+<Swetko> to i na men de
+<valo_bg> nie kolko nedeli imame?
+<valo_bg> 4?
+<rangel__> 2
+<VelinTzanov> Mdaaa, 2.
+<VelinTzanov> 22 i 29
+<valo_bg> na 5.09?
+<VelinTzanov> Znaete li tochnite dati na koito ste v Obzor?
+<VelinTzanov> Moga da dam niakoi ot zadachite da vi gi dadat v Obzor?
+<sssa88> ne
+<valo_bg> i az ne znam
+<VelinTzanov> Na men mi kazaha neshto v stil ot 1-vi do 7-mi.
+<rangel__> mislq, che spomenaha neshto za 1-vi do 7-mi
+<sssa88> az se chudq - v tova selce Obzor - komputri dali imat?
+<rangel__> minalata godina domyknaha 5-6 shtajgi ot nqkyde
+<VelinTzanov> Hehe... Obzor e grad. :)  Az sym hodil 3 leta tam. Ne e nikak losho.
+<VelinTzanov> Minalata godina li?!
+<VelinTzanov> I minalata godina li e imalo takova neshto v Obzor?
+<valo_bg> az mislq che nqma da e losho da svyrshim malko rabota tam... nqma smisyl da otivame samo na pochivka
+<rangel__> da, imashe, i beshe pylna mizeriq
+<VelinTzanov> V smisyl?
+<VelinTzanov> Kakvo pravihte?
+<valo_bg> da reshim nqkoq zadacha tam
+<sssa88> az pyk mislq che shte e naj-dobre vyobshte da ne hodim ama po-dobre da si mylcha :)
+<valo_bg> (aa, ok...)
+<VelinTzanov> A, az Rangel pitah. :)
+<VelinTzanov> A, hodeneto i lekciite ne vi myrdat. :)
+<rangel__> principno imashe nqkakvi lekcii, no tyj kato bqha syobrazeni s auditoriqta ne bqha neshto interesno
+<VelinTzanov> OK - Shte pisha na Kapralov i na Kelevedjiev i shte izmislim neshto.
+<VelinTzanov> Osven v Nedelia koga da pravim kontrolnite?
+<valo_bg> znachi oshte 3 kontroli ostavat?
+<rangel__> to vsyshtnost ne bqh tolkova otchaqn ot lekciite, kolkoto ot usloviqta za zhivot (ili po-skoro tqhnata lipsa :-)
+<VelinTzanov> E, Rangele, tazi godina imate shansa da promenite neshtata - napravete hubavi (i vse pak razbiraemi i ot prostoludieto) lekcii.
+<VelinTzanov> Aide, aide... ne znaete kakvo beshe v Albania.
+<sssa88> ...i si postrojte edin 5zvezden hotel
+<VelinTzanov> Biahme v nai-luksoznia apartament v kurorta - s toaletna! :)
+<Swetko> niama da spim be :)
+<VelinTzanov> Edin se izsra na ulicata pred nas.
+<VelinTzanov> Niamashe kofi za bikluk.
+<valo_bg> koi go kazva :)
+<VelinTzanov> Mineralnata voda sydyrjashe stroncii.
+<valo_bg> (tova beshe za Swetko)
+<VelinTzanov> A toka i vodata tu gi imashe tu gi niamashe.
+<VelinTzanov> Kato spirashe vodata razbirahme zashto povecheto stai niamaha toaletna... :)
+<VelinTzanov> A olimpiadata se provede v stolovata na hotela (na benzinov generator, shtoto niamashe tok) i razni hora si obiadvaha tam, dokato cykahme kopchetata.
+<VelinTzanov> Taka che - v Obzor shte vi e Xtra. :)
+<valo_bg> zvuchi jivopisno :)
+<Swetko> ami moshe vuv sriada ili chetvyrtuk da sa drugite systezania
+<valo_bg> v chetvyrtyk mislq
+<valo_bg> hem vednaga sled systezaniqtra shte mojem da obsydim...
+<Swetko> e nie moshem i drug put da se sybirame
+<VelinTzanov> V Sriada mai e po-dobre, zashtoto inache sreshtite v 8:00 vecherta v chetvyrtyk shte se prevryshtat v sreshti za obsyjdane na zadachite ot kontrolnoto, a ne na tezi ot domashnoto.
+<VelinTzanov> A taka mojete da obsyjdate tezi ot kontrolnoto v Sriada v 8:00
+<valo_bg> dobre... no pak ostava edno kontrolno...
+<Swetko> am che togava i v sriada moshem da se syberem
+<VelinTzanov> To mai ima samo dve sredi, taka che niama kakvo da mu mislia mnogo. :)
+<VelinTzanov> OK
+<VelinTzanov> Grafika e sledniat:
+<VelinTzanov> Sreshti vyv Vtornik i Petyk sutrinta (s men)
+<VelinTzanov> Kontrolni v Nedelia i Sriada sutrinta
+<VelinTzanov> Vie se sreshtate (bez men) v Ponedelnik, Sriada, Chetvyrtyk i Nedelia vecherta.
+<VelinTzanov> Pon i Chetv za domashnite, Sr i Ned za kontrolnite.
+<Swetko> ok]
+<VelinTzanov> OK?
+<sssa88> ok
+<VelinTzanov> Imame 45 minuti da pokriem dneshnata tema, taka che triabva da deistvame byrzo.
+<rangel__> ok
+<valo_bg> ok
+<VelinTzanov> A vie pyk imate 2-3 sedmici da svyrshite TON rabota, taka che i v po-globalen plan triabva da deistvate byrzo.
+<VelinTzanov> Koi znae maxflow/mincur teoremata?
+<VelinTzanov> Opa!
+<VelinTzanov> mincur = mincut
+<valo_bg> chuval sym q
+<sssa88> az ne
+<valo_bg> no ne sym siguren che q znam
+<Swetko> az ne znam koia tochno teorema se naricha taka
+<rangel__> ne moga da q formuliram mnogo tochno
+<Swetko> inache sigurno sum ia vguval
+<rangel__> ama beshe neshto che maksimalniq potok opredelq minimalniq razrez (ekvivalentni sa edin vid)
+<VelinTzanov> OK
+<valo_bg> i az taka mislq...
+<Swetko> ami mai taka beshe
+<VelinTzanov> S potocite shte se zanimavame po-kysno.
+<VelinTzanov> Sega shte pravim neshto podobno, kolkoto da se "nastroite"
+<VelinTzanov> Zadachata koiato shte pravim e Debelak, ot NOI 3-ti (predposleden) kryg, 2000-ta godina.
+<Swetko> aha
+<valo_bg> znam q
+<Swetko> i az
+<VelinTzanov> http://infoman.musala.com/contests/noi/2000/round3_tasks.html
+<sssa88> i az
+<VelinTzanov> Tova e dobre.
+<rangel__> a az ne
+<VelinTzanov> Sega shte vidim koi kolko ia znae.
+<VelinTzanov> Pyrvo ia prochetete i mi kajete iasno li e uslovieto.
+<VelinTzanov> (Swetko, ti ako ne ia znaeshe shtiah da ti otkysna glavata, vse pak sme ia pravili na podgotovkata minalata godina :) )
+<valo_bg> qsno e
+<Swetko> ami niama da mi ia kusash
+<sssa88> qsno
+<rangel__> uslovieto e qsno
+<VelinTzanov> OK
+<VelinTzanov> Kakto moje bi povecheto ot vas veche znaiat, triabva da si izbiete ot glavata vsiakakvi idei da se opitvate da opishete pytia na debelaka. :)
+<VelinTzanov> Tyrsi se kyde shte se zadrysti debelaka.
+<VelinTzanov> T.e. kakva shirina debelakyt ne moje da premine.
+<VelinTzanov> Kakto vyv vsiaka druga zadacha, v tazi mnogo e vajno da si formulirate iasno kakvo tochno tyrsim.
+<VelinTzanov> Kak opredeliame dali daden debelak moje da mine prez koridora ili ne?
+<VelinTzanov> Matematicheski imam predvid (ne mi pishete programa, opishete mi kriterii)
+<VelinTzanov> Prokarvaneto na krygche mejdu kolonite ne e matematichesko.
+<valo_bg> kato napravim vseki pyt mejdu tochki ot dornata stena
+<valo_bg> do dolu
+<valo_bg> toi trqbva da moje da premine prez vsqka takava stena
+<VelinTzanov> Malko po-iasno ako se opitame da go kajem?
+<valo_bg> hmmm, trudna rabota... :)
+<VelinTzanov> Aide, uprajnenie za lekciite.
+<valo_bg> debelata trqbva da moje da premine prez vseki pyt konstruiran ot dvete steni i tochki ot dadenite ni
+<VelinTzanov> Vlado, ti nai-veche triabva da slushash, zashtoto tozi material e adski blizyk do tova koeto ti shte govorish.
+<rangel__> ako syshtestvuva kriva ot ediniq kraj do drugiq, takava che vsqka tochka ot krivata da e na raztoqnie pone D/2 do naj-blizkoto prepqtstvie :-)
+<sssa88> slusham
+<VelinTzanov> Rangele, tova e opisvane na pytia na debelaka. :)  Kazah ti da ne se opitvate.
+<valo_bg> rangel__: ne tochko... ako sym razbral kakvo iskash da kajesh...
+<VelinTzanov> Dai neshto po-diskretno... :)
+<VelinTzanov> Tova e tvyrde continuous za informatici. :)
+<VelinTzanov> Inache nali znaete che vseki dve chisla mogat da se predstaviat kato edno... no tova nas ne ni gree mnogo. :)
+<VelinTzanov> CHakam po-iasna formulirovka.
+<valo_bg> po-diskretna?
+<rangel__> ako gi trianguliram tezi tochki moga da si napravq graf i da dam diskretna formulirovka, no ne moga da izmislq triangulaciqta
+<rangel__> t.e. da go napravq tova neshto na triyglnici
+<valo_bg> hmmm... ne mislq che tova ti e nujno... zashto ti e da pravish triygylnici?
+<valo_bg> neshto kato diagrami na voronoi?
+<rangel__> ami vseki triygylnik e vryh a vsqka obshta strana e rebro s teglo ravno na dylzhinata na otsechkata
+<VelinTzanov> OK, Rangele - da vzemem po-prostia sluchai: 2 tochki.
+<rangel__> togava cqloto neshto stava prosto edin potok
+<valo_bg> aha... ok
+<VelinTzanov> Koga debelaka moje da mine prez 2 tochki?
+<VelinTzanov> T.e. mejdu dvete tochki.
+<valo_bg> kogato e debel po-malko ili ravno na raztoqnieto mejdu dvete tochki
+<VelinTzanov> Tochno taka.
+<rangel__> ne samo
+<VelinTzanov> Kakvo drugo?
+<rangel__> mozhe da mine nad tqh ili pod tqh
+<VelinTzanov> Az te pitam za mejdu tiah.
+<VelinTzanov> Pod i nad e drug sluchai.
+<rangel__> ok
+<VelinTzanov> NEka sega da razgledame vsichki dvoiki ot tochki.
+<VelinTzanov> I neka za udobstvo razglejdame i stenite kato "tochki".
+<VelinTzanov> steni + tochki = Tochki (s glavno T)
+<VelinTzanov> Mojem li sega za vsiaka dvoika Tochki da kajem koga debelaka moje da mine prez neia.
+<VelinTzanov> Mojem li sega za vsiaka dvoika Tochki da kajem koga debelaka moje da mine prez neia?
+<rangel__> da
+<VelinTzanov> Da, tova e trivialno.
+<valo_bg> da
+<VelinTzanov> Sega ako vzemem debelak po-tesen ot vsiaka otsechka, toi shte moje li da mine koridora?
+<VelinTzanov> Ochevidno da.
+<VelinTzanov> (otsechka znachi otsechka mejdu dve Tochki)
+<VelinTzanov> Sega ako debelakyt e po-debel ot nai-kysata otsechka, no po-tesen ot vtorata po kysota, kakvo stava?
+<VelinTzanov> Ot kyde moje da mine debelakyt i ot kyde ne moje?
+<rangel__> bi trqbvalo pak da mozhe da mine
+<valo_bg> ot vsqkyde moje da mine, samo prez edna otsechka nqma da moje..
+<rangel__> ne mozhe da mine mezdu dvete Tochki svyrzani s naj-kysata otsechka
+<VelinTzanov> Tochno taka.
+<VelinTzanov> A ako go naduem oshte malko?
+<VelinTzanov> Oshte edna otsechka naprimer?
+<VelinTzanov> Iasno e kakvo stava...
+<VelinTzanov> ... ta koga debelakyt shte spre da moje da minava prez koridora?
+<valo_bg> shte moje da mine prez edno mnojestvo ot dvoiki tochki, a prez drugo nqma moje
+<valo_bg> kogato mnojestvoto dvoiki tochki prez koito ne moje da premine formirat stena
+<sssa88> kogato otsechki prez koito ne moze da minava napravqt stena mezdu gore i dolu
+<rangel__> kogato otsechkite koito mahame mogat da svyrzhat dolnata i gornata stena (mislq)
+<VelinTzanov> Xtra
+<VelinTzanov> Kolko otsechki imame obshto?
+<rangel__> N^2
+<sssa88> n^2
+<valo_bg> n*(n - 1)/2
+<VelinTzanov> :)
+<VelinTzanov> O(N^2) mi stiga.
+<rangel__> e hubu de O(N^2) :-)
+<VelinTzanov> Sega ostava prosto da prilojite niakakyv shto-gode standarten algorithm i ste gotovi.
+<valo_bg> primerno kruskal... sega razbiram kak se pravi tazi zadacha s kruskal...
+<VelinTzanov> Nai-lesnoto e da podredite vsichki otsechki po dyljina i postepenno da stroite stenata, dokato syberete dvete steni.
+<valo_bg> i zashto raboti
+<VelinTzanov> (naprimer vsiaka Tochka si ima grupa i kato postroiavate otsechka, sybirate dvete grupi ot dvete strani na otsechkata)
+<VelinTzanov> Aaa, zashto raboti vie shte mi kajete. :)
+<VelinTzanov> Hubavo e da napravite O(N^2) reshenie na zadachata obache.
+<Swetko> ами
+<sssa88> imashe predvid che e razbral zashto raboti
+<VelinTzanov> Ahaaa, iasno. :)
+<VelinTzanov> Znaeh si az, che vse neshto shte nauchite dnes. :)
+<VelinTzanov> Daite sega da napravim edno chisto O(N^2) reshenie.
+<VelinTzanov> Imame tochki.
+<valo_bg> az tozi algoritym do sega go znaeh na izust... ne bqh razbral zashto raboti
+<VelinTzanov> Te sa svyrzani s otsechki.
+<VelinTzanov> Na kakvo vi prilicha tova?
+<valo_bg> graf
+<VelinTzanov> Da, graf.
+<VelinTzanov> Kakvo tyrsim v tozi graf?
+<valo_bg> tyrsim pyt principno...
+<VelinTzanov> Da,.
+<VelinTzanov> Idealno.
+<valo_bg> i takyv pyt deto....
+<VelinTzanov> Kakyv pyt tyrsim?
+<valo_bg> kak shte stane to...
+<valo_bg> maksimalnata otsechka da e minimalna
+<rangel__> obratnoto
+<rangel__> minimalnata otsechka da e maksimalna
+<valo_bg> tova e potok!
+<valo_bg> a tova ne e potok
+<valo_bg> tuk tyrsim drugo neshto
+<Swetko> ne e potok - tova e dijkstrata ot usacoto deto ia polzvat za potoko 
+<Swetko> e to tova e kato vtori krag na NOI
+<valo_bg> tuk, kogato se poluchi pyt, toi se poluchava s minimalno rebro zashtoto gledame rebrata sortirani po dyljina
+<valo_bg> t.e. maksimalnoto rebro bi trqbvalo da e minimalno
+<VelinTzanov> :)
+<VelinTzanov> Goliama kasha stana mai.
+<VelinTzanov> Tyrsim pyt ot ednata stena do drugata.
+<rangel__> az zashtoto si mislq za drugi pytishtishta (izvinqvaj)
+<VelinTzanov> Tyrsim optimalen pyt.
+<VelinTzanov> Optimalen se definira kato tozi s maximalna miarka.
+<VelinTzanov> Miarkata na pytia e kakyv debelak moje da mine prez nego.
+<valo_bg> rangel__: nqma problem! nali zatova sme tuk da obsyjdame i diskutirame
+<VelinTzanov> A tia se smiata kato se vzeme minimuma na rebrata koito formirat pytia.
+<valo_bg> taka li? neshto ne razbiram...
+<VelinTzanov> Koi tochno red ne razbirash? :)
+<valo_bg> ako vzemem minimuma ot rebrata na edin pyt, tova nqma da e debelaka koito moje da premine prez tozi pyt...
+<Swetko> i az taka mislia
+<rangel__> mozhe li da vyvedem malko red? kakvo pravim v momenta? prekarvame debelaka ili prekarvame stena?
+<Swetko> mai i dvete:)
+<VelinTzanov> E, ochevidno sym go sbyrkal. :)
+<rangel__> (te dvete sa ekvivalentni, obache malko se byrkam kato gi prekarvam ednovremenno)
+<VelinTzanov> Naobratno e.
+<VelinTzanov> Miarkata na pytia se smiata kato vzemem maximalnoto rebro.
+<VelinTzanov> Tyrsim pytia s minimalnata miarka.
+<valo_bg> da veche sym syglasen :)
+<VelinTzanov> Drugite?
+<Swetko> da
+<rangel__> da
+<sssa88> da
+<VelinTzanov> OK
+<VelinTzanov> Kak namirame optimalen pyt mejdu dve tochki? S koi algorithm?
+<valo_bg> diikstra
+<Swetko> zavisi po kakvo optimalen
+<VelinTzanov> Hmm... po kakvo triabva da e optimalen, za da ne polzvame Dijkstra?
+<Swetko> ako kum edin put pribavim novo rebro i poluchim po optimalen put
+<Swetko> ne stava s dijkstra
+<valo_bg> i az tova se zachudih...
+<valo_bg> zashto ne stava?
+<VelinTzanov> ISkash da kajesh, che s Dijkstra ne mojesh da namerish nai-dylyg pyt li?
+<Swetko> ami znaesh li dokazatelstvoto na dikstra
+<rangel__> vsichko, koeto predpolaga nalichie na otricatelni rebra
+<Swetko> tova e kato dijkstra s otricatelni dugi
+<rangel__> (primerno)
+<valo_bg> a, da... rangel e prav...
+<Swetko> ne e zadylshitelno za otricatelni rebra
+<VelinTzanov> Kakvo znachi "otricatelni" v nashia abstrakten kontekst?
+<Swetko> tova koeto az kazah
+<valo_bg> vsyshtnost to ne beshe li za oticatelni cikli?
+<Swetko> ako kum edin put pribavim novo rebro i poluchim po dobur put
+<VelinTzanov> Prosto imame poniatiata rebro i pyt
+<VelinTzanov> Pyt e mnojestvo ot posledovatelni rebra, bez povtorenia.
+<VelinTzanov> Rebrata si imat tejest (dyljina, debelina, tlystina, kakvoto tam iskate)
+<VelinTzanov> Pytishtata si imat miarka.
+<VelinTzanov> Vlado, slushai. :)
+<sssa88> slusham :)
+<Swetko> ako kum edin put pribavim novo rebro i poluchim po dobur put - togava ne stava s dijkstra
+<valo_bg> ama swtko ti tova pri potoka go pravish
+<VelinTzanov> Algoritymyt na Dijkstra prosto namira optimalen pyt ot tochka do vsichki drugi tochki (ili do edna dadena tochka), spazvaiki niakakvi kriterii.
+<VelinTzanov> Poslednoto beshe malko neiasno.
+<valo_bg> a ne... ne go pravish...
+<Swetko> kakvo ne e nared v moito tvyrdenie
+<rangel__> Dijkstra e greedy i razchita na dopuskaneto che vsqko dobavqne na rebro vodi do vloshavane mqrkata na pytq
+<Swetko> aha - syglasem susm s rangel 
+<rangel__> ako tova dopuskane ne e vqrno algorityma na Dijsktra nqma da nameri optimalnite pytishta (ili shte gi nameri na kysmet)
+<VelinTzanov> Tochno taka.
+<VelinTzanov> V sluchaia imame zadacha, koiato izpylniava kriteriite na algorityma.
+<VelinTzanov> A imenno: s dobaviane na novi rebra kym pytia pytia moje samo da stava po-losh.
+<rangel__> v sluchaq da
+<Swetko> zatova me moshem da izpolzvame dijkstra s otricatelni dygi stot kato imame edin put i sloshim otricatelna dyga ste poluchim po dobyr put
+<VelinTzanov> (t.k. se opitvame da minimizirame, a vsiako rebro moje samo da uvelichi miarkata)
+<VelinTzanov> Vsyshtnost ima dve neshta koito ne sa definirani v abstraktnata zadacha.
+<VelinTzanov> 1) Funkciata skoiato smiatame miarkata na daden pyt, po tejestite na rebrata mu.
+<VelinTzanov> 2) DEfiniciata na optimalen pyt.
+<VelinTzanov> V klasicheskata zadacha 1) e prosto sybirane na dyljinite.
+<VelinTzanov> A pyk 2) e minimum.
+<VelinTzanov> V nashata zadacha 2) pak e minimum, a 1) e maximum.
+<VelinTzanov> No algoritymyt si e syshtiat.
+<VelinTzanov> I si e validen.
+<VelinTzanov> V zadacha Path ot BOI pyk celta beshe da modelirate miarkata na pytia.
+<VelinTzanov> Tam pak novite rebra mojeha samo da vloshat pytia.
+<Swetko> to i RACE beshe taka
+<VelinTzanov> Taka che miarkata i poniatieto "optimalen" moje da sa vi dosta izvrateni, no tova ne triabva da vi prechi.
+<VelinTzanov> Stiga kriteriat vi da e izpylnen, mojete spokoino da si prilojite Dijkstra-ta.
+<VelinTzanov> Da, i v Race go ima tozi element.
+<VelinTzanov> Prosto e vajno ot dnes da si vzemete dva uroka:
+<VelinTzanov> 1) Dijkstra ne e prosto nai-kys pyt v graf. Dijkstra e optimizacionen algorithm za goliam klas ot zadachi.
+<VelinTzanov> 2) KOgato vi triabva niakakyv maximum, pomislete si za naprechen minimum - nikak ne e izklucheno tova da vi reshi zadachata.
+<Swetko> moshe i obratnoto
+<VelinTzanov> Za ilustracia na tezi sym vi podgotvil 3 zadachki (daje mojem da gi napravim 4)
+<VelinTzanov> Da, dobro nabludenie Swetko. Moje i obratnoto.
+<VelinTzanov> Pyrvata zadachka ia imate veche - Debelaka.
+<Swetko> az se sestam za edna naobratno
+<VelinTzanov> Vtorata zadacha e Robot ot BOI 2002
+<Swetko> zasto mulchim tolkova
+<VelinTzanov> Tretata e Skiers ot POI 2002 ako ne se lyja, no shte pogledna.
+<VelinTzanov> Zashtoto az pravia 100 neshta ednovremenno, Swetko. :)
+<Swetko> aha, ok
+<Swetko> ot tam e SKIERS
+<VelinTzanov> A ako iskate 4-ta ei sega shte ia izvadia...
+<VelinTzanov> Lights ot IOI 1999
+<VelinTzanov> Proverete vsichki dali mojete da si gi namerite i 4-te zadachi.
+<VelinTzanov> I mi pishete.
+<valo_bg> ok
+<VelinTzanov> A mejduvremenno Swetko moje da ni kaje koia e zadachata, koiato se pravi naobratno.
+<Swetko> aha dijkstrata
+<Swetko> Skiers
+<VelinTzanov> Da, dobre.
+<VelinTzanov> Az obache triabva da trygvam pochti vednaga.
+<Swetko> ok chao
+<VelinTzanov> Nadiavam se naima da imate problem s 4-te zadachi.
+<sssa88> chao
+<rangel__> chao
+<Swetko> niama
+<valo_bg> shte vidim...
+<VelinTzanov> Chakaite malko, ima oshte edno malko vyprosche.
+<sssa88> dano
+<VelinTzanov> Pyrvo kajete dali imate vyprosi po materiala ot dnes?
+<sssa88> ne
+<Swetko> btw. na Skiers valio predloshi edno reshenie koeto izgleshda logichno ama ne znaem dali e viarno
+<Swetko> ne
+<valo_bg> ne
+<rangel__> ne
+<VelinTzanov> Chudesno - do vtornik shte reshite dali e viarno. :)
+<valo_bg> ama e bavno
+<valo_bg> taka che...
+<VelinTzanov> Ta vie imate sreshta v Nedelia vecherta za obsyjdane na BO2I.
+<Swetko> vyrvi za testovete
+<VelinTzanov> Posle imate ponedelnik vecher za tezi zadachi.
+<Swetko> ama pak si e bavno
+<VelinTzanov> Predlagam vi da se vidite i Sybora vecher da obsydite lineinite uravnenia.
+<Swetko> ami moshe
+<valo_bg> ok. ot kolko chasa?
+<VelinTzanov> 8:00?
+<Swetko> ami ok
+<rangel__> pak ot 8
+<valo_bg> ok
+<rangel__> ok
+<VelinTzanov> I posledno:
+<VelinTzanov> Ne mislia che shte nameria vreme da vi test-vam zadachite adekvatno na vreme, zatova mai shte triabva sami da si gi test-vate.
+<VelinTzanov> No iskam ot vseki otchet koia tochno zadacha mu raboti za 100 i koia oshte ne.
+<VelinTzanov> Shte bydem li chestni?
+<valo_bg> da
+<Swetko> da
+<rangel__> da
+<sssa88> chestni da - no greshki stavat ponqkoga :)
+<valo_bg> vyprosyt e dali syznatelno ili ne :)
+<sssa88> kato fc  my.out my.out
+<VelinTzanov> >:-[
+<valo_bg> az se chudq oshte neshto...
+<VelinTzanov> Ako iskate si gi prashtaite edin na drug da si gi test-vate. :)
+<valo_bg> na IOI dali shte rabotata sredite?
+<sssa88> vsyshnost dosega tochno takava greshka ne mi se e sluchvala
+<VelinTzanov> Hmm... tova mi napomnia drugo:
+<VelinTzanov> Na Practice Session-a na IOI triabva dobre da si svyrshite rabotata.
+<VelinTzanov> Tova e syshtestvena chast ot systezanieto
+<VelinTzanov> Pogrijete se da razuchite vsiaka podrobnost okolo sredite - koe raboti, koe ne.
+<VelinTzanov> Ako mojete - hvanete organizatorite da opraviat kakvoto ne raboti.
+<VelinTzanov> Ako ne moje - namerete nachin da go zaobikolite.
+<VelinTzanov> Na IOI 2002 polojenieto beshe dosta tejko.
+<valo_bg> az v momenta treniram pisane na zadachi bez debugger i ne znam dali da prodyljavam....
+<VelinTzanov> No nauchihme kak da zaobikaliame crash-ovete na RHIDE.
+<VelinTzanov> Na site-a ne pishe li kakvo shte se izpolzva tochno?
+<Swetko> ne oste
+<valo_bg> pishe... Windows XP Pro
+<valo_bg> RHIDE
+<VelinTzanov> Versii?
+<valo_bg> no ne pishe versii
+<Swetko> hehe
+<VelinTzanov> Pishete nepremenno na organizatorite po e-mail!
+<VelinTzanov> Vasha rabota e da se pogrijite za tova!
+<Swetko> i ne znam kakvi ste sa klaviaturite
+<VelinTzanov> Pishe che moje da si nosite vashi mai.
+<Swetko> dali da si vzemam moita
+<VelinTzanov> Vzimai po-dobre.
+<valo_bg> i az taka sigurno shte napravq...
+<Swetko> ama moita leko potrakva - ne e bezshuman
+<Swetko> samo leko de..
+<rangel__> Contestants are allowed to bring their own keyboards and pointing devices
+<VelinTzanov> Ne pishe da sa bezshumni a? :)
+<valo_bg> na koi da pishem? na newsletter-a li?
+<VelinTzanov> Predstavete si albancite kakvi traktori shte donesat - shte grymne zalata ot trakane. :)
+<VelinTzanov> Niakoi daje moje da doide s pisheshta mashina. :)
+<Swetko> te niama da nosiat nisto  predpolagam
+<VelinTzanov> Triabva da ima e-mail za kontakti be! Ne moje da niama.
+<Swetko> i kakvo da im pishem 
+<valo_bg> ima, vyoprosyt e dali e podhodqshto na nego da se pishe za tova
+<VelinTzanov> Naprimer pitaite gi koi versii na gcc i na Rhide shte ima.
+<valo_bg> az shte gi pitam kakvi versii na kompilatorite i sredite shte ima
+<VelinTzanov> Niama problem da pishete nepodhodiasht e-mail. Ima problem ako ne napishete, obache.
+<VelinTzanov> Aide - az triabva da izchezvam.
+<valo_bg> ok, chao
+<Swetko> vchera s rangel otkrihme che ima sustestveni razliki v qsort pod windows i linux
+<Swetko> chao
+<VelinTzanov> Ako ima seriozni problemi sys zadachite - konsultiraite se edin s drug i eventualno s men.
+<rangel__> chao
+<VelinTzanov> Seriozno? Kakvi razliki?
+<rangel__> ami pod linux e dosta po-byrz :-)
+<VelinTzanov> Haha. :)
+<Swetko> ami v srednia sluchai pravi pod linux 1.4-5 puti po malko pitania
+<VelinTzanov> Wow! :)
+<Swetko> a puk v niakoi sluchai stava n^2 pod windows
+<Swetko> a v linux ne
+<VelinTzanov> Ti me razbi!  Pishete na tezi deto praviat DJGPP-to za tova.
+<Swetko> i zatova ne mi raboti edna zadacha ot CEOI 
+<VelinTzanov> Nepremenno pishete za takiva raboti.
+<VelinTzanov> Aide - bye!
+<Swetko> chao
+<sssa88> chao
+* Disconnected
+Session Close: Thu Aug 12 22:25:07 2004

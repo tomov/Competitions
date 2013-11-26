@@ -1,0 +1,134 @@
+#include <cstdio>
+#include <vector>
+
+using namespace std;
+
+int L, N, M, C, T;
+
+vector <int> nghbrs [64];
+vector <int> cNghbrs [64];
+int nC;
+
+int color[64];
+int cColor[64];
+
+bool usedComponents[64];
+bool used[64];
+
+int component[64];
+
+int answ = 0;
+int answrs[32];
+
+void Clean()
+{
+    nC = 0;
+    answ = 0;
+    for (int i = 0; i < 64; ++i)
+    {
+        cNghbrs[i].clear();
+        nghbrs[i].clear();
+        color[i] = 0;
+        cColor[i] = 0;
+        component[i] = -1;
+        used[i] = 0;
+        usedComponents[i] = 0;
+    }
+}
+
+void Scan()
+{
+        scanf ("%d %d %d %d", &N, &M, &C, &T);
+        for (int n = 0; n < N; ++n)
+        {
+            scanf ("%d", &color[n]);
+        }
+        int a, b;
+        for (int m = 0; m < M; ++m)
+        {
+            scanf ("%d %d", &a, &b);
+            nghbrs[a].push_back(b);
+            nghbrs[b].push_back(a);
+        }
+}
+
+void Synchronize (int c1, int c2)
+{
+    for (int i = 0; i < N; ++i)
+    {
+        if (component[i] == c1) component[i] = c2;
+    }
+}
+
+void Componate (int v, int c)
+{
+    if (c > nC) nC = c;
+    component[v] = c;
+    cColor[c] = color[v];
+
+    used[v] = true;
+    for (int i = 0; i < nghbrs[v].size(); ++i)
+    {
+        if (!used[nghbrs[v][i]])
+        {
+            if (color[v] == color[nghbrs[v][i]])
+                Componate(nghbrs[v][i], c);
+            else
+            {
+                cNghbrs[c].push_back(c+1);
+                cNghbrs[c+1].push_back(c);
+                Componate(nghbrs[v][i], c+1);
+            }
+        }
+        else
+            if (color[v] != color[nghbrs[v][i]])
+            {
+                Synchronize (c, component[nghbrs[v][i]]);
+            }          
+    }
+}
+
+int main ()
+{
+    scanf ("%d", &L);
+    for (int l = 0; l < L; ++l)
+    {
+        Clean();
+        
+        Scan();
+
+        Componate(0, 0);
+        ++nC;
+
+        for (int i = 0; i < nC; ++i)
+        {
+            if (cColor[i] == C && !usedComponents[i])
+            {
+                if (cNghbrs[i].size() > 2)
+                {
+                    for (int j = 0; j < cNghbrs[i].size(); ++j)
+                    {
+                        usedComponents[cNghbrs[i][j]] = 1;
+                        cColor[cNghbrs[i][j]] = C;
+                    }
+                    answ += 2 * T;
+                }
+            }
+        }
+
+        for (int i = 0; i < nC; ++i)
+        {
+            if (cColor[i] != C)
+            {
+                cColor[i] = C;
+                answ += T;
+            }
+        }
+        answrs[l] = answ;
+    }
+    for (int i = 0; i < L; ++i)
+    {
+        printf ("%d\n", answrs[i]);
+    }
+    return 0;
+}

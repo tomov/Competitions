@@ -1,0 +1,71 @@
+#include <cstdio>
+#include <cmath>
+#define MAXN 1000000
+#define INF 1000000000
+
+int n, k;
+int m[MAXN];
+
+inline int sr_artm(int b)
+{
+    int i, sum = 0;
+    for(i = b; i <= k; i++) {
+        sum += m[i];
+    }
+    return sum / k;
+}
+
+void brute()
+{
+     int sum = INF, temp, pos = 0, sr;
+     int i, j, p;
+     for (i = 0; i < n-k; i++) {
+         /*for (j = 0; j < k; j++) {
+             temp = 0;
+             for (p = 0; p < k; p++) {
+                 temp += fabs(m[i+j] - m[i+p]);
+             }
+             if (temp < sum) {
+                 sum = temp;
+                 pos = i;
+             }
+         }*/
+         temp = 0;
+         sr = sr_artm(i);
+         for (p = 0; p < k; p++) {
+             temp += fabs(sr - m[i+p]);
+         }
+         if (temp < sum) {
+             sum = temp;
+             pos = i;
+         }
+     }
+     
+     if (n == k) {
+         sum = 0;
+         sr = sr_artm(i);
+         for (p = 0; p < k; p++) {
+             sum += fabs(sr - m[i+p]);
+         }
+         pos = 0;
+     }
+     
+     printf("%d\n%d\n", sr, pos + 1);
+}
+
+void solve()
+{
+     brute();
+}
+
+int main (void)
+{
+    int i;
+
+    scanf("%d %d", &n, &k);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &m[i]);
+    }
+    solve();
+    return 0;
+}

@@ -1,0 +1,44 @@
+/*
+codr: timiter
+task: leaves
+lang: C++
+*/
+
+#include <cstdio>
+#include <cmath>
+#include <algorithm>
+
+using namespace std;
+
+int n, s = 0;
+int d[131072], v[131072];
+
+bool comp(int, int);
+
+int main()
+{
+    scanf("%d", &n);
+    int i;
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &d[i]);
+    }
+    sort(d, d + n, comp);
+
+    for (i = 0; i < n; i++)
+    {
+        v[i] = i + 1;
+    }
+    v[n - 1]--;
+    for (i = 0; i < n; i++)
+    {
+        printf("--- %d\n", v[i]);
+    }
+    printf("%d\n", s);
+    return 0;
+}
+
+bool comp(int a, int b)
+{
+    return a >= b;
+}

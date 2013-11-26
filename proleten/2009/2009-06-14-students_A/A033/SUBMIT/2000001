@@ -1,0 +1,56 @@
+/*
+TASK:washer
+LANG:C++
+*/
+#include <iostream>
+#include <algorithm>
+#include <set>
+using namespace std;
+#define mp make_pair
+int n;
+long long gcd (long long a,long long b)
+{
+	while (a&&b)
+	{
+		if (a>b) a%=b;
+		else
+			b%=a;
+	}
+	return max (a, b);
+}
+
+set<pair <long long, long long> > s[81];
+
+int pre[] = {0, 1, 2, 3, 5, 7,11,15,22,30,41,55,75,97,129,166,213,272,343,430,536,664,822,1008,1230,1495,1808,2178,2616,3122,3720,4416,5221,6164,7249,8497,9941, 11593, 13481, 15665,18150,20971,24184,27827,31974,36650,41944,47930,54670,62256,70786,80369,91112,103154,116602,131678,148498,167233,188134,211415,237274,266013, 297967,333355,372567,416029,464134,517244,575923,640708,712174,790933,877625,973112,1078082,1193425,1320094, 1459178,1611738,1778922,1962030};
+
+
+int main ()
+{
+	int i;
+	
+	scanf ("%d", &n);
+	
+	printf ("%d\n", pre[n]);
+	return 0;
+	s[1] .insert (mp (1, 1));
+	cout<<1<<endl;
+	set <pair <long long, long long> > :: iterator it;
+	for (i = 2; i <= n; i++)
+	{
+		int j;
+		for (j = 1; j < i ; j++)
+		{
+			it = s[i-j].begin ();
+			for (; it != s[i-j].end(); it++)
+			{
+				long long p1 = j*(*it).first + (*it).second , p2 = (*it).second * j;
+				long long g = gcd(p1, p2);
+				s[i].insert (mp (p1/g, p2/g));
+			}
+		}
+		s[i].insert (mp (1, i));
+		cout<<s[i].size ()<< endl; fflush (stdout);
+	}
+	
+	return 0;
+}

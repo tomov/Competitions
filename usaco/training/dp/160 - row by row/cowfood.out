@@ -1,0 +1,7 @@
+      to 0 ; 1 001 (place it)
+      to 0 ; 2 010 (place it)
+      to 1 ; 0 100 (place it)
+      to 1 ; 0 101 (place it)
+      to 1 ; 2 010 (place it)
+      to 1 ; 2 110 (place it)
+9

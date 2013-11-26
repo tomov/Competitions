@@ -1,0 +1,953 @@
+
+Session Start: Wed Jun 16 20:05:06 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+* VelinTzanov sets mode: +ooo Prince_of_Dawn Swetko rangel__
+* VelinTzanov sets mode: +o sssa88
+<VelinTzanov> Privet, banda.
+<Prince_of_Dawn> Nedev kakwi predmeti uchihte w 12 klas
+* Logging #ioi to 'logs\ioi_2004_06_17.log'
+<sssa88> mat., informatika, bel, svqt i lichnost, fizkultura, istoriq - maj tova sa
+<Swetko> ami sipovete
+<sssa88> a anglijski i nemski
+<Swetko> che to hubavo be
+<Prince_of_Dawn> nemski FUCK
+<sssa88> te sa pak po teq predmeti
+<Swetko> uf  - nemski
+<Swetko> aha
+<sssa88> e nemski ako nemskiq ti e vtori ezik
+<Prince_of_Dawn> da
+<VelinTzanov> Momcheta, vyproscheta po materiala ot vchera da imate?
+<VelinTzanov> Borisov, a ti domashno da imash sluchaino?
+<Prince_of_Dawn> da e sega
+<Prince_of_Dawn> predlagam da ima nagrada za nai barziq lgame
+<sssa88> az imam vypros po materiala ot zavchera - kyde mi e greshkata na "score"?
+<rangel__> az mozhe li da pomolq i dnes po-byrzichko ponezhe i dnes imam dyrzhaven izpit?
+<sssa88> moq e sekunda  i 2 deseti na moq komp - 1.6
+<VelinTzanov> Ami ako e syshtata kato vchera shte ti pratia test-vashtata mi programa i testa i shte si debug-nesh sam.
+<sssa88> ok
+<VelinTzanov> Koga triabva da trygvash, Rangele?
+<rangel__> kym 8
+<VelinTzanov> OK
+<VelinTzanov> Az sym malko nepodgotven za dnes, ama vie ste umni momcheta i shte pomagate... :)
+<VelinTzanov> Pyrvo, vsichki li ste tuk?
+<Prince_of_Dawn> daa
+<Swetko> da
+<Prince_of_Dawn> pratih ti domashno
+<Swetko> kakva e nagradata borisov
+<rangel__> az imam edin vypros (kojto mozhe bi ne e syvsem po materiala ot vchera)
+<Prince_of_Dawn> ti shte kajesh
+<Swetko> che moshe da vzema da ia napisha - vchera ia izmislih
+<rangel__> ako imam patovi situacii (kakto i pecheleshti i gubeshti) i se stremq kym bezkrajna igra moga li da go postigna s 2 vida gubeshti situacii (s razlichni prioriteti)
+<Prince_of_Dawn> edna po-lesna zad na BOI
+<Swetko> v smisul
+<VelinTzanov> Za kakvo sa ti 2 gubeshti situacii, Rangele?
+<rangel__> ami zashtoto krajna patova situaci e po-zle ot bezkrajna igra (takova mi e uslovieto)
+<Swetko> kakva zadacha ot BOI 
+<rangel__> obache e po-dobre ot zaguba
+<Prince_of_Dawn> veline za kolko varweshe na anev i na kakaw CPU
+<Swetko> za kum secunda
+<VelinTzanov> Posle shte vidia, Borisov.
+<Prince_of_Dawn> > ili <
+<VelinTzanov> Sega Rangel byrza.
+<VelinTzanov> Rangele, a protivnika kakvo predpochita? I toi li bezkraina ili toi patova?
+<rangel__> toj igrae za pat
+<VelinTzanov> E, togava ochevidno pata e neshto kato "vtori klas" zaguba.
+<VelinTzanov> Da, imash dve gubeshti situacii.
+<VelinTzanov> Ednite po-gubeshti ot drugite.
+<VelinTzanov> I triabva da si izchistish logikata.
+<VelinTzanov> No sys sigurnost shte stane s obshtia ni model.
+<VelinTzanov> Momcheta, ako na BOI/IOI vi se dade neshto takova (kato tova koeto opisva Rangel) zadyljitelno triabva da go napravite, zashtoto stava s obshtia ni metod.
+<rangel__> aham, i az neshto takova misleh, no da pitam vse pak
+<VelinTzanov> Shte triabva da go nagodite de, ama nali ste umni, shte se spravite. ;)
+<VelinTzanov> OK
+<Swetko> ok, ama nadali ste dadat po sloshna igra ot shah-a
+<Swetko> az sega
+<Prince_of_Dawn> ima li konkretna zadacha zat towa rangele
+<Swetko> a sega
+<VelinTzanov> Hehe... ostavashe i shah da vi dadat... :)
+<rangel__> ne osven ako Velin ne izmisli :-)
+<VelinTzanov> Btw, az sym pisal shah.
+<VelinTzanov> S do 5 figuri.
+<VelinTzanov> Za 32 procesora.
+<VelinTzanov> Na Cilk
+<Swetko> i mihai e pisal v 6-ti klas
+<VelinTzanov> Goliama veselba beshe.
+<VelinTzanov> Ne, Mihai ne e... no Reid e pisal... :)
+<VelinTzanov> Ama ne kato moia s 5 figuri, a cial. :)
+<VelinTzanov> E, ne go e pisal sam de... :)
+<Swetko> ama i mihai e pisal - pishe mu go na stranicata
+<Prince_of_Dawn> sabrali sa wi w MIT
+<VelinTzanov> Taka li? :)
+<Prince_of_Dawn> tam wi e mqstoto 
+<Swetko> tam btw. ima interesni zadachi koito toi e izmislil 
+<VelinTzanov> Tova mu e rabotata na nego, da misli zadachi. :)
+<Swetko> nod(a1,a2,a3,.................an)
+<VelinTzanov> Az si padam po po-praktichnata strana na neshtata.
+<Swetko> kakva e sloshnostta
+<VelinTzanov> KAkvo e nod()?
+<Swetko> gcd
+<Prince_of_Dawn> nai-golqm obsh delitel
+<VelinTzanov> Da, zvuchi tochno vse edno Mihai go e izmislil. :)
+<Prince_of_Dawn> logN
+<Swetko> ne e N*log
+<VelinTzanov> N*LogLogN/LogN
+<VelinTzanov> :)
+<Swetko> n + Log
+<VelinTzanov> Ne, obratno.
+<VelinTzanov> N*LogN/LogLogN :)
+<Prince_of_Dawn> haide 
+<Prince_of_Dawn> barzame
+<Swetko> :)
+<Swetko> ok
+<Prince_of_Dawn> az imam biologiq
+<Swetko> http://web.mit.edu/~mip/www/probs.html
+<VelinTzanov> Moje bi ne beshe za tazi zadacha, no Mihai v edin klas dokaza niakakva takava slojnost za niakakyv problem... beshe mu Final Project.
+<VelinTzanov> OK
+<VelinTzanov> Aide.
+<VelinTzanov> Dosega pravihme obhvatni igri.
+<VelinTzanov> Prosta rabota obshto vzeto - veche ste maistori.
+<VelinTzanov> Ama na IOI niama da vi dadat takava, a shte vi dadat neobhvatna. :)
+<VelinTzanov> Spored vas kakva e ideiata s neobhvatnite igri?
+<Swetko> da biem
+<Prince_of_Dawn> greedy
+<Swetko> ami da
+<Prince_of_Dawn> za70
+<Swetko> da izmislim strategia
+<VelinTzanov> Obshto vzeto ideiata e da svalim bezkrainia broi situacii do kraen broi, kato obediniavame "ednakvite" (ili aide - podobnite) situacii.
+<Swetko> mirishe mi na nesto
+<VelinTzanov> Vsyshtnost i na tezi s obhvaten broi situacii tova e ideiata./
+<VelinTzanov> Zapushi si noda, Swetko, i vnimavai. :)
+<VelinTzanov> noda = nosa
+<VelinTzanov> Vij da ne si zabravil neshto na kotlona. :)
+<Prince_of_Dawn> zapushi si nod()-a
+<VelinTzanov> Naprimer igrite kato score.
+<VelinTzanov> Ako pazim rezultata situaciite sa neobhvaten broi.
+<VelinTzanov> No se seshtame, che niama zashto da go pazim (shtoto ot nego nishto ne zavisi) i taka svejdame situaciite do obhvaten broi.
+<VelinTzanov> Iasna li e ideiata?
+<Prince_of_Dawn> da
+<Swetko> da
+<sssa88> da
+<rangel__> t.e. ako razpolagame s neshto neobhvatno poumnqvame malko i si go svezhdame do obhvatno li?
+<VelinTzanov> Obshto vzeto da.
+<VelinTzanov> Poumniavaneto moje da vkluchva i drugi metodi. :)
+<rangel__> qsno
+<VelinTzanov> Sledvashtata zadacha ne e dobra ilustracia na tova kak svejdame do obhvaten broi situacii, no e dobre ilustracia na tova kak mojem da izpolzvame metodi deto veche sme uchili i kak mojem da pravim ocenka na situaciite - syshto standarten podhod.
+<VelinTzanov> CEOI 2002, Conquer
+<VelinTzanov> http://cs.science.upjs.sk/ceoi/documents/tasks/conquer-tsk.pdf
+<Swetko> niakoi da e chel reshenieto i 
+<Swetko> ot site-a
+<VelinTzanov> Az ne sym. :)
+<Prince_of_Dawn> az mai
+<rangel__> da
+<VelinTzanov> Zashto pitash, Swetko?
+<Prince_of_Dawn> na men anev mi pomogna
+<rangel__> i beshe pochti syshtoto kato tova koeto az si bqh izmislil
+<rangel__> samo che imashe nqkolko dupki v logikata po-malko :-)
+<VelinTzanov> A, vie znaete kak se reshava - super. Znachi niama da se gyrcha da go izmisliam nanovo, a vie shte mi ia razkajete. :)
+<VelinTzanov> Ooo, pri nas ne triabva da ima dupki v logikata, nali znaete?
+<VelinTzanov> Tova mejdu drugoto e zadacha na koiato se opletoh kato pate v kalchishta. :)
+<rangel__> da, znam :-)
+<VelinTzanov> Imam 3-4 provaleni systezania i vtoria den na CEOI e edno ot tiah.
+<VelinTzanov> Otkyde znaesh?!
+<VelinTzanov> Az ne uspiah da si submit-na zadachite togava. Inache shtiah da imam 110.
+<rangel__> znam, che ne trqbva da ima dupki v logikata
+<Swetko> ami purvia?
+<VelinTzanov> Ednata beshe niakakyv potok i ia ostavih za posle - tazi beshe po-lesna... a tretata beshe niakakva elementarna.
+<Swetko> ami stot reshenieto tam e super tupo
+<VelinTzanov> Kakvo pyrvia?
+<Swetko> i nenushno sloshno
+<VelinTzanov> Nishto ne razbrah. :(
+<Swetko> purvia den zasto imash 0 pitah
+<Swetko> stot ti razpravia za vtoria - kakto i da e 
+<Swetko> razbrah
+<VelinTzanov> Da de, pyrvia den imah predvid. Vtoria li kazah? :)
+<VelinTzanov> Pyrvia den triabvashe da imam 110.
+<Swetko> az vse oste se sestam kak stava conquer
+<VelinTzanov> Vtoria imam 170 i ako ne se lyja sym treti ot cialoto systezanie.
+<Swetko> ami dobre - sreburen medal:)
+<VelinTzanov> Ili ot online systezanieto mai. Vse taia.
+<Swetko> ot online ste da e bilo
+<VelinTzanov> Mdaa.. srebyren. Tova vi chaka i vas ako se omajete taka.
+<VelinTzanov> imam predvid treti ot vtoria den. :)
+<Swetko> btw. 9-ti si stial da bydesh
+<Swetko> aa ot vtoria
+<VelinTzanov> Ta, misylta mi beshe che dori i na prividno lesna zadacha mojete da se omajete kato praseta ako ne ste podredili i dokazali vsichko.
+<Swetko> pak ne si 3-ti ama kakto i da e
+<VelinTzanov> 4-ti li sym? :)
+<Swetko> ei sega ste smetna
+<VelinTzanov> Ot online sym 3-ti, a inache ako vkluchim i istinskite systezateli - 4-ti.
+<Swetko> abe mai si treti ama ima mnogo hora s tvoia rezultat
+<VelinTzanov> Abe vse taia - niama znachenie koi sym.
+<VelinTzanov> Vajnoto e da reshim zadachata kato horata.
+<Prince_of_Dawn> haide po sashtestwo
+<VelinTzanov> Na kakvo vi mirishe?
+<VelinTzanov> Na Swetko na izgorialo, a na Borisov na greedy. Na drugite?
+<sssa88> i na men na greedy
+<VelinTzanov> Kakvo znachi greedy kogato stava vypros za razdeliane na dve chasti na dadeno mnojestvo?! Slagate vsichki v ednata chast li?!
+<Prince_of_Dawn> az znam reshenie na okolo 40 reda
+<Swetko> moito e na 15
+<VelinTzanov> Offfff
+<VelinTzanov> Momcheta, tova e nai-malovajnoto neshto!
+<VelinTzanov> Uchim se da mislite pravilno tuka! Ne da pishem 15 ili 20 redovi reshenia!
+<VelinTzanov> Vajno e kakva e ideiata zada zadachata, a ne kolko e lesna ili kolko i e kratko reshenieto!
+<VelinTzanov> zada = zad
+<VelinTzanov> Na IOI ako vi se padne takova neshto nikoi niama da vi gleda kolko reda vi e reshenieto! Tam shte e vajno da ste naiasno s podhodite i ideite i da mojete da gi prilojite za nepoznatata, razlichna i unikalna zadacha, koiato shte vi dadat.
+<VelinTzanov> I taka - deleneto na dve chasti ne bih go narekyl tochno greedy, makar che moje i taka da go izkarate.
+<VelinTzanov> Celta e da podhodim taka che v nai-loshia sluchai da sme nai-dobre.
+<VelinTzanov> Kakto na Mountain, 12-te moneti i Sequences.
+<VelinTzanov> Iasno e (zashtoto e dadeno v chist vid) che triabva da razpredelim voinicite vyzmojno nai-ravnostoino.
+<VelinTzanov> Nali?
+<sssa88> da
+<rangel__> da
+<VelinTzanov> (Mejdu drugot ne znam dali sym vi kazval, no s podoben sort "optimalno naluchkvane" na IOI 2003 se hvashtaha 85.5 tochki na edna ot zadachite... metodyt e dosta polezen, kolkoto i da e prost i ocheviden)
+<VelinTzanov> Borisov?
+<Prince_of_Dawn> da
+<VelinTzanov> OK
+<VelinTzanov> Za da mojem da govorim za "ravnostoinost" triabva da imame ocenka. Nali taka?
+<VelinTzanov> Vyprosyt e kakva ni e ocenkata v sluchaia.
+<VelinTzanov> Iskame da razdelim grupite taka che da imat ravna ocenka.
+<Prince_of_Dawn> koi woinik kolko e daliche ot parwoto stapalo?
+<VelinTzanov> Po-tochno taka che tazi s po-loshata ocenka da e maximalno dobra. :)
+<VelinTzanov> Da, tova opredeleno shte e niakakyv kriterii za ocenkata.
+<Prince_of_Dawn> toest edin voinik na stapalo p struwa kolkoto dwame na p+1
+<VelinTzanov> Zashto, Borisov?
+<Swetko> az hvanah samo 60 stot se opitah po optimalno da pitam kato za celta namalia broia na vyzmoshnite pitania koito da probvam  - genialno
+<Prince_of_Dawn> zashtoto na sledwashtiq ni ho moje ot tezi dwama na p+1 da premestim ediniq na p
+<VelinTzanov> Az pyk dori ne pomnia kak se omazah... no se omazah neobratimo. :)
+<VelinTzanov> Intuiciata ti e dobra, Borisov, no mojesh li da go dokajesh? :)
+<Prince_of_Dawn> mi da
+<VelinTzanov> Kak da pokajem che ocenkata na edna situacia se pravi chrez tazi formula (broeiki vseki voinik za dva na po-niskoto stypalo)
+<Prince_of_Dawn> moga da dokaja che edin woinik na pozitrsiq .. struwa kolkoto dwama dolu
+<VelinTzanov> OK, neka chuem dokazatelstvo.
+<Prince_of_Dawn> mi prosto tezi deto sa na dolnoto stapalo gi razdelqm na dwe chasti i podawam ednata na funktsiqta
+<VelinTzanov> Tova e niakakva ideia za reshenie. Ne e nikakvo dokazatelstvo.
+<Prince_of_Dawn> i mi e wse edno kakwo shte warne tq poneje te otiwat napred
+<VelinTzanov> Otkdye si siguren, che tova razdelenie e optimalno? Osobeno interesno e kakvo pravish ako imash necheten broi voinici na niakoi red?
+<VelinTzanov> Borisov, dai po red.
+<VelinTzanov> Vsichki znaem reshenieto.
+<VelinTzanov> Tova ne e celta v sluchaia.
+<Swetko> ami si ocenim voinik na 0-voto stypala s X to togava 2 voinika na stypalo 1 ste sa ekvivalentni => te sa s cena X/2
+<VelinTzanov> Mojete da znaete 5000 reshenia na zadachi i pak da se izlojite na IOI.
+<Swetko> mnogo sumnitelno
+<VelinTzanov> Zashto da sa ekvivalentni, Swetko?
+<Swetko> oste poveche che na poslednoto IOI imashe dosta poznati na men nesta a puk kamo li na niakoi s 5000 zdachi
+<VelinTzanov> Dokazvaite neshtata be, momcheta!
+<Swetko> ami vse mi e edno 
+<Swetko> tui kato ste si gi razdelia dvamata
+<VelinTzanov> Koe e mnogo symnitelno, Swetko?
+<Swetko> i ste otida v drugata pozocia
+<VelinTzanov> Ne me interesuva kakvo shte napravish, interesuva me zashto go pravish.
+<rangel__> ako imam 2*k vojnika na stypalo i+1, znam che na sledvashtiq hod moga da si garantiram k vojnika na stypalo i
+<VelinTzanov> Vidia li onzi den Borisov kato ne si dokaza strategiata za Score kak uspiah da go obyrkam i da si pomisli che igrata e neobhvatna?
+<Swetko> ami da
+<VelinTzanov> Iskam da dokazvate, za da ne se samoobyrkvate na systezanie.
+<VelinTzanov> Dobre che e Rangel da vi izvadi ot kalta.
+<VelinTzanov> Kluchovoto e slednoto:
+<VelinTzanov> S tazi ocenka kogato edna situacia e ocenena na X, to imam garantirano pone X na sledvashtia hod.
+<VelinTzanov> Zatova ocenkata X ima smisyl.
+<VelinTzanov> Izchakaite minutka...
+<VelinTzanov> Sega kato imame niakakva takava kulturna ocenka mojem li da kajem koia situacia e pechelivsha i koia e gubeshta?
+<Swetko> ami nali az tova se opitvah da kasha ama malko po elementarno s typ primer
+<VelinTzanov> Swetko, primerite ne vyrviat tuka.
+<VelinTzanov> Dokazatelstvata na kartinka ne sa nikakvi dokazatelstva
+<VelinTzanov> Vajno e da pokajem slednoto:
+<VelinTzanov> 1) Che ima ocenka-limit nad koiato situaciata stava pechelivsha.
+<VelinTzanov> 2) Che ako edna situacia ima ocenka X, to mojem da poddyrjame ocenka X v bydeshteto, dokato spechelim (zashtoto igrata e ACIKLICHNA, koeto e mnogo vajno da se otbeleji)
+<VelinTzanov> (2 veche go dokazahme)
+<rangel__> ami ako ocenkata na tekushtata situaciq e po-dobra ot ocenkata na situaciqta, v koqto imam edinstven vojnik na stypalo 1, znachi e pechelivsha
+<VelinTzanov> 3) Che ako edna situacia ima ocenka X, to protivnikyt vinagi moje da ni dyrji na ne poveche ot X.
+<Swetko> da
+<VelinTzanov> Po-dobra ili ravna, Rangele.
+<Swetko> gadnichko
+<VelinTzanov> No da - tolkova prosto e.
+<VelinTzanov> Ne e tolkova gadnichko, Swetko.
+<Swetko> samo vednush da se precakash i si hodish
+<Swetko> sheduvam se
+<VelinTzanov> PRosto triabva da mojete da si davate smetka kakvo vi triabva i kakvo ne. Kakvo konstituira dobro, viarno reshenie. Kakvo e dostatychno za da kajem che sme reshili zadachata i kakvo e izlishno.
+<VelinTzanov> Sposobnostta da pravite takiva ocenki i da gi dokazvate sys sigurnost shte vi triabva na BOI/IOI.
+<VelinTzanov> Taka.
+<VelinTzanov> Znachi Rangel opredeli limita.
+<VelinTzanov> Dokazahme che vinagi mojem da stoim nad tozi limit.
+<VelinTzanov> Ostana samo edna malka podrobnost - da pokajem kakvo pravim kato imame necheten broi voinici na red.
+<VelinTzanov> Kak gi delim po ravno v takyv sluchai?
+<VelinTzanov> Chakam.
+<Swetko> ami delim gi neporavno
+<Swetko> i posle si imame edin voinik vdiasno poveche
+<Swetko> i na sledvastata stypka ste sloshim 2 vliavo poveche
+<rangel__> ako nqmame vojnik vdqsno?
+<Swetko> ili puk 4 8 16 ........
+<Swetko> v zavisimost na koe stypalo e sledvastata grupa voinici
+<rangel__> oops, ako nqmame poveche vlqvo e problema
+<Swetko> ami slagame gi vsichki 
+<Swetko> i se nadiavame nadolu da imame poveche kusmet
+<Swetko> ako niamame to ne moshem da razdelim
+<Prince_of_Dawn> molitwichka
+<Swetko> ama ako situaciata e pechelivsha
+<Swetko> tova niama da stane
+<Swetko> mai ne se dokazva trudno
+<VelinTzanov> Znachi mai se okaza, che tazi ocenka ot X ne mojem da ia udyrjim neshto, a?
+<VelinTzanov> Eto, poiaviha se pyrvite notki na symnenie.
+<VelinTzanov> Veche vijdam kakvo se sluchva s nepoznata zadacha na systezanie.
+<Swetko> ami nali kazah che se dokazva
+<VelinTzanov> Pomisliate si che reshenieto ne raboti.
+<VelinTzanov> Obyrkvate se totalno.
+<VelinTzanov> Iadosvate se che ste zagubili vreme...
+<rangel__> trqbva da ima nachin da q udyrzhim ponezhe tq vinagi e chetno chislo
+<VelinTzanov> ... i nakraia pishte niakakva typotia za 20 tochki. :)
+<rangel__> t.e. mozhe da se razdeli na 2 ravni, vyprosyt e samo kak
+<VelinTzanov> KAkvo znachi chetno chislo? V kakvi merni edinici?
+<VelinTzanov> E, iavno pokazahme che ne moje da se razdeli na 2 ravni. :
+<VelinTzanov> :)
+<VelinTzanov> Nai-malkoto ako imash samo 3 voinika na edno stypalo ne mojesh.
+<Swetko> ama vinagi
+<VelinTzanov> NEshto ne e nared.
+<Swetko> moshem da gi razdelim taka che ednata chast da e po goliama ot X
+<Swetko> ili ravna
+<VelinTzanov> KAkvo pravim sega? Kak izlizame ot byrkotiata? :)
+<Swetko> kakva byrkotia
+<VelinTzanov> Swetko, togava loshiat shte izbere drugata chast i se precakvash.
+<VelinTzanov> Ami tova che mojem da udyrjim edno X e greshen fakt. Tova oznachava byrkotia.
+<Swetko> imah previd che moshem da izberem
+<VelinTzanov> Kak da izlezem ot tazi byrkotia pitam?
+<VelinTzanov> Kak da reshim igrata?
+<VelinTzanov> Kak da dokajem koi situacii sa pechelivshi i koi sa gubeshti?
+<Swetko> takova cepene taka che vinagi ednata polovina da e => ot pechelivshata stoinist
+<Swetko> takova cepene taka che vinagi ednata polovina da e => ot pechelivshata stoinost
+<VelinTzanov> Kak da namerim vernia hod vyv vsiaka situacia?
+<VelinTzanov> Swetko, govorish gluposti.
+<Prince_of_Dawn> ve towa sa laina deto gi goworite
+<Prince_of_Dawn> az znam kak
+<Swetko> sto be
+<VelinTzanov> Nali drugia shte izbere drugata polovinata togava be, momche!
+<Prince_of_Dawn> kakto i da go wartim
+<VelinTzanov> Procheti uslovieto pak i shte vidish zashto.
+<Swetko> ami idealno
+<Swetko> togava sme na dalavera
+<Prince_of_Dawn> mojem da swedem wsichki woinitsi do neshto na posledniq red
+<VelinTzanov> Borisov e prav. :)
+<Swetko> i kakvo  ot tova
+<VelinTzanov> Borisov, chakai malko.
+<Prince_of_Dawn> i tam wechr ednite sa chetni drugite ne
+<VelinTzanov> Neka Swetko da razbere zashto greshi.
+<Swetko> ok 
+<VelinTzanov> Taka.
+<Swetko> X=pechelivshata stoinost - tia e chetna
+<VelinTzanov> Swetko, ako imash situacia X.
+<VelinTzanov> Ne mojesh prosto da razdelish na >=X i <X shtoto togava protivnika shte te precaka i shte izbere po-loshoto ot dvete.
+<Swetko> razdeliame si voinicite taka che dvete grupi da sa => ot X/2
+<VelinTzanov> Tova veche e drugo neshto.
+<Swetko> ama ne sum kazal po goliamo ot X i po mako 
+<VelinTzanov> Obache ako X e nechetno niama kak da go napravish,
+<VelinTzanov> Kaza EDNATA POLOVINA da e =>
+<Swetko> ama nali X=2^broi stypala
+<VelinTzanov> <Swetko> takova cepene taka che vinagi ednata polovina da e => ot pechelivshata stoinost
+<VelinTzanov> <
+<Swetko> v smisul ot pechelivshata /2
+<Swetko> X e chetnoo
+<VelinTzanov> Swetko poslednoto ti izrechenie vyobshte ne go razbrah.
+<Swetko> ako ne e 
+<Swetko> imame 1 stypalo
+<Swetko> i tam e lesno
+<VelinTzanov> X e ocenka na situaciata. Na TEKUSHTATA situacia!
+<VelinTzanov> Chakai malko.
+<Swetko> ok
+<VelinTzanov> Neka definirame neshtata.
+<VelinTzanov> Podred.
+<VelinTzanov> Imame situacia s ocenka X.
+<VelinTzanov> KAkvo pravim?
+<Swetko> Y e minimalnata pechelivsha situacia
+<VelinTzanov> Okaza se che X ne mojem da go udyrjim.
+<Swetko> X e segashnata 
+<VelinTzanov> OK. Po-visoka ocenka e po-dobre.
+<Swetko> delim ia na X-Y/2 i Y/2
+<Swetko> i dvete sa => Y/2
+<VelinTzanov> Idealno.
+<VelinTzanov> Sega dokaji che vinagi mojem da go napravim.
+<Swetko> ami ako na niakoi hod poluchim neravenstvo
+<Swetko> nie znaem che obstata stoinost e => Y
+<VelinTzanov> Zashto?
+<VelinTzanov> Aaa, da, tova da.
+<Swetko> ami nali e pechelivsha
+<VelinTzanov> OK
+<VelinTzanov> I?
+<Swetko> garantili sme si che dosega sme razdeli poravno 
+<Swetko> i sega trygva neravenstvoto
+<VelinTzanov> i kakvo pravim?
+<Swetko> ako na sledvastia hod obyrnem neravenstvoto minimalno vyzmoshno
+<Swetko> t.e. iasno e che ste vzemem tolkova che da kompensirame i eventualno da imame pak malko neravenstvo
+<Swetko> pak sme v sustata situacia
+<VelinTzanov> Zashto?
+<Swetko> taka do dolu
+<VelinTzanov> Vyobshte kak go pravim tova neravenstvo minimalno?
+<VelinTzanov> Dokaji mi prosto che ot situacia nad Y mojesh da razdelsih na dve po-golemi ili ravni na Y/2
+<Swetko> ami primerno imame 2 vliavo poveche 
+<Swetko> na sledvastia hod stavat 4
+<VelinTzanov> Ne mi davai rpimer.
+<VelinTzanov> Iskam dokazatelstvo.
+<VelinTzanov> KAkvi sa tia amerikanshtini be momche!
+<Swetko> i se stremim da vzemem otdiasno 4 poveche
+<VelinTzanov> Kato studentite po lineina algebra v MIT ste znachi!
+<Swetko> ami dobre zameni 2 s k
+<VelinTzanov> Dokajete che edi kakvo si i te ti davat primer!
+<VelinTzanov> Kakvo znachi stremim se?
+<VelinTzanov> Kak se stremim?
+<Swetko> i taka ste stignem do dunoto 
+<VelinTzanov> NE se symniavam che shte stignete do dynoto nakraia. :)
+<Swetko> kato si pazim minimalna razlika
+<VelinTzanov> ZAshto da e minimalna?
+<VelinTzanov> I kato e minimalna kakvo ot tova?
+<VelinTzanov> Zashto minimalnata da ti garantira uspeh?
+<Swetko> ami nali pri purva vyzmoshnost ia minimizirame
+<Prince_of_Dawn> moje li az da se opitam
+<VelinTzanov> Moje, daje shte se radvam.
+<VelinTzanov> Toi Swetko pochti uspia de. :) Ama dai da vidim teb sega.
+<Prince_of_Dawn> neka sme postignali optimalno razdelqna na dwe chasti na voinitsite do reda k
+<Swetko> minimalnata vyzmoshna razlika ni garantira X-y/2 i y/2
+<VelinTzanov> Shte vzema vseki ot vas da go karam da mi dokazva po neshto... tova e dobra ideia. Otsega natatyk shte gi pravim tezi neshta ne na dobrovolen princip, a az shte posochvam.
+<VelinTzanov> Swetko, chakai da chuia Borisov.
+<VelinTzanov> Posle shte bistrim garanciite.
+<VelinTzanov> Borisov, da razbiram li che sa cheten broi?
+<VelinTzanov> Ili niama nujda da razbiram?
+<Prince_of_Dawn> i towa optimalno razdelqne da ni dawa na ednoto mqsto stoinost A a na drugoto A+p
+<VelinTzanov> Idealno.
+<VelinTzanov> I posle?
+<Prince_of_Dawn> toest ednata grupa e s stoinost p poweche
+<VelinTzanov> OK
+<Prince_of_Dawn> otiwama na sledwashtiq red
+<VelinTzanov> Indukcia li pravish?
+<Prince_of_Dawn> poneje voinitsite ot gorniq sa 2pati po skapi to predimstwoto weche e 2*p
+<VelinTzanov> Da, tolkova e.
+<VelinTzanov> I sega kakvo?
+<Prince_of_Dawn> i sega polzwaiki samo woinitsite ot tozi red ( k+1 ) trqbwa da gi razdelim taka che 2*p da stane min.
+<Prince_of_Dawn> ako na k-ti red raztsepwaneto e bilo optimalno na k+1 sashto shte bade
+<VelinTzanov> Mne.
+<VelinTzanov> Tova ne e ochevidno po princip.
+<Swetko> to az sustoto kazah
+<rangel__> zashto se opitvate da minimizirate razlikata kato e tolkova po-lesno da napravim grupa sys stojnost tochno Y/2 (i da znaem che drugata e s pone tolkova ponezhe situaciqta e pechelivsha)
+<VelinTzanov> Naprimer ako koeficienta ne beshe 2, a beshe 5/3 niamashe da e taka.
+<VelinTzanov> Hehe, znaeh si az che ima niakoi umen v tazi grupa. :)
+<Swetko> kak se pravi
+<VelinTzanov> Kaji kak ia pravim tazi grupa, Rangele. :)
+<rangel__> tova e grupa ekvivalentna na edin vojnik na 2-ro stypalo
+<VelinTzanov> Da.
+<rangel__> ako imam vojnik tam znachi moga da si napravq grupata, ako ne znachi mi trqbvat dvma na 3-to
+<VelinTzanov> Da
+<rangel__> ot tam vzimam kolkoto imam (ili maksimum dvama) i prodylzhvam da sybiram ostatyka ot po-golemite stypala
+<rangel__> taka dokato ne si zapylnq grupata
+<VelinTzanov> I si siguren, che shte uspeesh da ia zapylnish. Zashto?
+<Swetko> am otkude znaesh che ste moshesh
+<VelinTzanov> A siguren li si che niama da ia prehvyrlish?
+<Swetko> to i nie do tuk stignahme
+<rangel__> kato minavajki na vsqko sledvashto stypalo udvoqvam broq koito sa mi ostanli da vzema
+<Swetko> sus sigurnost niama da ia prehvyrli
+<rangel__> da, zashtoto znam oshte kolko vojnika mi trqbva da vzema za da napravq sumata tochno Y/2
+<VelinTzanov> I tova chislo e cialo, triabva da se otbeleji. :)
+<VelinTzanov> Tova e mnogo vajen fakt.
+<VelinTzanov> A zashto shte uspeesh sys sigurnost?
+<Swetko> ne sme si i misleli da vzemame 1/2 voinik - gorkichkia
+<rangel__> ami zashtoto ako nqma dostatychno vojnici za da napravq sumata to situaciqta opredeleno ne e pechelivsha :-)
+<Swetko> zasto puk da ne e
+<rangel__> ako ako ima poveche prosto shte si vzema tolkova kolkoto mi trqbvat
+<Swetko> da meshdu drugoto ima logika
+<VelinTzanov> Swetko, ako niama tolkova voinici, to Rangel shte e vzel vsichki voinici.
+<Prince_of_Dawn> towa koeto kazwa rangel e werno
+<Swetko> ama velin nesto ne ia vishda
+<VelinTzanov> Ako vsichki ne stigat za Y/2, to ochevidno ne stigat i za Y.
+<Prince_of_Dawn> ma towa koeto ubesnih az sashto e ma razdelqneto
+<VelinTzanov> Hahaaa, Swetko, az vijdam vsichko ot samoto nachalo.
+<Swetko> ami toi vzema Y/2 
+<VelinTzanov> I tvoeto reshenie.
+<VelinTzanov> I na Borisov.
+<VelinTzanov> I na Rangel.
+<VelinTzanov> Prosto iskam da gi dokazvate kato horata.
+<VelinTzanov> REshenieto na Rangel e mnogo krasivo i tochno.
+<Swetko> nie s borisov vzemame s min razlika a toi kolkoto mu triabva
+<VelinTzanov> Vashite se opletoha.
+<Swetko> sustite sa
+<VelinTzanov> Iasno mi e che i dvete rabotiat.
+<Prince_of_Dawn> towa ne e wajno
+<VelinTzanov> Tova koeto iskam e da se nauchite da mislite podredeno i da si davate smetka kakvo vi triabva i kakvo e izlishno.
+<VelinTzanov> Izlishno e da si uslojniavate jivota s minimalni razliki, ako vi triabva prosto Y/2
+<Prince_of_Dawn> shtom darjish shte napisha towa na rangel za domashno poneje sam pisal drugoto
+<VelinTzanov> Vyobshte ne dyrja, Borisov.
+<Swetko> ne mislia che e usloshniavane
+<Prince_of_Dawn> imam predwid da ne se karash s swetko
+<Swetko> tui kato na dadena stypka ste i toi i nie ste imame edna razlika p
+<VelinTzanov> Offf, Swetko, mama mu stara, triabva li na IOI da uslojnish neshto i da se vyrnesh s oshte edin bronz, za da razberesh kakvo imam predvid?!
+<Swetko> koiato ste tribva da navaksame
+<Prince_of_Dawn> i toi s teb nai weche
+<VelinTzanov> Momcheta, poglednete neshtata po-otgore.
+<VelinTzanov> NE se symniavam che resheniata vi sa verni.
+<Swetko> znam 
+<VelinTzanov> Symniavam se che na IOI shte vi dadat mnogo po-seriozna zadacha i shet se zabatachite da mislite podrobnosti, vmesto da vidite che vi triabva neshto konketno i iasno definirano.
+<VelinTzanov> Tova koeto iskam da se nauchite e da otdeliate pechelivshite ot gubeshtite situacii.
+<Swetko> ami az go vidiah
+<Prince_of_Dawn> qsno
+<VelinTzanov> DA gi otdeliate pravilno. I s minimalen broi usilia ot vasha strana.
+<VelinTzanov> Da se zamisliate vnimatelno nad tezi neshta.
+<VelinTzanov> Zashtoto tova malko "zaiajdane" koeto vi organizirah tuk shte go provedete sami sys sebe si na IOI.
+<VelinTzanov> I shte zagubite vreme.
+<VelinTzanov> Uchastval sym na mnogo systezania, pechelil sym mnogo ot tiah i sym gubel niakoi.
+<VelinTzanov> Provalial sym se na lesni, resheni zadachi i znam zashto.
+<VelinTzanov> Na SEIC imashe edna izklcuhitelno podobna zadacha na tazi
+<Swetko> ti nali kazvash che ako niamame vreme da dokazvame da karame po intuicia
+<Swetko> imash li gi tezi zadachi
+<VelinTzanov> I se omazah tochno v tova - da opraviam podrobnostite okolo nechetnite sluchai i tezi s ostatyk necheten po modul 2^x
+<Swetko> kakva beshe
+<VelinTzanov> Niakakava PYLNA prostotia - edni sa se naredili v kryg i se zadraskvat prez niakolko...
+<VelinTzanov> ... i nakraia se pita koi ostava ili neshto takova.
+<Swetko> ami na tez az znam edin metod
+<VelinTzanov> Reshih ia idealno.
+<Swetko> puskash brute forcr
+<VelinTzanov> Prosto reshenieto mi beshe tolkvoa slojno, che taka i ne go napisah do kraia.
+<Swetko> i zabeliazvash logika
+<Swetko> za malkite 
+<VelinTzanov> Da, tova e metoda.
+<Swetko> i ia prilagash za golemite
+<VelinTzanov> No na IOI niama da e i takava zadachata. Niama i da e Conquer
+<VelinTzanov> Shte e neshto na koeto kato nishto shte se opletete.
+<VelinTzanov> Az sym se oplital 2 pyti, deto imam tolkova uspehi...
+<VelinTzanov> ... iskam da ne povtariate moite greshki.
+<Swetko> na kolko sustezania si hodil che si se oplital samo 2 puti
+<VelinTzanov> Zatova iskam da vnimavate i da si davate smetka kak da delite neobhodimoto ot izlishnoto.
+<Swetko> ok
+<VelinTzanov> 2 pyti po tozi nachin. :)
+<VelinTzanov> Inache ne sym hodil na mnogo - 10-tina sa niakyde obshto. S kontrolnite 20-tina.
+<Swetko> da ne gubim na rangel vremeto
+<VelinTzanov> OK
+<VelinTzanov> Znachi ideaiata e iasna.
+<VelinTzanov> 1) Pravim dobra ocenka.
+<VelinTzanov> 2) Opredeliame koe e pechelivsho i koe e gubeshto
+<VelinTzanov> 3) Dokazvame si vryzkite - v sluchaia kak ot pechelivsha otivame v druga pechelivsha (za nas)
+<VelinTzanov> Dobre shte e da si dokajete i che gubeshtata e gubeshta, no tova shte vi go ostavia za domashno.
+<VelinTzanov> To e ochevidno de.
+<VelinTzanov> No vse pak triabva da mojete da go dokajete kato horata.
+<Swetko> dashe e po ochevidno ot pechelivshata
+<VelinTzanov> Da
+<VelinTzanov> Aide sega da razgledame druga neobhvatna igra.
+<VelinTzanov> Koi znae pravilata na Nim?
+<Swetko> na tova mi mirisa otnachalo
+<VelinTzanov> OK. Koi ne gi znae? :)
+<Swetko> interesna igra s mnogo variacii i skriti podobia
+<Prince_of_Dawn> az
+<sssa88> az ne gi znam
+<VelinTzanov> OK, obiasniavame za Vlado.
+<Prince_of_Dawn> a za men
+<VelinTzanov> OK, i za teb. :)
+<VelinTzanov> Imame N kupchini s topcheta.
+<VelinTzanov> Kupchina i si ima Ai topcheta v neia.
+<VelinTzanov> Igraem slednata igra.
+<VelinTzanov> Na vseki hod edinia ot dvamata igrachi si izbira kupchina i vzima ot neia X topcheta (1 <= X <= Ai)
+<VelinTzanov> Tozi koito vzeme poslednoto topche pecheli.
+<VelinTzanov> Chakai da izmislia niakakvi limiti...
+<VelinTzanov> Da rechem 1000 kupchini s po do 1000 topcheta. :)
+<Swetko> 1000^1000 situacii:)
+<Swetko> moshe i 1000 s 2^63-1 
+<VelinTzanov> Kakvo pravim sega?
+<VelinTzanov> Kak reshavame igrata?
+<VelinTzanov> Koi znae trika?
+<Swetko> az
+<VelinTzanov> Drugi?
+<Swetko> ama ne suvsem - zabravih
+<VelinTzanov> (Koito ne go znae syshto da si kaje)
+<rangel__> vizhdal sym go no shte trqbva da si go izmislqm pak
+<Prince_of_Dawn> az ne
+<sssa88> za maj ne go znam
+<sssa88> za=az
+<VelinTzanov> Igrata e aciklichna, kakto vijdate.
+<VelinTzanov> Dosega ne sym pravil ciklichni, neobhvatni igri, no predpolagam che ne e nevyzmojno.
+<VelinTzanov> Zasega niama da vi davame takiva. :)
+<VelinTzanov> Obshto vzeto ideiata e (kakto i s obhvatnite) da "spleskate" igrata v obhvatna.
+<Swetko> t.e. znam edin nachin koito ste vuvri ama  v momenta ne sestam za hubavia
+<VelinTzanov> Kato vsiaka situacia ia slojite v niakakvo mnojestvo, taka che da niama razlika mejdu situaciite v dadeno mnojestvo.
+<VelinTzanov> Triaba vsiaka situacia ot mnojestvoto da vodi do edni i syshti mnojestva.
+<VelinTzanov> Razbirate li za kakvo govoria?
+<Swetko> imam ideia
+<VelinTzanov> Swetko, tigo.
+<rangel__> da
+<VelinTzanov> tiho
+<VelinTzanov> Vlado, Borisov?
+<sssa88> az maj ne razbiram
+<VelinTzanov> OK
+<Swetko> da priloshim stanartnite algoritmi i da zabeleshim niakakva logica v pechelivshite i gubestite pozicii
+<VelinTzanov> Imame graf.
+<VelinTzanov> Swetko, molia te!
+<VelinTzanov> Vsichko po reda mu.
+<Swetko> ok
+<VelinTzanov> Pomolih te da zapazish mylchanie, zashto se obajdash?
+<VelinTzanov> OK
+<VelinTzanov> Imame graf.
+<VelinTzanov> Situacii i hodove (vyrhove i rebra)
+<VelinTzanov> Iskame da go oprostim (zashtoto e ogromen)
+<VelinTzanov> Za celta iskame da obedinim situaciite v grupi (mnojestva, klasove, kakvoto si poiskash)
+<VelinTzanov> Edno obedinenie v grupi e validno togava i samo togava kogato niama razlika mejdu situaciite v edna grupa.
+<VelinTzanov> T.e. naprimer vsichki situacii v grupa 1 vodiat do grupa 2 i grupa 5, no ne i do grupa 3 i grupa 4.
+<VelinTzanov> Naprimer score.
+<VelinTzanov> Edna situacia e 3-ka chisla: tekushtata pozicia i rezultata do momenta.
+<VelinTzanov> Obshto 1 000 000 000 situacii.
+<VelinTzanov> No mojem da gi grupirame po priznak tekushtata pozicia (i da ignorirame rezultata)
+<VelinTzanov> Taka poluchavame 1 000 grupi.
+<sssa88> aha
+<sssa88> razbrah
+<Swetko> kak taka samo 1000
+<VelinTzanov> Sled tova grupirane, situaciite v edna grupa sa absolutno nerazlichimi.
+<VelinTzanov> Ami imash 1000 pozicii na Score.
+<VelinTzanov> NE biaha li 1000?!
+<Swetko> a da
+<VelinTzanov> OK
+<VelinTzanov> Nakraia, tozi pyt s po-slojna tehnika, spleskvame oshte vednyj situaciite, tozi pyt na 2 grupi - pechelivshi i gubeshti.
+<VelinTzanov> Na vsiaka obhvatna igra vsyshtnost pravim tova - grupirame v 2 (ili 3) grupi - pechelivshi i gubeshti (i eventualno neutralni, bezkraini i t.n.)
+<VelinTzanov> Principna razlika mejdu dvete deistvia niama.
+<VelinTzanov> RAlzikata e samo v sredstvata koito izpolzvame.
+<VelinTzanov> V edinia sluchai si polzvame akyla, a v drugata puskame mashinata da smiata.
+<VelinTzanov> Prichinata za razi razlika se systoi v razmera na vhoda.
+<VelinTzanov> Kogato vhoda e 1000, togava slojnostta na zadachata, intuitivno kazano, e 1000.
+<VelinTzanov> Zatova ako imate 1 000 000 000 situacii, iavno ima niakakva logika s koiato mojete da gi svalite na 1000.
+<VelinTzanov> Ili, da kajem O(1000)
+<VelinTzanov> No ako imate 1000 moje bi ne mojete da gi svalite, prosto zashtoto vhoda vi e s razmer 1000 i ima tvyrde mnogo varianti.
+<VelinTzanov> Sega da vidim Nim.
+<VelinTzanov> Situaciite ne sa 1000^1000. :)
+<VelinTzanov> T.e. mojete i tolkova da gi napravite, no mojete i po-dobre.
+<VelinTzanov> Vsyshtnost okazva se che v Nim lesno mojete da gi razdelite i na 2 grupi daje - pechelivshi i gubeshti.
+<VelinTzanov> Ostava samo da izmislim kak.
+<VelinTzanov> Ot kyde da zapochnem?
+<VelinTzanov> Ami kak kyde - ot definiciata.
+<VelinTzanov> Pechelivshite situacii vodiat do pone edna gubeshta.
+<VelinTzanov> Gubeshtite vodiat samo do pechelivshi.
+<VelinTzanov> Finalnata situacia e gubeshta.
+<Swetko> e che tia ne li kato na crazy za pechelivshi i gubesti - t.e. standartno aciklichno bez stoinosti
+<VelinTzanov> Aham.
+<VelinTzanov> Sega triabva da zabelejim niakakyv priznak sred situaciite koito da ni dava tova.
+<VelinTzanov> Ako priznaka go ima, znachi ne mojem da otidem v druga situacia s tozi priznak. Ako go niama, znachi mojem.
+<VelinTzanov> Tova e kakvo se tyrsi.
+<VelinTzanov> Sega da vidim kakvo e dadeno.
+<VelinTzanov> Dadeni sa ni N chisla.
+<VelinTzanov> Kak da gi exploatirame?
+<VelinTzanov> Vsichki li ste tuk, btw?
+<Swetko> da priloshim stanartnite algoritmi i da zabeleshim niakakva logica v pechelivshite i gubestite pozicii
+<Prince_of_Dawn> da
+<sssa88> tuk
+<rangel__> da, no sled malko izlizam
+<VelinTzanov> Tochno taka, Swetko, logikata tyrsim.
+<VelinTzanov> Aaa, razbrah te, iskash da kajesh da ne mu mislim, a da puskame algoritya (nishto che e 1000^1000) i da vidim malkite rezultati?
+<Swetko> ne znam kolko ste e trudno po moia metod
+<VelinTzanov> Da, tova e dobyr podhod kato ne mojete da se setite.
+<Swetko> e da probvame za 100^3
+<Swetko> primerno
+<VelinTzanov> Po princip si zaslujava da se opita. No sega niama da go pravim, a shte se opitame da go izmislim.
+<VelinTzanov> Momcheta, razbrahte li ideiata na Swetko? Mnogo e polezna. Az sym pechelil kapitanskoto miasto v nacionalnia s neia, a Nikolov - laptop. :)
+<VelinTzanov> Az na poslednoto kontrolno 2002-ra, a Nikolov na SEIC.
+<sssa88> da
+<VelinTzanov> Borisov, Rangel?
+<rangel__> da
+<Prince_of_Dawn> znam kak se reshil tam edna zadacha
+<VelinTzanov> Pitam te podhoda razbirash li go?
+<Prince_of_Dawn> da
+<VelinTzanov> Zashto vinagi mi otgovariash s akcent vyrhu nai-neznachitelnoto? :(
+<VelinTzanov> OK
+<Prince_of_Dawn> ma ti ni kaji istinskiq
+<VelinTzanov> Ta imame N chisla.
+<VelinTzanov> Iskame takova svoistvo, che ako go niamame da mojem da go pridobiem, a ako go imame da ne mojem da go zadyrjim.,
+<VelinTzanov> Po princip v tia igri s kupchinite topcheta kakvo e tova koeto ne mojem da zadyrjim?
+<VelinTzanov> Nai-chesto tova e broia na topchetata - shtem ne shtem triabva da namalim tozi broi.
+<VelinTzanov> Eto edna druga igra - imame samo 1 kupchina s adski mnogo topcheta. Mojem da vzimame 1, 2 ili 3 topcheta.
+<VelinTzanov> Pak - za koito niama topche gubi igrata.
+<VelinTzanov> Koi situacii sa pechelivshi i koi sa gubeshti?
+<VelinTzanov> Koito znae da kaje.
+<Swetko> tam e lesno
+<Swetko> ste vidim zakonomernost
+<VelinTzanov> Da, tam shte mine metoda na Swetko. :)
+<Swetko> kato si napravim primetrno igrata do 10-20 ch edashe i do 6
+<VelinTzanov> E, pone do 8. :)
+<Swetko> moshe
+<VelinTzanov> Gubeshti sa tezi koito se deliat na 4.
+<VelinTzanov> T.e. 4, 8, 12, 16, ...
+<VelinTzanov> Drugite sa pechelivshi.
+<VelinTzanov> Zashto?
+<VelinTzanov> Zashtoto deleneto na 4 e neshto koeto ne mojete da zadyrjite. No koeto vinagi mojete da pridobiete ako niamate.
+<VelinTzanov> IAsno li e zashto stava taka?
+<rangel__> da
+<sssa88> da
+<VelinTzanov> Borisov?
+<Prince_of_Dawn> ne
+<VelinTzanov> Koe ne e iasno?
+<Prince_of_Dawn> ne bqh prochel pravilno uslowieto na igrata
+<VelinTzanov> Zashto ot pechelivsha otivash v gubeshta ili zashto ot gubeshtata ne mojesh da otidesh v gubeshta?
+<VelinTzanov> OK
+<VelinTzanov> Sega iasno li e?
+<Prince_of_Dawn> mi kak taka tezi koito se delqt na 4
+<VelinTzanov> Ako imash 16 topcheta napriemr.
+<VelinTzanov> SI gubesht.
+<VelinTzanov> Shtoto kakvoto i da karash protivnika te vkarva v 12 topcheta.
+<VelinTzanov> Posle kakvoto i da karash otivash v 8.
+<VelinTzanov> Posle 4.
+<VelinTzanov> I nakraia 0.
+<Prince_of_Dawn> aha
+<VelinTzanov> I SMYRT! Gubisj!
+<Prince_of_Dawn> qsno
+<VelinTzanov> Gubish, t.w.
+<VelinTzanov> t.w. = t.e.
+<VelinTzanov> Sega na NIM.
+<VelinTzanov> Ta ideiata e pak da si namerim takyv kriterii.
+<VelinTzanov> Idei?
+<VelinTzanov> Neshto triabva da e 0 (no ne ostatyka po modul 4 tozi pyt).
+<Prince_of_Dawn> mi palno ili prazno
+<VelinTzanov> Koe e tova neshto koeto triabva da e 0?
+<VelinTzanov> Triabva da e takova, che ako e 0 da ne mojem da go zapazim 0, a ako ne e 0 da mojem da go svalim do 0.
+<VelinTzanov> I triabva da e kombinacia ot chislata na razlichnite kupchini.
+<VelinTzanov> (shtoto vsiaka kupchina e vajna)
+<VelinTzanov> Tova dosega go napravihme bez da izpolzvame genialna logika ili USBSSS.
+<VelinTzanov> No tova e dostatychno za da se setite.
+<Swetko> sigurno ima samo 1 vyzmoshnost
+<VelinTzanov> Kakva e operaciata s koiato kombinirame razlichnite chisla, za da poluchim jelanoto svoistvo?
+<rangel__> az izlizam, shte si docheta drugoto ot log-a, i shte si napisha domashnoto :-)
+<VelinTzanov> Da, iavno e samo 1 vyzmojnost. Vse pak imash unikalen otgovor (unikalno razdelenie na pechelivshi i gubeshti)
+<VelinTzanov> OK
+<VelinTzanov> Uspeh na dyrjavnia izpit.
+* rangel__ has left #ioi
+<Prince_of_Dawn> +
+<Swetko> zatova niama da izdavam
+<VelinTzanov> Hmm... kakva 0 mojesh da imash s +? :)
+<VelinTzanov> Da, ne izdavai.
+<VelinTzanov> Vlado?
+<sssa88> ami izvazdane ni e operaciqta maj
+<VelinTzanov> I kak izvajdame N chisla? :)
+<VelinTzanov> Shte vi spestia gyrcha - operaciata e pobitov XOR.
+<VelinTzanov> Pravite XOR-a na dvete chisla.
+<VelinTzanov> Taka ako toi e 0 ne mojete da go zadyrjite 0.
+<VelinTzanov> IAsno zashto, nali?
+<sssa88> ne
+<Prince_of_Dawn> ne
+<VelinTzanov> Shtoto triabva da promenite niakoe ot chislata.
+<VelinTzanov> Tova znachi che shte promenite i XOR-a.
+<VelinTzanov> Koeto znachi che XOR-a poveche niama da e 0.
+<Prince_of_Dawn> kakwo stana s 1000 chisla ot whoda i  kak stignahme do Xor
+<VelinTzanov> Taka ot chisla s XOR 0 (gubeshta situacia) zadyljitelno otivam v chisla s XOR != 0 (pechelivsha situacia)
+<VelinTzanov> Imash 1000 chisla.
+<VelinTzanov> Pravish im pobitov XOR na tia chisla.
+<VelinTzanov> Ako rezultatyt e 0 situaciata e gubeshta. Inache e pechelivsha.
+<VelinTzanov> Tova e tvyrdenieto.
+<VelinTzanov> Razbirash li tvyrdenieto?
+<Prince_of_Dawn> da
+<VelinTzanov> Dokazatelstvoto sled malko.
+<VelinTzanov> Vlado, ti?
+<sssa88> da
+<VelinTzanov> Sgea triabva da dokajem 3 neshta:
+<VelinTzanov> 1) Finalnata (gubeshtata) situacia ima XOR 0. Tova e ochevidno.
+<Prince_of_Dawn> da
+<VelinTzanov> 2) Situaciata s XOR 0 vodi samo do situacii s XOR != 0
+<VelinTzanov> 2) razbirate li zashto e viarno?
+<VelinTzanov> Zashtoto triabva da promenite tochno edno chislo i taka promeniate XOR-a sys sigurnost.
+<Prince_of_Dawn> ne
+<sssa88> maj razbrah
+<VelinTzanov> Ne moga da zapazia XOR-a ako promenia edno chislo.
+<VelinTzanov> Zashtoto vse niakoi ot bitovete shte se promeni.
+<VelinTzanov> Ako nikoi bit ne se promeni, znachi ne sym promenil chisloto.
+<VelinTzanov> Borisov?
+<Prince_of_Dawn> da
+<VelinTzanov> Razbra li?
+<Prince_of_Dawn> daa
+<VelinTzanov> Taka.
+<VelinTzanov> 3) Ot vsiaka situacia s XOR != 0 mojem da stignem do situacia s XOR = 0
+<VelinTzanov> Zashto?
+<Swetko> to mi e problema
+<VelinTzanov> Da, tova e nai-trudnata chast. :)
+<Swetko> ami zastoto kato napravim XOR na vsichki chisla
+<VelinTzanov> NEka otbelejim chislata s a1, a2, ..., an
+<Swetko> ste poluchim edno chislo
+<VelinTzanov> Neka XOR-a im e x
+<VelinTzanov> Neka nai-goliamoto to a-tata e ai
+<Swetko> x moshe da e po goliamo ot ai
+<Prince_of_Dawn> ne moje
+<Swetko> moshe
+<VelinTzanov> Togava mojem da vzemem ai XOR x
+<Prince_of_Dawn> ima pone tolkowa bit-a
+<Swetko> aha
+<Swetko> i az tova si misleh
+<VelinTzanov> I da zamenim ai s ai XOR x
+<Swetko> ama pak moshe da e po goliam
+<VelinTzanov> Moje li?
+<Prince_of_Dawn> NE
+<Swetko> aiXOR x= XOR(a1,a2......ai-1,ai+1.....an)
+<VelinTzanov> Chakai da pomislia malko.
+<Swetko> spored men 
+<Swetko> moshe da probvame vsiako an
+<Swetko> i taka
+<VelinTzanov> Absurd.
+<Swetko> stava lineino po n
+<VelinTzanov> Ako moje s niakoe moje i s nai-goliamoto.
+<VelinTzanov> Samo s nai-goliamoto ima smisyl da probvame.
+<VelinTzanov> Chakai da vidia samo zashto stavashe po-malko sys sigurnost...
+<VelinTzanov> Dai mi sekunda.
+<Prince_of_Dawn> nai-golqmoto ima nai mnogo bitowe
+<Swetko> ama puk to zadylshitelno triabva da moshe
+<VelinTzanov> siguren sym, che e viarno.
+<VelinTzanov> Borisvo, ne e recheno da ima nai-mnogo bitove.
+<VelinTzanov> Abe vijte sega:
+<VelinTzanov> Gledame nai-starshia bit.
+<VelinTzanov> Nai-starshia bit na ai sys sigurnost e >= ot nai-starshia na X.
+<VelinTzanov> Nali taka?
+<Swetko> i az tova otkrih
+<sssa88> da
+<Prince_of_Dawn> da
+<Swetko> ako e raven lesno
+<Swetko> ama ako ne e
+<VelinTzanov> Ako e raven - prosto smeniame nai-golemia bit i si pravim kakvoto si iskame s drugite bitove.
+<Swetko> po sustata logika ako ne e raven to sledvshtia starhi bit
+<VelinTzanov> Ako ne e - vzimame tova ai koeto ima set-nat tozi bit, koito e nai-golemia bit na X. :)
+<VelinTzanov> Aide sega da go napisha kulturno:
+<Swetko> ami to pak  e nai goliamoto
+<VelinTzanov> Vzimame nai-starshia bit na X.
+<VelinTzanov> Sys sigurnost ima chislo koeto ima tozi bit set-nat.
+<Swetko> da da
+<VelinTzanov> (ako niamshe to togava X niamashe da go ima set-nat, shtoto X e XOR na vsichki chisla)
+<VelinTzanov> Posle vzimame tova chislo i go XOR-vame s X i go zameniame s rezultata.
+<VelinTzanov> Rezultatyt sys sigurnost e po-malyk ot predishnata stoinost na chisloto. Zatova mojem da napravim tazi stypka.
+<VelinTzanov> IAsno li e zashto?
+<Prince_of_Dawn> X Xor na vsichki li e posledno ili na vsichki bez nai-golqmoto
+<sssa88> da
+<VelinTzanov> Zabravi za nai-goliamoto, Borisov.
+<VelinTzanov> Tova za nai-goliamoto beshe greshla.
+<VelinTzanov> greshka
+<VelinTzanov> Vlado go razbra.
+<VelinTzanov> Sega ostava Borisov. :)
+<VelinTzanov> Procheti pak tova koeto kazah i mi kaji iasno li e.
+<Prince_of_Dawn> mai mi e qsno
+<Swetko> da
+<sssa88> razbrah zashto rezultata e po-malyk obache ne razbrah zashto kato napravim taka xor-a na chislata shte e 0
+<VelinTzanov> <VelinTzanov> Vzimame nai-starshia bit na X.
+<VelinTzanov> <VelinTzanov> Sys sigurnost ima chislo koeto ima tozi bit set-nat.
+<VelinTzanov> <Swetko> da da
+<VelinTzanov> <VelinTzanov> (ako niamshe to togava X niamashe da go ima set-nat, shtoto X e XOR na vsichki chisla)
+<VelinTzanov> <VelinTzanov> Posle vzimame tova chislo i go XOR-vame s X i go zameniame s rezultata.
+<VelinTzanov> <VelinTzanov> Rezultatyt sys sigurnost e po-malyk ot predishnata stoinost na chisloto. Zatova mojem da napravim tazi stypka.
+<VelinTzanov> <VelinTzanov> IAsno li e zashto?
+<VelinTzanov> Sega obiasniavam.
+<VelinTzanov> Kato napravim taka sme zamenili Ai sys Ai XOR X
+<VelinTzanov> Togava na Ai sme mu promenili tezi bitove koito sa bili set-nati v X.
+<VelinTzanov> Tova e iasno, nali?
+<Prince_of_Dawn> da
+<VelinTzanov> Togava koi bitove sme promenili na X? Ami syshtite - zashtoto X e XOR na vsichki A-ta.
+<Prince_of_Dawn> tragwam otiwam na Biologiq
+<VelinTzanov> Shtom sme promenili na X tezi bitove koito sa bili setnati na X, znachi X stava 0.
+<VelinTzanov> OK. Shte te puskam, Borisov.
+<VelinTzanov> Posle procheti loga.
+<VelinTzanov> OK?
+<Prince_of_Dawn> ok
+<VelinTzanov> Vlado, razbra li zashto X stava 0 sled takyv hod?
+<sssa88> ne
+<VelinTzanov> <VelinTzanov> Kato napravim taka sme zamenili Ai sys Ai XOR X
+<VelinTzanov> <VelinTzanov> Togava na Ai sme mu promenili tezi bitove koito sa bili set-nati v X.
+<VelinTzanov> <VelinTzanov> Tova e iasno, nali?
+<sssa88> mislq...
+<VelinTzanov> Tova iasno li e, Vlado
+<sssa88> qsno
+<VelinTzanov> Taka.
+<VelinTzanov> <VelinTzanov> Togava koi bitove sme promenili na X? Ami syshtite - zashtoto X e XOR na vsichki A-ta.
+<VelinTzanov> <Prince_of_Dawn> tragwam otiwam na Biologiq
+<VelinTzanov> <VelinTzanov> Shtom sme promenili na X tezi bitove koito sa bili setnati na X, znachi X stava 0.
+<VelinTzanov> A tova?
+<sssa88> da maj veche zagrqh
+<VelinTzanov> Sled izvestno vreme XOR-stvane shte se nauchite da gi manipulirate lesno tia raboti...
+<VelinTzanov> ... obshto vzeto XOR-a e kato sybirane i umnojenie, no bez prenos.
+<VelinTzanov> Taka.
+<VelinTzanov> Shtom dokazahme i stypka 3, znachi veche dokazahme che tova (tozi XOR) opredelia koia situacia i pechelivsha i koia gubeshta... kakto i kakvo da karame za da premestim protivnika v gubeshta.
+<VelinTzanov> "i pechelivsha" = "e pechelivsha"
+<VelinTzanov> Iasno?
+<sssa88> da
+<Swetko> da 
+<VelinTzanov> Tova e igrata Nim.
+<VelinTzanov> Za razlika ot drugite domashni obache, Nim ne e prosto primer.
+<VelinTzanov> Nim e ideia.
+<VelinTzanov> Kakvo imam predvid shte razberete utre.
+<VelinTzanov> A sega neka formuliram Nim kato domashno vse pak.
+<VelinTzanov> Napishete Nim.exe
+<VelinTzanov> Koiato chete ot standartnia vhod N
+<VelinTzanov> Posle N chisla na edin red - broia na topchetata vyv vsiaka grupa.
+<VelinTzanov> I igrae kato na standartnia izhod vadi po dve chisla na red:
+<VelinTzanov> Nomera na grupata i kolko topcheta vzima.
+<VelinTzanov> I chete hodovete na protivnika po syshtia nachin.
+<VelinTzanov> Naprimer:
+<VelinTzanov> Chete:
+<VelinTzanov> 3
+<VelinTzanov> 1 2 4
+<VelinTzanov> Pishe:
+<VelinTzanov> 3 1
+<VelinTzanov> (taka stava 1 2 3)
+<VelinTzanov> Chete:
+<VelinTzanov> 3 3
+<VelinTzanov> Pishe:
+<VelinTzanov> 2 1
+<VelinTzanov> Chete:
+<VelinTzanov> 1 1
+<VelinTzanov> Pishe:
+<VelinTzanov> 2 1
+<VelinTzanov> Izliza (shtoto pecheli)
+<VelinTzanov> OK?
+<Swetko> ok
+<VelinTzanov> Vlado?
+<sssa88> ok
+<VelinTzanov> Syshto i Conquer vi e za domashno.
+<VelinTzanov> Toi Swetko ia e pisal veche de.
+<VelinTzanov> Vyprosi po dneshnia material?
+<sssa88> ne
+<VelinTzanov> Veche ste maistori na neobhvatnite igri znachi. :)
+<Swetko> ami utre
+<Swetko> pak li igri
+<VelinTzanov> Da, utre za posledno.
+<VelinTzanov> Kolkoto syvsem da vi izmychim.
+<VelinTzanov> A posle materiala shte e mnogo podoben na igrite.
+<VelinTzanov> Abe vyobshte cialata informatika e edno i syshto neshto. :)
+<Swetko> btw. edna ot zadachite na BOI 2003 ia vidiah na edna polska olimpiada ot 99 mai - beshe samo malko modificirana
+<VelinTzanov> Kolkoto poveche napredvate v naukata tolkova poveche vijdate obshtite neshta i vryzkite... :)
+* Disconnected
+Session Close: Wed Jun 16 22:44:13 2004
+
+Session Start: Wed Jun 16 22:44:44 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+<VelinTzanov> Neshto prekysna.
+<Swetko>  <VelinTzanov> A posle materiala shte e mnogo podoben na igrite.
+<Swetko> [08:43] <Swetko> btw. edna ot zadachite na BOI 2003 ia vidiah na edna polska olimpiada ot 99 mai - beshe samo malko modificirana
+<Swetko> [08:43] <Swetko> kakto i zadachata ot kontrolnoto i ot blagoevgrad e davana na NOI 1990 ili 1991
+<Swetko> [08:44] * VelinTzanov has quit IRC (Read error: 104 (Connection reset by peer))
+<VelinTzanov> Ta kazvah slednoto:
+<VelinTzanov> <VelinTzanov> A posle materiala shte e mnogo podoben na igrite.
+<VelinTzanov> <VelinTzanov> Abe vyobshte cialata informatika e edno i syshto neshto. :)
+<VelinTzanov> <Swetko> btw. edna ot zadachite na BOI 2003 ia vidiah na edna polska olimpiada ot 99 mai - beshe samo malko modificirana
+<VelinTzanov> <VelinTzanov> Kolkoto poveche napredvate v naukata tolkova poveche vijdate obshtite neshta i vryzkite... :)
+<VelinTzanov> * Disconnected
+<VelinTzanov> MAtematicite veche ne praviat razlika mejdu algebra, geometria, teoria na chislata i analiz. :)
+<VelinTzanov> Fizicite ne praviat razlika mejdu elektrichna sila, gravitacia i raznite tam atomni silici.
+<Swetko> az si znaeh che sa edno i susto 
+<sssa88> e to i az nq pravq razlika mezdu teq neshta :)
+<Swetko> ama koi da me chue :)
+<VelinTzanov> Informaticite veche i te ne praviat mnogo razlika mejdu greedy, dinamichno, igri, log-raboti, labirinti, string-ove i vsichkite tam raboti... :)
+<Swetko> vinagi sum si mislel che niama takova nesto kato masa ama niama polza ot tova
+<VelinTzanov> Mai neshtata se deliat na NP-complete i P samo... :)  Ama az viarvam che niakoi shte nameri P algoritym za NP-complete zadachite... :)
+<Swetko> a az ne
+<Swetko> niama smisul
+<VelinTzanov> Vsyshtnosyt da - po-normalno zvuchi da ne nameriat. :)
+<VelinTzanov> Znachi niakoi shte dokaje che niama. :)
+<Swetko> mihai sto ne se probva
+<VelinTzanov> Ami toi se probva usileno. :)
+<VelinTzanov> Tova avtomatichno ti nosi $100,000... ako ne i $1,000,000
+<Swetko> samo tolkova
+<VelinTzanov> Vyobshte shte stanesh nai-velikia CS za vsichki vremena! :)
+<Swetko> ne che e malko
+<Swetko> ama vse pak tova otkritie ste promeni vsichko
+<VelinTzanov> Ako dokajesh che P = NP shte poluchish i poveche. :)
+<VelinTzanov> Ako dokajesh che P != NP nishto niama da promeni i nishto niama da poluchish. :)
+<VelinTzanov> Osven Turing Award i razni Research Grant-ove... :)
+<Swetko> posle ste triabva da namerish reshenie na nereshimite zadachi
+<VelinTzanov> OK
+<VelinTzanov> Aide az shte vi ostaviam.
+<VelinTzanov> Domashnoto za utre - kakto obiknovenno.
+<sssa88> chao
+<VelinTzanov> Chao i uspeh!
+<Swetko> ok
+* Disconnected
+Session Close: Wed Jun 16 22:50:34 2004

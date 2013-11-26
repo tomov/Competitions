@@ -1,0 +1,742 @@
+
+Session Start: Sat Jun 19 22:33:55 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+* Prince_of_Dawn has joined #ioi
+* CS sets mode: +v Prince_of_Dawn
+* VelinTzanov sets mode: +ooo Prince_of_Dawn rangel__ Swetko
+* sssa88 has joined #ioi
+<sssa88> zdr
+<rangel__> dobro utro
+<Swetko> dobro
+<VelinTzanov> Dobyt vecher. :)
+<VelinTzanov> Dobyt = Dobyr
+* VelinTzanov sets mode: +o sssa88
+<VelinTzanov> Btw, pri men vse oshte e svetlo... predpolagam pri vas veche e svetlo. :)
+<rangel__> pravilno predpolozhenie :-)
+<Swetko> da]
+<VelinTzanov> Vyprosi po vcherashnia material i vcherashnoto domashno?
+<sssa88> ne
+<rangel__> nqkakvi idei za onova drugo reshenie na XOR? (v smisyl ako si go vizhdal)
+<Swetko> ami ne go li prochete
+<rangel__> e to opisanieto e super podrobno :-) az nishto ne razbrah :-)
+<rangel__> pyk ako si mislish che moga da razbera kakvo pravqt v onezi 10KB kod na C ne si poznal
+<rangel__> (tova za opisanieto e sarkazym :-)
+<VelinTzanov> :)
+<VelinTzanov> Abe ne vi triabva da chetete 10KB kod, za da si kachite rezultata ot 88 na 100. :)
+<sssa88> moq beshe 85
+<rangel__> ne prosto mi e ljubopitno tova za matchinga, ponezhe maj i ot nqkakvo CEOI vidqh nqkakva zadacha 
+  koqto q pravqt s dylboko neocheviden matching
+<rangel__> imame li predvideni zanimaniq po matching?
+<Swetko> ot CEOI2002
+<Swetko> li
+<VelinTzanov> Rangele, ima, no sa sled BOI.
+<VelinTzanov> Na BOI ne viarvam da vi dadem matching... :)
+<rangel__> ok :-)
+<Swetko> po princip na IOI mai e niamalo potoci i comp gepmetry ama na poslednoto izpraskaha edno lesno comp 
+  geom taka che moshe i na tova da se obyrne vnimanie
+<Swetko> potoci niama ama matching ima
+<VelinTzanov> Makar che triabva da ste gotovi za vsichko de... az i drugi neshta ne viarvah che shte vi 
+  dadem, pyk e na - davame vi gi. :)
+<Swetko> na BOI 2002 imashe 2 zdravi geometrii
+<rangel__> Swetko: da ot CEOI 2002 e, royal guards
+<Swetko> ami da
+<Swetko> malko neoocheviden
+<Swetko> ama inache iako reshenie
+<rangel__> e reshenieto e qko, no ne bih se setil :-)
+<Swetko> za sushalenie ako ne se setish ne moshesh da ia reshish
+<VelinTzanov> I Guards i Knights i dvete "iaki" geometrii shte gi pravim mejdu BOI i IOI.
+<Swetko> kakvo ste pravim dnes
+<VelinTzanov> S tezi ot vas koito se klasirat.
+<VelinTzanov> Dnes shte razshiriavame grafi, Swetko.
+<Swetko> ste uchim 
+<VelinTzanov> Pyrvo iskam da chuia niakoi ima li oshte niakakvi vyprosi?
+<Swetko> sloshni matching algoritmi - Hopcroft li beshe onia
+<Swetko> ne
+<Swetko> super za graphite
+<rangel__> ne
+<Swetko> tezi mi haresvat
+<sssa88> nqma vyprosi
+<VelinTzanov> Borisov?
+<Prince_of_Dawn> da
+<Prince_of_Dawn> nqmam waprosi
+<Prince_of_Dawn> gotow sam sa grafi 
+<VelinTzanov> OK
+<VelinTzanov> Kajete pyrvo koi kakvo e pravil. Swetko?
+<Swetko> sticks ia napisah i sega ste ia testvam sus sebe si
+<Swetko> edna ruska napisah
+<Swetko> i oste edna ama ne raboti i dnes ste ia prenapisha
+<Swetko> nauchih che moshe da se pishe hash tablici bez svarzani spisuci
+<VelinTzanov> :) To test-a sys sebe si e iasno che shte mine, shtoto dvete programi shte sa na edno mnenie 
+  koe e pechelivsho i koe e gubeshto.
+<Swetko> ama oste ne sum probval
+<VelinTzanov> Dobre, dobre...
+<VelinTzanov> Vlado?
+<Swetko> ama ste gledam da pobeshdava tozi koito triabva
+<VelinTzanov> :)
+<sssa88> ami az samo domashnoto
+<VelinTzanov> Aide, sybota e, prosteno ti e. :)
+<VelinTzanov> Borisov?
+<Prince_of_Dawn> mi domashnoto i ponauchih za edin ezik (Icon) w koito imah bezkraini beztipowi chisla i 
+  drugi blaginki
+<Prince_of_Dawn> naprawo sam udiwen zashto ne pishem na sastezanie na nego
+<VelinTzanov> Zashtoto kato napravish ++ i ne znaesh kolko vreme shte otneme. :)
+<Prince_of_Dawn> be dosta barz si beshe
+<VelinTzanov> Problemyt ne e v byrzinata, a v tova che ne znaesh. :)
+<VelinTzanov> I za kakvo go uchi tozi Icon sega?
+<Prince_of_Dawn> mi chowek ne znae kakwo shte mu pomogne. Ne sam uchil ezika neshto gledahme zadachi 
+  napisani na Icon
+<VelinTzanov> AAaaaa, znaeh si az che Banchev e namesen... :)
+<VelinTzanov> Toi prepodava li vi veche Awk i Haskel? :)
+<Prince_of_Dawn> Haskel da
+<Prince_of_Dawn> ;)
+<VelinTzanov> Banchev obichashe da pishe avtorovite reshenia na zadachite si na Awk i na Haskel...
+<VelinTzanov> ... imaha samo 2 problema:
+<VelinTzanov> 1) Biaha tvyrde bavni
+<VelinTzanov> 2) Ne raboteha. :)
+<VelinTzanov> Ama nali znaete - vinagi imashe systezatel, koito da e reshil zadachata za 100... :)
+<VelinTzanov> Rangel?
+<rangel__> napisah 3 lesni zadachki ot USACO-to
+<rangel__> i domashnata... i tova e
+<Swetko> ot usaco traininga ili ot systezaniata
+<rangel__> ot training-a
+<rangel__> te zatova bqha lesni :-)
+<Swetko> stot na sustezaniata ne chak tolkova lesni
+<VelinTzanov> :)
+<VelinTzanov> OK.
+<VelinTzanov> Pyrva zadachka za dnes:
+<VelinTzanov> BalticOI 2002, zabravih imeto.
+<VelinTzanov> http://aldona.mii.lt/pms/olimp/english/boi2002/kita/tasks/speed-en.pdf
+<VelinTzanov> A! Speed! :)
+<Swetko> sto da ne stane da si testvam sticks - pri men si raboti - dashe i vizualizacia imam izgleshda 
+  vsichko ok - katosum az na hod otnachalo pechelia inache gubia
+<VelinTzanov> :)
+<VelinTzanov> Kato prochetete i ste gotovi - kajete
+<rangel__> gotovo
+<sssa88> read
+<Swetko> btw. da kasha samo che ima greshen test - t.e. v edin test ima razstoianie meshdu dva grada 0 
+<Prince_of_Dawn> done
+<VelinTzanov> OK
+<Swetko> moita programa beshe takava che 0 beshe niamane na put i me obyrka tova
+<VelinTzanov> Taka... imame graf i tyrsim optimalen pyt.
+<VelinTzanov> Kakyv algorithm izpolzvame za tova?
+<Prince_of_Dawn> dijskra
+<VelinTzanov> Da, razbira se.
+<Prince_of_Dawn> be az malko sam q reshawal ako iskash da ni nakarsh da mislim da si malcha
+<rangel__> to i az maj i znam reshenieto :-)
+<VelinTzanov> Kakvo obache ni prechi da si udarim Dijkstrata?
+<Prince_of_Dawn> limitite na skorostta
+<rangel__> che ne znaem s kakva skorost se dvizhim po nqkoi pytishta
+<Swetko> ami che niama ne znaem kolko vreme ste ni otneme da stignem do drug grad
+<Swetko> t.e. dygite sa neizvestno sulgi
+<VelinTzanov> Kazano s drugi dumi - vyrhovete i rebrata v grafa ne sa ednoznachno opredeleni - minaloto ima 
+  znachenie.
+<VelinTzanov> V takiva zadachi, kakto i v mnogo drugi zadachi (index-ni dyrveta, igri nai-veche i drugi) 
+  triabva da si dadem smetka kakvo ima znachenie i kakvo ne.
+<VelinTzanov> Tazi tema e sled igrite imenno zatova.
+<VelinTzanov> Pomnim Score v koito imahme goliaaam graf i se okaza che dve ot trite razmernosti ne ni 
+  triabvat.
+<VelinTzanov> Edin vid - "svihme" grafa.
+<VelinTzanov> A i ne samo v score - vyv vsichki igri napravihme neshto podobno.
+<Swetko> triabva kakto v igrite da napravim minaloto da ne ni interesuva
+<VelinTzanov> I prichinata beshe che niama znachenie kakva e situaciata, ima znachenie dali e 
+  pechelivsha/gubeshta (ili kakvo i e SG-chisloto).
+<VelinTzanov> Tochno taka, triabva da se otyrvem ot minaloto.
+<VelinTzanov> V igrite tova stavashe sys svivane na grafa. Tuk go pravim s razshiriavane.
+<VelinTzanov> Pyrvo si davame smetka kakvo e ot znachenie.
+<VelinTzanov> Kakvo definira edna "situacia" v tazi zadacha (speed)?
+<VelinTzanov> Kakvi sa mi "situaciite" po koito iskam da igraia?
+<Prince_of_Dawn> s kakwa skorost wlizame w krastowishteto i za kolko wreme
+<sssa88> tova vtoroto po-skoro e ocenkata na situaciqta
+<VelinTzanov> Btw, tova e dobro nabludenie za vas - niakoi grafovi algoritmi sa si chista teoria na igrite. 
+  :)
+<Prince_of_Dawn> saglasen sam wlado
+<VelinTzanov> Tova koeto iskame ot tazi zadacha e da si napravim hubav graf, taka che da moje da si pusnem 
+  standartnite algoritmi po nego (dali shte e Game solving ili Dijkstra vse taia)
+<VelinTzanov> Tova iskame ot vsiaka zadacha prez poslednata sedmica. :)
+<VelinTzanov> Vyprosyt e kak da si postroim hubavia graf tuka? Koe da opredelim kato "situacia", kato 
+  nedvusmislena edinica, koiato da oceniavame?
+<VelinTzanov> Ta? :)
+<VelinTzanov> Idei?
+<rangel__> vryh i skorost ni opredelqt cqloto bydeshte bez da zavisqt ot minaloto
+<VelinTzanov> IDealno.
+<VelinTzanov> Tova e mnogo vajno - kogato mislite kakvo da fixirate kato situacia triabva da mislite samo za 
+  bydeshteto.
+<VelinTzanov> Borisov predi malko spomena vremeto za koeto pristigame.
+<VelinTzanov> Tova syshto mojehme da go vkluchim... no ima li znachenie za bydeshteto?
+<VelinTzanov> Niama.
+<VelinTzanov> Shtom niama go mahame.
+<VelinTzanov> Po syshtia nachin i v nachaloto:
+<VelinTzanov> Zamislihme se za Dijkstra i vidiahme che ne stava - zashto? Zashtoto bydeshteto e dvusmisleno.
+<Prince_of_Dawn> i promenihme minaloto ( zwuchi gotino da promenish minaloto )
+<VelinTzanov> Zatova kogato se chudim kak da razshirim i/ili sviem grafa triabva vinagi da mislim kakvo 
+  definira bydeshteto - kakvo e neobhodimo i kakvo e izlishno.
+<VelinTzanov> Borisov, syjaliavam momche, ne mojesh da si promenish tochkite ot Proletnia turnir. :)
+<Prince_of_Dawn> nqma da mi pomognat i da gi promenq
+<VelinTzanov> Taka. Znachi se spriahme na kombinaciata vryh+skorost.
+<Prince_of_Dawn> w sluchaq iskam da powliaq na badeshteto BOI
+<VelinTzanov> A ne stava li vryh+(predishen vryh)? Tova niama li a ni oprosti zadachata?
+<VelinTzanov> Shtoto skorosti mnogo, a vyrhovete sa po-malko...
+<Prince_of_Dawn> ne stawa
+<VelinTzanov> Borisov, zamisli se kakvo ima znachenie za bydeshteto (BOI) - kakvo e neobhodimo i kakvo e 
+  izlishno. :)
+<sssa88> ami to moze i 10 posledovatelni da nqmat znaci
+<Prince_of_Dawn> moje i dwata da nqmat skorost
+<VelinTzanov> Dobre.
+<VelinTzanov> Znachi ne uspiah da vi balamosam. :)
+<VelinTzanov> Sega veche kato znaem kakvo e vryh (situacia) mojem li da namerim kakvo e rebro (hod)?
+<VelinTzanov> Idei?
+<Prince_of_Dawn> mi rebroto ako e bez limit wodi ot (a,v) -> (b,v)
+<rangel__> za vsqko v
+<Swetko> niama da podobri nisto tova ako smiatame vryh+predishen vrah stoto to taka ili inache imame 150 
+  razlishni skorosti (kato ostavim nastrana zabeleshkata na vlado)
+<Prince_of_Dawn> ako si ima limit i toi e H to wodi ot (a,v) - > (b,H)
+<VelinTzanov> Borisov, koe rebro? :)
+<Swetko> ama v niakoi zadachi moshe i s predishen vrah da se napravi
+<Prince_of_Dawn> mi standarto rebro ot whoda a,b
+<VelinTzanov> OK. Ot kyde do kyde vodi iasno. A kolko mu e tejesta?
+<Prince_of_Dawn> toest edno rebto ot whoda moje da se polzwa ot vsichkite varhowe (a,X)
+<Prince_of_Dawn> tejesta e L/V ( S/V)
+<VelinTzanov> A kakvo sa L, S i V? :)
+<Prince_of_Dawn> ot formulata t=s/v ;)
+<Prince_of_Dawn> L ni e dadeno ot vhoda
+<Prince_of_Dawn> v e skorostta s koqto se dwijim po rebroto
+<VelinTzanov> OK
+<VelinTzanov> Borisov postroi cial graf.
+<VelinTzanov> Drugite razbrahte li grafa na Borisov?
+<Prince_of_Dawn> a S ne e nishto w skobite prosto ilustriram formulata
+<sssa88> da
+<rangel__> da
+<VelinTzanov> A razbrahte li zashto tochno takyv graf, a ne drug?
+<VelinTzanov> Dokazatelstvo neshto? :)
+<sssa88> ama to kakto kazva swetko moze da se napravi po dva vyrha - edin v kojto si i edin ot kojto ti idva 
+  skorostta
+<rangel__> ogranicheniqta za skorostta sa po rebrata na po vyrhovete
+<VelinTzanov> Vlado, po-skoro shte ti triabva (vryh/rebro). Znacite nali sa po rebrata, a ne po vyrhovete?
+<sssa88> sorry greshka
+<VelinTzanov> Znachi uspah da balamosam niakogo vse pak. :D
+<VelinTzanov> Mersi, Swetko. :D
+<Prince_of_Dawn> az imam samnenie dali shte stane
+<VelinTzanov> Vsyshtnost to mai i Swetko e sred balamosanite... :p
+<VelinTzanov> Zatova iskam dokazatelstva. Shtoto bez tiah balamosvaneto ne vi myrda na BOI/IOI. :)
+<Swetko> kakvo si me balamosal
+<VelinTzanov> Ami reshi che mojesh s dovika vryh+vyrh da napravish 150*150 vyrha v grafa.
+<Prince_of_Dawn> ostawi go da razkaje veline moje da ima drugo predwid
+<Swetko> ne sum reshil taka (kazah che tova niama da podobri skorostta) a posle vidiah na vlado zabeleshkata
+<Swetko> ne se biah zamislil za korektnostta a za skorostta
+<VelinTzanov> OK
+<VelinTzanov> Taka. Sega zashto grafa na Borisov, a ne drug graf?
+<Swetko> ami stot toi stava 
+<Swetko> a puk za drug ne se sestame
+<VelinTzanov> Zashto Borisov izbra tozi graf? Zashtoto e umen i se e setil prosto, zaradi tova li?
+<VelinTzanov> Swetko, smiata che zashtoto e umen i se e setil.
+<VelinTzanov> Koito ne e umen ne moje da se seti.
+<VelinTzanov> Drug da smiata inache?
+<Prince_of_Dawn> gluposti kazali sa mi go
+<Swetko> i na men
+<VelinTzanov> Borisov pyk kazva che dori ne e umen, ami sa mu go kazali. :)
+<VelinTzanov> Niakoi da misli che ima metodichen nachin chovek da se seti i bez da e umen? :)
+<Swetko> ami prosto kato se zamislim kakvo ni triabva da se ochistim ot minaloto
+<Swetko> za kakvo da se setim
+<VelinTzanov> Tova kakvo ni definira bydeshteto veche go kazahme, Swetko.
+<Swetko> ama puk predi tova niakoi  ni e kazal che moshe da se ochistvame ot minaloto i t.n.
+<VelinTzanov> Sega pitam zashto rebrata v golemia graf sa takiva kakvito gi kaza Borisov.
+<Swetko> ami nali ako imame znak skorostta dugata si e normalna
+<VelinTzanov> Inache za vyrhovete - metoda e prosto da vidish kakvo ima znachenie za bydeshteto. Vyrha ima. 
+  Skorostta ima. Vremeto do momenta i temperaturata navynka niamat. :)
+<Swetko> ami dugite sa lesno sledstvie na vyrhovete
+<VelinTzanov> OK. Shte se molia i na BOI/IOI da vi dadat "lesno sledstvie", che ako ne e lesno ne vi 
+  vijdam... :)
+<VelinTzanov> Vajno e v takiva sluchai da se zamisliate kakvi vyzmojnosti za izbor imate na vseki vryh.
+<VelinTzanov> Naprimer mojete li da namalite skorostta?
+<VelinTzanov> Mojete, nali?
+<VelinTzanov> Prosto niama smisyl.
+<Swetko> dosega ne sum vishdal takava zadacha v koiato ako se setish kak da napravish vyrhovete dygite da ti 
+  izliazat trudnata rabota
+<VelinTzanov> Za po-slojna zadacha razlichnite deistvia moje da imat ili da niamat smisyl. Triabva da si 
+  davate smetka za tova.
+<Swetko> ami ako imame znak e obiknovena dyga
+<VelinTzanov> Poniakoga razshiriavaneto na vyrhovete razshiriava i rebrata, poniakoga ne.
+<Swetko> ako ne polzvame ogranichenieto do momenta
+<Swetko> ako ne, polzvame ogranichenieto do momenta
+<Swetko> koeto ni e dadeno ot vyrha - razshirenia
+<VelinTzanov> Da, Swetko, znam che znaesh kak se reshava zadachata. Tova ne e temata na razgovoryt v momenta.
+<VelinTzanov> Kakva e temata?
+<VelinTzanov> Niakoi znae li kakva e temata?
+<rangel__> ne e li ochevidno che ot vryh (a, x) v razshireniq graf izliza po edno rebro za vsqka dyga (a, b) 
+  v originalinq graf?
+<VelinTzanov> Temata e kak se reshava Speed, taka li?
+<Swetko> ami ne znam iavno
+<VelinTzanov> Rangele, moje i da e ochevidno za Speed.
+<Prince_of_Dawn> mai temata e kak trqbwa da dokazwame
+<VelinTzanov> No tova ne ni interesuva v sluchaia.
+<VelinTzanov> Mne, ne e tova temata Borisov.
+<Prince_of_Dawn> i da se ottarwawame ot izlishnoto
+<VelinTzanov> Ako biahme za dokazatelstvata shtiahme da hodim na IMO, ne na IOI. :)
+<Prince_of_Dawn> ;) togawa ne znam
+<VelinTzanov> Celta na dneshnata sesia (kakto i na vsiaka druga) e da se nauchite kak da reshavate VSIAKAKVI 
+  zadachi ot dadenia klas.
+<Swetko> ami na men niama da mi hrumne da se zamisliam dali dugite sa se promenili stot spored men e 
+  ochevidno
+<VelinTzanov> Reshavaneto na zadachi ot deden klas e proces s mnogo stypki.
+<Swetko> ami dai niakoi primer kudeto triabva i tova da vnimavame
+<VelinTzanov> Poniakoga niakoi stypki sa lesni, a drugi trudni. Poniakoga naopaki.
+<VelinTzanov> IOI 2003, Swetko
+<VelinTzanov> I do tam shte stignem.
+<VelinTzanov> Sega govoria po princip.
+<VelinTzanov> Kogato ilustrirame edin klas zadachi nie go pravim chrez konkretni zadachi.
+<VelinTzanov> Konkretnite zadachi imat tozi nedostatyk, che "skrivat" niakoi ot stypkite v mislovnia proces.
+<VelinTzanov> I kogato vi doide nepoznata zadacha ot syshtia klas se spyvate imenno na tezi stypki, na koito 
+  ne ste obyrnali vnimanie predi.
+<Swetko> kakvo imashe tam
+<Swetko> na IOI 2003
+<VelinTzanov> Edno razminavane s edni straji.
+<VelinTzanov> Shte govorim za tazi zadacha kato i doide vremeto.
+<VelinTzanov> Procesyt na razshiriavane na graf ne e proces s edna stypka.
+<Swetko> ehe - ami taz zadacha prosto ne moga da ia napisha za 3 chasa a imam i drugi zadahci - a puk ia 
+  izmislih inache
+<VelinTzanov> Razshiriavaneto na vyrhovete ne e vsichko.
+<VelinTzanov> Swetko, ne mi se slushat izvinenia sega. Pomoli me za primer, dadoh ti primer. Tova zashto ne 
+  si ia napravil ne e ot znachenie v momenta.
+<Swetko> ok
+<VelinTzanov> Vyobshte ne te obviniavam che ne si ia hvanal togava.
+<VelinTzanov> Ta kazvah che razshiriavaneto na vyrhovete ne e vsichko.
+<VelinTzanov> Posle ima i razshiriavane na rebrata za koeto triabva vnimatelno da se misli.
+<VelinTzanov> Moje da e lesno i ochevidno. Dai Boje da e.
+<VelinTzanov> No triabva da si davate smetka za tova.
+<VelinTzanov> Naprimer ako grafyt vi ot N stava N^2 i ako rebrata ot N^2 stavat N^4 znachi sigurno neshto ne 
+  e nared.
+<VelinTzanov> Poniakoga moje da se nalaga da optimizirate rebrata.
+<VelinTzanov> Poniakoga tozi problem moje da vi nakara da napravite i drug izbor za vyrhovete.
+<Prince_of_Dawn> az imam ideq
+<Prince_of_Dawn> po realizatsiqta na rebrata
+<VelinTzanov> Prosto iskam da ste vnimatelni za tova i na BOI/IOI kato izleze zadachata s razshiriavane na 
+  grafa da ne uvisnete zaradi niakoia pylna glupost.
+<Swetko> ami nali veche ia iziasnihme neia
+<VelinTzanov> Kakva ideia, Borisov? Rebrata na Speed ne sa problem.
+<Prince_of_Dawn> nishto wse pak
+<VelinTzanov> Kaji de, shtom iskash.
+<Prince_of_Dawn> ta ideqta ( anev mi q kaza )
+<Prince_of_Dawn> e da si razshirim warhowete kakto reshihme 
+<Prince_of_Dawn> no da ne pipame rebrata
+<Prince_of_Dawn> i da gi polzwame w tozi wid
+<Swetko> ami nie pipame li gi
+<Prince_of_Dawn> toest ako sme w warh (a,v) da obhodim prosto rebrata na a
+<Prince_of_Dawn> mi swetko kato kajem che shte stroim graf moje da go naprawim do krai
+<VelinTzanov> :) A ti kakvo misleshe da pravish inache? Da kopirash edinia masiv ot ednoto miasto na drugoto 
+  ,taka li? :)
+<Swetko> a sega ne pravim li tova
+<Prince_of_Dawn> mi neznam za was
+<Prince_of_Dawn> za men ne beshe tolkowa ochewidno
+<Prince_of_Dawn> az nqkolko pati sam si stroi tselia graf
+<VelinTzanov> Swetko, eto vijdash li che ima kakvo da se kaje po rebrata. Okazva se che tova koeto na niakoi 
+  im e ochevidno (che ne triabva da se kopirat rebrata) na drugi ne im e.
+<Prince_of_Dawn> predi da naucha za towa
+<Swetko> e dobre -  minalata godina mislia che ne raziasniavahme tolkova mnogo rebrata a puk ia razbrahme - 
+  ok
+<VelinTzanov> Dori zaradi takiva drebolii e dobre da se zamisliate nad vsichko (vkl. rebrata) i da ne 
+  pravite izlishni neshta.
+<Swetko> ami to e estestveno da se zamislim za tiah - kato stignem do chastta kudeto pravim ghod (dvidhim se 
+  kum drug vrah)
+<VelinTzanov> Swetko, az ne sym imal namerenia da raziasniavam rebrata sega. Prosto iskam da otbeleja che 
+  tazi stypka ia ima, za da ne ia preskachate. Ako niakoi ot vas se izloji na IOI zaradi rebrata niama da si 
+  go prostia.
+<Swetko> kakvo ni ostava da napravim osven da se zamislim za rebrata
+<VelinTzanov> OK. I kakvi rebra slagash? Estestvenite? :)
+<Swetko> imam predvid che tazi stypka ne moshem da ia propusnem
+<Swetko> ne sum kazal nisto za estestveni rebra
+<VelinTzanov> No moje da ne si dadesh smetka, che razshiriavaneto na vyrhovete moje neobiknovenno da 
+  razshiri rebrata.
+<VelinTzanov> Ne kazvam che e trudno, Swetko.
+<Swetko> ami ste pomislim i ste otkriem dali e taka
+<VelinTzanov> Prosto iskam da ne vi biaha ot pogleda.
+<VelinTzanov> OK. Dyrja da pomislite. :)
+<Swetko> az puk kazvam che e trudno ( da ni izbiaga ot pogleda)
+<Swetko> :)
+<VelinTzanov> Anev pomnish li kak index-nite dyrveta mu biaha trudni da ne se seti... pyk nakraia na BOI ne 
+  se seti. Za edno elementarno uslojnenie.
+<VelinTzanov> Prosto se opitvam da predotvratia povtorenie na sluchkata.
+<Swetko> takiva momentni zagubi na mozuka i pametta sa choveshki
+<VelinTzanov> Taka e.
+<Swetko> ste se vyrnem li kum speed
+<VelinTzanov> No se sluchvat poveche na chovecite, koito podceniavat zadachite.
+<VelinTzanov> DA se obyrkash e choveshko syshto.
+<VelinTzanov> No se sluchva poveche na nepodredenite. I na podredenite im se sluchva, no po-riadko.
+<VelinTzanov> ZAtova iskam da ste podredeni.
+<VelinTzanov> Po syshtata prichina iskam i da ne podceniavate zadachite, a da si davate pylna smetka za tova 
+  kakvo e vajno i kakvo ne e.
+<VelinTzanov> Ei sega pravia zadachi za BOI i za vsiaka moga da kaja che niama da ia reshite vsichkite, ako 
+  shte i da sme vi nabivali v glavata kak.
+<VelinTzanov> Posle shte sednem s teb i shte slushame 1000 razlichni prichini zashto X ne e napravil zadacha 
+  Y.
+<VelinTzanov> I vsiaka ot tezi prichini shte se okaje predotvratima.
+<VelinTzanov> Zatova po-dobre da vi otegcha i da vi stana skuchen, otkolkoto da vi ostavia s propuski.
+<VelinTzanov> Ta, Speed iasna li e?
+<VelinTzanov> Stroim graf.
+<sssa88> da
+<Prince_of_Dawn> da
+<VelinTzanov> Vyrhovete gi definirahme.
+<VelinTzanov> Rebrata stana duma, che sa lesni.
+<Swetko> ami za da niama takiva prichini triabva i opit koito se pridobiva s uprashnenia - osven teoriata 
+  koiato uchim sega
+<VelinTzanov> Taka e, Swetko.
+<VelinTzanov> Zatova imame i 3 trenirovki tazi godina.
+<VelinTzanov> Veche pratih na Anev edna zadacha da vi ia dade. Mnogo e hubava. I znaem kak se pravi. No 
+  niama da ia napravite, bas dyrja. :)
+<VelinTzanov> No ne moga da kaja zashto niama da ia napravite - vseki shte izvadi razlichna prichina. :)
+<VelinTzanov> Aide shte vidim. Dano ia napravite.
+<VelinTzanov> Taka. Kato imame razshirenia graf na Speed kakvo pravim?
+<VelinTzanov> Kak reshavame zadachata?
+<Swetko> dijkstra
+<sssa88> s piramida
+<Prince_of_Dawn> heap
+<VelinTzanov> Rangele, ti sledish li kakvo stava? :)
+<Swetko> ama poneshe imame 150*500 vyrha
+<rangel__> da
+<Swetko> i na ^2 ste stane mnogo
+<VelinTzanov> V smisyl - naiasno li si sys Speed?
+<VelinTzanov> OK
+<Swetko> taka che heap
+<VelinTzanov> Da, heap-a e hubavo neshto.
+<VelinTzanov> Nakraia e dobre vinagi da si izchistvate kakvo e vryh v tozi graf, kakvo e rebro i kakvo e 
+  pyt... i zashto tova koeto ste namerili e optimalno.
+<Prince_of_Dawn> chesto uvelichawa koda s 100 reda
+<VelinTzanov> Mnogo e vajno da ne dopuskate byrkotia v tazi chast i da namerite ne tochno tova koeto 
+  tyrsite...
+<VelinTzanov> ... osobeno ako imate i vtori kriterii za minimalnost.
+<VelinTzanov> Borisov, na C++ go ima v STL-a. Samo ne znam ima li STL po systezania... ama mai ima???
+<Prince_of_Dawn> ima
+<Prince_of_Dawn> ma nqma koi da ni nauchi na STL
+<Swetko> ima
+<Prince_of_Dawn> pone men
+<VelinTzanov> Ami ako iskate - stavate STL masters i niamate problemi s heap-ovete.
+<Swetko> i se debugva nevyzmoshno
+<rangel__> obache maj STL-a ne poddyrzha shift_up/down :-)
+<Swetko> ne e nushno chak da si master
+<Swetko> abe pisha si heap-a za 10 minuti
+<rangel__> t.e. nqmam kak da promenq edin vryh i da si go namestq v heap-a
+<Swetko> i znam che raboti
+<VelinTzanov> Ne sym polzval STL, ne moga da se izkazvam po temata. :)
+<Prince_of_Dawn> swetko ti swe taka razprawqsh po sastezanie
+<Prince_of_Dawn> pisha towa za 4 min
+<Prince_of_Dawn> pisha onowa za 10 min
+<Prince_of_Dawn> ne e w towa waprosa
+<Swetko> ami heap za 10 minuti kakvo e
+<VelinTzanov> I posle 110 tochki, nali? :)
+<Prince_of_Dawn> kato bagne i posle mu otdelish 45 min
+<Prince_of_Dawn> ili mnogo se nakefish che stawa s heap i go napishesh i posle vidish che ne stawa
+<VelinTzanov> Borisov, toi Swetko debug-va vseki bug za 5 minuti. :)
+<Prince_of_Dawn> sigurno si go pravil ( az sam ;)
+<Swetko> aa ne e taka
+<Prince_of_Dawn> znachi 9 buga za 45 min
+<VelinTzanov> :)
+<VelinTzanov> OK, Speed mojete li da ia napishete za domashno?
+<VelinTzanov> Ako ima vyprosi - sega pitaite.
+<sssa88> da
+<rangel__> ami pri kod napisan kato balansirano dyrvo ne se uchudvam :-)
+<rangel__> da
+<Swetko> abe prosto kato sum go pisal mnog puti mi e lesno da se setia kak tochno izgleshdashe
+<Prince_of_Dawn> da(mojem da q napishem)
+<VelinTzanov> Rutinata ot opit e hubavo neshto.... no izlishnata kompleksnost e losho neshto... no i 
+  neizbejna poniakoga, za syjalenie.
+<Swetko> i nestata si gi pisha modulno  taka che vsiak operacia e funkcijka
+<VelinTzanov> OK. Vtora zadacha za dnes
+<VelinTzanov> BalticOI 2002, syshtata zadacha ot drugia den :)
+<VelinTzanov> http://aldona.mii.lt/pms/olimp/english/boi2002/kita/tasks/bic-en.pdf
+<VelinTzanov> Btw, tuk triabva da si priznaia che si kopirah heap-a ot pyrvia den. :):):):)
+<sssa88> nie moze li taka da napravim?
+<Prince_of_Dawn> ne
+<Swetko> az taka riadko pravia stot dokato prenastroia edinia za druga zadacha
+<VelinTzanov> Ot gledna tochka na treninga i opita ne e hubavo da go pravite.
+<Swetko> sto be na IOI  
+<Swetko> biahme na pochti edni i susti PC-ta
+<VelinTzanov> Swetko, vse pak go biah pisal na vcherashnia den. :)
+<Swetko> t.e. na susednite
+<Swetko> i moshehme da polzvame nestata ot predishnia den
+<VelinTzanov> Taka li? Interesno... na moite IOI biah vseki den na mnogo razlichno miasto.
+<VelinTzanov> Mojehte?! Tova e super stranno!
+<Swetko> ami niakoi sa si bili na predishnite
+<Swetko> ne che moshehme ama kakvo ni prechi da gi skriem
+<Swetko> niakude
+<Swetko> kudeto niamat otkrivane
+<rangel__> da - v home direktoriq mi pod linux :-) shtoto drugade nqma da moga da pisha :-)
+<Swetko> ama v linux
+<Swetko> v WIndows moshesh kudeto si iskash da gi puhnesh
+<Swetko> i nikoi ne moshe da gi otkrie
+<VelinTzanov> TE po princip preinstalirat vsichko nanovo... ama znam li, moje i da ne sa go pravili.
+<Swetko> aaa
+<Swetko> taka li praviat
+<Swetko> ne znaeh
+<VelinTzanov> Ami taka se predpolaga che praviat. :)
+<Swetko> ou - tova e goliama rabota
+<VelinTzanov> PRochetohte li Bic? Razbrahte li ia?
+<Prince_of_Dawn> da
+<sssa88> da
+<rangel__> da
+<VelinTzanov> OK
+<VelinTzanov> Kak ia reshavame sega?
+<Prince_of_Dawn> mi razshirqwame
+<Prince_of_Dawn> grafa parwo rebrata 
+<VelinTzanov> Kak?
+<Prince_of_Dawn> posle vnimatelno mnogo vnimatelno ;) i rebrata i posle djkstra
+<VelinTzanov> Borisov, ne se ebavai sys staroto! >:-[
+<Swetko> kato ia izmislite az ste si kasha moito podobrenie
+<VelinTzanov> Shte vidim koi shte se smee sled BOI... :)
+<Prince_of_Dawn> mi izbirame si ediniq parametar
+<Prince_of_Dawn> i obache tuk toi moje da e mejdu 0 i 10000
+<VelinTzanov> Btw, ne moga da si resha BOI-skite zadachi... :) Dnes pisha reshenia... i oshte ne sym gi 
+  donapisal. Cial den otide. :)
+<Prince_of_Dawn> i taka warhowete na grafa stanaha 100 * 10000
+<Swetko> am che kakvo 100*100*100
+<Swetko> 300 000 000  rebra
+<Prince_of_Dawn> ne me e strah swetko
+<VelinTzanov> :)
+<Swetko> 300 000 000 * lg 1000 000 pravi
+<VelinTzanov> Taka li? :)
+<Prince_of_Dawn> chakai
+<Swetko> okolo 6 000 000 000 operacii ultra worst case
+<VelinTzanov> Aaa, tova biaha 30 sekundi be! :)
+<Swetko> ami i men - prosto pravia analiz
+<Swetko> moito reshenie vurvi za 0.8 sec na 500Mhz
+<VelinTzanov> Btw, az ne si spomniam mnogo kak se praveshe tazi zadacha... :) Ia da pogledna.
+<Swetko> taka che ne mi triabvat 30
+<Swetko> a i ogranichenieto mai e do 5 sec
+<VelinTzanov> Daaa, i az pomnia che ne triabvaha 30 sec.... :)
+<VelinTzanov> Ogranichenieto e 30. :)
+<Swetko> az si spomniam samo moito
+<Swetko> e , tova e typo
+<Swetko> nie triabva da sme podgotveni za rumuncite :) deto ste sloshat sigurno 
+<Prince_of_Dawn> mi sega nqma smisal ako ste stignali do wrah (a,x) s tsena k da stigate do wrah (a,>x) s 
+  tsena po-golqma ot k
+<Swetko> 0.45 ogranichenie :)
+<Swetko> e, niama da se nalaga da se borim s rumunci ama vse pak 
+<VelinTzanov> Btw, nie s Ceco obmisliahme da slojim edno podobno ogranichenie na edna ot zadachite na 
+  Proletnia... :)
+<VelinTzanov> OK - znachi kak definirame vyrh i kak rebro?
+<Swetko> ami prosto kato si imame tozi graph i 6 000 000 000 operacii sme gotovi
+<Swetko> 6 000 000 000 / 30 sec = 200 000 000 za secunda :) koeto e malko mnoshko ama vse pak ste imame 
+  kusmet
+<VelinTzanov> Hmmm....
+<VelinTzanov> Iskam 0.8 sekundi. :)
+<Prince_of_Dawn> ako iskash tolkowa trqbwa da pomognesh
+<Prince_of_Dawn> ;)
+<Swetko> ama ste triabva da me izslushate togava
+<Swetko> az minalata godina go obiasniavah tova
+<sssa88> to na taq zadacha edno backtracking-che raboti momentalno na nqkoi testove(dori i golemi) ama za 
+  syzaenie na drugi nikoga ne svyrshva
+<Prince_of_Dawn> slushame
+<Swetko> ako iska az ste obiasniavam kakvo se pravi a Velin ste vkarva niakakvi komentari svarzani s temata  
+  che az nesto niama da moga
+<Prince_of_Dawn> Nedev ne gowori taka welin shte ti otreshe ratsete za backtrack
+<sssa88> e kakvo hvashta 60-80 tova neshto
+<VelinTzanov> >:-[
+<Swetko> az susto go mrazia back-track-a osobeno ako tova e reshenieto na zadachata 0 inache ako ne znam 
+  niakoia zadacha moga da si go napisha
+<VelinTzanov> Ta, Borisov, ti kakvo predloji znachi?
+<VelinTzanov> Swetko, i do tvoeto shte stignem.
+<VelinTzanov> Neka malko pomislim zaedno, pyrvo.
+<Swetko> ok
+<VelinTzanov> Dai da chuia pak Borisov.
+<Prince_of_Dawn> mi da si razshirim grafa ( varhowete
+<VelinTzanov> Tova e iasno.
+<Prince_of_Dawn> ot 100 na 100*10000
+<Prince_of_Dawn> po ediniq parametar bez znachenie
+<VelinTzanov> OK. Tova zvuchi dobre.
+<VelinTzanov> I posle?
+<Prince_of_Dawn> posle predlojih edna optimizatsiq 
+<VelinTzanov> Mdaaa, mnogo vajna optimizacia. :)
+<Prince_of_Dawn> kogato sam uspql da stigna w wrah (a,x) s k pari i posle za warhowete (a,>x) trqbwa da 
+  tarsq <k
+<VelinTzanov> Ne e li dobre pyrvo da izchistim zadachata, a posle da optimizirame?
+<Prince_of_Dawn> da
+<VelinTzanov> Dori ne si kazal kakvo go pravish tozi ogromen graf deto go postroi.
+<VelinTzanov> DA ne govorim che ne si go i postroil... :)
+<Prince_of_Dawn> mi
+<Prince_of_Dawn> za warhowete razbrahte
+<VelinTzanov> Da
+<Prince_of_Dawn> sega rebrata
+<Prince_of_Dawn> mi ne mislq da gi pipam toest ot wrah (a,x) s k pari otiwam w wrah (b,x+l) s k+h pari
+<Prince_of_Dawn> kadeto l i h sa parametrite na rebroto mejdu a b
+<Prince_of_Dawn> neshto greshno do tuk
+<VelinTzanov> Siakash ne.
+<Prince_of_Dawn> mai ne
+<VelinTzanov> I kakvo go pravish tozi graf?
+<Prince_of_Dawn> i sega imame graf s 1000 000 warha
+<Prince_of_Dawn> i moje da djikstrim po nego
+<Prince_of_Dawn> s heap
+<VelinTzanov> Chakai malko, ti ne tyrsish nai-kys pyt.
+<VelinTzanov> Za kakva Dijkstra govorish?
+<Prince_of_Dawn> i mai tuk e momenta za optimizirane
+<Prince_of_Dawn> mi dobar wapros?
+<sssa88> e toj za vsqka fiksirana dilzina shte nameri minimalna cena
+<VelinTzanov> Ne. Vse oshte ne. Ne si ni obiasnil kakva e taia Dijkstra. :)
+<Prince_of_Dawn> da tochno kakto kaza Nedev
+<VelinTzanov> Mi bravo na nego. Tova kakvo ni pomaga? :)
+<Prince_of_Dawn> vseki wrah opredelq s kakwo wreme sme doshli 
+<Prince_of_Dawn> i prawim djikstra po parite koito shte platim
+<Prince_of_Dawn> i nakraq
+<Prince_of_Dawn> kato swarshim wsichko 
+<Prince_of_Dawn> trqbwa da obhodim wsichki (a,x) kadeto a e tareniq wrah (tozi do koito trqbwa da stignem)
+<Prince_of_Dawn> a x e 1...10000
+<VelinTzanov> OK i?
+<Prince_of_Dawn> i da izwedem wsichki dwoiki
+<VelinTzanov> Vsichki dvoiki li?
+<VelinTzanov> Ne ti li triabvat samo niakoi dvoiki?
+<Prince_of_Dawn> vsichki gotini dwoiki
+<Prince_of_Dawn> koito sa nesrawnimi
+<VelinTzanov> OK
+<VelinTzanov> I tova koeto pravim nakraia ni navejda na misylta za optimizaciata...
+<VelinTzanov> Tuk triabva da se kaje neshto vajno.
+<Swetko> btw. reshenieto mi raboti za 0.1 secunda kato se broi i zadelianeto na pamet - za nai malkia test 
+  0.09 za nai golemia 0.14 ama tova e razlikata v time komandata pod dos  (inache fukciata 
+  clock()/clocks_per_sec vrasta 0.000000 ot nachaloto na main()
+<VelinTzanov> Che kogato tyrsim neshto "nai-dobro", ako tyrsenoto neshto stane po-losho ot optimuma po 
+  niakoe vreme, mojem napravo da go izhvyrlim.
+<VelinTzanov> Taka i tuk.
+<VelinTzanov> Kato tyrsim niakakyv optimum mojem da "otriazvame" kalpavite razklonenia rano-rano.
+<VelinTzanov> Tova e standarten problem v razshiriavaneto na grafi - tonovete bokluk koito poluchavame. :)
+<VelinTzanov> Za da mojem da kajem, che mojem da razshiriavame grafi, triabva pyrvo da mojem da se 
+  otyrvavame ot bokluka.
+<VelinTzanov> Tova e koeto iskam da nauchite ot tazi zadacha konkretno.
+<VelinTzanov> A sega Borisov shte ni obiasni kak tochno go pravim v Bic. :)
+<VelinTzanov> Borisov?
+<Prince_of_Dawn> mi ..
+<Prince_of_Dawn> nie nali pravim djikstra
+<Prince_of_Dawn> znachi edin wid wzimame warhowete w narastwasht re spored parite koito sturwa da se otide w 
+  th
+<Prince_of_Dawn> w tqh
+<Prince_of_Dawn> i sega towa ni oznachawa che do daden wrah a ( towa sa wsichki warhow (a,x)
+<Prince_of_Dawn> parwoto ni dostigane shte e s absoutno nai-minimalnata tsena za dostigane do a
+<Prince_of_Dawn> a posle shte poluchawame i drugi nachini ( s pogolqma tsena (po kasno izwadeni ot heap-a))
+<Swetko> da koiato riadko ste e 100*100
+<Swetko> t.e. nikoga
+<Prince_of_Dawn> i weroqtno s po-malko wreme ( po-barzo )
+<Prince_of_Dawn> i tuk idwa oprimizatsiqta
+<Prince_of_Dawn> ako za wseki warah a 
+<Prince_of_Dawn> si pomnite edna dwoika p q ( wreme i tsena )
+<Prince_of_Dawn> to wie s wremeto sas sigurnost shte podobrqwate q-to za tozi wrah a (towa e wrah ot 
+  nachalnite w grawa (nerazshiten))
+<Prince_of_Dawn> GRESHKA
+<Swetko> btw. onazi ocenka deto dadoh 6 000 000 000 e greshna stot vyrhovete sa 100*100*100 a sredno rebrata 
+  ot vseki vrahsa 300/100 taka che stava suvsem dobre 60 000 000 operacii maximum /30 sec 2 000 000 sec - 
+  subira se kakvoto i da pravim
+<Prince_of_Dawn> nqma da podobrqwate q ami shte go wloshawate
+<Prince_of_Dawn> sajalqwam
+<Prince_of_Dawn> nali po-kasno e izwadeno ot heap-a
+<Swetko> a puk ste podobriavame p li
+<VelinTzanov> Da, i?
+<VelinTzanov> Kakva kazvash e optimizaciata?
+<Prince_of_Dawn> obache kato wloshawate q to trqbwa da podobrite p(wtemeto)
+<Prince_of_Dawn> i taka ako ne go podobrqwate ne go i zapiswate
+<Prince_of_Dawn> toest trqbwa ni edim masi ednomeren s 100 elementa
+<Swetko> ami tochno tova e optimizaciata - che ne ne go razgleshdame 
+<Prince_of_Dawn> kadeto w nachaloto da napishem INT_MAX
+<VelinTzanov> A ako go podobriavame?
+<Swetko> togava go razgleshdame
+<VelinTzanov> Samo tova?
+<Prince_of_Dawn> i ako go podobrqwame promenqma A[a] i go razlejdame
+<Prince_of_Dawn> promenqma = promenqme
+<VelinTzanov> Ami tezi deto veche sme gi dobavili dali ne triabva da mahnem niakoi ot tiah?
+<Prince_of_Dawn> ne
+<VelinTzanov> Zashto?
+<Prince_of_Dawn> zashtoto te sa imali po-malka tsena
+<VelinTzanov> Moje da e bila ravna,.
+<VelinTzanov> Togava kakvo pravish?
+<Prince_of_Dawn> da
+<Prince_of_Dawn> iskah da kaja za rawenstwoto
+<sssa88> off za kakvo si usloznqvame zivota - 60M operacii shte si se syberat idealno vyv vremeto
+<VelinTzanov> Radvam se, che ne si go zabravil. :)
+<Prince_of_Dawn> ma ne ospqh
+<VelinTzanov> Vlado, >:-[
+<VelinTzanov> Ne razbra li che celta ne e da reshim zadachata. Na IOI ako ima takava zadacha nishto chudno 
+  limita da e 0.02 :)
+<Swetko> ama niama da vyrvi za 0.05 sec
+<Swetko> e ne moshe 
+<sssa88> dobre togava
+<Swetko> 4-5 MB ne mogat za tolkova vreme
+<VelinTzanov> Vlado, urokyt e che dori kato sme razshirili grafa, staria graf (i starite vyrhove) vse pak sa 
+  si ot znachenie... t.e. te syshto mogat da uchastvat kato znachimi geroi v igrata.
+<Swetko> ama s tova si oprostiavame niakoi nesta
+<VelinTzanov> Borisov, kakvo stana s ravenstvata?
+<Swetko> da tova e sustestveno
+<Swetko> te lesno se opraviat pone pri men
+<Swetko> dori izobsto ne gi razgleshdam
+<VelinTzanov> TRiabav da e lesno. No ne triabva da se zabravia.
+<Prince_of_Dawn> mi.. neka si sedqt
+<Prince_of_Dawn> te ne prechat na korektnata rabota
+<Swetko> da de - goliama rabota  1 ,2 vyrha poveche v heap - a 
+<Swetko> igla v heap-a seno :)
+<Prince_of_Dawn> who care
+<Swetko> s
+<Prince_of_Dawn> da chuem kakwo misli Velin po waprosa
+<VelinTzanov> Hmmm... da, moje i da gi ostavite mislia... no e vajno vinagi da znaete kyde kakvo ima i kyde 
+  kakvo triabva da se "chisti" ot bokluk dopylnitelno.
+<VelinTzanov> V nikakyv sluchai ne triabva da dopuskate takiva "propusnati" bokluci da stigat do kraia i da 
+  ne gi izchistvate tam.
+<VelinTzanov> Oshte poveche che podoben sort bugs kato nishto mogat da ostanat nezabeliazani kato si 
+  test-vate predi da submit-nete.
+<Swetko> znachi borisov, ti kato izvadish nesto ot heap-a gledash dali toz vrah podobriava tekustia nai 
+  dobur za vrah   a (ot starite e toz)
+<Prince_of_Dawn> da na kraq trqbwa da se chistqt <= ili >=
+<VelinTzanov> Ta da obobshtim:
+<VelinTzanov> Vajnoto neshto e da ignorirame beznadejdnite vyrhove - napravo da gi izhvyrlim ot grafa.
+<VelinTzanov> Vajno e da se zamisliame kato razshiriavame graf dali ne vlagame izlishna slojnost v 
+  dopylnenie kym neobhodimata... i da se osvobojdavame ot izlishnata niakak.
+<VelinTzanov> KOnkretno v Bic razbrahte li kak stava tova?
+* Prince_of_Dawn has quit IRC (irc.naturella.com irc.lt-tech.org)
+* Prince_of_Dawn has joined #ioi
+* irc.lt-tech.org sets mode: +ov Prince_of_Dawn Prince_of_Dawn
+* CS sets mode: -o Prince_of_Dawn
+<Prince_of_Dawn> hahah
+* VelinTzanov sets mode: +o Prince_of_Dawn
+<Prince_of_Dawn> izwednaj ostanah sam
+<VelinTzanov> Paste-nah ti.
+<VelinTzanov> Momcheta, pitah - razbrahte li kak "osvobojdavame tovara" v Bic?
+<rangel__> da
+<Swetko> da
+<sssa88> da
+<Prince_of_Dawn> dsa
+<Prince_of_Dawn> da
+<Swetko> da raboti za 0.1 sec :)
+<VelinTzanov> T.e. moga da razchitam che:
+<VelinTzanov> 1) Shte si napishete domashnoto - Speed i Bic
+<VelinTzanov> 2) Kogato vi dadat zadacha v koiato triabva da se razshiri grafa shte se setite i shte go 
+  napravite pravilno.
+<Swetko> da
+<sssa88> 1-da; 2-dano
+<Swetko> moshem da razgledame i HILL i onazi ot Winter 2003
+<rangel__> da
+<VelinTzanov> 3) Kogato razshiriavaneto vi dobavia element na izlishnost shte se setite da otrejete kakvoto 
+  triabva (pak, po pravilnia nachin)
+<Swetko> da - da se nadiavame da moshe
+<VelinTzanov> Da, ako iskate mojete da se uprajniavate s Hill ot 4-to kontrolno 2002-ra i sys svetofarestata 
+  zadacha ot Winter 2003.
+<sssa88> 3 - v sluchai che e neobhodimo - da
+<VelinTzanov> Tiah ne gi iskam za domashno, no ako vi se zanimava - reshete gi i tiah - polezni sa.
+<VelinTzanov> Btw, na Hill ima 2 ili 3 greshni testa.
+<Swetko> ima zadacha v koito se razshiriava grapha po vremeto i posle se puska potok s minimalna dulshina
+<Swetko> znam
+<Swetko> ama moite dvete programi kazvat na edin test otogvora na jurito 
+<Swetko> a puk tvoita i drugi  kazvat istinskia
+<VelinTzanov> Zadachi s razshiriavane na grafa ima mnogo... utre shte pravim edin osobeno interesen i 
+  populiaren klas ot tiah. :)
+<VelinTzanov> Zadryjte si predpolojeniata. :)
+<VelinTzanov> Vyprosi po dneshnia material?
+<sssa88> ne
+<Prince_of_Dawn> ne
+<Swetko> ne 
+<rangel__> ne
+<VelinTzanov> OK
+<VelinTzanov> Ami momcheta, priiatno razshiriavane... :)
+<Prince_of_Dawn> dneska denq na heap=owete
+<VelinTzanov> Chao ot men!
+<Prince_of_Dawn> chao
+<sssa88> chao
+<rangel__> leka nosht :-)
+<VelinTzanov> :)
+<Swetko> leka
+<Prince_of_Dawn> iskate li da wi kaja neshto kato wits
+* Disconnected
+* Logging #ioi to 'logs\ioi_2004_06_20.log'
+Session Close: Sat Jun 19 22:33:59 2004

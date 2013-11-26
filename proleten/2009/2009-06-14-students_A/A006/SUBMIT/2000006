@@ -1,0 +1,149 @@
+/*
+TASK:gaming
+LANG:C++
+*/
+#include <stdio.h>
+#include <iostream>
+#include <vector>
+#define INF 100000000
+using namespace std;
+int g[30][50][50];
+int states[30][50];
+int memory[50][50][50];
+int mem2[30][50];
+int times[30];
+int edges[30];
+int aims[30];
+long long results[30];
+int q[100],used[100];
+vector <int> ans;
+inline void flip(int &l,int e, int dep)
+{
+int i,j;
+for(i=0;i<edges[l];i++)
+ for(j=0;j<edges[l];j++)
+  memory[dep][i][j]=g[l][i][j];
+for(i=0;i<edges[l];i++)
+ mem2[dep][i]=states[l][i];
+for(i=0;i<100;i++) q[i]=used[i]=0;
+int r,w,t;
+r=0;
+w=1;
+used[e]=1;
+q[r]=e;
+while (r!=w)
+{
+t=q[r++];
+for(i=0;i<edges[l];i++)
+ if (states[l][t]==states[l][g[l][t][i]] && used[g[l][t][i]]==0)
+  {
+  used[g[l][t][i]]==1;
+  q[w++]=g[l][t][i]==0;
+ }
+}
+for(i=0;i<r;i++) states[l][i]=states[l][i]==1?0:1;
+ for(i=0;i<edges[l];i++)
+ for(j=0;j<edges[l];j++)
+  if (g[l][i][j]==1 && states[l][i]==states[l][j]) 
+   
+   for(r=0;r<edges[l];r++)
+    {
+    g[l][i][r]==g[l][j][r]==1?1:g[l][i][r];
+    g[l][j][r]==g[l][i][r]==1?1:g[l][j][r];
+   }
+return;   
+}
+
+inline void unflip(int &l,int e, int dep)
+{
+int i,j;
+for(i=0;i<edges[l];i++)
+ for(j=0;j<edges[l];j++)
+ g[l][i][j]= memory[dep][i][j];
+for(i=0;i<edges[l];i++)
+ states[l][i]=mem2[dep][i];
+return;
+
+} 
+int rec(int &l,int e,int dep)
+{
+printf("rec %d %d %d\n",l,e,dep);
+if (dep>12) return INF;
+flip(l,e,dep);
+int i,j=0,b=-1,w=-1,mb=0,mw=0;
+for(i=1;i<edges[l];i++) if (states[l][i-1]!=states[l][i]) j=1;
+if (j==0 && aims[l]==states[l][1]) {unflip(l,e,dep);return 1;}
+if (j==0 && aims[l]!=states[l][1]) {unflip(l,e,dep);return 2;}
+int t;
+for(i=0;i<edges[l];i++)
+ {
+ t=0;
+ for(j=0;j<edges[l];j++)
+  if (g[l][i][j]==1 && states[l][i]!=states[l][j]) t++;
+ if (t>mb && states[l][j]==1) {mb=t;b=i;}
+ if (t>mw && states[l][j]==0) {mw=t;w=i;}
+ }
+printf("b=%d w=%d\n",b,w);
+b=b==-1?INF:rec(l,b,dep+1);
+w=w==-1?INF:rec(l,w,dep+1);
+unflip(l,e,dep);
+return b>w?b:w;
+}
+long long solve(int &l)
+{
+     return 1;
+     cout<<l<<"=l\n";
+     int i,min=INF,res=0;
+     cout<<edges[l]<<"edges\n";
+ for(i=0;i<edges[l];i++)
+  {res=rec(l,i,0);
+  cout<<res<<" res\n";
+   if (res<min) min=res;
+}
+     return min*times[l];
+}
+int l,n,m,c;
+int main()
+{
+    scanf("%d",&l);
+    int i,j,a,b;
+    for(i=0;i<l;i++)
+    {
+    scanf("%d%d%d%d",&edges[i],&m,&aims[i],&times[i]);                
+    for(j=0;j<edges[i];j++) scanf("%d",&states[i][j]);
+    for(j=0;j<m;j++)
+     {
+     scanf("%d%d",&a,&b);
+     g[i][a][b]=1;
+     g[i][b][a]=1;
+     }
+    }
+    long long res=0;
+    for(i=0;i<l;i++) 
+    {
+    results[i]=solve(i);
+    res+=results[i];
+    }
+  //  printf("ok1\n");
+    ans.resize(res+1);
+  //      printf("ok1\n");
+    ans[0]=1;
+    for(j=0;j<l;j++)
+     for(i=res;i>=results[j];i--) 
+      if (ans[i-results[j]]==1) ans[i]=1;
+    long long res1=res; 
+  //  printf("ok2\n");
+    res=res/2;
+    l=res;
+    int r=res;
+    while(1)
+    {
+    if (ans[l]==1) {res=l;break;}
+    if (ans[r]==1) {res=r;break;}
+    r++;l--; 
+    }
+   // cout<<( ((res1-res)>res)?(res1-res):(res))<<endl;
+   cout<<res1*5+1;
+    return 0;
+    
+}

@@ -1,0 +1,427 @@
+
+<!-- saved from url=(0059)http://ace.delos.com/ioiupload?d=gold&a=OC7IKwRv9it&lang=en -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META http-equiv="Pragma" content="no-cache">
+<SCRIPT language="javascript">
+<!--
+    var endtime;
+    
+    function initcount(secondsleft) {
+        var now = new Date();
+        return now.getTime() + secondsleft*1000;
+    }
+    function count1(i) { i = i - i%1; return i; } 
+    function count2(i) { i = i - i%1; if (i < 10) return "0"+i; return i; }
+    function updateclock(head, word, endtime) {
+        var now = new Date();
+        var delta = (endtime - now.getTime())/1000;
+        var s, x;
+        if(delta < 1)
+            s = head + " has ended";
+        else{
+            s = head + " ends: ";
+            s = head + ": ";
+            if(delta >= 24*3600)
+                s = s + count1(delta/86400) + "d";
+            if(delta >= 3600)
+                s = s + count2((delta/3600)%24) + "h";
+            if(delta >= 60)
+                s = s + count2((delta/60)%60) + "m";
+            s = s + count2(delta%60) + "s";
+            setTimeout("updateclock('"+head+"','"+word+"',"+endtime+")", 500);
+        }
+
+        var slot = document.getElementById(word);
+        slot.innerHTML = s;
+    }
+-->
+</SCRIPT>
+
+<TITLE>USACO Problems</TITLE>
+<STYLE type="text/css"><!--
+table,td,body {
+font-family: Helvetica, Verdana, Arial, SunSans-Regular, Sans-Serif;
+}
+--></STYLE>
+<SCRIPT>window["_GOOG_TRANS_EXT_VER"] = "1";</SCRIPT></HEAD><BODY onload="endtime = initcount(9389); updateclock(&#39;Ends in&#39;, &#39;Person&#39;, endtime);" background="./day5b_files/bg9gold.jpg">
+
+<FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+<TABLE><TBODY><TR>
+<TD><IMG src="./day5b_files/cowhead2.gif">
+</TD>
+<TD valign="top">
+<TABLE cellpadding="0" cellspacing="0">
+    <TBODY><TR><TD>Contest: USAICO10-5B <B>GOLD</B> Division</TD></TR>
+    <TR><TD><DIV id="Person">Ends in: 02h36m23s</DIV></TD></TR>
+    <TR><TD>Your proctor is Rob Kolstad</TD></TR>
+    <TR><TD></TR>
+    
+</TBODY></TABLE>
+</TD></TR>
+</TBODY></TABLE>
+<FONT color="red"><B>
+</B></FONT>
+
+
+</FONT><PRE>**********************************************************************
+                           GOLD PROBLEMS
+**********************************************************************
+                  Three problems numbered 1 through 3
+**********************************************************************
+
+Problem 1: Space Elevator [Coaches , 2004]
+
+The cows are going to space! They plan to achieve orbit by building
+a sort of space elevator: a giant tower of blocks. They have K (1
+&lt;= K &lt;= 150) different types of blocks with which to build the
+tower. Blocks of type i has height h_i (1 &lt;= h_i &lt;= 100) and are
+available in quantity c_i (1 &lt;= c_i &lt;= 5000). Due to possible damage
+caused by cosmic rays, no part of a block of type i can exceed a
+maximum altitude a_i (1 &lt;= a_i &lt;= 100000).
+
+Help the cows build the tallest space elevator possible by stacking
+blocks on top of each other according to the rules. Also count the
+number of different ways the cows can make a space elevator of
+maximum height. This number can be very large, so compute it modulo
+1000000007.
+
+PROBLEM NAME: elevator2
+
+INPUT FORMAT:
+
+* Line 1: A single integer: K
+
+* Lines 2..K+1: Line i+1 describes block type i with three
+        space-separated integers: h_i, a_i, and c_i
+
+SAMPLE INPUT (file elevator2.in):
+
+3
+7 40 3
+5 23 8
+2 52 6
+
+OUTPUT FORMAT:
+
+* Line 1: Two space-separated integers, H, the maximum height of a
+        tower that can be built, and N, the number of ways this height
+        can be achieved modulo 1000000007.
+
+SAMPLE OUTPUT (file elevator2.out):
+
+48 1
+
+OUTPUT DETAILS:
+
+From the bottom: 3 blocks of type 2, below 3 of type 1, below 6 of
+type 3.  Stacking 4 blocks of type 2 and 3 of type 1 is not legal,
+since the top of the last type 1 block would exceed height 40.
+This height can only be made one way.
+
+**********************************************************************
+
+Problem 2: Fence Obstacle Course [USACO coaches, 2004]
+
+Farmer John has constructed an obstacle course for the cows'
+exercising enjoyment. The course comprises a sequence of N fences
+(1 &lt;= N &lt;= 50,000) of varying lengths, each parallel to the x axis.
+Fence i's y coordinate is i.
+
+The door to FJ's barn (which is the cows' ultimate destination) is
+at the origin (marked '*' in the diagram below). The starting point
+of the course lies at coordinate (S,N).
+
+     S
+   +-+-+-+-+        (fence #N)
+
+ +-+-+-+            (fence #N-1)
+
+     ...               ...
+
+   +-+-+-+          (fence #2)
+
+     +-+-+-+        (fence #1)
+
+=|=|=|=*=|=|=|      (barn)
+-3-2-1 0 1 2 3    
+
+Bessie is positioned just slightly above/north of fence #N.
+
+FJ's original intention was for the cows to jump over the fences,
+but cows are much more comfortable keeping all four hooves on the
+ground. Thus, they will walk along the fence and, when the fence
+ends, they will turn towards the x axis and continue walking in a
+straight line until they hit another fence segment or the side of
+the barn. They then decide to go left or right until they reach the
+end of the fence segment, and so on, until they finally reach the
+side of the barn and then, potentially after a short walk, the
+ending point.
+
+Two integers describe fence i: A_i and B_i (-100,000 &lt;= A_i &lt; B_i;
+A_i &lt; B_i &lt;= 100,000) that are respectively the starting and ending
+x-coordinates. Note that the fences will be traversed in reverse
+order of the input sequence.
+
+Starting position S lies on fence N such that A_N &lt;= S &lt;= B_N.
+
+Naturally, the cows want to walk as little as possible. Find the
+minimum distance the cows have to travel back and forth to get from
+the starting point to the door of the barn.
+
+PROBLEM NAME: obstacle
+
+INPUT FORMAT:
+
+* Line 1: Two space-separated integers: N and S
+
+* Lines 2..N+1: Line i+1 describes fence i with two space-separated
+        integers: A_i and B_i
+
+SAMPLE INPUT (file obstacle.in):
+
+4 0
+-2 1
+-1 2
+-3 0
+-2 1
+
+INPUT DETAILS:
+
+Four segments like this:
+
+       S
+   +-+-+-+             Fence 4
+
+ +-+-+-+               Fence 3
+
+     +-+-+-+           Fence 2
+
+   +-+-+-+             Fence 1
+
+ |=|=|=*=|=|=|         Barn
+-3-2-1 0 1 2 3      
+
+OUTPUT FORMAT:
+
+* Line 1: The minimum distance back and forth in the x direction
+        required to get from the starting point to the ending point by
+        walking around the fences. The distance in the y direction is
+        not counted.
+
+SAMPLE OUTPUT (file obstacle.out):
+
+4
+
+OUTPUT DETAILS:
+
+Walk one unit in the positive direction (to 1,4), then head toward
+the barn, trivially going around fence 3. Walk in the positive
+direction one more unit (to 2,2), then walk to the side of the barn.
+Walk two more units toward the origin for a total of 4 units of
+back-and-forth walking.
+
+       S##
+   +-+-+-#             Fence 4
+         #
+ +-+-+-+ ###           Fence 3
+           #
+     +-+-+-#           Fence 2
+           #
+   +-+-+-+ #           Fence 1
+           #
+ |=|=|=*####=|         Barn
+-3-2-1 0 1 2 3      
+
+**********************************************************************
+
+Problem 3: Tallying the Herd (2) [PA, 2010]
+
+In a fast developing herd like Farmer John's, new cows are often
+brought into the mix.  Each new cow P is assigned a direct supervisor,
+who might have supervisors herself; all these cows are considered
+supervisors of P.
+
+We call the direct supervisor of P a 'supervisor of degree 0'. The
+supervisor of a 'supervisor of degree 0' has degree 1. In general,
+a supervisor of a supervisor of degree K has degree K+1. In this
+way, a cow is a subordinate of her immediate supervisor and also
+of supervisors of higher degree. This defines a hierarchy of all
+cows, which has the herd's leader, Bessie, at its top.
+
+The history of all cows who have joined the herd since its founding
+is recorded. Some cows wonder the number of subordinates for whom
+they are supervisors of degree K. Write a program to figure this
+out.
+
+The input contains N and then N (1 &lt;= N &lt;= 100,000) events, each
+of which is either the arrival of a new cow or a query from a current
+cow. After the initial value of N, subsequent lines contain event
+descriptions, one per line, given in chronological order.
+
+Initially, only the supervisor (Bessie) is in the herd; she has ID
+number 1. N events of the form 'Z int int' or 'P int int' are given;
+they expand the herd.
+
+* A 'Z' event represents the arrival of a new cow. The two integers
+  are P_i (2 &lt;= P_i &lt;= 100,000; P_i != P_j for i != j) and S_i,
+  which respectively represent the ID numbers of the new cow and
+  her assigned immediate superior. S_i is guaranteed to equal the
+  ID number of a current herd member.
+
+* A 'P' event represents a question from a cow Q_i about the number
+  of her subordinates for whom she is a supervisor of exactly degree
+  K_i. The two integers are Q_i and K_i (1 &lt;= Q_i &lt;= 100,000; 0 &lt;=
+  K_i &lt;= 100,000).
+
+For this version of the task, all 'Z' lines come before all 'P'
+lines.
+
+Memory Limit: 32 megabytes
+
+PROBLEM NAME: therd2
+
+INPUT FORMAT:
+
+* Line 1: A single integer: N
+
+* Lines 2..N+1: Each line contains one event, as above
+
+SAMPLE INPUT (file therd2.in):
+
+7
+Z 2 1
+Z 3 1
+Z 4 2
+Z 5 2
+P 1 0
+P 1 1
+P 2 0
+
+OUTPUT FORMAT:
+
+For each line starting with 'P', the answer to the corresponding
+query.
+
+SAMPLE OUTPUT (file therd2.out):
+
+2
+2
+2
+
+**********************************************************************
+
+</PRE><HR>
+<FORM action="http://ace.delos.com/ioiupload" enctype="multipart/form-data" method="POST">
+<INPUT type="hidden" name="a" value="OC7IKwRv9it">
+
+<TABLE>
+<TBODY><TR><TD>
+
+<TABLE bgcolor="#000000" cellpadding="0" cellspacing="0" border="0" width="100%">
+<TBODY><TR><TD height="1"></TR>
+<TR><TD width="1"><TD>
+
+  <FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+  <TABLE bgcolor="#bfffbf" cellpadding="5" width="100%">
+  <TBODY><TR><TD><B>Submit a program  for grading:&nbsp;<B><INPUT type="file" name="filename">
+  &nbsp;&nbsp;
+  <INPUT type="submit" value="Submit" name="submit"></B></B></TD></TR>
+  </TBODY></TABLE>
+
+</FONT></TD><TD width="1"></TR>
+<TR height="1"><TD></TR>
+</TBODY></TABLE>
+
+
+</TD></TR>
+
+<TR><TD><HR></TD></TR>
+
+<TR><TD>
+
+<TABLE bgcolor="#000000" cellpadding="0" cellspacing="0" border="0" width="100%">
+<TBODY><TR><TD height="1"></TR>
+<TR><TD width="1"><TD>
+
+   <TABLE bgcolor="#bfffbf" cellpadding="5" width="100%">
+   <TBODY><TR><TD colspan="2">
+   <FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+   <B>To run your program with your own test data, enter the program<BR>
+   file name and input file name then click 'Test':</B></FONT></TD></TR>
+
+  <TR><TD>
+
+   <TABLE>
+   <TBODY><TR><TD>
+     <TABLE>
+     <TBODY><TR><TD>
+     <FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+     <B>Program&nbsp;File:&nbsp;</B></FONT></TD>
+         <TD><INPUT type="file" name="testprogramname"></TD></TR>
+     <TR><TD align="right">
+         <FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+         <B>Input&nbsp;File:&nbsp;</B></FONT></TD>
+         <TD><INPUT type="file" name="testfilename"></TD></TR>
+     </TBODY></TABLE>
+   </TD>
+   <TD>&nbsp;&nbsp;</TD>
+   <TD><INPUT type="submit" value="Test" name="submit"></TD>
+   </TR>
+   </TBODY></TABLE>
+
+   </TD></TR></TBODY></TABLE>
+
+</TD><TD width="1"></TR>
+<TR height="1"><TD></TR>
+</TBODY></TABLE>
+
+</TD></TR>
+<TR><TD><HR></TD></TR>
+
+<TR><TD>
+
+  <TABLE bgcolor="#000000" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <TBODY><TR><TD height="1"></TR>
+    <TR><TD width="1"><TD>
+
+    <TABLE bgcolor="#bfffbf" cellpadding="5" width="100%">
+      <TBODY><TR><TD>
+      <FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+      <B>Backup a file:&nbsp;</B><INPUT type="file" name="backupfilename">
+      &nbsp;&nbsp;&nbsp;<INPUT type="submit" value="Backup" name="submit">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <INPUT type="submit" value="See Backups" name="submit">
+      </FONT></TD></TR>
+    </TBODY></TABLE>
+
+    </TD><TD width="1"></TR>
+    <TR><TD height="1"><TD></TR>
+  </TBODY></TABLE>
+
+</TD></TR>
+<TR><TD><HR></TD></TR>
+
+</TBODY></TABLE>
+Nothing is currently saved for grading.<HR>
+<CENTER>
+<A href="http://ace.delos.com/ioiedit?a=OC7IKwRv9it">Edit your database record</A>&nbsp;|&nbsp;
+
+<A href="http://ace.delos.com/ioiupload?a=OC7IKwRv9it&logout=1"> Logout </A>
+<!--<a href="https://ace.delos.com/rules.html" target="_blank"> Rules </a>-->
+&nbsp;|&nbsp;
+<A href="http://ace.delos.com/ioiupload?init=1&a=OC7IKwRv9it">Main contest index</A>
+</CENTER>
+<!--&nbsp;|&nbsp;-->
+<CENTER>
+<A href="http://ace.delos.com/ioiupload?a=OC7IKwRv9it&showsubmit">See submitted solutions</A>
+&nbsp;|&nbsp;
+<A href="http://ace.delos.com/ioiupload?a=OC7IKwRv9it&suggestionbox">Send message
+to operations staff</A>
+&nbsp;|&nbsp;
+Phone: +1 719-321-7333
+<BR>
+Director is not online<BR>
+This page was generated at 20:21:21 GMT.
+</CENTER>
+
+</FORM></BODY></HTML>

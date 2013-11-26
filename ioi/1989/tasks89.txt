@@ -1,0 +1,269 @@
+1989 International Olympiad In Informations Problems
+ 
+1st International Olympiad in Informatics Held in Pravetz, Bulgaria
+May 16-19, 1989.
+ 
+      SIX PROBLEMS PRESENTED TO THE JURY of IOI'89 
+ 
+ 
+***PROBLEM 1. (The one selected for the competition) 
+ 
+  Given 2*N  boxes in  line  side  by  side  (N<=5).  Two 
+adjacent boxes are empty, and the other boxes contain N-1 
+symbols "A" and N-1 symbols "B". 
+ 
+Example for N=5: 
+ 
+        | A | B | B | A |   |   | A | B | A | B | 
+ 
+Exchanging rule: 
+ 
+     The content  of any two adjacent non-empty boxes can 
+     be moved  into the  two empty ones, preserving their 
+     order. 
+ 
+Aim: 
+ 
+     Obtain a  configuration where  all A's are placed to 
+     the left of all B's, no matter where the empty boxes 
+     are. 
+ 
+Problem: 
+ 
+     Write a program that: 
+ 
+     1. Models  the exchanging of boxes, where the number 
+        of boxes  and the  initial state  are to be input 
+        from the  keyboard. Each exchange is input by the 
+        number (from  1 to  N-1) of  the first of the two 
+        neighboring boxes  which are to be exchanged with 
+        the empty  ones. The  program must find the state 
+        of the boxes after the exchange and display it. 
+ 
+     2.  Given  an  initial  state  finds  at  least  one 
+        exchanging plan,  which reaches the aim (if there 
+        is such  a plan).  A plan  includes  the  initial 
+        state and the intermediate states for each step. 
+ 
+     3. Finds  the minimal  exchanging plan which reaches 
+        the aim. 
+ 
+ 
+
+
+
+
+PROBLEM 2. 
+ 
+  The floors in a building are numbered sequentially with 
+the integers  0, 1,  2,  ...,  N  (N<=15).  There  are  K 
+(1<=K<=4)  lifts   in  the   building.  Lift  control  is 
+centralized, and accepts two types of request, entered by 
+pressing buttons.  External buttons  (one for  request to 
+move up and one - to go down) can be found on each floor, 
+and are  common for all lifts. Internal buttons (requests 
+to move to a given floor) are found in each lift. 
+ 
+Build a  program to  model  lift  group  control  on  the 
+following conditions: 
+ 
+     1. There is a single lift in the building (K=1), and 
+        it can  accept a  single request  at a  time. Any 
+        other request is accepted after completion of the 
+        first one. 
+ 
+     2. There  are several  lifts in the building (K>=1). 
+        Each of  them accepts an internal request only if 
+        it is  not executing  an other  request. The lift 
+        control  device  can  register  several  incoming 
+        request at  the same  time. Internal requests are 
+        fulfilled by  the lift,  where they were entered. 
+        The control  device selects  a suitable free lift 
+        to fulfill each external request. 
+ 
+     3.  Consider  the  same  case  as  in  2,  with  the 
+        restriction that  even-numbered lifts can stop at 
+        even-numbered floors, and odd-numbered lifts - at 
+        odd-numbered floors only. All lifts stop at floor 
+        zero. 
+ 
+     4. Consider  the case  in 3,  and suppose that there 
+        can be  several pending  internal  requests  from 
+        each lift,  not just  one. All  internal requests 
+        are accepted  and registered, no matter whether a 
+        lift is free or not. 
+ 
+Additional instructions 
+ 
+  One could  accept that  all lifts are synchronized, and 
+at equal  time  intervals  (clock  ticks)  each  lift  is 
+located at  a given  floor. During  the next tick, a lift 
+could go  one floor  up or  down, or  remain at  the same 
+floor. Requests  (program input)  can be  entered at  any 
+tick, and they are of the following types: 
+ 
+     a, external  - <floor  number, direction of movement 
+        (up or down)>; 
+     b, internal - <lift number, floor number> 
+ 
+Several or none requests can be entered at each tick. 
+ 
+At each tick the program should display information about 
+the location of each lift. 
+ 
+The lifts are large enough and cannot be overloaded. 
+ 
+The program  should  control  the  lifts  so  that  their 
+behaviour shows as much "intelligence" as possible. 
+ 
+There should be explicit explanations of the lift control 
+strategy. 
+ 
+ 
+PROBLEM 3. 
+ 
+  Given is a group of N persons. Everybody is a friend of 
+more then  [N/2] of  the others  and has  no more  than K 
+enemies. One  of the  persons has  a book  that everybody 
+would like  to read  and then  to discuss it with some of 
+the others. 
+ 
+Write a program that: 
+ 
+     1. Finds  out a  way of  handing around  the book so 
+        that everyone  gets it only once and passes it to 
+        a friend  of his,  and it returns to its owner at 
+        last. 
+ 
+     2.  Divides   the  persons   into  S  subgroups  for 
+        discussing the  book. Everyone  must have no more 
+        than P enemies in the subgroup he joins. 
+ 
+It is supposed that S*P>=K. 
+ 
+ 
+ 
+PROBLEM 4. 
+ 
+  Let's consider  messages written  by using only capital 
+letters /A-Z/ and the eight symbols . , + - : / ? ! 
+ 
+These messages  are sent  through a communication channel 
+as a  sequence of  bytes. The  number of 1's in each byte 
+must be even. 
+ 
+1. Propose  a coding  for the  above characters by binary 
+   sequences, such  that unambiguous  decoding is assured 
+   and the  least possible number of bits is sent through 
+   the channel. 
+ 
+2. Write a program that: 
+     2.1. Given the text of message prints its encoded 
+          form ready for sending as a sequence of 
+          hexadecimal digits. 
+     2.2. Given a received encoded message decodes it and 
+          displays the original text. 
+ 
+
+
+
+
+ 
+PROBLEM 5. 
+ 
+  Let's consider  a plane  of graph with n vertices, each 
+of which is of degree 3. 
+Example: 
+ 
+                         B  ---------------  C 
+                            |\           /| 
+                            | \         / | 
+                            |  \       /  | 
+                            | G \-----/ F | 
+                            |   |     |   | 
+                            |   |     |   | 
+                            | H /-----\ E | 
+                            |  /       \  | 
+                            | /         \ | 
+                            |/           \| 
+                         A  ---------------  D 
+ 
+Let the  vertices X,Y  and Z be adjacent to the vertex T. 
+We say  Y is the left-hand and Z the right-hand neighbour 
+of T  with respect  to X,  if the  oriented angle  XTZ is 
+smaller than  the angle  XTY (positive being the counter- 
+clockwise direction). 
+ 
+For example,  E is  the right-hand  and G  the  left-hand 
+neighbour of H in respect of A because the oriented angle 
+AHE is smaller than the angle AHG. 
+ 
+Write a program that: 
+ 
+     1. Inputs  the coordinates of the graph vertices and 
+        the edges  and draws  it on  the computer display 
+        using  appropriate   scale.  (Edges   should   be 
+        displayed as straight lines.) 
+ 
+     2. Given a pair of vertices X0 and X1 and a sequence 
+        of the  letters L  and R,  it should  find a path 
+        X0X1X2...Xn on the graph, such that: 
+        - X0 and X1 are the first two vertices; 
+        -  Xi+1   is  the  left-hand  or  the  right-hand 
+        neighbour of  Xi with  respect to Xi-1, depending 
+        on the  (i-2)-th letter  in the  control sequence 
+        being L and R. 
+ 
+Example: 
+  The path  generated  for  the  graph  from  the  former 
+example, using  A and  H as  starting  vertices  and  the 
+sequence LRRLLR is AHGFEDCB. 
+ 
+     3. Draws  the path  found in  subproblem  2  on  the 
+        screen. 
+ 
+     4. Uses  a starting  and an  ending vertex, builds a 
+        path that  goes through the least possible number 
+        of vertices,  draws it  on the screen and outputs 
+        the  two   starting  vertices   and  the  control 
+        sequence that  would generate  the same  path  as 
+        defined in subproblem 2. 
+ 
+ 
+PROBLEM 6. 
+ 
+An icosahedron  is given. It is a regular polyhedron. Its 
+sides are numbered from 1 throught 20. 
+ 
+The icosahedron  should be  routed so  that to reach each 
+side only once. 
+ 
+The route cost C is defined by the scalar product: 
+ 
+                       20 
+                    C =SUM i*fi 
+                       i=1 
+ 
+where fi  is the  number of  the side which is reached in 
+the i-th step. 
+ 
+One may pass from one side to another only if these sides 
+are adjacent. 
+ 
+     A. Two  sides will  be adjacent  if there  exists  a 
+        common edge; 
+ 
+     B. Two  sides will  be adjacent  if there  exists  a 
+        common edge or a common point. 
+ 
+Find the  routes with  minimal costs  for the cases given 
+above. 
+ 
+Remark: 
+ 
+  If for  time or  space complexity  of the algorithm you 
+may not  find the  exact solution  you  could  propose  a 
+satisfactory one. 
+ 
+ 
+

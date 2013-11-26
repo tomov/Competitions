@@ -1,0 +1,121 @@
+#include <cstdio>
+#include <vector>
+#include <queue>
+#include <map>
+#include <iostream>
+#include <set>
+#include <bitset>
+
+using namespace std;
+
+const int MAX_L = 35;
+const int MAX_N = 55;
+
+int L;
+int M, N, C, T;
+int len[MAX_L];
+int sum;
+int ans;
+bool g[MAX_N][MAX_N];
+set<int> s[MAX_L];
+
+bool used[MAX_N];
+long long click(long long g, int i)
+{
+	memset(used, 0, sizeof(used));
+	long long res = g;
+	queue<int> q;
+	long long d = g & (1LL << (long long)i);
+	int c = (d != 0);
+	q.push(i);
+	used[i] = 1;
+	res ^= (1LL << (long long)i);
+	while(!q.empty())
+	{
+		int cur = q.front(); q.pop();
+		for(int i = 0; i < N; i ++)
+			if( !used[i] && ::g[cur][i] && ( ((g & (1LL << (long long)i)) != 0) == c ) )
+			{
+				used[i] = 1;
+//				res[i] = !c;
+				res ^= (1LL << (long long)i);
+				q.push(i);
+			}
+	}
+	return res;
+}
+
+queue< long long > q;
+map< long long, int > m;
+int bfs(long long g)
+{
+	while(!q.empty())	q.pop();
+	m.clear();
+	q.push(g);
+	m[g] = 0;
+	int i;
+	for(i = 0; i < N; i ++)	
+		if( ((g & (1LL << (long long)i)) != 0) != C)	break;
+	if(i == N)	return 0;
+	
+	while(!q.empty())
+	{
+		long long cur = q.front(); q.pop();
+		
+		for(int i = 0; i < N; i ++)
+		{
+			long long new_g = click(cur, i);
+			if(!m.count(new_g))
+			{
+				m[new_g] = m[cur] + 1;
+				q.push(new_g);
+				int i;
+				for(i = 0; i < N; i ++)	if(((new_g & (1LL << (long long)i)) != 0) != C)	break;
+				if(i == N)	return m[new_g];
+			}
+		}
+	}
+	
+	return -1;
+}
+
+int main()
+{
+	scanf("%d", &L);
+	for(int t = 0; t < L; t ++)
+	{
+		scanf("%d %d %d %d", &N, &M, &C, &T);
+		long long g = 0;
+		for(int i = 0; i < N; i ++)	
+		{
+			int c;
+			scanf("%d", &c);
+			if(c)	g |= (1LL << (long long)i);
+		}
+		memset(::g, 0, sizeof(::g));
+		for(int i = 0; i < M; i ++)
+		{
+			int p, q;
+			scanf("%d %d", &p, &q);
+			::g[p][q] = ::g[q][p] = 1;
+		}
+		len[t] = bfs(g) * T;
+		sum += len[t];
+//		cout << len[t] << "\n";
+	}
+	s[0].insert(0);
+	for(int i = 0; i < L; i ++)
+		for(typeof(s[i].begin()) it = s[i].begin(); it != s[i].end(); it ++)
+		{
+			s[i + 1].insert(*it);
+			s[i + 1].insert(*it + len[i]);
+		}
+	for(typeof(s[L].begin()) it = s[L].begin(); it != s[L].end(); it ++)
+		if( 2 ** it >= sum )
+		{
+			ans = *it;
+			break;
+		}
+	printf("%d\n", ans);
+	return 0;
+}

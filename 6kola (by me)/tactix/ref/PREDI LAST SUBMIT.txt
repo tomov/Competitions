@@ -1,0 +1,26 @@
+USLOVIETO
+grani4ni slu4ai
+overflow na tipove
+stack overflow
+uslovieto
+razmeri na masivi
+double bullshit
+testvai na tehnata boza
+USLOVIETO!!!
+za vs red - kvo prai, moje li bez nego, prai li vs nujno i kude 6te bugne
+
+common debug re6ki:
+
+nepro4itane na uslovieto
+neosmislqne na uslovieto
+negledane na primernite testove s cel osmislqne na uslovieto
+nulirane na masivi
+ostanki ot stari edit-vaniq
+gre6ni (ednakvi) imena na promenlivi, gre6ni indeksi
+gre6ni obob6teniq poradi murzel za napisvane na mnogo slu4ai, gre6ni formuli
+lokalni i globalni promenlivi
+Repi(N) { sdfasdgsdfg for (int i=ffgdg) dsfga } (!!! raboti, ama nevinagi)
+bugove deto ne se vijdat pri mn test cases => test!!!
+osmislqi grani4nite slu4ai
+nedoobmisleni formuli
+nedoobmisleni izvodi

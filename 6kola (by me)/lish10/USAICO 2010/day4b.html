@@ -1,0 +1,363 @@
+
+<!-- saved from url=(0059)http://ace.delos.com/ioiupload?d=gold&a=YG8Ned7MaFA&lang=en -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META http-equiv="Pragma" content="no-cache">
+<SCRIPT language="javascript">
+<!--
+    var endtime;
+    
+    function initcount(secondsleft) {
+        var now = new Date();
+        return now.getTime() + secondsleft*1000;
+    }
+    function count1(i) { i = i - i%1; return i; } 
+    function count2(i) { i = i - i%1; if (i < 10) return "0"+i; return i; }
+    function updateclock(head, word, endtime) {
+        var now = new Date();
+        var delta = (endtime - now.getTime())/1000;
+        var s, x;
+        if(delta < 1)
+            s = head + " has ended";
+        else{
+            s = head + " ends: ";
+            s = head + ": ";
+            if(delta >= 24*3600)
+                s = s + count1(delta/86400) + "d";
+            if(delta >= 3600)
+                s = s + count2((delta/3600)%24) + "h";
+            if(delta >= 60)
+                s = s + count2((delta/60)%60) + "m";
+            s = s + count2(delta%60) + "s";
+            setTimeout("updateclock('"+head+"','"+word+"',"+endtime+")", 500);
+        }
+
+        var slot = document.getElementById(word);
+        slot.innerHTML = s;
+    }
+-->
+</SCRIPT>
+
+<TITLE>USACO Problems</TITLE>
+<STYLE type="text/css"><!--
+table,td,body {
+font-family: Helvetica, Verdana, Arial, SunSans-Regular, Sans-Serif;
+}
+--></STYLE>
+<SCRIPT>window["_GOOG_TRANS_EXT_VER"] = "1";</SCRIPT></HEAD><BODY onload="endtime = initcount(10800); updateclock(&#39;Ends in&#39;, &#39;Person&#39;, endtime);" background="./day4b_files/bg9gold.jpg">
+
+<FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+<TABLE><TBODY><TR>
+<TD><IMG src="./day4b_files/cowhead2.gif">
+</TD>
+<TD valign="top">
+<TABLE cellpadding="0" cellspacing="0">
+    <TBODY><TR><TD>Contest: USAICO10-4B <B>GOLD</B> Division</TD></TR>
+    <TR><TD><DIV id="Person">Ends in: 02h59m46s</DIV></TD></TR>
+    <TR><TD>Your proctor is Rob Kolstad</TD></TR>
+    <TR><TD></TR>
+    
+</TBODY></TABLE>
+</TD></TR>
+</TBODY></TABLE>
+<FONT color="red"><B>
+</B></FONT>
+
+
+</FONT><PRE>**********************************************************************
+                           GOLD PROBLEMS
+**********************************************************************
+                  Three problems numbered 1 through 3
+**********************************************************************
+
+Problem 1: Pareto's Domination (2) [AUPC 2008 Problem E, 2010]
+
+FJ wants to improve the management of his farm and has enrolled in
+a microeconomics class at the Manure Institute of Technology.
+
+In one of his classes, he learned about 'Pareto domination' (which
+is apparently important for game theory). Pareto-domination has to
+do with a relation between two M-dimensional points x_i = (x_i1,
+x_i2, ..., xi_M) and x_j = (y_j1, y_j2, ..., y_jM) where (2 &lt;= M
+&lt;= 3; 0 &lt;= x_ik &lt;= 1,000,000,000).
+
+FJ recalls that a point x_i Pareto-dominates a point x_j if, for
+each k (1 &lt;= k &lt;= M), the inequality x_ik &gt;= x_jk holds.
+
+FJ must complete a problem set on Pareto-domination. For each
+problem, he is given a set of N (1 &lt;= N &lt;= 50,000) distinct points.
+He must identify all points that are not Pareto-dominated by any
+other points in the set.
+
+Help FJ check his answer by writing a program to output the number
+of points that are not Pareto-dominated by any other point.
+
+TIME LIMIT: 1.5 seconds
+
+MEMORY LIMIT: 64MB
+
+PROBLEM NAME: dom2
+
+INPUT FORMAT:
+
+* Line 1: Two space separated integers: N and M
+
+* Lines 2..N+1: Line i contains M space-separated integers: point x_i
+
+SAMPLE INPUT (file dom2.in):
+
+4 2
+0 0
+1 1
+2 0
+0 2
+
+INPUT DETAILS:
+
+There are 4 points in 2D: (0,0), (1,1), (2,0), (0,2).
+
+OUTPUT FORMAT:
+
+* Line 1: A single integer: the number of points that are not
+        Pareto-dominated by any other point
+
+SAMPLE OUTPUT (file dom2.out):
+
+3
+
+OUTPUT DETAILS:
+
+Only the point (0,0) is dominated.
+
+**********************************************************************
+
+Problem 2: Moo University -- Financial Aid (2) [Hal Burch, 2004]
+
+Bessie noted that although humans have many universities they can attend,
+cows have none. To remedy this problem, she and her fellow cows formed a
+new university called The University of Wisconsin-Farmside, "Moo U" for short.
+
+Not wishing to admit dumber-than-average cows, the founders created an
+incredibly precise admission exam called the Cow Scholastic Aptitude Test
+(CSAT) that yields scores in the range 1..2,000,000,000.
+
+Moo U is very expensive to attend; not all calves can afford it. In fact,
+most calves need some sort of financial aid (0 &lt;= aid &lt;= 100,000). The
+government does not provide scholarships to calves, so all the money must
+come from the university's limited fund (whose total money is F, 0 &lt;= F &lt;=
+2,000,000,000).
+
+Worse still, Moo U only has classrooms for an odd number N (1 &lt;= N &lt;=
+19,999) of the C (N &lt;= C &lt;= 70,000) calves who have applied. Bessie wants
+to admit exactly N calves in order to maximize educational opportunity. She
+still wants the median CSAT score of the admitted calves to be as high as
+possible.
+
+Recall that the median of a set of integers whose size is odd is the middle
+value when they are sorted. For example, the median of the set {3, 8, 9, 7,
+5} is 7, as there are exactly two values above 7 and exactly two values
+below it.
+
+Given the score and required financial aid for each calf that applies, the
+total number of calves to accept, and the total amount of money Bessie has
+for financial aid, determine the maximum median score Bessie can obtain by
+carefully admitting an optimal set of calves.
+
+PROBLEM NAME: finance2
+
+INPUT FORMAT:
+
+* Line 1: Three space-separated integers: N, C, and F.
+
+* Lines 2..C+1: Two space-separated integers per line: The first is
+        the calf's CSAT score; the second integer is the required
+        amount of financial aid the calf needs.
+
+SAMPLE INPUT (file finance2.in):
+
+3 5 70
+30 25
+50 21
+20 20
+5 18
+35 30
+
+OUTPUT FORMAT:
+
+* Line 1: A single integer, the maximum median score that Bessie can
+        achieve. If there is insufficient money to admit N calves,
+        output -1.
+
+SAMPLE OUTPUT (file finance2.out):
+
+35
+
+OUTPUT DETAILS:
+
+If Bessie accepts the calves with CSAT scores of 5, 35, and 50, the median is
+35. The total financial aid required is 18 + 30 + 21 = 69 &lt;= 70.
+
+**********************************************************************
+
+Problem 3: Palindrome (4) [Richard Peng, 2007]
+
+The entire herd of N (1 &lt;= N &lt;= 100,000) cows has become fascinated
+with palindromes (a palindrome is a string that reads the same both
+forwards and backwards).
+
+Each cow chooses a lower-case letter ('a'..'z') and paints it on
+her forehead before joining the growing line of cows. The cows then
+ask Farmer John to determine the length of the longest odd-length
+palindrome centered on each cow.
+
+Help FJ confirm his count is correct.
+
+PROBLEM NAME: palin4
+
+INPUT FORMAT:
+
+* Line 1: A single integer: N
+
+* Lines 2..N+1: Line i + 1 contains the single character painted on
+        the forehead of cow i.
+
+SAMPLE INPUT (file palin4.in):
+
+6
+a
+a
+a
+b
+a
+a
+
+OUTPUT FORMAT:
+
+* Lines 1..N: Line i contains the length of the longest palindrome
+        with its center character at i.
+
+SAMPLE OUTPUT (file palin4.out):
+
+1
+3
+1
+5
+1
+1
+
+**********************************************************************
+
+</PRE><HR>
+<FORM action="http://ace.delos.com/ioiupload" enctype="multipart/form-data" method="POST">
+<INPUT type="hidden" name="a" value="YG8Ned7MaFA">
+
+<TABLE>
+<TBODY><TR><TD>
+
+<TABLE bgcolor="#000000" cellpadding="0" cellspacing="0" border="0" width="100%">
+<TBODY><TR><TD height="1"></TR>
+<TR><TD width="1"><TD>
+
+  <FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+  <TABLE bgcolor="#bfffbf" cellpadding="5" width="100%">
+  <TBODY><TR><TD><B>Submit a program  for grading:&nbsp;<B><INPUT type="file" name="filename">
+  &nbsp;&nbsp;
+  <INPUT type="submit" value="Submit" name="submit"></B></B></TD></TR>
+  </TBODY></TABLE>
+
+</FONT></TD><TD width="1"></TR>
+<TR height="1"><TD></TR>
+</TBODY></TABLE>
+
+
+</TD></TR>
+
+<TR><TD><HR></TD></TR>
+
+<TR><TD>
+
+<TABLE bgcolor="#000000" cellpadding="0" cellspacing="0" border="0" width="100%">
+<TBODY><TR><TD height="1"></TR>
+<TR><TD width="1"><TD>
+
+   <TABLE bgcolor="#bfffbf" cellpadding="5" width="100%">
+   <TBODY><TR><TD colspan="2">
+   <FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+   <B>To run your program with your own test data, enter the program<BR>
+   file name and input file name then click 'Test':</B></FONT></TD></TR>
+
+  <TR><TD>
+
+   <TABLE>
+   <TBODY><TR><TD>
+     <TABLE>
+     <TBODY><TR><TD>
+     <FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+     <B>Program&nbsp;File:&nbsp;</B></FONT></TD>
+         <TD><INPUT type="file" name="testprogramname"></TD></TR>
+     <TR><TD align="right">
+         <FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+         <B>Input&nbsp;File:&nbsp;</B></FONT></TD>
+         <TD><INPUT type="file" name="testfilename"></TD></TR>
+     </TBODY></TABLE>
+   </TD>
+   <TD>&nbsp;&nbsp;</TD>
+   <TD><INPUT type="submit" value="Test" name="submit"></TD>
+   </TR>
+   </TBODY></TABLE>
+
+   </TD></TR></TBODY></TABLE>
+
+</TD><TD width="1"></TR>
+<TR height="1"><TD></TR>
+</TBODY></TABLE>
+
+</TD></TR>
+<TR><TD><HR></TD></TR>
+
+<TR><TD>
+
+  <TABLE bgcolor="#000000" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <TBODY><TR><TD height="1"></TR>
+    <TR><TD width="1"><TD>
+
+    <TABLE bgcolor="#bfffbf" cellpadding="5" width="100%">
+      <TBODY><TR><TD>
+      <FONT face="Verdana,Helvetica,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans">
+      <B>Backup a file:&nbsp;</B><INPUT type="file" name="backupfilename">
+      &nbsp;&nbsp;&nbsp;<INPUT type="submit" value="Backup" name="submit">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <INPUT type="submit" value="See Backups" name="submit">
+      </FONT></TD></TR>
+    </TBODY></TABLE>
+
+    </TD><TD width="1"></TR>
+    <TR><TD height="1"><TD></TR>
+  </TBODY></TABLE>
+
+</TD></TR>
+<TR><TD><HR></TD></TR>
+
+</TBODY></TABLE>
+Nothing is currently saved for grading.<HR>
+<CENTER>
+<A href="http://ace.delos.com/ioiedit?a=YG8Ned7MaFA">Edit your database record</A>&nbsp;|&nbsp;
+
+<A href="http://ace.delos.com/ioiupload?a=YG8Ned7MaFA&logout=1"> Logout </A>
+<!--<a href="https://ace.delos.com/rules.html" target="_blank"> Rules </a>-->
+&nbsp;|&nbsp;
+<A href="http://ace.delos.com/ioiupload?init=1&a=YG8Ned7MaFA">Main contest index</A>
+</CENTER>
+<!--&nbsp;|&nbsp;-->
+<CENTER>
+<A href="http://ace.delos.com/ioiupload?a=YG8Ned7MaFA&showsubmit">See submitted solutions</A>
+&nbsp;|&nbsp;
+<A href="http://ace.delos.com/ioiupload?a=YG8Ned7MaFA&suggestionbox">Send message
+to operations staff</A>
+&nbsp;|&nbsp;
+Phone: +1 719-321-7333
+<BR>
+Director is not online<BR>
+This page was generated at 20:55:56 GMT.
+</CENTER>
+
+</FORM></BODY></HTML>

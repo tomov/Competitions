@@ -1,0 +1,631 @@
+<html>
+<head>
+<script language="javascript">
+<!--
+    var endtime;
+    
+    function initcount(secondsleft) {
+        var now = new Date();
+        return now.getTime() + secondsleft*1000;
+    }
+    function count1(i) { i = i - i%1; return i; } 
+    function count2(i) { i = i - i%1; if (i < 10) return "0"+i; return i; }
+    function updateclock(head, word, endtime) {
+        var now = new Date();
+        var delta = (endtime - now.getTime())/1000;
+        var s, x;
+        if(delta < 1)
+            s = head + " has ended";
+        else{
+            s = head + " ends: ";
+            s = head + ": ";
+            if(delta >= 24*3600)
+                s = s + count1(delta/86400) + "d";
+            if(delta >= 3600)
+                s = s + count2((delta/3600)%24) + "h";
+            if(delta >= 60)
+                s = s + count2((delta/60)%60) + "m";
+            s = s + count2(delta%60) + "s";
+            setTimeout("updateclock('"+head+"','"+word+"',"+endtime+")", 500);
+        }
+
+        var slot = document.getElementById(word);
+        slot.innerHTML = s;
+    }
+-->
+</script>
+
+<title>USACO Problems</title>
+</head>
+<body onload="endtime = initcount(5430); updateclock('Your submissions end', 'Person', endtime);" background='/usaco/bg9silver.jpg'>
+
+<font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+<table><tr>
+<td></td>
+<td valign='top'>
+<table cellpadding=0 cellspacing=0>
+    <tr><td>Contest: OCT06 <b>SILVER</b> Division</td></tr>
+    <tr><td><div id='Person'></div></td></tr>
+    <tr><td></td></tr>
+    
+</table>
+</td></tr>
+</table>
+<font color=red>
+</font>
+
+
+</font><pre></pre>
+<pre>**********************************************************************
+                           GOLD PROBLEMS
+**********************************************************************
+                  Six problems numbered 1 through 6
+**********************************************************************
+
+Problem 1: Another Cow Number Game [Traditional, 2006]
+
+The cows are playing a silly number game again. Bessie is tired of
+losing and wants you to help her cheat. In this game, a cow supplies
+a number N (1 &lt;= N &lt;= 1,000,000). This is move 0. If N is odd, then
+the number N is multiplied by 3 and incremented by 1. If N is even,
+the number N is divided by 2. Each time the number is multiplied or
+divided, the score increases by one point. The game ends -- and the
+score is finalized -- when N becomes 1.
+
+Here's an example with N starting at 5:
+ 
+        N     Next Value    Comment    Score
+        5        16          3*5+1       1
+       16         8           16/2       2
+        8         4            8/2       3
+        4         2            4/2       4
+        2         1            2/2       5
+
+The final score is 5.
+
+PROBLEM NAME: acng
+
+INPUT FORMAT:
+
+* Line 1: A single integer, N
+
+SAMPLE INPUT (file acng.in):
+
+112
+
+
+OUTPUT FORMAT:
+
+* Line 1: A single integer that is the score for this game when
+        starting at N
+
+SAMPLE OUTPUT (file acng.out):
+
+20
+
+**********************************************************************
+
+Problem 2: Guess My Number [Traditional, 2006]
+
+The cows are playing "High-Low", the guess-a-number game. The leader
+thinks of a number in the range 1..N (10 &lt;= N &lt;= 1,000,000); others
+try to guess it. Each time a guess is given, the leader tells the
+guesser if her guess is high, low, or correct. Write a program to
+play this game against a robotic leader.
+
+This is an interactive task; your program will interact with a
+grading program. Read all your input from the standard input (also
+known as the console). Write all your output to standard output
+(just like writing to the screen/console). See below for more special
+instructions.
+
+First, read N, then make your guess by printing it to the console.
+
+Read back a reply that is a line with 'H', 'L', or 'OK'. Your program
+should exit after receiving the 'OK'.
+
+Your score depends on how quickly you guess the number. Optimal
+solutions receive full credit; others receive less.
+
+A typical exchange might go like this (the secret number is 7):
+
+      -&gt;  10        [guess in the range 1..10]
+      &lt;-  4         [You guess 4]
+      -&gt;  L         [Guess is low]
+      &lt;-  6         [You guess 6]
+      -&gt;  L         [Guess is low]
+      &lt;-  8         [You guess 8]
+      -&gt;  H         [Guess is high]
+      &lt;-  7         [You guess 7]
+      -&gt;  OK        [Guess is correct!]
+
+You must ensure that your program's output is not buffered inside your
+program; you must 'flush' your output.
+
+If you're using stdio.h, include the line
+
+       setbuf(stdout, 0);
+
+near the top of your program.
+
+If you're using C++ style I/O, flush each output line like this:
+
+cout &lt;&lt; line &lt;&lt; "\n" &lt;&lt; flush;
+
+For Pascal, add the following statement after each writeln statement:
+
+flush(stdout);
+
+For Java, add the following after each output statement:
+
+    System.out.flush();
+
+If your program 'times out' after you wrote a reply, it probably
+is not properly flushing the output.
+
+---------------- JAVA USERS ----------------------
+
+Here is the skeleton of input/output statements you will need:
+
+import java.io.*;
+import java.util.*;
+
+public class guess {
+    public static void main(String[] args) throws IOException {
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+	/* read an integer: */
+        int range = Integer.parseInt(in.readLine());
+
+        String response;
+	...
+
+	/* write an integer: */
+        System.out.println(guess);
+        System.out.flush();
+            
+	/* read a reply */
+        response = in.readLine();
+        if (response.equals("H")) {
+		...
+	}
+    ...
+
+PROBLEM NAME: guess
+
+INPUT FORMAT:
+
+* Line 1: A single integer N
+
+* Lines 2..?: Each line contains a short reply as detailed above.
+
+SAMPLE INPUT (standard input):
+
+10
+...[See details above]...
+
+
+OUTPUT FORMAT:
+
+* Lines 1..??: Each output line is a guess as detailed above.
+
+SAMPLE OUTPUT (standard output):
+
+...[see above]...
+
+**********************************************************************
+
+Problem 3: Cows on Skates [Rob Kolstad, 2006]
+
+Finally, after years of pleading, Farmer John relented and has purchased 
+roller skates for the entire herd of cows. A large bit of the farm is just 
+great for roller-skating, but several parcels have just way too many rocks 
+and are unpassable on skates.
+
+The farm is conveniently reprssented as a grid of squares with R (1 &lt;= R 
+&lt;= 113) rows and C (1 &lt;= C &lt;= 77) columns. Bessie finds herself at square 
+(1,1) near feeding time and wants to get back to barn which is located at 
+square (R,C). She knows there is at least one way to do so by skating to 
+adjacent squares (but not on the diagonal) that don't contain rocks. Find 
+and display any path that Bessie can follow to get to the barn.
+
+Consider R=5, C=8 farm layout below on the left, where '*' means "too many 
+rocks here". The right-hand map shows one possible path Bessie might use 
+to get to the barn in the lower right corner:
+
+  12345678     12345678
+1 B.*...**   1 @@*@@@**
+2 *.*.*.**   2 *@*@*@**
+3 *...*...   3 *@@@*@@@
+4 *.*.*.*.   4 *.*.*.*@
+5 ....*.*B   5 ....*.*@
+
+PROBLEM NAME: skate
+
+INPUT FORMAT:
+
+* Line 1: Two space-separated integers, respectively R and C
+
+* Lines 2..R+1: Each line contains C characters (with no spaces). 
+        Each character is  either a '.' indicating that Bessie can
+        skate on that square or a '*'  indicating that the square has
+        too many rocks.
+
+SAMPLE INPUT (file skate.in):
+
+5 8
+..*...**
+*.*.*.**
+*...*...
+*.*.*.*.
+....*.*.
+
+
+OUTPUT FORMAT:
+
+* Lines 1..?: Each line contains two space-separated integers that are
+        the R,C  coordinates of a square Bessie occupies. The first
+        line should be 1 1; the  last line should be the integers R
+        and C. Intermediate lines show, square by square, the path
+        Bessie takes between squares 1,1 and R,C.
+
+SAMPLE OUTPUT (file skate.out):
+
+1 1
+1 2
+2 2
+3 2
+3 3
+3 4
+2 4
+1 4
+1 5
+1 6
+2 6
+3 6
+3 7
+3 8
+4 8
+5 8
+
+**********************************************************************
+
+Problem 4: Cow Pie Treasures [Kolstad, 2006]
+
+The cows have been busily baking pies that contain gold coins! Each
+pie has some number Ni (1 &lt;= Ni &lt;= 25) of gold coins and is neatly
+labeled on its crust with the number of gold coins inside.
+
+The cows have placed the pies very precisely in an array of R rows
+(1 &lt;= R &lt;= 100) and C columns (1 &lt;= C &lt;= 100) out in the pasture.
+You have been placed in the pasture at the location (R=1,C=1) and
+have gathered the gold coins in that pie. You must make your way
+to the other side of the pasture, moving one column closer to the
+end point (which is location (R,C)) with each move you make. As you
+step to the new column, you may stay on the same row or change your
+row by no more than 1 (i.e., from (r,c) you can move to (r-1,c+1),
+(r, c+1), or (r+1,c+1).  Of course, you would not want to leave the
+field and fail to get some gold coins, and you must end up at (R,C).
+
+Given a map of the pasture, what is the greatest number of gold
+coins you can gather?
+
+By way of example, consider this field of gold-bearing cow pies:
+
+start-&gt; 6 5 3 7 9 2 7
+        2 4 3 5 6 8 6
+        4 9 9 9 1 5 8 &lt;-end
+
+Here's one path:
+
+start-&gt; 6 5 3 7 9 2 7
+         \
+        2 4 3 5 6 8 6
+           \   / \
+        4 9 9-9 1 5-8 &lt;-end
+
+The path above yields 6+4+9+9+6+5+8 = 47 gold coins. The path below
+is even better and yields 50 coins, which is the best possible:
+
+start-&gt; 6 5 3 7 9 2 7
+         \
+        2 4 3 5 6-8 6
+           \   /   \
+        4 9 9-9 1 5 8 &lt;-end
+
+PROBLEM NAME: pie1
+
+INPUT FORMAT:
+
+* Line 1: Two space-separated integers, respectively R and C
+
+* Lines 2..R+1: Each line contains C space-separated integers in the
+        obvious order
+
+SAMPLE INPUT (file pie1.in):
+
+3 7
+6 5 3 7 9 2 7
+2 4 3 5 6 8 6
+4 9 9 9 1 5 8
+
+
+OUTPUT FORMAT:
+
+* Line 1: A single integer that is the maximum number of gold coins
+        that can be gathered
+
+SAMPLE OUTPUT (file pie1.out):
+
+50
+
+**********************************************************************
+
+Problem 5: Hungry Cows [Kolstad, 2006]
+
+Each of Farmer John's N (1 &lt;= N &lt;= 5,000) cows has a unique positive
+integer brand that fits nicely into 32 signed bits. He wishes the
+cows would line up in numerical order for feeding, but they never
+cooperate. To encourage good behavior, he allows a cow to eat only
+if it is the first cow to be chosen to eat or if its number is
+greater than the cow that ate before it.
+
+Given a listing of the ordering of cow brands for the cows standing in
+line, what is the largest number of cows that can be fed using FJ rules?
+
+Consider this line of 11 cows:
+
+2 5 18 3 4 7 10 9 11 8 15
+
+One could feed cows in the order 2, 3, 4, 7, 10 11, and 15 for a total of
+seven fed, the largest number possible.
+
+One could not feed cows in the order 2, 5, 3, 10 15 since cow 3's brand is
+not greater than its predecessor, 5.
+
+PROBLEM NAME: lineup
+
+INPUT FORMAT:
+
+* Line 1: A single integer, N
+
+* Lines 2..?: Each line except potentially the last contains 20
+        space-separated integers that are successively the brands of
+        the cows in line. The last line might have fewer than 20
+        integers if N is not an exact multiple of 20.
+
+SAMPLE INPUT (file lineup.in):
+
+11
+2 5 18 3 4 7 10 9 11 8 15
+
+
+OUTPUT FORMAT:
+
+* Line 1: The length of the largest chain of cows where each brand is
+        greater than its predecessor.
+
+SAMPLE OUTPUT (file lineup.out):
+
+7
+
+**********************************************************************
+
+Problem 6: Building the Moat [Eric Price, 2006]
+
+To repel the invading thirsty aardvarks, Farmer John wants to build
+a moat around his farm.  He owns N (8 &lt;= N &lt;= 5,000) watering holes,
+and will be digging the moat in a straight line between pairs of
+them.  His moat should protect (i.e., surround) all his watering
+holes; every watering hole must be on or inside the moat, and the
+moat must form a closed loop.
+
+Digging a moat is expensive work, and frugal FJ wants his moat to
+have the minimum length possible.  Find the length of the shortest
+moat he can construct.
+
+The unique holes are each located at integer coordinates in the
+range (1..45,000, 1..45,000). FJ has noticed that no three
+watering holes lie along the same line.
+
+Consider this grid where the 20 '*'s represent watering holes:
+
+...*-----------------*......
+../..........*........\.....
+./.....................\....
+*......................*\...
+|..........*........*....\..
+|*........................\.
+|..........................*
+*..........................|
+.\*........................|
+..\.....................*..|
+...\........*............*.|
+....\..................*...*
+.....\..*..........*....../.
+......\................../..
+.......*----------------*...
+
+The enclosing lines are the shortest possible path that can enclose
+this set of watering holes.
+
+The line displacements, starting with the top line are: (18,0),
+(6,-6), (0,-5), (-3,-3), (-17,0), (-7,7), (0,4), and (3,3).  This
+yields a distance of 70.8700576850888(...). Our output will print
+only two decimal places, so the distance will be reported as 70.87.
+
+PROBLEM NAME: moat
+
+INPUT FORMAT:
+
+* Line 1: A single integer, N
+
+* Lines 2..N+1: Two space-separated integers, X_i and Y_i that specify
+        the location of a watering hole.
+
+SAMPLE INPUT (file moat.in):
+
+20
+2 10
+3 7
+22 15
+12 11
+20 3
+28 9
+1 12
+9 3
+14 14
+25 6
+8 1
+25 1
+28 4
+24 12
+4 15
+13 5
+26 5
+21 11
+24 4
+1 8
+
+
+OUTPUT FORMAT:
+
+* Line 1: A single number D, the shortest possible length of moat.
+        Print this number to two decimal places.
+
+SAMPLE OUTPUT (file moat.out):
+
+70.87
+
+**********************************************************************
+
+</pre><hr>
+<form action="/ioiupload" enctype="multipart/form-data" method="POST">
+<input type="hidden" name="a" value="aEGxLYcw8Yr">
+
+<table>
+<tr><td>
+
+<table bgcolor="#000000" cellpadding=0 cellspacing=0 border=0 width=100%>
+<tr><td height=1></td></tr>
+<tr><td width=1><td>
+
+  <font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+  <table bgcolor="#bfffbf" cellpadding=5 width=100%>
+  <tr><td><b>Submit a program  for grading:&nbsp;<b><input type="file" NAME="filename">
+  &nbsp;&nbsp;
+  <input type="submit" VALUE="Submit" name='submit'></td></tr>
+  </table>
+
+</td><td width=1></td></tr>
+<tr height=1><td></td></tr>
+</table>
+
+
+</td></tr>
+
+<tr><td><hr></td></tr>
+
+<tr><td>
+
+<table bgcolor="#000000" cellpadding=0 cellspacing=0 border=0 width=100%>
+<tr><td height=1></td></tr>
+<tr><td width=1><td>
+
+   <table bgcolor="#bfffbf" cellpadding=5 width=100%>
+   <tr><td colspan='2'>
+   <font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+   <b>To run your program with your own test data, enter the program<br>
+   file name and input file name then click 'Test':</b></td></tr>
+
+  <tr><td>
+
+   <table>
+   <tr><td>
+     <table>
+     <tr><td>
+     <font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+     <B>Program&nbsp;File:&nbsp;</B></td>
+         <td><input type="file" NAME="testprogramname"></td></tr>
+     <tr><td align="right">
+         <font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+         <B>Input&nbsp;File:&nbsp;</B></td>
+         <td><input type="file" NAME="testfilename"></td></tr>
+     </table>
+   </td>
+   <td>&nbsp;&nbsp;</td>
+   <td><input type="submit" VALUE="Test" name='submit'></td>
+   </tr>
+   </table>
+
+   </td></tr></table>
+
+</td><td width=1></td></tr>
+<tr height=1><td></td></tr>
+</table>
+
+</tr></td>
+<tr><td><hr></td></tr>
+
+<tr><td>
+
+<table bgcolor="#000000" cellpadding=0 cellspacing=0 border=0 width=100%>
+<tr><td height=1></td></tr>
+<tr><td width=1><td>
+
+<table bgcolor="#bfffbf" cellpadding=5 width=100%>
+<tr><td>
+<font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'>
+<b>Backup a file:&nbsp;</b><input type="file" NAME="backupfilename">
+&nbsp;&nbsp;&nbsp;<input type="submit" VALUE="Backup" NAME='submit'>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" VALUE="See Backups" NAME='submit'>
+</td></tr></table>
+
+</td><td width=1></td></tr>
+<tr height=1><td><td></tr>
+</table>
+
+</td></tr>
+
+<tr><td><hr></td></tr>
+
+</table>
+<tr><td><font face='Verdana,Tahoma,sans-serif,Arial,Lucida Sans,Gill Sans'> The following solution files are saved for grading:<br>
+<table cellspacing='2'>
+<tr><th>Name</th><th>Size</th><th>When</th><th>Age</th></tr>
+<td><a href="/ioiupload?a=aEGxLYcw8Yr&seesaved=acng.c">acng.c</a></td>
+<td align ='right'>372</td>
+<td align ='right'>16h03:47</td>
+<td align ='right'>1h24:05</td></tr>
+<td><a href="/ioiupload?a=aEGxLYcw8Yr&seesaved=guess.c">guess.c</a></td>
+<td align ='right'>369</td>
+<td align ='right'>16h17:06</td>
+<td align ='right'>1h10:46</td></tr>
+<td><a href="/ioiupload?a=aEGxLYcw8Yr&seesaved=pie1.c">pie1.c</a></td>
+<td align ='right'>932</td>
+<td align ='right'>17h03:44</td>
+<td align ='right'>0h24:08</td></tr>
+<td><a href="/ioiupload?a=aEGxLYcw8Yr&seesaved=skate.c">skate.c</a></td>
+<td align ='right'>1190</td>
+<td align ='right'>16h38:06</td>
+<td align ='right'>0h49:46</td></tr>
+</table></td></tr>
+<hr>
+<center>
+<a href="/ioiedit?a=aEGxLYcw8Yr">Edit your database record</a>&nbsp;|&nbsp;
+
+<a href="/ioiupload?a=aEGxLYcw8Yr&logout=1"> Logout </a>
+<!--<a href="https://ace.delos.com/rules.html" target="_blank"> Rules </a>-->
+&nbsp;|&nbsp;
+<a href=http://ace.delos.com/ioiupload?init=1&a=aEGxLYcw8Yr>Main contest index</a>
+</center>
+<!--&nbsp;|&nbsp;-->
+<center>
+<a href=http://ace.delos.com/ioiupload?a=aEGxLYcw8Yr&showsubmit>See submitted solutions</a>
+&nbsp;|&nbsp;
+<a href=http://ace.delos.com/ioiupload?a=aEGxLYcw8Yr&suggestionbox>Send message
+to operations staff</a><br>
+Director is not online<br>
+This page was generated at 23:27:52 GMT.
+</center>
+</body>

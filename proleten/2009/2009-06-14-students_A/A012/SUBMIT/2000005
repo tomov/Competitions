@@ -1,0 +1,52 @@
+#include <iostream>
+#include <deque>
+#include <utility>
+#include <cmath>
+using namespace std;
+
+int n,k,all;
+pair <double,int> sol(deque <int> q)
+{
+     int sum=0;
+     for(int i=0;i<q.size();i++)
+      sum+=q[i];
+     if(sum%q.size()<q.size()/2)
+     sum/=q.size();
+     else
+     sum/=q.size()+1;
+     double sol=0;
+     for(int i=0;i<q.size();i++)
+             sol+=fabs(q[i]-sum);
+     //cout<<sol<<" "<<all-k-n+1<<endl;
+     return make_pair(sol,all-k-n+1);
+}
+
+int main()
+{
+ deque <int> q;   
+ 
+ cin>>n>>k;
+ all=n;
+ for(int i=0;i<k;i++)
+ {
+         int x;
+         cin>>x;
+         q.push_back(x);
+         n--;
+ }
+ pair<double,int> mini=make_pair(999999999,999999999);
+ while(n>0)
+ {
+           
+           pair <double,int> x=sol(q);
+           //cout<<x.first<<" "<<x.second<<endl;
+           if(x<mini)mini=x;
+           q.pop_front();
+           int y;
+           cin>>y;
+           q.push_back(y);
+           n--;
+ }
+ cout<<mini.first<<endl;
+ cout<<mini.second<<endl;
+}

@@ -1,0 +1,322 @@
+**********************************************************************
+                           GREEN PROBLEMS
+**********************************************************************
+                  Four problems numbered 1 through 4
+**********************************************************************
+
+PROBLEM 1: Cowpals [Romanian Olympiad, via Stroe, 2002]
+
+As in all human societies, the cows have friends, too. A new cow,
+Clara, has joined Farmer John's farm.  Clara sees that the N (1 <= N
+<= 3000) cows already on the farm have partitioned themselves into
+sets of friends.
+
+Each cow belongs to exactly one set of friends. Each cow in a set is
+a friend of every other cow in the same set and no cow outside the
+set.
+
+Clara wants to be friends with some of the cows but does not know how
+to identify the various sets of friends.  Farmer John has agreed to
+help Clara by answering questions that are all of the same form: "Who
+are the friends of cows A, B, ..., and Z?" FJ will answer such
+questions with the list of all cows who are friends of any of the cows
+in the query.
+
+Your task is to help Clara determine the groups of friends by
+disturbing FJ with the smallest possible number of queries.
+
+Write an interactive (i.e., 'reactive') program that reads and writes
+to standard input and output respectively.  Begin by reading a line
+that contains nothing but a single integer, N, the total number of
+cows.
+
+After this, your program should print lines to stdout with a 'query' or,
+when the solution has been determined, a 'solution'.  Each queries is an
+N digit binary string:
+
+bbbbb...b
+
+in which each b is a '0' or a '1'.  The '1's in the query are the cows
+for whom the friend-list is desired.  Consider a query for the friends
+of five cows from a herd of 12 cows:
+
+001001001011
+
+This query means, "Please tell me all the friends of cows 3, 6, 9,
+11, and 12".
+
+For each query, read in a 'response' line of the same format. A
+response to the above query might be:
+
+111001001111
+
+Which means cows 1, 2, 3, 6, 9, 10, 11, and 12 are friends with at
+least one of cows 3, 6, 9, 11, and 12 from the query.  Of course, a
+cow is always a friend with itself.
+
+When your program has determined the entire list of friend sets, it
+should write a line that summarizes those sets by telling their sizes
+with one or more space-separated integers presented in sorted order,
+smallest number first:
+
+solution S1 S2 ... Sx
+
+A sample of a solution might be:
+
+solution 1 1 2 8
+
+[though this solution might or might not apply to the query and
+response above].
+
+Your solution will receive points based upon its optimality.  Full
+marks will be awarded for solutions that match the minimum number of
+queries of all solutions submitted.  Proportionally fewer points will
+be awarded to inferior solutions.  Solutions that do not determine a
+valid friendset or require too many queries will receive no credit.
+
+REACTIVE PROGRAM GRADING REQUIREMENTS:
+
+C/C++ stdio Programmers:  Use "fflush(stdout);" to send your output to the grader.
+
+C/C++ fstream Programmers:  "... << endl << flush;" to send your output to the
+       grader.
+
+Pascal Programmers: No special operations are required.
+
+PROBLEM NAME: cowpal
+
+SAMPLE INPUT/OUTPUT:
+
+Program            Program
+writes             reads
+                    5
+10001
+                    10101
+01010
+                    01010
+00100
+                    10100
+00001
+                    00001
+00010
+                    01010
+solution 1 2 2
+
+EXPLANATION
+
+The sets of cow friends were:  {1, 3}, {2, 4}, and {5}. The program probed
+for this set using these queries and receiving these replies:
+
+     Q: friends of {1,5}?     A: {1,3,5}
+     Q: friends of {2,4}?     A: {2,4}
+     Q: friends of {3}?       A: {1,3}
+     Q: friends of {5}?       A: {5}
+     Q: friends of {2}?       A: {2,4}
+
+and then deduced the answer, counted the set members, sorted the results
+and responded with the proper answer: 1 2 2.
+
+**********************************************************************
+
+PROBLEM 2: Mountain Walking [Jan Kuipers, 2003]
+
+Farmer John and Bessie the cow have embarked on one of those 'active'
+vacations. They spend entire days walking in the mountains and then,
+at the end of the day, they tire and return to their vacation cabin.
+
+Since climbing requires a lot of energy and they are already tired,
+they wish to return to the cabin using a path that has the least
+difference between its highest and lowest elevations, no matter how
+long that path is. Help FJ find this easy-to-traverse path.
+
+The map of the mountains is given by an N x N (2 <= N <= 100) matrix
+of integer elevations (0 <= any elevation <= 110) FJ and Bessie are
+currently at the upper left position (row 1, column 1) and the cabin
+is at the lower right (row N, column N).  They can travel right, left,
+toward the top, or toward the bottom of the grid.  They can not travel
+on a diagonal.
+
+PROBLEM NAME: mtwalk
+
+INPUT FORMAT:
+
+* Line 1: The single integer, N
+
+* Lines 2..N+1: Each line contains N integers, each of which specifies
+        a square's height. Line 2 contains the first (top) row of the
+        grid; line 3 contains the second row, and so on.  The first
+        number on the line corresponds to the first (left) column of
+        the grid, and so on.
+
+SAMPLE INPUT (file mtwalk.in):
+
+5
+1 1 3 6 8
+1 2 2 5 5
+4 4 0 3 3
+8 0 2 3 4
+4 3 0 2 1
+
+OUTPUT FORMAT:
+
+* Line 1: An integer that is the minimal height difference on the
+        optimal path.
+
+SAMPLE OUTPUT (file mtwalk.out):
+
+2
+
+OUTPUT DETAILS:
+
+xx...   Taking the path shown here, the minimum height is 0 and the 
+.xx..   maximum is 2, so the difference is 2.
+..x..
+..x..
+..xxx
+
+
+**********************************************************************
+
+PROBLEM 3: Millenium Leapcow [via Nikolay Valtchanov, from Bulgaria '01, 2003]
+
+The cows have revised their game of leapcow.  They now play in the
+middle of a huge pasture upon which they have marked a grid that bears
+a remarkable resemblance to a chessboard of N rows and N columns (3
+<= N <= 365).
+
+Here's how they set up the board for the new leapcow game:
+
+* First, the cows obtain N x N squares of paper.  They write the
+  integers from 1 through N x N, one number on each piece of paper.
+
+* Second, the 'number cow' places the papers on the N x N squares in
+  an order of her choosing.
+
+Each of the remaining cows then tries to maximize her score in the
+game.
+
+* First, she chooses a starting square and notes its number.
+
+* Then, she makes a 'knight' move (like the knight on a chess board)
+  to a square with a higher number.  If she's particularly strong,
+  she leaps to the that square; otherwise she walks.
+
+* She continues to make 'knight' moves to higher numbered squares
+  until no more moves are possible.
+
+Each square visited by the 'knight' earns the competitor a single
+point.  The cow with the most points wins the game.
+
+Help the cows figure out the best possible way to play the game.
+
+PROBLEM NAME: leap2
+
+INPUT FORMAT:
+
+* Line 1: A single integer: the size of the board
+
+* Lines 2.. ...: These lines contain space-separated integers that tell
+        the contents of the chessboard.  The first set of lines
+        (starting at the second line of the input file) represents the
+        first row on the chessboard; the next set of lines represents
+        the next row, and so on.  To keep the input lines of
+        reasonable length, when N > 15, a row is broken into
+        successive lines of 15 numbers and a potentially shorter line
+        to finish up a row.  Each new row begins on its own line.
+
+SAMPLE INPUT (file leap2.in):
+
+4
+1 3 2 16
+4 10 6 7
+8 11 5 12
+9 13 14 15
+
+OUTPUT FORMAT:
+
+* Line 1: A single integer that is the winning cow's score; call it W.
+
+* Lines 2..W+1: Output, one per line, the integers that are the
+        starting square, the next square the winning cow visits, and
+        so on through the last square. If a winning cow can choose
+        more than one path, show the path that would be the 'smallest'
+        if the paths were sorted by comparing their respective 'square
+        numbers'.
+
+SAMPLE OUTPUT (file leap2.out):
+
+7
+2
+4
+5
+9
+10
+12
+13
+
+OUTPUT DETAILS:
+
+The longest tour consists of the moves 2 to 4, 4 to 5, 5 to 9, 9 to
+10, 10 to 12, 12 to 13 and has length of 7 squares.
+
+**********************************************************************
+
+PROBLEM 4: Optimal Milking [Mihai Stroe, 2002]
+
+FJ has moved his K (1 <= K <= 30) milking machines out into the cow
+pastures among the C (1 <= C <= 200) cows.  A set of paths of various
+lengths runs among the cows and the milking machines.  The milking machine
+locations are named by ID numbers 1..K; the cow locations are named by ID
+numbers K+1..K+C.
+
+Each milking point can "process" at most M (1 <= M <= 15) cows each day.
+
+Write a program to find an assignment for each cow to some milking
+machine so that the distance the furthest-walking cow travels is
+minimized (and, of course, the milking machines are not overutilized).
+At least one legal assignment is possible for all input data sets.
+Cows can traverse several paths on the way to their milking machine.
+
+PROBLEM NAME: milking
+
+INPUT FORMAT:
+
+* Line 1: A single line with three space-separated integers: K, C, and
+        M.
+
+* Lines 2.. ...: Each of these K+C lines of K+C space-separated
+        integers describes the distances between pairs of various
+        entities. The input forms a symmetric matrix.  Line 2 tells
+        the distances from milking machine 1 to each of the other
+        entities; line 3 tells the distances from machine 2 to each of
+        the other entities, and so on.  Distances of entities directly
+        connected by a path are positive integers no larger than 200. 
+        Entities not directly connected by a path have a distance of
+        0.  The distance from an entity to itself (i.e., all numbers
+        on the diagonal) is also given as 0.  To keep the input lines
+        of reasonable length, when K+C > 15, a row is broken into
+        successive lines of 15 numbers and a potentially shorter line
+        to finish up a row.  Each new row begins on its own line.
+
+SAMPLE INPUT (file milking.in):
+
+2 3 2
+0 3 2 1 1
+3 0 3 2 0
+2 3 0 1 0
+1 2 1 0 2
+1 0 0 2 0
+
+OUTPUT FORMAT:
+
+A single line with a single integer that is the minimum possible total
+ distance for the furthest walking cow.
+
+SAMPLE OUTPUT (file milking.out):
+
+2
+
+OUTPUT DETAILS:
+
+Assign cow 1 to milk machine 1 (dist=2), cow 2 to machine 2 (dist=2) and 
+cow 3 to machine 1 (dist=1). The maximum distance is then 2.

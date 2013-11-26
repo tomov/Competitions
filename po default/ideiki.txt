@@ -1,0 +1,4 @@
+- (sometimes)vmesto bsearch po ans - sweep line: head++ while ne stava; tail++ while stava + check na vseki iteration - svalq logn faktora
+- set, ordered array, etc - stiga reda da se zapazva, samite elementi tva po koeto se cmp moje da e dinami4no i da se smqta direktno v operator< ili v cmp()
+- list s tree nodes - sort by ord[] i v ima nai-nisuk lca sus toq predi ili sled nego v spisaka
+- N! -> N^2 intervali

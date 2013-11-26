@@ -1,0 +1,185 @@
+#include <iostream>
+#include <vector>
+#include <queue>
+#define MAXN 60
+#define MAXS 1000000
+using namespace std;
+
+typedef struct vert
+{
+  vector<int> uni;
+  int ind;
+};
+
+int n, m, c, t, wbr, sums[MAXN], dp[MAXS];
+bool color[MAXN], used[MAXN];
+vector<int> G[MAXN];
+vert V[MAXN];
+queue<int> q;
+
+void bfs1(int ind)
+{
+  int t, i;
+  q.push(ind);
+  used[ind] = 1;
+  while (!q.empty()) {
+    t = q.front();
+    q.pop();
+    if (color[t] == c) {
+      for (i = 0; i < G[t].size(); ++i) {
+	if (!used[G[t][i]]) {
+	  used[G[t][i]] = 1;
+	  q.push(G[t][i]);
+	  if (ind != t) G[ind].push_back(G[t][i]);
+	}
+      }
+    }
+    for (i = 0; i < V[t].uni.size(); ++i) {
+      if (!used[V[t].uni[i]]) {
+	used[V[t].uni[i]] = 1;
+	q.push(V[t].uni[i]);
+	if (ind != t) V[ind].uni.push_back(V[t].uni[i]);
+      }
+    }
+    //~ step++;
+  }
+  return;
+}
+void bfs(int ind)
+{
+  int t, i, j, s, sl;
+  q.push(ind);
+  used[ind] = 1;
+  while (!q.empty()) {
+    t = q.front();
+    q.pop();
+    for (i = 0; i < G[t].size(); ++i) {
+      if (!used[G[t][i]]) {
+	used[G[t][i]] = 1;
+	q.push(G[t][i]);
+      }
+    }
+    for (i = 0; i < V[t].uni.size(); ++i) {
+      if (color[V[t].uni[i]] != c) {
+	color[V[t].uni[i]] = c;
+	wbr -= 1;
+      }
+    }
+  }
+}
+
+int main()
+{
+  int l, i, a, b, ind, mmax, j, sum, tsum, tbr, s, sl;
+  scanf("%d", &l);
+  sl = l;
+  sum = 0;
+  while (l) {
+    //~ printf("l=%d\n", l);
+    tsum = 0;
+    wbr = 0;
+    scanf("%d%d%d%d", &n, &m, &c, &t);
+    for (i = 0; i < n; ++i) {
+      scanf("%d", &color[i]);
+      G[i].clear();
+      V[i].uni.clear();
+      if (color[i] != c) wbr+=1;
+    }
+    for (i = 0; i < m; ++i) {
+      scanf("%d%d", &a, &b);
+      V[a].ind = a;
+      V[b].ind = b;
+      if (color[a] == c) {
+	G[b].push_back(a);
+      }
+      else {
+	V[b].uni.push_back(a);
+      }
+      if (color[b] == c) {
+	G[a].push_back(b);
+      }
+      else {
+	V[a].uni.push_back(b);
+      }
+    }
+    
+    for (i = 0; i < n; ++i) {
+      memset(used, 0, sizeof(used));
+      bfs1(i);
+    }
+    //~ for (i = 0; i < n; ++i) {
+      //~ printf("%d\nright: ", i);
+      //~ for (j = 0; j < G[i].size(); ++j) {
+	//~ printf("%d ", G[i][j]);
+      //~ }
+      //~ printf("\nwrong: ");
+      //~ for (j = 0; j < V[i].uni.size(); ++j) {
+	//~ printf("%d ", V[i].uni[j]);
+      //~ }
+      //~ printf("\n");
+    //~ }
+    memset(used, 0, sizeof(used));
+    //sort(V, V+n, cmp1);
+    for (i = 0; i < n; ++i) {
+      ind = 0;
+      mmax = 0;
+      for (j = 0; j < n; ++j) {
+	//~ if (V[j].uni.size() > mmax) {
+	  //~ mmax = V[i].uni.size();
+	  //~ ind = j;
+	//~ }
+	if (color[j] == c) tbr = 0;
+	else tbr = 1;
+	for (s = 0; s < V[j].uni.size(); ++s) {
+	  if (color[V[j].uni[s]] != c) {
+	    tbr++;
+	  }
+	}
+	if (tbr > mmax) {
+	  mmax = tbr;
+	  ind = j;
+	}
+      }
+      //~ printf("mmax = %d\n", mmax);
+      if (mmax < 2) {
+	tsum += wbr*t;
+	break;
+      }
+      if (color[ind] == c) tsum += 2*t;
+      else tsum += t;
+      used[ind] = 1;
+      for (j = 0; j < G[ind].size(); ++j) {
+	used[G[ind][j]] = 1;
+      }
+      for (j = 0; j < V[ind].uni.size(); ++j) {
+	used[V[ind].uni[j]] = 1;
+	color[V[ind].uni[j]] = c;
+      }
+      wbr -= mmax;
+      //~ printf("not going bfs %d\n", ind);
+      //bfs(ind);
+      if (wbr <= 0) break;
+    }
+    sum += tsum;
+    //~ printf("tsum = %d\n", tsum);
+    l--;
+    sums[l] = tsum;
+  }
+  dp[0] = 1;
+  for (i = 0; i < sl; ++i) {
+    for (j = sum; j >= 0; --j) {
+      if (dp[j]) {
+	dp[j+sums[i]] = 1;
+      }
+    }
+  }
+  for (i = sum/2+sum%2; i <= sum; ++i) {
+    if (dp[i]) {
+      printf("%d\n", i);
+      break;
+    }
+  }
+  //printf("sum = %d\n", sum);
+  
+  return 0;
+}

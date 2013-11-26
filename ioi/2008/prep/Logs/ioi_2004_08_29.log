@@ -1,0 +1,81 @@
+
+Session Start: Sat Aug 28 22:31:05 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+<VelinTzanov> Hmm... pak go niama niakogo.
+* VelinTzanov sets mode: +ooo Swetko sssa88 valo_bg
+<VelinTzanov> Rangel tozi pyt. >:-[
+<valo_bg> 8:29 e
+<Swetko> rangel ne moshe da vleze v IRC
+<VelinTzanov> Zashto?
+<Swetko> ami ne moshe da se konectne
+<VelinTzanov> Ti imash li vryzka s nego?
+* Logging #ioi to 'logs\ioi_2004_08_29.log'
+<valo_bg> nadqvam se usloviqta da sa po-malki ot 0.7 MB
+<valo_bg> opa... 0.5 MB :-(
+<Swetko> ami ste mu kasha link-a
+<VelinTzanov> Po-malki sa, da.
+<VelinTzanov> Pochvame li?
+<VelinTzanov> Nachalo: 8:35
+<VelinTzanov> Krai: 13:35
+<VelinTzanov> Vyprosi: do 9:35
+-> [VelinTzanov] PING
+<valo_bg> usloviq?
+<VelinTzanov> http://www.tzanov.com/ioi2004/nisqually/
+<VelinTzanov> Vsichki li gi poluchihte?
+<sssa88> da
+<VelinTzanov> Btw, nadiavam se dnes da moga da vi test-vam predishnoto kontrolno... no ako ne stane - za utre. :)
+<VelinTzanov> Koftito e che triabva da pisha niakakvi checker-i sega... az si misleh che niama nujda, no uvi. :(
+<VelinTzanov> Aide! Uspeh!
+<valo_bg> mersi
+-> [Swetko] PING
+<sssa88> taq pyrvata zadacha uslovieto i mqza mnogo na topcoder-sko uslovie
+<VelinTzanov> Hehe... koia e pyrvata? :)
+<sssa88> crows
+<VelinTzanov> Niama znachenie dali e TopCoder-sko, ACM-sko, CEOI-sko ili drugo... reshavaite tam. :)
+<sssa88> a na game nqma li nqkakvi ogranicheniq za N pone?
+<valo_bg> gore-dolu kolko uchenika ima v MIT? ;)
+<valo_bg> (tova e vypros po game)
+<Swetko> sigurno 2 miliarda uchenika
+<valo_bg> basi izrodite :) kyde gi sybirat?
+<Swetko> na puzzle vsichki parcheta li triabva da vzemem
+<Swetko> i kolko nai mnogo parcheta ima - 5 li
+<valo_bg> Swetko: tova poslednoto go pishe v uslovieto
+<VelinTzanov> Sega shte pogledna... vsichko po reda si.
+<valo_bg> i pyrvoto syshto go pishe
+<VelinTzanov> Da, mojesh da vzemesh broia na MIT studentite kato ogranichenie.
+<VelinTzanov> No ne vsichki, shtoto vse pak tova e samo grupa ot tiah. :)
+<VelinTzanov> Abe ne mi se pravete na interesni, ako timeout-va na niakoi test ne ia priemam i tova e. :)
+<valo_bg> na puzzle sled posledniq output trqbva li da ima prazen red?
+<Swetko> na game ima li otricatelni chisla
+<sssa88> (1+((Ai+B) mod P)) - taq formula neshto ne q zagrqvam nali ima samo edna A kakvo e tova Ai?
+<valo_bg> A*i
+<sssa88> aaaaaaa
+<VelinTzanov> Valio, da ne ti puka za praznia red.
+<valo_bg> k
+<VelinTzanov> Po-skoro ne, taka kato gledam uslovieto.
+<VelinTzanov> Pishe da sa razdeleni, a ne da sledva prazen red sled vsiako.
+<valo_bg> i az tova zabelqzah i zatova pitam
+<VelinTzanov> Kakvi otricatelni chisla be Swetko? :)
+<VelinTzanov> Niama otricatelni chisla.
+<VelinTzanov> A za Puzzle - da, v uslovieto si pishe che sa do 5.
+<valo_bg> a ogranicheniq za N,P,A,B nqma, taka li?
+<VelinTzanov> Niama iznenadi. Razni otricatelni ili ogromni A-ta i B-ta ne vijdam v testovete...
+<VelinTzanov> Vsichko e normalno. :)
+<sssa88> a ogromni N-ove?
+<valo_bg> sssa88: pod ogromni sigurno iam v predvid takiva deto ne se sybirat v long ili long long sigurno...
+<VelinTzanov> N e po-malko ot broiat na MIT studentite
+<VelinTzanov> Test-vaneto na predishnoto kontrolno mai pak niama da go byde dnes.
+<VelinTzanov> Koga zaminavate za Obzor?
+<sssa88> moze da ni pratish testovete sami da si go testvame
+<sssa88> za Obzor v srqda zaminavame
+<VelinTzanov> Shto ne vzemete da mi napishete po edin checker?
+<VelinTzanov> Triabvat mi checker-i za Gerry i za Island.
+<VelinTzanov> Ednoto e dinamichnoto (samo triabva da smiata kolko e postignala programata na systezatelia i kolko e postignal .out file-a na jurito)
+<VelinTzanov> Drugoto e po dyrvoto. Samo triabva da proveriava razstoianieto mejdu dva vyrha (i drugoto e trivialno) i da gleda dali dadenite otgovori ne sa po-loshi ot tezi na jurito.
+<VelinTzanov> Dobrovolci za checker-ite ima li?
+<VelinTzanov> OK, shte vi pisha na e-mail-ite. Sega si rabotete na spokoistvie...
+<VelinTzanov> Chao
+* Disconnected
+Session Close: Sun Aug 29 00:38:27 2004

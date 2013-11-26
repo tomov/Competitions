@@ -1,0 +1,13 @@
+#include <cstdio>
+
+int n;
+char c;
+int main() {
+	scanf("%d", &n);
+	while(!feof(stdin)) {
+		scanf("%c", &c);
+	}
+	printf("%d\n", (n+1)*(n+1));
+	
+	return 0;
+}

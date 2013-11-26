@@ -1,0 +1,58 @@
+#include<iostream>
+#include<vector>
+#include<string>
+#include<queue>
+#include<stack>
+#include<algorithm>
+#include<cmath>
+#include<cstdlib>
+#include<cstdio>
+
+#define fo(i,n) for(int i=0; i<n; i++)
+#define SP system("pause")
+
+using namespace std;
+int n;
+double pr[1000000];
+int p=0;
+double las;
+int pro(double a, double b)
+{
+  if (abs(a-b)>0.0000001)return 1;
+  return 0;
+}
+int fun(int k,double sum,int f,int t)
+{
+  //cout<<k<<" "<<sum<<" "<<f<<" "<<t<<endl;
+  if(k==n-1)
+  {
+    las=sum+1.0/(k-f)*1.0+1.0;
+      for(int i=0; i<=p; i++)
+      {
+      if(pro(pr[i],las)==0) { las =-1;break;}
+      }
+      if(las!=-1){pr[p]=las;p++;}
+      las=sum+1.0/(k-f+1)*1.0;
+        for(int i=0; i<=p; i++)
+      {
+      if(pro(pr[i],las)==0) { las =-1.0;break;}
+      }
+      if(las!=-1.0){pr[p]=las;p++;}
+      return 0;
+  }
+
+   las=sum+1.0/(k-f)*1.0;
+   fun(k+1,las,k,(t+1)%2);
+   fun(k+1,sum,f,t);
+}
+
+int main()
+{
+   cin>>n;
+   int i;
+   fun(1,0,0,1);
+   fun(1,0,0,0);
+  // for(int i=0; i<p; i++)cout<<pr[i]<<endl;
+   cout<<p<<endl;
+    return 0;
+}

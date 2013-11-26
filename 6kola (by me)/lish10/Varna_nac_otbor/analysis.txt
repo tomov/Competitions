@@ -1,0 +1,11 @@
+1_garland - lesna no interesna (div & conq, recursion)
+2_islands - lesna i standartna (mst n^2)
+3_genome - ???
+4_discount - lesna (greedy)
+5_points - lesna i interesna (geometry, sweep line)
+6_liars - example test case???
+7_ridge - lesna (stack)
+8_tangle - greedy?
+9_evo - lesna (naive lca)
+10_salesman - lesna i qka (modified dijkstra)
+11_circles - sredna (interval tree?)

@@ -1,0 +1,588 @@
+
+Session Start: Thu Aug 19 20:14:28 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+* rapt has joined #ioi
+<sssa88> s DFS?
+<valo_bg> aha... znachi vyrshi rabota :)
+<valo_bg> VelinTzanov: zdravei
+<VelinTzanov> Zdraveite, momcheta, az sym Jerry - jenata na Velin. Toi v momenta e pod dusha. Shte doide 
+  sled niakolko minuti.
+<rangel__> a nqkoj sluchajno da e pisal goldberg i da mu raboti?
+<sssa88> zdrasti
+<valo_bg> rangel__: da. az
+<valo_bg> rangel__: dosta po-byrzo e ot diikstra. v pyti. v destki pyti
+<Swetko> na men mi raboti Goldberg-a
+<rangel__> e zashto vsichko vi e s dfs-ta? kyde gi nabutahte v goldberg-a?
+<Swetko> abe goldberg varvi za 4000 X 4000 graph za po malko ot secunda
+<sssa88> mi na men uz mi raboti ama po-prostiq variant, kato go napravih sys spisyk na rebrata a ne matrica 
+  zabiva ot vreme na vreme posle za syshtiq test raboti, vyobshte hamava rabota
+<Swetko> tam niamam DFS
+<rangel__> e na men mi raboti, no bih mogyl da preizchislq vselenata za vremeto, za koeto pravi matching :-)
+<Swetko> a puk matching-a mi raboti za graph 4000Xrandom(4000) za 0.1 sec
+<sssa88> swetko, na men knights mi raboti za 1.3s na 9 test s matching s goldberg
+<Swetko> za matching-a e baven goldberg - osobeno ako niama optimizaciata goldbergskata s global relabel-a
+<Swetko> ne sum probval s goldberg na knights
+<Swetko> ami znaish li kvo 
+<Swetko> moia algoritum ima izvunzemna konstantna sloshnost - zatova moshe da stava 7 sek.
+<valo_bg> Swetko: az shte probvam da go napisha i shte vidim kak shte e...
+<sssa88> ot de takava sloznost?
+<Swetko> znachi az ne izpolzvam masivi a za vsiako obrystenie kum masiv vikam funkcia i moshe bi zatova
+<sssa88> aha
+<valo_bg> ti kak namirash obratnoto rebro? az izpolzvam bsearch
+<Swetko> vmesto nei[a][b]  vikam   nei(a,b)
+<sssa88> swetko, ti pizza-ta napisa li?
+<Swetko> ne
+<Swetko> pisal sum ia
+<Swetko> ma izpolzvam 120 MB
+<valo_bg> sssa88: a ti napisa li q?
+<sssa88> ne
+<Swetko> inache e byrza kato izkliuchim qsort-a
+<sssa88> inache nqmashe da pitam
+<sssa88> kojto sortira 10M elementa? :)
+* rapt was kicked by VelinTzanov (VelinTzanov)
+* VelinTzanov sets mode: +ooo rangel__ sssa88 valo_bg
+* VelinTzanov sets mode: +o Swetko
+<valo_bg> Swetko: to da ti kaja i pri men mai tova e bavnoto...
+<sssa88> za obratno rebro vmesto binsearch moze da si napravite edin masiv "mirror" kojto da vi kazva na koe 
+  mqsto v spisyka na b(ako nasheto rebro e ab) stoi a
+<rangel__> az obratnite rebra gi namiram s edin trick, zashtoto znam, che sa mi sysedni v spisyka na rebrata
+<Swetko> az tova go pravia s masiv reverse - ma zaema miasto
+<rangel__> (shtoto gi dobavqm edno sled drugo)
+<valo_bg> sssa88: na pizza nqmash mqsto za takiva izlishni nasivi, az i ako takyv si sloja syvsem shte mu 
+  izpusna kraq
+<sssa88> principno kakvo pravite : gledate koi sa samo s 1 i s nad broq na kravite varianti, tqh gi vzemate 
+  i s ostanalite pravite matching?
+<Swetko> da
+<valo_bg> da
+<sssa88> i kym kolko stavat taka vyrhovete otdqsno?
+<valo_bg> ama sa mnogo rebra... 1,9*10^6 rebra
+<valo_bg> vyrhovete sa do 1000000
+<Swetko> kato se sloshat i obratnite
+<sssa88> az vchera misleh da vidq kolko sa ama ne ostana vreme
+<valo_bg> rebrata sa problema, na 2 testa stavat adski mnogo
+<valo_bg> na drugite sa slaba rabota
+<Swetko> za edno rebro ti triabvat 7 Bytes
+<valo_bg> Swetko: e kak ve? 9 ti trqbva
+<rangel__> e imate max 10^6 rebra (s obratnite 2 pyti poveche)
+<sssa88> i valio kak si se pobral v malko nad 16Mb pri tolkoz rebra i vyrhove?
+<Swetko> 4 za posokata, 2 za obratnoto i 1 za used
+<VelinTzanov> Zdraveite unaci.
+<valo_bg> kak taka 4 za posokata?
+<VelinTzanov> Gledam, che vi e interesno, a? :)
+<sssa88> zdrasti
+<valo_bg> VelinTzanov: zdravei
+* Logging #ioi to 'logs\ioi_2004_08_20.log'
+<Swetko> dashe za posokata triabvat 3 stot te mnogoto rebra sochat kum kravite => (2+4)/2
+<Swetko> zdrasti
+<VelinTzanov> Neshto da vi izmychva? Problemi, vyprosi?
+<Swetko> mi obsyshdame koi kakvo e napisal
+<valo_bg> Swetko: e kak ve? imash 2 int-a za nachalo i krai i 1 char za kapacitet
+<sssa88> za kolko vreme trqbva da vyrvi "knights"?
+<Swetko> uf,
+<Swetko> ma niama za pravish taka
+<Swetko> ne ti triabva za nachalo 
+<Swetko> puk i ednoto ot dvete moshe da e short
+<rangel__> ami izmychva me fakta che vsichki potoci vyrvqt neveroqtno bavno
+<Swetko> stot kravite sa 1000
+<Swetko> za kolko ti vyrvi na pulen gprah
+<valo_bg> Swetko: mdaaa.... pravi si... taka moje da se spesti...
+<Swetko> za 1000 vyrha 1000 000 rebra
+<Swetko> bi triabvalo s optimizaciata da vyrvi za kum 0.05 sec
+<valo_bg> hmmm taka moje i da trygne... s malko malloc-vane i free-vane...
+<VelinTzanov> Momcheta, ama az mislia che se biahme razbrali da se sreshtate vchera vecherta v 8:00 i togava da gi govorite tezi raboti, a?
+<VelinTzanov> Zashto ne pravite kakto sme se razbrali?
+<VelinTzanov> Rangele, na teb shte ti pisha na lichno, che e tvyrde goliama byrkotia tuk.
+<Swetko> ami ne znam
+<Swetko> e hubavo , denska ste se syberem
+<VelinTzanov> >:-[  Ama ia po-seriozno, momcheta.
+<VelinTzanov> Vseki chetvyrtyk i vseki ponedelnik imate sreshta tuk v 8:00
+<VelinTzanov> Syshto taka i vsiaka nedelia i vsiaka sriada za obsyjdane na zadachite ot trenirovkata.
+<VelinTzanov> Tova sa si seriozni sreshti. Kakvoto kato men me niama?
+<Swetko> to ot poslednata niamashe kakvo tolkova da obsyshdame
+<VelinTzanov> Na vas sa vi polezni (taka kato gledam v momenta ste potynali v diskusia)
+<VelinTzanov> Po-dobre da napravite sreshta za 5 minuti bez da obsydite nishto, otkolkoto da ne napravite.
+<VelinTzanov> Shtoto sega kakvo da pravim? Da vi ostavia li da se naprikazvate ili da karam po plan?
+<Swetko> ami aide dneska togava napravim sresta tuk zaradi vchera
+<sssa88> dobra ideq
+<Swetko> karai po plan puk dovechera - tukmo ste imame vreme da napishem kakvoto ne sme i da vodimpo dobra diskusia
+<valo_bg> ok
+<VelinTzanov> Pyrvo: systezanieto vchera.
+<VelinTzanov> Test-vahte li si zadachite?
+<VelinTzanov> Sbyrkal li sym nechii rezultat?
+<valo_bg> az ne uspqh da si svalq testovete :(
+<sssa88> ami moq kato che li ne
+<valo_bg> inache si vidqh greshkata na battle
+<rangel__> moq e taka (na ednata ne cheta tiretata vyv vhoda, a drugata sym napravil poveche optimizacii otkolkoto trqbva)
+<Swetko> i moia
+<valo_bg> az dnes shte si platq oshte trafik i shte probvam pak da svalq testovete
+<sssa88> vypreki che na house tova sort-vane na outputite teoritichno kato che li moze da kaze che edin output e veren a toh vsyshnost da ne e
+<Swetko> az cheta sys        scanf() - zatova imam 80 na onaia
+<Swetko> kakvo ste pravim dnes
+<valo_bg> sssa88: a obratnoto moje li? :) ne znam az na house si pravih brutalna programa testvah na random testove i prosto ne znam shto ne raboti
+<Swetko> da ne bi kato imash poveche ot edin test da ne raboti
+<sssa88> obratno ne mislq
+<sssa88> obratnoto
+<valo_bg> moje... vypreki che tam mislq che tova ne sym go obyrkal...
+<VelinTzanov> Tova go pisah az kysno prez noshtta, shtot me myrzia. :)
+<Swetko> na men tova mi beshe nai golemia problem - zatova imah funkcia koiato resetva pametta - t.e. nulira vsichki promenlivi
+<valo_bg> tam si memset-vam vsichko...
+<sssa88> mi men syshto me myrzq zatova s nego si testvah
+<VelinTzanov> OK
+<VelinTzanov> Sega ot Rangel i ot Valio moje li da polucha seriozno obiasnenie shto taka se izlojihte po kifladjiiski?
+<VelinTzanov> Pyrvo Rangel
+<sssa88> inache na battle naj-golemiq test e 300 koeto znachitelno pod maksimuma
+<valo_bg> az imam edin takyv checker deto si napisah po vreme na systezanieto i shte testvam s nego :)
+<rangel__> ami na house ima edni tireta vyv vhoda, koito sym propusnal da zabelezha
+<VelinTzanov> A chete li uslovieto sled kato napisa koda?
+<Swetko> e kak taka ti raboteshe bez da gi zabeleshsh 
+<rangel__> na battle rezha edno bfs, koeto bi trqbvalo da uskorqva neshtata, no to pyrvo che e greshno, vtoro che ne mi trqbva (zashtoto zabyrzva s konstanta)
+<rangel__> ami v moite vhodove nqmashe tireta :-)
+<VelinTzanov> A uslovieto chete li sled kato napisa koda?
+<VelinTzanov> Gledam che si mi predal polovin chas po-rano.
+<rangel__> mi chetoh go uzh
+<VelinTzanov> Urok ot tova systezanie: kogato uslovieto se chete, to ne se chete "uzh". Chete se seriozno. Vsiaka duma se osmislia.
+<VelinTzanov> Zapomnete go vsichki. Ako na IOI zagubite tochki
+<VelinTzanov> Zapomnete go vsichki. Ako na IOI zagubite tochki (ili nedai si Boje ciala zadacha) zaradi takova neshto, prosto shte postypite otvratitelno losho s truda si.
+<VelinTzanov> Otdelen e vyprosyt, che shte vi se syrdim. >:-[
+<VelinTzanov> A Battle ne ia li test-va? Toia polovin chas nakraia zashto ne go izpolzva?
+<rangel__> ami zashtoto veche chas i neshto testvah, no qvno ne sym go nameril
+<VelinTzanov> Losho
+<VelinTzanov> Kakvo shte promenish, za da ne se sluchi pak?
+<VelinTzanov> Proveri zashto ne si go nameril.
+<VelinTzanov> Razgledai testovete i vij kakyv tochno sluchai si propusnal da test-vash. I si vzemi belejka.
+<VelinTzanov> Valio, ti?
+<VelinTzanov> Valio?
+-> [valo_bg] PING
+<valo_bg> na battle ne nuliram edin masiv i pri poveche ot 1 test ne raboti... pone tova go vidqh kato otvorih source-a si
+<VelinTzanov> Battle ti dava greshen rezultat dori i na vhod s edin test.
+<VelinTzanov> Davash 5 pri optimum 4 na vyprosnia test.
+<valo_bg> hmmmm... interesno... moje bi ne sym napravil dominirashto mnojestvo kakto trqbva...
+<valo_bg> no... mislq che ideqta mi e vqrna...
+<VelinTzanov> Ne znam kak si ia mazal, no ne raboti... zadyljitelno proveri kakvi sa problemite i vzemi merki da ne se povtariat.
+<Swetko> zasto samo az ne sum se setil za dominirasto mnoshestvo
+<VelinTzanov> I si test-vai i words, da ne bi i neia da si ia sbyrkal.
+<valo_bg> ok
+<VelinTzanov> Vyprosi po systezanieto?
+<Swetko> ne
+<valo_bg> a na house nqmam predstava zashto taka stava... sravnqvah si reshenieto s pylno izchervnane i davashe 1:1
+<rangel__> ne
+<sssa88> swetko i az se setih malko predi kraq, predi tova misleh da obedinqvam cikli
+<valo_bg> ne
+<sssa88> az da pitam za dominirashtoto mnozestvo
+<valo_bg> a! kakvo e ogranichenieto za koordinatite na battle?
+<VelinTzanov> Ne znam. Ne pishe li v uslovieto?
+<VelinTzanov> Ako ne pishe, znachi niama. :)
+<Swetko> a puk pisah SCC
+<sssa88> v nakov ima edin algoritym, az po princip nego pisha - tam se tvyrdi che sloznostta mu e V+E
+<VelinTzanov> Pitai, Vlado.
+<Swetko> haha
+<Swetko> to na moia e n*n stot i bez tova grapha e max tolkokva
+<sssa88> ma na men mi se struva che moze da stane V*E
+<Swetko> ne moshe stot imash samo da postroish gpraha n^2 
+<VelinTzanov> Amortized Analysis mu e maikata. Oshte ot sega moga da ti kaja. :)
+<sssa88> ama az si napravih  test pri kojto alogityma povtarq rebra
+<VelinTzanov> A, tova e interesna zadacha... da se postroi grafa za N*LogN
+<Swetko> tova e otdelna zadachka
+<Swetko> a moshe li s n*logN da stane
+<VelinTzanov> Hmm... ne znam koi e algorityma, Vlado.
+<sssa88> kakvo e SCC?
+<VelinTzanov> Ne znam dali moje... sigurno moje.
+<Swetko> abe mai ne moshe - ili moshe ama sys sloshnost n*logN+E stot E moshe da e n*n
+<Swetko> a puk az pravia edni dfs-ta i silno svarzani komponenti - pravia si nov graph koito e DAG i reshavam v nego posle vrastam kum golemia
+<VelinTzanov> Men niama da me ima za okolo 5 minuti.
+<VelinTzanov> Ne pishete mnogo, che ne moga da vi smogna posle. :)
+<valo_bg> za dominirashti mnojestva? ne e li mnogo po-prosto?
+<valo_bg> az si setvam vsichko vyrhove v nachaloto da si mi unvisited i posle vyrtq edin for ot 1..|V|
+<valo_bg> ako tekushtiq mi vryh e unvisited puskam ot nego edno DFS i markiram vsichki dostijimi ot nego kato visited
+<valo_bg> i nakraq broq kolko unvisited imam
+<Swetko> si srestnal li
+<Swetko> ama kak namirash tozi s nai maluk nomer
+<Swetko> stot nali i tova se iska
+<rangel__> ami ochevidno ne e vqrno za grafa: 1 -> 2 <-> 3
+<rangel__> (ako pyrvo si obhodil ot 3 i sled tova ot 1)
+<valo_bg> shto ve? raboti si
+<sssa88> trqbva da ima possible i unvisited i unvisited go nulirash predi vsqko DFS
+<valo_bg> ako obhodish 3: shte markirash 2 kato visited. posle shte otidesh v 1 i shte trygnesh ot nego i shte napravish 3 visited
+<sssa88> i nakraq koito sa possible te sa
+<Swetko> ami ami taka niama li da stane poveche ot v+e
+<sssa88> tochno tova govoreh gore
+<valo_bg> sssa88: ama zashto ti e tova?
+<valo_bg> kakyv e problema na tova koeto kazah
+<valo_bg> aaa
+<valo_bg> zagrqh...
+<valo_bg> ti 2 namq da go gledash v DFS-to shtoto e visited...
+<sssa88> i tuka veche idva vyprosa zashto v nakov pishe che sloznostta e V+E
+<sssa88> to verno v nakov i drugi sloznostti sa obyrkani
+<rangel__> ami sigurno i s tolkova mozhe da se napishe :-)
+<sssa88> ami v nakov e napisan tochno tozi variant - za nego stava vypros
+<Swetko> V+E stava tazi zadacha
+<Swetko> az s SCC nali tolkova ia pisha
+<Swetko> kato izkliucha tova che stava n*n stot imam matrica
+<valo_bg> e ti kato imash DAG posle kakvo pravish?
+<sssa88> ne e li dostatychno da vzemesh vyrhovete bez vlizashti v tqh rebra
+<sssa88> ?
+<valo_bg> da... mai e dostatychno...
+<sssa88> az misleh da obedinqvam ciklite v grafa dokato nqma takiva i posle tova
+<valo_bg> myhym... to taka stava mnogo gyzarsko
+<VelinTzanov> http://infoman.musala.com/contests/fall/2001/problems_A.html
+<VelinTzanov> Zadacha 2
+<sssa88> i togava chak se setih che to moze s minimalno pokrivashto dyrvo da stane
+<VelinTzanov> Build
+<valo_bg> seshtam se kqo shte e vtorata
+<valo_bg> za dnes
+<VelinTzanov> :)
+<VelinTzanov> Vie prochetete uslovieto na tazi i mi kajete kato ste gotovi, zasega. :)
+<valo_bg> gotovo
+<sssa88> gotov
+<rangel__> i az
+<Swetko> da
+<VelinTzanov> OK
+<VelinTzanov> Koi ne znae kak se reshava?
+<Swetko> az znam 2 nachina
+<rangel__> az maj sym pisal podobni zadachi, no tazi ne sym q reshaval
+<VelinTzanov> Varna?
+<sssa88> az sym tuk
+<valo_bg> i az
+<VelinTzanov> A reshavali li ste ia? :)
+<sssa88> ti pita koj ne q e reshaval
+<valo_bg> az syq q reshaval + ot CEOI drugata podobna
+<sssa88> zatova ne se obazdame
+<VelinTzanov> :) OK
+<VelinTzanov> Obshto vzeto zadachata e primer za razdeliane na neshtata na bydeshte i minalo.
+<Swetko> '
+<VelinTzanov> Vzimame si polupostroen parket i reshavame "podzadachata"
+<VelinTzanov> Vajnotot tuk e da obyrnete vnimanie na kluchovite stypki v reshenieto.
+<VelinTzanov> Pyrvo, redyt.
+<VelinTzanov> Parket se redi s red.
+<VelinTzanov> Mnogo e vajno da formulirate hubav red v narejdaneto na parketa, taka che broiat na podzadachite vi da e malyk i syshtevremenno vsiako narejdane da moje da se napravi s tozi red.
+<VelinTzanov> V tozi sluchai mojete da redite parketa red po red i na vseki red otliavo nadiasno.
+<VelinTzanov> Ima razni detaili za doutochniavane, no kato cialo tova e ideiata.
+<VelinTzanov> I nedeite sega da si mislite za drugi parketi (da, Valio, drugata zadacha syshto e parket), a se zamislete za tazi ideia po princip.
+<VelinTzanov> Na IOI moje da vidite druga zadacha v koiato stroim neshto v niakakvo prostranstvo.
+<VelinTzanov> I tam moje pak da se pita po kolko nachina mojem da go postroim (ili koi e nai-dobriat nachin da go postroim)
+<VelinTzanov> I tam e iasno, che shte pravite niakakvo dinamichno.
+<VelinTzanov> No e vajno da postroiavate dinamichnoto si s red.
+<VelinTzanov> Taka che hem vsichki vyzmojni kombinacii da se pokrivat ot nego, hem broiat na situaciite da e minimalen (t.e. na podzadachite)
+<valo_bg> e da... to obiknovenno kato se pita "po kolko nachina" shte da e dinamichno...
+<VelinTzanov> Valio, ti kato se obadi da govorish za dinamichno mi napomni: do Nedelia iskam vseki ot vas da mi napishe edin kratyk plan za tova kakvo misli da govori na lekciata si.
+<VelinTzanov> Az imam po niakolko dumi za vseki, no niamam vreme da se zanimavam da vi pisha, zatova shte vi ostavia vie da ste pyrvi.
+<VelinTzanov> Tvyrde skoro li vi e Nedelia?
+<VelinTzanov> Aide do Vtornik: do sledvashtata ni sreshta.
+<VelinTzanov> To pyk mai shte e dosta kysno togava.... :-?
+<VelinTzanov> Nishto - Vtornik.
+<VelinTzanov> Az shte gledam da vi otgovoria do edin den sys zabelejki/preporyki/zadachi/drug akyl ili kakvoto tam se setia.
+<VelinTzanov> Ok?
+<valo_bg> ok
+<rangel__> ok
+<sssa88> ok
+<Swetko> ok
+<VelinTzanov> Sega obratno na temata
+<VelinTzanov> Vajno e da mojete da pravite dinamichnite pravilno.
+<VelinTzanov> Kogato sme v 2-D syshto triabva da mojete da gi pravite pravilno. Naposledyk se poiaviavat vse poveche i poveche dinamichni v 2-D. Zatova ochakvam i na IOI da ima neshto takova.
+<VelinTzanov> Vsyshtnost neshtata koito ochakvame na IOI sa tolkova mnogo, che 3 IOI-a niama da stignat da gi pokriat vsichkite... :)
+<valo_bg> posle trqbva da gi kajesh che da znaem kakvo da ochakvame :)
+<VelinTzanov> No vse pak - znaete - pone niakolko ot neshtata koito sme pravili shte se padnat. Zatova triabva da gi osyvyrshenstvate.
+<VelinTzanov> t.e. usyvyrshenstvate. :)
+<VelinTzanov> Ami temite koito pravim, Valio. 20 sa na broi.
+<VelinTzanov> 13 predi BOI + 7 sled BOI
+<VelinTzanov> Tazi e nomer 17 mislia
+<VelinTzanov> Taka. Rangele, hvana li v obshti linii kakvo e reshenieto na tazi konkretna zadacha?
+<valo_bg> az trqbva da si napravq edin spisyk i da vidq koi temi sa mi nai-neqsni
+<VelinTzanov> (az malko obiasniavah kato za hora, koito znaiat kak se reshava, no nadiavam se se opraviash :) )
+<rangel__> poluchavam reshenie za nqkakva poziciq kato dobavq plochka kym veche smetnato reshenie
+<VelinTzanov> Feedback blankata koiato mi popylnihte si e edin spisyk s temi.
+<rangel__> to tova si e ideqta na vsqko dinamichno :-)
+<VelinTzanov> Da
+<VelinTzanov> A imash li dobra ideia kakyv e broiat na situaciite?
+<VelinTzanov> Kolko e tozi "malyk broi situacii" za koito govoria?
+<rangel__> ami... maj ne
+<VelinTzanov> Shtoto ochevidnite situacii sa 2^(W*H) :)
+<VelinTzanov> Mnogo e vajno vyv vsiako dinamichno da namaliavate broia na situaciite.
+<rangel__> e te ochevidno sa dosta po-malko
+<VelinTzanov> Da ostaviate samo tezi, koito vi triabvat i da ne dyrjite nishto izlishno (koeto bi vi uvelichilo slojnostta)
+<VelinTzanov> :) A kolko?
+<rangel__> maj moga da go napravq s W*H*(3^W)
+<VelinTzanov> I az taka go pisah na systezanieto.
+<VelinTzanov> No moje po-dobre.
+<Swetko> i kak stava taka
+<sssa88> a kak stava po-dobre?
+<VelinTzanov> Zashto 3^W?
+<rangel__> e mozhe da se namali do W*H*(3^MIN(W, H)) ochevidno
+<valo_bg> :) mai mneniqta za resheniq dosta se razlichavat :)
+<VelinTzanov> Hehe.... problemyt mi ne e v W-to, a v 3-to, ochevidno.
+<rangel__> i az taka predpolozhih :-)
+<VelinTzanov> Imash parcheta 1x2. Zashto ti e 3?
+<rangel__> to ako nqkyde imam dupka s razmer 2 znachi nqma da polucha pokritie, t.e. naistina ne mi trqbva 3
+<VelinTzanov> Ako iskash da si zapazish 3-to, togava W*H triabva da e samo H, ne ti triabva W.
+<rangel__> mi zashtoto mi trqbvaha 0,1 i 2 kato vyzmozhnosti, no 2 e bezmisleno
+<VelinTzanov> Prosto predi miastoto kydeto si ti triabvat 1 i 2. A sled nego, 0 i 1.
+<Swetko> kak stava s 3^H  situacii
+<VelinTzanov> Ne mojesh da imash potencialna razlika 2.
+<VelinTzanov> Ne 3^H, Swetko, a H*3^W
+<VelinTzanov> W*H*3^W e losho. H*3^W e po-dobro. W*H*2^W e oshte po-dobro.
+<Swetko> i kak stava
+<rangel__> ami ne razglezhdash chastichno zapylvane na red
+<Swetko> az znam tova w*h*2^h i edno s w*2^h
+<valo_bg> no moje i sys H*W*2^W si mislq
+<Swetko> se taia - imam predvid  h>w  togava stava  w*h*2^w i drugoto e s h*2^w
+<Swetko> pozicii
+<rangel__> Swetko: kak stava s h*2^w?
+<valo_bg> syshto kakto v Bugs Inc.
+<Swetko> ne e
+<VelinTzanov> Da, mejdu drugoto drugata zadacha:
+<Swetko> i tam i tuk e w*h*X^w
+<VelinTzanov> Bugs, CEOI 2002
+<VelinTzanov> Tochno taka, Swetko.
+<Swetko> ami v analiza na Kristian potazi zadacha ot infoman 
+<VelinTzanov> Prosto v Build X triabva da e 2
+<VelinTzanov> A v Bugs mai triabva da e 3.
+<Swetko> i tam e h*2^w
+<VelinTzanov> A ne syotvetno 3 i 4.
+<VelinTzanov> Hmm... ne sym siguren che moje chak do h*2^w da se svali.
+<VelinTzanov> Chakai da go vidia tozi analiz...
+<Swetko> broia na situaciite moshe - sloshnostta ne
+<Swetko> t.e. za sloshnostta ne znam
+<VelinTzanov> Negovata e H*3^W
+<VelinTzanov> Po-dobriat variant e H*W*2^W
+<VelinTzanov> Mislia che i H*W*2^W e i avtorovoto (Petkovoto) reshenie.
+<Swetko> sloshnostta mu e tolkova, a i ne e tolkova a po malko - nesto sredno meshu h*w*(2-3)^w
+<VelinTzanov> Moeto 100-tochkovo ot systezanieto e H*W*3^W mislia.
+<VelinTzanov> No ne sym siguren, moje i po-dobro da sym go pravil.
+<Swetko> kazvam che prosto broia na situaciite sa po malko - ne che e po byrzo ili nesto drugo
+<VelinTzanov> OK de. Vse taia.
+<VelinTzanov> Vajnoto e principyt.
+<Swetko> no negovoto reshenie ne e za prenebregvane - niakoi zadachi ne stavat s toz metod
+<VelinTzanov> A imenno - che triabva da si pestite situaciite.
+<VelinTzanov> I che v raznite 2D zadachi ima MNOGO nachini po koito mojete da go napravite.
+<VelinTzanov> I che triabva da ste umni.
+<VelinTzanov> I da mislite seriozno predi da pishete kod.
+<VelinTzanov> Nai-malkoto shtoto moje da namerite nachin da si imate syshto tolkova situacii, no da gi organizirate po-prosto, taka che da vi e po-lesen koda i da e po-malko bug-av.
+<VelinTzanov> Tova e nai-vajnoto neshto na koeto triabva da se nauchite.
+<VelinTzanov> Kato vi dadat dinamichnoto v Gyrcia (2-D li shte e, 3-D li, ne znam) da sednete, da pomislite hubavo i da izlezete s chisto i stegnato reshenie, s malyk broi situacii (podzadachi)
+<VelinTzanov> Uprajniavane mu e maikata.
+<VelinTzanov> Zatova zapochvame s Build i Bugs.
+<VelinTzanov> Sledvashtiat pyt shte pravim drugi, podobni neshta (Swetko, ti krotko)
+<VelinTzanov> Shte gi napravite li tezi dve zadachki za sledvashtia pyt?
+<Swetko> da
+<sssa88> da
+<rangel__> da
+<valo_bg> da
+<Swetko> az znam oste niakolko takiva koito obache nesto ne moga da izmislia
+<VelinTzanov> Taka, tozi pyt e po-lesnichko ot obiknoveno.
+<valo_bg> az sym gi pisal, no shte gi prenapisha...
+<Swetko> az BUGS sum ia pisal 2 puti
+<VelinTzanov> No za smetka na tova imate mnojko zadachki da doopraviate.
+<valo_bg> to az imam da dovyrshvam ot predi taka che...
+<Swetko> drugata niama sto da ia pisha - tia e 800byes
+<VelinTzanov> Razni BOI-ski, pre-BOI-ski, BO2I-ski i ot poslednata kontrola (Valio i Rangel)
+<sssa88> kakvi ore-BOI-ski?
+<Swetko> ot boi gi napravih bez na kapralov i kelevedshiev
+<sssa88> ore=pre
+<Swetko> no izmislih kak i na kelevedzhiev na da napravia
+<VelinTzanov> Swetko naprimet ne mi e predal niakolko domashni ot predi BOI.
+<Swetko> az imam niakolko
+<VelinTzanov> Vie s Rangel, Vlado, ste OK.
+<valo_bg> az na pdrm ne znam ksk shte bachka byrzo za test 100000 'A'-ta
+<sssa88> a zadachite ot vtornik kolko byrzo trqbva da vyrvqt?
+<Swetko> pdrm ste stane kato vervash na hash-a
+<Swetko> ma ne znam sto ne mi vyrvi na mene
+<valo_bg> taka go pravq i pak ne e byrzo
+<VelinTzanov> Valio, prosto ne proveriavash za false alarms. Proveriavash samo nakraia otgovora. I ako toi e false, otbeliazvash go kato greshen i puskash pak algorithm-a. :)
+<Swetko> e kak ste ne e - to e lineino
+<valo_bg> vyobshte ne sravnqvam znaci
+<Swetko> ami kak togava e bavno
+<valo_bg> ei taka! bavno e
+<Swetko> ami lineino ne e li 
+<valo_bg> lineino e
+<VelinTzanov> Valio, ia go debug-ni hubavo. :)
+<Swetko> ne moshe 100 000 lineino da e bavno
+<Swetko> siguren li si che e lineino
+<VelinTzanov> Iavno go e bug-iasal
+<valo_bg> moje bi shtoto ima mnogo smetki po smqtaneto na hash-ovete
+<valo_bg> kakvo li ne probvah
+<VelinTzanov> Ne, prosto ne ti e lineino, imash bug.
+<valo_bg> glavniq problem e delenieto
+<rangel__> e ti kakvo smqtash? MD5 li?
+<valo_bg> tam go napravih kato smqta edni znamenateli
+<Swetko> sto delish 
+<Swetko> nali go izmislihme kak da stane i bez delenie
+<valo_bg> ne stava taka...
+<Swetko> prosto stava s umnoshavane
+<sssa88> Veline, za treti pyt te pitam veche - molq te kazi kolko byrzo trqbva da rabotqt zadachite ot vtornik?
+<valo_bg> ako si go razpishesh shte vidish che po-kysno se precakva ako se napravi taka
+<valo_bg> precakva ti se samiq hash
+<VelinTzanov> Ne znam, Vlado, vijte po site-ovete na olimpiadite.
+<valo_bg> aaaa
+<valo_bg> ama da ti kaja...
+<sssa88> to tam ne pishe
+<VelinTzanov> Valio, stava s umnojenie.
+<valo_bg> za 100000 mai ne e mnogo lineino... ama ne linieno e shtoto ti na vsqka stypka rashirqvash s 1
+<VelinTzanov> Pomisli go.
+<valo_bg> e kak shte stava! mislih go... nqkoi implementiral li go e s delenie?
+<VelinTzanov> Vlado, az da ne sym vrachka togava. :)  Gledaite da vyrviat byrzo tam. :)
+<valo_bg> s umnojenie imah v predvid
+<VelinTzanov> Pusnete niakolko razlichni algorityma... i posle si sravnete vremenata.
+<sssa88> e tova mi e problema de, ne vyrvqt byrzo
+<VelinTzanov> Momcheta, Valio pita.
+<VelinTzanov> Vlado, drugite imat li go syshtia problem? Kato se syberete vecherta v 8:00 si izmerete vremenata.
+<valo_bg> ti ako imash edim hash ot vida a0 + a1*x + a2*x^2 i t.n. i go unmojish oi edno chislo
+<VelinTzanov> Zatova sa tezi sreshti.
+<VelinTzanov> Ti posle go rejesh po modul, Valio.
+<VelinTzanov> Po modul 971351 ili neshto takova.
+<valo_bg> i posle iskash da pribavish oshte edin chen se precakva
+<valo_bg> shte stane (a0 + a1*x + a2*x^2 + ...)*chislo + an*x^(n - 1)
+<rangel__> e ne mozhesh prosto da umnozhavash po 'chislo', umnozhava se samo s x
+<valo_bg> a drugiq hash shte ti e a0 + a1*x + a2*x^2 + ... + an*x^(n - 1)... neshto takova...
+<VelinTzanov> Neshto ne te razbrah.
+<valo_bg> tova nqma znachenie
+<VelinTzanov> Iskash li da ti dam log-a ot nashata sesia? Ili ti go imash?
+<valo_bg> imam go
+<Swetko> vish go - tam pishe
+<valo_bg> no iskam da znam nqkoi uspql li e da go realizira s umnojenie i da mu raboti?
+<VelinTzanov> Momcheta, Valio pita, otgovorete mu.
+<rangel__> ami to s delenie maj e nevyzmozhno da se napishe
+<Swetko> az go pisah ama velin vika che ne raboti
+<rangel__> (inache otgovora e da)
+<VelinTzanov> Valio, Rangel kaza da. :)
+<valo_bg> rangel__: moje... ama az sym go optimiziral i pak ne polzvam delenie
+<VelinTzanov> Vlado, predpolagam, syshto, shtoto i na nego mu raboti.
+<valo_bg> to na men mi raboti, nali vi kazah, no e bavno na nqkoi testove...
+<valo_bg> pyk e linieno...
+<VelinTzanov> I osven zadachite koito imate da pishete, ne zabraviaite i da mi napishete "Proposal" za lekciite si.
+<sssa88> da i az s umnozenie go praq
+<rangel__> na men mi se struva malko matematicheski nevyzmozhno da se napishe s delene (osven ako si optimiziral deleneto taka che da go nqma :-)
+<valo_bg> rangel__: taka sym napravil, no moje i s delenie. prosto pribavqsh kym chisloto x dokato zapochne da se deli na chisloto
+<Swetko> be ne moshe da e lineino
+<valo_bg> aaaa, sega kato gledam... mai se seshtam shto ne raboti... smqtaneto na stepen mi e bavno
+<Swetko> kakva ste e taz konstanta
+<Swetko> >100 li 
+<Swetko> che to takava imal i
+<Swetko> che to takava ima li
+<Swetko> ami napravi go logaritum
+<valo_bg> napravih go... sesga shte testavam...
+<rangel__> obache tova s pribavqneto na x neshto me symnqva
+<rangel__> zashtoto hash-a e izraz ot vida a0 + a1*x + ....
+<rangel__> t.e. vse edno sym promenil a1
+<VelinTzanov> OK, momcheta, ostaviam vi da se zabavliavate.
+<valo_bg> ne... taka stava... no e bavno
+<VelinTzanov> V nedelia imate systezanie.
+<valo_bg> da... sega e byrzo
+<valo_bg> ot kolko chasa?
+<VelinTzanov> Rangel, Vlado, pratete na Valio po edin source da se nauchi ot vas. :)
+<VelinTzanov> Ot 8:30, kakto vinagi.
+<sssa88> ot moq moze samo da se otuchi :)
+<VelinTzanov> Tozi pyt zadachite shte sa po-trudni (nadiavam se), no za smetka na tova shte sa po-krasivi. :)(
+<sssa88> sorsa mi na pdrm e takava byrkotiq i copy-paste che chak ne e za pred hora
+<valo_bg> az go opravih
+<valo_bg> sega raboti mnogo byrzo
+<valo_bg> stepenta mi e bila problema
+<valo_bg> ama vse pak ne go pravq s umnojenie, a po edin drug nachin
+<Swetko> ia kashete slednata zadacha kak ste stane
+<VelinTzanov> Swetko, az triabvam li ti za "slednata zadacha"?
+<Swetko> ami tia e po dneskashnia matrial
+<VelinTzanov> OK, davai ia togava.
+<Swetko> imate slednoto nesto: i se pita kolko minimum 2X1 parketcheta da se sloshat che da ne mogat da se sloshat oste
+<Swetko> .*..*
+<Swetko> *....
+<Swetko> ..**.
+<Swetko> **.*.
+<Swetko> .**..
+<Swetko> shiroko 7 i visoko mnogo
+<VelinTzanov> Hubava zadacha. :)
+<Swetko> ma ne moga da otkria podzadacha
+<sssa88> e tova ne e li kato bugs?
+<Swetko> nikak dashe
+<sssa88> opa greshka
+<Swetko> bugs e mnogo po lesna
+<sssa88> i kolko e tova mnogo za visochinat
+<Swetko> 70 primerno
+<rangel__> kolko e 'mngo'?
+<Swetko> no tia niama znachenie
+<rangel__> kolko e 'mnogo'?
+<rangel__> za men ima, zashtoto mislq, che imam ideq s matching
+<Swetko> t.e. vse ste ciklish po neia vednush
+<Swetko> haha 
+<Swetko> interesno ne se biah setil
+<VelinTzanov> Swetko, s H*W*3^W niama li da stane?
+<Swetko> kude sa ti dvete mnoshestva
+<Swetko> abe mislih si nesto takova toku sto ma ne sum siguren 
+<VelinTzanov> Prosto ne si zadyljen da pokrivash vsichki dupki, a ti e pozvoleno da ostaviash 1x1 dupki.
+<VelinTzanov> Shte stane, Swetko.
+<Swetko> to osven formata  triabva da znam i kakvo ima otdolu
+<VelinTzanov> Triabva samo da go izchistish.
+<VelinTzanov> Ne ti triabva da znaesh za otdolu.
+<Swetko> e kak taka
+<VelinTzanov> Zvezdichkite sa si edni i syshti vseki pyt.
+<Swetko> ami triabva da znam dali imam domino ili niamam otdolu
+<VelinTzanov> Te ne ti uvelichavat slojnostta.
+<Swetko> stot ako niamam ne moga da ostavia dupka
+<VelinTzanov> Hmm... ti ne mojesh da ostaviash dupki po-golemi ot 1x1.
+<Swetko> puk problema e che moshe da ima mnogo reshenia za edna podzadacha puk az ne znam koe tochno da izbera
+<VelinTzanov> Znachi H*W*3^W shte ti svyrshi rabota.
+<VelinTzanov> E, tova koeto ima nai-malko domina.
+<Swetko> da de 
+<VelinTzanov> Swetko, "podzadacha" triabva da e iasno definirano.
+<Swetko> ama razpoloshenieto im e vuprosa
+<VelinTzanov> Razpolojenieto na dominata niama znachenie. Vajna e samo siankata im.
+<Swetko> ami triabva
+<Swetko> e da
+<VelinTzanov> T.e. obshtata plosht koiato pokrivat.
+<Swetko> i zatova tia triabva da se vkliuchi v dinamichnoto
+<VelinTzanov> A kato stroish naredeno ne ti triabva i tova dori.
+<valo_bg> h*w*3^w ili h*4^w
+<VelinTzanov> Triabva ti samo poslednite 3 reda ot tazi plosht.
+<VelinTzanov> Daje poslednite 2.
+<Swetko> i az si misleh nesto s 4^3
+<Swetko> i az si misleh nesto s 4^h
+<Swetko> i az si misleh nesto s 4^w
+<VelinTzanov> E, ako shte e po-chisto napravete go i s 4^w, no mislia che moje i s w*h*3^w
+<Swetko> ami i tova kakvo imam na tiah ne mi li triabva
+<valo_bg> prosto ti trqbva da si kodirash nezapylnena liniq i za vsqka kolko na znaesh dali otdolu imash blokche
+<VelinTzanov> Ne razbrah vyprosa ti, Swetko.
+<valo_bg> kolko = kolona
+<Swetko> ami kak tochno da se pravi dinamichnoto
+<Swetko> az na tez zadachi go pravia po princip kato na bugs
+<Swetko> pochvam red po red
+<VelinTzanov> Da de
+<VelinTzanov> Pak red po red
+<VelinTzanov> Ne vijdam kakvo te spira da prilojish syshtia algorithm.
+<Swetko> az puk zasega ne vishdam kakvo ne me spira
+<Swetko> no ste pomislia
+<VelinTzanov> Prosto pozvoliavash na niakoi formichki da im ostava dupka ot 1x1.
+<VelinTzanov> Pomisli.
+<VelinTzanov> Imate dosta vreme.
+<VelinTzanov> Za 4 dni predi BOI vzimahme 4 temi.
+<VelinTzanov> Taka che imash vreme kolkoto iskash.
+<VelinTzanov> Valio, Vlado, vie kato ste pisali Build i Bugs mojete i taz da napishete.
+<VelinTzanov> Imashe i ot NOI 2002 edna podobna.
+<valo_bg> ako zastradam ot lipsa na zadachi moje da hvana da go napisha tova
+<Swetko> znam i oste edna podobna
+<VelinTzanov> Tia beshe dosta gnusna de... ama vie ste umni, sigurno shte mojete.
+<VelinTzanov> Ima edna podobna ot Belorusiiska olimpiada niakakva.
+<valo_bg> kakvo beshe to?
+<VelinTzanov> S 10 razlichni vida parketcheta.
+<VelinTzanov> Az obache triabva da izchezvam.
+<VelinTzanov> Niakakvi vajni vyprosi?
+<sssa88> ne kato che li
+<Swetko> a da 
+<rangel__> ne
+<valo_bg> a da... spomqnqm si q tazi s razlichnite blokcheta
+<Swetko> belorusiiskata ne stava s toz metod
+<Swetko> tia stava s na Kristian
+<valo_bg> mdaaa. tam e mnogo gnusno
+<sssa88> kyde imashe link kym sajta na beloruskata?
+<Swetko> ne e gnusno ako ne se pishe po toz nachin
+<valo_bg> trqbva da mi kajesh kakvo e tova na kristiqn. az go gledah tova ama mai ne go razbrah
+<VelinTzanov> OK - Aide!
+<VelinTzanov> Chao!
+<valo_bg> sssa88: chai da vidq kakyv beshe
+<VelinTzanov> Ako ima problemi - po e-mail
+<rangel__> chao
+<sssa88> chao
+<valo_bg> chao
+<VelinTzanov> I se sreshtnete vecherta v 8:00. I posle v Nedelia v 8:30 sutrinta za systezanie i v 8:00 vecherta za obsyjdane na systezanieto (bez men)
+<Swetko> byoi.narod.ru
+* Disconnected
+Session Close: Thu Aug 19 22:10:49 2004

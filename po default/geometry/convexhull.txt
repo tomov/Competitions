@@ -1,0 +1,41 @@
+inline int cp(const PI &A,const PI &B,const PI &C)
+{
+	int dx1=B.x-A.x,dy1=B.y-A.y,dx2=C.x-A.x,dy2=C.y-A.y;
+	return dx1*dy2-dx2*dy1;
+}
+
+inline int dist1(const PI &A,const PI &B)
+{	return sqr(A.x-B.x)+sqr(A.y-B.y); }
+
+PI start,last;
+bool cmp(const PI &A,const PI &B)
+{	
+	int S=cp(start,A,B);
+	return (S)?S>0:dist1(A,start)<dist1(B,start);  
+}
+
+int convexhull(vector<PI> &pts)
+{
+	if (!pts.SZ) return 0;
+	int l=0;
+	Repi(pts.SZ)
+	 if (pts[i]<pts[l]) l=i;
+	swap(pts[0],pts[l]);
+	start=pts[0];
+	sort(pts.begin()+1,pts.end(),cmp);
+	pts.PB(start);
+
+	int ret=1;
+	for (int i=2;i<pts.SZ;i++)
+	 {
+			while (cp(pts[ret-1],pts[ret],pts[i])<0) ret--;
+			ret++;
+			swap(pts[ret],pts[i]);
+	 }
+	pts.erase(pts.begin()+ret);
+	for (int i=ret;i<pts.SZ;i++)
+	 if (!cp(start,pts[ret-1],pts[i]))
+	  swap(pts[i],pts[ret]),ret++;
+	
+	return ret;
+}

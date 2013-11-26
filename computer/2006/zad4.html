@@ -1,0 +1,349 @@
+
+<HTML>
+<HEAD>
+<TITLE>Math Forum - Ask Dr. Math</TITLE>
+
+<META NAME="title" CONTENT="Word Derangements and Arrangements">
+
+<META NAME="description" CONTENT="I need to find a formula to count the number of derangements of a word.
+   First you start with the number of ways to arrange the letters...">
+
+<META NAME="author" CONTENT="Julie">
+
+<META NAME="date" CONTENT="11/30/1998">
+</HEAD>
+
+<BODY BGCOLOR=#FFFFFF>
+
+<!-- Snippet begins -->
+<!-- /var/www/html/snippets/drexel_top -->
+
+<table align=center bgcolor=#ffffff width=100%>
+<tr align=center>
+<td>
+<a href="/pow/free_mentoring.html"><img border=0 src="/pow/images/20060904PoWbanner580.gif"></a>
+</td>
+</tr>
+</table>
+
+
+<CENTER>
+<P><NOBR><A HREF="http://www.drexel.edu/"><IMG BORDER="0" 
+SRC="/gifs/dragon_line4.jpg" ALT="Drexel dragon"></A><IMG Border="0" 
+SRC="/gifs/drexel_line4.jpg" ALT="The Math Forum"><A 
+HREF="http://www.drexel.edu/ia/mathforum/"><img border="0" 
+src="/gifs/donate_line4.gif" ALT="Donate to the Math Forum"></A></NOBR></P>
+</CENTER>
+<!-- /var/www/html/snippets/drexel_top -->
+<!-- Snippet ends -->
+
+
+<CENTER><IMG SRC="/dr.math/images/dr.mathQA.gif" 
+         ALT="Ask Dr. Math - Questions and Answers from our Archives">
+</CENTER>
+<CENTER>
+<img src="/dr.math/images/forum.blueline.gif" 
+     ALT="_____________________________________________"><br>
+
+<a href="#assoc">Associated Topics</a> ||
+<a href="/dr.math/">Dr. Math Home</a> ||
+<a href="#search">Search Dr. Math</a><br>
+
+<img src="/dr.math/images/forum.blueline.gif" 
+     ALT="_____________________________________________"><br>
+
+<BR>
+<TABLE WIDTH="580" BORDER="0">
+<TR>
+<TD>
+
+<H3>Word Derangements and Arrangements</H3>
+
+<pre>
+
+Date: 11/30/98 at 15:34:52
+From: julie
+Subject: Derangements
+
+Hi Dr. Math,
+
+I have to write this paper on derangements but I'm a little stuck. 
+First you have to find the arrangements on let's say a 3 letter word, 
+JOE. JOE has 6 arrangements: J,O,E  J,E,O  O,J,E  O,E,J  E,J,O  E,O,J.
+Now to find the derangements, you have to put the letters in 
+alphabetical order, which is E J O. This means that E cannot be the 1st 
+letter, J cannot be the 2nd letter, and O cannot be the 3rd letter. 
+Since there are only two arrangements that meet this criterion, JOE 
+has 2 derangements, J,O,E and O,E,J.
+
+I figured out all the derangements for 2, 3, 4, and 5 lettered words 
+by listing them, but when I got up to the 6th lettered word, I got 
+stuck because a 6 lettered word has 720 arrangements. It'll be 
+impossible for me to list all the derangements. Is there a formula 
+that I can use to find the derangements of arrangements?
+</pre>
+
+<hr>
+
+<pre>
+
+Date: 11/30/98 at 17:00:38
+From: Doctor Rob
+Subject: Re: derrangements
+
+Yes, there is. The formula is:
+
+   D(n) = n! - n!/1! + n!/2! - n!/3! + n!/4! - ... + (-1)^n*n!/n!
+
+When n = 6, this gives:
+
+   D(6) = 720 - 720 + 720/2 - 720/6 + 720/24 - 720/120 + 720/720
+        = 720 - 720 + 360 - 120 + 30 - 6 + 1
+        = 265
+
+This formula is gotten by starting with the n! arrangements, then
+subtracting those with one object fixed, C(n,1)*(n-1)! = n!/1!, then
+adding those with two objects fixed, C(n,2)*(n-2)! = n!/2!, because
+they had been subtracted twice. Then we subtract those with three
+objects fixed, C(n,3)*(n-3)! = n!/3!, because they had been subtracted
+thrice, but added back in thrice. We continue thus until we run out
+of objects.
+
+A short way to compute this is to pick the closest integer to n!/e.
+Here e is the base of natural logarithms, 2.718281828459045.... If
+n = 6, this gives 720/2.718281828459045... = 264.8731976..., so
+D(6) = 265, the same answer we got above. The first few answers are
+0, 1, 2, 9, 44, 265, 1854, 14833, 133496, and 1334961.
+
+- Doctor Rob, The Math Forum
+  <a href="http://mathforum.org/dr.math/">http://mathforum.org/dr.math/</a>   
+</pre>
+
+<hr>
+
+<pre>
+
+Date: 12/02/98 at 17:40:36
+From: julie
+Subject: Derangements
+
+Hello Dr. Math,
+
+I wrote to you before to ask if there was a formula to find the 
+derangements of arrangements. You replied by sending me this formula:
+ 
+   D(n) = n! - n!/1! + n!/2! - n!/3! + n!/4! - ......+ (-1)^n*n!/n!
+ 
+I understand how to use the formula, but I'm not sure how to derive 
+it. You gave me an explanation, but it was a bit confusing. Can you 
+please explain it again? Thank you!
+</pre>
+
+<hr>
+
+<pre>
+
+Date: 12/03/98 at 10:02:41
+From: Doctor Rob
+Subject: Re: Derangements
+
+This is an application of the Inclusion-Exclusion Principle. We want 
+to know the number of arrangements with exactly zero items in the 
+designated spots. That is D(n).
+
+We can count the number C(n,k) of ways to choose k spots out of n to 
+be designated; then there are (n-k)! ways to arrange the other n-k 
+letters. This makes a total of C(n,k)*(n-k)! = n!/k!. This is, however, 
+more than the number of arrangements with k items in their designated 
+spots, since some arrangements are counted more than once.
+
+We start with all the arrangements; that is, those with at least zero 
+items in the designated spots. There are n!/0! = n! of them. From this 
+number we subtract the number we computed above, n!/1!. This is too 
+much to subtract, because there are arrangements with two items in 
+their designated spots which are counted twice, once for each of the 
+two. To compensate, we add back in the then number of arrangements 
+with two or more items in the designated spots, namely n!/2!. But we 
+have overcompensated, so we subtract the number of arrangements with 
+three or more items, and so on.
+
+Example: RUST, alphabetically RSTU. There are 4! = 24 arrangements:
+
+   RSTU, RSUT, RTSU, RTUS, RUST, RUTS, SRTU, SRUT, STRU, STUR, SURT,  
+   SUTR, TRSU, TRUS, TSRU, TSUR, TURS, TUSR, URST, URTS, USRT, USTR, 
+   UTRS, UTSR.
+
+There are C(4,1) = 4 ways to pick a single letter to be in its 
+designated spot, and for each, there are (4-1)! = 3! = 6 ways to 
+rearrange the other letters, for a total of 4*6 = 24 = 4!/1!:
+
+   R fixed:  RSTU, RSUT, RTSU, RTUS, RUST, RUTS
+   S fixed:  RSTU, RSUT, TSRU, TSUR, USRT, USTR
+   T fixed:  RSTU, RUTS, SRTU, SUTR, URTS, USTR
+   U fixed:  RSTU, RTSU, SRTU, STRU, TRSU, TSRU
+
+We have to discard these, but some of them appear twice (or more). To
+compensate, we add back in the number of arrangements with two letters 
+in their designated spots. There are C(4,2) = 6 ways to pick two 
+letters to be in their designated spots, and for each there are 2! = 2 
+ways to rearrange the other letters, for a total of 6*2 = 12 = 4!/2!:
+
+   R,S fixed:  RSTU, RSUT
+   R,T fixed:  RSTU, RUTS
+   R,U fixed:  RSTU, RTSU
+   S,T fixed:  RSTU, USTR
+   S,U fixed:  RSTU, TSRU
+   T,U fixed:  RSTU, SRTU
+
+Now we have overcompensated, since some arrangements with two letters
+fixed also have three letters fixed, so we have to subtract the number 
+of these to compensate. There are C(4,3) = 4 ways to choose the three 
+letters to be in their designated spots, and for each there is 1! = 1 
+way to rearrange the other letter, for a total of 4*1 = 4 = 4!/3!:
+
+   R,S,T fixed:  RSTU
+   R,S,U fixed:  RSTU
+   R,T,U fixed:  RSTU
+   S,T,U fixed:  RSTU
+
+Again, we have overcompensated, since some (actually all) arrangements
+with three letters fixed also have four letters fixed, so we have to 
+add back in the number of these to compensate. There is C(4,4) = 1 way 
+to choose the four letters to be in their designated spots, and for 
+each there is 0! = 1 way to arrange the remaining zero letters, for a 
+total of 1*1 = 1 = 4!/4!:
+
+   R,S,T,U fixed:  RSTU
+
+That makes the total:
+
+   D(4) = 4!/0! - 4!/1! + 4!/2! - 4!/3! + 4!/4!
+        = 24 - 24 + 12 - 4 + 1
+        = 9
+
+The arrangement RSTU with four letters fixed was counted once in the
+original tally, subtracted four times, added six times, subtracted four 
+times, then added once, for a net count of 0. There are no arrangements 
+with exactly three letters fixed. You can verify each arrangement with 
+exactly two letters fixed was counted once, subtracted twice, and added 
+once, for a net count of 0. You can verify each arrangement with 
+exactly one letter fixed was counted once, and subtracted once, for a 
+net count of 0. All those with no letter fixed were counted once and 
+never subtracted, for a net count of 1. For any arrangement with 
+exactly k &gt; 0 letters fixed, the net count is 
+C(k,0) - C(k,1) + C(k,2) - ... = (1-1)^k = 0, by the Binomial Theorem.
+
+- Doctor Rob, The Math Forum
+  <a href="http://mathforum.org/dr.math/">http://mathforum.org/dr.math/</a>   
+    </pre>
+
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<CENTER>
+<a name="assoc"><b>Associated Topics</b>:</a><br>
+
+
+
+<a href="/library/drmath/sets/high_perms_combs.html">High School Permutations and Combinations</a><br>
+</CENTER>
+<P>
+
+<a name="search"></a>
+<table align=center border=0 cellpadding=4 cellspacing=0>
+<tr>
+<td align=center><a name="search"><p><img src="/library/drmath/images/forum.greenline.gif"></p></a>
+<p align=center><font size=4 color=#33CC33><b>Search the Dr. Math Library:</b></font></p>
+</td>
+</tr>
+ <tr>
+  <td>
+        <form action="/library/drmath/results.html" method=get>                 
+
+    <table align=center border=0 cellpadding=3 cellspacing=1>
+        <tr>
+        <td colspan=4>
+<center><nobr>
+</nobr></center><br>
+                Find items containing (put spaces between keywords):<br>
+                        <input type="TEXT" name="textsearch" size="50" value="">
+&nbsp; 
+<br>
+<b><font color=red>Click only once for faster results:</font></b>
+                        <input type="SUBMIT" value="SEARCH" valign="middle"><br>
+<p>
+                <font size="-1">[ Choose "whole words" when searching for a word
+ like <i>age.</i>]</font>
+     </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+ <center><nobr>
+
+       <INPUT TYPE="radio" NAME="textsearch_bool_type" VALUE="and" CHECKED>all keywords, in any order
+<INPUT TYPE="radio" NAME="textsearch_bool_type" VALUE="or">at least one,
+<INPUT TYPE="radio" NAME="textsearch_bool_type" VALUE="phrase">that exact phrase
+
+        <br>
+
+        <INPUT TYPE="radio" NAME="textsearch_whole_words" VALUE="no" CHECKED>parts of words 
+<INPUT TYPE="radio" NAME="textsearch_whole_words" VALUE="yes">whole words 
+
+</nobr></center>
+        <p>
+       </td>
+      </tr>
+      <tr>
+       <td align=center valign=middle colspan=4>
+         <center>
+          <p> 
+       </td>
+      </tr>
+</form>
+</table>
+
+</td></tr></table>
+
+
+
+
+<CENTER>
+<B><a href="/dr.math/ask.html">Submit your own question to Dr. Math</a></B>
+
+<P>[<B><A HREF="/announce/privacy.html">Privacy Policy</A></B>]
+[<B><A HREF="/announce/terms.html">Terms of Use</A></B>]</P>
+
+<IMG SRC="/forum.blueline.gif"
+ALT="_____________________________________"><br>
+
+<a href="/">Math Forum Home</a>  ||
+
+<a href="/library/">Math Library</a> ||
+
+<a href="/special.html">Quick Reference</a> ||
+
+<a href="/grepform.html">Math Forum Search</a>
+
+<br>
+
+<IMG SRC="/forum.blueline.gif"
+ALT="_____________________________________"><p>
+
+<font size=-1>Ask Dr. Math</font><font size=1><SUP>TM</SUP></font><br>
+<font size=-1>&copy; 1994-2006 The Math Forum<br>
+http://mathforum.org/dr.math/<br></font>
+
+<a href="/drexel/"><img border="0" src="/gifs/small_dragon.gif"></a>
+
+</CENTER>
+
+
+<p>
+</BODY>
+</HTML>
+
+
+
+

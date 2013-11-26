@@ -1,0 +1,14 @@
+!A = 1-pA
+
+A && B && C ... = pA*pB*pC..
+
+A || B || C ... (A,B,C.. dependent => pA+pB+pC... = 1) = pA + pB + pC ...
+
+A || B || C ... (A,B,C.. independent) = !(!A && !B && !C...) = 1 - (1-pA)*(1-pB)*(1-pC)...
+
+
+
+
+expected_moves(v) = 1 + sum of prob(u,x)*expected_moves(x) for all neighbours x of v , prob(u,x) is the probability to move from u to x
+
+

@@ -1,0 +1,120 @@
+G=(V,E)
+
+-terminology: vertice,(rev)edge,path,cycle,neighbour
+
+-types:
+(un)directed/mixed
+multi/simple
+(un)weighted
+(strongly/dis/k-/bi)connected
+(a)cyclic
+
+-cool cases:
+complete
+planar/plane
+bipartite
+path
+tree //terms: root,child(ren),parent,subtree,level
+forest
+
+
+nameri si graph-a, posle vs e ok (bf; teleporters)
+states rulez
+brute force/ dp - vse obhojdaniq
+
+
+-representations:
+adj m3x
+edge list
+adj lists
+rosti style - 2v1 (ptrs)
+
+
+-obhojdania
+--unweighted
+     ---not repeating vertices/edges - O(M) ; spanning tree
+	dfs (s parent & chi & subtree & level & low & prenum & postnum & order & order2) : edge types
+	dir/undir - !!!
+	 uses: top sort; lca; connectedness/articulation points/bridges/paths/cycles
+	 tasks: (paths) maze; usopen 2006, silver - wall ; usaco oct 06, silver - skate ; ioi 07, flood*
+                (topsort) usaco mar 07, gold - ranking; 
+		(connectedness) all conn comp; strongly conn comp;all cycles in undir(dir ne sta - cross e); noi 03, friend; croa noi 06-07 - policija* ; srm 328 blockenemy ; k1 2008 bicon* ; srm 312 antarcticapolice* ; tchs07 round 3 gamma, provinces ; 
+		(tree shits) subtree size; k1 2007, split; zimni 07 - store (mod arithm!)
+		(bf) srm 396 - fiximage;
+		usaco training - mnogo!
+	hangtree - dfs u daro
+
+void dfs(int v)
+{
+	used[v]=1;
+	low[v]=level[v]; //2.5
+	order[ordc++]=v;  //4
+	prenum[v]=ordc2; //5
+	order2[ordc2++]=v; //5
+	subtree[v]=1; //3
+    for (int i=0;i<adj[v].size();i++)
+	 {
+			int next=adj[v][i];
+			if (!used[next])
+			 {
+					parent[next]=v; //1
+					children[v].push_back(next); //1
+					level[next]=level[v]+1;  //2
+					dfs(next);
+					subtree[v]+=subtree[next]; //3
+					low[v]=min(low[v],low[next]); //2.5
+					order2[ordc2++]=v; //5
+			 }
+			else
+			 if (level[next]+1<level[v]) //1
+			  {
+			    backedges[v].push_back(v); //1
+			    low[v]=min(low[v],level[next]); //2.5
+			  }
+			 else
+			  if (level[v]+1<level[next]) //1
+			   forwardedges[v].push_back(next); //1
+	 }
+   postnum[v]=ordc2-1; //5
+}
+
+	iterative dfs (stack overflow)
+
+
+	bfs (par, lev)
+	 uses: shortest path - games; connectedness/.. ;
+	 tasks: (sp) proleten 07 - hop; shortest path in maze; ioi 89; 
+		(conn) poi 2004/2005, hollows*
+	rotating queue
+
+	almost same - dfs add/rem from end - stack ; bfs add at end, rem from start - queue
+
+
+
+
+
+--weighted
+     ---shortest path
+	pseudo-dfs, pseudo-bfs (optim. bellman ford), dijkstra, bellman-ford, floyd-warshall (transitive closure)
+     ---mst
+	prim, kruskal (disjoint_sets/union_find)
+     ---dp - acyclic (DAG/tree)
+     ---network flow
+	max flow - ford-fulkenson; improved shortest path ; push-relabel
+	mcmf - cycle cancelling; shortest path
+
+
+
+
+
+
+
+
+
+
+
+
+
+bfs v graph - ot listata kum vurha; add v queue samo ako si obhodil all chi - za stack overflow, e.g. tribe, boi 2003 (tva e i dp v daro)
+
+pfs??? race, boi 04

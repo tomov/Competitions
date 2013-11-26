@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cstdio>
+#include <algorithm>
+
+using namespace std;
+
+int n, bound=1, Left, power, first, second;
+int nums[1<<17];
+
+bool cmp(const int &a, const int &b) {
+     return a >= b;
+}
+
+int main() {
+    scanf("%d", &n);
+    for (int i=0; i<n; ++i)
+        scanf("%d", nums+i);
+    sort(nums, nums+n, cmp);
+    while (bound < n) {
+          ++power;
+          bound<<=1;
+    }
+    Left=bound-n;
+    for (int i=0; i<Left; ++i)
+        first+=nums[i];
+    first*=(power-1);
+    for (int i=Left; i<n; ++i)
+        second+=nums[i];
+    second*=power;
+    cout << first+second << endl;
+return 0;
+}

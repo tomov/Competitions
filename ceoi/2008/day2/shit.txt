@@ -1,0 +1,179 @@
+
+
+
+start from 7 : 0 1 2 3 4 5 6 
+    ==calc 1 (first 2 trees)
+            from 0 = 4480
+              2 trees total
+    ===dp 1 = 4278
+    ==calc 2 (first 11 trees)
+            from 0 = 4480
+              8 trees total
+            from 1 = 4278
+              9 trees total
+    ===dp 2 = 3299
+    ==calc 3 (first 19 trees)
+            from 0 = 4480
+              13 trees total
+            from 1 = 4278
+              17 trees total
+            from 2 = 3299
+              8 trees total
+    ===dp 3 = 2411
+    ==calc 4 (first 35 trees)
+            from 0 = 4480
+              18 trees total
+            from 1 = 4278
+              32 trees total
+            from 2 = 3299
+              23 trees total
+            from 3 = 2411
+              16 trees total
+    ===dp 4 = 655
+    ==calc 5 (first 40 trees)
+            from 0 = 4480
+              0 trees total
+            from 1 = 4278
+              22 trees total
+            from 2 = 3299
+              22 trees total
+            from 3 = 2411
+              17 trees total
+            from 4 = 655
+              5 trees total
+    ===dp 5 = 120
+    ==calc 6 (first 40 trees)
+            from 0 = 4480
+              0 trees total
+            from 1 = 4278
+              2 trees total
+            from 2 = 3299
+              7 trees total
+            from 3 = 2411
+              7 trees total
+            from 4 = 655
+              1 trees total
+            from 5 = 120
+              0 trees total
+    ===dp 6 = 140
+
+
+
+start from 6 : 0 1 2 3 4 5 
+    ==calc 1 (first 4 trees)
+            from 0 = 4480
+              4 trees total
+    ===dp 1 = 4056
+    ==calc 2 (first 18 trees)
+            from 0 = 4480
+              15 trees total
+            from 1 = 4056
+              14 trees total
+    ===dp 2 = 2522
+    ==calc 3 (first 26 trees)
+            from 0 = 4480
+              20 trees total
+            from 1 = 4056
+              22 trees total
+            from 2 = 2522
+              8 trees total
+    ===dp 3 = 1634
+    ==calc 4 (first 36 trees)
+            from 0 = 4480
+              19 trees total
+            from 1 = 4056
+              31 trees total
+            from 2 = 2522
+              17 trees total
+            from 3 = 1634
+              10 trees total
+    ===dp 4 = 544
+    ==calc 5 (first 40 trees)
+            from 0 = 4480
+              0 trees total
+            from 1 = 4056
+              20 trees total
+            from 2 = 2522
+              15 trees total
+            from 3 = 1634
+              10 trees total
+            from 4 = 544
+              4 trees total
+    ===dp 5 = 120
+
+
+
+start from 0 : 1 2 3 4 5 
+    ==calc 2 (first 3 trees)
+            from 1 = 4480
+              3 trees total
+    ===dp 2 = 4167
+    ==calc 3 (first 6 trees)
+            from 1 = 4480
+              6 trees total
+            from 2 = 4167
+              3 trees total
+    ===dp 3 = 3834
+    ==calc 4 (first 17 trees)
+            from 1 = 4480
+              16 trees total
+            from 2 = 4167
+              13 trees total
+            from 3 = 3834
+              11 trees total
+    ===dp 4 = 2633
+    ==calc 5 (first 40 trees)
+            from 1 = 4480
+              24 trees total
+            from 2 = 4167
+              30 trees total
+            from 3 = 3834
+              30 trees total
+            from 4 = 2633
+              23 trees total
+    ===dp 5 = 100
+
+
+
+start from 5 : 1 2 3 4 
+    ==calc 2 (first 33 trees)
+            from 1 = 4480
+              9 trees total
+    ===dp 2 = 3501
+    ==calc 3 (first 36 trees)
+            from 1 = 4480
+              12 trees total
+            from 2 = 3501
+              3 trees total
+    ===dp 3 = 3168
+    ==calc 4 (first 40 trees)
+            from 1 = 4480
+              15 trees total
+            from 2 = 3501
+              6 trees total
+            from 3 = 3168
+              4 trees total
+    ===dp 4 = 2744
+
+
+
+start from 1 : 2 3 4 
+    ==calc 3 (first 0 trees)
+            from 2 = 4480
+              0 trees total
+    ===dp 3 = 4480
+    ==calc 4 (first 1 trees)
+            from 2 = 4480
+              0 trees total
+            from 3 = 4480
+              1 trees total
+    ===dp 4 = 4389
+
+
+
+start from 4 : 2 3 
+    ==calc 3 (first 40 trees)
+            from 2 = 4480
+              40 trees total
+    ===dp 3 = 60
+60

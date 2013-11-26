@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+typedef unsigned long long int ulli;
+
+ulli br;
+
+void gen(int sz, int left)
+{
+	//cout<<sz<<' '<<left<<endl;
+	if(left==0) { br++; return; }
+	if(sz>left) return;
+	for(int i=0; i*sz<=left; i++) gen(sz+1, left-i*sz);
+}
+
+int main()
+{
+	int n; cin>>n;
+	gen(1, n);
+	cout<<br<<endl;
+	return 0;
+}

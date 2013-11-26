@@ -1,0 +1,43 @@
+#include <cstdio>
+#include <cmath>
+
+int n, k;
+int a[1024*1024];
+int res = 100000000, resi;
+
+int abs(int x) {
+	return x > 0 ? x : -x;
+}
+
+int max(int a, int b) {
+	return a > b ? a : b;
+}
+
+int main() {
+	scanf("%d%d", &n, &k);
+	
+	for(int i = 0; i < n; ++i) {
+		scanf("%d", &a[i]);
+	}
+	
+	for(int i = 0; i <= n-k; ++i) {
+		int s = 0;
+		for(int j = 0; j < k; ++j) {
+			s += a[i+j];
+		}
+		int m = (int)round((double)s/k);
+		s = 0;
+		for(int j = 0; j < k; ++j) {
+			s += abs(a[i+j] - m);
+		}
+		
+		if(res > s) {
+			res = s;
+			resi = i;
+		}
+	}
+	
+	printf("%d %d\n", res, resi+1);
+	
+	return 0;
+}

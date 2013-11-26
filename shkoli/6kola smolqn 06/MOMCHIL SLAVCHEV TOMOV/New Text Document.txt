@@ -1,0 +1,2 @@
+sums gubi dva testa
+square gubi 1

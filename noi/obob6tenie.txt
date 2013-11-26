@@ -1,0 +1,71 @@
+NOI09
+
+convex hull
+cycles in perm
+tricky search; divide and conquer
+bf precompute
+submatrix sum
+stack
+
+NOI08
+
+bf geom
+bf optimized
+bfs
+bf/dp smart
+dp + bit ^2
+adhoc math
+
+NOI07
+
+dp (n^4)
+geom (prosti4ka)
+intervalno daro (indeksno stava)
+dijkstra po 6ablon
+dp (n^2*k s optimizaciq - kmp table)
+precompute
+
+NOI06
+
+ad-hoc
+brute force
+dp (s stringove)
+geom (qko laina simetrali osevi perpendik || center na masite)
+lnds
+game bfs (brutal)
+
+NOI05
+
+?!?!??!?!?!
+dp
+dp[N,M]=minH vmesto dp[N,H]=minM  +  suobrajeniq (N<=34)
+dp broene na perm - turva6 nai-malak element na 1..N pos + greedy build perm
+henzel i gretel (meet in the middle)
+
+NOI04
+
+brute force s optimizacii
+dfs - farthest node in tree
+hamilton path v trivialen graph - izmislq6 si hubava strategiq, po vazmojnost induktivna, i go go go
+range tree ^2 (podobna logika)
+dp + (bsearch || greedy hitrinka)
+dp
+
+NOI03
+
+undir conn comp (dfs/bfs)
+greedy game
+heap sort
+brute force + optimizaciq za used
+dijkstra
+dp mask (s izrazi - vs stoinosti na vs izrazi s subset ot 4isla)
+
+NOI02
+
+dp mask (sick)
+bellman-ford
+dp^3 s optimizaciq
+greedy game
+geometry
+dp (stirling)
+

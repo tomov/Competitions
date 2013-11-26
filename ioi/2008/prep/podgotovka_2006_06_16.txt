@@ -1,0 +1,312 @@
+Jun 16 21:55:45 *	Now talking on #ioi2006
+Jun 16 21:55:46 *	Topic for #ioi2006 is: na Lgame, resheniqta ednoznachni li sa? - resheniqta sa 100% ednoznachni, t.e. vsichko razlichno e greshno
+Jun 16 21:55:46 *	Topic for #ioi2006 set by PreslavLe!~presley@217-10-254-7.cable.evrocom.net at Fri Jun 16 20:56:36 2006
+Jun 16 22:01:41 *	PreslavLe (~presley@217-10-254-7.cable.evrocom.net) has joined #ioi2006
+Jun 16 22:01:51 PreslavLe	zdraveite
+Jun 16 22:01:56 valo		zdrasti
+Jun 16 22:02:12 valo		vesko mai go nqma
+Jun 16 22:03:00 PreslavLe	ami mai da
+Jun 16 22:03:30 valo		iskren shte idva li?
+Jun 16 22:03:47 PreslavLe	i ideq si nqmam
+Jun 16 22:05:42 valo		ami shte chakame
+Jun 16 22:05:49 valo		ti inache kak si?
+Jun 16 22:06:34 PreslavLe	денска
+Jun 16 22:06:38 PreslavLe	dneska
+Jun 16 22:06:40 PreslavLe	ujas
+Jun 16 22:06:50 valo		shto taka?
+Jun 16 22:06:52 PreslavLe	cql den sam si gubil vremeto s gluposti no pone izchistih dosta neshta
+Jun 16 22:08:49 valo		moment che govorq po tel...
+Jun 16 22:08:54 PreslavLe	ok
+Jun 16 22:11:24 valo		ufff..
+Jun 16 22:11:34 valo		maika mi mi zvyni za vtori pyt taq vecher :(
+Jun 16 22:11:55 valo		s kakvo si se zanimaval tolkova?
+Jun 16 22:12:33 PreslavLe	hodih v uchilishte da si poplavam lichnoto delo i da potvarjdavam uspeha ot diplomata
+Jun 16 22:12:40 PreslavLe	posle trqbvashe da prevada nqkolko stranici
+Jun 16 22:13:06 PreslavLe	posle prashtah snimki, zashtoto obeshtah da gi pratq predi 1 mesec, no pone si svarshih rabotata za blizkiq mesec :)
+Jun 16 22:14:25 valo		aha... kofti e kato trqbva da se zanimavash s gluposti
+Jun 16 22:14:41 PreslavLe	kakto i da e :)
+Jun 16 22:14:48 PreslavLe	veche ste vlqza v ritam v palna sila
+Jun 16 22:15:07 PreslavLe	btw samo v nedelq li shte pravim kontrolno
+Jun 16 22:15:16 valo		ne znam
+Jun 16 22:15:31 valo		az nqmam nikakvo vreme da se zanimavam s kontrolnite
+Jun 16 22:15:51 valo		samo moga da govorq sys syotvetnite hora...
+Jun 16 22:16:10 PreslavLe	i tova e dostatchno :)
+Jun 16 22:16:32 valo		pravq kakvoto moga
+Jun 16 22:16:53 valo		tuka ot nqkolko dena nqmam vreme da sedna na ucha. imam edin izpit vyv vtornik
+Jun 16 22:17:03 PreslavLe	pak li?
+Jun 16 22:17:22 valo		imam oshte 3 izpita
+Jun 16 22:18:42 valo		mqi nikoi nqma da doide
+Jun 16 22:20:20 PreslavLe	ami mai da
+Jun 16 22:20:34 valo		ok. kaji kakvo stava sys zadachite
+Jun 16 22:20:37 valo		kak vyrvqt
+Jun 16 22:21:02 PreslavLe	ami varvqt :)
+Jun 16 22:21:09 PreslavLe	pisha ot podgotvkata
+Jun 16 22:21:17 PreslavLe	samo deto trqbva da poreshavam malko na saztezanie
+Jun 16 22:21:24 PreslavLe	zashtoto tiq zadachi malko ili mnogo im znam ideite
+Jun 16 22:21:27 PreslavLe	i ne e sashtoto
+Jun 16 22:21:33 PreslavLe	drugo si e da si napanesh malko mozaka
+Jun 16 22:21:35 PreslavLe	na saztezanie
+Jun 16 22:23:18 valo		taka si e..
+Jun 16 22:23:26 valo		chudq se za kakvo da govorim...
+Jun 16 22:23:30 valo		btw
+Jun 16 22:23:35 PreslavLe	ami to kato sme samo dvamata
+Jun 16 22:23:41 valo		ti na koq zadach si v momenta?
+Jun 16 22:23:49 PreslavLe	na Utopia
+Jun 16 22:24:07 PreslavLe	no q zarazqh posredata, zaradi gorespomenatite drugi angajimetni
+Jun 16 22:24:51 valo		t.e. do utopiq ostanalite si gi napravil?
+Jun 16 22:26:04 PreslavLe	ами имам една две нетествани и една две ненаписани, защото не знам входния формат, но ще ги напиша за под час това дето не съм го написал.
+Jun 16 22:26:32 valo		ok
+Jun 16 22:26:40 valo		predi da govorim za neshto drugo
+Jun 16 22:27:03 valo		edna zabelejka za onaq zadacha ot vchera sys sumata ot stepenite ot chislata
+Jun 16 22:27:20 valo		moje da se napravi chrez onaq formula
+Jun 16 22:27:30 valo		vyprosyt mi e samo kak? :)
+Jun 16 22:27:38 PreslavLe	koq s delenieto?
+Jun 16 22:27:54 valo		t.e. kolko e (a^(k+1)+1)/(a + 1) (mod m)
+Jun 16 22:28:26 PreslavLe	sekunda
+Jun 16 22:28:39 valo		i minta dori imash :)
+Jun 16 22:28:41 valo		*minute
+Jun 16 22:30:25 PreslavLe	neshto ot sorta da go namerim za k+1
+Jun 16 22:30:27 PreslavLe	i da izvadim 1
+Jun 16 22:31:29 valo		neshto ne razbiram
+Jun 16 22:32:21 PreslavLe	aa :)
+Jun 16 22:32:22 PreslavLe	chakai
+Jun 16 22:32:25 PreslavLe	ne stava
+Jun 16 22:32:33 PreslavLe	chaki da si vzema chist list :)
+Jun 16 22:34:14 PreslavLe	ami ne znam
+Jun 16 22:34:18 PreslavLe	kak shte stane
+Jun 16 22:34:47 valo		:)
+Jun 16 22:34:52 valo		dobre...
+Jun 16 22:35:01 valo		a/b (mod m) kak namirame?
+Jun 16 22:35:21 valo		to tova e zadachata vsyshtnost
+Jun 16 22:36:03 PreslavLe	ne znam
+Jun 16 22:36:29 valo		az ne znam dali moje da ima takava zadacha
+Jun 16 22:36:35 valo		no vse pak shte go spomen
+Jun 16 22:36:39 valo		*spomena
+Jun 16 22:36:50 valo		izpolzva se razshiren algoritym na evklid
+Jun 16 22:37:14 valo		algoritymyt na evklid principno namira NOD na 2 chisla
+Jun 16 22:37:39 valo		no osven tova za vseki 2 cisla a i b ima 2 chisla p i q takiva che
+Jun 16 22:37:46 valo		ap+bq=NOD(a,b)
+Jun 16 22:38:00 valo		v sluchaq imame a/b
+Jun 16 22:38:08 valo		mojem da kajem che a < m i b < m
+Jun 16 22:38:25 valo		i osven tova che NOD(a,b) = 1
+Jun 16 22:38:44 valo		tyi kato mojem da smetnem mod-a na a i na b i da sykratim
+Jun 16 22:38:50 valo		posle zapisvame taka:
+Jun 16 22:39:14 valo		a/b (mod m)=(a + km)/b (mod m)
+Jun 16 22:39:17 valo		=>
+Jun 16 22:39:41 valo		(a + b/m)/b = x
+Jun 16 22:39:47 valo		greshka
+Jun 16 22:39:52 PreslavLe	vapros
+Jun 16 22:39:55 valo		da?
+Jun 16 22:39:57 PreslavLe	zashto sme sigurni che b<m?
+Jun 16 22:40:13 valo		zashtoto ako ne e mojem da go zamenim sys b (mod m)
+Jun 16 22:40:23 valo		i tova nishto nqma da promeni
+Jun 16 22:40:43 valo		a / b (mod m) = (a (mod m))/(b (mod m)) (mod m)
+Jun 16 22:40:59 valo		qsno?
+Jun 16 22:41:04 PreslavLe	ami
+Jun 16 22:41:08 PreslavLe	a/b zadaljitelno li e cqlo
+Jun 16 22:41:17 valo		po mod m da
+Jun 16 22:41:26 valo		ako e po modyl e zadyljitelno cqlo
+Jun 16 22:41:43 valo		tyi kato ima k za koeto a + km se deli na b
+Jun 16 22:41:54 PreslavLe	aham to tova ne e prosto da gi razdelq i da vzema modula
+Jun 16 22:42:00 valo		(ili pone taka si mislq ;-))
+Jun 16 22:42:01 PreslavLe	tova e druga operaciq
+Jun 16 22:42:10 valo		da
+Jun 16 22:42:13 PreslavLe	ok
+Jun 16 22:42:30 valo		ako m e prosto e izpylneno ;-)
+Jun 16 22:42:35 valo		pochti sym siguren :)
+Jun 16 22:42:45 valo		no da priemem che e taka
+Jun 16 22:42:49 valo		ta
+Jun 16 22:43:26 valo		neka (a + km)/b = x  (tyk k e nai malkoto za koeto b | a + km)
+Jun 16 22:43:50 valo		sega pishem taka
+Jun 16 22:43:55 valo		a + km = bx
+Jun 16 22:43:58 valo		i nakraq
+Jun 16 22:44:06 valo		bx - km = a
+Jun 16 22:44:21 valo		sega zname che b na se deli na a
+Jun 16 22:44:57 valo		tova e defakto nesykratimo...
+Jun 16 22:45:22 valo		i mojem da prilojim razshiren algorym na evklid za da namerim x i k
+Jun 16 22:45:28 valo		i sled tova samo zamestvame ;-)
+Jun 16 22:45:39 valo		tova e nakratko
+Jun 16 22:45:52 PreslavLe	aham
+Jun 16 22:45:58 valo		ne znam dali shte e polezno, no smqtam che e dobre pone da go imash predvid
+Jun 16 22:47:19 valo		sega
+Jun 16 22:47:21 valo		otnostno igrite
+Jun 16 22:47:22 PreslavLe	shte go imam
+Jun 16 22:47:31 valo		pomnish li imashe edna igra koqto az bqh daval na edno systezanie
+Jun 16 22:48:15 valo		s edna dyska
+Jun 16 22:48:20 valo		a koqto ima pulove
+Jun 16 22:48:25 valo		i te mogat da se mestqt
+Jun 16 22:48:31 valo		po edin specifichen nachin
+Jun 16 22:48:41 PreslavLe	kakav?
+Jun 16 22:48:46 valo		ne moje edin pul da preskacha red na koito ima drug pul
+Jun 16 22:48:59 valo		i osven tova moje da se mesti samo po vertikala
+Jun 16 22:49:05 valo		ili horizontala
+Jun 16 22:49:21 valo		i osven tova trqbva da se dviji kym nachaloto na dyskata
+Jun 16 22:49:27 valo		t.e. koordinatite mu da namalqvat
+Jun 16 22:50:01 valo		ne pomnq na koe systezanie beshe tochno...
+Jun 16 22:50:14 valo		ponish li q?
+Jun 16 22:50:25 PreslavLe	aa :)
+Jun 16 22:50:35 PreslavLe	tova minalta godina na edna kontrola go dade?
+Jun 16 22:51:00 valo		taka li sym napravil :) i az ne pomnq veche
+Jun 16 22:51:14 PreslavLe	:)
+Jun 16 22:51:18 PreslavLe	mislq che da 
+Jun 16 22:51:26 PreslavLe	da daje q imame v podgotovkata
+Jun 16 22:51:30 PreslavLe	mnogo qka zadacha :)
+Jun 16 22:51:43 valo		ima li q?
+Jun 16 22:51:50 valo		a da :)
+Jun 16 22:51:58 valo		razbrahte li kak se reshava?
+Jun 16 22:52:01 *	ichernev (~erobeva@85.130.125.155) has joined #ioi2006
+Jun 16 22:52:08 ichernev	sry :)
+Jun 16 22:52:30 PreslavLe	da
+Jun 16 22:52:47 valo		ichernev: zdr
+Jun 16 22:53:02 valo		PreslavLe: siguren li si ;-)
+Jun 16 22:53:07 PreslavLe	da
+Jun 16 22:53:16 ichernev	mai privur6vate :(
+Jun 16 22:53:27 ichernev	sujalqvam 4e ne doidoh po rano
+Jun 16 22:53:45 valo		emi da...
+Jun 16 22:53:49 valo		shte privyrshvame veche
+Jun 16 22:53:58 ichernev	valo 6te mi prati6 li loga posle
+Jun 16 22:54:02 valo		samo edna zadacha kto privyrshim
+Jun 16 22:54:07 valo		shte go pravq
+Jun 16 22:54:09 valo		*pratq
+Jun 16 22:54:39 valo		PreslavLe: ta vikash znaete q
+Jun 16 22:54:57 valo		PreslavLe: dobre... tq e izrajda do nim, nali?
+Jun 16 22:55:08 PreslavLe	valo: da
+Jun 16 22:55:09 ichernev	koe do nim??
+Jun 16 22:55:20 ichernev	govorihte li za staircase nim??
+Jun 16 22:55:27 valo		PreslavLe: moje da mu paste-nesh na private za kakvo stava duma
+Jun 16 22:55:33 ichernev	i za drugite v onzi paper
+Jun 16 22:56:05 valo		PreslavLe: dobre. a kakvo shte stane ako promenim malko pravilata ;-)
+Jun 16 22:56:19 valo		ako veche na edin hod mojem da mestim po dva pula ednovremenno?
+Jun 16 22:56:53 valo		a ne
+Jun 16 22:56:57 valo		imah predvid
+Jun 16 22:57:13 valo		ako mojem edin pul da go mestim ne samo v enata posoka
+Jun 16 22:57:24 valo		a da go mestim i v dvete posoki na edin hod
+Jun 16 22:57:31 valo		t.e. i po vertikala i po horizontala
+Jun 16 22:57:41 valo		kato vsichko ostanalo si ostava kakto e po uslovie
+Jun 16 22:58:04 ichernev	e togava stava mazalo (ili ne)
+Jun 16 22:58:07 PreslavLe	znachi po dva pula i po vertikala i horizontala
+Jun 16 22:58:13 valo		ne
+Jun 16 22:58:15 valo		edin pul
+Jun 16 22:58:22 valo		samo che i po vertikala i po horizontala
+Jun 16 22:58:25 ichernev	po x i y
+Jun 16 22:58:27 valo		da
+Jun 16 22:58:40 ichernev	emi zna4i se igrae i v dvete igri ednovremenno
+Jun 16 22:58:52 ichernev	a moje li SAMO po x ili trqbva I po 2te
+Jun 16 22:59:10 valo		moje
+Jun 16 22:59:17 valo		t.e. imash pylna svoboda
+Jun 16 22:59:40 ichernev	a vie obqsnihte li kak se pravi kato nqma6 svoboda
+Jun 16 22:59:46 ichernev	t.e normalnata igra
+Jun 16 22:59:54 valo		vie trqbva da znaete
+Jun 16 23:00:04 valo		preslav znaeshe
+Jun 16 23:00:14 PreslavLe	az znam
+Jun 16 23:00:17 ichernev	staircase nim?
+Jun 16 23:00:20 PreslavLe	ne
+Jun 16 23:00:20 ichernev	ne ne go znam
+Jun 16 23:00:21 PreslavLe	bgame
+Jun 16 23:00:33 ichernev	e da de - to e 2 staircase nim-a mai??
+Jun 16 23:00:48 ichernev	t.e tova deto ima6 pulove po x i moje da gi mesti6 bez da se preska4et
+Jun 16 23:00:53 ichernev	preska4at*
+Jun 16 23:01:12 ichernev	i trqbva da stigne6 do poziciq kogato vsi4ki sa nai dolu
+Jun 16 23:01:15 valo		ami az go reshavam ne sys staircase nim
+Jun 16 23:01:26 ichernev	e da ama az ne go znam tva :)
+Jun 16 23:01:33 valo		vsyshtnost ne znam kakvo znachi staircase nim
+Jun 16 23:01:35 ichernev	daje formulata naznam
+Jun 16 23:01:45 valo		samo sym go chuval ;-)
+Jun 16 23:01:45 ichernev	neznam*
+Jun 16 23:01:54 PreslavLe	drugo e
+Jun 16 23:02:00 PreslavLe	na staircase nim mai mojesh da preskachash
+Jun 16 23:02:03 PreslavLe	i to si e bash nim
+Jun 16 23:02:05 PreslavLe	a tova e po-qko
+Jun 16 23:02:13 PreslavLe	ichernev
+Jun 16 23:02:18 PreslavLe	bgame govorim
+Jun 16 23:02:26 PreslavLe	ot predposlednoto kontrolno 2005
+Jun 16 23:02:29 valo		PreslavLe: nali mu paste-na
+Jun 16 23:02:33 valo		sega samo gubim vreme
+Jun 16 23:02:57 valo		PreslavLe: kaji sega kakvo mislish po vyprosa s promenenata igra
+Jun 16 23:03:18 PreslavLe	paste-nah
+Jun 16 23:03:34 PreslavLe	znachi mojem da mestim nakadeto si iskame
+Jun 16 23:03:41 PreslavLe	i da uvelichavame kordinatite
+Jun 16 23:03:47 valo		ne ne mojem da uvelichavame
+Jun 16 23:03:51 valo		pak namalqvat
+Jun 16 23:03:52 PreslavLe	aa :)
+Jun 16 23:04:05 valo		samo che mojem da mestim i po horizontala i po vertkala ednovremenno
+Jun 16 23:04:25 PreslavLe	i samo po ednoto?
+Jun 16 23:04:28 valo		da
+Jun 16 23:04:55 valo		kakvo stava togava?
+Jun 16 23:05:04 PreslavLe	ami mislq che pak e nim
+Jun 16 23:05:20 valo		syshtiq nim li?
+Jun 16 23:05:25 PreslavLe	samo deto kupchinata e neshto kato kombinaciq na vseki chovek do predishniq po X i Y
+Jun 16 23:05:25 PreslavLe	ne
+Jun 16 23:05:40 PreslavLe	aa
+Jun 16 23:05:44 PreslavLe	ami to stava i po lesno
+Jun 16 23:05:45 PreslavLe	:)
+Jun 16 23:06:04 PreslavLe	prosto gledame pravim XOR 3
+Jun 16 23:06:06 PreslavLe	:)
+Jun 16 23:06:13 valo		:-)
+Jun 16 23:06:16 valo		da
+Jun 16 23:06:34 valo		t.e. vse edno vzemame ot 2 kupchini ednovremenno
+Jun 16 23:06:39 PreslavLe	prosto mislih che tova shte e problem za mesteneto samo v ednata ama ne e
+Jun 16 23:06:42 valo		i pravim XOR 3
+Jun 16 23:07:18 valo		mda...
+Jun 16 23:07:24 valo		az si misleh da q dam v tozi variant
+Jun 16 23:07:33 valo		no tagava shteshe da e mnogo slojna
+Jun 16 23:07:42 valo		ami ok
+Jun 16 23:07:44 valo		super :)
+Jun 16 23:07:46 PreslavLe	e, da toi samo swetko q reshi
+Jun 16 23:08:04 PreslavLe	ama ako znaesh kakvo e nim moje i da uspeesh
+Jun 16 23:08:06 valo		velin ne iskashe tolkova slojna
+Jun 16 23:08:07 PreslavLe	az ne bqh chuval :)
+Jun 16 23:08:20 PreslavLe	zadachat v tozi si format beshe mnogo qka
+Jun 16 23:08:31 valo		moje kofti raboti da se izmislqt s nego...
+Jun 16 23:08:48 valo		v onq paper ima razni takiva igri
+Jun 16 23:08:54 valo		dobre
+Jun 16 23:09:01 valo		ami az vikam stiga za taq vecher
+Jun 16 23:09:10 valo		utre shte se sybirame li?
+Jun 16 23:09:21 PreslavLe	ami az sam vinagi gotov
+Jun 16 23:09:30 PreslavLe	ok
+Jun 16 23:09:35 PreslavLe	samo da nqma umnojenie na igri :)
+Jun 16 23:09:39 PreslavLe	che tova e brutalno
+Jun 16 23:09:44 valo		:)
+Jun 16 23:09:55 valo		trqbva da dadem nqkoq takava zadacha skoro ;-)
+Jun 16 23:10:06 valo		to na IOI nadali shte ima takiva izvrashteniq
+Jun 16 23:10:16 valo		ami are utre
+Jun 16 23:10:21 valo		ufff ne znam
+Jun 16 23:10:22 PreslavLe	to na IOI znaesh li kakva igra dadoha minalta godina
+Jun 16 23:10:26 valo		ne
+Jun 16 23:10:41 valo		nqkoq balamska sigurno
+Jun 16 23:10:47 PreslavLe	deto i da ne si chuval termina igra pak moje da q izmislish za 5 minuti
+Jun 16 23:11:00 valo		mda... ima nqkakva takava tendenciq
+Jun 16 23:11:03 PreslavLe	imash dve chisla i prochie
+Jun 16 23:11:16 PreslavLe	i ako gi dokarvash do dve ravni vseki pat vzemash 70 tochki :)
+Jun 16 23:11:19 valo		koeto ne e mnogo hubavo za horata koito greshat :)
+Jun 16 23:11:32 *	Prince_of_Dawn_ (~xx@home3.ddns.HomeLan.BG) has joined #ioi2006
+Jun 16 23:11:33 PreslavLe	ami te zashtoto v povecheto strani ne mogat da reshava zadachi
+Jun 16 23:11:36 PreslavLe	i si izmislqt opravdaniq
+Jun 16 23:11:46 valo		mda
+Jun 16 23:11:55 valo		ami are utre v kolko?
+Jun 16 23:11:57 valo		20:00?
+Jun 16 23:12:08 valo		ama ako shte e samo s teb nqma da pravim nishto
+Jun 16 23:12:13 PreslavLe	ok
+Jun 16 23:12:15 valo		shte napisha mai;
+Jun 16 23:12:19 valo		*mail
+Jun 16 23:12:22 valo		dobe
+Jun 16 23:12:26 Prince_of_Dawn_	zashto ne izwikahte iskren
+Jun 16 23:12:26 valo		tova e za dnes
+Jun 16 23:12:27 Prince_of_Dawn_	;)
+Jun 16 23:12:30 Prince_of_Dawn_	i wesko
+Jun 16 23:12:50 valo		Prince_of_Dawn_: ne znaeha no ne mojaha da doidat
+Jun 16 23:12:50 Prince_of_Dawn_	vesko e online
+Jun 16 23:13:08 PreslavLe	te znaeha
+Jun 16 23:13:10 Prince_of_Dawn_	ok
+Jun 16 23:13:11 PreslavLe	iskashe da kajesh
+Jun 16 23:13:12 valo		Prince_of_Dawn_: nie principno vsqka vecher se sybirame
+Jun 16 23:13:19 valo		PreslavLe: da de :)
+Jun 16 23:13:22 PreslavLe	Prince_of_Dawn_
+Jun 16 23:13:23 Prince_of_Dawn_	? i az da ne znam ;)
+Jun 16 23:13:40 valo		Prince_of_Dawn_: ne si pital :)
+Jun 16 23:13:48 valo		haide az otivam da ucha
+Jun 16 23:13:51 PreslavLe	ok
+Jun 16 23:13:53 PreslavLe	ajde uspeh
+Jun 16 23:13:54 valo		leka
+Jun 16 23:14:00 Prince_of_Dawn_	leka
+Jun 16 23:14:01 valo		i na teb ;-)

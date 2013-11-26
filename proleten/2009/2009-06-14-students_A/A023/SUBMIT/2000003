@@ -1,0 +1,43 @@
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+
+const int MAXN = 1 << 17;
+
+int n;
+int a[MAXN];
+
+void read() {
+	int i;
+	
+	scanf ( "%d" , &n );
+	for (i = 1; i <= n; i++)
+		scanf ( "%d" , &a[i] );
+}
+
+void solve() {
+	int i;
+	int step = 1;
+	int left = 1;
+	int ans = 0;
+	
+	sort ( a + 1 , a + n + 1 );
+	for (i = n; i >= 1; i--) {
+		ans += a[i] * step;
+		-- left;
+		
+		if ( !left ) {
+			left = 1 << step;
+			++ step;
+		}
+	}
+	
+	printf ( "%d\n" , ans );
+}
+
+int main() {
+	read();
+	solve();
+	
+	return 0;
+}

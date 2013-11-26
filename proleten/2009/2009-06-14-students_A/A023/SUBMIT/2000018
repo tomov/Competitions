@@ -1,0 +1,48 @@
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+
+int n;
+int a[1 << 17];
+int sum[1 << 17];
+
+void read() {
+	int i;
+	
+	scanf ( "%d" , &n );
+	for (i = 1; i <= n; i++)
+		scanf ( "%d" , &a[i] );
+}
+
+int go ( int l , int r ) {
+	if ( l == r ) return 0;
+	int i;
+	int ans = 1 << 30 , cur; 
+	
+	for (i = l; i < r; i++) {
+		cur = go ( l , i ) + sum[i] - sum[l - 1];
+		cur += go ( i + 1 , r ) + sum[r] - sum[i];
+		
+		if ( cur < ans )
+			ans = cur;
+	}
+	
+	return ans;
+}
+
+void solve() {
+	int i;
+	
+	sort ( a + 1 , a + n + 1 );
+	for (i = 1; i <= n; i++)
+		sum[i] = sum[i - 1] + a[i];
+	
+	printf ( "%d\n" , go ( 1 , n ) );
+}
+
+int main() {
+	read();
+	solve();
+	
+	return 0;
+}

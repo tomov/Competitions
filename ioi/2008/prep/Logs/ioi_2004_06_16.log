@@ -1,0 +1,513 @@
+
+Session Start: Tue Jun 15 20:04:56 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+<Prince_of_Dawn> othapi si ot rakata
+<Swetko> aide dneska po byrzo da karame ako moshem che imam purvi chas klasno i triabva da sum tam
+<Prince_of_Dawn> a az trqbwa da ucha po biologiq ang i literatura
+<VelinTzanov> :)
+<VelinTzanov> OK
+<VelinTzanov> Sekunda samo...
+<VelinTzanov> Kajete niakakvi problemi imahte li?
+* Logging #ioi to 'logs\ioi_2004_06_16.log'
+* VelinTzanov sets mode: +oo Prince_of_Dawn Swetko
+* VelinTzanov sets mode: +oo rangel__ sssa88
+* IOI was kicked by VelinTzanov (VelinTzanov)
+<sssa88> ami az imah problem da testvam "score" i ne znam dali mi e vqrna
+* IOI has joined #ioi
+<Swetko> ne, osven che mnogo mi se speshe vcehra i pochti nisto ne napravih
+* Timer 1 activated
+* VelinTzanov sets mode: +b *!*@ip217-240.mnet.bg
+* Timer 1 halted
+* IOI was kicked by VelinTzanov (VelinTzanov)
+<VelinTzanov> Test-vaite si sami be. Na IOI niama da vi davat tester-i.
+<rangel__> osven che pri men masivite, koito sa s razmer stepen na dvojkata sa 2 pyti po-bavni (ne e pravopisna greshka)
+<VelinTzanov> Da, vidiah ti e-mail-a. :)
+<VelinTzanov> Ideia si niamam zashto stava taka pri teb.
+<VelinTzanov> Ta, Swetko, kakvo kazvash si pravil?
+<VelinTzanov> Syvsem nishto, taka li? :)
+<Swetko> edni lesni ruski zadachi 
+<VelinTzanov> Aha... OK, dobre.
+<Swetko> stiah da pravia i trudni ama mnogo spah sledobed
+<Swetko> posle si misleh che ste stoia do 1-2 ama mi se dospa v 11
+<VelinTzanov> Dobre e da si otpochinal. :)  Samo gledai na BOI da ne povtorish poslednata trenirovka. >:-]
+<VelinTzanov> Vlado, ti?
+<sssa88> domshnoto napravih i ot "computer" vtorata zadacha napisah nqkakvi gluposti
+<VelinTzanov> OK
+<VelinTzanov> Rangel?
+<sssa88> to nqmashe vreme za poveche - sutrinta mi se speshe, vecherta igrahme bilqrd s bashta mi a na obqd hodeh da si gledam diplomata za greshki
+<rangel__> mi domashnoto se pozakuchi kakto sym opisal i posle prekaleno mnogo mi se speshe za drugo
+<VelinTzanov> OK
+<VelinTzanov> Taka se trupa opit - sys zakuchvane na razni zadachi.
+<VelinTzanov> Ako ne se zakuchvate, znachi neshto ne e nared.
+<VelinTzanov> Po-dobre sega da vi udari bug-a otkolkoto na BOI/IOI. :)
+<VelinTzanov> Borisov?
+<Swetko> aha, az mnogo mrazia programata mi da trygne ot purvia put
+<Prince_of_Dawn> mi az wchera trupah Opit ;)
+<VelinTzanov> :):):)
+<VelinTzanov> Po-tochno?
+<Prince_of_Dawn> i si napisah domashnoto i opravih bawniq mi seq
+<Prince_of_Dawn> mi score me nerveshe
+<VelinTzanov> Super.
+<Prince_of_Dawn> ospqh da blokiram XP
+<VelinTzanov> Mejdu drugoto triabva da vi kaja, che sym mnogo dovolen ot redovnostta vi s domashnite.
+<VelinTzanov> Ako prodyljavate taka naistina shte ni stigne vremeto da pokriem vsichkia material koito imam za predi BOI.
+<VelinTzanov> Niakakvi vyprosi/problemi?
+<Prince_of_Dawn> veline ma drugite ni priqteli izlizat na kino
+<Prince_of_Dawn> na bouling
+<VelinTzanov> Da hodiat na kino, Borisov.
+<Prince_of_Dawn> i taka i nie nqkoi pat otiwame s tqh
+<VelinTzanov> Ela si ti v MIT i shte go gledash kinoto na ogrooomen ekran i 3-D. Na 3-4 kilometra e ot MIT - 2-3 spirki s metroto.
+<VelinTzanov> Gledaite da ne otidete na kino nakraia... :)
+<Prince_of_Dawn> ma kolko chesto hodish ti tam?
+<VelinTzanov> Kolko iskam, Borisov. :-p
+<Swetko> tova 3-d ne e li gadno
+<VelinTzanov> Ne be, Xtra si e. Ne e kato v BG.
+<Prince_of_Dawn> aide po temata
+<Swetko> ok
+<VelinTzanov> Tova e po temata Borisov. Tvoiata motivacia e edno ot nai-vajnite neshta.
+<VelinTzanov> OK
+<VelinTzanov> Dnes shte pravim ciklichni igri.
+<VelinTzanov> Zapochvame s Trade ot Yambol 2003.
+<VelinTzanov> http://infoman.musala.com/contests/spring/2003/problems_A.rtf
+<Prince_of_Dawn> towa uslowie e dalgo
+<VelinTzanov> KAto ste gotovi kajete
+<Prince_of_Dawn> poneje e ot ranniq Velin
+<VelinTzanov> OK de, shte izchakam,.
+<VelinTzanov> Hahaaaaa, poslednata zadacha koiato napisah (za BOI) e s po-dylgo uslovie. :)
+<VelinTzanov> Osven tova e sigurna za BOI, shtoto e mnogo krasiva.
+<VelinTzanov> Kysnia Velin e po-losh ot rannia. :)
+<rangel__> gotovo
+<sssa88> ready
+<Prince_of_Dawn> done
+<Prince_of_Dawn> dano kasnite natsionali sa po - umni
+<VelinTzanov> Prochete li ia, Borisov?
+<Swetko> az da
+<Prince_of_Dawn> prgledah q
+<Prince_of_Dawn> az sam q i pisal
+<Prince_of_Dawn> ma ne sam testwal
+<VelinTzanov> OK
+<VelinTzanov> Taka. Imame si nashia igrov graf.
+<VelinTzanov> Obhvatna li e igrata?
+<Prince_of_Dawn> da
+<rangel__> da
+<VelinTzanov> Zashto?
+<Prince_of_Dawn> 1000000
+<Prince_of_Dawn> varha
+<Prince_of_Dawn> <
+<VelinTzanov> :) Da, uslovieto e kategorichno a? :)
+<VelinTzanov> A ciklichna li e?
+<rangel__> da
+<VelinTzanov> Zashto?
+<Prince_of_Dawn> shtom dnes razlejdame tsiklichni igri
+<VelinTzanov> Borisov, boi shte iadesh! >:-[
+<rangel__> ami zashtoto mozhe da se vyrnem v predish situaciq, a i uslovieto spomenava neshto za bezkrajna igra :-)
+<Prince_of_Dawn> ima takawa tochka w uslowieto
+<Swetko> ami zastoto moshem da slagame i mahame ot vseki sklad
+<VelinTzanov> Na BOI niama da vi kaja ciklichna li e ili ne...
+<Prince_of_Dawn> che mojem da igraem do ezkrai
+<Swetko> znachi ste ima na BOI taka li
+<Swetko> ?
+<Swetko> igra
+<VelinTzanov> ... ne e recheno da ima.
+<VelinTzanov> Ako izmislia shte ima. :)
+<VelinTzanov> Ako imate idei, prashtaite mi - moje da gi modificiram i da gi pusna. :)
+<Swetko> ami izmisli
+<Swetko> az imam samo kradeni idei
+<VelinTzanov> No ako ima niama da vi kaja dali e ciklichna ili ne, prosto zashtoto niama znachenie dali e ili ne e. :)
+<Prince_of_Dawn> тр€бва да може да играе играта без да губи до безкрай.
+<VelinTzanov> Borisov, kirilicata ne ia cheta.
+<VelinTzanov> Taka.
+<VelinTzanov> Imame graf.
+<VelinTzanov> Ciklichen tozi pyt.
+<Prince_of_Dawn> trqbwa da moje da igrae igrata bez krai bez da gubi
+<VelinTzanov> Da. :-D
+<VelinTzanov> Neshto neredno li vijdash?
+<Prince_of_Dawn> dokazatelstwo za tsiklichnosta
+<VelinTzanov> :) OK
+<VelinTzanov> Vsyshtnost tova ne e takova.
+<VelinTzanov> Utopia ot IOI 2002 syshto imashe v uslovieto "Ako ne syshtestvuva otgovor izvedete 0", a pyk to vinagi syshtestvuvashe. :)
+<VelinTzanov> Nomeryt beshe da si go dokajesh. :-p
+<Swetko> ami to e ochevidno
+<VelinTzanov> Koe e ochevidno?
+<VelinTzanov> CHe e ciklichna li?
+<VelinTzanov> Da, razbira se.
+<Swetko> che e ciklichna kakvo ni prechi da pulnim i izprazvame skladovete kakto si iskame
+<VelinTzanov> Da, razbira se.
+<VelinTzanov> Taka.
+<VelinTzanov> Grafyt e ciklichen.
+<VelinTzanov> Nie pak triabva da si reshim igrata, t.e. da namerim pravilniat hod za vsiaka situacia.
+<VelinTzanov> Kak go pravim?
+<VelinTzanov> Kakvo znaem ot minalia pyt?
+<VelinTzanov> Swetko, ti mylchi, shtoto znaesh vsichko.
+<rangel__> che trqbva da ima red i da si definirame situaciite pyrvo i da kazhem koi sa gubeshti i koi pechelivshi (a sega i koi sa neutralni)
+<VelinTzanov> Po kakva logika mojem da zakluchim che edna situacia e pechelivsha/gubeshta/neutralna?
+<VelinTzanov> Logikata beshe prosta.
+<Prince_of_Dawn> pecheliwsha e tazi s gubesht sin
+<VelinTzanov> Situaciite bez deca (krainite) sa gubeshti.
+<VelinTzanov> Da, Borisov.
+<VelinTzanov> A ako niama gubesht sin?
+<Prince_of_Dawn> gubeshta e tazi s sinove samo pecheleiwshi
+<VelinTzanov> Tochno taka.
+<Prince_of_Dawn> i ostanalite sa neutralni
+<VelinTzanov> A s drugite kakvo pravim?
+<VelinTzanov> Zashto?
+<Prince_of_Dawn> zashtoto ot tqh moje da otidem w pone edna drug neutralna
+<Swetko> neutralni sa zastoto ne sa nito pechelivshi nito gubest
+<Swetko> i ne samo
+<VelinTzanov> OTkyde si siguren?
+<Prince_of_Dawn> i ne mojem da spechelim pak ne iskame da gubim
+<rangel__> i zashtoto protivnika ne mozhe ot neutralna situaciq da me postavi v gubeshta
+<Prince_of_Dawn> az li otkade sam siguren
+<VelinTzanov> Otkyde ste sigurni che pravilata koito mi kazahte sa pylni?
+<VelinTzanov> Otkyde ste sigurni che ne ste zabravili niakoe pravilo?
+<VelinTzanov> Ne moje prosto da kajesh - ami ne se seshtam drugo pravilo - znachi sa v tretia kiup.
+<VelinTzanov> NEka formuliram zadachata taka:
+<rangel__> ami zashtoto s tezi pravila se pokrivat vsichki vyrhove v grafa (t.e. za vsqka situaciq mozhem da kazhem kakva e po tezi pravila)
+<rangel__> i osven tova sa neprotivorerichivi
+<VelinTzanov> Rangele, az moga da ti dam slednite pravila:
+<VelinTzanov> Ako kato pusna radioto chuia Heavy Metal znachi situaciata e pechelivsha. Ako chuia chalga, znachi e gubeshta, inache e neutralna.
+<VelinTzanov> I te sa neprotivorechivi.
+<VelinTzanov> I opredeliat vsiaka situacia.
+<Swetko> ami da
+<VelinTzanov> Ne mojesh da si siguren che si pokril vsichko prosto ei-taka.
+<VelinTzanov> Triabva da napravish dokazatelstvo i za poslednia sluchai.
+<VelinTzanov> Inache mojeshe da kajesh slednoto:
+<VelinTzanov> Tezi bez deca sa guebshti
+<VelinTzanov> Tezi s gubesht sin sa pechelivshi
+<VelinTzanov> Ostanalite sa neutralni, shtoto ne se seshtam drugo.
+<VelinTzanov> Tova ne e li syshtoto kato tova koeto vie kazvate?
+<Prince_of_Dawn> shte se opitam da go obusnowa
+<VelinTzanov> Taka. Neka vi dam po-slojna zadacha:
+<rangel__> ami ne syvsem :-)
+<VelinTzanov> Krainite situacii bivat tri tipa - pechelivshi, gubeshti i patovi.
+<VelinTzanov> V Patovite zavyrshvate naravno, no zavyrshvate vse pak.
+<VelinTzanov> Edin systezatel predpochita pata pred bezkrainata igra, zashtoto pri bezkraina igra riskuva da se umori i da zagubi po nevnimanie.
+<Swetko> e kak taka 
+<VelinTzanov> Opredelete vsiaka situacia kakva e.
+<VelinTzanov> Swetko, shaha naprimer e takava igra.
+<VelinTzanov> Moje da niamash hod, no da si v pat i da ste naravno.
+<VelinTzanov> Ako si ostanal s edin samoten car predpochitash da te patirat otkolkoto da igraete do bezkrai. :)
+<Swetko> ami kude e tova v trade
+<VelinTzanov> Tova ne e v Trade.
+<Prince_of_Dawn> nqma
+<VelinTzanov> Aide sega - opredelete pak vsiaka situacia.
+<Prince_of_Dawn> mi neka az
+<VelinTzanov> Krainite gi znaem (dadeni sa ni vyv vhoda, naprimer)
+<VelinTzanov> Davai
+<Prince_of_Dawn> Pecheliwshata si e pecheliwsha
+<Prince_of_Dawn> gubeshtata sashto
+<VelinTzanov> Chakai, chakai. Definirai iasno.
+<VelinTzanov> Poslednia pyt ne uspiahte. :) Dai sega po reda mu.
+<Prince_of_Dawn> Pecheliwsha ako imash pone edin gubesht sin;
+<Swetko> gubesta e kraina pozicia
+<VelinTzanov> OK
+<Swetko> pechelivsha e tazi e edin gubest sin
+<VelinTzanov> Swetko, imash i drugi kraini pozicii.
+<VelinTzanov> A ako e poveche ot edin?
+<Prince_of_Dawn> gubeshta e tazi samo sgubeshti sinove
+<Swetko> kak taka
+<VelinTzanov> Pata v shaha e kraina situacia, koiato zavyrshva remi.
+<Swetko> gubeshta e tazi samo pechelivshi
+<rangel__> Swetko ne govorim za trade v momenta
+<VelinTzanov> Borisov, veche si protivorechish.
+<Swetko> aaaa
+<Swetko> ok
+<Prince_of_Dawn> ako si w pozitsiq w koqto nqmash hod nito gubesht nito pocheliwsh
+<VelinTzanov> Borisov, popravi se pyrvo!
+<VelinTzanov> Aide otnachalo.
+<Prince_of_Dawn> towa e patowa
+<VelinTzanov> Vsichki mylchim, samo Borisov govori.
+<Prince_of_Dawn> gubeshta e takawa samo s pecheliwshi sinove
+<VelinTzanov> Pechelivsha beshe takava s pone edin gubesht.
+<Prince_of_Dawn> Pecheliwsha ako imash pone edin gubesht sin;
+<VelinTzanov> OK
+<Prince_of_Dawn> gubeshta e takawa samo s pecheliwshi sinove
+<Swetko> ot strana na edinia igrach govorim
+<VelinTzanov> DA
+<Prince_of_Dawn> ako si w pozitsiq w koqto nqmash hod nito gubesht nito pocheliwsh
+<VelinTzanov> ONe
+<VelinTzanov> Togava bezkraina ili patova Borisov? I zashto?
+<Prince_of_Dawn> towa e patowa pozitsiq
+<VelinTzanov> Ne.
+<VelinTzanov> Ot kyde na kyde.
+<VelinTzanov> Ako imash samo dva caria na shahmatna dyska. Tova ne e patova.
+<Prince_of_Dawn> poneje nqma kade da mestish i towa e pat
+<VelinTzanov> Tova e bezkraina.
+<rangel__> ako moga da stigna do ne-patova poziciq znachi e bezkrajna, inache e patova
+<VelinTzanov> Nali kazahme che predpochitash pata pred bezkrainostta!
+<Prince_of_Dawn> caria?
+<VelinTzanov> Dosega samo Vlado ne se e oplel kato pate v kalchishta, samo zashtot nishto ne e kazal. :)
+<rangel__> e da no protivnika mozhe i da ne go predpochita
+<VelinTzanov> E, i toi go predpochita. Igrata e impartial - ednakva i za dvama vi.
+<VelinTzanov> OK.
+<VelinTzanov> Neka vyveda red, che niamame vsichkoto vreme na sveta.
+<Prince_of_Dawn> w shaxa ako nqmash kade da meshtsh e pat
+<VelinTzanov> Taka
+<Swetko> ako si v  kraina pechelicsha to tia e pechelivsha , ako si v kraina gubesta e gubesta , ako si v kraina nito pechelivsha nito gubesta - patova -      za ne krainite     ako ima samo gubesti sinove e gubesta  ako ima edin pechelivsh e pechelivsha  inache ravna
+<VelinTzanov> Osven ako caria ti ne e v shah, Borisov. Togava e mat. :)
+<VelinTzanov> Taka.
+<VelinTzanov> Tiho sega.
+<VelinTzanov> Swetko, shte ia napravim v impartial varianta.
+<VelinTzanov> T.e. kato Trade - situaciata e edna i syshta i za dvama vi.
+<VelinTzanov> Taka:
+<VelinTzanov> Krainite sa definirani po uslovie.
+<VelinTzanov> Nekrainite:
+<VelinTzanov> Ako imam gubesht sin, znachi moga da vkaram protivnika v gubeshta, znachi az sym pechelivsh.
+<VelinTzanov> Ako niamam gubesht sin, no imam patov sin, to znachi ne moga da go vkaram v gubeshta, no moga v patova, zatova az sym patova situacia.
+<VelinTzanov> Ako niamam nito gubesht, nito patov sin i ako vsichkite mi deca sa pechelivshi, to az shta ne shta go vkratvam v pechelivsha i sledovatelno az sym gubesht.
+<VelinTzanov> Kakyv e poslednia sluchai?
+<Prince_of_Dawn> patowa s sluchaq e bezkraina?
+<VelinTzanov> Borisov, mylchi.
+<VelinTzanov> Ne mislete za Trade.
+<VelinTzanov> Aaa, ti pitash. Izviniavai.
+<VelinTzanov> Ne vidiah vyprositelnata, pomislih che e tochka.
+<VelinTzanov> Mojete da pitate. :)
+<VelinTzanov> Sega gledame abstraktna impartial igra.
+<VelinTzanov> V koiato imate patovi situacii.
+<VelinTzanov> Ostana edin klas situacii koito ne definirah. Koi?
+<VelinTzanov> Niakoi moje li da mi dade hubava definicia?
+<rangel__> imam edin typ vypros. ako protivnika mi igrae s cel bezkrana igra ne mi li trqbvat 2 vida patovi pozicii?
+<VelinTzanov> Da, triabvat ti, Rangele. Mnogo dobro nabludenie.
+<Prince_of_Dawn> mi mislq che ako stignesh do tsikal znachi si bezkraina situatsiq
+<Prince_of_Dawn> toest ako rekursiqta si nastapi opashkata
+<VelinTzanov> Borisov, ne pitah tova.
+<VelinTzanov> Tova koeto govorish nito e podredeno, nito e iasno definirano, nito e viarno.
+<VelinTzanov> Popitah - kakyv e poosledniat klas situacii.
+<VelinTzanov> Neka povtoria predishnite:
+<VelinTzanov> 1) Kraini situacii
+<VelinTzanov> 2) Ima pone edin gubesht sin.
+<VelinTzanov> 3) Niama gubeshti sinove, no ima pone edin patov.
+<rangel__> ami situacii, koito nqmat gubesht sin, nqmat patov sin, i imat sinove, koito ne sa pechelivshi
+<VelinTzanov> 4) Niama gubeshti i patovi i vsichki sa pechelivshi.
+<VelinTzanov> Koi e poslednia sluchai?
+<VelinTzanov> Eh, dobre che e Rangel. :)
+<rangel__> i mi se struva intuitivno vqrna che tozi edinstven pyt e kym bezkrajna igra ponezhe zadylzhitelno vodi do nemarkirana situaciq (kato tekushtata)
+<rangel__> t.e. mozhe i da sa nqkolko de :-)
+<VelinTzanov> OK. Situaciite koito ne sme opredelili do momenta mojem da gi narechem Neopredeleni.
+<Swetko> niamash gubesti
+<Swetko> no ne vseki e pechelivsh
+<VelinTzanov> Swetko, ne te razbiram.
+<VelinTzanov> Tova koeto Rangel kaza, e che vsiaka neopredelena ima vryzka kym druga neopredelena.
+<VelinTzanov> Sega kato go kazahme iasno - che vsiaka neopredelena ima vryzka kym druga neopredelena i che osven tova niama vryzki kym drugi osven kym pechelivshi, kakvo mojem da zakluchim?
+* Svetko has joined #ioi
+<rangel__> che tezi pozicii obrazuvat cikyl
+<VelinTzanov> Paste-nah na Svetko.
+<VelinTzanov> Da, i kakvo ot tova?
+* VelinTzanov sets mode: +o Svetko
+<Swetko> ami az tova kazah
+<Swetko> ne e nushno
+<Swetko> az sum s 2 nick-a
+* Svetko has quit IRC (Killed (NS (Nickname Enforcement)))
+<Swetko> nedei
+<VelinTzanov> Kakvo da nedeia?
+<rangel__> ami che moga da igraq bezkrajna igra (i che ako ne go napravq gubq)
+* dsd has joined #ioi
+<dsd> az sum Swetko
+<VelinTzanov> OK
+<VelinTzanov> A, Rangel go zakova!
+<VelinTzanov> Zatova neopredelenite situacii vsyshtnost sa bezkraini.
+<VelinTzanov> Zashtoto vinagi pravilniat hod e kym druga neopredelena.
+<VelinTzanov> Sega da se vyrnem na Trade.
+<VelinTzanov> - Krainite sa gubeshti
+<dsd> ami az nali kazah che drugite sa tezi koito niamat gubest sin no ne vsichki sinove sa im pechelivshi nito puk imat patov sin
+<VelinTzanov> - Tezi s gubesht sin sa pechelivshi.
+<VelinTzanov> Da, Swetko, pravilno si kazal. Prosto niamashe koga da te razberem. :)
+<VelinTzanov> - Tezi samo s pechelivshi sinove sa gubeshti.
+<VelinTzanov> - Ostanalite zadyljitelno imat vryzka kym drugi Ostanali i eventualno kym pechelivshi.
+<VelinTzanov> Vyprosnite Ostanali stavat Neutralni.
+<VelinTzanov> Tova iasno li e?
+<rangel__> da
+<Prince_of_Dawn> da
+<sssa88> da
+<dsd> da
+<VelinTzanov> Mnogo e vajno kogato pravite takava ocenka na dadena igra da izpylvate cialoto prostranstvo ot vyzmojnosti. Inache stava smyrt.
+<VelinTzanov> Sega triabva da napishem programa, koiato da namira za vsiaka situacia kakva e.
+<VelinTzanov> Tuk pak imame dva podhoda.
+<VelinTzanov> Otgore nadolu i otdolu nagore.
+<VelinTzanov> Chuval sym che moje da se napishe programa koiato da raboti i otgore nadolu, no dosega ne sym vijdal takava nikoga. :)
+<VelinTzanov> Nai-mnogo da markira situaciite otgore-nadolu i posle da reshi igrata otdolu-nagore. :)
+<VelinTzanov> Razbirate li kakvo imam predvid?
+<VelinTzanov> Ciklite sa smyrt za rekursiata.
+<sssa88> aha
+<VelinTzanov> Pravilniat podhod e otdolu-nagore.
+<VelinTzanov> Ima smisyl otgore nadolu samo ako znaete che igrata vi se razigrava v tiasno prostranstvo ot potencialnite vyzmojnosti.
+<VelinTzanov> Primerno ako imate samo car i peshka niama kakvo da gi smiatate situaciite s konete, topovete, caricite i t.n... :)
+<VelinTzanov> Togava pak si reshavate otdolu nagore, no predi tova si markirate koi situacii sa dostijimi.
+<VelinTzanov> Sega, kak reshavame otdolu nagore?
+<rangel__> ami s edno bfs
+<VelinTzanov> Dijkstra ste pravili vsichki nali? :)
+<VelinTzanov> Tam delim vyrhovete na tri grupi.
+<VelinTzanov> Takiva deto gi znaem, takiva deto ne gi znaem, i takiva deto veche sme gi napravili.
+<VelinTzanov> Taka i tuk:
+<VelinTzanov> Delim vyrhovete na tri grupi:
+<VelinTzanov> 1) Takiva deto ne gi znaem oshte kakvi sa.
+<VelinTzanov> 2) Takiva deto gi znaem, no oshte ne sme kazali na roditelite im kakvi sa.
+<VelinTzanov> 3) Takiva deto gi znaem i sme kazali na vsichki veche za tiah.
+<VelinTzanov> V nachaloto vsichki sa kategoria 1/
+<VelinTzanov> Samo krainite sa kategoria 2.
+<VelinTzanov> Obshto vzeto ideiata e tezi koito sa v 2 da kazvame na roditelite im za tiah i da gi premestvame v 3... i da se nadiavame che roditelite im shte preminat ot 1 v 2.
+<VelinTzanov> Za celta si pravim edna opashka (moje i stack, ili kakvoto tam si iskate).
+<VelinTzanov> I vadim elementite ot 2 edin po edin.
+<VelinTzanov> Kak kazvame na roditelite na edin element za nego?
+<VelinTzanov> element = vryh ot grafa = situacia v sluchaia
+<VelinTzanov> Ako elementyt e gubesht?
+<rangel__> ami ako e gubest pravim roditelq pechelivsh i go mestim v 2. inache namalqme broqcha na decata mu s edno i ako e stanal 0 pravim roditelq gubest i go mestim v 2
+<VelinTzanov> Aha - znachi ni triabva i broiach.
+<VelinTzanov> Triabva da znaem koga na edin roditel vsichki mu deca sa pechelivshi.
+<VelinTzanov> Zatova "uvedomiavaneto" e prosto edno broene.
+<VelinTzanov> Kato razberem dali roditelia e pechelivsh ili zagubeniak (t.e. ako ima sin zagubeniak ili ako vsichki sa pechelivshi)
+<VelinTzanov> prosto go mestim v 2.
+<VelinTzanov> Iasno?
+<rangel__> da :-)
+<sssa88> da
+<VelinTzanov> Borisov?
+* Prince_of_Dawn_ has joined #ioi
+<VelinTzanov> :)
+<VelinTzanov> Tova otgovaria na vyrposa mi. :)
+<Prince_of_Dawn_> az ne znam waprosa
+<VelinTzanov> Vyprosyt beshe "Borisov?"
+<VelinTzanov> Sega shte ti paste-na na lichno.
+<Prince_of_Dawn_> ako e gubesh napravo pravim roditelite pecheliwshi
+<VelinTzanov> Ta, iasno li e?
+<VelinTzanov> Borisov piam.
+<VelinTzanov> piam = pitam
+<Prince_of_Dawn_> da
+<VelinTzanov> OK
+<VelinTzanov> Sega ostana samo edin vypros. Kakvo pravim kato svyrshi opashkata?
+<VelinTzanov> Togava vsichki sa ili tip 3, ili tip 1.
+<Prince_of_Dawn_> mi gotowo
+<VelinTzanov> Kakvo pravim s tezi tip 1 (shtoto tip 3 sme gi reshili veche)?
+<rangel__> tezi, koito vse oshte sa tip 1 sa neopredeleni => bezkrajni
+<VelinTzanov> A zashto sa takiva? :)
+<rangel__> za tqh prosto trqbva da namerim hod, kojto vodi do drug bezkraen
+* Prince_of_Dawn has quit IRC (Ping timeout: 380 seconds)
+<VelinTzanov> T.e. zashto nashata implementacia otgovaria na tova koeto si go govorehme dosega, a ne e bugava?
+<rangel__> nqmat gubesht sin i ne vsichkite im sinove sa pechelivshi
+<VelinTzanov> T.e. znaem che imat vryzka kym drug vryh ot klas 1.
+<VelinTzanov> A zashto znaem tova?
+<VelinTzanov> Otkyde sme sigurni?
+<rangel__> zaradi broeneto na decata
+<sssa88> shtoto ako nqmaha nqmashe da sa v 1
+<VelinTzanov> Da, Vlado e prav.
+<VelinTzanov> A zashto sme sigurni che niamat sin-zagubeniak?
+<sssa88> shtoto ako imaha pak nqmashe da sa v 1
+<VelinTzanov> Zashtoto?
+<Prince_of_Dawn_> shtqha da sa pecheliwshi
+<rangel__> ami roditelite na "zagubenqcite" stavat pechelivshi i sme obhodili vsichki gubeshti
+<VelinTzanov> A taka - zashtoto sme obhodili vsichki zagubeniaci.
+<rangel__> (ponezhe kategoriq 2 e prazna)
+<VelinTzanov> I zashtoto na vseki roditel na zagubeniak sme mu kazali che sina mu e zagubeniak.
+<VelinTzanov> Shtom tezi v 1 sa v 1, znachi nikoi ne im e kazal che imat sin zagubeniak. Znachi niamat.
+<VelinTzanov> Shte se nauchite da gi dokazvate vie tia raboti, znam az... :)
+<Prince_of_Dawn_> ne e hubawo da gi narichash zagunqtsi. Te ne sa winowni che sa gubeshti pozitsii
+<VelinTzanov> Za domashno vi ostaviam da si go napravite za pechelivshi, gubeshti i ravni... :)
+<VelinTzanov> i patovi, t.e.
+<rangel__> pyk i roditelite im mnogo se gordeqt s pechelivshiq hod kym tqh :-)
+<VelinTzanov> :)
+<VelinTzanov> OK. Sega mojete li da mi napishete Trade za 100?
+<VelinTzanov> Ako imate vyprosi - sega mu e vremeto (moje i posle de, no chuvstvaite se svobodni sega)
+<sssa88> da
+<rangel__> da
+<VelinTzanov> Borisov?
+<Prince_of_Dawn_> da
+* VelinTzanov sets mode: +o Prince_of_Dawn_
+<VelinTzanov> OK
+<VelinTzanov> I za da ne skuchaete, oshte edna zadachka. :)
+<VelinTzanov> BalticOI 2002, L-Game
+<Prince_of_Dawn_> mnogo smeshno
+<VelinTzanov> http://aldona.mii.lt/pms/olimp/english/boi2002/kita/lgame-en.pdf
+<sssa88> taq zadacha sorsa mi besh 7.5KB, 420 reda
+<VelinTzanov> Na Ivan Anev e 4KB
+<VelinTzanov> Ama toi mai beshe kral malko ot avtorovoto... idei de, ne che e prepisval.
+<dsd> moia e samo 2.7
+<VelinTzanov> Ti niamash space-ove, jivotno takova! >:-[
+<dsd> aaa na l-game
+<dsd> i moia e 7Kb
+<VelinTzanov> ("Jivotnoto" e na shega ;) )
+<VelinTzanov> Aaa, da.
+<sssa88> e i az krah idei ot avtorovoto - az ot tam razbrah kak se reshavat ciklichni igri
+<VelinTzanov> Viarno be, ako ti imashe 2.7KB shtiah da go zabeleja minalata godina.
+<VelinTzanov> OK. Gotovi sme. Mojete li da ia napishete za utre za domashno?
+<dsd> :)
+<dsd> kolko mnogo obiasnenie po neia
+<dsd> ami skorotstta zavisi ot kodiraneto 
+<VelinTzanov> Mdaa.
+<sssa88> dano da mozem
+<dsd> i ot nachina po koito se praviat hodovete
+<VelinTzanov> Tova e zadacha primer za tova kolko shibano moje da e kodiraneto poniakoga.
+<dsd> taka che aide nedei iska da e byrza
+<VelinTzanov> Inache algorithmichno nadiavam se e iasna?
+<dsd> sega che Anev ia e napravil za 2 sec.
+<VelinTzanov> Triabva malko da se pouprajniavate da kodirate i dekodirate kato horata.
+<sssa88> tova e zadacha primer - s kakva zadacha ne biva da se zahvashtash pyrvo
+<VelinTzanov> Po-kysno shte imame edin den uprajnenia samo na tazi tema. :)
+<dsd> to i az biah napravil edna zadacha niakolko puti po byrza ot drugitre ama ti ne gi kara da ia pishat taka
+<VelinTzanov> Abe napishete ia taka che da sym dovolen.
+<VelinTzanov> Ako uspeia da iztraia chakaneto (a az sym netyrpeliv) minavate. Inache - ne.
+<VelinTzanov> Taka - algoritmichno iasna li e zadachata?
+<dsd> ami aide sega 
+<sssa88> aha
+<dsd> az ste ti otdelia 5 minuti na sustezanie 
+<dsd> ama i ti mi otdeli 5 minuti v chakane
+<dsd> :)
+<rangel__> obhozhdame si grafa i igraem po nego. inache mnogo pisane :-)
+<dsd> ako ste cheli reshenieto ima greshka
+<dsd> v obiasneniata
+<dsd> pishe che ot situaciia ima max 195 hoda
+<dsd> a te sa kum 230
+<sssa88> situaciite maj gi bqha iskarali 2 pyti poveche
+<dsd> to zavisi ot koia gledna tochka
+<VelinTzanov> OK, Swetko svyrshihme li navreme? :)
+<dsd> da
+<dsd> mersi
+<dsd> :)
+<Prince_of_Dawn_> Veline razbrah che ne si pisal Lgame?
+<dsd> az ste hodia 
+<dsd> tukmo si napechatah pistovite
+<sssa88> chao
+<VelinTzanov> OK
+<VelinTzanov> Chao, Swetko.
+<rangel__> chao
+<Prince_of_Dawn_> chao
+<dsd> chao
+* dsd has quit IRC
+<VelinTzanov> Az togava taktichno ia izbegnah... i udarih 200 tozi den i s 256 na pyrvia stanah pyrvi ot cialoto online systezanie.
+<VelinTzanov> http://www3.lrs.lt/pls/inter/w3_viewer.ViewDoc?p_int_tekst_id=15042&p_int_tv_id=1701&p_org=0
+<Swetko> ami to i az stiah da ia izbegna
+<sssa88> az pyk kato pravih tova systezanie v kyshti sled kato napisah pyrvata pochnah LGame i nakraq
+<sssa88> imah 60 obshto
+<VelinTzanov> A 256-te triabvashe da sa 290... prosto biah umnojil edno neshto po 8 za udobstvo i se okaza che izlizam ot 32-ta bita. :)
+<sssa88> na triygylnicite li?
+<VelinTzanov> Da
+<VelinTzanov> OK, mocheta, imate si dostatychno domashno.
+<VelinTzanov> Jelaia vi uspeh - utre da mi doidete podgotveni. :)  Shte pravim leki neshta utre.
+<Swetko> ok
+<Prince_of_Dawn_> VELINE ti ne si chowek
+<Prince_of_Dawn_> az neznam dali shte si go napisha za utre
+<Prince_of_Dawn_> mnogo uchene
+<Swetko> to i az ne sum - shivotno :)
+<Prince_of_Dawn_> utre trqbwa da izlqza w 8:30
+<Swetko> abe napishi si edin modul koito da ti reshava ciklichni igri
+<VelinTzanov> Eto, kazah che shte pravim neshto leko utre i ne sym bil chovek..... OK, shte pravim neshto tejko utre togava. ;)
+<Swetko> i prosto mu dai kato parametyr L-game i Trade
+<Swetko> ok
+<Swetko> taman
+<Swetko> dano ne sum go chuval
+<VelinTzanov> HAhahaaaa. :)
+<VelinTzanov> Swetko, izviniavai, ama e nechoveshko da chetesh (kamo li da pishesh i debug-vash) source bez space-ove!
+<Prince_of_Dawn_> kazax che ne si chowek predi da kajesh ce utre shte e lesno
+<VelinTzanov> Znam az koga si go kazal. Pri men e sled. :)
+<Swetko> azm tova mnogo puti sum si go mislel kato pisha nesta ot sorta na LAB o t kontrolnoto   Robotrs ot IOI i drugi podobni BFS-ta
+<VelinTzanov> Aide, ne se obiasniavai.
+<VelinTzanov> DA ne si kazval ako ne si iskal taka da stane.
+<Swetko> ami na men po mi hubavo kato vishdam poveche nesta na ekrana inache se gubia
+<rangel__> nali? sled kato sa go napravili 24x80 tozi monitor edva li sa predvizhdali prazno mqsto po nego :-)
+<VelinTzanov> Aide momcheta. Chao!
+<Swetko> ami az si puskam 50X80 i pisha na Borland ne pod fullscreen
+<Swetko> zatova
+<rangel__> chao
+<Prince_of_Dawn_> chao
+* Disconnected
+Session Close: Tue Jun 15 21:37:40 2004

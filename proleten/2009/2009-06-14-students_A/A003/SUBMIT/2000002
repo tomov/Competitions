@@ -1,0 +1,39 @@
+#include<iostream>
+#include<vector>
+#include<string>
+#include<queue>
+#include<stack>
+#include<algorithm>
+#include<cmath>
+#include<cstdlib>
+#include<cstdio>
+
+#define fo(i,n) for(int i=0; i<n; i++)
+#define SP system("pause")
+
+using namespace std;
+long long t[1000003];
+int main()
+{
+  long long otg,ot,l;
+  otg=-1;
+    int n,k,otga=0,z;
+    ot=0;
+    cin>>n>>k;
+    fo(i,n)
+    {
+         cin>>t[i];
+         ot+=t[i];
+          if(i-k+1>=0)
+          {
+            z=ot/k;
+            l=0;
+            for(int j=i-k+1; j<=i; j++)
+            l+=abs(z-t[j]);
+            if(l<otg || otg==-1){otg=l;otga=i-k+2;}
+            ot-=t[i-k+1];
+          }
+    }
+    cout<<otg<<endl<<otga<<endl;
+    return 0;
+}

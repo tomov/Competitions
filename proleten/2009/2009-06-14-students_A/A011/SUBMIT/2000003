@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+int a[100000];
+int sum=0,n;
+int level=2,br=1;
+int st=3,temp;
+bool cmp (int c,int d){return c>d;}
+
+int main ()
+{   cin>>n;
+    for (int i=1;i<=n;i++)
+    cin>>a[i];
+    
+    while (level<n) {level*=2;br++;}
+    level=2;
+    sort (a+1,a+n+1,cmp);
+    
+    sum=(a[1]+a[2])*2;
+   // cout<<sum<<endl;
+    
+   while (level<=br)
+   {     temp=0;
+         
+         for (int i=1<<level;i<=((1<<(level+1))-1);i++)
+         {temp+=a[i];
+         //cout<<"i="<<i<<endl;
+         }
+         //cout<<"temp="<<temp<<" "<<"level="<<level<<endl;
+         level++;
+         sum+=level*temp;
+         //cout<<"sum="<<sum<<endl;
+         level++;
+         }
+    
+    //for (int i=1;i<=n;i++)
+    //cout<<a[i]<< " ";
+
+  cout<<sum+10<<endl;
+    }

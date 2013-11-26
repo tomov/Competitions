@@ -1,0 +1,97 @@
+#include <cstdio>
+#include <cstdlib>
+#include <algorithm>
+
+using namespace std;
+
+struct node {
+	int val;
+	node *left, *right;
+
+	int qg, qv;
+
+	node(int _val) : val(_val), left(NULL), right(NULL), qg(-1) { }
+} root(0);
+
+int cg = 0;
+
+#define LEFT(v) ((v)<<1)
+#define RIGHT(v) (((v)<<1)+1)
+#define ROOT 1
+
+inline int min(int a, int b) {
+	return a < b ? a : b;
+}
+
+int query(node* v, int h, int n) {
+	if(v == NULL) {
+		return h*n;
+	}
+
+	if(v->qg == cg) {
+		return v->qv;
+	}
+	v->qg = cg;
+
+	if(v->val == 0) {
+		return v->qv = h*n;
+	} else if(v->val == -1) {
+		return v->qv = min(query(v->left, h+1, n), query(v->right, h+1, n));
+	} else {
+		return v->qv = (query(v->left, h+1, v->val) + query(v->right, h+1, n));
+	}
+}
+
+void insert(node* v, int h, int n) {
+	if(v->val == 0) {
+		//printf("empty insert %d at %d\n", n, v);
+		v->val = n;
+	} else if(v->val == -1) {
+		//printf("begin query %d\n", h);
+		if(query(v->left, h+1, n) <= query(v->right, h+1, n)) {
+			//printf("end query\n");
+			insert(v->left, h+1, n);
+		} else {
+			//printf("end query\n");
+			insert(v->right, h+1, n);
+		}
+	} else {
+		/*printf("push down at %d\n", v);
+		printf("push down %d to %d\n", tree[v], LEFT(v));
+		printf("insert %d at %d\n", n, RIGHT(v));*/
+		v->left = new node(v->val);
+		v->right = new node(n);
+		v->val = -1;
+	}
+}
+
+int eval(node* v, int h) {
+	if(v->val == 0) {
+		return 0;
+	}
+	if(v->val == -1) {
+		return eval(v->left, h+1) + eval(v->right, h+1);
+	}
+	return h * v->val;
+}
+
+int data[131072];
+
+bool cmp(int a, int b) {
+	return a > b;
+}
+
+int main() {
+	int n, k;
+	scanf("%d", &n);
+	for(int i = 0; i < n; ++i) {
+		scanf("%d", data+i);
+	}
+	sort(data, data+n, cmp);
+	for(int i = 0; i < n; ++i) {
+		insert(&root, 0, data[i]);
+		++cg;
+	}
+	printf("%d\n", eval(&root, 0));
+	return 0;
+}

@@ -1,0 +1,40 @@
+<VelinTzanov> Osnovniat urok e, che nai-vajnoto neshto e da ima red.
+<VelinTzanov> Triabva da ima koordinatna sistema.
+<VelinTzanov> Triabva vsichko da e iasno.
+<VelinTzanov> Triabva da ste si napisali (na list hartia ili v glavata) kakvo stava vyv vseki edin moment.
+<VelinTzanov> Moje da vi se struva glupavo na pryv pogled, no vsiaka ot vashite programi triabva da ima iasno definirani taka narechenite Representation Invariant i Abstraction Function
+<VelinTzanov> Sega shte obiasnia
+<VelinTzanov> Representation Invariant (RI) e invarianta koito dyrji dannite vi validni.
+<VelinTzanov> Naprimer ako imate dvusvyrzan spisyk triabva A.next.previous da e ravno na A
+<VelinTzanov> Abstraction Function e funkcia ot danni v smisyl.
+<VelinTzanov> t.e. vsiaka promenliva, vseki masiv, vseki ukazatel triabva da ima tochen iasno definiran smisyl
+<VelinTzanov> Triabva da e iasno vyv vseki edin moment ot programta kyde kakvo e zapisano i kakvo e systoianieto v momenta.
+<VelinTzanov> Konkretno v Hexa triabva da e iasno:
+<VelinTzanov> Kakvi sa koordinatite
+<VelinTzanov> Koi kletki sa dobaveni v hash-a i koi oshte ne sa.
+<VelinTzanov> Tova che vyv VSEKI edin moment ot ednata ni strana stoi vytreshna kletka, a ot drugata vynshna, a ot pred neizvestna.
+<VelinTzanov> Zvuchi elementarno na pryv pogled.
+<VelinTzanov> No e mnogo vajno da ne zabraviate reda. Osobeno v po-goliama i slojna zadacha s goliama byrkotia.
+<VelinTzanov> Triabva vsiako neshto da si ima definiciata. I vseki red koito pishete triabva da e syobrazen s tazi definicia.
+<VelinTzanov> Tova e nai-vajnoto neshto, koeto triabva da znaete. Bez red ste za nikyde. Zatova go kazvam v nachaloto oshte.
+<VelinTzanov> Ako po niakoe vreme neshtata vzemat da se obyrkvat, bug-vat i pochvate da gubite vryzkite i da se chudite kakvo stava, sprete i definiraite vsichko, na list hartia ako shtete.
+<VelinTzanov> I posle pregledaite koda s definiciite v ryka - red po red.
+<VelinTzanov> Vsichki li ste tuk?
+
+
+<VelinTzanov> Ima edno zlatno pravilo, koeto triabva da zapomnite - 5 minti mislene mogat da vi spestiat 50 minuti pisane.
+<VelinTzanov> Byrzoto i dobreto shte doidat s opita.
+<VelinTzanov> Vajno e da ste spokoini i da otdeliate nujnoto vreme za izchistvane na reshenieto.
+<VelinTzanov> Kato go izmislite V NIKAKYV SLUCHAI ne skachate da go pishete vednaga!
+<VelinTzanov> Otdeliate danyk 5 minuti na Velin.
+<VelinTzanov> Prez tezi 5 minuti vsichko koeto shte pravite e da mislite po realizaciata.
+<VelinTzanov> Definirate masivite.
+<VelinTzanov> Promenlivite syshto.
+<VelinTzanov> Predstaviate si algorityma.
+<VelinTzanov> Pravite si malyk invariant za tova kakvo stava na vsiaka stypka i kakvo e systoianieto mejdu stypkite.
+<VelinTzanov> Dokazvate si che tova koeto pravite e viarno (ako imate vreme, ako ne - pishete bez da dokazvate)
+<VelinTzanov> Kato istekat 5-te minuti na Velin, siadate da pishete.
+<VelinTzanov> Bas dyrja, che taka shte spestite pone 5 minuti ot pisaneto.
+<VelinTzanov> I nai-vajnoto - to debug-vaneto. :)
+<VelinTzanov> Zatova na BOI i IOI kato izmislite zadachata i kato se entusiazirate da ia code-nete vednaga da vi svetne lampichkata - opa! 5-te minuti na Velin!
+<VelinTzanov> Iasno?

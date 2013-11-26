@@ -1,0 +1,35 @@
+LL sumgeomprogr(LL p,LL n)
+{
+	matrix a(2);
+	a.val[0][0]=a.val[1][0]=p;
+	a.val[1][1]=1;
+	VI b(2); b[0]=1;
+	b=power(a,n)*b;
+	return b[1];
+}
+
+matrix sumgeomprogr(matrix a,LL n)
+{
+	matrix z(a.val.SZ*2);
+	matrix y(a.val.SZ*2);
+	
+	Repi(a.val.SZ)
+			z.val[a.val.SZ+i][a.val.SZ+i]=y.val[i][i]=1;
+	Repi(a.val.SZ)
+		Repj(a.val.SZ)
+			z.val[i][j]=z.val[i+a.val.SZ][j]=a.val[i][j];
+	
+	y=power(z,n)*y;
+	Repi(a.val.SZ)
+		Repj(a.val.SZ)
+			a.val[i][j]=y.val[i+a.val.SZ][j];
+	
+	return a;
+}
+
+
+
+put return res in matrix*vi
+
+add operator[]
+

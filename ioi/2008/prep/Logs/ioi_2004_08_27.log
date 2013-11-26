@@ -1,0 +1,713 @@
+
+Session Start: Thu Aug 26 20:04:04 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+<valo_bg> deto trqbvashe da kajesh vytreshni i vynshni hexove kolko imash
+<VelinTzanov> Hmm... dori kogato zakysniavam ne ste vsichki.
+* Swetko has joined #ioi
+* raqtle has joined #ioi
+* CS sets mode: +v Swetko
+* Logging #ioi to 'logs\ioi_2004_08_27.log'
+<valo_bg> veche sme :-)
+* raqtle was kicked by VelinTzanov (VelinTzanov)
+<sssa88> mi maj 1 sekunda
+* VelinTzanov sets mode: +ooo Swetko rangel__ sssa88
+<valo_bg> breee... dosta malko...
+<VelinTzanov> Za kakvo govorite?
+<valo_bg> za hexa
+<valo_bg> i za TL i
+<VelinTzanov> Lineino vreme se iska.
+<VelinTzanov> N*LogN e 70 tochki.
+<valo_bg> aha
+<valo_bg> dobre
+<Swetko> na koia
+<VelinTzanov> Ia kajete sega - kak beshe kontrolnoto? Ne sym imal vyzmojnost da vi test-vam zadachite vse oshte, za syjalenie.
+<Swetko> hexa
+<VelinTzanov> Da. Ti, Swetko, imash 70 ako ne se lyja.
+<valo_bg> po-dobre ne dei
+<Swetko> tolkova imam
+<VelinTzanov> Valio, shte te obezglavia.
+<rangel__> az maj shte si prodylzha tradiciqta da nqmam 2 raboteshti zadachi :-(
+<valo_bg> shte imash pravo da ti kaja...
+<valo_bg> az pyk shte zapochna tradiciqta s 3 neraboteshti zadachi
+<sssa88> ami az tazi s stringovete ne uspqh da q e resha a drugite dve ne se znae dali sa verni
+<rangel__> Valio ti i posledniq pyt mnogo mrynkashe kak vsichko si omazal :-)
+<valo_bg> to vyprosa ne e do reshavane...
+<valo_bg> vyprosa e do tova kolko si prochel usloviqta
+<valo_bg> i po-skoro kato si gi prochel kakvo si rabral
+<VelinTzanov> Valio, ia kaji na vsichki kakvo napravi.
+<VelinTzanov> Ili veche im kaza?
+<valo_bg> principno i po-trite zadachi pisah, kato smqtah che sym reshil sys sigurnost 2 ot tqh
+<valo_bg> obache... dve leki greshki svejdat neshtata
+<VelinTzanov> Po-tochno?
+<valo_bg> do edna zadacha v koqto ne sym siguren v tova koeto sym pisal
+<Swetko> kakvo si obyrkal na dinamichnoto
+<valo_bg> na ednata zadacha ne sym slojil pravilno ogranichenie za N (10000 vmesto 100000)
+<valo_bg> a na drugata sym obyrkal posokata na liniite (slagam vertikalni, a ne horizontalni)
+<Swetko> abe tova vsichki li ste obyrkali
+<VelinTzanov> Momcheta, shto ne pitahte kakva e razlikata mejdu Street i Avenue? Da ne bi da mislite che sa sinonimi?
+<valo_bg> kato si pomislq kolko pyti go prochetoh uslovieto i obyrnah vnimanie tochno na tova....
+<VelinTzanov> Shte triabva da izmislia niakakvi nakazania za povtariane na greshki... kakvo predlagate?
+<VelinTzanov> S domashnite kak stoiat neshtata? Valio?
+-
+* Added *!*valo@ip-254-138.interbild.net to ignore list
+-
+* Removed *!*valo@ip-254-138.interbild.net from ignore list
+-
+* VelinTzanov sets mode: +o valo_bg
+<valo_bg> nqmam problemi. vsichko sym napisal mislq
+<VelinTzanov> Vlado, ti?
+<sssa88> za domashnite - mislq che vsichko sym napisal
+<VelinTzanov> Rangel?
+<rangel__> ne moga da si debug-na knights i warriors oshte
+<Swetko> az sum gi pisal
+<Swetko> doopraviah niakoi nesta
+<VelinTzanov> Vyprosi da imate?
+<valo_bg> az samo da napomnq na vsichki che oshte ne sme izmislili foo....
+<VelinTzanov> Futbolnia turnir ot CEOI li?
+<valo_bg> da
+<sssa88> az izmislih edno reshenie ama to raboti samo kogato N e 2^x - a to takyv test nqma :)
+<VelinTzanov> OK, niamate problem togava, davam vi vednaga oshte dve zadachi ot syshtata kategoria.
+<VelinTzanov> Mirrors, BaOI 2001 i Tennis BaOI 2002
+<VelinTzanov> E, shte triabva da go opravish da raboti i za drugo N. Bi triabvalo da e principno syshtoto i da niama niakakyv fundamentalen problem.
+<valo_bg> tazi Mirrors, mai se praveshe s nqkakvo greedy
+<sssa88> o ima
+<sssa88> a tennis e stroene na graf po stepeni na vyrhovete
+<VelinTzanov> Znachi shte triabva da go reshish, Vlado. :)
+<sssa88> brej che kakvo obshto ima box of mirrors s foo?
+<valo_bg> tyi li beshe... verno che tova beshe tenis...
+<VelinTzanov> Ami... niama mnogo. :)
+<Swetko> az ne namiram nisto obsto meshdu tezi 3 zadachi
+<VelinTzanov> Abe mislia che i Tennis e greedy kato Mirrors. :)
+<Swetko> za tennis si ima algoritum deto e nesto kato greedy
+<valo_bg> da de... i dvete sa greedy-ta
+<VelinTzanov> Momcheta, za dnes niamam iasno strukturirana tema. Imam samo 5 zadachi koito iskam da minem dosta nabyrzo i vie posle da si gi izchistite i da gi reshite.
+<valo_bg> deto izbirash nai-golqma stepen?
+<sssa88> izvod i foo e greedy
+<valo_bg> i az  tova si pomislih :)
+<VelinTzanov> Temata za dnes e geometria.
+<VelinTzanov> Pyrvoto neshto e parcelirane (zvuchi kato parketirane, ama ne e). I shte pochnem s dve zadachi:
+<VelinTzanov> Nivi, 4-to kontrolno 2001
+<VelinTzanov> Old Map, BOI 2002
+<VelinTzanov> (zadacha 6 ako ne se lyja)
+<VelinTzanov> Sega shte dam links/
+<VelinTzanov> Taka de, 3-to kontrolno, ne 4-to.
+<VelinTzanov> http://infoman.musala.com/contests/noi/2001/kont3_tasks.html
+<VelinTzanov> http://infoman.musala.com/contests/boi/2002/problems_bg.zip
+<VelinTzanov> Prochetete gi i kajete kato ste gotovi.
+<Swetko> az sum gi chel i reshaval
+<VelinTzanov> Ahh, kolko gadno, smenili sa mi zaglavieto na zadacha Team ot BOI 2004. Zaglavieto beshe Podbor na Orbor... a te sa go pisali kato Otbor.... kolko suharsko. :)
+<Swetko> ma ne sum siguren sali NIVIte raboteha
+<VelinTzanov> Sega shte podsigurish. :)
+<Swetko> drugata raboti
+-> [VelinTzanov] PING
+<VelinTzanov> Men niama da me ima 5-10 minutki... pishete vse pak kato ste gotovi.
+<valo_bg> gotovo
+<rangel__> ako edin zamyk e na kontura broi li se za chast ot imenieto
+<Swetko> am che toi nali ste e svarzan s niakoi drugio
+<sssa88> gotov
+<rangel__> da, shte e svyrzan, kakyv e problema?
+<Swetko> ami mai ne moshe da e
+<Swetko> az pone kato sum ia reshaval
+<Swetko> niamah takuv problem
+<VelinTzanov> Tuk sym.
+<VelinTzanov> OK.
+<VelinTzanov> Ta zadachita se sejda do tova da si postroite podhodiashta struktura ot danni (
+<VelinTzanov> Ta zadachite se svejdat do tova da si postroite podhodiashta struktura ot danni (silna duma) koiato da vi dava neobhodimata funkcionalnost da hodite po ogradite (pytishtata)
+<VelinTzanov> Inache kazano, triabva da mojete kato vlezete v edin vryh na grafa ot edno rebro, da mojete posle da "prodyljite" po sledvashtoto rebro (po chasovnikovata strelka naprimer)
+<VelinTzanov> Kazano prosto, ne vi triabva nishto poveche ot edin spisyk s rebrata izlizashti ot vseki vryh, naredeni po ygyl.
+<Swetko> zasto da sa naredeni
+<VelinTzanov> Ami za da mojesh da hodish na sledvashtoto byrzo.
+<Swetko> moshe vseki put da si tyrsim nai liav i nai desen
+<VelinTzanov> Inache imash Degree^2 slojnost... koeto moje i da ne e tolkova losho, kato se zamislia. :)
+<Swetko> nikak dashe
+<VelinTzanov> E, kakto vi e udobno. :)
+<valo_bg> ne zavisi li tova ot ogranichenieto za degree?
+<valo_bg> nivi e 8, no na drugata ne e
+<VelinTzanov> Vse pak edno sortirane (kato v geometriata ot kontronoto vi sled proletnia) niama da vi e trudno, pyk shte vi ulesni posle.
+<VelinTzanov> Da, zavisi Valio.
+<Swetko> i na dvete stava bez sorirane
+<VelinTzanov> OK de.
+<VelinTzanov> Tova ne e vajno.
+<VelinTzanov> Vajno e da e chist koda i da niama bug-ove.
+<VelinTzanov> A tova se pravi kato pishete nai-lesnoto za vas. Za vseki moje da e razlichno koe mu e nai-lesno.
+<valo_bg> posle da ne zabravq da ti pitam neshto...
+<VelinTzanov> Pitai sega na lichno, ako iskash.
+<VelinTzanov> Ta, sled kato ste si naredili dannite kato horata, posle samo triabva da obrabotite vsiako rebro vyv vsiaka ot dvete posoki.
+<VelinTzanov> T.e. da "minete" po vsiako rebro po vsiaka ot dvete posoki.
+<VelinTzanov> Obshto vzeto ideiata e slednata: minavate po edno rebro po koeto ne ste minavali predi. Posle hodite vse po chasovnikovata strelka (ili obratno, no vinagi edno i syshto) dokato se vyrnete pak.
+<VelinTzanov> Posle hvashtate drugo rebro i pravite syshtoto... i posle drugo i pak syshtoto...
+<VelinTzanov> I... tova e. :)  Ostana samo edna malka podrobnost.
+<VelinTzanov> Koi se seshta kakva e?
+<sssa88> da proverim dali nqma zamyci v teq raboti deto sme gi poluchili?
+<Swetko> da otbeliazvame rebrata za poseteni v ednata posoka
+<Swetko> aaaa
+<Swetko> setih se 
+<Swetko> da ne bi da proverim dali sme v granichnata oblast
+<Swetko> stot tia ne se vkliuchva a toz algoritum ia otkriva
+<VelinTzanov> Tochno taka.
+<VelinTzanov> Vynshnata obvivka na cialata rabota triabva da ne ia broim.
+<VelinTzanov> A kak nai-lesno mojem da se "osvobodim" ot neia?
+<Swetko> ami kato vidim che  imame nai diasna dyga
+<Swetko> i vyrtim nadiasno
+<VelinTzanov> Molia?
+<valo_bg> pravim convex hull primerno....
+<VelinTzanov> Hmm.. ami ako ne e convex?
+<valo_bg> ama to moje da e vdlybnato....
+<Swetko> ami ako sme pochnali ot niakoia kraina dyga
+<Swetko> t.e. granichna
+<Swetko> takava lesno se namira
+<Swetko> i primerno edna diasna takava
+<Swetko> i sme izbrali posoka za vyrvene nadiasno
+<Swetko> togava ste postroim tazi obvivka (ne vdubnata
+<valo_bg> a to nie vinagi li shte q namerim tazi oblast?
+<VelinTzanov> Da, Swetko e na mnogo prav pyt.
+<VelinTzanov> Vzimate edno granichno rebro (kato na izpyknala obvivka)
+<VelinTzanov> I pochvate ot nego da vyrtite.
+<VelinTzanov> I nakraia tova koeto poluchite shte e nai-vynshnia perimetyr i prosto go ignorirate.
+<VelinTzanov> I natatyk veche si prilagate algorityma.
+<VelinTzanov> Iasno?
+<rangel__> da
+<valo_bg> da mai...
+<sssa88> da
+<valo_bg> trqbva da se napishe
+<VelinTzanov> Triabva.
+<VelinTzanov> Pishete ako imate problemi, ili ako niakoe parche kod stane tvyrde zapleteno.
+<VelinTzanov> Ako stane tvyrde slojno, nai-veroiatno ste na greshen pyt. :)
+<VelinTzanov> Taka.
+<VelinTzanov> Sega drugata tema.
+<VelinTzanov> Oshte dve zadachki:
+<VelinTzanov> Selo, Proleten 2002
+<VelinTzanov> Aliens, BOI 2002
+<Swetko> selo si e  diagrami na voronoi
+<VelinTzanov> Ima i drug nachin. :)
+<VelinTzanov> Mai e malko baven de...
+<VelinTzanov> No i diagrami na Voronoi niama da vi navrediat. :)
+<VelinTzanov> Samo che te sa po jelanie.
+<VelinTzanov> Sega davam links
+<VelinTzanov> http://infoman.musala.com/contests/spring/2002/problems_11-12.rtf
+<VelinTzanov> Za BOI e syshtia link.
+<Swetko> da ne bi 3-izmernata izpuknala obvivka
+<valo_bg> btw, tq moje da stane s nlogn mislq
+<VelinTzanov> E to diagramite na Voronoi mai sa tolkova
+<valo_bg> govorq za izpyknala obvivka v 3D
+<valo_bg> no nqmam predstava kak...
+<VelinTzanov> :)
+<VelinTzanov> Az dori ne moga da si predstavia formata na izhoda... :)
+<VelinTzanov> KAto gi prochetete kajete.
+<rangel__> pri men seloto ne se chete
+<VelinTzanov> Zashto?
+<Swetko> izpuknalata obvivka v 3D mai e moshe s nlogN
+<VelinTzanov> Nali e RTF?
+<rangel__> predpolagam, che imenno zaradi tova
+<rangel__> vadi mi nqkakvi stranni simvoli
+<VelinTzanov> Sigurno shtoto e Microsoft-sko, s kartinki, izvyn standarta. :)
+<rangel__> ne, to izobshto ne hvashta kirilicata kato takava
+<valo_bg> rangel__: probvai da smenish shrifta na verdana
+<rangel__> nqmam takyv
+<VelinTzanov> Valio, save-ni go kato niakakyv .txt i mu go prati taka... ili kato HTML.
+<VelinTzanov> A moje i kato DOC da probvash, no moje da ima syshtia efekt.
+<VelinTzanov> Rangele ti pod Linux li si?
+<rangel__> da
+<valo_bg> moje li nqkoi drug che imam 2 MB trafik do kraq na meseca
+<valo_bg> chia shte probvam ad paste-na tuka
+<VelinTzanov> Swetko, ti?
+<Swetko> puk az sum na zala
+<VelinTzanov> Vlado?
+<sssa88> e che az dori sym si previshil trafika ma
+<sssa88> ama are nali sym dobyr
+<VelinTzanov> Elate v MIT be, hora, tuk niama limit na trafika... :
+<VelinTzanov> :)
+<sssa88> ama ima danyk vyrhu tototo a pri nas nqma
+<Swetko> az toz mesec v ruse biah izhabil 1.8 GB
+<VelinTzanov> A, niama... ima, kak da niama.
+<VelinTzanov> V BG ima danyk vyrhu vsichko.
+<sssa88> nqma
+<sssa88> shtoto pechalbite otivat za sporta i zatova
+<valo_bg> to ima, ama drug e vyprosyt koi go plashta :)
+<VelinTzanov> Abe vse shte nameriat piavicite nachin da ti izsmuchat danyk i ot tototo... po niakoi zatynten paragraf ot zakona,.
+<VelinTzanov> Niakyde chetoh che danychnata tejest v BG realno e kym 70%... :)
+<sssa88> e sega kakvo shte ni ubezdavash che v Amerika sa super niski danycite?
+<VelinTzanov> Ami... realno sa dosta po-niski. :)
+<VelinTzanov> Imashe niakyde edin index na ikonomicheskata svoboda.
+<VelinTzanov> USA biaha niakyde v pyrvite 5 (s Hong Kong, Singapur, Nova Zelandia i Shveicaria mai).
+<VelinTzanov> BG beshe niakyde mejdu 90-to i 110-to miasto... :)
+<VelinTzanov> Naravno s aborigenite. :)
+<VelinTzanov> Prochetohte li si zadachite?
+<rangel__> nqkoj mozhe li da mi kazhe otkyde da si izteglq microsoftskite shriftove shtoto qvno polzvat nqkakva zabutana kodova tablica
+<valo_bg> unicode e mai....
+<valo_bg> kato go export-na kym enocoded txt s Cirillic Windows i izlizat ?
+<rangel__> da, MS unicode nesyvmestim s tozi izpolzvan po celiq svqt :-)
+<valo_bg> samo ako mojeshe nqkoi MS programa da go convert-ne kym neshto choveshko
+<Swetko> abe dai da mu gi razkashem :)
+<VelinTzanov> Ne, Valio, virusite ne se mahat sami. :)
+<VelinTzanov> E kakvo, Rangel oshte li go niama tova uslovie?
+<VelinTzanov> Shte mu go convert-na na latinica. :)
+<VelinTzanov> Pratih ti go na e-mail-a.
+<valo_bg> rangel__: s kakvo go otvarqsh tova?
+<rangel__> nqma znachenie s kakvo go otvarqm, az nqmam shriftove s takova kodirane
+<rangel__> (shtoto i hmtl-to deto mi go prati Vlado ne se cheteshe)
+<rangel__> kakto i da e, veche go vidqh uslovieto
+<VelinTzanov> Vsichki li ste gotovi?
+<sssa88> az da
+<valo_bg> da
+<rangel__> da
+<Swetko> da
+<VelinTzanov> OK
+<VelinTzanov> Imame dve tochki A i B
+<VelinTzanov> Imame i oshte dve tochki, da rechem ot edna i syshta poluravnina (spriamo A i B) C i D
+<VelinTzanov> Iskame da sravnim yglite ACB i ADB. Kak?
+<valo_bg> s cosinusova teorema e nai-balamsko
+<Swetko> da kashem koi e po goliam i po maluk li
+<valo_bg> drugiq nachin e da sravnim radiusite na okryjnostite opredeleni ot ACB i ADB
+<Swetko> ami s translacii i rotacii
+<VelinTzanov> Vsichki li znaete kosinusova teorema?
+<Swetko> i nasocheno lice mislia che ste stane
+<sssa88> az da
+<rangel__> da
+<VelinTzanov> Hmm... az pyk ne mislia che shte stane s nasocheno... seshtash li se kak?
+<Swetko> e che to ako sa ot edna i systa poluravnina mnogo lesno stava samo s nasocheno lice
+<Swetko> az ia znam
+<VelinTzanov> Aaa, moje, da.
+<Swetko> ako sa v edna poluravnina 
+<VelinTzanov> Mojesh da namerish sinusa na ygyla ot nasochenoto i ot dyljinite na stranite... ama e gnusno. :)
+<Swetko> ama ti kakvo iskash da napravish
+<Swetko> da namerish koi ugul e po goliam li
+<VelinTzanov> Da moga da sravniavam ygli.
+<VelinTzanov> Da
+<VelinTzanov> Ta s kosinusova teorema mojete da namerite lesno kosinus na vseki ygyl.
+<VelinTzanov> Predpolagam i s nasocheno lice mojete da namerite lesno sinusa, koeto e prakticheski syshtoto.
+<VelinTzanov> Taka. Neka razshirim sega malko zadachata.
+<VelinTzanov> Imame dve tochki.
+<valo_bg> sys sinus mojem li da razlichin ygyl mejdu 90 i 180 gradusa?
+<VelinTzanov> I mnogo drugi tochki v ravninata.
+<VelinTzanov> (Valio, ne mi se govori za sinusa sega :) Inache mojesh dosta raboti s nego... nai-malkoto mojesh lesno da poluchish kosinus :) )
+<VelinTzanov> Sega iskame da mojem da kajem slednite neshta:
+<VelinTzanov> Koia tochka ot koia poluravnina e.
+<valo_bg> (no znaka na kosinusa ti zavisi ot mqrkata na ygyla, a ve nqma znachenie)
+<VelinTzanov> Za vsiaka poluravnina koia e nai-"dalechnata" tochka (s nai-malyk ygyl) i koia e nai-"blizkata" tochka (s nai-goliam ygyl) i za vsiaka ot tiah dali tozi ygyl e nad, pod ili tochno 90 gradusa.
+<VelinTzanov> Dobre de, sinusa e po-malko informacia, niama da sporia, no tova e podrobnost vse pak... dali e pod ili nad 90 gradusa ygyla se opredelia lesno... s kosinusova teorema, hehe... :)
+<Swetko> ami lesno
+<VelinTzanov> Taka de, s Pitagor mojesh da go opredelish.
+<Swetko> s nasocheno lice gledame kude e  i posle cosinus lesno hvasta ot 0 di 180 gradusa
+<Swetko> ama ima edin problem
+<Swetko> na 2-ri krag polzvah koinusoiva teorema  i tam imashe razni mnogo blizki ugli
+<Swetko> i imashe  razlikja v kosinusite chak v 12-13 ti znak
+<VelinTzanov> E, na tezi zadachi niama da imash tozi problem. :)
+<Swetko> t.e. gubish tochnost
+<VelinTzanov> Az na Biometrics deto vi ia dadoh na edno kontrolno taka omazah tochnostta... bial slojil epsilon 10^-6, a to triabvalo 10^-14 mai.... :)
+<VelinTzanov> Taka.  Iasno li e kak mojete da gi pravite tia neshta koito kazah?
+<valo_bg> da
+<sssa88> mda i na men epsilona mi beshe greshkata tam
+<valo_bg> che na men mi beshe 10E-8 mai....
+<sssa88> da
+<rangel__> da
+<Swetko> az gi slagam kum 10^-10 niakude
+<VelinTzanov> Prosto ako mojete ne pipaite drobni chisla syvsem... :)
+<VelinTzanov> Inache az sym reshaval zadachi na koito i avtorovoto reshenie e netochno... i sa ni davali WA na ACM zaradi tova.. shtoto ni e po-tochno reshenieto ot tiahnoto. :)
+<Swetko> abe po niakoi put mnogo ulesniavat shivota
+<VelinTzanov> Taka. Sega Selo.
+<VelinTzanov> Vzimate si edna kraina otsechka (vsichki da sa i ot edna poluravnina)
+<VelinTzanov> tochno kakto na Nivite.
+<VelinTzanov> I "naduvate" edna okryjnost ot neia.
+<VelinTzanov> Vse edno naduvate balon ili sapunen mehur.
+<Swetko> kakvo okryshnost ot otsechka\
+<VelinTzanov> Pyrviat vryh koio udari - toi e.
+<Swetko> aha mislia che zacepih
+<VelinTzanov> T.e. slagate triygylnik mejdu tiah.
+<Swetko> ihaa . am posle
+<VelinTzanov> Posle imash dve novi otsechki, koito si gi zapylnil samo ot ednata strana.
+<VelinTzanov> I na tiah im "naduvash balona" po syshtia nachin.
+<VelinTzanov> I kydeto opre - tam.
+<VelinTzanov> Kakto moje bi veche vi e iasno, balona opira v tochkata s nai-goliam ygyl (ot syotvetnata poluravnina)
+<Swetko> az se chudih kakvi sa onez krasivi nesta deto gi gledam po vizualiziranite algoritmi za voronoi doagrams :)
+<Swetko> aaa
+<Swetko> to sme gledali ugul ACB a ne ABC :)
+<VelinTzanov> Muhahahaaa.... :)
+<VelinTzanov> GOliam boi shte iadesh, da znaesh. :)
+<VelinTzanov> Kak ne sme v edna staia i az da imam edna zdrava, dyrvena pokazalka - da vi mlatia s neia... :)
+<VelinTzanov> ... kakto Vlado Kiriansky pliaskashe Reid Barton pri vsiaka sbyrkana zadacha. :)
+<VelinTzanov> pliaskashe go prez rycete imam predvid... :)
+<valo_bg> tova li sa uchitelskite metodi v MIT?
+<valo_bg> qvno pipat s tvyrda ryka....
+<VelinTzanov> :)
+<VelinTzanov> Ta taka.
+<VelinTzanov> Vseki pyt naduvate balon v posoka v koiato gyrbyt vi e osiguren.
+<Swetko> aha 
+<Swetko> ami ako imame mnogo baloni
+<VelinTzanov> Ne ti prechat.
+<Swetko> koito pruv opre - znachi kudeto e nai goliam ugula
+<VelinTzanov> E, gledash da ne povtariash naduvki de.
+<VelinTzanov> Vsyshtnost pomnia che imashe niakakva nepriatna podrobnost, no obshto vzeto tova e ideiata.
+<VelinTzanov> Kakvo pitash Swetko? Ako imash mnogo mesta ot koito mojesh da naduesh li?
+<VelinTzanov> Ako imash mnogo, izbirash edno ot tiah prosto.
+<VelinTzanov> Vseki pyt kato naduvash balon s osiguren gryb si siguren, che niama da napravish gaf.
+<VelinTzanov> Mojete da si go dokajete tova.
+<VelinTzanov> Iasna li e ideiata na zadachata i sredstvoto za realizaciata i?
+<Swetko> da
+<Swetko> ste si pregledam vizulizirastite algoritmi da mi stane po iasno
+<rangel__> maj da
+<VelinTzanov> Varna?
+<sssa88> ami da
+<valo_bg> da
+<VelinTzanov> OK
+<VelinTzanov> Zadachata s izvynzemnite
+<VelinTzanov> Tam poznaite kak zapochvame?
+<VelinTzanov> Izpyknala obvivka (shtoto ne ni triabvat drugite vyrhove) i posle vzimame grannichna otsechka. :)
+<VelinTzanov> Sega celta e da namerim nai-dalechnia (s nai-malyk ygyl) vyrh, a ne nai-blizkia.
+<VelinTzanov> Taka poluchavame triygylnik.
+<VelinTzanov> I tazi okryjnost sys sigurnost obhvashta vsichki tochki. OK?
+<valo_bg> zashtoto tuka v okryjnosta trqbva da hvanem vsichko :)
+<VelinTzanov> Da, tochno taka.
+<VelinTzanov> Drugite - iasno li e do tuk?
+<rangel__> da
+<Swetko> da
+<sssa88> da
+<Swetko> t.e. s nai maluk ugul
+<VelinTzanov> Da
+<VelinTzanov> Sega, edinstveniat vyrpos koito ostava e dali tazi okryjnost e minimalna.
+<Swetko> ami ne e si mislia
+<VelinTzanov> Ako triygylnikyt ima tri ostri ygyla minmalna li e?
+<VelinTzanov> (Hahaa, Swetko, ne ochakvam Da/Ne otgovor :) )
+<VelinTzanov> Otgovor: Da, v tozi sluchai e minimalna. Shtoto trite vyrha niama kak da gi hvanesh s po-malka.
+<valo_bg> tova kak se dokazva?
+<VelinTzanov> Ako ima typ ygyl (praviat e kato ostrite), to togava kakvo?
+<VelinTzanov> Az go dokazah, Valio.
+<valo_bg> a, da :)
+<VelinTzanov> Nai-malkata okryjnost koiato obhvashta vyrhovete na ostroygylen triygylnik ochevidno e opisanata mu okryjnost. :)
+<Swetko> a da be
+<VelinTzanov> Ta ako ima typ kakvo pravim?
+<valo_bg> tyrsim po-dobra okryjnost
+<VelinTzanov> Kyde ia tyrsim?
+<Swetko> probvame vsichki
+<VelinTzanov> :) Kak gi probvame, Swetko?
+<valo_bg> ne mojem li da probvame za strana na tozi triygylnik
+<VelinTzanov> Za vsiaka 3-ka tochki gledame dali okryjnostta ot tiah sybira vsichki drugi tochki? N^4?
+<Swetko> ami v drugata poluravnina otnosno otsechkata srestu tupia ugul
+<valo_bg> t.e. ne tazi koqto gledame sega, q nqkoi ot drugite 2
+<VelinTzanov> Tochno taka.
+<VelinTzanov> Fixirate si otsechkata sreshtu typia ygyl.
+<VelinTzanov> Iavno netyp ygyl ot tazi poluravnina niama da namerite.
+<VelinTzanov> Zatova gledate v drugata.
+<VelinTzanov> Ako i tam niama netyp ygyl, to znachi okryjnost s diametyr tezi dve tochki e tyrsenata.
+<valo_bg> hmm... ami ako typiq ygyl e sreshtu tekushtata strana?
+<VelinTzanov> Ako ima, to togava vzimame novite 3 tochki i pak sme v sluchaia s triygylnika. :)
+<VelinTzanov> Dotuk iasno li e?
+<rangel__> da
+<sssa88> da
+<valo_bg> da
+<Swetko> ne suvsem
+<VelinTzanov> Koe ne e iasno, Swetko?
+<Swetko> kakvo pravim kato ima tup ugul
+<VelinTzanov> Kato imash typ ygyl vzimash otsechkata (ot triygylnika) sreshtu nego.
+<VelinTzanov> Neka byde A-B
+<VelinTzanov> Ot poluravninata na C ochevidno niama da namerish po-ostyr ygyl, nali?
+<Swetko> da
+<VelinTzanov> Gledash ot drugata poluravnina.
+<VelinTzanov> Vzimash nai-malkia ygyl ottam (neka byde tochka D)
+<Swetko> aha kakto az predploshih
+<Swetko> i tova li e
+<VelinTzanov> I gledash tozi nov ygyl (ADB)
+<VelinTzanov> I ako toi e typ - znachi okryjnostta opira samo v 2 tochki - A i B.
+<VelinTzanov> Ako e ostyr sme obratno v starata pozicia - s triygylnik.
+<VelinTzanov> Posle pak gledame dali tozi triygylnik e ostroygylen i ako ne e gledame ottatyk na typia ygyl i vyobshte povtariame vsichko...
+<VelinTzanov> Ostava samo da dokajem che tozi algorithm svyrshva, a ne prodyljava bezkrai. Kak?
+<VelinTzanov> Kak shte go dokajem?
+<Swetko> ami taka ste stane n^2 worst case
+<Swetko> ami nali na vsiaka stypka mnoshestvoto namaliava
+<VelinTzanov> Hehe... nameri primer ako mislish che taka shte stane, Swetko. :)
+<VelinTzanov> Kakvo mnojestvo?
+<Swetko> aaa
+<VelinTzanov> Drugite, imate li idei?
+<Swetko> to moshe posle da se vyrnem
+<VelinTzanov> Ami ako ne proveriavahme za dva typi ygyla ot dvete strani sys sigurnost shtiahme da cirkulirame do bezkrai... :)
+<VelinTzanov> No nie sme umni i proveriavame. No zashto sega da ne cirkulirame do bezkrai?
+<VelinTzanov> Zashto algorithm-a svyrshva?
+<valo_bg> qvno zashtoto ne mojem da popadne dva pyti v edna i syshta situaciq
+<VelinTzanov> Zashto da ne moje?
+<VelinTzanov> Imash 3 strani ot kydeto mojesh da doidesh.
+<valo_bg> tova se opitvam da razbera v momenta
+<VelinTzanov> Moje ot polojenie A da otivash v B, ottam v C, ottam v D i posle pak v A naprimer.
+<VelinTzanov> Kak dokazvame v matematikata che neshto svyrshva?
+<VelinTzanov> S koi princip?
+<VelinTzanov> Mislia che sme go spomenavali 1-2 pyti tuk.
+<valo_bg> invarianti?
+<VelinTzanov> Pochti.
+<VelinTzanov> Probvai pak. :)
+<VelinTzanov> OK, kak dokazvash che neshto e bezkraino?
+<VelinTzanov> T.e. che vaji za vsichki chisla naprimer?
+<VelinTzanov> S koi princip?
+<valo_bg> kato dokakajesh che e ciklichno
+<VelinTzanov> 5-ti klas. :)
+<rangel__> po indukciq
+<VelinTzanov> Tochno taka.
+<VelinTzanov> A na indukciata "obratnoto" kakvo e? Kak dokazvame che neshto ne e viarno i che ne moje da prodyljava zavinagi?
+<valo_bg> dedukciq?
+<VelinTzanov> Ako na IOI vi se naloji da dokazvate podobno neshto kym kakvo shte pribegnete?
+<VelinTzanov> Princip na krainia element se naricha.
+<rangel__> bih dopusnal protivnoto :-)
+<VelinTzanov> A imenno pokazvate che neshtata se dvijdat v edna posoka i che tazi posoka si ima krai.
+<VelinTzanov> Zatova neshtata ne mogat da prodyljavat zavinagi.
+<VelinTzanov> Zapomnete go i go prilojete na IOI ako vi se naloji.
+<valo_bg> v konkretniq sluchai nistina e taka
+<VelinTzanov> Prosto v tazi geometricheska glavoblyskanica triabva da si namerite niakakyv faktor (kriterii, funkcia, chislo), koito da se dviji samo v edna posoka... i tazi posoka da e ogranichena.
+<valo_bg> ne mojem da popadnev v edna poluravnina 2 pyti
+<VelinTzanov> Zashto da ne mojesh be, Valio?
+<valo_bg> ako gledame ABC i ACB e typ
+<Swetko> ami goleminata na ugula da gledame
+<valo_bg> posle shte namerim nqkakvo D ot drugata strana na AB
+<VelinTzanov> Swetko, mnogo abstraktno mislish. Bydi po-prost. Kakvo minimizirame v tazi zadacha?
+<valo_bg> posle ako primerno BAD ni e typ, shte otidem v DB i ot tam nqma kak da se vyrnem
+<Swetko> goleminata na okryshnostta
+<VelinTzanov> Shto da niama be, Valio? Mojesh da otidesh v E, posle v F, posle v G... posle pak v A i obratno.
+<VelinTzanov> A taka! Goleminata na okryjnostta!
+<VelinTzanov> Nakraia shte stignem do nai-malkata okryjnost!
+<VelinTzanov> Znachi intuitivno e da dokajem, che okryjnostta namaliava na vsiaka stypka!
+<VelinTzanov> Ne vi li e intuitivno? :)
+<VelinTzanov> Ako ne e - zamislete se malko, kakvo po-intuitivno ot tova? :)
+<VelinTzanov> Na IOI ako triabva da minimizirate neshto, pomislete si za takyv algorithm.
+<valo_bg> "intuitivno" kym metodite, do "indukciq" i "krainiq element" li da go slagame? :)
+<VelinTzanov> Vsyshtnost kakvo vi go govoria, nie sme go vzimali tozi urok!
+<VelinTzanov> Naricha se postoianno podobriavane na situaciata!
+<VelinTzanov> tuk se opitvate da stignete do optimalna situacia.
+<VelinTzanov> I ne sa vi fixirali da go pravite s optimalen broi stypki.
+<VelinTzanov> Znachi ochevidno e (ako ste slushali vnimatelno urokyt za postoiannoto podobraivane), che triabva da prilojim tochno tazi tehnika.
+<VelinTzanov> E, vie veche vijdate iteracia (preminavane ot situacia v situacia stypka po stypka)... znachi ochevidno prosto iskate da kajete che vsiaka sledvashta situacia e po-dobra ot predishnata!
+<rangel__> to ne e prosto intuitivno che radiusa namalqva, to e ochevidno :-) (ama bavno go vidqh :-)
+<VelinTzanov> E, ne mislia che e chak ocheizvadno. Ochevidnoto e che triabva da se opitate da dokajete che na vsiaka stypka radiusa namaliava, shtoto tova se opitvate da minimizirate.
+<VelinTzanov> Molia vi, zamislete se seriozno nad vsiako ot neshtata koito sme govorili dosega.
+<VelinTzanov> Da, znam, 20 temi sa.
+<VelinTzanov> No imate 10 dni mejdu kraia na podgotovkata ni i IOI.
+<VelinTzanov> Prez tezi 10 dni vnimatelno se zamislete za vsiaka ot temite - koga se izpolzva, kakvi sa "simptomite" che se prilaga tozi podhod.
+<rangel__> da, ot 5-ti do 10-ti :-)
+<VelinTzanov> Nauchete gi tezi neshta. Kato za izpit. :)
+<VelinTzanov> Az Obzor ne go broia. :)
+<VelinTzanov> Otpechataite si vsichki logove i si gi chetete. Pregledaite gi i tam kydeto govoria za "simptomite" na "zaboliavaneto" (zadachata) porazmishliavaite malko.
+<VelinTzanov> Naredete si v glavata razlichnite metodi i po kakvo da gi razpoznavate.
+<VelinTzanov> I na IOI kato vi izliazat zadachite, shte gi opukate kato 2 i 2 - 450 tochki i zlaten medal. :)
+<VelinTzanov> Ne e tolkova trudno.
+<valo_bg> kolko lesno zvuchi...
+<VelinTzanov> Stiga samo da si reshite lesnite zadachi i da prilojite neshtata koito sme govorili za sredno-trudnite i zlatoto ne vi myrda.
+<VelinTzanov> To E lesno, Valio!
+<VelinTzanov> Vseki pyt kato izliazat zadachi ot BOI/BaOI/CEOI/IOI ili niakakvo drugo OI i mi triabva ne poveche ot edin chas da gi izmislia kato za zlaten medal.
+<VelinTzanov> (pisaneto veche e otdelna rabota)
+<VelinTzanov> Prosto viangi dve treti ot tezi zadachi vlizat v metodi koito sme govorili i obsyjdali tuk.
+<VelinTzanov> A dve treti pochti vinagi e zlato.
+<VelinTzanov> Sega v Gyrcia neshto sa si naumili da vdigat letvata (kato davat 50 tochki za bavno reshenie, a i po-lesni zadachi kato cialo), no tova da ne vi spira. 2 + 2 = 500 tochki, nali znaete. :)
+<VelinTzanov> Taka.
+<VelinTzanov> Sega da dokajem che na vsiaka stypka okryjnostta stava po-malka.
+<VelinTzanov> Kak?
+<VelinTzanov> (vie ste)
+<rangel__> ami vseki pyt otivame v tochka, koqto e po-dalechna ot poslednata
+<rangel__> ako otidem v po-blizka shte poluchim 2 sreshtupolozhni typi ygyla
+<VelinTzanov> I kato e po-dalechna kakvo ot tova?
+<VelinTzanov> Ako e bezkraino dalechna ne e nikak hubavo za nas. :)
+<VelinTzanov> Shte stane ogrooomna okryjnost. :)
+<sssa88> tochkata koqto izbirame vseki pyt e vytre v dosegashnata okryznost => novata okryznost ima po-malyk radius
+<VelinTzanov> Tochno taka.
+<rangel__> zashto da e vinagi vytre?
+<sssa88> shtoto vsqka mezdinna okr. ni izpylnqva uslovieto ot zadachata - vsichki tochki da sa v neq
+<VelinTzanov> Vsichko koeto triabva da napravite v tozi sluchai e prosto da se zamislite kakvo vi triabva za da reshite zadachite. Izmislite li che vi triabva da dokajete che okryjnostta namaliava, posle lesno shte si go dokajete.
+<VelinTzanov> Viangi pravete po-lesnoto pyrvo - zamisliaite se kakvo vi e dadeno; zamisliaite se kakvo se tyrsi.
+<VelinTzanov> Kato pravite stypki otkym po-lesnata strana vinagi shte vi e lesno da sybirate dvete chasti.
+<VelinTzanov> Iziasni li se sega na vsichki zashto tozi algorithm svyrshva i zashto raboti?
+<valo_bg> da
+<rangel__> da
+<Swetko> da
+<Swetko> ami ako imame mnogo stypki
+<sssa88> da
+<VelinTzanov> Ami ako imash mnogo stypki, znachi testa e specialno napraven za tvoia pyrvonachalen izbor na kraina otsechka. Veroiatnostta za tova e nishtojna. Dori da se sluchi, vinagi mojesh lesno da se zashtitish kato reset-nesh algorithm-a sled izvesten broi iteracii (primerno 100) i pochnesh ot drugo miasto.
+<Swetko> moshem prosto da permutirame
+<Swetko> tochkite
+<Swetko> az znaeh edin drug algoritum
+<Swetko> za taia zadacha - no toi e worst case n^3
+<sssa88> edin s tri vlozeni for-a i sloznost O(N)?
+<Swetko> aha
+<VelinTzanov> Ami to tova e neshto podobno. :)
+<sssa88> toq Banchev go beshe razpravql vyv Varna predi mnogooooooooo vreme
+<Swetko> to v pcmagazine imashe takava zadacha no tam beshe 500 000 vyrha
+<valo_bg> aaaa, onq...
+<VelinTzanov> Tia i onazi mislia che stava s tozi algorithm... no togava oshte biah mlad i zelen i ne se setih... pisah niakakva druga fancy shturotia.
+<VelinTzanov> Ta, momcheta, az kazah 5 zadachi.
+<VelinTzanov> Dosega sme napravili 4.
+<VelinTzanov> Koi se seshta koia e petata?
+<Swetko> ma 500 000 o cosinusi i drugi podobni - debelo stava
+<sssa88> ot IOI'03?
+<Swetko> aha
+<Swetko> da be
+<VelinTzanov> E, sega, IOI '03... tazi e elementarna. :)
+<sssa88> kak se kazvashe ne se seshtam
+<valo_bg> klchetata?
+<VelinTzanov> Tuk pravim seriozni geometrii.
+<VelinTzanov> IOI '03 triabva ot syn da vi butnem da mojete da ia pravite.
+<VelinTzanov> Mejdu drugoto Lights ot 2-ro kontrolno 2001 pravili li sme ia s vas?
+<VelinTzanov> Mai ne.
+<VelinTzanov> Ia ia napravete i neia.
+<valo_bg> palechko?
+<VelinTzanov> Stavat 6 zadachi.
+<VelinTzanov> Valio, shte vi bia! >:-[  Palechko e ot pyrvata tema koiato pravihme! Osnovna geometria i dvoichno tyrsene!
+<VelinTzanov> Okaza se, che nikoi ne si e nauchil temata kato horata!  >:-[
+<valo_bg> emi ne se seshtam v momenta za druga geometriq
+<Swetko> vlado uceli 
+<VelinTzanov> Znachi osven Light, 2-kont 2001 dobavete i Fence, Shumen 2001
+<Swetko> aha
+<valo_bg> aaaa. mdaaa...
+<Swetko> ama az tez sum gi pisal
+<valo_bg> az samo fence
+<sssa88> swetko, da ti imah problemite
+<rangel__> e az pyk nito edna ne sym pisal :-)
+<VelinTzanov> Hehe, Rangel shte se uprajni...
+<VelinTzanov> Az i za drugite imam edna, sedma zadacha. :)
+<sssa88> i az taka - geometriite po princip gi propuskam
+<VelinTzanov> Light i Fence niama da gi obiasniavam.
+<sssa88> a koq vsyshnost beshe planiranata 5-ta?
+<rangel__> na men ne mi e problema s geometriite, a s tova che sym pisal malko zadachi po princip
+<VelinTzanov> Vsichko koeto se iska tam e da namirate dopiratelna kym okryjnost i drugi podobni.
+<VelinTzanov> Planiranata beshe Fence.
+<VelinTzanov> No pokrai vas se setih i za Light.
+<valo_bg> a namiraneto na dopiratelna, osven s rotaciq, ima li drug nachin?
+<VelinTzanov> Imash triygylnik.
+<VelinTzanov> znaesh dve ot stranite kolko sa.
+<VelinTzanov> Znaesh i edinia ot yglite kolko e (90 gradusa)
+<VelinTzanov> Znachi ochevidno mojesh da namerish vsichko okolo triygylnika.
+<valo_bg> koi e tozi triygylnik?
+<VelinTzanov> Vsyshsntost imash dve vyzmojnosti, no mojesh da gi razgledash i dvete.
+<valo_bg> aha...
+<VelinTzanov> Centyra na okryjnostta, tochkata (ili centyra na drugata okryjnost, za Fence) i neizvestnata tochka.
+<valo_bg> samo che ti shte namerish dyljini...
+<VelinTzanov> Vsyshtnost za Fence e malko po-osobeno, no pak se svejda do dopiratelna.
+<VelinTzanov> I ygli, Valio.
+<VelinTzanov> TI kato imash centyra na okryjnostta i ygyla kakvo poveche ti triabva? :)
+<VelinTzanov> Samo ot koia ot dvete strani e.
+<valo_bg> no ti tyrsish koordinati?
+<VelinTzanov> Probvash gi i dvete (tuk veche zavisi za koia zadacha stava vypros)
+<VelinTzanov> cx+radius*sin(ygyl) e edinia koordinat, cy+radius*cos(ygyl) e drugiat koordinat
+<VelinTzanov> Fence ia ima na Infoman - az sym i pisal reshenieto... dosta kalpavo e napisano, no pone e viarno.
+<VelinTzanov> A ima i grozen source. :)
+<VelinTzanov> Mojete i da se probvate da go chetete i razberete groznia source... makar che ne vi syvetvam.
+<valo_bg> az bqh probval mai po edno vreme
+<Swetko> az sum ia razbral po toz sors v infoman
+<VelinTzanov> :)
+<Swetko> a ne be - po obiasnenieto
+<Swetko> i po sorsa  - kombinacia
+<VelinTzanov> OK de. Shte mojete da gi napravite Light i Fence ako iskate, nali?
+<valo_bg> to ti imash trening s grozni sorsove :)
+<valo_bg> da smqtam...
+<VelinTzanov> Hahahaaa... :)
+<Swetko> da
+<VelinTzanov> Drugite?
+<Swetko> a koia e sedmata
+<VelinTzanov> Sega shte ia izrovia...
+<valo_bg> maliiii.... az ne znam dali shte svarq da si napisha lekciite...
+<sssa88> dano uspeq
+<Swetko> az ste pochna da ia pisha
+<valo_bg> no! zadachite predi vsichko... na lekciite moje da se improvizira :)
+<rangel__> az che shte moga e qsno, vyprosyt e koga :-)
+<VelinTzanov> http://infoman.musala.com/contests/ncpc/2004/problems.zip
+<VelinTzanov> Zadacha A
+<valo_bg> kolko e golq toq zip?
+<valo_bg> *golqm
+<VelinTzanov> Ne znam.
+<valo_bg> da znam dali da go svalqm
+<sssa88> 800K
+<rangel__> 800 KB
+<VelinTzanov> Abe triabva da sa vi ia dali tazi zadacha na kontrolno na 8-mi May.
+<VelinTzanov> Ne go svaliai. :)
+<valo_bg> aaa, ne.... shte vlqza s dial-up i taka...
+<Swetko> olele 
+<valo_bg> koq e tq?
+<sssa88> tova e onaq gadnata zadacha
+<Swetko> onaz deto niamala reshenie
+<valo_bg> aha, razbrah ;]
+<sssa88> s oneq parceli deto se pripokrivai
+<rangel__> tazi zadacha reshima li e? :-)
+<Swetko> nakov kato ia dal niamal reshenie
+<Swetko> svetlin
+<Swetko> prosto ia e dal bez da ima sors - az taka razbrah
+<VelinTzanov> RAzbira se, che e reshima!
+<valo_bg> ne se seshtam tochno...
+<VelinTzanov> (ne garantiram che testovete sa verni, togava :) )
+<VelinTzanov> Abe - ne e da niama s kakvo da se zabavliavate... :)
+<VelinTzanov> Vyprosi po 7-te zadachi?
+<Swetko> ne
+<sssa88> taq poslednata nqma shans da q napravq
+* sssa88 has quit IRC (Excess Flood)
+<valo_bg> ne mai...
+* sssa88 has joined #ioi
+<VelinTzanov> Vlado, Rangel? Vyprosi?
+<Swetko> abe ste se probvam
+<sssa88> kakvo izpusnah?
+<Swetko> az dori algoritum ne moga da izmislia
+<VelinTzanov> Valio kaza che niama vyprosi, tova izpusna. :)
+<Swetko> nisto
+<Swetko> ne
+<VelinTzanov> Valdo, Rangele, vyprosi imate li? Vsichko li e iasno?
+* VelinTzanov sets mode: +o sssa88
+<rangel__> e ne mi e mnogo qsno kak se reshava poslednata, inache za vyprosi ne se seshtam
+<sssa88> ami taq poslednata zadacha ne e qsna otnikyde
+<valo_bg> az dori ne znam uslovieto, no shte go procheta 
+<VelinTzanov> Nishto - gyrchete se. :)
+<Swetko> ok
+<VelinTzanov> Pita se prosto ot kyde kyde moje da se otide... :)
+<VelinTzanov> Aide - jelaia vi uspeh!
+<VelinTzanov> Sreshtame se pak tuk sled 2 dni, nali?
+<sssa88> blagodarq
+<VelinTzanov> Poslednoto vi kontrolno - Nedelia, 29-ti v 8:30
+<sssa88> toest v nedelq ot 8.30?
+<valo_bg> kontrola?
+<valo_bg> 8:30 dali?
+<valo_bg> dali = nali
+<VelinTzanov> Da
+<valo_bg> na 31 shte imame li lekciq?
+<VelinTzanov> Ako po niakakva prichina me niama, obadete mi se na 001 206 547 0529  :)
+<sssa88> nadqvaj se
+<valo_bg> kolko impulsa v minuta?
+<VelinTzanov> Da, na 31-vi ni e poslednata lekcia. Tia shte e dosta po-kratka ot tazi.
+<valo_bg> ili nqma uvelichenie na tarifata?
+<VelinTzanov> PItai BTK kolko e do USA. :)
+<VelinTzanov> Prosto imam 100 neshta togava i moje da vi zabravia. :)
+<VelinTzanov> Ako vi zabravia samo zvynkate i kazvate "Veline! Nacionalite sme! Zabravi li ni?" i shte se setia. :)
+<VelinTzanov> Aide! Uspeh sys zadachkite!
+<valo_bg> a ako vdigne jena ti?
+<sssa88> a nie shte sme se razorili
+<VelinTzanov> (Btw, i v Obzor shte vi dadat niakakvi zadachi mai, taka che niama da vi e poslednoto kontrolno... no ne se nadaivaite na koi znae kakvo v Obzor - mai nikoi ne se e nael seriozno da pravi zadachi :) )
+<valo_bg> i tq kaje: "Aaaa... izchakaite malko..." :)
+<valo_bg> a! oniq hyrvatskite bqha dobri
+<VelinTzanov> A, tia niama da kaje taka... shte vi zatvori i shte se napravi che nishto ne e stanalo.
+<valo_bg> aha... razbiram :)
+<VelinTzanov> Vie sigurno ne osyznavate, ama tia nai-zdravo go otnasia tova che vi otdeliam tolkova vreme.
+<valo_bg> chestno kazano, bi trqbvalo ti da go otnasqsh nai-seriozno...
+<VelinTzanov> :):):)
+<VelinTzanov> Ti shtoto ne znaesh kak me tretirat tuk... ;-p
+<VelinTzanov> Aide!
+<VelinTzanov> Uspeh!
+<VelinTzanov> Pishete ako imate problemi i/ili vyprosi.
+<VelinTzanov> Chao!
+<valo_bg> btw, setih se 8-ma zadacha
+<sssa88> chao
+<VelinTzanov> Kaji koia e 8-mata i da biagam.
+<rangel__> kato gi slusham onezi istorii s prychkite maj se seshtam :P
+<sssa88> valio, q po tiho
+<VelinTzanov> Valdo, kysno. :)
+<VelinTzanov> Ne be, niama da vi ia davam, samo za spisyka za dogodina. :)
+<valo_bg> globe
+<sssa88> 7 geometrii sa poveche ot dostatychno
+<Swetko> kashi ia
+<VelinTzanov> Kakvo e tova Globe?
+<VelinTzanov> Ot kyde e?
+<valo_bg> ot kontrolnoto 2001
+<Swetko> aha
+<Swetko> 3d  aliens
+<valo_bg> aha
+<VelinTzanov> Hahahaaaa.... aide, molia vi se. :)
+<VelinTzanov> 7 vi stigat. :)
+<VelinTzanov> Chao!
+<sssa88> koeto oznachava 3d izpyknala obvivka
+<Swetko> mi to tova  n^5 stava
+<valo_bg> e kak ve? n^4 samo
+<VelinTzanov> Samo deto ogranichenieto e 100 mai. :)
+<Swetko> ne, prosto systoto uslovie
+<VelinTzanov> Az izchezvam...
+* Disconnected
+Session Close: Thu Aug 26 23:09:59 2004

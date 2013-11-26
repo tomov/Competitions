@@ -1,0 +1,109 @@
+<html>
+<body vlink="#ffcc00" link="#ffcc00" alink="#ffcc00" bgcolor=white>
+<center>
+<table border=0 width=590 cellpadding=4 cellspacing=0> 
+  <td bgcolor="#993333" width=90><font face="helvetica" size=1 color="white"><a href="../index.html">Home</a></td>
+  <td bgcolor="#ffaa00" width=460 align="right"><font face="helvetica" size=2 color="#993333"><b> I n t e r n e t &nbsp; C o n t e s t </b></td>
+  <td bgcolor="#ffaa00" width=5 rowspan=2 valign="bottom" align="center"><font face="helvetica" size=1>i n t e r n e t  <br><br> c o n t e s t</td>
+  <td bgcolor="#993333" width=5 rowspan=3 valign="top" align="center"><b><font color="#ffcc00" size=-1 face="helvetica">C E O I <br><br>  2 0 0 0 </td>
+  <tr>
+  <td bgcolor="#993333" width=90 valign="top">
+	<font face="helvetica" size=1 color="#ffcc00">
+	<br><br>
+   	<a href="../regulations.html">Regulations</a>  <br><br>
+	<a href="../schedule.html">Schedule</a>  <br><br>
+	<a href="../committee.html">Organising<br> Team</a>  <br><br>
+	<a href="../clujro.html">Cluj&Romania</a>  <br><br>
+	<a href="../sponsors.html">Sponsors</a> <br><br>
+	<a href="../secretariat.html">Secretariat</a> <br><br>
+	<a href="../internet/rules.html">Internet Contest</a><br><br>   
+	<a href="../links.html">Links</a><br><br>   
+	<p>
+
+	<br>___________<br>
+
+	Web design:
+	<a href="mailto:vivi@sunsite.pub.ro">Vivi</a>
+
+   </td>
+   <td width=460 valign="top" bgcolor="#ffcc00">
+        <font face="helvetica" size=1>
+<center>
+	[ <a href="rules.html"><font color="black">The rules</font></a> |
+	<a href="probleme.html"><font color="black">Read the problems</font></a> |
+ 	<a href="submit.html"><font color="black">Submit solutions</font></a> |
+	<a href="clasament.html"><font color="black">Results</font></a> |
+ 	<a href="down.html"><font color="black">Downloads</font></a> ]
+</center>
+<font face="helvetica" size=2>
+<br><a href="day1.html"><font size=1 color="darkred">Day one problems are available here.</font></a><br><center>
+<font size=3>
+<br><font color="darkred"><b>Day 2</b></font><br>
+[ <a href="p4.html"><font color="darkred"><b>Problem 4</b></font></a> | 
+<a href="p5.html"><font color="darkred"><b>Problem 5</b></font></a> |
+<a href="p6.html"><font color="darkred"><b>Problem 6</b></font></a> ]
+</center>
+<font size=-1><br>
+<br>
+
+<font size=-1><br>
+<b>Problem 4 </b>: Falling
+<br><br>
+Consider a game based on the device shown in the image below:
+<center><img src="img21.gif" border=4></center>
+The device consists in a set of horizontal platforms of various lengths, placed at various heights. The lowest platform is the floor (it is placed at height 0 and has an infinite length). 
+<br><br>
+From a given position, a ball is released in free fall at moment 0. The ball falls at a constant speed of 1 meter per second. When the ball reaches a platform it starts rolling towards one or the other of its edges, at the choice of the player, at the same speed of one meter per second. When it reaches the edge of the platform, it continues its vertical free fall. The ball is not allowed to free fall for more then MAX meters at one time (between two platforms). 
+<br><br>
+<b>Task</b>
+<br>Write a program that finds a way to roll the ball on the platforms so that it reaches the floor as soon as possible without breaking.
+<br><br>
+<b>Input</b>
+<br>File name: <b>FALL.IN</b>
+<br><b>Line 1</b>: N X Y MAX
+<li>Four integers, separated by a space: the number of platforms (excluding the floor), the starting position of the ball (horizontal and vertical coordinates), and the maximum allowed free fall distance; the platforms are numbered from 1 through N. 
+<br><b>Lines 2..<i>N</i>+1</b>: X1<sub>i</sub> X2<sub>i</sub> H<sub>i</sub>
+<li>Three integers, separated by spaces; the <i>i</i>-th platform is situated at height H<sub>i</sub>, between horizontal coordinates X1<sub>i</sub> and X2<sub>i</sub> inclusive (X1<sub>i</sub> < X2<sub>i</sub>, <i>i</i>=1..N).
+<br><br>
+<b>Remarks:</b>
+<LI>Ignore the ball diameter and platform thickness. If the ball falls exactly on the edge of a platform, it is considered a fall onto that platform.
+<LI>No two platforms have points in common. 
+<LI>There will always be a solution for the test data.
+<LI>All the dimensions are given in meters.
+
+<br><br>
+<b>Output</b>
+<br>File name: <b>FALL.OUT</b>
+<br><b>Line 1</b>: TIME
+<li>An integer: the time when the ball touches the floor, according to your solution.
+<br><b>The rest of the lines, to the end of the file:</b>
+<br>P T D
+<li>Three integers, separated by spaces. The ball touches the platform P at moment T and rolls in direction D (0 for left and 1 for right).
+<li>The impact with the floor must not appear in these lines.
+<li>The impacts must be output such that the successive values of T appear in increasing order.
+<br><b>Remark</b>
+<li>If there are several solutions possible, only one is required
+<br><br>
+<b>Limits</b>
+<li>1 <= N <= 1000
+<li> -20000 <= X1<sub>i</sub>, X2<sub>i</sub> <= 20000 ( i=1..N )
+<li>0 < H<sub>i</sub> < Y <= 20000
+<br><br>
+<b>Example</b>
+<font face="courier">
+<pre>
+FALL.IN           FALL.OUT
+3 8 17 20         23
+0 10 8            2 4 1
+0 10 13           1 11 1
+4 14 3            3 16 1
+</pre>
+
+   </td>
+   <tr>
+   <td width=90 bgcolor="#993333" valign="bottom"><font size=1>&nbsp;</td>
+   <td bgcolor="#ffaa00" width=5 colspan=2><font size=1>&nbsp;</td>
+
+</table>
+</body>
+</html>

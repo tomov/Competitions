@@ -1,0 +1,60 @@
+#include<iostream>
+#define LL long long
+using namespace std;
+
+int mas[100100];
+int n;
+LL dp[100100];
+
+void INPUT()
+{
+   scanf( "%d", &n );
+   
+   for(int i = 0; i < n; ++i)
+    scanf( "%d", &mas[i] );
+}
+void solve()
+{
+    sort(mas, mas + n);
+ 
+    reverse(mas, mas + n);
+    
+    int i, j, boc;
+   // for(i = 0; i < n; ++i)printf("%d ",mas[i]);
+    //printf("\n");
+    
+    LL boc2;
+    for(i = n; i >= 0; --i)
+    mas[i] = mas[i+1] + mas[i];
+    
+    for(i = n - 2; i >= 0; --i)
+    {
+     dp[i] = 10000000000000000LL;
+    // cout<<"za i "<<i<<"\n";
+     for(j = 0; (1<<j) + i <= n; ++j)
+     {
+      if(i + (1<<j) == n)
+      {
+       dp[i] = min(dp[i], (LL)j*(mas[i] - mas[i+(1<<j)]));
+      }
+      //cout<<"new dp "<<dp[i]<<"\n";
+      if(j==0)continue;
+      boc = mas[i] - mas[i+ (1<<j) - 1];
+      //cout<<boc<<" be6e boc \n";
+      boc2 = mas[i+(1<<j) - 1] - mas[n];
+      boc2 *= j;
+      //cout<<boc2<< "be6e boc2\n";
+      //printf("j+1 %d 1<<j %d \n",j,(1<<j));
+      dp[i] = min(dp[i], (LL)boc*j + dp[i + (1<<j) - 1] + boc2);
+      //printf("\n");
+     }
+     //cout<<dp[i]<<"\n";
+    }
+    cout<<dp[0]<<"\n";   
+}
+int main()
+{  
+     INPUT();
+     solve();
+return 0;
+}

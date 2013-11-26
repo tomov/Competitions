@@ -1,0 +1,38 @@
+
+
+Recognizing problem types:
+http://forums.topcoder.com/?module=Thread&threadID=643837&start=0
+ - separate think & implement practice
+similar: http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=findSolution
+
+Double-checking to prevent overflow
+http://forums.topcoder.com/?module=Thread&threadID=642256&start=0
+ - example of common mistake; see whole Finding and avoiding mistakes section
+
+Stresstest
+http://forums.topcoder.com/?module=Thread&threadID=642286&start=0
+ - strategy example
+
+Plan approach:
+http://www.topcoder.com/tc?module=Static&d1=tutorials&d2=planApproach1
+ - think & plan carefully before code
+ - pattern mining
+	expand: by practicing, don't learn problems, learn to solve problems (improving style)
+ - analysis (improving style)
+ - breaking down a problem technique (basics)
+	expand: strong cohesion & loose coupling, kiss, step by step (piece) test & debug
+ - bottom up technique (basics)
+	expand: meet in the middle approach of velin
+ - scan code for bugs
+ - stresstest
+ - understanding algorithms and solutions thoroughly
+ - ABA^-1
+ - unwinding the definitions - meet in the middle approach...
+ - the problem is doable
+ - multiple approaches
+	expand: brainstorm ideas
+
+Emo's article
+ - handling pitfalls
+ - why practice - better thinking & coding
+ - 

@@ -1,0 +1,79 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<TITLE>jokes</TITLE>
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000CC" vlink="#0000CC" alink="#0000CC">
+<B>
+<P><font size="4" face="Arial, Helvetica, sans-serif">jokes</font></P>
+</B> 
+<P><font size="2" face="Arial, Helvetica, sans-serif">One night, a number of <strong><font face="Courier New, Courier, mono">N</font></strong> 
+  children (numbered from <strong><font face="Courier New, Courier, mono">1</font></strong> 
+  to <strong><font face="Courier New, Courier, mono">N</font></strong>) stand 
+  by a camp fire. The children say jokes but are very tired after the trips from 
+  that day and they slowly all fall asleep. The second day they all want to know 
+  in which order they fell asleep. Each child remembers exactly how many jokes 
+  of each of his colleagues he heard before going to sleep. The number of jokes 
+  heard by the children is stored in a square positive integer matrix <strong><font face="Courier New, Courier, mono">A</font></strong>, 
+  having <strong><font face="Courier New, Courier, mono">N</font></strong> lines 
+  and <strong><font face="Courier New, Courier, mono">N</font></strong> columns, 
+  where <strong><font face="Courier New, Courier, mono">A[i][j]</font></strong> 
+  represents the number of jokes told by child <strong><font face="Courier New, Courier, mono">j</font></strong> 
+  which child <strong><font face="Courier New, Courier, mono">i</font></strong> 
+  listened to before falling asleep.</font></P>
+<B>
+<P><font size="3" face="Arial, Helvetica, sans-serif">Task</font></P>
+</B><FONT SIZE=3>
+<P><font face="Arial, Helvetica, sans-serif" size="2">Write a program that determines in which order the children fell asleep.</font></P>
+</FONT><B>
+<P><font size="3" face="Arial, Helvetica, sans-serif">Input Data</font></P>
+</B> 
+<P><font size="2" face="Arial, Helvetica, sans-serif">Line one of input file <B><font face="Courier New, Courier, mono">jokes.in</font></B> contains positive integer <strong><font face="Courier New, Courier, mono">N</font></strong>, representing the number of children that were at the camp fire. The following <strong><font face="Courier New, Courier, mono">N</font></strong> lines, contain the elements of matrix <strong><font face="Courier New, Courier, mono">A</font></strong>, one matrix line per input file line, values on the same line being separated by a space.</font></P>
+<B>
+<P><font size="3" face="Arial, Helvetica, sans-serif">Output Data</font></P>
+</B> 
+<P><font size="2" face="Arial, Helvetica, sans-serif">Output file <strong><font face="Courier New, Courier, mono">jokes.out</font> 
+  </strong>contains on line one <font face="Courier New, Courier, mono"><strong>N</strong></font> positive integers representing the children, in the order in which they fell asleep. </font></P>
+<B>
+<P><font size="3" face="Arial, Helvetica, sans-serif">Restrictions and Mentions </font></P>
+</B> 
+<UL>
+  <LI><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;<strong><font face="Courier New, Courier, mono">2 &lt;= N &lt;= 300</font></strong></font></LI>
+  <LI><font face="Courier New, Courier, mono" size="2">&nbsp;<strong>0 &lt;= A[i][j] &lt;= 1500</strong></font></LI>
+  <LI><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;<strong><font face="Courier New, Courier, mono">A[i][i]=0</font></strong> for any <strong><font face="Courier New, Courier, mono">i=1,2,...,N</font></strong> 
+    </font></LI>
+  <LI><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;A solution is guaranteed for all test data. </font></LI>
+  <LI><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;If there is more 
+    than one solution available the first one in lexical-graphical order will 
+    be selected. </font> 
+  <LI> <font face="Arial, Helvetica, sans-serif" size="2">&nbsp;We say that one-dimensional array <strong><font face="Courier New, Courier, mono">x=(x[1],x[2],...,x[N])</font> 
+    </strong>is smaller in lexical-graphical order than one-dimensional array <strong> 
+    <font face="Courier New, Courier, mono">y=(y[1],y[2],...,y[N])</font></strong> if there is a coefficient <font face="Courier New, Courier, mono"> <strong>i</strong></font> so that <strong><font face="Courier New, Courier, mono">x[1]=y[1]</font></strong>, <strong> <font face="Courier New, Courier, mono">x[2]=y[2]</font></strong>,...,<font face="Courier New, Courier, mono"><strong>x[i-1]=y[i-1]</strong></font> and <strong><font face="Courier New, Courier, mono">x[i]&lt;y[i]</font></strong>. </font> 
+</UL>
+<B>
+<P><font size="3" face="Arial, Helvetica, sans-serif">Example</font></P>
+</B> 
+<P ALIGN="LEFT"> 
+<TABLE BORDER CELLSPACING=1 CELLPADDING=9 WIDTH=702>
+  <TR> 
+    <TD WIDTH="22%" VALIGN="TOP"> <FONT FACE="Courier New" SIZE=3> 
+     <font face="Courier New, Courier, mono"><B><font size="2">jokes.in</font></B></font>
+      </font></TD>
+    <TD WIDTH="19%" VALIGN="TOP"><font face="Courier New, Courier, mono"><B><font size="2">jokes.out</font></B>
+      </font></TD>
+    <TD WIDTH="59%" VALIGN="TOP"><font face="Arial, Helvetica, sans-serif" size="2"><B>Explanations</B></font></TD>
+  </TR>
+  <TR> 
+    <TD WIDTH="22%" height="191" VALIGN="TOP"> <B><font face="Courier New, Courier, mono" size="2">3<BR> 0 1 1<BR> 2 0 0<BR> 3 1 0 </font></B></TD>
+    <TD WIDTH="19%" VALIGN="TOP"> <B> 
+<font face="Courier New, Courier, mono" size="2">2 1 3 </font></B></TD>
+    <TD WIDTH="59%" VALIGN="TOP"><font face="Arial, Helvetica, sans-serif" size="2">A possible sequence of events is:<BR> - Child <strong><font face="Courier New, Courier, mono">1</font></strong> tells a joke<BR> - Child <strong><font face="Courier New, Courier, mono">2</font></strong> tells a joke<BR> - Child <strong><font face="Courier New, Courier, mono">1</font></strong> tells a joke<BR> - Child <strong><font face="Courier New, Courier, mono">2</font></strong> falls asleep<BR> - Child <strong><font face="Courier New, Courier, mono">3</font></strong> tells a joke<BR> - Child <strong><font face="Courier New, Courier, mono">1</font></strong> tells a joke<BR> - Child <strong><font face="Courier New, Courier, mono">1</font></strong> falls asleep<BR> - Child <strong><font face="Courier New, Courier, mono">3</font></strong> falls asleep</font></TD>
+  </TR>
+</TABLE>
+<p></P><P><font face="Arial, Helvetica, sans-serif" size="2"><B>Time limit</B>: 0.5 seconds/test</font></P>
+<P ALIGN="RIGHT"><font face="Arial, Helvetica, sans-serif" size="2">prof. <I>Carmen Popescu</I><BR> &quot;Gheorghe Lazar&quot; Sibiu National High School<BR> Contact:&nbsp;<a href="mailto:carmen_cngl@yahoo.com">carmen_cngl@yahoo.com</a> 
+  </font>
+</BODY>
+</HTML>
+

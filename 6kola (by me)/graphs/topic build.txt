@@ -1,0 +1,10 @@
+bf, straightforward dp
+
+mazes -> graphs
+
+noi/2006/3 krug/A/water (see it can't be dp)
+
+dijkstra / bfs / dfs + graph ext
+mst, euler
+games
+dp large state, dp code decode

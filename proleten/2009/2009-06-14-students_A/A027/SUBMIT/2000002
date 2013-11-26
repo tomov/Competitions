@@ -1,0 +1,57 @@
+#include <iostream>
+#include <set>
+using namespace std;
+
+const int max_n = (1<<18);
+
+int w[max_n], p[max_n];
+
+struct scl{
+    inline bool operator()(const int& a, const int& b){
+        return w[a] < w[b];    
+    }    
+};
+int main(){
+    int i, x, y, n, r = 0, m;
+    
+    set<int, scl> s;
+    
+    scanf("%d", &n);
+    for(i = 0; i < n; i++){
+        scanf("%d", w+i);
+        s.insert(i);
+        p[i] = i;
+    }
+    m = n;
+    while(s.size() > 1){
+        x = *s.begin();
+        s.erase(s.begin());
+        y = *s.begin();
+        s.erase(s.begin());
+        p[x] = p[y] = p[n] = n;
+        w[n] = w[x] + w[y];
+        s.insert(n);
+        n++;
+    }
+    
+    for(i = 0; i < m; i++){
+        x = p[i];
+        r += w[i];
+        while(p[x] != x){
+            //cout << i << ' ';
+            r += w[i];
+            x = p[x];
+        }
+    }
+    //cout << endl;
+    /*
+    for(i = 0; i < n; i++)
+    printf("%02d ", p[i]);
+    cout << endl;
+    for(i = 0; i < n; i++)
+    printf("%02d ", w[i]);
+    cout << endl << endl;
+    */
+    cout << r << endl;
+    return 0;
+}

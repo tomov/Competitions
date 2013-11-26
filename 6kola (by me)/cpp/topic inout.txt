@@ -1,0 +1,189 @@
+просто ЗАБРАВЯТЕ за cin, cout, string и пр. като става въпрос за състезяния!!! (освен за дебъгване или topcoder ;) )
+
+тук пише как се ползват printf и scanf (основни работи): http://www.cplusplus.com/reference/clibrary/cstdio/scanf.html
+за char* тази тема: http://6kola.eblahfree.com/Blah.pl?b-2/m-1233008017/
+
+[b][i]за домашно: пренаписвате входа и изхода на последните 10 задачи, които сте решили![/i][/b]
+
+и ето няколко яки неща:
+
+[b]1. четене на long long[/b]
+    под Windows (dev-cpp)
+[code]long long a;
+scanf("%I64d",&a);
+printf("a = %I64d\n",a);[/code]
+    под Linux ([b]демек на системата, която ползват по състезанията![/b])
+[code]long long a;
+scanf("%lld",&a);
+printf("a = %lld\n",a);[/code]
+
+    това означава, че като си напишете програмата работеща с %I64d, преди да я тествате и пратите на системата, трябва да го промените на %lld щот иначе ЛОШО! А ако не сте сигурни на какво ще се тества, най-добре си пишете cin и cout за long long, че Jo примерно така се прееба на Минко Балкански (писал за тестване под Уин, а те тествали под системата и 0 точки).
+
+[b]
+2. четене на char (един само)[/b]
+
+трябва да прочете разни празни символи преди него отделно, че иначе може някой интервал или ентър да се запише в него!
+пример: входът е
+10 2
+@ b 5 G
+
+ще го прочетете така:
+[code]int x,y,z; char A,B,C;
+scanf("%d%d\n%c %c %d %c",&x,&y,&A,&B,&z,&C);
+printf("vuvedenite znaci sa %c %c %c\n",A,B,C);
+[/code]
+забележете новия ред, който четем след второто число, както и интервалите преди всяко четене на %c. Пробвайте без тези знаци да видите как се осира. Абе по принцип като четете %c имайте едно на ум
+
+[b]3. четене до край на входа[/b]
+   scanf()  връща колко променливи е записало успешно ; ако даде грешка (демек се опитва да прочете променлива, но не може, демек като е стигнало края на инпут-а) - връща -1 (за разлика от cin, който връща NULL димек 0).
+
+[code]   while (scanf("%d%d%s%d",&x,&y,&word,&z)==4)   // докато прочетените променливи са 4
+     { bla  bla }[/code]
+
+...ако някой се сети за други такива тънки моменти, или пък срещне трудност с някое от нещата, да пише.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://www.cplusplus.com/reference/iostream/ <- IOSTREAM
+http://www.cplusplus.com/reference/clibrary/cstdio/ <- CSTDIO
+(вляво има списъци с функциите)
+
+[center][b]stdio аналозите на stream[/b][/center]
+
+[b]fstream / FILE[/b]
+      лошия начин:
+[code]
+    string s; int N,M,a,b,c,qko=0;
+    ifstream input; input.open("sdfgdsfg.txt");   // <=> ifstream input("fuck.txt");
+    input>>N>>M;
+    getline(input,s);
+    while (input>>a>>b>>c)
+     qko++;
+    input.close();
+
+    ofstream output("sdfgdsfg.out");    // <=> f.open(..)
+    output<<N<<" "<<M<<" "<<qko<<endl;
+    output.close();
+[/code]
+
+      ...якия начин (забележете, че стринг вече е чар*)
+[code]    char s[1003]; int N,M,a,b,c,qko=0;
+    FILE *in;
+    in=fopen("sdfgdsfg.txt","r");
+    fscanf(in,"%d%d",&N,&M);
+    fgets(s,1000,in);
+    while (fscanf(in,"%d%d%d",&a,&b,&c)==3)  // 6tot iskame 3 elementa da pro4etem
+     qko++;
+    fclose(in);
+
+    FILE *out=fopen("sdfgdsfg.out","w");
+    fprintf(out,"%d %d %d\n%s\n",N,M,qko,s);
+    fclose(out);
+[/code]
+
+   или с пренасочвате на файловете към стандартния вход (по състезания е най-удобно)
+[code]    freopen("sdfgdsfg.txt","r",stdin);
+    freopen("sdfgdsfg.out","w",stdout);
+
+    scanf("%d%d",&N,&M);
+    gets(s,1000);
+    while (scanf("%d%d%d",&a,&b,&c)==3)
+     qko++;
+     
+    printf("%d %d %d\n%s\n",N,M,qko,s);
+[/code]
+
+
+[b]cin / scanf[/b]
+   четене на 10,000 думи с дължини от 1 до 10,000 (макс обща дължина на думите - 1,000,000)
+   
+      със cin и string
+[code]	vector<string> s;
+	string t;
+	while (cin>>t)
+	 s.push_back(t);
+	// za da spre 4eteneto (ako si vavejdate ot keyboard-a, a ne prenaso4vate ot file) - CTRL+Z 
+	
+	for (int i=0;i<s.size();i++) cout<<s[i]<<endl;
+[/code]
+
+      със scanf и char* - очевидно не може да направим char s[10001][10001]. За целта се използва буфер, в който се записват самите символи, а масивът с думите [b]s[/b] де факто е масив от указатели към позиции в буфера ; самите думи в буфера са разделени с "\0" (демек чиста 0), което кара всекяка дума, посочена от [b]s[/b], да свършва на първата 0 след нея в [b]buf[/b]. Абе трябва да знаете на какъв принип бачкат char* и пойнтерите изобщо, за да го разберете това -> http://6kola.eblahfree.com/Blah.pl?b-2/m-1233008017/
+[code]	char buf[100001];
+	char *s[10001]; int n=0;
+	s[0]=buf;
+	
+	while (scanf("%s",s[n++])==1)
+	 s[n]=s[n-1]+strlen(s[n-1])+1;
+	//tova ve4e ne znam kak se spira :) no da re4em 4e prenaso4vame ot file
+	
+	for (int i=0;i<n;i++) printf("%s\n",s[i]);
+[/code]
+
+    ...или друг вариант - ако знаете предварително бройката и ако четете не просто думи, а цели редове. Тук за удобство използвам и трети указател, който сочи в първата свободна позиция са писане в buf, демек в първата позиция след нулата след последната записана дума. Там се записва следващата дума и следващият елемент от [b]s[/b] сочи именно там:
+[code]    scanf("%d\n",&n);
+    char *t=buf;
+    for (int i=0;i<n;i++)
+     {
+       gets(t);
+       s[i]=t;
+       t+=strlen(t)+1;
+     }
+
+    for (int i=0;i<n;i++) printf("%s\n",s[i]);
+[/code]
+     разбира се, това с помощния пойнтер [b]t[/b] може да се вкара и в първия вариант. Импровизации бол, стига да знаете какво правите ;)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[center][b]как да си изтестваме решението с 2342343 произволни теста, без много да се хабим...[/b][/center]
+
+1) под Windows
+
+имаме генератор gen.exe, който пише на стандартния изход някакъв произволен тест ( srand(time(NULL)); N=rand()%MAXN; etc. )
+имаме решение sol.exe и решение bf.exe, които ще сравняваме
+
+вариант: правим файл tester.bat и в него пишем
+[code]
+@echo off
+:begin
+gen > test.in
+sol < test.in > test.out1
+bf < test.in > test.out2
+type test.out1
+type test.out2
+fc test.out1 test.out2
+if ERRORLEVEL == 1 goto end
+goto begin
+:end
+[/code]
+
+на практика редовете "fc ... ..." и "if ERROR..." вършат сравняването. Това спира в момента, в който двете решения дадат различни резултати, като в test.in си остава въпросният кофти тест.
+
+2) под Linux
+
+ ... ;) ...

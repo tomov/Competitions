@@ -1,0 +1,146 @@
+/*
+user: A018
+pass: 5r41ot
+*/
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <iomanip>
+#include <cstring>
+#include <ctime>
+#include <cmath>
+#include <cstdio>
+#include <cstdlib>
+#include <algorithm>
+#include <utility>
+#include <numeric>
+#include <functional>
+#include <set>
+#include <vector>
+#include <bitset>
+#include <queue>
+#include <map>
+
+using namespace std;
+
+#define F(i,n) for (int i=0;i<n;i++)
+#define Repi(n) F(i,n)
+#define Repj(n) F(j,n)
+#define Repk(n) F(k,n)
+#define PI pair<int,int>
+#define LL long long
+#define PD pair<double,double>
+#define PQ priority_queue
+#define sqr(x) ((x)*(x))
+#define VI vector<int>
+#define MP make_pair
+#define SZ size()
+#define x first
+#define y second
+#define PB push_back
+
+#define Time (double)clock()/CLOCKS_PER_SEC
+#define ABS(x) (((x)>0)?(x):(-(x)))
+#define MAX(a,b) ((a)>(b)?(a):(b))
+#define MIN(a,b) ((a)<(b)?(a):(b))
+#define sign(a) (((a)>0)-((a)<0))
+
+const int MAXN=1<<20;
+const LL LINF=1000000000000000002LL;
+int a[MAXN];
+int m;
+int maxval;
+int b[MAXN+2];
+int c[MAXN+2];
+int bc[MAXN+2];
+int N,K;
+
+inline void add(int b[],int pos,int val)
+{
+	for (;pos<=m;pos+=(pos&(-pos)))
+		b[pos]+=val;
+}
+
+inline LL query(int b[],int pos)
+{
+	LL res=0;
+	for (;pos;pos-=pos&(-pos))
+		res+=(LL)b[pos];
+	return res;
+}
+
+
+LL bf(int pos)
+{
+	LL res=LINF;
+	for (int val=1;val<=maxval;val++)
+	{
+		LL tans=0;
+		for (int i=pos;i<pos+K;i++)
+		{
+			tans+=(LL)abs(a[i]-val);
+		}
+		if (tans<res) res=tans; else break;
+	}
+	return res;
+}
+
+
+int main()
+{
+	scanf("%d%d",&N,&K);
+	maxval=0;
+	Repi(N)
+		scanf("%d",a+i+1),a[i+1]++,maxval=max(maxval,a[i+1]);
+	m=1;
+	while (m<maxval) m*=2;
+	//cout<<maxval<<" "<<m<<"\n";
+	
+	LL sumall=0;
+	for (int i=1;i<K;i++)
+		 add(b,a[i],1),add(c,a[i],a[i]),sumall+=(LL)a[i],bc[a[i]]++;
+	LL ans=LINF; int pos=0;
+	for (int i=1;i<=N-K+1;i++)
+	{
+		//cout<<"\n at pos "<<i<<"\n";
+		add(b,a[i+K-1],1),bc[a[i+K-1]]++;
+		add(c,a[i+K-1],a[i+K-1]),sumall+=(LL)a[i+K-1];
+		if (i>1)
+		 add(b,a[i-1],-1),bc[a[i-1]]--,
+		 add(c,a[i-1],-a[i-1]),sumall-=(LL)a[i-1];
+
+		//cout<<"   b ->  "; for (int i=1;i<=maxval;i++) cout<<b[i]<<" "; cout<<"\n";
+		//cout<<"   bc -> "; for (int i=1;i<=maxval;i++) cout<<bc[i]<<" "; cout<<"\n";
+		
+		int l=0,r=m;
+		int resl=0,res=0,want=K/2+1;
+		while (l+1<r)
+		{
+			int mid=(l+r)/2;
+		//	cout<<"    "<<l<<" "<<r<<" -> "<<mid<<" = "<<resl<<"+"<<b[mid]<<"\n";
+			res=resl+b[mid];
+			if (res>=want) r=mid;
+			else l=mid,resl=res;
+		}
+	     // 	cout<<"  fin "<<l<<" "<<r<<"\n";
+	        if (resl!=want) l=r;
+	      //  cout<<"              = "<<l<<" (count "<<bc[l]<<")\n";
+		
+		LL left=query(b,l-1);
+		LL right=K-left-bc[l];
+		//cout<<"   to the left: "<<left<<" to the right : "<<right<<"\n";
+		LL leftsum=query(c,l-1);
+		LL leftsum1=leftsum+(LL)bc[l]*(LL)l;
+		LL rightsum=sumall-leftsum1;
+		//cout<<"       sums "<<leftsum<<" ("<<leftsum1<<") "<<rightsum<<"\n";
+		LL tmp=(LL)l*left-leftsum + rightsum-(LL)l*right;
+		
+		//cout<<tmp<<"\n";
+		
+		if (ans>tmp) ans=tmp,pos=i;
+	}
+	
+	cout<<ans<<"\n"<<pos<<"\n";
+	
+	return 0;
+}

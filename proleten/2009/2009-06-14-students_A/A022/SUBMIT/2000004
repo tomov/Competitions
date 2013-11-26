@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int a[120000];
+int main()
+{
+	int n;
+	cin>>n;
+	int i, j, k, t;
+	for(i=0; i<n; i++) cin>>a[i];
+	sort(a, a+n);
+	
+	for(j=1, k=0; 2*j<=n; j*=2, k++);
+	for(i=0; i<n; i++)
+	{
+		if(i<2*j-n-1) a[i]*=k+1;
+		else a[i]*=k;
+	}
+	
+	for(i=0, t=0; i<n; i++, t+=a[i-1]);
+	cout<<t<<endl;
+	
+	return 0;
+}

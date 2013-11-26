@@ -1,0 +1,20 @@
+miro - dijkstra hills...damn
+ceko - hull, circle hull, poly area
+
+
+geometry
+
+mod arithm
+gauss
+combinatorics
+kmp, hashing, trie, suffix array
+bit, indexed, rmq, interval trees
+
+games
+dijkstra, bfs, dfs, euler, floyd, bellman
+
+
+
+
+bf & precompute
+build graph

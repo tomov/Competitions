@@ -1,0 +1,81 @@
+#include "module.h"
+#include <algorithm>
+#include <iostream>
+using namespace std;
+int N, M, P;
+struct A
+{
+       int a, b, c;
+       int ans;
+       bool operator<(A a) const { return ans < a.ans;  }
+       A(int _a, int _b, int _c, int _ans):a(_a), b(_b), c(_c), ans(_ans){}
+       A(){}
+} table[27*(100*99*98)/(3*2)];
+int cnt;
+
+int main()
+{
+    init();
+    N = getN(), M = getM(), P = getP();
+    
+    for (int i = 0; i < P; i++)
+     for (int j = i + 1; j < P; j++)
+      for (int k = j + 1; k < P; k++)
+       for (int s1 = 0; s1 < 3; s1++)
+        for (int s2 = 0; s2 < 3; s2++)
+         for (int s3 = 0; s3 < 3; s3++)
+         {
+             int p1[3] = {i, j, k};
+             int p2[3] = {s1, s2, s3};
+             int h, g;
+             
+             getView(3, p1, p2, &h, &g);
+             table[cnt++] = A(i, j, k, h);
+         }
+    sort(table, table + cnt);
+    
+    for (int i = 0; i < P; i++)
+     for (int j = i + 1; j < P; j++)
+      for (int k = j + 1; k < P; k++)
+       for (int s1 = 0; s1 < 3; s1++)
+        for (int s2 = 0; s2 < 3; s2++)
+         for (int s3 = 0; s3 < 3; s3++)
+         {
+             int p1[3] = {i, j, k};
+             int p2[3] = {s1, s2, s3};
+             int h, g;
+             
+             getView(3, p1, p2, &h, &g);
+             int l = -1, r = cnt;
+             while (l + 1 != r)
+             {
+                   int m = (l + r)/2;
+                   if (g < table[m].ans) r = m;
+                   else l = m;
+             }
+             if (table[l].ans == g)
+             {
+                   bool used[100]; memset(used, 0, sizeof(used));
+                   used[i] = used[j] = used[k] = used[ table[l].a ] = used[ table[l].b ] = used[ table[l].c ] = 1;
+                   int cnt1 = 0, p1[6];
+                   for (int q = 0; q < P; q++) if (used[q]) p1[cnt1++] = q;
+
+                   int pow = 1;
+                   for (int q = 0; q < cnt1; q++) pow *= 3;
+                   
+                   for (int q = 0; q < pow; q++)
+                   {
+                       int p2[6], cnt2 = 0;
+                       int q2 = q;
+                       while (cnt2 < cnt1)
+                       {
+                             p2[cnt2++] = q2%3;
+                             q2 /= 3;
+                       }
+                       int h, g;
+                       getView(cnt1, p1, p2, &h, &g);
+                   }
+             }
+         }
+   return 0;
+}

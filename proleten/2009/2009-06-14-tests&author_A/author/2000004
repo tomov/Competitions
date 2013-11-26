@@ -1,0 +1,172 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAXN 1000001
+
+long n, m;
+long smaller_heap_len, larger_heap_len;
+long a[MAXN], inheap[MAXN], inwhich[MAXN];
+
+struct THeapElement {
+	long value;
+	long real_index;
+};
+
+struct THeapElement larger_heap[MAXN], smaller_heap[MAXN];
+
+void swap(struct THeapElement *a, struct THeapElement *b) {
+	struct THeapElement temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+long smaller_cmp(long x, long y) {
+	if (x < y) return 1;
+	if (x > y) return -1;
+	return 0;
+}
+
+long larger_cmp(long x, long y) {
+	if (x < y) return -1;
+	if (x > y) return 1;
+	return 0;
+}
+
+void add_heap(struct THeapElement heap[], long *heap_len, long value, long real_index, long (*cmp)(long x, long y)) {
+	long i;
+	*heap_len = *heap_len + 1;
+	heap[*heap_len].value = value;
+	heap[*heap_len].real_index = real_index;
+	inheap[real_index] = *heap_len;
+	i = *heap_len;
+	while ((i / 2 > 0) && (cmp(heap[i].value, heap[i / 2].value) > 0)) {		
+		inheap[heap[i].real_index] = i / 2;
+		inheap[heap[i / 2].real_index] = i;
+		swap(&heap[i], &heap[i / 2]);
+		i = i / 2;
+	}
+}
+
+void del_heap(struct THeapElement heap[], long *heap_len, long index, long (*cmp)(long x, long y)) {
+	long min_i, i = index;
+	inheap[heap[*heap_len].real_index] = index;
+	inheap[heap[index].real_index] = *heap_len;
+	swap(&heap[index], &heap[*heap_len]);
+	*heap_len = *heap_len - 1;
+	while (i * 2 <= *heap_len) {
+		if (i * 2 == *heap_len)
+			min_i = *heap_len;
+		else if (cmp(heap[i * 2].value, heap[i * 2 + 1].value) > 0)
+			min_i = i * 2;
+		else
+			min_i = i * 2 + 1;
+		if (cmp(heap[i].value, heap[min_i].value) < 0) {
+			inheap[heap[min_i].real_index] = i;
+			inheap[heap[i].real_index] = min_i;
+			swap(&heap[i], &heap[min_i]);
+			i = min_i;
+		} else
+			break;
+	}
+	i = index;
+	while ((i / 2 > 0) && (cmp(heap[i].value, heap[i / 2].value) > 0)) {		
+		inheap[heap[i].real_index] = i / 2;
+		inheap[heap[i / 2].real_index] = i;
+		swap(&heap[i], &heap[i / 2]);
+		i = i / 2;
+	}	
+}
+
+int main () {
+	long i, min_index;
+	long long min, current_min;
+	long long smaller_sum, larger_sum;
+	long long median_value;
+	long value, real_index;
+	
+	scanf("%ld %ld", &n, &m);
+	
+	for (i = 0; i < n; i++) {
+		scanf("%ld", &a[i]);
+	}
+
+	smaller_sum = 0;
+	larger_sum = 0;
+
+	smaller_heap_len = 0;
+	larger_heap_len = 0;
+	
+	for (i = 0; i < m; i++) {
+		smaller_sum += a[i];
+		inwhich[i] = 1;
+		add_heap(smaller_heap, &smaller_heap_len, a[i], i, larger_cmp);
+	}	
+	
+	for (i = 1; i <= m / 2; i++) {
+		smaller_sum -= smaller_heap[1].value;
+		larger_sum += smaller_heap[1].value;
+		inwhich[smaller_heap[1].real_index] = 2;
+		value = smaller_heap[1].value;
+		real_index = smaller_heap[1].real_index;
+		del_heap(smaller_heap, &smaller_heap_len, 1, larger_cmp);
+		add_heap(larger_heap, &larger_heap_len, value, real_index, smaller_cmp);
+	}
+
+	median_value = smaller_heap[1].value;
+	min = (smaller_heap_len * median_value) - smaller_sum + larger_sum - (larger_heap_len * median_value);
+	min_index = 1;
+	
+	for (i = m; i < n; i++) {
+		if (inwhich[i-m] == 1) {
+			smaller_sum -= smaller_heap[inheap[i-m]].value;
+			del_heap(smaller_heap, &smaller_heap_len, inheap[i-m], larger_cmp);
+		} else {
+			larger_sum -= larger_heap[inheap[i-m]].value;
+			del_heap(larger_heap, &larger_heap_len, inheap[i-m], smaller_cmp);
+		}
+
+		if (a[i] <= smaller_heap[1].value) {
+			inwhich[i] = 1;
+			smaller_sum += a[i];
+			add_heap(smaller_heap, &smaller_heap_len, a[i], i, larger_cmp);
+		} else {
+			inwhich[i] = 2;
+			larger_sum += a[i];
+			add_heap(larger_heap, &larger_heap_len, a[i], i, smaller_cmp);
+		}
+		
+		if (smaller_heap_len - m % 2 > larger_heap_len) {
+			smaller_sum -= smaller_heap[1].value;
+			larger_sum += smaller_heap[1].value;
+			inwhich[smaller_heap[1].real_index] = 2;
+			value = smaller_heap[1].value;
+			real_index = smaller_heap[1].real_index;
+			del_heap(smaller_heap, &smaller_heap_len, 1, larger_cmp);
+			add_heap(larger_heap, &larger_heap_len, value, real_index, smaller_cmp);
+		}
+
+		if (larger_heap_len > smaller_heap_len) {
+			larger_sum -= larger_heap[1].value;
+			smaller_sum += larger_heap[1].value;
+			inwhich[larger_heap[1].real_index] = 1;
+			value = larger_heap[1].value;
+			real_index = larger_heap[1].real_index;
+			del_heap(larger_heap, &larger_heap_len, 1, smaller_cmp);
+			add_heap(smaller_heap, &smaller_heap_len, value, real_index, larger_cmp);
+		}
+		
+		median_value = smaller_heap[1].value;
+
+		current_min = (smaller_heap_len * median_value) - smaller_sum + larger_sum - (larger_heap_len * median_value);
+		if (current_min < min) {
+			min = current_min;
+			min_index = i - m + 2;
+		}
+		
+	}
+	
+	printf("%lld\n", min);
+	printf("%ld\n", min_index);	
+	
+	return 0;
+}

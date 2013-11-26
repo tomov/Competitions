@@ -1,0 +1,125 @@
+#include <iostream>
+#include <stdlib.h>
+#include <ext/hash_set>
+
+using namespace std;
+using namespace __gnu_cxx;
+
+#define GCDSIZE 1000
+int gcdTable[GCDSIZE][GCDSIZE];
+
+long gcd(long a, long b) {
+	while ((a >= GCDSIZE) || (b >= GCDSIZE)) {
+		if (b == 0) {
+			return a;
+		}
+		long c = a%b;
+		a = b;
+		b = c;
+	}
+	if (gcdTable[a][b] == 0) {
+		long x = a, y = b;
+		while (b > 0) {
+			long c = a%b;
+			a = b;
+			b = c;
+		}
+		gcdTable[x][y] = a;
+		return a;
+	} else {
+		return gcdTable[a][b];
+	}
+}
+
+class Fraction {
+public:
+	long a, b;
+	Fraction(long a1, long b1) {
+		a = a1;
+		b = b1;
+		reduce();
+	}
+	void add(long b1) {
+		a = a*b1+b;
+		b *= b1;
+		reduce();
+	}
+	void sub(long b1) {
+		a = a*b1-b;
+		b *= b1;
+		reduce();
+	}
+	void reduce() {
+		long g = gcd(a, b);
+		a /= g;
+		b /= g;
+	}
+	bool operator==(const Fraction& f) const {
+		return ((a == f.a) && (b == f.b));
+	}
+	Fraction* clone() {
+		Fraction* f = new Fraction(a, b);
+		return f;
+	}
+};
+
+class FractionHasher : public hash<Fraction> {
+public:
+	size_t operator()(const Fraction& f) const {
+		return f.a^f.b;
+	}
+};
+
+int next(int arr[], int len, Fraction* f) {
+	if (len <= 1) {
+		return 0;
+	}
+	f->sub(arr[len-1]);
+	int x = arr[len-1]-1;
+	len--;
+	f->sub(arr[len-1]);
+	arr[len-1]++;
+	f->add(arr[len-1]);
+	int y = arr[len-1];
+	while (x >= y) {
+		arr[len] = y;
+		f->add(arr[len]);
+		len++;
+		x -= y;
+	}
+	if (x > 0) {
+		f->sub(arr[len-1]);
+		arr[len-1] += x;
+		f->add(arr[len-1]);
+	}
+	return len;
+}
+
+int count(int n) {
+	int arr[n], len;
+	for (int i = 0; i < n; i++) {
+		arr[i] = 1;
+	}
+	len = n;
+	Fraction* f = new Fraction(n, 1);
+	hash_set<Fraction, FractionHasher> found;
+	do {
+		if (found.find(*f) == found.end()) {
+			found.insert(*(f->clone()));
+		}
+		len = next(arr, len, f);
+	} while (len > 0);
+	return found.size();
+}
+
+int main(void) {
+	for (int i = 0; i < GCDSIZE; i++) {
+		for (int j = 0; j < GCDSIZE; j++) {
+			gcdTable[i][j] = 0;
+		}
+	}
+	int n;
+	cin >> n;
+	cout << count(n) << endl;
+	return 0;
+}

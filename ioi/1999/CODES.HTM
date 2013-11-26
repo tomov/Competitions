@@ -1,0 +1,152 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<title>HIDDEN CODES</title>
+</head>
+
+<body BGCOLOR="#A5B4D8" text="#0E2C73" link="#0E2C73" vlink="#0E2C73" alink="#A5B4D8">
+
+<table BGCOLOR="#FFFFFF" CELLPADDING="30">
+  <tr>
+    <td><b><font FACE="Arial,Helvetica" size="5"><p ALIGN="left">HIDDEN CODES</p>
+    </font><font FACE="Arial,Helvetica" size="4"><p></font><font FACE="Arial,Helvetica"
+    size="3">PROBLEM</p>
+    </font></b><p ALIGN="JUSTIFY">A set of code words and a text are given. The text is
+    supposed to contain a message made up of the code words embedded in the text in a peculiar
+    (and possibly ambiguous) way. </p>
+    <p ALIGN="JUSTIFY">The code words and the text are sequences made up of the upper and
+    lower case letters of the English alphabet only. Case-sensitivity is assumed. The <i>length</i>
+    of a code word is defined in the usual way: For example, the code word <font
+    FACE="Courier"><b>ALL</b></font> has length 3.</p>
+    <p ALIGN="JUSTIFY">The letters of a code word do not have to occur consecutively in the
+    given text. For example, the code word <font FACE="Courier"><b>ALL</b></font> will always
+    occur in the text within a subsequence in the form of <font FACE="Courier"><b>A</b></font><i>u</i><font
+    FACE="Courier"><b>L</b></font><i>v</i><font FACE="Courier"><b>L</b></font> where <i>u</i>
+    and <i>v</i> denote arbitrary (possibly empty) sequences of letters. We say that <font
+    FACE="Courier"><b>A</b></font><i>u</i><font FACE="Courier"><b>L</b></font><i>v</i><font
+    FACE="Courier"><b>L</b></font> is <i>a covering sequence</i> for <font FACE="Courier"><b>ALL</b></font>.
+    In general, <i>a covering sequence</i> for a code word is defined as a subsequence of the
+    text such that the first letter and the last letter of the subsequence are the same as
+    those of the code word and it is possible to obtain the code word by deleting some
+    (possibly none) of the letters of the subsequence. It should be noted that a code word may
+    occur within one or more covering sequences or may not occur in the text at all, and that
+    a covering sequence may be a covering sequence for more than one code word.</p>
+    <p ALIGN="JUSTIFY">A covering sequence is identified by its start position (position of
+    its first letter) and its end position (position of its last letter) in the text. (The
+    first letter of the text is at position 1.) We say that two covering sequences, say <i>c</i><font
+    SIZE="2"><sub>1</sub></font> and <i>c</i><font SIZE="2"><sub>2</sub></font>, <i>do not
+    overlap</i> if the start position of <i>c</i><font SIZE="2"><sub>1</sub></font> is greater
+    than (&gt;) the end position of <i>c</i><font SIZE="2"><sub>2</sub></font> or vice versa.
+    Otherwise we say that the two covering sequences <i>overlap.</p>
+    </i><p ALIGN="JUSTIFY">To extract the message hidden in the text you undertake the task of
+    forming a <i>solution</i>. A <i>solution</i> is a set of <i>items</i>, each consisting of
+    a code word and a covering sequence for this code word, so that the following conditions
+    are all satisfied:</p>
+    <ol TYPE="a">
+      <li>the covering sequences do not overlap with each other; </li>
+      <li>a covering sequence does not exceed 1000 in length; </li>
+      <li>the sum of the lengths of the code words is maximal. (Each item contributes the length
+        of the code word it contains to the sum.) </li>
+    </ol>
+    <p ALIGN="JUSTIFY">In case there are more than one solution you are required to report
+    only one solution. </p>
+    <p ALIGN="JUSTIFY">&nbsp;</p>
+    <b><font FACE="Arial,Helvetica" SIZE="4"><p></font><font FACE="Arial,Helvetica" size="3">ASSUMPTIONS</font></b><font
+    size="1"><ul>
+      </font>
+      <li>1 <font FACE="Symbol">£</font> <i>N <font FACE="Symbol">£</font> </i>100 where <i>N</i>
+        is the number of code words.</li>
+      <li>The maximum length of a code word is 100 letters.</li>
+      <li>1 <font FACE="Symbol">£</font> length of the given text <font FACE="Symbol">£</font>
+        1,000,000 letters.</li>
+      <li>&nbsp;</li>
+      <li>We say that a covering sequence <i>c</i> for a code word <i>w</i> is <i>right-minimal</i>
+        if no proper prefix of <i>c</i> (a <i>proper prefix</i> of <i>c</i> is an initial
+        subsequence of <i>c</i> that is not equal to <i>c</i>) is a covering sequence for <i>w</i>.
+        For example, for the code word <font FACE="Courier"><b>ALL, AAALAL</b></font> is a
+        right-minimal covering sequence whereas <font FACE="Courier"><b>AAALALAL</b></font> is
+        also a covering sequence, but not right-minimal.</li>
+    </ul>
+    <dir>
+      <p ALIGN="JUSTIFY">It is guaranteed that in the given text </p>
+    </dir>
+    <ol TYPE="a">
+      <li>for each position in the text the number of right-minimal covering sequences containing
+        that position does not exceed 2500; </li>
+      <li>the number of right-minimal covering sequences does not exceed 10,000.</li>
+    </ol>
+    <p ALIGN="JUSTIFY">&nbsp;</p>
+    <b><font FACE="Arial,Helvetica" SIZE="4"><p></font><font FACE="Arial,Helvetica" size="3">INPUT</p>
+    </font></b><p ALIGN="JUSTIFY">There are two input text files: <font FACE="Courier"><b>words.inp</b></font>
+    and <font FACE="Courier"><b>text.inp</b></font>. The <font FACE="Courier">words.inp</font>
+    file contains a list of code words and <font FACE="Courier">text.inp</font> contains the
+    text. </p>
+    <ul>
+      <li>The first line of <font FACE="Courier">words.inp</font> contains the value of <i>N</i>.
+        Each of the following <i>N</i> input lines contains a code word which is a sequence of
+        letters without any blank in between. The code words are identified by their order of
+        appearance in the <font FACE="Courier">words.inp</font> file: Integers 1 through <i>N</i>
+        serve as the id-numbers for the code words.</li>
+      <li>The<i> </i><font FACE="Courier">text.inp</font> file consists of a sequence of letters
+        (terminated by an end-of-line character followed by the end-of-file symbol). This file
+        does not include blanks. </li>
+    </ul>
+    <p ALIGN="JUSTIFY">&nbsp;</p>
+    <b><font FACE="Arial,Helvetica" SIZE="4"><p ALIGN="JUSTIFY"></font><font
+    FACE="Arial,Helvetica" size="3">RECOMMENDATION FOR PASCAL PROGRAMMERS</p>
+    </font></b><p ALIGN="JUSTIFY">You are advised to declare the input file type as <font
+    FACE="Courier">text</font>, as opposed to a typed file for reasons of efficiency.</p>
+    <p>&nbsp;</p>
+    <b><font FACE="Arial,Helvetica" SIZE="4"><p></font><font FACE="Arial,Helvetica" size="3">OUTPUT</p>
+    </font></b><p>The output must be a text file named <font FACE="Courier"><b>codes.out</b></font>.<ul>
+      <li>The first line will contain the sum obtained by your solution. </li>
+      <li>Each of the following lines will determine an item in your solution: The line consists
+        of three integers <i>i, s, e</i>. Here <i>i</i> is the id-number of the code word that
+        occurs within the covering sequence identified by the start position <i>s</i> and end
+        position <i>e. </i>The order of the output lines that follow the first line is not
+        important.</li>
+    </ul>
+    <p ALIGN="JUSTIFY">&nbsp;</p>
+    <b><font FACE="Arial,Helvetica" SIZE="4"><p></font><font FACE="Arial,Helvetica" size="3">EXAMPLE
+    </p>
+    </font></b><font FACE="Courier"><p>words.inp</font>:</p>
+    <table BORDER="1" CELLSPACING="0">
+      <tr>
+        <td><pre><font FACE="Courier">4
+RuN
+RaBbit
+HoBbit
+StoP</font></pre>
+        </td>
+      </tr>
+    </table>
+    <font FACE="Courier"><p>text.inp</font>: </p>
+    <table BORDER="1" CELLSPACING="0">
+      <tr>
+        <td><pre><font FACE="Courier">StX<u>RuYN</u>v<u>RuHoaBbvizXzt</u>Nw<u>RRuuN</u>NP</font></pre>
+        </td>
+      </tr>
+    </table>
+    <font FACE="Courier"><p>codes.out</font>:</p>
+    <table BORDER="1" CELLSPACING="0">
+      <tr>
+        <td><pre><font FACE="Courier">12
+2 9 21
+1 4 7
+1 24 28</font></pre>
+        </td>
+      </tr>
+    </table>
+    <p ALIGN="JUSTIFY">(<i>Remark</i>: The hidden message that could be extracted from the
+    solution is &quot;RuN RaBbit RuN&quot;. (An alternative solution would yield &quot;RuN
+    HoBbit RuN&quot;). Be reminded that the message is not to appear on the output. ) </p>
+    <p>&nbsp;</p>
+    <b><font FACE="Arial,Helvetica" SIZE="4"><p></font><font FACE="Arial,Helvetica" size="3">EVALUATION</p>
+    </font></b><p>Your program will be allowed to run<b> </b>10 seconds.<br>
+    No partial credit can be obtained for a test case.</td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,54 @@
+#include<iostream>
+using namespace std;
+int a[80][80],l, used[80], n,m,mt=2500,z, con, val[80];
+void dfs(int k)
+{
+	  used[k]=con;
+	  for(int i=0;i<m;i++)
+	  {
+				 if((a[i][k]==1)&&(used[i]!=con))
+				 dfs(i);
+	  }
+}
+int s1=0, s2=0;
+void rec(int r)
+{
+   if(r>=l){if(abs(s1-s2)<mt) {mt=abs(s1-s2); if(s1>s2) z=s1; else z=s2;} return;}
+   s1+=val[r];
+   rec(r+1);
+   s1-=val[r];
+   s2+=val[r];
+   rec(r+1);
+   s2-=val[r]; 
+}
+int main()
+{
+	 int w;
+	 cin>>l;
+	 for(w=0;w<l;w++)
+	 {
+	  cin>>m>>n>>con>>val[w];
+	  int i;
+	  int p, q;
+	  for(i=0;i<m;i++)
+	  cin>>used[i];
+	  for(i=0;i<n;i++)
+	  {
+				cin>>p>>q;
+				a[p][q]=1;
+				a[q][p]=1;
+	  }
+	  int br=0;
+	  for(i=0;i<m;i++)
+	  {
+				if(used[i]!=con)
+				{dfs(i);
+				br++;}
+	  }
+	  val[w]=val[w]*br;
+	 }
+	 
+    rec(0);
+    cout<<z<<"\n";
+	 return 0;
+}

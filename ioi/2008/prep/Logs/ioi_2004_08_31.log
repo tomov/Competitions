@@ -1,0 +1,383 @@
+
+Session Start: Mon Aug 30 20:06:44 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+* pai was kicked by VelinTzanov (VelinTzanov)
+* VelinTzanov sets mode: +ooo rangel__ sssa88 valo_bg
+* VelinTzanov sets mode: +o Swetko
+* Logging #ioi to 'logs\ioi_2004_08_31.log'
+<VelinTzanov> Privet banda
+<VelinTzanov> Tuk li ste vsichki?
+-> [VelinTzanov] PING
+<sssa88> tuk
+<rangel__> maj da, samo Valio otide da tyrsi nqkakvo listche
+<VelinTzanov> :)
+<VelinTzanov> Test-vahte li si zadachite?
+<VelinTzanov> Kakvi sa vi rezultatite?
+<sssa88> az donqkyde samo
+<valo_bg> az dori mail ti pratih
+<rangel__> az ne sym
+<sssa88> ot nedelq, puzzle raboti, game na posledniq test e pochti 3s na posledniq test -O2, a pyk drugata ne i rabotqt vqrno vsichkite testove(maj pyrvite 2 ot 5 ne rabotiha)
+<VelinTzanov> Losho, Vlado.
+<VelinTzanov> A Game N^2 li si pisal ili N*LogN?
+<sssa88> N*logN
+<sssa88> ot srqda catenyms sys sigurnost ne raboti
+<VelinTzanov> Valio, tvoeto tolkova li e bavno kato na Vlado?
+<valo_bg> az na crows sym zabravil da pisha '.' v kraq na izrechenieto :(
+<sssa88> za drugite dve ne sym siguren obache taq s grafa island crash-va na 2 ot 6-te testa tyj che...
+<valo_bg> po-bavno e... az na vsqka stypka inicializiram edin masiv ot 2^20 elementa, pyk te 1000 testa....
+<VelinTzanov> Nadiavam se che na IOI submit sistemata shte vi pazi ot takiva gafove, no vse pak vnimavaite.
+<VelinTzanov> E, znachi moje bi ne e CHAK tolkova losho, Vlado. :)
+<sssa88> mi ne znam - ima li reshebie sys sloznost O(N)?
+<VelinTzanov> Dobre e tezi zadachki da si gi opravite ako ne predi Obzor, to pone predi Athens.
+<VelinTzanov> Symniava me che ima... makar che mojesh da si poigraesh da go namerish ako iskash. :)
+<valo_bg> za men beshe lesno... obiknovenno sys promqnata na 4-5 byte-a i zarabotvaha za 100 :)
+<sssa88> shtoto principno 5000*1000*log(2, 16384)
+<sssa88> de da znam i az shto stavat celi 3sec. to bez -O2 sa nad 5
+<valo_bg> che na men vyrvi mnogo byrzo kato ne go inicializiram toq masiv
+<sssa88> kolko byrzo?
+<valo_bg> t.e. kato go sloja da e 2^15 elementa mislq...
+<valo_bg> chai da vidq
+<sssa88> az na vsqka stypka zadelqm pamet(v sluchaq s N=5000 tova oznachava 16384 long-a), koqto posle nuliram
+* rangel__ sets mode: +p
+* rangel__ sets mode: -p
+<Swetko> to i az taka pravia i zatova mi e malko bavna
+<valo_bg> a, syshtata rabota... 2.7 sec
+<VelinTzanov> Swetko, a ti test-va li si gi?
+<valo_bg> tova na 1.4 GHz
+<VelinTzanov> E, znachi tova e normalno.
+<VelinTzanov> Az ne znam kolko e time limit-a.
+<sssa88> ama i da ne zadelqm pamet nadali shte se promeni mnogo,che i da ne nuliram dori
+<sssa88> az sym na 1.6 GHz
+<Swetko> samo game warrior parity i biometrics - tam prosto sum si chistil mnogo puti paametta
+<valo_bg> ama e mnogo gadno taka kato nqma ogranichenie za N
+<VelinTzanov> Mdaaa... sled kato mine IOI shte vidite kakvo e gnusno po ACM-ite... :)
+<valo_bg> shte trqbva da svikvame... to nie veche imame malko opit :)
+<VelinTzanov> Mejdu drugoto v SU imat niakakvi kontrolni za otborite. Vie naiasno li ste tam sys shemata?
+<VelinTzanov> Triabva zadyljitelno da uchastvate v kontrolite im.
+<VelinTzanov> Vsiaka godina otboryt ot pyrvokursnici e mnogo silen i konkurenten za miasto na finalite.
+<valo_bg> shte sformirame mqkoe otborche i shte gi probvame :)
+<VelinTzanov> 2001-va biha vsichki, no ne hodiha v Bukuresht, che beshe kysno. 2002-ra hodiha i stanaha 3-ti. 2003-ta pyrvokursnicheskia otbor beshe 2-ri. Tazi godina moje da e 1-vi!
+<VelinTzanov> Ei sega shte im pisha na ACM-cite v SU da gi narediat kontrolnite sled IOI.
+<valo_bg> btw, na catenyms mnogo se uchudih che reshenieto mi raboti...
+<valo_bg> ama nqma maitap... malko e bavno no nache dava pravilni rezultati
+<sssa88> kakvo e to?
+<valo_bg> puskam ot vseki vryh po edno DFS
+<valo_bg> vse edno tyrsq max pyt
+<valo_bg> i ako imam cross edge update-vam max pytq za tekyshtiq vryh... a ve shte ti kaja kato se vidim utre
+<valo_bg> sega ne moga da go obqsnq
+<Swetko> Velin : abe nali catenym s e ot edno kontrolno v MIT - vashia otboro zasto ne ia e resil
+<valo_bg> raboti za kym 6 sec na vsichki testove vzeto obshto
+<valo_bg> (Swetko iska ravnosmetka... aaamaha, nqma samo nas da ni karat da davame raporti :]]]])
+<VelinTzanov> Zashtoto ne sym ia pravil az. :)
+<VelinTzanov> Tim Abbott mislia che ia pravi neia. A toi beshe edna klasa pod drugite 5-ma ACM-ci.
+<VelinTzanov> Na vsiaka systezanie reshavashe 0 ili 1 zadachi.
+<rangel__> ami crows mi raboti, na puzzle ne sym razbral che samo 4x4 sa resheniq, inache raboti
+<VelinTzanov> Btw, vyposi po materiala da vi se namirat?
+<rangel__> a game mi e mnoooogo bavna (pisal sym N*log^2N)
+<valo_bg> mda
+<valo_bg> kak se pravi onaq ot turnira inteligentno
+<valo_bg> che az dori i neinteligentno ne uspqh da napravq neshto koeto da hvashta poveche ot 2 testa
+<VelinTzanov> Ami znam li kak... :)
+<VelinTzanov> Triabva ti da znaesh koi parceli sa sysedni... i posle da izmislish tam neshto. :)
+<VelinTzanov> Az dori uslovieto ne si spomniam iasno... :)
+<VelinTzanov> Abe vie koga se pribirate ot IOI?
+<VelinTzanov> Shtoto na 19-ti mai shte ima kontrolno za ACM v SU.
+<valo_bg> 18.09
+<VelinTzanov> Dali shte mojete da uchastvate na 19-ti?
+<Swetko> problema e che ima i prazni parceli koito ne moga da identificiram
+<Swetko> hihi na edin test island ne mi raboti
+<valo_bg> nqma losho, ot letishteto napravo otivame v su :). ne moite hora sigurno shte sa se nanesli veche :)
+<valo_bg> po zadachata: ima mnogo kofti sluchai... kogato parcelite sa vlojeni, kato se dopirat i t.n...
+<VelinTzanov> Swetko, ne e hi-hi tova. Hlip-hlip e.
+<Swetko> crows mi raboti , game systo na leko bavno - kato na druite
+<VelinTzanov> Valio, ami prosto ia zareji togava... :)
+<valo_bg> btw, daite da pochvame che sym na dial-up kym btk i... mnogo kofti
+<VelinTzanov> Shte im pisha edin e-mail ako mogat da ne go slagat na 19-ti, no shte vidim...
+<VelinTzanov> Drugi vyprosi?
+<VelinTzanov> Ili mydrosti/misli za spodeliane?
+<valo_bg> ok... az shte kaja na slavi i anton, to nie sigurno s tqh shte napravil otbor... moje da otidat bez men ad go pravqt
+<VelinTzanov> Btw, kak namirate vtorata chast na podgotovkata? Dnes ni e poslednata sreshta, taka che sega mu e vremeto da si kajete.
+<Swetko> ami dobre
+<valo_bg> hmmm... dosta po-neintenzivna e ot pyrvata
+<sssa88> ami dobre kak inache
+<VelinTzanov> Za syjalenie niama kak.
+<sssa88> razbira se kato izkluchim nqkoi neshta koito ni predstoqt v blizkite dni
+<VelinTzanov> :)
+<valo_bg> mdaa.... predpolagam nqmash predvid obzor :]]
+<VelinTzanov> Valio, ti skucha li? :)
+<valo_bg> ne, ne moje da se kaje che skuchah... nqkoi dni baq se ozorih, no opredeleno predi BOI beshe dosta po-golqm zor
+<VelinTzanov> Vlado, Valio, Rangel: zapishete na tozi mail-list: http://debian.fmi.uni-sofia.bg/mailman/listinfo/cs-club/
+<Swetko> na puzzle mi raboti samo deto niamam edin prazen red nakraia i jurito ima - a v uslovieto pishe che ne triabva da ima
+<VelinTzanov> OK. Aide da pochvame za dnes.
+<VelinTzanov> Kato za posleden den shte e kratichko i lekichko dneska.
+<rangel__> az sym zapisan
+<VelinTzanov> Swetko, ne gi gledai tia prazni redove - niamat znachenie.
+<VelinTzanov> Shte razgledame dve zadachki dnes:
+<VelinTzanov> Majesty, USOpen 2002
+<VelinTzanov> Triangles, BaOI 2002
+<VelinTzanov> A mojem spokoino da dobavim i Mars ot BaOI 2001.
+<VelinTzanov> Temata e Plane Sweep (ili Line Sweep)
+<VelinTzanov> A imenno - ideiata da "pometem" ravninata s edna "metla" (prava)
+<VelinTzanov> Imate niakakvi obekti razpliokani v ravninata.
+<VelinTzanov> I triabva da smetnete neshto za tiah.
+<VelinTzanov> Nai-chesto obshtoto im lice, no moje i da e neshto drugo.
+<sssa88> link za majesty?
+<VelinTzanov> Za celta vzimate edno napravlenie (vertikal, diagonal, kakvoto tam vi haresva) i slagate po edna vyobrajaema bezkraina prava (v tova napravlenie) na vsichki "interesni" mesta.
+<VelinTzanov> "Interesni" nai-chesto e tam kydeto zapochvat i svyrshvat obektite.
+<VelinTzanov> Sega shte vidia, Vlado.
+<Swetko> az toz podhod mnogo go izpolvam
+<VelinTzanov> Mmmne. Niama ia. Niakoi da ia ima tazi zadacha?
+<Swetko> dai da ia razkashem
+<VelinTzanov> Imam testove no uslovie niamam. :)
+* valo_bg has quit IRC (Ping timeout: 444 seconds)
+<Swetko> i az imam testove
+<VelinTzanov> Namerih uslovie.
+<VelinTzanov> http://infoman.musala.com/contests/usaco/2001_02/usopen_green.rtf
+* valo_bg has joined #ioi
+<Swetko> catenyms mi izgleshda che raboti
+<valo_bg> re
+<Swetko> na gerry izlizat edni raboti - ne znam dali sa verni
+<VelinTzanov> Na English syshto:
+<VelinTzanov> http://infoman.musala.com/contests/usaco/2001_02/usopen_tasks.txt
+<valo_bg> kakvo izpusnah?
+<VelinTzanov> Paste-nah ti.
+<VelinTzanov> Ta kato prochetete zadachite kajete.
+<VelinTzanov> http://aldona.mii.lt/pms/olimp/english/boi2002/kita/tasks/triangles-en.pdf
+<rangel__> gotovo
+<sssa88> gotovo
+* VelinTzanov sets mode: +o valo_bg
+<valo_bg> gotovo
+<Swetko> az systo
+<VelinTzanov> OK
+<VelinTzanov> Sega razbrahte li kakvo imam predvid pod plane sweep?
+<valo_bg> da
+<VelinTzanov> Drugite?
+<Swetko> da
+<sssa88> da
+<VelinTzanov> (Reshavali ste Mars, taka che triabva da vi e poznat pohvata)
+<rangel__> da
+<VelinTzanov> Tova koeto iskam da uprajnim za final na podgotovkata e da pishete plane sweep i v po-triygylni zadachi.
+<VelinTzanov> Kato "podsyznatelna" zadacha imate i tova da se uprajnite s nepravilni koordinatni sistemi.
+<VelinTzanov> Predpolagam si spomniate provala na Hexa (inache dosta trudna zadacha)
+<VelinTzanov> trudna = lesna (gore v skobite :) )
+<sssa88> bez da iskash si prizna :)
+<Swetko> igrah si 2 chasa da si proveriavam masiva sus cifrichkite dali mi e evrene na HEXA
+<VelinTzanov> Ne, prosto biah pisal "ne trudna" i shtiah da go smenia na "lesna", ama neshto se razseiah... :)
+<VelinTzanov> Tochno taka.
+<VelinTzanov> Ochakvam Gyrcite da vi dadat takava zadacha s kriva koordinatna sistema.
+<Swetko> -2 -1 0 1 2    i tova na 6*2*2*2 mesta
+<VelinTzanov> Poslednata takva koiato si spomniam (ot IOI) e ot IOI '97... znachi e vreme da povtoriat.
+<Swetko> koia e ot tam
+<VelinTzanov> Swetko, ako iskash vij avtorovoto mi reshenie (ili tova na Ivo, koeto e za 70). Tam niama koi znae kakvi strashni masivi... pak ima magicheski cifrichki de... no to ne sa te vajnite: vajno e da imate iasna definicia koe kakvo e i nakyde raste visaka ot koordinatite.
+<VelinTzanov> Ami imashe niakakva igra na niakakva shestoygylna mreja (kato hexa).
+<Swetko> ami to drugoto lesno
+<Swetko> az prosto na vseki hod otivam tam kudeto mi kashe masvia - toi e vashnia
+<Swetko> vidiah ia
+<VelinTzanov> Ta da razchitam li, che shte si napravite dvete zadachki za domashno i che na IOI kato izleze ili plain sweep ili kriva koordinata shte ia napravite syshto? :)
+<valo_bg> a? svyrshihme li?
+<VelinTzanov> Hehe... mi da, svyrshihme. :)
+<Swetko> btw. srestnah edna interesna aciklichna igra - imash edin convex polygon i e razdelen ot diagonali na n-2 triugulnika - edin ot koito e cheren . Vseki hod ighracha rehse po TOCHNO edin triugulnik kato moshe da reshe SAMO po EDIN diagonal . Da se kashe dali purvia moshe da specheli
+<VelinTzanov> Zashto, neshto ne ti e iasno li, Valio? :)
+<sssa88> za pyrvoto da(vypreki che triangles sym q pravil i sega nqmam mnogo vreme ama sigurno shte q napisha pak), a za vtoroto dano
+<Swetko> pecheli koito otreshe chernia
+<valo_bg> ami dobre... nqma losho... te neshtata sa qsni... shte vidim kakvo shte stane kato sedna da gi pisha :)
+<VelinTzanov> Neshto ne mi e iasno kak tochno se obrazuvat tezi triygylnici...
+<Swetko> ami kato sloshish diagonali bez da se presichat nali stavat n-2 triugulnika
+<valo_bg> az tova koeto razbrah e che imash vse edno redica ot moneti i ednata ot tqh e cherna i trqbva da vzemash ot kraq na redicata po edna moneta
+<valo_bg> ama nadali e taka
+* valo_bg has quit IRC (Read error: 104 (Connection reset by peer))
+* valo_bg has joined #ioi
+* Yetroit has joined #ioi
+<sssa88> kato che li i mnogo moneti mozesh da vzemash
+<valo_bg> toi kaza "TOCHNO 1 triygylnik"
+<Swetko> na vseki hod se reshe samo po 1 triugulnik i to reshesh po edin diagonal
+<Swetko> triugulnika e cheren - ne diagonala
+<sssa88> aha
+<valo_bg> tova s monetite pravilen analog li e?
+<Swetko> niama da ti kasha
+<Swetko> :)
+<Swetko> zadachata e lesna - ot purvi krag na polskata :)
+<valo_bg> ? ne zagrqh nesto? neshto taino li ima?
+<Swetko> ami moshe da ti podskazhe :)
+* Yetroit was kicked by VelinTzanov (VelinTzanov)
+<rangel__> spored men sa 2 redici s moneti
+<Swetko> moshe i da ne ti podskashe:)
+<valo_bg> n do kolko e?
+<Swetko> 50 000
+<Swetko> ama triabva da stane lineino
+<VelinTzanov> Ia dai link, Swetko.
+* VelinTzanov sets mode: +o valo_bg
+<Swetko> ei sega
+<valo_bg> mda... pri polojenie che nqmam usloveto pred men, nqma smisyl da me motaesh
+<VelinTzanov> :)
+<Swetko> http://www.oi.edu.pl/php/show.php?ac=e181413&module=show&file=zadania/oi6/grawiel
+<Swetko> abe poliacite na purvi krug vinagi davat po edna igra za 4-ta zadacha :)
+<Swetko> pomnite li STRIPES
+<valo_bg> za neq setih oshte kato kazah za monetite
+<valo_bg> principno mojesh da go napravish s multi igra s dve redici moneti
+<valo_bg> pone taka si mislq v momenta
+<rangel__> i az taka si pomisilh, no ne mozhesh
+<Swetko> zasto 2
+<valo_bg> zashtoto imash 2 kraq
+<Swetko> na triugulnika li
+<valo_bg> i cherniq ti e posredata
+<valo_bg> na poligona
+<Swetko> procheti li uslovieto
+<Swetko> hehe na 2-ri krag ima edna zadacha deto vsichki imat 0 i samo edin ima 16 tochki ot 40 mai ::)
+<Swetko> of- to tui beshe edna gadna psevdo geometria
+<valo_bg> prochetoh usloveto i vse oshte ne moga da razbera kakyv e problema
+<sssa88> vyzmozno e da imash poveche ot 2 vyzmozni hoda
+<Swetko> ami triugulnika moshe ot 0,1,2,3 strani da e ograden ot drugi triugulnici
+<VelinTzanov> Hmm... poriadychno gnusna zadacha. :)
+<rangel__> i cherniq triygylnik ne e zadylzhitelno da ima vynshna strana (t.e. prinadlezhashta na obvivkata)
+<VelinTzanov> Swetko, a ti reshil li si ia?
+<Swetko> ne egnusna
+<Swetko> reshili sa ia pochti vsichki:)
+<Swetko> da, ama i az malko se poizpotih :)
+<Swetko> prosto reshih che e lesna no ne i ochevidna :)
+<rangel__> tova kakvo oznachava, che 2-3 absoljutno otkacheni polqci imat po 1/2 ot maksimalniq broj tochki :-)
+<Swetko> zasto be
+<Swetko> vsichki pochti si imat max broi 
+<Swetko> stot tova e PURVI KRAG
+<Swetko> az spomenah po gore
+<rangel__> e tq maj i stripes beshe ot pyrvi kryg... :-)
+<Swetko> te vinagi davat po edna igra za purvi krag
+<Swetko> dobra praktika - i purvi krag im e ot 4 lesni zadachi 
+<Swetko> a vtori krag e ot 6
+<VelinTzanov> Hmm... da be - masovo 100.
+* valo_bg has quit IRC (Ping timeout: 444 seconds)
+<VelinTzanov> Offf, viarno e super lesna. :)
+<VelinTzanov> Koi ne ia e reshil oshte?
+<VelinTzanov> Vlado, Rangel?
+<sssa88> az ne sym
+<rangel__> i az ne sym
+<VelinTzanov> Pomislete: kakvo vi triabva za da reznete chernia triygylnik?
+<VelinTzanov> Kakvo triabva da e napraveno?
+<rangel__> da sa izrqzani 2 ot trite mu syseda
+<rangel__> (strana ot obvivkata se broi za izrqzana)
+<VelinTzanov> A kakvo e neobhodimo za da e izriazan edin sysed?
+<rangel__> syshtoto
+<VelinTzanov> Ne razbrah.
+<rangel__> t.e. da sa izrqzani negovite sysedi
+<sssa88> samo che nqma li opasnost taka kato razshirqvame po sysedite posle rabotite pak da se syberat?
+<rangel__> ne
+<sssa88> aha
+<VelinTzanov> E, to kato se zamislish e neobhodimo i da ne spre toka... :)  Kakvo e ot znachenie? Kakvo e nai-prostoto neobhodimo neshto?
+<rangel__> ako si napravish grafa na sysedstvoto se poluchava dyrvo
+<VelinTzanov> Neka go formuliram inache: ima li znachenie koi tochno triygylnici si izriazal ot dadena strana?
+<VelinTzanov> VINAGI se zamisliaite: kakvo ima znachenie i kakvo niama.
+<rangel__> zashto li imam edna typa ideq, che ako ima cheten broj triyglnici pechelish, inache gubish
+<sssa88> toest samo gi broim i si smqtame a?
+<Swetko> eh, rangel pochti pozna
+<VelinTzanov> Swetko, tiho tam.
+<VelinTzanov> Neka ne se uchim da poznavame.
+<rangel__> e trqbva da proverq i dali direktno ne moga da izrezha cherniq de
+<VelinTzanov> Neka se nauchim da mislim pravilno.
+<sssa88> e to shte trqbva da razgledash razlichbite varianti koi dvojki da vzemesh
+<VelinTzanov> Pravilnoto mislene iziskva da se zamislish koe e ot znachenie i koe ne e.
+<rangel__> na vseki hod se promenq chetnostta
+<VelinTzanov> Naluchkvaneto ne e pravilno mislene i ne raboti vinagi.
+<rangel__> ne e naluchkvane, principno se vodi matematika, tova che ne sym go dokazal syvsem e druga tema
+* valo_bg has joined #ioi
+<Swetko> az moga da go dokasha i bez teoria na igrite
+<valo_bg> re
+<VelinTzanov> Ta kakvo ima znachenie i kakvo niama, Rangele?
+<valo_bg> polskata li mychite?
+<VelinTzanov> Da, Valio.
+<Swetko> aha
+<VelinTzanov> Niakoi sme ia izmychili veche. Drugi ne sa. :)
+<valo_bg> nqkoi shte mi paste-na li, pls
+<valo_bg> to ne e li s 3 redici?
+<VelinTzanov> Valio, tiho be, ostavi gi da se gyrchat. :)
+<valo_bg> ok
+<rangel__> nqma znachenie v kakyv red sym rqzal, ima znachenie kakvo sym izrqzal, no tova e ochevidno
+* Swetko has quit IRC (Excess Flood)
+* Swetko has joined #ioi
+* CS sets mode: +v Swetko
+<VelinTzanov> :)  E, dobre, shtom ti e ochevidno niama da vi se karam. :)
+<VelinTzanov> Tova da se chuva. :)
+<VelinTzanov> Vlado, na teb ochevidno li ti beshe?
+<sssa88> emi de da znam
+<Swetko> vishte az kak go dokazvam - V edin moment v igrata ste se ozovem v situacia 0 1 X - tova e neizbeshno. I sega kato si ti nared niama da reshesh 1-cata sto ste zagubish  a ste reshesh ot X-a . Taka se sveshda do tova kolko na broi )(cheten ili ne ) ima v X
+<sssa88> v obshti linii
+<valo_bg> nqkoi deto moje bavno na paste-va shte mi paste-ne li che swetko ne uspq
+<VelinTzanov> Ne, Valio, shte prochetesh log-a posle.
+<VelinTzanov> Ne si izpusnal neshto koi znae kolko vajno.
+<VelinTzanov> Ta da, Swetko go dokaza v obshti linii.
+<valo_bg> ok
+<VelinTzanov> Pyrvat i mnogo vajna stypka e da svedete zadachata do tova:
+<VelinTzanov> Imame tri kupchini s moneti.
+<VelinTzanov> Na vseki hod se vzima edna.
+<VelinTzanov> Gubi tozi koito ostavi dve prazni kupchini.
+<VelinTzanov> Ot tam na setne triabva da imate dostatychno akyl da se setite tova koeto Swetko kaza. :)
+<VelinTzanov> Ako niamate - za 5 chasa vse shte go izmislite. :)
+* VelinTzanov sets mode: +oo Swetko valo_bg
+<sssa88> sega se zamislqm to ti trqbvat samo pyrvite dva reda ot vhoda - che qko
+<VelinTzanov> :):)
+<rangel__> dobre de, znachi se gubi kogato se stigne do 0 0 1
+<valo_bg> do 0 0 x
+<Swetko> do 0 0 1
+<Swetko> sto nikoi niama da te ostavi v 0 0 x
+<rangel__> shtoto igratete optimalno, kato go dokarate do 0 1 x, shte stignete do 0 0 1
+<valo_bg> e da... az po princip govorq
+<rangel__> e da, no az govorq konkretno :-)
+<rangel__> i ot tam nagore sys smqnata na chetnostta na vseki hod si namirate koga se pecheli i koga se gubi
+<Swetko> az si misleh puk che ne sa ni dadeni triugulnicite i zatova stava lineino puk to kakvo bilo - konstantno
+<rangel__> pone na men taka mi se struva, de...
+<Swetko> moite aliens zabivat - cikliat v edna  i systa dvoika postoianno
+<VelinTzanov> Da, taka e, Rangele, prav si. :)
+<VelinTzanov> Koe beshe aliens?
+<rangel__> a moqta raboti za polovinata testove a na drugata polovina vadi NaN zaradi delene na 0 :-)
+<VelinTzanov> Swetko, znachi imash typi ygli ot dvete strani. Tova znachi che okryjnostta ti e samo okolo dvata vyrha (a ne okolo 3)
+<sssa88> zad4 ot BOI'02
+<valo_bg> az tam bqh obyrkal edni + i - i mi syvpadaha samo y koordinatite na otgovorite :)
+<Swetko> az tova go proveriavam - interesnoto che e che az imam   dve promenlivi  a i b    i namiram  vrah   c   s iskanite svoistva i zadylshitelno edin ot vyrhovete a ili b stava c posle - kato sum se uveril che c!=a c!=b
+<VelinTzanov> Neshto ne te razbiram Swetko. Bug li imash ili principno neshto ne ti e iasno s algorityma?
+<Swetko> ami predpolagam BUG stot inache za 9 testa raboti
+<valo_bg> hmmm, a za taq polskata ne znam shto taka reshihte che e reshena...
+<Swetko> razbrah zasto - zastoto edinia ugul mi izliza NAN
+<Swetko> a drugia 90
+<Swetko> tova znachi che delia na 0
+<VelinTzanov> Ok, Rangel shte ti ia obiasni, Valio.
+<VelinTzanov> Ako niamate drugi vyprosi, az mislia che shte se ottegliam.
+<sssa88> utre li ti e prezentaciqta?
+<rangel__> az nqmam
+<VelinTzanov> Tuk bi triabvalo da kaja neshto zakluchitelno, no t.k. niamam vreme za rechi, shte kaja samo che se zabavliavah tova liato da pravim podgotovka. Nadiavam se i vie da ste si prekarali priiatno.
+<sssa88> i az
+<VelinTzanov> Moita prezentacia li, Vlado? Da, utre.
+<sssa88> Uspeh!
+<VelinTzanov> Predi vsichko vi pojelavam uspeh na IOI.
+<VelinTzanov> (Mersi, Vlado)
+<Swetko> mersi
+<sssa88> mersi
+<rangel__> mersi
+<VelinTzanov> I molia vi, zadyljitelno, pregledaite si neshtata koito sme pravili. 20 temi sa, mnogo sa, no ima kakvo da si pripomnite.
+<valo_bg> mersi... sega nai-dobriq zavyrshek na podgotovkata bi bil 4 zlata na IOI
+<VelinTzanov> Ami pojelavam vi go ot syrce.
+<VelinTzanov> Mislia che mojete.
+<rangel__> to vqrno che e zabavno da se reshavat zadachi po cql den de :-)
+<Swetko> abe to da niama tochki s edni i systi koordinati be
+<VelinTzanov> Ne bih zalojil pari che shte stane. ;)  No vseki ot vas ima potenciala, ako priloji tova koeto sme uchili i ako vloji dostatychno zdrav razum (kakyvto imate) da specheli zlato. Taka che ako i 4-mata ne se izlojite, mojete i 4 zlata da ni donesete.
+<VelinTzanov> Vse pak systezanieto e individualno.
+<VelinTzanov> Az razchitam na tova, che ako niakoi ot vas se poizoloji, tova niama da poprechi na drugite... i taka imame niakakyv garant (fault-tolerance), che vse niakoi shte specheli zlatoto... dano. :)
+<VelinTzanov> I ne zabraviaite molitvichkata predi systezanie, shtoto ako Gospod ne vi pomogne i vsichko da si reshite nakraia kato bugiasa i kato izleznat 0, 20 i 45 tochki.... :)
+<VelinTzanov> I oshte neshto mnogo vajno:
+<VelinTzanov> Na 12-ti imate Practice Competition.
+<VelinTzanov> ZADYLJITELNO razuchete vsichki problemi na sistemata.
+<VelinTzanov> RHIDE osobeno e sklonen kym golemi prostotii.
+<sssa88> te teq prostotii imat navika da se poqvqvat tochno kogato ne gi ochakvash
+<VelinTzanov> Uprajniavaite se, blyskaite gi tam tezi computri, test-vaite, pravete, struvaite, nakraia da ne si trygvate ako ne ste namerili reshenie na vseki RHIDE-ski (i ne samo RHIDE-ski) problem.
+<Swetko> tuk dashe ste 1.5 deto e bugav poveche ot 1.49
+<VelinTzanov> Ami tova e.
+<valo_bg> az v kyshti rhide-a ne moga da go podkaram
+<VelinTzanov> Ako imate niakakvi problemi s neshto (zadachi, temi, teoria, domashno, lekcia) nepremeno pishete.
+<VelinTzanov> Ami... chao! :)
+<VelinTzanov> (i polzotvorno prekarvane v Obzor! :) )
+<valo_bg> chao
+<sssa88> chao
+<rangel__> chao :-)
+<Swetko> chao
+* Disconnected
+Session Close: Mon Aug 30 22:03:27 2004

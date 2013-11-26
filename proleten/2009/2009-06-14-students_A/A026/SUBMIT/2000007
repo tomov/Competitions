@@ -1,0 +1,47 @@
+/*
+codr: timiter
+task: leaves
+lang: C++
+*/
+
+#include <cstdio>
+#include <cmath>
+#include <algorithm>
+
+using namespace std;
+
+int n, s = 0;
+int d[131072];
+
+int main()
+{
+    scanf("%d", &n);
+    int i;
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &d[i]);
+    }
+    sort(d, d + n);
+
+    /*
+    int t = log(n) / log(2);
+    int l = pow(2.0, t);
+    for (i = 0; i < 2 * (n - l); i++)
+    {
+        s += d[i] * (t + 1);
+    }
+    for (; i < n; i++)
+    {
+        s += d[i] * t;
+    }
+    */
+
+    for (i = 0; i < n; i++)
+    {
+        s += d[i] * (n - i);
+    }
+    s -= d[0];
+
+    printf("%d\n", s);
+    return 0;
+}

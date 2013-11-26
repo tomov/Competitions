@@ -1,0 +1,218 @@
+
+#include <cstdio>
+#include <cstring>
+#include <cassert>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+const int INF = 12345;
+const int MAX_L = 30 + 5;
+const int MAX_N = 50 + 5;
+const int MAX_M = 2500 * 2 + 5;
+
+int L, N, M, C, T;
+int color[MAX_N];
+
+int E = 0;
+int N2;
+int prev[MAX_M], last[MAX_N], adj[MAX_M];
+int prev2[MAX_M], last2[MAX_N], adj2[MAX_M];
+
+int id[MAX_N];
+
+int final_set;
+int best[1 << 20]; // A bitmask dynamic programming solution. :)
+int ans[MAX_L];
+
+inline void add_edge(int x, int y) {
+    adj[E] = y;
+    prev[E] = last[x];
+    last[x] = E++;
+}
+
+inline void add_edge2(int e, int x, int y) {
+    adj2[e] = y;
+    prev2[e] = last2[x];
+    last2[x] = e;
+}
+
+inline int get_bit(int set, int bit) {
+    return (set >> bit) & 1;
+}
+
+inline int get_neighbours(int set, int at) {
+    static int q[MAX_N];
+    int qh = 0;
+    int qt = 1;
+    q[qh] = at;
+    int res = 1 << at;
+    while (qh < qt) {
+        at = q[qh++];
+        for (int j = last2[at]; j != -1; j = prev2[j])
+            if (!get_bit(res, adj2[j]) && get_bit(set, adj2[j]) == get_bit(set, at)) {
+                res |= 1 << adj2[j];
+                q[qt++] = adj2[j];
+            }
+    }
+    return res;
+}
+
+int rec(int set) {
+    if (set == final_set)
+        return 0;
+    if (best[set] != -1)
+        return best[set];
+    int &res = best[set];
+    res = INF;
+    int mark = 0;
+    for (int i = 0; i < N2; ++i)
+        if (((mark >> i) & 1) == 0) {
+            int cur_set = get_neighbours(set, i);
+            mark |= cur_set;
+            res = min(res, 1 + rec(set ^ cur_set));
+        }
+ //   printf("set %d -> %d\n", set, res);
+    return res;
+}
+
+void solve(int tst) {
+    memset(last, -1, sizeof(last));
+    E = 0;
+    scanf("%d %d %d %d", &N, &M, &C, &T);
+    for (int i = 0; i < N; ++i)
+        scanf("%d", &color[i]);
+    for (int i = 0; i < M; ++i) {
+        int x, y;
+        scanf("%d %d", &x, &y);
+        add_edge(x, y);
+        add_edge(y, x);
+    }
+    static int mark[MAX_N];
+    memset(mark, 0, sizeof(mark));
+    int comp_id = 1;
+    int sum = 0;
+    for (int i = 0; i < N; ++i)
+        if (!mark[i]) {
+            static int q[MAX_N];
+            int qh = 0;
+            int qt = 1;
+            q[qh] = i;
+            int am = 0;
+            mark[i] = comp_id;
+            vector <int> all;
+            int start_set = 0;
+            while (qh < qt) {
+                int at = q[qh++];
+                if (color[at])
+                    start_set |= 1 << am;
+                id[at] = am++;
+                all.push_back(at);
+                for (int j = last[at]; j != -1; j = prev[j])
+                    if (!mark[adj[j]]) {
+                        mark[adj[j]] = comp_id;
+                        q[qt++] = adj[j];
+                    }
+            }
+            int E2 = 0;
+            memset(last2, -1, sizeof(last2));
+            for (int z = 0; z < (int)all.size(); ++z) {
+               // printf("%d, ", all[z]);
+                int cat = all[z];
+                for (int j = last[cat]; j != -1; j = prev[j])
+                    if (mark[adj[j]] == comp_id) {
+                        add_edge2(E2++, z, id[adj[j]]);
+                    }
+            }
+            //puts("");
+            memset(best, -1, sizeof(int) * (1 << am));
+            final_set = 0;
+            if (C == 1)
+                final_set = (1 << am) - 1;
+            N2 = am;
+            sum += rec(start_set);
+            ++comp_id;
+        }
+    ans[tst] = T * sum;
+}
+
+int solve2_slow() {
+    int res =  2147483647;
+    int total = 0;
+    for (int i = 0; i < L; ++i)
+        total += ans[i];
+    for (int set = 0; set < (1 << L); ++set) {
+        int sum = 0;
+        for (int i = 0; i < L; ++i)
+            if (((set >> i) & 1) > 0) {
+                sum += ans[i];
+            }
+        res = min(res, max(total - sum, sum));
+    }
+    return res;
+}
+
+int solve2() { // meet in the middle
+    int total = 0;
+    for (int i = 0; i < L; ++i)
+        total += ans[i];
+
+    int n1 = L / 2;
+    int n2 = L - n1;
+    static int all[1 << (MAX_L / 2)];
+    int cnt = 1 << n1;
+    for (int set = 0; set < cnt; ++set) {
+        int sum = 0;
+        for (int j = 0; j < n1; ++j)
+            if (((set >> j) & 1) > 0)
+                sum += ans[j];
+//        printf("%d, ", sum);
+        all[set] = sum * 2;
+    }
+//    puts("");
+    sort(all, all + cnt);
+    cnt = unique(all, all + cnt) - all;
+    int res = 2147483647;
+    for (int set = 0; set < (1 << n2); ++set) {
+        int sum = 0;
+        for (int j = 0; j < n2; ++j)
+            if (((set >> j) & 1) > 0)
+                sum += ans[n1 + j] * 2;
+//        printf("%d, ", sum);
+        int k = lower_bound(all, all + cnt, total - sum) - all;
+        for (int d = k - 1; d <= k + 1; ++d) {
+            if (d >= 0 && d < cnt) {
+//                printf("sum (%d) + sum' (%d)\n", sum / 2, all[d] / 2);
+                res = min(res, max(all[d] / 2 + sum / 2, total - all[d] / 2 - sum / 2));
+            }
+        }
+    }
+//    puts("");
+    return res;
+}
+
+inline int random(int a, int b) {
+    return a + rand() % (b - a + 1);
+}
+
+void test() {
+    while (true) {
+        L = random(1, 15);
+        for (int i = 0; i < L; ++i)
+            ans[i] = random(0, 1000000);
+        int res1 = solve2();
+        int res2 = solve2_slow();
+        assert(res1 == res2);
+        printf("%d %d\n", res1, res2);
+        fflush(stdout);
+    }
+}
+
+int main() {
+    scanf("%d", &L);
+    for (int tst = 0; tst < L; ++tst) {
+        solve(tst);
+    }
+    printf("%d\n", solve2());
+    return 0;
+}

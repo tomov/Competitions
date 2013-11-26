@@ -1,0 +1,387 @@
+Jun 23 20:12:46 valo	ok
+Jun 23 20:12:48 valo	are da pochvame
+Jun 23 20:12:53 PreslavLe	are
+Jun 23 20:12:57 vesko[more_ole]	to pishe otgore kakvo e
+Jun 23 20:13:06 valo	vesko[more_ole]: ti za kakvo BaOI govori predi malko?
+Jun 23 20:13:25 vesko[more_ole]	nqma analiz 2 primerno...
+Jun 23 20:13:33 vesko[more_ole]	valo za tova deto te go praviha vchera
+Jun 23 20:13:41 PreslavLe	ti dnes li go pravi?
+Jun 23 20:13:43 PreslavLe	kak mina?
+Jun 23 20:13:52 valo	vesko[more_ole]: a ti zashto ne gi pravi vchera?
+Jun 23 20:13:53 vesko[more_ole]	PreslavLe razdelih go na 2x2 chasa
+Jun 23 20:13:56 vesko[more_ole]	imam oshte 2h
+Jun 23 20:14:00 vesko[more_ole]	kato parvite 2 samo mislih
+Jun 23 20:14:01 PreslavLe	haha :)
+Jun 23 20:14:05 vesko[more_ole]	mislq che 2 zadachi izmislih
+Jun 23 20:14:08 vesko[more_ole]	razbrah che imate po 300
+Jun 23 20:14:11 vesko[more_ole]	ama tq purvata ne me kefi
+Jun 23 20:14:15 vesko[more_ole]	makar che imam idei
+Jun 23 20:14:17 PreslavLe	bitwise?
+Jun 23 20:14:18 vesko[more_ole]	da
+Jun 23 20:14:24 PreslavLe	think :)
+Jun 23 20:14:30 vesko[more_ole]	i ne razbiram
+Jun 23 20:14:31 valo	kakvo shte reche, "razdelih go na 2x2 chasa"?
+Jun 23 20:14:35 vesko[more_ole]	zashto ogranichenieto e 100...
+Jun 23 20:14:44 vesko[more_ole]	valo ami 2chasa mislene i 2chasa pisane
+Jun 23 20:14:47 vesko[more_ole]	kato parvite 2h
+Jun 23 20:14:49 vesko[more_ole]	mi bqha ot 1-3
+Jun 23 20:14:54 vesko[more_ole]	2-rite trqbvashe da sa ot 6-8
+Jun 23 20:15:01 vesko[more_ole]	ama ne se poluchi:) za toav kato svarshim shte pisha 2h
+Jun 23 20:15:03 PreslavLe	vesko[more_ole] ne se trenira taka
+Jun 23 20:15:08 vesko[more_ole]	to e qsno che ne stana seriozno..
+Jun 23 20:15:10 vesko[more_ole]	znam
+Jun 23 20:15:14 valo	tova mislq che e kraino neseriozno...
+Jun 23 20:15:24 valo	ne mojesh da napravish takova razdelenie
+Jun 23 20:15:36 vesko[more_ole]	ama tiq zadachi spored men sa mnogo kuhi
+Jun 23 20:15:43 PreslavLe	az zadachite ako sam gi prochel moga da gi mislq i dokata spq :)
+Jun 23 20:15:51 vesko[more_ole]	valo nqmam kak da sabera celi 5 chasa
+Jun 23 20:15:52 valo	PreslavLe e prav
+Jun 23 20:15:55 vesko[more_ole]	inqche trqbvashe utre
+Jun 23 20:16:03 PreslavLe	chesto mi se e sluvhvalo kato se sabudq da sam gi izmislil :)
+Jun 23 20:16:08 vesko[more_ole]	PreslavLe vqrvai mi nqmah vreme da mislq;)
+Jun 23 20:16:20 vesko[more_ole]	pravi ste
+Jun 23 20:16:26 valo	kak taka nqmash 5 chasa? kakva druga po0vajna rabota imash ot podgotovkata?
+Jun 23 20:16:31 vesko[more_ole]	no v slucheq alternativata beshe nishto da ne pravq i den
+Jun 23 20:16:54 vesko[more_ole]	valo imah kakvo da pravq
+Jun 23 20:17:40 PreslavLe	znachi dnes beshe zaet ot 9-do 13:00 i ot 15:00 do 20:00?
+Jun 23 20:17:46 valo	vtreshten sym...
+Jun 23 20:18:27 vesko[more_ole]	PreslavLe ne tochno
+Jun 23 20:19:54 valo	vesko[more_ole]: ti predi vreme mi beshe kazal che otdelqsh po 10 chasa na den za podgotovka.
+Jun 23 20:20:12 vesko[more_ole]	valo taka e kogao moga go pravq
+Jun 23 20:20:24 vesko[more_ole]	no ima obstoqtelstva koito ne vinago go pozvolqvat
+Jun 23 20:21:04 valo	i kolko chesto se sluchvat tezi obstoqtelstva?
+Jun 23 20:21:15 vesko[more_ole]	1-2 dni v sedmicata maximum..
+Jun 23 20:22:03 valo	ne znam
+Jun 23 20:22:17 valo	vie si precenqvate v kraina smetka
+Jun 23 20:22:48 valo	zatova az vinagi sym si mislil che podgotovkata e mnogo po-dobre da e nalageri kato rusnacite
+Jun 23 20:22:52 valo	i amerikancite
+Jun 23 20:23:03 valo	tam pone chovek ne go pritesnqvat stranichni obstoqtestva
+Jun 23 20:23:25 valo	to v sluchaq tova nevyzmojno v bg..
+Jun 23 20:23:26 valo	nz
+Jun 23 20:23:51 valo	btw, vesko[more_ole] ti nqma li da kandidatstvash v MIT?
+Jun 23 20:24:10 vesko[more_ole]	e to mina veche
+Jun 23 20:24:15 vesko[more_ole]	dogodina li?
+Jun 23 20:24:23 valo	e to nqma kak tazi godina
+Jun 23 20:24:30 valo	oshte nqmash medali :)
+Jun 23 20:24:36 vesko[more_ole]	moje da se kandidatsva za 2-ri semestar
+Jun 23 20:24:49 vesko[more_ole]	valo a tova s medlite ne bih zalojil na nego
+Jun 23 20:24:51 vesko[more_ole]	shte vidq
+Jun 23 20:24:51 valo	za dogodina mi e misylta
+Jun 23 20:24:59 vesko[more_ole]	zavisi kolko nqma da mi haresa SU:)
+Jun 23 20:25:08 vesko[more_ole]	no po skoro shte e na drugi mesta ne MIT
+Jun 23 20:25:14 valo	povqrvai mi nqma da si mnogo ocharovan
+Jun 23 20:25:43 PreslavLe	vesko[more_ole] taka kato gledam Software Engineering e sashtoto kato Compuer Science samo deto ima poveche neshta za izbor.
+Jun 23 20:26:00 vesko[more_ole]	valo tova ne e na dneven red sega
+Jun 23 20:26:19 valo	ok
+Jun 23 20:27:02 valo	vsyshtnost na dneven red e tyi kato e vajno vsichki nacionali da sa podgotveni za IOI i BOI
+Jun 23 20:27:13 valo	tova e tochka pyrva ot dnevniq red vseki pyt
+Jun 23 20:27:29 vesko[more_ole]	... i tova kakvo obshto ima s MIT
+Jun 23 20:28:09 PreslavLe	vesko[more_ole] da imash stimul :)
+Jun 23 20:28:12 valo	prosto naskoro si govorihme s Velin che vryzkata na tova dali imash zlaten medal ot IOI i tova dali sa te prieli v MIT e dosta golqma
+Jun 23 20:28:25 valo	imenno
+Jun 23 20:28:32 valo	vseki trqbva da ima stimul
+Jun 23 20:29:14 vesko[more_ole]	ne smqtam che tova e realistichno za men
+Jun 23 20:29:19 valo	lichniqt mi opit sochi che kachestvenite firmi i BG i v USA cenqt postijeniqta na IOI
+Jun 23 20:29:27 valo	zashto da ne e ?
+Jun 23 20:29:42 vesko[more_ole]	vseki trqbva da si ima celite suglasen sum
+Jun 23 20:29:46 PreslavLe	vesko[more_ole] shtom si podaval dokumenti, znachi ne e...
+Jun 23 20:30:02 vesko[more_ole]	no chovek da misli za zlatni medali bez da ima ideq kakvo e nivoto na IOI e po skoro obtimistichno
+Jun 23 20:30:17 vesko[more_ole]	PreslavLe az za drugo gi pusnah minalata godina
+Jun 23 20:30:27 vesko[more_ole]	pusnah gi da proverq dali RSI e tolkova kolkoto kazvat
+Jun 23 20:30:47 vesko[more_ole]	i otgovora beshe "da s RSI vzimat NAVSQKADE (i Harvard)" samo che ako si amerikanec
+Jun 23 20:31:21 valo	vesko[more_ole], t.e. ti smqtash che nqmash shans na IOI?
+Jun 23 20:31:27 PreslavLe	tova oficialen otgovor li beshe :)?
+Jun 23 20:32:07 vesko[more_ole]	PreslavLe kakvo imash predvid?
+Jun 23 20:32:23 vesko[more_ole]	ne valo prosto za men lichno podhoda ne e da imash celta
+Jun 23 20:32:27 PreslavLe	dali tova sa ti otgovrili oficialno ot universiteta :)
+Jun 23 20:32:28 vesko[more_ole]	ami da si davash maximuma nezavisimo ot celta
+Jun 23 20:32:37 vesko[more_ole]	ne vijdam razlika kakva e celta ako ti si davash max-a...
+Jun 23 20:32:41 vesko[more_ole]	PreslavLe ne est...
+Jun 23 20:32:47 PreslavLe	sheguvam se :)
+Jun 23 20:32:51 vesko[more_ole]	no PreslavLe, statiskiata pokazva che
+Jun 23 20:32:54 vesko[more_ole]	ot 80 choveka na RSI
+Jun 23 20:33:11 vesko[more_ole]	45-te amerikaneca gi prieha v Harvard/MIT i stanford
+Jun 23 20:33:25 vesko[more_ole]	(kam 10 ne kandidatstvaha zasthtoo sa po malki)
+Jun 23 20:33:31 vesko[more_ole]	i imashe i ot minalata godina
+Jun 23 20:33:34 vesko[more_ole]	w8 sq shte ti pokaja
+Jun 23 20:33:47 valo	celta e vinagi da se stremish kym max, no za da pravish tova trqbva vinagi da imash stimul
+Jun 23 20:33:55 valo	inache prosto ne se poluchava
+Jun 23 20:34:06 vesko[more_ole]	http://planetrickoid.comclub.org/admission
+Jun 23 20:34:10 vesko[more_ole]	PreslavLe vij cifrite nqma kakvo da govorim
+Jun 23 20:34:17 vesko[more_ole]	samo az i 1-2-ma kitaici ne sme prieti
+Jun 23 20:34:30 vesko[more_ole]	a povecheto na koito e otkazano v nqkoi universitet
+Jun 23 20:34:38 vesko[more_ole]	im e otkazano zashttoo na early action sa bili prieti
+Jun 23 20:34:44 vesko[more_ole]	a unitata go znaqt tova
+Jun 23 20:35:36 vesko[more_ole]	valo spored men problema v segashnata ni podgotovka e prosto v golqmata razlika na nivoto
+Jun 23 20:36:07 vesko[more_ole]	za tova ti izglejdam neseriozen... no na fona na presli i iskren, koito i da hvanesh shte izglejda kato che li nishto ne pravi
+Jun 23 20:36:19 vesko[more_ole]	tova ne me opravdava no naistina ponqkoga nestava
+Jun 23 20:36:29 vesko[more_ole]	neska se zanimavah s adckite prostotii no trqbva da se napravqt...
+Jun 23 20:36:46 vesko[more_ole]	a kolkoto do stimula
+Jun 23 20:37:03 vesko[more_ole]	smqtam che predvaritelnite smetki samo biha poprechili
+Jun 23 20:37:09 vesko[more_ole]	i sa pulna zaguba na vreme
+Jun 23 20:37:16 vesko[more_ole]	shte vidim kakvo shte stane... nqma kakvo da go mislq
+Jun 23 20:37:35 valo	to che shte vidim, shte vidim
+Jun 23 20:37:43 valo	vyprosyt e kakvo shte vidim
+Jun 23 20:38:09 valo	a kolkoto po-dobre e podgotven edin chovek
+Jun 23 20:38:20 valo	tolkova shansovete mu sa po-golemi za po-dobyr rezultat
+Jun 23 20:38:24 valo	tova e instinata
+Jun 23 20:38:41 *	rostislav (~rostislav@87.246.13.95) has joined #ioi2006
+Jun 23 20:38:47 valo	srebro na IOI ne se izkarva trudno
+Jun 23 20:39:00 valo	a zlatoto e samo edna stypka po-napred
+Jun 23 20:39:20 valo	edin edinstveta stypka, koqto trqbva da se napravi prez tezi dni koito imate da se podgotvite
+Jun 23 20:39:42 vesko[more_ole]	valo ne mislq che sega da govorim za medali e pravilna strategiq
+Jun 23 20:40:58 valo	dobre stiga prikazki
+Jun 23 20:41:05 valo	daite da vidim kakvo shte ni kaje PreslavLe 
+Jun 23 20:41:12 valo	kak vyrvqt neshtata pri teb?
+Jun 23 20:41:59 PreslavLe	rosti zdravei
+Jun 23 20:42:03 PreslavLe	kajete nestho
+Jun 23 20:42:17 vesko[more_ole]	az da pitam
+Jun 23 20:42:25 vesko[more_ole]	utre li beshe BaOI2 ili v nedelq?
+Jun 23 20:42:49 PreslavLe	ami dnes si zagubih dva chasa ot sutrinta inache pisah maxflow, i poslednata zadacha deto ne bqh napisal ot sistemi
+Jun 23 20:43:12 PreslavLe	chetoh si i staroto reshenie na twofive
+Jun 23 20:43:51 PreslavLe	vesko[more_ole] v nedelq shte go pravim
+Jun 23 20:44:08 PreslavLe	(pisah zadachite ot tema za maxflow)
+Jun 23 20:44:10 valo	ti beshe kazal che sys skiers imash problemi
+Jun 23 20:44:46 vesko[more_ole]	male... ti koga stigna do tam...
+Jun 23 20:44:49 valo	tam izmisli li neshto?
+Jun 23 20:45:16 PreslavLe	vesko[more_ole] nali ti kazah che sam gi reshaval, i samo si gi prenapisvam, zashtoto sam zatril sourcovete
+Jun 23 20:45:32 vesko[more_ole]	... tova obqsnqvq dosta neshta
+Jun 23 20:45:37 vesko[more_ole]	a chetesh li logovete?
+Jun 23 20:45:44 vesko[more_ole]	shtoto az s tqh primerno gubq min 2 chasa
+Jun 23 20:45:45 PreslavLe	prochetoh gi
+Jun 23 20:46:10 PreslavLe	valo: ne sam q mislil oshte no kato svarshim smqtam da go napravq
+Jun 23 20:46:31 vesko[more_ole]	PreslavLe imash li avtorskoto reshsnie?
+Jun 23 20:46:31 valo	aha, t.e. da q obsyjdame li?
+Jun 23 20:46:39 PreslavLe	inache ima veroqtnost i to ne malka nistho da ne izmislq
+Jun 23 20:46:40 vesko[more_ole]	az mislq che go imah nqkade
+Jun 23 20:46:47 PreslavLe	vesko[more_ole] nqmam go
+Jun 23 20:47:07 PreslavLe	no predpolagam che se reshava s dijkstra nali e v tazi tema
+Jun 23 20:47:22 vesko[more_ole]	mmne
+Jun 23 20:47:27 PreslavLe	valo: kakvo da obsajdame
+Jun 23 20:47:29 vesko[more_ole]	swetko q e reshaval
+Jun 23 20:47:37 vesko[more_ole]	i do kolkoto razbrah reshsnetio
+Jun 23 20:47:42 vesko[more_ole]	beshe purvo nqkvo topologichno
+Jun 23 20:47:45 vesko[more_ole]	posle nqkvi drugi raboti
+Jun 23 20:48:04 PreslavLe	vesko[more_ole] shtom e slojena v tazi tema ili se reshva s dijkstra ili ideqta mi za bfs(koeto e ekvivalentono) na topolichno moje da e vqrna
+Jun 23 20:48:40 PreslavLe	vesko[more_ole] topoligchnoto e qsno, no drugite raboti sa mi problema, no ne sam q mislil seriozno
+Jun 23 20:48:42 vesko[more_ole]	PreslavLe ne
+Jun 23 20:48:42 valo	PreslavLe: da obsydim reshenieto
+Jun 23 20:48:44 PreslavLe	valo: s dijksra li se reshava
+Jun 23 20:48:48 vesko[more_ole]	ideqta mislq che e naprechniq razrez
+Jun 23 20:48:49 PreslavLe	ok
+Jun 23 20:48:50 rostislav	re6awa6e se s namirane na nai dylyg pyt w DAG
+Jun 23 20:49:10 valo	:)
+Jun 23 20:49:10 PreslavLe	nai-dalaga pat?
+Jun 23 20:49:16 PreslavLe	zadachata ne e li druga?
+Jun 23 20:49:20 vesko[more_ole]	PreslavLe
+Jun 23 20:49:21 PreslavLe	t.e. kak se svejda do tova
+Jun 23 20:49:30 vesko[more_ole]	svali si knijkata s resheniq na polski
+Jun 23 20:49:34 valo	shte q obsyjdale znachi taka li?
+Jun 23 20:49:35 vesko[more_ole]	i vij zadacha ima 2 grafiki
+Jun 23 20:49:52 PreslavLe	valo: ami moje
+Jun 23 20:49:57 vesko[more_ole]	koito obqsnqvat dostsa neshta dori i nishto da ne razbirash ot polski
+Jun 23 20:50:08 PreslavLe	rostislav: i kato go namerq tozi nai-dalag pat kakvo go pravq?
+Jun 23 20:50:12 rostislav	ichernev,  da ne e bolen ? :)
+Jun 23 20:50:20 rostislav	PreslavLe, pe4ata6 go
+Jun 23 20:50:22 rostislav	:)
+Jun 23 20:50:25 valo	znachi az na taq zadacha napravih edno reshenie koeto e greshno no hvashta vsichki testove bez edin
+Jun 23 20:50:28 vesko[more_ole]	PreslavLe tova e otgovora
+Jun 23 20:50:43 vesko[more_ole]	ama PreslavLe, dag-a ti predstavlqva
+Jun 23 20:50:51 vesko[more_ole]	praznite oblaskite mejdu tochkite i rebrata
+Jun 23 20:51:18 valo	i reshenieto beshe max potok v graf-a do kolkoto pomnq i pole nqkakvi shashmi
+Jun 23 20:51:20 vesko[more_ole]	i vsqko rebro v originalniq ti e rebro v noviq graf
+Jun 23 20:51:24 vesko[more_ole]	zashtoto razdelq 2 oblsti
+Jun 23 20:51:25 PreslavLe	DAG ne e li Directed Acyclic Graph?
+Jun 23 20:51:33 vesko[more_ole]	valo... siguren li si???
+Jun 23 20:51:42 valo	no reshenieto e drugo
+Jun 23 20:51:46 vesko[more_ole]	che govorim za sushtata zadacha
+Jun 23 20:51:58 vesko[more_ole]	aaaa
+Jun 23 20:52:00 PreslavLe	vesko[more_ole] a ti?
+Jun 23 20:52:03 vesko[more_ole]	ne prochetoh 1 red ok ok
+Jun 23 20:52:11 vesko[more_ole]	PreslavLe siguren sam
+Jun 23 20:52:14 vesko[more_ole]	w8 malko
+Jun 23 20:53:59 vesko[more_ole]	PreslavLe vij si maila
+Jun 23 20:54:16 valo	ta znachi da. pravim graf po oblastite
+Jun 23 20:54:25 valo	i kato namerim nai-dylgiqt pyt v nego
+Jun 23 20:54:36 valo	toi ni dava neshto kato naprechnoto sechenie na grafa
+Jun 23 20:54:47 valo	t.e. tova koeto se tyrsi
+Jun 23 20:54:55 vesko[more_ole]	(nai golqmoto, takova deto minava prez nai mnogo oblasti -> tova koeto presicha nai mnogo rebra)
+Jun 23 20:55:04 valo	zashtoto tova za koeto se pita v zadachata e neshto takova
+Jun 23 20:55:14 valo	vse edno razsichame grafa na dve polovini
+Jun 23 20:55:19 valo	gorna i dolna polovina
+Jun 23 20:55:29 valo	i poluchavame nqkakvo sechenie
+Jun 23 20:55:55 valo	ot tova sechenie "styrchat" rebra i trqbva da namerim nai-golqmoto takova sechenie
+Jun 23 20:56:04 valo	t.e. tova ot koeto styrchat nai-mnogo rebra
+Jun 23 20:57:08 PreslavLe	kakvo e edna oblast?
+Jun 23 20:57:18 PreslavLe	zagradeno ot rebra?
+Jun 23 20:57:36 vesko[more_ole]	(az veche sam pas po tazi zadachi samo tova znaeh)
+Jun 23 20:57:41 valo	da
+Jun 23 20:58:04 valo	+ oblastitte ot dvate strani (ot tqh zapochvash i svyrshvash)
+Jun 23 20:58:16 valo	ot dvete strani na graf-a
+Jun 23 21:00:29 PreslavLe	a kak razbirame dali imame rebro ot A do B ili B do A?
+Jun 23 21:01:22 rostislav	ako oblast A e wlqwo ot oblast B A->B :)
+Jun 23 21:01:43 PreslavLe	:)
+Jun 23 21:01:48 rostislav	t.e. ima6 ob6ta pyteka na granicata si
+Jun 23 21:01:51 valo	predpolagam che preslav pita za tova kak definirame lqvo :)
+Jun 23 21:02:17 rostislav	valo, lqwo e lqwo :)
+Jun 23 21:02:41 valo	rostislav: zavisi v kakvo pole :-P
+Jun 23 21:02:46 rostislav	:))
+Jun 23 21:02:47 PreslavLe	rosti
+Jun 23 21:02:59 PreslavLe	tova go potigame s obhojdane po chasovnikovata strelka?
+Jun 23 21:03:34 valo	te tam nali bqha dadeni po posoka ot ediniq krai kym drugiq krai?
+Jun 23 21:03:49 PreslavLe	tova nqma znachenie mai
+Jun 23 21:04:05 PreslavLe	a ima :)
+Jun 23 21:04:17 valo	ooo shtom e dadeno 99% ima :)
+Jun 23 21:04:17 PreslavLe	trqbva da go napravish kato nivi i old map
+Jun 23 21:04:28 PreslavLe	da parcelirash ravninata na oblasti :)
+Jun 23 21:04:29 PreslavLe	uff
+Jun 23 21:04:33 PreslavLe	e gati zadachata
+Jun 23 21:04:45 valo	ne mislq che e chak tolkova slojno
+Jun 23 21:04:54 PreslavLe	sega ostava da pomislq zashto nai-dalgiq pat e otgovora, no tova mai ne e tolkova trudno da se dokaja
+Jun 23 21:05:03 PreslavLe	valo: slojno e da se setish!!!
+Jun 23 21:05:13 valo	e da
+Jun 23 21:05:19 valo	te polskite zadachi sa hitri
+Jun 23 21:05:24 PreslavLe	rostisval: zashto tova e v tema za dijkstra?
+Jun 23 21:05:43 PreslavLe	i valo pitam
+Jun 23 21:05:49 valo	to ne e samo diikstra v tazi tema
+Jun 23 21:06:05 valo	ima naprechen minimum (maksimum v sluchaq)
+Jun 23 21:06:11 PreslavLe	aham
+Jun 23 21:06:44 vesko[more_ole]	PreslavLe tova e v tema naprechen razrez ne dijikstra
+Jun 23 21:06:51 PreslavLe	e hubavo ako imam edna oblast?
+Jun 23 21:06:52 vesko[more_ole]	(reshaval sam debelak za tova mislq che e tam)
+Jun 23 21:07:03 PreslavLe	i otvanka li se schita?
+Jun 23 21:07:07 PreslavLe	za oblast
+Jun 23 21:07:14 PreslavLe	qsno otgovorih si
+Jun 23 21:07:36 valo	:)
+Jun 23 21:07:55 valo	btw, tuka mislq che mojesh da gi obhodish po opredelen nachin i te shte ti se razdelqt na oblasti
+Jun 23 21:08:10 PreslavLe	valo: moje da
+Jun 23 21:08:23 PreslavLe	kato na nivi i old map e obhojdaneto
+Jun 23 21:08:59 valo	ne znam kak e tam, no tuka si mislq che modificirano BFS shte svyrshi rabota
+Jun 23 21:09:25 valo	hmmm
+Jun 23 21:09:33 PreslavLe	hmm az si spomnqm che se praveshe tam s dfs i shte stane za BFS ne znam
+Jun 23 21:10:02 valo	vse edno shte izmislite neshto :)
+Jun 23 21:10:46 vesko[more_ole]	of ama i tazi li trqbva da q pishem...
+Jun 23 21:10:59 PreslavLe	vesko[more_ole] ima q v podgotovkata
+Jun 23 21:11:03 vesko[more_ole]	... az taz podgotovka nqma da q zavursha qvno nikoga...
+Jun 23 21:11:04 valo	dam
+Jun 23 21:11:18 vesko[more_ole]	takmo misleh che sa minali gadnite zadachi
+Jun 23 21:11:29 vesko[more_ole]	shtoto sq gledam idvat razni labiritni dijikstri i dp-ta
+Jun 23 21:11:33 vesko[more_ole]	a to imalo i nadolu..
+Jun 23 21:11:44 PreslavLe	vesko, vesko :)
+Jun 23 21:12:28 PreslavLe	a Light ot IOI 1999 kakvo naprechno ima?
+Jun 23 21:12:47 valo	kakva beshe tq?
+Jun 23 21:12:56 rostislav	ligh e dijkstra
+Jun 23 21:12:57 rostislav	:)
+Jun 23 21:13:54 PreslavLe	da znam
+Jun 23 21:14:07 PreslavLe	napisah q i pri neq nqma takiva izvrashteniq
+Jun 23 21:14:54 PreslavLe	tazi zadacha mi razbi prestavite za sveta :)
+Jun 23 21:14:57 valo	kakva beshe lights?
+Jun 23 21:15:18 PreslavLe	edna lesna dijksra deto samo trqbva da si opravish smqtaneto na rebrata
+Jun 23 21:15:58 PreslavLe	imali rezultati ot saztezanieto?
+Jun 23 21:16:02 PreslavLe	deto e bila skiers?
+Jun 23 21:16:15 valo	ima tam nqkyde
+Jun 23 21:16:18 valo	mi ok
+Jun 23 21:16:22 valo	drugi vyprosi?
+Jun 23 21:16:50 vesko[more_ole]	hahahahaa
+Jun 23 21:16:54 vesko[more_ole]	izviqnvaite samo da vi paste-na
+Jun 23 21:17:02 vesko[more_ole]	<VelinTzanov> Imah 40 na tazi zadacha.
+Jun 23 21:17:03 vesko[more_ole]	<VelinTzanov> 240 na systezanieto.
+Jun 23 21:17:06 vesko[more_ole]	<VelinTzanov> Dogodina pak imah 240 na Proletnia. :)
+Jun 23 21:17:11 vesko[more_ole]	<VelinTzanov> Sledvashtite dve godini nikoi ne moja da napravi tolkova mnogo na Proletnia... shtoto az davah zadachite. :)
+Jun 23 21:17:16 vesko[more_ole]	(offtopic:)
+Jun 23 21:17:24 valo	PreslavLe: ti napravi li pizza?
+Jun 23 21:17:29 valo	ot potocite?
+Jun 23 21:17:31 vesko[more_ole]	az nqmam vaprosi
+Jun 23 21:18:20 PreslavLe	ami mislq che da, no e hubavo da se chuqt i drugi idei, zashtoto moje da se optimizira oshte
+Jun 23 21:18:34 valo	PreslavLe: kolko pamet polzvash?
+Jun 23 21:18:53 PreslavLe	ami az ne si pazq sourca inache baq
+Jun 23 21:19:01 PreslavLe	t.e. nqkolko MG
+Jun 23 21:19:06 PreslavLe	MB
+Jun 23 21:19:19 valo	moje i KB da mi kajesh az shte si smetna ;-)
+Jun 23 21:19:28 PreslavLe	ne znam
+Jun 23 21:19:34 PreslavLe	no se poluchavat kam 10^5 varha
+Jun 23 21:19:39 valo	tova e mnogo syshtestveno na tazi zadacha
+Jun 23 21:19:45 PreslavLe	t.e. 5*10^5
+Jun 23 21:19:47 valo	trqbva da e pod 16MB
+Jun 23 21:19:55 PreslavLe	pod shte e
+Jun 23 21:20:00 PreslavLe	samo deto moje i hash da mi trqbva
+Jun 23 21:20:04 PreslavLe	ili pone sort
+Jun 23 21:20:17 valo	hmmm... trqbva i da e byrzo :)
+Jun 23 21:20:25 PreslavLe	ami s hash shte e
+Jun 23 21:20:31 valo	kak pravish potoka?
+Jun 23 21:20:36 valo	s kakyv algoritym
+Jun 23 21:20:41 PreslavLe	Hopcroft
+Jun 23 21:20:46 valo	t.e.?
+Jun 23 21:20:53 PreslavLe	t.e. sqrt(N)*(N+M)
+Jun 23 21:21:15 valo	kakyv e toq algoritym?
+Jun 23 21:21:26 vesko[more_ole]	?? i az ne sum go chuval
+Jun 23 21:21:31 PreslavLe	tova e samo za dvudelen graf
+Jun 23 21:21:43 vesko[more_ole]	q go obqsni nakratko
+Jun 23 21:21:43 PreslavLe	tolkova mu e slojnostta samo za dvudelen
+Jun 23 21:21:48 PreslavLe	inache e N^3
+Jun 23 21:21:55 vesko[more_ole]	da ne eonzi deto vseki pat digash potoka s stepen na 2-kata
+Jun 23 21:22:01 vesko[more_ole]	smisal umnojavash go po 2
+Jun 23 21:22:09 vesko[more_ole]	ave q obqsni nai dobre
+Jun 23 21:22:22 PreslavLe	ami pravish sashtoto kato Ford-Fukelson samo deto namirash vsichki narastvashti patishta s minimalna daljina s edno obhojdane
+Jun 23 21:22:41 valo	aha
+Jun 23 21:22:45 PreslavLe	i v dvudelen graf se dokazva che ima nai-mnogo sqrt(N) takiva patishta
+Jun 23 21:22:57 PreslavLe	t.e. s sqrt(N)*(N+M) se opravqsh
+Jun 23 21:23:02 PreslavLe	vmesto N*(N+M)
+Jun 23 21:23:08 valo	btw, mojesh da go testvash sreshtu DFS da vidim kak shte se predstavi
+Jun 23 21:23:17 valo	ama s optimizirano DFS
+Jun 23 21:23:26 PreslavLe	valo: ideqta e sashtata
+Jun 23 21:23:43 PreslavLe	prosto puskash edno BFS predvaritelno, koeto te zabavq malko, no ti garantira che nqma da se omajesh :)
+Jun 23 21:24:02 valo	ako go pravish s DFS ima edna dalavera
+Jun 23 21:24:11 valo	kato go pusnesh vednyj
+Jun 23 21:24:18 PreslavLe	valo: znam
+Jun 23 21:24:22 PreslavLe	i ne maham used
+Jun 23 21:24:25 valo	posle da ne si zanulqvash visited masiva a da go pusnesh 2-pyt
+Jun 23 21:24:31 valo	taka stava po-byrzo
+Jun 23 21:24:53 vesko[more_ole]	PreslavLe tova ne se li kazva diniz?
+Jun 23 21:24:55 valo	osven tova DFS-to si e ot tuka shtoto rebrata sa s kapacitet 1
+Jun 23 21:24:55 PreslavLe	valo: tova e sashtoto moje da e 2-pati po-bavno
+Jun 23 21:25:01 vesko[more_ole]	nali v infoman ichernev obqsnqva edno takova
+Jun 23 21:25:01 PreslavLe	vesko[more_ole] -da
+Jun 23 21:25:15 vesko[more_ole]	PreslavLe a kakva e ralno razlikata s tova deto i kazvash?
+Jun 23 21:25:16 PreslavLe	Hopcorft e algoritama, pak dinitz sse vodi nqkva implementaciq
+Jun 23 21:25:19 PreslavLe	ne sam siguren
+Jun 23 21:25:22 vesko[more_ole]	aha
+Jun 23 21:25:23 vesko[more_ole]	k
+Jun 23 21:25:26 valo	ok
+Jun 23 21:25:29 valo	ami dobre
+Jun 23 21:25:37 valo	tolkova za dnes
+Jun 23 21:25:40 PreslavLe	valo
+Jun 23 21:25:47 PreslavLe	a pizza kak se optimizira nai-dobre pametta?
+Jun 23 21:25:57 PreslavLe	nali mahash tezi varhove deto imat poveche ot N vazmojnostti
+Jun 23 21:26:10 PreslavLe	i tezi koito imat edna nespodelena s drug
+Jun 23 21:26:18 PreslavLe	i taka imash nai-mnogo 500 000 varha?
+Jun 23 21:27:11 PreslavLe	i kak indentificirate varhovete s Hash tablica?
+Jun 23 21:27:52 valo	moment che govorq po tel
+Jun 23 21:28:07 PreslavLe	tc tc, to mnogo moderno stana :)
+Jun 23 21:28:26 valo	;)
+Jun 23 21:30:54 valo	ufff
+Jun 23 21:31:07 valo	shefa mi e i shte ima da govorim dosta da ti kaja :)
+Jun 23 21:31:21 vesko[more_ole]	valo nqma da izbqgame:)
+Jun 23 21:31:50 PreslavLe	pozdravi go ot nas :)
+Jun 23 21:31:52 PreslavLe	sheguvam se
+Jun 23 21:32:03 rostislav	valo, pak ne mu obry6ta6 dostaty4o wnimanie ? :))))))))
+Jun 23 21:32:31 rostislav	PreslavLe, mislq 4e ti trqbwat 2000 wyrha
+Jun 23 21:32:39 rostislav	t.e. 6te ima6 takiwa wyrhowe deto nqma da ima6 rebra
+Jun 23 21:32:41 rostislav	ili ne6to takowa
+Jun 23 21:33:06 rostislav	no izob6to ne go pomnq, samo pomnq 4e i az imah tozi problem i kato izpozlwa6 ne6to ot uslowieto ili ot swoistwata polu4awa6e mnogo malko rebra
+Jun 23 21:33:11 rostislav	t.e. wyrwowe
+Jun 23 21:33:18 rostislav	wyrhowe
+Jun 23 21:34:50 valo	ok
+Jun 23 21:34:52 valo	gotovo
+Jun 23 21:34:55 PreslavLe	primerno ako imam 1000 varha
+Jun 23 21:35:09 valo	az obache shte hodq da ucha che sym do nikyde
+Jun 23 21:35:15 PreslavLe	i vseki dva imat po 999 vajmozni kombinacii
+Jun 23 21:35:21 valo	taka che leka ot mene i pr reshavane :(
+Jun 23 21:35:23 valo	:0
+Jun 23 21:35:27 valo	:)
+Jun 23 21:35:28 PreslavLe	t.e. ima 500 dvoiki
+Jun 23 21:35:28 valo	:-D
+Jun 23 21:35:33 PreslavLe	s po 999 obshti varha
+Jun 23 21:35:38 PreslavLe	kak go optimizirash tova?
+Jun 23 21:35:42 PreslavLe	valo: mersi
+Jun 23 21:35:43 PreslavLe	leka

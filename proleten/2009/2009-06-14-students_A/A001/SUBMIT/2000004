@@ -1,0 +1,66 @@
+#include<cstdio>
+#include<vector>
+#include<algorithm>
+using namespace std;
+vector<int> g[51];
+int ng, n, br;
+int color[51], ce, price, rdy[31];
+void readg() {
+  int i,j;
+  int m;
+  scanf("%d %d %d %d", &n, &m, &ce, &price);
+  for(j=0;j<n;j++) {
+    scanf("%d", &color[j]);
+  }
+  for(j=0;j<m;j++) {
+    int k,k1;
+    scanf("%d%d", &k, &k1);
+    g[k].push_back(k1);
+    g[k1].push_back(k);
+  }
+}
+void dfs (int i) {
+  color[i]=ce;
+  int j;
+  for(j=0;j<g[i].size();j++) {
+    if(color[g[i][j]]!=ce)
+    {
+      dfs(g[i][j]);
+    }
+  }
+}
+int go () {
+  int i=0;
+  int gr1=0, gr=0;
+  sort(rdy, rdy+ng);
+  for(i=ng-1;i>=0;i--) {
+    if(gr1>gr) {
+      gr+=rdy[i];
+    }
+    else {
+      gr1+=rdy[i];
+    }
+  }
+  return max(gr, gr1);
+}
+void solve () {
+  int i,j;
+  int ans=0;
+  scanf("%d", &ng);
+  for(i=0;i<ng;i++) {
+    readg();
+    for(j=0;j<n;j++) {
+      if(color[j]!=ce) {
+        dfs(j);
+        br++;
+      }
+    }
+    rdy[i]=(br*price);
+    br=0;
+  }
+  printf("%d\n", go());
+}
+main () {
+  solve();
+  return 0;
+}

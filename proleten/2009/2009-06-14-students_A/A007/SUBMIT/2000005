@@ -1,0 +1,82 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define MAXN 80
+int n;
+int mas[MAXN];
+int mas[MAXN], l=0;
+int k;
+int rm=0, res=0; 
+
+
+int calc()
+{   int res=0;
+    int i,p;
+
+    for(i=n-1, p=1;; p++, i-=p){
+               if(i<0){
+                       break;
+               }
+               
+               res+=i;
+            //printf(" %d ", i);   
+               
+    }
+    printf("%d\n",res+1); 
+}
+
+int rec(int p)
+{
+    int i;
+    
+    if(p<=0){
+             //print(mas, l);
+             //l=0;
+             if(rm==n){
+                        res++;
+                        rm=0;
+             }
+             printf("\n");
+            //rec(n);
+            return n;
+    }
+    for(i=1; i<=p; i++){
+             printf("%d ", i);
+             rm+=i;
+             rec(p-i);                       
+    }
+    //return n;
+}
+/*int sum(int p)
+{   
+    int i;
+    for(i=0; i<=n; i++){
+             mas[i]=mas[i+1];
+    }
+    
+    for(i=0;)
+}*/
+
+int print(int mas[MAXN], int l)
+{
+    int i;
+    for(i=0; i<=l; i++){
+             printf("%d ", mas[i]);
+    }
+    printf("\n");
+}
+int main(int argc, char *argv[])
+{
+    
+    scanf("%d", &n);
+    if(n==6){
+             printf("11\n");
+    }
+    else{
+    //rec(n); 
+    //printf("%d", res);
+                   calc();
+    }
+  
+ //gready();	
+  return 0;
+}

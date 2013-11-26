@@ -1,0 +1,80 @@
+#include <iostream>
+using namespace std;
+
+const int max_h = (1<<18);
+
+// Heap
+int h[max_h], n, m;
+int w[max_h], p[max_h];
+
+bool ls(int i, int j){
+    return w[i] < w[j];   
+}
+
+
+void fix_up(int i){
+    int j = i/2;
+    while(i > 1 && ls(h[i],h[j])){
+        swap(h[i], h[j]);
+        i = j;
+        j /= 2;    
+    }    
+}
+
+void fix_dn(int i){
+    int j = i*2;
+    while(j <= h[0]){
+        if(j < h[0] && ls(h[j+1], h[j])) j++;
+        if(ls(h[i], h[j])) break;
+        swap(h[i], h[j]);
+        i = j;
+        j *= 2;    
+    }    
+}
+
+void h_del(){
+    if(!h[0]) return;
+    swap(h[1], h[h[0]]);
+    h[0]--;
+    fix_dn(1);
+}
+
+void h_ins(int i){
+    h[++h[0]] = i;
+    fix_up(h[0]);    
+}
+
+int main(){
+    int i, x, y, r = 0;
+    scanf("%d", &n);
+    for(i = 0; i < n; i++){
+        scanf("%d", w + i);
+        h_ins(i);
+        p[i] = i;    
+    }
+    
+    m = n;
+    while(h[0] > 1){
+        // get the first two
+        x = h[1]; h_del();
+        y = h[1]; h_del();
+        p[x] = p[y] = p[m] = m;
+        p[m] = m;
+        w[m] = w[x] + w[y];
+        h_ins(n);
+        m++;
+    }
+    
+    for(i = 0; i < n; i++){
+        x = i;
+        r += w[i];
+        while(p[x] != x){
+            r += w[i];
+            x = p[x];
+        }    
+    }
+    
+    cout << r << endl;
+    
+    return 0;
+}

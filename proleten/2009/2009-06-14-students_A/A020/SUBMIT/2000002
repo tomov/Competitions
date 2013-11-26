@@ -1,0 +1,120 @@
+/*
+TASK: flatten
+LANG: C++
+*/
+#include <iostream>
+#include <time.h>
+using namespace std;
+int N,K;
+int p[1048576];
+unsigned int tree[2097152];
+unsigned int tree2[2097152];
+unsigned long long sum[1048576];
+pair<int,unsigned long long> pr[1048576];
+int tsize=1048576;
+long long tp;
+long long minp=-1;
+int stp;
+clock_t start;
+void insert(int p,unsigned int v)
+{
+     p+=tsize-1;
+     while(p>0)
+     {
+               tree[p]=max(tree[p],v);
+               tree2[p]=min(tree2[p],v);
+               p/=2;
+     }        
+}
+
+unsigned long long query(int f,int t)
+{
+    f+=tsize-1;
+    t+=tsize-1;
+    unsigned int tmax=0;
+    while(f<=t)
+    {
+ 		if(f%2==1) {tmax=max(tmax,tree[f]);f++;}              
+ 		if(t%2==0) {tmax=max(tmax,tree[t]);t--;}
+ 		f/=2;
+ 		t/=2;
+    }
+    return tmax;
+}
+unsigned long long query2(int f,int t)
+{
+    f+=tsize-1;
+    t+=tsize-1;
+    unsigned int tmin=2000000000;
+    while(f<=t)
+    {
+ 		if(f%2==1) {tmin=min(tmin,tree2[f]);f++;}              
+ 		if(t%2==0) {tmin=min(tmin,tree2[t]);t--;}
+ 		f/=2;
+ 		t/=2;
+    }
+    return tmin;
+}
+bool cmp(const pair<int,unsigned long long> &A,const pair<int,unsigned long long> &B)
+{
+	if(A.second==B.second) return A.first<B.first;
+	return A.second<B.second;
+}
+
+int main()
+{
+	start=clock();
+	memset(tree2,255,2097152*4);
+	
+    scanf("%d %d",&N,&K);
+    for(int i=1;i<=N;i++)
+    {
+            scanf("%d",&p[i]);
+            sum[i]=sum[i-1]+p[i];
+            insert(i,p[i]);
+    }
+    
+    unsigned long long mins=-1;
+    int mini=1;
+    
+    for(int i=1;i<=N-K+1;i++)
+    {
+		unsigned long long t=min( query(i,i+K-1)*(unsigned long long)K-(sum[i+K-1]-sum[i-1]) , sum[i+K-1]-sum[i-1] - query2(i,i+K-1)*(unsigned long long)K );
+		if(t<mins) {mins=t;mini=i;}
+//		cout<<t<<" ";
+		pr[i]=make_pair(i,t);
+	}
+	sort(pr+1,pr+N-K+2,cmp);
+//	   for(int i=1;i<=N-K+1;i++)
+//    		cout<<pr[i].first<<" "<<pr[i].second<<endl;
+
+	stp=1;
+    for(int r=1;r<=N-K+1;r++)
+    {
+		int i=pr[r].first;
+		
+		    double avg = (double) (sum[i+K-1]-sum[i-1]) / (double)K;
+            if(avg-(double)((int)avg)>=0.5) avg+=1.0;
+            int avr=(int)avg;
+            tp=0;
+            for(int j=0;j<K;j++)
+                 tp+=abs(p[i+j]-avr);           
+            if(tp<minp || minp==-1)
+            {
+                       minp=tp;
+                       stp=i;
+            }       
+            
+          if((double)(clock()-start)/(double)CLOCKS_PER_SEC >1.1)
+          {
+				
+    			cout<<minp<<endl<<stp<<endl;
+    //			cout<<(double)(clock()-start)/(double)CLOCKS_PER_SEC;
+
+    			return 0;
+		   }
+    }
+    
+    cout<<minp<<endl<<stp<<endl;
+  //  cout<<(double)(clock()-start)/(double)CLOCKS_PER_SEC;
+}

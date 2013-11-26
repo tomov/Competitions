@@ -1,0 +1,7 @@
+-lwinmm -lgdi32
+
+
+
+
+
+...otherwise gets linker errors

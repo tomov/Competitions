@@ -1,0 +1,12 @@
+pointers
+
+  addresses; * - two meanings; int ****b
+
+char* - funcs, read mnogo words
+memset, memcpy, strcpy i pr laina s pametta
+
+
+freopen
+scanf(" \n")
+
+tc - doubles, ints etc (misof)

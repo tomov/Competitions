@@ -1,0 +1,13 @@
+static inline ull adv(ull c, int a, int b, int d)
+{
+    if (c > 0xC00000000000000ULL)
+    {
+        ull high = a * (c >> 32);
+        ull low = a * (c & 0xFFFFFFFFULL);
+
+        low += (high % d) << 32;
+        return ((high / d) << 32) + (low / d) + b;
+    }
+    else
+        return c * a / d + b;
+}

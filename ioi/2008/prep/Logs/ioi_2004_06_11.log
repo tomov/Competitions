@@ -1,0 +1,738 @@
+
+Session Start: Thu Jun 10 20:06:14 2004
+Session Ident: #velin_ioi
+* Now talking in #velin_ioi
+* irc.techno-link.com sets mode: +nt
+* Prince_of_Dawn has joined #velin_ioi
+* rangel__ has joined #velin_ioi
+* sssa88 has joined #velin_ioi
+* Swetko has joined #velin_ioi
+* Logging #velin_ioi to 'logs\ioi_2004_06_11.log'
+<VelinTzanov> Zdrasti banda :)
+<Prince_of_Dawn> hau
+<VelinTzanov> Podgotovkata na nacionalnia otbor e samo za nacionalnia otbor.
+<VelinTzanov> Koi dovede slushalkite? :)
+<sssa88> Veline, sluchajno da znaesh che na "crazy" se hvashtat 100 tichki s 7 reda reshenie?
+<sssa88> ne sym az
+* VelinTzanov sets mode: +ooo Prince_of_Dawn rangel__ sssa88
+* VelinTzanov sets mode: +o Swetko
+<Swetko> kakvo e
+<sssa88> ami neshto ot sorta:
+<VelinTzanov> Hehe... ne e izklucheno. No se symniavam, che niakoi moje da se seti na miasto.
+<VelinTzanov> Vlado, ako niakoi go izmisli tova reshenie na systezanieto to toi si zaslujava 100-te tochki. ;)
+<sssa88> ako x+1 i y ne e, namirash naj-malkiq delitel na y
+<VelinTzanov> Moje bi i IOIwari ima takova reshenie. :)
+<sssa88> ami ne znam dali go izmislil ili prosto e buhnal pyrvoto greedy koeto mu e doshlo na um
+<VelinTzanov> Ne te razbrahj za x+1 i y.
+<sssa88> ako x+1 e porsto a y ne e
+<sssa88> syshtoto za y+1 i x
+<VelinTzanov> E, tova e niakakyv chasten sluchai.
+<VelinTzanov> A v drugite sluchai? :)
+<sssa88> ako nikoe ot gornite dve
+<VelinTzanov> Nai-tejkite testove imat dylbichina 17 hoda, i v pyrvite 3 ima samo 1 veren izmejdu 258 naprimer... i e absolutno neocheviden.
+<sssa88> samo da pogledna che zabravih kak beshe
+<VelinTzanov> Ne viarvam da ima prosto reshenie. No ne go izkluchvam.
+<sssa88> ako x ne e prosto pyrviq delitel na x da kazem q, za kojto q+1 ne e prosto
+<sssa88> i sysshtoto za y v sluchaj che x e prosto
+<sssa88> ili vsichkite mu deliteli plus edno sa prosti
+<sssa88> az nqmam kak da q testvam ama user22 ima 100 tochki na taq zadacha i tova e reshenieto mu
+<Prince_of_Dawn> ne sam az ;)
+<Prince_of_Dawn> towa e sredkow
+<Swetko> testvai ia srestu tvoita
+<Prince_of_Dawn> sredkow
+<VelinTzanov> Sredkov ima 46 na neia.
+<Prince_of_Dawn> znachi gubq basa
+<sssa88> ne e sredkov - edin ot montana deto samo na neq ima tochki - po-tochno 100 tochki
+<VelinTzanov> Mnogo interesno...
+<VelinTzanov> Tova koeto ti mi kaza obache ne mi zvuchi mnogo prosto.
+<sssa88> kato e precomputeval v edin masiv koi chisla sa prosti i koi ne do 500
+<VelinTzanov> :) Nameril e kakvo da precompute-ne... :)
+<VelinTzanov> Hubavo de - shtom e nameril neshto za 100 - da sa mu chestiti. :)  Ama vie ne se setihte, nali? :)
+<VelinTzanov> Tozi moje da e niakakyv chalnat matematik s fenomenalen profesorski um... :)
+<sssa88> moze
+<Swetko> abe toz chovek ima li cikul
+<sssa88> samo za delitete da gi nameri
+<Prince_of_Dawn> az sam za boi che ne sam se setil da si prekonputna delitelite
+<sssa88> delitelite
+<VelinTzanov> OK
+<VelinTzanov> Borisov, ti domashno imash li?
+<Swetko> ami vinagi kato kashe setnum pishe halt
+<sssa88> ima tam edno "halt" na pascal deto ne go znam kakvo pravishe ama maj vryshta izpylnenieto na programata v nachaloto nali?
+<Swetko> taka li 
+<Prince_of_Dawn> mi wchetra ot uchilishte ti pratih dwarfs i rods
+<Swetko> az si misleh che e kato exit(0)
+<Prince_of_Dawn> pak sega ti pratih coins
+<Swetko> aha stom vrasta dobre
+<sssa88> nqma logika ako e exit(0) da mu e rabotilo
+<VelinTzanov> Borisov, za dneshnoto domashno pitam. Drugoto go poluchih.
+<VelinTzanov> Moje da e sbyrkan neshto modula be... :)
+<Prince_of_Dawn> ma ne uspqh wchera da opravq reditsite
+<sssa88> inache kakvo pravi "halt" ne znam
+<VelinTzanov> Ia chakaite da ia vidia tazi rabota... :)
+<VelinTzanov> Znaete li che modula mai e bugav v tova otnoshenie... :):):):):):):)
+<Swetko> halt pravi (pone v Turbo pascal) slednoto: stops program execution and returns to the OS
+<rangel__> moqta ne raboti sreshtu sobstveniq mi modul na zhurito :-)
+<VelinTzanov> Hmm... ne be - ne e bugav.
+<VelinTzanov> Shte go vidia az tozi user 22...
+<VelinTzanov> Tova na Pascal li?
+<Swetko> da
+<sssa88> hack-nal e sistemata toi :)
+<VelinTzanov> Moje Ceco Bogdanov da e prevel modula greshno... :)
+<Swetko> ste probvam na freepascal
+<VelinTzanov> Napishete syshtata programa na C i vijte dali raboti. :)
+<VelinTzanov> Swetko, kaji ti kakvo pravi vchera?
+* Disconnected
+Session Close: Thu Jun 10 20:23:13 2004
+
+Session Start: Thu Jun 10 20:25:16 2004
+Session Ident: #velin_ioi
+* Now talking in #velin_ioi
+<VelinTzanov> Zdrasti pak, banda.
+<VelinTzanov> Drop-na.
+* rangel__ sets mode: +o VelinTzanov
+<Prince_of_Dawn> [06:15] <Prince_of_Dawn> Opa vqh prigotwil pismoto s coins ma sam zabravil da go pusna
+<Prince_of_Dawn> [06:16] *** Quits: VelinTzanov (VelinTzano@ACC45B54.ipt.aol.com) (Ping timeout: 180 seconds)
+<Prince_of_Dawn> [06:16] <Swetko> var q1:integer;
+<Prince_of_Dawn> [06:16] <Swetko> begin
+<Prince_of_Dawn> [06:16] <Swetko>   for q1:=1 to 10 do write(q1,' ');
+<Prince_of_Dawn> [06:16] <Swetko>   writeln;
+<Prince_of_Dawn> [06:16] <Swetko>   halt;
+<Prince_of_Dawn> [06:17] <Swetko> end.
+<Prince_of_Dawn> [06:17] <Swetko> tova pechata samo 1 red
+<Prince_of_Dawn> [06:17] <Swetko> na freepascal
+<sssa88> znachi moze bi ne e reshenie za 100 ami bug v sistemata za 100 :)
+<Swetko> mai da
+<Swetko> ste go testvam s modula az
+<VelinTzanov> Shte pisha na Ceco da go vidi.
+<Swetko> taka e po dobre mai
+<VelinTzanov> Swetko, pitah ti kakvo pravi vchera, ama sigurno ne si go poluchil (shtoto drop-na)
+<Swetko> ami napisah romeoi julieta
+<Swetko> opravih hexa
+<Swetko> i napisah za 90 HILL ot edno kontrolno
+<VelinTzanov> hmm.. nali znaesh che sa greshni testovete?
+<VelinTzanov> Ima 2 ili 3 greshni testa.
+<Swetko> na 1 test moite 2-te programi izkarvat edno i susto s jurito a tvoita na Cankov i borisov izkarvat po dobro
+<VelinTzanov> T.e. s greshen out.
+<Swetko> 3 aa
+<VelinTzanov> Na tia testove izkarahme celia pyt i naistina beshe validen.
+<VelinTzanov> OK
+<VelinTzanov> Vlado, ti?
+<sssa88> domshnototo, hexa i opravqh lab kato za 100 - btw dali moze da mi pratish checker za neq?
+<VelinTzanov> Niama li publikuvan na Infoman?!
+<Swetko> abe ste ti raboti 
+<VelinTzanov> Sega ti go prashtam.
+<sssa88> maj ne
+<VelinTzanov> OK
+<VelinTzanov> Rangel?
+<rangel__> imah problemi s podkarvaneto na redicite (i vse oshte imam)
+<rangel__> i polovinata vecher sym se opitval da podkaram kompilator pod windows, kojto da hvashta bibliotekata, no ne uspqh
+<VelinTzanov> Az ne znam dali ne ia prenapisvah tazi biblioteka i az...
+<VelinTzanov> Triabva da vidia kakvo e polojenieto.
+<rangel__> i sled tova veche bqh prekaleno zaspal da si debug-na reshenieto.
+<VelinTzanov> Hmm... az mai sym ia podkaral.
+<VelinTzanov> OK
+<VelinTzanov> Borisov, kak mina klasnoto?
+<Prince_of_Dawn> lainqno
+<Prince_of_Dawn> warnah se w 5
+<Prince_of_Dawn> i si opravih hexa i napisah coins i zad2
+<Prince_of_Dawn> obache zad2 ne sam q podkaral
+<Prince_of_Dawn> ne moga da izbera prawilno edna razepka
+<Prince_of_Dawn> ma pisah do 12:30
+<Prince_of_Dawn> pak dnes pak nqma da moga da reshawam mnogo poneje imam kontrolno po Himiq na razdel na koito ne sam chel urok
+<Swetko> koi chas ti e
+<Swetko> az na uchiliste ucha
+<Prince_of_Dawn> ot posleden
+<Swetko> dneska ste me izpitvat po biologia i ne sum chel
+<Swetko> a puk imam samo1 chas da ucha
+<Prince_of_Dawn> moje zaedno da si teglim kurshuma
+<VelinTzanov> :)
+<VelinTzanov> Zabavliavate se gledam... :)
+<Swetko> ama az ste si naucha v chasa po matemaika
+<Prince_of_Dawn> aide po sashtestwo
+<VelinTzanov> Aide
+<VelinTzanov> Vyprosi po vcherashnia material?
+<sssa88> checke-ra tochkite li kazva
+<VelinTzanov> Da
+<Prince_of_Dawn> po materqla ne.
+<VelinTzanov> Ako niamate vyprosi kajete che niamate. :)
+<VelinTzanov> Drugi vyprosi?
+<rangel__> ne
+<Prince_of_Dawn> s realizatsiqta ima problemi ma sami trqbwa da gi reshim
+<Swetko> ne
+<sssa88> ne
+<VelinTzanov> Ako e neshto po-fundamentalno kaji.
+<VelinTzanov> Ako prosto e bugavo sam shte triabva. :)
+<Prince_of_Dawn> shte mu mislq
+<VelinTzanov> Taka kato gledam leko ste se zadrystili s domashnoto (ochakvano), zatova dneska po-lekichko: index-ni dyrveta.
+<VelinTzanov> Vsichki li znaete kakvo sa?
+<Swetko> da
+<sssa88> da
+<rangel__> da
+<Prince_of_Dawn> da
+<VelinTzanov> Taka. Sega predpolagam osyznavate che tuk niama da pravim prosto index-ni dyrveta. :)
+<VelinTzanov> Shte pravim generalizaciiki.
+<Swetko> dobre
+<VelinTzanov> No predi tova, kratko obiasnenie vyrhu index-nite dyrveta:
+<VelinTzanov> Imame slednata struktura:
+<VelinTzanov> Pylno dvoichno dyrvo.
+<VelinTzanov> Na vyrha (ili korena ako shtete) imame kletka, koiato otgovaria za celia interval.
+<VelinTzanov> Tia ima dve deca, vsiako ot koito otgovaria za polovin interval.
+<VelinTzanov> Vsiako ot iah ima po dve deca, koito otgovariat za polovinata ot tehnite intervali i t.n...
+<Swetko> indeksnite dyrveta sa dyrveta na koito vseki vrah otgovaria za dadena oblast i ima byrz dostyp do decata i roditelia mu kato vsiako dete otgovaria za oblast koiato e podmnshestvo na oblastta na roditelia
+<Swetko> a tezi dvoichni dyrveta sa prosto chasten sluchai 
+<VelinTzanov> Swetko poluchava Otlichen 6. :)
+<Swetko> nali pravim generalizacii
+<VelinTzanov> Taka e.
+<VelinTzanov> No zapochvame s konkreten primer, za da e iasno.
+<Swetko> ami ti hem kazvash generalizacii i hem davash chastni sluchai
+<VelinTzanov> Da ne se okaje che niakoi tuk si mislel che narichame Red-Black dyrvetata index-ni dyrveta... :)
+<Prince_of_Dawn> swetko shte stane general ;)
+<VelinTzanov> Chakai sega - otivam kym generalizaciite. No pytiom minavame prez chastni sluchai i primeri. :)
+<VelinTzanov> Kogato reshavame zadachata s index-no dyrvo imame dve fazi:
+<VelinTzanov> 1) Da svedem zadachata do po-chist problem.
+<VelinTzanov> 2) Da atakuvame tozi problem s index-no dyrvo.
+<VelinTzanov> Primeryt za dnes ni e zadacha Round ot poslednoto systezanie.
+<VelinTzanov> Sama po sebe si zadachata ne se reshava s index-no dyrvo.
+<VelinTzanov> Zadachata si se pravi s dinamichno optimirane.
+<VelinTzanov> Problemyt e che to e N^3.
+<VelinTzanov> Veche stana duma che moje da se podobri na N^2 s malko razhishtavane na pamet, no tova ne e viarno za vsiaka zadacha.
+<VelinTzanov> Zatova hvashtame edna chast ot dinamichnoto i ia formulirame kato po-chist problem.
+<VelinTzanov> A imenno - da mojem da dobaviame elementi v mnojestvo (elementite se izbirat ot dadeni vyzmojnosti, otnositelno malko na broi) i da mojem da pitame kolko elementi ot daden interval imame v mnojestvoto.
+<VelinTzanov> Tozi problem veche se atakuva s index-no dyrvo, za da osigurim slojnost O(LogN) i na dvete operacii.
+<VelinTzanov> Dinamichnoto N^3 go znaete, nali?
+<Prince_of_Dawn> da
+<sssa88> da
+<rangel__> mislq che izmislih edno ej sega
+<VelinTzanov> Edno kakvo?
+<rangel__> ami dinamichno s N^3 :-)
+<VelinTzanov> :) OK
+<VelinTzanov> A vijdash li kak prilagame index-no dyrvo za da go napravim N^2*LogN?
+<rangel__> ami az pyrvo za indeksno dyrvo se setih :-) (oshte na systezanieto)
+<VelinTzanov> :)
+<VelinTzanov> Drugite?
+<Prince_of_Dawn> da
+<sssa88> da
+<Swetko> ami ne vse oste
+<Swetko> ei sega ste vidia
+<Swetko> vsastnost veche vidiah
+<VelinTzanov> OK - zadachkata e za domashno.
+<Swetko> taman 2 reshenia
+<VelinTzanov> Koito ima 100 na systezanieto moje da ia predade.
+<VelinTzanov> Bez da ia prenapisva imam predvid.
+<Prince_of_Dawn> na sastezanieto imam 100
+<Swetko> a koito ima 100 s N^2 :)
+<VelinTzanov> Tezi sys 100 na systezanieto moje vmesto neia da napishat Circle ot minalogodishnia proleten turnir.
+<Prince_of_Dawn> ma sam q pisal s rekursivno dinamichno
+* Prince_of_Dawn has quit IRC (irc.mnet.bg irc.lirex.com)
+* Swetko has quit IRC (irc.mnet.bg irc.lirex.com)
+* rangel__ has quit IRC (irc.mnet.bg irc.lirex.com)
+* Swetko has joined #velin_ioi
+* rangel__ has joined #velin_ioi
+* Prince_of_Dawn has joined #velin_ioi
+* irc.interbgc.com sets mode: +ooo Swetko rangel__ Prince_of_Dawn
+<VelinTzanov> Neshto mai se precaka IRC mrejata za malko... :)
+<Prince_of_Dawn> ta trqbwa li da q pisha interatiwno
+<VelinTzanov> Kakvo rekursivno dinamichno be Borisov? N^2 li si pisal?
+<Prince_of_Dawn> ? kolko losho e da pishesh dinamichni zadachi s rekursiq
+<VelinTzanov> Zavisi.
+<VelinTzanov> Poniakoga e po-dobre s rekursia.
+<VelinTzanov> Az na Crazynum imam rekursia v avtorovoto.
+<VelinTzanov> Zashtoto taka ne smiatam izlishnite stoinosti.
+<Swetko> ama ne vnagi
+<Prince_of_Dawn> ne prosto dinamichnoto mi palni tablitsata s rekursiq i polzwam i index tree
+<Swetko> ami to az pravia DFS 
+<VelinTzanov> No kato cialo ne e hubavo, edno shtoto e po-bavno, drugo shtoto moje da te izdyni stack-a.
+<Swetko> kakvo tolkova
+<Swetko> na men i prez um ne mi mina da pravi iterativno
+<VelinTzanov> Rekursiata ne e zabraneno neshto... spokoino se hvashtat 100-tina tochki s neia.
+<VelinTzanov> No triabva da se vnimava da ne se napravi niakoi gaf.
+<Prince_of_Dawn> ako mi ostane wreme shte pisha interatiwno
+<VelinTzanov> Az naprimer na Drain na NOI 2002, 1-vi den taka zagubih 40 tochki shtoto pisah rekursia i biah zabravil da set-vam promenlivata deto kazva che neshto sym go smetnal veche. :)
+<Prince_of_Dawn> obache na sastezanie po-lesno se seshtash za interatiwnoto
+<VelinTzanov> Borisov, az ne razbrah ti N^2 li si pisal ili N^2*LogN?
+<VelinTzanov> Imash li index-no dyrvo?
+<Prince_of_Dawn> wtoroto
+<Prince_of_Dawn> da
+<VelinTzanov> OK
+<VelinTzanov> Niama problem togava. Imash nenapisano domashno - pravi nego, nedei da prenapisvash resheni zadachi.
+<Swetko> to naistina typo bilo s n*n*logn
+<VelinTzanov> :)
+<VelinTzanov> Aham...
+<Swetko> puk moito n*n*n e dori po sloshno
+<VelinTzanov> Taka - na Circle ideiata e syshtata - svejdame zadachata do po-fundamentalen problem i posle ia praskame s index-noto dyrvo.
+<VelinTzanov> Koi ne e reshaval Circle?
+<Swetko> kolko zadachi s indeksnidyrveta znam...
+<VelinTzanov> Da, Swetko, adski mnogo sa. Osobeno na USACO pochti vinagi davat.
+<rangel__> az sym q reshaval, no shte trqbva da q pisha nanovo che sym si zatril koda
+<Swetko> te puk da ne vidiat nesto:)
+<Prince_of_Dawn> problema e che weche gi dawat w oringe;)
+<VelinTzanov> Hahahaaa... :)
+<Prince_of_Dawn> to az sam w oringe
+<VelinTzanov> OK - vsichki li ste pisali Circle?
+<VelinTzanov> Ima li smisyl da ia obiasniavam kak se svejda i t.n.?
+<Prince_of_Dawn> da
+<sssa88> az da
+<Prince_of_Dawn> ne
+<sssa88> ne
+<VelinTzanov> OK
+<Swetko> niama
+<VelinTzanov> Taka. Vajnoto neshto koeto triabva da znaete e che index-nite dyrveta mogat da paziat ciala gama ot funkcii.
+<VelinTzanov> Broi elementi v mnojestvo, sumi na elementite, minimumi, vsiakakvi izvrateni funkcii...
+<Swetko> kakvi sumi
+<Swetko> a da be
+<sssa88> kakvi minimumi?
+<Prince_of_Dawn> mi wmesto da znaesh che ima dwe chisla 
+<VelinTzanov> Naprimer vsiaka kletka moje da pomni sumata na dobavenite elementi v neinia interval.
+<VelinTzanov> Ili minimuma im.
+<Prince_of_Dawn> da znaesh kolko e sbora im
+<VelinTzanov> Ili niakakva druga funkcia na tezi elementi.
+<Swetko> to mnoshestvoto e chasten sluchai na sumite
+<VelinTzanov> Da
+<Swetko> v daden interval
+<Swetko> a moshe i op poveche ot 1 funkcia
+<VelinTzanov> Prosto vajno e da ne ogranichavate misleneno si samo do mnojestva ili samo do sumi.
+<sssa88> na tova s minimuma kak shte vadish elementi?
+<VelinTzanov> Ima kak da vadish elementi, Vlado.
+<VelinTzanov> Shte vidish utre.
+<sssa88> ok
+<VelinTzanov> Utre shte go pravim dalech po-slojno. Vadeneto na elementi sled tova shte ti se struva kato pesen. :)
+<Prince_of_Dawn> vwrwam ti
+<VelinTzanov> Ima tri generalizacii na klasicheskite index-ni dyrveta koito iskam da napravim s vas.
+<Prince_of_Dawn> wqrwam
+<Swetko> az nai sloshnoto indeksno dyrvo koeto sum pravil e na Picture ot ioi98
+<Prince_of_Dawn> az ot Mars
+<VelinTzanov> Aide utre da govorim za tova. :)
+<Swetko> tam edobre
+<Swetko> dobre
+<VelinTzanov> Sgea vsichko po reda si.
+<VelinTzanov> Ednata generalizaciika e prostichka, drugata e slojnichka, i zatova shte gi pravim dvete utre.
+<VelinTzanov> Dnes shte pravim tretata.
+<VelinTzanov> A imenno - index-ni dyrveta v 2-D.
+<VelinTzanov> Predpolagam vsichki veche se seshtate za zadachata - Mobiles ot IOI 2001.
+<Swetko> chakai de
+<Prince_of_Dawn> da
+<Swetko> ami v 1-D oste ne sme gi napravili
+<Prince_of_Dawn> imash domashno round
+<VelinTzanov> Utre pak shte se vyrnem na 1-D.
+<VelinTzanov> Taka, znaete li uslovieto na Mobiles?
+<VelinTzanov> Vsyshtnost reshavali li ste ia vsichki?
+<Prince_of_Dawn> da
+<rangel__> da
+<sssa88> ad
+<sssa88> da
+<Prince_of_Dawn> da
+<rangel__> ne se seshtam dali q pisah
+<rangel__> (ama i da sym q pisal, koda mi ot togava e zatrit, taka che pak shte q pisha :-)
+<VelinTzanov> Obshto vzeto ideiata e che ot vsiaka kletka na index-noto dyrvo vi visi po edno index-no dyrvo za drugoto izmerenie.
+<VelinTzanov> Kak gi zatrivash tia source-ove be Rangele? :)
+<rangel__> ami s golqmata bradva po harda i ponqkoga ne gledam kakvo triq :-(
+<Swetko> az si pazia vsichki na data.bg
+<VelinTzanov> data.bg li? Kakvo e tova?
+<Prince_of_Dawn> survar w BG
+<Swetko> bezplaten server s 2GB
+<Prince_of_Dawn> nevidim za teb
+<Swetko> :)
+<VelinTzanov> :)
+<VelinTzanov> Az si imam BG Proxy-ta. :p
+<Prince_of_Dawn> i nie da nauchim Velin na neshto
+<VelinTzanov> Ti gledai az da vi naucha na neshto... :)
+<VelinTzanov> Che niama po-lesno neshto ot tova za tia 24 dni nishto da ne nauchite... :)
+<VelinTzanov> Ta po zadachata:
+<VelinTzanov> Kazvah che prosto ot vsiaka kletka visi po edno index-no dyrvo za drugoto izmerenie.
+<VelinTzanov> Ako ste kulturni source-a vi vyobshte niama da e grozen.
+<VelinTzanov> Vajno e da otbelejim dve neshta:
+<Swetko> estestveno
+<VelinTzanov> 1) V 1-D kogato vi triabva intervala [a,b] po-lesno e da smetnete [1,b] i da izvadite ot nego [1, a-1]
+<VelinTzanov> Taka imate samo funkcia za smiatane na neshta v [1,x], koeto e mnogo po-prosto otkolkoto pisane na funkcia za [x,y
+<VelinTzanov> ]
+<VelinTzanov> syshtoto neshto mojete da go prilojite i v 2-D
+<Swetko> ami v 2-D susto   [x1,y1,x2,y2]=[1,1,x2,y2]-[1,1,x1,y2]-[1,1,x2,y1]+[1,1,x1,y1]
+<VelinTzanov> Mersi, Swetko, spesti mi mykata. :)
+<VelinTzanov> 2) Triabva da se abstrahirate ot tova da mislite kak tochno izglejdat intervalchetata i pravoygylnichetata i drugi takiva...
+<VelinTzanov> Mnogo e vajno da ne se stresirate ot niakakvi misli za tova kak izglejdat neshtata...
+<VelinTzanov> ... ako viseneto na dyrvo ot vsiaka kletka raboti na teoria, znachi shte raboti i na praktika. Niama kakvo da mu mislite.
+<VelinTzanov> Razbirame li se?
+<Prince_of_Dawn> da
+<sssa88> da
+<rangel__> da
+<Swetko> da3
+<VelinTzanov> Tova za intervala [a,b] iasno li e? Da ne sym vi vidial da pishete general funkcia za intervali [x,y]!
+<Prince_of_Dawn> qsno
+<VelinTzanov> Funkciata za [1,x] e sto pyti po-prosta.
+<VelinTzanov> Tazi tehnika ia prilagaite i na drugi mesta.
+<VelinTzanov> Naprimer edno ot domashnite koito vi dadoh predi proletnia imashe podoben trik.
+<Swetko> koe 
+<sssa88> sobite
+<sssa88> skobite
+<VelinTzanov> Kydeto se tysiha skobnite izrazi s dylbochina D beshe po-lesno da go napishete s dylbochina <= na D.
+<VelinTzanov> I posle vadite D-1 ot D i poluchavate za dylbochina = D.
+<Swetko> ami az ne se setih
+<VelinTzanov> Trika e shiroko prilojim.
+<VelinTzanov> Izpolzvaite go kogato imate vyzmojnosti.
+<VelinTzanov> vyzmojnosti = vyzmojnost
+<Swetko> az si go pisah edno sloshno dinamichno
+<Prince_of_Dawn> mai shte dropne Velin
+<VelinTzanov> Molia?
+<VelinTzanov> ZAshto da me drop-ne be?
+<Prince_of_Dawn> mi nishto ne pishesh ;)
+<VelinTzanov> Zashtoto ugovariam s Anev vasheto kontrolno.
+<VelinTzanov> Chakai da vidia kyde biahme sega.
+<Prince_of_Dawn> kaji mu da sa lesni ;)
+<VelinTzanov> Taka - znaete li kak se pravi Mobiles?
+<VelinTzanov> Shte mojete li da ia napishete kratko i sigurno za domashno?
+<Swetko> da
+<VelinTzanov> sigurno = viarno :)
+<Swetko> i nai veche kratko
+<VelinTzanov> Mnogo umno, Swetko! Ti kato ne predavash domashni ti e lesno! :)
+<rangel__> da
+<sssa88> tova 2d dyrvo shte trqbwa da si go pomislq pyrvo kak tochno shte stane
+<VelinTzanov> Vlado, Borisov?
+<VelinTzanov> OK, shte obiasnia kak shte stane.
+<Prince_of_Dawn> mi az q imam no shte pisha pak
+<Swetko> 968 bytes    mi  e na mene
+<sssa88> az predi bqh napisal onova deto e v handout-a bez da go razbiram
+<VelinTzanov> Celta na zadachata e da imash skorost O(LogN^2) na vsiaka operacia.
+<Swetko> az nego napisah ama go razbrah
+<sssa88> ama to e dosta prilozimo shtoto hem zaema malko pamet hem e adski kratko
+<VelinTzanov> Da, tova na handout-a e neshto kato optimizaciika na index-noto dyrvo.
+<VelinTzanov> Zashtoto polovinata ot kletkite v index-noto vi dyrvo sa izlishni.
+<Swetko> i po skorost i po pisane nai veche
+<VelinTzanov> Poneje informaciata im moje da se poluchi sys smetki ot drugite kletki.
+<Swetko> i po krasota i razbiraemost
+<VelinTzanov> Taka imate samo N kletki i te otgovariat za:
+<VelinTzanov> [1] [1,2] [3] [1,4] [5] [5,6] [7] [1,8]
+<VelinTzanov> Hvanahte ideiata nadiavam se. :)
+<VelinTzanov> Samo deto ne iziskvam da pishete taka strukturata.
+<VelinTzanov> Hitrichko e, no ne e zadyljitelno.
+<VelinTzanov> Taka - sega da prodylja.
+<Swetko> i tova dyrvo ne e dvoichno a e nesto kato binomial
+<VelinTzanov> Iskame da pokriem vseki pravoygylnik ot tip [1,1,x,y]
+<VelinTzanov> Dvoichno si e, prosto vseki desen klon e otriazan... :)
+<Swetko> abe moshe
+<VelinTzanov> Vlado, nali tova za [1,1,x,y] e iasno?
+<Swetko> nesto takova
+<sssa88> da
+<Swetko> vse taia
+<Prince_of_Dawn> s golqmata nojitsa za dwoichni darwete ;)
+<VelinTzanov> taka
+<VelinTzanov> Sega ako ednoto ni izmerenie e 13
+<VelinTzanov> Triabva v 1-D da izvikame [1,8] + [9,12] + [13]
+<VelinTzanov> Sega obache imame 2-D
+<VelinTzanov> V 2-D ot vsiaka kletka na pyrvoto izmerenie visi cialo index-no dyrvo.
+<VelinTzanov> I taka ako imame 13x7 naprimer imame slednoto:
+<VelinTzanov> [1,8]x[1,4] + [1,8]x[5,6] + [1,8]x[7] + [9,12]x[1,4] + [9,12]x[5,6] + [9,12]x[7] + [13]x[1,4] + [13]x[5,6] + [13]x[7]
+<VelinTzanov> t.e. na vsiaka kletka ot pyrvoto dyrvo (naprimer [1,8]) pravim syshtata rabota - sumirame syotvetnite kletki V NEINOTO dyrvo.
+<Swetko> v handout-a e visulizirano hubavo
+<VelinTzanov> Vyv vsiako izmerenie imame LogN kletki.
+<VelinTzanov> Zatova v dvete izmerenia sa obshto LogN^2.
+<VelinTzanov> Vlado, razbra li?
+<sssa88> da
+<VelinTzanov> Drugite?
+<Swetko> da
+<rangel__> da
+<Prince_of_Dawn> da
+<VelinTzanov> Ta tova koeto kazvah e che triabva da abstract away-vate neshtata.
+<VelinTzanov> Vzimash si [1,8] i si vikash negovoto dyrvo syvsem spokoino.
+<VelinTzanov> Tova shte ti dade [1,8]x[1,7]
+<VelinTzanov> Posle si vzimash [9,12] i pravish syshtoto i poluchavash [9,12]x[1,7]
+<VelinTzanov> I nakraia namirash celia pravoygylnik koito tyrsish.
+<VelinTzanov> Chista rabota.
+<VelinTzanov> Znachi za utre imate Round i Mobiles i osven tova Crazy optional (za koito ne ia e pisal)
+<VelinTzanov> Osven tova iskam i oshte edna optional zadachka da vi dam.
+<VelinTzanov> ... shtoto ne mi dava syrce da vi ostavia taka leko.
+<VelinTzanov> Zadachata e Moofest ot US Open 2004.
+<Swetko> ami az sum gi pisal
+<sssa88> za crazy da pratish nqkakva testova sistema ili neshto takova?
+<Swetko> da ti gi dam li 
+<Swetko> tezi koito gi niamash
+<Swetko> nali pazish archiv ot vsichki dorsove
+<Swetko> nali pazish archiv ot vsichki sorsove
+<VelinTzanov> Pazia gi, da.
+<VelinTzanov> Niama nujda da mi prashtash ti, Swetko.
+<Swetko> ste ti pratia moofest
+<VelinTzanov> Samo Round.
+<VelinTzanov> Da, i Moofest mi prati.
+<Swetko> i ste pazish moofest
+<VelinTzanov> Imate li vsichki uslovieto na Moofest
+<Swetko> dobre
+<Swetko> ste ia napisha
+<VelinTzanov> Koi iska da mu go pratia na lichno syobshtenie po IRC-to? :)
+<rangel__> az maj i source imam (tozi ne sym go zatril :-)
+<sssa88> az maj ne
+<VelinTzanov> Ako imash i ako raboti - napravo go prashtai.
+* Disconnected
+Session Close: Thu Jun 10 21:39:32 2004
+
+Session Start: Thu Jun 10 21:39:39 2004
+Session Ident: #velin_ioi
+* Now talking in #velin_ioi
+<VelinTzanov> Izrita me zaradi flood. :)
+<VelinTzanov> Poluchihte li go pone? :)
+<sssa88> ama az moofest sym q pisal na usaco open che i proctored bqh :)
+<sssa88> nq moze li da ne q pisha?
+<sssa88> nq=ne
+<VelinTzanov> Moje.
+<VelinTzanov> Moofest vi ia davam, zashtoto ima razlichna funkcia kym index-noto dyrvo.
+<VelinTzanov> Ima niakolko nachina da ia napishete de...
+<VelinTzanov> ... hubavoto e, che index-noto dyrvo ne e trivialno, no si ima i funkciika kym nego.
+<Swetko> kakva
+<VelinTzanov> Mislia che mojete da napravite funkciata da e minimum ili neshto takova prostichko no nishto - da se uprajniavate.
+<Swetko> ne e li kato na circle 
+<VelinTzanov> Ima mnogo nachini, Swetko.
+<VelinTzanov> Ima i reshenie s po-slojna funkcia.
+<Swetko> kakva funkcia
+<Swetko> az ne go znam
+<VelinTzanov> Niakakvi tejesti - razstoianie po tejest - vse edno che imash vezna.
+<VelinTzanov> Abe niama smisyl da go govorim sega, shtoto ima i po-prosti reshenia.
+<VelinTzanov> Prosto ako si niamate rabota, napishete ia za uprajnenie.
+<Swetko> da napishem po prostoto
+<Swetko> taka li
+<VelinTzanov> Naprimer s index-no dyrvo mojete da napravite slednoto:
+<VelinTzanov> Slagam vi tejesti na razlichni mesta na edin dyyylyg pryt.
+<VelinTzanov> I vi pitam ako podpra pryta na tova miasto kolko tejest shte izpitvam i v koia posoka.
+<VelinTzanov> Tova syshto mojete da go napravite s index trees (mislia).
+<VelinTzanov> Prosto da vi ilustriram che triabva da mislite razkreposteno.
+<VelinTzanov> ... kakto s vsiako drugo neshto koeto pravim de.
+<VelinTzanov> Iasno?
+<sssa88> da
+<Swetko> ami moshe moi
+<Swetko> ami moshe mai
+<Prince_of_Dawn> da
+<rangel__> tova poslednoto ne mi e ochevidno kak shte stane :-)
+<VelinTzanov> Spokoino, Rangele, i na drugite ne im e ochevidno, prosto ne si priznavat... :)
+<sssa88> e i na men ne mi e ochevidno
+<Prince_of_Dawn> toi pita dali e qsno
+<Prince_of_Dawn> ne dali e ochewidno
+<sssa88> da-to go kazah za misleneto
+<VelinTzanov> :) Da e iasno znachi da mojete da go napishete ako se padne na systezanie... no ne samo tova neshto, no i niakakva dalechna modifikacia. :)
+<VelinTzanov> Ami daite da go izchistim togava - sega ni e padnalo. :)
+<rangel__> e az pri polozhenie che ne moga da go izmislq kak da go napisha?
+<VelinTzanov> Rabotata e slednata:
+<VelinTzanov> Vie sumirate edni parcheta.
+<VelinTzanov> Parchetata sa [1,8] [9,12] i [13] v nashia primer
+<VelinTzanov> Ako gledame niakoe parche, to osnovata vinagi e ot diasnata mu strana.
+<VelinTzanov> Zatova mojete da smetnete na [1,8] kakva bi bila obshtata sila na tejestite, ako osnovata beshe v 8 i osven tova da smetnete kolko tejesti ima tam.
+<VelinTzanov> I tezi dve chisla da gi pazite v kletkata [1,8]
+<VelinTzanov> I ako osnovata vi e v 13 primerno prosto umnojavate 13-8 = 5 po broikata i pribaviate broikata ako osnovata beshe v 8.
+<VelinTzanov> Taka se pravi query-to.
+<VelinTzanov> A update-a ne bi triabvalo da e slojen syshto.
+<VelinTzanov> Pak promeniate samo kletkite nad vas... prosto formulata ne e chak tolkova elementarna kakto v klasicheskoto index-no dyrvo
+<VelinTzanov> Razbirate li go sega?
+<sssa88> ne trqbva li da umnozim 13-8=5 po sumata na tezestite v [1,8]
+<rangel__> mislq che pochvam da shvashtam
+<VelinTzanov> Da de.
+<VelinTzanov> Az go naricham broi.
+<VelinTzanov> Ama tova shtoto priemam che tejestite sa s ednakva tejest.
+<sssa88> aha
+<VelinTzanov> Shtoto na Moofest sa s ednakva mai...
+<VelinTzanov> ... a moje i da ne sa.
+<VelinTzanov> Niama znachenie.
+<Swetko> ne sa
+<VelinTzanov> Tova e urokyt dnes!
+<VelinTzanov> Che niama znachenie!
+<Swetko> e ste go opravim
+<VelinTzanov> Kakvoto i da e - mojete da go napravite s index-no dyrvo!
+<VelinTzanov> Dori da e takava prividna slojnotia kato tova s teglilkite.
+<Swetko> dijkstra
+<VelinTzanov> A ima i po-slojni neshta... :)
+<VelinTzanov> Off, Swetko, shte te bia.
+<VelinTzanov> Inache to i salatata ne mojesh da si napravish s index-no dyrvo.
+<rangel__> (sigurno listata mu ne sa vkusni :-)
+<VelinTzanov> Govoria za zadachi v koito se iska LogN i rabotata e niakak si chista... :)
+<Swetko> iasno de
+<VelinTzanov> Vsyshtnost neka oshte ot sega vi kaja, che ima izkluchenie na tova pravilo. :)
+<VelinTzanov> Izkluchenieto se naricha umnojavane na polinomi.
+<VelinTzanov> Ako vi dam koeficientite na dva polinoma.
+<Swetko> e che kakvo
+<VelinTzanov> I vi popitam za koeficientite na polinoma na proizvedenieto im... za LogN vreme.
+<VelinTzanov> Ami - ne stava s index-no dyrvo. :)
+<VelinTzanov> Triabvat ti kompleksni chisla. :)
+<Swetko> sigurno ima niakakyv nachin da stane N^log2(3)
+<VelinTzanov> Kakvo e log2(3)?
+<VelinTzanov> Aaaa, hmm...
+<Swetko> dvoichen logaritum ot 3
+<VelinTzanov> Otkyde ti hrumna?
+<Prince_of_Dawn> spored men towa e pod 2 i nad 1
+<VelinTzanov> Po princip algorityma si e N*LogN... prosto e tvyrde slojen za niakakyv si nacionalen otbor po informatika... :)
+<Swetko> ami niama kak da ti kashem koeficientite za logN time stot te sa N - ne moshem da govorim po byrzo ot svetlinata
+<Prince_of_Dawn> ;))))))00
+<Swetko> da de 1.59
+<VelinTzanov> Zatova ako vidite zadacha, koiato e ekvivalentna na umonejavane na polinomi - biagaite! :)
+<VelinTzanov> Dobre de - N*LogN vreme... eeei sega. :)
+<Prince_of_Dawn> sigurno e imal predwid N*logN
+<Swetko> tova ne e li kato umnoshenie na dylgi chisla
+<VelinTzanov> Znam li, sigurno.
+<VelinTzanov> Ama ne, ne e.
+<VelinTzanov> Shtoto tam imash i prenos...
+<Swetko> stot ima edno Div&Conq za dulgi chisla
+<Swetko> ami tuka pak ima prenos
+<Prince_of_Dawn> shte ima li dulgi chisla na podgotowkata ?
+<Swetko> oo 
+<Swetko> mnogo giobicham
+<VelinTzanov> To i tova e Div&Conq
+<VelinTzanov> Prosto e gnusno. :)
+<VelinTzanov> Ne vi triabvat dylgi chisla, Borisov. Na IOI nikoga niama da dadat takava prostotia.
+<Prince_of_Dawn> shtom e gnusno ne go spodelqi s nas ;)))
+<VelinTzanov> Swetko, niama prenos be.
+<Prince_of_Dawn> minalata godina na BOI imashe
+<Swetko> edin put reshavah zadacha da se povdigne kvadratna matrica ot dylgi chisla na stepen goliama kum 1000000000000099653636654 kato pri tova vsichki smetki da sa po modul 5^96
+<VelinTzanov> HAhahahaaaaaaaaaaaa :)
+<VelinTzanov> Bas dyrja, che sa proverili testovete na ryka! :)
+<Prince_of_Dawn> ;)))))))
+<VelinTzanov> Takiva idioti (che da dadat takava zadacha) niama kak da sa go napravili inache... :)
+<VelinTzanov> Aide sega - dylgi chisla li ne mojete da si napishete?!
+<Swetko> ne be zadachata e hubava
+<Swetko> ima interesen metod 
+<Swetko> koito sum go srestal i v drugi zadachi
+<VelinTzanov> Pyrvoto neshto koeto pisah s dylgi chisla prez jivota si beshe da se nameri koren kvadraten na dylgo chislo! :) Pri tova na NOI 2-ri kryg, zaedno s oshte 2 zadachi.
+<Swetko> mislia che ste e polezno
+<sssa88> az specialno korenuvane i delenie ne moga da si napisha
+<Swetko> povdigane na matrici v stepen moshe da e polezno
+<VelinTzanov> Korenuvane i delene, ama nikoga niama da vi triabvat!
+<Swetko> korenuvaneto e lesno
+<Swetko> ama delenieto
+<Swetko> abe ste gi napishem kato triabva
+<Prince_of_Dawn> i kakwo stana Velina ? 300 a losha rabota ;)
+<sssa88> korenuvane ne samo s koren kvadraten
+<VelinTzanov> Kato uchite Lineina Algebra i Diferencialni Uravnenia v universiteta shte vidite mnogo prilojenia na tezi umnojenia na polinomi i stepeni na matrici... no zasega ne vi triabvat.
+<Swetko> ne biaha 300
+<VelinTzanov> 250 biaha.
+<Prince_of_Dawn> ;))))
+<Swetko> zadachkata si e hubava
+<Swetko> znam i oste edna oste po hubava i po lesna
+<VelinTzanov> 90 shtoto biah s kysi chisla pri po-malko ot 10 000 000 000... a to triabvashe 2 000 000 000.
+<VelinTzanov> I razbira se imashe tochno takyv test.
+<Swetko> dijkstra v graph s 10584765965974659743543 vyrha
+<VelinTzanov> A na drugata imah 60 vmesto 100, zaradi greshen format na izhoda.
+<VelinTzanov> I kakva e zadachata? Da si prochetesh vhoda? :)
+<Swetko> ne
+<Swetko> vhoda ti sa 10 chisla
+<VelinTzanov> Momcheta, az obache niamam mnogo vreme... :(
+<VelinTzanov> Shte triabva da vi ostaviam da se zabavliavate.
+<Swetko> ok
+<Swetko> niakoi iska li da ia chue tazi zadacha
+<sssa88> az da
+<rangel__> chao
+<Prince_of_Dawn> ne sam siguren
+<rangel__> te s 10 chisla ne mogat da ti zadadat broq na vyrhovete samo :-)
+<VelinTzanov> I ako na BOI ili na kontrolnite ima index-no dyrvo i ne go reshite shte vi otkysna glavite... vsyshtnost vie sami shte si gi otkysnete, shtoto drugite shte go reshat i niama da se klasirate za IOI.
+<VelinTzanov> Az shte ostana v staiata, no shte pravia drugi neshta.
+<VelinTzanov> Chao predvaritelno!
+<Prince_of_Dawn> shte se postaraem
+<Prince_of_Dawn> chao
+<sssa88> chao
+<Swetko> chao
+<Prince_of_Dawn> swetko iskam da te pitam ti sam li popadash na takiwa zadachi ili te ti se lepqt
+<Prince_of_Dawn> ;)))
+<Swetko> ami az gledam razni zadachi i vishdam razni nesta :)
+<Swetko> дн
+<Swetko> ok
+<sssa88> ta q kazi taq zadacha
+<Swetko> imate edna dyska shiroka 4 kletki i dulga neogranicheno mnogo kletki
+<Swetko> namirate se v edna kletka i celta vi e da namerite dylshinata na nai kusia put do druga kletka
+<rangel__> tova onazi sys zarcheto li e?
+<Swetko> razsoianieto v koordinatite meshdu tiah moshe da e do 1 000 000 000
+<Swetko> da
+<sssa88> oh maj vsicki q znaem tazi
+<Swetko> taka li
+<sssa88> tq vyrvi v komplekt s oshte dve takiva gadni kato neq
+<Swetko> borisov mai ne znae
+<Swetko> eheh
+<Swetko> ia gi kashi posle
+<sssa88> dosta sa dylgichki
+<Swetko> ta nie se dvishim s zarche
+<Swetko> i na vseki hod se tyrkulvame
+<Swetko> nakudeto iskame stiga da ne izlizame ot dyskata
+<Swetko> po zarcheto sa zalepeni edni hartijki na koito pishe chisla do 50
+<Swetko> i cenata na vsiako zavyrtane e ravna na chisloto koeto pishe otgore na zara sled hoda
+<Swetko> borisov, razbra li ia
+<Swetko> pomislia ia malko
+<Swetko> sledobed ste ti kasha kak stava
+<Swetko> Vlado , kashi si tvoite
+<Swetko> ili pone dai link
+<Swetko> ili kashi otkoe sustezanie sa ili otkude 
+<sssa88> drugite dve deto sa mislq ot syshtoto systezanie sa "hang or not" i "grouping"
+<sssa88> tq Momcheva ni gi dade na edni listi i ne znam otkyde sa
+<Swetko> grouping e onazi s procesorite li 
+<sssa88> da
+<Swetko> basi taz momcheva kakvo va pravi be
+<Swetko> aha
+<Swetko> reshaval sum 
+<Swetko> gi
+<sssa88> i reshe li gi?
+<Swetko> abe hang or not ima sustia metod kato ot NOI oanzi s fukciite
+<Swetko> da
+<Swetko> az imam reshenia
+<sssa88> bravo
+<Swetko> iskash li gi
+<Swetko> t.e. ne sam de
+<sssa88> q po-dobre kazi testove kyde ima
+<Swetko> vkasti
+<Swetko> vish  Central EU regional contest 2003
+<sssa88> e golemi li sa da gi pratish?
+<sssa88> link neshto?
+<rangel__> http://cepc.mimuw.edu.pl/
+<rangel__> mislq che tova beshe
+<Swetko> da mai
+<Swetko> ot 2002 i 2003 vsichki zadachi za izkliuchitelno
+<Swetko> gadni
+<Swetko> ima edna deto prilicha na hexa
+<Swetko> ama tochno neia togava ne reshih
+<rangel__> onazi s futbolnata topka
+<Swetko> taka che ne mi e pomognala mnogo 
+<Swetko> t..e nikak
+<rangel__> ama tq e dosta po-kofti ot hexa
+<Swetko> da
+<Swetko> da
+<Swetko> ama ne mi se zanimava s izvrateni raboti
+<rangel__> ama mnooooogo po-kofti ot hexa :-)
+<Swetko> ama reshenieto e lineino
+<Swetko> dokato nasheto lineino ama s hash
+<rangel__> predpolagam se postiga zashtoto znaesh kolko ti e golqma topkata
+<Swetko> ama sa i mnogo gotini zadachite
+<Swetko> da
+<Swetko> i zastoto imash i 5-tousgulnici
+<sssa88> znachi za domashno kakvo imahme - "round" i "mobiles" nali?
+<Swetko> da
+<Swetko> i drugite
+<sssa88> koi drugi?
+<rangel__> circle, moofest i crazy maj sa "po zhelanie" :-)
+<Swetko> ama da de
+<Swetko> ama te sme gi pisali povecheto
+<sssa88> az crazy smqtam da si doopravq
+<Swetko> niakoi gledal li e ot 2003 ruskata NOI
+<Swetko> che ima 2 gadni
+<rangel__> mislq che ne sym
+<Swetko> ednata maximuma tochki dashe e 130
+<Swetko> ima 3 sluchaia 
+<Swetko> ako reshish edinia 70 vtoria 100 a tretia 130
+<Swetko> abe imash 1 vlask
+<Swetko> ste vi kasha za 130 uslovieto
+<Swetko> iamsh 1 vlak
+<Swetko> i N vagona s M stancii
+<Swetko> za vseki vagon e kazano na koia stancia triabva da se zakachi na vlaka i na koia da se otkachi
+<Swetko> i ti triabva da kashesh ot koia strana da se zakachi i otkachi
+<Swetko> kato moshesh da otkachash i zakachash samo v edin ot 2-ta kraia na vlaka
+<Swetko> otnachalo vlaka predstavliava edno absolutno nisto
+<Swetko> 70 tochki e lesno - niama 2 vagona na stancia 
+<Swetko> i vlaka ima lokomotiv po sredata  koito ne moshesh da mahash
+<Swetko> za 100 - niamash lokomotiv
+<Swetko> i pak kato za 70
+<Swetko> za 130 - imash po poveche ot 1 vagon na stancia i niamash lokomotiv
+<Prince_of_Dawn> momcheta az sam partsal i shte hodq da spq i ucha po himiq
+<Prince_of_Dawn> priqtno reshawane
+<Swetko> az chetoh dori i sorsa ama razbrah samo za 100 kak ste stane
+<Swetko> a za 70 sigurno e oste po lesno i sam chovek moshe da go izmisli
+<Swetko> ste iztormozia Velin s neia
+<rangel__> za 100 sam chovek ne mozhe li da go izmisli? :-)
+<Swetko> vlaka se dvishi ot 1-va kum M-ta stancia
+<Swetko> ami na olimpiadata maximuma e 75
+<Swetko> a puk vse pak tova e Rusia
+<Swetko> predpolagam che ne moshe
+<Swetko> v smisul triabva niakoi mnogo umen da e
+<rangel__> vsyshtnost kakva e ideqta. da moga da razkacha vagon kato mi se nalozhi li?
+<Swetko> da
+* sssa88 has quit IRC (Ping timeout: 180 seconds)
+* rangel__ has quit IRC (Remote closed the connection)
+* Disconnected
+Session Close: Thu Jun 10 23:07:39 2004

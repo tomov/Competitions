@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="bg" lang="bg" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="KEYWORDS" content="STL Контейнери" />
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="/favicon.ico" />
+    <title>STL Контейнери - CsStuff</title>
+    <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/wiki/skins/monobook/main.css"; /*]]>*/</style>
+    <link rel="stylesheet" type="text/css" media="print" href="/wiki/skins/common/commonPrint.css" />
+    <!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css";</style><![endif]-->
+    <!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css";</style><![endif]-->
+    <!--[if gte IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css";</style><![endif]-->
+    <!--[if IE]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+    <script type="text/javascript" src="/wiki/index.php?title=-&amp;action=raw&amp;gen=js"></script>    <script type="text/javascript" src="/wiki/skins/common/wikibits.js"></script>
+    <style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D1%8F%D0%A3%D0%B8%D0%BA%D0%B8:Monobook.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css";
+/*]]>*/</style>          </head>
+  <body         class="ns-0">
+    <div id="globalWrapper">
+      <div id="column-content">
+	<div id="content">
+	  <a name="top" id="contentTop"></a>
+	  	  <h1 class="firstHeading">STL Контейнери</h1>
+	  <div id="bodyContent">
+	    <h3 id="siteSub">от CsStuff, свободната енциклопедия</h3>
+	    <div id="contentSub"></div>
+	    	    	    <!-- start content -->
+	    <table border="0" id="toc"><tr id="toctitle"><td align="center">
+<b>Съдържание</b> <script type="text/javascript">showTocToggle("показване","скриване")</script></td></tr><tr id="tocinside"><td>
+<div class="tocline"><a href="#set_.D0.B8_multiset">1 set и multiset</a><br /></div>
+<div class="tocline"><a href="#map_.D0.B8_multimap">2 map и multimap</a><br /></div>
+<div class="tocline"><a href="#vector">3 vector</a><br /></div>
+<div class="tocline"><a href="#list">4 list</a><br /></div>
+<div class="tocline"><a href="#deque">5 deque</a><br /></div>
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B8&amp;action=edit&amp;section=1" title="STL Контейнери">редактиране</a>]</div><a name="set_.D0.B8_multiset"></a><h2> set и multiset </h2>
+<p><br />
+</p><p>Set и Multiset са сортирани свързани контейнер, които запазват обектите от тип Key. 
+Разликата между двете е, че в Set елементите не може да са с еднаква стойност, докато тези в multiset могат да се повтарят. 
+Алгоритмите са реализирани върху базата за червено-черните дървета.
+Двете най-важни неща за тях са, че алгоритмите изискват елементите им да са сортирани, и също така когато елементите им се изведат те са винаги във възходящ ред. Вмъкването на сортирана редица е много бързо: както Set, така и Multiset гарантират, че вмъкването на редица от елементи е с линейна сложност, ако редицата е вече сортирана.
+Set/Multiset има специалното свойство, че когато вмъкваш нов елемент, това не пречи на iterator-ите на другите елемент. Изтриването на елемент от set/multiset също не пречи по никакъв начин на iterator-ите на другите елементи, естествено изключение прави iterator-а на изтрития елемент.
+</p><p>Пример за set:
+</p>
+<pre>
+struct ltstr
+{
+  bool operator()(const char* s1, const char* s2) const
+  {
+    return strcmp(s1, s2) &lt; 0;
+  }
+};
+
+int main()
+{
+  const int N = 6;
+  const char* a[N] = {&quot;isomer&quot;, &quot;ephemeral&quot;, &quot;prosaic&quot;, 
+                      &quot;nugatory&quot;, &quot;artichoke&quot;, &quot;serif&quot;};
+  const char* b[N] = {&quot;flat&quot;, &quot;this&quot;, &quot;artichoke&quot;,
+                      &quot;frigate&quot;, &quot;prosaic&quot;, &quot;isomer&quot;};
+
+  set&lt;const char*, ltstr&gt; A(a, a + N);
+  set&lt;const char*, ltstr&gt; B(b, b + N);
+  set&lt;const char*, ltstr&gt; C;
+
+  cout &lt;&lt; &quot;Set A: &quot;;
+  copy(A.begin(), A.end(), ostream_iterator&lt;const char*&gt;(cout, &quot; &quot;));
+  cout &lt;&lt; endl;
+  cout &lt;&lt; &quot;Set B: &quot;;
+  copy(B.begin(), B.end(), ostream_iterator&lt;const char*&gt;(cout, &quot; &quot;));   
+  cout &lt;&lt; endl;
+
+  cout &lt;&lt; &quot;Union: &quot;;
+  set_union(A.begin(), A.end(), B.begin(), B.end(),
+            ostream_iterator&lt;const char*&gt;(cout, &quot; &quot;),
+            ltstr());   
+  cout &lt;&lt; endl;
+
+  cout &lt;&lt; &quot;Intersection: &quot;;
+  set_intersection(A.begin(), A.end(), B.begin(), B.end(),
+                   ostream_iterator&lt;const char*&gt;(cout, &quot; &quot;),
+                   ltstr());    
+  cout &lt;&lt; endl;
+
+  set_difference(A.begin(), A.end(), B.begin(), B.end(),
+                 inserter(C, C.begin()),
+                 ltstr());
+  cout &lt;&lt; &quot;Set C (difference of A and B): &quot;;
+  copy(C.begin(), C.end(), ostream_iterator&lt;const char*&gt;(cout, &quot; &quot;));
+  cout &lt;&lt; endl;
+}
+</pre>
+<p>Пример за Multiset:
+</p>
+<pre>
+int main()
+{
+  const int N = 10;
+  int a[N] = {4, 1, 1, 1, 1, 1, 0, 5, 1, 0};
+  int b[N] = {4, 4, 2, 4, 2, 4, 0, 1, 5, 5};
+
+  multiset&lt;int&gt; A(a, a + N);
+  multiset&lt;int&gt; B(b, b + N);
+  multiset&lt;int&gt; C;
+
+  cout &lt;&lt; &quot;Set A: &quot;;
+  copy(A.begin(), A.end(), ostream_iterator&lt;int&gt;(cout, &quot; &quot;));
+  cout &lt;&lt; endl;
+  cout &lt;&lt; &quot;Set B: &quot;;
+  copy(B.begin(), B.end(), ostream_iterator&lt;int&gt;(cout, &quot; &quot;));   
+  cout &lt;&lt; endl;
+
+  cout &lt;&lt; &quot;Union: &quot;;
+  set_union(A.begin(), A.end(), B.begin(), B.end(),
+            ostream_iterator&lt;int&gt;(cout, &quot; &quot;));
+  cout &lt;&lt; endl;
+
+  cout &lt;&lt; &quot;Intersection: &quot;;
+  set_intersection(A.begin(), A.end(), B.begin(), B.end(),
+                   ostream_iterator&lt;int&gt;(cout, &quot; &quot;));
+  cout &lt;&lt; endl;  
+
+  set_difference(A.begin(), A.end(), B.begin(), B.end(),
+                 inserter(C, C.begin()));
+  cout &lt;&lt; &quot;Set C (difference of A and B): &quot;;
+  copy(C.begin(), C.end(), ostream_iterator&lt;int&gt;(cout, &quot; &quot;));
+  cout &lt;&lt; endl;
+}
+</pre>
+<p><br />
+Някой работи, които са полезни(нека А да ни е set/multiset):
+А.erase(x) – изтрива елемента х от А;
+А.erase(първи_iterator,втори_iterator) – изтрива всички елементи от първи_iterator до втори_iterator от А;
+А.lower_bound(x) – намира 1-я емелент по-малък от х в А;
+А.upper_bound(x) – намира 1-я елемент по-голям от х в А;
+А.clear() – изтрива всички елементи от А;
+А.insert(x) – вмъква х в А;
+А.insert(първи_iterator,втори_iterator) – вмъква редицата от елементи от първи_iterator до втори_iterator в А;
+А.find(x) – намира iterator-a на елемента със стойност х от А(ако няма такъв елемент връща iterator – края на А);
+А.size() – намира дължината на А;
+А.begin() – връща iterator-а на 1-я елемент от А;
+А.end() – връща iterator-а на последния елемент на А;
+A.count(x) – връща колко пъти х се среща в А(само за multiset);
+A.swap(….) – разменя елементите на два set/multiset
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B8&amp;action=edit&amp;section=2" title="STL Контейнери">редактиране</a>]</div><a name="map_.D0.B8_multimap"></a><h2> map и multimap </h2>
+<p>Map/multimap e сортиран свързан контейнер, който има 2 обекта – един от тип Кey, a другия от тип Data. Маp e двойков свързан контейнер, което значи, че тина на стойностите му е pair&lt;const Key, Data&gt;. Мар е свързан контейнер, в който елементите не могат да се повтарят, т.е. не може да има два или повече елемента с една и съща стойност, докато в multiset елементите могат да се повтарят.
+Map/multimap има специалното свойство, че когато вмъкваш нов елемент, това не пречи на iterator-ите на другите елемент. Изтриването на елемент от map/multimap също не пречи по никакъв начин на iterator-ите на другите елементи, естествено изключение прави iterator-а на изтрития елемент.
+</p><p>Пример за map:
+</p>
+<pre>
+struct ltstr
+{
+  bool operator()(const char* s1, const char* s2) const
+  {
+    return strcmp(s1, s2) &lt; 0;
+  }
+};
+
+int main()
+{
+  map&lt;const char*, int, ltstr&gt; months;
+  
+  months[&quot;january&quot;] = 31;
+  months[&quot;february&quot;] = 28;
+  months[&quot;march&quot;] = 31;
+  months[&quot;april&quot;] = 30;
+  months[&quot;may&quot;] = 31;
+  months[&quot;june&quot;] = 30;
+  months[&quot;july&quot;] = 31;
+  months[&quot;august&quot;] = 31;
+  months[&quot;september&quot;] = 30;
+  months[&quot;october&quot;] = 31;
+  months[&quot;november&quot;] = 30;
+  months[&quot;december&quot;] = 31;
+  
+  cout &lt;&lt; &quot;june -&gt; &quot; &lt;&lt; months[&quot;june&quot;] &lt;&lt; endl;
+  map&lt;const char*, int, ltstr&gt;::iterator cur  = months.find(&quot;june&quot;);
+  map&lt;const char*, int, ltstr&gt;::iterator prev = cur;
+  map&lt;const char*, int, ltstr&gt;::iterator next = cur;    
+  ++next;
+  --prev;
+  cout &lt;&lt; &quot;Previous (in alphabetical order) is &quot; &lt;&lt; (*prev).first &lt;&lt; endl;
+  cout &lt;&lt; &quot;Next (in alphabetical order) is &quot; &lt;&lt; (*next).first &lt;&lt; endl;
+}
+</pre>
+<p>И един пример за multimap:
+</p>
+<pre>
+struct ltstr
+{
+  bool operator()(const char* s1, const char* s2) const
+  {
+    return strcmp(s1, s2) &lt; 0;
+  }
+};
+
+int main()
+{
+  multimap&lt;const char*, int, ltstr&gt; m;
+  
+  m.insert(pair&lt;const char* const, int&gt;(&quot;a&quot;, 1));
+  m.insert(pair&lt;const char* const, int&gt;(&quot;c&quot;, 2));
+  m.insert(pair&lt;const char* const, int&gt;(&quot;b&quot;, 3));
+  m.insert(pair&lt;const char* const, int&gt;(&quot;b&quot;, 4));
+  m.insert(pair&lt;const char* const, int&gt;(&quot;a&quot;, 5));
+  m.insert(pair&lt;const char* const, int&gt;(&quot;b&quot;, 6));
+
+  cout &lt;&lt; &quot;Number of elements with key a: &quot; &lt;&lt; m.count(&quot;a&quot;) &lt;&lt; endl;
+  cout &lt;&lt; &quot;Number of elements with key b: &quot; &lt;&lt; m.count(&quot;b&quot;) &lt;&lt; endl;
+  cout &lt;&lt; &quot;Number of elements with key c: &quot; &lt;&lt; m.count(&quot;c&quot;) &lt;&lt; endl;
+
+  cout &lt;&lt; &quot;Elements in m: &quot; &lt;&lt; endl;
+  for (multimap&lt;const char*, int, ltstr&gt;::iterator it = m.begin();
+       it&nbsp;!= m.end();
+       ++it)
+   cout &lt;&lt; &quot;  [&quot; &lt;&lt; (*it).first &lt;&lt; &quot;, &quot; &lt;&lt; (*it).second &lt;&lt; &quot;]&quot; &lt;&lt; endl;
+}
+</pre>
+<p>Някой работи, които са полезни(нека А да ни map/multiset):
+А.erase(x) – изтрива елемента х от А;
+А.erase(първи_iterator,втори_iterator) – изтрива всички елементи от първи_iterator до втори_iterator от А;
+А.lower_bound(x) – намира 1-я емелент по-малък от х в А;
+А.upper_bound(x) – намира 1-я елемент по-голям от х в А;
+А.clear() – изтрива всички елементи от А;
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B8&amp;action=edit&amp;section=3" title="STL Контейнери">редактиране</a>]</div><a name="vector"></a><h2> vector </h2>
+<p><br />
+</p><p>Един обект std::vector е подобен на масив по това, че осигурява произволен достъп до елементите поставени в поредица.
+Все пак за разлика от традиционния масив един обект std::vector (по време на работа) може да променя размерите си
+динамично,така че да поддържа произволен брой елементи.Един обект std::vector може бързо да вмъкне или отстрани
+елементи от края на неговата последователност,но вмъкването или отстраняването в края не е толкова ефикасно.Това е
+така, защото обектът std::vector трябва да премести позициите на елементите, за да настани новия елемент или да 
+затвори мястото, оставено от отстраненият елемент.Достъпът до елементите на вектор се осъществява чрез итератори.
+Дефиницията на шаблона за клас std::vector  се съдържа във файла "vector" (#include &lt;vector&gt;).
+</p><p>Обект std::vector се конструира по няколко начина&nbsp;:
+</p><p>std::vector&lt;тип&gt; име;                                 	      //създава празен вектор от типа име който може да съдържа данни от типa тип
+std::vector&lt;тип&gt; име(размер);		      //създава вектор с начален размер размер
+std::vector&lt;тип&gt; име(размер, стойност);        //създава вектор с начален размер размер, всеки елемент на който е инициализиран със стойност
+std::vector&lt;тип&gt; име(друг_вектор);	      //използва конструктора за копиране - създава вектор - копие на съществуващия друг_вектор
+std::vector&lt;тип&gt; име(първи,последен);             //създава вектор от интервал от елементи, определени от итераторите първи и  последен
+</p><p>Шаблонът за клас std::vector дефинира пълно множество от оператори в това число и оператора за сравняване.Една програма може да определи
+дали два вектора са равни и кой е по-голям или по малък от друг.За равни вектори се смятат 2 вектора с равен брой елементи и еднакви елементи.
+</p><p>Функции-членове на вектори&nbsp;:
+</p><p>assign(първи, последен)	Замества елементите на вектора с елементите, определени от итераторите първи и последен.(започва от началото на дека)
+assign(брой, стойност)		Замества елементите на вектора с брой копия на стойност.(започва от началото на дека)
+at(n)				Връща стойността на елемента, намираща се на позиция "n" във вектора.
+back( )				Връща последния елемент във вектора.
+begin( )				Връща итератор, който сочи към първия елемент във вектора.
+capacity( )			Връща текущия максимален брой елементи, които могат да се съберат във вектора. 
+clear( )				Изтрива всички елементи от вектора.
+empty( )			Връщя TRUE ако векторът е празен.
+end( )				Връща итератор, който сочи към края на вектора.(край на вектора е адреса след този на последния елемент)
+erase(начало, край)		Изтрива интервал от елементи от вектор сочени от итераторите начало и край.
+erase(n)			Изтрива елемент от вектора, сочен от итератора "n".
+front( )				Връща елемента в началото на вектора.
+insert(i, x)			На позиция определена от итератора "i" вмъква стойността на "x".
+insert(i, начало, край)		На позиция определена от итератора "i" вмъква интервала от стойности определен от итераторите начало и край
+insert(i, n, x)			На позиция определена от итератора "i" вмъква "n" копия на "x"
+max_size( )			Връща максималният размер на вектора(най големият брой елементи, които могат да се поберат).
+pop_back( )			Отстранява последния елемент на вектора.
+push_back(x)			Поставя стойността "x" в края на вектора.
+rbegin( )			Връща обратен итератор, който сочи след последния елемент във вектора.
+rend( )				Връща обратен итератор, който сочи първият елемент във вектора.
+reverse( )			Обръща реда на елементите.
+resize(n, x)			Прави размера на "n"-тия елемент "x" елемента.
+size( )				Връща броя на елементите на вектора.
+swap(vector)			Разменя съдържанието на 2 вектора.
+</p><p><br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B8&amp;action=edit&amp;section=4" title="STL Контейнери">редактиране</a>]</div><a name="list"></a><h2> list </h2>
+<p>Един обект std::list е подобен на вектор или дек,с изключение на това че списъците не осигуряват произволен достъп.
+Все пак един обект  std::list е ефикасен при поставянето на елементи във, или отстраняването на елементи от произволно
+място в последователност.Освен това, подобно на вектор или дек един обект  std::list може да променя размерите си
+динамично при необходимост.Достъп до елементите може да се осъществи също и чрез итератори.
+Дефиницията на шаблона за клас std::list  се съдържа във файла "list" (#include &lt;list&gt;).<br /><br />
+</p><p>Обект std::list се конструира по няколко начина&nbsp;:<br /><br />
+</p><p>std::list&lt;тип&gt; име; //създава празен списък от типа име, който може да съдържа данни от типa тип<br />
+std::list&lt;тип&gt; име(размер);			     //създава списък с начален размер размер<br />
+std::list&lt;тип&gt; име(размер, стойност);             //създава списък с начален размер размер, всеки елемент на който е инициализиран със стойност<br />
+std::list&lt;тип&gt; име(друг_списък);	   	     //използва конструктора за копиране - създава списък - копие на съществуващия друг_списък<br />
+std::list&lt;тип&gt; име(първи,последен);                 //създава списък от интервал от елементи, определени от итераторите първи и  последен<br />
+<br />
+Шаблонът за клас std::list дефинира пълно множество от оператори в това число и оператора за сравняване.Една програма може да определи
+дали два списъкa са равни и кой е по-голям или по малък от друг.За равни списъци се смятат 2 списъка с равен брой и еднакви елементи.<br /><br />
+</p><p>Функции-членове на списък&nbsp;:<br /><br />
+</p><p>assign(първи, последен)	Замества елементите на списъка с елементите, определени от итераторите първи и последен.(започва от началото)<br />
+assign(брой, стойност)		Замества елементите на списъка с брой копия на стойност.(започва от началото)<br />
+back( )				Връща последния елемент във списъка.<br />
+begin( )				Връща итератор, който сочи към първия елемент във списъка.<br />
+clear( )				Изтрива всички елементи от списъка.<br />
+empty( )			Връщя TRUE ако списъкът е празен.<br />
+end( )				Връща итератор, който сочи към края на списъка.(край на списъка е адреса след този на последния елемент)<br />
+erase(начало, край)		Изтрива интервал от елементи от списък сочени от итераторите начало и край.<br />
+erase(n)			Изтрива елемент от списък, сочен от итератора "n".<br />
+front( )				Връща елемента в началото на списък.<br />
+insert(i, x)			На позиция определена от итератора "i" вмъква стойността на "x".<br />
+insert(i, начало, край)		На позиция определена от итератора "i" вмъква интервала от стойности определен от итераторите начало и край<br />
+insert(i, n, x)			На позиция определена от итератора "i" вмъква "n" копия на "x"<br />
+max_size( )			Връща максималният размер на списъка(най големият брой елементи, които могат да се поберат).
+<br />merge(listref)			Вмъква всички елементи от списъка listref  в текущия списък.<br />
+pop_back( )			Отстранява последния елемент на списъка.<br />
+pop_front( )			Отстранява първия елемент на списъка.<br />
+push_back(x)			Поставя стойността "x" в края на списъка.<br />
+push_front(x)			Поставя стойността "x" в началото на списъка.<br />
+rbegin( )			Връща обратен итератор, който сочи след последния елемент във списъка.<br />
+remove(val)			Отстранява всички прояви на val всписъка.<br />
+remove_if(val)			Отстранява всички прояви на елементите, за които предикатът пред връща стойност вярно.<br />
+rend( )				Връща обратен итератор, който сочи първият елемент във списъка.<br />
+reverse( )			Обръща реда на елементите в списъка.<br />
+resize(n, x)			Прави размера на "n"-тия елемент "x" елемента.<br />
+size( )				Връща броя на елементите на списъка.<br />
+sort( )				Сортира списъка въз основа на предиката по подразбиране.<br />
+sort(pred)			Сортира списъка въз основа на посочения предикат pred.<br />
+swap(vector)			Разменя съдържанието на 2 списъка.<br />
+unique( )			Отстранява всички дублиращи се елементи.<br />
+unique(pred)			Отстранява всички елементи, необходими за създаването на уникални елементи въз основа на посочения предикат.<br />
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=STL_%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B8&amp;action=edit&amp;section=5" title="STL Контейнери">редактиране</a>]</div><a name="deque"></a><h2> deque </h2>
+<p>Един обект std::deque е подобен на вектор.Обектите дек са ефикасни при поставянето на елементи във,или отстраняването на елементи от началото и
+края на последователност, докато обектите вектор са ефикасни само при добавянето на елементи в края на последователността.Подобно на вектор един
+обект дек може да промени размерите си динамично при необходимост, но вмъкването или отстраняването на елементи от произволно друго място 
+в последователността не е толкова ефикасно.Достъпът също се осъществява чрез итератори.
+Дефиницията на шаблона за клас std::deque  се съдържа във файла "deque" (#include &lt;deque&gt;).
+Обект std::deque се конструира по няколко начина&nbsp;:
+</p><p>std::deque&lt;тип&gt; име;                                 	      //създава празен дек от типа име който може да съдържа данни от типa тип
+std::deque&lt;тип&gt; име(размер);		      //създава дек с начален размер размер
+std::deque&lt;тип&gt; име(размер, стойност);	      //създава дек с начален размер размер, всеки елемент на който е инициализиран със стойност
+std::deque&lt;тип&gt; име(друг_дек);		      //използва конструктора за копиране - създава дек - копие на съществуващия друг_дек
+std::deque&lt;тип&gt; име(първи,последен);             //създава дек от интервал от елементи, определени от итераторите първи и  последен
+</p><p>Шаблонът за клас std::deque дефинира пълно множество от оператори в това число и оператора за сравняване.Една програма може да определи
+дали два дека са равни и кой е по-голям или по малък от друг.За равни се смятат 2 дека с равен брой елементи и еднакви елементи.
+</p><p>Функции-членове на дек&nbsp;:
+</p><p>assign(първи, последен)	Замества елементите на дека с елементите, определени от итераторите първи и последен.(започва от началото на дека)
+assign(брой, стойност)		Замества елементите на дека с брой копия на стойност.(започва от началото на дека)
+at(n)				Връща стойността на елемента, намираща се на позиция "n" във дека.
+back( )				Връща последния елемент във дека.
+begin( )				Връща итератор, който сочи към първия елемент във дека.
+clear( )				Изтрива всички елементи от дек.
+empty( )			Връщя TRUE ако декът е празен.
+end( )				Връща итератор, който сочи към края на дек.(край на вектора е адреса след този на последния елемент)
+erase(начало, край)		Изтрива интервал от елементи от дек сочени от итераторите начало и край.
+erase(n)			Изтрива елемент от дека, сочен от итератора "n".
+front( )				Връща елемента в началото на дека.
+insert(i, x)			На позиция определена от итератора "i" вмъква стойността на "x".
+insert(i, начало, край)		На позиция определена от итератора "i" вмъква интервала от стойности определен от итераторите начало и край
+insert(i, n, x)			На позиция определена от итератора "i" вмъква "n" копия на "x"
+max_size( )			Връща максималният размер на дек(най големият брой елементи, които могат да се поберат).
+pop_back( )			Отстранява последния елемент на дек.
+pop_front( )			Отстранява първия елемент на дек.
+push_back(x)			Поставя стойността "x" в края на вектора.
+push_front(x)			Поставя стойността "x" в началото на вектора.
+rbegin( )			Връща обратен итератор, който сочи след последния елемент във дек.
+rend( )				Връща обратен итератор, който сочи първият елемент във дек.
+resize(n, x)			Прави размера на "n"-тия елемент "x" елемента.
+size( )				Връща броя на елементите на дек.
+swap(other_deque)		Разменя съдържанието на 2 дека.
+</p>
+<!-- Saved in parser cache with key wikidb:pcache:idhash:960-1!1!0!1!0!1!0!!bg and timestamp 20061231104557 -->
+<div class="printfooter">
+Взето от "<a href="http://judge.openfmi.net/wiki/index.php/STL_%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B8">http://judge.openfmi.net/wiki/index.php/STL_%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B8</a>".</div>
+	    	    <!-- end content -->
+	    <div class="visualClear"></div>
+	  </div>
+	</div>
+      </div>
+      <div id="column-one">
+	<div id="p-cactions" class="portlet">
+	  <h5>Views</h5>
+	  <ul>
+	    <li id="ca-nstab-main"
+	       class="selected"	       ><a href="/wiki/index.php/STL_%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B8">Статия</a></li><li id="ca-talk"
+	       class="new"	       ><a href="/wiki/index.php?title=%D0%91%D0%B5%D1%81%D0%B5%D0%B4%D0%B0:STL_%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B8&amp;action=edit">Беседа</a></li><li id="ca-edit"
+	       	       ><a href="/wiki/index.php?title=STL_%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B8&amp;action=edit">Редактиране</a></li><li id="ca-history"
+	       	       ><a href="/wiki/index.php?title=STL_%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B8&amp;action=history">История</a></li>	  </ul>
+	</div>
+	<div class="portlet" id="p-personal">
+	  <h5>Лични инструменти</h5>
+	  <div class="pBody">
+	    <ul>
+	    <li id="pt-login"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Userlogin&amp;returnto=STL_%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B8">Влизане</a></li>	    </ul>
+	  </div>
+	</div>
+	<div class="portlet" id="p-logo">
+	  <a style="background-image: url(/wiki/skins/common/images/wiki.png);"
+	    href="/wiki/index.php/%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0"
+	    title="Начална страница"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="portlet" id="p-nav">
+	  <h5>Навигация</h5>
+	  <div class="pBody">
+	    <ul>
+	      	      <li id="n-mainpage"><a href="/wiki/index.php/%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Начална страница</a></li>	      <li id="n-portal"><a href="/wiki/index.php/CsStuff:%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB">Портал за общността</a></li>	      <li id="n-currentevents"><a href="/wiki/index.php/Current_events">Текущи събития</a></li>	      <li id="n-recentchanges"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Recentchanges">Последни промени</a></li>	      <li id="n-randompage"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Randompage">Случайна страница</a></li>	      <li id="n-help"><a href="/wiki/index.php/%D0%9F%D0%BE%D0%BC%D0%BE%D1%89:%D0%9F%D0%BE%D0%BC%D0%BE%D1%89">Помощ</a></li>	      <li id="n-sitesupport"><a href="/wiki/index.php/CsStuff:Site_support">Дарения</a></li>	    </ul>
+	  </div>
+	</div>
+	<div id="p-search" class="portlet">
+	  <h5><label for="searchInput">Търсене</label></h5>
+	  <div class="pBody">
+	    <form name="searchform" action="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Search" id="searchform">
+	      <input id="searchInput" name="search" type="text"
+	        accesskey="s" value="" />
+	      <input type='submit' name="go" class="searchButton" id="searchGoButton"
+	        value="Отваряне"
+	        />&nbsp;<input type='submit' name="fulltext"
+	        class="searchButton"
+	        value="Търсене" />
+	    </form>
+	  </div>
+	</div>
+	<div class="portlet" id="p-tb">
+	  <h5>Кутия с инструменти</h5>
+	  <div class="pBody">
+	    <ul>
+		  		  <li id="t-whatlinkshere"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Whatlinkshere&amp;target=STL_%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B8">Какво сочи насам</a></li>
+		  		  <li id="t-recentchangeslinked"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Recentchangeslinked&amp;target=STL_%D0%9A%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B8">Сродни промени</a></li>
+		  	      	      	      	      	      	      	      	      	      <li id="t-specialpages"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Specialpages">Специални страници</a></li>	      	    </ul>
+	  </div>
+	</div>
+	      </div><!-- end of the left (by default at least) column -->
+      <div class="visualClear"></div>
+      <div id="footer">
+    <div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/wiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>		<ul id="f-list">
+	  <li id="f-lastmod"> Последна промяна на страницата: 20:42, 23 фев 2006.</li>	  <li id="f-viewcount">Страницата е била преглеждана 293 пъти.</li>	  	  	  <li id="f-about"><a href="/wiki/index.php/CsStuff:%D0%97%D0%B0_CsStuff" title="CsStuff:За CsStuff">За CsStuff</a></li>	  <li id="f-disclaimer"><a href="/wiki/index.php/CsStuff:%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F_%D0%B7%D0%B0_%D0%BF%D0%BE%D0%BB%D0%B7%D0%B2%D0%B0%D0%BD%D0%B5" title="CsStuff:Условия за ползване">Условия за ползване</a></li>	</ul>
+      </div>
+    </div>
+    <!-- Served by judge in 0.54 secs. -->
+  </body>
+</html>

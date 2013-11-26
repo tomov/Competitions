@@ -1,0 +1,3 @@
+:haha
+checkers
+goto haha

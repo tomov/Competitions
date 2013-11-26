@@ -1,0 +1,75 @@
+/*
+TASK:leaves
+LANG:C++
+*/
+#include <stdio.h>
+#include <math.h>
+#include <iostream>
+#include <queue>
+#define MAXN 100100
+using namespace std;
+int a[MAXN];
+priority_queue<int> q[MAXN];
+int n;
+int levels[MAXN],used[MAXN];
+int main()
+{
+scanf("%d",&n);
+int i;
+for(i=0;i<n;i++) { scanf("%d",&a[i]);a[i]=-a[i];}
+sort(a,a+n);
+int level=1;
+levels[0]=1;
+for(i=1;i<n;i++)
+ {levels[i]=((levels[i-1]>n)?(levels[i-1]):(levels[i-1]*2));
+// printf("%d ",levels[i]);
+}
+q[1].push(a[0]);
+q[1].push(a[1]);
+used[1]=2;
+long long j,t;
+long long min=(long long)MAXN*(long long)MAXN;
+long long pos,dig;
+long long last=1;
+
+for(i=2;i<n;i++)
+{              
+ min=-(long long)MAXN*(long long)MAXN;               
+ pos=(long long)MAXN;
+ dig=-(long long)MAXN;
+// printf("trying to put %d\n",-a[i]);
+     for(j=1;j<=last;j++)
+     if (q[j].size()!=0)
+     {
+      t=(long long)q[j].top()+(j+1)*(long long)a[i];
+     // cout<<"cost for "<<j<<" = "<<-t<<"\n";
+      if ((t>min) || ((t==min) && (dig>q[j].top()))&& (q[j+1].size()+used[j+1])<levels[j+1])
+      {
+      pos=j;
+      dig=q[j].top();
+      min=t;
+      }
+     } 
+ 
+ q[pos+1].push(q[pos].top());
+ used[pos]++;
+ q[pos].pop();
+ q[pos+1].push(a[i]); 
+ last=pos+1;
+ }             
+ long long allcost=0;   
+for(j=1;j<=last;j++)
+ {
+ //printf("%d:\n",j);
+ while(q[j].size()!=0)
+ {
+// printf("%d ",-q[j].top());
+allcost+=((long long)-q[j].top())*j;
+ q[j].pop();
+ }
+// printf("\n");
+}
+cout<<allcost<<endl;
+ //system("pause");   
+    return 0;
+}

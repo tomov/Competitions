@@ -1,0 +1,88 @@
+Improving your style
+
+
+
+Problem:
+
+So, you're relatively new to programming competitions, you've got some knowledge of algorithms and some skill in putting them to practice and solving problems. But you feel like you're not going any further - you do SRM's over and over, but your rating still varies about the same equillibrium. How can you get better?
+
+
+
+Solution:
+
+There's probably something wrong with your way of practicing. Until some point, someone (teacher/coach/friend) has given you instructions on how to train in coding, but now you're on your own. And you've ended up picking tasks at random and practicing in a somewhat chaotic manner. It's time to put things into order.
+
+First of all, problem solving can viewed as two separate processes: thinking and coding. People say "Measure twice, cut once" and that's true here - before starting to write a solution, you should know exactly what it will be and why it will work. Moreover, the whole code should be inside your head with every function clarified and every idea challenged in your mind beforehand. Spending 30 minutes typing something that was wrong in the first place, or retyping the same function over and over until it works is something you don't want to happen in an SRM. That's why you should know exactly what you're doing before you touch the keyboard. It's difficult if you aren't used to it, but it's worth the effort. Here are a few more tips, based on the situation:
+
+I. There's plenty of time (days/weeks) before the next competition
+=> learn, experiment, practice
+
+1. That's the best time to get keen in some specific area. Think of what your weaknesses are - dynamic programming, geometry, STL, greedy, games, etc. - and focus on them. Since now you're the teacher, it's up to you to say "OK, what's with this modular arithmetic?" and reveal its mysteries: see what it's about, make sure you understand how and why it works, experiment with different operations, get to know what happens if you do this or that and use it in solutions. But where do you get the textbook? "Introduction to Algorithms" (a.k.a. CLRS) is a good start. Also, most of the basic stuff is covered in the TopCoder Articles so I suggest going carefully through all of them, solving the example problems and using Wikipedia for additional information. Alternitively, you can always Google your subject of concern, or post a thread in the forum (of course, after making sure that there's no useful information or sample tasks available).
+
+2. Become familiar with the language you're using. One of the most annoying things is to wonder why your code is doing some weird stuff in the middle of an SRM, or to spend half an hour writing 2 pages of code on some 250 pointer just to see that others have done it in seconds using some fancy STL functions. So it's best to 1) examine other people's code to learn new tricks, 2) experiment and see how different portions of code behave for given inputs, and 3) read the documentation of different features. There's also a lot of information in the Articles and Forums. Overall, the element of surprise during a competition should be brought down to a minimum.
+
+3. Practice makes perfect. If you don't have much time, pick some 250/500-pointer and go for it! Try coding simple tasks as quickly as possible. Otherwise, you can focus on more difficult ones, empasizing more on the thinking part. Either way, you should do it the proper way (see below). And don't limit yourself to TopCoder only - there are dozens of sites with challenging algorithmic problems like USACO (I strongly recommend their training program), GCJ, SPOJ, Timus and many more you can find in the Forums. Although most of them seem completely different in nature, the experience you gain from solving their problems inevitably improves your technique (both coding and thinking) in general. With time, more and more problems will seem familiar to you in some way. Confidence will slowly (but steadily) build up and at some point it will become extremely rare for a problem to surprise you with a completely alien solution. Of course, that point is still far away, but it’s not unreachable
+
+4. How do you approach a given task when practicing? Perhaps you think of some solution, write some code, debug until it passes the sample test cases and submit. It doesn't work - well, let's try again. You don't put much effort since this is no real competition, and a few incorrect submits tempt you to look at the Editorial or the others contestants’ solutions. Although better than nothing, that's not quite the most efficient strategy for increasing your rating. 
+a) To start with, you should pretend that you're in a real SRM - think over the solution to ensure it's correct and do all your best to make it work the first time. Don't ever start coding the first thing that comes to your mind, without even making clear what it is. Two minutes spent thinking might spare you 30 minutes of coding and debugging. If you don't have a clue what to do, brainstorm ideas and write them down. Then pick the most likely ones and try to develop them into an algorithm. When ready, think it over carefully and challenge it like you would challenge someone else's solution. Then decide how you will order your code. Try to challenge each function separately after challenging the main algorithm. It's sometimes even useful to write a pseudo-code on a sheet of paper if the tasks is more complex. And after implementing the solution and testing with the example test cases and some cases you made up (it’s very important to test your solution!), the best way to debug is to look at each line and challenge it separately - does it do what it's supposed to do? Can it fail somewhere? Can you do without it? Is it in consensus with the other functions? This can pay a lot, for the most hidden faults are revealed that way. Since in TopCoder you don't have so much time, try and find the optimal balance between thinking, coding and testing. It's also a great plus if you can write a brute force solution and test with many random cases (stresstest), making 99% sure your solution is correct. And stay calm, however difficult that may seem when the clock is ticking. It's better to have a correct submission for 386 than a wrong one for 441. Quickness will come by itself eventually, it's your technique that should get better first.
+b) Second, you should incorporate self-analysis into your coding routine. Keep track of your progress! Create a text file and when you encounter a problem that challenged you or you simply find interesting, write it down. Log the date, the type of problem, a brief solution and a list of all difficulties you've had while conquering it. That way you not only know what you've solved and when, but you become aware of the mistakes you make and therefore try to avoid them in the future. Here are a few lines from my "match notes.txt":
+.................
+..........
+....some examples here.......
+.............
+................
+..............
+(I know, I'm sometimes too hard on myself, but being a soft coach won't get me anywhere :) As you do this, some mistakes will start showing up over and over. When you have enough data available, make a statistic of your most frequent errors. And don't make them ever, ever again. Here's my "error summary.txt":
+- misread/misinterpreted problem statement – read carefully and see sample test cases!
+- missed corner cases
+- overflow
+- wrongly sized arrays
+- stack overflow
+- double arithmetic
+- mistyped variables
+- ...
+I personally also like to write all mistakes (even the most insignificant ones) on top of each file, along with the solution summary. Anyway, once you identify your weak spots, it's much easier to work on them.
+c) After all, if nothing works, you admit defeat and read the intended solution. Then you simply translate the author's words into a computer language and what do you know - it passes system tests. Hurray. Next problem...
+True, this is not always that easy since the implementation details are usually left for the reader, making this a perfect coding exercise. But that's not the most appropriate way to treat a problem that made you give up. You can surely get more from it than merely typing experience. Read the solution more carefully. Have you seen it before? If yes, why didn't you think of it? If not, could you have thought of it? Is the idea similar to something you've seen before? What hint would have probably lead you to it? Will you bear it in mind next time you see a problem like that one? What new tricks does it use? In which other cases will this approach work? What if the problem statement was slightly different? If there's some unknown theory involved, put it in the to-do list. The most important thing is to understand (even feel) the concept behind the solution, way beyond the context of the particular problem. It's also crucial to realize why your solution didn't do. Was it some small bug? Does it miss some trivial case? Or perhaps it only solves a trivial case of the general problem? Then, note the task in your to-do list and try to solve it again after a couple of weeks. This will surely yield better results.
+d) Of course, there are many other ways to practice. You can focus explicitly on your coding by solving easy tasks fast, or you can train your brain by only making up solutions and comparing them to the authors'. Just remember that in a contest, you need to be good at both, so don't get off balance.
+
+
+II. There's not much time (a few days) before the next competition
+=> practice for the competition
+
+Run full simulations of the contest. Take your time, choose an SRM, set the stopwatch to 1:15 and compete! You should basically turn the stressful atmosphere of a competition into something natural. After the simulation, analyze everything that you believe could have been better. What went wrong this time? Log it all in "match notes.txt" for future, further analysis. Also experiment to find the optimal contest strategy. Complete, say, 5 SRM's submitting before testing more carefully, and 5 more the other way round. Just don't forget your goal is that particular type of contest, so don't distract yourself too much with other algorithmic competitions.
+
+III. Immediately (one or zero day(s)) before the competition
+
+Relax. Gain confidence and exercise your fingers with 250's. Don't torture your mind with difficult drills. Review the log files and the list of common mistakes to know what to prevent. And get some sleep.
+
+IV. During the competition
+
+Kick ass! Work in the style you found most comfortable for you in II. Remember - never give up! Miracles happen in the last seconds. And don't forget to HF besides GL ;)
+
+V. After the competition
+
+Analyze the whole thing as explained in I.4 and II. Since this was for real, not just pretend play, you should put more weight to it when reviewing your behaviour during the SRM.
+
+Overall, remember - order, experience, self-analysis, self-discipline, experiments, self-criticism.
+
+
+
+
+Discussion:
+
+That's not the best guideline for wannabe top coders and surely some of these things may not make any difference for you. They were generally meant for (inter)national high school competitions (5 hours, 3/4 tasks), but they work perfectly for TopCoder as well. They've helped many (including me) so I believe they're worth to try. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+P.S. Just want to say that's the words of wisdom of many coders that a much more experienced than me, not my own ideas. I simply put it all together :) And it's more like a draft, so criticism is encouraged.

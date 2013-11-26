@@ -1,0 +1,527 @@
+ in 0 ; 000000 = 0
+      (0)  from 000000 to 000000 with 0
+      (0)  from 000000 to 000022 with 0
+      (0)  from 000000 to 000111 with 1
+      (0)  from 000000 to 000220 with 0
+      (0)  from 000000 to 001110 with 1
+      (0)  from 000000 to 002200 with 0
+      (0)  from 000000 to 002222 with 0
+      (0)  from 000000 to 011100 with 1
+      (0)  from 000000 to 011122 with 1
+      (0)  from 000000 to 022000 with 0
+      (0)  from 000000 to 022022 with 0
+      (0)  from 000000 to 022111 with 1
+      (0)  from 000000 to 022220 with 0
+      (0)  from 000000 to 111000 with 1
+      (0)  from 000000 to 111022 with 1
+      (0)  from 000000 to 111111 with 1
+      (0)  from 000000 to 111220 with 1
+      (0)  from 000000 to 220000 with 0
+      (0)  from 000000 to 220022 with 0
+      (0)  from 000000 to 220111 with 1
+      (0)  from 000000 to 220220 with 0
+      (0)  from 000000 to 221110 with 1
+      (0)  from 000000 to 222200 with 0
+      (0)  from 000000 to 222222 with 0
+ in 1 ; 000000 = 0
+      (1)  from 000000 to 000000 with 0
+      (1)  from 000000 to 000022 with 0
+      (1)  from 000000 to 000111 with 1
+      (1)  from 000000 to 000220 with 0
+      (1)  from 000000 to 001110 with 1
+      (1)  from 000000 to 002200 with 0
+      (1)  from 000000 to 002222 with 0
+      (1)  from 000000 to 011100 with 1
+      (1)  from 000000 to 011122 with 1
+      (1)  from 000000 to 022000 with 0
+      (1)  from 000000 to 022022 with 0
+      (1)  from 000000 to 022111 with 1
+      (1)  from 000000 to 022220 with 0
+      (1)  from 000000 to 111000 with 1
+      (1)  from 000000 to 111022 with 1
+      (1)  from 000000 to 111111 with 1
+      (1)  from 000000 to 111220 with 1
+      (1)  from 000000 to 220000 with 0
+      (1)  from 000000 to 220022 with 0
+      (1)  from 000000 to 220111 with 1
+      (1)  from 000000 to 220220 with 0
+      (1)  from 000000 to 221110 with 1
+      (1)  from 000000 to 222200 with 0
+      (1)  from 000000 to 222222 with 0
+ in 1 ; 000022 = 0
+      (1)  from 000022 to 000011 with 1
+      (1)  from 000022 to 002211 with 1
+      (1)  from 000022 to 011111 with 2
+      (1)  from 000022 to 022011 with 1
+      (1)  from 000022 to 111011 with 2
+      (1)  from 000022 to 220011 with 1
+      (1)  from 000022 to 222211 with 1
+ in 1 ; 000111 = 1
+      (1)  from 000111 to 000000 with 0
+      (1)  from 000111 to 022000 with 0
+      (1)  from 000111 to 111000 with 1
+      (1)  from 000111 to 220000 with 0
+ in 1 ; 000220 = 0
+      (1)  from 000220 to 000110 with 1
+      (1)  from 000220 to 022110 with 1
+      (1)  from 000220 to 111110 with 2
+      (1)  from 000220 to 220110 with 1
+ in 1 ; 001110 = 1
+      (1)  from 001110 to 000000 with 0
+      (1)  from 001110 to 220000 with 0
+ in 1 ; 002200 = 0
+      (1)  from 002200 to 001100 with 1
+      (1)  from 002200 to 001122 with 1
+      (1)  from 002200 to 221100 with 1
+      (1)  from 002200 to 221122 with 1
+ in 1 ; 002222 = 0
+      (1)  from 002222 to 001111 with 1
+      (1)  from 002222 to 221111 with 1
+ in 1 ; 011100 = 1
+      (1)  from 011100 to 000000 with 0
+      (1)  from 011100 to 000022 with 0
+ in 1 ; 011122 = 1
+      (1)  from 011122 to 000011 with 1
+ in 1 ; 022000 = 0
+      (1)  from 022000 to 011000 with 1
+      (1)  from 022000 to 011022 with 1
+      (1)  from 022000 to 011111 with 2
+      (1)  from 022000 to 011220 with 1
+ in 1 ; 022022 = 0
+      (1)  from 022022 to 011011 with 2
+ in 1 ; 022111 = 1
+      (1)  from 022111 to 011000 with 1
+ in 1 ; 022220 = 0
+      (1)  from 022220 to 011110 with 1
+ in 1 ; 111000 = 1
+      (1)  from 111000 to 000000 with 0
+      (1)  from 111000 to 000022 with 0
+      (1)  from 111000 to 000111 with 1
+      (1)  from 111000 to 000220 with 0
+ in 1 ; 111022 = 1
+      (1)  from 111022 to 000011 with 1
+ in 1 ; 111111 = 1
+      (1)  from 111111 to 000000 with 0
+ in 1 ; 111220 = 1
+      (1)  from 111220 to 000110 with 1
+ in 1 ; 220000 = 0
+      (1)  from 220000 to 110000 with 1
+      (1)  from 220000 to 110022 with 1
+      (1)  from 220000 to 110111 with 2
+      (1)  from 220000 to 110220 with 1
+      (1)  from 220000 to 111110 with 2
+      (1)  from 220000 to 112200 with 1
+      (1)  from 220000 to 112222 with 1
+ in 1 ; 220022 = 0
+      (1)  from 220022 to 110011 with 2
+      (1)  from 220022 to 112211 with 2
+ in 1 ; 220111 = 1
+      (1)  from 220111 to 110000 with 1
+ in 1 ; 220220 = 0
+      (1)  from 220220 to 110110 with 2
+ in 1 ; 221110 = 1
+      (1)  from 221110 to 110000 with 1
+ in 1 ; 222200 = 0
+      (1)  from 222200 to 111100 with 1
+      (1)  from 222200 to 111122 with 1
+ in 1 ; 222222 = 0
+      (1)  from 222222 to 111111 with 1
+ in 2 ; 000000 = 1
+      (2)  from 000000 to 000000 with 0
+      (2)  from 000000 to 000022 with 0
+      (2)  from 000000 to 000111 with 1
+      (2)  from 000000 to 000220 with 0
+      (2)  from 000000 to 001110 with 1
+      (2)  from 000000 to 002200 with 0
+      (2)  from 000000 to 002222 with 0
+      (2)  from 000000 to 011100 with 1
+      (2)  from 000000 to 011122 with 1
+      (2)  from 000000 to 022000 with 0
+      (2)  from 000000 to 022022 with 0
+      (2)  from 000000 to 022111 with 1
+      (2)  from 000000 to 022220 with 0
+      (2)  from 000000 to 111000 with 1
+      (2)  from 000000 to 111022 with 1
+      (2)  from 000000 to 111111 with 1
+      (2)  from 000000 to 111220 with 1
+      (2)  from 000000 to 220000 with 0
+      (2)  from 000000 to 220022 with 0
+      (2)  from 000000 to 220111 with 1
+      (2)  from 000000 to 220220 with 0
+      (2)  from 000000 to 221110 with 1
+      (2)  from 000000 to 222200 with 0
+      (2)  from 000000 to 222222 with 0
+ in 2 ; 000011 = 2
+      (2)  from 000011 to 000000 with 0
+      (2)  from 000011 to 002200 with 0
+      (2)  from 000011 to 011100 with 1
+      (2)  from 000011 to 022000 with 0
+      (2)  from 000011 to 111000 with 1
+      (2)  from 000011 to 220000 with 0
+      (2)  from 000011 to 222200 with 0
+ in 2 ; 000022 = 1
+      (2)  from 000022 to 000011 with 1
+      (2)  from 000022 to 002211 with 1
+      (2)  from 000022 to 011111 with 2
+      (2)  from 000022 to 022011 with 1
+      (2)  from 000022 to 111011 with 2
+      (2)  from 000022 to 220011 with 1
+      (2)  from 000022 to 222211 with 1
+ in 2 ; 000110 = 2
+      (2)  from 000110 to 000000 with 0
+      (2)  from 000110 to 022000 with 0
+      (2)  from 000110 to 111000 with 1
+      (2)  from 000110 to 220000 with 0
+ in 2 ; 000111 = 2
+      (2)  from 000111 to 000000 with 0
+      (2)  from 000111 to 022000 with 0
+      (2)  from 000111 to 111000 with 1
+      (2)  from 000111 to 220000 with 0
+ in 2 ; 000220 = 1
+      (2)  from 000220 to 000110 with 1
+      (2)  from 000220 to 022110 with 1
+      (2)  from 000220 to 111110 with 2
+      (2)  from 000220 to 220110 with 1
+ in 2 ; 001100 = 1
+      (2)  from 001100 to 000000 with 0
+      (2)  from 001100 to 000022 with 0
+      (2)  from 001100 to 220000 with 0
+      (2)  from 001100 to 220022 with 0
+ in 2 ; 001110 = 1
+      (2)  from 001110 to 000000 with 0
+      (2)  from 001110 to 220000 with 0
+ in 2 ; 001111 = 1
+      (2)  from 001111 to 000000 with 0
+      (2)  from 001111 to 220000 with 0
+ in 2 ; 001122 = 1
+      (2)  from 001122 to 000011 with 1
+      (2)  from 001122 to 220011 with 1
+ in 2 ; 002200 = 0
+      (2)  from 002200 to 001100 with 1
+      (2)  from 002200 to 001122 with 1
+      (2)  from 002200 to 221100 with 1
+      (2)  from 002200 to 221122 with 1
+ in 2 ; 002211 = 1
+      (2)  from 002211 to 001100 with 1
+      (2)  from 002211 to 221100 with 1
+ in 2 ; 002222 = 0
+      (2)  from 002222 to 001111 with 1
+      (2)  from 002222 to 221111 with 1
+ in 2 ; 011000 = 2
+      (2)  from 011000 to 000000 with 0
+      (2)  from 011000 to 000022 with 0
+      (2)  from 011000 to 000111 with 1
+      (2)  from 011000 to 000220 with 0
+ in 2 ; 011011 = 2
+      (2)  from 011011 to 000000 with 0
+ in 2 ; 011022 = 1
+      (2)  from 011022 to 000011 with 1
+ in 2 ; 011100 = 1
+      (2)  from 011100 to 000000 with 0
+      (2)  from 011100 to 000022 with 0
+ in 2 ; 011110 = 1
+      (2)  from 011110 to 000000 with 0
+ in 2 ; 011111 = 2
+      (2)  from 011111 to 000000 with 0
+ in 2 ; 011122 = 1
+      (2)  from 011122 to 000011 with 1
+ in 2 ; 011220 = 1
+      (2)  from 011220 to 000110 with 1
+ in 2 ; 022000 = 1
+      (2)  from 022000 to 011000 with 1
+      (2)  from 022000 to 011022 with 1
+      (2)  from 022000 to 011111 with 2
+      (2)  from 022000 to 011220 with 1
+ in 2 ; 022011 = 1
+      (2)  from 022011 to 011000 with 1
+ in 2 ; 022022 = 0
+      (2)  from 022022 to 011011 with 2
+ in 2 ; 022110 = 1
+      (2)  from 022110 to 011000 with 1
+ in 2 ; 022111 = 1
+      (2)  from 022111 to 011000 with 1
+ in 2 ; 022220 = 0
+      (2)  from 022220 to 011110 with 1
+ in 2 ; 110000 = 2
+      (2)  from 110000 to 000000 with 0
+      (2)  from 110000 to 000022 with 0
+      (2)  from 110000 to 000111 with 1
+      (2)  from 110000 to 000220 with 0
+      (2)  from 110000 to 001110 with 1
+      (2)  from 110000 to 002200 with 0
+      (2)  from 110000 to 002222 with 0
+ in 2 ; 110011 = 2
+      (2)  from 110011 to 000000 with 0
+      (2)  from 110011 to 002200 with 0
+ in 2 ; 110022 = 1
+      (2)  from 110022 to 000011 with 1
+      (2)  from 110022 to 002211 with 1
+ in 2 ; 110110 = 2
+      (2)  from 110110 to 000000 with 0
+ in 2 ; 110111 = 2
+      (2)  from 110111 to 000000 with 0
+ in 2 ; 110220 = 1
+      (2)  from 110220 to 000110 with 1
+ in 2 ; 111000 = 2
+      (2)  from 111000 to 000000 with 0
+      (2)  from 111000 to 000022 with 0
+      (2)  from 111000 to 000111 with 1
+      (2)  from 111000 to 000220 with 0
+ in 2 ; 111011 = 2
+      (2)  from 111011 to 000000 with 0
+ in 2 ; 111022 = 1
+      (2)  from 111022 to 000011 with 1
+ in 2 ; 111100 = 1
+      (2)  from 111100 to 000000 with 0
+      (2)  from 111100 to 000022 with 0
+ in 2 ; 111110 = 2
+      (2)  from 111110 to 000000 with 0
+ in 2 ; 111111 = 1
+      (2)  from 111111 to 000000 with 0
+ in 2 ; 111122 = 1
+      (2)  from 111122 to 000011 with 1
+ in 2 ; 111220 = 1
+      (2)  from 111220 to 000110 with 1
+ in 2 ; 112200 = 1
+      (2)  from 112200 to 001100 with 1
+      (2)  from 112200 to 001122 with 1
+ in 2 ; 112211 = 2
+      (2)  from 112211 to 001100 with 1
+ in 2 ; 112222 = 1
+      (2)  from 112222 to 001111 with 1
+ in 2 ; 220000 = 1
+      (2)  from 220000 to 110000 with 1
+      (2)  from 220000 to 110022 with 1
+      (2)  from 220000 to 110111 with 2
+      (2)  from 220000 to 110220 with 1
+      (2)  from 220000 to 111110 with 2
+      (2)  from 220000 to 112200 with 1
+      (2)  from 220000 to 112222 with 1
+ in 2 ; 220011 = 1
+      (2)  from 220011 to 110000 with 1
+      (2)  from 220011 to 112200 with 1
+ in 2 ; 220022 = 0
+      (2)  from 220022 to 110011 with 2
+      (2)  from 220022 to 112211 with 2
+ in 2 ; 220110 = 1
+      (2)  from 220110 to 110000 with 1
+ in 2 ; 220111 = 1
+      (2)  from 220111 to 110000 with 1
+ in 2 ; 220220 = 0
+      (2)  from 220220 to 110110 with 2
+ in 2 ; 221100 = 1
+      (2)  from 221100 to 110000 with 1
+      (2)  from 221100 to 110022 with 1
+ in 2 ; 221110 = 1
+      (2)  from 221110 to 110000 with 1
+ in 2 ; 221111 = 1
+      (2)  from 221111 to 110000 with 1
+ in 2 ; 221122 = 1
+      (2)  from 221122 to 110011 with 2
+ in 2 ; 222200 = 0
+      (2)  from 222200 to 111100 with 1
+      (2)  from 222200 to 111122 with 1
+ in 2 ; 222211 = 1
+      (2)  from 222211 to 111100 with 1
+ in 2 ; 222222 = 0
+      (2)  from 222222 to 111111 with 1
+ in 3 ; 000000 = 2
+      (3)  from 000000 to 000000 with 0
+      (3)  from 000000 to 000022 with 0
+      (3)  from 000000 to 000111 with 1
+      (3)  from 000000 to 000220 with 0
+      (3)  from 000000 to 001110 with 1
+      (3)  from 000000 to 002200 with 0
+      (3)  from 000000 to 002222 with 0
+      (3)  from 000000 to 011100 with 1
+      (3)  from 000000 to 011122 with 1
+      (3)  from 000000 to 022000 with 0
+      (3)  from 000000 to 022022 with 0
+      (3)  from 000000 to 022111 with 1
+      (3)  from 000000 to 022220 with 0
+      (3)  from 000000 to 111000 with 1
+      (3)  from 000000 to 111022 with 1
+      (3)  from 000000 to 111111 with 1
+      (3)  from 000000 to 111220 with 1
+      (3)  from 000000 to 220000 with 0
+      (3)  from 000000 to 220022 with 0
+      (3)  from 000000 to 220111 with 1
+      (3)  from 000000 to 220220 with 0
+      (3)  from 000000 to 221110 with 1
+      (3)  from 000000 to 222200 with 0
+      (3)  from 000000 to 222222 with 0
+ in 3 ; 000011 = 2
+      (3)  from 000011 to 000000 with 0
+      (3)  from 000011 to 002200 with 0
+      (3)  from 000011 to 011100 with 1
+      (3)  from 000011 to 022000 with 0
+      (3)  from 000011 to 111000 with 1
+      (3)  from 000011 to 220000 with 0
+      (3)  from 000011 to 222200 with 0
+ in 3 ; 000022 = 2
+      (3)  from 000022 to 000011 with 1
+      (3)  from 000022 to 002211 with 1
+      (3)  from 000022 to 011111 with 2
+      (3)  from 000022 to 022011 with 1
+      (3)  from 000022 to 111011 with 2
+      (3)  from 000022 to 220011 with 1
+      (3)  from 000022 to 222211 with 1
+ in 3 ; 000110 = 2
+      (3)  from 000110 to 000000 with 0
+      (3)  from 000110 to 022000 with 0
+      (3)  from 000110 to 111000 with 1
+      (3)  from 000110 to 220000 with 0
+ in 3 ; 000111 = 3
+      (3)  from 000111 to 000000 with 0
+      (3)  from 000111 to 022000 with 0
+      (3)  from 000111 to 111000 with 1
+      (3)  from 000111 to 220000 with 0
+ in 3 ; 000220 = 2
+      (3)  from 000220 to 000110 with 1
+      (3)  from 000220 to 022110 with 1
+      (3)  from 000220 to 111110 with 2
+      (3)  from 000220 to 220110 with 1
+ in 3 ; 001100 = 3
+      (3)  from 001100 to 000000 with 0
+      (3)  from 001100 to 000022 with 0
+      (3)  from 001100 to 220000 with 0
+      (3)  from 001100 to 220022 with 0
+ in 3 ; 001110 = 3
+      (3)  from 001110 to 000000 with 0
+      (3)  from 001110 to 220000 with 0
+ in 3 ; 001111 = 2
+      (3)  from 001111 to 000000 with 0
+      (3)  from 001111 to 220000 with 0
+ in 3 ; 001122 = 2
+      (3)  from 001122 to 000011 with 1
+      (3)  from 001122 to 220011 with 1
+ in 3 ; 002200 = 2
+      (3)  from 002200 to 001100 with 1
+      (3)  from 002200 to 001122 with 1
+      (3)  from 002200 to 221100 with 1
+      (3)  from 002200 to 221122 with 1
+ in 3 ; 002211 = 2
+      (3)  from 002211 to 001100 with 1
+      (3)  from 002211 to 221100 with 1
+ in 3 ; 002222 = 2
+      (3)  from 002222 to 001111 with 1
+      (3)  from 002222 to 221111 with 1
+ in 3 ; 011000 = 2
+      (3)  from 011000 to 000000 with 0
+      (3)  from 011000 to 000022 with 0
+      (3)  from 011000 to 000111 with 1
+      (3)  from 011000 to 000220 with 0
+ in 3 ; 011011 = 2
+      (3)  from 011011 to 000000 with 0
+ in 3 ; 011022 = 2
+      (3)  from 011022 to 000011 with 1
+ in 3 ; 011100 = 3
+      (3)  from 011100 to 000000 with 0
+      (3)  from 011100 to 000022 with 0
+ in 3 ; 011110 = 1
+      (3)  from 011110 to 000000 with 0
+ in 3 ; 011111 = 3
+      (3)  from 011111 to 000000 with 0
+ in 3 ; 011122 = 2
+      (3)  from 011122 to 000011 with 1
+ in 3 ; 011220 = 2
+      (3)  from 011220 to 000110 with 1
+ in 3 ; 022000 = 2
+      (3)  from 022000 to 011000 with 1
+      (3)  from 022000 to 011022 with 1
+      (3)  from 022000 to 011111 with 2
+      (3)  from 022000 to 011220 with 1
+ in 3 ; 022011 = 2
+      (3)  from 022011 to 011000 with 1
+ in 3 ; 022022 = 1
+      (3)  from 022022 to 011011 with 2
+ in 3 ; 022110 = 2
+      (3)  from 022110 to 011000 with 1
+ in 3 ; 022111 = 2
+      (3)  from 022111 to 011000 with 1
+ in 3 ; 022220 = 1
+      (3)  from 022220 to 011110 with 1
+ in 3 ; 110000 = 2
+      (3)  from 110000 to 000000 with 0
+      (3)  from 110000 to 000022 with 0
+      (3)  from 110000 to 000111 with 1
+      (3)  from 110000 to 000220 with 0
+      (3)  from 110000 to 001110 with 1
+      (3)  from 110000 to 002200 with 0
+      (3)  from 110000 to 002222 with 0
+ in 3 ; 110011 = 3
+      (3)  from 110011 to 000000 with 0
+      (3)  from 110011 to 002200 with 0
+ in 3 ; 110022 = 2
+      (3)  from 110022 to 000011 with 1
+      (3)  from 110022 to 002211 with 1
+ in 3 ; 110110 = 2
+      (3)  from 110110 to 000000 with 0
+ in 3 ; 110111 = 3
+      (3)  from 110111 to 000000 with 0
+ in 3 ; 110220 = 2
+      (3)  from 110220 to 000110 with 1
+ in 3 ; 111000 = 3
+      (3)  from 111000 to 000000 with 0
+      (3)  from 111000 to 000022 with 0
+      (3)  from 111000 to 000111 with 1
+      (3)  from 111000 to 000220 with 0
+ in 3 ; 111011 = 3
+      (3)  from 111011 to 000000 with 0
+ in 3 ; 111022 = 2
+      (3)  from 111022 to 000011 with 1
+ in 3 ; 111100 = 2
+      (3)  from 111100 to 000000 with 0
+      (3)  from 111100 to 000022 with 0
+ in 3 ; 111110 = 3
+      (3)  from 111110 to 000000 with 0
+ in 3 ; 111111 = 2
+      (3)  from 111111 to 000000 with 0
+ in 3 ; 111122 = 1
+      (3)  from 111122 to 000011 with 1
+ in 3 ; 111220 = 2
+      (3)  from 111220 to 000110 with 1
+ in 3 ; 112200 = 2
+      (3)  from 112200 to 001100 with 1
+      (3)  from 112200 to 001122 with 1
+ in 3 ; 112211 = 2
+      (3)  from 112211 to 001100 with 1
+ in 3 ; 112222 = 2
+      (3)  from 112222 to 001111 with 1
+ in 3 ; 220000 = 2
+      (3)  from 220000 to 110000 with 1
+      (3)  from 220000 to 110022 with 1
+      (3)  from 220000 to 110111 with 2
+      (3)  from 220000 to 110220 with 1
+      (3)  from 220000 to 111110 with 2
+      (3)  from 220000 to 112200 with 1
+      (3)  from 220000 to 112222 with 1
+ in 3 ; 220011 = 2
+      (3)  from 220011 to 110000 with 1
+      (3)  from 220011 to 112200 with 1
+ in 3 ; 220022 = 1
+      (3)  from 220022 to 110011 with 2
+      (3)  from 220022 to 112211 with 2
+ in 3 ; 220110 = 2
+      (3)  from 220110 to 110000 with 1
+ in 3 ; 220111 = 2
+      (3)  from 220111 to 110000 with 1
+ in 3 ; 220220 = 1
+      (3)  from 220220 to 110110 with 2
+ in 3 ; 221100 = 2
+      (3)  from 221100 to 110000 with 1
+      (3)  from 221100 to 110022 with 1
+ in 3 ; 221110 = 2
+      (3)  from 221110 to 110000 with 1
+ in 3 ; 221111 = 1
+      (3)  from 221111 to 110000 with 1
+ in 3 ; 221122 = 1
+      (3)  from 221122 to 110011 with 2
+ in 3 ; 222200 = 2
+      (3)  from 222200 to 111100 with 1
+      (3)  from 222200 to 111122 with 1
+ in 3 ; 222211 = 2
+      (3)  from 222211 to 111100 with 1
+ in 3 ; 222222 = 1
+      (3)  from 222222 to 111111 with 1
+4                                       0.640000

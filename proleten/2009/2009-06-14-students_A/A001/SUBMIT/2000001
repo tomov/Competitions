@@ -1,0 +1,40 @@
+#include<cstdio>
+#include<algorithm>
+using namespace std;
+int fs[100000];
+main () {
+  unsigned long long sum=0;
+  int i, n;
+  scanf("%d", &n);
+  for(i=0;i<n;i++) {
+    scanf("%d", &fs[i]);
+  }
+  sort(fs, fs+n);
+  int st=1, st1=0;
+  while(st<n) {
+    st=st<<1;
+    st1++;
+    //printf("%d %d\n", st, st1);
+  }
+  //printf("%d\n", st);
+  int prevlevel=0;
+  int p=st;
+  while(prevlevel+p>n) {
+    p-=2;
+    prevlevel+=1;
+  }
+  //printf("%d %d %d\n", p, prevlevel, st);
+  for(i=n-1;i>=0;i--) {
+    if(!prevlevel) {
+      sum+=(fs[i]*(st1  ));
+      //printf("%d %d\n", fs[i], st1);
+    }
+    else {
+      sum+=(fs[i]*((st1-1)));
+      //printf("%d %d\n", fs[i], (st1-1));
+      prevlevel--;
+    }
+  }
+  printf("%d\n", sum);
+  return 0;
+}

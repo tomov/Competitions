@@ -1,0 +1,50 @@
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+int size, answer, n;
+int split[128];
+
+void smooth(int s) {
+     int temp=0;
+     
+     for (int  i=0; i<s-1; ++i)
+         if (split[i] < split[i+1]+temp) {
+               temp=split[i+1]+temp-split[i];
+               split[i+1]=split[i];
+         } else {
+            temp=0;
+         }
+     while (temp > 0) {
+           split[size++]=1;
+           --temp;
+     }
+}
+
+int main() {
+    scanf("%d", &n);
+    answer=1;
+    split[size++]=n;
+    while (split[0] != 1) {
+          if (split[size-1] > 1) {
+              --split[size-1];
+              split[size++]=1;
+              ++answer;
+          } else {
+              int cnt=size-1;
+              int br=0;
+              while (split[cnt] == 1) {
+                    --cnt;
+                    ++br;
+              }
+              --split[cnt];
+              split[cnt+1]=br+1;
+              size=cnt+2;
+              smooth(size);
+              ++answer;
+          }
+    }
+    printf("%d\n", answer);
+return 0;
+}

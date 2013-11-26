@@ -1,0 +1,720 @@
+
+Session Start: Tue Jun 08 19:59:15 2004
+Session Ident: #ioi2004
+* Now talking in #ioi2004
+<Swetko> probvai s po stara
+* Logging for #ioi2004 halted
+<Prince_of_Dawn> ne moga da se zanimawam
+<rangel__> e az sym s 3.3.3, ne e ot tova
+* Logging #ioi2004 to 'logs\ioi_2004_06_08.log'
+<Prince_of_Dawn> e togawa e neobqsnimo
+<VelinTzanov> Za modula na Double li govorite?
+<Prince_of_Dawn> Nedew ti pod 98 mi si w was
+<rangel__> da
+<Prince_of_Dawn> sa
+<Prince_of_Dawn> da
+<sssa88> da pod 98 sym
+<Prince_of_Dawn> moje da e ot towa
+<Prince_of_Dawn> Veline namesi se;)
+<Prince_of_Dawn> ne moga da kompiliram
+<VelinTzanov> Chakai da vidia pri men.
+<VelinTzanov> hmm... neshto niamam .h file-a.
+<VelinTzanov> Zashto ne mojesh, kakvo kazva?
+<VelinTzanov> Vsichki li ste tuk, btw?
+<rangel__> maj da
+<sssa88> az sym tuk
+<Swetko> i axz
+<Prince_of_Dawn> mi kazwa che ne moje da razpoznae modula
+<VelinTzanov> Btw, Garden niama da ia test-vam zashtoto sega shte pravim druga zadacha s izpyknala obvivka. Tam shte vidim dali raboti. A double shte triabva sami da si ia test-vate, che shte mi otneme mnogo vreme... a mojete mnogo lesno da si ia test-vate sami.
+<Prince_of_Dawn> na men mi e mnogo trudno ;)
+<rangel__> prati mi source-a da ti q testvam
+<VelinTzanov> Source-a mu ne se kompilira syvsem mai... :)
+<Prince_of_Dawn> toest
+<rangel__> mozhe pri men da nqma problemi s bibliotekata (pod linux)
+<VelinTzanov> Ami ima razni nedeklarirani promenlivi mai... pone tozi source koito si mi pratil na men.
+<Prince_of_Dawn> mi ne moje
+<rangel__> mozhe bi zashtoto nqmash .h fajl :-)
+<VelinTzanov> Moje :)
+<Prince_of_Dawn> ;)
+<VelinTzanov> I pri men ne razpoznava modula. :(
+<VelinTzanov> (namerih si .h file-a)
+<VelinTzanov> OK, Borisov - razberi se s niakoi ot tiah (koito e podkaral modula) da ti test-va.
+<VelinTzanov> Sega da se hvashtame za rabota, che dnes imame dosta.
+<VelinTzanov> Po vcherashnia material ima li vyprosi?
+<sssa88> ne
+<rangel__> ne
+<Prince_of_Dawn> ne
+<Swetko> ne
+<VelinTzanov> OK
+<VelinTzanov> Kajete sega kakvo pravihte vchera? Swetko, ti?
+<VelinTzanov> (btw, zabravih da ti kaja che si na svobodna podgotovka zasega - ne e nujno da mi predavash domashno, no triabva da se zanimavash sam)
+<Swetko> ami pochti napisah round
+<Swetko> niamah vreme stot biah sledobed na uchiliste
+<VelinTzanov> Round ne bi triabvalo da iziskva vreme, osobeno ako veche imash O(N^3) reshenieto.
+<Swetko> ami az ia prenapisah na N^2
+<VelinTzanov> ???
+<VelinTzanov> Iskash da kajesh che ima N^2, a ne N^2*LogN?
+<sssa88> i az N^2 sym pisal
+<sssa88> i na systezanieto tova pisah ama bqh go sbugnal
+<VelinTzanov> Ha!:)
+<VelinTzanov> Bravo na vas be - ia kajete.
+<Swetko> ami prekompiutvash si razni nesta
+<VelinTzanov> Kajete za N^2 reshenieto de. Nie s Ivo ne izmislihme N^2 za 5-10 minutki i reshihme che niama (pone ne takova deto da go napravite na systezanieto)... a to imalo. :)
+<Swetko> primerno az imam 4 masiva
+<sssa88> ami prosto se precompute-va informaciqta kolko shte vdigne i-tiq ot pyrvata kolona ako do j-tiq sa veche vlezli ot 2-rata
+<VelinTzanov> Kakvo precompute-vash?
+<VelinTzanov> Ahaaaa... iasno. :)
+<sssa88> i syhtoto samo che za naobratno
+<Swetko> edin za tova kolko hora ot PURVA ste srestne niakoi si ot PURVA redica kato minava
+<Swetko> susto i za drugite 3 kombinacii ot PURVA I VTORA
+<VelinTzanov> Vij ti... sladko. :)
+<VelinTzanov> Ts, ts, ts... ostariavame, eiii...
+<VelinTzanov> A specialno otdelihme niakolko minutki da pomislim za N^2 reshenie i ne se setihme. :) A to ochevidno. :)
+<Swetko> ami na takava zadacha izobsto ne mi hrumna da pisha indexni dyrveta i drugi podobni
+<VelinTzanov> Che to v edin moment ti triabva tochno indexno dyrvo v dosta chist vid.
+<Swetko> i triabva niakoi nesta da se smiatat On the way 
+<sssa88> na men syshto
+<Swetko> stot niama pamet
+<VelinTzanov> Ama aide da govorim za neia kato i doide deniat. :)
+<Swetko> ama az tova ne se setih na systezanieto
+<VelinTzanov> Taka, az shte ida da vzema neshto za iadene, a vie se izredete da mi kajete koi kakvo e pravil vchera - pyrvo Vlado, posle Borisov, nakraia Rangel.
+<sssa88> az napisah "gar" i "double", posle si debug-vah "round" - dobre che nakraq valio me svetna kakva mi bila greshkata - toj bil napravil syshtata
+<Swetko> koia e gar
+<Prince_of_Dawn> garden
+<VelinTzanov> Vij ti, Valio i trite li gi e reshil na systezanieto?
+<sssa88> aha
+<sssa88> vypreki che negovoto reshenie na round osven taq greshka zabiva neshto
+<VelinTzanov> Ts, ts, ts... Ivo mi vze nai-dobrite systezateli... :(   Nishto - na BOI shte gi biem. :)
+<sssa88> na chast ot testovete
+<VelinTzanov> Borisov, ti?
+<Prince_of_Dawn> di imash predizwikatelstwo da napravish ot nas dobri
+<Prince_of_Dawn> az napisah gar s dwata algoritama i posle double ma ne sam uspql da q kompiliram taka che si nqmam ideq dali raboti
+<Prince_of_Dawn> imah ideq da cheta twoita hexa
+<Prince_of_Dawn> ma sestra mi si doide ot US
+<Prince_of_Dawn> i towa beshe
+<VelinTzanov> Rangel?
+<rangel__> men klasniq me razkara do uchilishte da me zanimava s diplomite i razni takiva
+<rangel__> sled tova poluzaspal si napisah domashnoto i sednah da pisha hexa, no neshto ne se poluchi
+<rangel__> btw. utre kym 8 shte trqbva da si trygna che imam dyrzhaven izpit
+<Prince_of_Dawn> po kormuwane?
+<rangel__> ne po informatika :-)
+<VelinTzanov> :):)
+<Prince_of_Dawn> ;)
+<VelinTzanov> Struva mi se, che ti si mnogo po-predstavitel na dyrjavata ot tezi deto shte ti praviat dyrjavnia izpit... :)
+<Prince_of_Dawn> ;)
+<rangel__> e drugo si e teoretichen izpit po MS Word :-)
+<VelinTzanov> Utre e tejko. Ne e hubavo. Shte se opitame po-byrzo utre.
+<sssa88> kakyv e toq dyrzaven izpit
+<sssa88> zashto go dyrzish
+<rangel__> mi zashtoto mi e takava paralelkata v uchilishte
+<sssa88> aha
+<Prince_of_Dawn> s usileno izuchawne na MS word
+<Prince_of_Dawn> ;)))))))
+<VelinTzanov> OK, da pochvame.
+<VelinTzanov> Dnes shte se uprajniavame na dvoichno tyrsene.
+<VelinTzanov> Pyrvo shte se uchim da sme umni, a posle shte se uchim da pishem kod kato idioti. :)
+<Prince_of_Dawn> ?
+<VelinTzanov> Pyrvata zadacha za dnes e Dwarfs ot CEOI 2002
+<VelinTzanov> Nadiavam se che imate link, che me myrzi da tyrsia...
+<VelinTzanov> ... aide shte potyrsia. :)
+<Prince_of_Dawn> az si imam uslowie
+<VelinTzanov> http://cs.science.upjs.sk/ceoi/documents/tasks/dwarfs-tsk.pdf
+<VelinTzanov> Kato prochetete i razberete - kajete.
+<Prince_of_Dawn> gotowo;)
+<sssa88> gotovo
+<rangel__> i az
+<VelinTzanov> Swetko?
+<Swetko> a
+<Swetko> d
+<VelinTzanov> E, chak pyk ad...:)
+<Swetko> da
+<Swetko> t.e. da
+<Prince_of_Dawn> "d"-to mo e izostanalo chak sled entar-a
+<VelinTzanov> Taka, imame mnogo tochki.
+<VelinTzanov> 100 000 biaha mai a?
+<sssa88> da
+<VelinTzanov> I posle ni idvat 100 000 pravi i za vsiaka ot tiah triabva da kajem dali razdelia tochkite.
+<VelinTzanov> Taka. Kakvo mojem da napravim?
+<VelinTzanov> Kakvo ni e dadeno?
+<VelinTzanov> Osven 100 000-te tochki.
+<VelinTzanov> (da vidim nauchili li ste neshto ot vchera :) )
+<VelinTzanov> (Swetko, ti da si mylchish)
+<Prince_of_Dawn> obwiwka
+<VelinTzanov> Hubavo, znachi moje da priemem che ni e dadena obvivkata.
+<VelinTzanov> I sega kakvo bi ni reshilo zadachata? Kakvo ako mojehme da pravim shtiahme da mojem da reshim zadachata?
+<VelinTzanov> Ne mu mislete mnogo - vyprosyt e plityk.
+<rangel__> da proverim dali prava presicha obvivkata
+<Prince_of_Dawn> za LOG time
+<VelinTzanov> Xtra
+<VelinTzanov> Imame si general podhod za reshavane na zadachata i si go sledvame.
+<VelinTzanov> Sega kak pravim proverkata za LogN vreme?
+<VelinTzanov> Kogato imame N naredeni neshta i tyrsim neshto v tiah za LogN vreme, kakvo pravim? :)
+<Swetko> sestam se za 2 nachina
+<VelinTzanov> Vlado?
+<sssa88> bsearch
+<VelinTzanov> (toi da ne vzeme sega da prekalkulira nehsto i da go napravi za konstantno? :) )
+<VelinTzanov> Kakyv e vtoria nachin, Swetko?
+<VelinTzanov> Prekalkulacia i konstantno vreme li? :):)
+<Swetko> edin s edni ugli
+<VelinTzanov> E, pak e dvoichno tyrsene tova.
+<Swetko> i mislia che moshe da stane po lesno dvoichnoto tyrsene togava
+<VelinTzanov> Moje i taka da e.
+<VelinTzanov> Makar che az lichno ne mislia che ima niakakva razlika.
+<Swetko> ami ste go kasha nakraia
+<VelinTzanov> OK
+<VelinTzanov> Taka. Znachi imame obvivkata.
+<VelinTzanov> Imame pravata
+<VelinTzanov> Iskame da napravim dvoichno tyrsene.
+<VelinTzanov> I s nego da opredelim dali ima tochki i ot dvete strani na pravata ili ne.
+<Swetko> kakvo imame sortirano
+<VelinTzanov> Vie mi kajete kakvo imame sortirano.
+<Prince_of_Dawn> obwiwkata
+<sssa88> po ygyl na otsechkite ot neq
+<Prince_of_Dawn> kato wzemesh nai dolnata i nai-gornata tochka ot obwiwkata
+<Swetko> i ne samo po tova
+<Prince_of_Dawn> i se pomuchawat dwe sortirani polowini
+<Prince_of_Dawn> po y kordinati
+<Swetko> tova ne se biah setil
+<Swetko> zasto po y-koordinati
+<VelinTzanov> Da, Borisov misli dosta mydro. :)
+<VelinTzanov> Otdelen e vyprosyt dali tova ni pomaga...
+<VelinTzanov> Niakoi shte mi dade li definicia na dvoichno tyrsene?
+<VelinTzanov> Shto e to?
+<VelinTzanov> (Ne e nujno da e formalna)
+<Prince_of_Dawn> az ne smeq
+<VelinTzanov> Swetko, bez teb.
+<VelinTzanov> Rangel, Vlado?
+<rangel__> maj ne moga da go opisha tochno
+<sssa88> tyrsene na mqstoto na stojnost v sortirana posledovatelnost ot stojnosti
+<Swetko> ami tyrsim nesto niakude i na vsika stypka oblastta v koiato tyrsim namaliava 2 puti
+<Prince_of_Dawn> namalqwa na polowina
+<VelinTzanov> Swetkovoto vidimo e po-tochno.
+<VelinTzanov> No "stypka" ne e mnogo iasno...
+<VelinTzanov> Ako imam 123456789
+<VelinTzanov> I posle go napravia 3456
+<VelinTzanov> Toiva dvoichno tyrsene li e?
+<VelinTzanov> Namalih go napolovina.
+<VelinTzanov> Sortiraneto (general sortiraneto) izpolzva edna primitiva
+<VelinTzanov> A imenno - sravnenie na elementi.
+<VelinTzanov> Sravnenieto na elementi ni pozvoliava vyobshte da govorim za sortirane.
+<VelinTzanov> Kakva e primitivata v dvoichnoto tyrsene?
+<VelinTzanov> Kakvo ni triabva za da mojem vyobshte da govorim za dvoichno tyrsene?
+<Prince_of_Dawn> srawnenie
+<VelinTzanov> Kakvo sravnenie?
+<Prince_of_Dawn> na elementi 
+<VelinTzanov> Ako dyljinata na masiva e tvyrde goliama, rejem go napolovina. Tova e sravnenie. :)
+<sssa88> < > =
+<VelinTzanov> Hmmm... ne e nujno da e na elementi.
+<VelinTzanov> Imate tvyrde specifichno razbirane za tova kakvo e dvoichno tyrsene.
+<VelinTzanov> Tova e uroka za dnes - da izvadite dvoichnoto tyrsene ot kutiata.
+<rangel__> proverka dali tova, koeto tyrsim e v gornata ili dolnata polovina na neshtata v koito tyrsim
+<VelinTzanov> Rangel go zakova.
+<VelinTzanov> Ima mnogo koncepcii, koito ste gi vijdali opakovani v kutii.
+<VelinTzanov> Triabva da se nauchite da vadite ideite ot tezi kutii i da gi prilagate kogato zadacahta e izvyn kutiata.
+<VelinTzanov> Za da reshim Dwarfs ne e nujno da sravniavame elementi. Triabva ni da znaem samo v koia posoka e otgovoryt.
+<VelinTzanov> Sega da vlezem v detailite na zadachata.
+<VelinTzanov> Kakvo tyrsim s nasheto dvoichno tyrsene?
+<VelinTzanov> Tova e mislene v drugata posoka (kakvo bi ni reshilo zadachata)
+<Prince_of_Dawn> dwe tochki ot ralichni polowini na prawata
+<VelinTzanov> T.e. tyrsia tochka ot drugata polovina.
+<VelinTzanov> No kak da znam nakyde e drugata polovina?
+<VelinTzanov> Ako ti dam edin masiv i ti kaja che v nego ima edna edinica i 1 000 000 nuli mojesh li da namerish edinicata s dvoichno tyrsene? :)
+<Prince_of_Dawn> da
+<VelinTzanov> Kak?
+<Prince_of_Dawn> mi toi nali e sortiran
+<Prince_of_Dawn> edinitsata e weroqtno na kraq
+<rangel__> togava moga i bez dvoichno tyrsene :_)
+<Prince_of_Dawn> ma ti pitash dali moje s dwoichno i az kazwam moje ;)
+<VelinTzanov> Sortiran e, ama e sortiran v kryg - kato izpyknalata obvivka. Ne znaesh otkyde zapochva. :)
+<VelinTzanov> Ne sme sortirali izpyknalata obvivka po otnoshenie na pravata.
+<VelinTzanov> Dobre - imash 1 000 000 znaka...
+<VelinTzanov> ... i niakoi ot tiah sa 1-ci, a drugi sa nuli.
+<VelinTzanov> Znaesh che 1-cite sa zaedno (v interval)
+<VelinTzanov> Mojesh li da kajesh dali ima i 1-ci i 0-li?
+<VelinTzanov> Zashtoto v tazi zadacha imame tochno tova.
+<VelinTzanov> Imame tochki ot ednata poluravnina, tochki ot drugata.
+<VelinTzanov> Iskame da vidim dali ima i ot dvata tipa.
+<VelinTzanov> Znaem che tochkite ot ednata poluravnina sa "grupirani"
+<VelinTzanov> No kak pravim dvoichno tyrsene?!
+<VelinTzanov> Mai ne mojem neshto... :(
+<Prince_of_Dawn> ne mojem
+<Prince_of_Dawn> i az znam zashto
+<VelinTzanov> Zashto?
+<VelinTzanov> Sega triabva da pomislite ot drugata posoka - kakvo ni e dadeno.
+<Swetko> ami nie po kakvo sme gi sortirali sega
+<Prince_of_Dawn> poneje tuka ti ne moje da kajesh dali dadena 0 e predi druga 0 ( ili dali e po-blizo do edinitsite )
+<VelinTzanov> Sortirali sme gi po chasovnikovata strelka. :)
+<VelinTzanov> A, tochno taka Borisov!
+<VelinTzanov> Imame naredba.
+<VelinTzanov> Daden ni e niakakyv red.
+<VelinTzanov> Triabva da go exploatirame.
+<VelinTzanov> Inache niama da stane
+<VelinTzanov> Ta kakvo tyrsim s nasheto dvoichno tyrsene?
+<VelinTzanov> Kak zakluchvame che niama 1-ci?
+<VelinTzanov> T.e. che niama tochka ot drugata poluravnina?
+<Prince_of_Dawn> mi namirame tochka ot obwiwkata
+<VelinTzanov> Zashtoto na tova poslednoto, tova mu beshe problema - niamashe kak da zakluchish che niama 1-ci bez da probvash navsiakyde.
+<VelinTzanov> Koia tochka ot obvivkata?
+<Prince_of_Dawn> koqto e i ot dwete si strani ima tochki koito sa po-dalechni ot prawata
+<Prince_of_Dawn> ( tq e tochkata ot obwiwkata na-blisko do prawata )
+<VelinTzanov> Mojeshe i po-prosto da go kajesh. :):):)   tyrsim tochkata nai-blizko do pravata.
+<VelinTzanov> Da, tochno taka.
+<Prince_of_Dawn> i ako tq swe oshte e ot onazi strana znachi nqma 1
+<VelinTzanov> No kakvo znachi blizko/dalech?
+<VelinTzanov> Kak namirame kolko blizko/dalech e edna tochka ot edna prava?
+<VelinTzanov> Vsichki li ste tuk, bte?
+<VelinTzanov> bte = btw
+<Prince_of_Dawn> da
+<sssa88> da
+<rangel__> da
+<Swetko> da
+<rangel__> maj govorim za raztoqnie ot tochka do prava (koeto mozhe da se smetne s orientaciq na 3 tochki)
+<VelinTzanov> Rangel mnogo riadko govori, ama kato kaje neshto vse zabiva niakoi piron.
+<VelinTzanov> :)
+<VelinTzanov> Orientiranoto lice e pravoproporcionalno na razstoianieto ot tochkata do pravata.
+<VelinTzanov> Zashtoto "osnovata" na liceto si sedi edna i syshta - dvete tochki s koito ni e zadadena pravata.
+<VelinTzanov> I taka visochinata se iaviava proporcionalna na orientiranoto lice.
+<VelinTzanov> OK
+<VelinTzanov> Sega znaem kakvo tyrsim.
+<VelinTzanov> Tyrsim tochkata s nai-malko orientirano lice otnosno pravata.
+<VelinTzanov> (Posle shte tyrsim i tochkata s nai-goliamoto orientirano lice, za da vidim dali imame i otricatelna i polojitelna stoinosti)
+<VelinTzanov> Sega ostava samo da namerim kriterii po koito da reshim dali edna tochka e vliavo ili vdiasno na tyrsenata (gore ili dolu, kakto kaza Rangel predi 10 minuti)
+<VelinTzanov> Tova iasno li e?
+<sssa88> koe
+<rangel__> da, no ne moga da si go izmislq :(
+<Prince_of_Dawn> da
+<VelinTzanov> Iasno li e kakvo ni triabva za da reshim zadachata (kakto i zashto tova ni e dostatychno)?
+<sssa88> da
+<VelinTzanov> Poslednoto beshe do Vlado.
+<VelinTzanov> OK
+<VelinTzanov> Niakakvi idei (Swetko, shhh)
+<Prince_of_Dawn> mi srawnqwame dwa sasedni elementa ( sredniq i tozi do nego )
+<VelinTzanov> Iasno e kakvo ni triabva. Daite da vidim kakvo ni e dadeno.
+<VelinTzanov> Hubavo - dadeni sa ni i sysednite elementi - da gi exploatirame. :)
+<VelinTzanov> Kakvo ni kazva tova sravnenie?
+<Prince_of_Dawn> mi wijdame w koq posoka razstoqnieto namalqwa/uwelichawa se
+<Prince_of_Dawn> i taka izbirame
+<VelinTzanov> Neka ti dam primer:
+<VelinTzanov> Imash 100 tochki
+<VelinTzanov> Ot 1 do 10 razstoianieto namaliava.
+<VelinTzanov> Ot 10 do 20 se uvelichava.
+<VelinTzanov> Ot 20 do 100 pak namaliava.
+<Swetko> da si napravim functia na razstoianieto
+<VelinTzanov> (zashtoto 10 e naiblizkata, a 20 e nai-dalechnata tochka)
+<VelinTzanov> Chakia malko, Swetko.
+<Swetko> i taka po lesno ste mislim 
+<VelinTzanov> Shte napravim takava funkcia.
+<Swetko> graphichno
+<VelinTzanov> Narisuvai ia ako iskash.
+<VelinTzanov> Posle shte ni ia pratish (kato te pomolia)
+<VelinTzanov> Ta Borisov probva tochka 50.
+<VelinTzanov> Gleda che 51 e po-blizko do tochkata.
+<VelinTzanov> I svejda [1 100] do [51 100].
+<VelinTzanov> Posle probva 75
+<VelinTzanov> I svejda do [76 100
+<VelinTzanov> Posle [88 100]
+<VelinTzanov> I nakraia smelo shte zakluchi, che 100 e nai-blizkata tochka. :(
+<VelinTzanov> Borisov, neshto ne raboti tvoia algorithm. ;)
+<VelinTzanov> Svetko, dai grafikata ako ia narisuva.
+<Swetko> ei sega
+<Prince_of_Dawn> be az nali kazah che sam razdeli obwiwkata na dwe pulosveri
+<VelinTzanov> (Sega urokyt e da si vizualizirate ako ste zapecnali - poniakoga mnogo pomaga!)
+<Prince_of_Dawn> i w wsqka puloswera ne moje da ti se sluchi takowa neshto
+<Swetko> ne pishete
+<Swetko>           .   .
+<Swetko>     .  .          .     
+<Swetko>   .                .
+<Swetko>  .                  .
+<Swetko> .                    .                      .
+<Swetko>                      .                  .
+<Swetko>                       .                .
+<Swetko>                        .            .
+<Swetko>                           .        .
+<Swetko>                               .  . 
+<VelinTzanov> Hmmm.... moje i da si prav, Borisov. :)
+<Swetko> i az za tova se zamislih
+<VelinTzanov> Minalata godina Vesko Anriev izvadi neshto takova, ama beshe s 4 chasti, a ne s 2... i beshe grozno. :)
+<Swetko> ako prosto gledame osven razstoianiata i samite orientacii
+<VelinTzanov> Gledai sega, tova che Round moje da se reshi i za N^2 vreme ne znachi che ne triabva da uchite Index-ni dyrveta.
+<Swetko> ami te triabvat za drugi zadachi
+<VelinTzanov> Po syshtia nachin, ako Dwarfs moje da se reshi i kato cepish na dve chasti, tova ne znachi che ne triabva da se nauchite da pravite shashkavi dvoichni tyrsenia. :)
+<VelinTzanov> I taka. Ako vi e dadena kartinkata po-gore.
+<VelinTzanov> I se tyrsi minimuma na tazi funkcia.
+<VelinTzanov> Kak shte go namerite?
+<VelinTzanov> Po kakyv kriterii shte opredelite v koia polovina e tyrseniat minimum (spriamo dadena tochka)?
+<VelinTzanov> Idei?
+<Prince_of_Dawn> mi az pradlagam
+<Prince_of_Dawn> da tarsil ednowremenno ( po-otdelno ) min i max
+<Swetko> da namerim proizvodnata :) 
+<Prince_of_Dawn> ednoto weroqtno shte e falshiwo ponej shte se okaje w kraq na masiwa a w deistwitelnost shte e drugade
+<VelinTzanov> Proizvodnata Borisov veche ni kaza che ia imame (tova sys sysedite)
+<Swetko> ami da de
+<VelinTzanov> Za min i max az go kazah che shte gi tyrsim po otdelno. Sega tyrsim samo min.
+<Swetko> i az nesto takova si misleh
+<VelinTzanov> Vyv vsiaka tochka imate stoinostta na funkciata i tova dali tam funkciata e namaliavashta ili rastiashta.
+<VelinTzanov> Sega mi daite kriterii za tova kyde e minimuma - vliavo ili vdiasno?
+<VelinTzanov> Vlado, Rangel?
+<rangel__> moga da go napravq samo s nqkolko sluchaq za krajnite tochki na intervala
+<rangel__> i maj shte stane grozno
+<VelinTzanov> Predvid che v dvata kraia funkciata e rastiashta, ako v dadenata tochka funkciata e namaliavashta, ochevidno minimuma e vdiasno na tazi tochka.
+<VelinTzanov> A ako funkciata e rastiashta kak da poznaem dali sme vliavo ot minimuma ili vdiasno ot nego?
+<VelinTzanov> Kakva druga informacia imame osven "proizvodnata"?
+<VelinTzanov> (Hint: poglednete 5-10 reda nagore :) )
+<VelinTzanov> Chakam otgovor. :)
+<Prince_of_Dawn> na men ne mi e ochewidno 
+<Prince_of_Dawn> che
+<Prince_of_Dawn> Predvid che v dvata kraia funkciata e rastiashta, ako v dadenata tochka funkciata e namaliavashta, ochevidno minimuma e vdiasno na tazi tochka.
+<Prince_of_Dawn> toi destwitelno e w dqsno 
+<VelinTzanov> Mojesh li da dadesh kontraprimer, Borisov?
+<Prince_of_Dawn> no towa moje da se okaje w lqwo zaradi razsiwaneto
+<VelinTzanov> Imash slednata posledovatelnost:
+<Swetko> ami kraia na functiata e <= ot nachaloto
+<VelinTzanov> rastej - maximum - namaliavane - minimum - rastej
+<Prince_of_Dawn> mi ot 0 do 10 namalqa 
+<Prince_of_Dawn> raste ot 10 do 20 
+<VelinTzanov> Borisvo, da, imash dva sluchaia - ako v kraia funkciata ne e rastiashta, a e namaliavashta, togava vsichko e naopaki.
+<VelinTzanov> No neka razgledame samo edinia sluchai sega (drugia e ogledalen)
+<Prince_of_Dawn> i ot 20 namalqwa
+<VelinTzanov> Sega iziasni li se?
+<Prince_of_Dawn> dobre
+<VelinTzanov> Aide sega obratno na moia vypros:
+<VelinTzanov> Ako v kraishtata e rastiashta...
+<VelinTzanov> ... i ako vyv vzetata tochka pak e rastiashta...
+<VelinTzanov> ... kak razbirame nakyde e minimuma?
+<VelinTzanov> Osven rasteja kakvo drugo ni e dadeno?
+<VelinTzanov> (Otgovoryt e ocheviden)
+<sssa88> stojnostta
+<VelinTzanov> Kakvo moje da ni pomogne da precenim, shtom "proizvodnata" ne e dostatychna?
+<VelinTzanov> Da, kakto kazah ochevidno e. :)
+<VelinTzanov> I kak stoinostta ni pomaga?
+<Swetko> ami kraia na functiata e <= ot nachaloto
+<VelinTzanov> Dobre
+<sssa88> shte sravnim nashata i shte vidim dali e v pyrvoto ili vtoroto narastvane
+<VelinTzanov> Borisov, Rangel, Vlado, vie kakvo mislite?
+<VelinTzanov> Shte ia sravnim s kakvo?
+<VelinTzanov> Sys sebe si? :)
+<VelinTzanov> Ili s minimuma deto ne go znaem? :)
+<sssa88> s pyrviq element
+<VelinTzanov> Aham.
+<VelinTzanov> I sme gotovi.
+<VelinTzanov> Imame si kriterii za dvoichnoto tyrsene.
+<sssa88> ako e po-malka znachi e vdqsno ako e po-golqma znachi e vlqvo
+<VelinTzanov> Da
+<VelinTzanov> S tova cialata zadacha ni e reshena.
+<VelinTzanov> Dadenoto i tyrsenoto se sreshtnaha.
+<VelinTzanov> Razbrahte li vsichki reshenieto?
+<sssa88> az mislq che da
+<rangel__> kolko sluchaq se razglezhdat nakraq?
+<Swetko> mnogo
+<Prince_of_Dawn> kakwo e slojnostta?
+<VelinTzanov> N*LogN
+<VelinTzanov> Ne sa mnogo sluchaite - zavisi kak go napishesh.
+<VelinTzanov> Za tyrseneto na min-a i max-a naprimer prosto obryshtash znacite i pak tyrsish minimum.
+<VelinTzanov> Za narastvaneto i namaliavaneto pak mojesh da obyrnesh znaka.
+<rangel__> s mnogo sluchai mi e qsno, ako mozhe s malko znachi sym propusnal neshto :-)
+<VelinTzanov> Taka che ako ne iskate da povtariate kod, mojete mnogo lesno da go napravite.
+<Swetko> tova ne se biah setil
+<Swetko> ami te ne sa trudni ste si gi izmislish
+<VelinTzanov> Prosto si imash edna promenliva koiato ia pravish 1 ili -1 i vrytkash znacite kakto ti e udobno. :)
+<VelinTzanov> Smao umnojavash po tazi promenliva.
+<VelinTzanov> Posledno? Zadachkata iasna li e?
+Session Start: Tue Jun 08 21:49:05 2004
+Session Ident: #ioi2004
+* Now talking in #ioi2004
+<VelinTzanov> Plz, povtorete kakvoto izpusnah sled kato mi spria toka. :)
+<Prince_of_Dawn> toest proweri dali srednata tochka e po-wisoko ot nachalnata?
+<Prince_of_Dawn> [07:29] <sssa88> znachi namirame s tova dvoichno tyrsene naj-dalechnata i naj-blizkata tochka do pravata i proverqvame dali sa v razlichni poluravnini sprqmo pravata taka li?
+<Prince_of_Dawn> [07:30] <rangel__> ne naj-dalechnata i naj-blizkata, a tazi s naj-golqmo i tazi s naj-malko orientirano lice (maj ima razlika)
+<Prince_of_Dawn> [07:31] <sssa88> da naistina
+<Prince_of_Dawn> [07:31] <sssa88> znachi qsno
+<Prince_of_Dawn> [07:32] <Prince_of_Dawn> az imam drugo reshenie
+<Prince_of_Dawn> [07:32] *** Quits: VelinTzanov (VelinTzano@ACC5DF6A.ipt.aol.com) (Ping timeout: 180 seconds)
+<Prince_of_Dawn> [07:35] <Swetko> i az ama 
+<Prince_of_Dawn> [07:35] <Swetko> mai ustanovih che ne e po lesno
+<Prince_of_Dawn> [07:36] <Prince_of_Dawn> e moq e
+<Prince_of_Dawn> [07:36] <Prince_of_Dawn> w sashnost anev mi go e kazwal
+<Prince_of_Dawn> [07:37] <Swetko> kashi go
+<Prince_of_Dawn> [07:37] <Swetko> da ne e s edni ugli
+<Prince_of_Dawn> [07:39] <Prince_of_Dawn> be ne razbiram
+<Prince_of_Dawn> [07:39] <Prince_of_Dawn> towa deto welin kaza
+<Prince_of_Dawn> [07:39] <Prince_of_Dawn> srawnqwame narastwaneto pri srednata tochka s towa pri parwata?
+<Prince_of_Dawn> [07:39] <sssa88> deto namirash dvete otsechki ot obvivkata s ygyl naj-blizyk do tozi na pravata i posle proverqvash za tochkite ot tqh dali sa v razlichni poluravnini?
+<Prince_of_Dawn> [07:40] <Prince_of_Dawn> ne
+<Prince_of_Dawn> [07:40] <Swetko> da
+<Prince_of_Dawn> [07:40] <Swetko> ama niama da e po lesno
+<Prince_of_Dawn> [07:40] <Swetko> stot functiata vinagi e rastiasta
+<Prince_of_Dawn> [07:40] <Prince_of_Dawn> kajete kakwo srawni welin nakraq
+<Prince_of_Dawn> [07:40] <Swetko> ama izvednush pada mnogo nadolu
+<Prince_of_Dawn> [07:40] <Swetko> rastoianiata
+<VelinTzanov> Kaji kato svyrshi.
+<Prince_of_Dawn> koe da swarshi
+<VelinTzanov> Paste-a.
+<Prince_of_Dawn> gotowo
+<VelinTzanov> Mai e svyrshil. :)
+<VelinTzanov> OK
+<Prince_of_Dawn> ok
+<VelinTzanov> Ta tova koeto sravniavame nakraia e stoinostta na funkciata (NE proizvodnata) v dadenata tochka i v 1-vata tochka.
+<VelinTzanov> Razbra li go?
+<Prince_of_Dawn> da
+<VelinTzanov> OK
+<VelinTzanov> Drugite?
+<sssa88> da
+<rangel__> da
+<Swetko> da
+<VelinTzanov> OK
+<VelinTzanov> Poukite:
+<VelinTzanov> Dvoichnoto tyrsene e paradigma, ne e prosto metod za tyrsene v sortiran masiv.
+<VelinTzanov> Mislovniat vi proces na sytezanie triabva da e bavno, no sigurno i uvereno razshiriavane na dadenoto i na tyrsenoto... dokato se sreshtnat.
+<VelinTzanov> Samo taka mojete da konstruirate reshenie na zadacha kakvato ne ste vijdali predi.
+<VelinTzanov> Nauchete se da go pravite.
+<VelinTzanov> Zadachkata shte mi ia napishete za domashno za utre, nali?
+<rangel__> da :-)
+<VelinTzanov> Vlado, Borisov?
+<sssa88> da
+<VelinTzanov> Swetko, ti pak si na individualno.
+<Swetko> ami moshe da ia prenapisha tazi ama ste vidia
+<Prince_of_Dawn> da
+<VelinTzanov> OK
+<VelinTzanov> Az obache vi obeshtah i pisacheska zadacha. :)
+<Swetko> hehe
+<Prince_of_Dawn> na men ne si mi ;)
+<VelinTzanov> Vtorata zadachka za utre e ot IOI 2002, Two Rods.
+<VelinTzanov> (kazah vi che shte pishete kato idioti :) )
+<Swetko> na men source-a mi na Dwarfs e po goliam ot Two rods :)
+<Swetko> okolo 1.5 puti - i izobsto ne e idiotsko pisane  -  na men mnogo mi haresa 
+<VelinTzanov> http://infoman.musala.com/contests/ioi/2002/rods_bg.doc
+<Swetko> ako imate kusmet ste vi izleze malko
+<VelinTzanov> To ne e do kysmet, Swetko... :)
+<VelinTzanov> No si prav. Ako go napishat hubavo moje da byde mnogo kratko.
+<VelinTzanov> Prochetete uslovieto, razberete go i mi kajete kato ste gotovi.
+<Swetko> az moshe li na zadachi koito znaesh che sum chel da ne otgovariam che sum gi chel
+<VelinTzanov> :) Moje
+<sssa88> prochetoh go
+<rangel__> gotovo
+<VelinTzanov> OK. Neka dochakame Borisov.
+<Prince_of_Dawn> ok
+<VelinTzanov> Tova che si gotov li znachi?
+<Prince_of_Dawn> da
+<Prince_of_Dawn> ;)
+<VelinTzanov> Taka.
+<VelinTzanov> Ako imahme edin pryt samo shteshe da e iasno che shet pishete 3 dvoichni tyrsenia i ste gotovi, nali taka?
+<VelinTzanov> shet = shte
+<rangel__> da
+<sssa88> dve ne stigat li?
+<Swetko> ne
+<VelinTzanov> Znachi kato imate dva pryta i pravo na 100 pitania (predvid che edno dvoichno tyrsene otnema kym 14), izglejda pak dvoichnoto shte mu e cakata.
+<sssa88> zashto?
+<Swetko> nali ti triabvat dvata kraia
+<Swetko> i drugata koordinata
+<sssa88> a da
+<VelinTzanov> Sega znaem kakvo ni triabva - triabva ni da si nagodim zadachata za dvoichni tyrsenia - tova se tyrsi.
+<VelinTzanov> A kakvo ni e dadeno?
+<VelinTzanov> (bez Swetko)
+<VelinTzanov> Kakvo shte ni dovede v prilichen vid za dvoichno tyrsene?
+<VelinTzanov> S dva pryta e malko byrkotiika, nali? Triabva da vyvedem niakakyv red i organizacia. Kak?
+<sssa88> ami shte namerim ediniq a posle drugiq
+<sssa88> i shte tyrsim ne v pravoygylnik ami po-koloni i po-redove
+<Prince_of_Dawn> mi kato lokalizirame edno kwadratche s X
+<Swetko> ia smetnete kolko dvoichni tyrsenia moshete da napravite
+<VelinTzanov> Vlado, ama drugia shte ti prechi v tyrseneto na pyrvia.
+<VelinTzanov> Borisov, tova dobre, ama shte ti struva 4 dvoichni tyrsenia.
+<Prince_of_Dawn> 7.14
+<VelinTzanov> Vlado, Borisov, ochakvam i dvamata da razviete ideite si.
+<VelinTzanov> Ili Rangel da vi gi razvie... s golemia chuk. :)
+<Prince_of_Dawn> namiraneto na kwadratche shte mi struwa 2 tarseniq
+<VelinTzanov> Taka li? Kak?
+<Prince_of_Dawn> mi pitam za tseli redowe
+<Prince_of_Dawn> i katovidq red w koito ima X
+<Prince_of_Dawn> wlizam i dwoichno w toq red tarsq
+<rangel__> imash 10000 reda :-) i 100 pitaniq
+<Prince_of_Dawn> ma az prawq dwoichno be
+<Prince_of_Dawn> pitam za tsqlata dolna pomowina
+<Prince_of_Dawn> ako tam ima neshto pitamz za dolnata edna 4-wart
+<Prince_of_Dawn> ok?
+<VelinTzanov> Triabvat ti 4.
+<VelinTzanov> Za da namerish vsiaka ot granicite ti triabva 1.
+<VelinTzanov> Imash 4 granici na kvadratcheto.
+<Prince_of_Dawn> ne mislish li che s edno dwoicno tarsene moga da namerq w koi red e
+<Prince_of_Dawn> ?
+<Swetko> kato na bakteriite
+<VelinTzanov> Koe v koi red e?
+<VelinTzanov> Ti tyrsish cialo kvadratche.
+<VelinTzanov> Kvadratcheto ne e samo v edin red.
+<Prince_of_Dawn> da
+<VelinTzanov> To zaema mnogo redove.
+<Prince_of_Dawn> ?
+<Swetko> ROUND MI raboti s N^2 ama ne moga da razbera zasto se bavi 1-2 sekundi 
+<Prince_of_Dawn> az tarsq kletka s  X watre ( ako sam razbral uslowieto posle tq e chat ot neshto si )
+<VelinTzanov> AAAAAaaaaaaaaaaaaa chak sega zacepih!
+<VelinTzanov> A ti otkyde si siguren che ima takava?!
+<VelinTzanov> Nikyde ne ti e kazano che dvata pryta se presichat.
+<Swetko> ami toi iska samo edna da nameri
+<Prince_of_Dawn> da
+<Swetko> posle ste tyrsi edinia pryt posle
+<Prince_of_Dawn> bez znachenie koq
+<VelinTzanov> Offf, chakai malko, mnogo sym zle.
+<Swetko> drugia
+<VelinTzanov> Ia vij ti... interesna ideia... :)
+<Swetko> i az tova se zamislih ama sega ima drugi nesta
+<VelinTzanov> T.e. dve tyrsenia za da namerish edin X
+<VelinTzanov> Posle?
+<Swetko> primerno ako toz red e prychka
+<Swetko> kak ste namerish dvata i kraia
+<VelinTzanov> Posle oshte 2
+<VelinTzanov> Za edinia pryt.
+<VelinTzanov> I sled tova ti triabva oshte 1 za da namerish drugia pryt.
+<VelinTzanov> Ili mai 2.
+<Prince_of_Dawn> ne wi razbiram
+<VelinTzanov> Abe mai niama da ti stignat.
+<VelinTzanov> Vij, 60 tochki mojesh i da zakachish... daje 80. No nakraia shte izdyhnesh otkym pitania.
+<VelinTzanov> Ne mojesh taka da namerish dvata pryta samo s 6-7 tyrsenia.
+<VelinTzanov> Mislish li che shte mojesh?
+<Prince_of_Dawn> moje li patishtata da se presichat?
+<Swetko> da
+<Swetko> abe dobre trygna
+<VelinTzanov> OK. Drugi idei?
+<VelinTzanov> Taka.
+<Prince_of_Dawn> mi na men ne mi e qsno kak s 3 searcha shte namerish 
+<Prince_of_Dawn> neshto ako imashe samo edin ...
+<VelinTzanov> Kakvo shte namerish?
+<VelinTzanov> Chakai malko, az oshte ne sym kazal reshenieto, zashto me pitash kak shte nameria neshto si? :)
+<rangel__> ako namerim naj-lqvata i naj-dqsnata kolona kydeto ima pryt
+<VelinTzanov> Rangel s golemia chuk pak shte ni zakove, useshtam. :)
+<rangel__> i v tqh moga da si namerq nqkoj red na kojto imam pryt
+<VelinTzanov> OK - imash dvete kraini koloni.
+<VelinTzanov> Mojesh
+<rangel__> samo trqbva da proverq dva sluchaq - kogato vertikalniq pryt e v nqkoq ot tezi dveti koloni i kogato e vytre
+<VelinTzanov> Loshoto e che vtoria pryt vse oshte e prechka. Opitaite se da go napravite vash syiuznik - kak da izpolzvate tova che imate tochno 2 pryta - vertikalen i horizontalen, za da gi namerite koi sa?
+<VelinTzanov> Rangele, loshotot e che kato namerish edinia pryt, vtoria se namira trudno.
+<VelinTzanov> Shtoto moje da e navsiakyde.
+<Prince_of_Dawn> te winagi li sa vertikalen i horizontalen
+<VelinTzanov> Da, skypi Borisov, cheti usloviata molia te! :)
+<rangel__> sled tova mislq che moga da go namerq tochno s 3 tyrseniq vtoriq
+<Prince_of_Dawn> mi togawa e reshena
+<VelinTzanov> (za Rangel) No beshe izkluchitelno blizko.
+<VelinTzanov> Ako mojesh da.
+<VelinTzanov> No ne mislia che mojesh.
+<rangel__> mdam, prav si ne moga :-)
+<VelinTzanov> Taka.
+<VelinTzanov> Pravim slednoto
+<VelinTzanov> Iskame da vzemem minimalnia pravoygylnik, koito sydyrja 2-ta stylba.
+<VelinTzanov> T.e. da namerim granicite na regiona koito sydyrja prytovete.
+<VelinTzanov> (Gore stylba = pryta)
+<VelinTzanov> Tova se pravi lesno s 4 dvoichni tyrsenia. Iasno li e kak?
+<rangel__> da
+<VelinTzanov> Vlado, Borisov?
+<Prince_of_Dawn> da
+<sssa88> da ne bi danamirame chetirite kraq na toq pravoygylnik?
+<VelinTzanov> Da
+<sssa88> dobre
+<VelinTzanov> Ideiata e che tozi pravoygylnik ni dava adski mnogo sila.
+<VelinTzanov> Zashtoto za vsiaka ot 4-te mu strani znaem, che e podpriana ot niakoi ot dvata pryta.
+* Swetko has quit IRC (Ping timeout: 180 seconds)
+<VelinTzanov> Sega ostava s 2 dvoichni tyrsenia da namerim kyde tochno sa prytovete.
+<VelinTzanov> Za da izpolzvate maximalno silata na tozi pravoygylnik triabva da napravite edno sladko trikche.
+<VelinTzanov> A imenno - da poglednete 4-te ygylna na pravoygylnika.
+<VelinTzanov> I da prebroite kolko ot tiah sydyrjat X.
+<VelinTzanov> Ako tozi broi e 0, togava kakva kartinka imame?
+<sssa88> +
+<VelinTzanov> Tochno taka.
+<VelinTzanov> Sega mojete li s 2 dvoichni da namerite dvata pryta?
+<rangel__> da
+<VelinTzanov> Vlado, Borisov?
+<Prince_of_Dawn> da
+<sssa88> da
+<VelinTzanov> Ako tozi broi e 1 togava kakva e kartinkata?
+<Prince_of_Dawn> _|
+<VelinTzanov> Pyrviat koito otgovori pravilno poluchava syrdechnite mi pozdravlenia.
+<Prince_of_Dawn> ili proizwolna
+<VelinTzanov> Borisov, tazi kartinka ima 3, a ne 1.
+<sssa88> to takava kartinka s 1 ima li vyobshte?
+<VelinTzanov> Moje i 2 da sa, ne vijdam syvsem tochno. :)
+<rangel__> maj ne mozhe da e edno :-)
+<Prince_of_Dawn> ne
+<VelinTzanov> Rangel, razbira se! :) Koi drug... :)
+<Prince_of_Dawn> nqma takawa kartinka
+<VelinTzanov> aham - niama.
+<VelinTzanov> Po syshtia nachin ne moje da ima i 4.
+<VelinTzanov> Ako sa 2 ili 3 e malko po-slojno, no s oshte 1-2 proverki mojete lesno da ustanovite kakva e kartinkata.
+<VelinTzanov> Naprimer ako sa 2 sysedni kakva e kartinkata?
+<rangel__> kato proverim sysednite na yglite?
+<sssa88> - |
+<VelinTzanov> Ako sa 2 sysedni kvadratcheta kartinkata e |-
+<Prince_of_Dawn> qsno e
+<VelinTzanov> Ako sa 2 sreshtupolojni?
+<Prince_of_Dawn> ne moje
+<VelinTzanov> Togava, kakto kaza Rangel, gledame sysednite.
+<VelinTzanov> Moje, Borisov
+<VelinTzanov> _'
+<VelinTzanov> Kartinkata e _'
+<Prince_of_Dawn> da taka e
+<VelinTzanov> no moje i da e '_
+<VelinTzanov> Ili -,
+<rangel__> i oshte nqkolko rotacii :-)
+<VelinTzanov> Poglejdaiki sysednite na yglite mojete da kajete v koia posoka e vseki ot dvata pryta.
+<VelinTzanov> I posle pak s 2 dvoichni ste gotovi.
+<VelinTzanov> A ako broiat e 3?
+<VelinTzanov> Togava imate _|
+<VelinTzanov> Samo triabva da vidite koe stiga do kraia i koe ne.
+<VelinTzanov> (moje i dvete da stigat)
+<VelinTzanov> Proverkata pak stava kato poglednem sysednite.
+<VelinTzanov> I tova sa vsichki varianti, pone dokolkoto moga az da se setia.
+<VelinTzanov> Shte mojete li da go napishete? :)
+<VelinTzanov> Nai-vajnoto e da preizpolzvate koda si.
+<Prince_of_Dawn> veroqtno
+<rangel__> kolko e ogranichenieto za razmera na source-a? :-)
+<VelinTzanov> Na vsiaka cena triabva da imate procedura za dvoichno tyrsene./
+<VelinTzanov> Ami chakai da vidia na minalogodishnite nacionali i shte ti kaja.
+<VelinTzanov> 5LB
+* Swetko has joined #ioi2004
+<VelinTzanov> 5KB
+<Swetko> kakvo e tova
+<Prince_of_Dawn> exe ;)
+<Swetko> kakvo exe
+<VelinTzanov> Ogranichenie za source-a. :)
+<Prince_of_Dawn> dwoichno exe ;)
+<VelinTzanov> Zadachata iasna li e?
+<Swetko> moiat e 2.7KB
+<VelinTzanov> Ti ne slagash space-ove! Mylchi tam! :):):)
+<rangel__> maj da
+<sssa88> qsna
+<Prince_of_Dawn> da
+<Swetko> ok chao
+<Swetko> az ste hodia na uchiliste
+<Prince_of_Dawn> kade otiwash
+<VelinTzanov> Poukata e da se nauchite da pishete dvoichni tyrsenia siakash vi e profesia. :)
+<VelinTzanov> OK, Chao Swetko.
+<VelinTzanov> Drugite - ako imate neshto da pitate sega e momenta.
+<rangel__> chao
+<sssa88> chao
+<VelinTzanov> Ako niamate kajete da hodia.
+<rangel__> az ne se seshtam
+<sssa88> az nqmam
+<VelinTzanov> Borisov, ne moje da niamash niakoi vypros? :)
+<Prince_of_Dawn> i az nqmam
+<VelinTzanov> Stiga be! :)
+<Prince_of_Dawn> w sashnost imam
+<VelinTzanov> Eeee, shte si go sloja tozi log na stenata.
+<VelinTzanov> Ne, niama da si go sloja. :(
+<VelinTzanov> Kazvai. :)
+* tony` has joined #ioi2004
+* Anjrews has joined #ioi2004
+<Prince_of_Dawn> ma ne e po tezi neshta
+* tony` has left #ioi2004
+<VelinTzanov> OK, ako ne e po tezi pishi na lichno syobshtenie i chao na vsichki!
+<VelinTzanov> Do utre v 6:00.
+<Prince_of_Dawn> mi az edna zadacha HILL ot konterolno 4 2002
+<VelinTzanov> Pak shte e tejko.
+<sssa88> chao do utre
+<rangel__> chao
+<Prince_of_Dawn> chao
+<VelinTzanov> Borisov, aide na ICQ.
+<VelinTzanov> Izlizam i spiram loga.
+<Prince_of_Dawn> to dnes ne beshe
+<VelinTzanov> OK?
+<Prince_of_Dawn> ok
+<sssa88> ok
+<VelinTzanov> (taka govorish shtoto ne si sednal da pishesh :) )
+<VelinTzanov> Aide
+* Disconnected
+Session Close: Tue Jun 08 22:50:29 2004

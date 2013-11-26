@@ -1,0 +1,329 @@
+<html>
+<head>
+<script language="javascript">
+<!--
+    var endtime;
+    
+    function initcount(secondsleft) {
+        var now = new Date();
+        return now.getTime() + secondsleft*1000;
+    }
+    function count1(i) { i = i - i%1; return i; } 
+    function count2(i) { i = i - i%1; if (i < 10) return "0"+i; return i; }
+    function updateclock(head, word, endtime) {
+        var now = new Date();
+        var delta = (endtime - now.getTime())/1000;
+        var s, x;
+        if(delta < 1)
+            s = head + " has ended";
+        else{
+            s = head + " ends: ";
+            s = head + ": ";
+            if(delta >= 24*3600)
+                s = s + count1(delta/86400) + "d ";
+            if(delta >= 3600)
+                s = s + count2((delta/3600)%24) + "h ";
+            if(delta >= 60)
+                s = s + count2((delta/60)%60) + "m ";
+            s = s + count2(delta%60) + "s";
+            setTimeout("updateclock('"+head+"','"+word+"',"+endtime+")", 500);
+        }
+
+        var slot = document.getElementById(word);
+        slot.innerHTML = s;
+    }
+-->
+</script>
+
+<title>USACO Problems</title>
+</head>
+<body onload=" ">
+<center>
+<table><tr>
+<td><body bgcolor=#eeffee>
+<!--<center><img src='/usaco/cow1.jpg' width='742' height='118'></center>-->
+<center><img src='/usaco/cow1.jpg' width='550' height='88'></center>
+</td>
+<td valign='top'>
+<table>
+    <tr><td valign='top'><b>SILVER</b> Division<br></td></tr>
+    <tr><td>Contest is over</td></tr>
+    <tr><td></td></tr>
+    <tr><td></td></tr>
+</table>
+<td></tr>
+</table>
+</center>
+
+<br><font size='6'<b>ANALYSIS MODE</b></font><br>
+Submit solutions for your own enjoyment.
+<b>Note that xlite grading might not work in analysis mode.</b>
+
+<pre></pre>
+<pre>**********************************************************************
+                           SILVER PROBLEMS
+**********************************************************************
+                  Three problems numbered 6 through 8
+**********************************************************************
+
+Problem 6: Mooo [Brian Dean, 2005]
+
+Farmer John's N (1 &lt;= N &lt;= 50,000) cows are standing in a very
+straight row and mooing. Each cow has a unique height h in the range
+1..2,000,000,000 nanometers (FJ really is a stickler for precision).
+Each cow moos at some volume v in the range 1..10,000. This "moo"
+travels across the row of cows in both directions (except for the
+end cows, obviously). Curiously, it is heard only by the closest
+cow in each direction whose height is strictly larger than that of
+the mooing cow (so each moo will be heard by 0, 1 or 2 other cows,
+depending on not whether or taller cows exist to the mooing cow's
+right or left).
+
+The total moo volume heard by given cow is the sum of all the moo
+volumes v for all cows whose mooing reaches the cow. Since some
+(presumably taller) cows might be subjected to a very large moo
+volume, FJ wants to buy earmuffs for the cow whose hearing is most
+threatened. Please compute the loudest moo volume heard by any cow.
+
+PROBLEM NAME: moooo
+
+INPUT FORMAT:
+
+* Line 1: A single integer, N.
+
+* Lines 2..N+1: Line i+1 contains two space-separated integers, h and
+        v, for the cow standing at location i.
+
+SAMPLE INPUT (file moooo.in):
+
+3
+4 2
+3 5
+6 10
+
+INPUT DETAILS:
+
+Three cows: the first one has height 4 and moos with volume 2, etc.
+
+OUTPUT FORMAT:
+
+* Line 1: The loudest moo volume heard by any single cow.
+
+SAMPLE OUTPUT (file moooo.out):
+
+7
+
+OUTPUT DETAILS:
+
+The third cow hears both the first and second cows moo 2+5=7.  Though the
+third cow moos with volume 10, no one hears her.
+
+**********************************************************************
+
+Problem 7: Water Slides [Eric Price, 2006]
+
+It's a hot summer day, and Farmer John is letting Betsy go to the
+water park where she intends to ride every single slide. The water
+park has N (1 &lt;= N &lt;= 10,000) platforms (numbered 1..N) from which
+to enter the M (1 &lt;= M &lt;= 10,000) water slides. Each water slide
+starts at the top of some platform and ends at the bottom of some
+platform (possibly the same one). Some platforms might have more
+than one slide; some might not have any.
+
+The park is very thin, so the platforms lie along a straight line,
+each platform at a position Xi (0 &lt;= Xi &lt;= 100,000) meters from one
+end of the park. One walks from one platform to the next via a
+sidewalk parallel to the line of platforms.
+
+The platforms of the water park are weakly connected; that is, the
+park cannot be divided into two sets of platforms with no slides
+running between the two sets. Both the entrance and exit to the
+park are at platform 1, so Betsy will start and end there.
+
+In order to spend more time on the slides, Betsy wants to walk as
+little as possible. Find the minimum distance Betsy must travel
+along the ground in order to try every slide in the park exactly
+once without repeating.
+
+PROBLEM NAME: slides
+
+INPUT FORMAT:
+
+* Line 1: Two integers, N and M.
+
+* Lines 2..N+1: Line i+1 contains one integer, Xi, the position of
+        platform i.
+
+* Lines N+2..M+N+1: Line i+N+1 contains two integers, Si and Di,
+        respectively the start and end platforms of a slide.
+
+SAMPLE INPUT (file slides.in):
+
+5 7
+5
+3
+1
+7
+10
+1 2
+1 2
+2 3
+3 1
+4 5
+1 5
+4 1
+
+OUTPUT FORMAT:
+
+* Line 1: One integer, the minimum number of meters Betsy must walk.
+
+SAMPLE OUTPUT (file slides.out):
+
+8
+
+OUTPUT DETAILS:
+
+Betsy slides from 1 -&gt; 2 -&gt; 3 -&gt; 1 -&gt; 2, then walks a distance 2
+back to platform 1. She can then slide to 5, walk to 4, slide to
+5, walk back to 4 and slide to 1 for a total distance of 8.
+
+**********************************************************************
+
+Problem 8: Lights Out [Rob Kolstad, 2005]
+
+The cows so much prefer to sleep in the dark. Every night, though,
+when they return to the barn, some of the L (3 &lt;= L &lt;= 50) lights
+are switched on. They know the location of the push button switches
+but, as is always the problem, they lack fingers. The buttons are
+arranged in a nice row, and the left most button (#1) toggles light
+#1; the next button to the right toggles light #2; and so on.
+('Toggle' means change from off-to-on or on-to-off, depending on
+the current state of the switch.)
+
+They do however have an unusual pitchfork with T (1 &lt;= T &lt;= 7)
+slots, each one of which might hold a tine that can push the switches.
+Some tines are present; some might be absent. By way of example,
+imagine a pitchfork with T=4 and a missing tine. This particular
+pitchfork has tines in the 1st, 2nd, and 4th positions, easily
+described as '1101'.
+
+If the pitchfork is aimed at the leftmost switch, then lights #1,
+#2, and #4 are toggled (#3 isn't toggled since there is no tine
+there). If the pitchfork is aimed at switch #3, then lights #3, #4,
+and #6 are toggled. The pitchfork must be aimed so that all its
+tine slots touch switches; the fork cannot cross the end of the line of
+switches.
+
+Given a list of lights that are on and a configuration for a
+pitchfork, determine a sequence of pitchfork presses that will
+toggle the lights until the minimum number of lights is lit.
+
+PROBLEM NAME: xlite
+
+INPUT FORMAT:
+
+* Line 1: Two space-separated integers: L and T
+
+* Line 2: A line with L characters (and no spaces), each of which is
+        '0' or '1'. '1' means a light in that slot is lit; '0' means
+        the light in that slot is not lit.
+
+* Line 3: A line with T characters, each of which is '0' or '1' (no
+        spaces are present). '1' means a tine is present on the
+        pitchfork in that slot; '0' means otherwise.  The pitchfork
+        can not be inverted.
+
+SAMPLE INPUT (file xlite.in):
+
+10 4
+1111111111
+1101
+
+INPUT DETAILS:
+
+All 10 lights all on; three of four tines are present on the pitchfork
+(tine #3 is missing)
+
+OUTPUT FORMAT:
+
+* Line 1: K, the number of positions at which the pitchfork was aimed.
+
+* Lines 2..K+1: Each line contains a single integer X (1 &lt;= X &lt;=
+        L-T+1) that tells where the pitchfork was aimed (the leftmost
+        tine slot, that is) to toggle some lights. A program will
+        evaluate the decisions to simulate toggling the lights.  Full
+        credit is given for minimal-length solutions that leave to the
+        minimum number of lights turned on; partial credit for
+        solutions that take longer to minimize the lights. It is not
+        always possible switch all the lights off.
+
+SAMPLE OUTPUT (file xlite.out):
+
+5
+3
+1
+4
+7
+6
+
+OUTPUT DETAILS:
+
+1111111111  Start
+1100101111  Toggle 3
+0001101111  Toggle 1
+0000000111  Toggle 4
+0000001010  Toggle 7
+0000010000  Toggle 6
+One light remaining is the best one can do.  Many other solutions
+will leave one light lit (possibly a different light).
+
+**********************************************************************
+
+</pre><hr>
+<form action="/ioiupload" enctype="multipart/form-data" method="POST">
+<input type="hidden" name="a" value="3RpEOcW7f06">
+
+
+<table bgcolor="#000000" cellpadding=0 cellspacing=0 border=0>
+<tr><td height=1><td>
+
+<tr><td width=1><td>
+
+<table bgcolor="#bfffbf" cellpadding=5>
+<tr><td>Use this form to submit a program for grading:</td>
+<td rowspan="3"><input type="submit" VALUE="Submit" name='submit'></td>
+<tr><td width=60%><B>Program File:</B><input type="file" NAME="filename"></td>
+    </tr>
+</table>
+</td><td width=1></td>
+
+<tr height=1><td><td></tr>
+</table>
+<hr>
+The following solution files are saved for grading:<br>
+<table cellspacing='2'>
+<tr><th>Name</th><th>Size</th><th>When</th><th>Age</th></tr>
+<td><a href="/ioiupload?a=3RpEOcW7f06&seesaved=moooo.c">moooo.c</a></td>
+<td align ='right'>1097</td>
+<td align ='right'> 9h43:25</td>
+<td align ='right'>68h27:59</td></tr>
+</table>
+<hr>
+<center>
+<a href="/ioiedit?a=3RpEOcW7f06">Edit your database record</a>
+&nbsp;|&nbsp;
+<a href="/ioiupload?a=3RpEOcW7f06&logout=1"> Logout </a>
+<!--<a href="https://ace.delos.com/rules.html" target="_blank"> Rules </a>-->
+&nbsp;|&nbsp;
+<a href=http://ace.delos.com/ioiupload?init=1&a=3RpEOcW7f06>Main contest index</a>
+</center>
+<!--&nbsp;|&nbsp;-->
+<center>
+<a href=http://ace.delos.com/ioiupload?a=3RpEOcW7f06&showsubmit>See submitted solutions</a>
+&nbsp;|&nbsp;
+<a href=http://ace.delos.com/ioiupload?a=3RpEOcW7f06&suggestionbox>Send message
+to contest director</a><br>
+Director is not online<br>
+This page was generated at 13:11:24 GMT.
+</center>
+</body>

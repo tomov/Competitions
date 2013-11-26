@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+typedef long long int lli;
+
+lli mem[128][128];
+
+lli gen(int sz, int left)
+{
+	//cout<<sz<<' '<<left<<endl;
+	if(left==0) return 1;
+	if(sz>left) return 0;
+	if(mem[sz][left]!=-1) return mem[sz][left];
+	int i=0, r=0;
+	for(; i*sz<=left; i++) r+=gen(sz+1, left-i*sz);
+	mem[sz][left]=r; return r;
+}
+
+int main()
+{
+	int i, j;
+	for(i=0; i<128; i++)
+		for(j=0; j<128; j++)
+			mem[i][j]=-1;
+	int n; cin>>n;
+	cout<<gen(1, n)<<endl;
+	return 0;
+}

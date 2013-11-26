@@ -1,0 +1,870 @@
+
+Session Start: Mon Aug 23 20:12:35 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+* Prnfit has joined #ioi
+* Prnfit was kicked by VelinTzanov (VelinTzanov)
+<VelinTzanov> Velin shte doide do 7 minuti
+<valo_bg> tazi replika mi haresa :)
+<VelinTzanov> A Vlado koga shte doide?
+<VelinTzanov> (ama mnogo e tochna jena mi, nali? :)
+* VelinTzanov sets mode: +ooo Swetko rangel__ valo_bg
+<valo_bg> ne go znam... ako trqbva da zvynq...
+* Logging #ioi to 'logs\ioi_2004_08_24.log'
+<VelinTzanov> Ami da, zvynni.
+<valo_bg> ok
+<valo_bg> sybudih go :) (kakto i bashta mu, no tova sa riskovete na profesiqta:))
+<VelinTzanov> Vlado da si go otnasia, toi e poel angajimenta. :)
+* sssa88 has joined #ioi
+<VelinTzanov> Dobre doshyl, syncho. :)
+* VelinTzanov sets mode: +o sssa88
+<sssa88> sorry che trqbvashe da mi zvynish tolkova rano, valio
+<VelinTzanov> A, na bashta si se izviniavai. Toi Valio e bezskrupulen. :)
+<valo_bg> aaa, nishto... to za men ne e prechka. moje da se izvinish na bashta ti ot moe ime
+* Swetko has quit IRC (irc.spnet.net irc.techno-link.com)
+<VelinTzanov> Aaa, ne ot tvoe. Ot svoe da se izvini.
+<VelinTzanov> Sega pyk Swetko... :(
+<VelinTzanov> Ia kajete vie pone - napravihte li si domashnoto?
+<sssa88> a toj dolu-gore po tova vreme stava maj - da ne beshe go sybudil ti sigurno az shtqh da go sybudq s razkarvane nasam-natam
+<VelinTzanov> Brei, ranobudni hora... az edva se vdigam v 8:00, te si stavat v 6:00 po princip... :)
+<rangel__> nqmam knights (shtoto ne znam kak se reshava) i warriors (zashtoto snoshti nqmah vreme da q donapisha).
+<valo_bg> az reshih che sled kato sym gi pisal build i bugs po-dobre da hvana neshto drugo i pisah onaq zadacha na Swetko, dooptimizirah si pizza, napiah nqkakva po-lesna versiq na bugs i regs ot BOI 2003
+* Swetko has joined #ioi
+* CS sets mode: +v Swetko
+<sssa88> koq e tazi po-lesna versiq na bugs?
+<valo_bg> rangel__: vij na site-a za reshenie na knights, to tam prosto nikakyv shans da se seti normalen chovek
+<valo_bg> sssa88: emi syshtata ama s figuri 1*2... tyi kato nqmah net i ne si spomnqh uslovieto i napiah tova
+<sssa88> otkyde e tova?
+<Swetko> pastenete ako nesto sum izpusnal
+<valo_bg> ot nikyde. az si q izmislih
+<VelinTzanov> Swetko, pitah dali ste si napravili domashnoto.
+<VelinTzanov> Ti naprimer napravi li si go?
+<Swetko> az biah pravil dvete
+* Swetko has quit IRC (irc.ITDNet.net irc.techno-link.com)
+<VelinTzanov> Mir na praha mu.
+<VelinTzanov> Aide po red che ne razbrah koi kakvo e i ne e. Valio?
+<VelinTzanov> Kakvo ne si napravil?
+* Swetko has joined #ioi
+* CS sets mode: +v Swetko
+<valo_bg> hmmm... ami sega kato se zamislq oshte ne sym razbral zashto na paths ot BOI ne mi raboti edin test
+* Swetko has quit IRC (irc.ITDNet.net irc.techno-link.com)
+<valo_bg> ne sym pravil i onaq zadacha ot belaruskiq site s figurkite
+<VelinTzanov> A na paths pone ubedi li se che e greshno? T.e. ubedi li se che moje da ima po-kys pyt za koito ne proveriavash?
+<rangel__> to i az ne sym q pravil (tq za domashna li e?)
+<VelinTzanov> Ne e za domashna.
+<VelinTzanov> Po jelanie e.
+<valo_bg> ne sym...
+<VelinTzanov> OK
+<VelinTzanov> A potocite kak sa ti, Valio?
+* Swetko has joined #ioi
+* CS sets mode: +v Swetko
+<VelinTzanov> Pishesh li Goldberg kato stanesh ot syn?
+<VelinTzanov> Swetko, vlez prez irc.mnet.bg
+<Swetko> vliazoh
+<valo_bg> hmmm.... ami ne bih se obzalojil... napiah go i go testvah sprqmo dijkstrata
+<valo_bg> po-byrzo e. pone tova moga da kaja. chetoh i oniq paper-i
+<valo_bg> i principa gore-dolu mislq che go shvanah
+* VelinTzanov sets mode: +o Swetko
+<VelinTzanov> Vlado, ti kakvo ne si napravil?
+<sssa88> ami moze bi shte trqbva samo paper da pogledna
+<sssa88> inache pisah goldberg i s matrica i sys spisyk na naslednicite
+<VelinTzanov> T.e. vsichko e na 6 s teb, taka li?
+<sssa88> vtoriq variant obache ponqkoga zagadachno zabiva na mnogo golemi testove posle na syshtiq test si raboti, mnogo stranno
+<sssa88> ami ne syvsem
+<sssa88> vchera mnogo misleh do kysno i reshih - nqma da iznasqm lekciq v Obzor
+<sssa88> smqtam che samo shte si izgubq vremeto s tova i taka
+<VelinTzanov> Hmm... 
+<Swetko> az puk se chudia kakvo da pisha
+<VelinTzanov> Swetko, Valio, Rangel, na vas shte vi otgovoria na e-mail-ite.
+<VelinTzanov> Vlado, kogato chovek vzima neshto, redno e i da dava obratno.
+<VelinTzanov> Prez tezi niakolko godini kato systezateli po informatika ste poluchili ne malko znania bezvyzmezdno.
+<sssa88> syzalqvam ama ne moga (i ne iskam de)
+<VelinTzanov> Redno e i vie da otvyrnete sys syshtoto.
+<VelinTzanov> OK, shte ti pisha na lichno.
+<VelinTzanov> Po kontrolnoto vchera niakakvi komentari?
+<VelinTzanov> (tova e kym vsichki, ne samo kym Vlado)
+<VelinTzanov> Valio, ti predpolagam niamash.
+<VelinTzanov> Rangele ti?
+<rangel__> kato izkljuchim ochevidnoto nabljudenie che sym typ maj ne
+* WhitePower has joined #ioi
+* WhitePower has left #ioi
+<VelinTzanov> A podrobnostite shte ni kajesh li?
+<rangel__> ami pyrvite 2 chasa i polovina nqmah absoljutno nikakva ideq kak da napisha, koqto i da bilo ot zadachite
+<Swetko> ami osven che se chudia zasto mi e bavno lineinoto reshenie na BIO drugi komentari niamam
+<VelinTzanov> Mejdu drugoto vsichki si vzemete poukata: gledaite da niama pravopisni greshki na IOI. Che shte ima smyrt posle. >:-[
+<VelinTzanov> Rangel, Swetko, a na Warriors?
+<rangel__> (moga da si izmislq mnogo izvineniq, no vsyshtnost ne znam zashto se poluchi)
+<Swetko> ami reshih che se pravi s ungarski algoritum
+<Swetko>  po princip kato vidia edno reshenie i kato vidia che ima problem da se priloshi
+<Swetko> <Swetko> posle drugo reshenie mi e ttrudno da vidia
+<Swetko> a i nadali stiah da go izmislia tova reshenie
+<VelinTzanov> Hmmm... losho.  Tazi zadacha se reshava i s mincost-maxflow, no ochevidno ne iskame ot vas takiva izvrashtenia.
+<rangel__> az na warriors specialno se opitvah da izmislq algoritym za matching s minimalna cena (no ne uspqh)
+<Swetko> dosega ne sum pravil takiva dinamichni
+<VelinTzanov> Vadete si poukite togava.
+<VelinTzanov> Imaite gi predvid tezi dinamichni kogato umuvate IOI-skite zadachi.
+<Swetko> ok
+<VelinTzanov> A parity biahte li ia reshavali?
+<Swetko> az znaeh kak se reshava
+<VelinTzanov> Btw, ako imate niakakvi vyprosi po kakvoto i da e - davaite gi.
+<Swetko> minalata godina tuk Anev ia obiasni
+<Swetko> no ne ia biah pisal
+<rangel__> izglezhdashe mi poznata kato uslovie, no ne mislq, che q bqh pisal predi
+<sssa88> az ne bqh reshaval parity - napisah nqkakva glupost deto syzdava graf i posle pravi DFS-ta v nego
+<valo_bg> az q bqh reshaval, no ne si spomnqh tochno reshenieto i sym pravil gluposti (mnogo izlishni neshta)
+<Swetko> ami to tova se pravi de
+<valo_bg> az ne mislq che tova se pravi, ama are
+<rangel__> i az ne pravq graf
+<valo_bg> moje da moje i taka, inache hubavoto reshenie e na 50 reda
+<Swetko> moshe neiavno da pravite graph
+<valo_bg> samo s edin masiv
+<Swetko> ami moito e tolkova
+<Swetko> samo 1 ?
+<VelinTzanov> Men niama da me ima za 5-10 minutki, che izleze edna byrza rabota...
+<valo_bg> az ne pravq nikakvi DFS-ta. dori i graf nqma
+<Swetko> az imam dosta no sa za gprapha
+<Swetko> e kak togava
+<valo_bg> pazish si samoe edni intervali
+<Swetko> i kakvo
+<valo_bg> izchakai malko, mislq che go imashe nqkyde opisano
+<Swetko> ami ti ako hodish ot interval na interval - to tova sa ti dygi a chislata vyrhove
+<valo_bg> ufff sega ne moga da go namerq
+<valo_bg> dobre de... shte se opitam da obqsnq
+<valo_bg> poazish edin masiv s intervali takiva che nikoi dva intervala nqmat obshto nachalo i osven tova sa sortirani po nachalo
+<valo_bg> i sega ti idva edin nov interval i trqbva da go vkarash v masiva
+<valo_bg> obhojdash go posledovatelno i gledash dali ima interval koito da ima syshtoto nachalo
+<valo_bg> ako ima rejesh intervala
+<valo_bg> i prodyljavash natatyka
+<valo_bg> i nakraq ako e ostanalo neshto go vmykvash na syotvetnoto mqsto v masiva
+<rangel__> e za kakvo mi e da e sortiran ako shte go obhozhdam celiq masiv?
+<valo_bg> sega kak rejesh:
+<valo_bg> shtoto taka go obhojdash samo vednyj
+<valo_bg> ti kato otrejesh leviq ti krai se uvelichava
+<Swetko> ami da
+<valo_bg> i mojesh da imash novo syvpadenie samo nadqsno ot tekushtata ti pozociq
+<Swetko> obsto vseto systata ideia
+<valo_bg> moje... no az ti go kazvam max izchisteno i prosto
+<Swetko> taka e da
+<valo_bg> intersnoto e che nqmash nujda da kledash za syvpadashti kraisha, a az go pravq tova, koeto e izlizshno
+<valo_bg> samo nachaloto ti e dostatychno
+<valo_bg> da obqsnqvam li po-podrobno?
+<VelinTzanov> Mai niama nujda. :)
+<VelinTzanov> Da pochvame li s novia material?
+<valo_bg> ami da pochvame vikam az...
+<rangel__> da
+<Swetko> da
+<sssa88> da
+<VelinTzanov> OK
+<VelinTzanov> Dnes imame 2 temi i tiahnoto obedinenie.
+<VelinTzanov> I urok kak ot mnogo elementarni tehniki i pohvati moje da izleze nai-trudnata zadacha na IOI.
+<VelinTzanov> Pyrvo shte prodyljim ot vchera s dinamichnite po "shablon".
+<VelinTzanov> Zadachata koiato shte razgledame pyrvo e Diag, 2 Kont 2003
+<VelinTzanov> Sega vi davam link...
+<VelinTzanov> http://infoman.musala.com/contests/noi/2003/kont2_tasks.html
+<VelinTzanov> Kajete kato ste gotovi.
+<Swetko> ok
+<valo_bg> a da... az sym q pisal
+<rangel__> ok
+<VelinTzanov> Tova niama znachenie, Valio, nali znaesh. :)
+<valo_bg> ok
+<sssa88> ok
+<VelinTzanov> Daite mi oshte 2 minutki...
+<VelinTzanov> Taka.
+<VelinTzanov> Zadachata vidimo se svejda do obryshtane na diagrama v poreden nomer i obratno.
+<VelinTzanov> Koeto, triabva da priznaia, e razlichno ot tova koeto si misleh che vi davam. :)
+<VelinTzanov> OK de, neka go napravim taka.
+<valo_bg> tuka ima edna ulovka...
+<VelinTzanov> Da?
+<valo_bg> uslovieto koga edna diagrama predhojda druga e malko po-osobenno i zatova nikoi ne q beshe napravil taq zadacha na kontrolnoto
+<VelinTzanov> V smisyl?
+<valo_bg> ami tova che e "otzad-napred"
+<Swetko> az i da go znaeh pak niamashe da ia napravia
+<valo_bg> t.e. kogato generirame diagramite pyrvo slagame 5 (primern)
+<valo_bg> posle 4 probvame na nai-dolniq red, posle na-po-goren i t.n.
+<valo_bg> to i az ama tova e drug vypros
+<VelinTzanov> Molia?!  Chakai malko, redovete ne sa li strogo rastiashti, kakto i kolonkite?
+<VelinTzanov> T.e. 1 ne e li vinagi gore-vliavo?
+<valo_bg> takiva sa
+<valo_bg> q procheti tova za r i k
+<VelinTzanov> I posle 2 moje da e na dve vyzmojni pozicii, nali?
+<valo_bg> ako chovek ne mu obyrne vnimanie gori...
+<VelinTzanov> Ahaaa... zacepih.
+<valo_bg> taka si e... no ako gi generirame rekursivno leksikografski trqbva da zapochnem ot 5
+<VelinTzanov> Mdaaa... ot 5 triabva da zapochnete.
+<valo_bg> i nai-koftito e che ako zapochnem ot 1 shte ni raboti testoviq primer ot lista
+<VelinTzanov> No tova ne e ot principno znachenie.
+<VelinTzanov> :)
+<valo_bg> no nikoi ot ostanalite testove
+<VelinTzanov> Neka zapochnem s po-lesna versia (ot vchera): namerete broia na validnite diagrami.
+<VelinTzanov> Tova kak go pravim?
+<valo_bg> (btw, ima formula)
+<VelinTzanov> A na IOI kato se padne takava zadacha, formula li shte tyrsite?  >:-[
+<valo_bg> principno s DP, zashtoto nqme shans da izmislim formulata
+<Swetko> a da be - imashe - rumuncite sa ia reshavali :)
+<VelinTzanov> I kak s DP?
+<VelinTzanov> Koi shte ni kaje? :)
+<rangel__> imame ochevidno reshenie da diagramata s edna kletka (1 broj)
+<rangel__> za vsqka druga diagrama reshenieto se poluchava kato suma ot resheniqta na diagramite, koito se poluchavat ot neq kato mahnem poslednata kletka na nqkoj ot redovete
+<Swetko> ako moshem
+<Swetko> da ia mahnem - te. ako pod neia e prazno
+<valo_bg> imenno
+<VelinTzanov> Da razbiram li che vsichki go razbraha? Ili ne syvsem?
+<Swetko> az da
+<valo_bg> i az
+<sssa88> da
+<VelinTzanov> Prosto diagrama se stroi kato vinagi dobaviame kym predishna diagrama (malko kato parketite ot minalia pyt)
+<rangel__> mislq, che e qsno
+<VelinTzanov> Za da ni e validen krainiat rezultat triabav vyv vseki moment vseki sledvasht red da e ne po-dylyg ot predishnia.
+<VelinTzanov> Podobno na parketite (i na DP-to po princip) niama znachenie kak sme postroili veche postroenoto.
+<VelinTzanov> Vajna e samo formata mu (tova s koeto to "obshtuva" s bydeshteto - interface-a mu kym bydeshteto taka da se kaje)
+<VelinTzanov> A kak kodirame formata? I shte ni stigne li pametta?
+<valo_bg> ami vseki red moje da ima pi + 1 systoqniq
+<valo_bg> t.e. (p1 + 1)*(p2 + 1)*...(pm + 1) pamet bi trqbvalo da ni stigne
+<VelinTzanov> A kolko e ogranichenieto za tova?
+<sssa88> <2^20 sys kato che li
+<VelinTzanov> Ima mnogo algoritmi koito sa principno iasni, no kato stignem do podrobnosti ot sorta na tova kolko pamet ni triabva i dali mojem da "pohabim" malko s cel udobstvo, neshtata se zapichat poniakoga...
+<valo_bg> znaem che p1 + p2 + ... + pm = 30 i m < 20
+<rangel__> ami az sys edni ne osobenno dokazani smetki go izkarah 28 miliona absoljuten maksimum (pri ogranicheniqta v zadachata)
+<valo_bg> 28 miliona!!! i kak?
+<valo_bg> az gi izkarah 16 000 za sega
+<VelinTzanov> Dobre e vsichki da mojete da gi pravite tezi smetki... :)
+<rangel__> pri 9 edinici i 10 dvojki pri p-tata
+<rangel__> samo che povecheto ot tqh vsyshtnost sa nevalidni :-)
+<Swetko> 3^10*512
+<Swetko> tova se subira mai
+<VelinTzanov> Da. Zatova i tova e "prahosvane" na pamet. :)
+<Swetko> ami s razlika sus sledavstia element
+<VelinTzanov> Da, sybira se. No e vajno da mislite za tezi neshta na IOI.
+<VelinTzanov> OK?
+<valo_bg> ok
+<sssa88> ok
+<rangel__> ok
+<Swetko> ok
+<VelinTzanov> Sega triabva da nomerirame situaciite spored opisanata naredba.
+<VelinTzanov> I kak pravim tova?
+<VelinTzanov> Ami... gledame naredbata.
+<VelinTzanov> Koi e pyrviat kriterii na naredbata?
+<VelinTzanov> (vie ste na hod)
+<Swetko> posledden element mai
+<valo_bg> do koe r elementite im sa na edno i syshto mqsto
+<Swetko> posleden, posle predposleden element - tova sa im kriteriite
+<Swetko> i t.n.
+<Swetko> tezi zadachi s kodiraneto/decodiraneto
+<Swetko> nali taka se praviat - s kriteriite-
+<VelinTzanov> Tochno taka
+<Swetko> pochvame ot nai vashnia i t.n.
+<Swetko> taka che za da codirame
+<Swetko> triabva ot poslednia element da pochnem
+<VelinTzanov> Po poziciata na poslednoto chislo mojem da razdelim diagrami s nomera 1-X, X-Y, Y-Z i Z-N naprimer.
+<VelinTzanov> Posle ako sme popadnali v X-Y naprimer po poziciata na sledvashtoto chislo razbirame v koi podinterval na tozi interval sme.
+<VelinTzanov> Taka mojem da namerim lesno nomera na vsiaka situacia. Mojem li?
+<valo_bg> mojem
+<rangel__> da
+<sssa88> da
+<Swetko> da
+<VelinTzanov> A obratnoto?
+<rangel__> ili vsyshtnost... kak razbivame na intervali?
+<VelinTzanov> Ako imate nomer, kak mojete da namerite koia e situaciata?
+<VelinTzanov> Dobyr vypros. :)
+<valo_bg> kato se dvijim po podintervalite
+<VelinTzanov> Slagash 5 na miastoto s nai-malyk nomer.
+<VelinTzanov> Taka de, ne 5 ami N (ili kakto e tam promenlivata)
+<VelinTzanov> Broish kolko sa kombinaciite s 5 na tova miasto.
+<VelinTzanov> A tova (kolko sa tezi kombinacii) e podzadacha.
+<VelinTzanov> Posle go slagash na vtoroto vyzmojno miasto.
+<VelinTzanov> I pak broish - kolko sa validnite diagrami ot ostanalite chisla (ot 1 do 4 v sluchaia) po ostanalia shablon.
+<VelinTzanov> I taka za vsichki validni pozicii na 5.
+<rangel__> e da, no ne syvsem, zashtoto:
+<rangel__> 1 2 4 5
+<rangel__> 3 6
+<rangel__> e predi:
+<rangel__> 1 3 4 6
+<rangel__> 2 5
+<VelinTzanov> Imenno.
+<VelinTzanov> 6 moje da byde na vtori red, vtora kolona ili na pyrvi/chetvyrta
+<VelinTzanov> Broish kolko sa kombinaciite s 6 na vtori red.
+<VelinTzanov> Broish i kolko sa tezi s 6 na pyrvi red.
+<VelinTzanov> Pyrvoto chislo ti pokazva nomerata na diagramite s 6 na vtoria red: te sa ot 1 do tova chislo (da go narechem X)
+<rangel__> ami tova moga da go napravq
+<VelinTzanov> Vtoroto chislo (Y) ti pokazva che nomerata na diagramite s 6 na pyrvia red sa ot X+1 do X+Y
+<VelinTzanov> Ti znaesh v koia ot dvete kategorii si (nezavisimo dali znaesh chisloto ili znaesh diagramata). I prosto vlizash v tvoiata polovina i si veche v podzadacha.
+<VelinTzanov> Podzadachata e s 5 chisla i s shablon edin ot dvata:
+<VelinTzanov> XXX
+<VelinTzanov> XX
+<VelinTzanov> ili
+<VelinTzanov> XXXX
+<VelinTzanov> X
+<VelinTzanov> Iziasni li se?
+<rangel__> tova mi e qsno, no ne mi e to problema
+<rangel__> nomera e che ne sa podredeni po poziciqta na posledniq element
+<rangel__> samo da dam oshte edin primer:
+<rangel__> 1 2 3 6
+<rangel__> 4 5
+<rangel__> e predi:
+<rangel__> 1 3 4 6
+<rangel__> greshka
+<rangel__> 1 3 4 5
+<rangel__> 2 6
+<VelinTzanov> Predi li e?
+<VelinTzanov> Az mislia che e sled.
+<rangel__> ami nali dvojkata v pyrvata diagrama e na pyrvi red, a vyv vtorata e na vtori red
+<valo_bg> (koi se hvana na ulovkata :)) cakata e che ne gledame ot 2-kata, a ot 6-taca pyrvo
+<sssa88> ama tezi sled neq ne sa na ednakvi redove v dvete diagrami
+<sssa88> za da gledash neq sledvashtite trqbva da sa na edni i syshti redove 
+<VelinTzanov> Rangele, aide pak na uslovieto. :)
+<valo_bg> aha... za da gledash 2 to 3,4,5 i 6 trqbva da sa ti na edno i syshto mqsto
+<VelinTzanov> Zatova pyrvo gledame 6... ako to e edno i syshto: gledame 5, posle 4, ...
+<sssa88> na edin i syshti red
+-> [rangel__] PING
+<rangel__> aha, ok, togava e lesno
+<VelinTzanov> Da, tochno taka, lesno e.
+<VelinTzanov> Moje li vseki da napishe zadachata ei-sega za polovin-edin chas? :)
+<VelinTzanov> (ne, niama da go iskam ot vas)
+<VelinTzanov> Prosto pitam.
+<valo_bg> sssa88: te ne moje da sa ti na edin i syshti red i da sa na razlichni mesta
+<sssa88> ami da de
+<valo_bg> to moje i da q napishe, vyprosyt e kolko shte debugva sled tova
+<sssa88> za polovin-edin chas - ne
+<valo_bg> sssa88: dobre de... kaza go po-prosto, priznavam :)
+<VelinTzanov> Taka.
+<VelinTzanov> V informatikata si ima cial klas takiva zadachi.
+<rangel__> za polovin - ne, za edin - moje bi (ako ne napravq nqkoj grozen bug)
+<VelinTzanov> V koito imame naredeno mnojestvo ot elementi.
+<VelinTzanov> I v koito se tyrsi obryshtane na nomer v element i obratno.
+<VelinTzanov> Pravi vpechatlenie, che podhodyt (pochti) vinagi e tozi: razdeliame elementite na grupi spriamo pyrvia kriterii na naredbata.
+<VelinTzanov> Posle vlizame v nashia si interval.
+<VelinTzanov> I tam delim po syshtia nachin po vtoria kriterii...
+<VelinTzanov> ... i posle po tretia i t.n.
+<VelinTzanov> Naprimer mojete li da mi napravite takava funkcia za permutaciite na chislata ot 1 do N, koito imat necheten broi inversii i koito sa naredeni lexikografski?
+<sssa88> kakvo beshe tova inversiq?
+<valo_bg> chakai da si gi razpisha
+<VelinTzanov> Vlado, inversia e kogato po-goliamo chislo sedi po-napred v permutaciata.
+<VelinTzanov> V 1 2 3 4 ... N ima 0 inversii
+<VelinTzanov> V N N-1 N-2 ... 1 ima N*(N-1)/2 inversii.
+<sssa88> aha
+<VelinTzanov> Ei, tazi zadacha e samo za zagriavka. Aide, izlizaite s reshenie. :)
+<valo_bg> vyi.....
+<valo_bg> chakai malko...
+<Swetko> ami prosto
+<Swetko> gledame purvi kriterij
+<Swetko> 1,2,3,4,
+<Swetko> za vseki smiatame kolkoinversii ste predizvika
+<VelinTzanov> Neshto ne te razbrah.
+<valo_bg> i smenqme chetnostta sprqmo tova
+<VelinTzanov> Koi e pyrviat kriterii? Kyde se namira 1 li?
+<Swetko> i suotvetno gledame dali ni interesuva cheten ili necheten broi
+<Swetko> tochno taka valio
+<valo_bg> gledame pyrvo za pyra poziciq
+<Swetko> ne estestveno
+<Swetko> koe chislo e na purvo miasto
+<valo_bg> tam mojem da slojim 1,2,3,...,n
+<Swetko> ako e 4
+<Swetko> to znachi imame 3 inversii
+<Swetko> i tyrsim po natatuk s cheten broi inversii
+<rangel__> zashto mi se struva che tova ne e mnogo smislena zadacha :-)
+<valo_bg> Swetko: ti kodirsh ili decodirash?
+<Swetko> ako purvonachalno sme tyrsili necheten
+<sssa88> swetko pak s necheten shte tyrsish
+<Swetko> decodiram da kashem
+<valo_bg> az zashtoto decodeiram
+<valo_bg> emi da de... gledame da postavim na 1 poziciq 1,2,3,...,n
+<valo_bg> smqtame kolko ima ako postavim 1
+<valo_bg> posle za 2
+<valo_bg> i taka dokato popadnem v intervala koito ni interesuva
+<Swetko> tova ne e lexicographski
+<VelinTzanov> Tova ne e leksikografski, Vlado.
+<VelinTzanov> Ops! Valio. :)
+<valo_bg> e kak da ne e...
+<Swetko> znachi imame K-toto chislo
+<Swetko> t.e. k-tata permutacia
+<VelinTzanov> V rechnika dumite sa naredeni po tova na koia pozicia se namira bukvata "a" taka li? :):):)
+<rangel__> ako ne se lyzha v permutaciite ot N chisla ima tochno N!/2 nechetni permutacii nali?
+<Swetko> probvame purvi kriterij
+<Swetko> ami veroiatno
+<Swetko> 1,2,3
+<Swetko> i za vseki izbor na purvi kriterij gledame kolko permutacii po natauk imame
+<valo_bg> leksikografski sa ni po sledniq nachin:
+<valo_bg> 1 2 3
+<valo_bg> 1 3 2
+<valo_bg> 2 1 3
+<valo_bg> 2 3 1
+<valo_bg> 3 1 2
+<valo_bg> 3 2 1
+<VelinTzanov> Da de, Valio. Ne gledame poziciata na 1. Gledame koe chislo e na pyrva pozicia.
+<valo_bg> ami az tova kazvam. gledame poziciq edno
+<VelinTzanov> Da be, viarno che tova kazvash, hehe... :)
+<VelinTzanov> Goliama byrkotia napravihme.
+<Swetko> imame si dinamichno koeto ni kazva kolko permutacii s necheten/cheten broi inversii imame s 1..N elementa
+<VelinTzanov> Aide, az shte summarize-na, che mnogo vreme zagubihme.
+<valo_bg> aha :)
+<VelinTzanov> Da. Podzadacha se definira taka: imame N i chetnost/nechetnost. tyrsim broikata na tezi permutacii.
+<VelinTzanov> Niama znachenie kak ia smiatame, vajnoto e che tova e lesna zadacha.
+<VelinTzanov> Ostanaloto e samo prilojenie na standartnata shema ot dnes: Probvame 1 na pyrvo miasto, probvame 2 na pyrvo miasto, probvame 3 na pyrvo miasto i t.n...
+<VelinTzanov> Vlizame v podhodiashtia interval i ostavame s podzadacha: permutacia na N-1 chisla sys syotvetnata chetnost/nechetnost (v zavisimost ot pyrvoto chislo)
+<VelinTzanov> Iasno?
+<VelinTzanov> (btw, kakto veche kazahme, tova vaji i za dvete posoki na funkciata)
+<Swetko> da
+<sssa88> qsno
+<valo_bg> da
+<rangel__> da
+<VelinTzanov> Taka.
+<VelinTzanov> Tuk obache se poiaviava edno interesno neshto: a imenno tova che razshiriavame poniatieto situacia, kato razglejdame i chetnite permutacii.
+<VelinTzanov> T.e. za da si reshim zadachata triabva da razshirim malko poniatiata s koito boravim.
+<VelinTzanov> Tova po princip go ima na mnogo mesta v DP-to i se nadiavam che Valio shte govori za tova na lekciata si v Obzor.
+<VelinTzanov> (Valio, shte ti pisha s 1-2 zadachki ot tozi tip)
+<valo_bg> ok
+<VelinTzanov> Slesvashtata zadacha e ot IOI i e primer zatova kak nashia bezobiden algoritym, prikrit pod po-zavyrtiano uslovie, moje da stane prividno svirepa zadacha...
+<Swetko> tova mi e edna ot liubimite temi
+<VelinTzanov> ... koiato obache ako atakuvate pravilno se reshava otnositelno lesno.
+<VelinTzanov> Swetko, ne sluchaino ne sme ia dali na teb tazi tema. ;
+<VelinTzanov> ;)
+<VelinTzanov> Zadachata e Two-Five ot IOI 2001
+<VelinTzanov> http://infoman.musala.com/contests/ioi/2001/twofive-bg.rtf
+<valo_bg> ujas...
+<VelinTzanov> Kajete kato ste gotovi i RAZBRALI uslovieto. :)
+<Swetko> abe az ot Depot se ushasiavam 
+<VelinTzanov> Zashto ujas be, Valio. Zadachata e prosto example za dneshnata tehnika. :)
+<VelinTzanov> I Depot e lesna. Prosto triabva da znaete kak da gi atakuvate tezi neshta. :)
+<valo_bg> da, ama ne znam zashto ne mi vyrvqt 8 testa na neq... tolkova sym debugval...
+<Swetko> az stot Depot e exponencialna - zatova se plasha :)
+<valo_bg> gotovo
+<VelinTzanov> E, na Depot pone znaesh che niama problem da e exponencialna. Nomeryt e prosto da ne gledash nevalidnite kombinacii, a samo validnite. T.e. da ne pravish izlishni neshta.
+<VelinTzanov> Drugite, kajete kato ste gotovi s twofive.
+<sssa88> gotov
+<Swetko> gotvo
+<rangel__> gotovo
+<VelinTzanov> Znachi imame mnojestvo ot naredeni elementi.
+<VelinTzanov> Pak - tyrsim mapping ot element v poreden nomer i obratno.
+<VelinTzanov> Rabotata e prosta: gledame pyrvia kriterii
+<VelinTzanov> (V tazi zadacha A moje da e samo v nachaloto, taka che niama kakvo da go gledame :) )
+<VelinTzanov> Gledame vtoria kriterii.
+<VelinTzanov> B moje da e na 1/2 ili na 2/1
+<VelinTzanov> No nas ne ni interesuva kyde e B vsyshtnost.
+<VelinTzanov> Interesuva ni koi e na vtora pozicia.
+<Swetko> ami da smetnem kolko konfiguracii ima s B v 1.2 
+<VelinTzanov> A na vtora pozicia moje da e B, C, D, E i F
+<VelinTzanov> Da, Swetko.
+<Swetko> i ot tova da sloshim b v 1.2 ili 2.1
+<rangel__> zashto mi se struva che ako napravq ogledalen obraz po diagonala dolu-lqvo gore-dqsno, moga prosto da si resha zadachata za diagramite za sluchaq s pet 5-ci?
+<Swetko> ama nas ni interesuva koi e na vtora pozicia
+<VelinTzanov> Zashtoto si se obyrkal, Rangele. :)
+<Swetko> :)
+<VelinTzanov> Naredbata e korenno razlichna.
+<VelinTzanov> V Diag imash syotvetstvie mejdu naredbata i kriteriat za validnost.
+<rangel__> az zatova pravq simetriqta
+<VelinTzanov> V TwoFive dvete sa mnogo razlichni.
+<VelinTzanov> Ia obiasni po-podrobno kakyv e toia ogledalen obraz.
+<rangel__> ami kletka 1,1 otiva v 5,5, kletka 1,2, otiva v 4,5 i t.n.
+<VelinTzanov> I kakvo?
+<VelinTzanov> Nishtichko ne razbiram. Kakva e vryzkata na tova izobrajenie sys zadachata ni?
+<rangel__> vryzkata e che dvete neshta sa ekvivalentni, a vtoroto e syshtoto kato zadachata za diagramite
+<VelinTzanov> Hahaaa... ne, ne e.
+<VelinTzanov> Naredbata na Diag e po tova na koia pozicia e bukva X.
+<VelinTzanov> Naredbata na TwoFive e koia bukva e na pozicia Y.
+<VelinTzanov> Dvete sa MNOGO razlichni.
+<VelinTzanov> Mejdu drugoto ako obyrkash naredbata uchudvashto poluchavash 50 tochki na TwoFive.
+<VelinTzanov> Petko Minkov taka izmisli greshnoto reshenie i ne se seti che e greshno i hvana 50.
+<VelinTzanov> Az go izmislih i se setih che e greshno i napisah niakakyv backtrack i hvanah 25. :)
+<VelinTzanov> Taka.
+<VelinTzanov> Sega na istinskoto reshenie.
+<valo_bg> hmmm... mai razbrah zashto ne mi raboti :)
+<VelinTzanov> Rangele, razbra li razlikata?
+<VelinTzanov> Hahahaaaaaa.... :)
+<VelinTzanov> Rangel?
+<rangel__> veche da
+<VelinTzanov> OK
+<VelinTzanov> Taka.
+<VelinTzanov> Pyrviat kriterii NE e kyde stoi B.
+<VelinTzanov> Pyrviat kriterii e koi sedi na vtoro miasto.
+<VelinTzanov> Vyzmojnostite sa B, C, D, E i F
+<VelinTzanov> Vsyshtnost tova niama znachenie. Vie spokoino moje da gi razgledate do Y chak... prosto shte poluchite 0 validni kombinacii.
+<VelinTzanov> Taka. Sega kak formulirame podzadacha?
+<VelinTzanov> Taka che da mojem da napravim standartnia si pohvat - da gledame vtoria kriterii, posle tretia, chetvyrtia, ...
+<VelinTzanov> Ta? Slusham.
+<VelinTzanov> Ne vi karam da reshavate zadachata. Kajete mi samo kak definirame podzadacha, taka che da ni vyrshi rabota.
+<valo_bg> shte gledame vsichki profili koito mojem da poluchim
+<VelinTzanov> Kakto veche vidiahme, moje da se naloji da razshirim poniatiata (elementite) s koito boravim.
+<VelinTzanov> Kakvi profili be, Valio?
+<VelinTzanov> Byrzash.
+<VelinTzanov> Pitam te za podzadachata. Definicia mi triabva.
+<VelinTzanov> Ne begla ideia za reshenieto.
+<VelinTzanov> Aide de. Kakvo chakate?
+<VelinTzanov> Kakvo tyrsim v podzadachata?
+<VelinTzanov> Slojili sme D naprimer na pozicia 1/2. Kakvo tyrsim sega?
+<VelinTzanov> Broiat na kakvo?
+<VelinTzanov> Izkluchihte li? :)
+-> [VelinTzanov] PING
+* Disconnected
+Session Close: Mon Aug 23 22:35:18 2004
+
+Session Start: Mon Aug 23 22:36:18 2004
+Session Ident: #ioi
+* Now talking in #ioi
+<Velin_Tzanov> Zdrasti
+<Velin_Tzanov> Neshto mi prekysna.
+<Velin_Tzanov> Povtariam poslednoto koeto kazah:
+<Velin_Tzanov> <valo_bg> shte gledame vsichki profili koito mojem da poluchim
+<Velin_Tzanov> <VelinTzanov> Kakto veche vidiahme, moje da se naloji da razshirim poniatiata (elementite) s koito boravim.
+<Velin_Tzanov> <VelinTzanov> Kakvi profili be, Valio?
+<Velin_Tzanov> <VelinTzanov> Byrzash.
+<Velin_Tzanov> <VelinTzanov> Pitam te za podzadachata. Definicia mi triabva.
+<Velin_Tzanov> <VelinTzanov> Ne begla ideia za reshenieto.
+<Velin_Tzanov> <VelinTzanov> Aide de. Kakvo chakate?
+<Velin_Tzanov> <VelinTzanov> Kakvo tyrsim v podzadachata?
+<Velin_Tzanov> <VelinTzanov> Slojili sme D naprimer na pozicia 1/2. Kakvo tyrsim sega?
+<Velin_Tzanov> <VelinTzanov> Broiat na kakvo?
+<Velin_Tzanov> <VelinTzanov> Izkluchihte li? :)
+<Velin_Tzanov> Paste-nete kakvoto izpusnah.
+<valo_bg> <valo_bg> broi dumi
+<valo_bg> <valo_bg> tuka si mislq edno neshto...
+<Velin_Tzanov> Ta kakvo tyrsim v podzadachata?
+<Velin_Tzanov> Broiat na kakvo?
+* VelinTzanov has quit IRC (Ping timeout: 180 seconds)
+<valo_bg> na dumite koito sa sys sytvetnoto nachalo
+<valo_bg> t.e. koito zapochvat s nqkakyv shablon
+<Velin_Tzanov> Shablon znachi drugo.
+<valo_bg> dobre de... koito zapochvat po nqkakyv nachin koito sme si go fiksirali d omomenta
+<Velin_Tzanov> OK
+<valo_bg> v nachaloto gledame kolko dumi ima koito zapochvat s AB
+<Velin_Tzanov> I kak go namirame tova?
+<valo_bg> osle sys:
+<valo_bg> AC
+<valo_bg> B
+<Velin_Tzanov> Greshka
+<Velin_Tzanov> Hmm... dobre de, ne e greshka.
+<Velin_Tzanov> Prosto B-to e izlishno.
+<Velin_Tzanov> Posle tyrsish prosto AC
+<Velin_Tzanov> Posle AD
+<Velin_Tzanov> Posle AE
+<Velin_Tzanov> Ne se opitvai da pravish izlishni optimizacii za specialni sluchai - samo ti uslojniava koda i ne ti pomaga ni nai-malko.
+<Velin_Tzanov> Taka. Prosto triabva da pusnem edno dinamichno koeto da ni nameri broiat na validnite kombinacii zapochvashti naprimer s:
+<Velin_Tzanov> ADKNO
+<Velin_Tzanov> BEL
+<Velin_Tzanov> Ili kakvoto tam si izberete.
+<Velin_Tzanov> Taka. Kogato edna zadacha e trudna, kakvo pravim?
+<Velin_Tzanov> Izbirame po-lesen variant i reshavame pyrvo nego.
+<Velin_Tzanov> V tozi sluchai, ako niamahme ogranicheniata s bukvite, a prosto tyrsehme broiat validni kombinacii kakvo shtiahme da napravim?
+<Velin_Tzanov> Kakvo e dinamichnoto?
+<Velin_Tzanov> (vie ste)
+<valo_bg> hmmm... ami slgame A
+<valo_bg> posle slgame na vtora poziciq B,C,D i t.n. i smqtame kolko dumi imame za:
+<valo_bg> XX
+<valo_bg> ne sym mnogo siguren che tova shte raboti...
+<Velin_Tzanov> :)
+<valo_bg> posle shte gledame za XXX (no na treta poziciq shte mojem da slojim samo ot poslednoto natatyk)
+<Velin_Tzanov> Valio, tuk tyrsish samo broia, naredbata niama znachenie.
+<Velin_Tzanov> Interesuva te samo validnostta.
+<Velin_Tzanov> Nikoga, ama NIKOGA ne zabraviaite da mislite za tova - kakvo ima znachenie i kakvo ne.
+<Velin_Tzanov> Kogato tyrsite samo broi, naredvata e BEZ znachenie.
+<Velin_Tzanov> Zabravi uslovieto za naredba.
+<Velin_Tzanov> Imash samo uslovie za validnost.
+<Velin_Tzanov> Sega kak shte postroish dinamichnoto?
+* Disconnected
+Session Close: Mon Aug 23 22:46:21 2004
+
+Session Start: Mon Aug 23 22:47:46 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+<VelinTzanov> Pak me prekysna.
+<VelinTzanov> <valo_bg> posle shte gledame za XXX (no na treta poziciq shte mojem da slojim samo ot poslednoto natatyk)
+<VelinTzanov> <Velin_Tzanov> Valio, tuk tyrsish samo broia, naredbata niama znachenie.
+<VelinTzanov> <Velin_Tzanov> Interesuva te samo validnostta.
+<VelinTzanov> <Velin_Tzanov> Nikoga, ama NIKOGA ne zabraviaite da mislite za tova - kakvo ima znachenie i kakvo ne.
+<VelinTzanov> <Velin_Tzanov> Kogato tyrsite samo broi, naredvata e BEZ znachenie.
+<VelinTzanov> <Velin_Tzanov> Zabravi uslovieto za naredba.
+<VelinTzanov> <Velin_Tzanov> Imash samo uslovie za validnost.
+<VelinTzanov> <Velin_Tzanov> Sega kak shte postroish dinamichnoto?
+* Velin_Tzanov has quit IRC (Success)
+<VelinTzanov> Pishete kakvoto izpusnah.
+<valo_bg> chakai che i nie sme izpusnali kato gledam :)
+<VelinTzanov> Da, tova e vajno.
+<VelinTzanov> Btw, drugite, uchastvaite i vie, ne ostaviaite samo Valio da govori.
+<VelinTzanov> Vijte - toi ne se pritesniava da rysi neverni neshta. :)
+<valo_bg> <valo_bg> t.e. ako sme slojili D, za treta poziciq shte slagame ot D natatyk
+<valo_bg> <Velin_Tzanov> Valio, tuk tyrsish samo broia, naredbata niama znachenie.
+<valo_bg> <valo_bg> a da...
+<valo_bg> <valo_bg> emi znachi vyobshte ne ni byrka tova
+<valo_bg> <Swetko> ami 5X5 diag stava 
+<valo_bg> <valo_bg> ama nali ne gldame naredbata?
+<valo_bg> <valo_bg> koq naredba ne gledame?
+<valo_bg> <valo_bg> t.e. koe "ogranichenie"?
+<VelinTzanov> Taka. Kriteriat za naredbata na dumite lexikografski (red po red) ne ni interesuva sega.
+<VelinTzanov> Interesuva ni samo bukvite da sa v narastvasht red po redovete i po stylbovete.
+<valo_bg> dobre. znachi imame diag s 5x5
+<VelinTzanov> I kakto kaza Swetko, tova e diag 5x5 i se reshava elementarno.
+<VelinTzanov> Prosto vyv vseki moment (vsiaka podzadacha) imame shablon s pochti-triygylnata forma ot Diag - vseki red e ne po-kys ot sledvashtia.
+<VelinTzanov> I niama znachenie kak sme naredili bukvite v minaloto - vajno e samo shablona koito sme obrazuvali s tiah (kato s parketite)
+<VelinTzanov> IAsno li e na vsichki dotuk?
+<valo_bg> da
+<sssa88> da
+<rangel__> da
+<Swetko> da
+<VelinTzanov> OK
+<VelinTzanov> Sega kato imame dopylnitelnoto ogranichenie da zapochvame s fixirani bukvi kakvo pravim?
+<VelinTzanov> Kak promeniame nasheto prosto diag-sko dinamichno?
+<valo_bg> pyrvo smqtam che trqbva da se dvijim posledovatelno po pyrvi red, posle po vtori... tova ni ogranichava pyrvi kriterii
+<rangel__> za da mozhem da polzvame otgovora ot diagramite trqbva da sme slozhili vsichki bukvi ot A do tekushtata
+<valo_bg> hmmm... dali? dali ne mojem da go napravim bez tova ogranichenie?
+<VelinTzanov> Eto - imame dve idei.
+<valo_bg> primerno ako si pazim poslednata bukva koqto sme slojili
+<VelinTzanov> Ednata e da se lepnem za novoto ogranichenie i da go sledvame nego.
+<VelinTzanov> Drugata e da si karame kakto si znaem (ot zadachata bez ogranichenie) i niakak si da se spravim s novoto ogranichenie.
+<rangel__> ne ti pomaga, ponezhe trqbva da vmykvash bukvi po-malki ot neq (a tova kyde mozhesh da gi vmyknesh iska da si pazish istoriqta)
+<VelinTzanov> Vyprosyt e - po redove ili po shabloni vyrvim.
+<VelinTzanov> Rangele, a ti kakvo predlagash?
+<rangel__> kato sme napravili nqkakvo nachalo trqbva po nqkakyv nachin da napyhame propusnatite bukvi v po-dolnite redove
+* valo_bg has quit IRC (Read error: 104 (Connection reset by peer))
+<rangel__> no za momenta se seshtam samo za razni brute-force-ove
+* valobg has joined #ioi
+* unfairlk has joined #ioi
+* valobg is now known as valo_bg
+<valo_bg> neshto stana...
+<valo_bg> kakvo izpunah?
+<VelinTzanov> Nishto ne izpusna.
+<VelinTzanov> Paste-nah ti na lichno.
+<VelinTzanov> Mislite li?
+<valo_bg> i sega dilemta dali po shabloni ili po redove?
+<rangel__> vsyshtnost men me interesuva s postavqneto na tezi bukvi po kakyv nachin shte izrezha kvadratcheto
+<VelinTzanov> Tezi bukvi ne sa nishto po-razlichno ot novi ogranichenia.
+<VelinTzanov> Vsichko koeto se iska ot vas e prosto da se syobraziavate s tezi novi ogranichenia.
+<VelinTzanov> A tova shte reche prosto da ne slagate drugi bukvi tam (t.e. kogato slagate neshto tam, to da byde samo bukvata koiato vi diktuvat ogranicheniata)
+<VelinTzanov> Inache kazano - dinamichnoto s tova novo ogranichenie si e syshtoto kato dinamichnoto bez nego.
+* valo_bg has quit IRC (irc.naturella.com irc.VarnaBG.net)
+<VelinTzanov> Prosto ako ni e kazano che triabva da slojim N na 1/4, to kato slagame neshto na 1/4, ako tova neshto ne e N, pishem broi 0 i tolkoz.
+* unfairlk was kicked by VelinTzanov (VelinTzanov)
+<VelinTzanov> Vyprosi? :)
+* rangel_ has joined #ioi
+* valo_bg has joined #ioi
+* rangel_ has quit IRC (Konversation terminated!)
+<VelinTzanov> Tuk li ste?
+<valo_bg> az sym tuk
+<valo_bg> samo moq li server grymna ili cqloto uni?
+* rangel__ has quit IRC (irc.spnet.net irc.mnet.bg)
+* sssa88 has quit IRC (irc.spnet.net irc.mnet.bg)
+* Swetko has quit IRC (irc.spnet.net irc.mnet.bg)
+<VelinTzanov> Neshto se razpadna rabotata... :(
+<valo_bg> mdaaa... irc.spnet.net padna
+<VelinTzanov> Aide da probvame prez mnet.bg i nie.
+* Disconnected
+Session Close: Mon Aug 23 23:07:55 2004
+
+Session Start: Mon Aug 23 23:08:27 2004
+Session Ident: #ioi
+* Now talking in #ioi
+<VelinTzanov> <rangel__> vsyshtnost men me interesuva s postavqneto na tezi bukvi po kakyv nachin shte izrezha kvadratcheto
+<VelinTzanov> <VelinTzanov> Tezi bukvi ne sa nishto po-razlichno ot novi ogranichenia.
+<VelinTzanov> <VelinTzanov> Vsichko koeto se iska ot vas e prosto da se syobraziavate s tezi novi ogranichenia.
+<VelinTzanov> <VelinTzanov> A tova shte reche prosto da ne slagate drugi bukvi tam (t.e. kogato slagate neshto tam, to da byde samo bukvata koiato vi diktuvat ogranicheniata)
+<VelinTzanov> <VelinTzanov> Inache kazano - dinamichnoto s tova novo ogranichenie si e syshtoto kato dinamichnoto bez nego.
+<VelinTzanov> * valo_bg has quit IRC (irc.naturella.com irc.VarnaBG.net)
+<VelinTzanov> <VelinTzanov> Prosto ako ni e kazano che triabva da slojim N na 1/4, to kato slagame neshto na 1/4, ako tova neshto ne e N, pishem broi 0 i tolkoz.
+<VelinTzanov> * unfairlk was kicked by VelinTzanov (VelinTzanov)
+<VelinTzanov> <VelinTzanov> Vyprosi? :)
+<VelinTzanov> * rangel_ has joined #ioi
+<VelinTzanov> * valo_bg has joined #ioi
+<VelinTzanov> * rangel_ has quit IRC (Konversation terminated!)
+<VelinTzanov> <VelinTzanov> Tuk li ste?
+<VelinTzanov> Ta sega tuk li ste?
+<rangel__> az da
+* valo_bg has joined #ioi
+<Swetko> da
+* CS sets mode: +o VelinTzanov
+* CS sets mode: +v Swetko
+<sssa88> tuk
+<VelinTzanov> Vsichki sme tuk, znachi.
+<VelinTzanov> Ta razbrahte li tova koeto kazah? Vyprosi?
+<valo_bg> mai da...
+* VelinTzanov sets mode: +ooo rangel__ sssa88 valo_bg
+* VelinTzanov sets mode: +o Swetko
+<valo_bg> az qvno sym izpusnal?
+<VelinTzanov> Pratih na lichno, Valio. Ne si izpusnal.
+<valo_bg> hmmm... trqbva da osmislq
+<VelinTzanov> Ako niakoi go e razbral ili ako niakoi ima formuliran vypros, ochakvam da go chuia.
+<valo_bg> "ako tova neshto ne e N, pishem broi 0 i tolkoz." <- tova ne go razbiram
+<VelinTzanov> Kak pravish stypkata ot edna zadacha v druga podzadacha?
+<VelinTzanov> Slagash edna bukva na niakoe miasto.
+<VelinTzanov> Vyprosyt e koia bukva na koe miasto slagash.
+<valo_bg> da
+<VelinTzanov> Ako slagah edna bukva na miastoto kydeto novoto ogranichenie ni kazva che triabva da slojim druga bukva, to tozi klon ot dinamichnoto napravo go otriazvash.
+<VelinTzanov> Inache - si go broish kakto predi.
+<valo_bg> t.e. kato sym v nachaloto
+<valo_bg> imam A
+<valo_bg> i resha da sloja C
+<valo_bg> to broq za AC
+<valo_bg> e syshtiq kakto broq za AC i trqbva da sloja B
+<VelinTzanov> Nishto ne razbrah, syjaliavam.
+<VelinTzanov> Drugite, v kakvo systoianie ste?
+<rangel__> na men ne mi e qsno
+<valo_bg> i az mai ne razbrah :)
+<sssa88> taq zadacha predi dosta vreme q reshavah i togava mi otne cql den ama sega ne moga da si spomnq
+<valo_bg> aaaa, chai malko...
+<Swetko> i na men
+<valo_bg> nachi sme v A
+<valo_bg> i sega slgame B
+<sssa88> ideqta v obshti linii (taka kakto q bqh reshil) che ne puskash dinamichnoto vednyz a nqkolko pyti
+<valo_bg> ako reshim da slojim B na 2-ri red prosto shte kajem che broq na neshtata deto se poluchavat ot
+<sssa88> kato vseki pyt to e razlichno zashtoto za dadeni bukvi veche si im opredelil polozenieto
+<valo_bg> A
+<VelinTzanov> Ia si izchistete vsichkia bokluk ot mozycite.
+<valo_bg> B
+<valo_bg> e 0
+<VelinTzanov> syshtestvenata ideia ne e da puskash dinamichnoto niakolko pyti.
+<sssa88> ama moze li da stane bez tova?
+<VelinTzanov> Syshtestvenata ideia e da si prilojish standartnia algorithm za naredeni mnojestva v koito namirash koi element na koi nomer syotvetstva.
+<VelinTzanov> Vlado, tuk se uchim na idei. Ne e vajno kak stava konkretnata zadacha.
+<VelinTzanov> Ta tova prilagane na tozi algorithm iziskva da pusnesh dinamichno bez da gledash naredbata.
+<VelinTzanov> Dinamichno v koeto sa ti fixirani niakoi bukvi, no drugite sa svobodni ot naredba.
+<sssa88> ami to tova da go pusnesh nqkolko pyti ne e li syshto ideq shtom bez nego ne stava zadachata - az taka i diag bqh reshil
+<VelinTzanov> Tova go pravi lesno, diag-sko dinamichno v nashata zadacha.
+<VelinTzanov> Offff, Vlado, spri za malko i slushai.
+<VelinTzanov> Neka se vyrnem na elementarnata zadacha s permutaciite.
+<VelinTzanov> Tam imate kriterii za validnost.
+<VelinTzanov> (broia na inversiite)
+<VelinTzanov> Imate i naredba na validnite permutacii (leksikografska)
+<VelinTzanov> V TwoFive imate syshtoto
+<VelinTzanov> Imate kriterii za validnost
+<VelinTzanov> (tova da sa narastvashti bukvite po redovete i kolonkite)
+<VelinTzanov> Imate i naredba (leksikografska po redove)
+<VelinTzanov> Vajniat urok ot dnes e, che tezi zadachi se reshavat po edin i syshti nachin.
+<VelinTzanov> Razglejdate pyrviat kriterii ot naredbata.
+<VelinTzanov> I sled tova puskate niakakvo dinamichno koeto broi kolko situacii koito sa v daden klon na tozi kriterii izpylniavat kriteria za validnost.
+<VelinTzanov> V zadachata s permutaciite:
+<VelinTzanov> Slagate pyrvoto chislo da e 1. Posle go slagate da e 2, 3 i t.n.... i za vsiako slagane:
+<VelinTzanov> Broite kolko sa validnite permutacii SLED kato slojim tova chislo tam.
+<VelinTzanov> Gotinoto e, che tova broene e osvobodeno ot naredba.
+<VelinTzanov> Tova e vajnoto.
+<VelinTzanov> Deto vika Rangel, ima prosta formula za broia na chetnite/nechetnite inversii.
+<VelinTzanov> Naredbata moje da e kakvato si shte izvratena, tia ne vi interesuva za reshavaneto na podzadachata.
+<VelinTzanov> Vas vi interesuva broiat na validnite permutacii, koito imat chislata koito ste slojili na mestata koito ste slojili.
+<VelinTzanov> Syshtoto e i v TwoFive
+<VelinTzanov> Tam vzimate pyrviat kriterii za naredba i probvate razlichni bukvi na nego.
+<VelinTzanov> Za vsiaka proba reshavate podzadacha.
+<VelinTzanov> Tazi podzadacha E OSVOBODENA OT NAREDBA
+<VelinTzanov> V neia samo broim, ne narejdame.
+<VelinTzanov> Edinstvenata razlika s trivialnoto diag-sko broene, e che imame ogranichenieto dadeni bukvi da sa na dadeni mesta.
+<Swetko> az sled malko ste trygvam
+<VelinTzanov> No tova ogranichenie, podobno na zadachata s permutaciite, ne ni zatrudniava pochti nikak.
+<VelinTzanov> Vsichko koeto se iska e prosto na vsiaka stypka na diag-skoto dinamichno da proveriavame dali ne narushavame tova novo ogranichenie - NISHTO poveche.
+<VelinTzanov> Taka za vsiaka chastichno postroena duma mojete lesno da kajete kolko validni dumi ima, koito da zapochvat s tova chastichno postroenie.
+<VelinTzanov> I tova veche vi pozvoliava da si prilojite standartnia obsht algorithm ot Diag i permutacionnata zadacha.
+<VelinTzanov> Vyprosi?
+<Swetko> ne
+<valo_bg> az shte procheta oshte vednyj gornite raboti
+<rangel__> ne
+<sssa88> ne
+<Swetko> procheti ako iskash i ot ioi-skia sait reshenieto
+<Swetko> moshe i tam da ima nesto polezno
+<VelinTzanov> OK. Shte izchakam na vsichki da im se iziasni.
+<Swetko> na men mi e iasno
+<VelinTzanov> Tezi koito niamat vyprosi, nali mojete da go napishete na kod tova za 100?
+<valo_bg> znahchi nie se dvijim po kriterqt ni za naredba?
+<Swetko> ste trygvam
+<Swetko> da moga
+<Swetko> chao
+<rangel__> i az shte moga
+<sssa88> chao
+<valo_bg> Swetko: chao
+<sssa88> mislq che shte moga
+* Swetko has quit IRC (warpy in the mix!)
+<valo_bg> e dobre de... nie ako se dvijim po kriterqt ni za naredba tova oznachava che sled kato proverim B da e na pyrvi red. trqbva da proverim za C dae pyrvi red
+<valo_bg> kakvo stava s B?
+<VelinTzanov> Ne te interesuva B.
+<VelinTzanov> Puskash si diag-skoto dinamichno s dopylnitelno ogranichenie AC
+<rangel__> ami nishto ne stava s B, toj ne e postaven
+<VelinTzanov> Ti kato go pusnesh B-to samo shte si se naredi kydeto triabva.
+<valo_bg> e kak taka... ako to moje da e na 5 razlichni pozicii?
+<VelinTzanov> Kakvo znachi ako moje be, momche?
+<VelinTzanov> Ti si imash diag-sko dinamichno.
+<VelinTzanov> to raboti.
+<VelinTzanov> Namira broiat na validnite dumi.
+<VelinTzanov> Puskash go syshtoto.
+<VelinTzanov> Samo deto na vsiaka stypka proveriavash dali ne si narushil novoto ogranichenie (a imenno pyrvite dve bukvi da sa A i C)
+<VelinTzanov> Tova e. Ne e rocket science, kakto obichat da kazvat tuka.
+<valo_bg> qvno shte cheta oshte dokato zo rabera...
+<valo_bg> zo = go
+<VelinTzanov> Taka. Iasno li ti e che pyrvo go puskame s ogranichenie "Da zapochva s A"? Posle go puskame s ogranichenie da zapochva s "AB", posle s "AC" s "AD" i t.n... za da si izberem v koia bukva sme. Da rechem che sme v D. Posle puskame ADE, ADF, ADG, ADH, ....
+<VelinTzanov> ... kato si izberem H puskame ADHJ, ADHK, ADHL i t.n...
+<valo_bg> e kak shte go pusnem taka? nie ne mojem da si kodirame situaciite? kak shte razgranichim AB i AC?
+<VelinTzanov> Vsiako "puskane" si e edno diag-sko dinamichno v koeto prosto tyrsim broia na validnite permutacii (taka de, dumi)
+<VelinTzanov> Kak namirash broia na validnite dumi bez ogranichenia (diag-skoto dinamichno)? Kak?
+<VelinTzanov> Definirash si podzadacha.
+<VelinTzanov> Podzadachata se izraziava s shablon.
+<VelinTzanov> Shablon kato tezi na Kelevedjiev ot Diag.
+<valo_bg> a taka
+<VelinTzanov> I kak svejdash edna podzadacha do druga podzadacha? (ti si na hod)
+<valo_bg> kato pribavq nova bukva nqkyde v tozi shablon
+<VelinTzanov> A taka.
+<valo_bg> e dobre... kak shte gi kodirame tezi neshta?
+<VelinTzanov> Sega ako imash ogranichenie "Na pyrvo miasto da e A, na vtoro miasto da e D" prosto razglejdash tova ogranichenie na tazi stypka.
+<VelinTzanov> T.e. kato pravish tazi stypka, gledash da ne slojish bukva na miasto taka che da narushish novoto ogranichenie. Tova e vsichko.
+<VelinTzanov> Kodirash gi kakto predi - ti si gledash shablona.
+<VelinTzanov> Kakyv problem vijdash ti?
+<valo_bg> ama imash i ogranichenie?
+<valo_bg> t.e....
+<valo_bg> ti trqbva da si smetnal za svqko ogranichenie
+<valo_bg> za vsichki shabloni
+<sssa88> ogranichenieto ti e neshto kato konstanta - nqma nuzda da go kodirash
+<valo_bg> kolko dumi imash
+<valo_bg> qvno... no az ne moga da go proumeq
+<sssa88> to e kato uslovie koeto trqbva da spazvash : v po-prostite dinamichni uslovieto ne se meni - tuk obache se promenq
+<valo_bg> taka ne stava li eksponencialno?
+<VelinTzanov> Valio, vsiako puskane na diag-skoto dinamichno e na chisto.
+<VelinTzanov> Ne, stavat 200 puskania na edna diag-5x5 dinamichno.
+<VelinTzanov> edna = edno
+<VelinTzanov> Za vsiako ogranichenie:
+<VelinTzanov> Puskash dinamichnoto na chisto
+<VelinTzanov> Taka skorostta na vsiako puskane na dinamichnoto si e syshtata kato na chistoto diag-sko dinamichno.
+<VelinTzanov> Prosto go puskash niakolko desetki pyti.
+<VelinTzanov> Puskash go za A
+<VelinTzanov> Puskash go za AB
+<VelinTzanov> Puskash go za AC
+<VelinTzanov> Puskash go za AD
+<valo_bg> ogranicheniqta ne sa li mnogo?
+<VelinTzanov> Puskash go za ADE
+<VelinTzanov> Puskash go za ADF
+<VelinTzanov> Puskash go za ADG
+<VelinTzanov> Kolko da sa?
+<valo_bg> aaa, ama ti gi orqzvash...
+<valo_bg> aaaa, zagrqh!!!
+<valo_bg> ti kato si fiksirash nqkakvo nachalo
+<valo_bg> posle generirash vsichki validni s tova nachalo
+<valo_bg> i si siguren che te sa ti-pomalki leksikografski ot tezi koito shte razgledash po-kysno
+<valo_bg> mdaa... hitro :)
+<valo_bg> tebe vyobshte ne te interesuva nqhnata naredba leksikograshki
+<valo_bg> nqhnata = tqhnata
+<VelinTzanov> Tochno taka. :)
+<VelinTzanov> Dinamichnoto koeto puskash e osvobodeno ot poniatieto naredba. To proveriava samo validnost.
+<valo_bg> ahaaa.... e che za permutaciite tova syshtoto li e?
+<VelinTzanov> Absolutno.
+<VelinTzanov> I tam "dinamichnoto" e osvobodeno ot naredba.
+<VelinTzanov> N!/2 ne go interesuva naredbata. :)
+<valo_bg> mda... pravilno :]]]]
+<valo_bg> qko :)
+<VelinTzanov> Na Diag e syshtoto. Prosto tam naredbata i validnostta sa edno i syshto.
+<valo_bg> kak samo se vyrzvat dvete raboti
+<valo_bg> t.e. tam validnostta ni definia naredba ili neshto takova
+<VelinTzanov> Tam prosto dopylnitelnite ogranichenia sa v "sivata" chast na shablona koiato ne ni interesuva.
+<VelinTzanov> Dokato v TwoFive ogranicheniata sa i v chastta koiato ni interesuva i zatova ni pritesniavat na pryv pogled.
+<VelinTzanov> No samo na pryv pogled.
+<valo_bg> trqbva da si napisha na edno listche "validnost naredba" i kato zaciklq na IOI da si go pogledna :)
+<VelinTzanov> :):):)
+<VelinTzanov> Aide - uprajniavaite se.
+<valo_bg> ok... mersi che si zagubi dopylnitelno vreme da mi go obqsnish :)
+<VelinTzanov> I vnimavaite na IOI kato izleze neshto s validnosti, naredbi i obryshtania na elementi v poredni nomera i obratno - da go napravite za 100!
+<VelinTzanov> Mejdu drugoto, nali znaete che utre imame trenirovychno systezanie v 8:30?
+<valo_bg> ok
+<sssa88> da
+<rangel__> da
+<VelinTzanov> Ia da vidia az kakvo sym vi prigotvil tozi pyt...
+<VelinTzanov> Mdaaa.... hubavi sa zadachkite... taka de - pone edna ot tiah. :)
+<VelinTzanov> Aide - priatno prekarvane s naredbite dnes.
+<VelinTzanov> I shte vi pisha otnosno lekciite utre po tova vreme, che sega mi se spi i niamam vreme.
+<VelinTzanov> Chao!
+<sssa88> chao
+<VelinTzanov> I ako ima vyprosi i/ili problemi - pishete
+<rangel__> chao
+<valo_bg> chao
+* Disconnected
+Session Close: Mon Aug 23 23:58:13 2004

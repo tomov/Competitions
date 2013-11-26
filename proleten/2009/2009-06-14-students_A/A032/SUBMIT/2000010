@@ -1,0 +1,204 @@
+#include <cmath>
+#include <cstdio>
+#include <algorithm>
+#include <ctime>
+#define N (1000001)
+#define SUICIDE  if(clock()>1996)
+template <class T>
+class pri_queue
+{
+    T* buff;
+    int sz;
+public:
+    inline pri_queue(void* buffer)
+    {
+        buff=(T*)buffer;
+        --buff;
+        sz=0;
+    }
+    inline void push(T obj)
+    {
+        ++sz;
+        buff[sz]=obj;
+        int i=sz;
+        while(i!=1)
+        {
+            if(buff[i]<buff[i/2])
+            {
+                std::swap(buff[i],buff[i/2]);
+                i/=2;
+            }
+            else
+                break;
+        }
+    }
+    inline T& min()
+    {
+        return buff[1];
+    }
+    inline void pop()
+    {
+        buff[1]=buff[sz];
+        --sz;
+        int i=1;
+        while(1)
+        {
+            if(i*2<=sz)
+            {
+                if(buff[i]>buff[i*2])
+                {
+                    if(((i*2)+1)<=sz&&buff[(i*2)+1]<buff[i*2])
+                    {
+                        std::swap(buff[(i*2)+1],buff[i]);
+                        i=(i*2)+1;
+                    }
+                    else
+                    {
+                        std::swap(buff[i],buff[i*2]);
+                        i=i*2;
+                    }
+                }
+                else if(((i*2)+1)<=sz&&buff[(i*2)+1]<buff[i])
+                {
+                    std::swap(buff[(i*2)+1],buff[i]);
+                    i=(i*2)+1;
+                }
+                else
+                    break;
+            }
+            else
+                break;
+        }
+    }
+    inline bool empty()
+    {
+        return sz==0;
+    }
+    inline int size()
+    {
+        return sz;
+    }
+};
+int h[N];
+int k;
+int n;
+#define ABS(a) (abs(a))
+inline int get(int start,int lvl)
+{
+    int rez=0;
+    int tmp;
+    for(int i=0;i<k;++i,start++)
+    {
+        tmp=h[start]-lvl;
+        rez+=ABS(tmp);
+    }
+    return rez;
+}
+inline int compute(int start)
+{
+    int l=h[start],m,r=h[start];
+    int i;
+    for(i=1;i<k;++i)
+    {
+        if(h[start+i]<l)
+            l=h[start+i];
+        if(h[start+i]>r);
+            r=h[start+i];
+    }
+    while(l<r)
+    {
+        m=(l+r)/2;
+        int a,b,c;
+        if(l==r-1)
+        {
+            b=get(start,l);
+            c=get(start,r);
+            if(b>c)
+                return c;
+            return b;
+        }
+        if(m==0)
+        {
+            b=get(start,0);
+            c=get(start,1);
+            if(b<c)
+                return b;
+            l=c;
+        }
+        else
+        {
+            a=get(start,m-1);
+            b=get(start,m);
+            c=get(start,m+1);
+            if(a>b&&b<c)
+                return b;
+            if(a>c)
+                l=m;
+            else
+                r=m;
+        }
+        SUICIDE
+            return b;
+    }
+    return get(start,m);
+}
+struct aver
+{
+    int start;
+    int ave;
+    inline aver(){}
+    inline aver(int a,int b)
+    {
+        start=a;
+        ave=b;
+    }
+    inline bool operator<(aver& rh)const
+    {
+        return ave<rh.ave;
+    }
+    inline bool operator>(aver& rh)const
+    {
+        return ave>rh.ave;
+    }
+};
+aver heap[N];
+int main()
+{
+    pri_queue<aver> hp(heap);
+    int i;
+    int w=0;
+    int dif=0;
+    int rez1;
+    int rez2;
+    scanf("%d %d",&n,&k);
+    for(i=0;i<n;++i)
+        scanf("%d",h+i);
+    for(i=0;i<k;++i)
+        w+=h[i];
+    for(i=0;i<n-k;++i)
+    {
+        int dif=0;
+        for(int j=0;j<k;++j)
+            dif+=w/n-h[j+i];
+        hp.push(aver(i,ABS(dif)));
+        w-=h[i];
+        w+=h[i+k+1];
+        rez1=i;
+        rez2=ABS(dif);
+    }
+    while(!hp.empty())
+    {
+        aver cu=hp.min();
+        hp.pop();
+        int tmp=compute(cu.start);
+        printf("tmp=%d\n",tmp);
+        if(tmp<rez2)
+        {
+            rez2=tmp;
+            rez1=cu.start;
+        }
+        SUICIDE
+            break;
+    }
+    printf("%d\n%d\n",rez2,rez1+1);
+}

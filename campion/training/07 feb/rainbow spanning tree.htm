@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<meta name="copyright" content="(c) Copyright 2002-2006 Liviu Vâlsan" />
+	<meta name="author" content="Liviu Vâlsan" />
+	<meta name="keywords" content="programming contest, training, computer science, performance, programming" />
+	<meta name="Classification" content="Computing" />
+	<meta name="distribution" content="GLOBAL" />
+	<meta name="rating" content="General" />
+	<meta name="robots" content="ALL, INDEX, FOLLOW" />
+	<title>.campion, programming contest, training program for performance in computer science</title>
+	<link href="stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<!--[if IE]>
+		<link href="stylesheets/main_ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	
+
+			<script language='javascript' src='http://127.0.0.1:1039/js.cgi?pca&r=18935'></script>
+
+<script type="text/javascript" src="js/clock.js"></script>
+</head>
+<body onLoad="setDate(1.172205039E+12, 'Server time'); time(); blink();">
+
+<div id="page_wrapper">
+	<div id="shadow_right">
+
+		<div id="topbar">
+			<div id="clock"></div>
+			<ul id="language_select">
+				<li><a href="/problems.php?mode=view_solution&problem_id=363&group_number=3&year=2006&lang=ro">Romana</a></li><li><a href="/problems.php?mode=view_solution&problem_id=363&group_number=3&year=2006&lang=en">English</a></li>
+			</ul>
+		</div>
+
+		<div id="branding">
+			<h1><a href="/" title=".campion home page"><span>.campion</span></a></h1>
+		</div>
+
+		<ul id="nav_main">
+			<li id="first_option"><a href="index.php">Home</a></li>
+			<li><a href="login.php">Login</a></li>
+			<li><a href="news.php">News</a></li>
+			<li><a href="team.php">Team</a></li>
+			<li><a href="events.php">Events</a></li>
+			<li><a href="history.php">History</a></li>
+			<li><a href="links.php">Links</a></li>
+			<li><a href="contact.php">Contact</a></li>
+		</ul>
+
+		<div id="css_table">
+		<div id="css_row">
+		<div id="sidebar">
+
+			<div id="contest_navigation">
+				<h3>Contest</h3>
+				<ul id="nav_contest">
+					<li><a href="registration.php">Register</a></li>
+					<li><a href="problems.php">Problems</a></li>
+					<li><a href="round_score.php">Round results</a></li>
+					<li><a href="rankings.php">General results</a></li>
+					<li><a href="rules.php">Rules</a></li>
+				</ul>
+			</div>
+
+			<div id="news_section">
+				<h3>News</h3>
+				<dl>
+										<dt>2007-02-12 11:51:58</dt>
+					<dd><a href="news_details.php?id=92">Round 9 - Bulgarian Translations</a></dd>
+					<dt>2007-02-03 08:51:28</dt>
+					<dd><a href="news_details.php?id=89">Round #8 - Bulgarian translation</a></dd>
+					<dt>2007-01-22 09:07:01</dt>
+					<dd><a href="news_details.php?id=88">Round # 7 - Bulgarian translation</a></dd>
+
+				</dl>
+			</div>
+
+		</div>
+
+		<div id="content">
+			<h1>Solution view</h1>
+
+			<table width="580px" align="center">
+	<tr>
+		<td width="180px"><b>Problem title:</b></td>
+		<td width="400px">sol</td>
+	</tr>
+	<tr>
+		<td width="180px"><b>Problem number:</b></td>
+		<td width="400px">2</td>
+	</tr>
+	<tr>
+		<td width="180px"><b>Round:</b></td>
+		<td width="400px">Round #9 - training</td>
+	</tr>
+	<tr>
+		<td width="180px" valign="top"><b>Solution:</b></td>
+		<td width="400px">For a graph G=(V,E) we say that two edges are part of the same class if the corresponding roads are controlled by the same guild. We notice that we are required to build a spanning tree that does not contain two edges from the same class (in specialized literature this is called the problem of the rainbow spanning tree and it is solved using matroid theory).
+			<p class="desc" style="margin-top: 0px; ">We write down as (1) the condition that the set of solution edges induces an acyclic graph and as (2) the condition that the set of solution edges does not contain 2 edges from the same class. Also, A-B represents the difference between set A and set B and A+B represents the union of set A and set B. We denote by (p1,p2,...,pn) a path of length n in a digraph, so that there is an arc (pi,pi+1) for any 1 &lt;= i &lt;= n.
+			<p class="desc" style="margin-top: 0px; "> The following algorithm builds a solution:
+			<p class="desc" style="margin-top: 0px; "> M = void // M the set of edges that will represent the solution
+			<p class="desc" style="margin-top: 0px; ">  if |E| = 0 there is no solution
+			<p class="desc" style="margin-top: 0px; ">  else M = (a,b) // (a,b) edge in E
+			<p class="desc" style="margin-top: 0px; ">  while |M| &lt; |V|-1 execute
+			<p class="desc" style="margin-top: 0px; "> 1. Build digraph Ga=(V',E') so that:
+			<p class="desc" style="margin-top: 0px; ">    -&gt;vertex i from V' represents edge i from E
+			<p class="desc" style="margin-top: 0px; ">    -&gt;there is an arc (i,j) in E' iff i in M and j in E-M and M - {i} + {j} verify (1)
+			<p class="desc" style="margin-top: 0px; ">    -&gt;there is an arc (j,i) in E' iff i in M and j in E-M and M - {i} + {j} verify (2)
+			<p class="desc" style="margin-top: 0px; "> 2. Determine X = {a | a in E-M and M + {a} verify (1)}
+			<p class="desc" style="margin-top: 0px; "> 3. Determine Y = {b | b in E-M and M + {b} verify (2)}
+			<p class="desc" style="margin-top: 0px; "> 4. if there exists an a such that a belongs to X and a belongs to Y then M = M + a
+			<p class="desc" style="margin-top: 0px; ">   else find the shortest path P = (p1,p2,...,pn) so that p1 in X and pn in Y
+			<p class="desc" style="margin-top: 0px; ">          if P = void then there is no solution
+			<p class="desc" style="margin-top: 0px; ">          else for i = 1 to n execute
+			<p class="desc" style="margin-top: 0px; ">                    if pi in M then M = M - pi
+			<p class="desc" style="margin-top: 0px; ">                    if pi not in M then M = M + pi
+			<p class="desc" style="margin-top: 0px; ">   return to step 1
+			<p class="desc" style="margin-top: 0px; "> In order to understand this algorithm we can think it simply as a generalized matching algorithm.
+			<p class="desc" style="margin-top: 0px; "> In reality it finds an &quot;alternating&quot; path containing nodes which belong alternatively to set M and to set E'-M. Step 4 recreates group M by removing nodes already existing in it and adding new ones. Same as in the matching algorithm, M's cardinal increases by 1 at each step. Therefore after at most |V|-1 steps we find a solution or we report that such does not exist.
+			<p class="desc" style="margin-top: 0px; "> A total of |V|-1 steps are executed, and a graph with |E|^2 arcs is built at each step. Finding path P is done in O(|E'|) steps, therefore if testing conditions (1) and (2) is done in O(1) then the algorithm has complexity O(V*E*E). Condition (2) can be trivially tested in O(1), and condition (1) can be also tested in O(1) by preprocessing at each step as follows: each connected component of the graph induced by M over G is relabeled using a depth-first search so that if node x is the ancestor of y in the depth-first search tree then label(x)&lt;label(y). Therefore all y nodes from a subtree with root x of the depth-first search tree (each connected component is a tree anyway) have property:
+			<p class="desc" style="margin-top: 0px; "> label(y) &lt;= label(x) + subtree_size(x) , with y a descendant of x.
+			<p class="desc" style="margin-top: 0px; "> Condition (1) can be tested in O(1) by using the above property.
+			<p class="desc" style="margin-top: 0px; ">
+			<p class="desc" style="margin-top: 0px; ">Number of points / test:
+			<p class="desc" style="margin-top: 0px; ">0 5
+			<p class="desc" style="margin-top: 0px; ">1 2
+			<p class="desc" style="margin-top: 0px; ">2 3
+			<p class="desc" style="margin-top: 0px; ">3 5
+			<p class="desc" style="margin-top: 0px; ">4 5
+			<p class="desc" style="margin-top: 0px; ">5 5
+			<p class="desc" style="margin-top: 0px; ">6 5
+			<p class="desc" style="margin-top: 0px; ">7 5
+			<p class="desc" style="margin-top: 0px; ">8 5
+			<p class="desc" style="margin-top: 0px; ">9 2
+			<p class="desc" style="margin-top: 0px; ">10 3
+			<p class="desc" style="margin-top: 0px; ">11 5
+			<p class="desc" style="margin-top: 0px; ">12 5
+			<p class="desc" style="margin-top: 0px; ">13 5
+			<p class="desc" style="margin-top: 0px; ">14 5
+			<p class="desc" style="margin-top: 0px; ">15 5
+			<p class="desc" style="margin-top: 0px; ">16 5
+			<p class="desc" style="margin-top: 0px; ">17 5
+			<p class="desc" style="margin-top: 0px; ">18 10
+			<p class="desc" style="margin-top: 0px; ">19 10
+			<p class="desc" style="margin-top: 0px; "></td>
+	</tr>
+</table><p style="text-align: center; "><a href="/problems.php?group_number=3">Back</a></p>
+		</div>
+		</div>
+		</div>
+
+		<div id="site_info">
+			<p>©2002 - 2006 Liviu Vâlsan, liviuvalsan [at] yahoo [dot] com &nbsp;&nbsp;&nbsp;<span class="valid"><a href="http://validator.w3.org/check?uri=http://campion.edu.ro/index.php">XHTML</a></span> &nbsp;&nbsp;<span class="valid"><a href="http://jigsaw.w3.org/css-validator/validator?uri=http://campion.edu.ro/stylesheets/main.css">CSS</a></span></p>
+		</div>
+
+	</div>
+
+</div>
+
+<div id="shadow_bottom_left">
+	<div id="shadow_bottom_right">
+		<div id="shadow_bottom">
+			&nbsp;
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+<script language='javascript'>postamble();</script>

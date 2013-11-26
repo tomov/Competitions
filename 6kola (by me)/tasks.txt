@@ -1,0 +1,481 @@
+dfs path:
+	any path in maze
+	usopen/2006/silver/wall
+	usaco/2006/oct/silver/skate
+	usaco/2008/dec/gold/treat
+	srm 417/div1/500
+
+dfs + graph extension
+	ioi/2007/flood
+	balkan/2004/race ( + binary search; could be done with dijktra with max edge ?)
+
+dfs topsort:
+	usaco/2007/mar/gold/ranking
+	srm 381/div1/1000
+
+dfs connectedness (po-prostite moe i s bfs):
+	all connected components in undirected graph
+	all strongly connected components in directed graph
+	all simple cycles in undirected graph
+	noi/2003/friend
+	croatian/2006-2007/final/policija
+	srm 328/blockenemy
+	noi/2008/k1/bicon (also with disjoint sets)
+	srm f312/antarcticapolice
+	tchs/2007/round 3 gamma/provinces
+	tccc/round 3/div1/Marketing (+ cycles)
+	noi/2009/1 krug/roads (also in mst)
+	usaco/2009/jan/gold/damage
+
+dfs in tree:
+	noi/2007/k1/split
+	zimni/2007/store
+
+bfs shortest path:
+	proleten/2007/hop (+ optimization)
+	ioi/1989
+	tco/2002/semi 2/escape
+	noi/2004/3 krug/A/paths (not exactly "shortest" ; also in dp in tree; see noi/2008/diam)
+	proleten/2009/A/gaming (graph center + subset sum; also in meet in the middle)
+	proleten/2008/A/square (mainly in geometry)
+
+bfs + graph extension (also see games)
+	ioi/1989
+	tchs/2009/finals/500
+	noi/2009/1 krug/sansu
+	srm 289/1000
+	ioi/2003/robots
+	proleten/2005/wappo
+	noi/2004/k2/lab
+	noi/2007/k1/maze (+ optims)
+	noi/2008/k3/bloxorz
+	shumen/2006/A/move
+
+dp interval-based:
+	srm 418/div1/500
+	noi/2006/3 krug/A/gen (reverse string generation)
+	noi/2005/3 krug/A/oper (expression construction - number of different values)
+	noi/2005/3 krug/A/reliab (just to make observation; + difference rows)
+
+dp knapsack:
+	baltic/2008/elections
+	usaco/training/dp/large state/essay
+	usaco/2009/feb/gold/stock
+	proleten/2005/A/books (not sure if it belongs here...)
+
+dp longest path (see dp in tree):
+	tccc/2003/semi 4/circuits
+	zimni/2008/A/long
+
+dp fuck up the future:
+	ioi/2002/batch (+ inner loop optimization)
+	usaco/2005/nov/gold/ontherun
+	usaco/training/dp/cowrun (1:1 s gornata)
+	baltic/2007/sorting
+
+dp with inner loop optimization:
+	ioi/2002/batch
+	proleten/2007/bus
+	noi/2004/3 krug/A/pict (could be done with binary search or priority queue)
+
+dp counting permutations, combinations, number of ways to achieve given constraints:
+	kth permutation; index of permutation
+	zimni/2004/A/mono (nth combination)
+	noi/2005/3 krug/A/perm (permutations with no a[i] > a[j] > a[k], i<j<k)
+	noi/2004/3 krug/A/count (combinations with repetition with limit on elements of each kind)
+	zimni/2005/A/hedge (number of permutations with length N and P increasing substrings)
+
+dp counting other sorted sequences (code/decode):
+	ioi/2008/flower?
+	baltic/2008/stones
+	srm 416/div1/500 (not exactly, but could be)
+	srm 415/div1/1000
+	srm 302/div1/500 (simple)
+	proleten/2008/A/lucky (numbers with digit product mod digit sum == 0; prime factorization state; see coci/2007-2008/olympiad/umnozak)
+	coci/2007-2008/olympiad/umnozak (prime factorization state)
+	shumen/2005/A/digits
+	shumen/2004/A/line
+
+dp counting combinations and subsets
+	ioi/2008/fish
+	srm 425/div 1/DNADeletion
+	shumen/2004/A/gene
+	proleten/2006/A/streets (number of trees with given number of (unique) vertices; not sure if it belongs here)
+
+dp in tree:
+	usaco/training/dp/lexicon (in trie)
+	noi/2004/paths (also in bfs path)
+	boi/2003/tribe
+	srm 408/div1/500 (also has the ceoi/2002/conqueror idea of representing present choices only by their reflection in the future)
+	srm 413/div1/1000
+	noi/2008/3 krug/A/diam (tree diameter - longest path in tree; also in bfs; see noi/2004/paths )
+
+dp in graph with discrete number of cycles
+	ioi/2008/island
+	usaco/2007/dec/chinese/treasure
+	tc/.../cacti
+	ioi/2007/training
+
+dp large state (other):
+	zimni/2004/A/robot (number of paths in extended graph)
+	noi/2007/3 krug/A/apple (2 longest paths where each edge is counted once; also in mcmf)
+	srm 286/div1/600 (lowest row is answer for all players)
+	noi/2008/3 krug/A/table (number of arrangements of 12 elements in 3x4 table satisfying given constraints; dp; brute force; combinatorics; meet in the middle)
+	shumen/2006/A/flower (also in combinatorics)
+
+dp with queue (upper/lower envelopes):
+	balkan/2003/euro
+	campion/.../large/leaves
+	usaco/2006-07/jan/gold/schul
+	usaco/2008/mar/gold/acquire
+	ceoi/2009/...	
+
+dp linear recurrence (matrix exponentiation):
+	fibonacci
+	number of paths of length X between each pair of vertices in graph
+	sum of geometric progression (also in divide and conquer, and in math)
+	zimni/2009/aminosoup
+	shumen/2009/A/reading
+	srm 428/div1/500
+	srm 397/div1/500 (sum of powers)
+	tccc/2006/championship round/div1/500
+	srm 377/div1/500 (game on graph)
+	srm 444/div1/1000 (avoid four; also in inclusion-exclusion)
+	srm 443/div1/shuffledplaylist
+	srm 403/div1/theluckysequence
+	srm 377/div1/1000 (alien language)
+	srm 306/div1/1000 (number of cycles of length <= k)
+	srm 377/div1/1000
+	opencup/2009/fall/??? (programming language long loop simulation)
+
+dp linear, memorize only first states:
+	srm 413/div1/500
+
+dp subset sum:
+	subset sum problem
+	zimni/2004/A/game (number of ways to achieve sum x)
+	shumen/2003/A/nubia
+	shumen/2003/A/div
+
+dp other:
+	zimni/2007/A/cars (simply number of paths in simple dag)
+	proleten/2002/A/ladder
+	
+trie:
+	multiple word searches in text
+	usaco/training/dp/lexicon (+ dp!!!)
+	usaco/2008/dec/gold/sec
+	ioi/2008/typewriter (could be solved with sorting)
+	proleten/2006/A/wac (word auto completion)
+
+kmp:
+	noi/2007/3 krug/A/string (number of strings that don't contain substring S; + kmp table with optimization for each letter)
+	shumen/2008/A/string (table only)
+
+hashing:
+	ceoi/2007/ministry
+	booi/2008/jori
+	usaco training/cryptcow
+	usaco training/hidden
+	usaco training/msquare
+	usaco training/theme
+	zimni/2005/A/virus (longest common substring of 20 strings satisfying given constraints)
+
+inclusion-exclusion
+	srm 445/div1/1000
+	srm 444/div1/1000
+	srm 414/div1/1000
+	srm 369/div1/1000
+	keleved/2006/4
+	coci/2009/round 4/trezor
+	lish/2009/na espr1t zada4ata ot judge-a (# of quadruples a[i],a[j],a[k],a[l] with gcd=1)
+	srm 444/div1/1000 (avoid four; also in dp linear recurrence - matrix exponentiation)
+
+combinatorics and probability:
+	tco/2009/round1/500
+	srm 386/div1/1000
+	shumen/2006/A/flower (catalan; also in dp large state)
+
+combinatoris:
+	srm 377/div1/1000
+
+just dijkstra:
+	srm 181/div1/kilomanx
+	proleten/2004/wireless
+	shumen/2003/A/chase (also given in booi/2007/)
+	booi/2008/platforms
+	shumen/2005/maps	
+	tco/2008/qual 3/cabledonation
+	srm 335/expensive travel
+	noi/2005/k3/burn
+	srm 150/div1/robocourier
+	srm 194/div1/islandferries
+	srm 198/div1/dungeonescape
+	tccc/2004/round 4/bombman
+	boi/2008/problem1
+	shumen/2005/A/maps
+
+tricky dijkstra:
+	srm 462/div1/1000
+	maycamp/2009/arena8/gold/hills (max edge)
+
+dijkstra+graph extension:
+	baltic/2002/bic
+	shumen/2009/A/year2012 (see baltic/2002/bic)
+	srm 422/cavepassage
+	noi/2007/lift (bitmask + position)
+	baltic/2002/speed (+ bit)
+	usaco/2009/feb/gold/revamp
+	srm 436/div1/500
+	noi/2003/3 krug/fill (could be done with brute force)
+	balkan/2004/race (max edge; could be done with binary search + dfs/bfs)
+
+bellman ford (or similar):
+	dekana/2007/e
+	usaco/training/dp/large state/path
+	mcmf
+
+floyd-warshall:	
+	srm 184/div2/teambuilder
+	srm 417/div1/walkingdistance
+
+my sick double-criteria-minimization pfs-dijkstra:
+	baltic/2002/bic
+	usaco/2005/nov/gold/ontherun (bf)
+	ioi/2008/buses
+	usaco/2006-2007/jan/gold/psolve (original dp - slow)
+
+similar inc-dec-pairs ideas:
+	balkan/2004/team
+	ioi/2002/batch (bf)
+	balkan/2003/euro (also in dp with queue)
+
+pfs (not exactly dijkstra):
+	ioi/1999/lights
+
+eulerian path:
+	usaco/2008/dec/gold/winchk
+	shumen/2007/bignum
+	zimni/2010/A/streets (chinese postman problem; also in matching)
+	proleten/2002/A/trace
+	zimni/2010/A/streets (also in matching)
+
+hamiltonian path:
+	usaco/training/dp/row by row/groc (dp + RMQ cut inner cycle + from[])
+	shumen/2002/A/travel (travelling salesman problem damn)
+	noi/2004/3 krug/A/cups (tricky strategy)
+
+mst:
+	usaco/2008/nov/gold/cheer
+	srm 432/div1/builderscountry
+	noi/2009/1 krug/roads (real e s bfs/dfs)
+
+disjoin sets (union find):
+	usaco/2009/jan/gold/travel
+	noi/2008/k1/bicon (alt. sol ; orig in dfs connectedness)
+
+gauss:
+	ioi/1999/flatten
+	shumen/2008/table (number of solutions - linear independent set; mod 3; sparse table optimization)
+	ceoi/2003/register
+	ceoi/2000/x
+	srm 306/div1/500 (Light Switches - maximum linear independent set)
+	srm 356/div1/950
+	srm 396/div1/1000 (MoreNim)
+
+max flow / min cut / matching:
+	campion/2006(?)/trafic (+ bsrch)
+	baltic/2008/mafia (min vertex cut)
+	usaco/2007/may/dining (satisfy at most)
+	srm 334/div1/terrorists
+	srm 404/div1/softwarecompanies
+	srm 422/div1/workersonplane
+	spoj/pothole
+	usaco/2007/nov/tanning
+	srm 397/div1/houseprotection
+	noi/2008/k4/xerxes
+	srm 433/div1/BarbarianInvasion (min cost min cut)
+	tco09/qual1/1000 (match)
+	tco09/round2/1000 (lexico 1st match)
+	usaco/2009/march/gold/damage2 (min cut)
+	baltic/2007/escape (also in min with transverse max)
+	ceoi/2008/order
+	shumen/2006/A/food
+	gcj/2008/finals/E
+	zimni/2010/A/streets (chinese postman in directed graph => bipartite matching + eulerian path)
+	shumen/2007/A/distance (max cost general matching - dp 2^n)
+
+min with transverse max
+	spoj/FLBRKLIN (+ bit + plane rotation)
+	podgotovka/debelak
+	baltic/2007/escape (+ min cut)
+	
+min cost max flow:
+	srm 285/div1/1000 (alt; orig in dp)
+	srm 387/marblesregroupinghard
+	srm 407/transformmatrix
+	noi/2007/apple (also in dp)
+	icpc/3562
+
+meet in the middle:
+	subset sum
+	noi/2008/k3/part (three subset sum)
+	ioi/2001/double
+	noi/2005/3 krug/A/mirrors
+	tchs/2007/semifinals/knapsackproblem
+	srm 430/div 1/1000
+	srm 415/div1/500 (+ bit rmq)
+	noi/2004/3 krug/A/minval (min sum of functions with binary arguments; author's is optimized bf)
+	tchs/2010/final round/500
+	proleten/2009/A/gaming (graph center + subset sum; also in bfs)
+
+interval tree:
+	usaco/2008/nov/gold/lites
+	noi/2008/k5/sredna
+	ioi/2005/mountains
+	baltic/2001/mar
+	noi/2009/1 krug/color (alt.)
+	usaco/2009/jan/gold/travel (alternative ; orig in disjoint sets)
+	tchs/2009/round 3/DiamondMining (not necessarily)
+	noi/2006/k1/skymap (see below...)
+	z-trening/ioi 2009 traning #5/z-query (max substring)
+	zimni/2010/A/lvs (interval xor, longest alternating sequence)
+
+indexed tree sum / binary indexed tree:
+	boi/2003/travers
+	proleten/2003/circle (dp; bst; see usaco/2009/international open/gold/cowemb)
+	proleten/2004/round (+ dp)
+	usopen/2004/moofest
+	ioi/2001/mobiles
+	usaco/2009/jan/gold/baric
+	musala soft/2007-2008/checkers (+ plane rotation)
+	srm 424/div1/productofprices
+	srm 310/div1/500
+	baltic/2002/speed (+ dijkstra)
+	ioi/2007/pairs (+ plane rot)
+	noi/2006/psort
+	spoj/FLBRKLIN (+ min with transverse max + plane rot)
+	ceoi/2003/therace (+ bentley ottoman)
+	noi/2006/k1/skymap (also in interval tree, linesweep, 2D indexed tree)
+	noi/2005/k3/treas
+	proleten/2009/A/flatten (binary search in bst; alt. with 2 sets/priority queues)
+	zimni/2006/A/fest (+ binary search)
+	usaco/2010/feb/slowdown
+
+indexed tree other
+	noi/2007/bands (insert interval, query index)
+	tco/2009/semifinals/500
+
+rmq / lca:
+	lnds (with bit or lower_bound)
+	noi/2006/3 krug/A/psort (lnds)
+	noi/2008/k5/lesna
+	noi/2006/k1/maxsqu (2D ; dynamic & static)
+	srm 415/div1/500 (bit + meet in the middle)
+	noi/2008/3 krug/A/matr (lnds 2D; dp + inner loop optimization with 2D bst)
+	ioi/2009/salesman (dp + dynamic rmq)
+
+greedy:
+	activity selection
+	srm 348/railwaytickets
+	usaco/2009/feb/gold/shuttle
+	srm 169/div1/goldmine (also dp?)
+	tco/2004/round3/boxing
+	srm 418/div1/900
+	zimni/2009/A/gen
+
+ternary search
+	srm 426/div1/500
+	srm 393/div1/1000
+	palechko
+
+bentley ottoman:
+	ceoi/2003/therace
+
+acyclic games:
+	shumen/2005/A/roulette
+	proleten/2004/crazy
+	srm 428/div1/1000
+	ioi/2001/ioiwari
+	ioi/2001/score
+	noi/2003/3 krug/A/game (too many states - need strategy)
+	ceoi/2002/conqueror (strategy)
+	ioi/2005/rec (strategy)
+
+sg:
+	srm 389/div1/1000
+	zimni/2007/A/fgame
+	noi/2005/k4/bgame
+
+cyclic games:
+	proleten/2003/trade (bfs w/l)
+	noi/2006/3 krug/lab101 (bfs w/l)
+	noi/2004/k3/chess (bfs w/l)
+	baltic/2002/lgame (tricky bfs w/l)
+
+number theory:
+	srm 391/div1/1000 (some crazy gcd's, lcm's etc.)
+	srm 440/div1/1000 (factorization)
+
+divide & conquer:
+	noi/2005/k3/cut
+	noi/2009/3 krug/A/titanic (find local max in matrix - query cell; tricky binary search)
+	noi/2009/3 krug/A/bacteria (locate 1's in matrix - query submatrix sum)
+
+geometry:
+	convex hull
+	delaunay triangulation / voronoi diagram
+	noi/2009/3 krug/A/minesweeper (convex hull of circles with same radius)
+	shumen/2001/A/fence (convex hull of circles)
+	noi/2008/3 krug/A/poly (smallest k-polygron from set of points; brute force or dp; see noi/2004/k2/convex & usaco/2008/dec/gold/fence)
+	noi/2004/k2/convex (number of convex polygons from set of points; dp with inner loop sweep line optimization; see usaco/2008/dec/gold/fence)
+	noi/2007/3 krug/A/area (convex polygon maintenance with line cuts)
+	noi/2006/3 krug/A/sym (symmetry axis of set of points)
+	zimni/2009/A/guard (atan2, circle interval union)
+	zimni/2005/A/dist (use dists to calc coords)
+	proleten/2008/A/square (overlapping rotated squares + bfs)
+	noi/2008/k3/alaska (intersection of polygon and convex polygon)
+	srm ???/div1/500 (perimeter of union of circles)
+	dekana/2007/F (area of union of circles - sweep line)
+	proleten/2006/A/atom (point farthest from set of points (the closest one) inside their convex hull)
+	proleten/2003/A/selo (delaunay)
+	shumen/2008/A/mirrors (reflection - pool table analogue)
+	shumen/2004/A/vill (convex hull + closest pair of points)
+	
+math:
+	noi/2008/3 krug/A/sympol (check if polynom is symmetric)
+	proleten/2008/A/egypt (+ big int)
+	shumen/2002/A/invest (invest, earn, spend max total)
+
+logical:
+	proleten/2003/A/laco
+
+brute force:
+	noi/2009/3 krug/A/special (all x such that x*x has only 0, 4 and 9)
+	noi/2008/3 krug/A/color (clever precompute)
+	noi/2006/3 krug/A/water (number of paths in cyclic graph => clever bf)
+	noi/2005/3 krug/A/code (precompute)
+	noi/2004/3 krug/A/minval (can also be solved with in meet in the middle)
+	noi/2003/3 krug/A/cube (all different cubes with colored edges)
+	noi/2003/3 krug/A/fill (could be done with dijsktra + graph extention)
+	noi/2003/3 krug/A/expr (all expressions with given variables)
+	zimni/2007/A/a3 (precompute)
+	proleten/2009/A/washer (precompute)
+	proleten/2005/A/radio (precompute)
+	proleten/2002/A/setfree (precompute)
+
+simulation:
+	shumen/2009/A/strip (strip folding)
+	noi/2007/3 krug/A/numb (precompute)
+
+other:
+	noi/2009/3 krug/A/boxes (number of cycles in permutation)
+	noi/2009/3 krug/A/diamons (3D submatrix sum)
+	noi/2009/3 krug/A/frogs (stack; reverse traversal; increasing suffix subsequence maintenance)
+	noi/2007/3 krug/A/brkclk (tricky electronic clock check)
+	noi/2003/3 krug/A/sork (merge sort many sequences)
+	zimni/2010/A/os (non-overlapping intervals maintenance - erase intervals under each new interval)
+	zimni/2007/A/colxor (xor of grid circles - intervals in each row)
+	proleten/2009/A/leaves (huffman codes - pq, or crazy dp)
+	proleten/2007/names (split string in 3 parts & reorder - lexico least)
+	shumen/2007/A/porters (tree update & query optimization - jump over sqrt(N))

@@ -1,0 +1,140 @@
+#include <stdio.h>
+#include <vector>
+#include <queue>
+#include <algorithm>
+#define pb push_back
+#define S size()
+using namespace std;
+struct mn{int nb; int kl;};
+int a[64][64],aa[64][64];
+int c[64],ccc[64];
+int nm[64];
+vector <int> v[51],vv[51],nv;
+vector <mn> vvv;
+int n,m,cc,t,s=0,maxx=-1,lls;
+queue <int> q;
+bool cmp(mn ax, mn bx)
+{
+     return (ax.kl>=bx.kl);
+}
+void rec(int x, int y)
+{
+     int i;
+     if (y>maxx) maxx=y;
+     for (i=x+1; i<lls; i++)
+     {
+         if (y+nv[i]<=s/2) rec(x+1, y+nv[i]);
+         rec(i, y);
+     }
+}
+int main()
+{int tt;
+scanf("%d", &tt);
+for (int ii=1; ii<=tt; ii++)
+{    scanf("%d%d%d%d", &n, &m, &cc, &t);
+    int i,j,x,y;
+    if (ii>1)
+    {
+             while (!q.empty()) q.pop();
+             for (i=0; i<n; i++)
+             {
+                 v[i].clear();
+                 vv[i].clear();
+                 c[i]=-1;
+                 ccc[i]=-1;
+                 nm[i]=0;
+                 for (j=0; j<n; j++) a[i][j]=a[j][i]=aa[i][j]=aa[j][i]=0;
+             }
+    }
+    for (i=0; i<n; i++) scanf("%d", &c[i]);
+    for (i=0; i<m; i++)
+    {
+        scanf("%d%d", &x, &y);
+        a[x][y]=a[y][x]=1;
+        v[x].pb(y);
+        v[y].pb(x);
+    }
+  //  for (i=0; i<v[0].size(); i++) cout << v[0][i] << ' ';
+  //  cout << endl;
+    int br=0;
+    for (i=0; i<n; i++)
+     if (nm[i]==0)
+     {
+                  br++;
+                  while (!q.empty())
+                   q.pop();
+                  x=i;
+                  q.push(x);
+    //              cout << x << " !!\n";
+                  while (!q.empty())
+                  {
+                        x=q.front();
+                        q.pop();
+      //                  cout << x << ' ';
+                        nm[x]=br;
+                        int ls=v[x].S;
+                        for (j=0; j<ls; j++)
+                         if (c[v[x][j]]==c[x] && nm[v[x][j]]==0) {nm[v[x][j]]=br; q.push(v[x][j]);}
+                  }
+        //          cout << endl;
+     }
+     for (i=0; i<=n; i++) ccc[i]=-1;
+     for (i=0; i<n; i++)
+         if (c[i]==cc)
+     {
+         ccc[nm[i]]=cc;
+         int ls=v[i].S;
+         for (j=0; j<ls; j++)
+          if (nm[i]!=nm[v[i][j]] && aa[nm[i]][nm[v[i][j]]]==0) { aa[nm[i]][nm[v[i][j]]]=aa[nm[v[i][j]]][nm[i]]=1; vv[nm[i]].pb(nm[v[i][j]]); }
+     }
+     mn mnn;
+     int br1=0,br2;
+     for (i=1; i<=br; i++)
+     if (ccc[i]==cc)
+     {
+         mnn.nb=i;
+         mnn.kl=vv[i].size();
+         vvv.pb(mnn);
+         br1++;
+     }
+     sort(vvv.begin(), vvv.end(), cmp);
+    // for (i=0; i<n; i++) cout << nm[i] << ' ';
+    // cout << endl;
+    // for (i=0; i<vvv.size(); i++) cout << vvv[i].nb << ' ' << vvv[i].kl << endl;
+    br2=br-br1;
+    int vr=0;
+    int ls=vvv.S;
+    for (i=0; i<ls; i++)
+    {
+        if (vvv[i].kl>=1) 
+        {
+                         vr++;
+                         if (vvv[i].kl>1) vr++;
+  //                       cout << i << ' ' << vvv[i].nb << ' ' << vvv[i].kl << endl;
+                         for (j=1; j<=br; j++)
+                          if (aa[vvv[i].nb][j]==1) 
+                          {
+                             aa[vvv[i].nb][j]=aa[j][vvv[i].nb]=0;
+//                             cout << "AAA " << j << endl;
+                             br2--;
+                             for (int k=0; k<ls; k++)
+                             {
+                                 if (aa[vvv[k].nb][j]==1) {aa[vvv[k].nb][j]=aa[j][vvv[k].nb]=0;vvv[k].kl--; }
+                             }
+                          }
+                          vvv[i].kl=0;
+                          sort(vvv.begin(), vvv.end(), cmp);
+                          i=-1;
+        }
+    }
+    vr+=br2;
+    nv.pb(vr*t);
+    s+=vr*t;
+}
+    sort(nv.begin(), nv.end());
+    lls=nv.S;
+    rec(-1, 0);
+    printf("%d\n", s-maxx);
+    return 0;
+}
+    

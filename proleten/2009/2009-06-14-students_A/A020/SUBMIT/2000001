@@ -1,0 +1,85 @@
+/*
+TASK: washer
+LANG: C++
+*/
+#include <iostream>
+#include <vector>
+#include <set>
+using namespace std;
+vector<int> st;
+set<pair<int,int> > used;
+int prec[] = {0, 1, 2, 3, 5, 7, 11, 15, 22, 30, 41, 55, 75, 97, 129, 166, 213, 272, 343, 430, 536, 664, 822, 1008, 1230, 1495, 1808, 2178, 2616, 3122, 3720, 4416, 5221, 6164, 7249, 8497, 9941, 11593, 13481, 15665, 18150, 20971, 24184, 27827, 31974, 36650, 41944, 47930, 54670, 62256, 70786, 80369, 91112, 103154, 116602, 131678, 148498, 167233, 188134, 211415, 237274, 266013, 297967, 333355, 372567, 416029, 464134, 517244, 575923, 640708, 712174, 790933, 877625, 973112, 1078082, 1193425, 1320094, 1459178, 1611738, 1778922, 1962030 };
+
+long long cnt;
+
+void display()
+{
+     for(int i=0;i<st.size();i++)
+             cout<<st[i]<<" ";
+     cout<<endl;
+}
+pair<int,int> add(pair<int,int> A,pair<int,int> B)
+{
+              int t1=A.second,t2=B.second;
+              A.first*=t2;
+              A.second*=t2;
+              B.first*=t1;
+              B.second*=t1;
+              pair<int,int> ret;
+              ret.second=B.second;
+              ret.first=A.first+B.first;
+              do
+              {
+                int  k=__gcd(ret.first,ret.second);
+                if(k<=1) break;
+                ret.first/=k;
+                ret.second/=k;  
+              }
+              while(1);
+              return ret;
+}
+void calc()
+{
+     pair<int,int> dr=make_pair(1,st[0]);
+     for(int i=1;i<st.size();i++)
+     {
+       //    cout<<dr.first<<"/"<<dr.second<<" ";
+             dr=add(dr,make_pair(1,st[i]));
+             }
+   // cout<<dr.first<<"/"<<dr.second<<endl;     
+     if(used.find(dr)==used.end()) {cnt++;used.insert(dr);}
+   //else cout<<"dae";
+}
+void turboTrack(int from,int n)
+{
+     if(n<0) return;
+     if(n==0)
+     {
+  //         display();
+            calc();
+   //       cnt1++;
+             return;
+     }
+     for(int i=from;i<=n;i++)
+     {
+             st.push_back(i);
+             turboTrack(i,n-i);
+             st.pop_back();
+     }     
+}
+int main1()
+{
+    for(int i=1;i<=80;i++)
+    {  
+            used.clear();
+            cnt=0;
+               turboTrack(1,i);   
+            cout<<cnt<<", "<<flush;
+    }
+}
+int main()
+{
+	int N;
+	cin>>N;
+	cout<<prec[N]<<endl;
+}

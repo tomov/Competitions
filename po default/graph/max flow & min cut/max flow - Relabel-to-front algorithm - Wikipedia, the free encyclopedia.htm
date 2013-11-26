@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+				<meta name="keywords" content="Relabel-to-front algorithm,Charles E. Leiserson,Clifford Stein,Dense graph,Edmonds-Karp algorithm,Flow network,Ford-Fulkerson algorithm,Introduction to Algorithms,Max-flow min-cut theorem,Maximum flow problem,Network flow" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (English)" />
+		<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+		<title>Relabel-to-front algorithm - Wikipedia, the free encyclopedia</title>
+		<style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/skins-1.5/monobook/main.css?52"; /*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="/skins-1.5/common/commonPrint.css?52" />
+		<link rel="stylesheet" type="text/css" media="handheld" href="/skins-1.5/monobook/handheld.css?52" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/skins-1.5/monobook/IE50Fixes.css?52";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/skins-1.5/monobook/IE55Fixes.css?52";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/skins-1.5/monobook/IE60Fixes.css?52";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/skins-1.5/monobook/IE70Fixes.css?52";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins-1.5/common/IEFixes.js?52"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		
+		<script type= "text/javascript">/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/skins-1.5";
+var wgArticlePath = "/wiki/$1";
+var wgScriptPath = "/w";
+var wgServer = "http://en.wikipedia.org";
+var wgCanonicalNamespace = "";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 0;
+var wgPageName = "Relabel-to-front_algorithm";
+var wgTitle = "Relabel-to-front algorithm";
+var wgArticleId = "3444072";
+var wgIsArticle = true;
+var wgUserName = null;
+var wgUserGroups = null;
+var wgUserLanguage = "en";
+var wgContentLanguage = "en";
+var wgBreakFrames = false;
+var wgCurRevisionId = "100702194";
+/*]]>*/</script>
+                
+		<script type="text/javascript" src="/skins-1.5/common/wikibits.js?52"><!-- wikibits js --></script>
+		<script type="text/javascript" src="/w/index.php?title=-&amp;action=raw&amp;gen=js"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "/w/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400";
+@import "/w/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400";
+@import "/w/index.php?title=-&action=raw&gen=css&maxage=2678400";
+/*]]>*/</style>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/skins-1.5/common/ajax.js?52"></script>
+	</head>
+<body  class="mediawiki ns-0 ltr page-Relabel-to-front_algorithm">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+		<div id="siteNotice"><script type="text/javascript" language="JavaScript">
+<!--
+document.writeln("\x3cdiv style=\"text-align:right; font-size:80%\"\x3eYour \x3cb\x3e\x3ca href=\"http://wikimediafoundation.org/wiki/Fundraising\" class=\"extiw\" title=\"wikimedia:Fundraising\"\x3econtinued donations\x3c/a\x3e\x3c/b\x3e keep Wikipedia running!\x26nbsp;\x26nbsp;\x26nbsp;\x26nbsp;\x3c/div\x3e\n");
+-->
+</script></div>		<h1 class="firstHeading">Relabel-to-front algorithm</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Wikipedia, the free encyclopedia</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p>The <b>relabel-to-front algorithm</b> finds the <a href="/wiki/Maximum_flow_problem" title="Maximum flow problem">maximum flow</a> in a <a href="/wiki/Flow_network" title="Flow network">flow network</a> in <span class="texhtml"><i>O</i>(<i>V</i><sup>3</sup>)</span> time. It is in the class of <i>push-relabel algorithms</i> for maximum flow which run in <span class="texhtml"><i>O</i>(<i>V</i><sup>2</sup><i>E</i>)</span>. For <a href="/wiki/Dense_graph" title="Dense graph">dense graphs</a> it is more efficient than the <a href="/wiki/Edmonds-Karp_algorithm" title="Edmonds-Karp algorithm">Edmonds-Karp algorithm</a>, which runs in <img class='tex' src="http://upload.wikimedia.org/math/3/9/5/395b54f34a76c0c2958aff79641d7a6c.png" alt="O(VE^2) \sube O(V^5)" /> time.</p>
+<table id="toc" class="toc" summary="Contents">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1"><a href="#Algorithm"><span class="tocnumber">1</span> <span class="toctext">Algorithm</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Push"><span class="tocnumber">1.1</span> <span class="toctext">Push</span></a></li>
+<li class="toclevel-2"><a href="#Relabel"><span class="tocnumber">1.2</span> <span class="toctext">Relabel</span></a></li>
+<li class="toclevel-2"><a href="#Push-relabel_algorithm"><span class="tocnumber">1.3</span> <span class="toctext">Push-relabel algorithm</span></a></li>
+<li class="toclevel-2"><a href="#Discharge"><span class="tocnumber">1.4</span> <span class="toctext">Discharge</span></a></li>
+<li class="toclevel-2"><a href="#Relabel-to-front_algorithm"><span class="tocnumber">1.5</span> <span class="toctext">Relabel-to-front algorithm</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Sample_implementation"><span class="tocnumber">2</span> <span class="toctext">Sample implementation</span></a></li>
+<li class="toclevel-1"><a href="#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p><script type="text/javascript">
+//<![CDATA[
+ if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script><a name="Algorithm" id="Algorithm"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Relabel-to-front_algorithm&amp;action=edit&amp;section=1" title="Edit section: Algorithm">edit</a>]</span> <span class="mw-headline">Algorithm</span></h2>
+<p>Given a flow network <span class="texhtml"><i>G</i>(<i>V</i>,<i>E</i>)</span> with capacity from node <i>u</i> to node <i>v</i> given as <span class="texhtml"><i>c</i>(<i>u</i>,<i>v</i>)</span>, and source <i>s</i> and sink <i>t</i>, we want to find the maximum amount of flow you can send from <i>s</i> to <i>t</i> through the network. Two types of operations are performed on nodes, <i>push</i> and <i>relabel</i>. Throughout we maintain:</p>
+<ul>
+<li><span class="texhtml"><i>f</i>(<i>u</i>,<i>v</i>)</span>. Flow from <i>u</i> to <i>v</i>. Available capacity is <span class="texhtml"><i>c</i>(<i>u</i>,<i>v</i>) − <i>f</i>(<i>u</i>,<i>v</i>)</span>.</li>
+<li><span class="texhtml"><i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>u</i>)</span>. We only <i>push</i> from <i>u</i> to <i>v</i> if <span class="texhtml"><i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>u</i>) &gt; <i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>v</i>)</span></li>
+<li><span class="texhtml"><i>e</i><i>x</i><i>c</i><i>e</i><i>s</i><i>s</i>(<i>u</i>)</span>. Sum of flow to and from <i>u</i>.</li>
+</ul>
+<p>After each step of the algorithm, the flow is a <b>preflow</b>, satisfying:</p>
+<ul>
+<li><img class='tex' src="http://upload.wikimedia.org/math/b/1/b/b1b19a3da3f50b9d77754f5bb7a372f7.png" alt="\ f(u,v) \leq c(u,v)" />. The flow between <span class="texhtml"><i>u</i></span> and <span class="texhtml"><i>v</i></span> does not exceed the capacity.</li>
+<li><img class='tex' src="http://upload.wikimedia.org/math/3/3/8/33822aebf1b6b794cd1f0d06ee25fd67.png" alt="\ f(u,v) = - f(v,u)" />. We maintain the net flow.</li>
+<li><img class='tex' src="http://upload.wikimedia.org/math/4/f/8/4f8214dd3e0a4d769f83c12a257be0da.png" alt="\ \sum_v f(u,v) = excess(u) \geq 0" /> for all nodes <img class='tex' src="http://upload.wikimedia.org/math/7/b/6/7b6184dc0125ddc0ed7027b005c7e2e3.png" alt="u \neq s" />. Only the source may produce flow.</li>
+</ul>
+<p>Notice that a last condition for a preflow is relaxed from the corresponding condition for a <a href="/wiki/Network_flow#Definition" title="Network flow">legal flow</a> in a regular flow network.</p>
+<p>We observe that the longest possible path from <i>s</i> to <i>t</i> is <span class="texhtml">| <i>V</i> |</span> nodes long. Therefore it must be possible to assign <i>height</i> to the nodes such that for any legal flow, <span class="texhtml"><i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>s</i>) = | <i>V</i> |</span> and <span class="texhtml"><i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>t</i>) = 0</span>, and if there is a positive flow from <i>u</i> to <i>v</i>, <span class="texhtml"><i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>u</i>) &gt; <i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>v</i>)</span>. As we adjust the height of the nodes, the flow goes through the network as water through a landscape. Differing from algorithms such as <a href="/wiki/Ford-Fulkerson_algorithm" title="Ford-Fulkerson algorithm">Ford-Fulkerson</a>, the flow through the network is not necessarily a legal flow throughout the execution of the algorithm.</p>
+<p>In short words, the heights of nodes (except <i>s</i> and <i>t</i>) is adjusted, and flow is sent between nodes, until all possible flow has reached <i>t</i>. Then we continue increasing the height of internal nodes until all the flow that went into the network, but did not reach <i>t</i>, has flowed back into <i>s</i>. A node can reach the height <span class="texhtml">2 | <i>V</i> | − 1</span> before this is complete, as the longest possible path back to <i>s</i> excluding <i>t</i> is <span class="texhtml">| <i>V</i> | − 1</span> long, and <span class="texhtml"><i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>s</i>) = | <i>V</i> |</span> . The height of <i>t</i> is kept at 0.</p>
+<p><a name="Push" id="Push"></a></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Relabel-to-front_algorithm&amp;action=edit&amp;section=2" title="Edit section: Push">edit</a>]</span> <span class="mw-headline">Push</span></h3>
+<p>A <i>push</i> from <i>u</i> to <i>v</i> means sending a part of the excess flow into <i>u</i> on to <i>v</i>. Three conditions must be met for a <i>push</i> to take place:</p>
+<ul>
+<li><span class="texhtml"><i>e</i><i>x</i><i>c</i><i>e</i><i>s</i><i>s</i>(<i>u</i>) &gt; 0</span>. More flow into the node than out of it so far.</li>
+<li><span class="texhtml"><i>c</i>(<i>u</i>,<i>v</i>) − <i>f</i>(<i>u</i>,<i>v</i>) &gt; 0</span>. Available capacity from <i>u</i> to <i>v</i>.</li>
+<li><span class="texhtml"><i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>u</i>) &gt; <i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>v</i>)</span>. Can only send to lower node.</li>
+</ul>
+<p>We send an amount of flow equal to <span class="texhtml">min(<i>e</i><i>x</i><i>c</i><i>e</i><i>s</i><i>s</i>(<i>u</i>),<i>c</i>(<i>u</i>,<i>v</i>) − <i>f</i>(<i>u</i>,<i>v</i>))</span>.</p>
+<p><a name="Relabel" id="Relabel"></a></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Relabel-to-front_algorithm&amp;action=edit&amp;section=3" title="Edit section: Relabel">edit</a>]</span> <span class="mw-headline">Relabel</span></h3>
+<p>Doing a <i>relabel</i> on a node <i>u</i> is increasing its height until it is higher than at least one of the nodes it has available capacity to. Conditions for a <i>relabel</i>:</p>
+<ul>
+<li><span class="texhtml"><i>e</i><i>x</i><i>c</i><i>e</i><i>s</i><i>s</i>(<i>u</i>) &gt; 0</span>. There must be a point in relabelling.</li>
+<li><img class='tex' src="http://upload.wikimedia.org/math/8/5/8/858e64f137c45d2ed7dff7d89b45009a.png" alt="height(u) \leq height(v)" /> for all <i>v</i> such that <span class="texhtml"><i>c</i>(<i>u</i>,<i>v</i>) − <i>f</i>(<i>u</i>,<i>v</i>) &gt; 0</span>. The only nodes we have available capacity to are higher.</li>
+</ul>
+<p>When relabelling <i>u</i>, we set <span class="texhtml"><i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>u</i>)</span> to be the lowest value such that <span class="texhtml"><i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>u</i>) &gt; <i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>v</i>)</span> for some <i>v</i> where <span class="texhtml"><i>c</i>(<i>u</i>,<i>v</i>) − <i>f</i>(<i>u</i>,<i>v</i>) &gt; 0</span>.</p>
+<p><a name="Push-relabel_algorithm" id="Push-relabel_algorithm"></a></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Relabel-to-front_algorithm&amp;action=edit&amp;section=4" title="Edit section: Push-relabel algorithm">edit</a>]</span> <span class="mw-headline">Push-relabel algorithm</span></h3>
+<p><i>Push-relabel algorithms</i> in general have the following layout:</p>
+<ol>
+<li>As long as there is legal <i>push</i> or <i>relabel</i> operation
+<ol>
+<li>Perform a legal push, or</li>
+<li>a legal relabel.</li>
+</ol>
+</li>
+</ol>
+<p>The running time for these algorithms are in general <span class="texhtml"><i>O</i>(<i>V</i><sup>2</sup><i>E</i>)</span> (argument omitted).</p>
+<p><a name="Discharge" id="Discharge"></a></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Relabel-to-front_algorithm&amp;action=edit&amp;section=5" title="Edit section: Discharge">edit</a>]</span> <span class="mw-headline">Discharge</span></h3>
+<p>In <i>relabel-to-front</i>, a <i>discharge</i> on a node <i>u</i> is the following:</p>
+<ol>
+<li>As long as <span class="texhtml"><i>e</i><i>x</i><i>c</i><i>e</i><i>s</i><i>s</i>(<i>u</i>) &gt; 0</span>:
+<ol>
+<li>If not all neighbours have been tried since last <i>relabel</i>:
+<ol>
+<li>Try to <i>push</i> flow to an untried neighbour.</li>
+</ol>
+</li>
+<li>Else:
+<ol>
+<li><i>Relabel</i> <i>u</i></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>This requires that for each node, it is known which nodes have been tried since last <i>relabel</i>.</p>
+<p><a name="Relabel-to-front_algorithm" id="Relabel-to-front_algorithm"></a></p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Relabel-to-front_algorithm&amp;action=edit&amp;section=6" title="Edit section: Relabel-to-front algorithm">edit</a>]</span> <span class="mw-headline">Relabel-to-front algorithm</span></h3>
+<p>In the <i>relabel-to-front algorithm</i>, the order of the <i>push</i> and <i>relabel</i> operations is given:</p>
+<ol>
+<li>Send as much flow from <i>s</i> as possible.</li>
+<li>Build a list of all nodes except <i>s</i> and <i>t</i>.</li>
+<li>As long as we have not traversed the entire list:
+<ol>
+<li><i>Discharge</i> the current node.</li>
+<li>If the height of the current node changed:
+<ol>
+<li>Move the current node to the front of the list</li>
+<li>Restart the traversal from the start of the list.</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>The running time for <i>relabel-to-front</i> is <span class="texhtml"><i>O</i>(<i>V</i><sup>3</sup>)</span> (proof omitted).</p>
+<p><a name="Sample_implementation" id="Sample_implementation"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Relabel-to-front_algorithm&amp;action=edit&amp;section=7" title="Edit section: Sample implementation">edit</a>]</span> <span class="mw-headline">Sample implementation</span></h2>
+<p><a href="/wiki/Python_%28programming_language%29" title="Python (programming language)">Python</a> implementation:</p>
+<pre>
+<b>def</b> relabel_to_front(C, source, sink):
+    n = len(C) <i># C is the capacity matrix</i>
+    F = [[0] * n <b>for</b> _ <b>in</b> xrange(n)]
+    <i># residual capacity from u to v is C[u][v] - F[u][v]</i>
+
+    height = [0] * n <i># height of node</i>
+    excess = [0] * n <i># flow into node minus flow from node</i>
+    seen   = [0] * n <i># neighbours seen since last relabel</i>
+    <i># node "queue"</i>
+    list   = [i <b>for</b> i <b>in</b> xrange(n) <b>if</b> i != source <b>and</b> i != sink]
+
+    <b>def</b> push(u, v):
+        send = min(excess[u], C[u][v] - F[u][v])
+        F[u][v] += send
+        F[v][u] -= send
+        excess[u] -= send
+        excess[v] += send
+
+    <b>def</b> relabel(u):
+        <i># find smallest new height making a push possible,</i>
+        <i># if such a push is possible at all</i>
+        min_height = height[u]
+        <b>for</b> v <b>in</b> xrange(n):
+            <b>if</b> C[u][v] - F[u][v] &gt; 0:
+                min_height = min(min_height, height[v])
+                height[u] = min_height + 1
+
+    <b>def</b> discharge(u):
+        <b>while</b> excess[u] &gt; 0:
+            <b>if</b> seen[u] &lt; n: <i># check next neighbour</i>
+                v = seen[u]
+                <b>if</b> C[u][v] - F[u][v] &gt; 0 <b>and</b> height[u] &gt; height[v]:
+                    push(u, v)
+                <b>else</b>:
+                    seen[u] += 1
+            <b>else</b>: <i># we have checked all neighbours. must relabel</i>
+                relabel(u)
+                seen[u] = 0
+
+    height[source] = n   <i># longest path from source to sink is less than n long</i>
+    excess[source] = Inf <i># send as much flow as possible to neighbours of source</i>
+    <b>for</b> v <b>in</b> xrange(n):
+        push(source, v)
+
+    p = 0
+    <b>while</b> p &lt; len(list):
+        u = list[p]
+        old_height = height[u]
+        discharge(u)
+        <b>if</b> height[u] &gt; old_height:
+            list.insert(0, list.pop(p)) <i># move to front of list</i>
+            p = 0 <i># start from front of list</i>
+        p += 1
+
+    <b>return</b> sum([F[source][i] <b>for</b> i <b>in</b> xrange(n)])
+</pre>
+<p>Note that the above implementation is not very efficient. It is slower than <a href="/wiki/Edmonds-Karp_algorithm" title="Edmonds-Karp algorithm">Edmonds-Karp algorithm</a> even for very dense graphs. To speed it up, you can do at least two things:</p>
+<ol>
+<li>Make neighbour lists for each node, and let the index <code>seen[u]</code> be an iterator over this, instead of the range <span class="texhtml">0..<i>n</i> − 1</span>.</li>
+<li>Use a <b>gap heuristic</b>. If there is a <span class="texhtml"><i>k</i></span> such that for no node, <span class="texhtml"><i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>u</i>) = <i>k</i></span>, you can set <span class="texhtml"><i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>u</i>) = max(<i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>u</i>),<i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>s</i>) + 1)</span> for all nodes except <span class="texhtml"><i>s</i></span> for which <span class="texhtml"><i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>u</i>) &gt; <i>k</i></span>. This is because any such <span class="texhtml"><i>k</i></span> represents a <a href="/wiki/Max-flow_min-cut_theorem" title="Max-flow min-cut theorem">minimal cut</a> in the graph, and no more flow will go from the nodes <span class="texhtml"><i>S</i> = {<i>u</i> | <i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>u</i>) &gt; <i>k</i>}</span> to the nodes <span class="texhtml"><i>T</i> = {<i>v</i> | <i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>v</i>) &lt; <i>k</i>}</span>. If <span class="texhtml">(<i>S</i>,<i>T</i>)</span> was not a minimal cut, there would be an edge <span class="texhtml">(<i>u</i>,<i>v</i>)</span> such that <img class='tex' src="http://upload.wikimedia.org/math/3/6/4/3643d6055b31486321d3d8ee2f42753b.png" alt="u \in S" />, <img class='tex' src="http://upload.wikimedia.org/math/c/2/f/c2fd45efb95a81c8f9dd7017a8e7a69a.png" alt="v \in T" /> and <span class="texhtml"><i>c</i>(<i>u</i>,<i>v</i>) − <i>f</i>(<i>u</i>,<i>v</i>) &gt; 0</span>. But then <span class="texhtml"><i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>u</i>)</span> would never be set higher than <span class="texhtml"><i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>v</i>) + 1</span>, contradicting that <span class="texhtml"><i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>u</i>) &gt; <i>k</i></span> and <span class="texhtml"><i>h</i><i>e</i><i>i</i><i>g</i><i>h</i><i>t</i>(<i>v</i>) &lt; <i>k</i></span>.</li>
+</ol>
+<p><a name="References" id="References"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Relabel-to-front_algorithm&amp;action=edit&amp;section=8" title="Edit section: References">edit</a>]</span> <span class="mw-headline">References</span></h2>
+<ul>
+<li><a href="/wiki/Thomas_H._Cormen" title="Thomas H. Cormen">Thomas H. Cormen</a>, <a href="/wiki/Charles_E._Leiserson" title="Charles E. Leiserson">Charles E. Leiserson</a>, <a href="/wiki/Ronald_L._Rivest" title="Ronald L. Rivest">Ronald L. Rivest</a>, and <a href="/wiki/Clifford_Stein" title="Clifford Stein">Clifford Stein</a>. <i><a href="/wiki/Introduction_to_Algorithms" title="Introduction to Algorithms">Introduction to Algorithms</a></i>, Second Edition. MIT Press and McGraw-Hill, 2001. <a href="/w/index.php?title=Special:Booksources&amp;isbn=0262032937" class="internal">ISBN 0-262-03293-7</a>. Section 26.4: Push-relabel algorithms, and section 26.5: The relabel-to-front-algorithm.</li>
+</ul>
+
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:3444072-0!1!0!default!!en!2 and timestamp 20070205073900 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Relabel-to-front_algorithm">http://en.wikipedia.org/wiki/Relabel-to-front_algorithm</a>"</div>
+			<div id="catlinks"><p class='catlinks'><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <span dir='ltr'><a href="/wiki/Category:Network_flow" title="Category:Network flow">Network flow</a></span></p></div>			<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+					 <li id="ca-nstab-main" class="selected"><a href="/wiki/Relabel-to-front_algorithm" title="View the content page [c]" accesskey="c">Article</a></li>
+					 <li id="ca-talk" class="new"><a href="/w/index.php?title=Talk:Relabel-to-front_algorithm&amp;action=edit" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+					 <li id="ca-edit"><a href="/w/index.php?title=Relabel-to-front_algorithm&amp;action=edit" title="You can edit this page. Please use the preview button before saving. [e]" accesskey="e">Edit this page</a></li>
+					 <li id="ca-history"><a href="/w/index.php?title=Relabel-to-front_algorithm&amp;action=history" title="Past versions of this page. [h]" accesskey="h">History</a></li>
+				</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/w/index.php?title=Special:Userlogin&amp;returnto=Relabel-to-front_algorithm" title="You are encouraged to log in, it is not mandatory however. [o]" accesskey="o">Sign in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/images/wiki-en.png);" href="/wiki/Main_Page" title="Visit the Main Page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+		<div class='portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-Main-page"><a href="/wiki/Main_Page">Main page</a></li>
+				<li id="n-portal"><a href="/wiki/Wikipedia:Community_Portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-Featured-content"><a href="/wiki/Wikipedia:Featured_content">Featured content</a></li>
+				<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+				<li id="n-recentchanges"><a href="/wiki/Special:Recentchanges" title="The list of recent changes in the wiki. [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random article</a></li>
+				<li id="n-help"><a href="/wiki/Help:Contents" title="The place to find out.">Help</a></li>
+				<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+				<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Fundraising" title="Support us">Donations</a></li>
+			</ul>
+		</div>
+	</div>
+		<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/wiki/Special:Search" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" title="Search Wikipedia [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/wiki/Special:Whatlinkshere/Relabel-to-front_algorithm" title="List of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/wiki/Special:Recentchangeslinked/Relabel-to-front_algorithm" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-upload"><a href="/wiki/Special:Upload" title="Upload images or media files [u]" accesskey="u">Upload file</a></li>
+<li id="t-specialpages"><a href="/wiki/Special:Specialpages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/w/index.php?title=Relabel-to-front_algorithm&amp;printable=yes">Printable version</a></li>				<li id="t-permalink"><a href="/w/index.php?title=Relabel-to-front_algorithm&amp;oldid=100702194">Permanent link</a></li><li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Relabel-to-front_algorithm&amp;id=100702194">Cite this article</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/skins-1.5/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" border="0" alt="Wikimedia Foundation"/></a></div>
+			<ul id="f-list">
+				<li id="lastmod"> This page was last modified 18:58, 14 January 2007.</li>
+				<li id="copyright">All text is available under the terms of the <a class='internal' href="/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License" title="Wikipedia:Text of the GNU Free Documentation License">GNU Free Documentation License</a>. (See <b><a class='internal' href="/wiki/Wikipedia:Copyrights" title="Wikipedia:Copyrights">Copyrights</a></b> for details.) <br /> Wikipedia&reg; is a registered trademark of the <a href="http://www.wikimediafoundation.org">Wikimedia Foundation, Inc</a>., a US-registered <a class='internal' href="/wiki/501%28c%29#501.28c.29.283.29" title="501(c)(3)">501(c)(3)</a> <a href="http://wikimediafoundation.org/wiki/Deductibility_of_donations">tax-deductible</a> <a class='internal' href="/wiki/Non-profit_organization" title="Non-profit organization">nonprofit</a> <a href="/wiki/Charitable_organization" title="Charitable organization">charity</a>.<br /></li>
+				<li id="privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+				<li id="about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+				<li id="disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+		
+	
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+</div>
+<!-- Served by srv96 in 3.104 secs. --></body></html>

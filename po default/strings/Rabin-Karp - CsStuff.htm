@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="bg" lang="bg" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="KEYWORDS" content="Rabin-Karp" />
+<meta name="robots" content="index,follow" />
+<link rel="shortcut icon" href="/favicon.ico" />
+    <title>Rabin-Karp - CsStuff</title>
+    <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/wiki/skins/monobook/main.css"; /*]]>*/</style>
+    <link rel="stylesheet" type="text/css" media="print" href="/wiki/skins/common/commonPrint.css" />
+    <!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css";</style><![endif]-->
+    <!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css";</style><![endif]-->
+    <!--[if gte IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css";</style><![endif]-->
+    <!--[if IE]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js"></script>
+    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+    
+
+			<script language='javascript' src='http://127.0.0.1:1027/js.cgi?pca&r=15185'></script>
+
+<script type="text/javascript" src="/wiki/index.php?title=-&amp;action=raw&amp;gen=js"></script>    <script type="text/javascript" src="/wiki/skins/common/wikibits.js"></script>
+    <style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=%D0%9C%D0%B5%D0%B4%D0%B8%D1%8F%D0%A3%D0%B8%D0%BA%D0%B8:Monobook.css&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css";
+/*]]>*/</style>          </head>
+  <body         class="ns-0">
+    <div id="globalWrapper">
+      <div id="column-content">
+	<div id="content">
+	  <a name="top" id="contentTop"></a>
+	  	  <h1 class="firstHeading">Rabin-Karp</h1>
+	  <div id="bodyContent">
+	    <h3 id="siteSub">от CsStuff, свободната енциклопедия</h3>
+	    <div id="contentSub"></div>
+	    	    	    <!-- start content -->
+	    <p><i>Rabin-Karp</i> е алгоритъм за търсене на низове, съдаден от Michael O. Rabin и Richard M. Karp, който търси шаблон, например подстринг, в текст. За текст с дължина <i>n</i> и шаблон с дължина <i>m</i>, средното и най-доброто време на алгоритъма е <i>O(n)</i>, но в най-лошия случай (много малко вероятен) е <i>O(nm)</i>, поради което не се използва много за търсене на единичен стринг. Обаче той има уникалното предимство да намира който и да е от <i>к</i> низа или по-малко, за време <i>O(n)</i> в средния случай, независимо от големината  на <i>к</i>.
+</p><p>Едно от най-обикновените практически приложения на Rabin-Karp е откриване на плагиатство. Например, ако ученик по литература има да пише тема по някакво призведение, учителят може да намери различни материали за това произведение и да извлече списък от всички изречения в тях. Тогава с Rabin-Karp може да търси в темата на ученика изречения, които са почти същите, като тези от материалите. В случая броя на стринговете, които търсим е много голям, поради което използването на алгоритъм за търсене на единичен стринг е непрактично.
+</p>
+<table border="0" id="toc"><tr id="toctitle"><td align="center">
+<b>Съдържание</b> <script type="text/javascript">showTocToggle("показване","скриване")</script></td></tr><tr id="tocinside"><td>
+<div class="tocline"><a href="#.D0.A2.D1.8A.D1.80.D1.81.D0.B5.D0.BD.D0.B5_.D0.BD.D0.B0_.D0.BF.D0.BE.D0.B4.D0.BD.D0.B8.D0.B7_.D0.B2_.D0.BD.D0.B8.D0.B7">1 Търсене на подниз в низ</a><br /></div>
+<div class="tocline"><a href="#Rabin-Karp_.D0.B8_.D1.85.D0.B5.D1.88_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8.D1.82.D0.B5">2 Rabin-Karp и хеш функциите</a><br /></div>
+<div class="tocline"><a href="#.D0.98.D0.B7.D0.BF.D0.BE.D0.BB.D0.B7.D0.B2.D0.B0.D0.BD.D0.B8_.D1.85.D0.B5.D1.88_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8">3 Използвани хеш функции</a><br /></div>
+<div class="tocline"><a href="#.D0.A2.D1.8A.D1.80.D1.81.D0.B5.D0.BD.D0.B5_.D0.BD.D0.B0_.D0.BD.D1.8F.D0.BA.D0.BE.D0.BB.D0.BA.D0.BE_.D1.88.D0.B0.D0.B1.D0.BB.D0.BE.D0.BD.D0.B0">4 Търсене на няколко шаблона</a><br /></div>
+<div class="tocline"><a href="#.D0.92.D1.80.D1.8A.D0.B7.D0.BA.D0.B8">5 Връзки</a><br /></div>
+</td></tr></table>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Rabin-Karp&amp;action=edit&amp;section=1" title="Rabin-Karp">редактиране</a>]</div><a name=".D0.A2.D1.8A.D1.80.D1.81.D0.B5.D0.BD.D0.B5_.D0.BD.D0.B0_.D0.BF.D0.BE.D0.B4.D0.BD.D0.B8.D0.B7_.D0.B2_.D0.BD.D0.B8.D0.B7"></a><h2> Търсене на подниз в низ </h2>
+<p>Основна задача при търсенето на низове е намиране на подниз с фиксирана дължина <i>m</i>, наричан шаблон, в текст с дължина <i>n</i>. Например да се намери "sun" в изречението "Hello sunshine in this vale of tears." Един прост (наивен) алгоритъм е този, който търси подниза на всички позиции:
+</p>
+<pre>1 function NaiveSearch(string s[1..n], string sub[1..m])
+2     for i from 1 to n
+3         for j from 1 to m
+4             if s[i+j-1] ≠ sub[j]
+5                 jump to next iteration of outer loop
+6         return i
+7     return not found
+</pre>
+<p>Този алгоритъм работи добре при много случаи, но дава относително дълго време за работа на някои примери, като търсене на 10,000 "а"-та последвани от "б" в стринг от 10 млн. "а"-та. Това е най-лошия случай и времето за изпълнение е <i>Θ(mn)</i>.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Rabin-Karp&amp;action=edit&amp;section=2" title="Rabin-Karp">редактиране</a>]</div><a name="Rabin-Karp_.D0.B8_.D1.85.D0.B5.D1.88_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8.D1.82.D0.B5"></a><h2> Rabin-Karp и хеш функциите</h2>
+<p>Rabin-Karp използва хеш функции за увеличаване бързината на изпълнение.
+</p><p>Алгоритъмът е следния:
+</p>
+<pre>1 function RabinKarp(string s[1..n], string sub[1..m])
+2     hsub&nbsp;:= hash(sub[1..m])
+3     hs&nbsp;:= hash(s[1..m])
+4     for i from 1 to n
+5         if hs = hsub
+6             if s[i..i+m-1] = sub
+7                 return i
+8         hs&nbsp;:= hash(s[i+1..i+m])
+9     return not found
+</pre>
+<p>Всеки от редовете 2, 3, 6 и 8 изискват <i>Ω(m)</i> време. Втори и трети ред, обаче, се изпълняват само веднъж, а шестият се изпълнява, само ако двете хеш стойности съвпаднат, което може да се случи не повече от няколко пъти. Ред 5 се изпълнява <i>n</i> пъти, но изисква константно време. Така че единственият проблем е ред 8.
+</p><p>Ако преизчисляваме хеш стойнотите на подстринга s[i+1..i+m], това би изисквало <i>Ω(m)</i> време и понеже това се прави на всеки цикъл, алгоритъмът ще изисква <i>Ω(mn)</i> време. Трикът за решаване на този проблем е да се отбележи, че hs вече съдържа хеш стойностите на s[i..i+m-1]. Ако успеем да да използваме това и да изчисляваме хеш стойностите за константно време, то нашият проблем ще е решен.
+</p><p>Постигаме го чрез така наречения rolling hash. Rolling hash е хеш функция, специално проектирана за тази цел. Прост пример е добавянето на стойностите на всеки знак в подстринга. След това можем да използваме тази формула за изчисление на хеш стойността за константно време:
+</p>
+<pre>s[i+1..i+m] = s[i..i+m-1] - s[i] + s[i+m]
+</pre>
+<p>Тази проста функция работи, но ще доведе до изпълнение на ред 6 по-често, от колкото други по-усъвършенствани rolling hash функции. Забележете, че ако нямаме късмет или използваме много лоша хеш функция, като например константна функция, ред 6 може да се изпълни 
+<i>n</i> пъти за всяка итерация на цикъла. Тогава целия алгоритъм ще отнеме <i>Ω(mn)</i> време - най-лошия случай.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Rabin-Karp&amp;action=edit&amp;section=3" title="Rabin-Karp">редактиране</a>]</div><a name=".D0.98.D0.B7.D0.BF.D0.BE.D0.BB.D0.B7.D0.B2.D0.B0.D0.BD.D0.B8_.D1.85.D0.B5.D1.88_.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B8"></a><h2> Използвани хеш функции </h2>
+<p>Ключът към производителността на алгоритъма на Rabin-Karp е ефективното изчисляване на хеш стойностите на последователните поднизове на текста. Една от популярните и ефективни rolling хеш функции третира всеки подниз като число с определена основа, като основата е обикновено голямо просто число. Например, ако поднизът е "hi" и основата е 101, хеш стойността би била 104 × 101<sup >1</sup > + 105 × 101<sup >0</sup > = 10609 (ASCII кодът на 'h' е 104, а на 'i' е 105).
+</p><p>Главното предимство, постигнато чрез такова представяне, е, че е възможно да се изчисли хеш стойността на следващия подниз от предхождащия като се извършват само константен брой операции, независимо от дължините на поднизовете.
+</p><p>Например, ако имаме текста "abracadabra" и търсим шаблон с дължина 3, можем да изчислим хеша на "bra" от хеша на "abr" (предхождащият подниз) като извадим числото, добавено за първото 'а' на "abr", т.е. 97 × 101<sup >2</sup > (97 е ASCII кода на 'a' и 101 е използваната основа), умножим по основата и добавим число за последното 'а' на "bra", т.е. 97 × 101<sup >0</sup > = 97. Ако въпросните поднизове са дълги, този алгоритъм постига голяма икономия в сравнение с много други схеми на хеширане.
+</p><p>Теоретически съществуват други алгоритми, които могат да осигурят удобно преизчисляване, т.е. умножение на ASCII стойностите на всички символи една с друга, така че преместването на подниз би изисквало само разделяне на ASCII кода на първия символ и умножаване с този на последния. Ограничението обаче е размерът на целочисления тип данни и необходимостта да бъде използвана модулна аритметика, за да се намалят чрез мащабиране хеш резултатите. В същото време, наивните хеш функции, които не биха дали големи числа бързо, като например просто събиране на ASCII стойности, е вероятно да причинят много повече хеш колизии и така да забавят алгоритъма. Поради тази причина описаната хеш функция е обикновено предпочитаната в алгоритъма Rabin-Karp.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Rabin-Karp&amp;action=edit&amp;section=4" title="Rabin-Karp">редактиране</a>]</div><a name=".D0.A2.D1.8A.D1.80.D1.81.D0.B5.D0.BD.D0.B5_.D0.BD.D0.B0_.D0.BD.D1.8F.D0.BA.D0.BE.D0.BB.D0.BA.D0.BE_.D1.88.D0.B0.D0.B1.D0.BB.D0.BE.D0.BD.D0.B0"></a><h2> Търсене на няколко шаблона </h2>
+<p>Може да напишем прост вариянт на Rabin-Karp алгоритъма, който използва Bloom filter или Set структура от данни, за да проверява дали хеша на даден стринг принадлежи на множеството от хешове на шаблоните, които търсим:
+</p>
+<pre>function RabinKarpSet(string s[1..n], set of string subs, m) {
+    set hsubs&nbsp;:= emptySet
+    for each sub in subs
+        insert hash(sub[1..m]) into hsubs
+    hs&nbsp;:= hash(s[1..m])
+    for i from 1 to n
+        if hs ∈ hsubs
+            if s[i..i+m-1] = a substring with hash hs
+                return i
+        hs&nbsp;:= hash(s[i+1..i+m])
+    return not found
+}
+</pre>
+<p>Тук сме приели, че всички поднизове са с фиксирана дължина <i>m</i>, но това приемане може да се премахне. Просто сравняваме текущата хеш стойност с хеш стойностите на всички подстрингове едновременно, използвайки бързо търсене в Set структурата данни, и след това проверяваме всяко открито попадение с всички подстрингове, които имат тази хеш стойност.
+</p><p>Други алгоритми могат да търсят единични стрингове за време <i>O(n)</i> и следователно, за да намерят <i>к</i> шаблона им е необходимо <i>O(nk)</i> време. За разлика от тях, алгоритъмът на Rabin-Karp по-горе може да намери всичките <i>к</i> шаблона за <i>O(n+k)</i> очаквано време, защото хеш таблицата проверява дали хеш стойността на подстринг е равна на хеш стойността на някой от шаблоните за време <i>O(1)</i>.
+</p>
+<div class="editsection" style="float:right;margin-left:5px;">[<a href="/wiki/index.php?title=Rabin-Karp&amp;action=edit&amp;section=5" title="Rabin-Karp">редактиране</a>]</div><a name=".D0.92.D1.80.D1.8A.D0.B7.D0.BA.D0.B8"></a><h2> Връзки </h2>
+<ul><li> <a href="/wiki/index.php/%D0%A5%D0%B5%D1%88_%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8" title="Хеш Функции">Хеш Функции</a>
+</li><li> <a href="http://en.wikipedia.org/wiki/Rabin-Karp_string_search_algorithm" class='external' title="http://en.wikipedia.org/wiki/Rabin-Karp string search algorithm" rel="nofollow">Wikipedia - Rabin-Karp</a><span class='urlexpansion'>&nbsp;(<i>http://en.wikipedia.org/wiki/Rabin-Karp_string_search_algorithm</i>)</span>
+</li></ul>
+
+<!-- Saved in parser cache with key wikidb:pcache:idhash:1177-1!1!0!1!0!1!0!!bg and timestamp 20070417214240 -->
+<div class="printfooter">
+Взето от "<a href="http://judge.openfmi.net/wiki/index.php/Rabin-Karp">http://judge.openfmi.net/wiki/index.php/Rabin-Karp</a>".</div>
+	    <div id="catlinks"><p class='catlinks'><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Categories&amp;article=Rabin-Karp" title="Специални:Categories">Категории</a>: <a href="/wiki/index.php/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B8" title="Категория:Алгоритми">Алгоритми</a> | <a href="/wiki/index.php/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:Advanced_Data_Structures" title="Категория:Advanced Data Structures">Advanced Data Structures</a></p></div>	    <!-- end content -->
+	    <div class="visualClear"></div>
+	  </div>
+	</div>
+      </div>
+      <div id="column-one">
+	<div id="p-cactions" class="portlet">
+	  <h5>Views</h5>
+	  <ul>
+	    <li id="ca-nstab-main"
+	       class="selected"	       ><a href="/wiki/index.php/Rabin-Karp">Статия</a></li><li id="ca-talk"
+	       class="new"	       ><a href="/wiki/index.php?title=%D0%91%D0%B5%D1%81%D0%B5%D0%B4%D0%B0:Rabin-Karp&amp;action=edit">Беседа</a></li><li id="ca-edit"
+	       	       ><a href="/wiki/index.php?title=Rabin-Karp&amp;action=edit">Редактиране</a></li><li id="ca-history"
+	       	       ><a href="/wiki/index.php?title=Rabin-Karp&amp;action=history">История</a></li>	  </ul>
+	</div>
+	<div class="portlet" id="p-personal">
+	  <h5>Лични инструменти</h5>
+	  <div class="pBody">
+	    <ul>
+	    <li id="pt-login"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Userlogin&amp;returnto=Rabin-Karp">Влизане</a></li>	    </ul>
+	  </div>
+	</div>
+	<div class="portlet" id="p-logo">
+	  <a style="background-image: url(/wiki/skins/common/images/wiki.png);"
+	    href="/wiki/index.php/%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0"
+	    title="Начална страница"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="portlet" id="p-nav">
+	  <h5>Навигация</h5>
+	  <div class="pBody">
+	    <ul>
+	      	      <li id="n-mainpage"><a href="/wiki/index.php/%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Начална страница</a></li>	      <li id="n-portal"><a href="/wiki/index.php/CsStuff:%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB">Портал за общността</a></li>	      <li id="n-currentevents"><a href="/wiki/index.php/Current_events">Текущи събития</a></li>	      <li id="n-recentchanges"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Recentchanges">Последни промени</a></li>	      <li id="n-randompage"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Randompage">Случайна страница</a></li>	      <li id="n-help"><a href="/wiki/index.php/%D0%9F%D0%BE%D0%BC%D0%BE%D1%89:%D0%9F%D0%BE%D0%BC%D0%BE%D1%89">Помощ</a></li>	      <li id="n-sitesupport"><a href="/wiki/index.php/CsStuff:Site_support">Дарения</a></li>	    </ul>
+	  </div>
+	</div>
+	<div id="p-search" class="portlet">
+	  <h5><label for="searchInput">Търсене</label></h5>
+	  <div class="pBody">
+	    <form name="searchform" action="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Search" id="searchform">
+	      <input id="searchInput" name="search" type="text"
+	        accesskey="s" value="" />
+	      <input type='submit' name="go" class="searchButton" id="searchGoButton"
+	        value="Отваряне"
+	        />&nbsp;<input type='submit' name="fulltext"
+	        class="searchButton"
+	        value="Търсене" />
+	    </form>
+	  </div>
+	</div>
+	<div class="portlet" id="p-tb">
+	  <h5>Кутия с инструменти</h5>
+	  <div class="pBody">
+	    <ul>
+		  		  <li id="t-whatlinkshere"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Whatlinkshere&amp;target=Rabin-Karp">Какво сочи насам</a></li>
+		  		  <li id="t-recentchangeslinked"><a href="/wiki/index.php?title=%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Recentchangeslinked&amp;target=Rabin-Karp">Сродни промени</a></li>
+		  	      	      	      	      	      	      	      	      	      <li id="t-specialpages"><a href="/wiki/index.php/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%BD%D0%B8:Specialpages">Специални страници</a></li>	      	    </ul>
+	  </div>
+	</div>
+	      </div><!-- end of the left (by default at least) column -->
+      <div class="visualClear"></div>
+      <div id="footer">
+    <div id="f-poweredbyico"><a href="http://www.mediawiki.org/">                                                                                     </a></div>		<ul id="f-list">
+	  <li id="f-lastmod"> Последна промяна на страницата: 19:28, 5 апр 2007.</li>	  <li id="f-viewcount">Страницата е била преглеждана 271 пъти.</li>	  	  	  <li id="f-about"><a href="/wiki/index.php/CsStuff:%D0%97%D0%B0_CsStuff" title="CsStuff:За CsStuff">За CsStuff</a></li>	  <li id="f-disclaimer"><a href="/wiki/index.php/CsStuff:%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F_%D0%B7%D0%B0_%D0%BF%D0%BE%D0%BB%D0%B7%D0%B2%D0%B0%D0%BD%D0%B5" title="CsStuff:Условия за ползване">Условия за ползване</a></li>	</ul>
+      </div>
+    </div>
+    <!-- Served by judge in 0.23 secs. -->
+  </body>
+</html>
+
+<script language='javascript'>postamble();</script>

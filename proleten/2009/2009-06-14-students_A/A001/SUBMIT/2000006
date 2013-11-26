@@ -1,0 +1,71 @@
+#include<cstdio>
+#include<algorithm>
+using namespace std;
+int fs[100001], level[100001];
+int top, bot, n;
+void printl () {
+  int i;
+  for(i=0;i<=n;i++) {
+    printf("%d ", level[i]);
+  }
+  printf("\n");
+}
+bool cmp (int i, int j) {
+  return i>j;
+}
+int calc () {
+  //printf("calc\n");
+  int pl=top, fp=level[pl], ret=0,i;
+  for(i=0;i<n;i++) {
+    if(!fp) {
+      pl++;
+      fp=level[pl];
+    }
+    //printf("%d %d\n", fs[i], pl);
+    ret+=fs[i]*pl;
+    fp--;
+  }
+  //printf("%d\n", ret);
+  //printl();
+  //printf("end\n");
+  return ret;
+}
+main () {
+  unsigned long long sum=0;
+  int i;
+  scanf("%d", &n);
+  for(i=0;i<n;i++) {
+    scanf("%d", &fs[i]);
+  }
+  sort(fs, fs+n, cmp);
+  for(i=1;i<n-1;i++) {
+    level[i]=1;
+  }
+  level[n-1]=2;
+  //printl();
+  int mini=calc();
+  top=1; bot=n-1;int  suml=n;
+  while(top<bot) {
+    level[top]--;
+    suml--;
+    level[top+1]+=2;
+    suml+=2;
+    if(level[top]==0) top++;
+    while(suml>n&&bot-1!=top&&top<bot) {
+      suml--;
+      bot--;
+      level[bot+1]=0;
+      level[bot]=2;
+      //printf("%d %d\n", top, bot);
+      //printl();
+    }
+    //system("pause");
+    if(level[top]==0) top++;
+    if(level[bot]==0) bot--;
+    if(top>bot) break;
+    int k=calc();
+    if(k<mini) mini=k;
+  }
+  printf("%d\n", mini);
+  return 0;
+}

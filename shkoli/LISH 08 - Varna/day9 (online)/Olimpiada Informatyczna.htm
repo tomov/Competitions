@@ -1,0 +1,146 @@
+		     <html>
+<head><title>Olimpiada Informatyczna</title>
+<meta name="Author" content="Piotr Stańczyk (piotr@econews.pl)">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-2">
+<link rel="stylesheet" href="Olimpiada Informatyczna_files/stylep00.css" type="text/css">
+</head>
+<body text=black marginheight=0 topmargin=0 marginwidth=0 leftmargin=0>
+<style>
+<!--
+
+#konkurs {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#zid, #zadanie, #autor {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#zid { text-align: left }
+#autor { text-align: right }
+
+#etap, #data {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+-->
+</style><table border="0" width="90%">
+<tbody><tr>
+<td colspan="2" valign="middle">
+<div id="konkurs">XI Olimpiad in Informatics 2003/2004</div>
+</td>
+<!--
+<td width="75" valign="MIDDLE">
+<img src="../../img/oi6logo.gif">
+</td>
+-->
+</tr>
+</tbody></table>
+
+
+<hr>
+
+<div id="zid">Task: WSC</div><br>
+<div id="zadanie">East-West</div>
+
+<hr>
+<table width="90%">
+<tbody><tr>
+<td id="etap">III stage competition</td>
+<td id="data" align="right">
+&nbsp;
+</td>
+</tr>
+</tbody></table>
+
+<table border="0">
+<tbody><tr><td>Source file: </td><td><tt>wsc.</tt><i>*</i></td></tr>
+</tbody></table>
+<table border="0">
+<tbody><tr><td>Memory limit: </td><td>32 MB</td></tr>
+</tbody></table>
+<p>
+</p><p align="justify">      International agreements signed by the Awfully Vast State impose
+on it transit obligations - it has to enable the transport of nuclear waste from its eastern
+neighbours power plants to recycling facilities in the West, by means of its railway system.
+Ecological reasons impose such traffic organization, that the waste-carrying trains leave
+the territory of the state as quickly as possible.
+<br>      The railway network in this country has a very peculiar structure.
+It consists of <i>n</i> cities - railway junctions and <i>n-1</i> two-way railway track segments,
+connecting the junctions. Transport is possible between each pair of cities. Furthermore, there
+is a section of the railway track, whose ends are not border cities and every
+connection from the eastern to the western border has to lead through that very section.
+<br>      All waste-carrying trains arrive at the eastern border on the same day, before dawn,
+at distinct checkpoints, however. For safety reasons the trains only move during the day.
+Only a single waste-carrying train can move on a given track section at a time, but an
+unlimited amount of them can wait at a junction. It takes one day for a train to traverse
+a section of the track. The traffic has to be organized in such a way, that allows
+each waste-carrying train to reach a distinct destination on the western border.
+<br>How many days, at least, do the waste-carrying trains have to spend on the territory of
+the Awfully Vast State?
+
+<br>      </p><h2>Task</h2><p align="justify">
+        Your task is to write a programme which:
+        </p><ul>
+          <li>
+           reads from the standard input a description of the railway network and border
+	checkpoints at which the waste-carrying trains have arrived,
+          </li><li>
+            finds the minimal number of days the transit has to last,
+          </li><li>
+            writes the solution to the standard output.
+        </li></ul>
+<br>      <h2>Input</h2><p align="justify">
+	The first line of the input contains three integers
+	<i>1 &lt; n, w, z &lt; 10<sup>6</sup></i>, <i>n &gt;= w+z+2</i>,
+	separated by single spaces. <i>n</i> denotes the number of junctions
+	(which are labelled with <i>1,...,n</i>), while <i>w</i> and <i>z</i>
+	denote the number of border checkpoints on the eastern and western border, respectively.
+	The checkpoints on the eastern border are labelled with
+	<i>1,...,w</i>, while those on the western border with <i>n-z+1,...,n</i>.
+
+<br>    	In the following <i>n-1</i> lines there is a decription of the railway network. Each line
+	contains two distinct integers, <i>1 &lt; a,b &lt; n</i>, separated by a single space.
+	They denote junctions connected by a section of the railway.
+<br>            The <i>n+1</i>st line contains a single integer <i>p</i>, <i>1 &lt;
+        p &lt; w</i>, <i>1 &lt; p &lt; z</i>, denoting the number of
+	waste-carrying trains. In the next (and last) line of the input there are <i>p</i> distinct
+	integers, all of which are not greater than <i>w</i>, separated by single spaces.
+	These are the numbers of checkpoints on the eastern border, at which the waste-carrying
+	trains have arrived.
+
+<br>      </p><h2>Output</h2><p align="justify">
+       The first and only line of the output should contain exactly one integer, denoting
+	the minimal amount of days the waste have to spend on the territory of the state.
+<br></p><h2>Example</h2><p align="justify">
+<table border="0" width="100%"><tbody><tr><td align="left" nowrap="nowrap">
+For the input data:
+<pre>9 2 3
+1 3
+2 3
+4 3
+4 5
+4 6
+7 4
+5 8
+9 6
+2
+1 2
+</pre>
+the correct outcome is:
+<pre>4</pre>
+</td><td>
+<center><img src="Olimpiada Informatyczna_files/wsczad00.png"><br>
+	The arrows denote the movement of the trains in consecutive days
+	for one of the optimal organizations of the railway traffic -
+	a loop means that on a given day the train waited at the junction.
+
+</center></td></tr></tbody></table>
+
+<!-- This document saved from http://www.oi.edu.pl/php/show.php?ac=e180811&module=show&file=zadania/oi11/wsc&print=yes -->

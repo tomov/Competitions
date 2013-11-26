@@ -1,0 +1,4 @@
+Vsi4ki kombinacii za pravougulnik s duljina n mogat da se polu4at kato kum vsi4ki kombinacii za n-1 se dobavi po edno vertikalno pravougulni4e i kum vsi4ki za n-2 se dobavqt po 2 horizontalni. Taka za broq na variantite za n polu4avame 4e e raven na sumata ot broq na variantite za n-1 i n-2, koeto vodi do taka poznatata redica na fibonacci. Zadadenite ograni4eniq pravqt nevuzmojno izpolzvaneoto na standartniq algoritam, poradi koeto sum izpolzval algoritam vuz osnova na formulata
+F(2n-1) = F(n-1)^2 + F(n)^2
+F(2n) = ( 2 F(n-1) + F(n) ) F(n)
+koito rekursivno namira n-toto 4islo na fibonacci za zna4itelno po-malko vreme.

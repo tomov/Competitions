@@ -1,0 +1,12 @@
+Za re6enie na zada4ata sum izpolzval formulata
+D(n)=n!-n!/1!+n!/2!-n!/3!+...+(-1)^n*n!/n!
+dokazatelstvoto na koqto e slednoto:
+V na4aloto vzemame vsi4ki permutacii, broqt na koito e n!. Sled tova izvajdame vsi4ki ot tqh, pri koito pone edin element si e na poziciqta. Broqt im e raven na broq na kombinaciite ot edin element, umnojen po broq na permutaciite na ostanalite elementi.
+C(n,1)*(n-1)! = n!/((n-1)!*1!) * (n-1)! = n!/1!
+Samo 4e pri permutiraneto na ostanalite elementi, kogato i-tiqt element si e na mqstoto, sus sigurnost se vklu4vat permutacii, pri koito elementa j su6to si e na mqstoto. A puk kogato sme fiksirali j-tiqt element, v polu4enite permutacii sus sigurnost 6te ima takiva, pri koito i si e na mqstoto. Taka se polu4ava, 4e sme izvadili po 2 puti permutaciite, v koito ima pone 2 elementa na mqstoto si. Zatova gi dobavqme otnovo - broqt im e C(n,2)*(n-2)! = n!/2! . Oba4e v tqh sme vklu4ili i permutaciite s pone 3 elementa na mqstoto si, koito ve4e vednuj sme izvadili pri permutaciite s edin fiksiran element, taka 4e fakti4eski gi dobavqme otnovo. Izvajdame gi C(n,3)*(n-3)! = n!/3! i taka analogi4no dobavqme n!/4!, izvajdame n!/5! i t.n. Po o4evidni pri4ini parvite dva elementa na formulata mogat da se prenebregnat.
+No iz4islqvaneto na formulata taka zadadena nqma kak da se vpi6e vuv vremennite ograni4eniq poradi mnogokratnoto izpalnenie na tejkata operaciq faktoriel. S malko kusmet oba4e se zabelqzva slednata induktivna zavisimost:
+Imame D(n). Kato go umnojim sus (n+1) polu4avame
+(n+1)!/2!-(n+1)!/3!+...+(-1)^n*(n+1)!/n!
+kum koeto kato pribavim (-1)^(n+1)*(n+1)!/(n+1)! fakti4eski polu4avame D(n+1). Ili s drugi dumi, izliza zavisimostta
+D(n)=D(n-1)*n+(-1)^n
+koqto s iterativna realizaciq presmqta D(n) za dostatu4no malko vreme.

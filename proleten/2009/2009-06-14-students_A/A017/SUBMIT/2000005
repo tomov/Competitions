@@ -1,0 +1,46 @@
+/*
+TASK: flatten
+LANG: C++
+*/
+#include <iostream>
+#define MAXN (1 << 20)
+using namespace std;
+typedef long long ull;
+
+int n , k , a[MAXN] , pos;
+ull f[MAXN] , sol = -1;
+
+int main ()
+{
+ scanf ("%d%d", &n, &k);   
+ for (int i=0; i < n; ++i)
+  scanf ("%d", &a[i]);
+ 
+ for (int i=0; i < k; ++i)
+  f[0] += a[i];
+ 
+ for (int i=1; i < n-k+1; ++i)
+  f[i] = f[i-1] + a[k + i-1] - a[i-1] ;
+ 
+ for (int i=0 ; i < n-k+1; ++i)
+  {
+   int l = 0 , r = MAXN ;
+   ull sum = f[i] , pr = 0 , pr1 = 0;
+   
+   int sa = sum / k , sa1 = (sum / k) + 1;
+   
+   for (int j=i; j < i + k; ++j)
+    {
+     if (a[j] < sa) pr += sa - a[j];
+      else pr += a[j] - sa;
+     
+     if (a[j] < sa1) pr1 += sa1 - a[j];
+      else pr1 += a[j] - sa1;
+    }
+   if ( sol == -1 || sol > pr ) { pos = i+1; sol = pr; }
+   if ( sol == -1 || sol > pr1 ) { pos = i+1; sol = pr1; }
+  }
+ 
+ cout << sol << "\n" << pos << "\n";
+ return 0;    
+}

@@ -1,0 +1,6 @@
+N
+s
+e
+
+
+si4ki palindromi s duljina N koito NE sudurjat stringa s i sa ot azbukata e

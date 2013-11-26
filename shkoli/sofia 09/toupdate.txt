@@ -1,0 +1,19 @@
+tester.lin - F9 shit - !!settings -> external tools -> ...   + settings -> conf. shortcuts
+time sdfgsdf
+
+
+while (l<r)
+ mid=l+(r-l+1)/2;
+ if (..) l=mid; else r=mid-1;
+
+OR
+  mid=l+(r-l)/2;
+  if (..) l=mid+1; else r=mid;
+
+
+
+match log
+match notes
+
+
+usaco

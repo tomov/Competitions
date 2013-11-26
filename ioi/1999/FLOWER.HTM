@@ -1,0 +1,133 @@
+<html>
+
+<head>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<meta NAME="GENERATOR" CONTENT="Microsoft FrontPage 3.0">
+<title>LITTLE SHOP OF FLOWERS</title>
+</head>
+
+<body bgcolor="#A5B4D8" text="#0E2C73" link="#0E2C73" vlink="#0E2C73" alink="#A5B4D8">
+
+<table bgcolor="#ffffff" cellpadding="20" cellspacing="10">
+  <tr>
+    <td><b><font FACE="Arial,Helvetica" SIZE="5"><p ALIGN="left">LITTLE SHOP OF FLOWERS</p>
+    </font><font FACE="Arial,Helvetica" SIZE="4"><p></font><font FACE="Arial,Helvetica"
+    size="3">PROBLEM</p>
+    </font></b><p ALIGN="JUSTIFY">You want to arrange the window of your flower shop in a most
+    pleasant way. You have <i>F </i>bunches of flowers, each being of a different kind, and at
+    least as many vases ordered in a row. The vases are glued onto the shelf and are numbered
+    consecutively 1 through <i>V</i>, where <i>V</i> is the number of vases, from left to
+    right so that the vase 1 is the leftmost, and the vase <i>V</i> is the rightmost vase. The
+    bunches are moveable and are uniquely identified by integers between 1 and <i>F</i>. These
+    id-numbers have a significance: They determine the required order of appearance of the
+    flower bunches in the row of vases so that the bunch <i>i</i> must be in a vase to the
+    left of the vase containing bunch <i>j</i> whenever <i>i</i> &lt; <i>j</i>. Suppose, for
+    example, you have bunch of azaleas (id-number=1), a bunch of begonias (id-number=2) and a
+    bunch of carnations (id-number=3). Now, all the bunches must be put into the vases keeping
+    their id-numbers in order. The bunch of azaleas must be in a vase to the left of begonias,
+    and the bunch of begonias must be in a vase to the left of carnations. If there are more
+    vases than bunches of flowers then the excess will be left empty. A vase can hold only one
+    bunch of flowers.</p>
+    <p ALIGN="JUSTIFY">Each vase has a distinct characteristic (just like flowers do). Hence,
+    putting a bunch of flowers in a vase results in a certain aesthetic value, expressed by an
+    integer. The aesthetic values are presented in a table as shown below. Leaving a vase
+    empty has an aesthetic value of 0.</p>
+    <p ALIGN="JUSTIFY">&nbsp;</p>
+    <table BORDER="1" CELLPADDING="7" CELLSPACING="0">
+      <tr>
+        <td VALIGN="TOP" COLSPAN="2" ROWSPAN="2">&nbsp;</td>
+        <td COLSPAN="5"><b><p ALIGN="CENTER">V A S E S</b></td>
+      </tr>
+      <tr>
+        <td VALIGN="TOP"><b><p ALIGN="CENTER">1</b></td>
+        <td VALIGN="TOP"><b><p ALIGN="CENTER">2</b></td>
+        <td VALIGN="TOP"><b><p ALIGN="CENTER">3</b></td>
+        <td VALIGN="TOP"><b><p ALIGN="CENTER">4</b></td>
+        <td VALIGN="TOP"><b><p ALIGN="CENTER">5</b></td>
+      </tr>
+      <tr>
+        <td VALIGN="MIDDLE" ROWSPAN="3" HEIGHT="26"><b><p ALIGN="JUSTIFY">Bunches</b></td>
+        <td VALIGN="MIDDLE" HEIGHT="26"><b><p ALIGN="JUSTIFY">1 (azaleas)</b></td>
+        <td VALIGN="MIDDLE" HEIGHT="26"><font SIZE="3">7</font></td>
+        <td VALIGN="MIDDLE" HEIGHT="26"><font SIZE="3">23</font></td>
+        <td VALIGN="MIDDLE" HEIGHT="26"><font SIZE="3">-5</font></td>
+        <td VALIGN="MIDDLE" HEIGHT="26"><font SIZE="3">-24</font></td>
+        <td VALIGN="MIDDLE" HEIGHT="26"><font SIZE="3">16</font></td>
+      </tr>
+      <tr>
+        <td VALIGN="MIDDLE" HEIGHT="26"><b><p ALIGN="JUSTIFY">2 (begonias)</b></td>
+        <td VALIGN="MIDDLE" HEIGHT="26"><font SIZE="3">5</font></td>
+        <td VALIGN="MIDDLE" HEIGHT="26"><font SIZE="3">21</font></td>
+        <td VALIGN="MIDDLE" HEIGHT="26"><font SIZE="3">-4</font></td>
+        <td VALIGN="MIDDLE" HEIGHT="26"><font SIZE="3">10</font></td>
+        <td VALIGN="MIDDLE" HEIGHT="26"><font SIZE="3">23</font></td>
+      </tr>
+      <tr>
+        <td VALIGN="MIDDLE" HEIGHT="26"><b><p ALIGN="JUSTIFY">3 (carnations)</b></td>
+        <td VALIGN="MIDDLE" HEIGHT="26"><font SIZE="3"><p ALIGN="CENTER">-21</font></td>
+        <td VALIGN="MIDDLE" HEIGHT="26"><font SIZE="3">5</font></td>
+        <td VALIGN="MIDDLE" HEIGHT="26"><font SIZE="3">-4</font></td>
+        <td VALIGN="MIDDLE" HEIGHT="26"><font SIZE="3">-20</font></td>
+        <td VALIGN="MIDDLE" HEIGHT="26"><font SIZE="3">20</font></td>
+      </tr>
+    </table>
+    <p ALIGN="JUSTIFY">According to the table, azaleas, for example, would look great in vase
+    2, but they would look awful in vase 4.</p>
+    <p ALIGN="JUSTIFY">To achieve the most pleasant effect you have to maximize the sum of
+    aesthetic values for the arrangement while keeping the required ordering of the flowers.
+    If more than one arrangement has the maximal sum value, any one of them will be
+    acceptable. You have to produce exactly one arrangement.</p>
+    <b><font FACE="Arial,Helvetica" SIZE="4"><p></font><font FACE="Arial,Helvetica" size="3">ASSUMPTIONS</font></b><font
+    size="1"><ul>
+      </font>
+      <li>1 &lt;= <i>F</i> &lt;= 100 where <i>F</i> is the number of the bunches of flowers. The
+        bunches are numbered 1 through <i>F</i>. </li>
+      <i>
+      <li>F</i> &lt;= <i>V</i> &lt;= 100 where <i>V</i> is the number of vases. </li>
+      <li>-50 &lt;= <i>A<sub>ij</sub> </i>&lt;= 50 where <i>A<sub>ij </sub></i>is the aesthetic
+        value obtained by putting the flower bunch <i>i</i> into the vase <i>j</i>. </li>
+    </ul>
+    <b><font FACE="Arial,Helvetica" SIZE="4"><p></font><font FACE="Arial,Helvetica" size="3">&nbsp;</p>
+    <p>INPUT</p>
+    </font></b><p>The input is a text file named <font FACE="Courier"><b>flower.inp</b></font>.<ul>
+      <li>The first line contains two numbers: <i>F</i>, <i>V</i>.</li>
+      <li>The following <i>F</i> lines: Each of these lines contains <i>V</i> integers, so that <i>A<sub>ij</sub></i>
+        is given as the <i>j<sup>th</sup></i> number on the (<i>i</i>+1)<sup><i>st</i></sup> line
+        of the input file. </li>
+    </ul>
+    <font FACE="Arial,Helvetica"><b><p>&nbsp;</p>
+    <font SIZE="3"><p>OUTPUT</p>
+    </font></b></font><p>The output must be a text file named <font FACE="Courier"><b>flower.out</b></font>
+    consisting of two lines:<ul>
+      <li>The first line will contain the sum of aesthetic values for your arrangement. </li>
+      <li>The second line must present the arrangement as a list of <i>F</i> numbers, so that the <i>k</i>&#146;th
+        number on this line identifies the vase in which the bunch <i>k</i> is put.</li>
+    </ul>
+    <p>&nbsp;</p>
+    <font FACE="Arial,Helvetica" size="3"><b><p>EXAMPLE</p>
+    </b></font><font FACE="Courier"><p>flower.inp</font>:</p>
+    <table BORDER="1" CELLSPACING="0">
+      <tr>
+        <td><pre><font FACE="Courier">3 5
+7 23 -5 -24 16
+5 21 -4 10 23
+-21 5 -4 -20 20</font></pre>
+        </td>
+      </tr>
+    </table>
+    <font FACE="Courier"><p>flower.out:</p>
+    </font><table BORDER="1" CELLSPACING="0">
+      <tr>
+        <td><pre><font FACE="Courier">53
+2 4 5</pre>
+        </font></td>
+      </tr>
+    </table>
+    <b><font FACE="Arial,Helvetica" SIZE="4"><p></font><font FACE="Arial,Helvetica" size="3">&nbsp;</p>
+    <p>EVALUATION</p>
+    </font></b><p>Your program will be allowed to run 2 seconds.</p>
+    <p>No partial credit can be obtained for a test case.</td>
+  </tr>
+</table>
+</body>
+</html>

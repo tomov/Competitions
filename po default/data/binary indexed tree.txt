@@ -1,0 +1,22 @@
+n^2
+
+
+int push(int X,int Y,int A)
+{
+   for (; X<=N; X+=X&(-X))
+    for (int y=Y; y<=N; y+=y&(-y))
+     a[X][y]+=A;
+}
+
+int query1(int X,int Y)
+{
+    if (X<=0 || Y<=0) return 0;
+    int sum=0;
+    for (; X; X-=X&(-X))
+     for (y=Y; y; y-=y&(-y))
+      sum+=a[X][y];
+    return sum;
+}
+
+int query(int X1,int Y1,int X2,int Y2)
+{ return query1(X2,Y2)-query1(X1-1,Y2)-query1(X2,Y1-1)+query1(X1-1,Y1-1); }

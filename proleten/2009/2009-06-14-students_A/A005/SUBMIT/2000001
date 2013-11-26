@@ -1,0 +1,71 @@
+#include <iostream>
+#include <set>
+#define MAXN 90
+using namespace std;
+
+int n, line[MAXN];
+set<double> s;
+
+int main()
+{
+  int i, curr, ones, t, k;
+  double sum;
+  scanf("%d", &n);
+  
+  line[0] = n;
+  for (i = 1; i < n; ++i) line[i] = 1;
+  //~ printf("%d\n", s.size());
+  curr = 0;
+  ones = 0;
+  sum = 0;
+  for (i = 0; i <= curr; ++i) {
+    sum += 1./line[i];
+    //~ printf("%d ", line[i]);
+  }
+  sum += ones;
+  //~ for (i = 0; i < ones; ++i) {
+    //~ printf("1 ");
+  //~ }
+  //~ printf("sum=%lf\n", sum);
+  s.insert(sum);
+  while(line[0] != 1) {
+    //printf("curr=%d\n", curr);
+    if (line[curr] == 2) {
+      line[curr] = 1;
+      curr -= 1;
+      ones += 2;
+    }
+    else {
+      line[curr] -= 1;
+      k = line[curr];
+      ones += 1;
+      i = curr + 1;
+      while (ones > k) {
+	line[i++] = k;
+	ones-=k;
+      }
+      if (ones > 1) {
+	line[i] = ones;
+	ones = 0;
+	curr = i;
+      }
+      else {
+	curr = i-1;
+      }
+    }
+    i = 0;
+    sum = 0;
+    while (line[i] > 1) {
+      sum += 1./line[i++];
+      //~ printf("%d ", line[i++]);
+    }
+    sum += ones;
+    //~ for (i = 0; i < ones; ++i) {
+      //~ printf("1 ");
+    //~ }
+    //~ printf("sum=%lf\n", sum);
+    s.insert(sum);
+  }
+  printf("%d\n", s.size());
+  return 0;
+}

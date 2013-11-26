@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<TITLE>pizza</TITLE>
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000CC" vlink="#0000CC" alink="#0000CC">
+<P><B><font size="4" face="Arial, Helvetica, sans-serif">pizza</font></B></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Our friend Vasile has become very rich and wants to open a chain of <font face="Courier New, Courier, mono">K</font> pizzerias, which would take and deliver orders. <BR> Vasile is considering <font face="Courier New, Courier, mono">M</font> potential locations for his pizzerias. One pizzeria can provide for all the orders in its range of activity (a circular area of radius <font face="Courier New, Courier, mono">R</font>, with the center at the restaurant's location). <BR> It is a well-known fact that students are great pizza consumers, so Vasile considers them as being sure customers. For this reason Vasile has identified the locations of <font face="Courier New, Courier, mono">N</font> student dorms, as well as the number of students in each dorm.<BR> Vasile wants to choose <font face="Courier New, Courier, mono">K</font> of the <font face="Courier New, Courier, mono">M</font> possible locations for his pizzerias so that the total number of sure clients be as large as possible.</font></p>
+<p><B><font size="3" face="Arial, Helvetica, sans-serif">Task</font></B><BR>
+  <font face="Arial, Helvetica, sans-serif" size="2">Write a program that determines the maximum number of sure clients Vasile can count on.</font> 
+</p>
+<p align="JUSTIFY"><font size="3"><B><font face="Arial, Helvetica, sans-serif">Input Data</font></B></font><BR>
+  <font face="Arial, Helvetica, sans-serif" size="2">Line one of input file <font face="Courier New, Courier, mono">pizza.in</font> contains two positive integers, <font face="Courier New, Courier, mono">K</font> and <font face="Courier New, Courier, mono">R</font>, separated by a space, representing the number of pizzerias Vasile wants to open, and respectively the range of each pizzeria. <BR> The second line contains a positive integer <font face="Courier New, Courier, mono">M</font>, representing the number of possible locations for pizzerias.<BR> Each of the following <font face="Courier New, Courier, mono">M</font> lines contains two positive integers, <font face="Courier New, Courier, mono">X</font> and <font face="Courier New, Courier, mono">Y</font>, separated by a space, representing the coordinates of a location (in abscise, ordinate order).<BR> The following line contains a positive integer <font face="Courier New, Courier, mono">N</font>, representing the number of student dorms.<BR> Each of the following <font face="Courier New, Courier, mono">N</font> lines contains information about a dorm, in the form of a set of three integers separated by a space, <font face="Courier New, Courier, mono">X Y S</font>, with the meaning &quot;at point having coordinates <font face="Courier New, Courier, mono">X</font>, <font face="Courier New, Courier, mono">Y</font> there is a student dorm in which <font face="Courier New, Courier, mono">S</font> students live in&quot;.</font>
+</P><p><B><font size="3" face="Arial, Helvetica, sans-serif">Output Data</font></B><BR>
+  <font face="Arial, Helvetica, sans-serif" size="2">Output file <font face="Courier New, Courier, mono">pizza.out</font> will contain a single line with the maximum number of sure clients Vasile can count on.</font></p>
+<p><font size="3"><B><font face="Arial, Helvetica, sans-serif">Restrictions</font></B></font><BR>
+  <font face="Courier New, Courier, mono" size="2">1 &lt;= K &lt;= 10<BR> 1 &lt;= R &lt;= 500</font><font face="Arial, Helvetica, sans-serif" size="2"><BR>
+  <font face="Courier New, Courier, mono">K &lt;= M &lt;= 20</font><BR> All coordinates are integers, <font face="Courier New, Courier, mono">-1000 &lt;= X,Y &lt;= 1000</font><BR>
+  <font face="Courier New, Courier, mono">1 &lt;= N &lt;= 100<BR> 1 &lt;= S &lt;=100<BR>
+  </font>We say that a dorm is in the range of a pizzeria if the distance from the dorm to the pizzeria is smaller than or equal to <font face="Courier New, Courier, mono">R</font>.<BR> There are no two locations having the same coordinates.<BR>
+  </font><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"><BR>
+  </font><B><font size="3" face="Arial, Helvetica, sans-serif">Examples</font></B></p>
+<table BORDER cellspacing=1 cellpadding=7 width=590>
+  <tr> 
+    <td width="17%" valign="TOP"> <font face="Courier New, Courier, mono" size="2">pizza.in</font> 
+    </td>
+    <td width="17%" valign="TOP"> <font face="Courier New, Courier, mono" size="2">pizza.out</font> 
+    </td>
+    <td width="17%" valign="TOP"> <font face="Courier New, Courier, mono" size="2">pizza.in</font> 
+    </td>
+    <td width="17%" valign="TOP"> <font face="Courier New, Courier, mono" size="2">pizza.out</font> 
+    </td>
+  </tr>
+  <tr> 
+    <td width="17%" valign="TOP"><font face="Courier New, Courier, mono" size="2">2 2<BR> 3<BR> 1 0<BR> 4 0<BR> 7 0<BR> 4<BR> 0 0 1<BR> 3 0 7<BR> 5 0 9<BR> 8 0 1</font></td>
+    <td width="17%" valign="TOP"><font face="Courier New, Courier, mono" size="2">18</font></td>
+    <td width="17%" valign="TOP"><font face="Courier New, Courier, mono" size="2">2 2<BR> 3<BR> -2 0<BR> 0 1<BR> 3 0<BR> 8<BR> -3 1 1<BR> -3 0 1<BR> -3 -1 1<BR> -2 -1 1<BR> 0 0 3<BR> 0 2 1<BR> 2 1 3<BR> 4 0 2</font></td>
+    <td width="17%" valign="TOP"><font face="Courier New, Courier, mono" size="2">12</font></td>
+  </tr>
+</table>
+<P><B><font face="Arial, Helvetica, sans-serif" size="2">Time limit</font></B><font face="Arial, Helvetica, sans-serif" size="2">: 1.2 seconds/test</font><BR>
+</P><P ALIGN="RIGHT"><font face="Arial, Helvetica, sans-serif" size="2">prof. <I>Emanuela Cerchez</I><BR>
+  </font> 
+<font face="Arial, Helvetica, sans-serif" size="2">&quot;<I>Grigore Moisil</I>&quot; Ia&#351;i IT High School<BR>  </font> 
+<font face="Arial, Helvetica, sans-serif" size="2"> Contact:<a href="mailto:emanuela.cerchez@gmail.com">emanuela.cerchez@gmail.com</a></font><BR>
+</p>
+
+</BODY>
+
+</HTML>
+
+

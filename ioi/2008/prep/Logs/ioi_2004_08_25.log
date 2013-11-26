@@ -1,0 +1,97 @@
+
+Session Start: Tue Aug 24 22:36:55 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+<VelinTzanov> <Swetko> az sum gotov
+<VelinTzanov> <rangel__> da
+<VelinTzanov> <valo_bg> i az
+<VelinTzanov> <VelinTzanov> Vlado?
+<VelinTzanov> -> [sssa88] PING
+<VelinTzanov> <VelinTzanov> I Vlado e gotov. :)
+<VelinTzanov> <VelinTzanov> http://www.tzanov.com/ioi2004/snoqualmie/
+<VelinTzanov> <VelinTzanov> (Da, i tova e mestnost okolo Seattle :) )
+<VelinTzanov> <VelinTzanov> Vreme za vyprosi: edin chas (do 9:33 moe vreme)
+<VelinTzanov> <VelinTzanov> Vreme za rabota: 5 chasa (do 13:33)
+<VelinTzanov> <VelinTzanov> (moe vreme, znachi po moia chasovnik, a ne po Seattle-sko vreme)
+-> [VelinTzanov] PING
+<VelinTzanov> Poluchihte li URL-to?
+<valo_bg> da
+<VelinTzanov> A Swetko dali go poluchi?
+-> [VelinTzanov] PING
+<valo_bg> az smy go poluchil tamyn 2 pyti
+<VelinTzanov> Super
+* Logging #ioi to 'logs\ioi_2004_08_25.log'
+* dfqwe has joined #ioi
+<dfqwe> ia pak mi kashete adresa
+* dfqwe is now known as Swetko
+<valo_bg> http://www.tzanov.com/ioi2004/snoqualmie/
+<rangel__> da
+* Disconnected
+Session Close: Tue Aug 24 22:41:14 2004
+
+Session Start: Tue Aug 24 22:43:59 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+<VelinTzanov> Pak me izhvyrli neshto.
+<VelinTzanov> Ako imate vypros i ne otgovariam dylgo vreme, moje pak da me e drop-nalo... togava pishete na e-mail-a ili na ICQ-to.
+-> [VelinTzanov] PING
+-> [VelinTzanov] PING
+* rangel__ has quit IRC (irc.naturella.com irc.mnet.bg)
+* sssa88 has quit IRC (irc.naturella.com irc.mnet.bg)
+* sssa88 has joined #ioi
+* rangel__ has joined #ioi
+* irc.mnet.bg sets mode: +oo sssa88 rangel__
+* CS sets mode: -oo sssa88 rangel__
+* valo_bg sets mode: +o rangel__
+* valo_bg sets mode: +o sssa88
+-> [VelinTzanov] PING
+-> [VelinTzanov] PING
+<valo_bg> vypros po gerry: v spisyka S vinagi li shte prisystvat krainite ulici 1 i 100?
+<VelinTzanov> Taka kato gledam testovete, da.
+<valo_bg> i osven tova kato kazvame spisyka s avenutata zadyljitelno li trqbva da vkluchim 1 i 100?
+* rangel__ has quit IRC (Remote closed the connection)
+* rangel__ has joined #ioi
+* VelinTzanov sets mode: +o rangel__
+<rangel__> vypros po island: ako nikoi dva vyrha ne sa svyrzani kolko e naj-dylgiq pyt i mezhdu koi vyrhove?
+<VelinTzanov> Chakai da vidia...
+-> [VelinTzanov] PING
+-> [VelinTzanov] PING
+<VelinTzanov> Ami dokolkoto razbiram tezi pytishta ne gi razglejdash (prosto zashtoto gi niama :) )
+* rangel_ has joined #ioi
+* rangel_ has left #ioi
+<valo_bg> a po moq vypros?
+<VelinTzanov> A, ne biah vidial che imash i vtori vypros... sega shte pogledna...
+<VelinTzanov> Ami pak sydeiki po testovete, da. :)
+-> [VelinTzanov] PING
+<VelinTzanov> Posledna minuta za vyprosi (makar che az shte sym naokolo oshte izvestno vreme, vse pak dobre e da se trenirate na IOI-disciplina)
+* rangel__ has quit IRC (irc.spnet.net irc.mnet.bg)
+* sssa88 has quit IRC (irc.spnet.net irc.mnet.bg)
+* sssa88 has joined #ioi
+* rangel__ has joined #ioi
+* irc.mnet.bg sets mode: +o sssa88
+* CS sets mode: -o sssa88
+* sssa88 has left #ioi
+* sssa88 has joined #ioi
+* VelinTzanov sets mode: +oo rangel__ sssa88
+<valo_bg> time limiti?
+<VelinTzanov> Aide sega, vse edno ste niakakvi afrikanci. Da rabotiat vednaga. :)
+<VelinTzanov> Chestno - ne znam. Napravete gi kolkoto vi se struva razumno byrzo.
+<VelinTzanov> Island mislia che triabva da e vednaga.
+<VelinTzanov> Gerry mislia che syshto (ili pone blizo do vednaga)
+<VelinTzanov> Catenyms ne sym imal shansa da ia umuvam mnogo zadylbocheno, no mislia che i tam triabva naistina byrzo reshenie.
+<VelinTzanov> Moga da vi kaja razmera na testovete.
+<VelinTzanov> Na Gerry e blizo 250KB
+<VelinTzanov> Na catenyms e blizo 64KB
+<VelinTzanov> Nz Island nai-golemiat test e malko nad 1MB, a obshto sa okolo 1.5MB
+<valo_bg> ok
+<sssa88> ako na island dylzinata e samo e road ili roads da pishem
+<rangel__> sys syshtata logika ako maksimalnata stepen e 1 dali da pishem samo 'road'
+<sssa88> a da
+<VelinTzanov> roads
+-> [rangel__] PING
+<valo_bg> to inache shteshe da e golqma gavra
+<VelinTzanov> Rangele, pisah ti na lichno, pogledni go ako ne si go vidial i plz otgovori asap
+* Disconnected
+Session Close: Wed Aug 25 01:50:28 2004

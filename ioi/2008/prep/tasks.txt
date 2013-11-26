@@ -1,0 +1,43 @@
+http://olympiads.win.tue.nl/ioi/ioi2001/contest/day2/double/double.pdf
+<VelinTzanov> http://infoman.musala.com/contests/noi/1999/round3_tasks.html - garden
+http://cs.science.upjs.sk/ceoi/documents/tasks/dwarfs-tsk.pdf
+http://infoman.musala.com/contests/ioi/2002/rods_bg.doc
+http://infoman.musala.com/contests/noi/2003/kont2_tasks.html - mountain
+http://infoman.musala.com/contests/boi/2002/problems_bg.zip - sequence
+http://infoman.musala.com/contests/boi/2003/traversal_bg.doc
+http://www.ii.uni.wroc.pl/boi/task/marzad.phtml
+http://infoman.musala.com/contests/spring/2003/problems_A.rtf - laconism
+http://infoman.musala.com/contests/noi/2002/kont3_tasks.html - seq
+http://infoman.musala.com/contests/ioi/2001/ioiwari-bg.rtf
+http://infoman.musala.com/contests/spring/2003/problems_A.rtf - trade
+http://aldona.mii.lt/pms/olimp/english/boi2002/kita/lgame-en.pdf
+http://cs.science.upjs.sk/ceoi/documents/tasks/conquer-tsk.pdf
+http://www.oi.edu.pl/php/show.php?ac=e181313&module=show&file=zadania/oi7/paski - stripes
+http://infoman.musala.com/contests/spring/2001/problems_11-12.rtf - coins
+http://infoman.musala.com/contests/ioi/2002/xor_bg.doc - xor
+http://aldona.mii.lt/pms/olimp/english/boi2002/kita/tasks/speed-en.pdf
+http://aldona.mii.lt/pms/olimp/english/boi2002/kita/tasks/bic-en.pdf
+http://infoman.musala.com/contests/noi/2004/kont2_tasks.html - 3d lab
+http://infoman.musala.com/contests/noi/2001/kont2_tasks.html - lab
+http://www.ioi2003.org/ioitasks/robots.pdf
+http://infoman.musala.com/contests/noi/2002/round1_tasks.html - pdrm
+http://infoman.musala.com/contests/noi/2002/kont3_tasks.html - fax
+http://infoman.musala.com/contests/noi/2004/round3_tasks.html - paths
+http://infoman.musala.com/contests/boi/2003/tribe_bg.doc
+http://infoman.musala.com/contests/noi/2003/kont2_tasks.html - bintree
+http://infoman.musala.com/contests/noi/2004/kont2_tasks.html - convex
+http://infoman.musala.com/contests/ioi/2002/batch.doc
+http://infoman.musala.com/contests/boi/2003/euro_bg.doc
+http://ceoi.ubbcluj.ro/internet/p3.html - caterpillar
+http://infoman.musala.com/contests/usaco/2003_04/open_green_en.txt - Turnin
+http://infoman.musala.com/contests/ioi/2002/utopia.doc - utopia
+http://infoman.musala.com/contests/noi/2000/round3_tasks.html - debelak
+http://infoman.musala.com/contests/fall/2001/problems_A.html - build
+http://infoman.musala.com/contests/noi/2003/kont2_tasks.html - diag
+http://infoman.musala.com/contests/ioi/2001/twofive-bg.rtf
+http://infoman.musala.com/contests/noi/2001/kont3_tasks.html - nivi
+http://infoman.musala.com/contests/boi/2002/problems_bg.zip - oldmap
+http://infoman.musala.com/contests/spring/2002/problems_11-12.rtf - selo
+http://infoman.musala.com/contests/ncpc/2004/problems.zip - zada4a A
+http://infoman.musala.com/contests/usaco/2001_02/usopen_green.rtf - majesty
+http://aldona.mii.lt/pms/olimp/english/boi2002/kita/tasks/triangles-en.pdf

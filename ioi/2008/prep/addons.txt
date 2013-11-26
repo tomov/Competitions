@@ -1,0 +1,54 @@
+Tema 1:
+Ipyknala obvivka.
+Dvoichno tyrsene.
+
+Kym Double:
+Mirrors, NOI 2005
+
+Kym Dwarfs za Rosti i Swetko:
+Palechko, IOI kontrolno 2004
+
+
+Tema 3:
+Reshavane na zadachi s pylni dvoichni dyrveta (index-ni dyrveta).
+Update & Query sistemi s cena na operacia LogN ili LogN*LogN.
+
+Circle, Spring 2003 stava zadyljitelna
+Team, BOI 2004 se dobavia (syshto zadyljitelna)
+
+
+Tema 5:
+Igri s obhvaten broi situacii.
+Opredeliane na pechelivshi, gubeshti i ravnostoini situacii.
+
+Kym vtoria den (Trade i L-Game) za Rosti i Swetko:
+Chess, IOI kontrolno 2004
+
+
+Tema 6:
+Igri s neobhvaten broi situacii.
+Ocenka na situaciite. Optimalni hodove.
+SG-Theorem. Sybirane na igri.
+
+Mejdu Nim i SG-igrite:
+BGame, posledno IOI kontrolno 2005
+
+
+Tema 8:
+Razshiriavane na grafa.
+Razshiriavane broia na situaciite.
+Labirinti.
+
+Kym pyrvia den (Speed i Bic):
+Race, BOI 2004
+
+Kym vtoria den (3DLab, Lab, Robots):
+Optional: Wappo, Spring 2005
+
+
+Tema 12:
+Optimizirane na dinamichno, chrez sykrashtavane na
+vytreshnia cikyl izpolzvaiki otgovor na podzadacha.
+
+Kato samostoiatelna pod-tema kym vtoria den:
+Game, BOI 2004

@@ -1,0 +1,66 @@
+
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>lot</title></head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#000000" vlink="#000000" alink="#000000" >
+<p><font face="Arial, Helvetica, sans-serif" size="2"><B> <font size="4">lot</font></B></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2"> Danut's grandfather is a bee keeper. Every spring he rents a lot of land and he places his bees there. Because grandpa loves to travel each spring he selects a lot in a different region of the country. The bees, being intelligent, only move within the rented lot and don't go outside the border, which is determined by a closed broken line. In order to optimize pollen collection the bees have to fly from any point of the lot to the hive on a linear trajectory (without changing course). Therefore the following criteria have to be respected when selecting rental lot offers:</font></p>
+<table>
+  <tr> 
+    <td width=400> 
+      <ol start=1 type=1>
+        <li ><font face="Arial, Helvetica, sans-serif" size="2">Make sure the broken line that marks the lot border is closed.</font></li>
+        <li ><font face="Arial, Helvetica, sans-serif" size="2">The segments of the line that cross the border don't intersect themselves, except adjacent segment extremities.</font></li>
+        <li ><font face="Arial, Helvetica, sans-serif" size="2">Any two internal lot points may be united by a segment that doesn't cross the border.</font></li>
+        <li ><font face="Arial, Helvetica, sans-serif" size="2">Any three consecutive border vertices are not collinear. </font></li>
+      </ol>
+    </td>
+    <td > 
+      <p align=right> <font face="Arial, Helvetica, sans-serif" size="2"><a href=image001.png> 
+        <img src=image002.jpg> </a></font></p>
+    </td>
+  </tr>
+</table>
+<p ><font face="Arial, Helvetica, sans-serif" size="2"><B><font size="3">Task</font></B></font></p>
+<p ><font face="Arial, Helvetica, sans-serif" size="2">The offers received by grandpa contain the descriptions of several lots (see the above image). Write a program that can help Danut select those lots that correspond to the criteria contained in the problem's description.</font></p>
+<p ><font face="Arial, Helvetica, sans-serif" size="2"><B><font size="3">Input Data</font></B></font></p>
+<p ><font face="Arial, Helvetica, sans-serif" size="2">Line one of file <font face="Courier New, Courier, mono">lot.in</font> contains a positive integer <font face="Courier New, Courier, mono">N</font> – the number of lots described in the file. The description of each lot begins on a line which contains a positive integer <font face="Courier New, Courier, mono">K<sub>i</sub></font> – representing the number of border segments of lot <font face="Courier New, Courier, mono">i</font>. Next, in order, the descriptions of the vertices of the lot's border, one vertex per line. The description of the vertex is given by its coordinates (<font face="Courier New, Courier, mono">x</font><B>, </B> <font face="Courier New, Courier, mono">y</font>) separated by a space. The description of lot <font face="Courier New, Courier, mono">i</font> ends in a line containing numbers <font face="Courier New, Courier, mono">0 0</font>.</font></p>
+<p ><font face="Arial, Helvetica, sans-serif" size="2"><B><font size="3">Output Data</font></B></font></p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">File <font face="Courier New, Courier, mono">lot.out</font> will contain <font face="Courier New, Courier, mono">N</font> lines. Line <font face="Courier New, Courier, mono">i</font> will contain digit <font face="Courier New, Courier, mono">1</font> if lot <font face="Courier New, Courier, mono">i</font> meets the demands of the problem in the description or <font face="Courier New, Courier, mono">0</font> – if it doesn't. </font></p>
+<p ><font face="Arial, Helvetica, sans-serif" size="2"><B><font size="3">Restrictions</font></B></font></p>
+<p ><font face="Courier New, Courier, mono" size="2">0 &lt; N &lt;= 20 <BR>
+  </font><font face="Courier New, Courier, mono" size="2">3 &lt;= K<sub>i</sub> 
+  &lt;= 1000, i= 1, ..., N <BR>
+  </font><font face="Courier New, Courier, mono" size="2">-10000 &lt;= x, y &lt;= 10000<BR>
+  </font><font face="Courier New, Courier, mono" size="2">x, y &lt;&gt; 0</font></p>
+<p ><font face="Arial, Helvetica, sans-serif" size="2"><font size="3"></font><B><font size="3">Example</font></B></font></p>
+<font face="Courier New"> 
+<table border=1>
+  <tr > 
+    <td width=319 valign=top > 
+      <p ><font face="Courier New, Courier, mono" size="2">lot.in (image)</font></p>
+    </td>
+    <td width=319 valign=top > 
+      <p ><font face="Courier New, Courier, mono" size="2">lot.out</font></p>
+    </td>
+  </tr>
+  <tr > 
+    <td width=319 valign=top > 
+      <p><font face="Courier New, Courier, mono" size="2">3 <BR> 4<BR> 1 1<BR> 1 5<BR> 7 5<BR> 7 1<BR> 0 0<BR> 4<BR> -2 -1<BR> -2 -6 <BR> -3 -3<BR> -7 -1<BR> 0 0 <BR> 3<BR> -1 1<BR> -3 1<BR> -1 3<BR> 0 0 </font></p>
+    </td>
+    <td width=319 valign=top > 
+      <p><font face="Courier New, Courier, mono" size="2">1<BR> 0<BR> 1</font></p>
+    </td>
+  </tr>
+</table>
+</font>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Time limit: 0.1 seconds/test</font></p>
+<p align="right"><font size="2" face="Arial, Helvetica, sans-serif">prof. <I>Sergiu Corlat </I><BR>
+  </font> <font size="2" face="Arial, Helvetica, sans-serif">Chi&#351;in&#259;u Moldavian-Turkish High-School <BR>
+  </font> <font size="2" face="Arial, Helvetica, sans-serif"> Contact:<a href="mailto:scorlat@gmail.com">scorlat@gmail.com</a><BR>
+  </font> </p>
+</body>
+
+</html>
+

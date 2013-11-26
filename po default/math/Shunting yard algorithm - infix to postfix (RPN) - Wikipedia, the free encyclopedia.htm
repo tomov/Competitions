@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+				<meta name="keywords" content="Shunting yard algorithm,Abstract syntax tree,Algorithm,Associativity,Classification yard,Constant folding,Edsger Dijkstra,Function (mathematics),Infix notation,Interpreter (computing),Operator-precedence parser" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />
+		<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+		<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/rss+xml" title="Wikipedia RSS Feed" href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=rss" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom Feed" href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+		<title>Shunting yard algorithm - Wikipedia, the free encyclopedia</title>
+		<style type="text/css" media="screen, projection">/*<![CDATA[*/
+			@import "/skins-1.5/common/shared.css?154";
+			@import "/skins-1.5/monobook/main.css?154";
+		/*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="/skins-1.5/common/commonPrint.css?154" />
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/skins-1.5/monobook/IE50Fixes.css?154";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/skins-1.5/monobook/IE55Fixes.css?154";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/skins-1.5/monobook/IE60Fixes.css?154";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/skins-1.5/monobook/IE70Fixes.css?154";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/skins-1.5/common/IEFixes.js?154"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		
+		<script type= "text/javascript">/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/skins-1.5";
+var wgArticlePath = "/wiki/$1";
+var wgScriptPath = "/w";
+var wgScript = "/w/index.php";
+var wgVariantArticlePath = false;
+var wgActionPaths = [];
+var wgServer = "http://en.wikipedia.org";
+var wgCanonicalNamespace = "";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 0;
+var wgPageName = "Shunting_yard_algorithm";
+var wgTitle = "Shunting yard algorithm";
+var wgAction = "view";
+var wgArticleId = "2692773";
+var wgIsArticle = true;
+var wgUserName = null;
+var wgUserGroups = null;
+var wgUserLanguage = "en";
+var wgContentLanguage = "en";
+var wgBreakFrames = false;
+var wgCurRevisionId = "210482170";
+var wgVersion = "1.13alpha";
+var wgEnableAPI = true;
+var wgEnableWriteAPI = false;
+var wgMWSuggestTemplate = "http://en.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}";
+var wgDBname = "enwiki";
+var wgSearchNamespaces = [0];
+var wgMWSuggestMessages = ["with suggestions", "no suggestions"];
+var wgRestrictionEdit = [];
+var wgRestrictionMove = [];
+/*]]>*/</script>
+                
+		<script type="text/javascript" src="/skins-1.5/common/wikibits.js?154"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="/skins-1.5/common/ajax.js?154"></script>
+		<script type="text/javascript" src="/skins-1.5/common/mwsuggest.js?154"></script>
+		<script type="text/javascript" src="/w/index.php?title=-&amp;action=raw&amp;gen=js&amp;useskin=monobook"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "/w/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400";
+@import "/w/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=2678400";
+@import "/w/index.php?title=-&action=raw&gen=css&maxage=2678400";
+/*]]>*/</style>
+	</head>
+<body class="mediawiki ns-0 ltr page-Shunting_yard_algorithm">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+		<div id="siteNotice"><script type="text/javascript" language="JavaScript">
+<!--
+document.writeln("\x3cp\x3e\x3c/p\x3e\n");
+-->
+</script></div>		<h1 class="firstHeading">Shunting yard algorithm</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Wikipedia, the free encyclopedia</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p>The <b>shunting yard algorithm</b> is a method for parsing mathematical equations specified in <a href="/wiki/Infix_notation" title="Infix notation">infix notation</a>. It can be used to produce output in <a href="/wiki/Reverse_Polish_notation" title="Reverse Polish notation">Reverse Polish notation</a> (RPN) or as an <a href="/wiki/Abstract_syntax_tree" title="Abstract syntax tree">abstract syntax tree</a> (AST). The <a href="/wiki/Algorithm" title="Algorithm">algorithm</a> was invented by <a href="/wiki/Edsger_Dijkstra" class="mw-redirect" title="Edsger Dijkstra">Edsger Dijkstra</a> and named the "shunting yard" algorithm because its operation resembles that of a <a href="/wiki/Classification_yard" title="Classification yard">railroad shunting yard</a>.</p>
+<p>Like the evaluation of RPN, the shunting yard algorithm is <a href="/wiki/Stack_%28data_structure%29" title="Stack (data structure)">stack</a>-based. Infix expressions are the form of math most people are used to, for instance 3+4 or 3+4*(2−1). For the conversion there are two text <a href="/wiki/Variable" title="Variable">variables</a> (<a href="/wiki/String_%28computer_science%29" title="String (computer science)">strings</a>), the input and the output. There is also a stack holding operators not yet added to the output stack. To convert, the program reads each letter in order and does something based on that letter.</p>
+<table id="toc" class="toc" summary="Contents">
+<tr>
+<td>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1"><a href="#A_simple_conversion"><span class="tocnumber">1</span> <span class="toctext">A simple conversion</span></a></li>
+<li class="toclevel-1"><a href="#The_algorithm_in_detail"><span class="tocnumber">2</span> <span class="toctext">The algorithm in detail</span></a></li>
+<li class="toclevel-1"><a href="#Complex_example"><span class="tocnumber">3</span> <span class="toctext">Complex example</span></a></li>
+<li class="toclevel-1"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+ if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } 
+//]]>
+</script>
+<p><a name="A_simple_conversion" id="A_simple_conversion"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Shunting_yard_algorithm&amp;action=edit&amp;section=1" title="Edit section: A simple conversion">edit</a>]</span> <span class="mw-headline">A simple conversion</span></h2>
+<dl>
+<dd>Input: 3+4</dd>
+</dl>
+<ol>
+<li>Add 3 to the output <a href="/wiki/Queue_%28data_structure%29" title="Queue (data structure)">queue</a> (whenever a number is read it is added to the output)</li>
+<li><a href="/wiki/Stack_%28data_structure%29#Basic_architecture_of_a_stack" title="Stack (data structure)">Push</a> + (or its ID) onto the operator <a href="/wiki/Stack_%28data_structure%29" title="Stack (data structure)">stack</a></li>
+<li>Add 4 to the output queue</li>
+<li>After reading expression <a href="/wiki/Stack_%28data_structure%29#Basic_architecture_of_a_stack" title="Stack (data structure)">pop</a> the operators off the stack and add them to the output.</li>
+<li>In this case there is only one, "+".</li>
+<li>Output 3 4 +</li>
+</ol>
+<p>This already shows a couple of rules:</p>
+<ul>
+<li>All numbers are added to the output when they are read.</li>
+<li>At the end of reading the expression, pop all operators off the stack and onto the output.</li>
+</ul>
+<p><a name="The_algorithm_in_detail" id="The_algorithm_in_detail"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Shunting_yard_algorithm&amp;action=edit&amp;section=2" title="Edit section: The algorithm in detail">edit</a>]</span> <span class="mw-headline">The algorithm in detail</span></h2>
+<ul>
+<li>While there are tokens to be read:</li>
+</ul>
+<dl>
+<dd>
+<ul>
+<li>Read a <a href="/wiki/Token_%28parser%29" class="mw-redirect" title="Token (parser)">token</a>.</li>
+<li>If the token is a number, then add it to the output queue.</li>
+<li>If the token is a <a href="/wiki/Function_%28mathematics%29" title="Function (mathematics)">function</a> token, then push it onto the stack.</li>
+<li>If the token is a function argument separator (e.g., a comma):</li>
+</ul>
+<dl>
+<dd>
+<ul>
+<li>Until the topmost element of the stack is a left parenthesis, pop the element onto the output queue. If no left parentheses are encountered, either the separator was misplaced or parentheses were mismatched.</li>
+</ul>
+</dd>
+</dl>
+<ul>
+<li>If the token is an operator, o<sub>1</sub>, then:</li>
+</ul>
+<dl>
+<dd>
+<ul>
+<li>while there is an operator, o<sub>2</sub>, at the top of the stack, and either</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd>
+<dl>
+<dd>o<sub>1</sub> is <a href="/wiki/Associativity" title="Associativity">associative</a> or left-associative and its <a href="/wiki/Order_of_operations" title="Order of operations">precedence</a> is less than (lower precedence) or equal to that of o<sub>2</sub>, or</dd>
+<dd>o<sub>1</sub> is right-associative and its precedence is less than (lower precedence) that of o<sub>2</sub>,<br /></dd>
+</dl>
+</dd>
+<dd>pop o<sub>2</sub> off the stack, onto the output queue;</dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>push o<sub>1</sub> onto the stack.</li>
+</ul>
+</dd>
+</dl>
+<ul>
+<li>If the token is a left parenthesis, then push it onto the stack.</li>
+<li>If the token is a right parenthesis:</li>
+</ul>
+<dl>
+<dd>
+<ul>
+<li>Until the token at the top of the stack is a left parenthesis, pop operators off the stack onto the output queue.</li>
+<li>Pop the left parenthesis from the stack, but not onto the output queue.</li>
+<li>If the token at the top of the stack is a function token, pop it and onto the output queue.</li>
+<li>If the stack runs out without finding a left parenthesis, then there are mismatched parentheses.</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>When there are no more tokens to read:</li>
+</ul>
+<dl>
+<dd>
+<ul>
+<li>While there are still operator tokens in the stack:</li>
+</ul>
+<dl>
+<dd>
+<ul>
+<li>If the operator token on the top of the stack is a parenthesis, then there are mismatched parenthesis.</li>
+<li>Pop the operator onto the output queue.</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>Exit.</li>
+</ul>
+<p><a name="Complex_example" id="Complex_example"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Shunting_yard_algorithm&amp;action=edit&amp;section=3" title="Edit section: Complex example">edit</a>]</span> <span class="mw-headline">Complex example</span></h2>
+<table class="wikitable">
+<caption>Input: 3 + 4 * 2 / ( 1 − 5 ) ^ 2 ^ 3</caption>
+<tr>
+<th>Token</th>
+<th>Action</th>
+<th>Output (in <a href="/wiki/Reverse_Polish_Notation" class="mw-redirect" title="Reverse Polish Notation">RPN</a>)</th>
+<th>Operator Stack</th>
+<th>Notes</th>
+</tr>
+<tr>
+<td>3</td>
+<td>Add token to output</td>
+<td>3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>+</td>
+<td>Push token to stack</td>
+<td>3</td>
+<td align="right">+</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Add token to output</td>
+<td>3 4</td>
+<td align="right">+</td>
+<td></td>
+</tr>
+<tr>
+<td>*</td>
+<td>Push token to stack</td>
+<td>3 4</td>
+<td align="right">* +</td>
+<td>* has higher precedence than +</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Add token to output</td>
+<td>3 4 2</td>
+<td align="right">* +</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">/</td>
+<td>Pop stack to output</td>
+<td>3 4 2 *</td>
+<td align="right">+</td>
+<td>/ and * have same precedence</td>
+</tr>
+<tr>
+<td>Push token to stack</td>
+<td>3 4 2 *</td>
+<td align="right">/ +</td>
+<td>/ has higher precedence than +</td>
+</tr>
+<tr>
+<td>(</td>
+<td>Push token to stack</td>
+<td>3 4 2 *</td>
+<td align="right">( / +</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Add token to output</td>
+<td>3 4 2 * 1</td>
+<td align="right">( / +</td>
+<td></td>
+</tr>
+<tr>
+<td>-</td>
+<td>Push token to stack</td>
+<td>3 4 2 * 1</td>
+<td align="right">- ( / +</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Add token to output</td>
+<td>3 4 2 * 1 5</td>
+<td align="right">- ( / +</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="2">)</td>
+<td>Pop stack to output</td>
+<td>3 4 2 * 1 5 -</td>
+<td align="right">( / +</td>
+<td>Repeated until "(" found</td>
+</tr>
+<tr>
+<td>Pop stack</td>
+<td>3 4 2 * 1 5 -</td>
+<td align="right">/ +</td>
+<td>Discard matching parenthesis</td>
+</tr>
+<tr>
+<td>^</td>
+<td>Push token to stack</td>
+<td>3 4 2 * 1 5 -</td>
+<td align="right">^ / +</td>
+<td>^ has higher precedence than /</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Add token to output</td>
+<td>3 4 2 * 1 5 - 2</td>
+<td align="right">^ / +</td>
+<td></td>
+</tr>
+<tr>
+<td>^</td>
+<td>Push token to stack</td>
+<td>3 4 2 * 1 5 - 2</td>
+<td align="right">^ ^ / +</td>
+<td>^ is evaluated right-to-left</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Add token to output</td>
+<td>3 4 2 * 1 5 - 2 3</td>
+<td align="right">^ ^ / +</td>
+<td></td>
+</tr>
+<tr>
+<td><i>end</i></td>
+<td>Pop entire stack to output</td>
+<td>3 4 2 * 1 5 - 2 3 ^ ^ / +</td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<p>If you were writing an <a href="/wiki/Interpreter_%28computing%29" title="Interpreter (computing)">interpreter</a>, this output would be <a href="/wiki/Tokenize" class="mw-redirect" title="Tokenize">tokenized</a> and written to a compiled file to be later <a href="/wiki/Interpreter_%28computing%29" title="Interpreter (computing)">interpreted</a>. Conversion from infix to RPN can also allow for easier simplification of expressions. To do this, act like you are solving the RPN expression, however, whenever you come to a variable its value is null, and whenever an operator has a null value, it and its parameters are written to the output (this is a simplification, problems arise when the parameters are operators). When an operator has no null parameters its value can simply be written to the output. This method obviously doesn't include all the simplifications possible: It's more of a <a href="/wiki/Constant_folding" title="Constant folding">constant folding</a> optimization.</p>
+<p><a name="See_also" id="See_also"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Shunting_yard_algorithm&amp;action=edit&amp;section=4" title="Edit section: See also">edit</a>]</span> <span class="mw-headline">See also</span></h2>
+<ul>
+<li><a href="/wiki/Operator-precedence_parser" title="Operator-precedence parser">Operator-precedence parser</a></li>
+<li><a href="/wiki/Reverse_Polish_notation" title="Reverse Polish notation">Reverse Polish notation</a></li>
+</ul>
+<p><a name="External_links" id="External_links"></a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=Shunting_yard_algorithm&amp;action=edit&amp;section=5" title="Edit section: External links">edit</a>]</span> <span class="mw-headline">External links</span></h2>
+<ul>
+<li><a href="http://www.chris-j.co.uk/parsing.php" class="external text" title="http://www.chris-j.co.uk/parsing.php" rel="nofollow">Java Applet demonstrating the Shunting yard algorithm</a></li>
+<li><a href="http://www.engr.mun.ca/~theo/Misc/exp_parsing.htm" class="external text" title="http://www.engr.mun.ca/~theo/Misc/exp_parsing.htm" rel="nofollow">Parsing Expressions by Recursive Descent</a> Theodore Norvell (C) 1999–2001. Access data September 14, 2006.</li>
+<li><a href="http://montcs.bloomu.edu/~bobmon/Information/RPN/infix2rpn.shtml" class="external text" title="http://montcs.bloomu.edu/~bobmon/Information/RPN/infix2rpn.shtml" rel="nofollow">Infix to RPN Algorithm</a></li>
+<li><a href="http://www.cs.utexas.edu/~EWD/MCReps/MR35.PDF" class="external text" title="http://www.cs.utexas.edu/~EWD/MCReps/MR35.PDF" rel="nofollow">Original description of the Shunting yard algorithm</a></li>
+<li><a href="http://www.kallisti.net.nz/blog/2008/02/extension-to-the-shunting-yard-algorithm-to-allow-variable-numbers-of-arguments-to-functions/" class="external text" title="http://www.kallisti.net.nz/blog/2008/02/extension-to-the-shunting-yard-algorithm-to-allow-variable-numbers-of-arguments-to-functions/" rel="nofollow">Extension to the ‘Shunting Yard’ algorithm to allow variable numbers of arguments to functions</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 23/1000000
+Post-expand include size: 0/2048000 bytes
+Template argument size: 0/2048000 bytes
+Expensive parser function count: 0/500
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:2692773-0!1!0!default!!en!2 and timestamp 20080524162914 -->
+<div class="printfooter">
+Retrieved from "<a href="http://en.wikipedia.org/wiki/Shunting_yard_algorithm">http://en.wikipedia.org/wiki/Shunting_yard_algorithm</a>"</div>
+			<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>:&#32;<span dir='ltr'><a href="/wiki/Category:Parsing_algorithms" title="Category:Parsing algorithms">Parsing algorithms</a></span></div></div>			<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+					 <li id="ca-nstab-main" class="selected"><a href="/wiki/Shunting_yard_algorithm" title="View the content page [c]" accesskey="c">Article</a></li>
+					 <li id="ca-talk"><a href="/wiki/Talk:Shunting_yard_algorithm" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+					 <li id="ca-edit"><a href="/w/index.php?title=Shunting_yard_algorithm&amp;action=edit" title="You can edit this page. Please use the preview button before saving. [e]" accesskey="e">Edit this page</a></li>
+					 <li id="ca-history"><a href="/w/index.php?title=Shunting_yard_algorithm&amp;action=history" title="Past versions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Shunting_yard_algorithm" title="You are encouraged to log in; however, it is not mandatory. [o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(http://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png);" href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+		<div class='generated-sidebar portlet' id='p-navigation'>
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li>
+				<li id="n-Contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li>
+				<li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content">Featured content</a></li>
+				<li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li>
+				<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li>
+			</ul>
+		</div>
+	</div>
+		<div class='generated-sidebar portlet' id='p-interaction'>
+		<h5>Interaction</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-aboutsite"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+				<li id="n-portal"><a href="/wiki/Wikipedia:Community_Portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="The list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+				<li id="n-contact"><a href="/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact Wikipedia</a></li>
+				<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Donate" title="Support us">Donate to Wikipedia</a></li>
+				<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li>
+			</ul>
+		</div>
+	</div>
+		<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/wiki/Special:Search" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" title="Search Wikipedia [f]" accesskey="f" value="" />
+				<input type='submit' name="go" class="searchButton" id="searchGoButton"	value="Go" title="Go to a page with this exact name if one exists" />&nbsp;
+				<input type='submit' name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the wiki for this text" />
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Shunting_yard_algorithm" title="List of all English Wikipedia pages that link here [j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Shunting_yard_algorithm" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+<li id="t-upload"><a href="/wiki/Wikipedia:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li>
+<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="List of all special pages [q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="/w/index.php?title=Shunting_yard_algorithm&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="/w/index.php?title=Shunting_yard_algorithm&amp;oldid=210482170" title="Permanent link to this version of the page">Permanent link</a></li><li id="t-cite"><a href="/w/index.php?title=Special:Cite&amp;page=Shunting_yard_algorithm&amp;id=210482170">Cite this page</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/skins-1.5/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" /></a></div>
+				<div id="f-copyrightico"><a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" border="0" alt="Wikimedia Foundation"/></a></div>
+			<ul id="f-list">
+				<li id="lastmod"> This page was last modified on 6 May 2008, at 02:38.</li>
+				<li id="copyright">All text is available under the terms of the <a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_the_GNU_Free_Documentation_License" title="Wikipedia:Text of the GNU Free Documentation License">GNU Free Documentation License</a>. (See <b><a class='internal' href="http://en.wikipedia.org/wiki/Wikipedia:Copyrights" title="Wikipedia:Copyrights">Copyrights</a></b> for details.) <br /> Wikipedia&reg; is a registered trademark of the <a href="http://www.wikimediafoundation.org">Wikimedia Foundation, Inc</a>., a U.S. registered <a class='internal' href="http://en.wikipedia.org/wiki/501%28c%29#501.28c.29.283.29" title="501(c)(3)">501(c)(3)</a> <a href="http://wikimediafoundation.org/wiki/Deductibility_of_donations">tax-deductible</a> <a class='internal' href="http://en.wikipedia.org/wiki/Non-profit_organization" title="Non-profit organization">nonprofit</a> <a href="http://en.wikipedia.org/wiki/Charitable_organization" title="Charitable organization">charity</a>.<br /></li>
+				<li id="privacy"><a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+				<li id="about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+				<li id="disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served by srv174 in 0.040 secs. --></body></html>

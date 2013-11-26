@@ -1,0 +1,216 @@
+SRM DIV 1
+
+449 - YY
+445 - Y Y
+444 - YYY
+443 -   Y
+442 - Y
+441 - YYY
+440 -  YY
+439 -  Y-
+438 - YY-
+437 - YYY
+436 - YY-
+435 - Y-Y
+434 -  YY
+433 - Y-Y
+432 - YYY
+431 - YY-  (perfect rectangles)
+430 -  YY
+429 -  Y-  (AAAA BB polyomino cover)
+428 -  YY
+427 -  YY
+426 -  YY
+425 - YY-  (RoadsOfKingdom - probability for tree to be connected)
+424 - Y-Y
+423 -  YY
+422 - YYY
+421 - YYY
+420 - YY-  (ChangeOMatic - coins worth 1)
+419 - YY!! (CactusAutomorphisms)
+418 -  YY
+417 -  YY
+416 -  YY
+415 -  YY
+414 -  Y-  (kplanetary alignment)
+413 -  YY
+412 -  YY
+411 -  Y!!
+410 -  Y-  (lattice points inside polygon)
+409 -  YY
+408 -  Y-  (tournament seeds)
+407 - YYY
+406 - YY-  (kth shortest path)
+405 - YYY
+404 -  YY
+403 -  Y-
+402 -  Y-
+401 - YY-
+400 - YY-
+399 - YY-
+Lvi - YY-
+398 - YYY
+397 - YYY
+396 - YY-
+395 - YY-
+394 - YY-  (pseudorandom kingdom - probability for longest path to be <= C )
+393 - YYY
+392 - YYY
+391 - Y-Y  (500 - challenged by poopi)
+390 - YYY
+389 - YYY
+388 - YY-  (kth hexa-telephone with distance=1,2,3)
+387 - YYY
+386 - YYY
+385 - YY-  (find (S)=(P)+(Q) )
+384 - YYY  ( ! )
+383 - YYY
+382 - YYY
+381 - YYY
+380 - -YY
+379 - YY-  (tv domino game - determinant)
+378 - YYY
+377 - YYY
+376 - Y--
+375 - Y Y
+374 - YYY
+college tour bla bla - Y Y
+373 - YYY
+372 - YYY
+371 - YYY
+370 - YYY
+369 - YY-
+368 - YY!
+367 - YY-
+366 - YY-
+365 - YY-
+364 - YYY
+363 - YY-
+362 - YYY
+361 - YYY
+360 - YYY
+359 - YYY
+358 - Y-Y
+357 - YYY
+356 - Y-Y
+355 - -Y-  (hexa black/white)
+354 - YYY
+353 - YY
+352 - Y-
+351 - Y
+350 - YYY
+349 - YY-
+348 - YYY
+347 - YY-
+346 - YYY
+345 - YY-
+344 - YY
+343 - YY
+342 - Y
+341 - YY 
+340 - YY
+339 - YY
+338 - YY-
+337 - YY
+336 - YY
+335 - YY
+334 - YYY
+333 - Y-
+332 - YY
+331 - YY
+330 - Y-
+329 - Y-
+328 - YY
+327 - --Y
+326 - Y
+325 - YYY
+324 - YY
+323 - YY
+322 - YYY
+321 - YY-
+320 - -Y-
+319 - Y-
+318 -  Y-
+317 -  Y-
+316 -  YY
+315 - YY-
+314 - YY-
+313 - --    ( ! )
+312 - YY-
+311 -  YY
+310 - Y--
+309 - Y--
+308 - YYY
+307 - YY
+306 - -Y-  ( ! )
+305 -  Y-
+304 - YY
+303 -   Y
+302 -  YY
+301 -   Y
+300 - YYY
+299 -  Y!
+298 -  -Y
+297 -  ~Y
+296 -  YY
+295 -  YY
+294 -  Y-
+293 - YY-
+292 -  YY
+291 -   -
+290 -  Y-
+289 -  YY
+288 -   Y
+287 -   Y
+286 -  YY
+285 - YYY  (last one - alternative sol)
+284 -  YY
+283 -   Y
+282 -   Y
+
+232 - Y
+228 -  Y
+
+199 -   -  (3d cpp)
+
+179 - YY
+
+148 - YY
+147 - YY-
+146 - YYY
+145 - YYY
+144 - YY-
+
+
+
+TCHSO 2007 & 2008
+
+All Rounds - YYYYYYYYYYYYYY...(and many more;)...YYYYYYYYYY
+
+
+
+TCO 2008
+
+Qual Round 1 - Y
+Qual Round 3A - YYY
+Qual Round 3 - YYY
+Round 1 - -Y
+Round 2 - YY
+
+
+TCCC DIV 1
+
+06 Round 2A - Y
+
+
+
+
+TCO 2009
+
+Round 1 - YYY
+Round 2 - YYY
+Round 3 - YYY
+Round 4 - YY-
+Round 5 - YY-
+Semifinals - YYY
+Finals - YYY

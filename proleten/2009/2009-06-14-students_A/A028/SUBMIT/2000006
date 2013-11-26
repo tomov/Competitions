@@ -1,0 +1,130 @@
+#include<stdio.h>
+#include<algorithm>
+#include<queue>
+#define MAXN 50
+#define MAXL 30
+#define ADD(a,b,v) (a)>(b)?(b+=v):(a+=v)
+#define MAX(a,b) a>b?a:b
+using namespace std;
+int n,m,l,t,c,color[MAXN],g[MAXN][MAXN],results[MAXL];
+int used[MAXN],bwgn,node,depth;
+int bwg[MAXN][MAXN];
+void makeBWG();
+void init();
+int find_ans();
+void BFS(int s,int usd);
+int bfs(int s);
+int main()
+{
+ int i,j,x1=0,x2=0;
+ scanf("%d",&l);
+ for(i=0;i<l;++i)
+ {
+  init();
+  makeBWG();
+/*
+  for(int k=1;k<=bwgn;k++)
+  {
+   for(j=1;j<=bwgn;j++)
+    printf("%d ",bwg[k][j]);
+   printf("\n");
+  }*/
+  results[i]=find_ans()*t;
+//  printf("results[%d]=%d\n",i,results[i]);
+ }
+ sort(results,results+l);
+ for(i=l-1;i>=0;i--)
+  ADD(x1,x2,results[i]);
+ printf("%d\n",MAX(x1,x2));
+// for(j=0;j<l;j++)
+// printf("%d ",results[j]);
+ return 0;
+}
+void init()
+{
+ memset(g,0,sizeof(g));
+ memset(color,0,sizeof(color));
+ memset(bwg,0,sizeof(bwg));
+ memset(used,0,sizeof(used));
+
+ int i,j,a,b;
+ scanf("%d%d%d%d",&n,&m,&c,&t);
+ for(i=0;i<n;++i)
+  scanf("%d",&color[i]);
+ for(i=0;i<m;++i)
+ {
+  scanf("%d%d",&a,&b);
+  g[a][b]=g[b][a]=1;
+ }
+ return;
+}
+void makeBWG()
+{
+ bwgn=0;
+ int i;
+ for(i=0;i<n;++i)
+ {
+  if(!used[i])
+  {
+   bwgn++;
+   BFS(i,bwgn);
+  }
+ }
+ return;
+}
+void BFS(int s,int usd)
+{
+ queue <int> q;
+ q.push(s);
+ used[s]=usd;
+ int i,x;
+ while(!q.empty())
+ {
+  x=q.front();
+  q.pop();
+  for(i=0;i<n;i++)
+  if(g[x][i])
+   if(color[i]==color[x] && !used[i])
+   {
+    q.push(i);
+    used[i]=usd;
+   }
+   else if(color[i]!=color[x] && used[i])
+   bwg[used[i]][used[x]]=bwg[used[x]][used[i]]=1;
+ }
+ return;
+}
+int find_ans()
+{
+ memset(used,0,sizeof(used));
+ depth=0;
+ node=bfs(1);
+// printf("node=%d\n",node);
+ node=bfs(node);
+// printf("node=%d\n",node);
+// printf("depth=%d\n",depth);
+ if(!(depth%2))return depth/2;
+ if(color[node]==c)return depth/2;
+ if(color[node]!=c)return (depth/2)+1;
+}
+int bfs(int s)
+{
+ queue <int> q;
+ q.push(s);
+ used[s]=1;
+ int i,x,ans=s;
+ while(!q.empty())
+ {
+  x=q.front();
+  q.pop();
+  for(i=1;i<=bwgn;i++)
+  if(bwg[x][i] && !used[i])
+   {
+    q.push(i);
+    used[i]=used[x]+1;
+    if(used[i]>depth)
+    {depth=used[i];ans=i;}
+   }
+ }
+ return ans;
+}

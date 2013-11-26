@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Boyer-Moore algorithm</title>
+<meta name="generator" content="Microsoft XSLT (msxml3 golden/ msxml4), see http://www.microsoft.com">
+<meta name="robots" content="index, follow">
+<meta name="description" content="EXACT STRING MATCHING ALGORITHMS Animation in Java, Boyer-Moore algorithm">
+<meta name="keywords" content="string matching, algorithm, Java, C">
+<meta name="resource-type" content="document">
+<meta name="Author-Corporate" content="Chistian.Charras@dir.univ-rouen.fr">
+<meta name="Content-Language" content="en">
+<meta name="distribution" content="global">
+<link type="text/css" rel="stylesheet" href="string.css">
+</head>
+<body bgcolor="white">
+<a href="node15.html#SECTION00150"><img alt="Turbo Boyer-Moore algorithm" src="../images/next_motif.gif" border="0"></a><a href="index.html"><img alt="ESMAJ" src="../images/up_motif.gif" border="0"></a><a href="node13.html#SECTION00130"><img alt="Not So Naive algorithm" src="../images/previous_motif.gif" border="0"></a><a href="node1.html"><img alt="Contents" src="../images/contents_motif.gif" border="0"></a><br>
+<b>Next:</b> <a href="node15.html#SECTION00150">Turbo-BM algorithm</a> <b>Up:</b> <a href="index.html">ESMAJ</a> <b>Prev:</b> <a href="node13.html#SECTION00130">Not So Naive algorithm</a> 
+
+<hr>
+<h1 align="center"><a name="SECTION00140">Boyer-Moore algorithm</a></h1>
+
+<hr color="#F0F0FC" size="3">
+<applet codebase="../spm/BoyerMoore" archive="BoyerMoore.zip" code="AppletButtonText2.class" width="230" height="63"><param name="windowTitle" value="Boyer-Moore algorithm">
+<param name="windowClass" value="ProgramTextWindow2">
+<param name="buttonText" value="visualization">
+<param name="windowwidth" value="375">
+<param name="windowheight" value="560">
+<param name="label1" value="Pattern:">
+<param name="input1" value="gcagagag">
+<param name="label2" value="String:">
+<param name="input2" value="gcatcgcagagagtatacagtacg">
+<param name="program" value="BoyerMoore">
+</applet> 
+
+<div class="bar"><a name="SECTION00141">Main features</a></div>
+
+<div class="mf">
+<ul>
+<li>performs the comparisons from right to left;</li>
+
+<li>preprocessing phase in <span style="white-space: nowrap"><big><i><b>O</b></i></big>(<i>m</i>+<img alt="sigma" src="images/psigma.gif">)</span> time and space complexity;</li>
+
+<li>searching phase in <span style="white-space: nowrap"><big><i><b>O</b></i></big>(<i>m</i><i>n</i>)</span> time complexity;</li>
+
+<li><span style="white-space: nowrap">3<i>n</i></span> text character comparisons in the worst case when searching for a non periodic pattern;</li>
+
+<li><span style="white-space: nowrap"><big><i><b>O</b></i></big>(<i>n</i> / <i>m</i>)</span> best performance.</li>
+</ul>
+</div>
+
+<div class="bar"><a name="SECTION00142">Description</a></div>
+
+<div class="desc">
+<p align="justify">The Boyer-Moore algorithm is considered as the most efficient string-matching algorithm in usual applications. A simplified version of it or the entire algorithm is often implemented in text editors for the &laquo;search&raquo; and &laquo;substitute&raquo; commands.</p>
+
+<p align="justify">The algorithm scans the characters of the pattern from right to left beginning with the rightmost one. In case of a mismatch (or a complete match of the whole pattern) it uses two precomputed functions to shift the window to the right. These two shift functions are called the <em><b>good-suffix shift</b></em> (also called matching shift and the <em><b>bad-character shift</b></em> (also called the occurrence shift).</p>
+
+<p align="justify">Assume that a mismatch occurs between the character <span style="white-space: nowrap"><i>x</i>[<i>i</i>]=<i>a</i></span> of the pattern and the character <span style="white-space: nowrap"><i>y</i>[<i>i</i>+<i>j</i>]=<i>b</i></span> of the text during an attempt at position <span style="white-space: nowrap"><i>j</i></span>.<br>
+Then, <span style="white-space: nowrap"><i>x</i>[<i>i</i>+1 .. <i>m</i>-1]=<i>y</i>[<i>i</i>+<i>j</i>+1 .. <i>j</i>+<i>m</i>-1]=u</span> and <span style="white-space: nowrap"><i>x</i>[<i>i</i>]&nbsp;<img alt="neq" src="images/neq.gif">&nbsp;y[<i>i</i>+<i>j</i>]</span>. The good-suffix shift consists in aligning the segment <span style="white-space: nowrap"><i>y</i>[<i>i</i>+<i>j</i>+1 .. <i>j</i>+<i>m</i>-1]=<i>x</i>[<i>i</i>+1 .. <i>m</i>-1]</span> with its rightmost occurrence in <i>x</i> that is preceded by a character different from <span style="white-space: nowrap"><i>x</i>[<i>i</i>]</span> (<i>see figure 13.1</i>).</p>
+
+<p align="center"><img alt="figure 13.1" src="images/bmgs1.gif"></p>
+
+<p align="center"><b>Figure 13.1</b>. The good-suffix shift, <i>u</i> re-occurs preceded by a character <i>c</i> different from <i>a</i>.</p>
+
+<p align="justify">If there exists no such segment, the shift consists in aligning the longest suffix <i>v</i> of <span style="white-space: nowrap"><i>y</i>[<i>i</i>+<i>j</i>+1 .. <i>j</i>+<i>m</i>-1]</span> with a matching prefix of <i>x</i> (<i>see figure 13.2</i>).</p>
+
+<p align="center"><img alt="figure 13.2" src="images/bmgs2.gif"></p>
+
+<p align="center"><b>Figure 13.2</b>. The good-suffix shift, only a suffix of <i>u</i> re-occurs in <i>x</i>.</p>
+
+<p align="justify">The bad-character shift consists in aligning the text character <span style="white-space: nowrap"><i>y</i>[<i>i</i>+<i>j</i>]</span> with its rightmost occurrence in <span style="white-space: nowrap"><i>x</i>[0 .. <i>m</i>-2]</span>. (<i>see figure 13.3</i>)</p>
+
+<p align="center"><img alt="figure 13.3" src="images/bmbc1.gif"></p>
+
+<p align="center"><b>Figure 13.3</b>. The bad-character shift, <i>a</i> occurs in <i>x</i>.</p>
+
+<p>If <span style="white-space: nowrap"><i>y</i>[<i>i</i>+<i>j</i>]</span> does not occur in the pattern <i>x</i>, no occurrence of <i>x</i> in <i>y</i> can include <span style="white-space: nowrap"><i>y</i>[<i>i</i>+<i>j</i>]</span>, and the left end of the window is aligned with the character immediately after <span style="white-space: nowrap"><i>y</i>[<i>i</i>+<i>j</i>]</span>, namely <span style="white-space: nowrap"><i>y</i>[<i>i</i>+<i>j</i>+1]</span> (<i>see figure 13.4</i>).</p>
+
+<p align="center"><img alt="figure 13.4" src="images/bmbc2.gif"></p>
+
+<p align="center"><b>Figure 13.4</b>. The bad-character shift, <i>b</i> does not occur in <i>x</i>.</p>
+
+<p align="justify">Note that the bad-character shift can be negative, thus for shifting the window, the Boyer-Moore algorithm applies the maximum between the the good-suffix shift and bad-character shift. More formally the two shift functions are defined as follows.</p>
+
+<p>The good-suffix shift function is stored in a table <em>bmGs</em> of size <span style="white-space: nowrap"><i>m</i>+1</span>.</p>
+
+<dl>
+<dt>Let us define two conditions:</dt>
+
+<dd>
+<table summary="case">
+<tr>
+<td valign="BASELINE"><img alt="" src="images/hand.gif">&nbsp;</td>
+<td valign="TOP"><big><em>Cs</em></big>(<i>i</i>, <i>s</i>): for each <i>k</i> such that <span style="white-space: nowrap"><i>i</i> &lt; <i>k</i> &lt; <i>m</i></span>, <i>s</i>&nbsp;<img alt="geq" src="images/geq.gif">&nbsp;<i>k</i> or <i>x</i>[<i>k</i>-<i>s</i>]=<i>x</i>[<i>k</i>] and</td>
+</tr>
+</table>
+</dd>
+
+<dd>
+<table summary="case">
+<tr>
+<td valign="BASELINE"><img alt="" src="images/hand.gif">&nbsp;</td>
+<td valign="TOP"><big><em>Co</em></big>(<i>i</i>, <i>s</i>): if <i>s</i> &lt;<i>i</i> then <i>x</i>[<i>i</i>-<i>s</i>]&nbsp;<img alt="neq" src="images/neq.gif">&nbsp;<i>x</i>[<i>i</i>]</td>
+</tr>
+</table>
+</dd>
+</dl>
+
+<p>Then, for <span style="white-space: nowrap">0&nbsp;<img alt="leq" src="images/leq.gif">&nbsp;<i>i</i> &lt; <i>m</i></span>: <em>bmGs</em>[<i>i</i>+1]=min{s&gt;0&nbsp;<big>:</big>&nbsp;<big><em>Cs</em></big>(<i>i</i>, <i>s</i>) and <big><em>Co</em></big>(<i>i</i>, <i>s</i>) hold}<br>
+and we define <em>bmGs</em>[0] as the length of the period of <i>x</i>. The computation of the table <em>bmGs</em> use a table <em>suff</em> defined as follows: <span style="white-space: nowrap">for 1&nbsp;<img alt="leq" src="images/leq.gif">&nbsp;<i>i</i> &lt; <i>m</i>, <em>suff</em>[<i>i</i>]=max{<i>k</i>&nbsp;<big>:</big>&nbsp;x[<i>i</i>-<i>k</i>+1 .. <i>i</i>]=x[<i>m</i>-<i>k</i> .. <i>m</i>-1]}</span></p>
+
+<p>The bad-character shift function is stored in a table <em>bmBc</em> of size <img alt="sigma" src="images/psigma.gif">. <span style="white-space: nowrap">For <i>c</i> in <img alt="Sigma" src="images/gsigma.gif"></span>: <span style="white-space: nowrap"><em>bmBc</em>[<i>c</i>] = min{<i>i</i>&nbsp;<big>:</big>&nbsp;1&nbsp;<img alt="leq" src="images/leq.gif">&nbsp;<i>i</i> &lt;<i>m</i>-1 and <i>x</i>[<i>m</i>-1-<i>i</i>]=<i>c</i>}</span> if <i>c</i> occurs in <i>x</i>, <i>m</i> otherwise.</p>
+
+<p align="justify">Tables <em>bmBc</em> and <em>bmGs</em> can be precomputed in time <span style="white-space: nowrap"><big><i><b>O</b></i></big>(<i>m</i>+<img alt="sigma" src="images/psigma.gif">)</span> before the searching phase and require an extra-space in <span style="white-space: nowrap"><big><i><b>O</b></i></big>(<i>m</i>+<img alt="sigma" src="images/psigma.gif">)</span>. The searching phase time complexity is quadratic but at most <span style="white-space: nowrap">3<i>n</i></span> text character comparisons are performed when searching for a non periodic pattern. On large alphabets (relatively to the length of the pattern) the algorithm is extremely fast. When searching for <span style="white-space: nowrap"><big><tt>a</tt></big><sup><i>m</i>-1</sup><big><tt>b</tt></big></span> in <span style="white-space: nowrap"><big><tt>b</tt></big><sup><i>n</i></sup></span> the algorithm makes only <span style="white-space: nowrap"><big><i><b>O</b></i></big>(<i>n</i> / <i>m</i>)</span> comparisons, which is the
+absolute minimum for any string-matching algorithm in the model where the pattern only is preprocessed.</p>
+</div>
+
+<div class="bar"><a name="SECTION00143">The C code</a></div>
+
+<div class="pre">
+<pre>
+void preBmBc(char *x, int m, int bmBc[]) {
+   int i;
+ 
+   for (i = 0; i &lt; ASIZE; ++i)
+      bmBc[i] = m;
+   for (i = 0; i &lt; m - 1; ++i)
+      bmBc[x[i]] = m - i - 1;
+}
+ 
+ 
+void suffixes(char *x, int m, int *suff) {
+   int f, g, i;
+ 
+   suff[m - 1] = m;
+   g = m - 1;
+   for (i = m - 2; i &gt;= 0; --i) {
+      if (i &gt; g &amp;&amp; suff[i + m - 1 - f] &lt; i - g)
+         suff[i] = suff[i + m - 1 - f];
+      else {
+         if (i &lt; g)
+            g = i;
+         f = i;
+         while (g &gt;= 0 &amp;&amp; x[g] == x[g + m - 1 - f])
+            --g;
+         suff[i] = f - g;
+      }
+   }
+}
+ 
+void preBmGs(char *x, int m, int bmGs[]) {
+   int i, j, suff[XSIZE];
+ 
+   suffixes(x, m, suff);
+ 
+   for (i = 0; i &lt; m; ++i)
+      bmGs[i] = m;
+   j = 0;
+   for (i = m - 1; i &gt;= -1; --i)
+      if (i == -1 || suff[i] == i + 1)
+         for (; j &lt; m - 1 - i; ++j)
+            if (bmGs[j] == m)
+               bmGs[j] = m - 1 - i;
+   for (i = 0; i &lt;= m - 2; ++i)
+      bmGs[m - 1 - suff[i]] = m - 1 - i;
+}
+ 
+ 
+void BM(char *x, int m, char *y, int n) {
+   int i, j, bmGs[XSIZE], bmBc[ASIZE];
+ 
+   /* Preprocessing */
+   preBmGs(x, m, bmGs);
+   preBmBc(x, m, bmBc);
+ 
+   /* Searching */
+   j = 0;
+   while (j &lt;= n - m) {
+      for (i = m - 1; i &gt;= 0 &amp;&amp; x[i] == y[i + j]; --i);
+      if (i &lt; 0) {
+         OUTPUT(j);
+         j += bmGs[0];
+      }
+      else
+         j += MAX(bmGs[i], bmBc[y[i + j]] - m + 1 + i);
+   }
+}
+   
+</pre>
+</div>
+
+<div class="bar"><a name="SECTION00144" style="color: teal">The example</a></div>
+
+<p>Preprocessing phase</p>
+
+<p align="center"><img alt="Boyer-Moore bmBc and bmGs tables" align="BOTTOM" src="images/bmtab1.png"><br clear="all">
+<span style="white-space: nowrap"><em>bmBc</em> and <em>bmGs</em> tables used by Boyer-Moore algorithm</span></p>
+
+<p><a name="search" href="examples/exp14.html" style="text-decoration: underline">Searching</a> phase</p>
+
+<br>
+<div class="bar"><a name="SECTION00145">References</a></div>
+
+<div class="ref">
+<ul style="text-align: justify ">
+<li>A<small>HO</small>, A.V., 1990, Algorithms for finding patterns in strings. in <em>Handbook of Theoretical Computer Science, Volume A, Algorithms and complexity</em>, J. van Leeuwen ed., Chapter 5, pp 255-300, Elsevier, Amsterdam.</li>
+
+<li>A<small>OE</small>, J.-I., 1994, <cite>Computer algorithms: string pattern matching strategies</cite>, IEEE Computer Society Press.</li>
+
+<li>B<small>AASE</small>, S., V<small>AN</small> G<small>ELDER</small>, A., 1999, <cite>Computer Algorithms: Introduction to Design and Analysis</cite>, 3rd Edition, Chapter 11, pp. ??-??, Addison-Wesley Publishing Company.</li>
+
+<li>B<small>AEZA</small>-Y<small>ATES</small> R., N<small>AVARRO</small> G., R<small>IBEIRO</small>-N<small>ETO</small> B., 1999, Indexing and Searching, in <cite>Modern Information Retrieval</cite>, Chapter 8, pp 191-228, Addison-Wesley.</li>
+
+<li>B<small>EAUQUIER</small>, D., B<small>ERSTEL</small>, J., C<small>HR&Eacute;TIENNE</small>, P., 1992, <em>&Eacute;l&eacute;ments d'algorithmique</em>, Chapter 10, pp 337-377, Masson, Paris.</li>
+
+<li><strong>B<small>OYER</small> R.S.</strong>, <strong>M<small>OORE</small> J.S.</strong>, 1977, A fast string searching algorithm. <em>Communications of the ACM</em>. 20:762-772.</li>
+
+<li>C<small>OLE</small>, R., 1994, Tight bounds on the complexity of the Boyer-Moore pattern matching algorithm, <em>SIAM Journal on Computing</em> 23(5):1075-1091.</li>
+
+<li>C<small>ORMEN</small>, T.H., L<small>EISERSON</small>, C.E., R<small>IVEST</small>, R.L., 1990. <cite>Introduction to Algorithms</cite>, Chapter 34, pp 853-885, MIT Press.</li>
+
+<li>C<small>ROCHEMORE</small>, M., 1997. Off-line serial exact string searching, in <cite>Pattern Matching Algorithms</cite>, ed. A. Apostolico and Z. Galil, Chapter 1, pp 1-53, Oxford University Press.</li>
+
+<li>C<small>ROCHEMORE</small>, M., H<small>ANCART</small>, C., 1999, Pattern Matching in Strings, in <cite>Algorithms and Theory of Computation Handbook</cite>, M.J. Atallah ed., Chapter 11, pp 11-1--11-28, CRC Press Inc., Boca Raton, FL.</li>
+
+<li>C<small>ROCHEMORE</small>, M., L<small>ECROQ</small>, T., 1996, Pattern matching and text compression algorithms, in <em>CRC Computer Science and Engineering Handbook</em>, A. Tucker ed., Chapter 8, pp 162-202, CRC Press Inc., Boca Raton, FL.</li>
+
+<li>C<small>ROCHEMORE</small>, M., R<small>YTTER</small>, W., 1994, Text Algorithms, <em>Oxford University Press</em>.</li>
+
+<li>G<small>ONNET</small>, G.H., B<small>AEZA</small>-Y<small>ATES</small>, R.A., 1991. <cite>Handbook of Algorithms and Data Structures in Pascal and C</cite>, 2nd Edition, Chapter 7, pp. 251-288, Addison-Wesley Publishing Company.</li>
+
+<li>G<small>OODRICH</small>, M.T., T<small>AMASSIA</small>, R., 1998, <cite>Data Structures and Algorithms in JAVA</cite>, Chapter 11, pp 441-467, John Wiley &amp; Sons.</li>
+
+<li>G<small>USFIELD</small>, D., 1997, <cite>Algorithms on strings, trees, and sequences: Computer Science and Computational Biology</cite>, Cambridge University Press.</li>
+
+<li>H<small>ANCART</small>, C., 1993. <cite>Analyse exacte et en moyenne d'algorithmes de recherche d'un motif dans un texte</cite>, Ph. D. Thesis, University Paris 7, France.</li>
+
+<li>K<small>NUTH</small>, D.E., M<small>ORRIS</small> (<small>Jr</small>) J.H., P<small>RATT</small>, V.R., 1977, Fast pattern matching in strings, <em>SIAM Journal on Computing</em> 6(1):323-350.</li>
+
+<li>L<small>ECROQ</small>, T., 1992, <em>Recherches de mot</em>, Ph. D. Thesis, University of Orl&eacute;ans, France.</li>
+
+<li>L<small>ECROQ</small>, T., 1995, Experimental results on string matching algorithms, <em>Software - Practice &amp; Experience</em> 25(7):727-765.</li>
+
+<li>S<small>EDGEWICK</small>, R., 1988, <cite>Algorithms</cite>, Chapter 19, pp. 277-292, Addison-Wesley Publishing Company.</li>
+
+<li>S<small>EDGEWICK</small>, R., 1988, <cite>Algorithms in C</cite>, Chapter 19, Addison-Wesley Publishing Company.</li>
+
+<li>S<small>TEPHEN</small>, G.A., 1994, <em>String Searching Algorithms</em>, World Scientific.</li>
+
+<li>W<small>ATSON</small>, B.W., 1995, <em>Taxonomies and Toolkits of Regular Language Algorithms</em>, Ph. D. Thesis, Eindhoven University of Technology, The Netherlands.</li>
+
+<li>W<small>IRTH</small>, N., 1986, <cite>Algorithms &amp; Data Structures</cite>, Chapter 1, pp. 17-72, Prentice-Hall.</li>
+</ul>
+</div>
+
+<br>
+<hr color="#F0F0FC" size="2">
+<a href="node15.html#SECTION00150"><img alt="Turbo Boyer-Moore algorithm" src="../images/next_motif.gif" border="0"></a><a href="index.html"><img alt="ESMAJ" src="../images/up_motif.gif" border="0"></a><a href="node13.html#SECTION00130"><img alt="Not So Naive algorithm" src="../images/previous_motif.gif" border="0"></a><a href="node1.html"><img alt="Contents" src="../images/contents_motif.gif" border="0"></a><br>
+<b>Next:</b> <a href="node15.html#SECTION00150">Turbo-BM algorithm</a> <b>Up:</b> <a href="index.html">ESMAJ</a> <b>Prev:</b> <a href="node13.html#SECTION00130">Not So Naive algorithm</a> 
+
+<hr>
+<br>
+<div align="right"><em><small><small>e-mails: {<a href="mailto:Christian.Charras@laposte.net">Christian.Charras</a>, <a href="mailto:Thierry.Lecroq@laposte.net">Thierry.Lecroq</a> }@laposte.net</small><br>
+ Tue Jan 14 15:03:31 MET 1997</small></em></div>
+</body>
+</html>
+

@@ -1,0 +1,118 @@
+#include<iostream>
+#define LOWB(x) (x)&-(x)
+#define LL long long
+
+using namespace std;
+
+   int n, k;
+   int mas[1000010];
+   int itree[1000010];
+   int sum[1000010];
+   
+   LL sitree[1000011];
+   
+void add(int pos)
+{
+   for(;pos<=1000001;pos+=LOWB(pos))itree[pos]+=1;
+}
+void remove(int pos)
+{
+   for(;pos<=1000001;pos+=LOWB(pos))itree[pos]-=1;
+}
+LL thesum(int pos)
+{
+  LL rr = 0;
+  for(;pos;pos-=LOWB(pos))rr+=sitree[pos];
+  return rr;
+}
+int ask(int pos)
+{
+  int ssss = 0;
+  for(;pos;pos-=LOWB(pos))ssss+=itree[pos];
+  return ssss;
+}
+void addsum(int pos)
+{
+   int x = pos;
+   for(;pos<=1000001; pos+=LOWB(pos))sitree[pos]+=x;
+}
+void remsum(int pos)
+{
+    int x = pos;
+   for(;pos<=1000001; pos+=LOWB(pos))sitree[pos]-=x; 
+}
+void INPUT()
+{
+    scanf( "%d%d", &n, &k );
+    int i;
+    for(i = 0; i < n; ++i){scanf( "%d", &mas[i] ); mas[i] += 1;}
+}
+
+int main()
+{
+    INPUT();
+    
+    int i, left, right, mid, cyk, boc, boc2, tt;
+    
+    int POS = -1;
+    
+    LL allsum = 0, tsum, s3, RES, tsum2;
+    RES = 1000000000000000000LL;
+    
+    cyk = k/2;
+    cyk++;
+    
+    //cout<<"cyk e "<<cyk<<" k e "<<k<<"\n";
+    allsum = 0;
+    for(i = 0; i < n; ++i)
+    {
+       
+        
+      if(i>=k)
+      {
+       remove(mas[i-k]);
+       remsum(mas[i-k]);
+       allsum -= mas[i-k];
+      } 
+      add(mas[i]);
+      addsum(mas[i]);
+      allsum += mas[i];
+      //cout<<allsum<<"\n";  
+      
+      left = 0;
+      right = 1000000;
+      
+      boc = -1;
+      boc2 = 0;
+      
+      if(i < k - 1)continue;
+      while(left<=right)
+      {
+       mid = left+right; mid>>=1;
+       tt = ask(mid);
+       if(tt<cyk){ left = mid + 1;}
+       else { boc2 = tt; boc = mid; right = mid - 1; }
+      }
+      
+      //cout<<allsum<<" lala\n";
+      //cout<<"sredno 4islo "<<boc<<" po-malki ili ravni na nego ima "<<boc2<<"\n";
+      tsum = boc2;
+      tsum *= boc;
+      s3 = thesum(boc);
+      //cout<<" tsum s3 "<<tsum<<" "<<s3<<"\n";
+      tsum -= s3;
+      
+      tsum2 = k - boc2;
+      tsum2*= boc;
+      //cout<<tsum2<<"\n";
+      tsum2 = (allsum - s3) - tsum2;
+      //cout<<"final "<<tsum+tsum2<<"\n";
+      if(RES > tsum2 + tsum)
+      {
+       RES = tsum2 + tsum;
+       POS = i + 2 - k;
+      }
+    }
+    cout<<RES<<"\n"<<POS<<"\n";
+return 0;
+}

@@ -1,0 +1,322 @@
+**********************************************************************
+                           GOLD PROBLEMS
+**********************************************************************
+                  Four problems numbered 1 through 4
+**********************************************************************
+
+Problem 1: Lazy Cows [Brian Dean, 2004]
+
+Farmer John regrets having applied high-grade fertilizer to his
+pastures since the grass now grows so quickly that his cows no
+longer need to move around when they graze. As a result, the cows
+have grown quite large and lazy... and winter is approaching.
+
+Farmer John wants to build a set of barns to provide shelter for
+his immobile cows and believes that he needs to build his barns
+around the cows based on their current locations since they won't
+walk to a barn, no matter how close or comfortable.
+
+The cows' grazing pasture is represented by a 2 x B (1 <= B <=
+15,000,000) array of cells, some of which contain a cow and some
+of which are empty.  N (1 <= N <= 1000) cows occupy the cells in
+this pasture:
+
+-------------------------------------------------------
+|     | cow |     |     |     | cow | cow | cow | cow |
+-------------------------------------------------------
+|     | cow | cow | cow |     |     |     |     |     |
+-------------------------------------------------------
+
+Ever the frugal agrarian, Farmer John would like to build a set of
+just K (1 <= K <= N) rectangular barns (oriented with walls parallel
+to the pasture's edges) whose total area covers the minimum possible
+number of cells.  Each barn covers a rectangular group of cells in
+their entirety, and no two barns may overlap.  Of course, the barns
+must cover all of the cells containing cows.
+
+By way of example, in the picture above if K=2 then the optimal
+solution contains a 2x3 barn and a 1x4 barn and covers a total of
+10 units of area.
+
+PROBLEM NAME: lazy
+
+INPUT FORMAT:
+
+* Line 1: Three space-separated integers, N, K, and B.
+
+* Lines 2..N+1: Two space-separated integers in the range (1,1) to
+        (2,B) giving the  coordinates of the cell containing each cow.
+         No cell contains more than one cow.
+
+SAMPLE INPUT (file lazy.in):
+
+8 2 9
+1 2
+1 6
+1 7
+1 8
+1 9
+2 2
+2 3
+2 4
+
+INPUT DETAILS:
+
+As pictured above.
+
+OUTPUT FORMAT:
+
+* Line 1: The minimum area required by the K barns in order to cover
+        all of the cows.
+
+SAMPLE OUTPUT (file lazy.out):
+
+10
+
+OUTPUT DETAILS:
+
+As discussed above.
+
+**********************************************************************
+
+Problem 2: Expedition [Bulgaria 1999 National Team Test via Nikolay Valtchanov, 2003]
+
+A group of cows grabbed a truck and ventured on an expedition deep
+into the jungle.  Being rather poor drivers, the cows unfortunately
+managed to run over a rock and puncture the truck's fuel tank.  The
+truck now leaks one unit of fuel every unit of distance it travels.
+
+To repair the truck, the cows need to drive to the nearest town (no
+more than 1,000,000 units distant) down a long, winding road.  On
+this road, between the town and the current location of the truck,
+there are N (1 <= N <= 10,000) fuel stops where the cows can stop
+to acquire additional fuel (1..100 units at each stop).
+
+The jungle is a dangerous place for humans and is especially dangerous
+for cows. Therefore, the cows want to make the minimum possible
+number of stops for fuel on the way to the town. Fortunately, the
+capacity of the fuel tank on their truck is so large that there is
+effectively no limit to the amount of fuel it can hold. The truck
+is currently L units away from the town and has P units of fuel (1
+<= P <= 1,000,000).
+
+Determine the minimum number of stops needed to reach the town, or
+if the cows cannot reach the town at all.
+
+PROBLEM NAME: exp
+
+INPUT FORMAT:
+
+* Line 1: A single integer, N
+
+* Lines 2..N+1: Each line contains two space-separated integers
+        describing a fuel stop: The first integer is the distance from
+        the town to the stop; the second is the amount of fuel
+        available at that stop.
+
+* Line N+2: Two space-separated integers, L and P
+
+SAMPLE INPUT (file exp.in):
+
+4
+4 4
+5 2
+11 5
+15 10
+25 10
+
+INPUT DETAILS:
+
+The truck is 25 units away from the town; the truck has 10 units
+of fuel.  Along the road, there are 4 fuel stops at distances 4,
+5, 11, and 15 from the town (so these are initially at distances
+21, 20, 14, and 10 from the truck).  These fuel stops can supply
+up to 4, 2, 5, and 10 units of fuel, respectively.
+
+OUTPUT FORMAT:
+
+* Line 1: A single integer giving the minimum number of fuel stops
+        necessary to reach the town.  If it is not possible to reach
+        the town, output -1.
+
+SAMPLE OUTPUT (file exp.out):
+
+2
+
+OUTPUT DETAILS:
+
+Drive 10 units, stop to acquire 10 more units of fuel, drive 4 more
+units, stop to acquire 5 more units of fuel, then drive to the town.
+
+**********************************************************************
+
+Problem 3: Around the world [Dutch Championships, via Jan Kuipers, 2004]
+
+Over the years, FJ has made a huge number of farmer friends all
+around the world.  Since he hasn't visited 'Farmer Ted' from England
+and 'Boer Harms' from Holland for a while, he'd like to visit them.
+
+He knows the longitude of the farm where each of his worldwide
+friends resides.  This longitude is an angle (an integer in the
+range 0..359) describing the farm's location on the Earth, which
+we will consider to be a circle instead of the more complex and
+traditional spherical representation. Except for the obvious
+discontinuity, longitudes increase when traveling clockwise on this
+circle.
+
+FJ plans to travel by airplane to visit his N (1 <= N <= 5,000)
+friends (whose farms are uniquely numbered 1..N). He knows the
+schedules for M (1 <= M <= 25,000) bidirectional flights connecting
+the different farms.  Airplanes always travel shortest paths on the
+Earth's surface (i.e., on the shortest arc of a circle).
+
+There will always be a unique shortest path between two farms that
+are directly connected.  No pair of antipodal farms (exactly opposite
+each other on the circle) is ever directly connected.
+
+Each airplane flight can be described as traveling in clockwise or
+counterclockwise direction around the Earth's surface. For example,
+a flight from longitude 30 to longitude 35 would be clockwise, as
+would be a flight from longitude 350 to longitude 10.  However, a
+flight from longitude 350 to longitude 200 follows a shortest path
+counterclockwise around the circle.
+
+FJ would find it very cool if he could make a trip around the world,
+visiting some of his friends along the way. He'd like to know if
+this is possible and if so, what is the minimum number of flights
+he can take to do so.
+
+He wants to start and finish his journey at the location of his
+best friend (the one listed first in the input below).  In order
+to make sure he actually circles the Earth, he wants to ensure that
+the clockwise distance he travels is different from the counterclockwise
+distance he travels.
+
+PROBLEM NAME: around
+
+INPUT FORMAT:
+
+* Line 1: Two space-separated integers: N  and M
+
+* Lines 2..N+1: Line i+1 contains one integer: the longitude of the
+        i-th farm. Line 2 contains the location of the farm of his
+        best friend.
+
+* Lines N+2..N+M+1: Line i+N+1 contains two integers giving the
+        indices of two farms that are connected by a flight.
+
+SAMPLE INPUT (file around.in):
+
+3 3
+0
+120
+240
+1 2
+2 3
+1 3
+
+INPUT DETAILS:
+
+Farmer John has three friends at longitudes 0, 120, and 240.  There are
+three flights: 0<->120, 120<->240, and 0<->240.  The journey must start and
+finish at longitude 0.
+
+OUTPUT FORMAT:
+
+* Line 1: A single integer specifying the minimum number of flights FJ
+        needs to visit to make a trip around the world. Every time FJ
+        moves from one farm to another counts as one flight. If it is
+        impossible to make such a trip, output the integer -1.
+
+SAMPLE OUTPUT (file around.out):
+
+3
+
+OUTPUT DETAILS:
+
+FJ must visit all 3 friends to make a full trip around the world.
+
+**********************************************************************
+
+Problem 4: Landscaping [Brian Dean, 2005]
+
+Farmer John is making the difficult transition from raising mountain
+goats to raising cows.  His farm, while ideal for mountain goats,
+is far too mountainous for cattle and thus needs to be flattened
+out a bit. Since flattening is an expensive operation, he wants to
+remove the smallest amount of earth possible.
+
+The farm is long and narrow and is described in a sort of two-dimensional
+profile by a single array of N (1 <= N <= 1000) integer elevations
+(range 1..1,000,000) like this:
+
+1 2 3 3 3 2 1 3 2 2 1 2,
+
+which represents the farm's elevations in profile, depicted below
+with asterisks indicating the heights:
+
+    * * *     *
+  * * * * *   * * *   *
+* * * * * * * * * * * *
+1 2 3 3 3 2 1 3 2 2 1 2
+
+A contiguous range of one or more equal elevations in this array
+is a "peak" if both the left and right hand sides of the range are
+either the boundary of the array or an element that is lower in
+elevation than the peak. The example above has three peaks.
+
+Determine the minimum volume of earth (each unit elevation reduction
+counts as one unit of volume) that must be removed so that the
+resulting landscape has no more than K (1 <= K <= 25) peaks.  Note
+well that elevations can be reduced but can never be increased.
+
+If the example above is to be reduced to 1 peak, the optimal solution
+is to remove 2 + 1 + 1 + 1 = 5 units of earth to obtain this set
+of elevations:
+
+    * * *     -
+  * * * * *   - - -   -
+* * * * * * * * * * * *
+1 2 3 3 3 2 1 1 1 1 1 1
+
+where '-'s indicate removed earth.
+
+PROBLEM NAME: peaks
+
+INPUT FORMAT:
+
+* Line 1: Two space-separated integers: N and K
+
+* Lines 2..N+1: Each line contains a single integer elevation. Line
+        i+1 contains the elevation for index i.
+
+SAMPLE INPUT (file peaks.in):
+
+12 1
+1
+2
+3
+3
+3
+2
+1
+3
+2
+2
+1
+2
+
+INPUT DETAILS:
+
+This is the example used above.
+
+OUTPUT FORMAT:
+
+* Line 1: The minimum volume of earth that must be removed to reduce
+        the number of peaks to K.
+
+SAMPLE OUTPUT (file peaks.out):
+
+5
+
+**********************************************************************

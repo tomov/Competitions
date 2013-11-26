@@ -1,0 +1,57 @@
+#include <cstdio>
+#include <cstdlib>
+#define ABS(a) ((a)>0)?(a):-(a)
+
+int cmp(const void *a, const void *b)
+{return *(int*)b-*(int*)a;}
+
+int n,rr;
+int list[100010];
+int l,r,t1,t2;
+int p,q;
+
+void bla(int a, int b)
+{
+    if (a == b) return;
+    int m;
+    l=a;r=b;
+    //printf("rec %d %d -> ",a,b);
+    while (r-l>1) {
+        m = (l+r)/2;
+        t1 = list[m]-list[a-1];
+        t2 = list[b]-list[m];
+        //printf("l=%d m=%d r=%d\n",l,m,r);
+        //printf("%d %d\n",t1,t2);
+        if (t1<t2) l=m;
+        else if (t1>t2) r=m;
+        else {l=r;break;}
+        }
+    if (l<r) {
+        /*m = l;
+        t1 = list[m]-list[a-1];
+        t2 = list[b]-list[m];
+        p = ABS(t1-t2);
+        m = r;
+        t1 = list[m]-list[a-1];
+        t2 = list[b]-list[m];
+        q = ABS(t1-t2);
+        if (p<=q) m=l; else m=r;*/
+        m=l;
+        }
+    //printf("l=%d m=%d r=%d\n",l,m,r);
+    rr += list[b]-list[a-1];
+    bla(a,m);
+    bla(m+1,b);
+}
+
+int main()
+{
+    int i;
+    scanf("%d",&n);
+    for (i=1;i<=n;++i) scanf("%d",&list[i]);
+    qsort(&list[1],n,sizeof(int),cmp);
+    for (i=1;i<=n;++i) list[i] += list[i-1];
+    bla(1,n);
+    printf("%d\n",rr);
+    return 0;
+}

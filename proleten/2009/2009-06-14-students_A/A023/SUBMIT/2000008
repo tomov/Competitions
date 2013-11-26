@@ -1,0 +1,66 @@
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+
+const int MAXN = 1 << 17;
+
+int n;
+int a[MAXN];
+
+void read() {
+	int i;
+	
+	scanf ( "%d" , &n );
+	for (i = 1; i <= n; i++)
+		scanf ( "%d" , &a[i] );
+}
+
+long long solve1 ( int l , int r , int tot ) {
+	tot += r - l + 1;
+	int i , j;
+	long long ans = 0;
+	int all;
+	
+	for (i = 0; (1 << i) < tot; i ++);
+	all = 1 << i;
+	
+	for (j = l; j <= r; j++)
+		ans += (long long)a[j] * i;
+	
+	for (j = r; j >= l; j--) {
+		if ( all - 1 >= tot ) {
+			-- all;
+			ans -= (long long)a[j];
+		}
+	}
+	
+	return ans;
+}
+
+void solve() {
+	int i;
+	int lim;
+	int sum = 0;
+	long long ans = 0;
+	
+	sort ( a + 1 , a + n + 1 );
+	
+	for (i = n; i >= 2; i--)
+		if ( a[i] > a[i - 1] + a[i - 2] )
+			break;
+	lim = i;
+	for (i = 1; i < lim; i++) sum += (long long)a[i];
+	
+	ans = solve1 ( lim , n , lim > 1 );
+	for (i = 1; (1 << i) < (n - lim + 2); i ++);
+	ans += solve1 ( 1 , lim - 1 , 0 ) + sum * i;
+	
+	printf ( "%lld\n" , ans );
+}
+
+int main() {
+	read();
+	solve();
+	
+	return 0;
+}

@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+const int max_n = (1<<20);
+
+typedef long long num;
+int h[max_n];
+
+int main(){
+    int i, j, n, k, id = 1;
+    num ms = 0, r = 0, m, t, d, mp;
+    scanf("%d%d", &n, &k);
+    for(i = 1; i <= n; i++){
+        scanf("%d", h + i);
+    }
+    
+    for(i = 1; i <= k; i++) ms += h[i];
+    m = (ms + k/2) / k;
+    for(i = 1; i <= k; i++) r += abs(h[i] - m);
+    //cout << r << endl;
+    //cout << "M:" << m << endl;
+    for(i = k+1; i <= n; i++){
+        d = -h[i] + h[k-i];
+        ms += d;
+        mp = (ms + k/2) / k;
+        //cout << "I:" << i << " MS:" << ms << endl;
+        //cout << "MP:" << mp << endl << endl;
+        if(mp == m){
+            // the AVG doesn't change
+            t = r + abs(h[i] - m) - abs(h[k-i] - m);
+            if(t < r){
+                r = t;
+                id = i;
+            }
+        }else{
+            m = mp;
+            t = 0;
+            for(j = i - k + 1; j <= i; j++) t += abs(h[j] - m);
+            if(t < r){
+                r = t;
+                id = i;    
+            }
+        }
+    }
+    
+    cout << r << endl << id - k + 1 << endl;
+    
+    return 0;
+}

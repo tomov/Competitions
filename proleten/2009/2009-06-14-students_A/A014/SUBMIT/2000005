@@ -1,0 +1,101 @@
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+struct flatten {
+    int S, num;
+};
+
+flatten IT[1<<20];
+int A[1<<20];
+int n, k, size=1<<20, best, answer=1<<30;
+
+void show() {
+     for (int i=1; i<17; ++i)
+         cout << IT[i].S << " ";
+     cout << endl;
+     for (int i=1; i<17; ++i)
+         cout << IT[i].num << " ";
+     cout << endl << endl;
+}
+
+void updateAdd(int index) {
+     int value=index;
+     while (index < size) {
+           ++IT[index].num;
+           IT[index].S+=value;
+           index+=(index&(-index));
+     }
+     show();
+}
+
+void updateRemove(int index) {
+     int value=index;
+     while (index < size) {
+           --IT[index].num;
+           IT[index].S-=value;
+           index+=(index&(-index));
+     }
+}
+
+int getCurrentS(int index) {
+    int res=0;
+    while (index > 0) {
+          res+=IT[index].S;
+          index&=(index-1);
+    }
+    return res;
+}
+
+int getCurrentNum(int index) {
+    int res=0;
+    while (index > 0) {
+          res+=IT[index].num;
+          index&=(index-1);
+    }
+    return res;
+}
+
+void BS(int l, int r) {
+     //cout << "NEXT" << endl;
+     int price[2];
+     const int m=(l+r)/2;
+for (int i=m; i<=m+1; ++i) {
+    system("pause");
+     int bigMNum=getCurrentNum(size-1)-getCurrentNum(i);
+     int bigMS=getCurrentS(size-1)-getCurrentS(i);
+     if (bigMNum)
+          price[m-i]=bigMS-bigMNum*i;
+     int smallMNum=getCurrentNum(i-1);
+     int smallMS=getCurrentS(i-1);
+     if (smallMNum)
+        price[m-i]+=(smallMNum*i-smallMS);
+}
+    if (price[0] < price[1])
+       BS(l, m);
+    if (price[1] < price[0])
+       BS(m+1, r);
+    if (price[0] == price[1])
+       best=price[0];
+}
+
+void solve() {
+     for (int i=0; i<k; ++i)
+         updateAdd(A[i]);
+     BS(1, 1<<20);
+     answer=min(answer, best);
+     cout << answer << endl;
+}
+
+void input() {
+     scanf("%d%d", &n, &k);
+     for (int i=0; i<n; ++i)
+         scanf("%d", A+i);
+}
+
+int main() {
+    input();
+    solve();
+return 0;
+}

@@ -1,0 +1,1632 @@
+
+Session Start: Fri Jun 25 20:04:48 2004
+Session Ident: #ioi
+* Now talking in #ioi
+* CS sets mode: +o VelinTzanov
+<rangel__> dobro utro
+<Prince_of_Dawn> napisahte li cowq?
+* Hollerihh was kicked by VelinTzanov (VelinTzanov)
+* VelinTzanov sets mode: +ooo Prince_of_Dawn Swetko rangel__
+<rangel__> ne
+* sssa88 has joined #ioi
+<sssa88> dobro utro
+<VelinTzanov> Dobro
+<VelinTzanov> Diplomirahte li ste dvamata s Rangel? :)
+* VelinTzanov sets mode: +o sssa88
+<sssa88> aha
+<rangel__> mi az se diplomirah obache ne znam kak shte me priemat v SU
+<VelinTzanov> Tvoite syuchenici shte gi biem s Ivo. Zashto v poslednia moment sa kazali na Ivo che ne mogat 
+  da doidat?
+<VelinTzanov> Shto be, Rangele?
+<sssa88> ami, zabravili horata
+<VelinTzanov> Abe nikakvo SU - klasirash se za IOI, vzimash zlatoto, i dogodina si v MIT. :)
+<rangel__> mi shtoto trqbvashe da mi dadat i nqkva gramota ot ministerstvoto che sym laureat na olimpiada, 
+  ama nqma takova neshto
+<VelinTzanov> Vlado, ti gramota imash li?
+<rangel__> ama dogodina shte sym v kazarmata ako ne vlezna v universitet :-)
+<VelinTzanov> Az kato biah 12-ti klas ni gi razdadoha tia gramoti na poslednoto kontrolno.
+<VelinTzanov> Kazarmata ima poveche kandidati otkolkoto svobodni mesta. Niakolko pyti poveche. Niama da se 
+  sluchish tochno ti. :)
+<VelinTzanov> A i vinagi mojesh da se zapishesh v Plovdivskia... :)
+<VelinTzanov> Jivko Ganev taka izkara edna godina formalno v SU, posle edna godina formalno v PU... :)
+<VelinTzanov> ...  i posle doide da uchi v Yale.
+<rangel__> ima neshto vqrno za plovdivsiq :-)
+* Logging #ioi to 'logs\ioi_2004_06_26.log'
+<sssa88> nashtite gramoti na varnenci bili gotovi ama trqbwalo v sofiq kato otidem da si gi vzemem
+<VelinTzanov> Sigurno i s Rangel e takova polojenieto.
+<VelinTzanov> Koga triabva da se zapishete za SU? Kakvi sa srokovete?
+<Prince_of_Dawn> az shte wi gi wzema
+<rangel__> spored klasniq mi bila v uchilishte, obache ni vest ni kost ot tazi diploma
+<sssa88> do 7 uli
+<VelinTzanov> OK, Na 1-vi vi puskame da hodite. :)
+<sssa88> vtoriq den na balkaniadata koj den e?
+<VelinTzanov> 5-ti i 7-mi mislia che sa systezatelnite dni... no moje i da sa 5-ti i 6-ti. Chakai da vidia.
+<Prince_of_Dawn> 5 i 7
+<VelinTzanov> Da
+<VelinTzanov> OK. Vyprosi po materiala dotuk?
+<rangel__> qko shtot na 6-ti me vikat na voenna komisiq da vidqt dali sa me prieli nqkyde :-)
+<VelinTzanov> Gledam che e malka byrkotia s domashnoto - i az ne znam veche koi kakvo mi e predal... :)
+<VelinTzanov> Hahahaaaaa :)
+<rangel__> az sym predal vsichko bez cowq
+<sssa88> nqma vyprosi
+<Prince_of_Dawn> barkotiqta e zarad men
+<VelinTzanov> Edin chovek ne moje da napravi byrkotia.
+<VelinTzanov> Kakvi problemi imate s cowq be, momcheta?
+<VelinTzanov> Swetko, ti tuk li si, btw?
+<Swetko> àü
+<rangel__> tova maj beshe latinsko da napisano na BDS :-)
+<VelinTzanov> Kajete za cowq
+<Prince_of_Dawn> mi moqta raboti na 3 testa 
+<rangel__> kakva magiq mi trqbva za da opredelq koi chisla sa v redicata?
+<Swetko> da
+<Swetko> cherna
+<Prince_of_Dawn> da
+<sssa88> za polzvam dvoichno tyrsene
+<Prince_of_Dawn> harry poter
+<sssa88> plus dekodirane na kombinacii
+<Swetko> da
+<Swetko> tova decidirane me obyrka
+<Prince_of_Dawn> probleme e che te mi podawat
+<Prince_of_Dawn> 11
+<Swetko> stot decodirah naobratno
+<Prince_of_Dawn> 10000011001
+<Prince_of_Dawn> i iskat 1000 chlen
+<Swetko> kakvo e tova 10000011001
+<Prince_of_Dawn> obache spored men 1000ledniq e sled posledniq tehen
+<VelinTzanov> :)
+<Prince_of_Dawn> poneje puskam programata da printi wsichki chlenowe i tq tozi deto mi go pokzwa na kraq e s poweche edinitsi ot 10000011001
+<Swetko> na men mi raboti
+<VelinTzanov> Ia chakaite da ia procheta kato horata i da vi dam edno kulturno reshenie da ne se gyrchite. :)
+<VelinTzanov> Ili Vlado ti ako iskash da razkajesh tvoeto?
+<sssa88> ami ne znam dali e mnogo kulturno
+<Swetko> moeto spazva tochno principite na toia vid zadachi
+<VelinTzanov> Ako iskash kaji ti tvoeto togava, Swetko.
+<Swetko> ama i to ne e bash kulturno
+<VelinTzanov> :)
+<VelinTzanov> Kazvaite de.
+<VelinTzanov> Source-ovete li da vi cheta sega.
+<Swetko> ako iskate ste go kasha
+<Swetko> ma mi triabvat 5 minutki
+<Swetko> da si go pripomnia
+<Prince_of_Dawn> a eto i spored tqh prawilniq otgowor 1111001011
+<Prince_of_Dawn> towa chislo koeto izwejdat e ochewidno sled posledniq chlen
+<Prince_of_Dawn> nqkoi slusha li me>
+<Prince_of_Dawn> ???
+<VelinTzanov> Kaji kakyv tochno e testa.
+<sssa88> koj test e tova?
+<Swetko> dadeni sa ti vsichki chisla koito sa meshdu 2-te
+<Swetko> v standartnata dvoichna sistema
+<rangel__> zashto v standartna dvoichna sistema?
+<VelinTzanov> Ami zashtoto tova e uslovieto be, Rangele. :)
+<rangel__> (i kyde pishe? :-)
+<VelinTzanov> RANGELE SHTE TE OTSKUBNA!
+<rangel__> e pishe naj-malkoto i naj-golqmoto i pishe kak se sravnqvat
+<VelinTzanov> E da de.
+<rangel__> emi ne se sravnqvat kato dvoichni chisla :-)
+<Prince_of_Dawn> ?
+<Prince_of_Dawn> kakwo prawq
+<VelinTzanov> A! Viarno che ne e iasno be... :-?
+<VelinTzanov> Ot primera ne si li lichi?
+<sssa88> kazano e che imash vsichki dvoichni chisla mezdu dvete dadeni
+<VelinTzanov> Primeryt ne e dvusmislen - triabva da si lichi ot nego - proverete.
+<sssa88> toest vsichki chisla
+* Prince_of_Dawn has quit IRC (0,50lv/ chas zala Matricata - Silistra DENONOSHTNO ¶:))
+<VelinTzanov> Znachi kato se kazva, che sa dvoichnite chisla MEJDU dadenite se ima predvid normalnata naredba.
+<VelinTzanov> 100
+<VelinTzanov> 1000
+<VelinTzanov> 101
+<VelinTzanov> 110
+<VelinTzanov> 1001
+<VelinTzanov> Ako beshe po drugata naredba shteshe da ima i 0011
+<VelinTzanov> I primeryt shteshe da e greshen.
+<VelinTzanov> Rangele, razbra li me?
+<rangel__> to shteshe da ima i oshte dosta chisla s dve edinici shtoto ne znam kolko bitovi chisla da gledam
+<rangel__> da, qsno, samo che si misleh che iskat po tqhnata naredba
+<VelinTzanov> Zashto si pomisli taka? Ne pogledna li primera?
+<VelinTzanov> Aaa, da, viarno che ne e iasno kolko bita. :)
+<VelinTzanov> Moje da imash i 1000000
+<VelinTzanov> Kyde se zagubi Borisov sega... :(
+<VelinTzanov> OK. Kajete kakvo pravihte tezi dva dni. Swetko?
+<Swetko> ami domashnoto deto ti predadoh
+<VelinTzanov> Za drugo niamashe vreme, taka li?
+<VelinTzanov> Pone godinata zavyrshi li kato horata?
+<Swetko> da
+<VelinTzanov> Daskaloto niama poveche da ti prechi, taka li?
+<VelinTzanov> (To ne ostana za koga de... :)
+<Swetko> ami osven che ste triabva da hodia
+<VelinTzanov> Vlado, ti?
+<Swetko> btw. i predi ne mi  eprechilo
+<VelinTzanov> Niakoi ima li telefona na Borisov da mu zvynne?
+<sssa88> ami domashnoto napravih i napisah maintain ot IOI03 i gangs i gems OT Baltic03
+<Swetko> chakai
+<Swetko> az imam
+<Swetko> az ne zabeliazah che etuk
+<VelinTzanov> Az mu imam niakakyv mobilen... po-dobre na mobilnia da zvynna.
+<Swetko> az ste zvynna
+<Swetko> stot sme se razbrali
+<VelinTzanov> Koia beshe maintain?
+<VelinTzanov> OK. Mersi, Swetko.
+<sssa88> lesnichkata ot pyrvi den
+<VelinTzanov> Aha. OK
+<sssa88> za MST
+<VelinTzanov> Dobre zvuchi.
+<VelinTzanov> Tova koeto si napravil imam predvid.
+<VelinTzanov> Rangele, ti?
+<Swetko> toi otival na zala
+<Swetko> sled 2 minuti ste doide
+<rangel__> malko se pozakuchih na cowq, zatova osven domashnoto sym napisal samo oshte edna USACO-vska zadacha
+<rangel__> i osven tova imam malko problemi s dqsnata kitka, neshto me boli ot vreme na vreme
+<VelinTzanov> Kofti.
+<VelinTzanov> Mnogo vnimavai kak pishesh na klaviaturata.
+<VelinTzanov> Vzemi malko pochivka ako iskash.
+<VelinTzanov> Shte priema domashnite i sys zakysnenie.
+<VelinTzanov> No nai vajnoto e da se gledash kak pishesh i da vnimavash dvijenieto da e v lakytia i/ili ramoto, ne v kitkata.
+<VelinTzanov> A cowq razbra li ia sega?
+<rangel__> ami pone znam kakvo imam :-) bi trqbvalo da uspeq da q napisha
+<Swetko> abe az gledam si sorsa ama ne moga da razbera zasto niakoi nesta sum gi pravil vuobste
+<VelinTzanov> Zashtoto ne si mislil dostatychno predi da sednesh da pishesh, Swetko.
+<Swetko> mislil sum
+<VelinTzanov> Tova na zadacha kato cowq moje da ne e problem, no na BOI-skite zadachi shte ti struva mnogo... pone dokolkoto znam BOI-skite zadachi.
+<Swetko> ama sega prosto ne moga pak da napravia sustite umozakliuchenia
+* Borisof has joined #ioi
+<VelinTzanov> :)
+<Swetko> pisal sum ia predi 6 meseca
+<VelinTzanov> Borisov, jiv li si be, momche?
+* VelinTzanov sets mode: +o Borisof
+<Borisof> mai da
+<VelinTzanov> Kakvo se sluchi?
+<Borisof> mi prosto sprq
+<Borisof> restartirah edni wsitch i edin hub
+<VelinTzanov> Kaji kakyv problem imash s cowq, Borisov.
+<Borisof> mi az tam go bqh izlojil
+<rangel__> syshtiq kato men zashtoto go obyrkash snoshti :-(
+<Borisof> ta problema e che te iskat
+<Borisof> 11
+<Borisof> 10000011001
+<Borisof> 1000
+<Borisof> e mejdu 11 i drugoto ima 490 chlena
+<VelinTzanov> Absurd.
+<Borisof> dori tqhniq otgowor e s poweche ot 4 edinitsi
+<Borisof> towa e treti test
+<VelinTzanov> Borisov, ne si razbral uslovieto.
+<Borisof> sega warqntite sa dwa
+<Borisof> towa e ediiq
+<Borisof> obqsni mi go
+<sssa88> 1046 chlena ima mezdu dvete
+<VelinTzanov> Ami imash 11, koeto e 3.
+<Borisof> niq s rangel imahme teologichni talkowaniq
+<VelinTzanov> I drugoto, koeto e 1049
+<VelinTzanov> A zashto ne si poglednahte primera be, Borisov! >:-[
+<VelinTzanov> Obshto imash 1047 chisla.
+<VelinTzanov> Tiah gi narejdash po izvratenia nachin.
+<Borisof> poglednah go
+<VelinTzanov> I vzimash 1000-noto.
+<VelinTzanov> I kak uspia da go izkarash s tvoeto tylkovanie?
+<VelinTzanov> tylkuvanie, t.e.
+<rangel__> shtoto sym mnogo ubeditelen :-)
+<Borisof> mi pak ne rabiram ti po tozi nachin im glesah neotmalnite nomera
+<VelinTzanov> Ama to dori ne e iasno definirano! :)
+<VelinTzanov> Da, normalnite nomera gledam.
+<VelinTzanov> A ti kakvo predlagash?
+<VelinTzanov> Kakyv e drugiat variant, Borisov?
+<Borisof> mi 111111 nqma da uchastwa w reditsata
+<VelinTzanov> A koi shte uchastva?
+<VelinTzanov> 1100000000000000000000 shte uchastva li?
+<Swetko> ne
+<Borisof> ne
+<VelinTzanov> Zashto da ne uchastva?
+<Borisof> poneje e po dalgo ot wtoroto chislo na whoda
+<Borisof> i taka e pokazano w primera
+<VelinTzanov> Kakvo kato e po-dylgo?
+<Borisof> mi w primera na lista 10000000 ne uchastwa
+<VelinTzanov> Zapomni - NIKOGA NE MOJE DA VADISH IZVOD SAMO OT PRIMERA!
+<VelinTzanov> Triabva da im i neshto v uslovieto!
+<Borisof> zanchi i 11000000000000000000 ne uchastwa
+<VelinTzanov> Znachi iavno ne si razbral uslovieto be, momche!
+<VelinTzanov> Na IOI ako mi pravish takiva razsyjdenia shte doida do Gyrcia da te sritam.
+<Borisof> dobre kaji kak e
+<VelinTzanov> Na BOI moje da gi pravish - taka prosto niama da se klasirash.
+<VelinTzanov> Ami vzimash vsichki chisla mejdu Min-a i Max-a v NORMALNATA naredba.
+<VelinTzanov> Prenarejdash gi tiah v nenormalnata.
+<VelinTzanov> I posle si reshavash tam kakvoto se tyrsi.
+<Borisof> aha
+<Borisof> mi dobre shte go naprawq
+<VelinTzanov> Vzemi si belejkata. Zadyljitelno.
+<VelinTzanov> Kaji kakvo drugo pravi tia dva dni.
+<Borisof> mi opiti da si napisha domashnoto
+<Borisof> tribes me ubi
+<Borisof> s tezi testowe s choweka deto ima dwama bashti
+<VelinTzanov> Zashto?
+<VelinTzanov> HAhaaa... :)
+<VelinTzanov> E, nali vse pak e dyrvo, ne e graf?
+<Borisof> znam li
+<sssa88> pone dyrvo e
+<rangel__> kak taka dvama bashti?
+<VelinTzanov> Ahhh, Swetko, triabvashe da nasolite rumyncite tam na miasto za tia testove be! :)
+<Borisof> reshenieto deto ni go obeni ne warwi na tezi testowe
+<sssa88> to bez da se syobrazqvam s tova tri ne mi rabotiha vypreki che maj poveche sa greshnite
+<VelinTzanov> Chovek s dvama bashti - tezi rumynci sa egati pederastite... :)
+<rangel__> moeto kak trygna... pochti ot pyrviq pyt :-)
+<VelinTzanov> Borisov, pak vyrvi. Prosto triabva da si postroish dyrvoto kato horata.
+<Borisof> i pederasti da sa pak ne stawa
+<VelinTzanov> Stiga da e dyrvo - raboti.
+<Borisof> e ne sam go prawil towa
+<VelinTzanov> Ami shte triabva da go napravish.
+<Borisof> imah si drugo da pisha
+<VelinTzanov> MOia opit ot BOI pokazva che programite ti triabva da rabotiat i za nevalidni testove. :)
+<Swetko> ot albania li
+<VelinTzanov> Na BOI 2001 na poslednata zadacha poslednia test beshe narochno nad limita. :)
+<VelinTzanov> Da
+<VelinTzanov> Momcheta, dnes shte vi dam oshte edin mnogo vajen jiteiski syvet:
+<Swetko> i jurito se chudelo kato vidiala programa deto da raboti
+<VelinTzanov> NIKOGA NE HODETE V ALBANIA! :)
+<VelinTzanov> Da be - tam beshe tolkova grubo naglasena rabotata, che chak da ti se dopovryshta...
+<sssa88> to tova i bez da ni go kazvash si go znaem
+<Swetko> kakvo e bilo naglaseno
+<VelinTzanov> I ni pisaha po 0 na vsichki na edna zadacha, a pone 3-ma ot nas ia biaha reshili. Posle si test-vahme s testovete - minavaha.
+<Swetko> rumuncite gi reshili zadachite 
+<Swetko> ama te i lesni biaha
+<VelinTzanov> Ami beshe naglaseno Rumyncite da vzemat pyrvite 4 mesta, koe da e bilo naglaseno. :)
+<VelinTzanov> E to i nie gi reshihme be, Swetko. :)
+<sssa88> koq beshe taq zadacha?
+<VelinTzanov> Voting
+<Swetko> koi go e organiziral
+<VelinTzanov> Albancite. Ili rumyncite. Znam li. :)
+<Borisof> kakwo shte prawim dnes
+<VelinTzanov> Siugrno albancite sa se obyrnali kym rumyncite da dadat zadachi, shtoto te ne mogat da izmisliat... :)
+<VelinTzanov> I v zamiana za uslugata...
+<VelinTzanov> Da, dobyr vyrpos, BOrisov.
+<VelinTzanov> Dnes shte pravim optimizacia na dinamichno, chrez sykrashtavane na nai-vytreshnia cikyl.
+<VelinTzanov> Zvuchi strashno, obache e prosta ideia.
+<VelinTzanov> Sega shte pravim zadachi koito iasno se vijda kak mogat da se reshat s O(N^k), no ti triabva O(N^(k-1)), koeto ne se vijda tolkova iasno... :)
+<VelinTzanov> Obshto vzeto vyv vsichki ideiata e da izpolzvash tova koeto veche si smiatal predi. Nai-chesto tova se otraziava na nai-vytreshnia cikyl v dinamichnoto. Zatova i narichame temata taka.
+<Borisof> towa N^k ne prilicha na dinamichno
+<VelinTzanov> k e konstanta.
+<VelinTzanov> Prosto e razlichna za razlichnite zadachi.
+<VelinTzanov> Imam po edna zadacha za k = 2, 3 i 4.
+<VelinTzanov> Pyrvata zadacha za dnes e Bintree ot 2-ro kontrolno 2003
+<VelinTzanov> http://infoman.musala.com/contests/noi/2003/kont2_tasks.html
+<VelinTzanov> Kajete kato ste gotovi.
+<sssa88> gotov
+<Swetko> da
+<rangel__> gotov
+<Borisof> gotowo
+<VelinTzanov> OK
+<VelinTzanov> Koi kakvo reshenie znae na tazi zadacha?
+<VelinTzanov> a) nikakvo
+<VelinTzanov> b) N^3
+<VelinTzanov> c) N^2
+<Swetko> N^3 - ta pishe go v na kelevedzhiev siniata knizhka
+<Borisof> a)
+<sssa88> b)
+<rangel__> v momenta se seshtam samo za N^3
+<VelinTzanov> Pishe li go? :) Ne znaeh kato ia davah tazi zadachka. :)
+<VelinTzanov> Borisov, spored teb kak mojem da napravim N^3 dinamichno?
+<Swetko> az puk se zaradvah che davash takava - stot ia znaeh
+<VelinTzanov> A ne ti li napravi vpechatlenie che e s limit 2000? :)
+<Borisof> mi shte probwame za wseki interwal
+<Swetko> ami da, ama kat ne znam drugo napisah kakvoto znam
+<VelinTzanov> Kakvo za vseki interval, Borisov?
+<Borisof> [a,b] koren w nego da e c
+<VelinTzanov> I blagodarenie na nego se klasira na IOI. :)
+<VelinTzanov> A az si misleh che si se setil... a ti si go bil znael. >:-(
+<VelinTzanov> Ne te razbrah, Borisov.
+<Borisof> mi nali elementite sa ni 1,2,3,4,5
+<VelinTzanov> Da de, gledash intervali.
+<VelinTzanov> A c-to kakvo e?
+<VelinTzanov> Trimeren masiv li pravish?
+<VelinTzanov> Ili dvumeren?
+<Borisof> probame za wseki interwal [a,b] koi trqbwa da ni e koren za da e optimalno towa darwo
+<VelinTzanov> OK
+<VelinTzanov> I kak probvame?
+<Borisof> dwumeren
+<VelinTzanov> OK
+<VelinTzanov> Kaji kak probvame.
+<Borisof> mi posledowatelno izbirame koren C
+<VelinTzanov> I za vseki koren C kakvo?
+<Borisof> i puskame zadachata za [a,C-1], i [C+1,b]
+<Borisof> kato tuka trqbwa da umnojim po neshto
+<VelinTzanov> Po kakvo i zashto?
+<Borisof> mi poneje tezi dwe darweta shte sa edno niwo nadolu
+<VelinTzanov> Aha
+<Borisof> pribawqme broq oshtepo 1 za wsqko tarsene na element ot tozi interwal
+<VelinTzanov> OK
+<VelinTzanov> Priemam che si go razbral.
+<VelinTzanov> Drugite? Vyprosi?
+<Borisof> toes trqbwa ni masiw w koito da imame sum[a][b]
+<VelinTzanov> :)
+<VelinTzanov> b-a ne ti li stiga? :)
+<Borisof> mi ne
+<VelinTzanov> Zashto? :)
+<Borisof> poneje moje a+1 da sa go tarsili 200 pati
+<Borisof> znachi trqbwa da pribawq 200
+<VelinTzanov> OK - iasno ti e. :)
+<VelinTzanov> Drugite?
+<VelinTzanov> Tuk li ste?
+<rangel__> da
+<sssa88> da
+<VelinTzanov> Swetko uchi. :)
+<VelinTzanov> Taka.
+<VelinTzanov> Na zadachite sys sykrashtavane na nai-vytreshnia cikyl nai-vajnoto neshto e da izmislite O(N^k) dinamichnoto. :) Ako ne napravite tova ste zagubeni.
+<Swetko> da
+<VelinTzanov> Poniakoga tova izmisliane e trivialno. Poniakoga ne e tolkova lesno. Poniakoga si e ciala sredno-trudna zadacha samo po sebe si.
+<VelinTzanov> Vajno e da izchistite hubavo tova dinamichno.
+<VelinTzanov> Samo togava mojete da vniknete dostatychno za da vidite optimizaciata.
+<VelinTzanov> A kato tyrsite optimizaciata syvetyt mi e da poglednete pyrvo v nai-vytreshnia si cikyl.
+<VelinTzanov> Tam se predpolaga che vyrshite niakakva izlishna rabota.
+<VelinTzanov> Neshto koeto veche e smetnato v predishni puskania na tozi nai-vytreshen cikyl... ili koeto zavisi ot predishnite puskania.
+<VelinTzanov> Niakoi (osven Swetko) moje li da dade niakakva ideia/nasoka?
+<VelinTzanov> Za Bintree imam predvid.
+<Borisof> mi mai trqbwa da optimizirame tarseneto na korena w [a,b]
+<VelinTzanov> Tochno taka.
+<VelinTzanov> No na bazata na kakvo?
+<VelinTzanov> Na bazata na tejestite na chislata?
+<Borisof> na baza [a,b-1]?
+<VelinTzanov> Koito krai e po-lek nego ne go gledame? :)
+<VelinTzanov> Ahaaa, na bazata na tova koeto veche sme smetnali!
+<VelinTzanov> Na bazata na veche reshenite podzadachi!
+<VelinTzanov> Kakvo mojem da kajem za [a,b-1]?
+<rangel__> koj e optimalniq koren za tozi interval
+<Borisof> kak?
+<rangel__> mi zashtoto sme go smetnali veche
+<VelinTzanov> Hubavo de, smetnali sme go.
+<rangel__> i ako ne se lyzha optimalniq koren za intervala [a,b] e zadylzhitelno ne po-malyk ot optimaniq koren za [a,b-1]
+<VelinTzanov> Znaem mu optimalnia koren.
+<VelinTzanov> Taka li, Rangele? Zashto?
+<rangel__> ami za momenta samo intuiciq :-)
+<VelinTzanov> Neshto po-taka, konkretno, da ti se namira? :)
+<Borisof> az znam
+<rangel__> opitvam se da go dokazha...
+<VelinTzanov> Kaji, Borisov.
+<Borisof> mi korena na [a,b] e chislo podolqmo ili ravno na korena na [a,b-1]
+<VelinTzanov> Zashto, Borisov?
+<Borisof> poneje addwame neshto w dwano na dartowo i e neodachno da mestim korena pak w lqwo
+<Borisof> toest dqsnoto pod darwo natejawa
+<Borisof> i korena trqbwa da se mesti w dqsno ili da si sedi kadeto e
+<VelinTzanov> ZAshto da e neudachno? Taka moje naprimer da balansirash dvete dyrveta po otdelno i da gi napravish stepeni na dvoikata. :)
+<Borisof> i sega kakwo ni pomaga towa
+<VelinTzanov> Chakai, chakai, byrzash.
+<VelinTzanov> Zashto da e neudachno da go mestim naliavo?
+<rangel__> tova e po intuiciq Borisov, i az taka si mislq, no trqbva dokazatelstvo
+<VelinTzanov> Moje da spechelim neshto kato go premestim.
+<Borisof> mi 
+<Borisof> ako tejesta na lqwoto darwo e A a na dqsnoto darwo B kato gledame opt darwoto za [a,b-1]
+<Borisof> to niq kato dobawim now elemen( ne koi da e a "b")
+<Borisof> todawa B+=pone chestotata_na_tarsene[b];
+<VelinTzanov> Hubavo. I kakvo ot tova?
+<Borisof> mi...
+<sssa88> ami shtom na predishnoto tysene za [a,b-1] sme nqmali kiriq da go premestim nalqvo korena to i sega sys sigurnost nqma da iamme
+<Borisof> predawam se
+<sssa88> shtoto lqvoto shte e syshtoto kato predi a dqsnoto po-tezko
+<Borisof> wlado twoito beshe po-nenauchno i ot moito ( izpolzwash dumi kato kiriq)
+<Borisof> ;)
+<VelinTzanov> E shto da niamame kiria?
+<VelinTzanov> Kato premestia korena naliavo liavoto mi dyrvo shte stane 50% po-leko
+<sssa88> ami daj primer deto imame :)
+<VelinTzanov> A diasnoto samo 10% po-tejko.
+<VelinTzanov> Znachi moje i da imam kiria.
+<VelinTzanov> A, primer. :)
+<VelinTzanov> Tova che az ne iskam da dam primer ne znachi che niama. :)
+<sssa88> ami to i na predishnoto e bilo s 50% po-leko ama ne sme go izbrali taka
+<sssa88> znachi i sega sys sigurnost nqma da go izberem taka
+<sssa88> poneze kiriqta ni shte e oshte po-malka
+<Borisof> veline dokaji ni go
+<rangel__> mozhe li i az da probvam?
+<VelinTzanov> Zashto da e po-malka?
+<VelinTzanov> Moje, Rangele, shte se radvam daje.
+<sssa88> poneze otdqsno natezava poveche kakto kaza Borisov
+<rangel__> imame optimalniq koren za [a,b-1], kojto e c primerno
+<VelinTzanov> Tova ne e prichina, Vlado.
+<rangel__> i reshavame da probvame za koren na [a,b] chisloto d<c
+<rangel__> i osven tova dopuskame che d e po-dobyr koren za [a,b] ot c
+<VelinTzanov> OK
+<VelinTzanov> OK
+<rangel__> i ot dvete dyrveta (tova s koren c i tova s koren d) maham naj-desniq vryh - b
+<VelinTzanov> Dobre
+<rangel__> obache tuk se sbygva...
+<rangel__> moment che imam dupka :-)
+<Borisof> dokazatelstwoto li?
+<rangel__> ideqta e che dyrvoto s koren d ostava po-leko ot tova s koren c, koeto e protivorechie (no pyk ne moga da go polucha)
+<sssa88> po-skoro tova s koren "c" e po-leko
+<VelinTzanov> Kato mahnesh nai-desnia vryh ostavat [a,b-1] dyrveta, nali?
+<rangel__> da
+<rangel__> za koeto znam che optimalniq koren e c
+<VelinTzanov> Znaesh che c-dyrvoto e ne po-losho ot d-dyrvoto.
+<VelinTzanov> Edinstvenata razlika e b*dylbochinata_na_b
+<rangel__> obache po dopuskane za [a,b] optimalniq koren e d
+<VelinTzanov> Kakvo mojem da kajem za dylbochinata na b?
+<VelinTzanov> OT tvoeto dopuskane izliza che triabva dylbochinata na b c d-centrichnoto dyrvo da e po-malka.
+<sssa88> pak e po-malka ili ravna
+<VelinTzanov> Po-malka otkolkoto v c-centrichnoto dyrvo.
+<VelinTzanov> Ravna ni ustroiva Vlado.
+<VelinTzanov> Triabva da dokajem che ne moje d da e po-dobre ot c. Inache niama problem da sa ravni,.
+<rangel__> obache ako e po-malka nishto ne moga da dokazha
+<VelinTzanov> Ne sledva li neshto ot tova?
+<rangel__> ot koe po-tochno?
+<VelinTzanov> Naprimer che centyryt na dyrvoto [d,b] e po-nadiasno ot centyra na [c,b]
+<VelinTzanov> Ili ako ne toi, to togava centyra na diasnata polovina na diasnata polovina... ili centyra na neinata diasna polovina.
+<sssa88> ne e li po-nalqvo : nali d<c?
+<VelinTzanov> Tochno tova e vyprosyt Vlado.
+<VelinTzanov> Za da e po-nagore b triabva centyra na niakoe dyrvo da e po-nadiasno.
+<VelinTzanov> Dokazatelstvoto e po indukcia.
+<VelinTzanov> Dokazvame go za vsichki dyrveta s razmer 1 (ochevidno)
+<VelinTzanov> I posle za vsichki dyrveta s razmer 2.
+<VelinTzanov> S razmer 3...
+<VelinTzanov> Za da poluchim razminavka v centrovete triabva da imame veche takava za po-malko dyrvo (diasnoto poddyrvo, ili niakoe ot negovite desni, desni poddyrveta)
+<VelinTzanov> Inahce niama kak da vdignem b nagore.
+* Swetko2 has joined #ioi
+* peawantry has joined #ioi
+<rangel__> tova e qsno
+<VelinTzanov> Ami tova e. Niama da vlizam v nai-dylbokite detaili, no iskam da mojete da pravite indukcia na systezanie.
+<VelinTzanov> ZAshtoto moje da vi potriabva. Niakoi tvyrdenia ne sa tolkova ochevidni kato tova.
+<rangel__> samo che ne mi e qsno s kakvo mi pomaga :-)
+* peawantry was kicked by VelinTzanov (VelinTzanov)
+* VelinTzanov sets mode: +o Swetko2
+<Borisof> ako ne sa uchewidni kato towa
+<Borisof> ochewidni
+<VelinTzanov> Swetko, kak vse uspiavash da dovlechesh sys sebe si niakoi navlek. :)
+<VelinTzanov> Koe s kakvo ti pomaga, Rangele?
+<Borisof> to togawa shte se otkaja ot ideqta predi da q dokaja ;(
+<rangel__> tova che vsq nqkoe ot desnite poddyrveta trqbva da ima po-golqm koren za d-centrichnoto dyrvo
+<VelinTzanov> Rangele, tova znachi che loshoto tvyrdenie (koeto dokazvame che e greshno) triabva da e viarno za po-malko dyrvo.
+<VelinTzanov> A za da e viarno za nego, triabva da e viarno za oshte po-malko dyrvo...
+<VelinTzanov> ... i za oshte po-malko...
+<VelinTzanov> ... dokoga?
+<VelinTzanov> Ako go formulirash kato indukcia moje prosto da kajesh, che veche si dokazal che ne moje loshoto tvyrdenie da e viarno za po-malki dyrveta.
+<VelinTzanov> Indukciata i principyt na krainia element sa edno i syshto neshto.
+<rangel__> aha, mislq che razbrah
+<sssa88> e dobre de ako imash samo edin vryh i kym nego dobavish drug ne e li vyzmozno centyra da se izmesti nadqsno(toest da stane noviq vryh)?
+<VelinTzanov> Ako loshoto tvyrdenie e viarno za X, znachi e viarno i za Y<X
+<VelinTzanov> Ako dobroto e viarno za Y, to znachi e viarno i za X>Y
+<VelinTzanov> Nadiasno niama problem.
+<VelinTzanov> A naliavo moje li? :)
+<sssa88> ne
+<VelinTzanov> Nie dokazvame che ne moje naliavo. :)
+<sssa88> a
+<sssa88> da
+<Borisof> mi mai towa e po tazi zadacha
+<VelinTzanov> Ne
+<VelinTzanov> Kakvo kato [a b-1] e po-naliavo ot [a b]?
+<VelinTzanov> Taka de, ne po-nadiasno.
+<Borisof> mi prawim tsikal 
+<VelinTzanov> Ako vsichki centrove sa vse naliavo shte stane N^3 pak.
+<Borisof> i se mestim 
+<VelinTzanov> Ot [a b-1] do b li go pravish tozi cikyl?
+<sssa88> ami syshtoto i za otdqsno
+<VelinTzanov> Rangele, Vlado?
+<Borisof> ne togawa shte se amortizira do N^2
+<rangel__> tova oznachava che mozhem da si svedem dinamichnoto do N^2 (dokazva se s malko amortiziran analiz)
+<sssa88> to e analogichno
+<VelinTzanov> A kakvo e "syshtoto i za otdiasno"? :)
+<VelinTzanov> Chakaite, chakaite.
+<VelinTzanov> Sprete za malko.
+<sssa88> ami [a+1,b] centyra ni e dqsnata granica za korena
+<VelinTzanov> Kolkoto i da go amortizirate ot [a b-1] do b ciklite sa si N^3
+<VelinTzanov> Tova veche e drugo neshto.
+<VelinTzanov> Ot [a b-1] do [a+1 b] veche e drugo.
+<VelinTzanov> Razlikata mejdu dvete e ot zemiata do nebeto.
+<VelinTzanov> Taka de, ot N^3 do N^2. :)
+<VelinTzanov> A zashto da e N^2 tova (s [a b-1] i [a+1 b]) ?
+<Swetko2> zastoto te triabva da sa mnoog blizki
+<VelinTzanov> Moje i bez amortized analysis da go obiasnite.
+<VelinTzanov> Zashto da triabva be, Swetko?
+<VelinTzanov> Moje da sa ot 1 do N. :)
+<VelinTzanov> Daje ako ne se lyja imam takyv test.
+<Swetko2> ama togava s amotized ste izleze
+<Swetko2> vche na sledvastia vrah ste sa blizko
+<VelinTzanov> Taka e.
+<VelinTzanov> Koi shte mi napravi hubav analiz. Moje i da ne e amortized. A moje i amortized.
+<VelinTzanov> Dobrovolci?
+<VelinTzanov> Off, to stanalo 100 chasa be.
+<VelinTzanov> Aide az shte go napravia.
+<VelinTzanov> Shte dokajem che reshavaneto na vsichki intervali s dadena dyljina otnema O(N)
+<VelinTzanov> Za intervala [1 K] vyrtim cikyl do [2 K]
+<VelinTzanov> Posle za [2 K+1] vyrtim cikyl ot [2 K] do [3 K+1]
+<VelinTzanov> Posle vyrtim ot [3 K+1] do [4 K+2]
+<VelinTzanov> I taka natatyk... vinagi vytrim ot tam otkydeto sme svyrshili poslednia pyt.
+<VelinTzanov> Obshto sme izvyrtiali O(N) za da reshim vishcki intervali s dyljina K.
+<VelinTzanov> Vyrtim po K ot 1 do N i imame obshto O(N^2)
+<VelinTzanov> IAsno?
+<Swetko2> da
+<Borisof> da
+<VelinTzanov> Mojete da go napishete lesno za domashno, nali?
+<sssa88> da
+<rangel__> da
+<Swetko2> da 
+<sssa88> da
+<Borisof> da
+<VelinTzanov> OKO
+<VelinTzanov> OK
+<VelinTzanov> Sega sledvashtata zadacha:
+<VelinTzanov> Convex, 2-ro kontrolno 2004
+<Swetko2> oh
+<Borisof> finaly
+<VelinTzanov> http://infoman.musala.com/contests/noi/2004/kont2_tasks.html
+<VelinTzanov> Oshte li ne znaete kak se reshava, btw? :)
+<rangel__> az ne
+<VelinTzanov> Koi znae pone O(N^4) reshenieto?
+<sssa88> i az
+<Swetko2> kolko izpuknali mnogougulnici ima li beshe uslovieto
+<Swetko2> az ne
+<VelinTzanov> Da
+<sssa88> az maj go znam
+<Swetko2> ne 
+<Borisof> ne
+<Swetko2> toi slavi go obiasniava ama az ne zacepih
+<Borisof> i ne mojah da si go izmislq sled sastezanieto
+<VelinTzanov> OK
+<VelinTzanov> Shte nauchim neshto dnes znachi. :)
+<VelinTzanov> Ot kyde da zapochnem?
+<Swetko2> ot N^4
+<VelinTzanov> Imam predvid otkyde da zapochnem N^4. :)
+<Borisof> ako ima N^5 moje i ot tam
+<Swetko2> az se sumniavam da ima
+<Swetko2> ama moshe
+<VelinTzanov> A, siguren sym che ima. :)
+<Swetko2> ako izmislish
+<VelinTzanov> Prosto ako ste podredeni pyrvo shte se setite za N^4
+<VelinTzanov> Aide de - ot kyde da zapochnem?
+<VelinTzanov> Stava duma za IZPYKNALI mnogoygylnici.
+<Swetko2> ot n^5
+<VelinTzanov> Kakvi drugi IZPYKNALI neshta sme pravili?
+<Borisof> obwiwka
+<Swetko2> obvivka
+<Borisof> me sigurno ne e towa
+<Swetko2> tova e 
+<Borisof> poneje tq e N^logn
+<Swetko2> ma ne znam tochno kak se izpolzva
+<VelinTzanov> Ne se izpolzva. :)
+<Swetko2> moshem kato namerim obvivka
+<VelinTzanov> Prosto kakvo pravim pyrvo za IZPYKNALATA obvivka?
+<Swetko2> da kombinirame tochki ot neia
+<Swetko2> sortirame 
+<Borisof> mi moje da pochnem ot 3 algalnitsi 
+<VelinTzanov> Swetko, tova ne ti vyrshi rabota. Mojesh da imash malki izpyknali mnogoygylnicheta vytre.
+<Borisof> i da oslojnqame
+<VelinTzanov> Dobre de, triabva da zapochnete otniakyde.
+<Swetko2> e, da ma prosto niakakva ideia
+<VelinTzanov> Shte stroim mnogoygylnici.
+<VelinTzanov> Iskame niakakvo dinamichno za stroene na izpyknali mnogoygylnici.
+<VelinTzanov> Iskam da kaja:
+<VelinTzanov> Fixirano mi e tova i tova. Ot tuk natatyk imam tolkova i tolkova izpyknali mnogoygylnici.
+<VelinTzanov> Taka se praviat dinamichnite.
+<VelinTzanov> Fixirate neshto.,
+<VelinTzanov> Interval, dyrvo, poddyrvo, praskovi, chereshi, hora... 
+<Swetko2> ami to mai niakakvi 3 tochki se fixirah
+<Swetko2> a
+<VelinTzanov> I za vsiaka kombinacia ot fixiranite neshta smiatate broikata.
+<VelinTzanov> Swetko, ne se opitvai da si spomnish. Misli.
+<VelinTzanov> Kakvo e vajno za da tvyrdim che edin mnogoygylnik e izpyknal?
+<VelinTzanov> Kakvo e dobre da si fixirame?
+<Swetko2> da znaem che uglite mu sa <180
+<VelinTzanov> Iskate li da vi dam N^6 reshenie? :)
+<Borisof> moje da dobawqme edna po edna tochki am kartinkata
+<VelinTzanov> Ne, niama da vi davam, che e oshte po-opleteno ot N^4. :)
+<Swetko2> da
+<sssa88> ami tochka koqto sys sigurnost shte uchastva v mnogoygylnika - naprimer naj-dolnata
+<Swetko2> n^99 ako moshe
+<Swetko2> da
+<VelinTzanov> Vlado, zashto nai-dolnata pyk da uchastva sys sigurnost?
+<Swetko2> tova na vlado stava
+<Swetko2> ne, prosto da fixirame edna naj dolna
+<sssa88> ami kato si vzemem edna tochka i si kazvame tova shte e naj-dolnata
+<VelinTzanov> Aaa, tova veche e drugo neshto. :)
+<VelinTzanov> Ami ako ima 2 nai-dolni?
+<sssa88> toest vsqka tochka q gledame da e naj-dolna
+<Swetko2> e che kakvo
+<VelinTzanov> Ami malko shte broim dvoino.
+<sssa88> i dvete shte gi razgledame
+<Swetko2> kak da ima 2 nai dolni
+<VelinTzanov> Ami ima i takiva mnogoygylnici - s 2 nai-dolni tochki.
+<VelinTzanov> Tiah ne gi broim, taka li? :)
+<VelinTzanov> Ili gi broim dva pyti? :)
+<Swetko2> ami ste vnimavame
+<VelinTzanov> Kakvo znachi tova?
+<rangel__> vzimame naj-lqvata ot naj-dolnite (t.e. kazvame che sme vzeli naj-lqvata naj-dolna)
+<Borisof> ;0
+<sssa88> ami kato vyrvi po mnogoygylnika shte gledame da dobavim otdqsno no ne i ot lqvo
+<VelinTzanov> Aha. Dobre.
+<VelinTzanov> Taka stava.
+<VelinTzanov> Vsyshtnost ideite vi sa edna i syshta.
+<VelinTzanov> Niakoi predloji da gi dobaviame edna po edna.
+<VelinTzanov> Ideiata na Vlado e syshtata.
+<VelinTzanov> Prosto toi gi dobavia podred.
+<VelinTzanov> REdyt vinagi e hubavo neshto.
+<VelinTzanov> OK. Fixirahme edna tochka. Otlichno.
+<VelinTzanov> Sega?
+<rangel__> mozhe da fiksirame oshte 3 che da dokarame slozhnostta do tova, koeto tyrsim :-)
+<sssa88> oshte 2
+<sssa88> che da ni ostane i za edin naj-vytreshen cikyl
+<sssa88> deto posle da go optimizirame
+<VelinTzanov> Chakam idei.
+<VelinTzanov> :)
+<VelinTzanov> Vlado se doseshta neshto... :)
+<VelinTzanov> Aide daite ideiki.
+<sssa88> az prosto go znam, nishto ne se doseshtam
+<VelinTzanov> Kak pravim dinamichni po princip?
+<VelinTzanov> Vzimame neshto chastichno postroeno.
+<sssa88> ami mozei sledvashtite dve ot obvivkata da si fiksirame
+<VelinTzanov> I za vsiako chastichno postroeno smiatame tam neshto.
+<sssa88> po-chasovnikovata strelka kato q stroim
+<VelinTzanov> Vlado, ako go znaesh, po-dobre ne davai idei. :)
+<VelinTzanov> Kakvo znachi sledvashtite dve?
+<sssa88> ok
+<sssa88> ami sledvashtite dve
+<VelinTzanov> Tochki nomera 1, 2 i 3 ot mnogoygylnika? Ami hubavo. I kakvo pechelim ot tova?
+<sssa88> ami imame orientaciq nqkakva
+<VelinTzanov> :)
+<VelinTzanov> Momcheta, idei?
+<VelinTzanov> Kazah vi dostatychno.
+<VelinTzanov> Swetko, Borisov, Rangel, iskam da vi chuia.
+<rangel__> mozhe da fiksirame i naj-gorna tochka
+<VelinTzanov> Kak se praviat dinamichni be momcheta?
+<VelinTzanov> Moje, Rangele.
+<VelinTzanov> I kakvo ni gree nai-gornata tochka? :)
+<rangel__> i sled tova mozhem da si smetnem razlichnite nachini da si napravq dqsna i lqva polovinka na izpyknaliq mnogoygylnik
+<VelinTzanov> Kak shte gi smetnesh za liavata i za diasnata?
+<Swetko2> ami moshem da fixirame 2 tochki
+<Swetko2> ama to i az znam malko ot reshenieto
+<VelinTzanov> Neka chuia Rangel.
+<Swetko2> i da tyrsim po kolko nachina moshem da postroim nesto izpuknalo meshdu tiah
+<rangel__> broq na levite polovinki shte go smetna kato mestq postepenno lqvata granica ot +inf do po-dqsnata ot dvete fiksirani veche tochki
+<rangel__> a dqsnata q smqtam naobratno
+<VelinTzanov> Ne te razbrah.
+<rangel__> t.e. pravq izpyknala dyga po tri ogranichavshti tochki
+<VelinTzanov> I koi sa trite tochki i kak ogranichavat tochno?
+<rangel__> gorna, dolna i edna stranichna (vednyzh za dqsntata i vednyzh za lqvata)
+<rangel__> prosto ogranichavam tochkite, koito mogat da uchastvat v dygata
+<VelinTzanov> I kakvo pravish za vsiaka troika?
+<rangel__> i zadylzhitelno vzimam dyga, koqto se dopira i do trite
+<VelinTzanov> Imash exponencialen broi dygi.
+<Swetko2> ami dinamichno
+<VelinTzanov> Tova exponencialen cikyl li znachi? :)
+<VelinTzanov> Swetko, neka chuia Rangel.
+<VelinTzanov> Dobre de, kaji kakvo dinamichno predlagash. :)
+<Swetko2> ami nali triabva da ima dinamichno
+<VelinTzanov> TRiabva da. Niama kak da reshite zadacha s N=500 inache.
+<Borisof> mi...
+<VelinTzanov> Kakvo da fixirame?
+<rangel__> az za vsqka trojka ot tochki poluchavam edinstvena dyga, zashto da sa ekponencialen broj?
+<VelinTzanov> Shte stroim dygi, tova e iasno.
+<Borisof> mi po tri tochki
+<VelinTzanov> Zashtoto v edna dyga mojesh da imash 0, 1, 2, ... N tochki.
+<rangel__> stroq naj-izpyknalata s vyzmozhno naj-mnogo tochki
+<Borisof> da smetnem borq na dagite mejdu B i C taka che wsichki tochki da sa warteshni za agal BAC
+<Borisof> no wanshni za triagalnik ABC
+<VelinTzanov> Rangele, tova shte ti dade nai-izpyknalite mnogoygylnici, niama da ti dade vsichki.
+<VelinTzanov> Taka nai-mnogo da poluchish N^3 mnogoygylnici... a te moje da sa 2^500
+<VelinTzanov> Borisov, kak shte garantirash izpyknalost taka?
+<Borisof> iskah da predloja neshto
+<VelinTzanov> Dobro predlojenie.
+<VelinTzanov> No dai da go opravim.
+<Borisof> nali fiksirahme edna tochka
+<Borisof> nai dolnata
+<VelinTzanov> Da go exploatirame tova che e nai-dolna.
+<VelinTzanov> I da garantirame izpyknalost.
+<VelinTzanov> Kak mojem da garantirame izpyknalost.
+<Borisof> mi sega izbirame dwe tochki nad nashta 
+<VelinTzanov> Imame edna NAI-DOLNA tochka.
+<VelinTzanov> Imame oshte dve tochki.
+<VelinTzanov> Kak da gi vzemem tezi dve tochki?
+<VelinTzanov> Kak da definirame podzadachata?
+<VelinTzanov> Shte tyrsim broi dygi.
+<VelinTzanov> OK.
+<VelinTzanov> Kakvi dygi?
+<VelinTzanov> Sys sigurnost nad nai-dolnata tochka.
+<VelinTzanov> Kakvo drugo?
+<VelinTzanov> Iskame izpyknalost.
+<VelinTzanov> Kak da podberem dvete tochki? Kak da definirame dygite?
+<Borisof> mi ako sme fiksirali nai-gorna i nai-dolna rochka
+<VelinTzanov> Da?
+<Borisof> to togawa tarsim dagite ot lqwo i otdesno i *
+<Borisof> toest ako gornata tochka e A a dolnata B
+<VelinTzanov> Kak gi tyrsim?
+<VelinTzanov> Borisov, i kak garantirash izpyknalost. Mojesh da poluchish neshto s forma na iabylka.
+<Borisof> tarsim broq na dagite A B i broq na dagitq B A i umnojawame
+<VelinTzanov> OK de, ne moje kato iabylka.
+<VelinTzanov> Kak namirame tozi broi dygi?
+<Borisof> mi znam
+<Borisof> ;)
+<VelinTzanov> Kaji kak shtom znaesh. :)
+<Borisof> izbirame edna tochka C w lqto ot AB i takawa che da e mejdu A i B po y
+<VelinTzanov> OK
+<VelinTzanov> I kakvo pravim s neia?
+<VelinTzanov> Drugite, mislete, ne chakaite.
+<Borisof> i broq na dagite koito minawat prez A C i B sa broq na tezi deto minawat prez A C w lqwo ( towa e swejdane na zadachata do po-malka)
+<Borisof> * broq na dagite minawashti w lqwo ot C B
+<VelinTzanov> Ne e taka. Tuk veche imash iabylka.
+<rangel__> ne garantirash izpyknalost
+<VelinTzanov> Ne mojesh da garantirash izpyknalost v tochkata C.
+<Swetko2> ami tazi C da e nai diasnata
+<VelinTzanov> Dobre be hora, kakvo vi triabva za izpyknalost.
+<Swetko2> da ia vzemem za nai diasna
+<VelinTzanov> Predstavete si edin mnogoygylnik.
+<VelinTzanov> Predstavete si sega samo chast ot nego.
+<VelinTzanov> Kak znaete che tazi chast ne pravi mnogoygylnika vdylbnat?
+<VelinTzanov> Tia e izpyknala - OK.
+<VelinTzanov> Kakvo drugo vi triabva
+<VelinTzanov> Kakvo drugo vi triabva?
+<Swetko2> da namerim
+<Borisof> mi ostanalite tochki da lekat e edin agal tam
+<VelinTzanov> Koi ostanali tochki?
+<VelinTzanov> Vsichkite li?
+<Swetko2> po kolko nachina meshdu 2 susedni vyrha na chastta ot mnogougulnika mogat da obrazuvat izpuknala dyga
+<VelinTzanov> Ne te razbrah, Swetko.
+<VelinTzanov> Kakvo ni e fixirano?
+<VelinTzanov> I kak to opredelia tova koeto se tyrsi?
+<Swetko2> ami nali kaza che imame niakakuv mnogougulnik
+<Swetko2> i imame chast ot nego
+<VelinTzanov> Po-tochno tyrsim broia na vyzmojnite chasti ot nego.
+<VelinTzanov> I se chudim kak da garantirame che ne se vdylbvat s predishnite chasti.
+<VelinTzanov> OK, momcheta, aide da go dadem podredeno.
+<VelinTzanov> Kakto s vsiako dinamichno tuk pravim slednoto:
+<VelinTzanov> Vzimame edin moment i delim na minalo i bydeshte. Minaloto go vzimame fixirano i bez znachenie. Bydeshteto go tyrsim. V nashia sluchai tyrsim broia na vyzmojnostite mu.
+<VelinTzanov> Iasno e, che v tazi zadacha triabva podzadachata da e slednata:
+<VelinTzanov> Imame chastichno-postroen izpyknal mnogoygylnik (opredelen s niakolko (kraen, fixiran broi) tochki).
+<VelinTzanov> Pitame se po kolko nachina mojem da go zavyrshim, taka che da ne go vdlybnem.
+<VelinTzanov> Koe definira bydeshteto.
+<VelinTzanov> Koe ima znachenie za bydeshteto?
+<VelinTzanov> Koe definira koi tochki mojem da vzimame i koi ne?
+<Swetko2> mnogougulnika
+<VelinTzanov> Vsichkite 150 tochki v mnogoygylnika li?
+<Swetko2> ma to moshe da ima mnogo mnogougulnici
+<VelinTzanov> Ma to i na Score mojesh da imash mnogo rezultatit.
+<VelinTzanov> Ma to i na Score mojesh da imash mnogo rezultati.
+<Borisof> poslednite dwe ot ednata sreana
+<VelinTzanov> Samo deto ne te gree kolko e rezultata za bydeshteto!
+<VelinTzanov> NAI-SETNE! :)
+<Borisof> i poslednite dwe ot drugata
+<VelinTzanov> Ashkulsun, Borisov!
+<VelinTzanov> Triabvat ni samo krainite 4 tochki ot postroenia mnogoygylnik!
+<VelinTzanov> Ne ni triabva celia!
+<VelinTzanov> Znaem li krainite 4 tochki (po 2 ot dvata kraia) mojem da kajem po kolko nachina mojem da go dostroim.
+<VelinTzanov> Prosto nishto drugo niama znachenie!
+<Swetko2> moshem
+<VelinTzanov> Tova e edin ot nai-vajnite uroci na tazi podgotovka - da si davate smetka koe ima znachenie i koe niama.
+<VelinTzanov> Swetko, tiho sega.
+<VelinTzanov> Nedeite da celite v tymnoto.
+<VelinTzanov> Nikoga.
+<VelinTzanov> Ne vi uchim na tova.
+<VelinTzanov> Zamisliaite se.
+<VelinTzanov> Mislete koe ima znachenie i koe niama. Koe definira zadachata.
+<VelinTzanov> Vzimame gronata i dolnata i delim tam... celene v tymnoto!
+<VelinTzanov> Pomislete prosto - koe definira broikata? Koe realno e ot znachenie?
+<VelinTzanov> Kato si otgovorite na tozi vyrpos, natatyk jivota stava pesen i optimizacii!
+<VelinTzanov> Borisov, kaji sega kato imame 4 fixirani tochki kak svejdame do podzadacha?
+<Borisof> i sega?
+<VelinTzanov> Kak namirame broikata?
+<VelinTzanov> Imash 4 fixirani tochki.
+<Borisof> mi mai shte tarsim oshte edna tocka
+<Borisof> koqto da e e watre
+<VelinTzanov> Aha
+<Borisof> watre znachi ...
+<VelinTzanov> Na kakvi uslovia triabva da otgovaria tia?
+<Borisof> razbirate li ili da definiram
+<VelinTzanov> Definirai.
+<Swetko2> da
+<VelinTzanov> Nikoi nishto ne razbira.
+<VelinTzanov> Niakoi si misliat che razbirat, no vsyshtnost ne e taka. :)
+<Borisof> mi trqbwad da e nadqsno ot lewite dwe tochki
+<VelinTzanov> Taka che definirai iasno.
+<Borisof> trqbwa da e nalqwo ot desnite dwe tochki
+<Borisof> i da e otgore na na prawata obrazuwana
+<VelinTzanov> Obrazuvana ot koe?
+<Borisof> poslednta w lqwo i poslednata w dqsno
+<VelinTzanov> Aha. Iasno.
+<VelinTzanov> I za vsiaka ot tezi tochki kakvo pravish?
+<Borisof> mi prawq nowite 4 tocki 
+<VelinTzanov> Kak?
+<Borisof> te w sashnost sa dwe chetworki i sabiram tehnite otgowori
+<VelinTzanov> Taka li pravish?
+<VelinTzanov> Ia obiasni po-podrobno, che neshto greshno mi se vijda. :)
+<Borisof> mi ednata e sashtata kato nachalnata samo che lewite dwe tochki sa
+<sssa88> ne sa li 4 chetvorki?
+<Borisof> predposlednata otlqwao stawa predposledna , a posledna stawa nowoizbranata
+<VelinTzanov> Chakai Borisov.
+<VelinTzanov> Neka pyrvo Vlado kaje kak gi vidia 4. :)
+<sssa88> po-skoro sa 3
+<Borisof> moite sa po-malko az sam s predimstwo ;))
+<VelinTzanov> Padnah ot stola. :)
+<VelinTzanov> Zashto 3 be, momche? :)
+<VelinTzanov> NE si s predimstvo, Borisov. Shtoto si po-malko greshen.
+<VelinTzanov> S predimstvo e po-greshnia. :)
+<sssa88> a ne 4
+<VelinTzanov> Kak gi vidia 4?
+<VelinTzanov> Koi 4?
+<sssa88> ami fiksiranite ni tochki sa p1, p2, p3, p4
+<sssa88> a novata t
+<VelinTzanov> Da
+<VelinTzanov> Nali ne si zabravil definiciata na 4-te tochki?
+<sssa88> znachi imame da vidim za (t,p1,p3,p4)
+<VelinTzanov> Ia mi ia kaji?
+<VelinTzanov> Koia tochka s kakvo belejish?
+<sssa88> p1, p2, p3, p4 sa po-obratnonachasovnikovata strelka ot kym naj-lavqta
+<sssa88> posle imash (t,p2,p3,p4)
+<VelinTzanov> Chakai, chakai.
+<VelinTzanov> Naredbata mi e iasna.
+<VelinTzanov> Kaji mi definiciata.
+<VelinTzanov> Tia 4 tochki proizvolni 4 tochki li sa?
+<sssa88> (t,p4,p3,p1)
+<VelinTzanov> Mai si imat niakakyv smisyl?
+<VelinTzanov> Ehooo! Zemiata vika Nedev! :)
+<VelinTzanov> Kakvi sa tia proizvolni permutacii deto mi gi vyrtish? :)
+<VelinTzanov> Kaji mi smisyla im.
+<sssa88> ami te sa krajnite ot obvivkata
+<VelinTzanov> Prosto 4 kraini tochki?
+<VelinTzanov> Ne sa li 2 po 2?
+<Borisof> Huston we have a problem!
+<sssa88> ami teq permutacii sa vsichki varianti kak da dobavim novata tochka
+<VelinTzanov> Sovalkata Nedev se razpiliava nad 4 shtata, za razlika ot sovalkata Borisov, koiato se razpiliava samo nad 2. :)
+<sssa88> a da be
+<VelinTzanov> Kak gi vidia 4 varianta? :)
+<sssa88> to maj po moq nachin se povtarqt
+<VelinTzanov> NE, po Borisovia se povtariat. Po tvoia sa prosto greshni.
+<VelinTzanov> Ne mojesh da mahnesh niakoia ot 2-te nai-kraini tochki.
+<VelinTzanov> Ne mojesh da vyrjesh p1 direktno za novata.
+<VelinTzanov> Taka izhvyrliash p2 ot mnogoygylnika. :)
+<VelinTzanov> A p2 e fixirana tochka v mnogoygylnika - ot MINALOTO.
+<VelinTzanov> Minaloto ne se promenia, Nedev.
+<VelinTzanov> p1 moje da otide v dalechnto minalo. Kakto i p4.
+<VelinTzanov> No p2 i p3 ne mojesh da gi izhvyrlish i da vyrjesh novata direktno za p1 ili za p4.
+<VelinTzanov> Razbra li me?
+<sssa88> zashto da ne mozesh?
+<VelinTzanov> Nali p2 e nai-krainata tochka otliavo?
+<VelinTzanov> A p1 e predposlednata otliavo?
+<VelinTzanov> Ili se byrkam neshto s tvoiata notacia?
+<VelinTzanov> Kaji mi koi dve tochki sa dvata kraia.
+<VelinTzanov> I koi sa "predposlednite"
+<VelinTzanov> Eho?
+<sssa88> ami
+<VelinTzanov> Pitam te za sobstvenata ti definicia, pone tova mi kaji. :)
+<sssa88> az si gi predstavqh che p2 e naj-dolu
+<sssa88> na-vlqvo
+<VelinTzanov> MOLIA?!
+<VelinTzanov> Koi ti kaza da si gi predstaviash taka?
+<sssa88> p1 e prednata po-chasovnika
+<VelinTzanov> Ia da obiasnia po-otnachalo.
+<sssa88> ami taka razbrah ot predi malko
+<VelinTzanov> Imame edin mnogoygylnik koito e postroen doniakyde.
+<Borisof> aa setih se samo s edna chetworka stawa
+<VelinTzanov> Chast ot mnogoygylnik
+<sssa88> vij kazahte chetiri krajni i az tova razbrah
+<VelinTzanov> Izpyknala. Svyrzana.
+<VelinTzanov> Dobre, chakai sega da te pogyrcha malko.
+<VelinTzanov> Kak taka razbra che tova sa 4-te kraini tochki? Za kakvi podzadachi mojem da govorim togava?
+<VelinTzanov> 4-te tochki sa si 4-te tochki.
+<VelinTzanov> Konstanti. Niama promiana pri tiah.
+<VelinTzanov> Ne ti li napravi vpechatlenie?!
+<VelinTzanov> Aide da obiasnia pak.
+<VelinTzanov> Imash postroen doniakyde mnogoygylnik.
+<VelinTzanov> Kato othapan gevrek. :)
+<VelinTzanov> Sega pochvame da se chudim po kolko ralzichni nachina moje da e izglejdal othapania gevrek predi da byde othapan.
+<VelinTzanov> Za celta ne ni triabva da znaem celia gevrek.
+<VelinTzanov> Triabva ni da znaem samo po dve tochki ot dvata (othapani) kraia na gevreka.
+<sssa88> teq chetiri tochki ne sa posledovatelni v mnogoygylnika taka li?
+<VelinTzanov> Taka ako nomerirame neothapanite tochki ot gevreka po chasovnikovata strelka (ili obratno, bez znachenie) imame p1, p2, p3, ... p(k-1) pk
+<sssa88> vse edno gevreka e hapan na nqkolko mesta?
+<VelinTzanov> Tochno taka.
+<VelinTzanov> NE!
+<VelinTzanov> Gevrekyt e othapan na EDNO miasto.
+<sssa88> e ako ne sa posledovatelni trqbwa da e othapan na dve mesta?
+<VelinTzanov> Ti predstaviash li si gevrek othapan na 4 mesta? Che tova sa niakakvi nezavisimi korichki, nikakyv gevrek ne e.
+<VelinTzanov> Posledovatelni sa taka:
+<VelinTzanov> p1 p2 p3 p4.... p(k-1) pk
+<VelinTzanov> Tezi sa naredeni po NEOTHAPANATA chast na gevreka.
+<VelinTzanov> Nas ni interesuvat samo p1 p2 p(k-1) i pk.
+<Borisof> ogladnqwam ;(
+<VelinTzanov> Zashto tochno te?
+<VelinTzanov> Hodi iaj.
+<VelinTzanov> Vzemi si neshto da iadesh pred PC-tol
+<VelinTzanov> Vzemi si neshto da iadesh pred PC-to
+<VelinTzanov> Az taka pravia. :)
+<VelinTzanov> Vlado, razbra li sega pone za koi tochki govorim?
+<sssa88> ne
+<VelinTzanov> Izpyknaliat mnogoygylnik e gevrek.
+<VelinTzanov> Toi v momenta e othapan - t.e. lipsva mu edna chast.
+<sssa88> hem ne sa posledovatelni hem na edno mqsto e othapan - tova ne go razbiram
+<Borisof> weline chakai malko
+<VelinTzanov> Ima edna svyrzana chast (postroenata v minaloto) i edna neizvestna (othapana) chast - bydeshteto koeto ne znaem.
+<Borisof> da kaja neshto na nedew
+<VelinTzanov> OK
+<sssa88> ami shtom e svyrzana znachi sa posledovatelno?
+<VelinTzanov> Kaji ti.
+<VelinTzanov> Da.
+<sssa88> posledovatilni
+<VelinTzanov> No ne vzimame vsichkite N posledovatelni tochki!
+<Borisof> nedev nali znaesh kak se stroi obwiwka
+<VelinTzanov> Vzimame samo 4 tochki ot tazi posledovatelnost. Po 2 ot vseki ot 2-ta kraia.
+<sssa88> pitam : posledovatelni li sa tochkite p1, p2, p3 i p4 koito gi razglezdame v nashto dinamichno?
+<Borisof> w daden moment ti si postroil nqkakwa chast ot obwiwkata i se opitwash na namerish sledawshtata tochka
+<Borisof> slushash li me?
+<sssa88> da
+<VelinTzanov> otgovariam: Ne sa posledovatelni. Posledovatelni sa tochkite p1 p2 p3 p4 p5 p6 p7 .... p(k-1) pk - K na broi.
+<Borisof> i sega 
+<VelinTzanov> Nie vzimame p1 p2 p(k-1) i pk - tova sa nashite 4 tochki
+<VelinTzanov> Borisov, prodyljavai.
+<Borisof> neka si pochnal stroeja ot tochkata p1
+<Borisof> posle si namerip p2
+<Borisof> i taka natatak
+<sssa88> ama tq obvivkata nali e ciklichna p1, p2, p(k-1) i pk ne sa li posledovatelni vse pak?
+<Borisof> ma tq oshte ne e zawarshena
+<Borisof> razbirash li
+<Borisof> otworena e
+<Borisof> p1 e parwata
+<Borisof> a pk e poslednat
+<sssa88> da
+<Borisof> ma ti na sledwashtata stapka pri stroeneto shte dobawish druga tochka mesjdo tqh
+<sssa88> i vse pak pyrvite dve i poslednite dve sa posledovatelni v obvivkata
+<Borisof> ma te oshte ne sa poslednite dwe po neje oshte nqma obwiwka !
+<VelinTzanov> Ima samo edin othapan gevrek.
+<sssa88> e nali vzemame pyrvite dve i poslednite dve(krajnite ot dvete strani)?
+<VelinTzanov> Da
+<VelinTzanov> Dvete othapani mesta vzimame.
+<VelinTzanov> I se opitvame da nabutame tochki MEJDU tezi dve othapani mesta.
+<VelinTzanov> Tam e NEIZVESTNOTO. Tam e "bydeshteto". Tam e othapanato na gevreka, deto se chudim kakvo e.
+<Swetko> na swetko.data.bg ima risunka
+<VelinTzanov> Swetko, ti s nashiat spasitel! :)
+<sssa88> tova bmp mi izqde trafika :)
+<Borisof> dosta groznooo;)
+<sssa88> aha
+<VelinTzanov> Az pyk ne moga da go vidia ot US... :(
+<VelinTzanov> Borisov, kaji viarno li e? :)
+<Borisof> znachi si shtastliw ;)
+<sssa88> e dobre razbrah sega kak sa tochkite
+<VelinTzanov> :-D
+<Swetko> taka li e 
+<Borisof> da
+<Swetko> stot i az da znam
+<VelinTzanov> Gospod da blagoslovi Swetko. :)
+<Swetko> dali pravilno mislia
+<VelinTzanov> Rangele ti oshte li si buden i oshte li si s nas? :)
+<Swetko> toi mai ne se e obashdal 
+<Swetko> ot chas
+<rangel__> za budnoto imam nqkoi symneniq, no inache sledq misylta
+<VelinTzanov> :)
+<VelinTzanov> OK.
+<VelinTzanov> Vlado, sega veche znaesh za kakvo govorim.
+<VelinTzanov> Imame minalo.
+<VelinTzanov> Minaloto ima mnogo tochki.
+<VelinTzanov> No samo 4 ot tiah definirat bydeshteto.
+<VelinTzanov> Vinagi, za vsiako dinamichno, triabva da si definirame dinamichnoto po tova kakvo ima znachenie za bydeshteto.
+<VelinTzanov> Ne triabva da izpuskame nishto ot tova koeto ima znachenie (zashtoto togava shet sbyrkame, i shte vdlybnem mnogoygylnika v nashia sluchai) i ne triabva da nosim nishto izlishno, zashtoto togava shte timeout-nem.
+<VelinTzanov> Taka.
+<VelinTzanov> Sega Borisov kazva che vyrtim cikyl po vsichki tochki koito sa v edin triygylnik.
+<sssa88> ami nie s teq chetiri tochki veche imame edna izlishna
+<VelinTzanov> Tova e tozi triygylnik koito se obrazuva ot pravite p1-p2  p(k-1)-pk i p1-pk
+<VelinTzanov> Vlado, posle shte govorim za izlishnite. :)
+<VelinTzanov> Imame, da. No posle.
+<VelinTzanov> Neka zasega da sme s 4.
+<VelinTzanov> RAzbirate vsichki za koi triygylnik stava duma, nali?
+<VelinTzanov> Othapnata chast na gevreka moje da e samo v tozi triygylnik.
+<rangel__> na risunkata na Swetko e drug triygylnika
+<rangel__> v smisyl da ne stane pak nqkoq obyrkvaciq
+<VelinTzanov> Ne znam risunkata az.
+<VelinTzanov> Ia mi ia pratete na e-mail-a taia risunka.
+<rangel__> ami dupkata e mezhdu p1 i pk
+<VelinTzanov> Da de.
+<VelinTzanov> Imenno.
+<VelinTzanov> Vzimate pravata p1 p2
+<VelinTzanov> Vzimate pravata pk p(k-1)
+<rangel__> vsyshtnost da, az se byrkam
+<VelinTzanov> Vzimate pravata p1 pk
+<VelinTzanov> Te praviat triygylnik
+<VelinTzanov> Vytre sa potenciaolnite othapani tochki.
+<VelinTzanov> OK?
+<VelinTzanov> IAnso li e na vsichki?
+<rangel__> da
+<sssa88> da
+<VelinTzanov> Swetko?
+<Swetko2> izpratih ia
+<VelinTzanov> Mersi
+<VelinTzanov> Triabva da se otbeleji i che moje i da niama drugi tochki - moje napravo da svyrjem p1 i pk i taka da napravim zavyrshen mnogoygylnik.
+<VelinTzanov> Sega vyprosyt e kak svejdame zadachata do podzadacha.
+<VelinTzanov> Pravim sumata na vsichki vyzmojni tohcki ot tozi triygylnik. No za vsiaka tochka kakvo pravim?
+<VelinTzanov> Kakvo tochno smiatame?
+<VelinTzanov> Borisov, kakvo shteshe da kajesh ti?
+<rangel__> za vsqka tochka t, smqtame zadachata za (p1, p2, pk, t)
+<Swetko2> na moia chertesh toz triugulnik e vytre v mnogougulnika
+<VelinTzanov> Ne e, Swetko.
+<VelinTzanov> p1-p2    p1-pk    pk-p(k-1)
+<VelinTzanov> Pomisli pak/.
+<VelinTzanov> Rangele, tova dobre, no Borisov neshto drugo kazvashe pyrvonachalno.
+<Borisof> zbarkah togawa
+<VelinTzanov> Neshto ot sorta na (p1, p2, pk, t) + (t, p1, p(k-1), pk)
+<rangel__> toj iskashe da smqta i (t, p1, pk-1, pk), obache taka se povtarqt
+<VelinTzanov> Zashto da si sbyrkal?
+<VelinTzanov> Kakvo mu e greshnoto?
+<Borisof> gresgno
+<VelinTzanov> Aham.
+<VelinTzanov> A zashto se povtariat?
+<Borisof> mi broq dwa neshtata >2 pati
+<VelinTzanov> Aide sega da pomislim kak da ne napravite syshtata greshka na BOI/IOI.
+<VelinTzanov> REshenieto e da definirate vsichko.
+<VelinTzanov> 4-te tochki i stoinostta na dinamichnoto za tiah si imat iasna definicia.
+<Swetko2> ia vish dali moia chertesh e pravilen
+<VelinTzanov> Rekurentnata vryzka koiato pravite (s podzadachite) znachi syshto e iasno definirana. Tia si ima smisyl.
+<VelinTzanov> toi moje da byde napisan na list s dumi.
+<VelinTzanov> Da, Swetko, pravilen e.
+<VelinTzanov> Triabva vinagi da proveriavate dali e viarno tova koeto ste napisali s dumi.
+<Swetko2> i znachi sme postroili tozi mnogougulnik do tuk i sega triabva da mu slagame tochki otgore
+<VelinTzanov> Broia na izpyknalite dygi v dupkata mejdu p1 i pk na kolko e raven? Raven li e na sumata na tova i tova?
+<Borisof> mi shte ni stigne li pamet da prawim dinamichno po 4 tocki 4 meren masiw
+<VelinTzanov> Borisov, iasno e che nito pamet nito vreme niama da ni stigne. :)
+<Swetko2> nali posle ste optimizirame
+<VelinTzanov> Sega shte optimizirame.
+<VelinTzanov> Vajnoto e dnes da si vzemete belejka i da ne povtariate greshkata na Borisov.
+<VelinTzanov> Vajno e kato si pravite vryzkite s podzadachite da si gi definirate iasno i da si gi dokazvate.
+<VelinTzanov> Inache shte napravite gruba greshka bez da se usetite.
+<Borisof> az zbarkah wa pati daje
+<VelinTzanov> Razbrahte li me?
+<Borisof> da
+<sssa88> da
+<rangel__> da
+<Swetko2> da
+<VelinTzanov> OK. Shte vidim sled sedmica-dve kolko ste me razbrali. ;)
+<VelinTzanov> Aide sega na zadachata.
+<VelinTzanov> Znachi za vsiaka tochka t, smiatame (p1, p2, pk, t)
+<VelinTzanov> I sumirame.
+<VelinTzanov> Kakvo vi pravi vpechatlenie?
+<Borisof> che p1 i p2 ne se promenqt
+<VelinTzanov> Niama li neshto izlishno v tazi kartinka? :)
+<VelinTzanov> Aham.
+<VelinTzanov> p1 i p2 si sediat tam.
+<VelinTzanov> Znachi ima neshto izlishno.
+<VelinTzanov> S kakvo da gi zamenim p1 i p2?
+<VelinTzanov> S p1?
+<VelinTzanov> S p2?
+<VelinTzanov> Ili s neshto drugo?
+<rangel__> ne ni stiga samo 1 tochka
+<rangel__> prosto trqbva da pochvame dinamichnoto s 3 tochki i da go smqtame ot (p1, p2, p2, p3)
+<Borisof> mi moje nqkakwa prawa
+<VelinTzanov> Kakva prava?
+<Borisof> mi tazi p1 p2
+<rangel__> 1 prava = 2 tochki
+<Borisof> ma pak e losho 
+<VelinTzanov> Btw, 8-moygylnicite niama li da gi broite 8 pyti - za vsiaka nachalna p1-p2?
+<Borisof> da
+<Swetko2> n^4 napravihme li go
+<Swetko2> che sega da optimizirame
+<rangel__> ne zashtoto oshte ne raboti :-)
+<Borisof> mi mai ne sme
+<VelinTzanov> Razngele, zashto da ne raboti?
+<Borisof> mi men me pritesnqwat osmoagalnitsite
+<VelinTzanov> PRavilno te pritesniavat.
+<VelinTzanov> Znachi triabva da zapochvame s neshto nepovtorimo.
+<VelinTzanov> Kakvo nepovtorimo neshto si izbrahme predi chas-dva?
+<rangel__> mi zashtoto ne sym si dokazal che raboti... priemam po-loshiq variant, nali sym pesimist :-)
+<VelinTzanov> Vseki izpyknal mnogoygylnik si ima edna edinstvena... (kakva?) tochka
+<sssa88> naj-dolna naj-lqva
+<VelinTzanov> Tadaam!
+<VelinTzanov> Znachi si fixirame p1 da e nai-dolnata nai-liava tochka.
+<VelinTzanov> I stroim ot tam natatyk.
+<VelinTzanov> TRiabva li ni p2?
+<VelinTzanov> (Btw, toku-shto reshihme problemyt s 8-moygylnicite, ako ne zabeliazahte)
+<rangel__> ne, zashtoto mozhem da rezhem s po-silno uslovie, horizontalnata prava minavashta prez p1
+<VelinTzanov> Sega veche kato vinagi zapochvame ot nai-dolnata, nai-liava tochka triabva li ni p2?
+<VelinTzanov> Tochno taka, Rangele.
+<VelinTzanov> Drugite, razbirate li za kakvo stava vypros?
+<VelinTzanov> Prosto ne ni triabva onzi triygylnik.
+<Borisof> da
+<VelinTzanov> Vmesto pravata p1-p2 v nego mojem da izpolzvame horizontalnata prava prez p1.
+<sssa88> da
+<VelinTzanov> Swetko?
+<VelinTzanov> Swetkooo?
+<Swetko2> da
+<VelinTzanov> Iasno li e?
+<VelinTzanov> Priemam che ti e iasno.
+<VelinTzanov> Taka znachi za vseki 3 tochki p1, p(k-1) i pk mojem da smetnem po kolko nachina mojem da zatvorim gevreka.
+<VelinTzanov> Tova e chisto N^4 reshenie.
+<VelinTzanov> Mejdu drugoto pishe se dosta lesnichko.
+<VelinTzanov> Shte mojete li da go napishete?
+<Borisof> mojebi
+<VelinTzanov> Ako iskate da go pishte chisto bez rekursia shte triabva malko da sortirate tochkite okolo p1. No tova ne e problem.
+<rangel__> bi trqbvalo
+<sssa88> mda
+<Borisof> ma zashto da pishaem N^4
+<VelinTzanov> Zashtoto N^3 e syshtoto kato N^4. :)
+<VelinTzanov> Prosto nai-vytreshniat cikyl e optimiziran. :)
+<Swetko2> ok
+<Borisof> ti s rekursiq li si pisal veline
+<VelinTzanov> Ne, bez.
+<VelinTzanov> Bi triabvalo reshenieto mi da go ima zaedno s testovete.
+<VelinTzanov> slow.c
+<VelinTzanov> Mnogo e chisto.
+<VelinTzanov> Staral sym se da niama bugs, che vse pak tova mi beshe kontrolnoto reshenie.
+<VelinTzanov> Vyprosi po N^4?
+<rangel__> ne
+<Borisof> mi malko ne mi e qsna slojostta
+<Swetko2> ne
+<Borisof> znachi izbirame p1
+<Borisof> posle izbirame pk-1 i pk
+<Borisof> taka li ?
+<VelinTzanov> DA
+<VelinTzanov> 4 cikyla edin v drug.
+<Borisof> qsno togawa
+<sssa88> ne
+<Borisof> ne razbiram towa sas sortiraneto za da e interatiwna 
+<Borisof> programata
+<VelinTzanov> Ami sortirash tochkite okolo p1
+<VelinTzanov> Zashtoto ti stroish gevreka obratno na chasovnikovata strelka.
+<Borisof> aha po polqren agal
+<VelinTzanov> Zatova vsiaka sledvashta tochka e obratno na chasovnikovata strelka spriamo predishnata.
+<VelinTzanov> Da, tochno taka.
+<Borisof> za wsqka tochka prawq towa
+<VelinTzanov> Da
+<VelinTzanov> Sortiraneto e vytre v pyrvia cikyl, no izvyn vtoria.
+<Borisof> qsno
+<VelinTzanov> Kodyt e 17 reda (syshtestvenia kod). Moga da ti go paste-na v IRC-to daje. :)
+<VelinTzanov> No predpochitam sam da si go napishesh.
+<VelinTzanov> Sega da vidim kak da go napravim N^3?
+<Borisof> haide da optimizirame
+<VelinTzanov> Kakvo sme smetnali veche, koeto ni predstoi da go smetnem.
+<VelinTzanov> Koe mojem da preizpolzvame?
+<Borisof> mi mai se doseshtam
+<VelinTzanov> Da?
+<Borisof> ili ne...
+<VelinTzanov> Kakvo smiatame v nai-vytreshnia cikyl?
+<Borisof> broq na nachinite 
+<rangel__> vsichki sledvashti tochki
+<Borisof> da zatworim gewrek s otwor mejdu p1 i pk
+<rangel__> maj se setih, vzimame prednite smetki i vadim tezi, koito veche ne sa izpyknali
+<Borisof> ???
+<rangel__> (i ponezhe ne mozhem da izvadim poveche otkolkoto sme pribavili pyrviq pyt amortizirano shte stane s hubava slozhnost :-)
+<Borisof> ne te razbiram
+<rangel__> t.e. ako sme smetnali za p1, p(k-1), pk
+<Borisof> ;(
+<VelinTzanov> Da?
+<rangel__> kogato smqtame p1, pk, p(k+1), izpolzvame starata stojnost i vadim tezi tochki t, koito sa izpyknali za p(k-1), pk, no ne i za pk, p(k+1)
+<Borisof> be ne mi se wijda da raboti
+<VelinTzanov> Ti taka si dobaviash rabota, ne si mahash. :)   No ideiata e dobra.
+<Borisof> poneje niq trqbwa da smetnem p1,pk-1,pk posredstwom pk+1
+<VelinTzanov> Da preizpolzvame tova koeto veche sme smetnali.
+<VelinTzanov> Neka bydem po-chisti.
+<VelinTzanov> Imame tochkata p1 fixirana.
+<VelinTzanov> Imame tochkata p(k-1) i tochkata pk
+<VelinTzanov> Togava vyrtim cikyl po vsichki t-ta.
+<VelinTzanov> I kakvo smiatame za vsiako ot tiah?
+<VelinTzanov> Smitame:
+<VelinTzanov> (p1, pk, pt)
+<VelinTzanov> vsiaka smetka se definira s 3 chisla.
+<VelinTzanov> t.e. imame N^3 smetki.
+<VelinTzanov> A pravim N^4 operacii.
+<VelinTzanov> Ne vi li se struva malko typo? :)
+<VelinTzanov> Neshto se povtariame ochevidno.
+<VelinTzanov> Ako vzemem p1, niakakva drugo tochka pj i syshtoto pk.
+<VelinTzanov> togava kato vyrtim t-tata kakvo smiatame?
+<VelinTzanov> Ami pak - (p1, pk, pt) :)
+<VelinTzanov> Opredeleno povtariame smetki.
+<VelinTzanov> (To niama kak - kato smiatame N^3 neshta s N^4 slojnost iasno e che zdravo povtariame)
+<VelinTzanov> RAzbirate li ideiata? :)
+<VelinTzanov> Podrobnostite sega shte gi izchistim.
+<VelinTzanov> Kajete za ideiata zasega.
+<rangel__> ako ideqta e che ochevidno smqtame poveche ot neobhodimoto, da tova e qsno :-)
+<sssa88> aha
+<VelinTzanov> Ne samo tova - pitam dali vijdate kak tochno stava taka che smiatame poveche ot neobhodimoto.
+<Swetko2> ne
+<Borisof> da
+<VelinTzanov> Kaji, Swetko.
+<VelinTzanov> Ne se pritesniavai, Swetko, ne si typ - prav si. :)
+<VelinTzanov> Az oshte ne sym pokazal zashto ima izlishni smetki. :)
+<VelinTzanov> Po-tochno ne sym pokazal zashto sa izlishni.
+<Swetko2> az oste po nazad ne moga da shvana nesto
+<VelinTzanov> Tova koeto kazah gore syvsem ne e dostatychno.
+<rangel__> stoto nie smqtame edno i syshto no s razlichni pt-ta
+<VelinTzanov> OK, kaji za po-nazad.
+<VelinTzanov> Aham, tochno taka Rangele.
+<VelinTzanov> Nie imame sumi na pt-ta.
+<VelinTzanov> Nie smiatame N^3-ta pyti nehstata, no stava N^4 zashtoto sumirame ralzichni kombinacii ot tiah.
+<VelinTzanov> Taka che tova koeto vi go kazah po-gore ne vi gree osobeno. :)
+<VelinTzanov> TRiabva da pokaja che sumiraniata se pripokrivat.
+<VelinTzanov> No neka pyrvo obiasnia na Swetko.
+<VelinTzanov> Swetko, kaji.
+<Swetko2> ami znachi za vsiaka troika   p1, pk-1 , pk smiatame po kolko  nachina moshem da zavyrshim gevreka
+<VelinTzanov> Da
+<Swetko2> ako p1 e nai dolnata   meshdu  p1 i pk-1  ima niakolko tochki 
+<Swetko2> a pk-1, i pk sa posledovatelni tochki ot obvivkata
+<VelinTzanov> Niama znachenie kolko i koi. Nishto ne zavisi ot tiah.
+<VelinTzanov> Da, tochno taka.
+<VelinTzanov> Za vsiaka troika (p1, p(k-1), pk)
+<Swetko2> i za celta vytim cikul t koiato priema stoinosti takiva  tochki koito sa sled pk v sortirania masiv
+<Swetko2> i nad p1
+<VelinTzanov> Da
+<Swetko2> i vzemame stoinostite na trokite (p1, pk, t)
+<VelinTzanov> Za vsiaka takava tochka t sybirame (p1, pk, t)
+<VelinTzanov> Da
+<Swetko2> i gi sumirame
+<VelinTzanov> I gi sybirame, da.
+<VelinTzanov> Iasno?
+<Swetko2> i zasto tova raboti
+<VelinTzanov> Dobyr vypros. :)
+<VelinTzanov> DEfiniciata na dinamichnoto e:
+<VelinTzanov> Po kolko nachina mojem da dovyrshim gevreka.
+<VelinTzanov> Za celta se pitame koia sledvashtata tochka v gevreka.
+<VelinTzanov> I za vsiaka vyzmojna sledvashta tochka - smiatame syshtoto - po kolko nachina mojem da go dovyrshim. I sumirame.
+<VelinTzanov> Niamash povtorenia.
+<VelinTzanov> Zashtoto sledvashtata tochka e unikalna.
+<Swetko2> da
+<VelinTzanov> NAkraia za da poluchish otgovora na zadachata pravish:
+<Swetko2> ama znachi triabva i v opredelen red da gi obrabotvame
+<Swetko2> ami ne se li interesuvame po kolko nachina sme stignali do tozi gevrek othapania
+<VelinTzanov> Suma po vsiaka tochka za p1 i za vsiaka tochka nad neia p2. I sumirash (p1, p1, p2)
+<Swetko2> che posle da gi umnoshim po tezi po koito moshem da prodylshim
+<VelinTzanov> I triabva da izvadish broia na 2-ygylnicite nakraia, za da ne gi broish i tiah. :)
+<VelinTzanov> Swetko, goliam boi shte iadesh momche.
+<VelinTzanov> Koga sym vi uchil da gledate minaloto?
+<VelinTzanov> Cial mesec povtariam che se gleda samo bydeshteto.
+<VelinTzanov> Gledash bydeshteto za da smetnesh nastoiashteto.
+<VelinTzanov> Ostavi minaloto da se griji samo za sebe si.
+<Swetko2> ok
+<Swetko2> razbrah go
+<VelinTzanov> Tova e krasotata na abstrakciata, na indukciata.
+<VelinTzanov> Ne te interesuva kakvo e bilo. Gledash samo napred.
+<Swetko2> to budesteto iasno che ne zavisi ot minaloto
+<VelinTzanov> Taka nakraia se okazva che vijdash vsichko otnachaloto.
+<VelinTzanov> I si reshil zadachata.
+<Swetko2> znachi triabva da gi obrabotim v red po chasovnikovata strelka
+<Swetko2> pk
+<Borisof> kak e rekordata?
+<VelinTzanov> E, zavisi de... prosto zavisi ot 2-3 chisla, ne ot cialoto minalo. :)
+<Swetko2> oste ne sme
+<VelinTzanov> Da, ako iskash da niamash rekursia. Inache moje vsiakak, ama imash rekursia... i tia moje da e 500^3, a tova ne e hubavo. :)
+<VelinTzanov> Oshte sme na vtoro miasto, Borisov. :)
+<VelinTzanov> String-ovia den vodi s okolo 6KB.
+<Swetko2> ok
+<VelinTzanov> Aide sega na optimizaciata.
+<Swetko2> sega optimizaciata
+<Borisof> e towa e edin sorce ot 400 reda ;)
+<VelinTzanov> Koe, Borisov?
+<Swetko2> 6KB
+<Borisof> 6KB
+<VelinTzanov> N^4 source-a mi e tamyn 17 reda - ciklite imam predvid.
+<VelinTzanov> :)
+<VelinTzanov> Aide na optimizaciata.
+<Swetko2> na men e sors ot 240 reda
+<VelinTzanov> Kak smiatame (p1, pf, pk)
+<Borisof> aide
+<rangel__> ti ne slagash novi redove :-)
+<VelinTzanov> Sumirame za vsichki t-ta
+<VelinTzanov> Vsichki t-ta koito syotvetstvat na p1, pf i pk.
+<VelinTzanov> Tova sa vse t-ta ot tipa (p1, pk, t)
+<VelinTzanov> A za (p1, pj, pk) smiatame pak syshtoto - sumirame t-ta.
+<VelinTzanov> Tezi t-ta koito syotvetstvat na p1, pj i pk.
+<VelinTzanov> I pak sumirate dinamichni raboti ot tipa (p1, pk, t)
+<Swetko2> ami da izpolzvame nesto
+<VelinTzanov> Tova koeto ni pravi vpechatlenie e che tezi sumichki ne sa bezrazborni.
+<Swetko2> kato da sumirame cial interval
+<VelinTzanov> Tova ne sa niakakvi si tam t-ta - proizvolni.
+<Swetko2> primerno
+<VelinTzanov> t-tata na ednoto se okazva che se sydyrjat v t-tata na drugoto.
+<Swetko2> da hvanem (p1,pk, ...)
+<Swetko2> i tova poslednoto da go pazim kato niakakva suma
+<VelinTzanov> Dobre se orientirash.
+<Swetko2> da hvanem (p1,pk, a..b)
+<VelinTzanov> OK. Neka go obiasnia bavno i po reda mu.
+<Swetko2> 1..k   a   (a,b) posle lesno se namira
+<VelinTzanov> Vijdam che se seshtash.
+<VelinTzanov> Na men mi e iasno kakvo govorish, no sym siguren che pone 2-ma ot drugite ne te razbirat. :)
+<VelinTzanov> Dai da go dovyrsha po bavno mu pyrvo
+<Borisof> az ne razbiram
+<VelinTzanov> Taka.
+<VelinTzanov> Eto primer.
+<VelinTzanov> Vzemete si p1 i pk kato fixirani tochki.
+<VelinTzanov> I sega da razgledame variantite za p(k-1)
+<VelinTzanov> DA vzemem dve tochki pj i pf.
+<VelinTzanov> Neka vidim kak mojem da smetnem (p1, pf, pk) i (p1, pj, pk)
+<VelinTzanov> I za ednoto i za drugoto vyrtim edin cikyl po t-tata i sybirame neshta ot vida (p1, pk, t)
+<VelinTzanov> Za pf kak izbirame t-tata?
+<VelinTzanov> Kakyv beshe kriteriat?
+<VelinTzanov> V koi triygylnik triabvashe da se sybirat te?
+<VelinTzanov> Borisov, Rangel, Vlado?
+<Borisof> mi otgore na prawata  prez p1 ( horizontalnata )
+<VelinTzanov> Da
+<Borisof> i pod prawata pk pf
+<VelinTzanov> Tova ochevidno e edno i syshto za vsichki troiki ot vida (p1, x, y)
+<rangel__> opredelen ot horizontalnata prava prez p1 i pravite p1-pk i pf-pk
+<VelinTzanov> OK
+<VelinTzanov> p1-pk e ednakvo za vsichi ot vida (p1, x, pk)
+<rangel__> t.e. edinstventata razlika e tretata prava pf-pk
+<VelinTzanov> Ostana samo tretata prava.
+<VelinTzanov> pf-pk
+<VelinTzanov> Tochkite (t-tata) triabva da sa pod pf-pk.
+<VelinTzanov> A za pj?
+<VelinTzanov> Pak - p1 horizontalata, pravata p1-pk...
+<VelinTzanov> ... i pod pravata pj-pk
+<Borisof> da
+<VelinTzanov> Sega vijdate li che ednite t-ta sa podmnojestvo na drugite? :)
+<rangel__> da
+<sssa88> da
+<Borisof> da
+<Borisof> wijdame go
+<VelinTzanov> Swetko?
+<Borisof> ma kakwo da naprawim
+<VelinTzanov> Ami mnogo prosto, Borisov, kato smiatash po-goliamata suma niama da pochvash otnachalo, ami shte pochnesh ot tam kydeto si svyrshil s po-malkata suma.
+<VelinTzanov> Za da e po-iasno neka sortirame tochkite okolo pk.
+<VelinTzanov> Imame dva klasa tochki okolo pk.
+<VelinTzanov> Ednite sa ot bydeshteto - tezi "vliavo" na pravata p1-pk.
+<VelinTzanov> Drugite sa ot minaloto - tezi "vdiasno" na pravata p1-pk
+<VelinTzanov> (Btw, tochkite pod horizontalata p1 vyobshte ne gi gledame - te vse edno ne syshtestvuvat)
+<VelinTzanov> Tova koeto nie pravim e slednoto:
+<Swetko2> zasto triabva da sa v triugulnik - na men mi izgleshda prosto kato ugul
+<VelinTzanov> Za vsiaka tochka ot minaloto pf namirame (p1, pf, pk) chrez sumirane na niakoi tochki ot bydeshteto t (t.e. cherez sumirane na (p1, pk, t))
+<VelinTzanov> KOia ot trite pravi iskash da mahna, Swetko?
+<VelinTzanov> horizontalata p1, p1-pk ili pk-pf?
+<Swetko2> vsatnost p1-pk
+<Swetko2> ama nie ne tyrsim tohckite  v triugulnika obrazuvan ot tezi  pravi
+<Swetko2> a v ugula ot 2-te pravi i neleshasti v triugulnika
+<VelinTzanov> Ami taka moga da hvana niakoia tochka pr, koiato e ot stranata na minaloto. I da polucha vdlybnat ygyl mejdu pk, pr i p1.
+<VelinTzanov> Glupsoti.
+<VelinTzanov> Tochno tochki v triygylnik tyrsim.
+<rangel__> ne si syvsem prav Swetko, zavisi ot sluchaq
+<VelinTzanov> t-tata lejat v edin triygylnik.
+<rangel__> t.e. zavisi kyde pf-pk presicha horizontalnata prava prez p1
+<VelinTzanov> Rangele, tova niama znachenie. Pravata p1-pk vinagi triava da ia ima.
+<VelinTzanov> Ahaaaaaaaa, sega zacepih!
+<Borisof> be ne winagi e triagalnik
+<rangel__> da, no ne vinagi tochkite sa v triygylnika
+<VelinTzanov> Da, taka e.
+<rangel__> i zatova Swetko se oplakva
+<VelinTzanov> Prosto e vajno da dyrjite pravilnata orientacia.
+<VelinTzanov> Da, sega go razbrah Swetko.
+<Swetko2> e che nali ako sa v triugulnika ste se poluchi nesto tupo
+<VelinTzanov> Prosto misleh che se pridyrjame kym negovata kartinka. :)
+<VelinTzanov> No da, pravi ste - vajno e da mislim abstraktno, a ne po kartinka. :)
+<Swetko2> aa, ne sme li na nova
+<Swetko2> v koiato p1 e dolu
+<VelinTzanov> Ne, na starata sme.
+<VelinTzanov> Na starata si e triygylnik.
+<Swetko2> a pk,pk -1 sa kato na starata
+<Borisof> oooo
+<Swetko2> ami nali veche niamame p2
+<VelinTzanov> Swetko, zavyrti si starata taka che p1 da e otdolu. :)
+<rangel__> mozhe li da kazha kakvi sa usloviqta za tochkite t?
+<VelinTzanov> Kaji rangele, shte sym ti blagodaren. :)
+<Swetko2> ami togava niamame p2
+<Borisof> haide obqni do karai 
+<rangel__> 1. trqbva da e nad horizontalnata prava prez p1
+<Borisof> onowa deto beshe pochnal
+<VelinTzanov> Chestit nov rekord, momcheta. Biah siguren che niama da go podobrim. :)
+<rangel__> 2. trqbva t i pf da sa ot razlichni strani na p1-pk
+<rangel__> 3. trqbva t i p1 da sa ot edna i syshta strana na pf-pk
+<VelinTzanov> Idealno.
+<Swetko2> i spored men izobsto takiva entry-ta v dinamichnoto ne triabva da ima p1,pk,t  ako t leshi  v  triugulnik  p1,pk, i tochkata kudeto pk-pk-1 presicha horizontalnata
+<VelinTzanov> Kakvi entry-ta ne triabva da ima, ne razbrah.
+<VelinTzanov> ZAshto da niama be, Swetko.
+<VelinTzanov> Gevreka si e tochno tova.
+<rangel__> Veline, maj spomena che za dnes imam 3 zadachi? Tazi ni e vtorata :-)
+<Swetko2> zasto imame t, i pf 
+<VelinTzanov> Swetko, gledai kriteriite na Rangel - te sa hubavi.
+<VelinTzanov> pf e p(k-1)
+<Swetko2> ok
+<Swetko2> aa
+<VelinTzanov> pj syshto e p(k-1) prosto drug variant.
+<Swetko2> az si misleh che pf e prosto variant za t
+<VelinTzanov> Izviniavai. Loshata notacia se dylji na men.
+<Swetko2> aha
+<VelinTzanov> OK. Imame si 3 kriteria.
+<Borisof> Veline dowarshi zadachata 
+<Swetko2> rangel e prav
+<Swetko2> i az tova iskah da kasha
+<VelinTzanov> Kriterii 1 e edin i sysht za vsichki smetki v nai-golemia cikyl.
+<VelinTzanov> ZAtova mojem tia tochki deto ne otgovariat na nego napravo da gi ignorirame.
+<VelinTzanov> Kriterii 2 e edin i sysht za dadena dvoika p1-pk.
+<VelinTzanov> ZAtova razdeliame tochkite koito ne ignorirame na dve - otnosno pravata p1-pk.
+<VelinTzanov> Sega vrytkame pf izmejdu tezi koito sa ot "minaloto" (ednata poluravnina).
+<VelinTzanov> I za vsiaka ot tiah vrytkame t izmejdu tezi ot "bydehsteto" (drugata poluravnina)
+<VelinTzanov> Taka smiatame (p1, pf, pk) kato suma ot (p1, pk, t)-ta
+<VelinTzanov> Tova dotuk e iasno, nali?
+<rangel__> da
+<Swetko2> da
+<sssa88> da
+<VelinTzanov> Za vsiaka dvoika p1 i pk tova e N^2.
+<VelinTzanov> Sega shte go napravim na N
+<VelinTzanov> Borisov, Iasno li e?
+<Borisof> da
+<VelinTzanov> Za da napravim tazi optimizaciika sortirame tochkite okolo pk.
+<VelinTzanov> V poluravninata-minalo zapochvame s nai-visokite tochki.
+<VelinTzanov> V poluravninata-bydeshte zapochvame s nai-niskite tochki.
+<Swetko2> zasto
+<VelinTzanov> I v dvete poluravnini pravim vrytkata po posoka na chasovnikovata strelka.
+<Borisof> az go razbrah
+<VelinTzanov> No sega vmesto za vsiaka stypka v diasnata poluravnina da pravim po ciala vrytka v liavata poluravnina (kato chasovnik), shte napravim po edna vrytka i v dvete.
+<VelinTzanov> Cakata e che vskei pyt shte pochvame tam otkydeto sme svyrshili - kato v BinTree.
+<Borisof> sredno po edna
+<VelinTzanov> DA
+<VelinTzanov> Taka kato ot minaloto sme vzeli pf.
+<VelinTzanov> ZAvyrshvame kato sme izminali vsichki t-ta do pravata pf-pk.
+<Swetko2> aha i ste sumirame s predishnoto
+<VelinTzanov> Posle kato vzimame pj (pj e po-nisko ot pf) vrytkame samo tezi t-ta koito sa mejdu pravite pf-pk i pj-pk - v tova parche torta.
+<VelinTzanov> Tochno taka.
+<VelinTzanov> I taka do kraia...
+<VelinTzanov> Kraiat e imenno pf = p1
+<Borisof> veline kak se realizira
+<Borisof> kade e sortiraneto
+<VelinTzanov> REalizira se malko kofti... :)
+<VelinTzanov> No se realizira.
+<Swetko2> zasto daae kofti
+<VelinTzanov> sortiraneto oshte v nachaloto - izvyn vsichki cikli.
+<VelinTzanov> Mislia che mojesh da go vkarash v pyrvia cikyl za po-udobno ako iskash.
+<Swetko2> ili v purvia
+<VelinTzanov> Ami az go pravia izvyn ciklite (oshte kato cheta vhoda mai), no vie mojete da go slojite v pyrvia ako vi e po-udobno.
+<Swetko2> spored men tam ne pochvame ot nai visokata
+<Borisof> da ma trqbwa da ignoriaram tochkite pod p1
+<VelinTzanov> I ne zabraviaite da vadite 2-ygylnicite. :)
+<Swetko2> a ot taia koiato ste dade nai goliam ugul
+<VelinTzanov> E, kolko mu e - edin if. :)
+<VelinTzanov> Ne te razbrah, Swetko.
+<VelinTzanov> Da, tochno taka.
+<VelinTzanov> Ot tazi s nai-golemia ygyl.
+<VelinTzanov> Tova s nai-visokata beshe samo ilustrativno.
+<Swetko2> ok obiasni go che az ne moga
+<VelinTzanov> Sortirali sme gi po ygyla im spriamo pk.
+<rangel__> a kak shte sortiram po vsichki vyzmozhni pk izvyn cikyla? dori i v pyrviq cikyl, zashtoto toj e za p1?
+<VelinTzanov> Ami imash fixirano p1.
+<VelinTzanov> Vzimash si za vsiako pk.
+<VelinTzanov> I sortirash tochkite naokolo.
+<VelinTzanov> Vsyshtnost nai-dobre pyrvo da gi razdelish na dve grupi.
+<Swetko2> s atan2
+<VelinTzanov> Otnosno p1-pk.
+<rangel__> t.e. stava N^3*logN?
+<VelinTzanov> Ne, nedeite s atan2.
+<VelinTzanov> Imate si orientacia.
+<VelinTzanov> Ne, stava N^2*LogN
+<VelinTzanov> Aaaa, razbrah te. :)
+<VelinTzanov> Da, stava N^3*logN ako go vkarata e pyrvia cikyl.
+<VelinTzanov> Ne go vkarvaite togava. :)
+<VelinTzanov> Sortirate gi predvaritelno (iavno zaradi tova az go pravia predvaritlno)
+<VelinTzanov> I posle si namerete p1 v spisyka.
+<VelinTzanov> I taka gi razdelete na dve grupi.
+<Swetko2> zasto da ne e s atan2
+<VelinTzanov> ZAshtoto moje s orientacia.
+<Swetko2> nali imame celochisleni koordinati
+<VelinTzanov> Po-lesno e i niakak si po-chisto.
+<Swetko2> za po chisto - ne e
+<VelinTzanov> I ne izpolzvas int-ove vmesto double-i, kakto Swetko na IOI za 88 tochki >:-[
+<VelinTzanov> Naprotiv, 100% po-chisto e.
+<Borisof> towa posle
+<Swetko2> e, tam imah da sortiram double - a az goi sortiram kato int
+<VelinTzanov> sort funkciata mi e orient.
+<Swetko2> na NOI 2
+<Borisof> zadachata e gotowa
+<Swetko2> pisah s orientirani lica
+<Borisof> az shte si hodq w doma
+<VelinTzanov> Swetko, tuk imash syshtoto - da sortirash double (atan2) - i mojesh pak da sbyrkash.
+<Swetko2> i funkciata mi za sravniavane izleze okolo 40 reda
+<Borisof> che sam w klub
+<Swetko2> ami niama da pravia gluposti
+<VelinTzanov> Hmm... neshto ne si go napisal kato horata.
+<Swetko2> ok
+<VelinTzanov> Sled kato ia reshite mojete da mi prochetete reshenieto - i dvete i N^4 i N^3.
+<VelinTzanov> Dosta sa stegnati.
+<VelinTzanov> Vsichki li razbrahte zadachata?
+<Swetko2> da
+<VelinTzanov> Shte ia imam li za domashno za utre?
+<VelinTzanov> N^3 chisto, bez LogN-paraziti. :)
+<Borisof> moje bi
+<rangel__> az oshte imam nqkoi neqsnoti po tova koga tochno sortiram, no trqbva da stane
+<sssa88> da
+<VelinTzanov> Aide sega, sybota e. :)
+<Swetko2> ami 3-tata
+<VelinTzanov> Rangele, ako syvsem se zabatachish mojesh da mi poglednesh sourc-ea.
+<Swetko2> ot koreia li e
+<VelinTzanov> 3-ta li?
+<VelinTzanov> Aaaaa, utre, Swetko.
+<VelinTzanov> utre e lek den.
+<VelinTzanov> A az shte ti otkysna glavata, kazal sym ti da ne pravish taka.
+<Swetko2> kakvo mu e lekoto
+<VelinTzanov> Za teb shte ima specialno domashno utre. :-D
+<VelinTzanov> Za nakazanie. :-D
+<VelinTzanov> OK.
+<Swetko2> da ne mislish che niakoi ste trygne da gi gleda
+<Swetko2> ok
+<VelinTzanov> Vyprosi niakakvi?
+<Swetko2> dai go oste sega
+<Swetko2> :)
+<Swetko2> ne
+<VelinTzanov> Az imam edin vypros, ama pyrvo da vi chuia vie dali imate.
+<sssa88> ne
+<VelinTzanov> Borisov? Rangel?
+<Borisof> haide ne
+<Borisof> ne
+<rangel__> ne se seshtam
+<Borisof> towst
+<VelinTzanov> Imame kontrolno v Ponedelnik (trenirovka) po plan.
+<VelinTzanov> 8:30 do 13:30 pak.
+<VelinTzanov> Shte mojete li?
+<Swetko2> aide da ne e v ponedelnik
+<Borisof> da
+<sssa88> da
+<Swetko2> ili da e sledobed
+<Borisof> az waw wtornik sam zaet
+<VelinTzanov> ZAshto? Uchilishte neshto?
+<Swetko2> ami vse pak posleden den
+<VelinTzanov> 29-ti i 30-ti mi se vijdat po-posledni ot 28-mi.
+<Swetko2> za oformiane - to i az ne znam dali iskam da me oformiat
+<VelinTzanov> hm..nali beshe 25-ti be. :(
+<Swetko2> ne,
+<VelinTzanov> Po kakvo, Swetko?
+<Borisof> i az taka mislq
+<Swetko2> 28 e za nas
+<Borisof> w ruse sa nazad
+<Swetko2> po nemski
+<VelinTzanov> Ne moje li da se ugovorish sledobiad da idesh?
+<Swetko2> v AG ni teroriat
+<VelinTzanov> Dobre e da e sutrinta, za da e po-podobno na BOI/IOI./
+<Swetko2> :)sheguvam se be ne ni teroriat
+<Swetko2> abe aide
+<Swetko2> niama da hodia
+<Swetko2> da mi ostavia kolkoto si iska
+<VelinTzanov> E, sega ne si nasirai diplomata zaradi men.
+<Borisof> gowori s klasnata ta ti pishat 6
+<Swetko2> be, te 4 she mi pishat - ti 6
+<VelinTzanov> :-D
+<VelinTzanov> Ne moje li da i se obadish da se ugovorite za edno izpitche sledobedno vreme?
+<Swetko2> abe az ne iskam - i bez tova ne go znam nemskia
+<Borisof> aide 
+<Swetko2> ne mi triabva i ocenkata
+<Borisof> da 
+<Borisof> si  hodq
+<Swetko2> ami chao
+<VelinTzanov> Ama si siguren che niama da si kaje "Tozi nehranimaiko pak go niama, ia da go ostavia na popravitelen" nali?
+<VelinTzanov> Chao, Borisov.
+<VelinTzanov> Rangel i Vlado i vie ste svobodni! :)
+<Borisof> chao
+<sssa88> chao
+<Swetko2> dano ne kashe taka
+<Swetko2> ciao
+* Borisof has left #ioi
+<VelinTzanov> Swetko, Manev shte me obezglavi ako se sluchi neshto takova.
+<Swetko2> az puk ste obezglavia uchitelkata
+<VelinTzanov> Obadi i se. ako triabva po vreme na systezanieto i zvynni edin telefon.
+<Swetko2> abe az minaloto systezanie hodih do daskalo
+<Swetko2> po fizichesko
+<VelinTzanov> :):):):):):)
+<Swetko2> za 40 minuti
+<VelinTzanov> Tova obache ne e hubavo.
+<Swetko2> znam ama nali si gi reshih
+<VelinTzanov> OK. Shte pisha edin e-mail do vsichki i shte vidim kakvo shte pravim.
+<VelinTzanov> Abe ednata mai ne ia reshi mnogo.
+<Swetko2> tukmo da potreniram da resha igrata burzo
+<Swetko2> reshih ia
+<Swetko2> prosto reshih da ne optimiziram che da ne ia sbugna
+<VelinTzanov> E nali beshe WA li, TO li ne pomnia...
+<Swetko2> TL
+<Swetko2> beshe
+<Swetko2> i Anev kaza che na test 5 davalo TL
+<VelinTzanov> Hmm... belejka si vzemi. Na BOI/IOI syshto ima Time Limits.
+<Swetko2> e ima
+<Swetko2> ama tova reshenie steshe da vzeme kum70 tochki 
+<VelinTzanov> A i na tova kontrolno biaha lesni. Na sledvashtoto shte sa po-debeli. :)
+<Swetko2> puk i togava stiah da go napravia dobre
+<VelinTzanov> A to zashto beshe bavno? Ne beshe li O(E)?
+<Swetko2> ok 
+<Swetko2> ste vidia
+<Swetko2> ami tolkova
+<VelinTzanov> Hmm... OK de.
+<VelinTzanov> Aide - bye/!
+<VelinTzanov> Priiatno pisane na domashnoto. :D
+<VelinTzanov> Chao!
+<rangel__> chao
+<Swetko2> ama imam 2 000 000 pozicii ot tiah samo 32000 validni
+<Swetko2> chao
+<sssa88> chao
+<VelinTzanov> Aha... tova veche e kofti.
+<VelinTzanov> Bye
+<Swetko2> i dokato nameria validnite 
+<Swetko2> i posle reshih da ne si gi prekompiutvam 
+<Swetko2> chao
+<VelinTzanov> Che zashto be - ne sa li samo 3-te pozicii na 3-te geroia?
+<Swetko2> da gledam if (valid(i))
+<Swetko2> da gledam if (valid[i])
+<Swetko2> ami da
+* sssa88 has quit IRC
+<VelinTzanov> E zashto imash takyv ogromen procent nevalidni?
+<Swetko2> ma moita karta beshe (10*10) -tova na treta 1 000 000 posle oste po 2
+<Swetko2> a puk to si e kazano che polovinata pole ste e steni
+<VelinTzanov> Aha.
+<VelinTzanov> E, Ok.
+<Swetko2> prosto triabvashe da optimiziram cikula za nevalidnite pozicii
+<VelinTzanov> Aide, che triabva da se spi...
+<VelinTzanov> OK - Na BOI/IOI optimizirai .:)
+<VelinTzanov> Bye
+* Disconnected
+Session Close: Sat Jun 26 00:48:24 2004

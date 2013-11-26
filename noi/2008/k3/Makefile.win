@@ -1,0 +1,30 @@
+# Project: Project1
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = graffffikaaaa.o $(RES)
+LINKOBJ  = graffffikaaaa.o $(RES)
+LIBS =  -L"f:/Dev-Cpp/lib" -mwindows  
+INCS =  -I"f:/Dev-Cpp/include" 
+CXXINCS =  -I"f:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"f:/Dev-Cpp/include/c++/3.4.2/backward"  -I"f:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"f:/Dev-Cpp/include/c++/3.4.2"  -I"f:/Dev-Cpp/include" 
+BIN  = grafi4ka.exe
+CXXFLAGS = $(CXXINCS)   -O3
+CFLAGS = $(INCS)   -O3
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before grafi4ka.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "grafi4ka.exe" $(LIBS)
+
+graffffikaaaa.o: graffffikaaaa.cpp
+	$(CPP) -c graffffikaaaa.cpp -o graffffikaaaa.o $(CXXFLAGS)

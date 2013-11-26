@@ -1,0 +1,168 @@
+#include <cstdio>
+#include <vector>
+#include <cstdlib>
+#include <algorithm>
+
+#define N (100000)
+template <class T>
+class pri_queue
+{
+    T* buff;
+    int sz;
+public:
+    inline pri_queue(void* buffer)
+    {
+        buff=(T*)buffer;
+        --buff;
+        sz=0;
+    }
+    inline void push(T obj)
+    {
+        ++sz;
+        buff[sz]=obj;
+        int i=sz;
+        while(i!=1)
+        {
+            if(buff[i]<buff[i/2])
+            {
+                std::swap(buff[i],buff[i/2]);
+                i/=2;
+            }
+            else
+                break;
+        }
+    }
+    inline T& min()
+    {
+        return buff[1];
+    }
+    inline void pop()
+    {
+        buff[1]=buff[sz];
+        --sz;
+        int i=1;
+        while(1)
+        {
+            if(i*2<=sz)
+            {
+                if(buff[i]>buff[i*2])
+                {
+                    if(((i*2)+1)<=sz&&buff[(i*2)+1]<buff[i*2])
+                    {
+                        std::swap(buff[(i*2)+1],buff[i]);
+                        i=(i*2)+1;
+                    }
+                    else
+                    {
+                        std::swap(buff[i],buff[i*2]);
+                        i=i*2;
+                    }
+                }
+                else if(((i*2)+1)<=sz&&buff[(i*2)+1]<buff[i])
+                {
+                    std::swap(buff[(i*2)+1],buff[i]);
+                    i=(i*2)+1;
+                }
+                else
+                    break;
+            }
+            else
+                break;
+        }
+    }
+    inline bool empty()
+    {
+        return sz==0;
+    }
+    inline int size()
+    {
+        return sz;
+    }
+};
+struct Node
+{
+    int freq;
+    Node *l,*r;
+    inline Node()
+    {
+    }
+   inline  Node(int f)
+    {
+        freq=f;
+        l=r=0;
+    }
+    inline Node(Node* _l,Node *_r)
+    {
+        l=_l;
+        r=_r;
+        freq=l->freq+r->freq;
+    }
+};
+struct Node_Handle
+{
+    Node *ref;
+    inline Node_Handle(Node* ptr)
+    {
+        ref=ptr;
+    }
+    inline bool operator>(Node_Handle& rhs)const
+    {
+        return ref->freq>rhs.ref->freq;
+    }
+
+    inline bool operator<(Node_Handle& rhs)const
+    {
+        return ref->freq<rhs.ref->freq;
+    }
+};
+inline Node_Handle Handle(Node& a)
+{
+    return Node_Handle(&a);
+}
+int cost=0;
+int h=1;
+
+Node nds[2*N];
+char heap[32*(1<<20)-sizeof(nds)];
+pri_queue<Node_Handle> hp=pri_queue<Node_Handle>(heap);
+void dfs(Node* cu)
+{
+    if(cu->l!=0&&cu->r!=0)
+    {
+        ++h;
+        dfs(cu->l);
+        dfs(cu->r);
+        --h;
+        return;
+    }
+    cost+=h*cu->freq;
+}
+int main()
+{
+    int n;
+    int i;
+    int a;
+    int next_node;
+    Node* tmp1,*tmp2;
+    scanf("%d",&n);
+    for(i=0;i<n;++i)
+    {
+        scanf("%d",&a);
+        nds[i]=Node(a);
+        hp.push(Handle(nds[i]));
+    }
+    next_node=n;
+    while(hp.size()!=1)
+    {
+        tmp1=hp.min().ref;
+        hp.pop();
+        tmp2=hp.min().ref;
+        hp.pop();
+        nds[next_node]=Node(tmp1,tmp2);
+        hp.push(Handle(nds[next_node]));
+        ++next_node;
+    }
+    dfs(nds+next_node-1);
+    printf("%d\n",cost);
+    return 0;
+}
